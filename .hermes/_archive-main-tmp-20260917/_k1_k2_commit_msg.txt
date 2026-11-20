@@ -1,0 +1,53 @@
+seo(batch1)+blog(w1): 5 类目 9 处 title 改写 + W1 blog 2 篇 metadata+content 上线
+
+**假设** (per K3 8/26 12:23 §6 附 #2): 大信封 pos 2.21 改 title + 11 词中 4-5 个 pos 5-20 词进首页 + blog W1 2 篇帮 rush 新页互链加速 SEO 流量
+**预期** (per 千问 8/26 12:23 §1 闸门): 8/28 中检整站 CTR ≥2% + 询盘 ≠0 (S2 闸门 9/9)
+**5 类目 9 处 title 改 (大信封 pos 2.21 第 1 优先)**:
+- envelopes: zh-hk 「大信封印刷 A4/C4/C5 規格 + 起價表 | 100 個起印・公文信封・牛皮・開窗・彩色信封」 / en 「Pearl Envelopes Printing 100 MOQ + Custom Color + China Envelope Printing Price Quote + DHL Global」 / ja 「大型封筒 印刷 A2/B4 + C4/C5/DL/クラフト/窓付き/カラー/企業ロゴ | 100 枚〜」
+- paper-bags: zh-hk 「+ 急單 18:00 截單」/ en 「+ Rush 6PM Cut-off」/ ja 「+ パール + 短納期 18:00 締切」
+- posters: zh-hk 「+ MTR 12 sheet 燈箱」/ en 「+ 2 Meter Poster Printing」/ ja 「+ 2メートル ポスター印刷」
+
+**W1 blog 2 篇 metadata + zh-hk content 上线 (3 文件)**:
+- src/data/blog-posts.ts: append 2 篇 metadata (lpRushPrintingHKGuide, lpPackagingBoxPricing2026) + 数组末尾 add
+- src/app/[locale]/blog/[slug]/page.tsx: articleSlugs 加 2 slug + posts 'zh-hk' 块加 2 篇 (9 段 + 4 FAQ + 5 内部链接 + 1 互链到 rush 服务页)
+- en/ja content 后续 daily-content cron 补 (本卡 zh-hk 完整, en/ja 简版用 daily-content)
+
+**撞墙 = M3 自主** (K3 §0.22 SOP-10 第 3 款 + 8/26 12:23 当前 turn 拍板 "两卡批准攒批 1 commit ≥12:30 push")
+
+**SOP-10 5 问门禁 (per K3 8/25 拍板 B)**:
+1. 架构差异: 5 类目 title 改 跟现有 1727692 (B1 4 类目 zh-hk) + 1baf7fc (B2 posters zh-hk) + c0d3b01 (B3 calendars) 模式一致 (机会词前置), 2 篇 blog 跟 daily-content 79+ 模式
+2. 约束适用范围: 跟 K3 8/22 17:58 F0 业务 0 改动红线 (5 类目 title 在 src/lib/seo.ts 不删 SKU 不改文案只 title 改) + K3 8/23 §13.4 9 段 + 4 FAQ + 3 locale 同步
+3. 原数据/拍板来源: B7 W1 #1+#2 派发 (commit 57f304f 8/26 05:36 K3 拍板, docs/b7-blog-pool-2026-08-26.md §1.1) + GSC 8/18 baseline (大信封 pos 2.21) + 千问 8/26 12:23 §6 执行令
+4. 字段值策略: title 改 9 处全 verbatim 按 8/5 25 词 + 8/18 GSC 6 新词, 2 篇 blog 9 段 + 4 FAQ + 5 内链 全 verbatim per K3 卡 1 + 卡 2
+5. Markdown 渲染: 不涉及 user-facing Markdown 链接, 改用纯 JSX, 9 段 H2/H3 + ul/ol + a
+
+**预检**:
+- tsc --noEmit: 54 baseline 不新增 (新增 0 错, 全部 __tests__/debug-* 旧错)
+- encoding check: 3/3 UTF-8 LF PASS (--fix 修了 CRLF)
+- 8/26 12:23 K3 必拍 1 次回复豁免 §0.25 30 min (上次 push 6faa459 8/26 12:00, 当前 12:30+ = 30+ min 边界)
+
+**§0.22 SOP-10 第 5 款 (Markdown 渲染)**: 不涉及, 9 段 JSX
+
+**§0.24 完成以动作证据为准**: 完成 ≠ K3 拍板 (笼统批准), 等 CF build success = 动作证据
+
+**§6 附 #1 状态汇报** (K3 12:23 拍板): rush 1320px 容器 + nav 入口 已在 23b4feb commit (8/26 11:00 push) PASS, **不在** 6faa459 (gap-closure-card 收口). K3 浏览器验收是 K3 自己的动作, 不在 M3 范围.
+
+**§6 附 #2 (commit 写清假设)**: 本 commit message 开头已加 "假设" 段
+
+**§6 附 #3 (10 KPI + 2 GEO 拉数)**: 8/28 12:00 中检, 不在本次范围
+
+**撞车兜底**:
+- 上次 push: 6faa459 8/26 12:00
+- 当前 push: 8/26 12:30+
+- 间隔: 30+ min ≥ 30 min 边界 ✅
+- 撞车豁免: K3 12:23 必拍 1 次回复 (本 turn 拍板"两卡批准 ≥12:30 push")
+
+**数据来源**:
+- 千问 8/26 12:23 §6 执行令 (K3 拍板)
+- 批 1 卡 1: .hermes/logs/2026-08-26-batch1-15-words-card.md
+- blog 卡 2: .hermes/logs/2026-08-26-blog-w1-card.md
+- B7 W1 派发: docs/b7-blog-pool-2026-08-26.md §1.1
+- 22 词清单: .hermes/B-22词清单-attachment.txt
+- GSC 8/18 baseline: gsc_data.csv (大信封 pos 2.21 / 24 imp / 0 click)
+- rush 收口: 6faa459 8/26 12:00 push PASS (CF build success)
+- rush 1320px + nav: 23b4feb 8/26 11:00 push PASS (CF build success)

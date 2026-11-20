@@ -1,0 +1,22 @@
+fix(moq): 價目同步波 ① 補漏 — 品類級 SEO (seo.ts) + 騎馬釘 SKU 描述 vs Alibaba 口徑
+
+=== 為何漏了這一層 (多層 SEO 架構第三次現形) ===
+線上探針顯示騎馬釘/校園品類頁仍見「×100 本起」「×50 本起」。追查發現另有兩個資料源未覆蓋:
+  · src/lib/seo.ts 的品類級 titles/descriptions
+  · src/data/products.ts 的 SKU description
+(前兩次分別是 sku-seo-data.ts 與 products-content.ts)
+
+=== 修正 ===
+1. seo.ts 騎馬釘品類 title「50本起」→「10本起」
+2. seo.ts 書刊品類 desc「50 本起印」→「10 本起印」
+3. seo.ts en 書刊 title「50 MOQ」→「10 MOQ」
+4. seo.ts 校園品類 title/desc **移除統一 100 本起**:
+   校園品類涵蓋 certificates/textbooks (100) + exercise-books (10) + yearbook (50)
+   ⇒ 門檻不一致, 不可宣稱單一數字 (此點已於本輪以實查確認)
+5. seo.ts 校園 title 補回長度 (移除 100本起 後掉至 37 字, 低於 title 目標區 50-60)
+   → 加「30秒報價」至 43 字 (資訊更強而非單純更短)
+6. products.ts 騎馬釘 SKU 描述「MOQ 100 本（vs Alibaba 黃頁 500+）」→「MOQ 10 本（vs Alibaba 黃頁 500+）」
+   ★ 此為 K3 要求的「X 本 vs 500+」格式, 原本已存在, 只是數字過期。競品側 500+ 不動。
+
+閘門: smoke 0 / residual MOQ 0 / runtime 0
+push: 窗口未到 (還需 26.8 min) ⇒ 依 §0.25.8 commit 本地, 不 sleep, 留下個週期

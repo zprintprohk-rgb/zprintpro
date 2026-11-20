@@ -1,0 +1,33 @@
+﻿blog-posts.ts slug 總數: 99
+
+格式: locale | slug | HTTP | meta-desc | og-desc | tw-desc | title
+zh-hk | sticker-buying-guide | 200 | YES | YES | YES | 貼紙印刷選購完全指南：材質、工藝、價格一次搞懂 | 智印港
+en | sticker-buying-guide | 200 | YES | YES | YES | Custom Sticker Printing Guide: Materials | Zp
+zh-hk | flyer-buying-guide | 200 | YES | YES | YES | 傳單印刷選購完全指南：尺寸、紙質、摺法全攻略 | 智印港
+en | flyer-buying-guide | 200 | YES | YES | YES | Flyer Printing Buying Guide: Sizes, Paper &am
+zh-hk | packaging-buying-guide | 200 | YES | YES | YES | 包裝盒印刷選購完全指南：盒型、材質、工藝一次搞懂 | 智印港
+en | packaging-buying-guide | 200 | YES | YES | YES | Packaging Box Buying Guide: Styles, Materials
+zh-hk | poster-buying-guide | 200 | YES | YES | YES | 海報印刷選購完全指南：尺寸、紙質、用途全解析 | 智印港
+en | poster-buying-guide | 200 | YES | YES | YES | Poster Printing Buying Guide: Sizes, Paper &a
+zh-hk | paper-bag-buying-guide | 200 | YES | YES | YES | 紙袋印刷選購完全指南：紙質、尺寸、手挽全攻略 | 智印港
+en | paper-bag-buying-guide | 200 | YES | YES | YES | Paper Bag Printing Buying Guide: Materials, S
+zh-hk | banner-buying-guide | 200 | YES | YES | YES | 噴繪廣告選購完全指南：X展架、易拉寶、背景板全攻略 | 智印港
+en | banner-buying-guide | 200 | YES | YES | YES | Banner Printing Buying Guide: X-Stands, Roll-
+zh-hk | car-dealership-amenity-sticker-printing-guide | 200 | NO | NO | YES | 汽車 4S 店 / 二手車行貼紙印刷指南 · 防水 PVC 試駕車 | 智印港
+en | car-dealership-amenity-sticker-printing-guide | 200 | NO | NO | YES | Car Dealership Amenity Sticker Printing Guide
+zh-hk | hotel-keycard-sleeve-printing-guide | 200 | NO | NO | YES | 酒店房卡套 + 行李牌印刷指南 · 軟觸啞面 + 燙金 logo | 智印港
+en | hotel-keycard-sleeve-printing-guide | 200 | NO | NO | YES | Hotel Key Card Sleeve &amp; Luggage Tag Print
+zh-hk | baby-product-label-sticker-printing-guide | 200 | YES | YES | YES | 母嬰品牌貼紙印刷指南 · 嬰兒食品級安全標籤定製 | 智印港
+en | baby-product-label-sticker-printing-guide | 200 | NO | NO | YES | Baby Product Sticker Printing Guide: FDA Food
+zh-hk | 2027-calendar-printing-complete-guide | 200 | NO | NO | YES | 2027 月曆印刷完全指南: 8 大材質，4 種工藝，中秋旺季提前 4-6 週預訂 | 智
+en | 2027-calendar-printing-complete-guide | 200 | NO | NO | YES | 2027 Calendar Printing Guide: 8 Materials, 4 
+zh-hk | rush-printing-delivery-guide | 200 | NO | NO | YES | 即日印刷交期指南：邊間最快？幾錢？截單時間？ | 智印港
+en | rush-printing-delivery-guide | 200 | NO | NO | YES | Rush Printing Delivery Guide: Where&#x27;s Fa
+zh-hk | packaging-box-price-2026 | 200 | NO | NO | YES | 包裝盒印刷價格 2026：500/1000/5000 個幾錢？ | 智印港
+en | packaging-box-price-2026 | 200 | NO | NO | YES | Packaging Box Printing Price 2026: How Much f
+zh-hk | zine-small-batch-booklet-printing-guide | 200 | NO | NO | YES | 小誌 Zine 印刷: 騎馬釘 8-64 頁 100 本起 HK$6 起 | 智印港
+en | zine-small-batch-booklet-printing-guide | 200 | NO | NO | YES | Zine Printing Guide: 8-64pp, 100 MOQ, HK$6/pc
+zh-hk | childrens-picture-book-printing-guide | 200 | NO | NO | YES | 童書繪本印刷：精裝硬皮 32 頁 100 本起 HK$40 起 | 智印港
+en | childrens-picture-book-printing-guide | 200 | NO | NO | YES | Custom Picture Book Printing: 32pp, 100 MOQ |
+zh-hk | photo-book-printing-guide | 200 | NO | NO | YES | 寫真書印刷：相冊相簿精裝 1 本起印 100 本更平 | 智印港
+en | photo-book-printing-guide | 200 | NO | NO | YES | Custom Photo Book Printing: MOQ 1, Bulk 100+ 

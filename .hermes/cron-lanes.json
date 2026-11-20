@@ -48,7 +48,8 @@
       "start": "12:13",
       "timeoutSeconds": 3600,
       "prompt": "zprintpro-monthly-matrix-audit.md",
-      "reportGlob": "*-monthly-matrix-audit.md"
+      "reportGlob": "*-monthly-matrix-audit.md",
+      "_note": "2026-10-24 K3 reschedule 06:13 -> 12:13 (GUI directive: monthly review + keyword matrix audit at noon; same prompt + same report name kept). Applied surgically via schtasks /change on task ZP-monthly-matrix (settings preserved; two-method verified schtasks+Get-ScheduledTask; evidence .hermes/logs/cron-retime-monthly-matrix-20261024-035026.log)."
     },
     {
       "task": "ZP-k3-review",

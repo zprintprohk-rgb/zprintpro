@@ -1,0 +1,3 @@
+#!/bin/sh
+# npx shim for Git Bash hook env (真身 npx.cmd 在 Kimi runtime, bash 不自动补 .cmd)
+exec cmd //c npx "$@"

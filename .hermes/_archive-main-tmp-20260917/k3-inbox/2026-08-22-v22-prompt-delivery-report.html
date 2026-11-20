@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><title>V22 生图提示词交付</title><style>
+body{font-family:'Segoe UI',system-ui,sans-serif;max-width:1000px;margin:0 auto;padding:24px;color:#1f2937;line-height:1.65;background:#f8fafc}
+h1{font-size:1.5rem;border-bottom:3px solid #0f766e;padding-bottom:8px}
+h2{font-size:1.15rem;margin-top:28px;color:#0f766e;border-left:4px solid #0f766e;padding-left:10px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.85rem}
+th,td{border:1px solid #d1d5db;padding:6px 9px;text-align:left;vertical-align:top}
+th{background:#0f766e;color:#fff}
+tr:nth-child(even){background:#f1f5f9}
+.badge{display:inline-block;padding:2px 10px;border-radius:12px;font-size:.78rem;font-weight:600;color:#fff}
+.ok{background:#059669}.warn{background:#d97706}
+.metrics{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0}
+.metric{flex:1;min-width:150px;background:#0f766e;color:#fff;border-radius:10px;padding:14px;text-align:center}
+.metric .v{font-size:1.6rem;font-weight:700}
+.metric .k{font-size:.8rem;opacity:.9}
+.note{background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;padding:12px;margin:12px 0;font-size:.9rem}
+ol li{margin:6px 0}
+</style></head><body>
+<h1>V21→V22 生图提示词升级分析与全量 EN 交付</h1>
+<div class="badge ok">✅ 完成并校验</div> &nbsp; <span style="font-size:.9rem;color:#6b7280">99 SKU / 442 条提示词 / 每条 1800-2400 字符 / 美国市场 SEO+GEO 深度优化</span>
+<div class="metrics">
+  <div class="metric"><div class="v">99</div><div class="k">SKU 全量（含 wedding 12）</div></div>
+  <div class="metric"><div class="v">442</div><div class="k">提示词（1800-2400 全部达标）</div></div>
+  <div class="metric"><div class="v">10</div><div class="k">每段结构要素</div></div>
+  <div class="metric"><div class="v">0</div><div class="k">CJK/乱码/标注偏差</div></div>
+</div>
+<h2>一、版本脉络（实测定位）</h2>
+<table>
+<tr><th>版本</th><th>载体</th><th>状态</th></tr>
+<tr><td>V20</td><td>seedream_prompts_v20_87sku_4views.txt（87 SKU 旧版，中英混合）</td><td>✅ 存在</td></tr>
+<tr><td>V21</td><td>v20_9_parsed.json（99 SKU 纯英文 + seo_filename/alt_en + V21 条款：§4.1 标题白名单、§4.4 尺寸 1200x1146）</td><td>✅ 存在（8/19 落盘）</td></tr>
+<tr><td>V22</td><td>review-2026-08-22：Direct API 通道（6-9x 提速）；无独立提示词文件</td><td>⚠️ 仅渠道定义 → 本次交付 V22 版提示词</td></tr>
+</table>
+<h2>二、V20 → V21 → V22 升级点</h2>
+<table>
+<tr><th>维度</th><th>V20</th><th>V21</th><th>V22（本次）</th></tr>
+<tr><td>SKU 数</td><td>87</td><td>99（+wedding）</td><td>99 全量</td></tr>
+<tr><td>语言</td><td>中英混合</td><td>纯英文</td><td>纯英文（0 CJK）</td></tr>
+<tr><td>SEO 字段</td><td>无</td><td>seo_filename+alt_en</td><td>保留 + GEO 关键词注入</td></tr>
+<tr><td>用途声明</td><td>无</td><td>部分</td><td>WHERE USED 每视图显式</td></tr>
+<tr><td>美国市场</td><td>通用</td><td>部分场景化</td><td>类目场景+人群+色板+信任</td></tr>
+<tr><td>长度</td><td>800-1500</td><td>1001-7408（中位 3725 过长）</td><td>1800-2400（442/442 达标）</td></tr>
+</table>
+<h2>三、V22 提示词九段结构</h2>
+<ol>
+<li><b>HEAD</b>：生产级终图声明 + 1200x1146 BOTTOM-STRIP / ≤120KB / 8K UHD</li>
+<li><b>USE</b>：图用在哪（US PDP 主图/特写/组合/多角度/展开页）+ 点击/转化目标</li>
+<li><b>AUDIENCE</b>：类目化美国买家画像（小批量贴纸买家/婚礼新人/学校/餐饮业主）</li>
+<li><b>PRODUCT</b>：SKU 注入（材料/工艺/规格/卖点，ASCII 净化 + 重音修复）</li>
+<li><b>SCENE</b>：类目化美国生活方式场景（客厅/咖啡桌/店招/教室/婚礼花园）</li>
+<li><b>COLOR PALETTE</b>：类目化美国偏好色板</li>
+<li><b>VIEW 规格</b>：HERO 80-85% / DETAIL 85-95% / VARIETY / MULTI-ANGLE / SPREAD 中缝</li>
+<li><b>CRAFT &amp; TRUST</b>：真实摄影感 + 海外供应商信任构建</li>
+<li><b>SEO/GEO + NEGATIVE</b>：GSC 美国真实搜索词注入 + 15 项负面清单</li>
+</ol>
+<h2>四、SEO+GEO（基于 GSC 美国真实数据）</h2>
+<p>注入真实搜索词：saddle stitch booklets、small batch label/sticker printing、china catalog printing、removable stickers、foil/security/fluorescent stickers、calendar sizes、how to print waterproof stickers、exercise book printing、adhesive banner printing 等。<b>GEO 逻辑</b>：生成式引擎解析图片 alt/文件名/上下文文本 → 提示词内嵌真实查询词 → 生成图与用户意图语义对齐 → 提升被 AI Overview 引用概率。</p>
+<h2>五、校验结论（独立校验 agent）</h2>
+<div class="note">六项核心全 PASS：长度 442/442 在 1800-2400 ✅ | 纯英文 0 非 ASCII ✅ | 十要素 100% 齐备 ✅ | SEO+GEO 真实美国词 ✅ | 美国市场适配 ✅ | 负面清单 15 项 ✅。修复 5 项系统性问题后重出：PC 系列专属关键词、ALT 完整、PRODUCT 不截断、ASCII 重音映射（Café→Cafe）、长度标注与实际一致（0 偏差）。</div>
+<h2>六、文件</h2>
+<p>交付：seedream_prompts_v22_99sku_en.txt（924KB）。后续：V22 Direct API（ARK_API_KEY）到位后可直接批量直调 seedream，6-9x 提速。</p>
+</body></html>

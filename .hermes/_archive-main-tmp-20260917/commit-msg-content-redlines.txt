@@ -1,0 +1,21 @@
+fix(content): 内容红线两处 (门禁补扫发现) — 错误联络电话 + 伪造 FSC 证号
+
+背景: 复活 pre-commit 门禁后, 对 src/ 做全量补扫 (8/26~9/13 门禁失效窗口),
+命中多为守卫误报, 但两处高信号属真实问题:
+
+① src/app/[locale]/contact/error.tsx:90 — 用户可见「致电」按钮
+   href="tel:+86198108851334" (13 位, 多一位 0) ≠ 真实号码 +86 198 8085 1334
+   → 修正为 tel:+8619880851334 (纯技术止损)
+
+② src/data/blog-posts.ts L1658-1660 — 同一篇 blog 摘要 3 语言版含伪造证号 FSC-C123456
+   → 按 SOP-10 第 4 款 (K3 8/24 18:42+19:03 拍板: certNo 撤空/不留具体证号)
+     改为「ISO 9001 + FSC 認證 / certified / 認証」(保留 FSC 描述, 去掉伪造号)
+
+脚本: scripts/fix-content-redlines-0913.mjs (§12 三件套: 计数断言 + 形状断言 + 备份)
+
+附: 同处文案还有 3 个无来源数字 (4,200 張急件實證 / 99.2% 達成率 / 15,000+ 客戶) —— 属内容声明,
+     不擅自改, 已列入呈报 K3 项。
+
+同步: 门禁严重度口径回归 K3 9/1 15:06 修正 3 (red 硬拦 / orange·yellow 仅警告, 9/15 转正):
+   .githooks/pre-commit + scripts/canonical/pre-commit 由 `--commit --strict` 改回 `--commit`
+   (原写法与拍板冲突, 且导致内容类文件因存量 orange 命中无法提交)

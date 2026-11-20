@@ -1,0 +1,79 @@
+{
+ "slug": "gang-run-card-boxes",
+ "name_en": "Gang-Run White Card Boxes",
+ "category_slug": "packaging",
+ "category_name_en": "Packaging",
+ "current_body_en": "Gang-run white card boxes from ZprintPro — shared die-cut mold cuts cost 40-60% vs custom. 4 paper stocks (350g/400g single-side, 375g silver card, 375g holographic silver), 3 box styles (airplane/lock-bottom/double-tuck), 8 standard sizes from 60x40x20mm to 200x150x80mm. 500-10,000 piece runs, 8-15 day production (consolidated gang-run production, no rush orders). Matte or gloss lamination standard, optional foil/UV/embossing/lamination upgrades. ISO 9001 certified factory in Asia, DHL Express 2-4 day USA delivery. ZprintPro 15+ Years serving 15,000+ Clients across 100+ Countries, with Free Design Mockup, Free Sample Approval, FedEx Ground 5-7 day USA delivery.",
+ "current_body_words": 91,
+ "product": {
+  "descriptionEn": "Gang-run white card boxes from HK$0.03/pc, shared die-cut mold, no die-cut fee, 40-60% lower cost, 500pc MOQ, 8-12 day lead time, free shipping over $500. 4 paper stocks, 3 box styles, 8 standard sizes. ZprintPro Hong Kong. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations",
+  "price_range": "HK$129-17,214",
+  "minQuantity": 500,
+  "specs": {
+   "material": "350g/400g 單粉卡(超高松) / 375g 銀卡紙 / 375g 鐳射銀卡",
+   "size": "60x40x20 / 80x60x35 / 100x70x35 / 100x80x120 / 120x80x40 / 150x100x60 / 150x50x100 / 200x150x80 mm (8 檔標準尺寸, 飛機盒/扣底盒/雙插盒 3 種盒型)",
+   "printMethod": "四色柯式印刷 + 覆光膜/啞膜",
+   "finishing": "燙金 / UV 局部 / 擊凸 / 貼膠片 / 印白墨(銀卡類) / 逆向 UV(鐳射銀卡類)"
+  },
+  "materials": "",
+  "features": [
+   "【免刀模費】固定刀模共用, 拼版生產成本直降 40-60%",
+   "【4 種紙材】350g 單粉卡(超高松) / 400g 單粉卡 / 375g 銀卡紙 / 375g 鐳射銀卡",
+   "【3 種盒型】飛機盒 / 普通扣底盒 / 雙插盒, 8 檔標準尺寸(60x40x20 ~ 200x150x80mm)",
+   "【500-10,000 枚】湊版起印, 中小批量最優解",
+   "【8-15 天交期】湊版生產, 不接急件, 如實標註",
+   "【覆膜工藝】啞膜 / 光膜可選;銀卡類含印白墨 + 逆向 UV",
+   "【加值工藝】可選燙金 / UV / 擊凸 / 貼膠片, 提升品牌質感"
+  ]
+ },
+ "category_conversion_en": {
+  "title": "B2B Custom Packaging 6-Step Workflow (With Sampling)",
+  "steps": [
+   {
+    "title": "Instant AI Quote",
+    "desc": "Enter box type, qty & size — get priced in 30 seconds"
+   },
+   {
+    "title": "Pre-Production Sample",
+    "desc": "Physical sample to verify colour, structure and fit"
+   },
+   {
+    "title": "Artwork Sign-Off",
+    "desc": "Confirm print files, materials and production specs"
+   },
+   {
+    "title": "Bulk Production",
+    "desc": "8-15 day factory run with full QC checkpoints"
+   },
+   {
+    "title": "Pre-Shipment Inspection",
+    "desc": "Random sampling before dispatch for quality assurance"
+   },
+   {
+    "title": "Delivery & Handover",
+    "desc": "1-2 day SF in HK, 2-4 day DHL to worldwide"
+   }
+  ]
+ },
+ "category_gsc_words_en": [
+  "cosmetic packaging low minimums (imp 6, pos 97.3)",
+  "out of the box ii poster print (imp 4, pos 72.5)",
+  "get a free quote for cosmetic packaging (imp 3, pos 57)",
+  "box kraft paper (imp 3, pos 59.3)"
+ ],
+ "regional_en": {
+  "trust": "ISO 9001 certified production · 30-second AI quote · free digital proof · no setup fees · free design mockup",
+  "shipping": "DHL Express / FedEx 3-5 days to the USA, 2-4 days to Japan · free shipping on US orders over $99 · worldwide delivery to 50+ countries",
+  "cta": "Ready to order? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
+ },
+ "rules": [
+  "只许从 4 个真实数据源组装: ① 本包 product 的 descriptionEn/specs/features/price_range/minQuantity ② 本包 category 的 conversion orderFlow 场景 (若有) ③ 现有 en body 的事实 (数字只能用它已含的) ④ 本包 GSC 词自然织入 1-2 次",
+  "禁止编造: 数字/认证/交期/客户名/行业事实 (价格只能用 price_range, 交期只能用 body/conversion 已有口径 3-5 天/2-4 天等)",
+  "禁止跨 SKU 复制同一段文字 — 每个 SKU 组装结果必须唯一 (同品类相邻 SKU 也禁整段雷同)",
+  "字数: 新 body ≥ 180 词 (英文词数, 含 FAQ 段); 结构 = 引言段 + 场景段 2-3 段 (含品类 GSC 词自然出现 1-2 次) + 材質/規格段 (从 specs/features 事实转英文散文) + 收費/交期段 (用 price_range/minQuantity + 已有交期口径) + **FAQ** 段 (2-3 问, 从现有 FAQ/事实改写, 禁新数字) + 結尾 CTA 段",
+  "段落用 \\n\\n 分隔; FAQ 段用 **FAQ** 开头, 问题用 **Q1: ...** 加答案",
+  "en 内容红线: 不出现 名片/business card (§0.0); 不出现「深圳」/「Shenzhen」作供应商前缀 (可用 \"Asia factory\"); 不出现简体中文; 不写 \"Hong Kong\" 作目标市场词",
+  "不要修改 title/description/h1/keywords — 只产出 body",
+  "输出 JSON: {\"slug\": \"<slug>\", \"body\": \"<完整 en body>\"}"
+ ]
+}

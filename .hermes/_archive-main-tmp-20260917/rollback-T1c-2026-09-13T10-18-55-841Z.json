@@ -1,0 +1,279 @@
+{
+ "at": "2026-09-13T10-18-55-841Z",
+ "note": "T1c 回滚映射 (token 级)",
+ "items": [
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "FSC-C123456-ZP2024",
+   "before": "FSC-C123456-ZP2024",
+   "after": "FSC",
+   "offset": 583186
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "FSC-C123456-ZP2024",
+   "before": "FSC-C123456-ZP2024",
+   "after": "FSC",
+   "offset": 583910
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 196162
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 583142
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 583600
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 583868
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 585221
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "FSC-C123456",
+   "before": "FSC-C123456",
+   "after": "FSC",
+   "offset": 644474
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "FSC-C123456",
+   "before": "FSC-C123456",
+   "after": "FSC",
+   "offset": 644729
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "行业",
+   "before": "行业",
+   "after": "行業",
+   "offset": 442119
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "行业",
+   "before": "行业",
+   "after": "行業",
+   "offset": 443106
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "行业",
+   "before": "行业",
+   "after": "行業",
+   "offset": 443310
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "token": "行业",
+   "before": "行业",
+   "after": "行業",
+   "offset": 444561
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "token": "ZprintPro (ZprintPro)",
+   "before": "ZprintPro (ZprintPro)",
+   "after": "ZprintPro",
+   "offset": 635291
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "token": "FSC-C123456-ZP2024",
+   "before": "FSC-C123456-ZP2024",
+   "after": "FSC",
+   "offset": 918404
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "token": "FSC-C123456-ZP2024",
+   "before": "FSC-C123456-ZP2024",
+   "after": "FSC",
+   "offset": 919571
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 918321
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 919119
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 919510
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 922359
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "token": "FSC-C123456",
+   "before": "FSC-C123456",
+   "after": "FSC",
+   "offset": 979236
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "token": "FSC-C123456",
+   "before": "FSC-C123456",
+   "after": "FSC",
+   "offset": 1000276
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "token": "FSC-C123456",
+   "before": "FSC-C123456",
+   "after": "FSC",
+   "offset": 1000710
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "ZprintPro(ZprintPro)",
+   "before": "ZprintPro(ZprintPro)",
+   "after": "ZprintPro",
+   "offset": 116699
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "ZprintPro (ZprintPro)",
+   "before": "ZprintPro (ZprintPro)",
+   "after": "ZprintPro",
+   "offset": 197578
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "ZprintPro (ZprintPro)",
+   "before": "ZprintPro (ZprintPro)",
+   "after": "ZprintPro",
+   "offset": 203918
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "ZprintPro (ZprintPro)",
+   "before": "ZprintPro (ZprintPro)",
+   "after": "ZprintPro",
+   "offset": 210612
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "ZprintPro (ZprintPro)",
+   "before": "ZprintPro (ZprintPro)",
+   "after": "ZprintPro",
+   "offset": 217719
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "ZprintPro (ZprintPro)",
+   "before": "ZprintPro (ZprintPro)",
+   "after": "ZprintPro",
+   "offset": 223724
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "ZprintPro (ZprintPro)",
+   "before": "ZprintPro (ZprintPro)",
+   "after": "ZprintPro",
+   "offset": 237997
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "FSC-C123456-ZP2024",
+   "before": "FSC-C123456-ZP2024",
+   "after": "FSC",
+   "offset": 608165
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "FSC-C123456-ZP2024",
+   "before": "FSC-C123456-ZP2024",
+   "after": "FSC",
+   "offset": 608941
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 608120
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 608605
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 608895
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "FSC C123456",
+   "before": "FSC C123456",
+   "after": "FSC",
+   "offset": 610317
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "FSC-C123456",
+   "before": "FSC-C123456",
+   "after": "FSC",
+   "offset": 651921
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "FSC-C123456",
+   "before": "FSC-C123456",
+   "after": "FSC",
+   "offset": 668047
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "token": "FSC-C123456",
+   "before": "FSC-C123456",
+   "after": "FSC",
+   "offset": 668320
+  }
+ ]
+}

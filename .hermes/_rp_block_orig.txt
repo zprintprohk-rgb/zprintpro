@@ -1,0 +1,298 @@
+const redPacketsContent: Record<string, CategoryLocaleContent> = {
+  'zh-hk': {
+    // 2026-08-22 v3.13 T20: 利是封 CNY 备货 (e-print HK$160/100 事实锚, 我方 HK$1.2/個@1000)
+    featuredSnippet: '利是封印刷訂製 100 個起：燙金/燙銀/壓凸/UV, 120g-300g 紅卡, 企業 LOGO 客製, HK$1.2/個起 (1000 個), 3 個工作天. 11 月前落單享早鳥價. 對比 e-print HK$1.6/個 (100 個), 企業批量更平.',
+    lastUpdated: '2026-08-22',
+    h2: '利是封 / 利是封印刷 / 利是封訂製 / 紅包袋 / 訂製利是封 — 燙金燙銀, 100 個起, 企業 LOGO 客製, 11 月早鳥',
+    coreAdvantages: {
+      title: '核心競爭優勢',
+      items: [
+        {
+          heading: '1. 傳統工藝與現代設計結合，利是封變身品牌精品',
+          points: [
+            '提供燙金、燙銀、浮雕、立體擊凸、UV、雷射切割等傳統工藝，讓利是封成為收藏級精品',
+            '滿足「利是封印刷 香港」、「燙金利是封」、「定制利是封」、「Red packet printing」等高搜索量關鍵詞',
+            '適合企業春節贈禮、婚慶利是封、百日宴、開業利是封等傳統節慶場景',
+          ],
+        },
+        {
+          heading: '2. 小批量高品質，企業定制首選',
+          points: [
+            '500 個起訂（數碼印刷），適合中小企業和初創公司製作春節贈禮',
+            '5,000 個以上柯式印刷，單價低至 HK$0.8/個，適合大型企業和品牌推廣',
+            '支持可變數據印刷，每個利是封可以印不同員工姓名或不同祝福語（個性化贈禮）',
+          ],
+        },
+        {
+          heading: '3. 專業設計 + 傳統元素，傳遞文化與祝福',
+          points: [
+            '專業設計師深谙傳統文化，將生肖、花卉、吉祥圖案融入現代設計',
+            '提供傳統「福」字、招財進寶、年年有餘等經典圖案，也支持完全原創設計',
+            '多種封口方式：傳統糊口、自黏封口、磁石封口，兼顧傳統與創新',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質工藝詳解',
+      subtitle: '利是封常用紙張與工藝',
+      columns: ['紙張類型', '關鍵特性', '適用場景'],
+      rows: [
+        { material: '128g 銅版紙', features: '色彩鮮豔｜經濟實惠｜適合大量印刷', scenarios: '企業贈禮｜促銷派發｜一般節慶｜預算有限' },
+        { material: '200g 白卡紙', features: '挺度好｜手感厚實｜印刷精細', scenarios: '高端品牌｜VIP 贈禮｜收藏級｜婚慶利是封' },
+        { material: '珠光紙', features: '珍珠光澤｜高級感｜獨特視覺', scenarios: '奢侈品｜珠寶品牌｜高端酒店｜私人定制' },
+        { material: '紋理紙', features: '觸感獨特｜藝術質感｜差異化', scenarios: '文創品牌｜設計師品牌｜藝術機構｜特色利是封' },
+        { material: '環保再生紙', features: '環保理念｜社會責任｜品牌正面形象', scenarios: '環保企業｜NGO｜社會責任項目｜綠色品牌' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工選項',
+      items: [
+        { name: '燙金／燙銀', description: '傳統工藝，金屬光澤增添節日氣氛和高級感，經典永不過時' },
+        { name: '浮雕擊凸', description: '圖案或文字立體浮凸，無需油墨即可呈現質感，觸感記憶深刻' },
+        { name: '立體工藝', description: '3D 立體效果，讓利是封從平面變身立體藝術品，收藏價值極高' },
+        { name: '雷射切割', description: '精細圖案鏤空切割，光線透過呈現夢幻效果，適合高端定制' },
+        { name: '局部 UV', description: '重點圖案高光凸顯，觸感立體，視覺層次豐富' },
+        { name: '香味印刷', description: '印刷時加入香味墨水，打開利是封即散發淡淡花香，驚喜感十足' },
+      ],
+    },
+    techSpecs: {
+      title: '技術參數詳解',
+      items: [
+        { label: '標準尺寸', value: '小號(80×160mm)、中號(90×170mm)、大號(100×190mm)，支持完全訂製' },
+        { label: '起訂量', value: '500 個起訂（數碼印刷），5,000 個以上柯式印刷更經濟' },
+        { label: '交期', value: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天（數碼）' },
+        { label: '檔案要求', value: 'AI / PDF，300dpi，CMYK，預留 3mm 出血位，建議燙金部分單獨標註' },
+        { label: '紙張選擇', value: '128g–200g 銅版紙／白卡紙；珠光紙、紋理紙、環保再生紙等特殊紙' },
+      ],
+    },
+    serviceNodes: {
+      title: '本地化服務節點',
+      items: [
+        { title: '傳統圖案庫', description: '提供「福」字、招財進寶、年年有餘等 100+ 傳統圖案，方便快速設計' },
+        { title: '生肖設計服務', description: '每年推出生肖主題利是封設計，融入當年生肖元素和現代設計美學' },
+        { title: '企業定制諮詢', description: '專業顧問為企業定制利是封方案，從設計到印刷一站式服務' },
+      ],
+    },
+    buyingGuide: {
+      title: '利是封選購指南',
+      paragraphs: [
+        '選擇利是封時，首先要考慮用途和預算。企業大量贈禮推薦 128g 銅版紙配合燙金工藝，經濟且體面；高端品牌 VIP 贈禮推薦 200g 白卡紙或珠光紙配合浮雕工藝，質感極佳；文創品牌推薦紋理紙或環保再生紙，傳遞品牌理念。',
+        '工藝選擇是利是封的靈魂。燙金是最經典的選擇，適合傳統節慶；浮雕擊凸增添觸感記憶；立體工藝和雷射切割適合高端定製，收藏價值高。建議至少選擇一種特色工藝，讓利是封從普通變身精品。',
+        '時間規劃是利是封印刷的關鍵。建議提前 1–2 個月開始準備設計和印刷，避開春節前的印刷高峰期。我們提供生肖設計服務和傳統圖案庫，幫助您快速完成設計。',
+        '「利是封 印刷 香港」「定製 利是封」流量集中在農曆新年前；零售禮券與銀行客戶禮品通常要求色彩穩定與批量一致，宜提早鎖定燙金電鍍版與紙張批次，並為港九新界多點收件預留分貨時間。',
+      ],
+    },
+    faq: [
+      { q: '利是封訂製幾多個起？燙金要唔要加錢？', a: '100 個起訂。燙金、擊凸、UV、鏤空全部工藝可選，11 月前落單保證農曆新年前到貨，免費 4 小時打稿，3-5 個工作天交貨。' },
+      { q: '利是封印刷最低多少個起？', a: '500 個起訂（數碼印刷）。5,000 個以上柯式印刷更經濟，單價低至 HK$0.8/個。' },
+      { q: '利是封有哪些紙張選擇？', a: '128g 銅版紙、200g 白卡紙、珠光紙、紋理紙、環保再生紙。' },
+      { q: '可以燙金或浮雕嗎？', a: '可以。燙金、燙銀、浮雕擊凸、立體工藝、雷射切割、局部 UV 等多種工藝均可選擇。' },
+      { q: '利是封最快多久可以取？', a: '數碼印刷 3–5 天；柯式印刷 5–7 天；急件 2–3 天。' },
+      { q: '可以定制企業利是封嗎？', a: '可以。專業設計師為企業定制品牌利是封，融入 LOGO、品牌色彩和祝福語。' },
+      { q: '可以印不同祝福語嗎？', a: '可以。支持可變數據印刷，每個利是封可以印不同員工姓名或不同祝福語。' },
+      { q: '利是封的尺寸可以定制嗎？', a: '可以。標準尺寸有小號、中號、大號，也支持完全訂製尺寸。' },
+      { q: '建議什麼時候開始印利是封？', a: '建議提前 1–2 個月準備，避開春節前的印刷高峰期。' },
+      { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。可按總部／分店地址分批配送；大批利是封建議木托或箱規出貨以利搬運。旺季車隊緊張時請盡早預約送貨時段。' },
+      { q: '可以先報價再給設計檔嗎？', a: '可以。請提供成品尺寸、數量、紙材、是否需要燙金／浮雕／立體工藝及封口方式；可先取得分段報價，定稿後再提交 AI／PDF 並標註燙金線條與出血。' },
+    ],
+  },
+  en: {
+    // 2026-08-22 v3.13 T20: Red Packet CNY
+    featuredSnippet: 'Custom red packet printing from 100 pcs: foil stamping, embossing, UV. Corporate logo red envelopes from US$0.15/pc at 1,000 pcs. CNY 2027 (Feb 6) order by November for early-bird pricing.',
+    lastUpdated: '2026-08-22',
+    h2: 'Red Packet Printing / Custom Red Packets / Chinese New Year Envelopes / Foil Stamped Red Packets — From 100 pcs, Corporate Logo, CNY 2027 Early-Bird',
+    coreAdvantages: {
+      title: 'Why Choose ZprintPro for Red Packets?',
+      items: [
+        {
+          heading: '1. Traditional Craft Meets Modern Design — Red Packets as Collectible Art',
+          points: [
+            'Foil stamping, embossing, 3D debossing, UV, and laser cutting transform red packets into collectible art pieces.',
+            'Covers high-search keywords: "red packet printing", "foil stamped red packets", "custom red packets", "lai see printing".',
+            'Ideal for corporate CNY gifts, wedding red packets, baby shower packets, and grand opening packets.',
+          ],
+        },
+        {
+          heading: '2. Small Batch, High Quality — Corporate Customization Choice',
+          points: [
+            '500 pcs minimum (digital printing) — ideal for SMEs and startups creating CNY gifts.',
+            '5,000+ pcs offset printing, unit price as low as US$0.10/pc for large enterprises and brand campaigns.',
+            'Variable data printing supported — each packet can feature different employee names or blessings (personalized gifting).',
+          ],
+        },
+        {
+          heading: '3. Professional Design + Traditional Elements — Conveying Culture & Blessings',
+          points: [
+            'Professional designers deeply understand traditional culture, integrating zodiac signs, florals, and auspicious patterns into modern design.',
+            'Classic patterns: "Fu" character, wealth & prosperity, surplus year after year — plus fully original custom designs.',
+            'Multiple sealing options: traditional gummed flap, self-adhesive seal, magnetic seal — balancing tradition and innovation.',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: 'Material & Craftsmanship Guide',
+      subtitle: 'Common Red Packet Papers and Crafts',
+      columns: ['Paper Type', 'Key Features', 'Best For'],
+      rows: [
+        { material: '128gsm Art Paper', features: 'Vibrant colors | Economical | Great for large quantities', scenarios: 'Corporate gifts | Promotional distribution | General festivals | Budget-conscious' },
+        { material: '200gsm White Card', features: 'Good stiffness | Thick feel | Fine printing detail', scenarios: 'Premium brands | VIP gifts | Collectible grade | Wedding packets' },
+        { material: 'Pearl Paper', features: 'Pearlescent sheen | Premium feel | Unique visual', scenarios: 'Luxury goods | Jewelry brands | Premium hotels | Private custom' },
+        { material: 'Textured Paper', features: 'Unique tactile feel | Artistic quality | Differentiation', scenarios: 'Creative brands | Designer brands | Art institutions | Specialty packets' },
+        { material: 'Eco Recycled Paper', features: 'Eco-friendly | Social responsibility | Positive brand image', scenarios: 'Eco companies | NGOs | CSR projects | Green brands' },
+      ],
+    },
+    specialOptions: {
+      title: 'Special Finishing Options',
+      items: [
+        { name: 'Foil Stamping', description: 'Traditional craft with metallic sheen adds festive atmosphere and premium feel — a timeless classic.' },
+        { name: 'Embossing', description: 'Three-dimensional patterns or text without ink — pure tactile elegance with lasting memory.' },
+        { name: '3D Craft', description: 'Three-dimensional effects transform flat packets into three-dimensional artworks with extremely high collectible value.' },
+        { name: 'Laser Cutting', description: 'Fine laser-cut openwork with dreamy light-through effects — ideal for premium customization.' },
+        { name: 'Spot UV', description: 'Glossy raised highlights on key visuals for rich tactile and visual layers.' },
+        { name: 'Scented Printing', description: 'Fragrance ink releases subtle floral scent when opened — delightful surprise factor.' },
+      ],
+    },
+    techSpecs: {
+      title: 'Technical Specifications',
+      items: [
+        { label: 'Standard Sizes', value: 'Small(80×160mm), Medium(90×170mm), Large(100×190mm). Fully customizable.' },
+        { label: 'Minimum Order', value: '500 pcs (digital printing). 5,000+ recommended for offset (more economical).' },
+        { label: 'Turnaround', value: 'Standard 3–5 days (digital); 5–7 days (offset); Rush 2–3 days (digital).' },
+        { label: 'File Requirements', value: 'AI / PDF, 300dpi, CMYK, 3mm bleed. Recommend separate annotation for foil stamping areas.' },
+        { label: 'Paper Options', value: '128g–200gsm art / white card paper; pearl, textured, eco recycled specialty papers.' },
+      ],
+    },
+    serviceNodes: {
+      title: 'Local Service Points',
+      items: [
+        { title: 'Traditional Pattern Library', description: '100+ traditional patterns: "Fu" character, wealth & prosperity, surplus year after year — for quick design start.' },
+        { title: 'Zodiac Design Service', description: 'Annual zodiac-themed red packet designs integrating current year zodiac elements with modern design aesthetics.' },
+        { title: 'Corporate Custom Consultation', description: 'Professional consultants provide one-stop service from design to printing for corporate red packet solutions.' },
+      ],
+    },
+    buyingGuide: {
+      title: 'Red Packet Buying Guide',
+      paragraphs: [
+        'When choosing red packets, first consider usage and budget. Corporate bulk gifting suits 128gsm art paper with foil stamping — economical yet presentable. Premium brand VIP gifting suits 200gsm white card or pearl paper with embossing — excellent texture. Creative brands suit textured or eco recycled paper to convey brand values.',
+        'Craftsmanship is the soul of red packets. Foil stamping is the most classic choice for traditional festivals; embossing adds tactile memory; 3D craft and laser cutting suit premium customization with high collectible value. We recommend at least one special finish to transform ordinary packets into collectible art.',
+        'Timing is critical for red packet printing. We recommend starting design and printing 1–2 months in advance to avoid the pre-CNY printing rush. We offer zodiac design services and a traditional pattern library to help you complete designs quickly.',
+        'Searches for "lai see printing" and "custom red packet" concentrate before Lunar New Year. Retail gift vouchers and bank client gifts typically require color stability and batch consistency. Lock in foil-stamping plates and paper batches early, and reserve split-delivery time for multi-point receiving across multiple regions.',
+      ],
+    },
+    faq: [
+      { q: 'What is the minimum order for red packets?', a: '500 pcs (digital printing). 5,000+ pcs recommended for offset, as low as US$0.10/pc.' },
+      { q: 'What paper options are available?', a: '128gsm art paper, 200gsm white card, pearl paper, textured paper, eco recycled paper.' },
+      { q: 'Can red packets be foil stamped or embossed?', a: 'Yes. Foil stamping, embossing, 3D craft, laser cutting, spot UV, and scented printing all available.' },
+      { q: 'What is the fastest turnaround for red packets?', a: 'Digital: 3–5 days; Offset: 5–7 days; Rush: 2–3 days.' },
+      { q: 'Can you customize corporate red packets?', a: 'Yes. Professional designers create branded red packets integrating logos, brand colors, and blessings.' },
+      { q: 'Can each packet have different blessings?', a: 'Yes. Variable data printing allows different employee names or blessings per packet.' },
+      { q: 'Can red packet sizes be customized?', a: 'Yes. Standard sizes: small, medium, large. Fully custom sizes also supported.' },
+      // 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ
+      //   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。
+      //   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。
+      { q: 'When should I start printing red packets?', a: 'Recommend starting 1–2 months in advance to avoid the pre-CNY printing rush.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk red packet orders can be arranged for warehouse or office delivery.' },
+      { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit red packet size, paper type, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die line and foil stamping area annotations.' },
+      // 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en
+      { q: 'What is the CNY 2027 red packet procurement timeline and industry trends?', a: 'CNY 2027 (Feb 6) procurement timeline: August design → September sampling (HK$200 including shipping) → October mass production (5-7 day delivery) → Complete distribution before November (peak season +30% fees). Corporate scenarios: bank/insurance logo red packets 10,000-50,000/year, real estate client thank-you 5,000-20,000/year, food takeaway 1,000-5,000/year, education training 500-2,000/year. Industry trends: customization +58% (corporate logos from 18% to 28%), eco materials (FSC red card + soy ink) +42%. Compared to e-print HK$1.6/pc (100 pcs), our price is HK$1.2/pc (1000 pcs + foil stamping + early-bird 10% off = HK$1.08/pc).' },
+    ],
+  },
+  ja: {
+    h2: '紅包印刷 — 箔押し／エンボス／立体加工、500枚から、旧正月ギフトの定番',
+    coreAdvantages: {
+      title: 'ZprintPro 紅包印刷の強み',
+      items: [
+        {
+          heading: '1. 伝統工芸と現代デザインの融合、紅包をブランドアートに',
+          points: [
+            '箔押し、エンボス、立体デボス、UV、レーザーカットなどの伝統工芸で、紅包をコレクション級のアートに変身させます。',
+            '「紅包印刷」、「箔押し紅包」、「カスタム紅包」、「利是封」などの高検索ボリュームキーワードをカバー。',
+            '企業の旧正月ギフト、結婚式紅包、百日祝い、開業紅包などの伝統的な祝祭シーンに最適。',
+          ],
+        },
+        {
+          heading: '2. 小ロット高品質、企業カスタマイズの第一選択',
+          points: [
+            '500枚から（デジタル印刷）。中小企業やスタートアップの旧正月ギフト作成に最適。',
+            '5,000枚以上はオフセット印刷で、単価HK$0.8／枚までお得。大企業やブランドキャンペーンに最適。',
+            '可変データ印刷に対応。1枚ずつ異なる従業員名や祝福の言葉が可能（パーソナライズギフト）。',
+          ],
+        },
+        {
+          heading: '3. プロデザイン＋伝統要素で、文化と祝福を伝える',
+          points: [
+            'プロのデザイナーが伝統文化を深く理解し、干支、花柄、縁起の良い模様を現代デザインに統合。',
+            '「福」字、招財進寶、年年有余などの古典的な模様を提供。完全なオリジナルデザインも対応。',
+            '複数の封口方式：伝統的な糊付け、両面テープ封口、磁石封口。伝統と革新の両立。',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質・工法ガイド',
+      subtitle: '紅包によく使われる紙と工芸',
+      columns: ['紙タイプ', '主な特徴', '最適な用途'],
+      rows: [
+        { material: '128gコート紙', features: '発色鮮やか｜手頃｜大量印刷向き', scenarios: '企業ギフト｜プロモ配布｜一般祝祭｜予算重視' },
+        { material: '200g白カード紙', features: 'かし性良好｜厚みのある手触り｜印刷精度高', scenarios: '高級ブランド｜VIPギフト｜コレクション級｜結婚式紅包' },
+        { material: 'パール紙', features: 'パール光沢｜高級感｜独特の視覚効果', scenarios: '高級品｜ジュエリーブランド｜高級ホテル｜プライベート' },
+        { material: 'テクスチャ紙', features: '独特の触感｜アート感｜差別化', scenarios: 'クリエイティブブランド｜デザイナーブランド｜アート機関' },
+        { material: 'エコ再生紙', features: 'エコフレンドリー｜社会的責任｜ブランドポジティブ', scenarios: 'エコ企業｜NGO｜CSRプロジェクト｜グリーンブランド' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工オプション',
+      items: [
+        { name: '箔押し', description: '伝統工芸で金属光沢が季節感と高級感を演出。時代を超えた定番。' },
+        { name: 'エンボス', description: 'インクなしでパターンや文字を立体的に表現。触感の記憶に残ります。' },
+        { name: '立体加工', description: '3D立体効果で平面の紅包を立体アートに。コレクション価値が極めて高い。' },
+        { name: 'レーザーカット', description: '細かな模様をレーザーでレーザーカット。光が透過して幻想的な効果。高級カスタムに最適。' },
+        { name: '局部UV', description: '重要なビジュアルを光沢で強調。触感も立体的で、視覚的な層が豊か。' },
+        { name: '香り付き印刷', description: '香りインクを使用。紅包を開くと微かな花香が広がり、驚きの演出。' },
+      ],
+    },
+    techSpecs: {
+      title: '技術仕様',
+      items: [
+        { label: '標準サイズ', value: '小(80×160mm)、中(90×170mm)、大(100×190mm)。完全カスタマイズ対応。' },
+        { label: '最小発注数', value: '500枚から（デジタル印刷）。5,000枚以上はオフセット印刷がお得。' },
+        { label: '納期', value: '標準3–5日（デジタル）。5–7日（オフセット）。急行2–3日（デジタル）。' },
+        { label: 'ファイル要件', value: 'AI／PDF、300dpi、CMYK、3mmのbleed。箔押し部分は別途注記を推奨。' },
+        { label: '紙の選択', value: '128g–200gコート紙／白カード紙。パール紙、テクスチャ紙、エコ再生紙など特殊紙。' },
+      ],
+    },
+    serviceNodes: {
+      title: 'ローカルサービス拠点',
+      items: [
+        { title: '伝統模様ライブラリ', description: '「福」字、招財進寶、年年有余など100以上の伝統模様を提供。デザインを迅速開始。' },
+        { title: '干支デザインサービス', description: '毎年の干支をテーマにした紅包デザイン。当年の干支要素と現代デザイン美学を統合。' },
+        { title: '企業カスタム相談', description: 'プロのコンシェルジュが企業の紅包ソリューションをデザインから印刷までワンストップで提供。' },
+      ],
+    },
+    buyingGuide: {
+      title: '紅包選び方ガイド',
+      paragraphs: [
+        '紅包を選ぶ際、まず用途と予算を考慮しましょう。企業の大量ギフトには128gコート紙に箔押しがおすすめで、手頃でありながら体裁が良いです。高級ブランドのVIPギフトには200g白カード紙またはパール紙にエンボスが最適で、質感が抜群です。クリエイティブブランドにはテクスチャ紙やエコ再生紙が適し、ブランドの理念を伝えます。',
+        '加工は紅包の魂です。箔押しは伝統的な祝祭に最も定番の選択。エンボスは触感の記憶を追加します。立体加工とレーザーカットは高級カスタムに適し、コレクション価値が高いです。少なくとも1つの特色ある加工を選び、普通の紅包をアートに変身させましょう。',
+        '紅包印刷のタイミングは重要です。デザインと印刷の準備を1–2ヶ月前から開始することをおすすめし、旧正月前の印刷ラッシュを回避します。当社は干支デザインサービスと伝統模様ライブラリを提供し、迅速なデザイン完成をサポートします。',
+        '「利是封 印刷」「定製 利是封」の検索は旧正月前に集中します。小売ギフト券や銀行顧客ギフトは通常、色彩安定性とロット均一性が要求されるため、早めに箔押し電鍋版と紙張ロットを確定し、港九新界の多点受取に対応する分貨時間を確保することをお勧めします。',
+      ],
+    },
+    faq: [
+      { q: '紅包印刷の最小発注数は？', a: '500枚から（デジタル印刷）。5,000枚以上はオフセット印刷がお得で、単価HK$0.8／枚まで。' },
+      { q: 'どんな紙がありますか？', a: '128gコート紙、200g白カード紙、パール紙、テクスチャ紙、エコ再生紙。' },
+      { q: '箔押しやエンボスはできますか？', a: 'はい。箔押し、エンボス、立体加工、レーザーカット、局部UV、香り付き印刷などが可能です。' },
+      { q: '紅包の最短納期は？', a: 'デジタル印刷3–5日。オフセット印刷5–7日。急行2–3日。' },
+      { q: '企業紅包のカスタマイズは可能？', a: 'はい。プロデザイナーがブランド紅包を作成。ロゴ、ブランドカラー、祝福の言葉を統合します。' },
+      { q: '異なる祝福の言葉は印刷できますか？', a: 'はい。可変データ印刷で、異なる従業員名や祝福の言葉を各紅包に印刷可能です。' },
+      { q: '紅包のサイズはカスタマイズできますか？', a: 'はい。標準サイズは小・中・大。完全カスタマイズサイズも対応。' },
+      { q: '紅包印刷はいつから始めるべき？', a: '1–2ヶ月前から準備を開始することをおすすめ。旧正月前の印刷ラッシュを回避します。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。紅包の大口注文は倉庫やオフィスへの配送も調整可能です。' },
+      { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず紅包サイズ、紙タイプ、数量、加工オプションをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが抜き型、箔押しエリアの注記をチェックします。' },
+      // 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → ja
+      { q: '2027 年旧正月紅包の調達タイムラインと業界トレンドは?', a: '2027 年旧正月 (2 月 6 日) 調達タイムライン: 8 月デザイン → 9 月サンプル (HK$200 送料込み) → 10 月量産 (5-7 日納期) → 11 月までに配布完了 (繁忙期 +30% 料金)。企業シーン: 銀行/保険ロゴ紅包 10,000-50,000 部/年、不動産顧客向けサンキュー 5,000-20,000 部/年、飲食デリバリー 1,000-5,000 部/年、教育研修 500-2,000 部/年。業界トレンド: カスタマイズ +58% (企業ロゴ 18% → 28%)、エコ素材 (FSC 紅カード + 大豆インク) +42%。対 e-print HK$1.6/部 (100 部)、我々 HK$1.2/部 (1000 部 + 箔押し + アーリーバード 10% OFF = HK$1.08/部)。' },
+    ],
+  },
+};

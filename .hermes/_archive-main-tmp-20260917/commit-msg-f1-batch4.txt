@@ -1,0 +1,42 @@
+fix(content): F1-batch-4 立即执行 - certNo + validUntil 全清空 + Markdown 链接解析修复 (K3 8/24 19:03 拍板)
+
+K3 8/24 19:03 拍板 2 件 P0:
+
+【修 1】certNo + validUntil 字段全清空 (3 locale 同步, 不留联系方式)
+- K3 拍板 "证书号不要, 谁傻, 把证书号放网上公开. 只要 ISO 9001 认证描述就可以了, 可以做FSC纸张就可以了"
+- 之前 commit d2ea7f1 用了 "Contact for details" / "詳詢客服" / "詳細はお問い合わせください" 留联系方式 — K3 18:35 拍板反转成"12 件事不动", 但 19:03 明确"证书号不要"
+- 修复: 3 locale credentials 字段全改 issuer: '—' + certNo: '' + validUntil: '' + scope 纯描述性
+  - zh-hk L67-71 + en L201-205 + ja L335-339 全部改
+  - 保留认证描述: ISO 9001 品質管理體系認證 / FSC 森林認證紙張供應 / VOC 排放 ≤ 50% 行業標準
+  - 删除 issuer (TÜV Rheinland / Forest Stewardship Council / SGS) — 也不展示认证机构
+  - 删除 validUntil (2027-08-15 / 2028-04-20 / 2027-12-31) — 不展示有效期
+  - 删除 certNo (01 100 150 1234 / FSC-C123456 / SGS-CNP-2024-001) — 不展示证书号
+
+【修 2】parseInlineLinks 工具 + about.tsx 8 处 Markdown 渲染修复
+- 根因 (K3 19:03 诊断): 数据层存 Markdown 字符串 ([text](url)), 前端组件用 {desc} 直接渲染纯文本, 未解析
+- 修复方案 C (K3 报告): 写轻量解析函数, 用正则 [text](url) → <Link> 或 <a>
+
+- 新建 src/utils/parseInlineLinks.tsx (2.6KB, React 组件):
+  - 内部链接 /xxx → Next.js <Link>
+  - 外部链接 https://xxx → <a target="_blank">
+  - 锚点链接 #xxx → <a>
+  - 普通文本 → 纯文本节点
+  - 业务 0 改动红线: 不动数据层, 1 改 1 验证, 不爆炸半径
+
+- 改 about.tsx 3 渲染位置 (1 import + 3 处 desc):
+  - import { parseInlineLinks } from '@/utils/parseInlineLinks'
+  - L796 advantages.map: {adv.desc} → {parseInlineLinks(adv.desc)} (3 card)
+  - L832 teams.map: {team.desc} → {parseInlineLinks(team.desc)} (3 card)
+  - L853 industries.map: {ind.desc} → {parseInlineLinks(ind.desc)} (8 card)
+  - 总 8 处 Markdown 泄漏 (L42 + L43 + L50 + L98-102 5 industries) 全部解析为 <Link> 或 <a>
+
+8/25 P1 (K3 拍板后):
+- 数据层重构为结构化数组 { label, href }[] (K3 报告方案 B)
+- check-content-guard.js 加 Rule 5 (Raw Markdown link syntax 红色)
+- 全站 grep 排查其他页面 Markdown 渲染
+
+SOP-10 第 5 款新增 (K3 8/24 19:03 拍板): 任何 user-facing 文本含 [text](url) Markdown 语法, 必须用 parseInlineLinks 工具解析, 禁止 <p>{text}</p> 直接渲染纯文本
+
+3 闸门: encoding 0 / tsc 54 → 54 (pre-existing, 无新增, L75-76 + L210 + L344 多余 `],` 修复) / diff 2 文件 (about/page.tsx 19 行增 + 12 行减 + parseInlineLinks.tsx 80 行新)
+
+业务 0 改动红线 (K3 8/22 17:58 F0): 不删 SKU/文案/长文本字段, 改字段值 + 改渲染方式, 1 改 1 验证, 改字段值不改结构

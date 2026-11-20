@@ -1,0 +1,57 @@
+feat(i18n): Step 4 — products.ts 规格三栏三语化 (方案 (a), 不动类型契约) + 2 笔真实 red 清零
+
+队列依据: K3 2026-09-19 批准「products.ts 走方案 (a) 并授权派发」
+
+── 问题 ──
+src/data/products.ts 的 specs 三栏 (material / printMethod / finishing) 为**中文单值、无分语系**
+⇒ 所有 en / ja 产品页的「Specifications + material」区块都显示中文 (跨语系污染族, 门童 #4 原单向规则未覆盖)
+
+── 规模 (★ 修正派活前提) ──
+派活给定 90 SKU / 270 栏 / 223 唯一字串; 实跑 = **95 SKU / 285 栏 / 238 唯一字串**
+根因: 执行层自己的 size-products-specs.cjs 用 split(/\n  \{\n/) 切块, 漏掉 5 个缩排更深的 SKU
+      (doujinshi-printing / acrylic-keychain / can-badge / postcard-set / eco-tote-bag = 15 栏)
+本批按真值 238 条全做 (非 223)
+
+── 修法 (K3 方案 (a): 补数据, 不改机制) ──
+新增 src/data/product-specs-i18n.ts (238 条映射 + localizeSpecValue/localizeSpecs, 缺失 fallback 中文原文)
+  · products.ts 三栏**保持中文单值 = 事实源**, 类型契约不变 (不动 data layer schema)
+  · key = 规格原文 ⇒ 与 ProductTabs 既有 specsBySlug (按 slug 的 16 条粗粒度策展) key 空间不同, 故不并入
+  · 渲染侧 4 档只接线: ProductPageV9 / components/product/ProductTabs / v9/CategoryPageV9 / home/HotProducts
+  · 生成器 gen-spec-i18n.cjs: 计数断言 238 + anchor 形状断言 + .bak, 断言未过不写盘 (--check 幂等已验)
+  · zh-hk 值 = 原文逐字 (港式繁体本身即正确) ⇒ zh-hk 渲染输出**零改动 (零 churn)**
+
+── 交付层独立复核 (不采信专项单元自检) ──
+① 映射解析 **238 条** (与自报一致)
+② **zh-hk 值 ≠ 原文 条数 = 0** ✅ (零 churn 前提**成立**, 这是本批最关键安全属性)
+③ **en 值含 CJK = 0** ✅ (未把中文塞进 en 值)
+④ **products.ts 238 个唯一值全部被映射覆盖, 0 遗漏** ✅
+⑤ ja 5 条「有汉字零假名」经逐条目视 = **正当日文技术短标签** (4色印刷 / 屋外PVC／PET／合成紙 / 1色〜4色 等), 非缺陷
+⑥ tsc = **54** ✅ | 门禁汇总 **🔴 0** (由 2 归零) | 基线档 **total 1459→1448, files 32→30 (−11)**
+⑦ 门童 #4 注入回放测试 **10 PASS / 0 FAIL** ✅ (未被破坏)
+
+── 2 笔真实 red 清零 (§6, 含路径更正) ──
+专项单元先前给的 src/components/CompareTable.tsx **不存在**; 真值 = **src/components/geo/CompareTable.tsx**
+两笔均为 zh-hk 值内真简体 ⇒ 按**整值字形**修复 (只改一字会留半截简体):
+  CompareTable:57 caption → 'PVC、PP合成紙、銅版紙、牛皮紙的詳細對比'
+  whatsapp.ts:27 → 諮詢/報價/材質/數量/來源
+⇒ red **2 → 0**; 基线 −11 (CompareTable 6→0 / whatsapp 5→0)
+
+── 判断说明 (请 K3 复核) ──
+scripts/test-i18n-pollution-bidirectional.js 的 EXPECTED_RED 2→0: 该常量 = **当前已知 red 清册**,
+下调 = **变严** (red=0 而仍填 2 会让 test 6 假红), 非放宽判据。若 K3 认为该常量不属本批范围, 回滚 1 行即可。
+
+── 剩余/未达标 (不掩盖) ──
+(a) `size` 栏仍中文 (95 SKU / 73 唯一字串) —— 超本批三栏范围, 建议 Step 5 单独立项
+(b) PDP 规格栏名 `dt` (material/size/printMethod/finishing) 未本地化 —— 属既有状态, 改则 churn zh-hk 既有输出, 未动, 交 K3 定夺
+(c) 橙色 +5 (1562→1567) 全部归因 CRED_HEIDELBERG 232→237, 唯一来源 = 映射里「四色柯式印刷（海德堡）」一行 (原文即含品牌, 事实源); 若 K3 要求 en/ja 不出现第三方印机品牌, 改该条即消除, 未擅动
+(d) 16 条属**术语选型判断** (灰底白板→duplex board / 單粉卡(超高松)→one-side coated card / 易碎紙→tamper-evident / 導氣槽底紙→air-release liner / 相架→easel frame / 打扣→grommets 等), 报告 §5 有全表待母语者复核; 无一条以原文残留
+
+── 额外交付 ──
+en 值内中文原名全量明细: .hermes/logs/i18n-en-cjk-inventory-2026-09-19.md (80 行) + .csv (1138 逐笔) + token 表 (56 词)
+  1138 与基线 perRule.I18N_POLLUTION_EN=1138 逐数吻合
+  建议分两档: (A) 白名单仅 4 行专有名词 (beneficiaryCn 深圳市彩龍印刷包裝有限公司 / 唐运提 QR / 彩龍印刷);
+             (B) 建议清理占绝大部分 —— 整段繁中摘要/FAQ/JSON-LD 串入 en 值,
+                 其中 category-seo-content.ts:2150 是**整条繁中 FAQ 残留在 en 的 faq 数组内** (en 页会渲染中文 FAQ, 真缺陷)
+
+── 未动 (他 lane 未提交改动) ──
+src/app/[locale]/product/[slug]/page.tsx / src/components/category/CategoryProductCard.tsx / src/data/print-method-policy.ts

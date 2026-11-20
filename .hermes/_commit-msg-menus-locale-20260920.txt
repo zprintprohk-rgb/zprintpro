@@ -1,0 +1,55 @@
+fix(menus)+i18n: 起印量文案层口径对齐 + 13 处品牌/语种错配清账 (K3 2026-09-20 裁决执行)
+
+一、menus 文案层 DRIFT 10 处 (真值 SSoT = products.ts minQuantity/unitLabel)
+   数据来源: src/data/products.ts 实测 pvc/laminated/hardcover/drink minQuantity=10
+             (unitLabel 張/份/本/份), disposable=100, wedding=50
+   标题当量口径: scripts/guards/title-equiv.js (TITLE_MIN=50 / TITLE_MAX=57)
+   - pvc-menus/zh-hk      66 → 57  当量; 「50本起」→「10張起印」; 删 9 当量
+   - pvc-menus/ja         「100枚〜」→「10枚〜」
+   - laminated-menus/zh-hk 37 → 57 当量; 「10 份起」→「10份起」并补主词+场景
+   - laminated-menus/en    62 → 57 当量 (清重复词 "Laminated Durable")
+   - laminated-menus/ja    45 → 56 当量; 补「10枚〜」
+   - hardcover-menus/zh-hk 37 → 55 当量; 「10 本起」→「10本起」并补硬殼裝訂+场景
+   - hardcover-menus/en    62 → 57 当量 (清重复词 "Laminated Durable"; 實為硬殼非覆膜)
+   - hardcover-menus/ja    51 → 57 当量; 「100枚〜」→「10冊〜」
+   - drink-menus/zh-hk    「100本起」→「10本起」(真值 minQuantity=10)
+   - drink-menus/ja       「100枚〜」→「10枚〜」
+
+二、品牌-语种错配 13 处 (per 交生活书 §5 第 2 项)
+   - ja description 尾部挂 zh-hk 品牌「智印港」→ ZprintPro: 8 处
+     (certificates / magnetic-closure-gift-box / electronics-packaging-box /
+      kraft-paper-packaging-box / fruit-food-label-stickers / doujinshi-printing /
+      acrylic-keychain / can-badge)
+   - imageAlt 语种错配 5 处:
+     large-envelopes/ja (整条纯中文 FAQ 句) · exercise-books/ja · textbooks/ja (繁體「學校」→「学校」)
+     thick-greeting-cards-400g/en · foil-greeting-cards/en (日文串挂 en 名下)
+
+三、追加清出 4 处 imageAlt 内容错挂 (程序化复查发现, 不在原登记 13 处内)
+   - hardcover-menus/ja 挂着 pvc-menus 的中文句
+   - drink-menus/zh-hk + ja、disposable-menus/ja 挂着别 SKU 的中文 FAQ 句
+
+四、方法 (避坑 15 固化: 结构定位, 不猜归属)
+   全部替换由 scripts/apply-menus-locale-fix.cjs 执行: 每个 SKU 按其 "slug": { 段落配平花括号
+   定位到自己的 imageAlt 块 / ja.description, 块内旧串必须恰好命中 1 次, 新旧当量断言区间后才落盘;
+   dry-run 先跑, 命中数不符即跳过并报错(本轮 dry-run 当场拦下 3 处误定位)。
+
+验证 (全部实测)
+   - node scripts/audit-sku-locale.cjs → ja/en 段出现智印港 0 / zh-hk 段 ZprintPro 0 /
+     ja 段繁体专用字 0 / en 段 CJK 0
+   - node scripts/verify-menus.cjs → 10 处标题全绿 (仅余 disposable en/ja 原已不足 50, 未在本批范围)
+   - node scripts/sku-title-census.mjs → 无新增 TRIM (menus 6 SKU 均不在 TRIM 榜)
+   - npx tsc --noEmit → 54 = 基线 54 (持平)
+   - node scripts/check-encoding.js → 0
+   - node scripts/probe-skill-handover.mjs → 38 PASS / 0 FAIL
+
+未做 (留档, 不得声称已修)
+   - menus 数据层 description/body 仍写「50本起/100本起/100張」与「ISO 9001 認證」等无来源项,
+     与标题新口径矛盾 → 待 K3 或下一批处理 (per 避坑 18 只落一半)
+   - ja imageAlt 尚有约 28 处挂着 zh-hk 中文句 (量测口径见 .hermes/_tmp-hkfold.cjs), 属跨 SKU 系统性缺陷
+   - 本批未 push (30 min 间隔纪律, commit 留本地)
+
+数据来源:
+- src/data/products.ts minQuantity/unitLabel (实测 dump)
+- scripts/guards/title-equiv.js (当量 SSoT)
+- .hermes/reports/menus-drift-and-locale-mismatch-2026-09-20.md (交接清单)
+- docs/2026-09-20-handover-living-book.md §5 第 1/2 项

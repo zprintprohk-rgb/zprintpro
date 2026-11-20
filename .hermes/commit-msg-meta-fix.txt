@@ -1,0 +1,42 @@
+fix(blog): 线上 124 页 meta description 空白 — 渲染层读错字段名 (excerpt→description) + 门童 #20 规则 D
+
+队列依据: v10 §四 串行交付纪律 — 队列 A #3 寫真書 (commit 29f1afd9) 交付后的线上探针验收环节
+         发现该篇三语均无 meta description, 顺藤定位为全站渲染层缺陷 (非本篇内容问题)
+
+根因 (线上探针实测, 非推断):
+  src/app/[locale]/blog/[slug]/page.tsx:820 旧写法
+    meta?.description?.[locale] || legacyPost?.description || ''
+  但 BlogPostMeta 接口字段名是 excerpt (src/data/blog-posts.ts:53), 全仓 100 条 meta 条目
+  均用 excerpt, description 字段 0 条 ⇒ 第一项恒 undefined, 实际只剩 legacyPost.description
+  ⇒ 凡「只在 blog-posts.ts 注册 + blog-data JSON 有内容, 但不在 page.tsx 内联 legacyPosts
+     记录里」的文章, 线上 <meta name="description"> / og:description 完全空白 (SERP 无摘要)
+
+三道防线为何全漏 (与 §0.23.1 教训同源: 门童 0 命中 ≠ 线上干净):
+  ① page.tsx L1 有 // @ts-nocheck → tsc 门禁吞掉该类型错误 (tsc 54=54 持平, 恰好掩盖真缺陷)
+  ② 门童 #20 规则 C 只查 blog-data JSON 的 description 字段 (该字段一直是有) → 0 命中
+  ③ 门童 #20 规则 A/B 只查语言错配与重复词
+  ④ 全量线上探针实测: 201 个 HTTP200 blog URL 中 124 个缺 meta description
+     (另有 96 个请求 503 限流未测, 真实值高于 124)
+
+修复 (最小面, 零 churn):
+  description 解析优先序 = legacyPost.description → blog-data JSON description → meta.excerpt
+  legacyPost 仍居首 ⇒ 既有 77 个已有 description 的线上页面输出完全不变 (零 churn), 仅填补空白页
+
+独立复算 (双方法互证, 落地前完成):
+  方法 1 线上实测: 201 组合中 77 有 / 124 缺
+  方法 2 静态复算 (含 buying-guide / cluster 分支): 修前可解析 96/336, 修后 336/336
+  对帐: 124 处「不一致」恰好就是线上缺失的那 124 个组合; 修复后仍缺 = 0
+  ⇒ 两法一致: 线上每个缺失组合修复后均可解析, 77 个已有页面全部保持
+
+门禁补齐 (DoD 铁律 No fix without a rule):
+  scripts/guards/meta-description-guard.js 新增规则 D META_DESCRIPTION_RENDER_PATH (red)
+    D1 渲染页不得读取 BlogPostMeta.description (字段不存在, 恒 undefined = 静默失效)
+    D2 描述解析必须至少引用一个真实来源 (legacyPost / jsonEntry / meta.excerpt)
+  scripts/test-meta-description-guard.js 6 用例 6/6 PASS (含原事故写法正向控制)
+
+验收:
+  门童汇总 red 51 = 基线 (未新增) | 门童 #20 存量基线 120 不变, 0 新增
+  tsc 54 = 54 (基线持平) | esbuild 语法校验 OK (该文件 @ts-nocheck, 语法闸门不可省)
+  规则 D 对当前源码 0 命中; 对原事故写法 1 命中 (正向控制已固化为测试用例)
+
+★ 本条为真缺陷, 由队列 A #3 的交付验收流程 (线上探针) 捕获 — 门童全绿不等于交付完成

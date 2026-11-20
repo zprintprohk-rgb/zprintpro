@@ -1,0 +1,2172 @@
+{
+ "at": "2026-09-13T10:09:55.726Z",
+ "total": 301,
+ "byFile": {
+  "src/app/quote-desk/page.tsx": 1,
+  "src/app/[locale]/about/page.tsx": 5,
+  "src/app/[locale]/blog/page.tsx": 1,
+  "src/app/[locale]/blog/[slug]/page.tsx": 45,
+  "src/app/[locale]/cart/page.tsx": 1,
+  "src/app/[locale]/case-studies/page.tsx": 5,
+  "src/app/[locale]/category/[slug]/page.tsx": 1,
+  "src/app/[locale]/category/[slug]/v9/CategoryPageV9.tsx": 1,
+  "src/app/[locale]/category/[slug]/v9/TrustBadgeBlock.tsx": 1,
+  "src/app/[locale]/checkout/page.tsx": 1,
+  "src/app/[locale]/company-news/page.tsx": 1,
+  "src/app/[locale]/contact/page.tsx": 2,
+  "src/app/[locale]/faq/page.tsx": 1,
+  "src/app/[locale]/guide/[slug]/page.tsx": 6,
+  "src/app/[locale]/help-center/page.tsx": 1,
+  "src/app/[locale]/insights/hk-print-inquiry-index/page.tsx": 2,
+  "src/app/[locale]/layout.tsx": 4,
+  "src/app/[locale]/legal/page.tsx": 3,
+  "src/app/[locale]/order-confirmation/page.tsx": 1,
+  "src/app/[locale]/page.tsx": 1,
+  "src/app/[locale]/payment-methods/page.tsx": 1,
+  "src/app/[locale]/press-kit/page.tsx": 3,
+  "src/app/[locale]/privacy/page.tsx": 1,
+  "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx": 2,
+  "src/app/[locale]/quote/page.tsx": 1,
+  "src/app/[locale]/search/page.tsx": 1,
+  "src/app/[locale]/service-areas/page.tsx": 2,
+  "src/app/[locale]/services/catalog-printing-china/page.tsx": 8,
+  "src/app/[locale]/services/page.tsx": 1,
+  "src/app/[locale]/services/rush-printing-delivery/page.tsx": 1,
+  "src/app/[locale]/terms/page.tsx": 1,
+  "src/app/[locale]/trade-program/page.tsx": 5,
+  "src/components/category/CategoryConversionBlocks.tsx": 1,
+  "src/components/CategoryPillarContent.tsx": 1,
+  "src/components/home/HeroBanner.tsx": 1,
+  "src/components/insights/HKPrintInquiryIndex/OrganizationSchema.tsx": 2,
+  "src/components/layout/Footer.tsx": 2,
+  "src/components/layout/Header.tsx": 1,
+  "src/components/seo/GeoFooterText.tsx": 2,
+  "src/components/seo/RegionalContent.tsx": 2,
+  "src/components/services/RushHero.tsx": 1,
+  "src/data/blog-data/en.json": 1,
+  "src/data/blog-data/ja.json": 4,
+  "src/data/blog-data/zh-hk.json": 21,
+  "src/data/blog-posts.ts": 9,
+  "src/data/buying-guides.ts": 13,
+  "src/data/category-seo-content.ts": 2,
+  "src/data/pillar-content.ts": 9,
+  "src/data/product-seo.ts": 5,
+  "src/data/products.ts": 26,
+  "src/data/sku-seo-data.ts": 47,
+  "src/lib/h1-builder.ts": 6,
+  "src/lib/metadata.ts": 3,
+  "src/lib/quote-engine/desk.ts": 1,
+  "src/lib/seo/schema-extensions.ts": 7,
+  "src/lib/seo-keywords.ts": 6,
+  "src/lib/seo.ts": 17
+ },
+ "items": [
+  {
+   "file": "src/app/quote-desk/page.tsx",
+   "line": 396,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/about/page.tsx",
+   "line": 37,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/about/page.tsx",
+   "line": 38,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/about/page.tsx",
+   "line": 141,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/about/page.tsx",
+   "line": 344,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/about/page.tsx",
+   "line": 348,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/blog/page.tsx",
+   "line": 17,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 157,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 158,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 193,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 194,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 200,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 211,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 219,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 227,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 235,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 244,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 252,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 260,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 268,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 269,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 276,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 277,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 284,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 285,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 292,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 293,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 298,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 299,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 304,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 305,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 310,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 311,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 312,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 314,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 320,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 326,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 338,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 344,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 350,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 357,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 365,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 373,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 379,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 385,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 391,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 400,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 407,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 414,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 1069,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 1162,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 1165,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/cart/page.tsx",
+   "line": 11,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/case-studies/page.tsx",
+   "line": 33,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/case-studies/page.tsx",
+   "line": 246,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/case-studies/page.tsx",
+   "line": 257,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/case-studies/page.tsx",
+   "line": 279,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/case-studies/page.tsx",
+   "line": 301,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/category/[slug]/page.tsx",
+   "line": 559,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/category/[slug]/v9/CategoryPageV9.tsx",
+   "line": 794,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "en"
+  },
+  {
+   "file": "src/app/[locale]/category/[slug]/v9/TrustBadgeBlock.tsx",
+   "line": 118,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/checkout/page.tsx",
+   "line": 11,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/company-news/page.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/contact/page.tsx",
+   "line": 24,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/contact/page.tsx",
+   "line": 137,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/faq/page.tsx",
+   "line": 42,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/guide/[slug]/page.tsx",
+   "line": 58,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/guide/[slug]/page.tsx",
+   "line": 61,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/guide/[slug]/page.tsx",
+   "line": 80,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/guide/[slug]/page.tsx",
+   "line": 84,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/guide/[slug]/page.tsx",
+   "line": 103,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/guide/[slug]/page.tsx",
+   "line": 107,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/help-center/page.tsx",
+   "line": 11,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/insights/hk-print-inquiry-index/page.tsx",
+   "line": 27,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "?"
+  },
+  {
+   "file": "src/app/[locale]/insights/hk-print-inquiry-index/page.tsx",
+   "line": 29,
+   "form": "ジープリント ZprintPro",
+   "kind": "dual",
+   "locale": "?"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "line": 40,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "?"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "line": 42,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "?"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "line": 50,
+   "form": "ジープリント ZprintPro",
+   "kind": "dual",
+   "locale": "?"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "line": 52,
+   "form": "ジープリント ZprintPro",
+   "kind": "dual",
+   "locale": "?"
+  },
+  {
+   "file": "src/app/[locale]/legal/page.tsx",
+   "line": 35,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/legal/page.tsx",
+   "line": 158,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/legal/page.tsx",
+   "line": 163,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/order-confirmation/page.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/page.tsx",
+   "line": 81,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/payment-methods/page.tsx",
+   "line": 17,
+   "form": "ZprintPro 智印港",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/press-kit/page.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/press-kit/page.tsx",
+   "line": 13,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/press-kit/page.tsx",
+   "line": 141,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/privacy/page.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx",
+   "line": 307,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx",
+   "line": 684,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "en"
+  },
+  {
+   "file": "src/app/[locale]/quote/page.tsx",
+   "line": 20,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/search/page.tsx",
+   "line": 14,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/service-areas/page.tsx",
+   "line": 18,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/service-areas/page.tsx",
+   "line": 48,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/services/catalog-printing-china/page.tsx",
+   "line": 23,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/services/catalog-printing-china/page.tsx",
+   "line": 155,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/services/catalog-printing-china/page.tsx",
+   "line": 174,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/services/catalog-printing-china/page.tsx",
+   "line": 175,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/services/catalog-printing-china/page.tsx",
+   "line": 176,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/services/catalog-printing-china/page.tsx",
+   "line": 177,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/services/catalog-printing-china/page.tsx",
+   "line": 178,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/services/catalog-printing-china/page.tsx",
+   "line": 190,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/services/page.tsx",
+   "line": 25,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/services/rush-printing-delivery/page.tsx",
+   "line": 176,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/terms/page.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/app/[locale]/trade-program/page.tsx",
+   "line": 192,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/trade-program/page.tsx",
+   "line": 193,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/trade-program/page.tsx",
+   "line": 194,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/trade-program/page.tsx",
+   "line": 226,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/app/[locale]/trade-program/page.tsx",
+   "line": 234,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/components/category/CategoryConversionBlocks.tsx",
+   "line": 117,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/components/CategoryPillarContent.tsx",
+   "line": 413,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "en"
+  },
+  {
+   "file": "src/components/home/HeroBanner.tsx",
+   "line": 122,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/components/insights/HKPrintInquiryIndex/OrganizationSchema.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "?"
+  },
+  {
+   "file": "src/components/insights/HKPrintInquiryIndex/OrganizationSchema.tsx",
+   "line": 12,
+   "form": "ジープリント ZprintPro",
+   "kind": "dual",
+   "locale": "?"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 266,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 382,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/components/layout/Header.tsx",
+   "line": 323,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/components/seo/GeoFooterText.tsx",
+   "line": 22,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/components/seo/GeoFooterText.tsx",
+   "line": 30,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/components/seo/RegionalContent.tsx",
+   "line": 16,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/components/seo/RegionalContent.tsx",
+   "line": 30,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/components/services/RushHero.tsx",
+   "line": 10,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "?"
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "line": 485,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "en"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 104,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 412,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 508,
+   "form": "ジープリント ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 540,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 8,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 130,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 181,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 327,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 334,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 341,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 348,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 355,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 362,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 405,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 413,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 421,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 429,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 437,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 619,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 648,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 652,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 665,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 669,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 681,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 683,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1042,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1059,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1076,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1306,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1677,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1724,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1745,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1769,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1789,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 139,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 152,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 218,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 219,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 286,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 352,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 353,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 420,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 487,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 488,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 556,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 623,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "line": 624,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1749,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2571,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/pillar-content.ts",
+   "line": 58,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/pillar-content.ts",
+   "line": 60,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/pillar-content.ts",
+   "line": 64,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/pillar-content.ts",
+   "line": 96,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/pillar-content.ts",
+   "line": 98,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/pillar-content.ts",
+   "line": 102,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/pillar-content.ts",
+   "line": 134,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/pillar-content.ts",
+   "line": 136,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/pillar-content.ts",
+   "line": 140,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/product-seo.ts",
+   "line": 11,
+   "form": "ZprintPro 智印港",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/product-seo.ts",
+   "line": 40,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/product-seo.ts",
+   "line": 69,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/product-seo.ts",
+   "line": 98,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/product-seo.ts",
+   "line": 127,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 336,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 702,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 899,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1089,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1453,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1645,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1741,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2011,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2102,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2288,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2634,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3007,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3176,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3277,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3578,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3675,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4745,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7189,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7261,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7320,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7380,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7437,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7518,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7726,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7830,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7960,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 150,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 280,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 323,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 461,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 587,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 629,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 672,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 720,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 767,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 810,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 890,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 933,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1019,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1107,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1189,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1232,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1363,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1407,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1528,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1570,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1766,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1809,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2004,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2047,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2252,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2332,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2413,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2456,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2574,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2617,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2740,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2783,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2817,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2826,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2868,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2910,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2944,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2952,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2986,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 2994,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 3028,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 3036,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 3110,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 3118,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 3151,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 3200,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "line": 3249,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/h1-builder.ts",
+   "line": 400,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "en"
+  },
+  {
+   "file": "src/lib/h1-builder.ts",
+   "line": 401,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "en"
+  },
+  {
+   "file": "src/lib/h1-builder.ts",
+   "line": 402,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "en"
+  },
+  {
+   "file": "src/lib/h1-builder.ts",
+   "line": 458,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "en"
+  },
+  {
+   "file": "src/lib/h1-builder.ts",
+   "line": 461,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "en"
+  },
+  {
+   "file": "src/lib/h1-builder.ts",
+   "line": 464,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "en"
+  },
+  {
+   "file": "src/lib/metadata.ts",
+   "line": 34,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/metadata.ts",
+   "line": 36,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/metadata.ts",
+   "line": 72,
+   "form": "ZprintPro 智印港",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/lib/quote-engine/desk.ts",
+   "line": 500,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo/schema-extensions.ts",
+   "line": 439,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo/schema-extensions.ts",
+   "line": 513,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo/schema-extensions.ts",
+   "line": 603,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo/schema-extensions.ts",
+   "line": 607,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo/schema-extensions.ts",
+   "line": 633,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo/schema-extensions.ts",
+   "line": 639,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo/schema-extensions.ts",
+   "line": 679,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 32,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 42,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 88,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 147,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 206,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 265,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 43,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "?"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 115,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 116,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 263,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 265,
+   "form": "ZprintPro",
+   "kind": "lone-mismatch",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 308,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 435,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 767,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 842,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 1342,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 1354,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 1621,
+   "form": "智印港 ZprintPro",
+   "kind": "dual",
+   "locale": "zh-hk"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 1638,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 1724,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 1759,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 1827,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 1832,
+   "form": "智印港",
+   "kind": "lone-mismatch",
+   "locale": "ja"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+feat(seo): 单品牌化收尾 + 月曆 en/ja Pillar + blog 指纹清毒 + 两条执行纪律
+
+本批 (2026-09-13, K3 已授权范围):
+1. 单品牌分层落地: zprintpro-sku-seo-data.csv 69 处「智印港 ZprintPro」-> 智印港 (zh-hk 单品牌);
+   sku-seo-data.ts 2 个名片 SKU title 尾缀归位智印港
+2. blog-data zh-hk/en/ja: 指纹清毒 183 处 (18,500->8,000+ 34 处; 假作者 90 处改机构署名;
+   LinkedIn 59 处 4 变体全撤) + en/ja 月曆 Pillar 升级 (en 2,107 词 / ja 4,416 字, 44/44 内链)
+3. AGENTS.md §0.26.9 追加第 6 条 (禁 pwsh 内联 node -e, 源于同日两次静默失败);
+   §12 写入规则追加「危险写入脚本三件套」(计数断言 + 结果形状断言 + 备份, 断言未过不得写盘)
+4. scripts/regen-guard.mjs (新): 派生文件 regen 前后按 slug 集合比对,丢失即 exit 1
+   (起因: 202e7698 用 75 行 CSV 覆盖 100 条 TS, 24 SKU 静默丢 SEO)
+5. docs: v93 三份指令书 + 本会话呈报 K3 报告 + 19 项裁决书落库
+
+门禁: tsc 54=54 持平 / build exit 0 / check-encoding 11 文件 UTF-8 LF /
+check-brand-mentions --strict A 类 0 命中 / regen-guard 105 entries 不掉
+数据来源: git 本地实测 + node 只读断言脚本 .hermes/verify-batch-0913.cjs

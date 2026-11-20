@@ -1,0 +1,419 @@
+{
+  "白名单": [
+    {
+      "char": "深",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "圳",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "市",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "彩",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "龍",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "印",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "刷",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "包",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "裝",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "有",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "限",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "公",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "司",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 697,
+      "ctx": "      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',"
+    },
+    {
+      "char": "唐",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 758,
+      "ctx": "        'Official QR issued by 唐运提 (Mr. Tang, founder)',"
+    },
+    {
+      "char": "运",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 758,
+      "ctx": "        'Official QR issued by 唐运提 (Mr. Tang, founder)',"
+    },
+    {
+      "char": "提",
+      "file": "app/[locale]/payment-methods/page.tsx",
+      "line": 758,
+      "ctx": "        'Official QR issued by 唐运提 (Mr. Tang, founder)',"
+    },
+    {
+      "char": "中",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "国",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "本",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "土",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "時",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "間",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "対",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "応",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "香",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "港",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "現",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "地",
+      "file": "components/layout/Footer.tsx",
+      "line": 146,
+      "ctx": "    supportJA: '中国本土 24時間対応 · 香港現地サポート',"
+    },
+    {
+      "char": "彩",
+      "file": "data/blog-data/en.json",
+      "line": 728,
+      "ctx": "ss=\\\"font-semibold mb-1\\\">A transparent factory, not a broker</p><p class=\\\"text-sm\\\">ZprintPro is a brand of 彩龍印刷 with its <strong>own factory in Shenzhen</strong>, running Heidelberg offset presses and an HP Indigo 15K"
+    }
+  ],
+  "术语对照注": [
+    {
+      "char": "坑",
+      "file": "data/blog-data/en.json",
+      "line": 188,
+      "ctx": "TC tea e-commerce — from lid-base boxes to mailer boxes, from Corrugated Fiberboard (also known as cardboard, 坑紙, 段ボール) to white card, from foil stamping to embossing. 4 box styles × 5 paper grades × 6 finishes determine"
+    },
+    {
+      "char": "紙",
+      "file": "data/blog-data/en.json",
+      "line": 188,
+      "ctx": "C tea e-commerce — from lid-base boxes to mailer boxes, from Corrugated Fiberboard (also known as cardboard, 坑紙, 段ボール) to white card, from foil stamping to embossing. 4 box styles × 5 paper grades × 6 finishes determine "
+    },
+    {
+      "char": "段",
+      "file": "data/blog-data/en.json",
+      "line": 188,
+      "ctx": "ea e-commerce — from lid-base boxes to mailer boxes, from Corrugated Fiberboard (also known as cardboard, 坑紙, 段ボール) to white card, from foil stamping to embossing. 4 box styles × 5 paper grades × 6 finishes determine bra"
+    },
+    {
+      "char": "餐",
+      "file": "data/blog-data/en.json",
+      "line": 207,
+      "ctx": " and menu are all the same thing — different regional naming conventions. Hong Kong Chinese restaurants say \\\"餐牌\\\", Western / cafe say \\\"menu\\\", Japanese say \\\"メニュー\\\", but all 4 languages use identical print specs. Zprin"
+    },
+    {
+      "char": "牌",
+      "file": "data/blog-data/en.json",
+      "line": 207,
+      "ctx": "and menu are all the same thing — different regional naming conventions. Hong Kong Chinese restaurants say \\\"餐牌\\\", Western / cafe say \\\"menu\\\", Japanese say \\\"メニュー\\\", but all 4 languages use identical print specs. Zprint"
+    },
+    {
+      "char": "餐",
+      "file": "data/blog-data/en.json",
+      "line": 207,
+      "ctx": " and menu are all the same thing — different regional naming conventions. Hong Kong Chinese restaurants say \\\"餐牌\\\", Western / cafe say \\\"menu\\\", Japanese say \\\"メニュー\\\", but all 4 languages use identical print specs. Zprin"
+    },
+    {
+      "char": "牌",
+      "file": "data/blog-data/en.json",
+      "line": 207,
+      "ctx": "and menu are all the same thing — different regional naming conventions. Hong Kong Chinese restaurants say \\\"餐牌\\\", Western / cafe say \\\"menu\\\", Japanese say \\\"メニュー\\\", but all 4 languages use identical print specs. Zprint"
+    },
+    {
+      "char": "騎",
+      "file": "data/blog-data/en.json",
+      "line": 511,
+      "ctx": "hat Is Saddle Stitch Binding?</h2>\\n<p class=\\\"text-base text-[#444444] leading-relaxed mb-4\\\">Saddle stitch (騎馬釘 / 中綴じ) is the most common booklet binding for catalogs, magazines, event programs, exercise books, and cor"
+    },
+    {
+      "char": "馬",
+      "file": "data/blog-data/en.json",
+      "line": 511,
+      "ctx": "at Is Saddle Stitch Binding?</h2>\\n<p class=\\\"text-base text-[#444444] leading-relaxed mb-4\\\">Saddle stitch (騎馬釘 / 中綴じ) is the most common booklet binding for catalogs, magazines, event programs, exercise books, and corp"
+    },
+    {
+      "char": "釘",
+      "file": "data/blog-data/en.json",
+      "line": 511,
+      "ctx": "t Is Saddle Stitch Binding?</h2>\\n<p class=\\\"text-base text-[#444444] leading-relaxed mb-4\\\">Saddle stitch (騎馬釘 / 中綴じ) is the most common booklet binding for catalogs, magazines, event programs, exercise books, and corpo"
+    },
+    {
+      "char": "中",
+      "file": "data/blog-data/en.json",
+      "line": 511,
+      "ctx": " Saddle Stitch Binding?</h2>\\n<p class=\\\"text-base text-[#444444] leading-relaxed mb-4\\\">Saddle stitch (騎馬釘 / 中綴じ) is the most common booklet binding for catalogs, magazines, event programs, exercise books, and corporate"
+    },
+    {
+      "char": "綴",
+      "file": "data/blog-data/en.json",
+      "line": 511,
+      "ctx": "Saddle Stitch Binding?</h2>\\n<p class=\\\"text-base text-[#444444] leading-relaxed mb-4\\\">Saddle stitch (騎馬釘 / 中綴じ) is the most common booklet binding for catalogs, magazines, event programs, exercise books, and corporate "
+    },
+    {
+      "char": "月",
+      "file": "data/blog-data/en.json",
+      "line": 712,
+      "ctx": "h2>\\n<p>ZprintPro global clients: aided 35%, private 25%, international 20%, tutoring 12%, publishers 8%. 9-10月 bulk discount -10% to -20%, 11月+ lead time +5-7 days.</p>\\n<h2>4 Paper Stocks</h2>\\n<p>(1) Wood-free 80gsm e"
+    },
+    {
+      "char": "月",
+      "file": "data/blog-data/en.json",
+      "line": 712,
+      "ctx": "h2>\\n<p>ZprintPro global clients: aided 35%, private 25%, international 20%, tutoring 12%, publishers 8%. 9-10月 bulk discount -10% to -20%, 11月+ lead time +5-7 days.</p>\\n<h2>4 Paper Stocks</h2>\\n<p>(1) Wood-free 80gsm e"
+    }
+  ],
+  "引文出处": [
+    {
+      "char": "万",
+      "file": "data/blog-data/en.json",
+      "line": 255,
+      "ctx": "invitation envelopes are lightweight, high-value, and time-sensitive—requiring specialized logistics. Per <em>万邑通 (Winit) 2025 Cross-Border Wedding Logistics White Paper</em>, three primary shipping channels serve cross-"
+    },
+    {
+      "char": "邑",
+      "file": "data/blog-data/en.json",
+      "line": 255,
+      "ctx": "nvitation envelopes are lightweight, high-value, and time-sensitive—requiring specialized logistics. Per <em>万邑通 (Winit) 2025 Cross-Border Wedding Logistics White Paper</em>, three primary shipping channels serve cross-b"
+    },
+    {
+      "char": "通",
+      "file": "data/blog-data/en.json",
+      "line": 255,
+      "ctx": "vitation envelopes are lightweight, high-value, and time-sensitive—requiring specialized logistics. Per <em>万邑通 (Winit) 2025 Cross-Border Wedding Logistics White Paper</em>, three primary shipping channels serve cross-bo"
+    }
+  ],
+  "真缺陷": [
+    {
+      "char": "衍",
+      "file": "data/blog-data/en.json",
+      "line": 311,
+      "ctx": "ter includes 50 well-known names such as New Zealand Karicare, Australian Bellamy's, German Aptamil, Hong Kong衍生, Momcil, and Nestlé. Our FDA documentation is complete, materials are BPA-free, and we offer Free Shipping "
+    },
+    {
+      "char": "生",
+      "file": "data/blog-data/en.json",
+      "line": 311,
+      "ctx": "er includes 50 well-known names such as New Zealand Karicare, Australian Bellamy's, German Aptamil, Hong Kong衍生, Momcil, and Nestlé. Our FDA documentation is complete, materials are BPA-free, and we offer Free Shipping o"
+    },
+    {
+      "char": "核",
+      "file": "data/blog-data/en.json",
+      "line": 563,
+      "ctx": "t-[#333333] mt-10 mb-4\\\">5. Related Resources</h2>\\n<ul class=\\\"list-disc pl-5 my-3 space-y-2\\\">\\n<li><strong>核心頁:</strong><a href=\\\"/en/category/calendars/\\\" class=\\\"text-[#2873F5] hover:underline\\\">Calendars Category</"
+    },
+    {
+      "char": "心",
+      "file": "data/blog-data/en.json",
+      "line": 563,
+      "ctx": "-[#333333] mt-10 mb-4\\\">5. Related Resources</h2>\\n<ul class=\\\"list-disc pl-5 my-3 space-y-2\\\">\\n<li><strong>核心頁:</strong><a href=\\\"/en/category/calendars/\\\" class=\\\"text-[#2873F5] hover:underline\\\">Calendars Category</a"
+    },
+    {
+      "char": "頁",
+      "file": "data/blog-data/en.json",
+      "line": 563,
+      "ctx": "[#333333] mt-10 mb-4\\\">5. Related Resources</h2>\\n<ul class=\\\"list-disc pl-5 my-3 space-y-2\\\">\\n<li><strong>核心頁:</strong><a href=\\\"/en/category/calendars/\\\" class=\\\"text-[#2873F5] hover:underline\\\">Calendars Category</a>"
+    },
+    {
+      "char": "龍",
+      "file": "data/blog-data/en.json",
+      "line": 728,
+      "ctx": "s=\\\"font-semibold mb-1\\\">A transparent factory, not a broker</p><p class=\\\"text-sm\\\">ZprintPro is a brand of 彩龍印刷 with its <strong>own factory in Shenzhen</strong>, running Heidelberg offset presses and an HP Indigo 15K "
+    },
+    {
+      "char": "印",
+      "file": "data/blog-data/en.json",
+      "line": 728,
+      "ctx": "=\\\"font-semibold mb-1\\\">A transparent factory, not a broker</p><p class=\\\"text-sm\\\">ZprintPro is a brand of 彩龍印刷 with its <strong>own factory in Shenzhen</strong>, running Heidelberg offset presses and an HP Indigo 15K B"
+    },
+    {
+      "char": "刷",
+      "file": "data/blog-data/en.json",
+      "line": 728,
+      "ctx": "\\\"font-semibold mb-1\\\">A transparent factory, not a broker</p><p class=\\\"text-sm\\\">ZprintPro is a brand of 彩龍印刷 with its <strong>own factory in Shenzhen</strong>, running Heidelberg offset presses and an HP Indigo 15K B2"
+    },
+    {
+      "char": "批",
+      "file": "data/buying-guides.ts",
+      "line": 930,
+      "ctx": "t a custom shape (oval, logo, etc.)?</strong><br/>A: Yes. Custom die-cut shape is included free for orders of 批量以上 pcs; below that a one-time HK$25 die fee applies. See <a href=\"/en/product/die-cut-stickers/\">die-cut sti"
+    },
+    {
+      "char": "量",
+      "file": "data/buying-guides.ts",
+      "line": 930,
+      "ctx": " a custom shape (oval, logo, etc.)?</strong><br/>A: Yes. Custom die-cut shape is included free for orders of 批量以上 pcs; below that a one-time HK$25 die fee applies. See <a href=\"/en/product/die-cut-stickers/\">die-cut stic"
+    },
+    {
+      "char": "以",
+      "file": "data/buying-guides.ts",
+      "line": 930,
+      "ctx": "a custom shape (oval, logo, etc.)?</strong><br/>A: Yes. Custom die-cut shape is included free for orders of 批量以上 pcs; below that a one-time HK$25 die fee applies. See <a href=\"/en/product/die-cut-stickers/\">die-cut stick"
+    },
+    {
+      "char": "上",
+      "file": "data/buying-guides.ts",
+      "line": 930,
+      "ctx": " custom shape (oval, logo, etc.)?</strong><br/>A: Yes. Custom die-cut shape is included free for orders of 批量以上 pcs; below that a one-time HK$25 die fee applies. See <a href=\"/en/product/die-cut-stickers/\">die-cut sticke"
+    },
+    {
+      "char": "名",
+      "file": "data/sku-seo-data.ts",
+      "line": 3485,
+      "ctx": "          \"400g名片\""
+    },
+    {
+      "char": "片",
+      "file": "data/sku-seo-data.ts",
+      "line": 3485,
+      "ctx": "          \"400g名片\""
+    },
+    {
+      "char": "厚",
+      "file": "data/sku-seo-data.ts",
+      "line": 3515,
+      "ctx": "      \"en\": \"厚口 カード\","
+    },
+    {
+      "char": "口",
+      "file": "data/sku-seo-data.ts",
+      "line": 3515,
+      "ctx": "      \"en\": \"厚口 カード\","
+    },
+    {
+      "char": "燙",
+      "file": "data/sku-seo-data.ts",
+      "line": 3540,
+      "ctx": "          \"燙金名片\""
+    },
+    {
+      "char": "金",
+      "file": "data/sku-seo-data.ts",
+      "line": 3540,
+      "ctx": "          \"燙金名片\""
+    },
+    {
+      "char": "名",
+      "file": "data/sku-seo-data.ts",
+      "line": 3540,
+      "ctx": "          \"燙金名片\""
+    },
+    {
+      "char": "片",
+      "file": "data/sku-seo-data.ts",
+      "line": 3540,
+      "ctx": "          \"燙金名片\""
+    },
+    {
+      "char": "箔",
+      "file": "data/sku-seo-data.ts",
+      "line": 3570,
+      "ctx": "      \"en\": \"箔押し カード\","
+    },
+    {
+      "char": "押",
+      "file": "data/sku-seo-data.ts",
+      "line": 3570,
+      "ctx": "      \"en\": \"箔押し カード\","
+    }
+  ],
+  "待判": []
+}

@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/lib/quote-engine/engine.ts:26:10
+Type error: Module '"./formulas/stickers"' has no exported member 'businessCardsFormulaV2'.
+
+[0m [90m 24 |[39m   [33mQuoteResult[39m[33m,[39m[0m
+[0m [90m 25 |[39m } [36mfrom[39m [32m'./types'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { businessCardsFormulaV2 } [36mfrom[39m [32m'./formulas/stickers'[39m[33m;[39m[0m
+[0m [90m    |[39m          [31m[1m^[22m[39m[0m
+[0m [90m 27 |[39m [36mimport[39m { postersFormula } [36mfrom[39m [32m'./formulas/posters'[39m[33m;[39m[0m
+[0m [90m 28 |[39m [36mimport[39m { stickersFormula } [36mfrom[39m [32m'./formulas/stickers'[39m[33m;[39m[0m
+[0m [90m 29 |[39m [36mimport[39m { packagingFormula } [36mfrom[39m [32m'./formulas/packaging'[39m[33m;[39m[0m
+Next.js build worker exited with code: 1 and signal: null

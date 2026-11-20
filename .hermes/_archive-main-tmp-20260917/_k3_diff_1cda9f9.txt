@@ -1,0 +1,196 @@
+﻿commit 1cda9f9564e0873b579ec3eb2b5f7d0db2aae3fb
+Author: zprintprohk-rgb <zprintprohk@gmail.com>
+Date:   Sun Aug 16 15:05:48 2026 +0800
+
+    feat(about): 8/16 关于我们板块嵌入工厂实拍图 - 新增厂房设备 section (车间全景 + 4 设备宫格 + 2 手工工艺图, 3 locale alt) + 删 8/8 placeholder 死代码 + §11 红线清 Business Cards schema
+
+diff --git a/src/app/[locale]/about/page.tsx b/src/app/[locale]/about/page.tsx
+index cb2fe8f..ec3daf1 100644
+--- a/src/app/[locale]/about/page.tsx
++++ b/src/app/[locale]/about/page.tsx
+@@ -89,6 +89,20 @@ const translations = {
+     imageSlotFactory: '工廠車間 / 設備全景 (K3 拍圖後替換)',
+ 
+     imageSlotTeam: '團隊真人工作場景 (K3 拍圖後替換)',
++
++    // 2026-08-16 K3 拍板: 關於我們板塊嵌入工廠實拍圖 (F:\工厂图片 47 张处理产出)
++    factorySectionTitle: '廠房與設備 · 實拍',
++    factorySectionSubtitle: '深圳自設廠房 · 海德堡柯式 + HP Indigo 數碼 · 從印前到後道全程把控',
++    altFloorPano: 'ZprintPro 印刷車間全景 — 摺紙機和後道加工線一覽',
++    altHeidelberg: '海德堡四色柯式印刷機正在印刷高端禮盒 — 工廠核心設備',
++    altHeidelberg61: '海德堡 6+1 色組柯式印刷機實拍',
++    altLabelPress: '商標輪轉機 — 標籤貼紙量產設備',
++    altOffsetPress: '柯式印刷機組 — 傳單包裝量產',
++    altHpDigital: 'HP Indigo 數碼印刷機 — 小批量快速交付',
++    equipmentTitle: '核心設備一覽',
++    altCraftGluing: '折疊盒手工粘膠工藝實拍',
++    altCraftTriangle: '異形三角手工禮品盒板 — 特殊結構工藝',
++    craftTitle: '手工工藝細節',
+   },
+ 
+   en: {
+@@ -154,6 +168,20 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
+     imageSlotFactory: 'Factory floor / equipment panorama (K3 replace after photo capture)',
+ 
+     imageSlotTeam: 'Team real work scenes (K3 replace after photo capture)',
++
++    // 2026-08-16 K3 拍板: About section factory photo embed (processed from 47 real factory photos)
++    factorySectionTitle: 'Our Factory & Equipment',
++    factorySectionSubtitle: 'Our own factory in Shenzhen · Heidelberg offset + HP Indigo digital · full control from prepress to finishing',
++    altFloorPano: 'ZprintPro production floor panoramic view with folding machines and finishing line',
++    altHeidelberg: 'Heidelberg Speedmaster 4-color offset press producing premium gift boxes',
++    altHeidelberg61: 'Heidelberg 6+1 color offset press at our facility',
++    altLabelPress: 'Label rotary press — high-volume sticker and label production',
++    altOffsetPress: 'Offset press line — flyers and packaging at scale',
++    altHpDigital: 'HP Indigo digital press — fast turnaround for small batches',
++    equipmentTitle: 'Core Equipment',
++    altCraftGluing: 'Manual gluing process for folding gift boxes',
++    altCraftTriangle: 'Triangular handmade gift box panel — specialty structure craftsmanship',
++    craftTitle: 'Handcraft Details',
+   },
+ 
+   ja: {
+@@ -219,6 +247,20 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
+     imageSlotFactory: '工場現場・設備全景 (K3 撮影後に差し替え)',
+ 
+     imageSlotTeam: 'チームの実業務シーン (K3 撮影後に差し替え)',
++
++    // 2026-08-16 K3 拍板: 会社概要セクションに工場実写写真を埋め込み
++    factorySectionTitle: '工場・設備の実写',
++    factorySectionSubtitle: '深圳の自社工場 · Heidelberg オフセット + HP Indigo デジタル · 印前から後加工まで一貫管理',
++    altFloorPano: 'ZprintPro 印刷工場のパノラマビュー — 折機と後加工ライン',
++    altHeidelberg: 'Heidelberg Speedmaster 4色オフセット印刷機が高級ギフトボックスを印刷中',
++    altHeidelberg61: 'Heidelberg 6+1色オフセット印刷機の実写',
++    altLabelPress: 'ラベル輪転機 — ステッカー・ラベルの大量生産設備',
++    altOffsetPress: 'オフセット印刷機ライン — チラシ・パッケージの量産',
++    altHpDigital: 'HP Indigo デジタル印刷機 — 小ロット短納期対応',
++    equipmentTitle: '主要設備一覧',
++    altCraftGluing: '折りたたみギフトボックスの手作業糊付け工程',
++    altCraftTriangle: '変形三角形手作りギフトボックスのパネル — 特殊構造の工芸',
++    craftTitle: '手仕事ディテール',
+   },
+ 
+ };
+@@ -279,7 +321,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
+         '@type': 'OfferCatalog',
+         name: locale === 'zh-hk' ? '印刷服務' : locale === 'ja' ? '印刷サービス' : 'Printing Services',
+         itemListElement: [
+-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Business Cards' } },
++          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Paper Bags' } },
+           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Stickers' } },
+           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Packaging' } },
+           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Flyers' } },
+@@ -350,8 +392,84 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
+           </div>
+         </section>
+ 
+-        {/* Core Advantages */}
++        {/* 2026-08-16 K3 拍板: 廠房與設備實拍圖 (about 板塊正式嵌入, 替換 8/8 隐藏 placeholder) */}
+         <section className="py-16 md:py-20 bg-gray-50">
++          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
++            <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-3 text-center">{t.factorySectionTitle}</h2>
++            <p className="text-gray-600 text-center mb-10 max-w-3xl mx-auto">{t.factorySectionSubtitle}</p>
++
++            {/* 车间全景 (宽幅) */}
++            <figure className="mb-6 bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
++              <img
++                src="/images/factory/factory-production-floor-pano.webp"
++                alt={t.altFloorPano}
++                loading="lazy"
++                className="w-full h-64 md:h-96 object-cover"
++              />
++            </figure>
++
++            {/* 核心设备 4 宫格 */}
++            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
++              <figure className="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm">
++                <img
++                  src="/images/factory/factory-heidelberg-speedmaster-with-boxes.webp"
++                  alt={t.altHeidelberg}
++                  loading="lazy"
++                  className="w-full aspect-[4/3] object-cover"
++                />
++              </figure>
++              <figure className="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm">
++                <img
++                  src="/images/factory/factory-heidelberg-6plus1.webp"
++                  alt={t.altHeidelberg61}
++                  loading="lazy"
++                  className="w-full aspect-[4/3] object-cover"
++                />
++              </figure>
++              <figure className="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm">
++                <img
++                  src="/images/factory/label-press.webp"
++                  alt={t.altLabelPress}
++                  loading="lazy"
++                  className="w-full aspect-[4/3] object-cover"
++                />
++              </figure>
++              <figure className="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm">
++                <img
++                  src="/images/factory/factory-hp-digital.webp"
++                  alt={t.altHpDigital}
++                  loading="lazy"
++                  className="w-full aspect-[4/3] object-cover"
++                />
++              </figure>
++            </div>
++            <p className="text-center text-gray-400 text-xs mb-12">{t.equipmentTitle}: Heidelberg Offset / Label Rotary / Offset Line / HP Indigo Digital</p>
++
++            {/* 手工工艺 2 图 */}
++            <h3 className="text-lg md:text-xl font-bold text-[#333333] mb-4 text-center">{t.craftTitle}</h3>
++            <div className="grid md:grid-cols-2 gap-4">
++              <figure className="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm">
++                <img
++                  src="/images/factory/craft-folding-box-manual-gluing-process.webp"
++                  alt={t.altCraftGluing}
++                  loading="lazy"
++                  className="w-full aspect-video object-cover"
++                />
++              </figure>
++              <figure className="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm">
++                <img
++                  src="/images/factory/craft-triangular-special-shape-handmade-gift-box-panel.webp"
++                  alt={t.altCraftTriangle}
++                  loading="lazy"
++                  className="w-full aspect-video object-cover"
++                />
++              </figure>
++            </div>
++          </div>
++        </section>
++
++        {/* Core Advantages */}
++        <section className="py-16 md:py-20">
+           <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+             <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-10 text-center">{t.advantageTitle}</h2>
+             <div className="grid md:grid-cols-3 gap-8">
+@@ -383,26 +501,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
+                 </div>
+               ))}
+             </div>
+-            {/* 2026-08-08 K3 14:43 拍板: 工厂图 + 团队图 2 个 placeholder 暂时不显示 (K3 还没拍图) */}
+-            {/* K3 拍图后改 SHOW_FACTORY_IMAGE_SLOTS = true, 并把 <svg> 替换为 <img src="/images/about/factory-panorama.jpg" /> + <img src="/images/about/team-workshop.jpg" /> */}
+-            {false && (
+-              <div className="mt-10 grid md:grid-cols-2 gap-4">
+-                <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl border-2 border-dashed border-gray-300 flex items-center justify-center">
+-                  <div className="text-center text-gray-500">
+-                    <svg className="w-16 h-16 mx-auto mb-2 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+-                    <p className="text-sm font-medium">{t.imageSlotFactory}</p>
+-                    <p className="text-xs mt-1">{'<!-- K3: replace <svg> with <img src="/images/about/factory-panorama.jpg" alt="ZprintPro factory floor" /> -->'}</p>
+-                  </div>
+-                </div>
+-                <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl border-2 border-dashed border-gray-300 flex items-center justify-center">
+-                  <div className="text-center text-gray-500">
+-                    <svg className="w-16 h-16 mx-auto mb-2 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+-                    <p className="text-sm font-medium">{t.imageSlotTeam}</p>
+-                    <p className="text-xs mt-1">{'<!-- K3: replace <svg> with <img src="/images/about/team-workshop.jpg" alt="ZprintPro team" /> -->'}</p>
+-                  </div>
+-                </div>
+-              </div>
+-            )}
++            {/* 2026-08-16 K3 拍板: 工厂图已在上方「廠房與設備」section 正式嵌入, placeholder 删除 */}
+           </div>
+         </section>
+         {/* Team */}

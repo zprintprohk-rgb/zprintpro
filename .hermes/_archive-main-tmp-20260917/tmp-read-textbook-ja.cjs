@@ -1,0 +1,18 @@
+const fs=require('fs');
+const j=JSON.parse(fs.readFileSync('src/data/blog-data/ja.json','utf8'));
+const arr=Array.isArray(j)?j:Object.values(j);
+const s=arr.find(x=>(x.slug||x.id)==='textbook-printing-guide');
+console.log('=== ja textbook-printing-guide content (前 30 行) ===');
+console.log(s.content.split('\n').slice(0,30).join('\n'));
+console.log('\n=== 结构统计 ===');
+const c=s.content;
+console.log('h2:', (c.match(/<h2/g)||[]).length);
+console.log('h3:', (c.match(/<h3/g)||[]).length);
+console.log('table:', (c.match(/<table/g)||[]).length);
+console.log('bg-amber:', (c.match(/bg-amber/g)||[]).length);
+console.log('bg-blue:', (c.match(/bg-blue/g)||[]).length);
+console.log('bg-gray:', (c.match(/bg-gray/g)||[]).length);
+console.log('FAQ(Q:):', (c.match(/Q[:：]/g)||[]).length);
+console.log('金块【】:', (c.match(/【/g)||[]).length);
+console.log('ul:', (c.match(/<ul/g)||[]).length);
+console.log('ol:', (c.match(/<ol/g)||[]).length);

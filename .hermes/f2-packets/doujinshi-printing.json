@@ -1,0 +1,49 @@
+{
+ "slug": "doujinshi-printing",
+ "name_en": "Doujinshi Printing",
+ "category_slug": "japan-doujin",
+ "category_name_en": "Doujinshi & Anime Goods",
+ "current_body_en": "<p>Optimized for Comiket, doujin events, and creative exhibitions. Standard full-color cover + mono interior, with premium full-color cover-and-interior upgrades. Low MOQ of 10 books makes this accessible for individual circles and beginners. 24-hour rush production available before Comiket for last-minute reprints.</p><h3>Specifications</h3><p>Material: FSC-certified fine paper 90g / coated paper 90g (cover). Size: A5 (148×210mm) / B5 (182×257mm) / A4 (optional). Print method: Cover: offset 4-color / Interior: on-demand or offset.</p>",
+ "current_body_words": 69,
+ "product": {
+  "descriptionEn": "Doujinshi printing for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.",
+  "price_range": "¥7,500〜/部〜",
+  "minQuantity": 10,
+  "specs": {
+   "material": "FSC 認證道林紙 90g / 銅版紙 90g (封面)",
+   "size": "A5 (148×210mm) / B5 (182×257mm) / A4 (可選)",
+   "printMethod": "封面: 柯式四色 / 內頁: 數碼或柯式印刷",
+   "finishing": "膠裝 / 騎馬釘 (8-64頁) / 書脊封面"
+  },
+  "materials": "",
+  "features": [
+   "Comiket 前 24 小時特急対応可",
+   "10 本起印,少量対応",
+   "深圳自營工廠 + DHL Express 直送日本 2-4 個工作天",
+   "FSC 認證紙材 / ISO 12647 色彩管理",
+   "繁體中文 / 日文雙語支援 + WhatsApp 對應",
+   "A5 (148×210mm) / B5 (182×257mm) 標準尺寸"
+  ]
+ },
+ "category_conversion_en": null,
+ "category_gsc_words_en": [
+  "doujinshi printing (imp 31, pos 18.2)",
+  "同人本 印刷 (imp 8, pos 13.9)",
+  "同人印刷 (imp 6, pos 18.7)"
+ ],
+ "regional_en": {
+  "trust": "ISO 9001 certified production · 30-second AI quote · free digital proof · no setup fees · free design mockup",
+  "shipping": "DHL Express / FedEx 3-5 days to the USA, 2-4 days to Japan · free shipping on US orders over $99 · worldwide delivery to 50+ countries",
+  "cta": "Ready to order? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
+ },
+ "rules": [
+  "只许从 4 个真实数据源组装: ① 本包 product 的 descriptionEn/specs/features/price_range/minQuantity ② 本包 category 的 conversion orderFlow 场景 (若有) ③ 现有 en body 的事实 (数字只能用它已含的) ④ 本包 GSC 词自然织入 1-2 次",
+  "禁止编造: 数字/认证/交期/客户名/行业事实 (价格只能用 price_range, 交期只能用 body/conversion 已有口径 3-5 天/2-4 天等)",
+  "禁止跨 SKU 复制同一段文字 — 每个 SKU 组装结果必须唯一 (同品类相邻 SKU 也禁整段雷同)",
+  "字数: 新 body ≥ 180 词 (英文词数, 含 FAQ 段); 结构 = 引言段 + 场景段 2-3 段 (含品类 GSC 词自然出现 1-2 次) + 材質/規格段 (从 specs/features 事实转英文散文) + 收費/交期段 (用 price_range/minQuantity + 已有交期口径) + **FAQ** 段 (2-3 问, 从现有 FAQ/事实改写, 禁新数字) + 結尾 CTA 段",
+  "段落用 \\n\\n 分隔; FAQ 段用 **FAQ** 开头, 问题用 **Q1: ...** 加答案",
+  "en 内容红线: 不出现 名片/business card (§0.0); 不出现「深圳」/「Shenzhen」作供应商前缀 (可用 \"Asia factory\"); 不出现简体中文; 不写 \"Hong Kong\" 作目标市场词",
+  "不要修改 title/description/h1/keywords — 只产出 body",
+  "输出 JSON: {\"slug\": \"<slug>\", \"body\": \"<完整 en body>\"}"
+ ]
+}

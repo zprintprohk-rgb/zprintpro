@@ -1,0 +1,17 @@
+docs(context): §14 P0-2 301 迁移 ACTIVE 监控 (2026-07-22 K3 拍板)
+
+- §14 新增 P0-2 ACTIVE 监控 (5 项 + 8 周关键观察期 + 异常升级)
+  - 老域名抓取错误数 < 5
+  - sitemap 残留老 URL 数 = 0
+  - 索引转移率 ≥ 50% (第 4 周决策点)
+  - 权重交接差异 < 5
+  - 10 条旧 URL curl 抽查 301 → 新站 200
+- §14.1 启动状态: GSC API 本地 proxy 127.0.0.1:7892 通了 (commit b8bda22)
+  - sc-domain resource 修正 (URL-prefix → sc-domain:zprintpro.com)
+  - 852 行 / 90 天 / 22 点击 / 9,625 展示 全量拉取
+  - 「智印港」仍是查询榜第 1 (32 imps / CTR 9.4%) — M3 v6 (commit 5285eff) 后下次拉数看变化曲线
+- §0 加 v5 模式变更 / §15 Changelog 加 v5 entry / 原 §14 顺延 §15
+- 撤销云端 proxy/VPN 升级请求 (本地 proxy 已够)
+- 不重传 gsc-feedback-loop v4 SSoT (已是 DEPLOYED 跑 5 项监控, 跟实测一致)
+
+Co-Authored-By: Mavis <noreply@mavis.ai>

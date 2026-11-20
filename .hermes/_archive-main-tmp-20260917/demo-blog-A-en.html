@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, 'PingFang HK', 'Microsoft JhengHei', sans-serif; background: #f5f7fa; color: #333; }
+.wrap { max-width: 820px; margin: 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); padding: 56px 64px; }
+.demo-tag { display: inline-block; background: #2873F5; color: #fff; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 20px; }
+h1 { font-size: 28px; line-height: 1.3; color: #111827; margin-bottom: 16px; }
+.meta { font-size: 13px; color: #6B7280; margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+/* A 核心: H2 左侧色条 + 圆角编号徽章 */
+.content h2 { font-size: 21px; font-weight: 800; color: #111827; margin: 44px 0 18px; padding-left: 18px; border-left: 5px solid #2873F5; line-height: 1.4; position: relative; }
+.content h2::before { content: attr(data-num); display: inline-block; background: #2873F5; color: #fff; font-size: 13px; font-weight: 700; border-radius: 50%; width: 26px; height: 26px; line-height: 26px; text-align: center; margin-right: 8px; vertical-align: 2px; }
+/* A: p 段距 + 行高 */
+.content p { font-size: 16px; line-height: 1.9; color: #4B5563; margin: 0 0 16px; }
+/* A: 链接 */
+.content a { color: #2873F5; text-decoration: none; font-weight: 500; }
+.content a:hover { text-decoration: underline; }
+/* A: strong */
+.content strong { color: #111827; font-weight: 700; background: linear-gradient(transparent 60%, #FFE9A8 60%); padding: 0 2px; }
+/* A: 表格斑马纹 + 圆角 + 表头蓝 */
+.content table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 20px 0 28px; font-size: 14.5px; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.content thead th { background: #2873F5; color: #fff; font-weight: 700; text-align: left; padding: 12px 16px; font-size: 13.5px; letter-spacing: 0.3px; }
+.content tbody td { padding: 12px 16px; border-bottom: 1px solid #F0F1F3; color: #4B5563; }
+.content tbody tr:nth-child(even) { background: #F8FAFF; }
+.content tbody tr:last-child td { border-bottom: none; }
+.content tbody tr:hover { background: #F0F6FF; }
+/* A: div 块升级 — 圆角 + 左边框 + 浅蓝底 */
+.content div { border-radius: 12px; padding: 18px 20px; margin: 18px 0; border-left: 4px solid #2873F5; background: #F0F6FF; }
+.content div p { margin: 0; font-size: 15px; line-height: 1.8; }
+/* A: ol 列表 */
+.content ol { margin: 12px 0 20px; padding-left: 24px; }
+.content ol li { margin: 8px 0; font-size: 15.5px; line-height: 1.8; color: #4B5563; }
+</style></head><body><div class="wrap"><span class="demo-tag">Demo A · en</span>
+<div class="wrap">
+  <span class="demo-tag">樣版 A · 舊 9 段結構風格</span>
+  <h1>教科書印刷・教材印刷指南 100本起 製本方式</h1>
+  <div class="meta">智印港 · 印刷知識 · 2026-09-14</div>
+  <div class="content"><p>Textbook and educational material printing is an annual procurement for schools, tutoring chains and publishers. ZprintPro offers <a href="/en/product/textbooks/" class="text-[#1A56DB] underline">textbook printing</a> and educational printing from 100 copies: A4/B5 sizes, 80-100g wood-free eye-friendly paper, 3 binding types (saddle stitch / perfect bound / hardcover), 5-7 business day turnaround, DHL Express 2-4 day global delivery, and ISBN/barcode support. With 15+ years of printing engineering experience, we serve annual-contract printing for schools, tutoring centers and publishers.</p>
+<p>Textbook & educational printing quote: <a href="https://wa.me/8619880851334" class="text-[#2873F5] hover:underline">+86 198 8085 1334 (WhatsApp)</a> — 30-second AI quote, free consultation.</p>
+
+<h2 data-num="1">1. How to Choose the Right Binding for Textbooks?</h2>
+<p>Binding depends on page count and use case. <a href="/en/product/textbooks/" class="text-[#1A56DB] underline">Textbook printing</a> standard specs: A4/B5, 80-100g wood-free paper, perfect bound or saddle stitch (products.ts specs).</p>
+<div class="bg-blue-50 p-4 rounded-lg"><p><strong>Saddle Stitch</strong>: 8-64 page thin booklets for workbooks, drills and handouts. Lays flat, most affordable. From 50 copies. See the <a href="/en/blog/saddle-stitch-booklet-printing-guide/" class="text-[#1A56DB] underline">saddle stitch booklet printing guide</a>.</p></div>
+<div class="bg-blue-50 p-4 rounded-lg"><p><strong>Perfect Bound</strong>: 64+ page standard books for textbooks and training manuals. Spine title printing available. From 100 copies.</p></div>
+<div class="bg-blue-50 p-4 rounded-lg"><p><strong>Hardcover</strong>: Premium books, yearbooks and library editions. <a href="/en/product/hardcover-books/" class="text-[#1A56DB] underline">Hardcover book printing</a> from 100 copies.</p></div>
+
+<h2 data-num="2">2. Which Paper Stock for Educational Printing?</h2>
+<p>Textbooks need eye-friendly paper. ZprintPro standard: 80-100g wood-free paper, 200g coated cover with lamination option (products.ts specs).</p>
+<table><thead><tr><th>Stock</th><th>Use</th><th>Feature</th></tr></thead><tbody>
+<tr><td>80g wood-free</td><td>Workbooks, drills</td><td>Writes smoothly, no bleed</td></tr>
+<tr><td>100g wood-free</td><td>Textbooks</td><td>Strength + writing balance</td></tr>
+<tr><td>200g coated (cover)</td><td>Textbook covers</td><td>Vivid color + lamination</td></tr>
+<tr><td>Bond paper</td><td>Training manuals</td><td>High whiteness</td></tr>
+</tbody></table>
+
+<h2 data-num="3">3. How Much Does Textbook Printing Cost?</h2>
+<p><a href="/en/product/textbooks/" class="text-[#1A56DB] underline">Textbook printing</a> from 100 copies at <strong>HK$5-50/book</strong> (products.ts price). Price varies by pages, binding and quantity — volume discounts apply as quantity increases.</p>
+<table><thead><tr><th>Quantity</th><th>Unit Price (HK$)</th><th>Note</th></tr></thead><tbody>
+<tr><td>100 copies</td><td>HK$5-50/book</td><td>Small batch standard</td></tr>
+<tr><td>500 copies</td><td>Volume discount</td><td>Quote confirmed</td></tr>
+<tr><td>1,000+ copies</td><td>Volume discount</td><td>Lower unit price</td></tr>
+</tbody></table>
+<p>Get an exact quote via the <a href="/en/quote/" class="text-[#1A56DB] underline">30-second AI instant quote</a>: enter pages, quantity and binding.</p>
+
+<h2 data-num="4">4. How Does an Annual Contract Work?</h2>
+<p>Annual procurement for schools, tutoring chains and publishers follows a planned flow:</p>
+<ol>
+<li><strong>Apr-Jun</strong>: Finalize next year's material list, page counts and quantities</li>
+<li><strong>Jul-Aug</strong>: Sample proof (5 copies) + unit price contract (annual rate locked)</li>
+<li><strong>Sep-Nov</strong>: Term-by-term orders (produced from proofed files)</li>
+<li><strong>Dec-Mar</strong>: Spring session and new-term reprints</li>
+</ol>
+<p>Annual contract benefits: stable pricing + peak-season priority + volume discounts. <a href="/en/contact/" class="text-[#1A56DB] underline">Annual contract consultation</a> is free.</p>
+
+<h2 data-num="5">5. Printing for Tutoring Centers and International Schools?</h2>
+<p>Tutoring centers and international schools have different materials per grade in small quantities — the 100-copy minimum fits perfectly. The <a href="/en/category/educational/" class="text-[#1A56DB] underline">educational printing</a> category covers textbooks, workbooks and yearbooks in one order. <a href="/en/product/spiral-notebooks/" class="text-[#1A56DB] underline">Spiral notebooks</a> are popular for supplementary materials and custom tutoring workbooks.</p>
+
+<h2 data-num="6">6. What Is the Proofing Process?</h2>
+<p>ZprintPro runs full proofing: <strong>①design check → ②free PDF proof → ③color proof (optional) → ④physical sample (5 copies)</strong>. Page numbers, chapters, question numbers and ISBN positions are all confirmed on the proof.</p>
+<p>CMYK color standard. For image-heavy materials, coated paper + full color is recommended. Check the <a href="/en/category/books/" class="text-[#1A56DB] underline">book printing</a> category for binding options.</p>
+
+<h2 data-num="7">7. What Is the Turnaround Time?</h2>
+<p>Standard <strong>5-7 business days</strong> after proof approval. Rush 48 hours available. Peak season is 2 weeks before term start (mid-Aug to early Sep / mid-Mar to early Apr) — order early via annual contract.</p>
+<p>See the <a href="/en/blog/saddle-stitch-booklet-printing-guide/" class="text-[#1A56DB] underline">saddle stitch booklet guide</a> and <a href="/en/blog/doujin-circle-printing-guide/" class="text-[#1A56DB] underline">doujinshi printing guide</a> for real turnaround examples.</p>
+
+<h2 data-num="8">8. Textbooks vs Doujinshi vs Yearbooks?</h2>
+<p>Same binding technology, different specs by use case.</p>
+<table><thead><tr><th>Use</th><th>Binding</th><th>Quantity</th><th>Feature</th></tr></thead><tbody>
+<tr><td>Textbooks</td><td>Perfect bound</td><td>100-5,000</td><td>ISBN, annual contract</td></tr>
+<tr><td>Doujinshi</td><td>Saddle/Perfect</td><td>50-500</td><td>Small batch, fast, free cover finishes</td></tr>
+<tr><td>Yearbooks</td><td>Hardcover</td><td>50-500</td><td>Premium finish</td></tr>
+</tbody></table>
+<p>See the <a href="/en/blog/graduation-yearbook-printing-guide/" class="text-[#1A56DB] underline">yearbook printing guide</a> and <a href="/en/blog/doujin-circle-printing-guide/" class="text-[#1A56DB] underline">doujinshi printing</a> — also handled under <a href="/en/category/books/" class="text-[#1A56DB] underline">book printing</a>.</p>
+
+<h2 data-num="9">9. Quality Assurance for Textbook Printing?</h2>
+<p>ZprintPro runs an in-house factory with full quality control: <strong>①100% proof approval (free PDF proof + 5 physical samples) ②FSC-certified paper ③DHL Express tracked delivery ④15+ years offset printing engineering team</strong>. Every step from cover to text is quality-checked.</p>
+
+<h2 data-num="10">10. International Delivery for Textbooks?</h2>
+<p>From the Shenzhen factory, <strong>DHL Express delivers to Japan in 2-4 days</strong>. Direct delivery to schools, tutoring centers and publishers, multi-school consolidated shipping (split delivery) supported, with customs clearance assistance.</p>
+<p>The <a href="/en/blog/campus-education-printing-pillar-guide/" class="text-[#1A56DB] underline">campus education printing guide</a> covers the full picture for school printing.</p>
+
+<h2 data-num="11">11. FAQ</h2>
+<p><strong>Q1: What is the minimum order quantity for textbooks?</strong><br/>A: 100 copies for textbooks (standard). Saddle-stitch booklets from 50 copies. 5 sample copies for proofing.</p>
+<p><strong>Q2: How long does it take?</strong><br/>A: Standard 5-7 business days after proof approval. Rush 48 hours available on request. Peak season is 2 weeks before term start — annual contracts secure priority slots.</p>
+<p><strong>Q3: Which paper and binding should I choose?</strong><br/>A: 80-100g wood-free paper (eye-friendly) + saddle stitch (thin) or perfect bound (thick) is standard. 200g coated cover with lamination for durability (products.ts specs).</p>
+<p><strong>Q4: Do you ship internationally?</strong><br/>A: Yes — DHL Express 2-4 days to Japan and worldwide from the Shenzhen factory. Direct delivery to schools, tutoring centers and publishers.</p>
+<p><strong>Q5: Do you support ISBN/barcodes?</strong><br/>A: Yes — ISBN/JAN barcode/QR code printing is standard (textbook SKU description).</p>
+<p><strong>Q6: Are there volume discounts for annual contracts?</strong><br/>A: Term-by-term recurring orders qualify for volume discounts. Register your annual quantity in advance for stable pricing and peak-season priority.</p>
+
+<h2 data-num="12">12. How to Order Textbook Printing?</h2>
+<p><a href="/en/product/textbooks/" class="text-[#1A56DB] underline">Textbook printing</a> from 100 copies. Get an instant price via the <a href="/en/quote/" class="text-[#1A56DB] underline">30-second AI quote</a> — enter pages, quantity and binding. Annual contract and recurring order inquiries: <a href="https://wa.me/8619880851334" class="text-[#2873F5] hover:underline">WhatsApp +86 198 8085 1334</a> or <a href="/en/contact/" class="text-[#1A56DB] underline">contact us</a>. Trust ZprintPro for textbook and educational material printing.</p></div></div></body></html>

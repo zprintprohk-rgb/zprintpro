@@ -1,0 +1,10 @@
+const fs = require('fs');
+const zh = JSON.parse(fs.readFileSync('src/data/blog-data/zh-hk.json', 'utf8'));
+const slugs = Object.keys(zh);
+const pick = (re) => slugs.filter(s => re.test(s));
+console.log('kraft:', pick(/kraft|牛皮/i).join(', '));
+console.log('food:', pick(/food|食品/i).join(', '));
+console.log('design/box:', pick(/design|box/i).slice(0, 12).join(', '));
+const prod = fs.readFileSync('src/data/products.ts', 'utf8');
+const ps = [...prod.matchAll(/^\s{4}slug: '([a-z0-9-]+)',$/gm)].map(m => m[1]);
+console.log('product food:', ps.filter(s => /food/.test(s)).join(', '));

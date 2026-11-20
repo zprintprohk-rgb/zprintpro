@@ -1,0 +1,60 @@
+fix(blog): B2 批1 — strip packaging-box-pricing-2026 内嵌 JSON-LD (3 locale) + Question 一致性验收
+
+【strip 理由升级 (K3 2026-09-19 评估): 「清理重复标记」→「消除 AI 可读层的实体歧义」】
+线上实测该 slug × 3 locale = DUPLICATE (生成区 1 个 FAQPage + content 内嵌 1 个 FAQPage)
+⇒ 违反 Google「每页只应有一个 FAQPage」= `Duplicate field FAQPage`;
+   ⚠️ FAQ 报告 2026-06 已结束 ⇒ GSC 不再报此错 ⇒ 只能自测 (measure-live-faqpage.mjs)。
+
+【执行 (严格前置断言 + 幂等, 工具 = .hermes/_probe-pb/strip-inline-jsonld.mjs)】
+前提: 该 slug × 3 locale 生成区已齐套 (Article/Person/Organization/BreadcrumbList/FAQPage/HowTo) ——
+      B1 同型切片探针已实测确认, 故 strip 后 FAQPage 不会归零。
+结构断言 (不过则 abort 不写盘):
+  ① 被删片段必须**恰好**是开头连续的 `<script type="application/ld+json">…</script>` 序列;
+  ② strip 后残留内嵌 LD 必须 = 0 (防半截残留);
+  ③ content 剩余部分必须逐字节等于「原文减该序列」。
+实测: zh-hk 删 3,706 字节 / en 4,664 / ja 3,672 (各 14 个 @type 实体)
+      content 19,894→16,188 / 23,662→18,998 / 17,894→14,222
+复验: 段 9 PASS (4 组可解析 Q&A 保持), 段 12 由 FAIL → SKIP (本地已无内嵌, 线上待 push 后 --online 判定)
+
+【新增验收项 (K3 评估第二点): Question 语义一致性检查】
+工具 = .hermes/_probe-pb/verify-question-consistency.mjs
+方法 = 双源逐字比对: 生成区 FAQPage.mainEntity[].name(归一化) vs 可见正文生产正则提取的 question(归一化)
+15 组合实测: **CONSISTENT 12 / NO_GENERATED_FAQ 3 (foil × 3, 预期) / MISMATCH 0 / INVALID 0**
+⇒ 12 个 DUPLICATE 组合「生成区 Question = 可见正文 Question」无一字差异, strip 无语义歧义风险;
+   这正是本批 strip 的安全前提 (若 MISMATCH, 须先修生成侧再 strip)。
+证据: .hermes/reports/question-consistency-2026-09-19.json
+
+【P1 依赖确认 (K3 评估第三点): foil × 3 根因分类】
+工具 = .hermes/_probe-pb/check-foil-deps-and-person-schema.mjs
+结论: foil × 3 = **根因 ①「正文无 FAQ 段」** (可解析 0 / Q 标记 0 / FAQ 标题 false / 疑问句 ≤2)
+  不是「格式不可解析」(②), 也不是「已可解析待部署」(③) ⇒ **必须新写正文 FAQ 段 (需授权)**。
+★ 关键澄清 (K3 指出的顺序依赖): blog-data JSON **没有**独立 `faqs` 字段 ——
+  `faqs = extractFaqFromHtml(post.content)` 直接推导, `faqJsonLd = faqs ? … : null`。
+  ⇒ 「补正文 FAQ 段」与「填充 faqs 字段」**是同一件事**, 不存在「补了正文但 faqs 仍为 null」的额外坑;
+  真正的坑是**格式**: 必须写成 `<p><strong>Qn: 问?</strong><br/>A: 答</p>` 才可解析 (答案按 80-150 词口径)。
+
+【P2 结构确认 (K3 评估第五点): Person schema 生成位置】
+结论 = **嵌套在 Article.author** (非独立块), 定义于 `src/lib/seo/schema-extensions.ts` 的
+  `generateBlogArticleJsonLd()` + `authorByLocale`:
+  已有 @type/name/**url(/about/)**/**sameAs(LinkedIn + Instagram)** ⇒ 三项 EEAT 实体锚点**已存在**;
+  缺的只有 jobTitle / knowsAbout (即「从业年限 / 专业领域」维度)。
+  ⇒ 批次 D 的改法 = 在 schema-extensions.ts 的 Person 块加这两个字段 (渲染层改动, 与 page.tsx 版本管理协调),
+  **无需**在 content 里新增 —— 与 K3 判断一致。禁 AI 头像/虚构 persona (合成图可被检测, 属 E-E-A-T 惩罚行为)。
+
+【安全约束遵守情况】每批 ≤3 篇 ✅ (本批 = 1 slug × 3 locale); 每批后 --online 全量回归 (待 push 后);
+24h 观察期 (下一批前)。
+
+【数据来源】
+- 线上探针: measure-live-faqpage.mjs (15/15 有效) / verify-question-consistency.mjs (15/15 有效)
+- strip 前后字节数断言输出 (见上)
+- 门禁: blog-quality-12-rules-guard --slug=packaging-box-pricing-2026 (段9 PASS / 段12 SKIP)
+- K3 2026-09-19 评估第二/三/五点
+
+【待办】
+- B2 批2-4 (sticker / poster / campus × 3 locale, 仍需生成区齐套前提 + 每批 ≤3 篇)
+- B3 foil × 3 补正文 FAQ 段 (需授权; 80-150 词; 写入后 --online 验证 0→≥1)
+- 段 8 可提取性测试 (改用 Perplexity/ChatGPT 实际引用对比, 非模拟 RAG 提取器 —— 需外部 AI 引擎访问)
+- 批次 D 段 9 加 jobTitle/knowsAbout (schema-extensions.ts)
+
+Bypass-rationale: 本批 = 3 个 blog-data JSON (strip 内嵌 LD, 已过结构断言) + 探测/验收工具 + 证据 JSON;
+ pre-commit 红规则对 .hermes 历史字面会硬拦; 无价格/文案口径变更 (FAQ 文本未动, 仅删重复 schema 块)

@@ -1,0 +1,151 @@
+﻿===== zh-hk / poster-printing-guide (content len 18124) =====
+  [1] <p>香港海報印刷 A1 / A2 / A3 點揀?記住 3 個數: <strong>A1 = 594×841mm (店內主牆)</strong>, <strong>A2 = 420×594mm (櫥窗 / 活動)</strong>, <strong>A3 = 297×420mm (餐廳 / 桌牌)</strong>。1 張起印 HK$8-120, 3-5 個工作天交貨, 急件 24 小時。本指南 12,000+ 字深度拆解 5 種紙質、6 種工藝、12 個應用場景。</p> <div class="bg-amber-50 border-l-4 border-amber-500 p-4 my-4">
+  [2] <p>海報尺寸揀邊個記住 3 個數: <strong>A1 = 594×841mm (店內主牆)</strong>, <strong>A2 = 420×594mm (櫥窗 / 活動)</strong>, <strong>A3 = 297×420mm (餐廳 / 桌牌)</strong>。1 張起印 HK$8-120, 3-5 個工作天, 急件 24 小時。</p> </div>
+  [3] <td class="border p-2">HK$8-15</td> </tr>
+  [4] <td class="border p-2">HK$15-30</td> </tr>
+  [5] <td class="border p-2">HK$30-60</td> </tr>
+  [6] <td class="border p-2">HK$60-120</td> </tr>
+  [7] <td class="border p-2">HK$20-40</td> </tr> </tbody> </table> <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-4">
+  [8] <p>因為面積。A1 = 0.5 m², A2 = 0.25 m², 銅版紙單價按 m² 計, A1 用紙量係 A2 嘅 2 倍。運費 + 人工都按 m² 計, 所以 A1 零售價約 A2 嘅 2-2.4 倍 (HK$60-120 vs HK$15-30)。</p> </div>
+  [9] <p>5 種紙質揀邊個?室內短期用 157g 銅版紙 (HK$0.30/張, 68% 客戶首選), 室內長期用 250g 銅版紙 (HK$0.80/張), 戶外 / 防水用 PP 膠片 (HK$1.20/張), 藝術展用油畫布 (HK$3.50/張), 寫真用防水相紙 (HK$2.00/張)。</p> </div>
+  [10] <td class="border p-2">HK$0.30/張</td>
+  [11] <td class="border p-2">HK$0.50/張</td>
+  [12] <td class="border p-2">HK$0.80/張</td>
+  [13] <td class="border p-2">HK$1.20/張</td>
+  [14] <td class="border p-2">HK$3.50/張</td>
+  [15] <td class="border p-2">HK$2.00/張</td>
+  [16] <li><strong>A3 / A4 海報數碼印刷 1 張起印</strong>:HK$8-15/張, 24 小時交收。適合打樣、活動單張、限量促銷。</li>
+  [17] <li><strong>A1 / A2 / A0 柯式印刷 500 張起印</strong>:HK$15-120/張, 3-5 個工作天。500 張以上先至平, 100 張以下唔建議柯式。</li>
+  [18] <li><strong>A1 數碼急件 1 張可印</strong>:加 80% 附加費, 24-48 小時交收。智印港 A1 急件服務 HK$108-216/張。</li>
+  [19] <p>急件服務限 A3 / A4 銅版紙海報,特殊工藝 (燙金 / UV) 需預 1 個額外工作天。順豐香港滿 HK$500 免費速遞,18 區 1-2 工作天送達。</p>
+  [20] <p>以下 3 個組合係 2025-2026 年海報訂單最常見嘅落單形態,價格全部對應上文表格嘅實際牌價,唔係估算:① <strong>零售促銷組合</strong> — A2 + 157g 銅版紙 + 光膠,常見落單 100-500 張,HK$15-30/張,3-5 個工作天;② <strong>餐飲菜牌組合</strong> — A3 + 250g 銅版紙 + 啞膠,100 張起 HK$8-15/張,啱季度轉菜;③ <strong>活動急件組合</strong> — A3/A4 銅版紙 24 小時急件,+50% 附加費,11:00 前確認稿。想對號入座計價,去<a href="/zh-hk/category/posters/" class="text-[#1A56DB] underline">海報印刷</a>類目頁 30 秒 AI 報價。</p>
+  [21] <li><strong>零售店內促銷</strong>:A2 / A1 + 157g 銅版紙 + 光膠, HK$15-60/張</li>
+  [22] <li><strong>餐廳菜牌 / 桌牌</strong>:A3 + 250g 銅版紙 + 啞膠, HK$8-15/張</li>
+  [23] <li><strong>商場櫥窗</strong>:A2 + PP 膠片 + UV 局部, HK$30-50/張</li>
+  [24] <li><strong>地鐵站廣告</strong>:A1 + 200g 銅版紙 + 啞膠, HK$30-60/張</li>
+  [25] <li><strong>展覽會場</strong>:A0 / A1 + 250g 銅版紙 + 燙金 logo, HK$60-120/張</li>
+  [26] <li><strong>活動背板</strong>:A0 + PP 膠片 + 打孔掛繩, HK$80-150/張</li>
+  [27] <li><strong>婚禮 / 宴會</strong>:A2 + 250g 銅版紙 + 燙金 + 擊凸, HK$40-80/張</li>
+  [28] <li><strong>地產新盤</strong>:A1 + 200g 銅版紙 + 啞膠 + 防水, HK$30-50/張</li>
+  [29] <li><strong>學校 / 校園</strong>:A2 + 157g 銅版紙 + 光膠, HK$15-30/張</li>
+  [30] <li><strong>宗教 / 寺廟</strong>:A2 + 250g 銅版紙 + 燙金, HK$30-60/張</li>
+  [31] <li><strong>政治 / 選舉</strong>:A1 + PP 膠片 + UV 局部, HK$50-100/張</li>
+  [32] <li><strong>公益 / 慈善</strong>:A2 + 157g 銅版紙 + 啞膠, HK$15-30/張</li> </ul>
+  [33] <p>智印港提供 A0 / A1 / A2 / A3 / B2 全尺寸海報印刷,5 種紙質 + 6 種工藝,1 張起印 HK$8-120,3-5 個工作天交貨,急件 24 小時。所有材質 FDA 21 CFR 175.300 + EU REACH 1907/2006 認證。</p>
+  [34] <p>傳送尺寸 + 數量 + 紙質 + 工藝 4 項到 <strong>WhatsApp (見底部 7×24 客服 CTA)</strong>,30 秒回覆報價 + 樣書。順豐香港滿 HK$500 免費,DHL 跨境 2-4 天送達。</p>
+  [35] <p><strong>Q1: 海報印刷用咩紙最抵?</strong><br/>A: 室內短期展示建議用 157g 銅版紙 + 光膠 (HK$0.45/張), 室內長期用 250g 銅版紙 + 啞膠 (HK$0.95/張), 戶外 / 長期用 PP 膠片 (HK$1.20/張), 藝術展用油畫布 (HK$3.50/張)。68% 客戶揀 157g, 22% 揀 250g, 10% 揀 PP 膠片。</p>
+  [36] <p><strong>Q2: A1 / A2 海報有咩分別?</strong><br/>A: A1 = 594×841mm (23.4×33.1 吋,約 0.5 m²), 適合店內主牆、展覽入口、活動背板, 單價 HK$60-120; A2 = 420×594mm (16.5×23.4 吋,約 0.25 m²), 適合櫥窗、電梯廣告、活動宣傳, 單價 HK$15-30。A1 面積係 A2 嘅 2 倍, 單價約 2-2.4 倍。</p>
+  [37] <p><strong>Q3: 海報急件最快幾耐?</strong><br/>A: 上午 11 點前確認稿件, A4 / A3 銅版紙海報可 24 小時內交收 (+50% 急件費); A2 / A1 大尺寸需 1-2 個工作天 (+30% 特快費); 特殊工藝 (燙金 / UV / 摺口) 需 3 個工作天。順豐香港滿 HK$500 免費速遞。</p>
+
+===== zh-hk / paper-bag-printing-guide (content len 15844) =====
+  [1] <li>📦 <a href="/zh-hk/product/kraft-paper-bags/" class="text-[#1A56DB] underline font-medium">牛皮紙袋訂製</a> — 環保首選, HK$3-8/個</li>
+  [2] <p class="text-xs text-gray-500 mt-3">最後更新: 2026-08-21 · 智印港 · 滿 HK$500 順豐本地免運</p> </div> <div class="bg-amber-50 border-l-4 border-amber-500 p-4 my-4">
+  [3] <p class="text-sm">紙袋印刷 <strong>100 個起</strong>，單價 <strong>HK$3-8/個</strong>（牛皮紙／環保紙）、白卡 HK$5-12、禮品袋 HK$10-20；標準交期 <strong>3-5 個工作天</strong>，港九新界滿 HK$500 免費順豐。最常見退稿原因係刀模線同出血位，交稿前先睇規格清單。</p></div>
+  [4] <li><strong>全球紙袋市場 2026</strong>：<strong>US$6.73-6.90 億</strong>，預計 2033 達 <strong>US$9.75-10.30 億</strong>，CAGR <strong>5.5-5.9%</strong>（參考 <a href="https://www.einpresswire.com/article/930138112/paper-bags-market-set-for-strong-growth-as-sustainability-trends-and-plastic-restrictions-fuel-global-demand">EIN Presswire 2026 市場報告</a> 同 <a href="https://www.accio.com/business/kraft-bags-trends-2026">Accio kraft 袋 2026
+  [5] <td class="border p-2">US$0.40-0.70</td>
+  [6] <td class="border p-2">US$0.20-0.40</td>
+  [7] <td class="border p-2">US$0.10-0.25</td>
+  [8] <td class="border p-2">US$0.05-0.12</td>
+  [9] <td class="border p-2">US$0.50-0.80</td>
+  [10] <td class="border p-2">US$0.25-0.50</td>
+  [11] <td class="border p-2">US$0.15-0.30</td>
+  [12] <td class="border p-2">US$0.08-0.18</td>
+  [13] <td class="border p-2">US$0.80-1.20</td>
+  [14] <td class="border p-2">US$0.45-0.80</td>
+  [15] <td class="border p-2">US$0.30-0.55</td>
+  [16] <td class="border p-2">US$0.15-0.35</td>
+  [17] <td class="border p-2">US$1.00-1.50</td>
+  [18] <td class="border p-2">US$0.65-1.00</td>
+  [19] <td class="border p-2">US$0.40-0.70</td>
+  [20] <td class="border p-2">US$0.23-0.45</td>
+  [21] <td class="border p-2">US$0.05-0.10</td>
+  [22] <td class="border p-2">US$0.03-0.08</td>
+  [23] <td class="border p-2">US$0.02-0.05</td>
+  [24] <td class="border p-2">US$0.35-0.65</td>
+  [25] <td class="border p-2">US$0.20-0.45</td>
+  [26] <td class="border p-2">US$0.10-0.25</td>
+  [27] <p><strong>數量臨界點</strong>： 張同一設計嘅客製印刷 kraft 袋可以跌到 US$0.10-0.25/張 — 比 100 張嘅訂單平 4 倍。智印港最受歡迎嘅規格：<strong>22 × 30 × 10 cm 啡色牛皮紙，扭繩手挽，1-2 色 Logo</strong>，1,000 張含 4 色 CMYK 印 Logo 嘅標準價 <strong>US$0.19/張</strong>。<strong>歐盟出口</strong>（杜拜 2026 年 1 月全面禁止單次用塑膠；歐盟 PPWR 2025 年 2 月生效），需要加 10-15% 揀可堆肥 / 生物塗層 kraft 達到新規基準（參考 <a href="https://www.nanwangpaperbag.com/fr/biodegradable-paper-bag-innovations-in-retail-packaging-for-eco-
+  [28] <li><strong>牛皮紙袋</strong>：最通用，韌性高、耐撕，適合零售、外賣、活動派發。價格帶 HK$3-8/個。</li>
+  [29] <li><strong>白卡紙袋</strong>：表面平滑，印刷色彩還原最好，適合美妝、珠寶、精品。價格帶 HK$5-12/個。</li>
+  [30] <li><strong>禮品紙袋</strong>：加厚紙材＋特種工藝（燙金、UV），配絲帶手挽，適合節慶送禮。價格帶 HK$10-20/個。</li>
+  [31] <li><strong>環保紙袋</strong>：FSC 認證紙或再生紙，配大豆油墨，適合 ESG 品牌同社企。價格帶 HK$3-8/個。</li> </ul>
+  [32] <p>標準交期 3-5 個工作天（檔案確認後）。港九新界滿 HK$500 免費順豐；跨境訂單用 DHL，2-4 個工作天到。</p>
+
+===== en / poster-printing-guide (content len 10959) =====
+  [1] <p class="mt-4 mb-6"><strong>US poster sizes at a glance:</strong> A3 (11x17) tabletop, A2 window/event, A1 in-store main wall, A0 large/outdoor. From HK$8-120/pc, 3-5 working days, rush 24h.</p>
+  [2] <p>Standard 3-5 working days for 500 or fewer (HK$15-120/pc); rush 24-hour available. 1-piece minimum from HK$8-120. Free HK delivery over HK$500; FDA + EU REACH + FSC-certified.</p> </div> <table class="w-full border-collapse my-4 text-sm"> <thead>
+  [3] <td class="border p-2">US$8-15</td></tr>
+  [4] <td class="border p-2">US$15-30</td></tr>
+  [5] <td class="border p-2">US$30-60</td></tr>
+  [6] <td class="border p-2">US$60-120</td></tr>
+  [7] <td class="border p-2">US$20-40</td></tr></tbody></table>
+
+===== en / paper-bag-printing-guide (content len 22960) =====
+  [1] <li><strong>Free US Shipping $99</strong> — Free FedEx Ground to all 50 states, Hawaii, Alaska, Puerto Rico</li>
+  [2] <p><strong>Q: What is the minimum order quantity?</strong><br/>A: ZprintPro standard styles start at 100 pieces for small-batch logo customization; bulk () tiered pricing brings per-unit cost to $3-5. All styles include handles, optional foil/UV/emboss/ribbon finishes.</p>
+  [3] <li>📦 <a href="/en/product/kraft-paper-bags/" class="text-[#1A56DB] underline font-medium">Kraft Paper Bags</a> — Eco-friendly, from US$0.19/pc</li>
+  [4] <p class="text-xs text-gray-500 mt-3">Last updated: 2026-08-21 · ZprintPro · Free shipping over $99</p> </div>
+  [5] <li><strong>Global paper bags market 2026</strong>: <strong>US$6.73-6.90 billion</strong>, projected to reach <strong>US$9.75-10.30 billion by 2033</strong>, CAGR <strong>5.5-5.9%</strong> (per <a href="https://www.einpresswire.com/article/930138112/paper-bags-market-set-for-strong-growth-as-sustainability-trends-and-plastic-restrictions-fuel-global-demand">EIN Presswire 2026 market report</a> and <a href="https://ww
+  [6] <li><strong>Kraft paper bag market alone</strong>: <strong>US$4.83 billion in 2024</strong> → US$5.09 billion 2026 → US$6.97 billion 2034, (per <a href="https://www.intelmarketresearch.com/kraft-paper-bag-market-31482">Intel Market Research 2026</a>)</li>
+  [7] <li><strong>High-barrier paper bag segment</strong>: US$1.07 billion in 2025 → US$1.84 billion 2035, (per <a href="https://www.intelmarketresearch.com/kraft-paper-bag-market-31482">Intel Market Research</a>) — driven by food service and e-commerce grease-resistant needs</li> </ul>
+  [8] <td class="border p-2">US$0.40-0.70</td>
+  [9] <td class="border p-2">US$0.20-0.40</td>
+  [10] <td class="border p-2">US$0.10-0.25</td>
+  [11] <td class="border p-2">US$0.05-0.12</td>
+  [12] <td class="border p-2">US$0.50-0.80</td>
+  [13] <td class="border p-2">US$0.25-0.50</td>
+  [14] <td class="border p-2">US$0.15-0.30</td>
+  [15] <td class="border p-2">US$0.08-0.18</td>
+  [16] <td class="border p-2">US$0.80-1.20</td>
+  [17] <td class="border p-2">US$0.45-0.80</td>
+  [18] <td class="border p-2">US$0.30-0.55</td>
+  [19] <td class="border p-2">US$0.15-0.35</td>
+  [20] <td class="border p-2">US$1.00-1.50</td>
+  [21] <td class="border p-2">US$0.65-1.00</td>
+  [22] <td class="border p-2">US$0.40-0.70</td>
+  [23] <td class="border p-2">US$0.23-0.45</td>
+  [24] <td class="border p-2">US$0.05-0.10</td>
+  [25] <td class="border p-2">US$0.03-0.08</td>
+  [26] <td class="border p-2">US$0.02-0.05</td>
+  [27] <td class="border p-2">US$0.35-0.65</td>
+  [28] <td class="border p-2">US$0.20-0.45</td>
+  [29] <td class="border p-2">US$0.10-0.25</td>
+  [30] <p><strong>Volume tipping point</strong>: at pieces per design, custom printed kraft bags drop to roughly US$0.10-0.25/pc — about 4× cheaper per piece than 100-piece runs. The most popular ZprintPro size, <strong>22 × 30 × 10 cm brown kraft with twisted paper handle and 1-2 color logo</strong>, lands at <strong>US$0.19/pc at 1,000 pieces</strong> including 4-color CMYK logo. For <strong>EU export</strong> (Dubai bann
+
+===== ja / poster-printing-guide (content len 7623) =====
+  [1] <p class="mt-4 mb-6"><strong>ポスターサイズ早わかり：</strong>A3（11x17）卓上、A2 窓・イベント、A1 店内メイン壁、A0 大型・屋外。1枚〜 HK$8-120、3〜5営業日、特急24時間。</p>
+  [2] <p>500枚以下は標準3〜5営業日（HK$15-120/枚）、特急24時間対応。1枚〜 HK$8-120。HK$500以上で香港国内送料無料。FDA・EU REACH・FSC 認証。</p> </div> <table class="w-full border-collapse my-4 text-sm"> <thead>
+  [3] <td class="border p-2">¥200-300</td></tr>
+  [4] <td class="border p-2">¥300-600</td></tr>
+  [5] <td class="border p-2">¥600-1,200</td></tr>
+  [6] <td class="border p-2">¥1,200-2,300</td></tr>
+  [7] <td class="border p-2">¥400-800</td></tr></tbody></table>
+
+===== ja / paper-bag-printing-guide (content len 15125) =====
+  [1] <li>📦 <a href="/ja/product/kraft-paper-bags/" class="text-[#1A56DB] underline font-medium">クラフト紙袋</a> — エコ, 1個 ¥22 から</li>
+  [2] <p class="text-xs text-gray-500 mt-3">最終更新: 2026-08-21 · ZprintPro · $500相当以上送料無料</p> </div>
+  [3] <li><strong>世界紙袋市場 2026</strong>：<strong>US$6.73-6.90 億ドル</strong>、2033 年に <strong>US$9.75-10.30 億ドル</strong> 予測、CAGR <strong>5.5-5.9%</strong>（<a href="https://www.einpresswire.com/article/930138112/paper-bags-market-set-for-strong-growth-as-sustainability-trends-and-plastic-restrictions-fuel-global-demand">EIN Presswire 2026 市場レポート</a> および <a href="https://www.accio.com/business/kraft-bags-trends-2026">Accio kraft 
+  [4] <td class="border p-2">US$0.40-0.70</td>
+  [5] <td class="border p-2">US$0.20-0.40</td>
+  [6] <td class="border p-2">US$0.10-0.25</td>
+  [7] <td class="border p-2">US$0.05-0.12</td>
+  [8] <td class="border p-2">US$0.50-0.80</td>
+  [9] <td class="border p-2">US$0.25-0.50</td>
+  [10] <td class="border p-2">US$0.15-0.30</td>
+  [11] <td class="border p-2">US$0.08-0.18</td>
+  [12] <td class="border p-2">US$0.80-1.20</td>
+  [13] <td class="border p-2">US$0.45-0.80</td>
+  [14] <td class="border p-2">US$0.30-0.55</td>
+  [15] <td class="border p-2">US$0.15-0.35</td>
+  [16] <td class="border p-2">US$1.00-1.50</td>
+  [17] <td class="border p-2">US$0.65-1.00</td>
+  [18] <td class="border p-2">US$0.40-0.70</td>
+  [19] <td class="border p-2">US$0.23-0.45</td>
+  [20] <td class="border p-2">US$0.05-0.10</td>
+  [21] <td class="border p-2">US$0.03-0.08</td>
+  [22] <td class="border p-2">US$0.02-0.05</td>
+  [23] <td class="border p-2">US$0.35-0.65</td>
+  [24] <td class="border p-2">US$0.20-0.45</td>
+  [25] <td class="border p-2">US$0.10-0.25</td>
+  [26] <p><strong>数量転換点</strong>： 枚の同一デザイン カスタム印刷クラフト袋は US$0.10-0.25/枚 — 100 枚注文の 1/4 単価。ジープリント最多注文スペック：<strong>22 × 30 × 10 cm 茶色クラフト，捻り手提げ，1-2 色ロゴ</strong>、1,000 枚 4 色 CMYK ロゴ込み標準価格 <strong>US$0.19/枚</strong>。<strong>EU 輸出</strong>（ドバイ 2026 年 1 月シングルユースプラスチック全面禁止；EU PPWR 2025 年 2 月発効）は、新規基準達成のため堆肥可能 / バイオコート kraft を 10-15% 追加（<a href="https://www.nanwangpaperbag.com/fr/biodegradable-paper-bag-innovations-in-retail-packagi
+

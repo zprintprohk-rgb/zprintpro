@@ -1,0 +1,11 @@
+const m = require('F:\\zprintpro-nextjs\\.hermes\\industry-keyword-matrix.json');
+console.log('v7_sku_optimizations count:', m.v7_sku_optimizations.length);
+m.v7_sku_optimizations.forEach(s => console.log(' ', s.id, s.slug, 'R' + (s.optimization_round || '?')));
+console.log('\\nv7_pdp_reviews count:', m.v7_pdp_reviews.length);
+m.v7_pdp_reviews.forEach(s => console.log(' ', s.id, s.slug));
+console.log('\\nv7_cron_sessions count:', m.v7_cron_sessions.length);
+m.v7_cron_sessions.forEach(s => console.log(' ', s.date, s.session.substring(0, 20)));
+console.log('\\nv7_skip_log count:', m.v7_skip_log.length);
+m.v7_skip_log.forEach(s => console.log(' ', s.date, s.skip_type));
+console.log('\\nk3_section6_skip_count:', m.k3_section6_skip_count);
+console.log('lastUpdated:', m.lastUpdated);

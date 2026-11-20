@@ -1,0 +1,7 @@
+ZH-ECO@1039: <td class="border p-2">所有印刷品</td></tr><tr><td class="border p-2">植物油墨</td><td class="border p-2">純植物配方</td><td class="border p-2">食品包裝</td></tr><tr><td class="border p-2">水性過膠</td><td class="border p-2">無溶劑</td><td class="border p-2">兒童產品</td></tr><tr><td clas
+ZH-ECO@1356: td class="border p-2">電子產品內襯</td></tr><tr><td class="border p-2">PLA 淋膜</td><td class="border p-2">可降解</td><td class="border p-2">食品包裝</td></tr></tbody></table> <h3>三、ESG 報告中的印刷策略</h3> <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>碳足跡披露</strong>：印刷品
+EN-ECO@3558: : Patagonia, Allbirds use eco-friendly packaging
+ZH-MENU@293: 裝 (HK$80-200/本,燙金麻布裱褙,中高檔 2-3 年壽命)、PVC 防水 (HK$15-50/張,可水洗,適合外賣 cafe)、紙巾式拋棄 (HK$0.50-2/張,街邊速食最低成本)。材質選擇速贏:跨境連鎖 → PP 過膠;中高端餐廳 → 硬皮精裝;外賣速食 → PVC 
+ZH-MENU@742:  燙金字 + 麻布裱褙 + 2-3 年壽命 (中高檔酒樓);PVC 防水 = 完全可水洗 + 0.3-0.5mm 厚 (外賣 cafe 防水);紙巾式拋棄 = 50g 薄紙 + 成本最低 (街邊速食)。選擇關鍵 = 餐廳定位 + 更新頻率 + 預算 3 維度,不是單純比單價。
+ZH-MENU@1658: 外賣店 / 速食
+ZH-MENU@2709: :完全防水防油,可水洗,適合外賣、速食、cafe,單價 HK$15-50/張

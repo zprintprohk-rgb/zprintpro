@@ -1,0 +1,17 @@
+﻿src/lib/quote-engine/__tests__/books.pricing.test.ts(25,18): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/books.pricing.test.ts(25,101): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/books.pricing.test.ts(42,18): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/books.pricing.test.ts(42,77): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/books.pricing.test.ts(55,15): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/books.pricing.test.ts(55,51): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(8,10): error TS2305: Module '"../formulas/stickers"' has no exported member 'businessCardsFormulaV2'.
+src/lib/quote-engine/__tests__/debug-double.ts(1,10): error TS2305: Module '"../formulas/stickers"' has no exported member 'businessCardsFormulaV2'.
+src/lib/quote-engine/__tests__/debug-double.ts(25,17): error TS7006: Parameter 'n' implicitly has an 'any' type.
+src/lib/quote-engine/__tests__/debug-pricing.ts(2,10): error TS2305: Module '"../formulas/stickers"' has no exported member 'businessCardsFormulaV2'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(25,17): error TS7006: Parameter 'n' implicitly has an 'any' type.
+src/lib/quote-engine/__tests__/e2e-verification.ts(5,10): error TS2305: Module '"../formulas/stickers"' has no exported member 'businessCardsFormulaV2'.
+src/lib/quote-engine/__tests__/e2e-verification.ts(14,23): error TS7006: Parameter 'code' implicitly has an 'any' type.
+src/lib/quote-engine/__tests__/e2e-verification.ts(14,29): error TS7006: Parameter 'market' implicitly has an 'any' type.
+src/lib/quote-engine/__tests__/e2e-verification.ts(40,22): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Record<MarketCode, Market>'.
+  No index signature with a parameter of type 'string' was found on type 'Record<MarketCode, Market>'.
+src/lib/quote-engine/__tests__/e2e-verification.ts(53,52): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.

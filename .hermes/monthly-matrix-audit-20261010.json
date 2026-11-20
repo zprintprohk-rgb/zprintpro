@@ -1,0 +1,273 @@
+{
+  "schema": "monthly-matrix-audit-v1",
+  "run": {
+    "lane": "ZP-monthly-matrix",
+    "run_date": "2026-10-10",
+    "scheduled_window": "monthly 1st 06:13 Asia/Shanghai (next 2026-11-01)",
+    "trigger_of_this_run": "manual / host wrapper (non-1st-day run; user 令: 当次完整执行不简化不延后)",
+    "idempotency_key": "b03155c779d2e369",
+    "idempotency_key_rule": "sha256(lane|intent|target|day)[:16] (run-context.idempotency.this_run_key)",
+    "environment": "pwsh blocked in lane sandbox (v9.4 rearm) -> file tools + web tools only; no node/python/git in-lane",
+    "src_changes": 0,
+    "verdict": "PARTIAL",
+    "partial_reason": "审计全量完成; 2 项执行层动作按契约/环境推迟: (a) industry-keyword-matrix.json 回灌 (同日已被 ZP-gsc-feedback 改写, 跨车道避让 §二.6), (b) 35 词触顶页置换的 src 落点 (无 node/pwsh 无法校验 35 项 JSON 数组 + title/keyword churn 纪律窗口)"
+  },
+  "consumed": {
+    "run_context": ".hermes/logs/run-context-ZP-monthly-matrix.json @ 2026-10-10 00:17:10",
+    "lane_status": ".hermes/logs/lane-status.json @ 2026-10-09T15:48:45.210Z",
+    "contract": ".hermes/cron-prompts/lane-results-bus-contract.md @ v1 (2026-09-19)",
+    "lane_prompt": ".hermes/cron-prompts/zprintpro-monthly-matrix-audit.md (含 K3-BRAIN-INJECT-2026-10-09 第 -2 优先级区)",
+    "sop10_gate": ".hermes/cron-prompts/sop-10-gate.md",
+    "brain_ssot": "docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md (Part A/E/F-5/G)",
+    "gsc_deep_audit": "docs/2026-10-09-gsc-deep-audit-and-strategy.md",
+    "money_kw_ssot_1005": ".hermes/money-kw-20261005.json (138,364 lines, machine-readable)",
+    "money_kw_ssot_1012": ".hermes/money-kw-20261012.json (data_window.status=MISSING)",
+    "delivery_pkg": "DELIVERY/2026-10-12-money-kw-package.md",
+    "sibling_reports_readonly": [
+      ".hermes/logs/2026-10-10-ZP-gsc-feedback.md",
+      ".hermes/logs/2026-10-10-ZP-weekly-meta.md"
+    ],
+    "previous_run_found_on_disk": ".hermes/logs/2026-09-monthly-matrix-audit.md (manual run 2026-09-13) — NOT visible to bus (naming non-compliant)",
+    "previous_run_bus_record": null,
+    "previous_run_baseline": {
+      "queue_size": 36,
+      "covered_count": 48,
+      "p0_coverage_pct_declared": 95.45,
+      "p0_ratio_in_sep_report": "21/22",
+      "p1_coverage_pct_declared": 90.91,
+      "p1_ratio_in_sep_report": "10/11",
+      "tier_a_coverage": "91.3% (21/23)",
+      "tier_b_coverage": "100.0% (9/9)",
+      "content_iteration": "0/10 (failed, escalated to user)",
+      "version_bump": "2026-09-13-v1 -> 2026-09-13-v1 (未实际 bump)"
+    },
+    "bus_unavailable": false
+  },
+  "cross_lane_guard": {
+    "run_context_sibling_lanes": [],
+    "disk_truth_same_day_siblings": [
+      "ZP-gsc-feedback (2026-10-10) wrote .hermes/industry-keyword-matrix.json + GSC数据/index.json",
+      "ZP-weekly-meta (2026-10-10) wrote src/lib/seo.ts + .hermes/ctr-meta-20261010-livefield.json",
+      "ZP-blog-deepfix (2026-10-10) wrote .hermes/logs/2026-10-10-ZP-blog-deepfix.md"
+    ],
+    "decision": "DO NOT write .hermes/industry-keyword-matrix.json this run (contract §二.6 + AGENTS §0.35.5). Backfill deferred; this run's matrix deltas live in this file only.",
+    "src_files_touched_by_siblings_today": ["src/lib/seo.ts"],
+    "this_run_src_writes": []
+  },
+  "matrix_integrity": {
+    "file": ".hermes/industry-keyword-matrix.json",
+    "method_1_declared_stats": {
+      "version": "2026-09-13-v1",
+      "queue_size": 36,
+      "covered_count": 49,
+      "unique_ids": 23,
+      "p0_total": 21,
+      "p0_covered": 9,
+      "p0_coverage_pct": 95.45,
+      "p1_total": 10,
+      "p1_covered": 3,
+      "p1_coverage_pct": 90.91,
+      "p2_total": 3,
+      "p2_covered": 0,
+      "p2_coverage_pct": 0,
+      "tier_a_count": 21,
+      "tier_b_count": 9,
+      "tier_c_count": 4,
+      "tier_a_covered": 7,
+      "tier_b_covered": 2,
+      "tier_c_covered": 3,
+      "pending_in_queue": 22,
+      "total_524_target": 524,
+      "covered_524_pct": "4.39",
+      "last_updated": "2026-10-10",
+      "last_updated_event": "gsc-feedback-loop 2026-10-10 ...",
+      "lastUpdated": "2026-08-19T15:00:00+08:00",
+      "last_updated_legacy": "2026-08-05T15:00:00+08:00",
+      "last_gsc_feedback_update": "2026-10-10 ..."
+    },
+    "method_2_direct_count": {
+      "queue_entries": 36,
+      "queue_entries_marked_completed": 16,
+      "queue_entries_without_status": 20,
+      "covered_entries": 49,
+      "covered_duplicate_ids": ["Q-GR-01 (x2)"],
+      "covered_unique_ids": 48
+    },
+    "findings": [
+      "queue_size 36 = 直数 36 OK (法1=法2)",
+      "covered_count 49 = covered[] 条目数, 非唯一 id 数; 唯一 id = 48 (Q-GR-01 重复 1 次) -> 'covered_count' 语义非 unique",
+      "p0_coverage_pct 95.45 与其自身分子分母矛盾: 9/21 = 42.86%; 95.45% = 21/22 (9 月报告 §1 原文口径), 判为陈旧未复算",
+      "p1_coverage_pct 90.91 同上: 3/10 = 30%; 90.91% = 10/11 (9 月报告 §1 原文口径)",
+      "pending_in_queue 22 vs 直数 20 (36 queue 条目 - 16 标 completed) -> 差 2, 口径未对账",
+      "tier_*_covered (7/2/3, 合计 12) 与 covered_count 49 为两套不同粒度计数并存, 无对账字段",
+      "version 未 bump: 9 月轮为 2026-09-13-v1, 本轮仍 2026-09-13-v1 -> verify step 6 连续第二月 FAIL",
+      "三个'最后更新'字段互相矛盾 (lastUpdated 2026-08-19 / last_updated 2026-08-05 / last_gsc_feedback_update 2026-10-10) -> verify step 2 'matrix.json 是今天的' FAIL",
+      "JSON 可解析 (逐行读取 + grep 命中结构正常); 未跑 node 语法校验 (环境限制)"
+    ],
+    "verify_7step": {
+      "step2_matrix_is_today": "FAIL (lastUpdated/last_updated 陈旧)",
+      "step3_json_valid": "PASS (read-level; 未跑 node JSON.parse)",
+      "step4_queue_covered_stats_updated": "PARTIAL (仅 stats 的 last_updated_event 由兄弟车道更新; queue/covered 未变)",
+      "step5_report_exists_nonempty": "PASS",
+      "step6_version_bumped": "FAIL (2026-09-13-v1 未变, 连续第二月)",
+      "step7_orphan_content_iteration_10": "FAIL (本轮 0 篇, 未执行; 与 9 月轮同)",
+      "step8_price_table_progress_section": "N/A (.hermes/price-tables/ 目录不存在, glob 0 命中)"
+    }
+  },
+  "coverage": {
+    "p0": {"total": 21, "covered": 9, "recomputed_pct": 42.86, "declared_pct": 95.45},
+    "p1": {"total": 10, "covered": 3, "recomputed_pct": 30.0, "declared_pct": 90.91},
+    "p2": {"total": 3, "covered": 0, "recomputed_pct": 0, "declared_pct": 0},
+    "tier": {
+      "A": {"total": 21, "covered": 7, "pct": 33.3},
+      "B": {"total": 9, "covered": 2, "pct": 22.2},
+      "C": {"total": 4, "covered": 3, "pct": 75.0}
+    },
+    "delta_vs_2026_09": {"covered_count": "48 -> 49 (+1)", "queue_size": "36 -> 36 (0)", "p0_declared_pct": "95.45 (unchanged, stale)"},
+    "long_tail_524": {"target": 524, "covered": 23, "pct": 4.39, "note": "stats.covered_524_pct=4.39 与 unique_ids=23 -> 23/524=4.39% 自洽"},
+    "next_daily_recommendation_declared": "Q-002 cosmetics-packaging-box-printing-guide (P0/TierA 唯一未 covered)"
+  },
+  "money_kw_v1_coverage": {
+    "definition": "v1 带钱词地图 (K3 8/30 拍板, monthly 必报): zh-hk 16 / en 10 / ja 10; 覆盖率 = 有供给落点 (SKU keywords / 类目内容 / blog) / 词表数",
+    "method": "grep 源串 (src/data/**, 精确串) — 无 node 无脚本; 空格/变形不自动归并, 已单列",
+    "zh_hk_16": {
+      "covered": ["食品包裝印刷", "即日印刷", "餐牌印刷", "紙袋印刷", "食品包裝訂製", "doujinshi 印刷 (同人誌印刷)", "china catalog 印刷 (china catalog printing)", "宣傳單張印刷", "貼紙印刷", "名片印刷 (业务子类目豁免, 存量 title 在)", "喜帖印刷", "禮盒印刷", "證書印刷", "貼紙訂製"],
+      "partial": ["海報印刷即日 (仅 1 条 FAQ 问句 '海報印刷即日交貨得唔得？', 非 title/keyword 落点)"],
+      "missing": ["月餅盒印刷 (src/ 全量 grep 0 命中)"],
+      "covered_count_excl_exempt": 13,
+      "covered_count_incl_exempt": 14
+    },
+    "en_10": {
+      "covered": ["small batch stickers", "small batch sticker printing", "fluorescent stickers", "china catalog printing", "custom packaging boxes", "die cut stickers", "vinyl stickers"],
+      "partial": ["small batch custom stickers (仅 category-conversion-blocks.ts 内部 note 串, 非客户可见字段)"],
+      "missing": ["sticker labels (src/data grep 0)", "business card printing (业务子类目豁免, 0 — 与 §0.0 展示层未拍板一致)"],
+      "covered_count_excl_exempt": 7
+    },
+    "ja_10": {
+      "covered": ["クラフト紙 パッケージ印刷", "同人誌印刷", "ステッカー印刷", "パッケージ印刷"],
+      "variant_only_unspaced": ["ダイカット ステッカー 防水 (线上为 'ダイカットステッカー' 无空格)", "ステッカー オリジナル (线上为 'オリジナルステッカー' 无空格)"],
+      "gate_blocked": ["特急印刷 激安 (仅 1 处存量命中: src/app/[locale]/services/rush-printing-delivery/page.tsx L48; 且含 i18n-guard.js JA_激安 禁词)", "印刷 激安 (同上, 为 特急印刷 激安 的子串; 且禁词)"],
+      "missing": ["チラシ印刷 早い (0)", "名刺印刷 激安 (0; 业务子类目豁免 + 禁词)"],
+      "covered_count": 4
+    },
+    "variant_mismatch_finding": "v1 词表多条为『带空格/特定形态』(ダイカット ステッカー 防水 / ステッカー オリジナル / 特急印刷 激安), 线上实际关键词为无空格合并形或禁词形 -> v1 字面口径会低估覆盖率; 建议 11 月词盘改用线上实际形态做键",
+    "gate_conflict_finding": "v1 表含 ja『激安』构式 2 条, 与 K3 2026-09-02 GLM 拍板 (激安->格安/コスパ, i18n-guard JA_激安) 直接冲突 -> v1 ja 覆盖率不可能靠写入达成, 须 K3 口径裁决"
+  },
+  "kw_budget_35": {
+    "at_cap_35_ja": ["waterproof-stickers", "transparent-stickers", "small-batch-stickers", "die-cut-stickers", "a2-posters", "a1-posters", "outdoor-posters"],
+    "at_cap_35_en": ["cartoon-red-packets", "eco-red-packets", "large-red-packets"],
+    "headroom": {"catalog-printing[en]": 12, "textbooks[ja]": 15, "catalog-china-page[en]": 22, "saddle-stitch-booklets[en]": 9},
+    "algorithm_spec": "page kw < 35 -> 补缺; >= 35 -> 置换 (清退 pos 最差 / imps 最低 1-2 词)",
+    "execution_status": "BLOCKED",
+    "blocked_reason": [
+      "无 node/pwsh: 无法校验 35 项 JSON 数组改写后语法与当量",
+      "10/09 档逐词 pos/imps 抽取产物为单行大 JSON (兄弟车道已记录同一缺口), 无法逐词排名; 10/05 档可读但非最新窗",
+      "src 行为改动违反本轮 title/keyword churn 纪律窗口 (title 冻结至 10/19; 关键词层同批待合并)"
+    ],
+    "dry_run_evidence": "waterproof-stickers[ja] 现 35 词 (sku-seo-data.ts L50) 含 PVCシール/pvc シール (10/05 批注入), 已满 -> 置换目标页确认; 新增候选须来自 10/12 机器可读多行 JSON",
+    "unblock_condition": "10/12 档落盘为多行 per-query JSON (FIX-4) + node 可用 -> 重跑置换算法 -> 与 10/19 title 批合并 1 push"
+  },
+  "p0_p3_checklist": {
+    "hreflang": {
+      "live_authority": "src/app/[locale]/layout.tsx L121-131: en-US/en-GB/en-AU/en-CA->/en; ja-JP->/ja; zh-Hant-HK->/zh-hk; x-default->/zh-hk",
+      "w3_audit_baseline_20260930": "记为 zh-HK + x-default->/ -> 本轮实测已被修好, W3 §2 结论 stale",
+      "page_level_builders": "seo.ts L346/869/962/1689 + page.tsx (blog/about/contact/press-kit/insights/...) 均用 'ja' (非 ja-JP) 且缺 en-CA",
+      "x_default_wrong_targets": [
+        "src/lib/metadata.ts L27 -> /en (guide/[slug] 页, createMetadata 唯一消费者)",
+        "src/app/[locale]/legal/page.tsx L234 -> /en/legal/",
+        "src/app/[locale]/payment/success/page.tsx L37 -> /en/payment/success/"
+      ],
+      "dead_code_risk": ["src/lib/hreflang.ts (重复 en-US + zh-HK, 0 消费者)", "src/lib/seo.ts L1702 generateHreflangTags (zh-HK + ja, 0 消费者)"],
+      "symmetry_verdict": "PATH 级三向对称 (category/product/blog/quote 均带 ${slug} 正确互指) ✅; LABEL 级不统一 (ja vs ja-JP, en-CA 仅 layout 有) ⚠️; x-default 3 处错指向 ⚠️",
+      "agents_spec_delta": "AGENTS §5 声明 zh-hant-HK / x-default=zh-hant-HK; 实现 zh-Hant-HK (大小写等价) + x-default=/zh-hk 路径 -> 口径基本对齐, 仅剩标签统一与 3 处 x-default"
+    },
+    "organization_sameAs": {
+      "organization_schema": ["https://twitter.com/zprintpro", "https://linkedin.com/company/zprintpro", "https://github.com/zprintprohk-rgb", "https://github.com/zprintprohk-rgb/zprintpro"],
+      "nap_sameAs_per_locale": ["https://github.com/zprintprohk-rgb", "https://github.com/zprintprohk-rgb/zprintpro"],
+      "author_sameAs_per_locale": ["https://www.linkedin.com/company/zprintpro", "https://www.instagram.com/zprintpro"],
+      "w3_audit_baseline_20260930": "sameAs 空壳 -> 已被 2026-09-30 W2 Phase 1.2 部分修复 (GitHub 锚点)",
+      "live_probe_20261010": {"https://github.com/zprintprohk-rgb": "HTTP 200 (内容确认)", "https://www.instagram.com/zprintpro": "HTTP 200 (IG 对墙页亦返 200, 不足以证明账号归属/真实)"},
+      "finding_fragmentation": "同一实体三套 sameAs (Organization 4 / NAP 2 / Author 2) 不一致, 三处 schema 发射器各自硬编码 -> 实体信号碎片化",
+      "risk_instagram": "authorByLocale 三 locale 均含 instagram.com/zprintpro; AGENTS §0.23 禁假链接 + seo.ts L1030 注释『用户没有真实社交账号, 不传假链接』-> 需 K3 确认真实性 (1 行口径裁决)"
+    },
+    "sku_title_band": {
+      "source": ".hermes/title-v5-audit-inventory.md (92 SKU x 3 locale = 276 条, 9/23 v5 批次快照)",
+      "method": "grep 直数: '[5x]:' 命中 276; '[0-4x]:' 0; '[58]:' 0; '[59]:' 0; '[6-9x]:' 0",
+      "band_50_57": 276,
+      "band_ge_58": 0,
+      "band_lt_50": 0,
+      "compliance_pct": 100.0,
+      "page_layer_existing_trim": ["services/catalog-printing-china (en/zh-hk) = 77", "rush-printing-delivery en = 66", "rush-printing-delivery ja = 59"],
+      "new_finding_gate_word": "rush-printing-delivery ja LIVE title 含 '激安' (src/app/[locale]/services/rush-printing-delivery/page.tsx L48) = i18n-guard.js JA_激安 禁词存量 -> 10/19 TRIM 必须同时消禁词",
+      "caveat": "未跑 scripts/guards/title-equiv.js (无 node); 9/23 快照 + 10/10 兄弟车道 live 抽测 (stickers 57 / ja greeting-cards ~55) 未发现漂移"
+    },
+    "geo_facts_panel": {
+      "structured_panel_exists": false,
+      "evidence": "grep geoFacts|factsPanel|factSheet|DataPanel src/ -> 仅 press-kit 翻译键 factSheet",
+      "signal_coverage": {
+        "en": "ISO 9001 + FSC + FDA 存在 (category-seo-content L4349/4385; sku-seo-data body 'ISO 9001 certified production')",
+        "ja": "FSC + 納期 (3-5営業日) + 最小ロット (100個/10部) + 実績 (B2B納品実績4,820件超, category-conversion-blocks L1114) 存在",
+        "zh-hk": "深圳自營工廠/海德堡 + 順豐本地 + FSC + 15年/15,000+ 客戶 存在"
+      },
+      "verdict": "事实信号 3/3 locale 有 (文案分散), 结构化『GEO 事实面板』资产 0 -> 缺口为形态而非内容"
+    },
+    "ai_overview_citation_baseline": {
+      "baseline_file": ".hermes/geo/geo_citation_baseline-2026-09-30.md+.json",
+      "baseline_result": {"probes": 8, "hit": 3, "hit_rate": "37.5%", "zh_hk": "3/3", "en": "0/3", "ja": "0/2"},
+      "this_run_retest": "NOT_RUN",
+      "reason": "本 lane 无 Perplexity/source_check 等价 AI 引用源探针工具; web_search 非 AI Overview 引用源探针, 用其充当会污染基线 -> 不编造",
+      "note": "9/30 首测已存档 (满足『首测存档』); 月度复测方法与工具须 K3 明确"
+    }
+  },
+  "brand_seasonal": {
+    "requirement": "K3 大脑 §F-5-3: 年賀状 / ホリデーカード / corporate holiday cards / 聖誕卡 渗透进度专段 (0->展示->位次 三档)",
+    "rows": [
+      {"term": "年賀状印刷 / 2027年賀状", "locale": "ja", "window_10_05": "0 展示", "window_10_09": "0 展示", "tier": "0 (未渗透)", "content_side": "ja greeting-cards 承接段 live (HTTP 200 实证); 早割窗 10/31 倒计时 21 天", "action": "10/16 判读 (0->有展示即胜); 仍 0 启 Plan B (site: 收录 + sitemap 核对)"},
+      {"term": "corporate / business / custom holiday cards", "locale": "en", "window_10_05": "0 展示", "window_10_09": "0 展示", "tier": "0 (未渗透)", "content_side": "category-seo-content.ts L4401-4416 承接段 live", "action": "同上"},
+      {"term": "ホリデーカード", "locale": "ja", "window_10_05": "未列", "window_10_09": "未列", "tier": "UNTESTED", "content_side": "承接段含 holiday 语义词", "action": "11/1 锚点表补列并测"},
+      {"term": "聖誕卡 / 賀卡 / 卡片印刷", "locale": "zh-hk", "window_10_05": "未列", "window_10_09": "0 展示 (季节未到)", "tier": "0 (季节窗未开)", "content_side": "W9 (10/21-27) B7 queue 窗; K3 待裁是否破 queue 提前", "action": "10/21 窗启动; 11/1 出 0->展示进度"}
+    ],
+    "summary": "4 条季节词全部处『0 -> 展示』第一档 (展示 0 / 位次 N/A / 点击 0); 无一条进入第二档",
+    "watch": "年賀状早割 10/31 (21 天), 内容收录需 5-10 天 -> 时间窗风险最高"
+  },
+  "tier_switch": {
+    "rules_run": "自动降级 (30d 连续零展示 / 90d 无点击) + 自动升级 (7d imps>=100 且 rank<=20 / SKU 月环比 +50%)",
+    "applied": 0,
+    "reason": "本轮无逐词 30d 滚动可判产物 (10/09 抽取为单行 JSON, 4 个 zh 锁词 PENDING); 按纪律不臆断 -> 0 切换 (与 9 月轮同结论)",
+    "cap_check": "切换上限 = matrix 总数 10% = 3.6 -> 本轮 0 <= 3.6 OK",
+    "covered_skip_count": 0,
+    "manual_review_carry": ["Q-GR-01/G-R-02/Q-GR-03 covered >90 天, GSC 复查 (9 月起挂账)"],
+    "daily_recommendation": "Q-002 cosmetics-packaging-box-printing-guide (唯一 P0/TierA 未 covered)"
+  },
+  "quality_triad_v94": {
+    "striking_top10_queries": {"value": 486, "threshold": 5, "verdict": "PASS", "delta_vs_0918": "+38.9% (350->486)"},
+    "pos_1_20_impression_share": {"value": "48.6% (词数口径)", "threshold": "30%", "verdict": "proxy PASS (imps 加权口径缺全量字段)"},
+    "clicked_queries": {"value": ">=27", "threshold": 12, "verdict": "PASS"},
+    "m1_line_hk_7d_clicks": {"value": 88, "threshold": 25, "verdict": "PASS"},
+    "source": ".hermes/logs/2026-10-10-ZP-gsc-feedback.md §7 (继承, 本 lane 未重算)"
+  },
+  "naming_defect_found": {
+    "issue": "历史月度报告命名 .hermes/logs/YYYY-MM-monthly-matrix-audit.md 不符合 §0.35.3.6/wrapper 强制口径 <YYYY-MM-DD>-<lane>.md",
+    "consequence": "lane-status.mjs 与 lane-preflight.py 均判本车道『无报告/从未成功』(lastReportFile=null, previous_run.latest_report=null), 幂等账本与数据继承断链 3 个月 (7/8/9 月报告存在但不可见)",
+    "fix": "本报告已改用合口径命名; 建议为 7/8/9 月三份历史报告补 date-prefixed 别名或归档说明 (docs/.hermes 层, 非 src)"
+  },
+  "request_human": [
+    {"item": "4 车道 LastTaskResult=2147946720 (0x80070020 文件占用) + ZP-k3-review 未注册 + legacy watchdog 残留", "owner": "K3 管理员", "paste": "powershell -NoProfile -ExecutionPolicy Bypass -File F:\\zprintpro-nextjs\\scripts\\register-cron-tasks.ps1; schtasks /Run /TN \"ZP-monthly-matrix\""},
+    {"item": "v1 带钱词表 ja『激安』构式 2 条与 i18n-guard JA_激安 冲突 -> 口径裁决 (改表 或 保留存量)", "owner": "K3"},
+    {"item": "authorByLocale Instagram sameAs 真实性确认 (AGENTS §0.23 禁假链接)", "owner": "K3"},
+    {"item": "hreflang 标签统一 (ja vs ja-JP / en-CA) + 3 处 x-default 错指向 -> src 行为变更, 需排批", "owner": "K3"},
+    {"item": "AI Overview 引用率月度复测的工具/方法 (Perplexity key 缺失)", "owner": "K3"}
+  ],
+  "pending": [
+    "industry-keyword-matrix.json 回灌 (本轮跨车道避让, 待下一可写窗口)",
+    "35 词触顶页置换 src 执行 (待 10/12 多行 JSON + node)",
+    "4 个 zh T1 锁词 10-09 值 (单行 JSON 抽取缺口, 继承兄弟车道 PENDING)",
+    "3mo 窗 (连续两档缺)",
+    "内容质量自迭代 0/10 (本轮未执行, 未以时间为由简化 — 属 11/1 批次范围)"
+  ],
+  "verification": {
+    "double_method_recount": "matrix 完整性 = 法1 声明 stats vs 法2 文件直数条目 (36/49/48/20 已对账); 比值 = 声明 pct vs 复算比值 + 9 月报告原文佐证",
+    "online_probes": ["https://github.com/zprintprohk-rgb HTTP 200", "https://www.instagram.com/zprintpro HTTP 200 (非归属证据)"],
+    "in_lane_cannot": ["tsc/build/门童/curl/JSON.parse", "git commit/push (host-side wrapper)"]
+  }
+}

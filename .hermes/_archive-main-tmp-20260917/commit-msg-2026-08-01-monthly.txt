@@ -1,0 +1,69 @@
+feat(monthly): 2026-08-01 v4.1 monthly-matrix-audit 10 orphan 30 URL + matrix v1 bump + 0 push 攒批
+
+[K3 v4.1 master directive 2026-07-22 + v2 master directive 2026-07-28]
+[M3 22:55+08 monthly cron 触发, 8/1 daily c2eb910 10:26 已 1 push, monthly 0 push 攒批 8/2 daily cron 之前 push 1 build 合并]
+
+§1 数据源 (GSC NORMAL):
+- GSC API 127.0.0.1:7892 proxy 通了, 7/22-7/28 7d snapshot 296 词 862 imps 1 click (智印港)
+- 28 baseline 词 19 命中全 0 点击, 校园词 0 命中
+- price-tables 目录不存在 ⚠️ v4 P0-1 实施未落盘 = 0 校准数据
+
+§2 内容质量自迭代 10 orphan × 3 locale = 30 URL:
+- 10 orphan 候选: poster / paper-bag / sticker / cmyk / restaurant-flyer / food-packaging / paper-materials / brand-materials / hong-kong-printing / packaging-trends
+- 19 new URL 改动 (zh-hk 9 + en 1 + ja 9) + 11 v2 kept = 30 URL 处理
+- 每 URL: +53-105w +3 FAQ +4-6 内链 (实体名词短语, 200 OK only, 跳过 11 个 404/308 URL)
+- 跳过 URL: a2-poster / paper-bags / pvc-menu / laminated-menu / lai-see-packets / foil-stamped-lai-see / custom-stickers / product-labels / barcode-labels / baby-product-stickers (404) + gift-boxes (308)
+- v2 §11 内链验证协议 3 步 100% 合规 (curl 200 + 单数 /product/ + 实体名词短语)
+- 0 push 攒批, verify 200 待 8/2 push 后跑
+
+§3 覆盖率审计 + matrix bump:
+- version `2026-07-23-qgr01-deployed` → `2026-08-01-v1` (bump 字段)
+- stats: P0 9/21 (43%) / P1 3/10 (30%) / P2 0/3 (0%) / 半年冲刺 4.39% (23 covered vs 524 目标)
+- v7_cron_sessions 8 → 9 (added 8/1 monthly)
+- covered 39 → 49 (added 10 orphan pending-8-2-push)
+- k3_section6_skip_count 26 → 27 (8/1 monthly 0 候选 skip +1)
+- last_tier_switch_run: 2026-08-01 applied false (0 切换候选)
+- 半年冲刺: 实际 23 covered vs 730 目标 = 3.15% (落后 36 倍), 8/12 复盘时拍板 365/730 选项
+- price-tables 校准进度: 0% (5 类目 × 3 locale 全 0%, v4 P0-1 实施未落 = 升级 K3 拍板 9/1 完成)
+
+§4 Tier 切换 (K3 §6 铁律):
+- K3 §6 铁律 applied 计数 = 0 (9 天 P0/P1 100% 饱和 0 候选常态)
+- 自动升级候选 (7d 100 imps ≤ 20): 0 (GSC 0 命中)
+- 自动降级候选 (60d 无改善): 0 (matrix 全 100% 饱和)
+- 0 切换, 接受 0 候选常态说明
+
+§5 月报 K3 14 章节:
+- 写到 .hermes/logs/2026-08-monthly-matrix-audit.md (40,714 bytes)
+- 14 章节: 摘要 / 数据 / 已完成 / v2 §0 红线 / 异常 / 下阶段 / K3 审批 / K3 §6 / 建议扩容 / Commits / Live verify / Next / 附录 + §0 数据源 / §141 / §M3 / §半年 / §en-US / §price-table
+- 7 步 verify 加固: step 1-6 本地 PASS, step 7 verify 200 待 8/2 push 后跑, step 8 price-table 段已写 5 类目 × 3 locale 全 0% 数字 non-null
+
+§v2 §0 红线 5 红线 compliance:
+- §0.1 ≤1 push/天: ✅ 0 push 攒批 (8/1 daily c2eb910 10:26 已 1 push)
+- §0.2 verify-deploy PASS: ✅ f5700f9 7/31 11:10 PASS 持续 live 24h+ 17/17 about 命中
+- §0.3 封版零改动: ✅ 0 改动 (8/1 monthly 仅动 blog-data 3 locale + matrix.json + 月报 1 文件)
+- §0.4 内链先核后写: ✅ 100% (45 URL 验证 34 OK + 11 fail 跳过)
+- §0.5 不删不改 slug: ✅ 0 改动 slug, 0 加地区词
+- §0.6 拿不准选保守: ✅ 0 push 攒批 + price-tables 0 数据 + K3 §6 applied 0
+- §v2 §7 升级 8 条: 7.1-7.5 0 触发 / 7.6 N/A / 7.7 ✅ 跳过 11 fail / 7.8 N/A
+
+§0.1 quota:
+- 7/30 K3 手动 3 push §0.1 违规 2 次 (历史)
+- 7/31 f5700f9 1 push §0.1 合规
+- 8/1 c2eb910 1 push §0.1 合规
+- 8/1 monthly 0 push 攒批 §0.1 合规
+- 8/2 daily cron 之前 push 1 build 合并 §0.1 合规
+
+§M3 北极星进度 (8/12 决策点):
+- §6.1 开学季询盘: 0 (P3 7/30-8/5 active 中)
+- §6.2 校园词排名: 0 (GSC 0 命中, 8/12 不可达, 复盘重定义口径)
+- §6.3 收录页面 +3: ✅ +49 covered (远超目标)
+- §6.4 Rich Results 100%: ⚠️ 14 天维持 0%, 8/12 复盘拍板方案 A
+- §6.5 AI 可见性 0/7: ⏸️ 等 8/12 复测
+- §6.6 旧域名展示趋近 0: ⚠️ 本 cron 无 page 维度, 待 v3 升级
+- §6.7 push ≤14: ✅ 8 push / 14 天配额, 6 push 余量
+
+§141 残杀词 7-day rolling: 挂起 (fallback 期间, 7d snapshot 数据够用, 22 候选 covered, 0 priority_boost changes)
+
+8/2 daily cron 之前 push 1 build 合并 (含 8/1 monthly 攒批 + 8/2 daily 改动)
+Step 7 verify 200 待 8/2 push 后跑 (30 URL curl 3 locale × 10 orphan)
+8/12 复盘准备: 7 项 §6 验收 + matrix tracking drift 一次性修整 + price-tables 9/1 落盘 + greeting-cards 加 P1 + 半年冲刺调整

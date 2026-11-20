@@ -1,0 +1,74 @@
+[
+  {
+    "file": "src/data/category-seo-content.ts",
+    "line": 0,
+    "match": "K3",
+    "field": "description"
+  },
+  {
+    "file": "src/data/category-seo-content.ts",
+    "line": 0,
+    "match": "K3",
+    "field": "description"
+  },
+  {
+    "file": "src/data/products-content.ts",
+    "line": 0,
+    "match": "校準報價",
+    "field": "longDescription"
+  },
+  {
+    "file": "src/data/products-content.ts",
+    "line": 0,
+    "match": "真實校準",
+    "field": "longDescription"
+  },
+  {
+    "file": "src/data/products-content.ts",
+    "line": 0,
+    "match": "校準報價",
+    "field": "longDescription"
+  },
+  {
+    "file": "src/data/products-content.ts",
+    "line": 0,
+    "match": "真實校準",
+    "field": "longDescription"
+  },
+  {
+    "file": "src/data/products-content.ts",
+    "line": 0,
+    "match": "校準來源",
+    "field": "longDescription"
+  },
+  {
+    "file": "src/data/products-content.ts",
+    "line": 0,
+    "match": "真實校準",
+    "field": "longDescription"
+  },
+  {
+    "file": "src/data/products-content.ts",
+    "line": 0,
+    "match": "校準來源",
+    "field": "longDescription"
+  },
+  {
+    "file": "src/data/products-content.ts",
+    "line": 0,
+    "match": "真實校準",
+    "field": "longDescription"
+  },
+  {
+    "file": "src/data/products-content.ts",
+    "line": 0,
+    "match": "校準來源",
+    "field": "longDescription"
+  },
+  {
+    "file": "src/data/products-content.ts",
+    "line": 0,
+    "match": "校準來源",
+    "field": "longDescription"
+  }
+]

@@ -1,0 +1,55 @@
+fix(gate): 分类器两缺陷修复 (NO_MOQ_HOOK 0→2 / MANUAL_REVIEW 0→12) + 更正引用出处
+
+来源: K3 2026-09-19 决策「先统一分类器——它是生成器的前置条件」(硬门: 未统一不构建生成器)
+
+## 一、缺陷 1: NO_MOQ_HOOK = 0 → 修复过程与结论 (三轮试错, 全部留痕)
+① 原正则 `/support[s]?\s*N[\s-]*(?:sticker|pcs|piece)/` 对实际措辞零命中。
+② 改宽松窗口 (MOQ词 + 产品线词同现 ±80 字) → NO_MOQ_HOOK 0→11, **但全是假阳性**:
+   exercise-books「50–100 copies are a fraction…」/ greeting-cards「100-180 per 1…」= **价格/数量散文**,
+   不是产品线级 MOQ 声明。
+③ 加「本 SKU 独有」防样板规则 → 反而把**唯一真案** small-batch-stickers 拒了,
+   因为该自证句正是**貼紙簇同源样板** (多 SKU 共享) ⇒ 判据自相矛盾。
+**结论 (重要)**: 「产品线级 MOQ」**无法用文本启发式可靠自动判定**。
+⇒ 改为**人工核定白名单 + 附引用出处** (与 K3「不猜」纪律一致); 未核定 SKU 一律走簇规则, 不自动入桶。
+现 NO_MOQ_HOOK = 2 (small-batch-stickers), 全部附证据。
+
+## 二、缺陷 2: MANUAL_REVIEW = 0 → 修复 (K3 决策 3.2 阈值)
+新增两级阈值, 让「不猜」桶真正行使:
+- 簇内 **≥5** 槽位一致声称同一值且 != 真值 → `LOCALE_SPECIFIC_KEEP` (ja flyers 7/7)
+- 簇内 **≥4** 槽位一致声称同一值且 != 真值 → `MANUAL_REVIEW`
+  (例 zh-hk menus 4/5: 可能是本 SKU 群真值口径, 也可能是历史错值 ⇒ 无法自动判定)
+- 其余 → `TRUE_DRIFT`
+
+## 三、更正一处引用出处 (数据诚信 §0.23)
+自证句「We support 50-sticker MOQ for the small-batch line」位于
+**`src/data/sku-seo-data.ts` 的 en FAQ 答案**, **不在 `products.ts`**。
+`resolve-moq-conflicts.mjs` 的 ATTESTED 前版误引为「products.ts en description」, 已更正
+(该误引亦解释了为何只搜 products.ts 段必然 0 命中)。
+
+## 四、统一性对账结果 (K3 硬门判据)
+| 项 | classifier (title scope) | resolver (全 300 槽) | 一致? |
+|---|---|---|---|
+| **SKU 集合** | 25 | 27 | ⚠️ **交集 25**, 差 2 |
+| 行数 | 36 | 43 | ❌ 未统一 |
+- 差集 = `roll-up-banners` / `adhesive-banners` (仅 resolver 有): 疑因门童 MOQ 模式集未覆盖
+  横幅标题的「10起印」形态, 或其命中被 title 作用域过滤。
+- 行数差 (36 vs 43) 源于两脚本分桶规则仍未完全对齐 + 上述 2 SKU。
+
+## 五、★ 硬门结论: 生成器**不构建**
+K3 约束「两法 SKU 集合与计数一致之前, 生成器不能构建」**当前未满足**:
+- SKU 集合差 2 (已定位但未消除)
+- 行数未统一
+⇒ 阶段三 `generate-title-batch.mjs` **本批未构建** (消费不可信 moqStatus 会「修」正确标题)。
+下一步: 消除 2 SKU 差 + 对齐行级分桶 → 两法完全一致 → 才构建生成器。
+
+## 数据来源
+- .hermes/logs/moq-scan-latest.json (门童 --json) · src/data/products.ts · src/data/sku-seo-data.ts
+- .hermes/reports/moq-conflict-resolution-2026-09-19.json (resolver 对账)
+- K3 裁决: 4593937c / bb2a1f71 / c18107a0 / cc1d5293
+校准日期: 2026-09-19 21:20
+
+## 验收
+node scripts/classify-moq-precision.mjs → NO_MOQ_HOOK 2 / LOCALE_SPECIFIC_KEEP 7 / TRUE_DRIFT 15 / MANUAL_REVIEW 12
+  (MANUAL_REVIEW 不再是空桶 ✅, NO_MOQ_HOOK 非 0 且全附证据 ✅, small-batch 已移出 TRUE_DRIFT ✅)
+node scripts/resolve-moq-conflicts.mjs → DRIFT 24 / PENDING_K3 10 / ALIGNED 9
+SKU 集合交集 25/27 ✅ (差 2 已定位)

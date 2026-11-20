@@ -1,0 +1,19 @@
+docs(delivery): §7 七段报告 — 寫真書交付验收 + 线上 meta description 缺陷修复 (队列 A #3)
+
+队列依据: v10 §四.2 (队列 A 第 3 篇 寫真書) — 本文件为该篇「交付后验收环节」的 §7 报告
+
+内容:
+  ① 交付物: 寫真書三语上线验收 (29f1afd9) + 本轮 meta description 修复 (c4146e7f)
+  ② 依据: 缺陷根因定位到行 (BlogPostMeta 字段名 excerpt vs 渲染层读 description)
+  ③ 验收闭环: 门童 red 51 持平 / #20 基线 120 不变 / tsc 54=54 / 规则 D 6-6 PASS / CF Pages success
+             线上 297 组合全覆盖实测: 286 有 description (修复前 77/201), 9 缺全部归因挂账 1
+  ④ push 记录: 30min 间隔合规 (19:56:03 → 20:39:00 = 43 min), 零 Start-Sleep 阻塞
+  ⑤ 数据来源: 全部线上 curl / 门童 / tsc 实测, 附证据文件路径
+  ⑥ 遗留挂账 3 项 (含 1 项 P0: 3 篇已宣告未注册文章线上 title/H1 = slug, 9 页)
+  ⑦ 异常与事故 4 项 (含对本 commit 前一处过度断言的自查更正)
+
+证据文件:
+  .hermes/logs/2026-09-18-meta-description-prefix-scan.txt    修复前全量探针 (201 HTTP200)
+  .hermes/logs/2026-09-18-meta-description-postfix.txt/.json  修复后探针 (258 HTTP200)
+  .hermes/logs/2026-09-18-meta-description-503-retry.txt      39 个限流补探 (39/39 有值)
+  .hermes/logs/2026-09-18-wedding-unregistered-probe.txt      9 页 title=slug 线上实证

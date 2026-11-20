@@ -1,0 +1,19 @@
+fix(data)+feat(tool): K3 2026-09-21 00:03 裁决落地 — 9槽title事实修复 + body 2h→1h統一 + drink-tokens 港币 + 生成器C方案增量合并 (活书§9)
+
+裁决来源: docs/2026-09-20-handover-living-book.md §9 2026-09-21 00:03 段
+- #4 drink-tokens 只能是港币: products.ts price_range NT$→HK$0.25起 (basePrice=0.25 真值), title 同步
+- #5 装帧词按真值: spiral-notebooks 三语 (YO圈/螺旋, 原膠裝/PerfectBound/中綴じ全错) + exercise-books zh/en (騎馬釘/Saddle Stitch; textbooks en 核真值后排除)
+- #6 ja 英文混入: custom-red-packets ja→オリジナル年賀状印刷 / hardcover-menus ja→ハードカバーメニュー
+- #7 a4-flyers en 语义错位 → A4 Flyer Printing | 10 MOQ
+- #2 打稿 1 小时统一值: body zh 66 + en 58 + ja 58 处 2h→1h (前断言计数, 后断言零残留)
+- #8 贺卡名片 title = K3 拍板内容不動; #3 企業禮品/Comiket 未裁挂起; a1-posters 小量喷绘 title 正确不動
+
+方案 C (增量合并生成器):
+- scripts/csv-to-sku-seo.mjs 重写: 外科式块替换, CSV 权威域(name/title/desc/h1/keywords/alt),
+  ts 权威例外域(body 含换行/faqs 疑死数据), ts-only 26 key 逐字保留, gift-boxes 死行排除,
+  五重断言(key守恒/锚位/ts-only逐字/body+faqs保留/全量重解析), dry-run 默认
+- scripts/sync-ts-to-csv.mjs: ts→CSV 18 字段回灌(74行×1081单元格), 后断言逐字一致
+- 幂等实证: 语义零差异(diff 仅空白/尾逗号规范化); tsc 54=54 基线; 门童#25 300槽 issue 0
+
+验证窗: 9 槽中 1 槽在飞轮 tracker 已重置起算日; 其余 8 槽非在册槽
+数据来源: 全量300槽实测(.hermes/_audit-titles.json) + products.ts 真值 + title-equiv.js band 断言

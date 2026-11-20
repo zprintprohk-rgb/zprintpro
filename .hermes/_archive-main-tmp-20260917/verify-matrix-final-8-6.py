@@ -1,0 +1,26 @@
+import json
+with open('.hermes/industry-keyword-matrix.json', 'r', encoding='utf-8') as f:
+    m = json.load(f)
+print('=== matrix 8/6 09:10 final verify ===')
+print(f'lastUpdated: {m["lastUpdated"]}')
+print(f'v7_pdp_reviews_count: {len(m["v7_pdp_reviews"])} (期望 14)')
+print(f'v7_cron_sessions_count: {len(m["v7_cron_sessions"])} (期望 13)')
+print(f'k3_section6_skip_count: {m["k3_section6_skip_count"]} (期望 30)')
+print()
+print('=== v7-PDP-14 last entry ===')
+p14 = m['v7_pdp_reviews'][-1]
+print(f'reviewId: {p14["reviewId"]}')
+print(f'slug: {p14["slug"]}')
+print(f'category: {p14["category"]} priority: {p14["priority"]}')
+print(f'industries_covered_count: {len(p14["industries_covered"])}')
+print(f'5_dim_audit: {list(p14["5_dim_audit"].keys())}')
+print(f'summary fixes/pending: {p14["summary"]["fixes_total"]}/{p14["summary"]["pending_total"]}')
+print()
+print('=== 8-6-daily-cron-v8.2-yield last cron session ===')
+c8_6 = m['v7_cron_sessions'][-1]
+print(f'session_id: {c8_6["session_id"]}')
+print(f'cron_name: {c8_6["cron_name"]}')
+print(f'yield_mode: {c8_6["yield_mode"]}')
+print(f'push_status: {c8_6["push_status"]}')
+print(f'commit_status: {c8_6["commit_status"]}')
+print(f'tasks A/B/C/F: {c8_6["tasks_executed"]["A_blog"]["executed"]}/{c8_6["tasks_executed"]["B_sku_optimization"]["executed"]}/{c8_6["tasks_executed"]["C_pdp_review"]["executed"]}/{c8_6["tasks_executed"]["F_matrix_tracking"]["executed"]}')

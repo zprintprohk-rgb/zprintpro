@@ -1,0 +1,25 @@
+﻿=== 门童 #4 I18N_POLLUTION_EN 逐档 (裸扫, 未经基线) ===
+src/data/blog-data/en.json                          912
+src/data/category-seo-content.ts                    12
+src/data/buying-guides.ts                           38
+src/data/sku-seo-data.ts                            28
+src/app/[locale]/payment-methods/page.tsx           16
+src/components/layout/Footer.tsx                    12
+src/app/[locale]/category/[slug]/page.tsx           10
+src/data/blog-posts.ts                              4
+合计 = 1032
+
+=== sku-seo-data.ts: 含 CJK 的行 + 该行结构 ===
+含 CJK 行数 = 1369  (前 20 行号: 2,3,24,26,30,31,32,33,34,46,47,48,49,50,55,56,59,60,63,64)
+EN命中 L3482: "description": "壓紋名片",
+    ↑最近上键 L3482: description
+EN命中 L3483: "h1": "婚禮名片",
+    ↑最近上键 L3483: h1
+EN命中 L3485: "400g名片"
+    ↑最近上键 L3484: keywords
+EN命中 L3515: "en": "厚口 カード",
+    ↑最近上键 L3515: en
+EN命中 L3537: "description": "婚禮名片",
+    ↑最近上键 L3537: description
+EN命中 L3538: "h1": "金屬光澤名片",
+    ↑最近上键 L3538: h1

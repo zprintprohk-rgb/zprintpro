@@ -1,0 +1,9 @@
+﻿ .hermes/industry-keyword-matrix.json            |  96 ++++
+ .hermes/logs/cron-execution-report.md           |   1 +
+ AGENTS.md                                       |  10 -
+ GSC数据/index.json                              | 115 +++-
+ scripts/gen-price-data.mjs                      | 105 +++-
+ src/app/[locale]/product/[slug]/page.tsx        |  29 +-
+ src/components/category/CategoryProductCard.tsx |  18 +-
+ src/lib/price-data.generated.ts                 | 716 ++++++++++++------------
+ 8 files changed, 690 insertions(+), 400 deletions(-)

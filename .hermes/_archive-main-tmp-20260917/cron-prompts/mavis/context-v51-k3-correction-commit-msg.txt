@@ -1,0 +1,12 @@
+fix(sso+context): K3 纠偏后上下文同步 (2026-07-22)
+
+- context.md §14.2 5 项监控抽样规则修正: 清单内 5 + 清单外 5 (149 条路径级规则已生效, 清单外 catch-all 跳 zh-hk/ 是设计行为不是 bug)
+- context.md §14.4 异常处理加: 清单内任一 FAIL → 立即升级 (真异常), 清单外 catch-all 不算异常; 明确"不要提议改 CF Bulk Redirect 规则"
+- context.md §15 Changelog v5.1 entry: 149 条精准承接 + 抽样规则
+- gsc-feedback-loop SSoT §3.2 段: 4 项 → 5 项 (L124-135 编号对齐) + 加抽样规则段; §4 流程同步 (L233-238 5 项编号)
+- daily-content-1x7w SSoT 加 "2026-07-22 K3 v7 拍板后 3 件事同步" 段: 149 条路径级精准承接 / GSC API 本地 proxy 127.0.0.1:7892 已通 / 双品牌宪法 (zh-hk=智印港 / en+ja=ZprintPro)
+- 2 个 mavis cron update (gsc-feedback-loop 13K chars + daily-content 15.5K chars) daemon 跟 SSoT 1:1 一致, 7/23 daily cron 跑前不会拿旧地图走路
+
+根因: 我之前 5 条抽查全在清单外 → 0/5 第 5 项 PASS, 误判为"待 user 修 149 条"; 实际 149 条路径级规则已生效, 清单外走 catch-all 是设计行为, 不应改 CF Bulk Redirect 规则 (会破坏承接). K3 user 7/22 21:05 纠偏, 立刻 mavis cron update 同步 daemon 跟 SSoT.
+
+Co-Authored-By: Mavis <noreply@mavis.ai>

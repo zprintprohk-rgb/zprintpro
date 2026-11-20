@@ -1,0 +1,36 @@
+kw-flywheel W1 + SKU 压缩 99→92 + CF Workers CPU 治理 (2026-09-22)
+
+■ 第一批: kw-flywheel W1 (DELIVERY/kw-flywheel/page_action_plan.csv 施工图)
+- title 5 槽 (冻结 23 slug / 批次1+R2+T1 验证窗避让后全部合法槽, 当量 50-57 全过):
+  saddle-stitch-booklets zh-hk 51 / food-boxes zh-hk 52 / double-sided-flyers ja 55 /
+  food-boxes ja 55 / saddle-stitch-booklets ja 56 (+¥258〜 价格钩, 原 49 FILL)
+- AEO desc 20 槽首句直答化 (价格+MOQ+交期, 真值=products.ts/UNIT_PRICE_ANCHORS)
+- GEO: product-faqs.ts 新增 skuMoneyFAQs (12 SKU × 2 带钱问答 × 3 语),
+  page.tsx 合并 SKU 问答优先于类目问答, 同一数组喂 FAQ 手风琴 + FAQPage JSON-LD
+  (schema 可见性 by construction)
+
+■ 第二批: SKU 压缩 99→92 (K3 指令, 同步治理两条含违禁「專家」词标题)
+- 下架 7: acrylic-keychain / mesh-banners / wedding-program-cards / wedding-menu-cards /
+  escort-cards / name-tags-badges / disposable-menus
+- 五类收敛 4 条: japan-doujin / wedding-invitations / place-cards / menus / banners
+- next.config.js +42 条 301 (3 语 × 双斜杠 → 类目页或最近兄弟 SKU, 全部实证存在);
+  middleware.ts + QuoteRedirect.tsx 映射同步收拢; industry-scenario-links 2 处改指活 SKU;
+  DoujinSKU 三语删钥匙扣卡片 (4 卡对齐 4 SKU)
+- 孤儿资产: 39 图 git rm; sitemap 5 件重生成 (image sitemap 83→80);
+  定价基準博文 99→92 三语全口径 + 5 类目计数 + 婚礼 TWD 句去死数 + 死链解除;
+  sticker-guide MOQ 100→10 三语 (zh 16 处/en 15 处/ja 17 处) + 详解→詳解 +
+  blog-posts.ts ja 截断标题 (応用シ→応用シーン) 修复
+
+■ CF Workers CPU 治理 (CF 告警: 免费 10ms/请求, 24h 超限 100+ 次)
+- 根因 1: 分类页服务端读 searchParams → 39 个类目页全动态 SSR。
+  修复: 去 searchParams 回归静态 SSG; 排序/分页下沉客户端 CategoryProductsPanel
+  (受控模式 CategorySortSelect 不走 URL, 避免 useSearchParams 把页面拉回动态;
+  初始 SSR HTML 与改造前逐字节一致 → SEO 无损; 全站类目 ≤12 SKU 原分页恒 1 页, 行为零变化)
+- 根因 2: contact 缺 generateStaticParams → 3 URL 动态 SSR。已补静态参数
+- 附带修复: generate-sitemap.js 提取器漏 kraft-paper-bags / folding-boxes
+  (category 接在 optimizationRound 后同一行, 旧 /^\s*category:/ 不匹配)
+  → 2 个带钱 SKU × 3 语重新入 sitemap
+
+门童全绿: census 279/279 OK 带 (50-57) · tsc 54=54 基线 · title-band #25 存量 0 ·
+brand-mentions A 类 0 · gsc-leak 0 · blog-data-integrity 3/3 · encoding clean ·
+next build PASS (720 URL: 16 类 × 92 SKU × 3 语 + 114 blog + 静态页)

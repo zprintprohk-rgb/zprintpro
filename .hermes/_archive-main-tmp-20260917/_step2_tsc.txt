@@ -1,0 +1,290 @@
+﻿src/data/products.ts(20562,3): error TS1005: ']' expected.
+src/data/products.ts(20564,13): error TS1005: ';' expected.
+src/data/products.ts(20565,9): error TS1005: ';' expected.
+src/data/products.ts(20566,13): error TS1005: ';' expected.
+src/data/products.ts(20567,18): error TS1005: ';' expected.
+src/data/products.ts(20568,9): error TS1005: ';' expected.
+src/data/products.ts(20568,25): error TS1005: ';' expected.
+src/data/products.ts(20568,61): error TS1005: ';' expected.
+src/data/products.ts(20569,16): error TS1005: ';' expected.
+src/data/products.ts(20570,18): error TS1005: ';' expected.
+src/data/products.ts(20571,18): error TS1005: ';' expected.
+src/data/products.ts(20572,16): error TS1005: ';' expected.
+src/data/products.ts(20573,12): error TS1005: ';' expected.
+src/data/products.ts(20573,37): error TS1005: ';' expected.
+src/data/products.ts(20573,56): error TS1005: ';' expected.
+src/data/products.ts(20573,73): error TS1005: ';' expected.
+src/data/products.ts(20573,264): error TS1128: Declaration or statement expected.
+src/data/products.ts(20575,22): error TS1005: ';' expected.
+src/data/products.ts(20576,15): error TS1005: ';' expected.
+src/data/products.ts(20577,10): error TS1005: ';' expected.
+src/data/products.ts(20577,61): error TS1005: ';' expected.
+src/data/products.ts(20577,104): error TS1005: ';' expected.
+src/data/products.ts(20577,150): error TS1005: ';' expected.
+src/data/products.ts(20577,168): error TS1128: Declaration or statement expected.
+src/data/products.ts(20578,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20581,13): error TS1005: ';' expected.
+src/data/products.ts(20582,9): error TS1005: ';' expected.
+src/data/products.ts(20583,13): error TS1005: ';' expected.
+src/data/products.ts(20584,18): error TS1005: ';' expected.
+src/data/products.ts(20585,9): error TS1005: ';' expected.
+src/data/products.ts(20585,37): error TS1005: ';' expected.
+src/data/products.ts(20585,68): error TS1005: ';' expected.
+src/data/products.ts(20586,16): error TS1005: ';' expected.
+src/data/products.ts(20587,18): error TS1005: ';' expected.
+src/data/products.ts(20588,18): error TS1005: ';' expected.
+src/data/products.ts(20589,16): error TS1005: ';' expected.
+src/data/products.ts(20590,12): error TS1005: ';' expected.
+src/data/products.ts(20590,37): error TS1005: ';' expected.
+src/data/products.ts(20590,56): error TS1005: ';' expected.
+src/data/products.ts(20590,73): error TS1005: ';' expected.
+src/data/products.ts(20590,264): error TS1128: Declaration or statement expected.
+src/data/products.ts(20592,22): error TS1005: ';' expected.
+src/data/products.ts(20593,15): error TS1005: ';' expected.
+src/data/products.ts(20594,10): error TS1005: ';' expected.
+src/data/products.ts(20594,51): error TS1005: ';' expected.
+src/data/products.ts(20594,82): error TS1005: ';' expected.
+src/data/products.ts(20594,117): error TS1005: ';' expected.
+src/data/products.ts(20594,130): error TS1128: Declaration or statement expected.
+src/data/products.ts(20595,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20598,13): error TS1005: ';' expected.
+src/data/products.ts(20599,9): error TS1005: ';' expected.
+src/data/products.ts(20600,13): error TS1005: ';' expected.
+src/data/products.ts(20601,18): error TS1005: ';' expected.
+src/data/products.ts(20602,9): error TS1005: ';' expected.
+src/data/products.ts(20602,26): error TS1005: ';' expected.
+src/data/products.ts(20602,61): error TS1005: ';' expected.
+src/data/products.ts(20603,16): error TS1005: ';' expected.
+src/data/products.ts(20604,18): error TS1005: ';' expected.
+src/data/products.ts(20605,18): error TS1005: ';' expected.
+src/data/products.ts(20606,16): error TS1005: ';' expected.
+src/data/products.ts(20607,12): error TS1005: ';' expected.
+src/data/products.ts(20607,37): error TS1005: ';' expected.
+src/data/products.ts(20607,56): error TS1005: ';' expected.
+src/data/products.ts(20607,73): error TS1005: ';' expected.
+src/data/products.ts(20607,219): error TS1128: Declaration or statement expected.
+src/data/products.ts(20609,22): error TS1005: ';' expected.
+src/data/products.ts(20610,15): error TS1005: ';' expected.
+src/data/products.ts(20611,10): error TS1005: ';' expected.
+src/data/products.ts(20611,51): error TS1005: ';' expected.
+src/data/products.ts(20611,85): error TS1005: ';' expected.
+src/data/products.ts(20611,117): error TS1005: ';' expected.
+src/data/products.ts(20611,135): error TS1128: Declaration or statement expected.
+src/data/products.ts(20612,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20615,13): error TS1005: ';' expected.
+src/data/products.ts(20616,9): error TS1005: ';' expected.
+src/data/products.ts(20617,13): error TS1005: ';' expected.
+src/data/products.ts(20618,18): error TS1005: ';' expected.
+src/data/products.ts(20619,9): error TS1005: ';' expected.
+src/data/products.ts(20619,26): error TS1005: ';' expected.
+src/data/products.ts(20619,59): error TS1005: ';' expected.
+src/data/products.ts(20620,16): error TS1005: ';' expected.
+src/data/products.ts(20621,18): error TS1005: ';' expected.
+src/data/products.ts(20622,18): error TS1005: ';' expected.
+src/data/products.ts(20623,16): error TS1005: ';' expected.
+src/data/products.ts(20624,12): error TS1005: ';' expected.
+src/data/products.ts(20624,37): error TS1005: ';' expected.
+src/data/products.ts(20624,56): error TS1005: ';' expected.
+src/data/products.ts(20624,73): error TS1005: ';' expected.
+src/data/products.ts(20624,219): error TS1128: Declaration or statement expected.
+src/data/products.ts(20626,22): error TS1005: ';' expected.
+src/data/products.ts(20627,15): error TS1005: ';' expected.
+src/data/products.ts(20628,10): error TS1005: ';' expected.
+src/data/products.ts(20628,51): error TS1005: ';' expected.
+src/data/products.ts(20628,88): error TS1005: ';' expected.
+src/data/products.ts(20628,115): error TS1005: ';' expected.
+src/data/products.ts(20628,131): error TS1128: Declaration or statement expected.
+src/data/products.ts(20629,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20632,13): error TS1005: ';' expected.
+src/data/products.ts(20633,9): error TS1005: ';' expected.
+src/data/products.ts(20634,13): error TS1005: ';' expected.
+src/data/products.ts(20635,18): error TS1005: ';' expected.
+src/data/products.ts(20636,9): error TS1005: ';' expected.
+src/data/products.ts(20636,26): error TS1005: ';' expected.
+src/data/products.ts(20636,56): error TS1005: ';' expected.
+src/data/products.ts(20637,16): error TS1005: ';' expected.
+src/data/products.ts(20638,18): error TS1005: ';' expected.
+src/data/products.ts(20639,18): error TS1005: ';' expected.
+src/data/products.ts(20640,16): error TS1005: ';' expected.
+src/data/products.ts(20641,12): error TS1005: ';' expected.
+src/data/products.ts(20641,37): error TS1005: ';' expected.
+src/data/products.ts(20641,56): error TS1005: ';' expected.
+src/data/products.ts(20641,73): error TS1005: ';' expected.
+src/data/products.ts(20641,219): error TS1128: Declaration or statement expected.
+src/data/products.ts(20643,22): error TS1005: ';' expected.
+src/data/products.ts(20644,15): error TS1005: ';' expected.
+src/data/products.ts(20645,10): error TS1005: ';' expected.
+src/data/products.ts(20645,51): error TS1005: ';' expected.
+src/data/products.ts(20645,85): error TS1005: ';' expected.
+src/data/products.ts(20645,117): error TS1005: ';' expected.
+src/data/products.ts(20645,133): error TS1128: Declaration or statement expected.
+src/data/products.ts(20646,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20649,13): error TS1005: ';' expected.
+src/data/products.ts(20650,9): error TS1005: ';' expected.
+src/data/products.ts(20651,13): error TS1005: ';' expected.
+src/data/products.ts(20652,18): error TS1005: ';' expected.
+src/data/products.ts(20653,9): error TS1005: ';' expected.
+src/data/products.ts(20653,27): error TS1005: ';' expected.
+src/data/products.ts(20653,59): error TS1005: ';' expected.
+src/data/products.ts(20654,16): error TS1005: ';' expected.
+src/data/products.ts(20655,18): error TS1005: ';' expected.
+src/data/products.ts(20656,18): error TS1005: ';' expected.
+src/data/products.ts(20657,16): error TS1005: ';' expected.
+src/data/products.ts(20658,12): error TS1005: ';' expected.
+src/data/products.ts(20658,38): error TS1005: ';' expected.
+src/data/products.ts(20658,57): error TS1005: ';' expected.
+src/data/products.ts(20658,74): error TS1005: ';' expected.
+src/data/products.ts(20658,223): error TS1128: Declaration or statement expected.
+src/data/products.ts(20660,22): error TS1005: ';' expected.
+src/data/products.ts(20661,15): error TS1005: ';' expected.
+src/data/products.ts(20662,10): error TS1005: ';' expected.
+src/data/products.ts(20662,59): error TS1005: ';' expected.
+src/data/products.ts(20662,95): error TS1005: ';' expected.
+src/data/products.ts(20662,136): error TS1005: ';' expected.
+src/data/products.ts(20662,157): error TS1128: Declaration or statement expected.
+src/data/products.ts(20663,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20668,13): error TS1005: ';' expected.
+src/data/products.ts(20669,9): error TS1005: ';' expected.
+src/data/products.ts(20670,13): error TS1005: ';' expected.
+src/data/products.ts(20671,18): error TS1005: ';' expected.
+src/data/products.ts(20672,9): error TS1005: ';' expected.
+src/data/products.ts(20672,25): error TS1005: ';' expected.
+src/data/products.ts(20672,56): error TS1005: ';' expected.
+src/data/products.ts(20673,16): error TS1005: ';' expected.
+src/data/products.ts(20674,18): error TS1005: ';' expected.
+src/data/products.ts(20675,18): error TS1005: ';' expected.
+src/data/products.ts(20676,16): error TS1005: ';' expected.
+src/data/products.ts(20677,12): error TS1005: ';' expected.
+src/data/products.ts(20677,37): error TS1005: ';' expected.
+src/data/products.ts(20677,58): error TS1005: ';' expected.
+src/data/products.ts(20677,75): error TS1005: ';' expected.
+src/data/products.ts(20677,221): error TS1128: Declaration or statement expected.
+src/data/products.ts(20679,22): error TS1005: ';' expected.
+src/data/products.ts(20680,15): error TS1005: ';' expected.
+src/data/products.ts(20681,10): error TS1005: ';' expected.
+src/data/products.ts(20681,51): error TS1005: ';' expected.
+src/data/products.ts(20681,93): error TS1005: ';' expected.
+src/data/products.ts(20681,130): error TS1005: ';' expected.
+src/data/products.ts(20681,146): error TS1128: Declaration or statement expected.
+src/data/products.ts(20682,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20685,13): error TS1005: ';' expected.
+src/data/products.ts(20686,9): error TS1005: ';' expected.
+src/data/products.ts(20687,13): error TS1005: ';' expected.
+src/data/products.ts(20688,18): error TS1005: ';' expected.
+src/data/products.ts(20689,9): error TS1005: ';' expected.
+src/data/products.ts(20689,31): error TS1005: ';' expected.
+src/data/products.ts(20689,74): error TS1005: ';' expected.
+src/data/products.ts(20690,16): error TS1005: ';' expected.
+src/data/products.ts(20691,18): error TS1005: ';' expected.
+src/data/products.ts(20692,18): error TS1005: ';' expected.
+src/data/products.ts(20693,16): error TS1005: ';' expected.
+src/data/products.ts(20694,12): error TS1005: ';' expected.
+src/data/products.ts(20694,37): error TS1005: ';' expected.
+src/data/products.ts(20694,58): error TS1005: ';' expected.
+src/data/products.ts(20694,75): error TS1005: ';' expected.
+src/data/products.ts(20694,221): error TS1128: Declaration or statement expected.
+src/data/products.ts(20696,22): error TS1005: ';' expected.
+src/data/products.ts(20697,15): error TS1005: ';' expected.
+src/data/products.ts(20698,10): error TS1005: ';' expected.
+src/data/products.ts(20698,66): error TS1005: ';' expected.
+src/data/products.ts(20698,113): error TS1005: ';' expected.
+src/data/products.ts(20698,144): error TS1005: ';' expected.
+src/data/products.ts(20698,166): error TS1128: Declaration or statement expected.
+src/data/products.ts(20699,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20702,13): error TS1005: ';' expected.
+src/data/products.ts(20703,9): error TS1005: ';' expected.
+src/data/products.ts(20704,13): error TS1005: ';' expected.
+src/data/products.ts(20705,18): error TS1005: ';' expected.
+src/data/products.ts(20706,9): error TS1005: ';' expected.
+src/data/products.ts(20706,31): error TS1005: ';' expected.
+src/data/products.ts(20706,71): error TS1005: ';' expected.
+src/data/products.ts(20707,16): error TS1005: ';' expected.
+src/data/products.ts(20708,18): error TS1005: ';' expected.
+src/data/products.ts(20709,18): error TS1005: ';' expected.
+src/data/products.ts(20710,16): error TS1005: ';' expected.
+src/data/products.ts(20711,12): error TS1005: ';' expected.
+src/data/products.ts(20711,37): error TS1005: ';' expected.
+src/data/products.ts(20711,58): error TS1005: ';' expected.
+src/data/products.ts(20711,75): error TS1005: ';' expected.
+src/data/products.ts(20711,221): error TS1128: Declaration or statement expected.
+src/data/products.ts(20713,22): error TS1005: ';' expected.
+src/data/products.ts(20714,15): error TS1005: ';' expected.
+src/data/products.ts(20715,10): error TS1005: ';' expected.
+src/data/products.ts(20715,51): error TS1005: ';' expected.
+src/data/products.ts(20715,91): error TS1005: ';' expected.
+src/data/products.ts(20715,130): error TS1005: ';' expected.
+src/data/products.ts(20715,146): error TS1128: Declaration or statement expected.
+src/data/products.ts(20716,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20719,13): error TS1005: ';' expected.
+src/data/products.ts(20720,9): error TS1005: ';' expected.
+src/data/products.ts(20721,13): error TS1005: ';' expected.
+src/data/products.ts(20722,18): error TS1005: ';' expected.
+src/data/products.ts(20723,9): error TS1005: ';' expected.
+src/data/products.ts(20723,31): error TS1005: ';' expected.
+src/data/products.ts(20723,72): error TS1005: ';' expected.
+src/data/products.ts(20724,16): error TS1005: ';' expected.
+src/data/products.ts(20725,18): error TS1005: ';' expected.
+src/data/products.ts(20726,18): error TS1005: ';' expected.
+src/data/products.ts(20727,16): error TS1005: ';' expected.
+src/data/products.ts(20728,12): error TS1005: ';' expected.
+src/data/products.ts(20728,37): error TS1005: ';' expected.
+src/data/products.ts(20728,58): error TS1005: ';' expected.
+src/data/products.ts(20728,75): error TS1005: ';' expected.
+src/data/products.ts(20728,221): error TS1128: Declaration or statement expected.
+src/data/products.ts(20730,22): error TS1005: ';' expected.
+src/data/products.ts(20731,15): error TS1005: ';' expected.
+src/data/products.ts(20732,10): error TS1005: ';' expected.
+src/data/products.ts(20732,60): error TS1005: ';' expected.
+src/data/products.ts(20732,101): error TS1005: ';' expected.
+src/data/products.ts(20732,137): error TS1005: ';' expected.
+src/data/products.ts(20732,153): error TS1128: Declaration or statement expected.
+src/data/products.ts(20733,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20736,13): error TS1005: ';' expected.
+src/data/products.ts(20737,9): error TS1005: ';' expected.
+src/data/products.ts(20738,13): error TS1005: ';' expected.
+src/data/products.ts(20739,18): error TS1005: ';' expected.
+src/data/products.ts(20740,9): error TS1005: ';' expected.
+src/data/products.ts(20740,31): error TS1005: ';' expected.
+src/data/products.ts(20740,72): error TS1005: ';' expected.
+src/data/products.ts(20741,16): error TS1005: ';' expected.
+src/data/products.ts(20742,18): error TS1005: ';' expected.
+src/data/products.ts(20743,18): error TS1005: ';' expected.
+src/data/products.ts(20744,16): error TS1005: ';' expected.
+src/data/products.ts(20745,12): error TS1005: ';' expected.
+src/data/products.ts(20745,37): error TS1005: ';' expected.
+src/data/products.ts(20745,58): error TS1005: ';' expected.
+src/data/products.ts(20745,75): error TS1005: ';' expected.
+src/data/products.ts(20745,221): error TS1128: Declaration or statement expected.
+src/data/products.ts(20747,22): error TS1005: ';' expected.
+src/data/products.ts(20748,15): error TS1005: ';' expected.
+src/data/products.ts(20749,10): error TS1005: ';' expected.
+src/data/products.ts(20749,55): error TS1005: ';' expected.
+src/data/products.ts(20749,96): error TS1005: ';' expected.
+src/data/products.ts(20749,136): error TS1005: ';' expected.
+src/data/products.ts(20749,158): error TS1128: Declaration or statement expected.
+src/data/products.ts(20750,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20753,13): error TS1005: ';' expected.
+src/data/products.ts(20754,9): error TS1005: ';' expected.
+src/data/products.ts(20755,13): error TS1005: ';' expected.
+src/data/products.ts(20756,18): error TS1005: ';' expected.
+src/data/products.ts(20757,9): error TS1005: ';' expected.
+src/data/products.ts(20757,26): error TS1005: ';' expected.
+src/data/products.ts(20757,60): error TS1005: ';' expected.
+src/data/products.ts(20758,16): error TS1005: ';' expected.
+src/data/products.ts(20759,18): error TS1005: ';' expected.
+src/data/products.ts(20760,18): error TS1005: ';' expected.
+src/data/products.ts(20761,16): error TS1005: ';' expected.
+src/data/products.ts(20762,12): error TS1005: ';' expected.
+src/data/products.ts(20762,37): error TS1005: ';' expected.
+src/data/products.ts(20762,58): error TS1005: ';' expected.
+src/data/products.ts(20762,75): error TS1005: ';' expected.
+src/data/products.ts(20762,172): error TS1128: Declaration or statement expected.
+src/data/products.ts(20764,22): error TS1005: ';' expected.
+src/data/products.ts(20765,15): error TS1005: ';' expected.
+src/data/products.ts(20766,10): error TS1005: ';' expected.
+src/data/products.ts(20766,59): error TS1005: ';' expected.
+src/data/products.ts(20766,107): error TS1005: ';' expected.
+src/data/products.ts(20766,139): error TS1005: ';' expected.
+src/data/products.ts(20766,158): error TS1128: Declaration or statement expected.
+src/data/products.ts(20767,4): error TS1128: Declaration or statement expected.
+src/data/products.ts(20769,1): error TS1128: Declaration or statement expected.

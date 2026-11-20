@@ -1,0 +1,2 @@
+F:\zprintpro-nextjs\.hermes\probe-f374d0d-vs-wt.py:6: SyntaxWarning: invalid escape sequence '\p'
+  cm = subprocess.check_output(['git', '-C', r'F:\zprintpro-nextjs', 'show', 'f374d0d:src/app/[locale]\about\page.tsx'], stderr=subprocess.STDOUT).decode('utf-8')

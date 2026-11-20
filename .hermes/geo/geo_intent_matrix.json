@@ -1,0 +1,197 @@
+{
+ "generated_at": "2026-09-30",
+ "meta": {
+   "task": "W1 三语种 AEO/GEO 意图与知识缺口挖掘 (zprintpro)",
+   "gsc_double_count": "双方法复算通过 (§0.23.2): openpyxl vs 原始 XML, 行数/词带/词值全一致, 详见 _w1_double_count.json",
+   "ai_cited_caveat": "ai_cited_sources 为 2026-09-30 source_check SERP 占位证据（谁占据答案位）; 实际 AI 引用探针 = W4 兄弟任务 8 prompt, 本文件不冒充探针结果",
+   "internal_only": "本文件含 GSC 后台词, 按 §0.23.1 禁入客户可见内容"
+ },
+ "clusters": [
+  {
+   "locale": "en",
+   "seed": "custom packaging boxes",
+   "questions": [
+    {"text": "How much does custom packaging cost per unit?", "source": "SERP 标题: cubitpackaging 2026 pricing $0.35-$15/unit; brandtbox cost guide"},
+    {"text": "Can I get custom boxes with no minimum order quantity?", "source": "SERP 标题: customboxesinc boxes-with-no-moq; tealpackaging; packprinters"},
+    {"text": "What is the difference between one-time tooling cost and per-unit price in a quote?", "source": "SERP 标题: packoasis how-to-read-custom-packaging-quote"},
+    {"text": "Which box material should I choose (corrugated vs kraft vs rigid)?", "source": "SERP 标题: dreamcustomboxes ranges by style/quantity/material"},
+    {"text": "How long does custom box production and shipping take?", "source": "SERP FAQ 类标题 + Reddit 流程帖"},
+    {"text": "What questions should I ask before ordering custom boxes?", "source": "SERP 标题: customboxesoptions '14 Things to Ask'; customboxesmarket 'Top 10 Questions'"},
+    {"text": "Can a new brand launch with custom packaging under 500 units?", "source": "Reddit r/Packaging 帖标题 1r63ydl"}
+   ],
+   "ai_cited_sources": [
+    {"domain": "cubitpackaging.com", "evidence": "blog/how-much-does-custom-packaging-cost ($0.35-$15/unit)", "note": "per-unit 价格表型内容"},
+    {"domain": "brandtbox.com", "evidence": "blog/custom-packaging-cost-guide/", "note": "2026 pricing guide"},
+    {"domain": "packoasis.com", "evidence": "blog/how-to-read-custom-packaging-quote-unit-cost-tooling-freight-2026", "note": "报价结构拆解"},
+    {"domain": "customboxesinc.com", "evidence": "/custom/boxes-with-no-moq/", "note": "No-MOQ PDP"},
+    {"domain": "customboxusa.com", "evidence": "/custom-boxes/ 起价 $0.1", "note": "低价锚点 PDP"},
+    {"domain": "custompackstudio.co.uk", "evidence": "/no-moq-packaging-uk", "note": "UK no-MOQ 落地页"}
+   ],
+   "community_signals": [
+    {"platform": "Reddit r/smallbusiness", "url": "https://www.reddit.com/r/smallbusiness/comments/1qaxe6i/is_finding_custom_packaging_with_low_moqs_still_a/", "title": "Is finding custom packaging with low MOQs still a problem?", "pain_point": "低 MOQ 包装难找/价格不透明", "verification": "标题+URL 经 2026-09-30 source_check SERP 收录; 正文反爬未抓取, 不转述正文"},
+    {"platform": "Reddit r/Packaging", "url": "https://www.reddit.com/r/Packaging/comments/1r63ydl/has_anyone_successfully_launched_under_500_units/", "title": "Has anyone successfully launched under 500 units of custom packaging?", "pain_point": "小批量(<500)起订可行性", "verification": "标题经 SERP 收录; 正文未抓取"}
+   ],
+   "gaps": [
+    {"gap": "公开的「盒型 × 数量梯度 × 单位价」对比表缺失, 该表型内容正被竞对占据 AI/答案位", "missing": "100/500/1000/5000 件 × 彩盒/瓦楞/精装盒 的单位价梯度列", "we_supply": "站内已有 100個起 HK$4起 类价格锚点(见 §0.29.4 口径), 可派生梯度表", "priority": "P0", "evidence": "cubitpackaging/brandtbox SERP 占位 (2026-09-30 source_check)"},
+    {"gap": "报价单结构拆解内容缺失(tooling/版费 vs per-unit vs freight 三段)", "missing": "报价构成 FAQ 或对比块 + 常见隐藏费用清单", "we_supply": "真实报价流程参数(打样/刀模/运费)可写成结构化 FAQ", "priority": "P1", "evidence": "packoasis 2026 报价拆解文 SERP 占位"}
+   ]
+  },
+  {
+   "locale": "en",
+   "seed": "custom stickers low MOQ",
+   "questions": [
+    {"text": "How much do custom stickers cost per sticker?", "source": "SERP 标题: stickerine 'Real 2026 Pricing'"},
+    {"text": "What is the cheapest way to order low-quantity custom stickers?", "source": "SERP: customstickers.com low-quantity-die-cut-stickers-no-minimum PDP"},
+    {"text": "What is the difference between die cut and kiss cut stickers?", "source": "SERP: stickermule FAQ + shopify.com/blog/kiss-cut-vs-die-cut"},
+    {"text": "Which sticker material is waterproof for outdoor use?", "source": "SERP: customstickers vinyl PDP; standoutstickers glossy"},
+    {"text": "Can I order custom stickers as singles, not in bulk?", "source": "Reddit r/stickers 帖标题 1qul936"},
+    {"text": "Where do artists print small test batches of die-cut stickers?", "source": "Reddit r/stickers 帖标题 1sfv3as"},
+    {"text": "Can I put multiple designs in one sticker order?", "source": "Reddit r/stickers 帖标题 1r6y1q4 (UPrinting 讨论)"}
+   ],
+   "ai_cited_sources": [
+    {"domain": "customstickers.com", "evidence": "/products/low-quantity-die-cut-stickers-no-minimum", "note": "低量无起订 PDP 直击查询"},
+    {"domain": "stickermule.com", "evidence": "/faqs/.../what-is-the-difference-between-die-cut-and-kiss-cut-stickers", "note": "FAQ 型教育内容"},
+    {"domain": "shopify.com", "evidence": "/blog/kiss-cut-vs-die-cut (2025)", "note": "平台博客占据对比词"},
+    {"domain": "stickerine.com", "evidence": "/blog/how-much-do-custom-stickers-cost (2026)", "note": "单价表型博客"},
+    {"domain": "onlinelabels.com", "evidence": "/custom-stickers", "note": "材质/打印流程 PDP"}
+   ],
+   "community_signals": [
+    {"platform": "Reddit r/stickers", "url": "https://www.reddit.com/r/stickers/comments/1qul936/where_can_i_go_to_order_custom_made_stickers_as/", "title": "Where can I go to order custom made stickers as single stickers, not in bulk?", "pain_point": "想要单张/超小量购买而非大批量", "verification": "标题+URL 经 2026-09-30 source_check SERP 收录; 正文反爬未抓取"},
+    {"platform": "Reddit r/stickers", "url": "https://www.reddit.com/r/stickers/comments/1sfv3as/where_do_you_guys_print_small_test_batches_of/", "title": "where do you guys print small test batches of custom die-cuts?", "pain_point": "打样级小批量 die-cut 渠道", "verification": "标题经 SERP 收录; 正文未抓取"}
+   ],
+   "gaps": [
+    {"gap": "small-batch-stickers PDP 已占速赢位(pos 5.31/6.48)但缺数量×尺寸单价梯度表, CTR 修复后无转化支撑内容", "missing": "50/100/500 pcs × 尺寸档 的单价表 + 材质(upgrade)价差列", "we_supply": "站内 small-batch-stickers SKU 价格数据可派生", "priority": "P0", "evidence": "GSC 28d xlsx pos/imp + stickerine pricing blog SERP 占位"},
+    {"gap": "die-cut vs kiss-cut 对比教育页缺失(参数级)", "missing": "膜厚/克重/适用场景/成本差异参数表", "we_supply": "die-cut-stickers SKU 实参可产出对比页", "priority": "P1", "evidence": "shopify/stickermule 占该对比词 (2026-09-30 SERP)"}
+   ]
+  },
+  {
+   "locale": "zh-hk",
+   "seed": "包裝盒訂製",
+   "questions": [
+    {"text": "包裝盒訂製幾多錢？邊間平？", "source": "SERP: bmpack '100件起訂・即時報價'; z-printpro 老站頁 HK$0.8起"},
+    {"text": "包裝盒最少要訂幾多個？有冇 10-100 個起？", "source": "SERP: e-print '低至10個起印'; bmpack 100件起"},
+    {"text": "邊度可以訂做食品級包裝盒？要咩認證？", "source": "SERP: packlab.joinprint 食品包裝頁 + 智印港 food-grade 頁"},
+    {"text": "包裝盒訂做交期要幾耐？", "source": "SERP: e-print '3日交貨'; z-printpro 老站 '3天出貨'"},
+    {"text": "禮盒燙金/UV 工藝小批量可唔可以做？", "source": "知乎同題帖 + print100 精裝禮盒頁"},
+    {"text": "彩盒報價係點計？版費刀模係咪另計？", "source": "知乎 zhuanlan p/627743425 《印刷包装彩盒的报价组成》"},
+    {"text": "邊度有紙袋買／紙袋邊度訂做？", "source": "GSC 28d 查詢 '邊度有紙袋買' pos 7.2 imp 34"}
+   ],
+   "ai_cited_sources": [
+    {"domain": "bmpack.com", "evidence": "首页 '100件起訂・即時報價'; /products/label-sticker 1,000張起", "note": "香港小批量包裝直竞"},
+    {"domain": "e-print.com.hk", "evidence": "/products_personalized-packaging-boxes '低至10個起印 3日交貨'", "note": "超低 MOQ + 交期声明占位"},
+    {"domain": "print100.com", "evidence": "/hk/packaging-paperbox-printing", "note": "老牌类目页"},
+    {"domain": "ezbox.com.hk", "evidence": "/zh/ 紙盒紙箱設計印刷", "note": "设计+定制服务页"},
+    {"domain": "jiaxin-box.com.tw", "evidence": "/faq/ 尺寸、材質、MOQ、交期常見問題", "note": "台湾FAQ页占 zh-hk 查询答案位"},
+    {"domain": "packlab.joinprint.com.hk", "evidence": "食品包裝設計、印刷及訂製", "note": "食品包裝细分页"}
+   ],
+   "community_signals": [
+    {"platform": "知乎", "url": "https://zhuanlan.zhihu.com/p/627743425", "title": "印刷包装彩盒的报价组成有哪些", "pain_point": "报价构成不透明（版费/工费/材料费分项）", "verification": "标题+URL 经 2026-09-30 source_check 收录（简中圈层内容, 香港本地论坛未见同题收录, 已如实标注）"},
+    {"platform": "知乎", "url": "https://www.zhihu.com/tardis/jm/art/2036130706749925356", "title": "小批量数码印刷定制包装，能不能做烫金/UV/凹凸？效果怎么样？", "pain_point": "小批量能否做高工艺", "verification": "标题经 SERP 收录; 正文未抓取"}
+   ],
+   "gaps": [
+    {"gap": "包裝盒訂製结构化 FAQ 缺失, 竞对 FAQ 页(佳鑫: 尺寸/材質/MOQ/交期 四主题)正占答案位", "missing": "FAQPage 结构化的價錢/MOQ/交期/認證问答集 + 食品級認證對照表(FDA 21 CFR 白名单参数)", "we_supply": "站内食品級/FSC 参数已在白名单内, 可成表", "priority": "P0", "evidence": "jiaxin-box FAQ SERP 占位 (2026-09-30)"},
+    {"gap": "按品类的统一交期表缺失, '3日交貨'类声明散落在竞对与老站页", "missing": "品类 × 交期(標準/急件) 对比表", "we_supply": "即日印刷横向层 + 72h 交付承诺可结构化", "priority": "P1", "evidence": "e-print/z-printpro 老站页 SERP 标题"}
+   ]
+  },
+  {
+   "locale": "zh-hk",
+   "seed": "貼紙印刷",
+   "questions": [
+    {"text": "貼紙印刷 100 張幾多錢？", "source": "SERP: winprint '1000個低至$280'; 各印刷商價錢頁"},
+    {"text": "防水貼紙用咩材質？PVC 定 PE？", "source": "SERP: bmpack 防水貼紙 PE 合成紙頁; 智印港 防水 PVC 頁"},
+    {"text": "有冇 1 張起印嘅貼紙印刷？", "source": "SERP: cpct-copycat '自訂形狀・1張起印'; print100 少量數碼貼紙"},
+    {"text": "die-cut 同 kiss-cut 貼紙有咩分別？", "source": "SERP: copycat '半啤+切正貼紙 Diecut Kisscut' 頁"},
+    {"text": "透明貼紙／靜電貼最低起訂量？", "source": "SERP: e-print 標籤貼紙頁（透明/靜電/易碎/防水 並列）"},
+    {"text": "貼紙印刷可以即日取貨嗎？", "source": "SERP: cpct-copycat '少量印刷 即日取貨'"},
+    {"text": "小量訂做貼紙邊間好？", "source": "SERP: print100 '[少數量貼紙印刷] 數碼貼紙' 頁"}
+   ],
+   "ai_cited_sources": [
+    {"domain": "e-print.com.hk", "evidence": "/products_sticker_label_printing; /products_Packaging_Labels", "note": "全材质类目占位"},
+    {"domain": "print100.com", "evidence": "/hk/html/prod_d_smallamountsticker.aspx 少數量數碼貼紙", "note": "小量数码细分页"},
+    {"domain": "bmpack.com", "evidence": "/products/waterproof-sticker PE合成紙 1,000張起", "note": "防水材质页"},
+    {"domain": "cpct-copycat.com", "evidence": "/index.php/kisscut-sticker.html 1張起印", "note": "超小量占位"},
+    {"domain": "winprint.hk", "evidence": "?p=87 '1000個低至$280'", "note": "价格锚点页"}
+   ],
+   "community_signals": [
+    {"platform": "知乎", "url": "https://www.zhihu.com/tardis/jm/art/2060454007915788070", "title": "想要定制专业设备贴纸，究竟该通过哪些正规渠道联系靠谱商家？", "pain_point": "找不到靠谱小批量贴纸渠道", "verification": "标题经 2026-09-30 source_check 收录（简中圈层, HK 本地论坛无同题收录, 如实标注）; 正文未抓取"}
+   ],
+   "gaps": [
+    {"gap": "貼紙材質耐候/防水对比表缺失（竞对各占单材质页, 无人给横向对比）", "missing": "PVC / PE合成紙 / 透明 / 靜電貼 的耐水·耐UV·適用場景·起訖量參數橫表", "we_supply": "防水貼紙(waterproof-stickers)与 die-cut SKU 实参可产出横表", "priority": "P0", "evidence": "bmpack(PE)/智印港(PVC)/copycat(1張) 分化占位 (2026-09-30 SERP)"},
+    {"gap": "起訂量場景選型內容缺失（1張/100張/1000張 該點揀）", "missing": "數量檔 × 工藝(數碼/柯式/半啤) 適配表", "we_supply": "100張起價格錨點(§0.29 家族)可向上向下延伸", "priority": "P1", "evidence": "copycat 1張 vs BM Pack 1000張 兩極占位"}
+   ]
+  },
+  {
+   "locale": "ja",
+   "seed": "パッケージ印刷 注文",
+   "questions": [
+    {"text": "パッケージ印刷はいくらから？費用相場は？", "source": "SERP: ec-tsumugu '費用相場と依頼先の選び方'; package-design-office 料金相場"},
+    {"text": "小ロット（100〜500個）で箱を作れる会社は？", "source": "SERP: package-lab '最小500枚・最短28日'; mm-shikou '1個〜'"},
+    {"text": "化粧箱を小ロットで作ると費用はどう変わる？", "source": "SERP: package.poppybox.jp blog『化粧箱を小ロットで作るには？ロットで変わる費用と印刷方法』"},
+    {"text": "パッケージ印刷の納期は最短何日？", "source": "SERP: morofuji '短納期小ロット'; package-lab 28日"},
+    {"text": "自作フィギュア・商品用にオリジナル箱を少量作れる？", "source": "知恵袋 q11299420971 + mm-shikou 1個〜"},
+    {"text": "印刷会社の選び方・発注の流れは？", "source": "SERP: suzukishiko blog 2026/02; konishi-p column 2026/08/25"},
+    {"text": "食品用パッケージの小ロット対応は？", "source": "SERP: artpacks small-lot; mypake.jp"}
+   ],
+   "ai_cited_sources": [
+    {"domain": "package-lab.com", "evidence": "最小500枚・最短28日納品", "note": "MOQ+納期 明示型"},
+    {"domain": "onlineshop.mm-shikou.com", "evidence": "『究極の小ロット注文〜1個作ります〜』blog20240513", "note": "1個〜 極端小ロット占位"},
+    {"domain": "package.poppybox.jp", "evidence": "/blog/print/p9569/ 化粧箱小ロット費用", "note": "問題型(疑問形)博客占位"},
+    {"domain": "ec-tsumugu.com", "evidence": "/method/product-packaging EC商品パッケージ費用相場", "note": "相場型内容"},
+    {"domain": "suzukishiko.co.jp", "evidence": "/blog/2026/02/04/post-206/ 選び方と依頼の流れ", "note": "流程教育型"}
+   ],
+   "community_signals": [
+    {"platform": "Yahoo!知恵袋", "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11299420971", "title": "自作したフィギュアのパッケージが印刷された箱を作りたい", "pain_point": "个人 creator 想做小量原创包装盒, 不知道从何入手", "verification": "2026-09-30 fetch_content 实抓搜索结果页, 问题标题原文可见"},
+    {"platform": "Yahoo!知恵袋", "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12316782042", "title": "オリジナルステッカーを作りたいのですがおすすめの業者ありますか？", "pain_point": "找便宜且品质好的小ロット贴纸代工", "verification": "2026-09-30 fetch_content 实抓（页面为知恵袋同题推荐列表, 该问题标题+URL 经搜索页确认）"}
+   ],
+   "gaps": [
+    {"gap": "ja 站缺「小ロット費用相場表（個数帯 × 製法）」与納期表, 相場型内容被 TSUMUGU/package-design-office 占位", "missing": "100/500/1000 個 × フルカラー/モノクロ/貼箱 单位价带 + 最短納期列", "we_supply": "站内包装 SKU 价格锚点可本地化为円表", "priority": "P0", "evidence": "package-lab/morofuji/ec-tsumugu SERP 占位 (2026-09-30)"},
+    {"gap": "「1個〜/最短〜日」类極端小ロット承诺型内容缺失（向町紙工以 1個〜 占位多年）", "missing": "小ロット可否・最少枚数・打樣流程 明示块", "we_supply": "數碼小批量产线参数可明示(有实参, 不编数)", "priority": "P1", "evidence": "mm-shikou blog 标题实抓 (2026-09-30)"}
+   ]
+  },
+  {
+   "locale": "ja",
+   "seed": "ステッカー印刷 小ロット",
+   "questions": [
+    {"text": "ステッカー印刷は100枚いくら？", "source": "SERP: megaprint 『100枚950円均一・小ロットOK』"},
+    {"text": "ステッカーを小ロット（10〜50枚）で安く作るには？", "source": "SERP: ZEAMI 『50枚1枚32円〜』; 知恵袋 q12303718332 (絵柄4種×10枚)"},
+    {"text": "防水・耐水ステッカーの価格は？PVCと普通紙の違いは？", "source": "SERP: raksul 防水頁; ad-pia 価格表頁; GSC 查詢 'pvcシールとは'"},
+    {"text": "ステッカーを1枚から注文できる印刷所は？", "source": "SERP: digitaprint 『1枚から作成』; graphic.jp 『1枚からも可能』"},
+    {"text": "複数の絵柄を1回の注文で混載できる？", "source": "知恵袋 q12197338522 (8種×20枚) + q10319900465 (4種×15枚)"},
+    {"text": "CMYK入稿で印刷色がくすむのはなぜ？", "source": "知恵袋 q12331724402 (Japan Color 2011 Coated 実例)"},
+    {"text": "学園祭・即売会用に短期間でステッカーを作るには？", "source": "知恵袋 q10319900465 (学園祭 9月下旬 急募)"}
+   ],
+   "ai_cited_sources": [
+    {"domain": "megaprint.jp", "evidence": "OrderInfo?viewName=sticker-100 『100枚950円均一・小ロットOK』", "note": "均一价锚点页"},
+    {"domain": "zeamisticker.com", "evidence": "/small-lot/ 『50枚 1枚32円〜』", "note": "小ロット单价页"},
+    {"domain": "raksul.com", "evidence": "/print/sticker/waterproof/ + 価格表頁", "note": "防水材质+价格表"},
+    {"domain": "digitaprint.jp", "evidence": "/sticker/ 『1枚から作成』", "note": "1枚〜 占位"},
+    {"domain": "graphic.jp", "evidence": "/lineup/sticker 小ロット(1枚から)", "note": "综合类目页"}
+   ],
+   "community_signals": [
+    {"platform": "Yahoo!知恵袋", "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12303718332", "title": "おすすめのステッカー印刷所を教えてください。絵柄4種で1種10枚で作りたい", "pain_point": "多图案混载 + 每种超小量(10枚) + 便宜 — 三个条件同时满足难", "verification": "2026-09-30 fetch_content 实抓, 问题标题原文可见"},
+    {"platform": "Yahoo!知恵袋", "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12331724402", "title": "PSDで保存したファイルが色褪せたようにくすんだ色に変わる（CMYK/Japan Color 2011 Coated）", "pain_point": "CMYK 入稿后色彩发灰, 新手不知如何避免", "verification": "2026-09-30 fetch_content 实抓, 问题标题原文可见（含 CMYK 色彩管理具体细节）"}
+   ],
+   "gaps": [
+    {"gap": "ja 站缺枚数階帯単価表（50/100/500枚 × サイズ）, 均一价/单价锚点被 megaprint・ZEAMI 占位", "missing": "枚数档 × 尺寸档 × 素材(上質紙/PVC/透明) 单价矩阵", "we_supply": "sticker SKU 价格数据可派生円表", "priority": "P0", "evidence": "megaprint 950円均一 / ZEAMI 32円〜 SERP 占位 (2026-09-30)"},
+    {"gap": "「複数デザイン混載小ロット」说明与「CMYK 色ずれ対策」内容缺失 — 知恵袋两处实测高频痛点无人系统性解答", "missing": "混載注文规则说明块 + CMYK/カラープロファイル(Japan Color 2011 Coated)科普块", "we_supply": "站内色彩管理实拍素材(about 22 figure Stage 01)可转为 ja 教育内容", "priority": "P1", "evidence": "知恵袋 q12303718332 / q12331724402 实抓 (2026-09-30)"}
+   ]
+  }
+ ],
+ "gsc_speedwin": {
+  "zh_hk": [
+   {"term": "食品包裝印刷", "position": 7.7, "landing_url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/", "impressions": 147},
+   {"term": "a6 尺寸", "position": 8.6, "landing_url": "https://zprintpro.com/zh-hk/blog/a5-vs-a6-flyer-size/", "impressions": 84},
+   {"term": "紙袋印刷", "position": 12.3, "landing_url": "https://zprintpro.com/zh-hk/product/eco-paper-bags/", "impressions": 73},
+   {"term": "印刷紙袋", "position": 12.2, "landing_url": "https://zprintpro.com/zh-hk/blog/paper-bag-buying-guide/", "impressions": 65},
+   {"term": "即日印刷", "position": 8.9, "landing_url": "https://zprintpro.com/zh-hk/product/same-day-flyers/", "impressions": 51}
+  ],
+  "en": [
+   {"term": "small batch sticker printing", "position": 6.5, "landing_url": "https://zprintpro.com/en/product/small-batch-stickers/", "impressions": 62},
+   {"term": "small batch stickers", "position": 5.3, "landing_url": "https://zprintpro.com/en/product/small-batch-stickers/", "impressions": 29},
+   {"term": "doujinshi printing", "position": 14.5, "landing_url": "https://zprintpro.com/en/product/doujinshi-printing/", "impressions": 34},
+   {"term": "exercise book printing business", "position": 11.4, "landing_url": "https://zprintpro.com/en/product/exercise-books/", "impressions": 23},
+   {"term": "fluorescent stickers", "position": 12.3, "landing_url": "https://zprintpro.com/en/product/fluorescent-stickers/", "impressions": 18}
+  ],
+  "source": "GSC数据/香港站点28天数据zprintpro.com-Performance-on-Search-2026-09-29.xlsx + 美国站点28天数据...2026-09-29.xlsx（查询数表, 窗口 2026-08-29→2026-09-25, 28 天）；落地页映射 = 根目录 gsc_page_query.csv（mtime 2026-08-26, 2294 行, 双法计数一致）+ 同 xlsx「网页」表交叉；双方法复算通过（openpyxl vs 原始 XML：zh-hk 589 行/202 词带、en 510 行/161 词带全一致, 见 _w1_double_count.json）"
+ }
+}

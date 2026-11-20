@@ -1,0 +1,11 @@
+  ✓ stickers : 3/3 段替换 OK (343-364)
+  ✓ flyers : 3/3 段替换 OK (365-388)
+  ✓ posters : 3/3 段替换 OK (408-602)
+  ✓ books : 3/3 段替换 OK (551-567)
+  ✓ packaging : 3/3 段替换 OK (389-407)
+  ✓ banners : 3/3 段替换 OK (534-550)
+
+✓ 写回 F:\zprintpro-nextjs\src\lib\seo.ts, 总 18 段替换
+  字节数: 75,951
+
+注: 攒批不 push, 等 K3 拍板 22 词具体清单 + 实施节奏.

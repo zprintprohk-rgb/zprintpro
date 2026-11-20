@@ -1,0 +1,8 @@
+﻿git : To github.com:zprintprohk-rgb/zprintpro.git
+所在位置 行:1 字符: 348
++ ... "=== push origin_ssh main ==="; git push origin_ssh main 2>&1 | Tee-O ...
++                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (To github.com:z...b/zprintpro.git:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+   a66af72..471eda7  main -> main

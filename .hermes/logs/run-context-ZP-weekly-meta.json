@@ -1,11 +1,11 @@
 {
   "lane": "ZP-weekly-meta",
-  "generated_at": "2026-10-10 00:07:15",
+  "generated_at": "2026-11-20 20:52:00",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "248066ea5c04a0d7",
-    "day": "2026-10-10",
+    "this_run_key": "e311eb8c55fd59fc",
+    "day": "2026-11-20",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -20,7 +20,22 @@
       {
         "name": "deps_tree_integrity",
         "ok": true,
-        "detail": "依赖树 OK (149 个包)"
+        "detail": "依赖树 OK (328 个包)"
+      },
+      {
+        "name": "dsh_executable",
+        "ok": true,
+        "detail": "dsh CLI found"
+      },
+      {
+        "name": "dsh_credential_environment",
+        "ok": true,
+        "detail": "DEEPSEEK_API_KEY present in process environment (value not inspected)"
+      },
+      {
+        "name": "dsh_effective_provider_model",
+        "ok": true,
+        "detail": "effective provider=deepseek-official model=deepseek-flash; allowed"
       },
       {
         "name": "lock_free",
@@ -29,13 +44,23 @@
       },
       {
         "name": "prev_run_known",
-        "ok": false,
-        "detail": "总线无本车道记录 (可能是首次/总线刚启用) -> 以报告文件为准"
+        "ok": true,
+        "detail": "总线最近记录 verdict=BLOCKED @ 2026-11-06 20:52:00"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=10"
+        "detail": "verdict=ATTENTION problems=7; refreshed_stale=False; refresh=not_needed"
+      },
+      {
+        "name": "periodic_strategy_review",
+        "ok": true,
+        "detail": "periodic weekly review generated"
+      },
+      {
+        "name": "coordination_board",
+        "ok": true,
+        "detail": "coordination board rebuilt"
       },
       {
         "name": "lock_acquired",
@@ -46,22 +71,165 @@
   },
   "lock": {
     "lane": "ZP-weekly-meta",
-    "pid": 22580,
-    "acquired_at": "2026-10-10 00:07:15",
-    "acquired_ts": 1791562036.010425,
+    "pid": 36568,
+    "acquired_at": "2026-11-20 20:52:00",
+    "acquired_ts": 1795179121.0642984,
     "host": "JEROME"
   },
   "previous_run": {
-    "bus_record": null,
-    "latest_report": ".hermes/logs/2026-09-18-weekly-meta.md",
+    "bus_record": {
+      "run_id": "ZP-weekly-meta-20261106T205201",
+      "lane": "ZP-weekly-meta",
+      "trigger": "schtasks",
+      "phase": "preflight",
+      "fired_at": "2026-11-06 20:52:00",
+      "ended_at": "2026-11-06 20:52:00",
+      "idempotency_key": "c1034d5d108a2a24",
+      "key_consumed": false,
+      "dsh_exit": null,
+      "wrapper_exit": 10,
+      "verdict": "BLOCKED",
+      "state": "blocked",
+      "blocked_reason": "strategy-feedback exited 1; output suppressed",
+      "guard": {
+        "ok": true
+      },
+      "report": ".hermes/logs/2026-11-06-ZP-weekly-meta.md",
+      "report_auto_generated": true,
+      "files": [],
+      "pushed": false,
+      "source": "lane-preflight.py"
+    },
+    "latest_report": ".hermes/logs/2026-11-06-ZP-weekly-meta.md",
     "delivered_files_from_report": []
   },
-  "sibling_lanes": [],
-  "retry_queue": [],
+  "sibling_lanes": [
+    {
+      "lane": "ZP-daily-content",
+      "status": "PENDING",
+      "report": null,
+      "start": "21:17"
+    },
+    {
+      "lane": "ZP-gsc-feedback",
+      "status": "PENDING",
+      "report": null,
+      "start": "20:13"
+    },
+    {
+      "lane": "ZP-k3-review",
+      "status": "PENDING",
+      "report": null,
+      "start": "07:10"
+    }
+  ],
+  "retry_queue": [
+    {
+      "kind": "RETRY_OF",
+      "run_id": "ZP-weekly-meta-20261106T205201",
+      "reason": "strategy-feedback exited 1; output suppressed",
+      "candidate_files": []
+    }
+  ],
+  "suppressed_retry_queue": [],
+  "coordination": {
+    "board_path": ".hermes/logs/coordination-board.json",
+    "available": true,
+    "run_date": "2026-11-20",
+    "ready_task_ids": [
+      "GSC-FIX-2026-11-20-87656b1b2c"
+    ],
+    "ready_tasks": [
+      {
+        "task_id": "GSC-FIX-2026-11-20-87656b1b2c",
+        "source": "latest_gsc_delta",
+        "cluster": "食品包裝印刷",
+        "query": [
+          "食品包裝印刷"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "食品包裝印刷": {
+              "impressions": 125,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 7.93,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-weekly-meta",
+        "status": "READY",
+        "priority": 95.125,
+        "upstream_inputs": [
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          ".hermes/cron-prompts/blog-money-keyword-queue.json"
+        ],
+        "approval_gate": "Proposal only until real SERP features/title/snippet and commercial truth are verified; no automatic title/meta rewrite. Current SERP status: SERP_UNAVAILABLE; do not infer live displayed titles/snippets.",
+        "write_scope": [
+          ".hermes/logs/",
+          "docs/"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-20",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-20",
+        "exit_criteria": "Record SERP/snippet evidence and one bounded proposal, or HOLD with an explicit blocker; deployment is a separate task.",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "two_window_direction": "NOT_CONSECUTIVE",
+        "idempotency": "2026-11-19|食品包裝印刷|FIX"
+      }
+    ],
+    "input_availability": {
+      "strategy_queue": {
+        "available": true,
+        "path": ".hermes/logs/strategy-task-queue.json"
+      },
+      "blog_queue": {
+        "available": true,
+        "path": ".hermes/cron-prompts/blog-money-keyword-queue.json"
+      },
+      "lane_status": {
+        "available": true,
+        "path": ".hermes/logs/lane-status.json"
+      },
+      "gsc_delta": {
+        "available": true,
+        "path": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "analysis_date": "2026-11-19"
+      },
+      "weekly_review": {
+        "available": true,
+        "path": ".hermes/logs/periodic-review-weekly-2026-11-20.json",
+        "review_date": "2026-11-20"
+      },
+      "monthly_review": {
+        "available": true,
+        "path": ".hermes/logs/periodic-review-monthly-2026-10-28.json",
+        "review_date": "2026-10-28"
+      }
+    },
+    "scheduler_recovery": "NOT_PROVEN"
+  },
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
-    "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",
+    "必须先消费 coordination.ready_tasks 与共享板的上游证据; 只有 status=READY 且 owner_lane=本车道的任务可执行",
+    "WAITING_K3/BLOCKED_INFRA/SCHEDULED/MEASURE_HOLD 不得被本车道改写为 READY; 复测未到不得叠加新变量",
+    "缺 GSC/周报等可选输入时保留 available=false 与 NO_CURRENT_BASELINE; 不得造数, 也不得退回独立选词/独立写文",
+    "FOLLOW_UP_PARTIAL 只处理报告 NEXT, 不重做 DELIVERED; 其他 retry_queue 项才按 RETRY_OF(<run_id>) 恢复",
+    "NO_OP 是证据完整的合法退出, 不自动重试; suppressed_retry_queue 已闭合, 不得重新派发",
     "sibling_lanes 里今日已改过的文件, 本轮不得再次改写 (跨车道避让, 防撞车)",
-    "报告名 <YYYY-MM-DD>-<lane>.md, 首段必含 VERDICT/CONSUMED/DELIVERED/NEXT 四行"
+    "报告名 <YYYY-MM-DD>-<lane>.md, 首段必含 VERDICT/CONSUMED/DELIVERED/NEXT 四行; PARTIAL 不得写成 OK"
   ]
 }

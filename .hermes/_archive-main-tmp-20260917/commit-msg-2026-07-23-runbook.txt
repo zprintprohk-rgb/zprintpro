@@ -1,0 +1,9 @@
+docs(runbook): 7/22 baseline 5 项监控 + K3 官方 10 样本 8/10 PASS
+
+P0-2 DEPLOYED 第 1 周内首次系统化监控记录 (2026-07-22 21:27):
+- 5 项监控脚本 + K3 v5.1 抽样规则 (清单内 5 + 清单外 5)
+- 149 条 Bulk Redirect CSV 覆盖度验证 8/10 PASS
+- 2 真异常 (#8 business-card 200 + #9 about-us 404) K3 7/23 00:30 拍板 A+A
+- 8 周关键观察期时间表 (8/12 第 4 周决策点 ≥ 50%)
+- 健康度报告落盘 logs/2026-07-22-cf-301-health-report.md (10.6K)
+- 教训 3 条: user 随口举例必查权威源 / sitemap-0.xml 500 bug / cron SSoT 改 ≠ daemon 改

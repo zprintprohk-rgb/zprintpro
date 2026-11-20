@@ -1,0 +1,60 @@
+  ✓ src\middleware.ts : 15 处替换
+  ✓ src\app\api\search\route.ts : 2 处替换
+  ✓ src\app\[locale]\blog\BlogContent.tsx : 1 处替换
+  ✓ src\app\[locale]\blog\[slug]\page.tsx : 4 处替换
+  ⊝ SKIP (case-studies ja 保留) src\app\[locale]\case-studies\page.tsx
+  ✓ src\app\[locale]\category\[slug]\page.tsx : 5 处替换
+  ✓ src\app\[locale]\faq\page.tsx : 2 处替换
+  ✓ src\app\[locale]\payment-methods\page.tsx : 1 处替换
+  ✓ src\app\[locale]\press-kit\page.tsx : 6 处替换
+  ✓ src\app\[locale]\product\[slug]\page.tsx : 4 处替换
+  ✓ src\app\[locale]\services\page.tsx : 1 处替换
+  ✓ src\components\ProductCard.tsx : 1 处替换
+  ✓ src\components\ProductTabs.tsx : 6 处替换
+  ✓ src\components\quotation-widget.tsx : 4 处替换
+  ✓ src\components\category\CategoryProductCard.tsx : 1 处替换
+  ✓ src\components\category\CategorySharpHooks.tsx : 4 处替换
+  ✓ src\components\category\CategorySidebar.tsx : 1 处替换
+  ✓ src\components\home\HotProducts.tsx : 1 处替换
+  ✓ src\components\layout\Header.tsx : 1 处替换
+  ✓ src\components\product\ProductCard.tsx : 1 处替换
+  ✓ src\components\quote\BusinessCardQuoteCalculator.tsx : 2 处替换
+  ✓ src\components\quote\QuoteRedirect.tsx : 8 处替换
+  ✓ src\components\sections\RushDeliveryFAQ.tsx : 1 处替换
+  ✓ src\components\sections\RushDeliveryGrid.tsx : 1 处替换
+  ✓ src\data\blog-posts.ts : 2 处替换
+  ✓ src\data\breadcrumb-names.ts : 3 处替换
+  ✓ src\data\buying-guides.ts : 2 处替换
+  ✓ src\data\category-seo-content.ts : 21 处替换
+  ✓ src\data\image-alt-map.ts : 1 处替换
+  ✓ src\data\products.ts : 220 处替换
+  ✓ src\data\search-helpers.ts : 15 处替换
+  ✓ src\data\sku-seo-data.ts : 180 处替换
+  ✓ src\data\blog-data\en.json : 11 处替换
+  ✓ src\data\blog-data\ja.json : 2 处替换
+  ✓ src\data\blog-data\zh-hk.json : 3 处替换
+  ✓ src\data\price-tables\calibration-status-2026-07-20.json : 1 处替换
+  ✓ src\data\price-tables\flyers.json : 4 处替换
+  ✓ src\data\price-tables\README.md : 3 处替换
+  ✓ src\generated\sitemap-content.ts : 234 处替换
+  ✓ src\lib\h1-builder.ts : 6 处替换
+  ✓ src\lib\popularity.ts : 3 处替换
+  ✓ src\lib\pricing.ts : 6 处替换
+  ✓ src\lib\seo.ts : 6 处替换
+  ✓ src\lib\quote-engine\engine.ts : 3 处替换
+  ✓ src\lib\quote-engine\formulas\bags.ts : 1 处替换
+  ✓ src\lib\quote-engine\formulas\books.ts : 1 处替换
+  ✓ src\lib\quote-engine\formulas\business-cards.ts : 5 处替换
+  ✓ src\lib\quote-engine\formulas\packaging.ts : 1 处替换
+  ✓ src\lib\quote-engine\formulas\posters.ts : 2 处替换
+  ✓ src\lib\quote-engine\formulas\stickers.ts : 1 处替换
+  ✓ src\lib\quote-engine\__tests__\business-cards.pricing.test.ts : 1 处替换
+  ✓ src\lib\quote-engine\__tests__\debug-double.ts : 1 处替换
+  ✓ src\lib\quote-engine\__tests__\debug-pricing.ts : 1 处替换
+  ✓ src\lib\quote-engine\__tests__\e2e-verification.ts : 1 处替换
+  ✓ src\lib\quote-engine\__tests__\search.regression.test.ts : 17 处替换
+  ✓ src\types\quotation.ts : 1 处替换
+
+总文件: 55, 总替换: 832 处
+
+保留: case-studies (ja 客户案例) 名刺 99 hits 未动 (战略必需)

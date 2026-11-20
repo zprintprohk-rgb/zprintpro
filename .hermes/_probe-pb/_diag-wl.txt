@@ -1,0 +1,148 @@
+﻿=== src/app/[locale]/payment-methods/page.tsx
+  L693:       branchCode: '478',
+  L694:       accountNo: '016-478-7949835442',
+  L695:       rawAccount: '7949835442',
+  L696:       beneficiary: 'SHEN ZHEN SHI CAI LONG YIN SHUA BAO ZHUANG YOU XIAN GONG SI',
+  L697:       beneficiaryCn: '深圳市彩龍印刷包裝有限公司',
+  L698:       swift: 'DHBKHKHH',
+  L699:       bankAddress: 'Ground Floor, The Center, 99 Queen\'s Road Central, Central, HK',
+  L700:       city: 'Hong Kong SAR',
+  ---
+  L755:       speed: 'Instant - 24 hours',
+  L756:       bestFor: 'Overseas Chinese / students',
+  L757:       bullets: [
+  L758:         'Official QR issued by 唐运提 (Mr. Tang, founder)',
+  L759:         'Overseas clients scan via remittance apps to pay',
+  L760:         'Best for B2B large orders / service fees',
+  ---
+=== src/components/layout/Footer.tsx
+  L144:     supportCN: 'China mainland 24h · Hong Kong local support',
+  L145:     supportEN: 'China mainland 24h · Hong Kong local support',
+  L146:     supportJA: '中国本土 24時間対応 · 香港現地サポート',
+  L147:   },
+  ---
+=== src/data/category-seo-content.ts
+  L2145:       { q: 'What is the fastest turnaround for red packets?', a: 'Digital: 3–5 days; Offset: 5–7 days; Rush: 2–3 days.' },
+  L2146:       { q: 'Can you customize corporate red packets?', a: 'Yes. Professional designers create branded red packets integrating logos, brand colors, and blessings.' },
+  L2147:       { q: 'Can each packet have different blessings?', a: 'Yes. Variable data printing allows different employee names or blessings per packet.' },
+  L2148:       { q: 'Can red packet sizes be customized?', a: 'Yes. Standard sizes: small, medium, large. Fully custom sizes also supported.' },
+  L2149:       // 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ
+  L2150:       //   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。
+  L2151:       //   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。
+  L2152:       { q: 'When should I start printing red packets?', a: 'Recommend starting 1–2 months in advance to avoid the pre-CNY printing rush.' },
+  L2153:       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk red packet orders can be arranged for warehouse or office delivery.' },
+  L2154:       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit red packet size, paper type, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will
+  L2155:       // 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en
+  L2156:       { q: 'What is the CNY 2027 red packet procurement timeline and industry trends?', a: 'CNY 2027 (Feb 6) procurement timeline: August design → September sampling (HK$200 including shipping) → October mass production (5-7 day d
+  L2157:     ],
+  L2158:   },
+  L2159:   ja: {
+  L2160:     h2: '红包印刷 — 箔押し／エンボス／立体加工、500枚から、旧正月ギフトの定番',
+  ---
+  L3168:       { q: 'Can flyers be double-sided printed?', a: 'Yes. Double-sided printing fully utilizes both sides, doubling information capacity.' },
+  L3169:       { q: 'Can flyers be folded?', a: 'Yes. Half-fold, tri-fold, Z-fold, gate-fold, and more options available.' },
+  L3170:       { q: 'What is the fastest turnaround for flyers?', a: 'Same-day digital printing (100–500 pcs). Standard offset: 2–3 days.' },
+  L3171:       // 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)
+  L3172:       // 2026-08-22 v3.15 S2 T36: 修复 zh-hk 污染 + 添加 en 段
+  L3173:       { q: 'What are the 2026 H1 flyer market trends?', a: 'Chain restaurants (KFC style) 50-200 pcs per order, single events 500-1,000 pcs, real estate weekends 200-500 pcs, education enrollment back-to-school season 1,000-5,000 
+  L3174:       { q: 'Can flyers have serial numbers or QR codes?', a: 'Yes. Variable data printing allows different serial numbers, barcodes, or QR codes per flyer.' },
+  L3175:       { q: 'What paper is best for distribution?', a: '128gsm art paper is most economical for mass distribution; 157gsm offers better feel for brand promotion.' },
+  ---
+
+=== en.json 顶层条目数与含 CJK 字段 ===
+  hong-kong-printing-guide: description(6), content(18)
+  design-file-specs: content(6)
+  brand-materials-checklist: content(6)
+  packaging-trends: content(6)
+  cmyk-guide: content(30)
+  paper-materials: content(6)
+  eco-printing: content(6)
+  food-packaging-printing-guide: content(21)
+  paper-bag-printing-guide: content(6)
+  restaurant-opening-flyer-printing-guide: category(4)
+  company-intro: description(6), content(24)
+  packaging-box-custom-guide: content(6)
+  pet-food-sticker-printing-guide: category(2)
+  apparel-shopping-bag-printing-guide: content(12)
+  cross-border-ecommerce-shipping-box-guide: content(12)
+  pharmaceutical-label-printing-guide: content(12)
+  cosmetics-packaging-box-printing-guide: category(4), content(12)
+  tea-beverage-gift-box-printing-guide: content(9)
+  restaurant-menu-printing-guide: content(50)
+  graduation-yearbook-printing-guide: content(12)
+  wedding-invitation-envelope-printing-guide: content(27)
+  baby-product-label-sticker-printing-guide: content(8)
+  baby-food-packaging-box-printing-guide: category(4)
+  real-estate-flyer-printing-guide: category(3)
+  medical-device-packaging-box-guide: category(4), content(6)
+  auto-parts-shopping-bag-printing-guide: category(4)
+  sports-merchandise-gift-box-printing-guide: category(4)
+  gang-run-card-boxes-hk-guide: content(12)
+  custom-card-boxes-small-batch-usa: content(12)
+  cosmetic-card-boxes-gang-run-japan: content(6)
+  same-day-flyers-printing-hong-kong-guide: content(12)
+  poster-size-guide: content(6)
+  poster-printing-price-guide: content(6)
+  catalog-printing-guide: content(6)
+  wedding-invitation-pricing-guide: content(36)
+  wedding-table-card-printing-guide: content(2)
+  saddle-stitch-booklet-printing-guide: content(5)
+  apparel-clothing-tag-printing-guide: content(6)
+  2027-monthly-calendar-printing-timetable: content(3)
+  rush-printing-delivery-guide: description(10), content(95)
+  packaging-box-price-2026: content(40)
+  sticker-material-pvc-vinyl-removable: description(6)
+  certificate-printing-guide: description(12), content(118)
+  instant-printing-30s-ai-quote-flow: description(9), content(30)
+  campus-education-printing-pillar-guide: content(92)
+  hong-kong-printing-cost-baseline-2026: content(6)
+  print-specifications-reference-guide-2026: content(18)
+  textbook-printing-guide: category(4)
+  school-exercise-book-printing-guide: description(4), content(16)
+  zine-small-batch-booklet-printing-guide: content(4)
+
+=== en.json 条目的全部键 (第一个条目) ===
+  slug, title, description, date, category, content
+
+=== FAQPage / ld+json 出现在哪些条目 ===
+  cmyk-guide: Qmark/FAQ
+  paper-materials: Qmark/FAQ
+  food-packaging-printing-guide: Qmark/FAQ
+  paper-bag-printing-guide: Qmark/FAQ
+  restaurant-opening-flyer-printing-guide: Qmark/FAQ
+  packaging-box-custom-guide: Qmark/FAQ
+  pet-food-sticker-printing-guide: Qmark/FAQ
+  apparel-shopping-bag-printing-guide: Qmark/FAQ
+  cross-border-ecommerce-shipping-box-guide: Qmark/FAQ
+  pharmaceutical-label-printing-guide: Qmark/FAQ
+  cosmetics-packaging-box-printing-guide: Qmark/FAQ
+  tea-beverage-gift-box-printing-guide: Qmark/FAQ
+  restaurant-menu-printing-guide: Qmark/FAQ
+  graduation-yearbook-printing-guide: Qmark/FAQ
+  wedding-invitation-envelope-printing-guide: Qmark/FAQ
+  baby-product-label-sticker-printing-guide: Qmark/FAQ
+  baby-food-packaging-box-printing-guide: Qmark/FAQ
+  real-estate-flyer-printing-guide: Qmark/FAQ
+  medical-device-packaging-box-guide: Qmark/FAQ
+  auto-parts-shopping-bag-printing-guide: Qmark/FAQ
+  sports-merchandise-gift-box-printing-guide: Qmark/FAQ
+  gang-run-card-boxes-hk-guide: Qmark/FAQ
+  same-day-flyers-printing-hong-kong-guide: Qmark/FAQ
+  poster-size-guide: ld+json,Qmark/FAQ
+  poster-printing-price-guide: Qmark/FAQ
+  catalog-printing-guide: Qmark/FAQ
+  wedding-invitation-pricing-guide: Qmark/FAQ
+  wedding-table-card-printing-guide: Qmark/FAQ
+  saddle-stitch-booklet-printing-guide: Qmark/FAQ
+  2027-monthly-calendar-printing-timetable: Qmark/FAQ
+  rush-printing-delivery-guide: Qmark/FAQ
+  packaging-box-price-2026: Qmark/FAQ
+  sticker-material-pvc-vinyl-removable: ld+json,Qmark/FAQ
+  certificate-printing-guide: Qmark/FAQ
+  instant-printing-30s-ai-quote-flow: Qmark/FAQ
+  campus-education-printing-pillar-guide: ld+json,Qmark/FAQ
+  hong-kong-printing-cost-baseline-2026: ld+json,Qmark/FAQ
+  print-specifications-reference-guide-2026: ld+json,Qmark/FAQ
+  textbook-printing-guide: Qmark/FAQ
+  school-exercise-book-printing-guide: ld+json,Qmark/FAQ
+  zine-small-batch-booklet-printing-guide: Qmark/FAQ

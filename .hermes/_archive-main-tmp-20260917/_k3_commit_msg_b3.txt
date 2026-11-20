@@ -1,0 +1,1 @@
+fix(content): B3 月曆 R5 9/15 硬截止 striking 冲首页 (calendars 块 zh-hk +5 FAQ + 3 内链 + 1 段 R5 旺季时间线 + h2 注入 9/15, GSC 8/24 14:30 月曆印刷 pos 21.1 24 imps 0 click + 月曆訂製 pos 32.3 0 imps, 季节军令状 T42 月曆每拖 1 天 旺季收成少 1 天, links 字段在 buyingGuide 块内非顶层 (TS 2353 fix), Python json.dump 模式避免 Edit/Write 处理 5294 行大文件 GBK 污染, 撞墙 = M3 自主 K3 8/26 04:50 v2 预批"立即"覆盖, tsc 54 baseline 不新增)

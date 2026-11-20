@@ -1,0 +1,31 @@
+docs(handover)+chore(tools): 交生活书追加第二轮 + ja imageAlt 折行审计转正
+
+一、交生活书 §2/§5/§9 更新 (append-only, 历史不删)
+   - §2 状态快照: HEAD a2f636e6 / 收尾信号首次满足 / 新增「分支 upstream 陷阱」
+   - §5 未完成事项: 第 1/2 项标记完成; 新增第 9/10/11 项 (ja imageAlt 折行 / CRED_ISO_9001 167 /
+     BRAND_LOCALE_MISMATCH 39 —— 后两项**仅门童计数, 未核实真伪**, 只登记不动手)
+   - §5 第 6 项升级为 🔴: menus 数据层 description/body 仍写 50本/100本与标题新口径矛盾 (避坑 18)
+   - §9 追加「2026-09-20 19:36」段: 起点三条既有结论的证伪 + 净结果 + 新避坑 20/21
+
+二、新避坑 20/21 (证据均来自本轮实测)
+   - 避坑 20: `origin` 与 `origin_ssh` 同 URL 但 ref 独立, `main` 的 upstream 是 origin_ssh/main;
+     只 fetch origin 会读到**过期的 origin/main** → 误判积压。(fetch 了还错, 比避坑 14 更隐蔽)
+   - 避坑 21: dry-run 的价值是抓「候选本身写错」。本轮 dry-run 拦下: 两处 en 新标题当量 60/62 越界
+     (凭直觉估的删减量不足)、一处 imageAlt 目标串按交接笔记假设的位置**根本不存在**
+     (pvc-menus/ja 其实正常, 真正的错挂在 hardcover-menus/ja)。
+     结论: **交接文档是二手证据, 落盘前必须用程序复核命中数**。
+
+三、工具转正: scripts/audit-ja-imagealt-fold.cjs (只读)
+   前身 `.hermes/_tmp-hkfold.cjs` —— `_` 前缀属清理规则命中区(本轮已实测踩坑), 有用工具必须去前缀。
+   口径: 配平花括号结构解析; 🔴 与 zh-hk 段完全相同 / 🟠 无假名且含繁体字(仅可疑, 须人读)。
+   实测: 扫描 100 SKU · 🔴 0 处 / 🟠 28 处 (28 为可疑上限, 不是结论)。
+
+验证
+   - node scripts/audit-ja-imagealt-fold.cjs ja → 🔴 0 / 🟠 28 (exit 0)
+   - node scripts/audit-sku-locale.cjs → 四项 0
+   - node scripts/probe-skill-handover.mjs → 待本 commit 后复跑
+
+数据来源:
+- 门童 pre-commit 输出 (2026-09-20 19:36 提交 a2f636e6 时的真实计数)
+- scripts/audit-sku-locale.cjs / verify-menus.cjs / audit-ja-imagealt-fold.cjs 实测
+- docs/2026-09-20-handover-living-book.md §9

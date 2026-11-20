@@ -1,0 +1,580 @@
+﻿{
+  "sku": "posters",
+  "category": "posters",
+  "name": {
+    "zh-hk": "海報印刷",
+    "en": "Poster Printing",
+    "ja": "ポスター印刷"
+  },
+  "currency_anchor": "HKD",
+  "markup_rule": "B2 digital × (≤200→×3,≤500→×2.5,>500→×2.2); offset = e-print ×0.95; dual-track = min(digital,offset)",
+  "src": "anchor-b2-digital+v16-offset",
+  "anchor": "B2非会员价 + e-print柯式海报价",
+  "anchorType": "factory-cost",
+  "calibratedAt": "2026-07-25",
+  "note": "v16 K3 7/25: 小单数码/大单柯式自动取优。A1=喷绘e-banner×0.95。",
+  "configs": [
+    {
+      "config": "A2 · 铜版纸 · 157g · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 160,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 230,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 450,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 561,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 608,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 656,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A2 · 铜版纸 · 157g · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 208,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 321,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 667,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 893,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 1017,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 铜版纸 · 157g · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 118,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 150,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 259,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 561,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 608,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 656,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 铜版纸 · 157g · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 141,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 195,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 367,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 893,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 1017,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A2 · 哑粉纸 · 157g · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 160,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 230,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 450,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 561,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 608,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 656,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A2 · 哑粉纸 · 157g · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 208,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 321,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 667,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 893,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 1017,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 哑粉纸 · 157g · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 118,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 150,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 259,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 561,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 608,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 656,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 哑粉纸 · 157g · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 141,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 195,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 367,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 893,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 1017,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A2 · 铜版纸 · 250g · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 167,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 244,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 483,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 561,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 608,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 656,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A2 · 铜版纸 · 250g · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 223,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 348,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 611,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 893,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 1017,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 铜版纸 · 250g · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 122,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 157,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 276,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 561,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 608,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 656,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 铜版纸 · 250g · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 149,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 209,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 400,
+          "production": "digital",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 893,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 1017,
+          "production": "offset",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 290,
+          "production": "inkjet",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 580,
+          "production": "inkjet",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 1450,
+          "production": "inkjet",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 2900,
+          "production": "inkjet",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 5800,
+          "production": "inkjet",
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 360,
+          "production": "inkjet",
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 720,
+          "production": "inkjet",
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 1800,
+          "production": "inkjet",
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 3600,
+          "production": "inkjet",
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 7200,
+          "production": "inkjet",
+          "weight_kg": null
+        }
+      ]
+    }
+  ]
+}

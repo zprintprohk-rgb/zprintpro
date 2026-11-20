@@ -1,5 +1,7 @@
 # 结果总线消费契约 — 执行层（deepseek 车道）每轮开工第一段必读
 
+> **2026-11-13 收尾口径修正**：完整四字段且非 AUTO-FILL 的 `OK／PARTIAL／NO_OP` 都是可正常收尾的真实报告。PARTIAL=已交付+待跟进，state=completed 但必须 ATTENTION，下轮只处理 NEXT；NO_OP=有证据的合法无变更退出，state=completed 且不重试；FAILED／BLOCKED／STALE 仍不得通过。`run-context.suppressed_retry_queue` 表示历史异常已被后续真实终态闭合，不得重复派发。下文旧集合以本段为准。
+
 > **签发**: K3 2026-09-19 指令 —— 「这些定时任务结果是要给 deepseek 执行任务的数据依据和支撑的，不是给 K3 的」。
 > **本文件是 5 条车道共享段**（daily-content / gsc-feedback / weekly-meta / blog-deepfix / monthly-matrix），位于各 prompt 首部第 -1 优先级。
 > **上游产物**: `scripts/lane-status.mjs` → `.hermes/logs/lane-status.json`；`scripts/lane-preflight.py` → `.hermes/logs/run-context-<lane>.json`。
@@ -11,15 +13,16 @@
 | 顺序 | 文件 | 作用 |
 |------|------|------|
 | 1 | `.hermes/logs/run-context-<本车道名>.json` | 本轮专属上下文：上次跑了几次/结果如何/上次产物文件/待重做事项/今日已发生的其他车道动作/锁与前置检查结论 |
-| 2 | `.hermes/logs/lane-status.json` | 全车道近 7 天对账：每条车道逐日 verdict（`OK / MISSING / FAILED / BLOCKED / STALE / PENDING`）+ 证据路径 |
+| 2 | `.hermes/logs/lane-status.json` | 全车道近 7 天对账：每条车道逐日 verdict（`OK / PARTIAL / NO_OP / MISSING / FAILED / BLOCKED / STALE / PENDING`）+ 证据路径 |
 
 **两个文件都读不到时（首次运行/文件被清）**：在报告里记一行 `BUS_UNAVAILABLE`，然后按 prompt 正常流程执行；**不得**因为读不到结果就跳过流程，也**不得**凭空编造"上次已做过"。
 
 ## 二、结果即依据（怎么用）
 
 1. **幂等判定（最高价值）**：`run-context` 里 `previous_run` 的 `report` 与 `files` 就是"上一轮实际交付了什么"的事实账本。K3 幂等铁律「不重复做已完成的事」据此执行：
-   - 若本轮目标与 `previous_run` 已交付项相同且其 verdict ∈ `OK` → **跳过该项**，报告写 `ALREADY_DONE(since <date>)`，把算力移到未完成项；
-   - 若上次 verdict ∈ `{FAILED, BLOCKED, STALE}` → **优先重做未完成部分**，并在报告里指名 `RETRY_OF(<上次 run_id>)`，附上次失败原因。
+   - 若本轮目标与 `previous_run` 已交付项相同且其 verdict ∈ `{OK, NO_OP}` → **跳过该项**，报告写 `ALREADY_DONE(since <date>)`，把算力移到未完成项；
+   - 若上次 verdict ∈ `PARTIAL` → 只处理 `FOLLOW_UP_PARTIAL` 与报告 NEXT，**不得重做 DELIVERED**；
+   - 若上次 verdict ∈ `{FAILED, BLOCKED, STALE}` → **优先重做未完成部分**，并在报告里指名 `RETRY_OF(<上次 run_id>)`，附上次失败原因；后续已有真实终态的 suppressed 项除外。
 2. **幂等键（P3-10，机器判定，别靠记忆）**：每次执行带 `idempotency_key = sha256(lane|intent|target|day)[:16]`，写入 `lane-runs.jsonl` 与 `run-context.idempotency.this_run_key`。
    - **命中同一个 key = 同一件事今天已处理过 → 跳过**（先查 key，不要凭印象）；
    - 换天或换 target（如换另一篇文章）自然得到新 key → 允许重做（重做是合法的新工作，不是重复）；
@@ -43,7 +46,7 @@
 1. 报告文件名强制 `<YYYY-MM-DD>-<本车道名>.md` 落 `.hermes/logs/`（`lane-status.mjs` 只认这个口径，否则判 `STALE`）；
 2. 报告**第一段**必须含 4 行机器可读前缀（供下一轮 `run-context` 与主程序解析）：
    ```
-   VERDICT: OK|PARTIAL|BLOCKED|FAILED
+   VERDICT: OK|PARTIAL|NO_OP|BLOCKED|FAILED
    CONSUMED: run-context-<lane>.json @ <生成时间> | lane-status.json @ <生成时间>
    DELIVERED: <本次实际改动的文件逗号分隔，无则 NONE>
    NEXT: <下一轮该做什么，一行；或 NONE>

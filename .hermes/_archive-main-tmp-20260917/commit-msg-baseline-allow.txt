@@ -1,0 +1,16 @@
+fix(gate): 门禁品牌规则按存量基线扣减 — 修「触碰含存量双品牌的文件即被拦」的可用性缺陷
+
+背景: 门禁修复后 (98ad5136) 发现下一层缺陷 —— common.collectFiles(--commit) 收集的是
+**整个 staged 文件**, 而 products.ts / blog 映射等文件含 83 处存量 title 面双品牌 (方案 C 白名单),
+=> 任何触碰这些文件的合法改动都会被 BRAND_DOUBLE 硬拦, 门禁不可用。
+
+修法: check-regression-guard.js 引入「存量基线扣减」:
+  - 读 .hermes/brand-baseline.json(方案 C 白名单, 只许递减)
+  - 品牌类规则 (QUOTE_RULES: BRAND_*/I18N_*/PHONE_*) 的命中, 按文件配额扣减基线内数量
+  - 基线内 -> 不计 (打印「存量基线内 N 条」); 超出基线 (即新增) -> 照旧硬拦
+  - 无基线文件时退化为不扣减 (行为与修前一致)
+
+验证 (决定性一对, .hermes/selftest-baseline-allowance.cjs):
+  A) products.ts 追加合法注释 -> commit **exit 0** (基线内 10 处双品牌未误拦) PASS
+  B) src/ 注入一条新增双品牌 -> commit **exit 1** (门童 #3 BRAND_DOUBLE 拦住) PASS
+清理后工作树无非预期改动。

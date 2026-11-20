@@ -1,0 +1,10 @@
+feat(cron): K3 v7.1 cron prompts 拍板 (2026-07-22 K3 拍板)
+
+- daily-content-1x7w: v7 → v7.1 (K3 §6 铁律 + Q-005 7/23 必写 + GSC API fallback 意识)
+- weekly-meta-refresh: v4 → v4.1 (K3 §6 PDP 5 天不重复 + 7/28 Q-005 daily 联动 + GSC fallback)
+- monthly-matrix-audit: v4 → v4.1 (K3 §6 Tier 切换 covered skip + price-table 校准进度细化 + GSC fallback + 141 baseline 对接)
+
+3 套更新跟 gsc-feedback-loop v4 (commit 3fe7710) 一致
+K3 v6 → v7 拍板: 内容生产 → 收入机 + GSC 数据 + 利润驱动
+
+Co-Authored-By: Mavis <noreply@mavis.ai>

@@ -1,0 +1,40 @@
+feat(seo): G3 集成「语义语言一致性」检查 — 补上纯拉丁串在 CJK 标题的盲区 (K3 决策 3)
+
+来源: K3 2026-09-19 决策 3「将 harvest 阶段的同语言验证集成到 G3 门禁」
+
+## 一、集成内容
+`gates()` 的 G3 (语言纯净) 由「**只查字符集污染**」扩为「字符集 + **语义语言一致性**」。
+新增 `latinPhraseViolation()`: CJK 标题 (zh-hk / ja) 内出现**英文短语**即拦。
+
+事故背书: `両面カラー印刷 両面チラシ | Free US Ship | ZprintPro`
+= **日文页面向日本用户承诺「美国免运费」**。原 G3 只查 CJK/假名/简体字形,
+而 `Free US Ship` 是纯拉丁串 ⇒ **字面合法、语义错误** ⇒ 原 G3 恒判通过 = 真盲区。
+
+## 二、★ 判别式经三轮实测定标 (每轮都是被实测否掉的)
+| 轮次 | 判据 | 实测结果 |
+|---|---|---|
+| ① | 「含空格的多词拉丁串」 | 误报: `229×324mm A4対応` 被切成 `mm` + `A`(A4 在数字处截断) |
+| ② | ① + token 允许数字 | **误报扩大到 20 条**: `UV 100` / `C4 229` / `A6 50` / `57mm 76mm` = 「规格 token + 数字」 |
+| ③ | **≥2 个「真英文词」**(纯字母+长度≥3+不在规格白名单) | ✅ 定标成功 |
+最终判据: 多词拉丁串 ∧ 其中 ≥2 个真英文词 ⇒ 判违规。
+- 白名单 (`LATIN_ALLOW`): PVC/PP/BOPP/UV/DPI/CMYK/DHL/FSC/ISO/SGS/FDA/HK/HKD/USD/A0-A6/B4-B5/C4-C6/DL/MM/CM/KG/MIL/GSM/EVA/AI/MOQ/QR/ZprintPro 等
+- 命中: `Free US Ship`(free/ship) · `custom red packets`(custom/red/packets) · `Save the Date`(save/the/date)
+- 放过: `PVC menu`(仅 1 个英文词) —— **宁可漏一个轻微 case, 不可制造 20 条误报** (误报会逼人绕过闸门)
+
+## 三、验证 (双证据)
+1. **全量回归**: 扫现有 **200 条 CJK 标题** → **命中 3 条, 全部为真阳性**, 无假阳性:
+   - `custom-red-packets` zh-hk `custom red packets | 燙金 UV 壓紋 | 智印港` ← **英文段落在中文标题**
+   - `custom-red-packets` ja `custom red packets | 箔押し UV エンボス | ZprintPro`
+   - `save-the-date-cards` ja `Save the Date カード印刷 …` ← 英文短语在日文标题
+2. **自检 6/6**: 1 正例须命中 (`Free US Ship` in ja) + 5 负例须放行 (含 `C4 229×324mm A4対応` / `UV 100%訂製` / `HK$1.15起` 等真实标题)
+
+## 四、★ 顺带发现: 3 条**预存**跨语言缺陷 (非本批引入, 已登记未修)
+`custom-red-packets`(zh-hk + ja) 与 `save-the-date-cards`(ja) 的**现行线上标题**即含英文段落/短语。
+- `custom red packets` 在 zh-hk 标题 = 中文页首段用英文 (主词即英文!) —— 该 SKU 的 zh-hk 主词本身有问题
+- 处置: **不在本批修** (本批只做门禁集成, 且修它们属**改主词** = 高风险, 须独立批次 + K3 知晓)
+  ⇒ 建议独立「跨语言主词修正」批次处理; 现已由 G3 常态化看守 (未来新候选必被拦)
+
+## 五、验收
+node scripts/generate-title-batch.mjs → 无回归 (G3 对既有 300 槽产出 0 新拦截) ✅
+全量 CJK 回归: 200 条 → 3 命中 (全真阳性) ✅ · 自检 6/6 ✅
+⚠️ 本批**未改 src** (纯门禁增强)。

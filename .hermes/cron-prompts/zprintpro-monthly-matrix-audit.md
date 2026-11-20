@@ -1,3 +1,47 @@
+<!-- COORDINATED-FLYWHEEL-2026-11-14 BEGIN -->
+# 2026-11-14 协同飞轮：月度资源再分配与学习止损
+
+1. **先消费同一协同板**：读 `run-context-ZP-monthly-matrix.json` 的 `coordination`、`.hermes/logs/coordination-board.json`、当月 weekly reviews 与真实月度反馈。11-01 历史自然轮缺失保留 `HISTORICAL_MISSING`，不得伪造或回填。
+2. **本车道职责**：按三市场词簇的完整实验证据提出 SCALE／FIX／MEASURE／STOP 与资源再分配；重点比较交易页真值、CTR 提案、Blog 信息补缺和复测结果，不以文章数、字数或报告数作为产量胜利。
+3. **派单边界**：只向既有 owner lane 派发 bounded 项，写全 baseline／approval／deploy／verify／retest／retry_at／exit；缺转换数据不做 ROI 结论，缺固定 AI 探针不做 GEO 增长结论，调度故障与业务任务分账。
+4. **学习边界**：协同板构建失败必须 BLOCKED；可选数据缺失保留 `available:false`／`NO_CURRENT_BASELINE`，不得自行放宽审批或把 WAITING_K3 转 READY。
+<!-- COORDINATED-FLYWHEEL-2026-11-14 END -->
+
+<!-- TRUTH-MONTHLY-LEARNING-2026-11-13 BEGIN -->
+# 2026-11-13 当前执行块：月度真值、学习止损与 bounded 派单
+
+1. **月度数据口径**：沿用 `strategy-feedback.py --period monthly`，读取实际窗口日期、当月 weekly reviews、晚到补消费记录与生产复测；不得以导出日替代数据结束日，不拼接独立 GSC 维度。
+2. **商业真值单列审计**：把价格／MOQ／交期／尺寸／认证／退款等冲突作为独立 P0 风险，不把修复数量当 SEO 胜利。未获 K3 拍板只输出裁决单，不自行选值或批量改页。
+3. **四类月度决策**：SCALE 需完整 scale_evidence；FIX 只派单变量；MEASURE 处理根因与复测；STOP 关闭重复低效、无意图或无信息增量任务。每项必须有 owner／baseline／approval／deploy／verify／retest／exit，同因 recurrence 不重复开单。
+4. **GEO 月度验收**：固定问题、引擎、完整答案和 citation URL 才可比较；S2 未执行前保持 `NO_COMPARABLE_BASELINE`，普通搜索与 SEO 排名不得冒充 AI 引用增长。
+5. **运行状态保真**：OK／PARTIAL／NO_OP 分开统计；PARTIAL 跟进 NEXT，NO_OP 不重试。调度 LastTaskResult、自然触发和手动执行分栏，未解决错误不得因报告存在而关闭。
+<!-- TRUTH-MONTHLY-LEARNING-2026-11-13 END -->
+
+<!-- FLYWHEEL-MONTHLY-LEARNING-2026-11-07 BEGIN -->
+# 2026-11-07 当前执行块：月度学习、止损与下月实验组合
+
+> 本块取代下方“每月固定优化 10 篇／以覆盖率和文章数验收／自动扩量”等历史口径；旧段只作档案，不作为当前产量指令。
+
+1. **运行既有月度反馈**：默认 dry-run `python scripts/strategy-feedback.py --period monthly --date <YYYY-MM-DD>`，同时读取当月 weekly reviews、最新四窗／focus delta、生产部署和线上复测证据；queue 写入仍需既有审批门。
+2. **月度只沉淀完整实验**：按 `baseline + change + production_deploy + online_verify + retest` 筛选学习候选。移动窗口、报告数量、文章数量、手动触发和本地验收均不构成 SCALE 证据。
+3. **月度输出四类决策**：SCALE（另有 scale_evidence）、FIX（ bounded 单变量）、MEASURE（缺根因或复测未到）、STOP（重复低效／无意图／无信息增益）。每项必须有 owner、retry_at、cooldown 与 exit_criteria，同因不重复派单。
+4. **下月组合重质量不重篇数**：优先首页零点击 SERP／snippet、连续两窗恶化词根因、商业真值与主交易页采购信息一致性；Blog 仅保留经诊断确认的真实信息缺口，不自动三语铺量。
+5. **GEO 独立验收**：只接受固定 AI 引擎、固定问题、完整答案与 citation URL 的可比探针；普通 WebSearch、平台 bot 拦截或 Google 排名不得冒充 GEO 引用增长。
+<!-- FLYWHEEL-MONTHLY-LEARNING-2026-11-07 END -->
+
+<!-- EVIDENCE-LEARNING-CLOSED-LOOP-2026-11-03 BEGIN -->
+# 2026-11-03 最新执行块：证据分流与学习闭环
+
+> 本块是当前执行口径，置于历史恢复／增产指令之前；不取代 K3 拍板、AGENTS.md、结果总线契约和商业真值门禁。配置文本更新不等于自然定时调度已验证恢复。
+
+1. **先读证据再选题**：依次消费结果总线、不晚于当日的最新 `.hermes/logs/gsc-daily-anomaly-*.json`、最新 `.hermes/logs/periodic-review-weekly-*.json`（月度再加 `periodic-review-monthly-*`）、`evidence_handoffs`、本车道队列及上轮报告。缺失可选输入必须写 `available:false`，不得编造。
+2. **统一口径**：xlsx 文件新鲜不代表 API 平面新鲜；首个 `RECOVERY` 值必须使用当日 detector 的 `recovery_ratio_vs_mean28_dynamic`。123.7% 是 2026-11-03 全国家曝光指标口径，不等于排名、处罚、询盘、订单或收入恢复。
+3. **FIX／MEASURE／SCALE 分流**：页一高展示零点击只进入 FIX 候选，先记录 SERP feature 与真实 title/snippet，再决定单变量修改；深位词、query×page 分散和 AI 缺席进入 MEASURE，不直接发长文、301、canonical 或 noindex；只有 `baseline + change + production_deploy + online_verify + retest + scale_evidence` 全部齐全才可 SCALE。
+4. **实验账本**：每项 FIX 必须记录审批门、冻结 baseline、唯一变更、production deploy／CF 状态、线上核验、D1/D2 健康检查及 7/14/28 天复测、结果、失败原因和下一动作。窗口移动只是观察，不是实验胜负。
+5. **重试与退出**：同因失败不得无间隔重试；写明 retry_at／cooldown、恢复条件和 owner。复测完成、WAITING_K3、BLOCKED_INFRA 或有依据的 NO_OP 都是合法退出，禁止为产文而产文。
+6. **学习只沉淀证据**：周／月反馈由既有 `scripts/strategy-feedback.py` 生成；未部署或缺 online_verify 不得进入学习候选。不得自行放宽权限、自批准 WAITING_K3、自动改写共享 prompt，或新建 cron／Kimi Automation。
+<!-- EVIDENCE-LEARNING-CLOSED-LOOP-2026-11-03 END -->
+
 <!-- RECOVERY-MODE-2026-10-12 BEGIN -->
 > # 🚨 【恢复模式 · 限定凌驾级】spam 命中恢复期 (K3 2026-10-12 拍板 · SSoT: `docs/2026-10-12-recovery-lane-defense-plan.md`)
 >

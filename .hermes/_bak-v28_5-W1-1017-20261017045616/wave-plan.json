@@ -1,0 +1,153 @@
+{
+ "wave": "W1-1017",
+ "patched": [
+  {
+   "slug": "spiral-notebooks",
+   "dir": "BK-005",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "thick-paper-flyers",
+   "dir": "FL-005",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "magnetic-closure-gift-box",
+   "dir": "PKG-007",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "tuck-end-boxes",
+   "dir": "PKG-015",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "gang-run-card-boxes",
+   "dir": "PKG-016",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-hero.webp']"
+  }
+ ],
+ "skipped": [],
+ "entries": [
+  {
+   "dir": "BK-005",
+   "slug": "spiral-notebooks",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-zh-hk-hero.webp",
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-zh-hk-detail.webp",
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-zh-hk-variety.webp",
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-en-hero.webp",
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-en-detail.webp",
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-en-variety.webp",
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-ja-hero.webp",
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-ja-detail.webp",
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-ja-variety.webp",
+     "/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "FL-005",
+   "slug": "thick-paper-flyers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-zh-hk-hero.webp",
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-zh-hk-detail.webp",
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-zh-hk-variety.webp",
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-en-hero.webp",
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-en-detail.webp",
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-en-variety.webp",
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-ja-hero.webp",
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-ja-detail.webp",
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-ja-variety.webp",
+     "/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PKG-007",
+   "slug": "magnetic-closure-gift-box",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-hero.webp",
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-detail.webp",
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-variety.webp",
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-hero.webp",
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-detail.webp",
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-variety.webp",
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-hero.webp",
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-detail.webp",
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-variety.webp",
+     "/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PKG-015",
+   "slug": "tuck-end-boxes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-hero.webp",
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-detail.webp",
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-variety.webp",
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-hero.webp",
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-detail.webp",
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-variety.webp",
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-hero.webp",
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-detail.webp",
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-variety.webp",
+     "/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PKG-016",
+   "slug": "gang-run-card-boxes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-hero.webp",
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-detail.webp",
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-variety.webp",
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-hero.webp",
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-detail.webp",
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-variety.webp",
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-hero.webp",
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-detail.webp",
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-variety.webp",
+     "/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-multi-angle.webp"
+    ]
+   }
+  }
+ ]
+}

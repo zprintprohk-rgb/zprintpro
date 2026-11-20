@@ -1,0 +1,11 @@
+const fs = require('fs');
+const t = fs.readFileSync('src/data/category-seo-content.ts', 'utf8');
+const i = t.indexOf('const japanDoujinContent');
+const blk = t.slice(i, t.indexOf('const greetingCardsContent'));
+const jaK = blk.indexOf('ja: {');
+const ja = blk.slice(jaK);
+console.log('ja len', ja.length);
+const l = ja.indexOf('links: [');
+console.log('ja links at', l);
+if (l >= 0) console.log(JSON.stringify(ja.slice(l, l + 420)));
+console.log('has c109:', /comiket-c109/.test(ja));

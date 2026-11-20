@@ -1,0 +1,8 @@
+﻿git.exe : To github.com:zprintprohk-rgb/zprintpro.git
+所在位置 行:8 字符: 8
++ $out = & git push origin_ssh main 2>&1
++        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (To github.com:z...b/zprintpro.git:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+   e1cedda..bb3817b  main -> main

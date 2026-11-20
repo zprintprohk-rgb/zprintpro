@@ -1,0 +1,107 @@
+{
+  "schema": "money-kw-log-v2",
+  "generated_at": "2026-10-08T00:35:00+08:00",
+  "generated_by": "deepseek-hermes manual session (10/12 GSC 带钱词专项)",
+  "data_window": {
+    "expected_export": "2026-10-12",
+    "status": "MISSING",
+    "today": "2026-10-08",
+    "note": "10/12 导出尚未存在且不可能已存在（今日 10/8，GSC 滞后 2-3 天，index.json 既定 10/12 前后拉新）。已全仓 + Downloads + k3-inbox 深搜，最新档 = 2026-10-05 导出 12 文件。",
+    "searched": [
+      "GSC数据/ (latest 2026-10-05)",
+      "C:\\Users\\Administrator\\Downloads (latest 2026-10-05)",
+      ".hermes/k3-inbox",
+      ".openclaw-attachments",
+      "repo-wide mtime>2026-10-05"
+    ],
+    "unblock_condition": "K3 在 10/12 前后上传新导出至 GSC数据/ → 重跑 money-kw-mine.py（正则沿用 MONEY_EN/JA/ZH）→ 本日志 data 块回填"
+  },
+  "diff_vs_20261005_log": {
+    "added_keys": ["data_window", "batch_20261005", "verification_matrix", "reserved_actions", "gap_scan", "title_candidates", "deployment_probes"],
+    "carried_over": ["sum", "us", "jp", "hk"],
+    "data_policy": "carried_over 块为 10/5 档 28d 真值，不回填任何 10/12 虚构数（§0.23 数据诚信红线）"
+  },
+  "baseline_source": {
+    "file": ".hermes/money-kw-20261005.json",
+    "gsc_export": "GSC数据/ 2026-10-05 12 文件",
+    "verified_anchors": {
+      "china catalog printing": {"imps": 187, "pos": 18.49, "note": "task 基线 18.4 = 本档 sum 28d pos 18.49"},
+      "catalogue printing china": {"imps": 46, "pos": 20.8, "note": "task 基线 20.8 精确匹配"},
+      "pvc シール": {"imps_ja": 49, "pos": "18.3-21.3 波动", "note": "task 基线 20.1 匹配"},
+      "教科書 印刷会社": {"imps_ja": 59, "pos": 62.64, "note": "task 基线 62.6 匹配"},
+      "特急印刷 激安": {"imps_ja": "7-19", "pos": "15.3-20.0", "note": "task 基线 16-20 匹配"},
+      "wholesale/low cost catalog 簇": {"low cost catalog printing": {"pos": 68.38}, "cheap catalog printing china": {"pos": "29-50"}, "wholesale catalog printing": {"pos": "via page"}}
+    }
+  },
+  "batch_20261005": {
+    "commits": ["30a60554 (10/7 23:51)", "059314bd (10/7 15:40)", "3ef3094b (10/5 17:39 A5)", "a675b376 (A6)"],
+    "changes": {
+      "kw_inject": [
+        {"page": "sku:waterproof-stickers[ja]", "+": ["pvc シール", "PVCシール"], "-": ["ノーリボン残留"], "kw_total": 35},
+        {"page": "sku:catalog-printing[en]", "+": ["china catalog printing", "catalogue printing china", "catalogue printing"], "kw_total": 12},
+        {"page": "sku:textbooks[ja]", "+": ["教科書 印刷会社", "教材 印刷製本", "教材 テキスト印刷"], "kw_total": 15},
+        {"page": "services/catalog-printing-china[en]", "+": ["zine printing", "short run zine printing", "zine printing no minimum"], "kw_total": 22}
+      ],
+      "money_faq": [
+        {"page": "services/catalog-printing-china", "locale": "en", "q": "How much does wholesale catalog printing cost?", "truth": "unit from $4.60 (10 MOQ)"},
+        {"page": "services/catalog-printing-china", "locale": "ja", "q": "カタログ印刷の料金はいくらから？", "truth": "10部から¥644〜"}
+      ]
+    },
+    "deployment_probes": [
+      {"url": "/en/services/catalog-printing-china/", "marks": ["EN-wholesale-FAQ", "zine-kw", "FAQPage-LD"], "status": 200},
+      {"url": "/ja/services/catalog-printing-china/", "marks": ["JA-ryokin-FAQ", "FAQPage-LD"], "status": 200},
+      {"url": "/en/product/catalog-printing/", "marks": ["catalogue-kw", "china-catalog-kw"], "status": 200},
+      {"url": "/ja/product/waterproof-stickers/", "marks": ["pvc-seal-kw"], "status": 200},
+      {"url": "/ja/product/textbooks/", "marks": ["textbook-company-kw", "kyozai-kw"], "status": 200}
+    ],
+    "deployment_verdict": "ALL LIVE"
+  },
+  "verification_matrix": [
+    {"词": "china catalog printing", "基线": 18.4, "anchor_actual_1005": 18.49, "target": "≤12", "actual_1012": "PENDING_DATA", "verdict": "待 10/12 窗口"},
+    {"词": "catalogue printing china", "基线": 20.8, "anchor_actual_1005": 20.8, "target": "≤12", "actual_1012": "PENDING_DATA", "verdict": "待 10/12 窗口"},
+    {"词": "pvc シール", "基线": 20.1, "anchor_actual_1005": "18.3-21.3", "target": "≤12", "actual_1012": "PENDING_DATA", "verdict": "待 10/12 窗口"},
+    {"词": "教科書 印刷会社", "基线": 62.6, "anchor_actual_1005": 62.64, "target": "≤45", "actual_1012": "PENDING_DATA", "verdict": "待 10/12 窗口"},
+    {"词": "特急印刷 激安", "基线": "16-20", "anchor_actual_1005": "15.3-20.0", "target": "前10", "actual_1012": "PENDING_DATA", "verdict": "待 10/12 窗口"},
+    {"词": "wholesale/low cost catalog 簇", "基线": "39-68", "anchor_actual_1005": "29-68", "target": "前移8+名 + Featured Snippet", "actual_1012": "PENDING_DATA", "verdict": "待 10/12 窗口；FAQ 已埋（en wholesale cost / ja 料金），Snippet 触发与否 10/12 查 GSC 呈现"}
+  ],
+  "reserved_actions": {
+    "w2_1_title_wholesale_saddle_stitch": {
+      "precondition_imps": {"q": "wholesale saddle stitch booklet printing", "imps_28d_us": 43, "pos_range": "6.5-84.8", "note": "10/5 档实测；达标阈值待 10/12 窗口终判"},
+      "target": "src/data/sku-seo-data.ts [saddle-stitch-booklets].seo.en.title",
+      "current": "Saddle Stitch Booklets A4/A5 | 10 MOQ $1.84 | ZprintPro (equiv=55)",
+      "candidate": "Wholesale Saddle Stitch Booklets 10 MOQ $1.84 | ZprintPro (equiv=57, band=OK)",
+      "alternates": ["Wholesale Saddle Stitch Booklets | 10 MOQ | ZprintPro (53)", "Wholesale Saddle Stitch Booklets | From $1.84 | ZprintPro (57)"],
+      "status": "DRAFT_ONLY — churn 组 title 冻结至 10/19（strategy doc §五）+ 前置展现量待 10/12 终判"
+    },
+    "w2_2_ja_packaging_ryokin_table": {
+      "target": "src/data/category-seo-content.ts packagingContent.ja (+FAQ 料金表 section)",
+      "truth_source": "products.ts packaging SKUs (basePrice_ja / minQuantity)",
+      "status": "CODE_PACKAGE_READY — 见 deliverable 文件"
+    },
+    "w2_3_en_flyers_same_day": {
+      "target": "src/app/[locale]/services/rush-printing-delivery/page.tsx metaMap.en.title",
+      "current": "Same-Day & Rush Printing | Order by 6pm, Next-Day 12pm | ZprintPro (equiv=66, band=TRIM 存量)",
+      "candidates": ["Same Day Flyer Printing | 6pm Cut, Next-Day | ZprintPro (55)", "Same Day Flyers 10 MOQ | 6pm Cut, Next-Day | ZprintPro (54)"],
+      "status": "DRAFT_ONLY — 同 title 冻结纪律"
+    }
+  },
+  "gap_scan": {
+    "status": "BLOCKED_ON_DATA",
+    "spec": {
+      "money_regex": {"en": "MONEY_EN (price|cost|cheap|bulk|wholesale|quote|no minimum|discount|affordable|budget|rush|same day|next day|overnight|fast |deal|from $|$\\d|how much|near me|free shipping|moq)", "ja": "MONEY_JA (料金|激安|格安|相場|見積|価格|早割|安い|比較|即日|最短|特急|送料|割引|円|〜|から|枚|個|部|冊|注文|発注)", "zh": "MONEY_ZH (價錢|幾錢|多少錢|價格|報價|優惠|批發|大量|起|免費|即日|急件|HK\\$|\\$|錢|抵|平)"},
+      "filter": "imps > 20 AND pos > 15 AND new_in_1012_window (vs 20261005 log anti-join)",
+      "action_budget_rule": "page kw < 35 → 补缺; >= 35 → 置换（清退 pos 最差 imps 最低 1-2 词）"
+    },
+    "kw_budget_census_20261008": {
+      "at_cap_35_ja": ["waterproof-stickers", "transparent-stickers", "small-batch-stickers", "die-cut-stickers", "a2-posters", "a1-posters", "outdoor-posters"],
+      "at_cap_35_en": ["cartoon-red-packets", "eco-red-packets", "large-red-packets"],
+      "headroom": {"catalog-printing[en]": 12, "textbooks[ja]": 15, "catalog-china-page[en]": 22, "saddle-stitch-booklets[en]": 9}
+    },
+    "dry_run_on_1005_stale_data": "可用 .hermes/money-kw-mine.py 对 10/5 档复跑验证管线，但结果仅为管线验证，不进结论"
+  },
+  "audit_findings": [
+    {"item": "services/catalog-printing-china metaMap title (en/zh-hk)", "equiv": 77, "band": "TRIM", "note": "存量服务页 title 超 57 满格线；title-band-guard 只拦 staged sku-seo-data 变更，存量入审计。建议下批 title 窗口收编（10/19 churn 解冻后）"},
+    {"item": "rush-printing-delivery metaMap title en=66 TRIM / ja=59 TRIM", "note": "同上，存量超线；W2.3 候选已压回 50-57 带"}
+  ],
+  "carried_over_data_ref": ".hermes/money-kw-20261005.json (10/5 档 sum/us/jp/hk 真值，本档不重写)"
+}

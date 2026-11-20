@@ -1,0 +1,98 @@
+﻿=== ��4 v9.4 ���������� (���� 8/14-8/18 5d, �ļ��������� 8/21) ===
+  �������ڷ�Χ: ['2026-08-14', '2026-08-15', '2026-08-16', '2026-08-17', '2026-08-18']
+  1. striking �ʽ���ҳ�� (�� pos 11-20 -> �� pos <=10): 6 (Ŀ�� >=5)
+  2. pos 1-20 չʾռ��: 26.06% (Ŀ�� >=30%)
+  3. �е������: 6 (Ŀ�� >=12)
+
+=== ���� ===
+  query ��: 509, imps: 1535, clicks: 6, CTR: 0.39%
+  �е����: 6/509 = 1.2%
+  �� query ����: 291
+
+=== striking ������ (�ϸ�, 6 ��) ===
+  a6 �ߴ�                                               pos 12.0 -> 9.0  (0 clk / 1 imps)
+  custom stickers small batch                         pos 15.0 -> 7.0  (0 clk / 2 imps)
+  pvc �N��                                              pos 11.0 -> 6.5  (0 clk / 2 imps)
+  ͬ��ӡˢ                                                pos 11.0 -> 5.0  (0 clk / 2 imps)
+  ͬ�˱� ӡˢ                                              pos 16.0 -> 10.0  (0 clk / 1 imps)
+  ����ӡˢ                                                pos 13.3 -> 4.0  (0 clk / 1 imps)
+
+=== striking ������ (����, �´ʽ� <=10, 29 ��) ===
+  �h������                                                pos 2.0  (1 clk / 1 imps)
+  "������" ��� ����                                         pos 8.0  (0 clk / 1 imps)
+  a0����r��                                              pos 10.0  (0 clk / 1 imps)
+  a1 vs a2 poster size                                pos 5.0  (0 clk / 1 imps)
+  a1 ӡˢ ����                                            pos 10.0  (0 clk / 3 imps)
+  a1 ����                                               pos 1.0  (0 clk / 1 imps)
+  a2�ݥ����`                                              pos 1.0  (0 clk / 3 imps)
+  a2����ӡˢ�r��                                            pos 2.0  (0 clk / 1 imps)
+  a5 vs a6 flyer                                      pos 6.3  (0 clk / 6 imps)
+  a6�ߴ�                                                pos 8.7  (0 clk / 3 imps)
+  catalog book printing in tajik                      pos 6.0  (0 clk / 1 imps)
+  doujin goods                                        pos 6.0  (0 clk / 2 imps)
+  doujin printing                                     pos 10.0  (0 clk / 1 imps)
+  flash collect alipay                                pos 10.0  (0 clk / 2 imps)
+  mtr 4 sheet size                                    pos 9.7  (0 clk / 3 imps)
+  pvc menus                                           pos 9.5  (0 clk / 2 imps)
+  pvc ��ˮ �N��                                           pos 1.0  (0 clk / 1 imps)
+  ��͸���N��                                               pos 1.0  (0 clk / 1 imps)
+  ӡ���� �r��                                              pos 1.0  (0 clk / 1 imps)
+  ͬ�˱�ӡˢ                                               pos 9.0  (0 clk / 1 imps)
+
+=== Top 20 queries (by impressions) ===
+  saddle stitch booklet                               pos  79.7    0 clk /   26 imps
+  �N��ӡˢ                                                pos  40.7    0 clk /   26 imps
+  ʳƷ���bӡˢ                                              pos  29.2    0 clk /   26 imps
+  ӡ����                                                 pos  23.6    0 clk /   25 imps
+  �����Ώ�                                                pos  36.6    0 clk /   25 imps
+  ��ӡˢ                                                pos  18.4    1 clk /   24 imps
+  paper bag print file requirements                   pos  16.6    0 clk /   21 imps
+  ����ӡˢ                                                pos  31.6    0 clk /   20 imps
+  �����Ώ�ӡˢ                                              pos  27.9    0 clk /   18 imps
+  school exercise book print                          pos  26.2    0 clk /   16 imps
+  school exercise book printing                       pos  23.8    0 clk /   16 imps
+  ������ӡˢ                                               pos  60.1    0 clk /   14 imps
+  �������u��                                               pos  68.2    0 clk /   14 imps
+  ���b��ӆ�u                                               pos  31.5    0 clk /   13 imps
+  ӡˢ����                                                pos  12.7    0 clk /   13 imps
+  ����ӡˢ                                                pos  17.8    0 clk /   13 imps
+  poster ӡˢ                                           pos  28.3    0 clk /   12 imps
+  small batch label printing                          pos  57.7    0 clk /   12 imps
+  ���Ƿ�ӡˢ                                               pos  33.5    0 clk /   12 imps
+  ���b��ӡˢ                                               pos  35.2    0 clk /   12 imps
+
+=== Top 15 queries (by clicks) ===
+  flyer printing                                      pos   4.0    1 clk /    2 imps
+  ���Ƿ�ӆ�u                                               pos  33.6    1 clk /   10 imps
+  ��ӡ��                                                 pos   1.0    1 clk /    3 imps
+  ��ӡˢ                                                pos  18.4    1 clk /   24 imps
+  �h������                                                pos   2.0    1 clk /    1 imps
+  ���I�o������                                             pos   8.3    1 clk /    3 imps
+
+=== 141 baseline 28 ��ƥ�� ===
+  baseline �ܴ�: 28
+  ����ƥ��: 21
+  �е��: 0
+
+=== Top 10 ���� (imps >= 30) ===
+  hkg       imps  1415  clicks  36  CTR  2.54%  pos  19.5
+  usa       imps   830  clicks   3  CTR  0.36%  pos  40.1
+  jpn       imps   291  clicks   3  CTR  1.03%  pos  22.3
+  phl       imps   183  clicks   0  CTR  0.00%  pos  66.8
+  gbr       imps    86  clicks   0  CTR  0.00%  pos  22.8
+  twn       imps    53  clicks   0  CTR  0.00%  pos  20.4
+  tur       imps    39  clicks   0  CTR  0.00%  pos  65.4
+  vnm       imps    34  clicks   0  CTR  0.00%  pos  64.7
+  ind       imps    32  clicks   0  CTR  0.00%  pos  47.8
+  sau       imps    32  clicks   0  CTR  0.00%  pos  50.8
+
+=== �����е��: 9 ===
+  hkg       imps  1415  clicks  36  CTR  2.54%  pos  19.5
+  jpn       imps   291  clicks   3  CTR  1.03%  pos  22.3
+  usa       imps   830  clicks   3  CTR  0.36%  pos  40.1
+  chn       imps    23  clicks   2  CTR  8.70%  pos   8.6
+  ita       imps     6  clicks   2  CTR 33.33%  pos  14.3
+  ago       imps     1  clicks   1  CTR 100.00%  pos  10.0
+  aus       imps    27  clicks   1  CTR  3.70%  pos  17.8
+  irl       imps     4  clicks   1  CTR 25.00%  pos  16.5
+  mys       imps    31  clicks   1  CTR  3.23%  pos  35.1

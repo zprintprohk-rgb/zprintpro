@@ -1,0 +1,86 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+ ⚠ Using edge runtime on a page currently disables static generation for that page
+ ⚠ Page "/sitemap-image.xml" is using runtime = 'edge' which is currently incompatible with dynamic = 'force-static'. Please remove either "runtime" or "force-static" for correct behavior
+ ⚠ Page "/robots.txt" is using runtime = 'edge' which is currently incompatible with dynamic = 'force-static'. Please remove either "runtime" or "force-static" for correct behavior
+   Generating static pages (0/5) ...
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+   Generating static pages (3/5) 
+ ✓ Generating static pages (5/5)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                    Size     First Load JS
+┌ ○ /_not-found                                876 B          88.5 kB
+├ ƒ /[locale]                                  19.8 kB         603 kB
+├ ƒ /[locale]/about                            341 B          87.9 kB
+├ ƒ /[locale]/blog                             5.42 kB         618 kB
+├ ƒ /[locale]/blog/[slug]                      341 B           102 kB
+├ ƒ /[locale]/cart                             3.92 kB         105 kB
+├ ƒ /[locale]/case-studies                     341 B          87.9 kB
+├ ƒ /[locale]/category/[slug]                  6.9 kB          596 kB
+├ ƒ /[locale]/checkout                         8.69 kB         101 kB
+├ ƒ /[locale]/company-news                     298 B            93 kB
+├ ƒ /[locale]/contact                          34.1 kB         607 kB
+├ ƒ /[locale]/faq                              4.79 kB        92.4 kB
+├ ƒ /[locale]/guide/[slug]                     512 B          96.8 kB
+├ ƒ /[locale]/help-center                      14.4 kB         107 kB
+├ ƒ /[locale]/legal                            341 B          87.9 kB
+├ ƒ /[locale]/order-confirmation               9.13 kB         111 kB
+├ ƒ /[locale]/payment-methods                  182 B          96.5 kB
+├ ƒ /[locale]/payment/success                  341 B          87.9 kB
+├ ƒ /[locale]/press-kit                        341 B          87.9 kB
+├ ƒ /[locale]/privacy                          341 B          87.9 kB
+├ ƒ /[locale]/product/[slug]                   32.7 kB         608 kB
+├ ƒ /[locale]/quote                            1.81 kB        90.9 kB
+├ ƒ /[locale]/search                           3.54 kB         582 kB
+├ ƒ /[locale]/service-areas                    341 B          87.9 kB
+├ ƒ /[locale]/services                         182 B          96.5 kB
+├ ƒ /[locale]/services/rush-printing-delivery  8.41 kB         110 kB
+├ ƒ /[locale]/services/seo/[slug]              332 B          96.6 kB
+├ ƒ /[locale]/terms                            341 B          87.9 kB
+├ ƒ /[locale]/trade-program                    3.9 kB         91.5 kB
+├ ƒ /api/merchant-feed/[locale]                0 B                0 B
+├ ƒ /api/order-notify                          0 B                0 B
+├ ƒ /api/quote                                 0 B                0 B
+├ ƒ /api/quote-notify                          0 B                0 B
+├ ƒ /api/search                                0 B                0 B
+├ ○ /quote-desk                                3.11 kB         106 kB
+├ ○ /quote-desk/all                            2.31 kB         105 kB
+├ ƒ /robots.txt                                0 B                0 B
+└ ƒ /sitemap-image.xml                         0 B                0 B
++ First Load JS shared by all                  87.6 kB
+  ├ chunks/5030-9f77a3fa29423011.js            31.8 kB
+  ├ chunks/fd9d1056-df9dad6b51f76cba.js        53.6 kB
+  └ other shared chunks (total)                2.15 kB
+
+
+ƒ Middleware                                   28.5 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+sitemap.xml: 636 URLs
+sitemap-zh-hk.xml: 212 URLs
+sitemap-en.xml: 212 URLs
+sitemap-ja.xml: 212 URLs
+sitemap-index.xml: 4 sitemaps
+
+--- Summary ---
+Categories: 14, Products: 97, Blog: 84
+Static: 17, Locales: 3, Total: 636
+  zh-hk: 212 URLs
+  en: 212 URLs
+  ja: 212 URLs
+IndexNow pings sent for 3 locales
+sitemap-image.xml: 266 product URLs (89 unique products)

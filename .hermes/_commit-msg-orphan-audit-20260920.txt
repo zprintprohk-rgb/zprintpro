@@ -1,0 +1,31 @@
+chore(audit)+docs: 孤儿 SKU 审计工具 (量具四级返工实录) + 活书更正 small-bags 误诊
+
+一、更正上一条误诊
+   我此前写「small-bags 在 products.ts 缺 nameJa」——**误诊**。真相: 它的**SKU 记录根本不在 products.ts**
+   (只在 sku-seo-data.ts 与 buying-guides.ts 的 relatedProducts 里; middleware.ts 另有 308 迁走 /product/small-bags/)。
+   教训: 判定「X 缺字段」前, 先确认 **X 是否存在于该数据源**。
+
+二、定稿结论 (scripts/audit-sku-orphans.cjs v4)
+   products.ts 记录 99 (行级 slug 锚; id 'XX-000' 记录 92, 同量级自检通过)
+   sku-seo-data 顶层键 100 (0–2 空格锚; 任意缩进命中 540 ⇒ 反证该锚是顶层判别式)
+   ★ 孤儿 SEO 条目 = 1 (small-bags)   ★ 缺 SEO 数据的产品 = 0
+
+三、★ 量具四级返工实录 (本条比结论更重要; 同一根因 = 锚点假设未先证实)
+   v1  `^ {4}slug:`        → products.ts 实有 4 空格(94)+6 空格(5) 两种缩进 ⇒ 漏 5 个
+                            ⇒ 4 个「假孤儿」(同人誌/亞克力/襟章/明信片 被算到 fruit-food-label-stickers 头上)
+   v1' `^ {2}"slug": {`    → fruit-food-label-stickers 的键**顶格(0 空格)**、全文件唯一例外
+                            ⇒ 假「缺 SEO 数据」(它线上 200 且标题正来自该文件)
+   v2  new Function 结构求值 → products.ts 含 TS 断言/函数 ⇒ 求值失败 ⇒ 记录数 0
+                            ⇒ **静默全量假阳性 (最危险的一种失败: 不报错, 只给错答案)**
+   v3  双正则交叉          → products 值级锚把 categories[] 的 16 个分类 slug 也数进来
+                            ⇒ 工具**拒绝出结论** (exit 2) —— 本轮唯一正确的失败方式
+   v4  锚点实测确证 + 双自检 → ✅ 出结论
+
+四、固化 (新增避坑 26)
+   ① 先证明量具, 再用量具出结论; 「数集合」类审计必须打印 (a) 两个独立口径计数 (b) 是否一致 (c) 差异样本
+   ② 锚点假设 (缩进/行尾/引号/分隔符) 必须先用计数证实, 不得凭观感写死
+   ③ 工具**宁可 exit 2 拒绝出结论**, 也不得在自检不过时输出差集
+   ④ 同族: 避坑 2 单一方法必错 / 避坑 12 嵌套禁正则猜 / 避坑 13 手工字表 / 避坑 23 量测域不同
+
+验证: node scripts/audit-sku-orphans.cjs → 自检通过, exit 0
+数据来源: products.ts / sku-seo-data.ts 实测锚点计数 + 线上 curl (small-bags 308 / fruit-food-label-stickers 200) 2026-09-20 20:2x

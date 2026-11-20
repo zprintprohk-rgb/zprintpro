@@ -1,0 +1,27 @@
+fix(seo): §0.16 batch 1 - zh-hk Header/Footer 6 替换 + feat(analytics): CF Web Analytics 事件追踪
+
+Per K3 8/12 10:55 PM 审核拍板 (B 路线 + F1+F4):
+
+fix(seo) §0.16 batch 1:
+- src/components/layout/Footer.tsx 4 替换:
+  - 客製化 → 訂製 (繁體化, 8/11 db2cb5f 漏)
+  - 宣傳單張 → 傳單印刷 (zh-hk 纯繁體 + 加"印刷"词, K3 8/11 10:41 拍板)
+  - 包裝盒定制 → 包裝盒印刷 (簡→繁 + 旧 label)
+  - 海報定制 → 海報印刷 (簡→繁 + 旧 label)
+- src/components/layout/Header.tsx 2 替换 (searchPlaceholder + 注释):
+  - 宣傳單張/咭片 → 傳單/貼紙/包裝盒/海報 (K3 10:41 zh-hk 纯繁體拍板)
+- scripts/cleanup/labels-zhhk-2026-08-12.py 新增: 后续 §0.16 batch 2-3 工具
+
+feat(analytics) CF Web Analytics 事件追踪:
+- src/components/analytics/TrackingEvents.tsx 新增 (CF Beacon API, NOT Plausible):
+  - WhatsApp click: wa.me/8619880851334 链接 → custom event
+  - Email click: mailto:zprintpro@outlook.com → custom event
+  - Phone click: tel: → custom event
+  - Quote form submit: data-cf-event=quote-submit
+  - Service hours shown: IntersectionObserver 50% 阈值
+- src/app/[locale]/layout.tsx: import + <TrackingEvents /> 挂载 (body)
+
+K3 8/12 拍板: B 路线 0 push 严格已部分撤销 (autoclaw 8/12 06:04 推 9de2479 = 1 push), 8/12 余额 4/5
+本 push: label cleanup + analytics 启动 = 北极星 KPI 修复第一步
+
+Push 台账: 8/12 推 2 = 月累计 ~17/150

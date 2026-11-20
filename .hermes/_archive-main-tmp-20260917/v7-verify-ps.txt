@@ -1,0 +1,36 @@
+﻿=== 7 步 verify (PS curl) ===
+
+Step 1: git status -sb (already PASS)
+
+Step 2: sitemap lastmod (already PASS)
+
+Step 3: CF build success (assumed - 6/6 URL 200 = deployed)
+
+Step 4: curl 6 URLs
+  200 zh-hk blog https://zprintpro.com/zh-hk/blog/apparel-shopping-bag-printing-guide/
+  200 en blog https://zprintpro.com/en/blog/apparel-shopping-bag-printing-guide/
+  200 ja blog https://zprintpro.com/ja/blog/apparel-shopping-bag-printing-guide/
+  200 zh-hk PDP https://zprintpro.com/zh-hk/product/kraft-paper-bags/
+  200 en PDP https://zprintpro.com/en/product/kraft-paper-bags/
+  200 ja PDP https://zprintpro.com/ja/product/kraft-paper-bags/
+
+Step 5-7: BODY content verify
+  zh-hk blog: length=78533 kw=YES price=NO 15y=NO FAQ=YES (8) img=YES (8) FAIL cover=YES NAP=0
+  en blog: length=81449 kw=YES price=NO 15y=NO FAQ=YES (8) img=YES (8) FAIL cover=YES NAP=3
+  ja blog: length=78366 kw=YES price=YES (8) 15y=NO FAQ=YES (8) img=YES (8) FAIL cover=YES NAP=3
+
+Step 6: schema JSON-LD
+  zh-hk blog: Article=YES Breadcrumb=YES FAQ=YES
+  en blog: Article=YES Breadcrumb=YES FAQ=YES
+  ja blog: Article=YES Breadcrumb=YES FAQ=YES
+
+Step 7: internal links verify (zh-hk blog)
+  Found 8 unique internal links (top 8):
+    ERR href="/zh-hk/cart/"
+    ERR href="/zh-hk/blog/"
+    ERR href="/zh-hk/contact/"
+    ERR href="/zh-hk/quote/"
+    ERR href="/blog/jewellery-shopping-bag-printing-guide/"
+    ERR href="/zh-hk/payment-methods/"
+    ERR href="/zh-hk/about/"
+    ERR href="/zh-hk/case-studies/"

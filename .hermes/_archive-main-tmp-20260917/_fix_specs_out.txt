@@ -1,0 +1,4 @@
+Remaining 'finish:' (should be 0): -107
+'finishing:' count: 107
+Remaining 'printType:' (should be 0): -107
+'printMethod:' count: 107

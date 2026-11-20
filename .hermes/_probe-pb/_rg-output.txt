@@ -1,0 +1,2468 @@
+﻿🔍 反审门童 v1 启动 (K3 9/1 15:06 拍板)
+════════════════════════════════════════════════════════════
+模式: 仅 red 硬拦 (shadow mode)
+范围: src/
+DoD 铁律: 禁用
+
+📁 扫描文件数: 7
+
+📉 品牌存量基线: total=431 files=51 (基线内命中不拦, 只拦新增)
+
+📉 CRED 存量基线: head=8806521d hits=0 files=0 (基线内命中不拦, 只拦新增)
+
+门童 #1 数据诚信: 201 命中
+  🟡 SHADOW [orange] src/data/blog-data/en.json:772
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/blog-data/en.json:564
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:564
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:621
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:621
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:654
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:684
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:697
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:723
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:797
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:797
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:797
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:815
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:815
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/en.json:8
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:8
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:16
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 100,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:40
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:72
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:72
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:72
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:80
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 100,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:88
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:88
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:104
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:104
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 100,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:104
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:104
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:104
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 3,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:112
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,500
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:127
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:138
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:138
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:145
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:148
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 100,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:148
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:148
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:148
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:148
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:148
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/en.json:151
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:765
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:120
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:549
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:565
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:565
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:590
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:622
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:622
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:622
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:638
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:671
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:685
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:685
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:685
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:685
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:685
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:685
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:707
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:765
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:8
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:16
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:72
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,850
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:72
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,850
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:72
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,850
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:80
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,850
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:80
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 3,480
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:80
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,240
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:112
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:120
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:120
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 12,500
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 17,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 70,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 250,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,500
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:135
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:138
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:145
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,400
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:156
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:159
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:159
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:189
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 12,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:189
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,200
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:189
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:192
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 3,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:200
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:200
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:248
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 135,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:248
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 100,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:256
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:256
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,890
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:272
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 3,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:296
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 16,500
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:296
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 280,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:296
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 40,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:296
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:296
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:304
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:304
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:764
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:120
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:454
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:454
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:454
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:553
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:588
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:620
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:620
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:620
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:636
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:653
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:670
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:684
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:684
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:706
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:723
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:764
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:8
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:72
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,850
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:72
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,850
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:72
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:72
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,850
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:80
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,650
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:80
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,850
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:80
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 3,480
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:80
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,240
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:112
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:120
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:120
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:120
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:120
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 100,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:120
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,750
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 4,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 15,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,500
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,750
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,750
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 4,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:128
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 15,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:131
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:131
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:141
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,138
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:141
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,847
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:141
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,675
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:141
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 4,202
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:149
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:152
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:152
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:152
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:182
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:185
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:193
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:209
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 35,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:225
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:238
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:241
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:249
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/blog-data/zh-hk.json:249
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,890
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+
+门童 #2 真实电话: ✅ 0 命中
+
+门童 #3 品牌分层: 10 命中 (另有 6 条属存量基线内, 不计)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:513
+    规则: BRAND_JA_ALTERNATE - ja ジープリント 不与 ZprintPro 字面同时出现
+    命中: ZprintPro はアジア生産，DHL 2-4 日国際配送 (50 国)，30 秒 AI 見積もり，4 製本 × 4 紙質 × 4 標準サイズで全カタログブリ
+    修法: ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 (per K3 8/8 02:52 §13.16.1)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:549
+    规则: BRAND_JA_ALTERNATE - ja ジープリント 不与 ZprintPro 字面同时出现
+    命中: ZprintPro 印刷エンジニアリングチーム (ZprintPro 長年オフセット印刷エンジニア) ・ 最終更新: 2026 年 9 月 3 日</p>\n\
+    修法: ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 (per K3 8/8 02:52 §13.16.1)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:590
+    规则: BRAND_JA_ALTERNATE - ja ジープリント 不与 ZprintPro 字面同时出现
+    命中: ZprintPro 印刷エンジニアリングチーム (ZprintPro 長年オフセット印刷エンジニア)・最終更新: 2026 年 9 月 3 日・読了時間: 18
+    修法: ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 (per K3 8/8 02:52 §13.16.1)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:622
+    规则: BRAND_JA_ALTERNATE - ja ジープリント 不与 ZprintPro 字面同时出现
+    命中: ZprintPro</h1>\n\n<p class=\"text-sm text-gray-600\">著者: ZprintPro 印刷エンジニアリングチーム
+    修法: ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 (per K3 8/8 02:52 §13.16.1)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:638
+    规则: BRAND_JA_ALTERNATE - ja ジープリント 不与 ZprintPro 字面同时出现
+    命中: ZprintPro 4 大市場 5 大印刷品 × 5 大素材 × 12 シーン.</p>\n<div class=\"bg-green-50 border-l-
+    修法: ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 (per K3 8/8 02:52 §13.16.1)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:671
+    规则: BRAND_JA_ALTERNATE - ja ジープリント 不与 ZprintPro 字面同时出现
+    命中: ZprintPro 受注システムの実見積もりです。16 製品カテゴリ・82 の実 SKU それぞれに、香港ドル建ての固定表示価格と最小ロット（MOQ）が設定され
+    修法: ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 (per K3 8/8 02:52 §13.16.1)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:685
+    规则: BRAND_JA_ALTERNATE - ja ジープリント 不与 ZprintPro 字面同时出现
+    命中: ZprintPro 長年オフセットエンジニアZprintPro 印刷エンジニアリングチーム執筆。無料サンプル + 料金表ロット別 + 即時見積もり Raksul
+    修法: ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 (per K3 8/8 02:52 §13.16.1)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:698
+    规则: BRAND_JA_ALTERNATE - ja ジープリント 不与 ZprintPro 字面同时出现
+    命中: ZprintPro は香港深圳工場から日本の学校・塾・出版社へ、校了確認後の確実な納期と ISBN・バーコード対応で、年度契約の印刷パートナーとして 長年以上の
+    修法: ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 (per K3 8/8 02:52 §13.16.1)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:707
+    规则: BRAND_JA_ALTERNATE - ja ジープリント 不与 ZprintPro 字面同时出现
+    命中: ZprintPro</h1>\n<p class=\"text-sm text-gray-600\">ZprintPro ・ 最終更新: 2026 年 9 月 
+    修法: ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 (per K3 8/8 02:52 §13.16.1)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:765
+    规则: BRAND_JA_ALTERNATE - ja ジープリント 不与 ZprintPro 字面同时出现
+    命中: ZprintPro のロールアップバナーは<strong>10 セットから</strong>、<strong>1 セット HK$85〜300</strong>（
+    修法: ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 (per K3 8/8 02:52 §13.16.1)
+
+ℹ️ 门童 #4 双向污染存量基线: 实测命中 54 → 基线 162 (录于 2026-09-19); 本次基线内豁免 50, 既有内向 red 保留 4, ★新增缺陷 0
+   ⚠️ 实测(54) ≠ 基线(162) ⇒ 存量已递减 108 条 (可将基线同步下调)
+门童 #4 跨语言污染 (v2 扩展 en 8 禁词 + ja 8 禁词 per K3 9/2 08:50 GLM 评估): 217 命中 (另有 23 条属存量基线内, 不计)
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:4
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 102 当量)
+    命中: Custom Sticker & Packaging Printing Guide for US Small Busin...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 102 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:12
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 65 当量)
+    命中: Print File Design Specifications: Bleed, Resolution & Color ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 65 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:20
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 62 当量)
+    命中: Corporate Brand Materials Checklist: From Stickers to Displa...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 62 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:28
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 86 当量)
+    命中: Event Poster & Trade Show Print Specs for US B2B | Sizes, Pa...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 86 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:36
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 67 当量)
+    命中: Complete Sticker Printing Guide: Materials, Finishes & Appli...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 67 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:44
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 34 当量)
+    命中: 10 Golden Rules for Sticker Design
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 34 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:52
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 37 当量)
+    命中: 2024 Packaging Design Trends Analysis
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 37 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:60
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 48 当量)
+    命中: CMYK vs RGB: Complete Guide to Print Color Modes
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 48 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:76
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 58 当量)
+    命中: Eco-Friendly Printing: The Future of Sustainable Packaging
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 58 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:84
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 91 当量)
+    命中: Custom Flyer Printing Guide for US Small Business: Sizes, Pa...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 91 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:92
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 61 当量)
+    命中: Food Packaging Printing Guide: Materials, Safety & Complianc...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 61 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:100
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 65 当量)
+    命中: Paper Bag Printing Guide: Materials, Sizes, Handles & 2026 T...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 65 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:123
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 84 当量)
+    命中: Restaurant Opening Flyer Printing Guide · Sizes, Paper & Fas...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 84 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:131
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 68 当量)
+    命中: About ZprintPro: Professional Equipment & One-Stop Printing ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 68 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:141
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 79 当量)
+    命中: Pet Food Brand Sticker Printing Guide: Waterproof, Food-Safe...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 79 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:155
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 97 当量)
+    命中: Real Estate Brochure & Property Box Printing Guide: Material...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 97 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:163
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 95 当量)
+    命中: Pharmaceutical Label Printing Guide: GMP-Grade, FDA/EMA Comp...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 95 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:171
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 93 当量)
+    命中: Jewellery & Watch Brand Paper Bag Printing Guide: Black Card...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 93 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:185
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 94 当量)
+    命中: Tea & Beverage Gift Box Printing Guide: Loose Leaf, Bubble T...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 94 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:196
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 79 当量)
+    命中: Retail Shop Poster Printing Guide 2026: Sizes, Paper & Displ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 79 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:204
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 81 当量)
+    命中: Restaurant Menu Printing Guide 2026: Waterproof, Fold & Mate...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 81 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:212
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 85 当量)
+    命中: Wedding Red Packet Printing Guide 2026: Materials, Personali...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 85 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:220
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 104 当量)
+    命中: Amazon FBA Product Label Printing: GS1 UPC Barcodes, FDA-Com...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 104 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:228
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 114 当量)
+    命中: US High School Yearbook Printing Guide: Class of 2026 Bindin...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 114 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:236
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 129 当量)
+    命中: Custom Die-Cut Sticker Printing for US Creators, Etsy Seller...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 129 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:244
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 87 当量)
+    命中: Trade Show Banner Printing Guide 2026: Retractable, Backdrop...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 87 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:252
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 93 当量)
+    命中: Wedding Invitation Envelope Printing Guide 2026: Pearl, Foil...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 93 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:260
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 104 当量)
+    命中: Doujin Circle Printing Guide 2026: Small-Batch Booklets & Pr...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 104 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:268
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 121 当量)
+    命中: Hotel & Resort Amenity Sticker Printing Guide: Luggage Tags,...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 121 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:276
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 104 当量)
+    命中: Financial Summit Gift Bag Printing Guide: FSC, Foil Logo & V...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 104 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:284
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 113 当量)
+    命中: Marathon Event Poster Printing Guide: Waterproof A1/A2 Ra Po...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 113 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:292
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 133 当量)
+    命中: Car Dealership Amenity Sticker Printing Guide: Waterproof PV...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 133 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:300
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 132 当量)
+    命中: Hotel Key Card Sleeve & Luggage Tag Printing Guide: Soft-Tou...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 132 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:308
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 90 当量)
+    命中: Baby Product Sticker Printing Guide: FDA Food-Safe Labels fo...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 90 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:316
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 101 当量)
+    命中: E-commerce Shipping Bag Printing Guide: Tamper-Evident & Wat...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 101 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:324
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 125 当量)
+    命中: Media Franchise Collector Box Printing Guide: Limited Editio...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 125 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:331
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 100 当量)
+    命中: Thick Paper Flyer Printing Guide · Restaurant Menu Inserts &...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 100 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:338
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 105 当量)
+    命中: Magnetic Closure Gift Box Guide · Cross-Border E-commerce Pr...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 105 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:345
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 104 当量)
+    命中: Folding Box Printing Guide · Eco-Friendly Cosmetics Brand Pa...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 104 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:352
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 98 当量)
+    命中: Religious ceremony Printing Guide: Custom Church / Temple / ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 98 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:359
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 110 当量)
+    命中: Industrial Equipment Nameplate & GHS Hazard Label Printing G...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 110 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:366
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 110 当量)
+    命中: Construction Material Sample Book Printing Guide: Tile, Ston...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 110 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:374
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 92 当量)
+    命中: Baby Food Packaging Box Printing Guide: FDA Food-Safe Boxes ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 92 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:382
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 98 当量)
+    命中: Real Estate Flyer Printing Guide: Property Listing Brochures...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 98 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:390
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 104 当量)
+    命中: Medical Device Packaging Box Printing Guide: ISO 13485, Ster...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 104 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:398
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 91 当量)
+    命中: Auto Parts Shopping Bag Printing Guide: 4S Service Bags for ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 91 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:406
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 93 当量)
+    命中: Sports Event Merchandise Gift Box Printing Guide: Team Memor...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 93 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:425
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 79 当量)
+    命中: Cosmetic Card Boxes: Silver & Holographic Cardstock, No Die-...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 79 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:433
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 120 当量)
+    命中: Financial Institution Gift Bag Printing Guide: Bank Kits & C...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 120 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:441
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 115 当量)
+    命中: Real Estate Floor Plan Poster Printing Guide: A1/A2 Waterpro...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 115 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:449
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 92 当量)
+    命中: Same Day Printing & Same-Day Flyer Guide · 4-6hr Rush, 10 MO...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 92 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:457
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 65 当量)
+    命中: Calendar Printing 2027: UK/US/AU, 1pc MOQ + Bulk 300+ | Zpri...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 65 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:465
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 78 当量)
+    命中: A1 A2 A3 Poster Size Guide: Dimensions Chart, Uses & Paper C...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 78 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:474
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 78 当量)
+    命中: A5 vs A6 Flyer Size: Dimensions, Use Cases & Print Cost Comp...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 78 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:482
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 76 当量)
+    命中: A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk Disco...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 76 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:490
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 73 当量)
+    命中: Catalog & Art Book Printing Guide: Paper, Binding & Finishin...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 73 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:508
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 86 当量)
+    命中: Saddle Stitch Booklet Printing Guide 2026: Pages, Paper, Pri...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 86 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:517
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 113 当量)
+    命中: Catalog Printing China Supplier Guide 2026: 4 Binding，4 Pape...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 113 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:526
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 97 当量)
+    命中: Custom Apparel Tag & Label Printing Guide: Materials, Finish...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 97 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:536
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 78 当量)
+    命中: Same-Day Printing HK Guide: Where Fastest? How Much? What Cu...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 78 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:544
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 81 当量)
+    命中: Packaging Box Printing Price 2026: 500/1000/5000 pcs・Custom ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 81 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:560
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 106 当量)
+    命中: 2027 Calendar Printing Complete Guide: When to Print? MOQ? 4...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 106 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:569
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 86 当量)
+    命中: Large Envelope Printing C4/C5 Specs，100 MOQ from $0.07 USD，S...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 86 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:577
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 35 当量)
+    命中: Rush Printing Delivery Guide: Where
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 35 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:601
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 84 当量)
+    命中: Certificate Printing Guide 2026: Materials, Finishes, Sizes ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 84 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:609
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 88 当量)
+    命中: Instant Printing 30-Second AI Quote Flow: Confirm by Noon, S...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 88 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:650
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 122 当量)
+    命中: 8 Packaging Box Types Compared: Kraft vs Corrugated vs Color...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 122 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:682
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 94 当量)
+    命中: Print Specifications Complete Guide 2026: A1-A6 Sizes, CMYK ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 94 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:693
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 59 当量)
+    命中: Textbook Printing Guide: 3 Bindings, 100 Copies | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 59 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:702
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 81 当量)
+    命中: School Exercise Book Printing Guide 2026: 4 Stocks 3 Binding...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 81 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:711
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 100 当量)
+    命中: 2027 Calendar Printing Complete Guide: 8 Paper Stocks, 4 Fin...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 100 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:802
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 58 当量)
+    命中: Thick Card Printing: 0.5mm 10 MOQ Foil+Spot UV | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 58 当量
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:811
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 66 当量)
+    命中: Christmas Card Printing 2026: 6 Cards Compared, 10 MOQ | Zpr...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 66 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:12
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 84 当量)
+    命中: オリジナルステッカー・パッケージ印刷ガイド：小ロット・短納期・データ入稿 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 84 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:20
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 26 当量)
+    命中: 印刷用デザインファイル仕様
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 26 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:28
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 30 当量)
+    命中: 企業ブランド物料チェックリスト
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 30 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:36
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 76 当量)
+    命中: イベントポスター・展示パネル印刷仕様：サイズ・用紙・加工・短納期 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 76 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:44
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 46 当量)
+    命中: ステッカー印刷完全ガイド：材質、加工と応用場面
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 46 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:52
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 32 当量)
+    命中: ステッカーデザインの10の黄金法則
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 32 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:60
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 36 当量)
+    命中: 2024年パッケージデザイントレンド解析
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 36 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:68
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 37 当量)
+    命中: CMYK vs RGB：印刷カラーモード完全解説
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 37 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:76
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 42 当量)
+    命中: 印刷用紙選択ガイド：アート紙から特殊紙まで
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 42 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:84
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 30 当量)
+    命中: エコ印刷：持続可能な包装の未来
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 30 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:92
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 75 当量)
+    命中: オリジナルチラシ印刷ガイド：サイズ・用紙・デザイン・配布戦略 | 小ロット対応
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 75 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:108
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 81 当量)
+    命中: オリジナル紙袋印刷完全ガイド：素材・サイズ・持ち手と2026年トレンド | 小ロット対応
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 81 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:131
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 67 当量)
+    命中: レストラン開業チラシ印刷ガイド · サイズ・用紙・短期納品 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 67 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:141
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 70 当量)
+    命中: ペットフードステッカー印刷ガイド：防水・FDA 準拠ラベル素材 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 70 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:155
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 80 当量)
+    命中: 不動産パンフレット・資料箱カスタム印刷ガイド：素材・加工・高級感演出 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 80 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:163
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 68 当量)
+    命中: 医薬品ラベル印刷ガイド：GMP準拠・FDA/EMA対応・改ざん防止 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 68 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:171
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 84 当量)
+    命中: 宝飾・腕時計ブランド紙袋印刷ガイド：ブラックカード・箔押し・サテンリボン | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 84 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:185
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 88 当量)
+    命中: 茶・ドリンクギフトボックス印刷ガイド：リーフティー・タピオカ・ECブランド向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 88 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:196
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 85 当量)
+    命中: 小売・セレクトショップ ポスター印刷ガイド2026：サイズ・用紙・ディスプレイ | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 85 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:204
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 68 当量)
+    命中: レストランメニュー印刷ガイド2026：防水・折りたたみ・素材 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 68 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:212
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 85 当量)
+    命中: ウエディング レッド packet 印刷ガイド2026：素材・パーソナライズ・大量印刷 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 85 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:220
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 75 当量)
+    命中: 越境EC製品ラベル印刷ガイド：GS1 バーコード・FDA 準拠 SKU ラベル | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 75 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:228
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 74 当量)
+    命中: 卒業記念アルバム印刷ガイド：製本・用紙・パーソナライズ完全解説 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 74 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:236
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 87 当量)
+    命中: IP キャラクター型抜きステッカー印刷ガイド：カスタム形状・素材・工法の全解説 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 87 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:244
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 78 当量)
+    命中: 展示会バナー印刷ガイド2026：ロールアップ・バックドロップ・短期納品 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 78 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:252
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 84 当量)
+    命中: ウエディング招待状封筒印刷ガイド2026：パール・箔押し内側・カスタムサイズ | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 84 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:260
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 66 当量)
+    命中: 同人誌印刷ガイド：小ロット・少部数・高品質対応・短納期 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 66 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:268
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 103 当量)
+    命中: ホテル・リゾート アメニティステッカー印刷ガイド：荷物タグ・ウェルカムキット・ロゴステッカー | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 103 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:276
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 106 当量)
+    命中: 金融サミット ギフトバッグ印刷ガイド：FSC認証・箔押し・VIPバッグ 日本ウェルス・マネジメント向け | Zprint...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 106 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:284
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 103 当量)
+    命中: マラソン大会ポスター印刷ガイド：防水 A1/A2 レースポスター・ランナーパケット・スタートアーチ | ZprintPr...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 103 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:292
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 120 当量)
+    命中: 自動車ディーラー アメニティステッカー印刷ガイド：防水 PVC・試乗デカール・サービス注意喚起 日本自動車業界向け | ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 120 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:300
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 124 当量)
+    命中: ホテル ルームキー スリーブ・荷物タグ印刷ガイド：ソフトタッチマット・箔押し・ガラス ウェルカム 日本ホテル業界向け |...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 124 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:308
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 70 当量)
+    命中: ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 70 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:316
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 61 当量)
+    命中: EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 61 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:324
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 95 当量)
+    命中: メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 95 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:331
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 75 当量)
+    命中: 厚紙チラシ印刷ガイド · 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 75 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:338
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 95 当量)
+    命中: マグネット式ギフト ボックス カスタムガイド · 越境EC・DTC ブランド向けプレミアム包装 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 95 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:345
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 80 当量)
+    命中: 折り畳み箱 カスタム ガイド · 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 80 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:352
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 87 当量)
+    命中: 宗教儀式印刷ガイド：教会・寺院・メモリアル ボックス＆ギフト バッグ カスタム | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 87 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:359
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 76 当量)
+    命中: 工業設備銘板 / GHS 危険ラベル印刷ガイド：UL 認証，ANSI Z535 規格 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 76 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:366
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 109 当量)
+    命中: 建築装飾材料サンプルブック印刷ガイド：タイル・石材・カーテン・フローリング カラー カード カスタム | ZprintP...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 109 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:374
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 72 当量)
+    命中: 幼児食品パッケージ箱印刷ガイド：FDA食品衛生ボックス 日本向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 72 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:382
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 85 当量)
+    命中: 不動産販売チラシ印刷ガイド：物件資料・折り畳み 米国不動産エージェント向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 85 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:390
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 85 当量)
+    命中: 医療機器包装箱印刷ガイド：ISO 13485・滅菌バッグ カスタム 日本医療業界向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 85 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:398
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 107 当量)
+    命中: 自動車部品ショッピングバッグ印刷ガイド：4S アフターマーケット サービスバッグ 日本自動車業界向け | ZprintP...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 107 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:406
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 98 当量)
+    命中: スポーツイベント記念ギフトボックス印刷ガイド：チーム メモラビリア 米国スポーツ業界向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 98 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:417
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 76 当量)
+    命中: 化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 76 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:425
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 67 当量)
+    命中: 小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 67 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:433
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 107 当量)
+    命中: 金融機関ギフトバッグ印刷ガイド：銀行キット・クレジットカードウェリカムボックス 日本金融業界向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 107 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:441
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 94 当量)
+    命中: 不動産フロアプラン ポスター印刷ガイド：A1/A2 防水レイアウト図 日本デベロッパー向け | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 94 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:449
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 75 当量)
+    命中: 即日印刷・即日チラシ ガイド · 4-6時間特急、10枚〜、全国送料無料 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 75 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:465
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 69 当量)
+    命中: A1 A2 A3 ポスターサイズガイド：寸法早見表・用途・用紙選び | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 69 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:474
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 63 当量)
+    命中: A5 と A6 チラシのサイズ比較：寸法・用途・印刷コスト | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 63 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:482
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 91 当量)
+    命中: ポスター 印刷 費用 / ポスター印刷料金ガイド：A1 A2 単価・用紙・加工・ロット割引 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 91 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:491
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 64 当量)
+    命中: カタログ・写真集印刷ガイド：用紙・製本・加工の選び方 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 64 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:509
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 100 当量)
+    命中: カタログ印刷中国サプライヤーガイド 2026: 4 製本，4 紙質，大量卸売 100/500/1000/5000 段階 ...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 100 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:518
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 49 当量)
+    命中: 中綴じ冊子印刷 10冊から ¥258/冊〜 低MOQ ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 49 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:527
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 70 当量)
+    命中: アパレルタグ・ネーム印刷完全ガイド：素材、加工、価格、事例 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 70 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:537
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 66 当量)
+    命中: 当日特急印刷 全ガイド：どこが一番早い？料金は？締切は？| ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 66 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:545
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 69 当量)
+    命中: パッケージ印刷価格 2026：500/1000/5000 個・ギフトボックス | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 69 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:561
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 74 当量)
+    命中: 2027年カレンダー印刷攻略：いつ注文？最小ロットは？4 種用紙比較 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 74 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:570
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 65 当量)
+    命中: 大型封筒印刷 C4/C5 規格，100 個〜 \\$0.07〜，即日特急 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 65 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:578
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 58 当量)
+    命中: 当日急行印刷攻略：どこが最速？料金？何時締切？ | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 58 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:602
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 87 当量)
+    命中: 証書印刷完全ガイド 2026：素材・加工・サイズ・コンプライアンス認証を徹底解説 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 87 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:610
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 69 当量)
+    命中: 即日印刷 30秒AI見積もりフロー: 正午までに確認、午後に出荷 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 69 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:651
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 142 当量)
+    命中: 8 種パッケージボックス徹底比較: クラフト vs ダンボール vs キャラメル vs ギフト vs エアクラフト vs...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 142 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:683
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 89 当量)
+    命中: 印刷スペック完全ガイド 2026: A1-A6 サイズ・CMYK 色モード・6 大印刷モード 一覧 | ZprintPr...
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 89 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:703
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 59 当量)
+    命中: 練習帳印刷ガイド 2026: 4 用紙 3 製本 100 部から | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 59 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:712
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 89 当量)
+    命中: 2027年カレンダー印刷 完全ガイド：8 種用紙・4 種加工・繁忙期は4〜6週間前の発注 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 89 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:720
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 58 当量)
+    命中: ジン印刷ガイド: 中綴じ 8〜64 ページ 100 部から | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 58 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:752
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 58 当量)
+    命中: 折りたたみチラシ印刷 二つ折り三つ折り 10部から | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 58 当量
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:804
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 70 当量)
+    命中: クリスマスカード印刷 2026：年賀状と同時発注 6 SKU 価格比較 | ZprintPro
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 70 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:144
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: USD (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:144
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: JPY (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:144
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:144
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:144
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:144
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:144
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:217
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:217
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: US$ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:4
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 44 当量)
+    命中: 智印港印刷公司簡介：專業設備與一站式印刷服務
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 44 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:28
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 44 当量)
+    命中: 企業品牌物料清單：從貼紙到展架的全套印刷方案
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 44 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:44
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 46 当量)
+    命中: 香港貼紙印刷完全指南：材質、工藝與應用場景詳解
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 46 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:52
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 46 当量)
+    命中: 貼紙設計的10個黃金法則：打造令人難忘的品牌形象
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 46 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:60
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 46 当量)
+    命中: 2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 46 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:68
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 33 当量)
+    命中: CMYK vs RGB：印刷色彩模式完全詳解
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 33 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:76
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 34 当量)
+    命中: 印刷紙材選擇指南：從銅版紙到特種紙
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 34 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:84
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 35 当量)
+    命中: 環保印刷：企業ESG與可持續包裝的未來
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 35 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:100
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 46 当量)
+    命中: 食品包裝印刷完全指南：材質、安全認證與設計實務
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 46 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:108
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 48 当量)
+    命中: 香港紙袋印刷完全指南：材質、尺寸、手挽與設計趨勢
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 48 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:164
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 62 当量)
+    命中: 香港珠寶鐘錶品牌紙袋印刷指南 · 黑卡燙金，絲帶手挽定製 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 62 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:178
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 60 当量)
+    命中: 香港茶飲品牌禮盒印刷指南 · 手搖、中茶、茶葉電商適用 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 60 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:213
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 63 当量)
+    命中: 跨境電商產品標籤印刷指南 · GS1 條碼，FDA 認證 SKU 標貼 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 63 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:229
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 62 当量)
+    命中: 文創IP角色造型貼紙印刷指南 · 香港同人品牌模切定制方案 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 62 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:261
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 66 当量)
+    命中: 酒店民宿迎賓貼紙印刷指南 · 行李標籤 / 房卡套 / 客用品定製 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 66 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:269
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 68 当量)
+    命中: 香港金融峰會禮品袋印刷指南 · 銀行財富管理活動贊助商紙袋定製 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 68 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:277
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 61 当量)
+    命中: 馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包，起跑拱門 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 61 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:285
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 74 当量)
+    命中: 汽車 4S 店 / 二手車行貼紙印刷指南 · 防水 PVC 試駕車身貼，服務提醒 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 74 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:293
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 68 当量)
+    命中: 酒店房卡套，行李牌印刷指南 · 軟觸啞面，燙金 logo 客用品包裝 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 68 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:317
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 58 当量)
+    命中: 影視IP周邊禮盒印刷指南 · 香港品牌影迷集體回憶定製 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 58 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:345
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 58 当量)
+    命中: 香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定製 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 58 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:352
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 70 当量)
+    命中: 工業設備銘牌 / GHS 危險標籤印刷指南 · UL 認證，ANSI Z535 標準 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 70 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:359
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 60 当量)
+    命中: 建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定製 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 60 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:367
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 64 当量)
+    命中: 香港嬰幼兒食品包裝盒印刷指南 · 奶粉輔食米糊安全包裝定製 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 64 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:375
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 62 当量)
+    命中: 香港房地產銷售單張印刷指南 · 新盤樓書派發 A4 摺頁定製 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 62 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:391
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 62 当量)
+    命中: 汽車 4S 店售後服務紙袋印刷指南 · 維修保養零件包裝定製 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 62 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:410
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 48 当量)
+    命中: 小批量彩盒訂製:跨境電商賣家免刀模費方案 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 48 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:426
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 66 当量)
+    命中: 香港金融機構禮品袋印刷指南 · 銀行卡套，信用卡開卡禮盒定製 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 66 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:434
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 68 当量)
+    命中: 香港新盤樓盤戶型海報印刷指南 · A1/A2 防水戶型圖，售樓處佈局 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 68 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:442
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 74 当量)
+    命中: 即日印刷・即日傳單印刷指南 · 香港餐廳開業 / 活動速遞方案 4-6 小時 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 74 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:450
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 65 当量)
+    命中: 月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 65 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:458
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 66 当量)
+    命中: A1 A2 A3 海報尺寸指南：印刷尺寸對照表・應用場景・紙材選擇 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 66 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:467
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 67 当量)
+    命中: A6 尺寸：A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 67 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:483
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 64 当量)
+    命中: 畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全攻略 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 64 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:501
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 85 当量)
+    命中: 中國目錄印刷供應商指南 2026: 4 裝訂，4 紙質，大量印刷 100/500/1000/5000 階梯 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 85 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:529
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 75 当量)
+    命中: 2027 月曆印刷完全指南: 8 大材質，4 種工藝，中秋旺季提前 4-6 週預訂 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 75 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:566
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 62 当量)
+    命中: 2027 月曆印刷攻略：幾時印？起印量？4 種月曆紙材大對決 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 62 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:576
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 62 当量)
+    命中: 大信封印刷 C4/C5 規格，100 個起 HK$0.5/個起，即日特急 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 62 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:649
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 63 当量)
+    命中: 牛皮紙盒 vs 坑盒 vs 彩盒 vs 禮盒 8 大盒型 5 維度全對比 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 63 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:682
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 78 当量)
+    命中: 印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 78 当量
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:702
+    规则: I18N_TITLE_LENGTH - title 字符体检 50-57 当量 (实测 85 当量)
+    命中: 練習簿印刷完全指南 2026: 4 種紙材 3 種裝訂 100 本起印 HK$3.5/本起 B2B 開學季 | 智印港
+    修法: title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 85 当量
+
+门童 #5 SOP-10 5 问门禁: 150 命中
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:8
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:8
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:16
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 100,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:32
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 4,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:32
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:32
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:80
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 100,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 20,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 25,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:104
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:104
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 100,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:104
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:104
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:104
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:104
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:104
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:104
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 3,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:112
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 8,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:127
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:8
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 8,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:8
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 9,800
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:16
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 8,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:16
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,030
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 30,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 80,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,030
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 150,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 200,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 500,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 150,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 400,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,030
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 30,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 80,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,030
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 150,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 200,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 500,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 150,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 400,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,030
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 30,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 80,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,030
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 150,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 200,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 500,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 150,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 400,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 585,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,560
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 58,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 156,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:48
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:48
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:64
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 16,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,850
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,850
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,500
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 6,500
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,500
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 6,500
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,850
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:80
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:80
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,850
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:8
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 8,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:32
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:32
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 30,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 80,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 3,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:40
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 8,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:48
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:48
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,850
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,850
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:72
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,850
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:80
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 8,650
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:80
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,850
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:80
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 3,480
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:80
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,240
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:96
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:104
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:112
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 3,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:120
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 12,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:120
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 8,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:120
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 8,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:120
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:120
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:120
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:120
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 100,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:120
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 8,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:128
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+
+门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留): ✅ 0 命中
+
+门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发): 10 命中
+  🟡 SHADOW [yellow] .hermes/logs/2026-10-26-seven-clusters-k3-decision-queue.md:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+  🟡 SHADOW [orange] .hermes/logs/2026-10-29-morning-k3-action-list.md:0
+    规则: COUNT_NO_4_LOCALE - 报告无 4 口径对照表 (per K3 §0.33.1 必填)
+    命中: 报告含数字, 但 4 口径对照表不全 (命中 2/4)
+    修法: 补 4 口径对照表: zh-hk 79 / en 80 / ja 80 / blog-posts.ts SSoT 85
+  🟡 SHADOW [yellow] .hermes/logs/2026-10-29-morning-k3-action-list.md:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+  🟡 SHADOW [orange] .hermes/reports/blog-12seg-checklist-2026-10-28-online.json:0
+    规则: COUNT_NO_SOURCE - 报告无数据来源行 (per K3 §0.23 数据诚信红线)
+    命中: 报告含数字, 但缺 "数据来源:" 行
+    修法: 补 "数据来源:" 行 (格式: 数据源文件名 + 校准日期)
+  🟡 SHADOW [yellow] .hermes/reports/blog-12seg-checklist-2026-10-28-online.json:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+  🟡 SHADOW [yellow] src/data/blog-data/en.json:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:0
+    规则: COUNT_NO_SOURCE - 报告无数据来源行 (per K3 §0.23 数据诚信红线)
+    命中: 报告含数字, 但缺 "数据来源:" 行
+    修法: 补 "数据来源:" 行 (格式: 数据源文件名 + 校准日期)
+  🟡 SHADOW [orange] src/data/blog-data/ja.json:0
+    规则: COUNT_NO_4_LOCALE - 报告无 4 口径对照表 (per K3 §0.33.1 必填)
+    命中: 报告含数字, 但 4 口径对照表不全 (命中 2/4)
+    修法: 补 4 口径对照表: zh-hk 79 / en 80 / ja 80 / blog-posts.ts SSoT 85
+  🟡 SHADOW [yellow] src/data/blog-data/ja.json:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+  🟡 SHADOW [yellow] src/data/blog-data/zh-hk.json:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+
+门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT): 1 命中
+  🟡 SHADOW [yellow] /.hermes/logs/2026-10-26-seven-clusters-k3-decision-queue.md:0
+    规则: REGISTER_NO_ID - 报告含 ✅ 状态字样, 但缺决策登记簿 ID (per K3 9/2 09:05 拍板 #3)
+    命中: 报告含 1 处 ✅ 状态字样, 但缺决策登记簿 ID
+    修法: 补登记簿 ID (格式: D-9/2-NN, 详见 .hermes/decision-register.md)
+
+门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h): 14 命中
+  🟡 SHADOW [yellow] /.hermes/logs/2026-10-26-seven-clusters-k3-decision-queue.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/logs/2026-10-26-seven-clusters-k3-decision-queue.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/logs/2026-10-29-morning-k3-action-list.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/logs/2026-10-29-morning-k3-action-list.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/regression-guard/blog-12seg-baseline.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/regression-guard/blog-12seg-baseline.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/reports/blog-12seg-checklist-2026-10-28-online.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/reports/blog-12seg-checklist-2026-10-28-online.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /src/data/blog-data/en.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /src/data/blog-data/en.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /src/data/blog-data/ja.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /src/data/blog-data/ja.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /src/data/blog-data/zh-hk.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /src/data/blog-data/zh-hk.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+
+门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数): ✅ 0 命中
+
+门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则): 1 命中
+  🔴 HARD [red] src/data/blog-data/zh-hk.json:764
+    规则: GSC_LEAK_CUSTOMER_VISIBLE - 客户可见字段泄漏 GSC 后台数据 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 等只进后台文档, 禁入客户内容)
+    命中: 008 案例庫
+    修法: 删除 [content@roll-up-banner-printing-guide] 中的 GSC 内部数据 (008 案例庫), 替换为面向客户的描述性措辞
+
+门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学得 323 条基线全量修复): ✅ 0 命中
+
+门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件): ✅ 0 命中
+
+门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57): ✅ 0 命中
+
+ℹ️ 门童 #20 存量基线: 基线 120, 现存 53, 已修 67, 剩余待修 53
+门童 #20 meta description 完整性 (K3 2026-09-18 决策 3-B 专用基线通道: 语言错配/首词前缀重复/空 meta; 存量 120 条只许递减): ✅ 0 命中
+
+ℹ️ 存量基线内豁免命中: 29 条 (方案 C 白名单, 只许递减)
+════════════════════════════════════════════════════════════
+📊 汇总: 🔴 1 | 🟠 215 | 🟡 388 | ⚪ 0
+📊 真實計數 (未截斷): SOP10_4_PLUS_NUMBER=2555 | CRED_4_PLUS_NUMBER=737 | I18N_CURRENCY=138 | CRED_1000_PLUS=48 | BRAND_JA_ALTERNATE=16 | CRED_ISO_9001=3 | CRED_FSC_C123456=0 | CRED_TUV_RHEINLAND=0 | CRED_X_INDUSTRIES=0 | CRED_X_FOLD=0 | CRED_INTL_TOP=0 | CRED_15_YEARS=0 | CRED_SELF_FACTORY=0 | CRED_HEIDELBERG=0 | PHONE_HK_BLACKLIST=0 | PHONE_WA_852=0 | PHONE_NON_WHITELIST=0 | BRAND_LOCALE_MISMATCH=0 | BRAND_DOUBLE=0 | BRAND_TYPO=0 | I18N_META_LENGTH=0 | SOP10_CERT_NO=0 | SOP10_24H_SLA=0 | SOP10_HEIDELBERG_6_1=0 | SOP10_12_INDUSTRIES=0 | SOP10_INTL_TOP=0 | SOP10_15_YEARS=0 | SECRET_LEAK=0 | ENTITY_FULL_NAME_ZH=0 | ENTITY_ADDRESS_ZH=0 | ENTITY_FULL_NAME_EN=0 | ENTITY_ADDRESS_EN=0 | ENTITY_ZIPCODE=0
+⚠️ 明細截斷 (真實命中 > 保留上限 50): SOP10_4_PLUS_NUMBER 真值 2555 / 僅保留 150 | CRED_4_PLUS_NUMBER 真值 737 / 僅保留 150 | I18N_CURRENCY 真值 138 / 僅保留 50
+
+❌ 反审门童拦截 (硬拦)

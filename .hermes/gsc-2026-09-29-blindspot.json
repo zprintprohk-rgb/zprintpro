@@ -1,0 +1,1443 @@
+[
+ {
+  "lang": "zh",
+  "seed": "畫冊印刷",
+  "variants": 2,
+  "total_imps_3mo": 54.0,
+  "best_pos": 13.2,
+  "site_imps": {
+   "hk": 4.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "畫冊印刷",
+    "imps": 28.0,
+    "pos": 13.2
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "包裝盒印刷",
+  "variants": 5,
+  "total_imps_3mo": 251.0,
+  "best_pos": 33.8,
+  "site_imps": {
+   "hk": 172.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "包裝盒印刷",
+    "imps": 174.0,
+    "pos": 39.2
+   },
+   {
+    "q": "包裝盒",
+    "imps": 26.0,
+    "pos": 33.8
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "紙盒印刷",
+  "variants": 4,
+  "total_imps_3mo": 167.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 115.0,
+   "us": 1.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "紙盒印刷",
+    "imps": 115.0,
+    "pos": 37.2
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "紙 盒 印刷",
+    "imps": 17.0,
+    "pos": 52.5
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "書刊印刷",
+  "variants": 3,
+  "total_imps_3mo": 160.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 104.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "書刊印刷",
+    "imps": 104.0,
+    "pos": 37.9
+   },
+   {
+    "q": "書刊",
+    "imps": 30.0,
+    "pos": 52.0
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "教科書印刷",
+  "variants": 4,
+  "total_imps_3mo": 144.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 75.0
+  },
+  "top": [
+   {
+    "q": "教科書 印刷",
+    "imps": 76.0,
+    "pos": 39.8
+   },
+   {
+    "q": "教科書 印刷会社",
+    "imps": 27.0,
+    "pos": 62.4
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "證書印刷",
+  "variants": 3,
+  "total_imps_3mo": 56.0,
+  "best_pos": 8.0,
+  "site_imps": {
+   "hk": 27.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "證書印刷",
+    "imps": 27.0,
+    "pos": 13.2
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "證書印刷一張",
+    "imps": 3.0,
+    "pos": 8.0
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "即日印刷",
+  "variants": 4,
+  "total_imps_3mo": 176.0,
+  "best_pos": 11.6,
+  "site_imps": {
+   "hk": 127.0,
+   "us": 1.0,
+   "jp": 12.0
+  },
+  "top": [
+   {
+    "q": "即日印刷",
+    "imps": 131.0,
+    "pos": 11.6
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "即日 印刷",
+    "imps": 16.0,
+    "pos": 28.2
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "宣傳單張",
+  "variants": 5,
+  "total_imps_3mo": 837.0,
+  "best_pos": 2.0,
+  "site_imps": {
+   "hk": 417.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "宣傳單張",
+    "imps": 417.0,
+    "pos": 38.0
+   },
+   {
+    "q": "宣傳單張印刷",
+    "imps": 405.0,
+    "pos": 32.9
+   },
+   {
+    "q": "傳單",
+    "imps": 8.0,
+    "pos": 14.8
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "貼紙印刷",
+  "variants": 10,
+  "total_imps_3mo": 651.0,
+  "best_pos": 6.8,
+  "site_imps": {
+   "hk": 116.0,
+   "us": 2.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "貼紙印刷",
+    "imps": 449.0,
+    "pos": 34.3
+   },
+   {
+    "q": "貼紙",
+    "imps": 116.0,
+    "pos": 51.4
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "目錄印刷",
+  "variants": 1,
+  "total_imps_3mo": 26.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "傳單印刷",
+  "variants": 7,
+  "total_imps_3mo": 74.0,
+  "best_pos": 10.0,
+  "site_imps": {
+   "hk": 3.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "傳單印刷",
+    "imps": 18.0,
+    "pos": 28.8
+   },
+   {
+    "q": "宣傳單印刷",
+    "imps": 12.0,
+    "pos": 22.2
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "名片印刷",
+  "variants": 1,
+  "total_imps_3mo": 26.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "利是封印刷",
+  "variants": 3,
+  "total_imps_3mo": 174.0,
+  "best_pos": 28.4,
+  "site_imps": {
+   "hk": 136.0,
+   "us": 2.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "利是封印刷",
+    "imps": 141.0,
+    "pos": 28.4
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "利 是 封 印刷",
+    "imps": 7.0,
+    "pos": 33.7
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "月曆訂製",
+  "variants": 1,
+  "total_imps_3mo": 117.0,
+  "best_pos": 27.8,
+  "site_imps": {
+   "hk": 117.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "月曆訂製",
+    "imps": 117.0,
+    "pos": 27.8
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "海報印刷",
+  "variants": 14,
+  "total_imps_3mo": 604.0,
+  "best_pos": 1.0,
+  "site_imps": {
+   "hk": 464.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "海報印刷",
+    "imps": 465.0,
+    "pos": 24.2
+   },
+   {
+    "q": "a3海報印刷",
+    "imps": 42.0,
+    "pos": 31.8
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "餐牌印刷",
+  "variants": 3,
+  "total_imps_3mo": 227.0,
+  "best_pos": 2.0,
+  "site_imps": {
+   "hk": 198.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "餐牌印刷",
+    "imps": 199.0,
+    "pos": 15.9
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "餐牌",
+    "imps": 2.0,
+    "pos": 2.0
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "紙袋印刷",
+  "variants": 6,
+  "total_imps_3mo": 326.0,
+  "best_pos": 18.5,
+  "site_imps": {
+   "hk": 223.0,
+   "us": 0,
+   "jp": 9.0
+  },
+  "top": [
+   {
+    "q": "紙袋印刷",
+    "imps": 223.0,
+    "pos": 18.5
+   },
+   {
+    "q": "紙袋",
+    "imps": 55.0,
+    "pos": 32.5
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "小冊子印刷",
+  "variants": 4,
+  "total_imps_3mo": 123.0,
+  "best_pos": 10.2,
+  "site_imps": {
+   "hk": 61.0,
+   "us": 1.0,
+   "jp": 1.0
+  },
+  "top": [
+   {
+    "q": "小冊子印刷",
+    "imps": 69.0,
+    "pos": 10.2
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "小冊子 印刷",
+    "imps": 17.0,
+    "pos": 10.2
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "膠裝書",
+  "variants": 4,
+  "total_imps_3mo": 264.0,
+  "best_pos": 30.9,
+  "site_imps": {
+   "hk": 88.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "膠裝書印刷",
+    "imps": 88.0,
+    "pos": 33.7
+   },
+   {
+    "q": "膠裝書",
+    "imps": 81.0,
+    "pos": 38.7
+   },
+   {
+    "q": "膠裝書價格",
+    "imps": 59.0,
+    "pos": 30.9
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "騎馬釘",
+  "variants": 6,
+  "total_imps_3mo": 564.0,
+  "best_pos": 1.5,
+  "site_imps": {
+   "hk": 190.0,
+   "us": 0,
+   "jp": 1.0
+  },
+  "top": [
+   {
+    "q": "騎馬釘",
+    "imps": 190.0,
+    "pos": 33.3
+   },
+   {
+    "q": "騎馬釘印刷",
+    "imps": 183.0,
+    "pos": 29.7
+   },
+   {
+    "q": "騎馬釘書刊",
+    "imps": 180.0,
+    "pos": 43.3
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "禮盒訂製",
+  "variants": 1,
+  "total_imps_3mo": 56.0,
+  "best_pos": 40.2,
+  "site_imps": {
+   "hk": 56.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "禮盒訂製",
+    "imps": 56.0,
+    "pos": 40.2
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "咭片",
+  "variants": 4,
+  "total_imps_3mo": 161.0,
+  "best_pos": 24.0,
+  "site_imps": {
+   "hk": 56.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "咭片",
+    "imps": 56.0,
+    "pos": 41.9
+   },
+   {
+    "q": "印咭片",
+    "imps": 51.0,
+    "pos": 33.9
+   },
+   {
+    "q": "咭片印刷",
+    "imps": 51.0,
+    "pos": 36.9
+   }
+  ]
+ },
+ {
+  "lang": "zh",
+  "seed": "車身貼",
+  "variants": 1,
+  "total_imps_3mo": 14.0,
+  "best_pos": 38.9,
+  "site_imps": {
+   "hk": 14.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "車身貼紙價錢",
+    "imps": 14.0,
+    "pos": 38.9
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "booklet printing",
+  "variants": 5,
+  "total_imps_3mo": 130.0,
+  "best_pos": 4.7,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 95.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "saddle stitch booklet printing",
+    "imps": 97.0,
+    "pos": 4.7
+   },
+   {
+    "q": "wholesale saddle stitch booklet printing",
+    "imps": 14.0,
+    "pos": 51.2
+   },
+   {
+    "q": "cheap saddle stitch booklet printing",
+    "imps": 7.0,
+    "pos": 23.3
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "custom packaging boxes",
+  "variants": 0,
+  "total_imps_3mo": 0,
+  "best_pos": null,
+  "site_imps": {
+   "hk": 0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": []
+ },
+ {
+  "lang": "en",
+  "seed": "paper box printing",
+  "variants": 0,
+  "total_imps_3mo": 0,
+  "best_pos": null,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": []
+ },
+ {
+  "lang": "en",
+  "seed": "catalog printing",
+  "variants": 12,
+  "total_imps_3mo": 505.0,
+  "best_pos": 18.5,
+  "site_imps": {
+   "hk": 15.0,
+   "us": 124.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "china catalog printing",
+    "imps": 187.0,
+    "pos": 18.5
+   },
+   {
+    "q": "catalog printing",
+    "imps": 78.0,
+    "pos": 42.3
+   },
+   {
+    "q": "catalog printing china",
+    "imps": 72.0,
+    "pos": 21.8
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "textbook printing",
+  "variants": 2,
+  "total_imps_3mo": 7.0,
+  "best_pos": 9.2,
+  "site_imps": {
+   "hk": 3.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "textbook printing",
+    "imps": 4.0,
+    "pos": 9.2
+   },
+   {
+    "q": "book printing",
+    "imps": 3.0,
+    "pos": 35.7
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "certificate printing",
+  "variants": 0,
+  "total_imps_3mo": 0,
+  "best_pos": null,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": []
+ },
+ {
+  "lang": "en",
+  "seed": "same day printing",
+  "variants": 0,
+  "total_imps_3mo": 0,
+  "best_pos": null,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": []
+ },
+ {
+  "lang": "en",
+  "seed": "flyer printing",
+  "variants": 8,
+  "total_imps_3mo": 52.0,
+  "best_pos": 4.0,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 3.0,
+   "jp": 2.0
+  },
+  "top": [
+   {
+    "q": "double sided flyer printing",
+    "imps": 31.0,
+    "pos": 37.8
+   },
+   {
+    "q": "overnight flyer printing",
+    "imps": 5.0,
+    "pos": 38.4
+   },
+   {
+    "q": "flyer printing",
+    "imps": 3.0,
+    "pos": 4.7
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "sticker printing",
+  "variants": 6,
+  "total_imps_3mo": 182.0,
+  "best_pos": 9.0,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 116.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "small batch sticker printing",
+    "imps": 127.0,
+    "pos": 9.0
+   },
+   {
+    "q": "security sticker printing",
+    "imps": 31.0,
+    "pos": 27.5
+   },
+   {
+    "q": "foil sticker printing",
+    "imps": 14.0,
+    "pos": 60.6
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "red packet printing",
+  "variants": 0,
+  "total_imps_3mo": 0,
+  "best_pos": null,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 1.0,
+   "jp": 0
+  },
+  "top": []
+ },
+ {
+  "lang": "en",
+  "seed": "brochure printing",
+  "variants": 2,
+  "total_imps_3mo": 5.0,
+  "best_pos": 2.3,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 3.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "a5 saddle stitch brochure printing",
+    "imps": 3.0,
+    "pos": 2.3
+   },
+   {
+    "q": "where to find eco-friendly brochure printing with recycled paper?",
+    "imps": 2.0,
+    "pos": 3.0
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "poster printing",
+  "variants": 10,
+  "total_imps_3mo": 123.0,
+  "best_pos": 5.0,
+  "site_imps": {
+   "hk": 8.0,
+   "us": 9.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "a1 poster printing prices",
+    "imps": 30.0,
+    "pos": 63.5
+   },
+   {
+    "q": "adhesive poster printing",
+    "imps": 22.0,
+    "pos": 44.8
+   },
+   {
+    "q": "a2 poster printing",
+    "imps": 21.0,
+    "pos": 48.1
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "paper bag printing",
+  "variants": 0,
+  "total_imps_3mo": 0,
+  "best_pos": null,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 1.0,
+   "jp": 0
+  },
+  "top": []
+ },
+ {
+  "lang": "en",
+  "seed": "banner printing",
+  "variants": 4,
+  "total_imps_3mo": 37.0,
+  "best_pos": 28.7,
+  "site_imps": {
+   "hk": 3.0,
+   "us": 25.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "adhesive banner printing",
+    "imps": 26.0,
+    "pos": 43.4
+   },
+   {
+    "q": "banner printing for trade shows",
+    "imps": 5.0,
+    "pos": 41.6
+   },
+   {
+    "q": "vinyl banner printing china",
+    "imps": 3.0,
+    "pos": 28.7
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "wholesale printing",
+  "variants": 0,
+  "total_imps_3mo": 0,
+  "best_pos": null,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": []
+ },
+ {
+  "lang": "en",
+  "seed": "cheap booklet printing",
+  "variants": 0,
+  "total_imps_3mo": 0,
+  "best_pos": null,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": []
+ },
+ {
+  "lang": "en",
+  "seed": "saddle stitch booklet",
+  "variants": 11,
+  "total_imps_3mo": 419.0,
+  "best_pos": 4.7,
+  "site_imps": {
+   "hk": 0,
+   "us": 95.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "saddle stitch booklet",
+    "imps": 167.0,
+    "pos": 75.9
+   },
+   {
+    "q": "saddle stitch booklet printing",
+    "imps": 97.0,
+    "pos": 4.7
+   },
+   {
+    "q": "saddle stitch booklets",
+    "imps": 91.0,
+    "pos": 82.8
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "menu printing",
+  "variants": 3,
+  "total_imps_3mo": 23.0,
+  "best_pos": 68.5,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 7.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "hardcover menu printing",
+    "imps": 8.0,
+    "pos": 68.5
+   },
+   {
+    "q": "pvc menu printing",
+    "imps": 8.0,
+    "pos": 68.6
+   },
+   {
+    "q": "hard cover menu printing",
+    "imps": 7.0,
+    "pos": 74.6
+   }
+  ]
+ },
+ {
+  "lang": "en",
+  "seed": "wedding card printing",
+  "variants": 0,
+  "total_imps_3mo": 0,
+  "best_pos": null,
+  "site_imps": {
+   "hk": 1.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": []
+ },
+ {
+  "lang": "en",
+  "seed": "label printing",
+  "variants": 3,
+  "total_imps_3mo": 220.0,
+  "best_pos": 30.5,
+  "site_imps": {
+   "hk": 2.0,
+   "us": 130.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "small batch label printing",
+    "imps": 140.0,
+    "pos": 37.8
+   },
+   {
+    "q": "small quantity label printing",
+    "imps": 60.0,
+    "pos": 67.9
+   },
+   {
+    "q": "pet food label printing service",
+    "imps": 20.0,
+    "pos": 30.5
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "冊子印刷",
+  "variants": 5,
+  "total_imps_3mo": 126.0,
+  "best_pos": 1.0,
+  "site_imps": {
+   "hk": 61.0,
+   "us": 1.0,
+   "jp": 3.0
+  },
+  "top": [
+   {
+    "q": "小冊子印刷",
+    "imps": 69.0,
+    "pos": 10.2
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "小冊子 印刷",
+    "imps": 17.0,
+    "pos": 10.2
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "パッケージ印刷",
+  "variants": 7,
+  "total_imps_3mo": 275.0,
+  "best_pos": 26.2,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 98.0
+  },
+  "top": [
+   {
+    "q": "クラフト紙 パッケージ印刷",
+    "imps": 99.0,
+    "pos": 26.2
+   },
+   {
+    "q": "クラフト紙 パッケージ 印刷",
+    "imps": 98.0,
+    "pos": 27.8
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "紙箱印刷",
+  "variants": 1,
+  "total_imps_3mo": 26.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "書籍印刷",
+  "variants": 3,
+  "total_imps_3mo": 36.0,
+  "best_pos": 9.5,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 1.0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "書籍印刷",
+    "imps": 8.0,
+    "pos": 13.0
+   },
+   {
+    "q": "書籍 印刷",
+    "imps": 2.0,
+    "pos": 9.5
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "教科書印刷",
+  "variants": 4,
+  "total_imps_3mo": 144.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 75.0
+  },
+  "top": [
+   {
+    "q": "教科書 印刷",
+    "imps": 76.0,
+    "pos": 39.8
+   },
+   {
+    "q": "教科書 印刷会社",
+    "imps": 27.0,
+    "pos": 62.4
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "証明書印刷",
+  "variants": 1,
+  "total_imps_3mo": 26.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "即日印刷",
+  "variants": 4,
+  "total_imps_3mo": 176.0,
+  "best_pos": 11.6,
+  "site_imps": {
+   "hk": 127.0,
+   "us": 1.0,
+   "jp": 12.0
+  },
+  "top": [
+   {
+    "q": "即日印刷",
+    "imps": 131.0,
+    "pos": 11.6
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "即日 印刷",
+    "imps": 16.0,
+    "pos": 28.2
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "チラシ印刷",
+  "variants": 4,
+  "total_imps_3mo": 63.0,
+  "best_pos": 25.6,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 26.0
+  },
+  "top": [
+   {
+    "q": "チラシ印刷 早い",
+    "imps": 26.0,
+    "pos": 29.1
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "チラシ 印刷 早い",
+    "imps": 7.0,
+    "pos": 25.6
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "シール印刷",
+  "variants": 1,
+  "total_imps_3mo": 26.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "カタログ印刷",
+  "variants": 3,
+  "total_imps_3mo": 70.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 33.0
+  },
+  "top": [
+   {
+    "q": "カタログ 印刷",
+    "imps": 33.0,
+    "pos": 44.6
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "カタログ印刷",
+    "imps": 11.0,
+    "pos": 43.4
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "ポチ袋印刷",
+  "variants": 2,
+  "total_imps_3mo": 33.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "袋印刷",
+    "imps": 7.0,
+    "pos": 49.4
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "ポスター印刷",
+  "variants": 5,
+  "total_imps_3mo": 91.0,
+  "best_pos": 8.5,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 37.0
+  },
+  "top": [
+   {
+    "q": "a2 クリアポスター 印刷",
+    "imps": 37.0,
+    "pos": 42.3
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "a2 ポスター 印刷",
+    "imps": 22.0,
+    "pos": 54.6
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "紙袋印刷",
+  "variants": 6,
+  "total_imps_3mo": 326.0,
+  "best_pos": 18.5,
+  "site_imps": {
+   "hk": 223.0,
+   "us": 0,
+   "jp": 9.0
+  },
+  "top": [
+   {
+    "q": "紙袋印刷",
+    "imps": 223.0,
+    "pos": 18.5
+   },
+   {
+    "q": "紙袋",
+    "imps": 55.0,
+    "pos": 32.5
+   },
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "のぼり印刷",
+  "variants": 1,
+  "total_imps_3mo": 26.0,
+  "best_pos": 34.4,
+  "site_imps": {
+   "hk": 26.0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": [
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "同人誌印刷",
+  "variants": 4,
+  "total_imps_3mo": 56.0,
+  "best_pos": 5.3,
+  "site_imps": {
+   "hk": 5.0,
+   "us": 4.0,
+   "jp": 1.0
+  },
+  "top": [
+   {
+    "q": "印刷",
+    "imps": 26.0,
+    "pos": 34.4
+   },
+   {
+    "q": "同人誌 印刷",
+    "imps": 15.0,
+    "pos": 5.3
+   },
+   {
+    "q": "同人誌印刷",
+    "imps": 12.0,
+    "pos": 7.1
+   }
+  ]
+ },
+ {
+  "lang": "ja",
+  "seed": "オリジナルシール",
+  "variants": 0,
+  "total_imps_3mo": 0,
+  "best_pos": null,
+  "site_imps": {
+   "hk": 0,
+   "us": 0,
+   "jp": 0
+  },
+  "top": []
+ }
+]

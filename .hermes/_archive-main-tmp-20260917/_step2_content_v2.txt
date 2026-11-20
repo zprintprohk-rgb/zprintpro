@@ -1,0 +1,4 @@
+Replaced categorySeoContent map
+Updated F:\zprintpro-nextjs\src\data\category-seo-content.ts
+Old size: 259418, New size: 304154
+Added 44736 bytes

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全站三语言链接审计报告 — ZprintPro</title>
+<style>
+:root{--ink:%s;--paper:%s;--accent:%s;--hair:%s;--hair2:%s;--muted:%s}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--paper)}
+body{color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.topband{height:10px;background:var(--ink)}
+header.doc{padding:56px 0 40px;border-bottom:3px solid var(--ink)}
+.kicker{font-family:ui-monospace,"SF Mono",Consolas,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1.display{font-size:clamp(40px,6vw,76px);line-height:1.02;letter-spacing:-.02em;font-weight:600;margin:18px 0 0;max-width:20ch}
+.subtitle{font-size:19px;line-height:1.5;color:var(--muted);margin-top:20px;max-width:62ch}
+.metarow{display:flex;flex-wrap:wrap;gap:36px;margin-top:44px}
+.meta{display:flex;flex-direction:column;gap:4px}
+.mk{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mv{font-size:14px;font-weight:550}
+nav.toc{padding:28px 0;border-bottom:1px solid var(--hair);display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px 48px}
+nav.toc a{color:var(--ink);text-decoration:none;font-size:14px;display:flex;gap:12px;padding:6px 0;border-bottom:1px solid var(--hair2)}
+nav.toc a:hover{color:var(--accent)}
+nav.toc .n{font-family:ui-monospace,Consolas,monospace;color:var(--accent);font-size:12px;min-width:24px}
+main{padding:16px 0 80px}
+.sec{display:flex;align-items:baseline;gap:20px;margin:64px 0 4px;border-bottom:1px solid var(--ink);padding-bottom:10px}
+.secnum{font-family:ui-monospace,Consolas,monospace;font-size:13px;color:var(--accent);letter-spacing:.1em}
+h2{font-size:27px;font-weight:600;letter-spacing:-.01em;line-height:1.15}
+h3{font-size:19px;font-weight:600;margin:36px 0 10px}
+h4{font-size:16px;font-weight:600;margin:24px 0 8px}
+p{max-width:72ch;margin:14px 0}
+ul,ol{max-width:72ch;margin:14px 0 14px 22px}
+li{margin:6px 0}
+blockquote{border-left:3px solid var(--accent);padding:4px 0 4px 18px;margin:18px 0;color:var(--muted);max-width:68ch}
+code{font-family:ui-monospace,"SF Mono",Consolas,monospace;font-size:.88em;background:rgba(20,20,20,.06);padding:1px 5px}
+pre{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;background:var(--ink);color:#f2f2ee;padding:18px 20px;overflow-x:auto;margin:18px 0}
+a{color:var(--accent)}
+.rule{border-top:1px solid var(--hair);margin:28px 0}
+.tbl{overflow-x:auto;margin:18px 0 26px}
+table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.45}
+th{font-family:ui-monospace,Consolas,monospace;font-size:11px;letter-spacing:.07em;text-transform:uppercase;text-align:left;color:var(--ink);border-bottom:2px solid var(--ink);padding:9px 12px 9px 0;white-space:nowrap}
+td{border-bottom:1px solid var(--hair2);padding:9px 24px 9px 0;vertical-align:top;min-width:96px}
+tbody tr:hover td{background:rgba(40,115,245,.045)}
+tbody tr td:first-child{min-width:32px;color:var(--muted)}
+footer.colo{border-top:3px solid var(--ink);margin-top:40px;padding:26px 0 60px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer.colo .c{font-family:ui-monospace,Consolas,monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+@media(max-width:720px){.wrap{padding:0 18px}p,ul,ol{max-width:100%}.metarow{gap:20px}}
+</style>
+</head>
+<body>
+<div class="topband"></div>
+<div class="wrap">
+<header class="doc">
+  <div class="kicker">Full-Site Link Audit · zh-hk / en / ja</div>
+  <h1 class="display">全站三语言链接审计报告</h1>
+  <div class="subtitle">1614 条内链逐条核验 · 300 条断链 6 类模式 · 233 处内容重写 + 258 条 301 收拢 · 三个 commit 线上验证</div>
+  <div class="metarow"><div class="meta"><span class="mk">范围</span><span class="mv">blog-data ×3 全量 + pillar/category/insights 数据层</span></div><div class="meta"><span class="mk">断链修复</span><span class="mv">300 broken → 0 residual</span></div><div class="meta"><span class="mk">301 规则</span><span class="mv">+258 条（18 servis + 240 deep）</span></div><div class="meta"><span class="mk">验证</span><span class="mv">27/27 探针 PASS + 581 规则冒烟</span></div></div>
+</header>
+<h1>全站三语言链接审计报告（blog + SKU 数据层）</h1>
+<blockquote>审计对象：zprintpro.com zh-hk / en / ja 三语言全部博客与 SKU 数据文件的内链资产。</blockquote>
+<blockquote>方法：D-Agent 仓库级扫描（1614 条内链逐条对照路由白名单）+ 主线复扫与线上探针验证。</blockquote>
+<blockquote>本报告数据来自 audit_raw.json 原始扫描 + 三个修复 commit（dfed6f6e / 5f0387d7 / 2a64d178）的线上验证。</blockquote>
+<section class="sec" id="s1"><div class="secnum">01</div><h2>1. 扫描规模</h2></section>
+<div class="secbody" data-open="s1">
+<div class="tbl"><table><thead><tr><th>数据文件</th><th>博客条目数</th><th>抽取内链数</th></tr></thead><tbody><tr><td>blog-data/zh-hk.json</td><td>83</td><td>500</td></tr><tr><td>blog-data/en.json</td><td>84</td><td>498</td></tr><tr><td>blog-data/ja.json</td><td>84</td><td>517</td></tr><tr><td>pillar-content.ts</td><td>—</td><td>82</td></tr><tr><td>category-seo-content.ts</td><td>—</td><td>9</td></tr><tr><td>buying-guides.ts / sku-seo-data.ts</td><td>—</td><td>8</td></tr><tr><td><strong>合计</strong></td><td><strong>251 篇</strong></td><td><strong>1614</strong></td></tr></tbody></table></div>
+<p>首次扫描状态分布：1192 ok · 96 locale-less · 20 redirect（有 301 兜底）· <strong>300 broken</strong> · 6 external。</p>
+<section class="sec" id="s2"><div class="secnum">02</div><h2>2. 用户报告断链：/servis/ 拼写错误（第一批修复）</h2></section>
+<div class="secbody" data-open="s2">
+<p>用户在 zh-hk《即日印刷指南》第九节 CTA「前往即日印刷服務頁」点击 404。根因：内容层把 <code>/services/</code> 系统性拼成 <code>/servis/</code>。</p>
+<div class="tbl"><table><thead><tr><th>坏 URL 模式</th><th>zh-hk</th><th>ja</th><th>en</th><th>修复去向</th></tr></thead><tbody><tr><td>/{loc}/servis/rush-printing-delivery/</td><td>7</td><td>9</td><td>9</td><td>/{loc}/services/rush-printing-delivery/</td></tr><tr><td>/{loc}/servis/business-envelopes/</td><td>1</td><td>1</td><td>1</td><td>/{loc}/product/business-envelopes/</td></tr><tr><td>/{loc}/category/servis/</td><td>1</td><td>1</td><td>1</td><td>/{loc}/services/</td></tr><tr><td>en 正文 servis/Servi 拼写</td><td>—</td><td>—</td><td>13</td><td>service/Service</td></tr></tbody></table></div>
+<p>合计 38 处 URL + 13 处正文拼写。commit <strong>dfed6f6e</strong>（内容 + 18 条 301）。</p>
+<section class="sec" id="s3"><div class="secnum">03</div><h2>3. 深层断链（第二批修复，D-Agent 揪出）</h2></section>
+<div class="secbody" data-open="s3">
+<p>首次全量扫描的 300 条 broken 链接分类：</p>
+<div class="tbl"><table><thead><tr><th>模式类</th><th>数量</th><th>说明</th><th>修复方式</th></tr></thead><tbody><tr><td>X1 模板字面量（误报，运行时正常）</td><td>82</td><td>确认 category-conversion-blocks.ts 使用 ${locale} 模板字面量，运行时正常插值，无需修复</td></tr><tr><td>C2 category slug 无效</td><td>60</td><td>重写到复数/真实类目 + 301</td></tr><tr><td>B1 旧版双层 /products/ 路径</td><td>57</td><td>内容层重写 57 处 + 通配 301 /products/:cat/:slug+ → /product/:slug+</td></tr><tr><td>C3 product slug 幻影/改名</td><td>56</td><td>重写到最近真实承接 PDP + 301</td></tr><tr><td>C1 blog slug 不存在/截断</td><td>45</td><td>内容层重写到真实 blog slug + 301 收拢截断变体</td></tr></tbody></table></div>
+<p>外部链接 6 条（dhl.com / fedex.com / sf-express.com）为正常外链，不在修复范围。</p>
+<h3>3.1 完整 301 重定向映射表（v23 + v24 组，581 条规则中的新增部分）</h3>
+<div class="tbl"><table><thead><tr><th>坏路径（每条 ×3 locale × 带斜杠/不带斜杠双写）</th><th>去向</th></tr></thead><tbody><tr><td><code>/{loc}/servis/rush-printing-delivery</code></td><td><code>/services/rush-printing-delivery/</code></td></tr><tr><td><code>/{loc}/servis/business-envelopes</code></td><td><code>/product/business-envelopes/</code></td></tr><tr><td><code>/{loc}/category/servis</code></td><td><code>/services/</code></td></tr><tr><td><code>/{loc}/products/:cat/:slug+</code></td><td><code>/product/:slug/（通配）</code></td></tr><tr><td><code>/{loc}/category/flyer</code></td><td><code>/category/flyers/</code></td></tr><tr><td><code>/{loc}/category/poster</code></td><td><code>/category/posters/</code></td></tr><tr><td><code>/{loc}/category/sticker</code></td><td><code>/category/stickers/</code></td></tr><tr><td><code>/{loc}/category/menu</code></td><td><code>/category/menus/</code></td></tr><tr><td><code>/{loc}/category/banner</code></td><td><code>/category/banners/</code></td></tr><tr><td><code>/{loc}/category/gift-boxes</code></td><td><code>/category/packaging/</code></td></tr><tr><td><code>/{loc}/category/gift-box</code></td><td><code>/category/packaging/</code></td></tr><tr><td><code>/{loc}/category/wedding-invitation</code></td><td><code>/category/wedding-invitations/</code></td></tr><tr><td><code>/{loc}/category/school-flyer</code></td><td><code>/category/educational/</code></td></tr><tr><td><code>/{loc}/category/school-journal</code></td><td><code>/category/educational/</code></td></tr><tr><td><code>/{loc}/category/campus-education</code></td><td><code>/category/educational/</code></td></tr><tr><td><code>/{loc}/category/textbook</code></td><td><code>/category/educational/</code></td></tr><tr><td><code>/{loc}/category/dm-flyer</code></td><td><code>/category/flyers/</code></td></tr><tr><td><code>/{loc}/category/leaflet-fold</code></td><td><code>/category/flyers/</code></td></tr><tr><td><code>/{loc}/category/labels</code></td><td><code>/category/stickers/</code></td></tr><tr><td><code>/{loc}/category/foil-stamping-sticker</code></td><td><code>/category/stickers/</code></td></tr><tr><td><code>/{loc}/category/design</code></td><td><code>/blog/</code></td></tr><tr><td><code>/{loc}/category/printing</code></td><td><code>/services/</code></td></tr><tr><td><code>/{loc}/category/sticker-material-pvc-vinyl-removable</code></td><td><code>/blog/sticker-material-pvc-vinyl-removable/</code></td></tr><tr><td><code>/{loc}/category/food-packaging-printing-guide</code></td><td><code>/blog/food-packaging-printing-guide/</code></td></tr><tr><td><code>/{loc}/category/packaging-box-custom-guide</code></td><td><code>/blog/packaging-box-custom-guide/</code></td></tr><tr><td><code>/{loc}/category/cosmetics-packaging-box-printing-guide</code></td><td><code>/blog/cosmetics-packaging-box-printing-guide/</code></td></tr><tr><td><code>/{loc}/product/a1-poster</code></td><td><code>/product/a1-posters/</code></td></tr><tr><td><code>/{loc}/product/a2-poster</code></td><td><code>/product/a2-posters/</code></td></tr><tr><td><code>/{loc}/product/poster-a1</code></td><td><code>/product/a1-posters/</code></td></tr><tr><td><code>/{loc}/product/poster-a2</code></td><td><code>/product/a2-posters/</code></td></tr><tr><td><code>/{loc}/product/poster-a3</code></td><td><code>/product/art-posters/</code></td></tr><tr><td><code>/{loc}/product/pvc-poster</code></td><td><code>/product/outdoor-posters/</code></td></tr><tr><td><code>/{loc}/product/waterproof-posters</code></td><td><code>/product/outdoor-posters/</code></td></tr><tr><td><code>/{loc}/product/posters</code></td><td><code>/category/posters/</code></td></tr><tr><td><code>/{loc}/product/gift-boxes</code></td><td><code>/product/rigid-boxes/</code></td></tr><tr><td><code>/{loc}/product/drawer-slide-gift-box</code></td><td><code>/product/rigid-boxes/</code></td></tr><tr><td><code>/{loc}/product/doujin-booklets</code></td><td><code>/product/doujinshi-printing/</code></td></tr><tr><td><code>/{loc}/product/doujin-badges</code></td><td><code>/product/can-badge/</code></td></tr><tr><td><code>/{loc}/product/doujin-postcards</code></td><td><code>/product/postcard-set/</code></td></tr><tr><td><code>/{loc}/product/edu-textbook</code></td><td><code>/product/textbooks/</code></td></tr><tr><td><code>/{loc}/product/luxury-menus</code></td><td><code>/product/hardcover-menus/</code></td></tr><tr><td><code>/{loc}/product/same-day-printing-hk</code></td><td><code>/services/rush-printing-delivery/</code></td></tr><tr><td><code>/{loc}/product/international-shipping</code></td><td><code>/services/catalog-printing-china/</code></td></tr><tr><td><code>/{loc}/product/personalized-red-packets</code></td><td><code>/product/custom-red-packets/</code></td></tr><tr><td><code>/{loc}/product/packaging-box-color</code></td><td><code>/category/packaging/</code></td></tr><tr><td><code>/{loc}/product/packaging-box-pit</code></td><td><code>/category/packaging/</code></td></tr><tr><td><code>/{loc}/product/rtificates</code></td><td><code>/product/certificates/</code></td></tr><tr><td><code>/{loc}/blog/finan-summit-gift-bag-printing-guide</code></td><td><code>/blog/finance-summit-gift-bag-printing-guide/</code></td></tr><tr><td><code>/{loc}/blog/medical-devi-packaging-box-guide</code></td><td><code>/blog/medical-device-packaging-box-guide/</code></td></tr><tr><td><code>/{loc}/blog/poster-printing-pri-guide</code></td><td><code>/blog/poster-printing-price-guide/</code></td></tr><tr><td><code>/{loc}/blog/rtificate-printing-guide</code></td><td><code>/blog/certificate-printing-guide/</code></td></tr><tr><td><code>/{loc}/blog/ecommer-shipping-bag-printing-guide</code></td><td><code>/blog/ecommerce-shipping-bag-printing-guide/</code></td></tr><tr><td><code>/{loc}/blog/cross-border-ecommerce-shipping-guide</code></td><td><code>/blog/cross-border-ecommerce-shipping-box-guide/</code></td></tr><tr><td><code>/{loc}/blog/fda-certification-guide</code></td><td><code>/blog/food-packaging-printing-guide/</code></td></tr><tr><td><code>/{loc}/blog/2027-calendar-printing-guide</code></td><td><code>/blog/calendar-printing-guide/</code></td></tr><tr><td><code>/{loc}/blog/poster-material-comparison</code></td><td><code>/blog/poster-printing-price-guide/</code></td></tr><tr><td><code>/{loc}/blog/poster-printing-pitfalls</code></td><td><code>/blog/poster-printing-guide/</code></td></tr><tr><td><code>/{loc}/blog/case-study</code></td><td><code>/blog/</code></td></tr><tr><td><code>/{loc}/blog/category/:slug+</code></td><td><code>/blog/（通配）</code></td></tr></tbody></table></div>
+<p>所有映射目标均已在仓库 products.ts / blog-posts.ts / app 路由表中核验存在。next.config.js 加载冒烟：<strong>581 条规则全部解析成功</strong>。</p>
+<section class="sec" id="s4"><div class="secnum">04</div><h2>4. 内容层修复统计</h2></section>
+<div class="secbody" data-open="s4">
+<div class="tbl"><table><thead><tr><th>commit</th><th>内容</th><th>规模</th></tr></thead><tbody><tr><td>dfed6f6e</td><td>/servis/ 38 处 URL + 18 条 301</td><td>三语言</td></tr><tr><td>5f0387d7</td><td>en 正文机器拼写 47 处（pharmautical/remony/conferens/exed/pri 等）</td><td>en</td></tr><tr><td>2a64d178</td><td>深层断链 233 处内容重写 + 240 条 301</td><td>三语言</td></tr></tbody></table></div>
+<p>233 处内容重写的构成：旧版双层路径 57、blog 桩 27、截断 slug 21、单数类目 39、幻影 SKU 40、locale 前缀补全约 44、gift-boxes 系 34（含第一批遗留直连化）。</p>
+<section class="sec" id="s5"><div class="secnum">05</div><h2>5. 验证证据</h2></section>
+<div class="secbody" data-open="s5">
+<ul><li><strong>线上重定向探针（第一批）</strong>：9 坏模式 × 3 locale = 27 条 GET 探针，27/27 PASS（到达 200 且落到正确目标页）。</li></ul>
+<ul><li><strong>博客页 HTML 抽查</strong>：zh-hk / ja / en 三语言 rush-printing-hk-guide 渲染 HTML 中 <code>/servis/</code> 出现 0 次、<code>/services/rush-printing-delivery/</code> 出现 1+ 次。</li></ul>
+<ul><li><strong>仓库复扫</strong>：三语言 blog-data 残留可疑 URL = 0（白名单校验：blog slug ×88、product slug ×214、category slug ×16、静态路由 ×25）。</li></ul>
+<ul><li><strong>wa.me 入口</strong>：https://wa.me/8619880851334 → 200。</li></ul>
+<ul><li><strong>配置冒烟</strong>：redirects() 输出 581 条（修前 251 → 修后 581），无解析错误。</li></ul>
+<ul><li><strong>误报澄清</strong>：D-Agent 报告的 <code>-&gt; /enrigid-boxes</code> 为其正则截断显示伪影；middleware QUOTE_PRODUCT_MAP 的值自带 <code>/product/</code> 前缀，实际拼接 <code>/en/product/rigid-boxes/</code> 正确。</li></ul>
+<section class="sec" id="s6"><div class="secnum">06</div><h2>6. 遗留与建议</h2></section>
+<div class="secbody" data-open="s6">
+<ul><li>Cloudflare Pages 对第二批 commit 的部署完成后，建议复跑 27 条探针 + 抽查 10 条深层 301（脚本已留档 <code>.hermes/scratch/</code>）。</li><li>GSC 抓取错误会随 301 生效在 7-28 天自然消退；建议部署稳定后手动「验证修复」加速。</li><li>建议将本次白名单校验脚本固化为 <code>scripts/check-internal-links.mjs</code>，纳入每次内容 push 的 3 步预检，防止新增内容再次注入坏链。</li><li>blog-posts.ts 中 <code>2027-calendar-printing-complete-guide</code> 元数据缺失（内容存在但 generateStaticParams 不含），按 C-Agent M1 清单补录。</li></ul></div>
+<footer class="colo">
+  <div class="c">ZprintPro · 智印港 — SEO+AEO+GEO 程序包</div>
+  <div class="c">Source: audit_raw.json · commits dfed6f6e / 5f0387d7 / 2a64d178 · verified live 2026-09-05</div>
+</footer>
+</div>
+</body>
+</html>

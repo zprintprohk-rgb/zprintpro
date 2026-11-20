@@ -1,0 +1,14 @@
+{
+  "urls": [
+    { "name": "books-zh-title", "url": "https://zprintpro.com/zh-hk/category/books/", "must": ["小冊子印刷", "智印港"], "not": ["騎馬釘小冊子印刷 10本起"] },
+    { "name": "books-zh-h1", "url": "https://zprintpro.com/zh-hk/category/books/", "must": ["香港小冊子印刷"], "not": ["校園印刷", "校園教育印刷"] },
+    { "name": "books-en-title", "url": "https://zprintpro.com/en/category/books/", "must": ["Saddle Stitch Booklet Printing", "10 MOQ"], "not": ["Catalog & Booklet"] },
+    { "name": "books-en-h1-moq", "url": "https://zprintpro.com/en/category/books/", "must": ["10 MOQ"], "not": ["50 MOQ", "50-copy MOQ"] },
+    { "name": "books-crumb", "url": "https://zprintpro.com/zh-hk/category/books/", "must": ["小冊子・書刊印刷"], "not": [] },
+    { "name": "rush-zh-title", "url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/", "must": ["即日印刷・即日急件", "18:00 截單"], "not": [] },
+    { "name": "nav-school", "url": "https://zprintpro.com/zh-hk/", "must": ["學校印刷", "宣傳單張"], "not": ["校園印刷"] },
+    { "name": "stickers-zh-vdp", "url": "https://zprintpro.com/zh-hk/category/stickers/", "must": ["可變數據貼紙", "白墨打底"], "not": [] },
+    { "name": "stickers-en-moq", "url": "https://zprintpro.com/en/category/stickers/", "must": ["MOQ starts at just 10 pcs"], "not": ["100 pcs (some 50)"] },
+    { "name": "edu-zh-mixed", "url": "https://zprintpro.com/zh-hk/category/educational/", "must": ["練習簿 10 本起訂"], "not": ["50 本起訂"] }
+  ]
+}

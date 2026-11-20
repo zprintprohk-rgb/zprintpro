@@ -1,0 +1,5 @@
+LIVE OK 2026-09-11T20:10:29.287Z
+
+===== v9.6 验收 (BASE=https://zprintpro.com) =====
+PASS: 60  FAIL: 0
+ALL GREEN

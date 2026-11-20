@@ -1,0 +1,1 @@
+fix(seo): B1a envelopes + calendars en/ja 12 行补全 (97dac44 撞车 revert 重启, 季节军令状 9/15 硬截止 + 智印港 40% CTR 公式 + 5 sharp hook + Made for USA/日本全国/短納期 ja 钩子, K3 §6 轨 1 + 撞墙 = M3 自主 K3 8/26 04:50 v2 预批"立即"覆盖, Python json.dump 模式避免 ja 全角符号触发 SWC 误识别)

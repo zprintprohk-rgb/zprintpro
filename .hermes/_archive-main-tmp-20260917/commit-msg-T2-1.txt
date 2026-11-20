@@ -1,0 +1,24 @@
+fix(brand): T2-1 首批 (K3 批准 5 文件) — 品牌归位 16 处 + 简体字 53 处; T1b 括注正式豁免
+
+K3 2026-09-13 追加拍板: ① T1b 括注「智印港（ZprintPro）」**保留**; ② T2 首批 = products.ts/seo.ts/
+schema-extensions.ts/h1-builder.ts/layout.tsx; ③ title 字符数目标区 **50-58 半角当量**
+(「更新到 58 字符数内就可以, 标题的字符数很宝贵的」, 取代 v4 的 50-54); ④ 页面 title 与 JSON-LD headline 等 T2 完成自然对齐。
+
+一、T1b 豁免落地: scripts/guards/brand-guard.js 扫描前剔除括注形态 (K3 批准的正式豁免),
+    并在 docs/2026-09-13-guard-exemption-policy.md 登记
+
+二、T2-1 执行 (scripts/fix-title-batch-T2-1.mjs):
+    · products.ts: title_zh 双品牌 → 智印港 ×10 (每条释放 10 当量) + 简体字「行业」→「行業」×53
+    · seo.ts: 首页 title + 报价页 title ×2 (双品牌 → 单品牌)
+    · layout.tsx: ogTitle/twitterTitle ×4 (zh-hk → 智印港 / ja → ZprintPro)
+    · schema-extensions.ts / h1-builder.ts: 复核为**误报** (locale 三元正确 / JSDoc 注释), 不动
+    · **不做盲目裁剪**: 朴素「尾部丢段」实测把品牌与 GSC 长尾一并丢掉 (86→43 当量且品牌消失),
+      属破坏性 -> 超 58 / 低于 50 者进 T2-1b 逐条编辑子批
+
+三、T2-1b 提案表 (待 K3 一眼过): docs/2026-09-13-title-batch-T2-1b-proposals.md
+    products.ts 72 条: 补长尾(品牌末尾) 37 / 裁剪(保品牌) 10 / **需人工 25** (17 无可补词 + 8 无品牌)
+    提案只取该 SKU 自身关键词池, 不编造; 但实测部分提案偏弱 -> 不盲目执行, 交 K3 过目后逐条落地
+
+四、配套: 冻结声明与批次规范更新 (docs/2026-09-13-title-batch-T-freeze.md §6/§7);
+    回滚映射 .hermes/rollback-T2-1-*.json (16 点) + 备份目录
+门禁: tsc 54=54(改动文件 0 错) / 品牌基线 377 → **359** (只许递减)

@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/app/[locale]/category/[slug]/page.tsx:495:3
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 493 |[39m [36mconst[39m categoryGuideMap[33m:[39m [33mRecord[39m[33m<[39m[33mstring[39m[33m,[39m string[33m>[39m [33m=[39m {[0m
+[0m [90m 494 |[39m   [32m'stickers'[39m[33m:[39m [32m'sticker-buying-guide'[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 495 |[39m   [32m'stickers'[39m[33m:[39m [32m'sticker-buying-guide'[39m[33m,[39m[0m
+[0m [90m     |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 496 |[39m   [32m'flyers'[39m[33m:[39m [32m'flyer-buying-guide'[39m[33m,[39m[0m
+[0m [90m 497 |[39m   [32m'packaging'[39m[33m:[39m [32m'packaging-buying-guide'[39m[33m,[39m[0m
+[0m [90m 498 |[39m   [32m'posters'[39m[33m:[39m [32m'poster-buying-guide'[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

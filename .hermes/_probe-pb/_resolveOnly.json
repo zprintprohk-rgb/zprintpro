@@ -1,0 +1,1539 @@
+{
+ "total": 203,
+ "files": {
+  "src/data/category-seo-content.ts": {
+   "chars": 120,
+   "lines": [
+    {
+     "line": 809,
+     "chars": "批改写词段",
+     "kind": "行注释",
+     "excerpt": "// 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (catalog book + china catalog + catalog printing china + bulk catalog) + bulk/wholesale 段"
+    },
+    {
+     "line": 903,
+     "chars": "真實案例段",
+     "kind": "行注释",
+     "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → en"
+    },
+    {
+     "line": 1534,
+     "chars": "信封場景大類",
+     "kind": "行注释",
+     "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → en"
+    },
+    {
+     "line": 1851,
+     "chars": "月曆市場旺季前夜關鍵節點",
+     "kind": "行注释",
+     "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+    },
+    {
+     "line": 2149,
+     "chars": "此處原有留下的整條繁體中文",
+     "kind": "行注释",
+     "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+    },
+    {
+     "line": 2150,
+     "chars": "全中文插在語系的陣列內頁面會渲染中文屬真缺陷已刪除",
+     "kind": "行注释",
+     "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+    },
+    {
+     "line": 2151,
+     "chars": "同一的英文版就在下方去重內容無損失",
+     "kind": "行注释",
+     "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+    },
+    {
+     "line": 2155,
+     "chars": "利是封備貨時間線行業趨勢",
+     "kind": "行注释",
+     "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+    },
+    {
+     "line": 3081,
+     "chars": "首建",
+     "kind": "行注释",
+     "excerpt": "// 2026-08-22 v3.13 T15: Flyer Pillar 首建"
+    },
+    {
+     "line": 3171,
+     "chars": "去模板化防加真實案例即日特急數據",
+     "kind": "行注释",
+     "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+    },
+    {
+     "line": 3172,
+     "chars": "修复污染添加段",
+     "kind": "行注释",
+     "excerpt": "// 2026-08-22 v3.15 S2 T36: 修复 zh-hk 污染 + 添加 en 段"
+    }
+   ]
+  },
+  "src/components/layout/Footer.tsx": {
+   "chars": 71,
+   "lines": [
+    {
+     "line": 451,
+     "chars": "锚定文本供搜索引擎抓取",
+     "kind": "块/JSX 注释",
+     "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+    },
+    {
+     "line": 479,
+     "chars": "不再顯示經營者資訊披露按鍵跨境無實體無法律義務",
+     "kind": "块/JSX 注释",
+     "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+    },
+    {
+     "line": 480,
+     "chars": "隱私政策使用條款已移到幫助中心欄",
+     "kind": "块/JSX 注释",
+     "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+    },
+    {
+     "line": 481,
+     "chars": "保留特定商取引法基表記日本特定商取引法要求",
+     "kind": "块/JSX 注释",
+     "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+    }
+   ]
+  },
+  "src/data/blog-posts.ts": {
+   "chars": 12,
+   "lines": [
+    {
+     "line": 532,
+     "chars": "全球通用强调盒型对比最新",
+     "kind": "行注释",
+     "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+    }
+   ]
+  }
+ },
+ "records": [
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 809,
+   "char": "批",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (catalog book + china catalog + catalog printing china + bulk catalog) + bulk/wholesale 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 809,
+   "char": "改",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (catalog book + china catalog + catalog printing china + bulk catalog) + bulk/wholesale 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 809,
+   "char": "写",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (catalog book + china catalog + catalog printing china + bulk catalog) + bulk/wholesale 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 809,
+   "char": "词",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (catalog book + china catalog + catalog printing china + bulk catalog) + bulk/wholesale 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 809,
+   "char": "段",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (catalog book + china catalog + catalog printing china + bulk catalog) + bulk/wholesale 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 903,
+   "char": "真",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 903,
+   "char": "實",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 903,
+   "char": "案",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 903,
+   "char": "例",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 903,
+   "char": "段",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1534,
+   "char": "信",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1534,
+   "char": "封",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1534,
+   "char": "場",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1534,
+   "char": "景",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1534,
+   "char": "大",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1534,
+   "char": "類",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "月",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "曆",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "市",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "場",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "旺",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "季",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "前",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "夜",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "關",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "鍵",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "節",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1851,
+   "char": "點",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "此",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "處",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "原",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "有",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "留",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "下",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "的",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "整",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "條",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "繁",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "體",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "中",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2149,
+   "char": "文",
+   "kind": "行注释",
+   "excerpt": "// 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "全",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "中",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "文",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "插",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "在",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "語",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "系",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "的",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "陣",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "列",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "內",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "頁",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "面",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "會",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "渲",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "染",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "中",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "文",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "屬",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "真",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "缺",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "陷",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "已",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "刪",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2150,
+   "char": "除",
+   "kind": "行注释",
+   "excerpt": "//   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "同",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "一",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "的",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "英",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "文",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "版",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "就",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "在",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "下",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "方",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "去",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "重",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "內",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "容",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "無",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "損",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2151,
+   "char": "失",
+   "kind": "行注释",
+   "excerpt": "//   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "利",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "是",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "封",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "備",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "貨",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "時",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "間",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "線",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "行",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "業",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "趨",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2155,
+   "char": "勢",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3081,
+   "char": "首",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.13 T15: Flyer Pillar 首建"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3081,
+   "char": "建",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.13 T15: Flyer Pillar 首建"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "去",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "模",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "板",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "化",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "防",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "加",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "真",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "實",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "案",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "例",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "即",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "日",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "特",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "急",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "數",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3171,
+   "char": "據",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3172,
+   "char": "修",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: 修复 zh-hk 污染 + 添加 en 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3172,
+   "char": "复",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: 修复 zh-hk 污染 + 添加 en 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3172,
+   "char": "污",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: 修复 zh-hk 污染 + 添加 en 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3172,
+   "char": "染",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: 修复 zh-hk 污染 + 添加 en 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3172,
+   "char": "添",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: 修复 zh-hk 污染 + 添加 en 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3172,
+   "char": "加",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: 修复 zh-hk 污染 + 添加 en 段"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 3172,
+   "char": "段",
+   "kind": "行注释",
+   "excerpt": "// 2026-08-22 v3.15 S2 T36: 修复 zh-hk 污染 + 添加 en 段"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "锚",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "定",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "文",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "本",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "供",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "搜",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "索",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "引",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "擎",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "抓",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 451,
+   "char": "取",
+   "kind": "块/JSX 注释",
+   "excerpt": "{/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "不",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "再",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "顯",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "示",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "經",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "營",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "者",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "資",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "訊",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "披",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "露",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "按",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "鍵",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "跨",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "境",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "無",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "實",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "體",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "無",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "法",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "律",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "義",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 479,
+   "char": "務",
+   "kind": "块/JSX 注释",
+   "excerpt": "2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "隱",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "私",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "政",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "策",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "使",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "用",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "條",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "款",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "已",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "移",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "到",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "幫",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "助",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "中",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "心",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 480,
+   "char": "欄",
+   "kind": "块/JSX 注释",
+   "excerpt": "隱私政策 + 使用條款 已移到「幫助中心」欄;"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "保",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "留",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "特",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "定",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "商",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "取",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "引",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "法",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "基",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "表",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "記",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "日",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "本",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "特",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "定",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "商",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "取",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "引",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "法",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "要",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "line": 481,
+   "char": "求",
+   "kind": "块/JSX 注释",
+   "excerpt": "ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "全",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "球",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "通",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "用",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "强",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "调",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "盒",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "型",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "对",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "比",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "最",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 532,
+   "char": "新",
+   "kind": "行注释",
+   "excerpt": "// en: 全球通用 + 强调\"6 盒型对比 + 2026 最新\"; ja: 强调\"6 つの箱型徹底比較\""
+  }
+ ]
+}

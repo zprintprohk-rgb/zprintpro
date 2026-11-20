@@ -1,0 +1,34 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./src/components/ProductTabs.tsx
+Error: 
+  [31mx[0m Expected ',', got 'en'
+     ,-[[36;1;4mF:\zprintpro-nextjs\src\components\ProductTabs.tsx[0m:194:1]
+ [2m194[0m | 
+ [2m195[0m |   const getUseCases = () => {
+ [2m196[0m |     const map: Record<string, string[][]> = {
+ [2m197[0m |       'business-cards': ['zh-hk,商務會議,品牌推廣,個人形象,公司介紹.split(','), 'en,Business meetings,Brand promotion,Personal branding,Company introduction'.split(','), 'ja,ビジネスミーティング,ブランドプロモーション,個人ブランディング,会社紹介'.split(',')],
+     : [31;1m                                                                                                 ^^[0m
+ [2m198[0m |       'flyers': ['zh-hk,產品推廣,活動宣傳,餐飲外賣,開業慶典'.split(','), 'en,Product promotion,Event advertising,Food delivery,Grand opening'.split(','), 'ja,製品プロモーション,イベント宣伝,フードデリバリー,開業セレモニー'.split(',')],
+ [2m199[0m |       'stickers': ['zh-hk,產品標籤,品牌貼紙,包裝裝飾,促銷活動'.split(','), 'en,Product labels,Brand stickers,Packaging decoration,Promotions'.split(','), 'ja,製品ラベル,ブランドステッカー,包装装飾,プロモーション'.split(',')],
+ [2m200[0m |       'paper-bags': ['zh-hk,零售購物,禮品包裝,品牌宣傳,活動贈品'.split(','), 'en,Retail shopping,Gift packaging,Brand promotion,Event giveaways'.split(','), 'ja,小売ショッピング,ギフト包装,ブランドプロモーション,イベント景品'.split(',')],
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ProductTabs.tsx
+./src/app/[locale]/product/[slug]/page.tsx
+./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2F%5Blocale%5D%2Fproduct%2F%5Bslug%5D%2Fpage&page=%2F%5Blocale%5D%2Fproduct%2F%5Bslug%5D%2Fpage&pagePath=private-next-app-dir%2F%5Blocale%5D%2Fproduct%2F%5Bslug%5D%2Fpage.tsx&appDir=F%3A%5Czprintpro-nextjs%5Csrc%5Capp&appPaths=%2F%5Blocale%5D%2Fproduct%2F%5Bslug%5D%2Fpage&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!./src/app/[locale]/product/[slug]/page.tsx?__next_edge_ssr_entry__
+
+
+> Build failed because of webpack errors

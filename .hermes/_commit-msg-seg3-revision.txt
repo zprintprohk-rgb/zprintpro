@@ -1,0 +1,55 @@
+fix(gate)+docs(blog): 段3 口径修订 (方案a: H2/H3 均可) 三处同步 + FAQ 答案口径 40-120 词 + 格式预检工具 (K3 2026-09-19 决策)
+
+【1. 段 3 口径修订 —— 采纳 K3 方案 (a), SSoT + 生成位置 + 门禁断言三处同步】
+· 旧口径: 段 3 = 「H2 问句段群」, 硬要求 H2 ≥6 且 问句式 >50%。
+· 问题 (K3 评估第二点 + 实测): poster-printing-guide 的 en/ja 主段锚是 `<h3>` (H2 = 0) ⇒ 直接判 FAIL,
+  属**过度严格** —— 段群结构真实存在, 只是标签层级不同。
+· 外部标准: 问句式 H2/H3 是「成本最低、回报最大」的格式化改动; 有清晰 H1-H2-H3 层级的页面
+  被 ChatGPT 引用概率约为无层级页面的 3 倍 ⇒ 关键在「层级逻辑清晰」, 非「必须用 H2」。
+· 不选方案 (b) 修 h3→h2: 会改动已上线 DOM 结构 (churn) 且影响锚点/样式。
+· 修订后判据: **(H2+H3) 总数 ≥6 且 其中问句式 >50%**。
+· 三处同步 (SSoT §7.2 铁律, 缺一即 #21 漂移):
+  ① SSoT: docs/2026-09-08-title-rules-and-deep-blog-standard.md §3.1 段 3-5 行 + §0.3 口径
+  ② 生成位置: .hermes/cron-prompts/{zprintpro-blog-deepfix,zprintpro-daily-content-1x7w}.md (v11 补丁, 第 34 行)
+  ③ 门禁断言: scripts/guards/blog-quality-12-rules-guard.js 段 3 判定 (h2re + h3re 双计, 输出 headMix)
+· #21 已重新绑定 sha256 (3 条绑定全部一致) ✅
+
+【2. FAQ 答案长度口径修订: 80-150 词 → 40-120 词】
+· K3 外部研究: **40-80 词**是 AI 引擎 (Perplexity / ChatGPT) 引用效果最佳的「答案胶囊」区间
+  (契合其段落级提取逻辑); 80-150 词提供更多上下文深度。
+· 最终口径 = **40-120 词** (下限对齐高引用区间, 上限保留深度空间; 旧口径 80-150 偏高)。
+· 存量已写 FAQ 不动 (churn 红线), 仅 B3 新写与批次 D 扩写按新口径。
+
+【3. B3 前置: FAQ 格式预检工具 (K3 评估第三点)】
+工具 = .hermes/_probe-pb/precheck-faq-format.mjs (与 page.tsx 生产正则同源)
+8 用例实测 **PASS 8 / FAIL 0**:
+  ① 标准 Q1:/A: + <br/> ✅   ② 带 class 的 <p> ✅   ③ 无 <br/> ✅   ④ 全角冒号 + 全角序号 ✅   ⑤ 无序号 ✅
+  ⑥ 反例 <li> 列表形态 → 0 ✅   ⑦ 反例 缺 A 标记 → 0 ✅   ⑧ 反例 答案另起 <p> (跨段) → 0 ✅
+⇒ 按 ①-⑤ 写入即可被解析 (线上会生成 FAQPage); 严禁 ⑥⑦⑧ 三形态 (会「写了 FAQ 但线上无 FAQPage」静默失败)。
+
+【4. ⚠️ 修订后暴露的真实内容缺口 (未擅自修, 待授权) —— 门禁保持 🔴 红, 不刷基线掩盖】
+修订后按线上模式对账: **基线 49 / 现存 52 / 已修 0 ⇒ 新增 3 条段级 FAIL**:
+  poster-printing-guide × zh-hk? 否 — 实为 **en / ja × 段 3** (zh-hk 该段 PASS)
+根因 (dump 实证, 不是门禁 bug): poster 的 en/ja 用 `<h3>` 载段锚但**标题全为陈述式**
+  en: `1. Common Poster Sizes` / `2. Paper Stock Guide` / `3. Surface Finishing Options` / `4. Design Tips` / `Frequently Asked Questions` / `Related Services` (6 个, 问句式 0)
+  ja: 同型 7 个, 问句式 0
+  zh-hk: 9 个问句式 H2 (如「海報 A1 A2 A3 A0 4 種尺寸點樣揀?」) ⇒ 该段 PASS
+⇒ 这是**三语结构对齐缺口** (zh-hk 20,043 字 / en 12,659 / ja 9,200), 属**内容改写**, 需指令包授权。
+⇒ **本轮不刷新基线** (把新增 FAIL 计入基线 = 让红色消失, 违反「只拦新增」语义与 §7.5「基线只许递减」)。
+
+【数据来源】
+- 线上探针: blog-quality-12-rules-guard --baseline --online (基线 49 / 现存 52 / 新增 3)
+- 内容 dump: poster 三语 H2/H3 标题清单 (见上)
+- 格式预检: precheck-faq-format.mjs 8/8 PASS 输出
+- #21 台账: rule-translation-ledger.json (3 绑定 sha256 一致)
+- K3 2026-09-19 评估第一/二/三点
+
+【待办】
+- P0: poster en/ja 段锚改写为问句式 (需授权) —— 修完基线自然回落到 49
+- P0: B2 批2 strip kraft-paper-box-types-comparison-2026 × 3 (生成区齐套需先确认)
+- P1: B3 foil × 3 补 FAQ (格式预检已通过; 答案 40-120 词)
+- P1: 段 8 可提取性测试 —— K3 选路径 (a) 人工提交 Perplexity/ChatGPT 并回报 (已确认无外部引擎通道, 不伪造)
+- P2: Person schema 加 jobTitle/knowsAbout (schema-extensions.ts, 渲染层)
+- P2: C 二期 run-context 消费追踪注入
+
+Bypass-rationale: 本批 = 门禁断言 + SSoT + cron prompt + 预检工具; pre-commit 红规则对 .hermes 历史字面会硬拦; 无价格/文案口径变更 (段3 修订只改判据, 未动任何客户可见文本)

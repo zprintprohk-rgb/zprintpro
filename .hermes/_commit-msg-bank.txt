@@ -1,0 +1,52 @@
+feat(seo): 标题生成输入银行 (阶段二) + 数字口径前置闸门 + 去重批次脚本
+
+来源: K3 2026-09-19 两天冲刺方案 阶段二「数据结构化」+ 决策 1/2
+
+## 一、新增 title-input-bank (阶段二核心工程)
+scripts/build-title-input-bank.mjs — 三源合并, 输出 .hermes/reports/title-input-bank-2026-09-19.{json,md}
+- ① src/data/products.ts → minQuantity / price_range / basePrice(3语) / specs / features
+- ② GSC 28d (combo_28d 查询数) → 同簇候选词 (query/imps/pos)
+- ③ census → 当前 title / 当量 / band / 批次 / 问题
+完备度: 违规 74 SKU / 115 槽; MOQ 真值 69/74; 价格 69/74; specs 68/74; GSC 候选词 69/74
+（原方案估 115 条, 实测同数; 但 SKU 维度 74 个, 即多语同 SKU 共因）
+
+### ★ 内置 MOQ 一致性自检 (a2「1張起印」事故固化为可执行断言)
+扫描每条 title 的起印量声明 vs products.ts minQuantity, 命中 **19 条不一致**, 例:
+- folded-leaflets/zh-hk 称 100 vs 真值 10 (P1)
+- laminated-menus/zh-hk 称 50 vs 真值 100 (P0-A)
+- exercise-books/zh-hk 称 50 vs 真值 10 (P0-B)
+- a4-flyers/ja · a5-flyers/ja · thick-paper-flyers/ja 称 100 vs 真值 10
+⚠️ 已知假阳性风险 (单方法, §0.23.2): small-batch-stickers 三语「50」可能属小批量自有口径,
+   ja「100枚〜」可能属分市场口径 ⇒ 须与 products.ts / K3 对账后才可认定为缺陷, 不得直接据此动手。
+⚠️ 与并行会话门童 #24 的差异待对账: 其 SKU 级扫描报「🆕 0 漂移 (6 条已登录)」,
+   本检查在 **title 字段**上命中 19 ⇒ 或判定域不同, 或本检查有 FP。两法不一致, 结论暂缓 (§0.23.2)。
+
+## 二、数字口径前置闸门 (纪律固化, 不只写在文档)
+scripts/apply-title-batch.mjs 新增 checkRecentRulings():
+每批执行前自动列印过去 24h 涉及「真值/口径/裁決/title」的提交 (范围: products.ts / docs /
+error-patterns.md), 提示逐项对照数字钩子。
+事故背书: a2-trim 19:35 保留「1張起印」, K3 19:43 裁定真值=10 ⇒ 若未复查 log 会把错值写上线。
+本闸门首次运行即捞出 cc1d5293 (20:03 art-posters 真值) 与 4593937c (11:56 紙品 100→10),
+据此复核: business/large-envelopes 的 minQuantity **仍为 100**, 本批 100個起 文案无冲突 ✅
+
+## 三、去重 (决策 2)
+删除 scripts/gen-p0-title-batch.mjs (与 apply-title-batch.mjs 逻辑重复, 后者为超集:
+批次化 p0|a2-trim|a2-moq-align + 落盘断言 + 品牌末尾兼容全角｜ + 本批新增前置闸门)。
+
+## 四、实测踩坑留痕 (两处「假零」, 同 error-patterns ② 嵌套结构陷阱族)
+- products.ts 的 slug 行缩进 = **4 空格** (非 2) ⇒ 首版解析器整档解析出 0 条 = 假零。
+  修后: 69/74 SKU 取到 MOQ 真值。旁证: waterproof-stickers 实测 minQuantity=10 /
+  price_range HK$0.22-1.0/張, 与银行输出一致 ⇒ 无跨产品串段。
+- GSC 查询级字段名 = **「热门查询」** (非「排名靠前的查询」) ⇒ 首版 GSC 候选词 0 条 = 假零。
+  修后: 69/74 SKU 有同簇候选词 (例 stickers 簇: 貼紙印刷 165imp/pos27.3 ·
+  small batch sticker printing 69imp/pos6.6)。
+
+## 数据来源
+- src/data/products.ts (99 slug 块, 4 空格缩进) / .hermes/gsc-2026-09-18/extract.json (combo_28d)
+- .hermes/reports/sku-title-census-2026-09-19.json (115 违规)
+- K3 裁决: c18107a0 (a2 minQuantity 100→10) / cc1d5293 (art-posters 真值) / 4593937c (紙品 100→10)
+校准日期: 2026-09-19 20:10
+
+## 验收
+node scripts/build-title-input-bank.mjs → 74 SKU / 115 槽 / MOQ 真值 69 / GSC 候选 69 ✅
+node scripts/apply-title-batch.mjs --batch=a2-moq-align → 前置闸门正常 (幂等, 已落盘故 0 变更) ✅

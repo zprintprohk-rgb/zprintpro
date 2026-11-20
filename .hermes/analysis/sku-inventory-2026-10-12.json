@@ -1,0 +1,821 @@
+{
+ "inventory": [
+  {
+   "slug": "greeting-cards",
+   "name": "高級賀卡",
+   "weight": 98,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-07-30"
+  },
+  {
+   "slug": "greeting-cards",
+   "name": "厚卡名片 (400g 起)",
+   "weight": 95,
+   "hot": true,
+   "minQ": "10",
+   "opt": ""
+  },
+  {
+   "slug": "greeting-cards",
+   "name": "燙金/燙銀賀卡 | 賀卡 / 燙銀工藝 / 婚禮卡",
+   "weight": 92,
+   "hot": true,
+   "minQ": "10",
+   "opt": ""
+  },
+  {
+   "slug": "greeting-cards",
+   "name": "UV局部光油賀卡",
+   "weight": 90,
+   "hot": true,
+   "minQ": "10",
+   "opt": ""
+  },
+  {
+   "slug": "greeting-cards",
+   "name": "啞膠賀卡",
+   "weight": 88,
+   "hot": false,
+   "minQ": "10",
+   "opt": ""
+  },
+  {
+   "slug": "greeting-cards",
+   "name": "圓角賀卡",
+   "weight": 85,
+   "hot": false,
+   "minQ": "10",
+   "opt": ""
+  },
+  {
+   "slug": "stickers",
+   "name": "防水貼紙 / 戶外貼紙 訂製 | PVC 防水 / 異形貼紙",
+   "weight": 98,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-07-14"
+  },
+  {
+   "slug": "stickers",
+   "name": "透明貼紙 / 透明貼 訂製 | 防水貼紙 / 異形貼紙",
+   "weight": 95,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-07-29"
+  },
+  {
+   "slug": "stickers",
+   "name": "可移貼紙(無殘膠) / 可移貼紙訂製 | 防水貼紙 / 異形貼紙",
+   "weight": 92,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-08-05"
+  },
+  {
+   "slug": "stickers",
+   "name": "小批量貼紙 / label printing | 防水貼紙 / 異形貼紙",
+   "weight": 90,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-07-28"
+  },
+  {
+   "slug": "stickers",
+   "name": "異形模切貼紙 | 防水貼紙 / 異形貼紙",
+   "weight": 88,
+   "hot": false,
+   "minQ": "10",
+   "opt": "2026-07-29"
+  },
+  {
+   "slug": "stickers",
+   "name": "燙金貼紙 | 防水貼紙 / 異形貼紙",
+   "weight": 85,
+   "hot": false,
+   "minQ": "10",
+   "opt": "2026-07-30"
+  },
+  {
+   "slug": "stickers",
+   "name": "防偽貼紙 | 防水貼紙 / 異形貼紙",
+   "weight": 82,
+   "hot": false,
+   "minQ": "10",
+   "opt": "2026-08-01"
+  },
+  {
+   "slug": "stickers",
+   "name": "螢光貼紙 | 防水貼紙 / 異形貼紙",
+   "weight": 80,
+   "hot": false,
+   "minQ": "10",
+   "opt": "2026-08-01"
+  },
+  {
+   "slug": "paper-bags",
+   "name": "牛皮紙袋 | 紙袋 / 牛皮紙袋 / 手提袋",
+   "weight": 98,
+   "hot": true,
+   "minQ": "100",
+   "opt": "2026-07-23"
+  },
+  {
+   "slug": "paper-bags",
+   "name": "白卡紙袋 | 紙袋 / 牛皮紙袋 / 手提袋",
+   "weight": 95,
+   "hot": true,
+   "minQ": "100",
+   "opt": "2026-07-29"
+  },
+  {
+   "slug": "paper-bags",
+   "name": "禮品紙袋 | 紙袋 / 牛皮紙袋 / 手提袋",
+   "weight": 92,
+   "hot": true,
+   "minQ": "100",
+   "opt": "2026-07-30"
+  },
+  {
+   "slug": "paper-bags",
+   "name": "環保紙袋 | 紙袋 / 牛皮紙袋 / 手提袋",
+   "weight": 90,
+   "hot": true,
+   "minQ": "100",
+   "opt": "2026-07-27"
+  },
+  {
+   "slug": "paper-bags",
+   "name": "手挽紙袋 | 紙袋 / 牛皮紙袋 / 手提袋",
+   "weight": 88,
+   "hot": false,
+   "minQ": "100",
+   "opt": "2026-07-29"
+  },
+  {
+   "slug": "paper-bags",
+   "name": "大號紙袋 | 紙袋 / 牛皮紙袋 / 手提袋",
+   "weight": 82,
+   "hot": false,
+   "minQ": "100",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "flyers",
+   "name": "A4傳單印刷 | 傳單印刷 / 折頁 / A4/A5",
+   "weight": 95,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-08-05"
+  },
+  {
+   "slug": "flyers",
+   "name": "A5傳單印刷 | 傳單印刷 / 折頁 / A4/A5",
+   "weight": 92,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "flyers",
+   "name": "雙面傳單印刷 | 傳單印刷 / 折頁 / A4/A5",
+   "weight": 90,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-07-29"
+  },
+  {
+   "slug": "flyers",
+   "name": "摺疊傳單印刷 | 傳單印刷 / 折頁 / A4/A5",
+   "weight": 88,
+   "hot": false,
+   "minQ": "10",
+   "opt": "2026-08-05"
+  },
+  {
+   "slug": "flyers",
+   "name": "厚紙傳單印刷 | 傳單印刷 / 折頁 / A4/A5",
+   "weight": 85,
+   "hot": false,
+   "minQ": "10",
+   "opt": "2026-08-01"
+  },
+  {
+   "slug": "flyers",
+   "name": "環保傳單印刷 | 傳單印刷 / 折頁 / A4/A5",
+   "weight": 80,
+   "hot": false,
+   "minQ": "10",
+   "opt": "2026-07-30"
+  },
+  {
+   "slug": "flyers",
+   "name": "即日傳單印刷 | 傳單印刷 / 折頁 / A4/A5",
+   "weight": 95,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-08-05"
+  },
+  {
+   "slug": "posters",
+   "name": "A2海報印刷 / a2 poster printing | A1/A2 海報 /",
+   "weight": 95,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-07-08"
+  },
+  {
+   "slug": "posters",
+   "name": "A1大幅海報 | A1/A2 海報 / 展覽海報",
+   "weight": 92,
+   "hot": true,
+   "minQ": "1",
+   "opt": "2026-07-27"
+  },
+  {
+   "slug": "posters",
+   "name": "戶外海報 | A1/A2 海報 / 展覽海報",
+   "weight": 90,
+   "hot": true,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "posters",
+   "name": "展架海報 | A1/A2 海報 / 展覽海報",
+   "weight": 88,
+   "hot": false,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "posters",
+   "name": "藝術海報 | A1/A2 海報 / 展覽海報",
+   "weight": 85,
+   "hot": false,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "posters",
+   "name": "背膠海報 | A1/A2 海報 / 展覽海報",
+   "weight": 82,
+   "hot": false,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "packaging",
+   "name": "食品包裝訂製 / 食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒",
+   "weight": 90,
+   "hot": true,
+   "minQ": "100",
+   "opt": "2026-07-21"
+  },
+  {
+   "slug": "packaging",
+   "name": "化妝品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒",
+   "weight": 96,
+   "hot": true,
+   "minQ": "100",
+   "opt": "2026-07-22"
+  },
+  {
+   "slug": "packaging",
+   "name": "100 MOQ 快遞盒/飛機盒 · 跨境 FBA DHL 2-4 天送達 | 包",
+   "weight": 88,
+   "hot": false,
+   "minQ": "100",
+   "opt": "2026-07-23"
+  },
+  {
+   "slug": "packaging",
+   "name": "折疊盒 | 包裝盒 / 禮品盒 / 化妝品盒",
+   "weight": 85,
+   "hot": false,
+   "minQ": "100",
+   "opt": "2026-07-23"
+  },
+  {
+   "slug": "packaging",
+   "name": "精裝盒 / 精裝盒報價 | 包裝盒 / 禮品盒 / 化妝品盒",
+   "weight": 82,
+   "hot": false,
+   "minQ": "100",
+   "opt": "2026-07-22"
+  },
+  {
+   "slug": "red-packets",
+   "name": "燙金利是封 | 利是封 / 春聯 / 燙金",
+   "weight": 95,
+   "hot": true,
+   "minQ": "100",
+   "opt": "2026-07-08"
+  },
+  {
+   "slug": "red-packets",
+   "name": "浮雕利是封 | 利是封 / 春聯 / 燙金",
+   "weight": 92,
+   "hot": true,
+   "minQ": "100",
+   "opt": "2026-07-27"
+  },
+  {
+   "slug": "red-packets",
+   "name": "定製利是封 | 利是封 / 春聯 / 燙金",
+   "weight": 90,
+   "hot": true,
+   "minQ": "100",
+   "opt": ""
+  },
+  {
+   "slug": "red-packets",
+   "name": "卡通利是封 | 利是封 / 春聯 / 燙金",
+   "weight": 88,
+   "hot": false,
+   "minQ": "100",
+   "opt": ""
+  },
+  {
+   "slug": "red-packets",
+   "name": "環保利是封 | 利是封 / 春聯 / 燙金",
+   "weight": 85,
+   "hot": false,
+   "minQ": "100",
+   "opt": ""
+  },
+  {
+   "slug": "red-packets",
+   "name": "大號利是封 | 利是封 / 春聯 / 燙金",
+   "weight": 82,
+   "hot": false,
+   "minQ": "100",
+   "opt": ""
+  },
+  {
+   "slug": "calendars",
+   "name": "掛牆年曆 | 桌曆 / 掛曆 / 2027年曆",
+   "weight": 95,
+   "hot": true,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "calendars",
+   "name": "座檯年曆 | 桌曆 / 掛曆 / 2027年曆",
+   "weight": 92,
+   "hot": true,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "calendars",
+   "name": "定製年曆 | 桌曆 / 掛曆 / 2027年曆",
+   "weight": 90,
+   "hot": true,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "calendars",
+   "name": "迷你年曆 | 桌曆 / 掛曆 / 2027年曆",
+   "weight": 88,
+   "hot": false,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "calendars",
+   "name": "相框年曆 | 桌曆 / 掛曆 / 2027年曆",
+   "weight": 85,
+   "hot": false,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "calendars",
+   "name": "磁石年曆 | 桌曆 / 掛曆 / 2027年曆",
+   "weight": 82,
+   "hot": false,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "menus",
+   "name": "PVC餐牌 | 餐牌 / 菜單 / 防水PVC",
+   "weight": 95,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-07-08"
+  },
+  {
+   "slug": "menus",
+   "name": "過膠餐牌 | 餐牌 / 菜單 / 覆膜",
+   "weight": 92,
+   "hot": true,
+   "minQ": "10",
+   "opt": ""
+  },
+  {
+   "slug": "menus",
+   "name": "精裝餐牌 | 餐牌 / 菜單 / 硬殼裝訂",
+   "weight": 90,
+   "hot": true,
+   "minQ": "10",
+   "opt": ""
+  },
+  {
+   "slug": "menus",
+   "name": "酒水牌 | 餐牌 / 菜單 / 覆膜",
+   "weight": 88,
+   "hot": false,
+   "minQ": "10",
+   "opt": ""
+  },
+  {
+   "slug": "banners",
+   "name": "戶外燈布噴繪 | 易拉寶 / 戶外橫幅 / 噴繪",
+   "weight": 95,
+   "hot": true,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "banners",
+   "name": "易拉寶 | 易拉寶 / 戶外橫幅 / 噴繪",
+   "weight": 92,
+   "hot": true,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "banners",
+   "name": "背膠噴繪 | 易拉寶 / 戶外橫幅 / 噴繪",
+   "weight": 90,
+   "hot": true,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "banners",
+   "name": "車身廣告 | 易拉寶 / 戶外橫幅 / 噴繪",
+   "weight": 88,
+   "hot": false,
+   "minQ": "1",
+   "opt": ""
+  },
+  {
+   "slug": "books",
+   "name": "香港畫冊印刷 / Bulk Catalog Printing / Wholesa",
+   "weight": 95,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-09-14"
+  },
+  {
+   "slug": "books",
+   "name": "香港騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 — 目錄/雜誌/練習冊",
+   "weight": 92,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-09-14"
+  },
+  {
+   "slug": "books",
+   "name": "香港無線膠裝書籍 — 學術論文集 / 年度報告 / CSR 社會責任報告 / 文",
+   "weight": 90,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-09-14"
+  },
+  {
+   "slug": "books",
+   "name": "香港精裝書籍 — 婚慶紀念書 / 家族史冊 / 畢業紀念冊 / 校友會刊",
+   "weight": 88,
+   "hot": false,
+   "minQ": "10",
+   "opt": "2026-09-16"
+  },
+  {
+   "slug": "books",
+   "name": "香港線圈筆記本 — 企業禮品 / 補習社教材 / 活頁筆記本 / 校園紀念本",
+   "weight": 85,
+   "hot": false,
+   "minQ": "10",
+   "opt": ""
+  },
+  {
+   "slug": "envelopes",
+   "name": "公司信封 | 信封 / 牛皮信封 / 開窗",
+   "weight": 95,
+   "hot": true,
+   "minQ": "100",
+   "opt": ""
+  },
+  {
+   "slug": "envelopes",
+   "name": "彩色信封 | 信封 / 牛皮信封 / 開窗",
+   "weight": 92,
+   "hot": true,
+   "minQ": "100",
+   "opt": ""
+  },
+  {
+   "slug": "envelopes",
+   "name": "大號信封 | 信封 / 牛皮信封 / 開窗",
+   "weight": 90,
+   "hot": true,
+   "minQ": "100",
+   "opt": ""
+  },
+  {
+   "slug": "envelopes",
+   "name": "珠光信封 | 信封 / 牛皮信封 / 開窗",
+   "weight": 88,
+   "hot": false,
+   "minQ": "100",
+   "opt": ""
+  },
+  {
+   "slug": "educational",
+   "name": "Exercise Book Printing School Programs |",
+   "weight": 95,
+   "hot": true,
+   "minQ": "10",
+   "opt": "2026-09-16"
+  },
+  {
+   "slug": "educational",
+   "name": "香港證書印刷 — 畢業證書 / 獎狀 / 校友會證書 / 培訓證書",
+   "weight": 92,
+   "hot": true,
+   "minQ": "100",
+   "opt": ""
+  },
+  {
+   "slug": "educational",
+   "name": "香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊",
+   "weight": 90,
+   "hot": true,
+   "minQ": "10",
+   "opt": ""
+  },
+  {
+   "slug": "educational",
+   "name": "香港教科書印刷 / 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教",
+   "weight": 88,
+   "hot": false,
+   "minQ": "100",
+   "opt": "2026-09-16"
+  },
+  {
+   "slug": "educational",
+   "name": "香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊",
+   "weight": 88,
+   "hot": true,
+   "minQ": "1",
+   "opt": "2026-07-27"
+  },
+  {
+   "slug": "packaging",
+   "name": "磁吸翻蓋禮盒印刷 | 包裝盒 / 禮品盒 / 化妝品盒",
+   "weight": 98,
+   "hot": true,
+   "minQ": "100",
+   "opt": "2026-07-28"
+  },
+  {
+   "slug": "packaging",
+   "name": "電子產品包裝盒定製 | 包裝盒 / 禮品盒 / 化妝品盒",
+   "weight": 96,
+   "hot": true,
+   "minQ": "200",
+   "opt": "2026-08-05"
+  },
+  {
+   "slug": "packaging",
+   "name": "牛皮紙盒印刷訂製 / クラフト紙 パッケージ印刷 | 包裝盒 / 禮品盒 / 化",
+   "weight": 94,
+   "hot": true,
+   "minQ": "300",
+   "opt": "2026-07-29"
+  },
+  {
+   "slug": "packaging",
+   "name": "拼版白卡彩盒(免刀模費) | 彩盒印刷 / 白卡盒 / 禮品盒",
+   "weight": 90,
+   "hot": true,
+   "minQ": "500",
+   "opt": "2026-08-01"
+  },
+  {
+   "slug": "packaging",
+   "name": "白卡彩盒印刷定製 | 卡盒 / 包裝盒 / 禮品盒 / 化妝品盒",
+   "weight": 5,
+   "hot": false,
+   "minQ": "500",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "packaging",
+   "name": "瓦楞彩盒印刷訂製 (坑盒/E坑/F坑) | 包裝盒 / 物流盒",
+   "weight": 5,
+   "hot": false,
+   "minQ": "500",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "packaging",
+   "name": "插口盒印刷訂製 (卡盒/直插/飛機插) | 包裝盒 / 輕量彩盒",
+   "weight": 5,
+   "hot": false,
+   "minQ": "500",
+   "opt": "2026-07-21"
+  },
+  {
+   "slug": "stickers",
+   "name": "水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙",
+   "weight": 95,
+   "hot": true,
+   "minQ": "500",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "doujinshi-printing",
+   "name": "水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙",
+   "weight": 95,
+   "hot": true,
+   "minQ": "500",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "japan-doujin",
+   "name": "水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙",
+   "weight": 95,
+   "hot": true,
+   "minQ": "500",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "postcard-set",
+   "name": "水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙",
+   "weight": 95,
+   "hot": true,
+   "minQ": "500",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "japan-doujin",
+   "name": "水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙",
+   "weight": 95,
+   "hot": true,
+   "minQ": "500",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "eco-tote-bag",
+   "name": "水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙",
+   "weight": 95,
+   "hot": true,
+   "minQ": "500",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "japan-doujin",
+   "name": "水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙",
+   "weight": 95,
+   "hot": true,
+   "minQ": "500",
+   "opt": "2026-08-03"
+  },
+  {
+   "slug": "foil-wedding-invitations",
+   "name": "",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": ""
+  },
+  {
+   "slug": "wedding-invitations",
+   "name": "燙金喜帖",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": "2026-08-18"
+  },
+  {
+   "slug": "save-the-date-cards",
+   "name": "",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": ""
+  },
+  {
+   "slug": "wedding-invitations",
+   "name": "Save the Date 卡片",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": "2026-08-18"
+  },
+  {
+   "slug": "wedding-thank-you-cards",
+   "name": "",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": ""
+  },
+  {
+   "slug": "wedding-invitations",
+   "name": "婚禮感謝卡",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": "2026-08-18"
+  },
+  {
+   "slug": "wedding-suite-bundle",
+   "name": "",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": ""
+  },
+  {
+   "slug": "wedding-invitations",
+   "name": "婚慶整套配套",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": "2026-08-18"
+  },
+  {
+   "slug": "wedding-place-cards",
+   "name": "",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": ""
+  },
+  {
+   "slug": "place-cards",
+   "name": "婚宴枱卡",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": "2026-08-18"
+  },
+  {
+   "slug": "drink-tokens",
+   "name": "",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": ""
+  },
+  {
+   "slug": "place-cards",
+   "name": "酒水牌 / 飲品標記",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": "2026-08-18"
+  },
+  {
+   "slug": "cafe-table-cards",
+   "name": "",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": ""
+  },
+  {
+   "slug": "place-cards",
+   "name": "餐廳 / 咖啡廳枱卡",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": "2026-08-18"
+  },
+  {
+   "slug": "wedding-seating-charts",
+   "name": "",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": ""
+  },
+  {
+   "slug": "place-cards",
+   "name": "婚宴席位圖",
+   "weight": 50,
+   "hot": false,
+   "minQ": "50",
+   "opt": "2026-08-18"
+  }
+ ],
+ "page_imps": {}
+}

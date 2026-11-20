@@ -1,0 +1,10 @@
+chore(sitemap): 8/16 next-sitemap regen - lastmod 2026-08-14 -> 2026-08-16
+
+M-time 9:14:35 (8/16) 触发生成, lastmod 字段升级. 603 URLs across
+4 sitemaps + 266 product image URLs (next-sitemap build artifact).
+
+Diff stat: 6 files, 603 + / 603 - (纯 lastmod 字段替换).
+
+K3 8/16 09:45 拍板: 直接 push 部署.
+npm run build PASS (603 URLs / Categories 14 / Products 85 / Blog 85).
+Push 配额: 今日 4/5 (per K3 8/8 15:35 §0.17).

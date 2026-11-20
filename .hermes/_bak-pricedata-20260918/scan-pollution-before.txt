@@ -1,0 +1,70 @@
+﻿掃描欄位數: 396
+
+=== A) en / ja 鍵位含漢字 (語言污染) ===
+  命中欄位: 252 | 受影響 SKU: 18 個
+    59  gang-run-card-boxes
+    35  custom-flyers
+    29  white-card-boxes
+    28  a2-posters
+    21  corrugated-boxes
+    11  waterproof-stickers
+    11  digital-stickers
+     9  folded-leaflets
+     9  special-fold-leaflets
+     7  white-card-bags
+     5  tuck-end-boxes
+     4  a5-flyers
+     4  a4-flyers
+     4  same-day-flyers
+     4  eco-flyers
+     4  saddle-stitch-booklets
+     4  perfect-bound-books
+     4  exercise-books
+
+  前 14 條明細:
+   [ja] gang-run-card-boxes productName@L11 -> 合版白カードボックス
+   [en] gang-run-card-boxes label@L18 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒
+   [ja] gang-run-card-boxes label@L19 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒
+   [en] gang-run-card-boxes label@L62 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金]
+   [ja] gang-run-card-boxes label@L63 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金]
+   [en] gang-run-card-boxes label@L106 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][1
+   [ja] gang-run-card-boxes label@L107 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][1
+   [en] gang-run-card-boxes label@L150 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口
+   [ja] gang-run-card-boxes label@L151 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口
+   [en] gang-run-card-boxes label@L194 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口
+   [ja] gang-run-card-boxes label@L195 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口
+   [en] gang-run-card-boxes label@L231 -> 拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口
+   [ja] gang-run-card-boxes label@L232 -> 拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口
+   [en] gang-run-card-boxes label@L268 -> 拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口
+
+=== B) zh-hk 鍵位含簡體字 ===
+  命中欄位: 90 | 受影響 SKU: 10
+   gang-run-card-boxes label@L17 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒
+   gang-run-card-boxes label@L61 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金]
+   gang-run-card-boxes label@L105 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][1
+   gang-run-card-boxes label@L149 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口
+   gang-run-card-boxes label@L193 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口
+   gang-run-card-boxes label@L230 -> 拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口
+   gang-run-card-boxes label@L267 -> 拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口
+   gang-run-card-boxes label@L304 -> 拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口
+   gang-run-card-boxes label@L341 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口
+   gang-run-card-boxes label@L371 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口
+   gang-run-card-boxes label@L408 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口
+   gang-run-card-boxes label@L445 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口
+
+=== C) ja 鍵位有漢字但零假名 (疑似直貼中文) ===
+  命中欄位: 121
+   gang-run-card-boxes label@L19 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒
+   gang-run-card-boxes label@L63 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金]
+   gang-run-card-boxes label@L107 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][1
+   gang-run-card-boxes label@L151 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口
+   gang-run-card-boxes label@L195 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口
+   gang-run-card-boxes label@L232 -> 拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口
+   gang-run-card-boxes label@L269 -> 拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口
+   gang-run-card-boxes label@L306 -> 拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口
+   gang-run-card-boxes label@L343 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口
+   gang-run-card-boxes label@L373 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口
+   gang-run-card-boxes label@L410 -> 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口
+   gang-run-card-boxes label@L447 -> 拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口
+
+明細已寫: .hermes/_probe-pb/price-data-pollution-report.json

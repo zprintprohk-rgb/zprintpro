@@ -1,0 +1,38 @@
+feat(cron): gsc-feedback-loop v3 → v4 (K3 2026-07-22 拍板) + K3 §6 铁律 + GSC API 永久 fallback + P0-2 PENDING + Q-005 7/23 必写建议
+
+## v3 → v4 关键变化 (K3 §6 铁律 + 实际跑出来的 0 词调整常态)
+
+### 1. **K3 §6 铁律显式写死 (新)**
+- 已 covered Q 不重复加权 (避免 GSC 反馈循环污染)
+- orphan/高潜力/强信号/141 残杀词 命中 covered → skip
+- 仅 uncovered queue 词按 rules 加权 (+1 / +2)
+- 7/22 实际跑: 22 个候选词 100% 已 covered, **0 词调整 (K3 §6 铁律严格执行)**
+
+### 2. **GSC API 永久 fallback 模式 (新)**
+- 已知问题: oauth2.googleapis.com 连接超时 (WinError 10060), GFW 屏蔽
+- 永久 fallback 决策树: 3 次重试失败 → 用 .hermes/gsc_data.csv (6/17 90-day snapshot) + .hermes/overlap-keywords.csv (7/17)
+- 局限标注: -1 减权规则跳过 (30/90 天零展示判定不了) + 141 残杀词 7-day rolling 复查挂起
+- 连续 2 次失败 → 升级 user 报 proxy/VPN 方案 (待 user 拍板)
+
+### 3. **P0-2 301 监控 PENDING 处理 (新)**
+- 当前状态: PENDING (距 2026-08-12 开学季启动还有 21 天)
+- 阿里云 NS 已改 CF (user 已实操)
+- 本 cron 跳过 §3.2 段 + 写待 P0-2 部署备注
+- DEPLOYED 后激活 4 项监控 (GSC 抓取错误 / sitemap 残留 / 索引转移率 / 权重交接)
+
+### 4. **Q-005 daily cron 7/23 必写建议 (新)**
+- slug: cross-border-ecommerce-shipping-box-guide
+- priority_boost: 2 (K3 §6 铁律维持, 已 covered 但强信号, 重写版)
+- 1 月未推进 (queued_at 2026-07-06) + packaging P0 唯一剩
+- 强信号词 食品包裝印刷 (108 imps) 转化价值高
+- 7/23 daily cron 必写 ≥ 1200 字提质版 (旧版 < 800 字)
+
+### 5. **141 baseline 已建立 (新)**
+- 文件: .hermes/gsc-141-baseline-2026-07-22.json (6,552 bytes, 28 词)
+- K3 §3.3 严格定义筛 (从 157 跨境B2B钱词中筛 28 词, 非 141)
+- weekly 7-day rolling 复查需 GSC API 恢复后启用
+
+## 验证
+- SSoT 文件写入: .hermes/cron-prompts/mavis/gsc-feedback-loop.md (19.6KB, 13,093 chars)
+- mavis cron update 完整写入 daemon (无 buffer 截断, prompt field ok)
+- 7 步 verify 全过 (2026-07-22 gsc-feedback 日报已落盘 13.6KB)

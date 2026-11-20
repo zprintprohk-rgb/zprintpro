@@ -1,5 +1,16 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## ✅ 已释放 — 2026-11-14 16:3x Kimi Work 人手会话（商家结构化数据真值修复）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **意图** | 修正三语 PDP／分类页 ItemList／Merchant Feed 的免运、不可退货、固定履约及跨页价格冲突；只使用既有 legal 与价格锚真值 |
+| **写入范围** | `src/lib/merchant-policy.ts`（新）、`src/lib/pricing.ts`（共享 Offer 价格 helper）、`src/lib/seo.ts`、`src/lib/seo/schema-extensions.ts`、`src/app/[locale]/product/[slug]/page.tsx`、`src/app/api/merchant-feed/[locale]/route.ts`、对应测试与报告、`SESSION_LOCK.md` |
+| **禁止范围** | 不改 title／H1／正文／价格源／贺卡资产／301／Blog JSON；不新增退款、运费、退货物流或时效承诺；不清理、代提交他人工作树改动 |
+| **双条件核验** | ① 2026-11-14 16:05 `src/` 无 MM、无 staged 删除，`lane.lock` 不存在；② 最近一次 `src/` 提交为 2026-11-13 21:31:41，至开工已静默 >15 分钟 |
+| **释放结果** | 全量三语 PDP／分类页／Feed 各 249 项断言 PASS；本地 12 URL 渲染探针 PASS；品牌门禁 PASS；tsc 54 个存量错误零新增；工作树编码与 diff 检查 PASS。报告 `docs/2026-11-14-merchant-structured-data-truth-fix.md`。本批未 stage／commit／push，生产与 GSC 待部署后复测；临时开发服务器已关闭。 |
+
 ## ✅ 已释放 — 2026-11-08 01:53 Kimi Work 人手会话（海报／喜帖主承接 URL 拍板执行）
 
 | 项 | 值 |

@@ -1,0 +1,595 @@
+{
+ "window": "28d approx 2026-09-15~2026-10-12 (data to 10-12)",
+ "sites": {
+  "hk": [
+   {
+    "locale": "zh-hk",
+    "slug": "poster-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+    "imps": 435,
+    "clicks": 4,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "food-packaging-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+    "imps": 219,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "book-buying-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+    "imps": 162,
+    "clicks": 1,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "saddle-stitch-booklet-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+    "imps": 146,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "paper-bag-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/paper-bag-printing-guide/",
+    "imps": 137,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "roll-up-banner-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+    "imps": 114,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "sticker-buying-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/sticker-buying-guide/",
+    "imps": 83,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "rush-printing-hk-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+    "imps": 81,
+    "clicks": 3,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "hong-kong-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+    "imps": 77,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "sticker-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+    "imps": 66,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "retail-shop-poster-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/retail-shop-poster-printing-guide/",
+    "imps": 58,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "poster-buying-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/poster-buying-guide/",
+    "imps": 58,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "folded-leaflet-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+    "imps": 47,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "2027-monthly-calendar-printing-timetable",
+    "url": "https://zprintpro.com/zh-hk/blog/2027-monthly-calendar-printing-timetable/",
+    "imps": 46,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "sticker-design",
+    "url": "https://zprintpro.com/zh-hk/blog/sticker-design/",
+    "imps": 43,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "eco-printing",
+    "url": "https://zprintpro.com/zh-hk/blog/eco-printing/",
+    "imps": 30,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "doujin-circle-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/doujin-circle-printing-guide/",
+    "imps": 27,
+    "clicks": 2,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "restaurant-menu-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/restaurant-menu-printing-guide/",
+    "imps": 26,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "wedding-red-packet-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/wedding-red-packet-printing-guide/",
+    "imps": 24,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "wedding-invitation-pricing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/wedding-invitation-pricing-guide/",
+    "imps": 22,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "certificate-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+    "imps": 21,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "school-exercise-book-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/school-exercise-book-printing-guide/",
+    "imps": 21,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "graduation-yearbook-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/graduation-yearbook-printing-guide/",
+    "imps": 15,
+    "clicks": 1,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "sticker-materials",
+    "url": "https://zprintpro.com/zh-hk/blog/sticker-materials/",
+    "imps": 14,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "cny-2027-red-packet-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/cny-2027-red-packet-printing-guide/",
+    "imps": 9,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "cmyk-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/cmyk-guide/",
+    "imps": 9,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "paper-materials",
+    "url": "https://zprintpro.com/zh-hk/blog/paper-materials/",
+    "imps": 9,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "flyer-buying-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/flyer-buying-guide/",
+    "imps": 7,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "campus-education-printing-pillar-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/campus-education-printing-pillar-guide/",
+    "imps": 6,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "clear-vs-matte-stickers",
+    "url": "https://zprintpro.com/zh-hk/blog/clear-vs-matte-stickers/",
+    "imps": 6,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "banner-buying-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/banner-buying-guide/",
+    "imps": 5,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "zine-small-batch-booklet-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/zine-small-batch-booklet-printing-guide/",
+    "imps": 4,
+    "clicks": 1,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "2027-calendar-printing-complete-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/2027-calendar-printing-complete-guide/",
+    "imps": 4,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "roll-up-banner-printing-guide",
+    "url": "https://zprintpro.com/en/blog/roll-up-banner-printing-guide/",
+    "imps": 4,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "childrens-picture-book-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/childrens-picture-book-printing-guide/",
+    "imps": 4,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "rush-printing-delivery-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/rush-printing-delivery-guide/",
+    "imps": 4,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "sticker-material-pvc-vinyl-removable",
+    "url": "https://zprintpro.com/zh-hk/blog/sticker-material-pvc-vinyl-removable/",
+    "imps": 4,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "mtr-advertising-specs",
+    "url": "https://zprintpro.com/zh-hk/blog/mtr-advertising-specs/",
+    "imps": 4,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "menu-buying-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/menu-buying-guide/",
+    "imps": 4,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "apparel-clothing-tag-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/apparel-clothing-tag-printing-guide/",
+    "imps": 3,
+    "clicks": 1,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "wedding-favor-bag-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/wedding-favor-bag-printing-guide/",
+    "imps": 2,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "poster-printing-price-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/poster-printing-price-guide/",
+    "imps": 2,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "eco-paper-bag-gsm",
+    "url": "https://zprintpro.com/zh-hk/blog/eco-paper-bag-gsm/",
+    "imps": 2,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "print-specifications-reference-guide-2026",
+    "url": "https://zprintpro.com/zh-hk/blog/print-specifications-reference-guide-2026/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "saddle-stitch-booklet-printing-guide",
+    "url": "https://zprintpro.com/en/blog/saddle-stitch-booklet-printing-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "hong-kong-printing-cost-baseline-2026",
+    "url": "https://zprintpro.com/en/blog/hong-kong-printing-cost-baseline-2026/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "packaging-color-psychology",
+    "url": "https://zprintpro.com/zh-hk/blog/packaging-color-psychology/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "instant-printing-30s-ai-quote-flow",
+    "url": "https://zprintpro.com/zh-hk/blog/instant-printing-30s-ai-quote-flow/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   }
+  ],
+  "us": [
+   {
+    "locale": "en",
+    "slug": "calendar-printing-guide",
+    "url": "https://zprintpro.com/en/blog/calendar-printing-guide/",
+    "imps": 68,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "catalog-printing-china-supplier-guide",
+    "url": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+    "imps": 38,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "hong-kong-printing-guide",
+    "url": "https://zprintpro.com/en/blog/hong-kong-printing-guide/",
+    "imps": 12,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "flyer-sizes-compared",
+    "url": "https://zprintpro.com/en/blog/flyer-sizes-compared/",
+    "imps": 9,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "doujin-circle-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/doujin-circle-printing-guide/",
+    "imps": 5,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "photo-book-printing-guide",
+    "url": "https://zprintpro.com/en/blog/photo-book-printing-guide/",
+    "imps": 3,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "saddle-stitch-booklet-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+    "imps": 2,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "roll-up-banner-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+    "imps": 2,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "cmyk-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/cmyk-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "food-packaging-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "business-card-design",
+    "url": "https://zprintpro.com/en/blog/business-card-design/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "real-estate-flyer-printing-guide",
+    "url": "https://zprintpro.com/en/blog/real-estate-flyer-printing-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "pet-food-sticker-printing-guide",
+    "url": "https://zprintpro.com/en/blog/pet-food-sticker-printing-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "cmyk-guide",
+    "url": "https://zprintpro.com/en/blog/cmyk-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "en",
+    "slug": "medical-device-packaging-box-guide",
+    "url": "https://zprintpro.com/en/blog/medical-device-packaging-box-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   }
+  ],
+  "jp": [
+   {
+    "locale": "ja",
+    "slug": "textbook-printing-guide",
+    "url": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+    "imps": 30,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "textbook-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/textbook-printing-guide/",
+    "imps": 18,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "ja",
+    "slug": "sticker-materials",
+    "url": "https://zprintpro.com/ja/blog/sticker-materials/",
+    "imps": 11,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "ja",
+    "slug": "rush-printing-delivery-guide",
+    "url": "https://zprintpro.com/ja/blog/rush-printing-delivery-guide/",
+    "imps": 4,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "ja",
+    "slug": "banner-buying-guide",
+    "url": "https://zprintpro.com/ja/blog/banner-buying-guide/",
+    "imps": 4,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "ja",
+    "slug": "apparel-clothing-tag-printing-guide",
+    "url": "https://zprintpro.com/ja/blog/apparel-clothing-tag-printing-guide/",
+    "imps": 3,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "ja",
+    "slug": "childrens-picture-book-printing-guide",
+    "url": "https://zprintpro.com/ja/blog/childrens-picture-book-printing-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "book-buying-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "zh-hk",
+    "slug": "doujin-circle-printing-guide",
+    "url": "https://zprintpro.com/zh-hk/blog/doujin-circle-printing-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   },
+   {
+    "locale": "ja",
+    "slug": "graduation-yearbook-printing-guide",
+    "url": "https://zprintpro.com/ja/blog/graduation-yearbook-printing-guide/",
+    "imps": 1,
+    "clicks": 0,
+    "pos": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+fix(i18n): Step 5 (B) — size 栏三语全覆盖 + PDP 栏名三语 + en 繁中 FAQ 残留清除
+
+队列依据: K3 2026-09-19「Step 5 合并批」; 本 commit 只含 (B) 三项,
+          (A) 孤儿交付物三档**原样留在工作区未提交**, 待 K3 裁 N1/N2/N3
+
+── (B)1 size 栏三语化 ──
+products.ts 的 specs.size 共 95 个值 / 73 条唯一字串 (70 含 CJK + 3 纯 ASCII) 原为中文单值
+⇒ en/ja PDP 的 size 行显示中文
+沿用 Step 4 已建机制 (原文为 key 的三语映射), 未另立第二套:
+  _spec-tr-6.json (新增 73 条) → 同一生成器 gen-spec-i18n.cjs → product-specs-i18n.ts 238 → **311 条**
+  size 一律**追加在旧索引之后** ⇒ 旧 238 条索引零位移 (冻结基准逐条断言)
+  zh-hk 零 churn: 311/311 `zh-hk === 原文` (交付层独立复算确认)
+
+── (B)2 PDP 规格栏名三语 (★已授权的 zh-hk 输出变更) ──
+ProductPageV9.tsx:599 `<dt>{k}</dt>` → 查表:
+  zh-hk: material/size/printMethod/finishing → 材質 / 尺寸 / 印刷方式 / 後加工  (原为英文栏名)
+  en:    Material / Size / Print Method / Finishing
+  ja:    素材 / サイズ / 印刷方法 / 後加工
+遗留: legacy ProductTabs.tsx 仍用「加工工藝」/「加工」, 站内 1 处术语不一致 (改生成器一行即可统一, 未擅动)
+
+── (B)3 en 块整条繁中 FAQ 残留清除 ──
+src/data/category-seo-content.ts:2150 的整条繁中 FAQ (CNY 2027 利是封) 残留在 en 的 faq 数组内
+⇒ en 页面会渲染中文 FAQ (真缺陷)
+L2155 已有完整英文版 ⇒ **去重删除, 零内容损失**
+该档门童 #4 命中 159 → 53 (−106), 与 Step 4 独立清点吻合
+同类扫描: 本档除该条外 0 条; 另发现 L537 en 值内简体「满足」= 真缺陷但属 en 清理批次 → 只列未修
+
+── 跨批修复 (需知悉, 已归因) ──
+开工前注入测试 ★新增缺陷 = 3, 来源**非本批**: `blog-data/zh-hk.json:704` 的 `ISO 认证体系`
+(第三方存量漂移, 该档 git status clean, 命在本日 05:49 blog-deepfix d193adda 之后)
+按既有「同串全值修复」口径做 **2 行 / 5 字** 修复: `ISO 认证体系` ×7 → `認證體系`; 半截残留 `FSC 认证 認證` → `FSC 認證`
+⇒ 与 Step 4 修 2 笔真实 red 属同一模式 (zh-hk 值内简体属真缺陷)
+
+── 交付层独立复核 (不采信专项单元自检) ──
+tsc = **54** ✅ | 门禁汇总 **🔴 0** ✅ | 门童 #4 基线 **1448 → 1320 (−128)**, 30 文件 ✅
+注入回放测试 **10 PASS / 0 FAIL** ✅ | 映射 **311 条**: zh-hk ≠ 原文 = **0** ✅ / en 含 CJK = **0** ✅ / 未覆盖 = **0** ✅
+生成器**幂等 byte diff = 0** + 断言未过不写盘 (故意破坏 anchor → exit 1 且 hash 不变)
+17 档 UTF-8 无 BOM + LF
+
+── 未提交 (待 K3 裁) ──
+(A) 孤儿交付物三档: `src/data/print-method-policy.ts` (新) + `product/[slug]/page.tsx` (M) + `CategoryProductCard.tsx` (M)
+ 判定 = 三项全部「合规 (a)」, 但存在三个待裁疑点:
+  N1 books 品类页既写「1 本起訂」覆盖 5 SKU, 而本名单缺 `saddle-stitch-booklets` (口径不一致)
+  N2 品类页卡片 `anchor.sub` (含 hardcover「滿$500包郵」) 被 MOQ 行取代 (要并存需拍板)
+  N3 `page.tsx` 混 3 条 lane (1-B / weekly-meta 内链 / 线上 404 修复) ⇒ 提交粒度待定
+ 事实纠正: 该新档**并非零引用** (被两档第 1 个 hunk import: page.tsx:49 / CategoryProductCard.tsx:12);
+ 「零引用」是 git grep 只搜已跟踪内容造成的假象 ⇒ 三档必须同批提交, 单独提交新档才会成真孤儿

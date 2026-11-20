@@ -1,0 +1,19 @@
+fix(brand): T 批第一步 T1 — blog-data 品牌口收口 24 处 (K3 批准「T1 先落」)
+
+范围: src/data/blog-data/{zh-hk,ja,en}.json (locale 键控, 机械安全面)
+规则: zh-hk「智印港 ZprintPro」/「ZprintPro 智印港」/裸「ZprintPro(作主语)」→ 智印港;
+      ja·en「智印港」/「ジープリント」→ ZprintPro
+实测: zh-hk 修 13 行 / ja 修 10 行 / en 修 1 行 = **24 行**; 守卫对 src/data/blog-data **0 red/0 orange/0 yellow**
+
+T1b (保留未动, 留待 K3 语义裁决): 一次性英文括注「智印港（ZprintPro）」×6 与英文专有名词
+  「ZprintPro Engineering Team」「ZprintPro 15-Year Offset Press Engineer」——
+  前者是 2026-06-17 实体消歧刻意保留的英文别名用法, 是否算「双品牌同现」属品牌策略判断;
+  这些点保持原样并计入品牌基线 (存量白名单, 计数可见可随时清)。
+
+千问要求的三件配套 (T 批通用):
+  ① 冻结声明: docs/2026-09-13-title-batch-T-freeze.md (T 批窗口内其他批次禁碰 title 字段)
+  ② 回滚映射: .hermes/rollback-T1-<ts>.json (24 点 before/after) + .hermes/backup-title-T1-<ts>/
+  ③ 探针清单: .hermes/probe-T1-<ts>.json (22 个受影响 blog URL, 部署后逐点验)
+
+门禁: 品牌基线重录 83 → **77** (只许递减); 守卫对改动面 0 命中
+脚本: scripts/fix-title-batch-T1.mjs (§12 三件套: 计数断言 + 结果形状断言 + 备份)

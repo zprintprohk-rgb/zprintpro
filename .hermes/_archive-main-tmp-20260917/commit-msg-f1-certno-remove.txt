@@ -1,0 +1,28 @@
+fix(content): F1-batch-3 立即执行 - About 页 L67-69 + en/ja certNo + validUntil 全撤 (K3 8/24 18:42 拍板 "不要放证书号")
+
+K3 8/24 18:42 拍板反转: certNo 字段全撤 (3 locale 同步), validUntil 同步撤, 真实证书号不展示在网站, 客服查询可联系。
+
+之前状态 (commit 734824b):
+- zh-hk L68-69: certNo='—' + validUntil='—' (已撤)
+- en L202-203: certNo='01 100 150 1234' + 'FSC-C123456' + validUntil='2027-08-15' + '2028-04-20' (原文, 未改)
+- ja L336-337: certNo='01 100 150 1234' + 'FSC-C123456' + validUntil='2027-08-15' + '2028-04-20' (原文, 未改)
+
+修复 (3 locale 同改):
+- zh-hk L68-70:
+  - L68: certNo='—' → certNo='詳詢客服' + validUntil='—' (K3 8/19 拍板, 證書詳詢客服) + scope 改
+  - L69: certNo='—' → certNo='詳詢客服' + validUntil='—' (K3 8/19 拍板, 證書詳詢客服) + scope 改
+  - L70 SGS: certNo='SGS-CNP-2024-001' → certNo='詳詢客服' + validUntil='2027-12-31' → validUntil='—' (K3 8/19 拍板, 證書詳詢客服) + scope 改
+- en L202-204:
+  - L202: certNo='01 100 150 1234' → certNo='Contact for details' + validUntil='2027-08-15' → validUntil='—' + scope 改
+  - L203: certNo='FSC-C123456' → certNo='Contact for details' + validUntil='2028-04-20' → validUntil='—' + scope 改
+  - L204: certNo='SGS-CNP-2024-001' → certNo='Contact for details' + validUntil='2027-12-31' → validUntil='—' + scope 改
+- ja L336-338:
+  - L336: certNo='01 100 150 1234' → certNo='詳細はお問い合わせください' + validUntil='2027-08-15' → validUntil='—' + scope 改
+  - L337: certNo='FSC-C123456' → certNo='詳細はお問い合わせください' + validUntil='2028-04-20' → validUntil='—' + scope 改
+  - L338: certNo='SGS-CNP-2024-001' → certNo='詳細はお問い合わせください' + validUntil='2027-12-31' → validUntil='—' + scope 改
+
+SOP-10 第 4 款新增 (K3 8/24 18:42 拍板): certNo + validUntil 等"可查询字段"全撤, 改"詳詢客服" / "Contact for details" / "詳細はお問い合わせください", 1 改 1 验证, 不展示可造假的具体编号 + 有效期。
+
+业务 0 改动红线 (K3 8/22 17:58 F0): 不删 SKU/文案/长文本字段, 改的是 certNo + validUntil 字段值 (从具体编号 + 有效期改为 "詳詢客服" + "—"), 1 改 1 验证, 改字段值不改结构。
+
+3 闸门: encoding 0 / tsc N/A / diff 1 文件 (about/page.tsx, 3 locale 同步改 3 个 block)

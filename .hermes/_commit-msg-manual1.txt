@@ -1,0 +1,66 @@
+feat(seo): 人工改写批 manual-1 落盘 — 15 槽 (census OK 235→250, FILL 44→30)
+
+来源: K3 2026-09-19 决策「21 条人工改写, 从高展示 SKU 开始, 逐条过四道闸门, 独立 commit」
+
+## 一、本批性质
+生成器「替代池 + 删除」**双无解**的槽位, 由人工按 **GSC 展示量降序**逐条改写。
+- 不经生成器; 但**同样过校验 + 落盘断言** (脚本内 equiv/品牌/语言校验 + 变化行数断言)
+- 每条数字均取自 `products.ts` (minQuantity / basePrice, 落盘前逐条回源头核对)
+- 主词一律保留原文首段 (churn 红线); 品牌末尾一次; 全部落在 **50-57**
+
+## 二、落盘 15 槽 (展示量降序前 15)
+| SKU / locale | 展示 | 当量 | 新标题 |
+|---|---|---|---|
+| electronics-packaging-box/zh-hk | 253 | 46→**55** | 電子產品包裝盒印刷 \| EVA 內襯 \| 200個起 HK$8起 \| 智印港 |
+| exercise-books/zh-hk | 159 | 40→**51** | 作業簿印刷 \| 四色印刷 膠裝 \| 10本起 HK$4起 \| 智印港 |
+| waterproof-stickers/ja | 138 | 48→**57** | 防水ステッカー \| PVC ダイカット \| 10枚〜¥41〜 \| ZprintPro |
+| folded-leaflets/zh-hk | 113 | 36→**52** | 摺頁單張 \| A4/A5 雙面四色 \| 10張起 HK$0.7起 \| 智印港 |
+| kraft-paper-packaging-box/zh-hk | 67 | 43→**53** | 牛皮紙包裝印刷盒 \| 環保材質 \| 300個起 HK$5起 \| 智印港 |
+| catalog-printing/en | **307** | 61→**52** | Catalog Printing \| 10 MOQ \| Free US Ship \| ZprintPro |
+| school-flyers/zh-hk | 41 | 36→**54** | 學校單張 \| 雙面四色 80g書紙 \| 10張起 HK$0.2起 \| 智印港 |
+| spiral-notebooks/zh-hk | 27 | 40→**55** | 線圈筆記本 \| A4/A5 膠裝/騎馬釘 \| 10本起 HK$8起 \| 智印港 |
+| thick-paper-flyers/zh-hk | 26 | 36→**53** | 厚身單張 \| A4/A5 雙面四色 \| 10張起 HK$0.45起 \| 智印港 |
+| drink-menus/zh-hk | 13 | 38→**54** | 餐廳酒水牌 \| 防水 覆膜 圓角 \| 100本起 HK$12起 \| 智印港 |
+| pearl-envelopes/ja | 22 | 46→**53** | パール封筒 \| 両面印刷 凹凸 \| 100枚〜¥64〜 \| ZprintPro |
+| fluorescent-stickers/ja | 21 | 48→**57** | 蛍光ステッカー \| PVC ダイカット \| 10枚〜¥60〜 \| ZprintPro |
+| a4-flyers/ja | 16 | 46→**53** | A4 チラシ \| 両面フルカラー \| 10枚〜 ¥70〜 \| ZprintPro |
+| textbooks/ja | 18 | 43→**55** | 教科書 \| 中綴じ/無線綴じ \| 100冊〜 ¥1,288〜 \| ZprintPro |
+| white-card-bags/ja | 12 | 44→**52** | 白カード紙袋 \| エコ素材 \| 100枚〜 ¥360〜 \| ZprintPro |
+
+census: OK 235→**250** / FILL 44→**30** / TRIM 21→**20** · 落盘断言 **15/15** ✅
+
+## 三、★ 本批修正了 7 条**既有 MOQ 漂移** (人工改写顺带纠错)
+原标题声称的起印量与 `products.ts` 真值冲突, 已按真值改写:
+| SKU | 原声称 | 真值 |
+|---|---|---|
+| folded-leaflets/zh-hk | 100張起 | **10** |
+| school-flyers/zh-hk | 100張起 | **10** |
+| thick-paper-flyers/zh-hk | 100張起 | **10** |
+| exercise-books/zh-hk | 50本起 | **10** |
+| spiral-notebooks/zh-hk | 50本起 | **10** |
+| drink-menus/zh-hk | 50本起 | **100** |
+
+## 四、★ 过程中发现并处理的口径问题 (需 K3 确认)
+**「58 是否合规」在站内有分歧**:
+- `scripts/guards/title-equiv.js` (K3 9/13 终裁): `TITLE_MAX = 58` ⇒ **58 视为达标**
+- K3 近轮表述: 「50≤当量≤**57**，**≥58 硬拦**」⇒ **58 应拦**
+本批 3 条初稿恰好落在 **58** (`exercise-books` / `waterproof-stickers-ja` / `fluorescent-stickers-ja`),
+已**主动收到 ≤57** (58→51 / 57 / 57), 未把临界值落盘。
+⇒ **待 K3 一句话定**: 58 是「达标上限」还是「硬拦线」? 若后者, `title-equiv.js` 的
+`TITLE_MAX` 应改为 57, 否则门禁与口径长期不一致 (本批按更严的一侧执行)。
+
+## 五、纪律
+- 人工批**不与自动化批次混合** (独立 commit, 验证窗归因清晰)
+- 数字全部回 `products.ts` 核对; 无一例编造
+- `catalog-printing/en` 为 TRIM: 以 `10 MOQ`(真值) 替 `Saddle-Stitched`, 保留线上既有短钩 `Free US Ship`
+
+## 数据来源
+- src/data/products.ts (minQuantity / basePrice / features → 每条的工艺修饰)
+- .hermes/reports/title-input-bank-2026-09-19.json (银行值, 源自 products.ts)
+- scripts/guards/title-equiv.js (当量口径)
+校准日期: 2026-09-20 02:05
+
+## 验收
+apply --batch=manual-1 → 15 槽, 校验全过 (全部 50-57), 断言 15/15 ✅
+census → OK 250 / FILL 30 / TRIM 20 ✅
+验证窗: **本批 15 槽进入 7-10 天只读**

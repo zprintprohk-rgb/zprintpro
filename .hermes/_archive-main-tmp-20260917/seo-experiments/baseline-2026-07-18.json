@@ -1,0 +1,362 @@
+{
+  "_meta": {
+    "purpose": "2026-07-18 四连击 (报价引擎P0/价格表/CTR标题/内容加深+内链) 的 GSC 效果追踪基线",
+    "baselineDate": "2026-07-18",
+    "gscExport": "F:/zprintpro.com-Performance-on-Search-2026-07-17 (近28天)",
+    "experiments": {
+      "exp1_ctr_titles": "7类目×3 locale title/description 重写 (c5d448f) — 预期 CTR 0.5%→2-3%",
+      "exp2_content_depth": "paper-bags/menus/stickers/packaging buyingGuide 加深+48内链 (0266301) — 预期排名 18-25→前10",
+      "exp3_price_tables": "5类目真实价格表+QuoteCalculator (d3a51b6) — 转化侧, GSC 不可见"
+    },
+    "compareAt": "2026-08-01",
+    "metrics": [
+      "impressions",
+      "ctr",
+      "position",
+      "clicks"
+    ]
+  },
+  "queryGroups": {
+    "paper_bags_zh": [
+      {
+        "query": "紙袋印刷",
+        "clicks": 0,
+        "impressions": 261,
+        "ctr": 0.0,
+        "position": 19.68
+      },
+      {
+        "query": "紙袋訂製",
+        "clicks": 0,
+        "impressions": 223,
+        "ctr": 0.0,
+        "position": 54.49
+      },
+      {
+        "query": "訂做紙袋",
+        "clicks": 0,
+        "impressions": 136,
+        "ctr": 0.0,
+        "position": 41.92
+      },
+      {
+        "query": "印刷紙袋",
+        "clicks": 0,
+        "impressions": 125,
+        "ctr": 0.0,
+        "position": 29.12
+      },
+      {
+        "query": "印紙袋",
+        "clicks": 0,
+        "impressions": 116,
+        "ctr": 0.0,
+        "position": 27.08
+      },
+      {
+        "query": "紙袋訂造",
+        "clicks": 0,
+        "impressions": 104,
+        "ctr": 0.0,
+        "position": 36.6
+      },
+      {
+        "query": "紙袋訂做",
+        "clicks": 0,
+        "impressions": 92,
+        "ctr": 0.0,
+        "position": 48.07
+      },
+      {
+        "query": "紙袋印製",
+        "clicks": 0,
+        "impressions": 95,
+        "ctr": 0.0,
+        "position": 32.43
+      },
+      {
+        "query": "紙袋批發",
+        "clicks": 0,
+        "impressions": 52,
+        "ctr": 0.0,
+        "position": 55.12
+      }
+    ],
+    "menus_zh": [
+      {
+        "query": "餐牌印刷",
+        "clicks": 0,
+        "impressions": 149,
+        "ctr": 0.0,
+        "position": 18.7
+      }
+    ],
+    "stickers_zh": [
+      {
+        "query": "貼紙印刷",
+        "clicks": 0,
+        "impressions": 254,
+        "ctr": 0.0,
+        "position": 43.13
+      },
+      {
+        "query": "貼紙訂製",
+        "clicks": 0,
+        "impressions": 110,
+        "ctr": 0.0,
+        "position": 57.47
+      },
+      {
+        "query": "可移貼紙",
+        "clicks": 0,
+        "impressions": 85,
+        "ctr": 0.0,
+        "position": 16.52
+      },
+      {
+        "query": "透明貼",
+        "clicks": 0,
+        "impressions": 54,
+        "ctr": 0.0,
+        "position": 43.8
+      },
+      {
+        "query": "戶外貼紙",
+        "clicks": 0,
+        "impressions": 54,
+        "ctr": 0.0,
+        "position": 37.0
+      }
+    ],
+    "packaging_zh": [
+      {
+        "query": "包裝盒訂製",
+        "clicks": 0,
+        "impressions": 185,
+        "ctr": 0.0,
+        "position": 43.54
+      },
+      {
+        "query": "包裝盒印刷",
+        "clicks": 0,
+        "impressions": 157,
+        "ctr": 0.0,
+        "position": 50.62
+      },
+      {
+        "query": "紙盒訂製",
+        "clicks": 0,
+        "impressions": 122,
+        "ctr": 0.0,
+        "position": 58.65
+      },
+      {
+        "query": "食品包裝訂製",
+        "clicks": 0,
+        "impressions": 152,
+        "ctr": 0.0,
+        "position": 21.59
+      },
+      {
+        "query": "食品包裝印刷",
+        "clicks": 0,
+        "impressions": 303,
+        "ctr": 0.0,
+        "position": 38.59
+      },
+      {
+        "query": "包裝印刷",
+        "clicks": 0,
+        "impressions": 50,
+        "ctr": 0.0,
+        "position": 52.86
+      },
+      {
+        "query": "包裝食品 裡印",
+        "clicks": 0,
+        "impressions": 52,
+        "ctr": 0.0,
+        "position": 32.31
+      }
+    ],
+    "posters_zh": [
+      {
+        "query": "海報印刷",
+        "clicks": 0,
+        "impressions": 261,
+        "ctr": 0.0,
+        "position": 31.43
+      },
+      {
+        "query": "印海報",
+        "clicks": 0,
+        "impressions": 244,
+        "ctr": 0.0,
+        "position": 36.16
+      },
+      {
+        "query": "海報與印刷",
+        "clicks": 0,
+        "impressions": 235,
+        "ctr": 0.0,
+        "position": 54.26
+      },
+      {
+        "query": "poster 印刷",
+        "clicks": 0,
+        "impressions": 122,
+        "ctr": 0.0,
+        "position": 31.24
+      },
+      {
+        "query": "印海報一張",
+        "clicks": 0,
+        "impressions": 89,
+        "ctr": 0.0,
+        "position": 48.24
+      },
+      {
+        "query": "poster print a2",
+        "clicks": 0,
+        "impressions": 86,
+        "ctr": 0.0,
+        "position": 59.72
+      }
+    ],
+    "flyers_zh": [
+      {
+        "query": "宣傳單張",
+        "clicks": 0,
+        "impressions": 299,
+        "ctr": 0.0,
+        "position": 40.29
+      },
+      {
+        "query": "宣傳單張印刷",
+        "clicks": 1,
+        "impressions": 291,
+        "ctr": 0.34,
+        "position": 38.71
+      }
+    ],
+    "red_packets_zh": [
+      {
+        "query": "利是封印刷",
+        "clicks": 0,
+        "impressions": 122,
+        "ctr": 0.0,
+        "position": 31.94
+      }
+    ],
+    "en_hooks": [
+      {
+        "query": "a4 flyer printing",
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": 100.0,
+        "position": 3.0
+      },
+      {
+        "query": "paper bag printing",
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": 100.0,
+        "position": 4.0
+      },
+      {
+        "query": "print flyers",
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": 100.0,
+        "position": 5.0
+      },
+      {
+        "query": "sticker printing hong kong",
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": 100.0,
+        "position": 8.0
+      },
+      {
+        "query": "a2 size printing near me",
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": 100.0,
+        "position": 12.0
+      }
+    ],
+    "ja_hooks": [
+      {
+        "query": "蛍光ステッカー",
+        "clicks": 1,
+        "impressions": 3,
+        "ctr": 33.33,
+        "position": 40.0
+      },
+      {
+        "query": "オリジナル 箱 安い",
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": 50.0,
+        "position": 8.0
+      },
+      {
+        "query": "教科書 印刷会社",
+        "clicks": 0,
+        "impressions": 59,
+        "ctr": 0.0,
+        "position": 62.64
+      }
+    ]
+  },
+  "pages": {
+    "/zh-hk/category/paper-bags/": {
+      "clicks": 1,
+      "impressions": 835,
+      "ctr": 0.12,
+      "position": 39.22
+    },
+    "/zh-hk/category/menus/": {
+      "clicks": 0,
+      "impressions": 160,
+      "ctr": 0.0,
+      "position": 18.23
+    },
+    "/zh-hk/category/stickers/": {
+      "clicks": 1,
+      "impressions": 344,
+      "ctr": 0.29,
+      "position": 44.31
+    },
+    "/zh-hk/category/packaging/": {
+      "clicks": 0,
+      "impressions": 277,
+      "ctr": 0.0,
+      "position": 42.72
+    },
+    "/zh-hk/product/a2-posters/": {
+      "clicks": 5,
+      "impressions": 912,
+      "ctr": 0.55,
+      "position": 32.65
+    },
+    "/zh-hk/product/same-day-flyers/": {
+      "clicks": 7,
+      "impressions": 317,
+      "ctr": 2.21,
+      "position": 41.25
+    },
+    "/en/category/paper-bags/": {
+      "clicks": 2,
+      "impressions": 50,
+      "ctr": 4.0,
+      "position": 41.6
+    },
+    "/ja/category/stickers/": {
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0.0,
+      "position": 13.5
+    }
+  }
+}

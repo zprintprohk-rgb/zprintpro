@@ -1,0 +1,26 @@
+P0-4/P0-5/P0-6 整改汇总报告 (2026-08-17 01:50 K3 拍板)
+================================================================================
+
+总候选评分: 21 张
+
+PASS / REJECT / MARGINAL 分布:
+  REJECT: 20
+  PASS: 1
+
+Avg 分数: min=5.47 max=8.41 mean=7.18
+
+Best per SKU × View:
+  BC-001 angle     : best avg=7.12 v5=10 REJECT
+    zprintpro-greeting-cards-premium-greeting-cards-en-multi-ang
+  BC-001 hero      : best avg=8.41 v5=10 PASS
+    zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand
+  BC-001 spread    : best avg=7.26 v5=10 REJECT
+    zprintpro-greeting-cards-premium-greeting-cards-en-spread_ca
+  BC-001 variety   : best avg=7.17 v5=10 REJECT
+    zprintpro-greeting-cards-premium-greeting-cards-en-variety_c
+  ST-001 angle     : best avg=7.78 v5=10 REJECT
+    zprintpro-stickers-waterproof-stickers-en-multi-angle_cand3.
+  ST-001 hero      : best avg=7.58 v5=10 REJECT
+    zprintpro-stickers-waterproof-stickers-en-hero_cand3.jpg
+  ST-001 variety   : best avg=7.93 v5=10 REJECT
+    zprintpro-stickers-waterproof-stickers-en-variety_cand2.jpg

@@ -1,0 +1,13 @@
+﻿[WARN] src/data/products.ts: find '�����̵�䛑B��ԃ' not found (skip)
+[WARN] src/data/price-tables/calibration-status-2026-07-20.json: find '�� user WebBridge ��¼̬' not found (skip)
+[WARN] src/data/price-tables/calibration-status-2026-07-20.json: count mismatch (expected 3, actual 4) for 'user WebBridge intuan �ѵ�¼̬'
+[OK] src/data/price-tables/calibration-status-2026-07-20.json: replaced 4x 'user WebBridge intuan �ѵ�¼̬' -> 'user WebBridge intuan �ѵ���'
+[WARN] src/data/price-tables/calibration-status-2026-07-20.json: find 'intuan.com �ѵ�¼̬' not found (skip)
+[WARN] src/data/price-tables/packaging.json: find 'intuan.com ��¼̬��ʵѯ��' not found (skip)
+[WARN] src/data/price-tables/paper-bags.json: find 'intuan.com ��¼̬��ʵѯ��' not found (skip)
+[WARN] src/data/price-tables/stickers.json: find 'intuan.com ��¼̬��ʵѯ��' not found (skip)
+[WARN] src/data/price-tables/intuan-real-quotes-2026-07-18.json: find 'intuan.com ��¼̬��ʵѯ��' not found (skip)
+[WARN] src/data/price-tables/README.md: find '�� user WebBridge ��¼̬' not found (skip)
+
+=== Total replacements: 4 ===
+[OK] All replacements OK, JSON validated (where applicable).

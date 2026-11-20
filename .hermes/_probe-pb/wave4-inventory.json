@@ -1,0 +1,858 @@
+[
+  {
+    "char": "红",
+    "n": 31,
+    "words": {
+      "红包印刷": 8,
+      "红包": 14,
+      "結婚式红包": 3,
+      "红包選": 1,
+      "企業红包": 2,
+      "各红包": 1,
+      "年旧正月红包": 2
+    },
+    "files": {
+      "src/data/category-seo-content.ts": 31
+    },
+    "lines": [
+      "data/category-seo-content.ts:2160",
+      "data/category-seo-content.ts:2162"
+    ]
+  },
+  {
+    "char": "卖",
+    "n": 13,
+    "words": {
+      "专卖店様": 2,
+      "飲食外卖": 10,
+      "卖点": 1
+    },
+    "files": {
+      "src/app/[locale]/blog/[slug]/page.tsx": 1,
+      "src/data/blog-data/ja.json": 10,
+      "src/data/blog-posts.ts": 1,
+      "src/data/category-seo-content.ts": 1
+    },
+    "lines": [
+      "app/[locale]/blog/[slug]/page.tsx:611",
+      "data/blog-data/ja.json:112"
+    ]
+  },
+  {
+    "char": "边",
+    "n": 11,
+    "words": {
+      "周边": 1,
+      "周边市場": 8,
+      "汽車周边": 1,
+      "自動車周边": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 11
+    },
+    "lines": [
+      "data/blog-data/ja.json:236",
+      "data/blog-data/ja.json:239"
+    ]
+  },
+  {
+    "char": "销",
+    "n": 6,
+    "words": {
+      "季節促销前在庫": 1,
+      "季節促销": 1,
+      "短期促销": 2,
+      "促销連動": 1,
+      "促销": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 6
+    },
+    "lines": [
+      "data/blog-data/ja.json:104",
+      "data/blog-data/ja.json:150"
+    ]
+  },
+  {
+    "char": "选",
+    "n": 6,
+    "words": {
+      "缶首选": 1,
+      "予算首选": 4,
+      "选购": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 5,
+      "src/data/category-seo-content.ts": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:311",
+      "data/blog-data/ja.json:412"
+    ]
+  },
+  {
+    "char": "层",
+    "n": 6,
+    "words": {
+      "层": 6
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 6
+    },
+    "lines": [
+      "data/blog-data/ja.json:581",
+      "data/blog-data/ja.json:589"
+    ]
+  },
+  {
+    "char": "胶",
+    "n": 5,
+    "words": {
+      "無線胶装": 4,
+      "无线胶装": 1
+    },
+    "files": {
+      "src/app/[locale]/blog/[slug]/page.tsx": 1,
+      "src/data/blog-data/ja.json": 3,
+      "src/data/blog-posts.ts": 1
+    },
+    "lines": [
+      "app/[locale]/blog/[slug]/page.tsx:648",
+      "data/blog-data/ja.json:366"
+    ]
+  },
+  {
+    "char": "艺",
+    "n": 5,
+    "words": {
+      "工艺": 2,
+      "印刷工艺": 3
+    },
+    "files": {
+      "src/components/ProductLongDescription.tsx": 1,
+      "src/data/blog-data/ja.json": 4
+    },
+    "lines": [
+      "components/ProductLongDescription.tsx:67",
+      "data/blog-data/ja.json:72"
+    ]
+  },
+  {
+    "char": "标",
+    "n": 5,
+    "words": {
+      "従業員标配": 1,
+      "标识": 1,
+      "婚礼标配": 1,
+      "标准": 1,
+      "期間限定标识": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 4,
+      "src/data/buying-guides.ts": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:32",
+      "data/blog-data/ja.json:88"
+    ]
+  },
+  {
+    "char": "积",
+    "n": 5,
+    "words": {
+      "多年累积特急": 5
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 5
+    },
+    "lines": [
+      "data/blog-data/ja.json:618",
+      "data/blog-data/ja.json:621"
+    ]
+  },
+  {
+    "char": "为",
+    "n": 4,
+    "words": {
+      "公式見積書为准": 4
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 4
+    },
+    "lines": [
+      "data/blog-data/ja.json:150",
+      "data/blog-data/ja.json:150"
+    ]
+  },
+  {
+    "char": "质",
+    "n": 4,
+    "words": {
+      "质感": 4
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 4
+    },
+    "lines": [
+      "data/blog-data/ja.json:532",
+      "data/blog-data/ja.json:532"
+    ]
+  },
+  {
+    "char": "运",
+    "n": 3,
+    "words": {
+      "顺丰速运": 1,
+      "唐运提": 2
+    },
+    "files": {
+      "src/app/[locale]/about/page.tsx": 1,
+      "src/app/[locale]/contact/page.tsx": 1,
+      "src/app/[locale]/payment-methods/page.tsx": 1
+    },
+    "lines": [
+      "app/[locale]/about/page.tsx:414",
+      "app/[locale]/contact/page.tsx:178"
+    ]
+  },
+  {
+    "char": "婴",
+    "n": 3,
+    "words": {
+      "母婴": 1,
+      "母婴食品": 1,
+      "母婴製品": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 2,
+      "src/data/pillar-content.ts": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:311",
+      "data/blog-data/ja.json:589"
+    ]
+  },
+  {
+    "char": "节",
+    "n": 3,
+    "words": {
+      "节日": 3
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 2,
+      "src/lib/seo.ts": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:412",
+      "data/blog-data/ja.json:412"
+    ]
+  },
+  {
+    "char": "哑",
+    "n": 3,
+    "words": {
+      "哑面": 2,
+      "年後表面哑色": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 3
+    },
+    "lines": [
+      "data/blog-data/ja.json:512",
+      "data/blog-data/ja.json:512"
+    ]
+  },
+  {
+    "char": "专",
+    "n": 2,
+    "words": {
+      "专卖店様": 2
+    },
+    "files": {
+      "src/app/[locale]/blog/[slug]/page.tsx": 1,
+      "src/data/blog-posts.ts": 1
+    },
+    "lines": [
+      "app/[locale]/blog/[slug]/page.tsx:611",
+      "data/blog-posts.ts:1108"
+    ]
+  },
+  {
+    "char": "骑",
+    "n": 2,
+    "words": {
+      "骑马钉": 2
+    },
+    "files": {
+      "src/app/[locale]/blog/[slug]/page.tsx": 1,
+      "src/data/blog-posts.ts": 1
+    },
+    "lines": [
+      "app/[locale]/blog/[slug]/page.tsx:648",
+      "data/blog-posts.ts:1193"
+    ]
+  },
+  {
+    "char": "马",
+    "n": 2,
+    "words": {
+      "骑马钉": 2
+    },
+    "files": {
+      "src/app/[locale]/blog/[slug]/page.tsx": 1,
+      "src/data/blog-posts.ts": 1
+    },
+    "lines": [
+      "app/[locale]/blog/[slug]/page.tsx:648",
+      "data/blog-posts.ts:1193"
+    ]
+  },
+  {
+    "char": "钉",
+    "n": 2,
+    "words": {
+      "骑马钉": 2
+    },
+    "files": {
+      "src/app/[locale]/blog/[slug]/page.tsx": 1,
+      "src/data/blog-posts.ts": 1
+    },
+    "lines": [
+      "app/[locale]/blog/[slug]/page.tsx:648",
+      "data/blog-posts.ts:1193"
+    ]
+  },
+  {
+    "char": "识",
+    "n": 2,
+    "words": {
+      "标识": 1,
+      "期間限定标识": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1,
+      "src/data/buying-guides.ts": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:88",
+      "data/buying-guides.ts:196"
+    ]
+  },
+  {
+    "char": "线",
+    "n": 2,
+    "words": {
+      "成長曲线": 1,
+      "无线胶装": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 2
+    },
+    "lines": [
+      "data/blog-data/ja.json:112",
+      "data/blog-data/ja.json:366"
+    ]
+  },
+  {
+    "char": "户",
+    "n": 2,
+    "words": {
+      "客户提供": 2
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 2
+    },
+    "lines": [
+      "data/blog-data/ja.json:327",
+      "data/blog-data/ja.json:573"
+    ]
+  },
+  {
+    "char": "饰",
+    "n": 2,
+    "words": {
+      "轻奢饰品": 1,
+      "奢饰品": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 2
+    },
+    "lines": [
+      "data/blog-data/ja.json:412",
+      "data/blog-data/ja.json:428"
+    ]
+  },
+  {
+    "char": "众",
+    "n": 2,
+    "words": {
+      "大众": 2
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 2
+    },
+    "lines": [
+      "data/blog-data/ja.json:532",
+      "data/blog-data/ja.json:532"
+    ]
+  },
+  {
+    "char": "复",
+    "n": 2,
+    "words": {
+      "复古质感": 1,
+      "复古": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 2
+    },
+    "lines": [
+      "data/blog-data/ja.json:532",
+      "data/blog-data/ja.json:573"
+    ]
+  },
+  {
+    "char": "认",
+    "n": 2,
+    "words": {
+      "认证体系": 2
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 2
+    },
+    "lines": [
+      "data/blog-data/ja.json:713",
+      "data/blog-data/ja.json:713"
+    ]
+  },
+  {
+    "char": "开",
+    "n": 2,
+    "words": {
+      "开学": 2
+    },
+    "files": {
+      "src/data/category-seo-content.ts": 2
+    },
+    "lines": [
+      "data/category-seo-content.ts:3277",
+      "data/category-seo-content.ts:3277"
+    ]
+  },
+  {
+    "char": "聪",
+    "n": 1,
+    "words": {
+      "聪明": 1
+    },
+    "files": {
+      "src/app/[locale]/about/page.tsx": 1
+    },
+    "lines": [
+      "app/[locale]/about/page.tsx:350"
+    ]
+  },
+  {
+    "char": "顺",
+    "n": 1,
+    "words": {
+      "顺丰速运": 1
+    },
+    "files": {
+      "src/app/[locale]/about/page.tsx": 1
+    },
+    "lines": [
+      "app/[locale]/about/page.tsx:414"
+    ]
+  },
+  {
+    "char": "预",
+    "n": 1,
+    "words": {
+      "拡張用预留": 1
+    },
+    "files": {
+      "src/app/[locale]/about/page.tsx": 1
+    },
+    "lines": [
+      "app/[locale]/about/page.tsx:438"
+    ]
+  },
+  {
+    "char": "仪",
+    "n": 1,
+    "words": {
+      "仪式感": 1
+    },
+    "files": {
+      "src/components/layout/Header.tsx": 1
+    },
+    "lines": [
+      "components/layout/Header.tsx:225"
+    ]
+  },
+  {
+    "char": "庆",
+    "n": 1,
+    "words": {
+      "国庆節": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:134"
+    ]
+  },
+  {
+    "char": "爱",
+    "n": 1,
+    "words": {
+      "最爱": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:215"
+    ]
+  },
+  {
+    "char": "经",
+    "n": 1,
+    "words": {
+      "大经典": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:231"
+    ]
+  },
+  {
+    "char": "传",
+    "n": 1,
+    "words": {
+      "二次传播": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:239"
+    ]
+  },
+  {
+    "char": "赞",
+    "n": 1,
+    "words": {
+      "赞助": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:279"
+    ]
+  },
+  {
+    "char": "无",
+    "n": 1,
+    "words": {
+      "无线胶装": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:366"
+    ]
+  },
+  {
+    "char": "极",
+    "n": 1,
+    "words": {
+      "剛性极佳": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:412"
+    ]
+  },
+  {
+    "char": "轻",
+    "n": 1,
+    "words": {
+      "轻奢饰品": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:412"
+    ]
+  },
+  {
+    "char": "泽",
+    "n": 1,
+    "words": {
+      "銀色金属光泽": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:412"
+    ]
+  },
+  {
+    "char": "护",
+    "n": 1,
+    "words": {
+      "男士护理": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:412"
+    ]
+  },
+  {
+    "char": "时",
+    "n": 1,
+    "words": {
+      "版凑时间": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:428"
+    ]
+  },
+  {
+    "char": "间",
+    "n": 1,
+    "words": {
+      "版凑时间": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:428"
+    ]
+  },
+  {
+    "char": "华",
+    "n": 1,
+    "words": {
+      "奢华感": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:501"
+    ]
+  },
+  {
+    "char": "丧",
+    "n": 1,
+    "words": {
+      "触感丧失": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:501"
+    ]
+  },
+  {
+    "char": "图",
+    "n": 1,
+    "words": {
+      "图案詳細立体": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:532"
+    ]
+  },
+  {
+    "char": "对",
+    "n": 1,
+    "words": {
+      "地对比": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:532"
+    ]
+  },
+  {
+    "char": "适",
+    "n": 1,
+    "words": {
+      "印刷适合": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:532"
+    ]
+  },
+  {
+    "char": "临",
+    "n": 1,
+    "words": {
+      "罰金面临": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:597"
+    ]
+  },
+  {
+    "char": "类",
+    "n": 1,
+    "words": {
+      "印刷品类": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:645"
+    ]
+  },
+  {
+    "char": "关",
+    "n": 1,
+    "words": {
+      "至关重要": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:645"
+    ]
+  },
+  {
+    "char": "仅",
+    "n": 1,
+    "words": {
+      "本文価格仅供参考": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:692"
+    ]
+  },
+  {
+    "char": "园",
+    "n": 1,
+    "words": {
+      "校园教育印刷": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:704"
+    ]
+  },
+  {
+    "char": "纹",
+    "n": 1,
+    "words": {
+      "纹理": 1
+    },
+    "files": {
+      "src/data/blog-data/ja.json": 1
+    },
+    "lines": [
+      "data/blog-data/ja.json:721"
+    ]
+  },
+  {
+    "char": "赢",
+    "n": 1,
+    "words": {
+      "双赢": 1
+    },
+    "files": {
+      "src/data/blog-posts.ts": 1
+    },
+    "lines": [
+      "data/blog-posts.ts:355"
+    ]
+  },
+  {
+    "char": "饮",
+    "n": 1,
+    "words": {
+      "餐饮店内展示": 1
+    },
+    "files": {
+      "src/data/buying-guides.ts": 1
+    },
+    "lines": [
+      "data/buying-guides.ts:557"
+    ]
+  },
+  {
+    "char": "镂",
+    "n": 1,
+    "words": {
+      "镂空": 1
+    },
+    "files": {
+      "src/data/category-seo-content.ts": 1
+    },
+    "lines": [
+      "data/category-seo-content.ts:2893"
+    ]
+  },
+  {
+    "char": "购",
+    "n": 1,
+    "words": {
+      "选购": 1
+    },
+    "files": {
+      "src/data/category-seo-content.ts": 1
+    },
+    "lines": [
+      "data/category-seo-content.ts:4762"
+    ]
+  },
+  {
+    "char": "终",
+    "n": 1,
+    "words": {
+      "最终検査": 1
+    },
+    "files": {
+      "src/lib/seo/schema-extensions.ts": 1
+    },
+    "lines": [
+      "lib/seo/schema-extensions.ts:246"
+    ]
+  }
+]

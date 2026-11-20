@@ -1,0 +1,65 @@
+B 22 词清单 1:1 拼对 (8/5 25 词 - 3 金矿已落 = 22 词剩余)
+A. 19 词本期 6 slug 改写 (已 commit 5d45069, ahead 1 攒批待 push)
+#	词	imps	pos	slug	locale	来源
+1	貼紙印刷	32	41.94	stickers	zh-hk + en (USA)	8/5 25 #1
+2	貼紙	14	58.21	stickers	zh-hk	8/5 25 #13
+3	透明貼	13	45.31	stickers	zh-hk	8/5 25 #21
+4	small quantity label printing	13	78.92	stickers	en (USA)	8/5 25 #16
+5	宣傳單張	28	39.93	flyers	zh-hk	8/5 25 #4
+6	宣傳單張印刷	25	35.32	flyers	zh-hk	8/5 25 #6
+7	海報印刷	23	29.35	posters	zh-hk	8/5 25 #7
+8	印海報	18	36.78	posters	zh-hk	8/5 25 #9
+9	a2 prints	15	61.0	posters	en (USA)	8/5 25 #10
+10	a1 poster size	17	76.29	posters	en (USA)	8/14 报告 #12 (新词)
+11	saddle stitch booklet	18	78.17	books	en (USA)	8/5 25 #8
+12	saddle stitch booklets	18	89.67	books	en (USA)	8/14 报告 #10 (新词)
+13	印書	15	37.07	books	zh-hk	8/5 25 #11
+14	騎馬釘書刊	14	54.71	books	zh-hk	8/5 25 #15
+15	騎馬釘	12	43.75	books	zh-hk	8/5 25 #25
+16	教材 印刷製本	13	53.31	books	zh-hk	8/5 25 #20
+17	包裝盒訂製	14	35.36	packaging	zh-hk	8/5 25 #12
+18	紙盒訂製	12	51.0	packaging	zh-hk	8/5 25 #24
+19	戶外橫額	13	60.85	banners	zh-hk	8/5 25 #19
+B. 3 词 8/18 续做 rush-printing-delivery 服务页 (K3 8/16 拍板 8/18 续, 凑齐 K3 22 词)
+#	词	imps	pos	slug	locale	来源
+20	即日印刷	28	15.25	rush-printing-delivery	zh-hk	8/5 25 #3 (K3 8/16 拍板 8/18 续)
+21	印刷 カラー cmyk	13	95.85	rush-printing-delivery	ja + en	8/5 25 #17
+22	印刷 カラー モード	12	75.58	rush-printing-delivery	ja	8/5 25 #22
+禁区跳过 (per §11 主营品类约束, 透明化)
+词	imps	pos	来源	跳过原因
+印咭片	13	35.0	8/5 25 #18	§11 主营品类禁区 (咭片)
+咭片	12	44.25	8/5 25 #23	§11 主营品类禁区 (咭片)
+禁区 2 词不在 K3 22 词剩余里 (K3 22 词 = 8/5 25 - 3 金矿已落 = 22, 8/5 25 里有咭片 2 词, K3 22 词剩余也含咗片 2 词, 我拍板禁区跳过 = 22 - 2 禁区 = 20 词可改, 但 19 词本期 + 3 词 8/18 续 - 2 词咭片禁区被 8/14 新词 2 词 (saddle stitch booklets + a1 poster size) 替换 → 19 词本期 实际含 2 个 8/14 新词)
+
+数字校验
+K3 25 词 (8/5 top 25 词) = 23 词本期 (6 slug) + 2 词禁区
+23 词本期 = 19 词 (8/5 21 词本期 - 2 词 8/18 续即 cmyk 模式) + 3 词 8/18 续 (即日+cmyk+cmyk 模式) + 1 词 8/14 新词? 不对，重新算
+正确公式：
+
+K3 25 词总 = 8/5 报告 top 25 词
+K3 22 词剩余 = 25 - 3 金矿已落 (月曆/両面/餐牌) = 22 词
+K3 22 词剩余含咭片 2 词 (per §11 禁区跳 2 词) → 实际 20 词可改
+8/14 报告 4 新词 - 2 词 8/14 报告已与 8/5 25 重 (宣傳單張印刷/印海報/紙盒訂製/貼紙) + 2 词 8/14 真新词 (saddle stitch booklets + a1 poster size) + 8/14 报告 school exercise book print × 2 词 (en 校品 book 类)
+M3 拍板 19 词本期 = 8/5 25 词 (扣 3 金矿 + 2 咭片禁区) + 8/14 真新词 2 词 - 8/18 续 3 词 (即 + cmyk + cmyk 模式) = 20 + 2 - 3 = 19 词 ✓
+3 词 8/18 续 = 即日 + 印刷 cmyk + 印刷 cmyk 模式 ✓
+22 词 = 19 词本期 + 3 词 8/18 续 = 22 ✓
+等 K3 拍板 4 点
+1.
+22 词清单核对: 上方 A (19 词) + B (3 词) 拼对是否一致？特别是 8/14 新词 (saddle stitch booklets + a1 poster size) 替换 8/5 词的位置 — K3 接受吗？
+2.
+禁区 2 词跳过: 印咭片 + 咭片 跳过 (per §11 主营品类约束, 咭片禁区) — K3 接受吗？
+3.
+实施节奏 (3 选 1):
+A: 攒批 1 push 8/18 早上 (5d45069 攒批 ahead 1 + 8/18 早上 3 词 rush 服务页, 1 push 全跑 22 词) — K3 战略深化原节奏
+B: 分 2 push (5d45069 8/18 push 19 词 + 8/19 续 push 3 词 rush 服务页) — 24h 默认通过, 留余地
+C: 攒批 1 push 8/19 早上 (5d45069 攒批 2 天 + 8/19 早上 3 词 rush 服务页, 1 push 全跑 22 词) — §0.16 8/18 grep = 0 验收日后, 留 8/18 buffer
+4.
+rush-printing-delivery 服务页 8/18 续做 (K3 8/16 拍板): 即日印刷 + 印刷 cmyk + 印刷 cmyk 模式 3 词, 改 src/app/[locale]/services/rush-printing-delivery/page.tsx metadata, 模式同 7481e51 4 金矿改法 — K3 拍板/否决
+等待 K3 1 段回答 (任一即可)
+"清单对 / 节奏 B" → 立刻 push 5d45069 + 8/19 续做 rush 服务页
+"清单对 / 节奏 A" → 立刻 push 5d45069 + 8/18 早上续做 rush 服务页
+"清单对 / 节奏 C" → 攒批到 8/19 早上 1 push
+"X 词替换" → 我重出 22 词清单
+"咭片不跳" → 我加咭片禁区反向词 (但违反 §11)
+"暂停" → 立即按 §0.19 杀 21:12 cron, 不烧 token
+21:12 cron 已装, 今晚 21:12 首跑, 跑后升级 K3。要不要我先按节奏 B (分 2 push) 默认 24h 通过, 等 K3 8/18 早回应?

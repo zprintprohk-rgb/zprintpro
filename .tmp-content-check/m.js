@@ -1,0 +1,12 @@
+﻿const fs = require('fs');
+const s = fs.readFileSync('src/data/buying-guides.ts', 'utf8');
+const i = s.indexOf("slug: 'packaging-buying-guide'");
+const seg = s.slice(i);
+const c = seg.indexOf('content: {');
+const e = seg.indexOf("'en':", c);
+const j = seg.indexOf("'ja':", e);
+const rp = seg.indexOf('relatedProducts:', j);
+const zh = seg.slice(c, e), en = seg.slice(e, j), ja = seg.slice(j, rp);
+const strip = h => h.replace(/<[^>]+>/g, '').trim();
+console.log('OLD raw:', zh.length, en.length, ja.length);
+console.log('OLD visible:', strip(zh).length, strip(en).length, strip(ja).length);

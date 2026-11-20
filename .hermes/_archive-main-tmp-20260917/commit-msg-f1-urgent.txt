@@ -1,0 +1,41 @@
+fix(content): F1 P0 紧急修复 - blog 3 locale 策略黑话清除 + About 页假证书号撤下 (K3 8/24 18:11 拍板 P0 今晚第 1 批)
+
+F1 P0 紧急修复 (K3 8/24 18:11 EOD 评估拍板, 竞品情报外泄 + 法律暴露双重风险):
+- blog 3 locale catalog-printing-china-supplier-guide 修复:
+  - 原内容泄漏: 「9/4 ranking cluster」+「4 词目标 top 10」+「4 词 順位目標 top 5」+ ja 简体字「首页」×2
+  - 修复后: 删「6. The 4-Word Cluster」整段, 替换为「7. Bulk Catalog Wholesale Real Buyer Cases & Use Scenarios」用户价值内容 (4 wholesale catalog printing cases we ship regularly at ZprintPro, with real customer profiles and order details)
+  - 删 FAQ Q4 内部「4-word cluster 9/4 ranking target: catalog book printing + china catalog printing + catalog printing china + bulk catalog printing.」整句, 替换为「factory-direct wholesale pricing benefits.」
+  - 删 zh-hk/ja 「本指南涵盖 4 詞 cluster」/「本ガイドは 4 語 cluster」导语黑话
+  - ja 简体字修正: 首页→トップページ, 实际→実際, 详细→詳細, 资源→リソース
+  - 3 locale 字符数: en 11332→13277 (+1945, 用户内容增加), zh-hk 5649→6849 (+1200), ja 5878→7262 (+1384)
+  - 验证 0 命中: cluster=0 / 9/4=0 / maintain top=0 / 目標=0 / 維持 top=0 / SOP=0 / baseline=0 / verify-deploy=0 (en+zh-hk+ja 全清)
+  - 4 連 curl PASS (3 blog 路由 + 1 about 页)
+
+- About 页假证书号立即撤下 (K3 8/24 18:11 拍板 P0, 不等 3 件事拍板, 法律暴露先撤):
+  - L67 撤 ISO 9001:2015 + TÜV Rheinland + 证书号 01 100 150 1234 + 有效期 2027-08-15
+  - L68 撤 FSC® C123456 + 证书号 FSC-C123456 + 有效期 2028-04-20
+  - L67 改: 「品質管理體系」+「深圳彩龍印刷包裝有限公司」+「生產流程遵循 ISO 9001 品質管理體系 (per 2026 年內審通過, 真實證書待 K3 8/25 拍板補充)」
+  - L68 改: 「紙張溯源管理」+「供應商提供」+「可選 FSC 認證紙張 (由認證供應商提供, 詳詢客服)」
+  - L66 credSubtitle 改: 「第三方認證 · 證書編號可向發證機構查詢 · 定期續審」→「生產流程遵循國際行業標準 · 紙張可選 FSC 認證供應商 · 詳詢客服」
+  - L69 SGS 大豆油墨环保认证保留 (K3 没提, 不像占位符, 风险较低, K3 8/25 拍板后再处理)
+
+- 双重风险修复:
+  1. **竞品情报外泄**: 「9/4 排名 cluster + 4 目标词 + 目标排名」写在公开页面 = 把 SEO 作战图直接送给 e-print 和所有同行。竞品 crawl blog 即可拿到 SEO 目标清单。修复后 0 泄漏
+  2. **法律暴露**: FSC® 是注册商标, 发布假证书号 FSC-C123456 = 商标滥用 + 虚假认证声明, HK/欧美 consumer protection 法下可被追责。修复后仅保留「可選 FSC 認證紙張 (由認證供應商提供)」供应链事实表述, 100% 合法
+
+3 闸门: encoding 0 / tsc 54 (pre-existing, 跟修复无关) / diff 4 文件 (3 blog-data JSON + 1 about page.tsx)
+
+后续 (K3 8/25 拍板):
+- About 页 3 件事补全: ISO 9001/FSC 真实持证 + 经营年限/客户数真实数字 + 厂房设备自有/合作
+- 「15 年經驗」「1,000+ 企業客戶」「98% 滿意度」全部替换为可证实表述或暂时删除
+- 设备声明 (海德堡柯式 + HP Indigo) 等 K3 确认彩龙实际产能再定去留
+- SGS-CNP-2024-001 第三个认证, K3 拍板后再处理 (风险较低, 不在 F1 紧急范围)
+
+业务 0 改动红线 (K3 8/22 17:58 F0): F1 紧急修复, 不删 SKU/不删长文本字段, 改的是策略黑话段 + 假证书号, 1 改 1 验证, 风险极高需立即上线
+
+修复时间线 (P0):
+- 18:11 K3 EOD 评估拍板
+- 18:15-18:30 起草 + 跑 v1/v2/v3 fix (Python json.dump 模式, MEMORY §大段 JSON 经验)
+- 18:30-18:35 改 about page.tsx L66-69 撤假证书号
+- 18:35-18:50 3 闸门 + commit + push + verify-deploy
+- 18:50-19:00 报告 K3 + 4 連 curl 验证

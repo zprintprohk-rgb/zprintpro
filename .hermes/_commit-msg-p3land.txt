@@ -1,0 +1,48 @@
+feat(seo): P3 批次落盘 — 15 槽 (census OK 220→235, FILL 59→44)
+
+来源: K3 2026-09-19 决策「P3 落盘 15 条 — 独立验证后落盘, ja 候选价格钩子需 spot-check」
+
+## 一、独立复核 (逐条, 不抽检) — 15/40 槽通过
+`apply-title-batch --from-proposals` (file-truth 对照 + 模式感知不变量):
+- 当量 50-57 · 主词逐字保留 · 品牌末尾一次 · 语言纯净 (含新 G3 语义检查)
+- MOQ 与 moqStatus 期望一致 (回 products.ts / 裁决真值重算)
+- 价格与 products.ts basePrice 一致 (回源头重算)
+- **落盘断言: 变化行数 15 == 期望 15** ✅
+
+## 二、★ ja 价格钩子 spot-check (K3 指定) — 5/5 一致
+| SKU | 标题 | products.ts basePrice_ja | 一致 |
+|---|---|---|---|
+| eco-paper-bags | ¥240 | 240 | ✅ |
+| large-bags | ¥450 | 450 | ✅ |
+| a1-posters | ¥600 | 600 | ✅ |
+| adhesive-posters | ¥390 | 390 | ✅ |
+| pvc-menus | ¥386 | 386 | ✅ |
+
+## 三、落盘 (15 槽)
+- `白卡紙袋 | 100%環保 多尺寸 | 100個起 HK$12起 | 智印港`
+- `環保紙袋(ja) | エコ素材 多サイズ | 100枚〜 ¥240〜 | ZprintPro`
+- `A1 ポスター | 防水 翌日配送 | 1枚〜 ¥600〜 | ZprintPro`
+- `藝術海報 | 防水材質 即日速遞 | 1個起 HK$26起 | 智印港` (art-posters 真值 1 ✅)
+- `座檯年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港` (年曆真值 1000 ✅)
+- `折疊禮盒 / 浮雕利是封 / 戶外海報 / 展架海報 / 戶外橫幅 / 網孔布易拉寶 …` (共 15)
+
+census: OK 220→**235** / FILL 59→**44** / TRIM 21 (不变)
+落盘断言 **15/15 逐字命中** ✅
+
+## 四、⚠️ 附带登记: `pvc-menus/ja` 主词含英文短语
+候选 `PVC menu | 防水 ラミネート | 100枚〜 ¥386〜 | ZprintPro` —— 其**主词 `PVC menu` 本身**
+是英文短语 (日文应为 メニュー)。**非本批引入**: 主词冻结 (churn 红线) ⇒ 本批只追加了 `100枚〜 ¥386〜`。
+- 归入「**预存跨语言主词缺陷**」清单 (与 `custom-red-packets` zh-hk/ja、`save-the-date-cards` ja 同类),
+  合计 **4 条**, 待独立单变量批次处理 (改主词 = 改排名承接词, 高风险)。
+- 注: 新 G3 要求 **≥2 个真英文词** 才拦 (`PVC menu` 仅 `menu` 1 个) ⇒ 放过;
+  这是**刻意的精度取舍** (否则制造 20 条误报), 已在 G3 注释登记。
+
+## 数据来源
+- .hermes/reports/title-proposals-P3-2026-09-19.json · title-input-bank-2026-09-19.json
+- src/data/products.ts (minQuantity / basePrice_ja 回源头 spot-check) · scripts/guards/title-equiv.js
+校准日期: 2026-09-20 01:40
+
+## 验收
+apply --from-proposals → 15 槽, 断言 15/15 ✅ · ja 价格 5/5 一致 ✅
+census → OK 235 / FILL 44 / TRIM 21 ✅
+验证窗: **本批 15 槽进入 7-10 天只读**

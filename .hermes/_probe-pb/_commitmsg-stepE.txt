@@ -1,0 +1,20 @@
+﻿docs(i18n)+chore(guard): Step E 术语表 (778 字/35 条) + 進口印刷設備 生成器结案 + 技术债 6 登记 + locale 守卫回放
+
+Step E 术语表 (.hermes/logs/2026-09-19-stepE-glossary.md)
+- 口径: 门童 #4 I18N_POLLUTION_EN (en 值内 CJK), 与 i18n-pollution-baseline.json 同源
+- 真值: 778 字符 / 35 术语条 (基线 total 1320 -> 1071)
+- 与派活书 847 的差异已说明: 847 = 「含术语的条目所涉字符」, 778 = 「en 值内 CJK 字符」, 两者不同层
+- 6 个核心术语待 K3/母语者一次拍板 (占 778 的 ~87%):
+  國際認證體系 270 / 進口印刷設備 240 / 認證紙 72 / 急件 34 / 截單 34 / 答案 24
+- 4 行白名单 (32 字) 显式排除在替换范围外; 其余 29 条列明性质与建议译法
+
+進口印刷設備 生成器结案 (.hermes/logs/2026-09-19-generator-case-jinkou.md)
+- 现象: 109 处 (zh-hk 48 正常 / en 40 + ja 21 污染), 占 Step E 术语表 31%
+- 根因两段: ① 门禁 fix 文案含可直接落盘的中文串, 被下游当字面替换值 ② 当时无任何 locale 守卫
+- 已登记 error-patterns.md 为技术债 6「门禁的 fix 文案是给人看的建议, 不是给机器用的替换串」
+
+locale 守卫回放 (.hermes/_probe-pb/guard4-locale-injection.cjs) PASS 4/0
+- 阳性: en 值注入中文工具名词 (6 命中) / 简体术语 (4 命中)
+- 阴性: 纯英文工具名词 (0) / ISO+FSC 术语 (0)  <-- 对照组自证, v1 曾因全档扫描把 704 条存量掺进对照而失效
+
+数据来源: .hermes/_probe-pb/stepE-terms.json (机读术语表) + stepE-glossary-v3.cjs (门童口径, 只读)

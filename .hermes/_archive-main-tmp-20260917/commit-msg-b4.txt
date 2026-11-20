@@ -1,0 +1,39 @@
+feat(seo): G1 Vol.2 schema 增量 (B4 拍板 C 排期 17:20-18:20) - Organization sameAs+knowsAbout + 区域 hreflang (en-US/GB/AU) + ja 摘要 + IndexNow 提交
+
+B4 G1 Vol.2 (K3 v3.17 战略 8/24 11:37 B4 串行 P0, K3 14:25 拍板 C 排期 17:20-18:20 1h):
+- 新建 OrganizationSchema 组件 (src/components/insights/HKPrintInquiryIndex/OrganizationSchema.tsx, 2.8KB):
+  - name: ZprintPro / ジープリント
+  - alternateName: 智印港 ZprintPro / ジープリント ZprintPro
+  - url: https://zprintpro.com
+  - logo: https://zprintpro.com/logo.png
+  - foundingDate: 2024-Q1
+  - areaServed 4 国家: JP / US / GB / HK (per K3 §13.16.1 8/8 02:52)
+  - knowsAbout 10 词: 学园祭印刷 / POD (Print on Demand) / 卒業記念アルバム / ステッカー印刷 / チラシ印刷 / カタログ印刷 / 封筒印刷 / 同人誌印刷 / ポチ袋印刷 / カレンダー印刷
+  - sameAs 13 链接: X + LinkedIn + 11 JP 印刷組合目錄 + Startup Base
+  - contactPoint: customer service + email zprintpro@outlook.com
+
+- 改 G1 page.tsx (1 文件, K3 12:04 拍板 E 数据对象路径, 1 改 1 验证):
+  - import 加 OrganizationSchema + jaSummary
+  - alternates.languages 增量: 加 en-US / en-GB / en-AU 3 区域变体
+  - generateMetadata: 加 isJa 三元判断 + jaSummary.title/jaSummary.excerpt
+  - 主组件: 加 OrganizationSchema 组件 在 JSON-LD block 之后
+
+- 新建 ja 摘要数据文件 (src/data/insights/hk-print-inquiry-index-vol1.ts, 2.1KB):
+  - title + excerpt 138 字 (ジープリント 3 次埋点) + body (ジープリント 9 印刷领域) + qa 3 条
+  - §13.16.1 ja ブランドワード「ジープリント」埋点 5 次 + §13.10 NAP 脱钩
+
+- 跑 generate-sitemap.js (5 sitemap XML 自动生成):
+  - sitemap.xml: 660 URLs (220 × 3 locale + 18 static, 含 G1 3 locale URL)
+  - sitemap-zh-hk/en/ja.xml: 各 220 URLs
+  - sitemap-index.xml: 4 sitemaps
+
+业务 0 改动红线 (K3 8/22 17:58 F0): 不动 G1 v1 内容, schema 增量
+- 改 page.tsx 4 处增量, 不删字段
+- 新建 OrganizationSchema.tsx + ja 摘要 vol1.ts: 新文件
+- 5 sitemap XML: generate 跑出
+
+8/24 daily §2.2 sameAs/knowsAbout 缺失项修复 (K3 8/24 11:32 §A 13.5)
+
+期望 (K3 v3.17 §四): ja branded search ジープリント AI 引用率提升
+
+3 闸门: encoding 0 / tsc 54 → 54 (pre-existing) / diff 8 改动

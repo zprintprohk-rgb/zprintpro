@@ -1,0 +1,77 @@
+diff --git a/src/app/[locale]/product/[slug]/page.tsx b/src/app/[locale]/product/[slug]/page.tsx
+index bc2e1a44..0db7f4c8 100644
+--- a/src/app/[locale]/product/[slug]/page.tsx
++++ b/src/app/[locale]/product/[slug]/page.tsx
+@@ -45,6 +45,8 @@ import { getProductSeo } from '@/data/product-seo';
+ import { getSkuSeo } from '@/data/sku-seo-data';
+ import { generateFAQSchema } from '@/lib/faq-schema';
+ import { coreProductFAQMap } from '@/data/product-faqs';
++// 2026-09-18 K3 v10.1 決策 1-B: 展示層 MOQ 口徑 (1 本起印, 數碼線書刊/本冊類) — SSoT
++import { getDisplayMinOrder, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isDigitalLineBook } from '@/data/print-method-policy';
+ import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
+ import { ProductViewTracker } from '@/components/tracking/ProductViewTracker';
+ import { convertPriceRangeString, convertToFromPrice, getUnitPriceAnchor, getDisplayAnchor } from '@/lib/pricing';
+@@ -565,7 +575,7 @@ export default function ProductPage({
+                 </div>
+                 <div className="flex items-center justify-between gap-3 text-xs text-gray-400 mt-4 pt-3 border-t border-[#E5E7EB]">
+                   <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
+-                  <span>{t.minOrder}: <span className="font-semibold text-gray-600">{product.minQuantity}</span></span>
++                  <span>{t.minOrder}: <span className="font-semibold text-gray-600">{getDisplayMinOrder(locale, product.slug, product.minQuantity)}</span></span>
+                 </div>
+                 {(() => {
+                   // 2026-09-06 UX 试点: 小批量起步行 — 报价表真实档位, 消除 0.42 vs 73/71 口径落差
+@@ -590,6 +600,17 @@ export default function ProductPage({
+                 })()}
+               </div>
+ 
++              {/* 2026-09-18 K3 v10.1 決策 1-B: 數碼線書刊/本冊類 SKU 的 AEO 快速答案塊 + 印刷方式統一說明 */}
++              {isDigitalLineBook(product.slug) && (
++                <div className="mb-5 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4">
++                  <p className="text-sm text-amber-900 leading-relaxed">
++                    <span className="font-semibold">⚡ {MOQ_AEO[locale].q}</span>{' '}
++                    {MOQ_AEO[locale].a}
++                  </p>
++                  <p className="text-xs text-amber-800/90 leading-relaxed mt-2">{MOQ_STANDARD_PARAGRAPH[locale]}</p>
++                </div>
++              )}
++
+               {/* v14 方案A: price-table-backed SKU 由 ReferencePriceBlock 接管; 其余无表 SKU 仍走 QuoteCalculator */}
+               {(() => {
+                 const hasPriceTable = !!findClosestTierBatch(product.slug, product.minQuantity || 500);
+diff --git a/src/components/category/CategoryProductCard.tsx b/src/components/category/CategoryProductCard.tsx
+index 0cc95128..f8bfbae7 100644
+--- a/src/components/category/CategoryProductCard.tsx
++++ b/src/components/category/CategoryProductCard.tsx
+@@ -8,6 +8,8 @@ import { Product, getProductDisplayTitle } from '@/data/products';
+ import { Locale } from '@/lib/seo';
+ import { shouldShowPrice, convertToFromPrice, getPriceUnitWord, getDisplayAnchor } from '@/lib/pricing';
+ import { getProductMainImage } from '@/lib/product-image';
++// 2026-09-18 K3 v10.1 決策 1-B: 品類頁卡片「起訂量」展示層口徑 (數碼線書刊/本冊類 = 1 本起印)
++import { getDisplayMinOrder, isDigitalLineBook } from '@/data/print-method-policy';
+ 
+ interface CategoryProductCardProps {
+   product: Product;
+@@ -67,13 +69,15 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
+   const anchor = getDisplayAnchor(product.slug, locale);
+   const fromPrice = anchor ? anchor.big : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
+   const unitWord = getPriceUnitWord(product.price_range);
+-  const moqLine = anchor
+-    ? anchor.sub
+-    : locale === 'zh-hk'
+-      ? `${product.minQuantity}${unitWord || '件'}${t.moqSuffix} · ${t.volumeNote}`
+-      : locale === 'ja'
+-      ? `${product.minQuantity}個${t.moqSuffix} · ${t.volumeNote}`
+-      : `${t.moqSuffix} ${product.minQuantity} · ${t.volumeNote}`;
++  const moqLine = isDigitalLineBook(product.slug)
++    ? getDisplayMinOrder(locale, product.slug, product.minQuantity)
++    : anchor
++      ? anchor.sub
++      : locale === 'zh-hk'
++        ? `${product.minQuantity}${unitWord || '件'}${t.moqSuffix} · ${t.volumeNote}`
++        : locale === 'ja'
++        ? `${product.minQuantity}個${t.moqSuffix} · ${t.volumeNote}`
++        : `${t.moqSuffix} ${product.minQuantity} · ${t.volumeNote}`;
+ 
+   return (
+     <div className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
+

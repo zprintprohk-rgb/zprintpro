@@ -1,0 +1,92 @@
+﻿
+A. 紙品 SKU minQuantity = 10
+  ✓ a4-flyers = 10
+  ✓ a5-flyers = 10
+  ✓ double-sided-flyers = 10
+  ✓ folded-leaflets = 10
+  ✓ thick-paper-flyers = 10
+  ✓ eco-flyers = 10
+  ✓ same-day-flyers = 10
+  ✓ school-flyers = 10
+  ✓ waterproof-stickers = 10
+  ✓ transparent-stickers = 10
+  ✓ removable-stickers = 10
+  ✓ small-batch-stickers = 10
+  ✓ die-cut-stickers = 10
+  ✓ foil-stickers = 10
+  ✓ security-stickers = 10
+  ✓ fluorescent-stickers = 10
+  ✓ premium-greeting-cards = 10
+  ✓ thick-greeting-cards-400g = 10
+  ✓ foil-greeting-cards = 10
+  ✓ spot-uv-greeting-cards = 10
+  ✓ matte-greeting-cards = 10
+  ✓ rounded-corner-greeting-cards = 10
+
+B. 非名單 SKU 維持原值 (抽樣)
+  ✓ gang-run-card-boxes = 500 (未動)
+  ✓ white-card-bags = 100 (未動)
+  ✓ wall-calendars = 1000 (未動)
+  ✓ outdoor-vinyl-banners = 100 (未動)
+
+B2. A1 海報獨立 (K3 路線圖 P0-2)
+  ✓ a1-posters minQuantity = 1
+  ✓ a1-posters quantities 首檔 = 1 (1/3/5/10/20)
+  ✓ a1-posters: 1張 HK$45 (單價 45) > 10張 HK$290 (單價 29.00) ✓
+
+B3. 書刊本冊降至 10 (K3 拍板第三波)
+  ✓ catalog-printing minQuantity = 10
+  ✓    quantities 首檔 = 10 (10/100/500/1000)
+  ✓ perfect-bound-books minQuantity = 10
+  ✓    quantities 首檔 = 10 (10/50/100/500)
+  ✓ hardcover-books minQuantity = 10
+  ✓    quantities 首檔 = 10 (10/50/100/500)
+  ✓ spiral-notebooks minQuantity = 10
+  ✓    quantities 首檔 = 10 (10/50/100/500)
+  ✓ saddle-stitch-booklets minQuantity = 10
+  ✓    quantities 首檔 = 10 (10/50/100/500)
+  ✓ exercise-books minQuantity = 10
+  ✓    quantities 首檔 = 10 (10/100/500/1000)
+
+C. 無 price-table 紙品 SKU 的 10 檔可選性
+   (price-table slugs: gang-run-card-boxes, white-card-boxes, tuck-end-boxes, corrugated-boxes, white-card-bags, waterproof-stickers, digital-stickers, a5-flyers, a4-flyers, same-day-flyers, eco-flyers, saddle-stitch-booklets, perfect-bound-books, exercise-books, folded-leaflets, special-fold-leaflets, custom-flyers, a2-posters, a1-posters)
+  ✓ double-sided-flyers: quantities 首檔 = 10
+  ✓ thick-paper-flyers: quantities 首檔 = 10
+  ✓ school-flyers: quantities 首檔 = 10
+  ✓ transparent-stickers: quantities 首檔 = 10
+  ✓ removable-stickers: quantities 首檔 = 10
+  ✓ small-batch-stickers: quantities 首檔 = 10
+  ✓ die-cut-stickers: quantities 首檔 = 10
+  ✓ foil-stickers: quantities 首檔 = 10
+  ✓ security-stickers: quantities 首檔 = 10
+  ✓ fluorescent-stickers: quantities 首檔 = 10
+  ✓ premium-greeting-cards: quantities 首檔 = 10
+  ✓ thick-greeting-cards-400g: quantities 首檔 = 10
+  ✓ foil-greeting-cards: quantities 首檔 = 10
+  ✓ spot-uv-greeting-cards: quantities 首檔 = 10
+  ✓ matte-greeting-cards: quantities 首檔 = 10
+  ✓ rounded-corner-greeting-cards: quantities 首檔 = 10
+
+D. 生成資料: 起批檔 = 10 且價格誠實
+  ✓ waterproof-stickers: 起批 10 張 · 整批 HK$71 (最低單價 HK$0.42)
+  ✓ a5-flyers: 起批 10 張 · 整批 HK$80 (最低單價 HK$0.14)
+  ✓ a4-flyers: 起批 10 張 · 整批 HK$140 (最低單價 HK$0.31)
+  ✓ same-day-flyers: 起批 10 張 · 整批 HK$184 (最低單價 HK$1.3)
+  ✓ eco-flyers: 起批 10 張 · 整批 HK$80 (最低單價 HK$0.72)
+  ✓ folded-leaflets: 起批 10 張 · 整批 HK$161 (最低單價 HK$0.38)
+  ✓ a4-flyers: 最高新增檔 HK$372 ≤ 天花板 HK$372 · 10檔 HK$140 (anchor 100張=HK$380)
+  ✓ a5-flyers: 最高新增檔 HK$122 ≤ 天花板 HK$122 · 10檔 HK$80 (anchor 100張=HK$125)
+  ✓ folded-leaflets: 最高新增檔 HK$518 ≤ 天花板 HK$1387 · 10檔 HK$161 (anchor 300張=HK$1416)
+  ✓ eco-flyers: 最高新增檔 HK$176 ≤ 天花板 HK$372 · 10檔 HK$80 (anchor 300張=HK$380)
+  ✓ same-day-flyers: 最高新增檔 HK$558 ≤ 天花板 HK$558 · 10檔 HK$184 (anchor 100張=HK$570)
+  ✓ waterproof-stickers: 最高新增檔 HK$71 ≤ 天花板 HK$71 · 10檔 HK$71 (anchor 50張=HK$73)
+
+E. 政策名單 vs products.ts 無孤兒
+  ✓ 政策名單 22 個 slug 全部存在於 products.ts
+
+G. 價目同步波就緒度 (K3 規劃第四步)
+  ✓ 抽樣 15 條; moq_display 舊值殘留 0 條 (應為 0)
+  ✓ 其中 price_tier 15 條 (保留數字, 待價目同步波); industry_fact 0 條 (保留不動)
+  ✓ formatPriceTier 數字守恆 (3 樣本)
+
+結果: 73 通過 / 0 失敗

@@ -1,0 +1,2819 @@
+{
+ "data_source": "GSC Search Performance 2026-08-04 to 2026-08-10 (7天), 4 markets export on 2026-08-13",
+ "summary_by_market": {
+  "香港": {
+   "clicks": 38,
+   "imps": 1514,
+   "ctr": 2.51,
+   "avg_rank": 21.6
+  },
+  "日本": {
+   "clicks": 7,
+   "imps": 385,
+   "ctr": 1.82,
+   "avg_rank": 28.8
+  },
+  "美国": {
+   "clicks": 0,
+   "imps": 544,
+   "ctr": 0.0,
+   "avg_rank": 37.2
+  },
+  "汇总": {
+   "clicks": 49,
+   "imps": 3203,
+   "ctr": 1.53,
+   "avg_rank": 26.5
+  }
+ },
+ "daily_trend": {
+  "香港": [
+   {
+    "date": "2026-08-04",
+    "clicks": 9,
+    "imps": 189,
+    "ctr": 4.76,
+    "rank": 18.9
+   },
+   {
+    "date": "2026-08-05",
+    "clicks": 2,
+    "imps": 208,
+    "ctr": 0.96,
+    "rank": 21.7
+   },
+   {
+    "date": "2026-08-06",
+    "clicks": 1,
+    "imps": 187,
+    "ctr": 0.53,
+    "rank": 19.2
+   },
+   {
+    "date": "2026-08-07",
+    "clicks": 7,
+    "imps": 238,
+    "ctr": 2.94,
+    "rank": 26.2
+   },
+   {
+    "date": "2026-08-08",
+    "clicks": 4,
+    "imps": 200,
+    "ctr": 2.0,
+    "rank": 24.1
+   },
+   {
+    "date": "2026-08-09",
+    "clicks": 4,
+    "imps": 223,
+    "ctr": 1.79,
+    "rank": 21.8
+   },
+   {
+    "date": "2026-08-10",
+    "clicks": 11,
+    "imps": 269,
+    "ctr": 4.09,
+    "rank": 19.0
+   }
+  ],
+  "日本": [
+   {
+    "date": "2026-08-04",
+    "clicks": 1,
+    "imps": 50,
+    "ctr": 2.0,
+    "rank": 27.9
+   },
+   {
+    "date": "2026-08-05",
+    "clicks": 1,
+    "imps": 56,
+    "ctr": 1.79,
+    "rank": 27.2
+   },
+   {
+    "date": "2026-08-06",
+    "clicks": 2,
+    "imps": 50,
+    "ctr": 4.0,
+    "rank": 28.3
+   },
+   {
+    "date": "2026-08-07",
+    "clicks": 1,
+    "imps": 55,
+    "ctr": 1.82,
+    "rank": 35.6
+   },
+   {
+    "date": "2026-08-08",
+    "clicks": 1,
+    "imps": 58,
+    "ctr": 1.72,
+    "rank": 31.4
+   },
+   {
+    "date": "2026-08-09",
+    "clicks": 0,
+    "imps": 53,
+    "ctr": 0.0,
+    "rank": 26.5
+   },
+   {
+    "date": "2026-08-10",
+    "clicks": 1,
+    "imps": 63,
+    "ctr": 1.59,
+    "rank": 24.8
+   }
+  ],
+  "美国": [
+   {
+    "date": "2026-08-04",
+    "clicks": 0,
+    "imps": 57,
+    "ctr": 0.0,
+    "rank": 40.2
+   },
+   {
+    "date": "2026-08-05",
+    "clicks": 0,
+    "imps": 64,
+    "ctr": 0.0,
+    "rank": 38.9
+   },
+   {
+    "date": "2026-08-06",
+    "clicks": 0,
+    "imps": 98,
+    "ctr": 0.0,
+    "rank": 30.1
+   },
+   {
+    "date": "2026-08-07",
+    "clicks": 0,
+    "imps": 53,
+    "ctr": 0.0,
+    "rank": 42.8
+   },
+   {
+    "date": "2026-08-08",
+    "clicks": 0,
+    "imps": 69,
+    "ctr": 0.0,
+    "rank": 34.4
+   },
+   {
+    "date": "2026-08-09",
+    "clicks": 0,
+    "imps": 100,
+    "ctr": 0.0,
+    "rank": 47.6
+   },
+   {
+    "date": "2026-08-10",
+    "clicks": 0,
+    "imps": 103,
+    "ctr": 0.0,
+    "rank": 26.4
+   }
+  ],
+  "汇总": [
+   {
+    "date": "2026-08-04",
+    "clicks": 11,
+    "imps": 402,
+    "ctr": 2.74,
+    "rank": 25.3
+   },
+   {
+    "date": "2026-08-05",
+    "clicks": 4,
+    "imps": 434,
+    "ctr": 0.92,
+    "rank": 25.7
+   },
+   {
+    "date": "2026-08-06",
+    "clicks": 3,
+    "imps": 436,
+    "ctr": 0.69,
+    "rank": 24.7
+   },
+   {
+    "date": "2026-08-07",
+    "clicks": 8,
+    "imps": 433,
+    "ctr": 1.85,
+    "rank": 29.0
+   },
+   {
+    "date": "2026-08-08",
+    "clicks": 5,
+    "imps": 410,
+    "ctr": 1.22,
+    "rank": 27.7
+   },
+   {
+    "date": "2026-08-09",
+    "clicks": 4,
+    "imps": 498,
+    "ctr": 0.8,
+    "rank": 31.0
+   },
+   {
+    "date": "2026-08-10",
+    "clicks": 14,
+    "imps": 590,
+    "ctr": 2.37,
+    "rank": 22.2
+   }
+  ]
+ },
+ "top_queries_by_market": {
+  "香港": [
+   {
+    "q": "宣傳單張",
+    "clicks": 0,
+    "imps": 37,
+    "ctr": 0.0,
+    "rank": 37.16
+   },
+   {
+    "q": "月曆印刷",
+    "clicks": 0,
+    "imps": 36,
+    "ctr": 0.0,
+    "rank": 19.39
+   },
+   {
+    "q": "宣傳單張印刷",
+    "clicks": 0,
+    "imps": 36,
+    "ctr": 0.0,
+    "rank": 30.31
+   },
+   {
+    "q": "貼紙印刷",
+    "clicks": 0,
+    "imps": 33,
+    "ctr": 0.0,
+    "rank": 37.76
+   },
+   {
+    "q": "印海報",
+    "clicks": 0,
+    "imps": 25,
+    "ctr": 0.0,
+    "rank": 32.36
+   },
+   {
+    "q": "海報印刷",
+    "clicks": 0,
+    "imps": 24,
+    "ctr": 0.0,
+    "rank": 29.83
+   },
+   {
+    "q": "貼紙",
+    "clicks": 0,
+    "imps": 20,
+    "ctr": 0.0,
+    "rank": 54.6
+   },
+   {
+    "q": "戶外貼紙",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 22.11
+   },
+   {
+    "q": "包裝盒印刷",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 39.22
+   },
+   {
+    "q": "紙盒訂製",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 44.56
+   },
+   {
+    "q": "戶外橫額",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 58.28
+   },
+   {
+    "q": "poster 印刷",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 27.76
+   },
+   {
+    "q": "印書",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 34.76
+   },
+   {
+    "q": "餐牌印刷",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 15.81
+   },
+   {
+    "q": "包裝盒訂製",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 27.38
+   },
+   {
+    "q": "月歷印刷",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 31.5
+   },
+   {
+    "q": "騎馬釘印刷",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 35.25
+   },
+   {
+    "q": "騎馬釘書刊",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 51.31
+   },
+   {
+    "q": "透明貼",
+    "clicks": 0,
+    "imps": 15,
+    "ctr": 0.0,
+    "rank": 31.73
+   },
+   {
+    "q": "騎馬釘",
+    "clicks": 0,
+    "imps": 15,
+    "ctr": 0.0,
+    "rank": 38.27
+   },
+   {
+    "q": "紙袋印刷",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 22.07
+   },
+   {
+    "q": "貼紙訂製",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 22.86
+   },
+   {
+    "q": "訂做紙袋",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 26.71
+   },
+   {
+    "q": "印刷紙袋",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 29.86
+   },
+   {
+    "q": "紙袋訂製",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 37.36
+   },
+   {
+    "q": "大信封",
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "rank": 3.7
+   },
+   {
+    "q": "海報與印刷",
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "rank": 16.22
+   },
+   {
+    "q": "即日急件",
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "rank": 27.56
+   },
+   {
+    "q": "標籤廠商",
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "rank": 49.11
+   },
+   {
+    "q": "包裝食品 裡印",
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "rank": 14.75
+   }
+  ],
+  "日本": [
+   {
+    "q": "両面カラー印刷",
+    "clicks": 0,
+    "imps": 31,
+    "ctr": 0.0,
+    "rank": 22.35
+   },
+   {
+    "q": "教材 印刷製本",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 50.88
+   },
+   {
+    "q": "印刷 カラー モード",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 76.93
+   },
+   {
+    "q": "印刷 カラー cmyk",
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "rank": 90.3
+   },
+   {
+    "q": "a5とa6どっちが大きい",
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "rank": 11.78
+   },
+   {
+    "q": "クラフト紙 パッケージ 印刷",
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "rank": 34.75
+   },
+   {
+    "q": "クラフト紙 パッケージ印刷",
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "rank": 35.38
+   },
+   {
+    "q": "教材 印刷 製本",
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "rank": 51.38
+   },
+   {
+    "q": "食品 パッケージ",
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "rank": 61.57
+   },
+   {
+    "q": "教材 テキスト印刷",
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "rank": 47.5
+   },
+   {
+    "q": "pvc シール",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 22.8
+   },
+   {
+    "q": "教科書 印刷",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 46.0
+   },
+   {
+    "q": "ステッカー印刷 小ロット",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 51.4
+   },
+   {
+    "q": "名刺 角丸",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 59.4
+   },
+   {
+    "q": "rgb 印刷",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 79.0
+   },
+   {
+    "q": "ダイカット ステッカー 防水",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 7.0
+   },
+   {
+    "q": "マグネットレス 貼り箱",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 50.25
+   },
+   {
+    "q": "a2 クリアポスター 印刷",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 49.33
+   },
+   {
+    "q": "a2 ポスター 印刷",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 55.33
+   },
+   {
+    "q": "教材 製本",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 64.33
+   },
+   {
+    "q": "a6 a5 サイズ比較",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 10.0
+   },
+   {
+    "q": "a5 a6 サイズ 比較",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 11.0
+   },
+   {
+    "q": "a3 ポスター サイズ",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 42.0
+   },
+   {
+    "q": "カタログ 印刷",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 45.0
+   },
+   {
+    "q": "ステッカー 印刷 小 ロット",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 51.0
+   },
+   {
+    "q": "屋外 ポスター",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 55.0
+   },
+   {
+    "q": "同人グッズ 印刷",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 63.0
+   },
+   {
+    "q": "z折り パンフレット",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 64.0
+   },
+   {
+    "q": "ポスター 料金",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 65.0
+   },
+   {
+    "q": "上 製本 印刷 安い",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 66.0
+   }
+  ],
+  "美国": [
+   {
+    "q": "saddle stitch booklets",
+    "clicks": 0,
+    "imps": 19,
+    "ctr": 0.0,
+    "rank": 89.21
+   },
+   {
+    "q": "small batch label printing",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 59.19
+   },
+   {
+    "q": "saddle stitch booklet",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 74.12
+   },
+   {
+    "q": "small quantity label printing",
+    "clicks": 0,
+    "imps": 15,
+    "ctr": 0.0,
+    "rank": 78.6
+   },
+   {
+    "q": "small batch sticker printing",
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "rank": 18.6
+   },
+   {
+    "q": "china catalog printing",
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "rank": 24.7
+   },
+   {
+    "q": "catalog printing china",
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "rank": 26.38
+   },
+   {
+    "q": "removable stickers",
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "rank": 49.14
+   },
+   {
+    "q": "catalogue printing china",
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "rank": 29.5
+   },
+   {
+    "q": "small batch labels",
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "rank": 47.83
+   },
+   {
+    "q": "small batch stickers",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 7.2
+   },
+   {
+    "q": "exercise book printing business",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 16.8
+   },
+   {
+    "q": "how to print waterproof stickers",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 77.4
+   },
+   {
+    "q": "adhesive banner printing",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 50.5
+   },
+   {
+    "q": "how big is a standard wall calendar",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 58.25
+   },
+   {
+    "q": "foil sticker printing",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 62.0
+   },
+   {
+    "q": "security sticker printing",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 26.33
+   },
+   {
+    "q": "calendar sizes",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 40.33
+   },
+   {
+    "q": "repositionable stickers",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 51.0
+   },
+   {
+    "q": "custom fluorescent stickers",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 53.33
+   },
+   {
+    "q": "average calendar size",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 65.0
+   },
+   {
+    "q": "saddlestitch booklet",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 71.33
+   },
+   {
+    "q": "saddle stitch books",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 78.67
+   },
+   {
+    "q": "saddle stitched booklets",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 88.33
+   },
+   {
+    "q": "school exercise book printing",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 6.5
+   },
+   {
+    "q": "a1 pvc poster",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 7.5
+   },
+   {
+    "q": "small batch custom stickers",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 12.0
+   },
+   {
+    "q": "exercise book printing",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 14.0
+   },
+   {
+    "q": "fluorescent sticker",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 29.5
+   },
+   {
+    "q": "factory price eco friendly printed bags",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 30.0
+   }
+  ],
+  "汇总": [
+   {
+    "q": "宣傳單張",
+    "clicks": 0,
+    "imps": 37,
+    "ctr": 0.0,
+    "rank": 37.16
+   },
+   {
+    "q": "月曆印刷",
+    "clicks": 0,
+    "imps": 36,
+    "ctr": 0.0,
+    "rank": 19.39
+   },
+   {
+    "q": "宣傳單張印刷",
+    "clicks": 0,
+    "imps": 36,
+    "ctr": 0.0,
+    "rank": 30.31
+   },
+   {
+    "q": "貼紙印刷",
+    "clicks": 0,
+    "imps": 33,
+    "ctr": 0.0,
+    "rank": 37.76
+   },
+   {
+    "q": "両面カラー印刷",
+    "clicks": 0,
+    "imps": 31,
+    "ctr": 0.0,
+    "rank": 22.35
+   },
+   {
+    "q": "印海報",
+    "clicks": 0,
+    "imps": 25,
+    "ctr": 0.0,
+    "rank": 32.36
+   },
+   {
+    "q": "海報印刷",
+    "clicks": 0,
+    "imps": 24,
+    "ctr": 0.0,
+    "rank": 29.83
+   },
+   {
+    "q": "saddle stitch booklet",
+    "clicks": 0,
+    "imps": 24,
+    "ctr": 0.0,
+    "rank": 78.75
+   },
+   {
+    "q": "貼紙",
+    "clicks": 0,
+    "imps": 20,
+    "ctr": 0.0,
+    "rank": 54.6
+   },
+   {
+    "q": "saddle stitch booklets",
+    "clicks": 0,
+    "imps": 19,
+    "ctr": 0.0,
+    "rank": 89.21
+   },
+   {
+    "q": "戶外貼紙",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 22.11
+   },
+   {
+    "q": "包裝盒印刷",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 39.22
+   },
+   {
+    "q": "紙盒訂製",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 44.56
+   },
+   {
+    "q": "戶外橫額",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 58.28
+   },
+   {
+    "q": "poster 印刷",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 27.76
+   },
+   {
+    "q": "school exercise book print",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 31.76
+   },
+   {
+    "q": "印書",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 34.76
+   },
+   {
+    "q": "教材 印刷製本",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 50.88
+   },
+   {
+    "q": "餐牌印刷",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 15.81
+   },
+   {
+    "q": "china catalog printing",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 24.75
+   },
+   {
+    "q": "school exercise book printing",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 26.75
+   },
+   {
+    "q": "包裝盒訂製",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 27.38
+   },
+   {
+    "q": "月歷印刷",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 31.5
+   },
+   {
+    "q": "騎馬釘印刷",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 35.25
+   },
+   {
+    "q": "騎馬釘書刊",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 51.31
+   },
+   {
+    "q": "small batch label printing",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 59.19
+   },
+   {
+    "q": "透明貼",
+    "clicks": 0,
+    "imps": 15,
+    "ctr": 0.0,
+    "rank": 31.73
+   },
+   {
+    "q": "騎馬釘",
+    "clicks": 0,
+    "imps": 15,
+    "ctr": 0.0,
+    "rank": 38.27
+   },
+   {
+    "q": "small quantity label printing",
+    "clicks": 0,
+    "imps": 15,
+    "ctr": 0.0,
+    "rank": 78.6
+   },
+   {
+    "q": "紙袋印刷",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 22.07
+   }
+  ]
+ },
+ "top_pages_by_market": {
+  "香港": [
+   {
+    "url": "/zh-hk/product/a2-posters/",
+    "full": "https://zprintpro.com/zh-hk/product/a2-posters/",
+    "clicks": 0,
+    "imps": 85,
+    "ctr": 0.0,
+    "rank": 22.2
+   },
+   {
+    "url": "/zh-hk/category/stickers/",
+    "full": "https://zprintpro.com/zh-hk/category/stickers/",
+    "clicks": 0,
+    "imps": 84,
+    "ctr": 0.0,
+    "rank": 37.52
+   },
+   {
+    "url": "/zh-hk/product/a5-flyers/",
+    "full": "https://zprintpro.com/zh-hk/product/a5-flyers/",
+    "clicks": 0,
+    "imps": 70,
+    "ctr": 0.0,
+    "rank": 39.83
+   },
+   {
+    "url": "/zh-hk/category/flyers/",
+    "full": "https://zprintpro.com/zh-hk/category/flyers/",
+    "clicks": 0,
+    "imps": 70,
+    "ctr": 0.0,
+    "rank": 49.01
+   },
+   {
+    "url": "/zh-hk/category/packaging/",
+    "full": "https://zprintpro.com/zh-hk/category/packaging/",
+    "clicks": 0,
+    "imps": 65,
+    "ctr": 0.0,
+    "rank": 37.17
+   },
+   {
+    "url": "/zh-hk/category/calendars/",
+    "full": "https://zprintpro.com/zh-hk/category/calendars/",
+    "clicks": 0,
+    "imps": 63,
+    "ctr": 0.0,
+    "rank": 24.57
+   },
+   {
+    "url": "/zh-hk/product/a4-flyers/",
+    "full": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+    "clicks": 0,
+    "imps": 63,
+    "ctr": 0.0,
+    "rank": 60.03
+   },
+   {
+    "url": "/zh-hk/category/paper-bags/",
+    "full": "https://zprintpro.com/zh-hk/category/paper-bags/",
+    "clicks": 0,
+    "imps": 55,
+    "ctr": 0.0,
+    "rank": 38.98
+   },
+   {
+    "url": "/zh-hk/product/saddle-stitch-booklets/",
+    "full": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+    "clicks": 0,
+    "imps": 49,
+    "ctr": 0.0,
+    "rank": 40.12
+   },
+   {
+    "url": "/zh-hk/product/eco-paper-bags/",
+    "full": "https://zprintpro.com/zh-hk/product/eco-paper-bags/",
+    "clicks": 0,
+    "imps": 45,
+    "ctr": 0.0,
+    "rank": 59.56
+   },
+   {
+    "url": "/zh-hk/category/posters/",
+    "full": "https://zprintpro.com/zh-hk/category/posters/",
+    "clicks": 1,
+    "imps": 44,
+    "ctr": 2.27,
+    "rank": 56.77
+   },
+   {
+    "url": "/zh-hk/services/rush-printing-delivery/",
+    "full": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+    "clicks": 0,
+    "imps": 31,
+    "ctr": 0.0,
+    "rank": 44.55
+   },
+   {
+    "url": "/zh-hk/blog/packaging-box-custom-guide/",
+    "full": "https://zprintpro.com/zh-hk/blog/packaging-box-custom-guide/",
+    "clicks": 0,
+    "imps": 29,
+    "ctr": 0.0,
+    "rank": 69.83
+   },
+   {
+    "url": "/zh-hk/blog/paper-bag-buying-guide/",
+    "full": "https://zprintpro.com/zh-hk/blog/paper-bag-buying-guide/",
+    "clicks": 0,
+    "imps": 25,
+    "ctr": 0.0,
+    "rank": 40.48
+   },
+   {
+    "url": "/zh-hk/product/transparent-stickers/",
+    "full": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+    "clicks": 0,
+    "imps": 23,
+    "ctr": 0.0,
+    "rank": 31.0
+   },
+   {
+    "url": "/zh-hk/blog/sticker-guide/",
+    "full": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+    "clicks": 0,
+    "imps": 23,
+    "ctr": 0.0,
+    "rank": 67.57
+   },
+   {
+    "url": "/zh-hk/product/roll-up-banners/",
+    "full": "https://zprintpro.com/zh-hk/product/roll-up-banners/",
+    "clicks": 0,
+    "imps": 22,
+    "ctr": 0.0,
+    "rank": 66.55
+   },
+   {
+    "url": "/zh-hk/product/waterproof-stickers/",
+    "full": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+    "clicks": 0,
+    "imps": 21,
+    "ctr": 0.0,
+    "rank": 22.05
+   },
+   {
+    "url": "/zh-hk/product/outdoor-vinyl-banners/",
+    "full": "https://zprintpro.com/zh-hk/product/outdoor-vinyl-banners/",
+    "clicks": 0,
+    "imps": 21,
+    "ctr": 0.0,
+    "rank": 57.57
+   },
+   {
+    "url": "/zh-hk/product/catalog-printing/",
+    "full": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+    "clicks": 0,
+    "imps": 19,
+    "ctr": 0.0,
+    "rank": 46.05
+   }
+  ],
+  "日本": [
+   {
+    "url": "/ja/product/textbooks/",
+    "full": "https://zprintpro.com/ja/product/textbooks/",
+    "clicks": 0,
+    "imps": 39,
+    "ctr": 0.0,
+    "rank": 50.87
+   },
+   {
+    "url": "/ja/product/double-sided-flyers/",
+    "full": "https://zprintpro.com/ja/product/double-sided-flyers/",
+    "clicks": 0,
+    "imps": 31,
+    "ctr": 0.0,
+    "rank": 22.35
+   },
+   {
+    "url": "/ja/blog/cmyk-guide/",
+    "full": "https://zprintpro.com/ja/blog/cmyk-guide/",
+    "clicks": 0,
+    "imps": 30,
+    "ctr": 0.0,
+    "rank": 81.93
+   },
+   {
+    "url": "/ja/product/kraft-paper-packaging-box/",
+    "full": "https://zprintpro.com/ja/product/kraft-paper-packaging-box/",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 34.65
+   },
+   {
+    "url": "/ja/blog/a5-vs-a6-flyer-size/",
+    "full": "https://zprintpro.com/ja/blog/a5-vs-a6-flyer-size/",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 17.0
+   },
+   {
+    "url": "/ja/product/a2-posters/",
+    "full": "https://zprintpro.com/ja/product/a2-posters/",
+    "clicks": 0,
+    "imps": 12,
+    "ctr": 0.0,
+    "rank": 53.17
+   },
+   {
+    "url": "/ja/product/waterproof-stickers/",
+    "full": "https://zprintpro.com/ja/product/waterproof-stickers/",
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "rank": 19.6
+   },
+   {
+    "url": "/ja/product/small-batch-stickers/",
+    "full": "https://zprintpro.com/ja/product/small-batch-stickers/",
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "rank": 49.9
+   },
+   {
+    "url": "/ja/product/food-boxes/",
+    "full": "https://zprintpro.com/ja/product/food-boxes/",
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "rank": 61.57
+   },
+   {
+    "url": "/ja/blog/poster-size-guide/",
+    "full": "https://zprintpro.com/ja/blog/poster-size-guide/",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 47.4
+   },
+   {
+    "url": "/ja/product/rounded-corner-cards/",
+    "full": "https://zprintpro.com/ja/product/rounded-corner-cards/",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 59.4
+   },
+   {
+    "url": "/ja/product/magnetic-closure-gift-box/",
+    "full": "https://zprintpro.com/ja/product/magnetic-closure-gift-box/",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 50.25
+   },
+   {
+    "url": "/ja/category/japan-doujin/",
+    "full": "https://zprintpro.com/ja/category/japan-doujin/",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 64.0
+   },
+   {
+    "url": "/ja/product/large-envelopes/",
+    "full": "https://zprintpro.com/ja/product/large-envelopes/",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 26.67
+   },
+   {
+    "url": "/ja/product/outdoor-posters/",
+    "full": "https://zprintpro.com/ja/product/outdoor-posters/",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 55.67
+   },
+   {
+    "url": "/ja/blog/poster-printing-price-guide/",
+    "full": "https://zprintpro.com/ja/blog/poster-printing-price-guide/",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 65.0
+   },
+   {
+    "url": "/ja/product/die-cut-stickers/",
+    "full": "https://zprintpro.com/ja/product/die-cut-stickers/",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 1.0
+   },
+   {
+    "url": "/ja/product/fluorescent-stickers/",
+    "full": "https://zprintpro.com/ja/product/fluorescent-stickers/",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 26.5
+   },
+   {
+    "url": "/ja/product/catalog-printing/",
+    "full": "https://zprintpro.com/ja/product/catalog-printing/",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 45.0
+   },
+   {
+    "url": "/ja/category/packaging/",
+    "full": "https://zprintpro.com/ja/category/packaging/",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 49.5
+   }
+  ],
+  "美国": [
+   {
+    "url": "/en/product/small-batch-stickers/",
+    "full": "https://zprintpro.com/en/product/small-batch-stickers/",
+    "clicks": 0,
+    "imps": 55,
+    "ctr": 0.0,
+    "rank": 48.38
+   },
+   {
+    "url": "/en/product/saddle-stitch-booklets/",
+    "full": "https://zprintpro.com/en/product/saddle-stitch-booklets/",
+    "clicks": 0,
+    "imps": 54,
+    "ctr": 0.0,
+    "rank": 83.19
+   },
+   {
+    "url": "/en/product/catalog-printing/",
+    "full": "https://zprintpro.com/en/product/catalog-printing/",
+    "clicks": 0,
+    "imps": 30,
+    "ctr": 0.0,
+    "rank": 30.77
+   },
+   {
+    "url": "/en/blog/calendar-printing-guide/",
+    "full": "https://zprintpro.com/en/blog/calendar-printing-guide/",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 56.71
+   },
+   {
+    "url": "/en/product/exercise-books/",
+    "full": "https://zprintpro.com/en/product/exercise-books/",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 22.21
+   },
+   {
+    "url": "/en/product/foil-stickers/",
+    "full": "https://zprintpro.com/en/product/foil-stickers/",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 58.07
+   },
+   {
+    "url": "/en/product/removable-stickers/",
+    "full": "https://zprintpro.com/en/product/removable-stickers/",
+    "clicks": 0,
+    "imps": 12,
+    "ctr": 0.0,
+    "rank": 49.33
+   },
+   {
+    "url": "/en/product/fluorescent-stickers/",
+    "full": "https://zprintpro.com/en/product/fluorescent-stickers/",
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "rank": 47.88
+   },
+   {
+    "url": "/en/product/a2-posters/",
+    "full": "https://zprintpro.com/en/product/a2-posters/",
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "rank": 65.57
+   },
+   {
+    "url": "/en/blog/poster-size-guide/",
+    "full": "https://zprintpro.com/en/blog/poster-size-guide/",
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "rank": 83.0
+   },
+   {
+    "url": "/en/product/adhesive-banners/",
+    "full": "https://zprintpro.com/en/product/adhesive-banners/",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 55.6
+   },
+   {
+    "url": "/en/product/waterproof-stickers/",
+    "full": "https://zprintpro.com/en/product/waterproof-stickers/",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 77.4
+   },
+   {
+    "url": "/en/product/a1-posters/",
+    "full": "https://zprintpro.com/en/product/a1-posters/",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 27.75
+   },
+   {
+    "url": "/en/product/security-stickers/",
+    "full": "https://zprintpro.com/en/product/security-stickers/",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 31.5
+   },
+   {
+    "url": "/zh-hk/product/doujinshi-printing/",
+    "full": "https://zprintpro.com/zh-hk/product/doujinshi-printing/",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 10.67
+   },
+   {
+    "url": "/en/",
+    "full": "https://zprintpro.com/en/",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 28.67
+   },
+   {
+    "url": "/en/product/perfect-bound-books/",
+    "full": "https://zprintpro.com/en/product/perfect-bound-books/",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 43.0
+   },
+   {
+    "url": "/en/blog/cmyk-guide/",
+    "full": "https://zprintpro.com/en/blog/cmyk-guide/",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 87.67
+   },
+   {
+    "url": "/en/product/eco-paper-bags/",
+    "full": "https://zprintpro.com/en/product/eco-paper-bags/",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 30.0
+   },
+   {
+    "url": "/en/product/same-day-flyers/",
+    "full": "https://zprintpro.com/en/product/same-day-flyers/",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 49.5
+   }
+  ],
+  "汇总": [
+   {
+    "url": "/zh-hk/product/a2-posters/",
+    "full": "https://zprintpro.com/zh-hk/product/a2-posters/",
+    "clicks": 1,
+    "imps": 148,
+    "ctr": 0.68,
+    "rank": 15.88
+   },
+   {
+    "url": "/zh-hk/category/stickers/",
+    "full": "https://zprintpro.com/zh-hk/category/stickers/",
+    "clicks": 1,
+    "imps": 105,
+    "ctr": 0.95,
+    "rank": 32.56
+   },
+   {
+    "url": "/zh-hk/category/flyers/",
+    "full": "https://zprintpro.com/zh-hk/category/flyers/",
+    "clicks": 1,
+    "imps": 84,
+    "ctr": 1.19,
+    "rank": 42.31
+   },
+   {
+    "url": "/en/product/small-batch-stickers/",
+    "full": "https://zprintpro.com/en/product/small-batch-stickers/",
+    "clicks": 0,
+    "imps": 84,
+    "ctr": 0.0,
+    "rank": 38.74
+   },
+   {
+    "url": "/en/blog/poster-size-guide/",
+    "full": "https://zprintpro.com/en/blog/poster-size-guide/",
+    "clicks": 0,
+    "imps": 83,
+    "ctr": 0.0,
+    "rank": 57.53
+   },
+   {
+    "url": "/zh-hk/product/a5-flyers/",
+    "full": "https://zprintpro.com/zh-hk/product/a5-flyers/",
+    "clicks": 1,
+    "imps": 81,
+    "ctr": 1.23,
+    "rank": 35.7
+   },
+   {
+    "url": "/zh-hk/category/calendars/",
+    "full": "https://zprintpro.com/zh-hk/category/calendars/",
+    "clicks": 0,
+    "imps": 80,
+    "ctr": 0.0,
+    "rank": 22.05
+   },
+   {
+    "url": "/zh-hk/category/packaging/",
+    "full": "https://zprintpro.com/zh-hk/category/packaging/",
+    "clicks": 0,
+    "imps": 79,
+    "ctr": 0.0,
+    "rank": 32.27
+   },
+   {
+    "url": "/en/product/saddle-stitch-booklets/",
+    "full": "https://zprintpro.com/en/product/saddle-stitch-booklets/",
+    "clicks": 0,
+    "imps": 74,
+    "ctr": 0.0,
+    "rank": 80.19
+   },
+   {
+    "url": "/en/blog/flyer-sizes-compared/",
+    "full": "https://zprintpro.com/en/blog/flyer-sizes-compared/",
+    "clicks": 0,
+    "imps": 73,
+    "ctr": 0.0,
+    "rank": 10.92
+   },
+   {
+    "url": "/en/product/catalog-printing/",
+    "full": "https://zprintpro.com/en/product/catalog-printing/",
+    "clicks": 0,
+    "imps": 73,
+    "ctr": 0.0,
+    "rank": 37.16
+   },
+   {
+    "url": "/zh-hk/category/paper-bags/",
+    "full": "https://zprintpro.com/zh-hk/category/paper-bags/",
+    "clicks": 0,
+    "imps": 66,
+    "ctr": 0.0,
+    "rank": 34.85
+   },
+   {
+    "url": "/zh-hk/product/a4-flyers/",
+    "full": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+    "clicks": 0,
+    "imps": 64,
+    "ctr": 0.0,
+    "rank": 59.25
+   },
+   {
+    "url": "/zh-hk/category/posters/",
+    "full": "https://zprintpro.com/zh-hk/category/posters/",
+    "clicks": 5,
+    "imps": 63,
+    "ctr": 7.94,
+    "rank": 43.25
+   },
+   {
+    "url": "/en/product/exercise-books/",
+    "full": "https://zprintpro.com/en/product/exercise-books/",
+    "clicks": 0,
+    "imps": 63,
+    "ctr": 0.0,
+    "rank": 29.54
+   },
+   {
+    "url": "/zh-hk/product/saddle-stitch-booklets/",
+    "full": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+    "clicks": 0,
+    "imps": 62,
+    "ctr": 0.0,
+    "rank": 32.74
+   },
+   {
+    "url": "/zh-hk/blog/poster-size-guide/",
+    "full": "https://zprintpro.com/zh-hk/blog/poster-size-guide/",
+    "clicks": 0,
+    "imps": 57,
+    "ctr": 0.0,
+    "rank": 11.32
+   },
+   {
+    "url": "/zh-hk/services/rush-printing-delivery/",
+    "full": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+    "clicks": 0,
+    "imps": 52,
+    "ctr": 0.0,
+    "rank": 30.79
+   },
+   {
+    "url": "/zh-hk/product/eco-paper-bags/",
+    "full": "https://zprintpro.com/zh-hk/product/eco-paper-bags/",
+    "clicks": 0,
+    "imps": 48,
+    "ctr": 0.0,
+    "rank": 56.62
+   },
+   {
+    "url": "/zh-hk/blog/mtr-advertising-specs/",
+    "full": "https://zprintpro.com/zh-hk/blog/mtr-advertising-specs/",
+    "clicks": 1,
+    "imps": 46,
+    "ctr": 2.17,
+    "rank": 8.0
+   }
+  ]
+ },
+ "country_distribution": {
+  "香港": [
+   {
+    "c": "中国香港",
+    "clicks": 38,
+    "imps": 1514,
+    "ctr": 2.51,
+    "rank": 21.59
+   }
+  ],
+  "日本": [
+   {
+    "c": "日本",
+    "clicks": 7,
+    "imps": 385,
+    "ctr": 1.82,
+    "rank": 28.79
+   }
+  ],
+  "美国": [
+   {
+    "c": "美国",
+    "clicks": 0,
+    "imps": 544,
+    "ctr": 0.0,
+    "rank": 36.49
+   }
+  ],
+  "汇总": [
+   {
+    "c": "中国香港",
+    "clicks": 38,
+    "imps": 1514,
+    "ctr": 2.51,
+    "rank": 21.59
+   },
+   {
+    "c": "日本",
+    "clicks": 7,
+    "imps": 385,
+    "ctr": 1.82,
+    "rank": 28.79
+   },
+   {
+    "c": "马来西亚",
+    "clicks": 1,
+    "imps": 36,
+    "ctr": 2.78,
+    "rank": 20.83
+   },
+   {
+    "c": "中国",
+    "clicks": 1,
+    "imps": 14,
+    "ctr": 7.14,
+    "rank": 9.79
+   },
+   {
+    "c": "墨西哥",
+    "clicks": 1,
+    "imps": 14,
+    "ctr": 7.14,
+    "rank": 28.07
+   },
+   {
+    "c": "意大利",
+    "clicks": 1,
+    "imps": 4,
+    "ctr": 25.0,
+    "rank": 43.0
+   },
+   {
+    "c": "美国",
+    "clicks": 0,
+    "imps": 544,
+    "ctr": 0.0,
+    "rank": 36.49
+   },
+   {
+    "c": "英国",
+    "clicks": 0,
+    "imps": 83,
+    "ctr": 0.0,
+    "rank": 25.49
+   },
+   {
+    "c": "沙特阿拉伯",
+    "clicks": 0,
+    "imps": 49,
+    "ctr": 0.0,
+    "rank": 47.96
+   },
+   {
+    "c": "台湾",
+    "clicks": 0,
+    "imps": 48,
+    "ctr": 0.0,
+    "rank": 17.81
+   },
+   {
+    "c": "印度",
+    "clicks": 0,
+    "imps": 37,
+    "ctr": 0.0,
+    "rank": 17.11
+   },
+   {
+    "c": "加拿大",
+    "clicks": 0,
+    "imps": 36,
+    "ctr": 0.0,
+    "rank": 48.94
+   },
+   {
+    "c": "澳大利亚",
+    "clicks": 0,
+    "imps": 35,
+    "ctr": 0.0,
+    "rank": 28.86
+   },
+   {
+    "c": "菲律宾",
+    "clicks": 0,
+    "imps": 34,
+    "ctr": 0.0,
+    "rank": 23.76
+   },
+   {
+    "c": "泰国",
+    "clicks": 0,
+    "imps": 30,
+    "ctr": 0.0,
+    "rank": 27.4
+   },
+   {
+    "c": "越南",
+    "clicks": 0,
+    "imps": 26,
+    "ctr": 0.0,
+    "rank": 27.0
+   },
+   {
+    "c": "新加坡",
+    "clicks": 0,
+    "imps": 22,
+    "ctr": 0.0,
+    "rank": 10.73
+   },
+   {
+    "c": "乌克兰",
+    "clicks": 0,
+    "imps": 22,
+    "ctr": 0.0,
+    "rank": 31.68
+   },
+   {
+    "c": "荷兰",
+    "clicks": 0,
+    "imps": 22,
+    "ctr": 0.0,
+    "rank": 48.86
+   },
+   {
+    "c": "爱尔兰",
+    "clicks": 0,
+    "imps": 22,
+    "ctr": 0.0,
+    "rank": 66.14
+   },
+   {
+    "c": "土耳其",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 31.33
+   },
+   {
+    "c": "俄罗斯",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 29.64
+   },
+   {
+    "c": "法国",
+    "clicks": 0,
+    "imps": 13,
+    "ctr": 0.0,
+    "rank": 22.38
+   },
+   {
+    "c": "印度尼西亚",
+    "clicks": 0,
+    "imps": 13,
+    "ctr": 0.0,
+    "rank": 24.62
+   },
+   {
+    "c": "巴西",
+    "clicks": 0,
+    "imps": 12,
+    "ctr": 0.0,
+    "rank": 25.5
+   },
+   {
+    "c": "德国",
+    "clicks": 0,
+    "imps": 11,
+    "ctr": 0.0,
+    "rank": 9.73
+   },
+   {
+    "c": "尼日利亚",
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "rank": 16.11
+   },
+   {
+    "c": "巴基斯坦",
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "rank": 16.22
+   },
+   {
+    "c": "西班牙",
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "rank": 27.57
+   },
+   {
+    "c": "阿拉伯联合酋长国",
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "rank": 6.5
+   },
+   {
+    "c": "孟加拉",
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "rank": 18.17
+   },
+   {
+    "c": "南非",
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "rank": 59.5
+   },
+   {
+    "c": "约旦",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 40.0
+   },
+   {
+    "c": "阿根廷",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 6.75
+   },
+   {
+    "c": "加纳",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 8.0
+   },
+   {
+    "c": "澳门",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 8.5
+   },
+   {
+    "c": "韩国",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 10.0
+   },
+   {
+    "c": "瑞典",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 24.0
+   },
+   {
+    "c": "以色列",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 32.0
+   },
+   {
+    "c": "丹麦",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 48.25
+   },
+   {
+    "c": "瑞士",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 4.0
+   },
+   {
+    "c": "肯尼亚",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 6.0
+   },
+   {
+    "c": "波多黎各",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 6.0
+   },
+   {
+    "c": "斯里兰卡",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 7.0
+   },
+   {
+    "c": "摩洛哥",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 18.67
+   },
+   {
+    "c": "挪威",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 21.0
+   },
+   {
+    "c": "埃及",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 25.67
+   },
+   {
+    "c": "柬埔寨",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 33.67
+   },
+   {
+    "c": "保加利亚",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 3.0
+   },
+   {
+    "c": "捷克",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 5.0
+   },
+   {
+    "c": "芬兰",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 5.5
+   },
+   {
+    "c": "希腊",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 5.5
+   },
+   {
+    "c": "埃塞俄比亚",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 6.0
+   },
+   {
+    "c": "津巴布韦",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 7.0
+   },
+   {
+    "c": "关岛",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 7.5
+   },
+   {
+    "c": "新西兰",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 9.0
+   },
+   {
+    "c": "巴林",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 34.5
+   },
+   {
+    "c": "葡萄牙",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 44.5
+   },
+   {
+    "c": "伊拉克",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 47.0
+   },
+   {
+    "c": "斯洛伐克",
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "rank": 71.5
+   },
+   {
+    "c": "厄瓜多尔",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 1.0
+   },
+   {
+    "c": "马达加斯加",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 1.0
+   },
+   {
+    "c": "塞舌尔",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 1.0
+   },
+   {
+    "c": "吉布提",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 2.0
+   },
+   {
+    "c": "马尔代夫",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 2.0
+   },
+   {
+    "c": "马拉维",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 2.0
+   },
+   {
+    "c": "利比亚",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 5.0
+   },
+   {
+    "c": "格鲁吉亚",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 6.0
+   },
+   {
+    "c": "哈萨克斯坦",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 6.0
+   },
+   {
+    "c": "索马里",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 6.0
+   },
+   {
+    "c": "科索沃",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 7.0
+   },
+   {
+    "c": "伯利兹",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 8.0
+   },
+   {
+    "c": "玻利维亚",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 9.0
+   },
+   {
+    "c": "安哥拉",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 10.0
+   },
+   {
+    "c": "奥地利",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 10.0
+   },
+   {
+    "c": "英属维尔京群岛",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 11.0
+   },
+   {
+    "c": "毛里求斯",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 13.0
+   },
+   {
+    "c": "阿尔及利亚",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 35.0
+   },
+   {
+    "c": "直布罗陀",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 41.0
+   },
+   {
+    "c": "波兰",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 60.0
+   },
+   {
+    "c": "拉脱维亚",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 86.0
+   }
+  ]
+ },
+ "device_breakdown": {
+  "香港": [
+   {
+    "d": "桌面",
+    "clicks": 22,
+    "imps": 844,
+    "ctr": 2.61,
+    "rank": 24.31
+   },
+   {
+    "d": "移动设备",
+    "clicks": 15,
+    "imps": 657,
+    "ctr": 2.28,
+    "rank": 18.42
+   },
+   {
+    "d": "平板电脑",
+    "clicks": 1,
+    "imps": 13,
+    "ctr": 7.69,
+    "rank": 5.46
+   }
+  ],
+  "日本": [
+   {
+    "d": "移动设备",
+    "clicks": 4,
+    "imps": 128,
+    "ctr": 3.12,
+    "rank": 12.97
+   },
+   {
+    "d": "桌面",
+    "clicks": 3,
+    "imps": 254,
+    "ctr": 1.18,
+    "rank": 37.04
+   },
+   {
+    "d": "平板电脑",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 6.33
+   }
+  ],
+  "美国": [
+   {
+    "d": "桌面",
+    "clicks": 0,
+    "imps": 444,
+    "ctr": 0.0,
+    "rank": 38.05
+   },
+   {
+    "d": "移动设备",
+    "clicks": 0,
+    "imps": 99,
+    "ctr": 0.0,
+    "rank": 29.74
+   },
+   {
+    "d": "平板电脑",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 12.0
+   }
+  ],
+  "汇总": [
+   {
+    "d": "桌面",
+    "clicks": 29,
+    "imps": 2129,
+    "ctr": 1.36,
+    "rank": 30.73
+   },
+   {
+    "d": "移动设备",
+    "clicks": 19,
+    "imps": 1056,
+    "ctr": 1.8,
+    "rank": 17.99
+   },
+   {
+    "d": "平板电脑",
+    "clicks": 1,
+    "imps": 18,
+    "ctr": 5.56,
+    "rank": 5.94
+   }
+  ]
+ },
+ "search_appearance": {
+  "香港": [
+   {
+    "a": "产品摘要",
+    "clicks": 26,
+    "imps": 1419,
+    "ctr": 1.83,
+    "rank": 35.01
+   }
+  ],
+  "日本": [
+   {
+    "a": "产品摘要",
+    "clicks": 4,
+    "imps": 136,
+    "ctr": 2.94,
+    "rank": 33.73
+   },
+   {
+    "a": "商家信息",
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "rank": 5.67
+   }
+  ],
+  "美国": [
+   {
+    "a": "产品摘要",
+    "clicks": 0,
+    "imps": 342,
+    "ctr": 0.0,
+    "rank": 46.46
+   },
+   {
+    "a": "商家信息",
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "rank": 3.0
+   }
+  ],
+  "汇总": [
+   {
+    "a": "产品摘要",
+    "clicks": 31,
+    "imps": 2166,
+    "ctr": 1.43,
+    "rank": 36.67
+   },
+   {
+    "a": "商家信息",
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "rank": 5.0
+   }
+  ]
+ },
+ "brand_health": {
+  "香港": [
+   {
+    "q": "智印港",
+    "clicks": 2,
+    "imps": 2,
+    "ctr": 100.0,
+    "rank": 1.0,
+    "brand": "智印港"
+   }
+  ],
+  "日本": [],
+  "美国": [],
+  "汇总": [
+   {
+    "q": "智印港",
+    "clicks": 2,
+    "imps": 2,
+    "ctr": 100.0,
+    "rank": 1.0,
+    "brand": "智印港"
+   }
+  ]
+ },
+ "top_non_brand_strategic": {
+  "香港": [
+   {
+    "q": "宣傳單張",
+    "clicks": 0,
+    "imps": 37,
+    "ctr": 0.0,
+    "rank": 37.16
+   },
+   {
+    "q": "月曆印刷",
+    "clicks": 0,
+    "imps": 36,
+    "ctr": 0.0,
+    "rank": 19.39
+   },
+   {
+    "q": "宣傳單張印刷",
+    "clicks": 0,
+    "imps": 36,
+    "ctr": 0.0,
+    "rank": 30.31
+   },
+   {
+    "q": "貼紙印刷",
+    "clicks": 0,
+    "imps": 33,
+    "ctr": 0.0,
+    "rank": 37.76
+   },
+   {
+    "q": "印海報",
+    "clicks": 0,
+    "imps": 25,
+    "ctr": 0.0,
+    "rank": 32.36
+   },
+   {
+    "q": "海報印刷",
+    "clicks": 0,
+    "imps": 24,
+    "ctr": 0.0,
+    "rank": 29.83
+   },
+   {
+    "q": "貼紙",
+    "clicks": 0,
+    "imps": 20,
+    "ctr": 0.0,
+    "rank": 54.6
+   },
+   {
+    "q": "戶外貼紙",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 22.11
+   },
+   {
+    "q": "包裝盒印刷",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 39.22
+   },
+   {
+    "q": "紙盒訂製",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 44.56
+   },
+   {
+    "q": "戶外橫額",
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "rank": 58.28
+   },
+   {
+    "q": "poster 印刷",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 27.76
+   },
+   {
+    "q": "印書",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 34.76
+   },
+   {
+    "q": "餐牌印刷",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 15.81
+   },
+   {
+    "q": "包裝盒訂製",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 27.38
+   }
+  ],
+  "日本": [
+   {
+    "q": "両面カラー印刷",
+    "clicks": 0,
+    "imps": 31,
+    "ctr": 0.0,
+    "rank": 22.35
+   },
+   {
+    "q": "教材 印刷製本",
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "rank": 50.88
+   },
+   {
+    "q": "印刷 カラー モード",
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "rank": 76.93
+   },
+   {
+    "q": "印刷 カラー cmyk",
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "rank": 90.3
+   },
+   {
+    "q": "a5とa6どっちが大きい",
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "rank": 11.78
+   },
+   {
+    "q": "クラフト紙 パッケージ 印刷",
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "rank": 34.75
+   },
+   {
+    "q": "クラフト紙 パッケージ印刷",
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "rank": 35.38
+   },
+   {
+    "q": "教材 印刷 製本",
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "rank": 51.38
+   },
+   {
+    "q": "食品 パッケージ",
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "rank": 61.57
+   },
+   {
+    "q": "教材 テキスト印刷",
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "rank": 47.5
+   },
+   {
+    "q": "pvc シール",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 22.8
+   },
+   {
+    "q": "教科書 印刷",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 46.0
+   },
+   {
+    "q": "ステッカー印刷 小ロット",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 51.4
+   },
+   {
+    "q": "名刺 角丸",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 59.4
+   },
+   {
+    "q": "rgb 印刷",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 79.0
+   }
+  ],
+  "美国": [
+   {
+    "q": "saddle stitch booklets",
+    "clicks": 0,
+    "imps": 19,
+    "ctr": 0.0,
+    "rank": 89.21
+   },
+   {
+    "q": "small batch label printing",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 59.19
+   },
+   {
+    "q": "saddle stitch booklet",
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "rank": 74.12
+   },
+   {
+    "q": "small quantity label printing",
+    "clicks": 0,
+    "imps": 15,
+    "ctr": 0.0,
+    "rank": 78.6
+   },
+   {
+    "q": "small batch sticker printing",
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "rank": 18.6
+   },
+   {
+    "q": "china catalog printing",
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "rank": 24.7
+   },
+   {
+    "q": "catalog printing china",
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "rank": 26.38
+   },
+   {
+    "q": "removable stickers",
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "rank": 49.14
+   },
+   {
+    "q": "catalogue printing china",
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "rank": 29.5
+   },
+   {
+    "q": "small batch labels",
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "rank": 47.83
+   },
+   {
+    "q": "small batch stickers",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 7.2
+   },
+   {
+    "q": "exercise book printing business",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 16.8
+   },
+   {
+    "q": "how to print waterproof stickers",
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "rank": 77.4
+   }
+  ]
+ }
+}

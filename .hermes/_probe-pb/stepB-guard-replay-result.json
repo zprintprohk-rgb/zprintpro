@@ -1,0 +1,134 @@
+{
+  "replay": [
+    {
+      "name": "1 content 双引号单行",
+      "expect": ">0",
+      "got": 8,
+      "ok": true,
+      "note": "旧实现 0 命中 (字段+引号)"
+    },
+    {
+      "name": "2 content 单引号单行",
+      "expect": ">0",
+      "got": 8,
+      "ok": true,
+      "note": "旧实现 0 命中 (字段盲区)"
+    },
+    {
+      "name": "3 content 模板串多行",
+      "expect": ">0",
+      "got": 8,
+      "ok": true,
+      "note": "products-content.ts 真实形状"
+    },
+    {
+      "name": "4 title 双引号 (旧看空)",
+      "expect": ">0",
+      "got": 8,
+      "ok": true,
+      "note": "旧实现双引号看空"
+    },
+    {
+      "name": "5 日文片假名变体",
+      "expect": ">0",
+      "got": 8,
+      "ok": true,
+      "note": "原正则 0 覆盖 (GSC データ)"
+    },
+    {
+      "name": "6 值内含单引号属性",
+      "expect": ">0",
+      "got": 8,
+      "ok": true,
+      "note": "旧实现引号截断 → 0"
+    },
+    {
+      "name": "7 数组段落形态",
+      "expect": ">0",
+      "got": 8,
+      "ok": true,
+      "note": "旧实现本来能抓 (回归保护)"
+    },
+    {
+      "name": "8 段落数组 + 引号属性",
+      "expect": ">0",
+      "got": 8,
+      "ok": true,
+      "note": "旧实现能抓 (回归保护)"
+    },
+    {
+      "name": "N1 干净文案",
+      "expect": "=0",
+      "got": 0,
+      "ok": true,
+      "note": "不应误报"
+    },
+    {
+      "name": "N2 干净文案含 class 属性",
+      "expect": "=0",
+      "got": 0,
+      "ok": true,
+      "note": "不应因 HTML 属性误报"
+    },
+    {
+      "name": "N3 色彩校準 (行业词)",
+      "expect": "=0",
+      "got": 0,
+      "ok": true,
+      "note": "色彩校準 必须豁免"
+    },
+    {
+      "name": "N4 注释行引用",
+      "expect": "=0",
+      "got": 0,
+      "ok": true,
+      "note": "注释行不算客户可见"
+    }
+  ],
+  "pass": 12,
+  "fail": 0,
+  "negSilent": true,
+  "posAlive": true,
+  "per": [
+    {
+      "f": "zh-hk.json",
+      "n": 0
+    },
+    {
+      "f": "en.json",
+      "n": 0
+    },
+    {
+      "f": "ja.json",
+      "n": 0
+    },
+    {
+      "f": "blog-posts.ts",
+      "n": 0
+    },
+    {
+      "f": "buying-guides.ts",
+      "n": 0
+    },
+    {
+      "f": "pillar-content.ts",
+      "n": 0
+    },
+    {
+      "f": "products.ts",
+      "n": 0
+    },
+    {
+      "f": "category-seo-content.ts",
+      "n": 0
+    },
+    {
+      "f": "products-content.ts",
+      "n": 0
+    },
+    {
+      "f": "sku-seo-data.ts",
+      "n": 0
+    }
+  ]
+}

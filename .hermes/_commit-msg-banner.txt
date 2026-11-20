@@ -1,0 +1,61 @@
+fix(gate): 关闭 2-SKU banner 缺口 (SKU 集合已统一) + 新增两法对账硬门; en_pcs 试扩后退回
+
+来源: K3 2026-09-19 决策 2.1/2.2「关闭 banner 缺口 + 统一行级分桶, 输出 moq-precision-unified.json」
+
+## 一、✅ 关闭 2-SKU banner 缺口 (SKU 集合由 25/27 → **27/27 一致**)
+根因 (与 K3 判断一致): MOQ_PATTERNS 四条 zh 模式均要求「数字 → **单位字** → 起」,
+而横幅/易拉宝标题的实际表述是**无单位**的「10起印」
+(例 `展示易拉架 | 防水材質 10起印 HK$85起・4小時打稿 | 智印港`) ⇒ 全 zh 模式零命中
+⇒ roll-up-banners / adhesive-banners 在门童侧完全不可见。
+新增模式: `/(?<![A-Za-z0-9,])(\d{2,})\s*起(?:印|訂)(?!\s*\/)/g` → 两法 SKU 集合 27/27 一致 ✅
+
+### ⚠️ 该模式含一次「自伤 → 修正」记录
+首版写成 `(?:^|[^\d,])(\d+)\s*起(?:印|訂)` ⇒ 把 **`A4 起印`** 的 `4` 当 MOQ
+(前缀 `A` 满足 `[^\d,]`) ⇒ products.ts:1013/1023 误报, **门童由 PASS 翻 🔴 阻断 2 条**。
+修正: ① lookbehind 排除**字母**前缀 (`A4`/`A3` 规格名) ② 数字要求 **≥2 位** (本站 MOQ 全 ≥10)。
+修正后门童恢复 PASS。
+
+## 二、⚠️ en_pcs 模式: 试扩 → **已回退** (留痕, 供下轮一次成对上台)
+为关闭两法最后 5 行差 (en 标题的 `100pcs` / `50 pcs` 形态, 例 `Premium Greeting Cards 100pcs`),
+加 `en_pcs` 模式后: **两法行键 43/43 完全一致, UNIFIED 达成** ——
+但该模式把门童判定面扩进**品类级 FAQ 的方法档位语句**与新产品段, 连续揭发新命中:
+- catalog-printing products.ts:5754 (100)
+- category-seo-content.ts:2769 (100)×2 ← 与既有已核准档**同句但 kind 不同**, 不吃既有豁免
+- category-seo-content.ts:2860 (50) / :2867 (500) ← 實為「數碼 vs 柯式方法門檻/交期說明」(industry_fact)
+⇒ 门童再次由 PASS 翻 🔴 阻断。
+**处置: 回退 en_pcs**。理由: 门童是**生产安全网**, 每次扩面都需配套 approved/pending 分层登记,
+属**独立一轮**工作; 在安全网上做半成品扩面 = 拿安全网试错。
+（曾试图把 2 条方法档位登记为待裁决, 但扩面继续揭发新命中 ⇒ 回退更稳）
+**代价 (已知/已定位/不阻断生产)**: en `Npcs` 形态在门童侧仍不可见 ⇒ 两法行键差 5 行。
+**下轮修法**: 加 `en_pcs` **并同时**为上述 5 类新命中登记分层, 一次成对上台。
+
+## 三、新增两法对账硬门 (K3 约束的可执行化)
+`scripts/unify-moq-classification.mjs` — 比对两法并落 `.hermes/reports/moq-precision-unified-2026-09-19.{json,md}`
+- 三维判据: SKU 集合 / 行键 / **语义分桶** (按生成器动作映射, 非按字面名)
+- `exit 0` = 一致 (生成器可构建) ; `exit 1` = 硬门关闭
+- 语义映射修正: 首版按字面名映射, 把 `LOCALE_SPECIFIC_KEEP`↔`PENDING_K3` 等**同义命名**
+  误判为分歧 21 行 ⇒ 改按操作结论映射后语义一致 ✅
+
+## 四、分类器收敛修复
+- 新增 `RULING_ATTESTED` (裁决已点名案例优先于机械簇规则): 修掉 zh-hk menus 4 行分歧
+  (A 机械规则判 MANUAL_REVIEW vs B 判 DRIFT; 真相 = c18107a0 **已点名**该矛盾, 有硬证据
+   ⇒ 不应降级为「无法判定」)。同表纳入 premium-greeting-cards / art-posters。
+- 现分类: TRUE_DRIFT 23 / LOCALE_SPECIFIC_KEEP 7 / NO_MOQ_HOOK 2 / MANUAL_REVIEW 6
+
+## 五、★ 硬门结论: 生成器**仍不构建**
+| 维度 | 结果 |
+|---|---|
+| SKU 集合 | ✅ 27 = 27 |
+| 语义分桶 | ✅ 一致 |
+| 行键 | ❌ 差 5 行 (en `Npcs`) |
+⇒ `NOT_UNIFIED — 硬门关闭`。阶段三 `generate-title-batch.mjs` **本批仍未构建**。
+距统一只差「en_pcs 模式 + 配套分层登记」**一次成对上台**。
+
+## 数据来源
+- scripts/moq10-books-context-scan.ts (MOQ_PATTERNS / PENDING_LIST / APPROVED_BULK_TIERS)
+- .hermes/logs/moq-scan-latest.json · src/data/products.ts · src/data/category-seo-content.ts
+校准日期: 2026-09-19 21:45
+
+## 验收
+npx tsx scripts/moq10-books-context-scan.ts --gate → **PASS, exit 0** ✅ (安全网已恢复)
+node scripts/unify-moq-classification.mjs → SKU ✅ / 语义 ✅ / 行键 ❌ → NOT_UNIFIED (exit 1) — 符合 K3 约束

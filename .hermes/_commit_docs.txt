@@ -1,0 +1,274 @@
+﻿git : 🔍 反审门童 v1 pre-commit (K3 9/1 15:06 拍板)...
+所在位置 行:1 字符: 921
++ ... 6-10-23.md; git commit -m "docs: 2026-10-25 price-truth batch + USA q ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (🔍 反审门童 v1 pre-.../1 15:06 拍板)...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+1️⃣  Encoding check...
+🔍 Checking staged files for encoding issues...
+
+🔧 Fixed:
+  ✅ .hermes/logs/recovery-read-2026-10-23.md (CRLF → LF)
+
+✅ All 2 checked files are UTF-8 LF — safe to commit.
+2️⃣  Simplified Chinese check...
+
+📋 简体字检测报告
+
+================================================================================
+✅ 没有检测到简体字残留
+✅ 所有 zh-hk 产品名称都是纯繁体中文
+
+================================================================================
+🎯 简体字检测完成！
+2️⃣.5  blog-data JSON 严格校验 (门童 #15)...
+3️⃣  反审门童 v1 (5 道门童 + 3 道防线)...
+🔍 反审门童 v1 启动 (K3 9/1 15:06 拍板)
+════════════════════════════════════════════════════════════
+模式: 仅 red 硬拦 (shadow mode)
+范围: src/
+DoD 铁律: 禁用
+
+📁 扫描文件数: 2
+
+📉 品牌存量基线: total=431 files=51 (基线内命中不拦, 只拦新增)
+
+📉 CRED 存量基线: head=8806521d hits=0 files=0 (基线内命中不拦, 只拦新增)
+
+门童 #1 数据诚信: 5 命中
+  🟡 SHADOW [orange] docs/2026-10-25-price-truth-and-usa-exit-words.md:17
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,562
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] docs/2026-10-25-price-truth-and-usa-exit-words.md:48
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,562
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] docs/2026-10-25-price-truth-and-usa-exit-words.md:48
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,176
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] docs/2026-10-25-price-truth-and-usa-exit-words.md:49
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,161
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] docs/2026-10-25-price-truth-and-usa-exit-words.md:49
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,176
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+
+门童 #2 真实电话: ✅ 0 命中
+
+门童 #3 品牌分层: ✅ 0 命中
+
+ℹ️ 门童 #4 双向污染存量基线: 实测命中 0 → 基线 162 (录于 2026-09-19); 本次基线内豁免 0, 既有内向 red 保留 0, ★新增缺陷 0
+   ⚠️ 实测(0) ≠ 基线(162) ⇒ 存量已递减 162 条 (可将基线同步下调)
+门童 #4 跨语言污染 (v2 扩展 en 8 禁词 + ja 8 禁词 per K3 9/2 08:50 GLM 评估): ✅ 0 命中
+
+门童 #5 SOP-10 5 问门禁: ✅ 0 命中
+
+门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留): ✅ 0 命中
+
+门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发): ✅ 0 命中
+
+门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT): ✅ 0 命中
+
+门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h): 3 命中
+  🟡 SHADOW [yellow] /.hermes/logs/recovery-read-2026-10-23.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /docs/2026-10-25-price-truth-and-usa-exit-words.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /docs/2026-10-25-price-truth-and-usa-exit-words.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+
+门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数): ✅ 0 命中
+
+门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则): ✅ 0 命中
+
+门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学
+得 323 条基线全量修复): ✅ 0 命中
+
+门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件): ✅ 0 命中
+
+门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57): ✅ 0 
+命中
+
+ℹ️ 门童 #20 存量基线: 基线 120, 现存 53, 已修 67, 剩余待修 53
+门童 #20 meta description 完整性 (K3 2026-09-18 决策 3-B 专用基线通道: 语言错配/首词前缀重复/空 meta; 存量 120 条只许递减): ✅ 0 命中
+
+════════════════════════════════════════════════════════════
+📊 汇总: 🔴 0 | 🟠 5 | 🟡 3 | ⚪ 0
+📊 真實計數 (未截斷): CRED_4_PLUS_NUMBER=5 | CRED_ISO_9001=0 | CRED_FSC_C123456=0 | CRED_TUV_RHEINLAND=0 | CRED_1000_PLUS=0 | 
+CRED_X_INDUSTRIES=0 | CRED_X_FOLD=0 | CRED_INTL_TOP=0 | CRED_15_YEARS=0 | CRED_HEIDELBERG=0 | BRAND_LOCALE_MISMATCH=0 |
+ I18N_CURRENCY=0 | SOP10_CERT_NO=0 | SECRET_LEAK=0
+
+⚠️ 反审门童预警 (shadow mode, 不拦截)
+3️⃣.5  门童 #3 品牌分层 全量基线闸门...
+=== 门童 #3 品牌分层 · 全量基线闸门 ===
+扫描 301 文件 | 当前双品牌总量 = 259
+基线 (2026-09-16): total=431
+[PASS] 未新增 (431 → 259, 已减 172 — 记得 --update 重录基线)
+3️⃣.6  门童 #24 MOQ 口径一致性闸门 (条件式扫描域)...
+MOQ 口徑一致性掃描（真值 = src/data/products.ts minQuantity）
+[SCOPE] staged 無 MOQ 目標檔 ｜ 實際掃 0/5 檔（無）
+        ⚠️ 本次為**局部掃描**，僅涵蓋上述檔案；未掃檔案 ≠ 已檢查通過
+真值 SKU: 82 ｜ 掃描檔: 0 ｜ 命中: 0 ｜ 漂移: 0
+形狀斷言: ✓ 真值表 = 產品 slug 行 = minQuantity 行 ｜ 分類 slug 已排除
+
+雙方法復算 (products.ts, 逐樣式同定義域): ✓ 掃描器 ≤ grep 全數成立
+   zh_本起       grep  19 / 掃描器   0
+   zh_張起       grep  24 / 掃描器   0
+   zh_個起       grep  22 / 掃描器   0
+   zh_份起       grep   0 / 掃描器   0
+   zh_起印(無單位)  grep   0 / 掃描器   0
+   ja_枚から      grep  17 / 掃描器   0
+   ja_冊から      grep   4 / 掃描器   0
+   en_MOQ      grep  25 / 掃描器   0
+   en_pcs      grep   8 / 掃描器   0
+
+✓ 無漂移
+
+[GATE] SKIP — staged 無 MOQ 目標檔 → 本次不檢查（≠ 已檢查通過）
+3️⃣.7  門童清單編號衝突檢查...
+✅ [GUARD-MANIFEST] 0 衝突 — 門童編號 28 個（最大 #29）｜ 規則 ID 622 個
+3️⃣.8  門童 #26 hook SSoT/active 同步一致性...
+✅ [HOOK-SYNC] SSoT 與 active 一致（sha256 50768ebf40b0，2 個目標）
+3️⃣.9  門童 #25 標題當量帶閘門 (staged 新增 ≥58 硬攔)...
+[门童 #25] title-band: 252 槽全量审计 -> .hermes/logs/sku-title-audit-2026-10-25.json (存量 issue 0)
+[门童 #25] staged 新增 title 当量全过 ✅
+3️⃣.10  門童 #27 標題 v5 全面審查 (staged title 變更硬攔)...
+[门童 #27] title-v5: staged 无 title 变更, 跳过 (全量审计仍落日志)
+[门童 #27] title-v5: 252 槽审计 → .hermes/logs/sku-title-v5-audit-2026-10-25.json
+[门童 #27] HARD=7 (PRICE_MISMATCH:7) | WARN=28 | 冻结槽=2
+[门童 #27] ⚠️ WARN 分布: LONGTAIL_SOURCE:13 MOQ_DRIFT:5 MOQ_UNVERIFIABLE:6 FROZEN_FILLER_WORD:2 PRICE_UNVERIFIABLE:2
+[门童 #27] staged title 变更 0 槽: 0 HARD ✅
+3️⃣.11  門童 #28 品牌·語種全鏈路掃描...
+SKU 数: 84  ← 结构解析 (源1 sku-seo-data.ts)
+博客 title/excerpt 块: 672 条 (源2 blog-posts.ts)
+blog-data JSON: 3 语系文件 (源3)
+渲染模板层: generateProductMetadata/generateCategoryMetadata 断言完成 (源4 seo.ts)
+
+──────────── 结果 (v3.1 品牌·语种全链路) ────────────
+
+=== en/ja 段出现「智印港」: 0 处 ===
+
+=== zh-hk 段出现 ZprintPro (双品牌): 0 处 ===
+
+=== ja 段出现繁体专用字: 0 处 ===
+
+=== en 段出现 CJK: 0 处 ===
+
+=== 渲染模板层断言: 0 处 ===
+
+违规模板源总计: 0 处 (品牌·语种门童铁律 B-3)
+3️⃣.12  門童 #29 keywords 去毒閘門 (防 9/6 清洗後 regen 回流重演)...
+[门童 #29] keywords-detox: 252 槽全扫 -> .hermes/logs/keywords-detox-audit-2026-10-25.json (违规 0 / 显式豁免 6)
+[门童 #29] ℹ️ 豁免槽 (待 K3 §0.0 裁决, 见 data/keywords-detox-blacklist.json known_exemptions): thick-greeting-cards-400g/zh-hk,
+ thick-greeting-cards-400g/en, thick-greeting-cards-400g/ja, foil-greeting-cards/zh-hk, foil-greeting-cards/en, foil-gr
+eeting-cards/ja
+[门童 #29] 本次 commit 未触及 keywords 数据文件, 跳过硬拦 (全扫报告已落)
+4️⃣  DoD 铁律 (No fix without a rule)...
+🔍 反审门童 v1 启动 (K3 9/1 15:06 拍板)
+════════════════════════════════════════════════════════════
+模式: 仅 red 硬拦 (shadow mode)
+范围: src/
+DoD 铁律: 启用
+
+📁 扫描文件数: 2
+
+📉 品牌存量基线: total=431 files=51 (基线内命中不拦, 只拦新增)
+
+📉 CRED 存量基线: head=8806521d hits=0 files=0 (基线内命中不拦, 只拦新增)
+
+门童 #1 数据诚信: 5 命中
+  🟡 SHADOW [orange] docs/2026-10-25-price-truth-and-usa-exit-words.md:17
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,562
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] docs/2026-10-25-price-truth-and-usa-exit-words.md:48
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,562
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] docs/2026-10-25-price-truth-and-usa-exit-words.md:48
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,176
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] docs/2026-10-25-price-truth-and-usa-exit-words.md:49
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,161
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] docs/2026-10-25-price-truth-and-usa-exit-words.md:49
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,176
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+
+门童 #2 真实电话: ✅ 0 命中
+
+门童 #3 品牌分层: ✅ 0 命中
+
+ℹ️ 门童 #4 双向污染存量基线: 实测命中 0 → 基线 162 (录于 2026-09-19); 本次基线内豁免 0, 既有内向 red 保留 0, ★新增缺陷 0
+   ⚠️ 实测(0) ≠ 基线(162) ⇒ 存量已递减 162 条 (可将基线同步下调)
+门童 #4 跨语言污染 (v2 扩展 en 8 禁词 + ja 8 禁词 per K3 9/2 08:50 GLM 评估): ✅ 0 命中
+
+门童 #5 SOP-10 5 问门禁: ✅ 0 命中
+
+门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留): ✅ 0 命中
+
+门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发): ✅ 0 命中
+
+门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT): ✅ 0 命中
+
+门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h): 3 命中
+  🟡 SHADOW [yellow] /.hermes/logs/recovery-read-2026-10-23.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /docs/2026-10-25-price-truth-and-usa-exit-words.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /docs/2026-10-25-price-truth-and-usa-exit-words.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+
+门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数): ✅ 0 命中
+
+门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则): ✅ 0 命中
+
+门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学
+得 323 条基线全量修复): ✅ 0 命中
+
+门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件): ✅ 0 命中
+
+门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57): ✅ 0 
+命中
+
+ℹ️ 门童 #20 存量基线: 基线 120, 现存 53, 已修 67, 剩余待修 53
+门童 #20 meta description 完整性 (K3 2026-09-18 决策 3-B 专用基线通道: 语言错配/首词前缀重复/空 meta; 存量 120 条只许递减): ✅ 0 命中
+
+════════════════════════════════════════════════════════════
+📊 汇总: 🔴 0 | 🟠 5 | 🟡 3 | ⚪ 0
+📊 真實計數 (未截斷): CRED_4_PLUS_NUMBER=5 | CRED_ISO_9001=0 | CRED_FSC_C123456=0 | CRED_TUV_RHEINLAND=0 | CRED_1000_PLUS=0 | 
+CRED_X_INDUSTRIES=0 | CRED_X_FOLD=0 | CRED_INTL_TOP=0 | CRED_15_YEARS=0 | CRED_HEIDELBERG=0 | BRAND_LOCALE_MISMATCH=0 |
+ I18N_CURRENCY=0 | SOP10_CERT_NO=0 | SECRET_LEAK=0
+
+ℹ️ DoD: 8 条命中来自规则书/日志/非 src 路径, 不计入 DoD
+✅ DoD 铁律通过: 所有命中规则已入 error-patterns.md
+⚠️ 反审门童预警 (shadow mode, 不拦截)
+
+✅ 反审门童 v1 pre-commit 全部通过
+  5 道门童: 0 red / 0 orange (shadow) / 0 yellow (shadow)
+  DoD 铁律: 通过
+  Encoding: 通过
+  Simplified Chinese: 通过
+[main 12b0d13c] docs: 2026-10-25 price-truth batch + USA query-country exit-word analysis; recovery-read correction annotation (10-24 lane reframe supersedes 10-23 B7 cliff framing)
+ 2 files changed, 84 insertions(+)
+ create mode 100644 docs/2026-10-25-price-truth-and-usa-exit-words.md

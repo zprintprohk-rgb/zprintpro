@@ -1,0 +1,82 @@
+feat(about+factory): K3 拍板 A 12 行业 icon 卡片 + factory 全 webp 化 + hero 改工厂横幅
+
+[K3 11:37 拍板 + 11:40 全局 webp 规范 + 11:42 拍 A]
+[7/31 working tree commit, **不 push** 等 8/1 cron 合并]
+[K3 8/1 路线图: 8/1 10:15 cron 后 1 commit + 1 push]
+
+---
+
+## Part 1: about/page.tsx hero 改用 factory-banner.webp 背景
+
+[K3 11:37 提议: factory-banner.jpg 放 about hero 位置]
+[K3 11:40 全局规范: 全部 webp + ≤180KB]
+
+之前:
+  纯蓝色渐变 + "關於智印港 ZprintPro" 文字
+
+之后:
+  factory-banner.webp (110KB) 背景 + 半透明深色蒙层 + 文字 overlay
+  - alt: "ZprintPro 工厂横幅 · 自家廠房實拍"
+  - 蒙层: bg-gradient-to-br from-[#0F2A4A]/85 to-[#1E3A5F]/80
+  - 跟 FactoryTrust.tsx 首页用 factory-press-pano.webp 风格统一
+
+## Part 2: about 客户评价位置改 12 Tier A 行业 icon 卡片
+
+[K3 11:37 提议: 网上搜客户 LOGO]
+[K3 11:42 拍板 A: M3 方案 — 12 行业 icon 卡片 (法律 0 风险)]
+
+警告: 网上搜真实公司 logo (HK 餐厅/US DTC 美容/日本活动) 假装 ZprintPro 客户
+= 商标侵权 + 虚假广告, HK/美国/日本都有严格法律, 跨境业务更敏感。
+M3 拒绝执行, 推荐 12 行业 icon 方案, K3 11:42 拍 A 确认。
+
+之前: 3 段 MOCK 公司名 (MOCK - HK Restaurant / MOCK - US DTC / MOCK - Japan Event)
+       + testimonialSubtitle 写 "MOCK 占位, K3 拍客戶 logo 後替換"
+       (客户能看到 MOCK 字样, 严重 UX 事故)
+
+之后:
+  - 删 3 段 MOCK 客户评价
+  - testimonialSubtitle 改 "我們服務的 12 大行業 · 累計 1,000+ 企業客戶信賴" (zh-hk)
+  - testimonials 数组 -> industries 数组 (12 项)
+  - 12 Tier A 行业 (§13.2): 餐飲外賣 / 零售精品 / 跨境電商 / 美妝護膚 / 教育培訓 / 婚慶 / 文創IP / 寵物 / 母嬰 / 茶飲食品 / 物流快遞 / 服裝
+  - 每行业 iconKey + name + desc (3 locale 共享 icon, 名字各自本地化)
+  - 渲染: grid 2-3-4 列响应, 每个卡片 icon + 行业名 + 行业描述
+  - 底部背书: "累計 1,000+ 企業客戶 · 50+ 國家 · 15+ 年印刷經驗"
+
+icon map (12 SVG inline, 跟 site 现有 Lucide React 风格统一):
+  fnb / retail / ecommerce / beauty / education / wedding / creator / pet / baby / beverage / logistics / apparel
+
+## Part 3: factory/ 14 张图全 webp 化 + ≤180KB
+
+[K3 11:40 全局规范: 全部 webp + ≤180KB]
+
+转图统计:
+  原 1.57 MB -> 0.75 MB (省 52%)
+  - 10 张 jpg/png -> webp (省 24-72%)
+  - 4 张已 webp 保持 (factory-press-mobile, factory-press-pano, label-press, offset-press)
+  - 0 张超 180KB ✅
+
+工具: Python Pillow 12.2.0, quality 阶梯 95 -> 85 -> 75, method=6 optimize
+脚本: .hermes/convert-images-to-webp-2026-07-31.py (可重跑)
+
+未来: 8/3 K3 拍 P0 4 张新图 (工厂外觀/Heidelberg/印前/Team) 直接 webp 命名 + ≤180KB
+
+## 7/31 verify 现状
+
+- npx next build PASS ✅
+- npx tsc about/page.tsx 0 错 ✅
+- MOCK 剩余 1 个 = comment "删 MOCK 占位" (客户看不到)
+- pre-commit hook 验证 UTF-8 LF + 繁体 0 简体
+
+## 8/1 push 计划
+
+[等 8/1 10:15 cron 触发, 不主动 push]
+1. cron 自动跑 8/1 daily 5 SKU
+2. M3 合并 7/31 本 commit + 8/1 daily 改动 = 1 commit
+3. 1 push origin_ssh main (§0.1 8/1 第 1 push 合规)
+4. verify 6 步 (curl HEAD + body 关键词 + R6 cron)
+
+## 7/31 quota + §0.1
+
+- 7/31 push 累计 = 1 (f5700f9 7/31 10:38), 今日已合规
+- 本 commit **不 push**, 7 月 quota 不变 9/500 = 1.8%
+- 8/1 计划 1 push (本 commit + 8/1 cron daily 合并), §0.1 合规

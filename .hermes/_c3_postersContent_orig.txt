@@ -1,0 +1,310 @@
+const postersContent: Record<string, CategoryLocaleContent> = {
+  'zh-hk': {
+    featuredSnippet: '海報印刷 A2 1 張起, 128g 銅版紙 HK$6-9/張, A1 HK$10-16/張, 500 張再減 30%, 1,000 張以上轉柯式再降 40%。3-5 個工作天交期, DHL 全球 2-4 天。',
+    lastUpdated: '2026-09-14',
+    h2: '印海報 / 海報印刷 / MTR 12-sheet 燈箱海報 — A0-A3 全尺寸 1 張起印, 防水 PP/PVC, 同日特急可選',
+    coreAdvantages: {
+      title: '核心競爭優勢',
+      items: [
+        {
+          heading: '1. 全尺寸覆蓋：A2 到 A0，室內到戶外一站搞定',
+          points: [
+            '提供 A2(420×594mm)、A1(594×841mm)、A0(841×1189mm) 等標準尺寸，支持完全訂製大圖輸出',
+            '滿足「海報印刷 香港」、「A1 海報」、「A0 大圖輸出」、「防水海報」等高搜索量關鍵詞',
+            '室內海報（銅版紙、PP 合成紙）和戶外海報（PVC、帆布、網布）全覆蓋',
+          ],
+        },
+        {
+          heading: '2. 大圖輸出專家，色彩精準不褪色',
+          points: [
+            'Epson 大型噴墨輸出設備，1440dpi 高精度，漸變色過渡自然無顆粒',
+            '防水防 UV 墨水，戶外海報可維持 2–3 年不褪色，抗雨淋和日曬',
+            ' Pantone 專色匹配可達 95% 以上，品牌色彩一致性保證',
+          ],
+        },
+        {
+          heading: '3. 多種安裝方式，方便張貼展示',
+          points: [
+            '提供背膠海報（可移除膠）、PP 吊旗、帆布捲軸、裱板等多種安裝形式',
+            '可移除背膠不留殘膠，適合短期展覽和租賃場地；永久背膠長期牢固',
+            '裱板服務（KT 板、Foam 板、亞加力板），即掛即用無需額外準備',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質工藝詳解',
+      subtitle: '海報常用材質與應用',
+      columns: ['材質類型', '關鍵特性', '適用場景'],
+      rows: [
+        { material: '銅版紙海報', features: '色彩鮮豔｜經濟｜室內使用｜適合短期', scenarios: '展覽會｜活動宣傳｜店內裝飾｜短期推廣' },
+        { material: 'PP 合成紙', features: '輕薄｜防水｜不反光｜色彩還原佳', scenarios: '室內展覽｜燈箱｜海報架｜長期展示' },
+        { material: 'PVC 海報', features: '完全防水｜戶外耐久｜抗 UV｜耐磨', scenarios: '戶外廣告｜建築圍板｜工地標示｜長期戶外' },
+        { material: '帆布海報', features: '藝術質感｜耐用｜可捲軸收納｜高級', scenarios: '藝術展覽｜攝影展｜高端活動｜裝飾畫' },
+        { material: '網布海報', features: '透風｜輕量｜適合大型戶外｜抗風', scenarios: '大型戶外廣告｜建築外牆｜體育場｜演唱會' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工選項',
+      items: [
+        { name: '裱板服務', description: 'KT 板、Foam 板、亞加力板裱貼，即掛即用，適合展覽和會議' },
+        { name: '背膠加工', description: '可移除膠或永久膠，方便張貼於牆面、玻璃、展板等多種表面' },
+        { name: '打孔穿繩', description: '四邊或頂部打孔配繩，方便懸掛和吊旗展示' },
+        { name: '燙金／燙銀', description: '標題或 LOGO 局部金屬光澤，增添高級感和節日氛圍' },
+        { name: '局部 UV', description: '重點圖案高光凸顯，觸感立體，視覺衝擊力強' },
+        { name: '夜光印刷', description: '夜間發光效果，適合緊急出口標示和安全指引' },
+      ],
+    },
+    techSpecs: {
+      title: '技術參數詳解',
+      items: [
+        { label: '尺寸範圍', value: 'A2(420×594mm)、A1(594×841mm)、A0(841×1189mm)，支持完全訂製大圖輸出' },
+        { label: '起訂量', value: '1 張起訂（大圖輸出），10 張以上批量優惠' },
+        { label: '交期', value: '即日交貨（大圖輸出，1–5 張）；標準 1–2 天（批量）；裱板額外 1 天' },
+        { label: '解析度', value: '1440dpi 高精度噴墨輸出；小尺寸建議 150dpi，大尺寸 72–100dpi 即可' },
+        { label: '墨水類型', value: '防水顏料墨水（室內 1–2 年耐久）；防 UV 溶劑墨水（戶外 2–3 年耐久）' },
+      ],
+    },
+    serviceNodes: {
+      title: '本地化服務節點',
+      items: [
+        { title: '免費裱板服務諮詢', description: '根據展示場景推薦最適裱板材質和厚度，確保海報平整美觀' },
+        { title: '戶外耐久測試', description: '提供防水、抗 UV、耐磨測試報告，幫助選擇最適戶外材質' },
+        { title: '安裝指導服務', description: '提供海報張貼和懸掛的最佳實踐指南，避免氣泡和皺褶' },
+      ],
+    },
+    buyingGuide: {
+      title: '海報選購指南',
+      paragraphs: [
+        '選擇海報尺寸時，要考慮觀看距離和展示空間。A2 適合近距離觀看（如店內裝飾、展板）；A1 是最常用的展覽尺寸，平衡視覺衝擊和空間需求；A0 適合遠距離觀看和大型空間（如會議背景、商場中庭）。對於超大型戶外廣告，推薦網布材質拼接輸出。',
+        '材質選擇決定海報的使用壽命和效果。室內短期使用（展覽會、活動）推薦銅版紙或 PP 合成紙，經濟且色彩鮮豔；室內長期展示推薦 PP 合成紙或裱板，不易捲曲；戶外使用必須選擇 PVC 或帆布，防水抗 UV 確保 2–3 年不褪色。',
+        '解析度設置常被忽視。大尺寸海報（A0 以上）觀看距離較遠，72–100dpi 已足夠清晰；過高的解析度會增加文件大小和處理時間，而不會提升實際視覺效果。小尺寸海報（A2）觀看距離較近，建議 150dpi 以確保細節清晰。',
+        '商場中庭、港鐵沿線與街舖櫥窗常見「海報印刷 香港」「A1 海報」「防水 海報」等需求；若展示於半戶外或潮濕環境（如離島渡輪附近），宜優先 PP／PVC 並評估裱板方案，避免紙邊受潮捲曲。',
+
+        '商場中庭、港鐵沿線與街舖櫥窗的海報需求集中於「海報印刷 香港」「A1 海報」「防水 海報」；若展示於半戶外或潮濕環境，宜優先 PP／PVC 並評估裱板方案。建議大尺寸海報提前 2–4 週排期，確保設計、打樣與安裝準時交付。',
+
+        '【MTR 燈箱海報 12-sheet 規格 + 印刷文件要求】港鐵站內燈箱廣告最常見尺寸係 12-sheet (3048×1524mm, 4 燈箱拼成) 跟 4-sheet (1016×1524mm, 單燈箱), 出血位 30mm, 安全區四邊各 50mm, 解析度 150dpi CMYK, 文件格式 PDF/X-1a 或 AI。我哋支援 12-sheet 拼版 4A0 輸出 (1189×1682mm × 4 塊), DHL 直送港鐵站收貨區, 3-5 個工作天交期。詳見 [MTR 燈箱海報規格 + 印刷文件要求指南](/zh-hk/blog/mtr-advertising-specs/)。',
+
+        '【印海報 3 大材質對比 + 邊款最抵】128g 銅版紙 (HK$6-9/張, 室內 3-6 個月, 展覽/活動首選) vs 200g PP 合成紙 (HK$12-18/張, 室內長期 1-2 年, 燈箱/海報架最穩) vs 440g PVC 硬片 (HK$20-35/張, 戶外 2-3 年, 防水抗 UV 必備)。同 A2 (420×594mm) 100 張計算: 銅版紙 $600-900, PP 合成紙 $1,200-1,800, PVC 硬片 $2,000-3,500。室內短期揀銅版紙最抵, 半戶外/燈箱揀 PP 合成紙, 戶外長期必須 PVC。詳見 [海報材質邊款最啱你? 銅版紙/PP/PVC 全對比](/zh-hk/blog/poster-printing-guide/)。',
+
+        '【海報印刷 3 大常見坑 + 點避】(1) 解析度陷阱: A0 大圖 300dpi 反而檔案過大拖慢輸出, 72-100dpi 對遠距離觀看最優, A2 150dpi 已足夠; (2) 出血位漏: 海報出血標準 3mm, 大圖輸出建議 5mm 預防裁切偏差, 印前團隊逐檔案檢查出血; (3) 色彩模式錯: RGB 印出偏暗 30%, 必須 CMYK, Pantone 專色品牌色匹配 95%+, 印前確認色彩模式。詳見 [海報印刷 3 大常見坑 + 點避](/zh-hk/blog/poster-printing-guide/)。',
+
+        '【海報列印 / a3海報 / 戶外海報 — 香港場景攻略】街招、展架、櫥窗、建築圍板係香港最常見嘅海報場景: 街舖櫥窗用 a3海報 (420×297mm) 最實用, 近距離睇 150dpi 就夠; 展覽活動攤位用 A1/A2, 遠距離要 72-100dpi; 戶外長期展示（工地圍板、樓宇外牆）一定要揀防水防 UV 嘅 PVC 或網布, 2-3 年不褪色。海報列印 1 張起印, 大圖輸出即日可取, 量大有階梯價。詳見 [海報印刷指南](/zh-hk/blog/poster-printing-guide/)。',
+      ],
+      links: [
+        { label: 'MTR 燈箱海報規格 + 印刷文件要求指南', href: '/zh-hk/blog/mtr-advertising-specs/' },
+        { label: '海報材質全對比 (銅版紙/PP/PVC)', href: '/zh-hk/blog/poster-printing-guide/' },
+        { label: '海報印刷 3 大常見坑 + 點避', href: '/zh-hk/blog/poster-printing-guide/' },
+        { label: '宣傳單張印刷', href: '/zh-hk/category/flyers/' },
+      ],
+    },
+    faq: [
+      { q: '海報印刷即日交貨得唔得？', a: '得。A3/A2 數碼大圖最快即日出貨（18:00 前落單），A1 / MTR 12-sheet 特急 24-48 小時，加急費 +30%。1 張起印，免費打稿。' },
+      { q: '海報印刷最低多少張起？', a: '1 張起訂（大圖輸出）。10 張以上享受批量優惠。' },
+      { q: 'MTR 燈箱海報 12-sheet 出邊度要幾耐？', a: '12-sheet 3048×1524mm 大圖輸出 3-5 個工作天, 急件可加 30% 費用趕 24-48 小時, 印前必須確認 PDF/X-1a + 150dpi CMYK + 30mm 出血。' },
+      { q: '海報印刷用邊款材質最抵?', a: '室內 3-6 個月短期: 128g 銅版紙 HK$6-9/張最抵; 室內長期 1-2 年: 200g PP 合成紙 HK$12-18/張; 戶外 2-3 年: 440g PVC 硬片 HK$20-35/張, 防水抗 UV 必備。' },
+      { q: 'A0 大圖輸出解析度應該 set 幾多?', a: 'A0 觀看距離遠 (2-3 米), 72-100dpi 已足夠清晰, 過高反而拖慢輸出無提升效果。A2 觀看近 (0.5-1 米), 150dpi 確保細節。' },
+      { q: '海報有哪些材質？', a: '銅版紙、PP 合成紙、PVC、帆布、網布。室內和戶外用途各異。' },
+      { q: '戶外海報能維持多久？', a: '防 UV PVC 海報戶外可維持 2–3 年不褪色；帆布約 3–5 年。' },
+      { q: '可以裱板嗎？', a: '可以。KT 板、Foam 板、亞加力板裱貼，即掛即用。' },
+      { q: '海報最快多久可以取？', a: '大圖輸出即日交貨（1–5 張）；批量標準 1–2 天；裱板額外 1 天。' },
+      { q: '背膠會留殘膠嗎？', a: '可移除背膠不會留殘膠，適合短期展覽；永久背膠長期牢固但可能留微量殘膠。' },
+      { q: '大圖輸出需要什麼解析度？', a: 'A2 建議 150dpi；A1/A0 建議 72–100dpi。過高解析度不會提升視覺效果。' },
+      { q: '可以訂製尺寸嗎？', a: '可以。支持完全訂製尺寸，最大寬度 1.5 米，長度不限。' },
+      { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。海報可捲筒包裝順豐寄送；裱板成品需妥善防撞，亦可安排貨車直送活動場地。請預留現場搬運通道。' },
+      { q: '可以先報價再上傳設計檔嗎？', a: '可以。請提供輸出尺寸、數量、室內／戶外、材質（銅版／PP／PVC 等）及是否需要裱板或背膠；可先取得分段報價，再提交檔案並由印前確認解析度與出血。' },
+    ],
+  },
+  en: {
+    featuredSnippet: 'Poster printing from 10 pcs: A2 US$0.80-1.20 each, A1 US$1.30-2.10 each at 100 pcs, 500+ saves 30%, 1,000+ offset drops 40% more. 3-5 business day turnaround, DHL global 2-4 days.',
+    lastUpdated: '2026-08-21',
+    h2: 'Print Posters / Poster Printing / Poster Print / a3 poster size — A0-A3 Full Sizes From 10 pcs, Same-Day Rush Available',
+    coreAdvantages: {
+      title: 'Why Choose ZprintPro for Posters?',
+      items: [
+        {
+          heading: '1. Full Size Coverage: A2 to A0, Indoor to Outdoor',
+          points: [
+            'Standard sizes: A2(420×594mm), A1(594×841mm), A0(841×1189mm), plus fully custom large-format output.',
+            'Covers high-search keywords: "poster printing", "A1 poster", "A0 large format", "waterproof poster".',
+            'Indoor posters (art paper, PP synthetic) and outdoor posters (PVC, canvas, mesh) all covered.',
+          ],
+        },
+        {
+          heading: '2. Large Format Specialists with Accurate, Fade-Resistant Colors',
+          points: [
+            'Epson large-format inkjet output at 1440dpi — smooth gradients with no visible grain.',
+            'Waterproof and UV-resistant inks — outdoor posters last 2–3 years without fading, rain or sun resistant.',
+            'Pantone color matching up to 95%+ for guaranteed brand color consistency.',
+          ],
+        },
+        {
+          heading: '3. Multiple Mounting Options for Easy Display',
+          points: [
+            'Self-adhesive posters (removable), PP hanging banners, canvas scrolls, and foam board mounting available.',
+            'Removable adhesive leaves no residue — ideal for short-term exhibitions and rental venues.',
+            'Foam board mounting (KT, Foam, Acrylic) — ready to hang with no additional preparation needed.',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: 'Material & Craftsmanship Guide',
+      subtitle: 'Common Poster Materials and Applications',
+      columns: ['Material Type', 'Key Features', 'Best For'],
+      rows: [
+        { material: 'Art Paper Posters', features: 'Vibrant colors | Economical | Indoor use | Short-term', scenarios: 'Exhibitions | Event promotion | In-store decor | Short campaigns' },
+        { material: 'PP Synthetic Paper', features: 'Lightweight | Waterproof | Non-reflective | Great color', scenarios: 'Indoor exhibitions | Lightboxes | Poster stands | Long-term display' },
+        { material: 'PVC Posters', features: 'Fully waterproof | Outdoor durable | UV-resistant | Wear-resistant', scenarios: 'Outdoor ads | Building hoardings | Construction signs | Long-term outdoor' },
+        { material: 'Canvas Posters', features: 'Artistic texture | Durable | Rollable storage | Premium', scenarios: 'Art exhibitions | Photo exhibitions | Premium events | Decorative art' },
+        { material: 'Mesh Banners', features: 'Wind-permeable | Lightweight | Large outdoor | Wind-resistant', scenarios: 'Large outdoor ads | Building exteriors | Stadiums | Concerts' },
+      ],
+    },
+    specialOptions: {
+      title: 'Special Finishing Options',
+      items: [
+        { name: 'Foam Board Mounting', description: 'KT, Foam, or Acrylic board mounting — ready to hang, ideal for exhibitions and conferences.' },
+        { name: 'Self-Adhesive Backing', description: 'Removable or permanent adhesive for easy application on walls, glass, display boards, and more.' },
+        { name: 'Hole Punching & String', description: 'Edge or top holes with string for easy hanging and banner display.' },
+        { name: 'Foil Stamping', description: 'Metallic sheen on titles or logos for premium feel and festive atmosphere.' },
+        { name: 'Spot UV', description: 'Glossy raised highlights on key visuals for strong tactile and visual impact.' },
+        { name: 'Glow-in-the-Dark', description: 'Night-time glow effect for emergency exit signs and safety guidance.' },
+      ],
+    },
+    techSpecs: {
+      title: 'Technical Specifications',
+      items: [
+        { label: 'Size Range', value: 'A2(420×594mm), A1(594×841mm), A0(841×1189mm). Fully custom large-format output supported.' },
+        { label: 'Minimum Order', value: '1 pc (large-format output). Volume discounts for 10+ pcs.' },
+        { label: 'Turnaround', value: 'Same-day (large-format, 1–5 pcs); Standard 1–2 days (bulk); Mounting adds 1 day.' },
+        { label: 'Resolution', value: '1440dpi high-precision inkjet; Small sizes recommend 150dpi, large sizes 72–100dpi sufficient.' },
+        { label: 'Ink Type', value: 'Waterproof pigment ink (indoor 1–2 year durability); UV-resistant solvent ink (outdoor 2–3 year durability).' },
+      ],
+    },
+    serviceNodes: {
+      title: 'Local Service Points',
+      items: [
+        { title: 'Free Mounting Consultation', description: 'Recommend optimal board material and thickness based on display scenario for flat, beautiful results.' },
+        { title: 'Outdoor Durability Testing', description: 'Waterproof, UV-resistant, and wear-test reports to help select optimal outdoor materials.' },
+        { title: 'Installation Guidance', description: 'Best practice guides for poster application and hanging to avoid bubbles and wrinkles.' },
+      ],
+    },
+    buyingGuide: {
+      title: 'Poster Buying Guide',
+      paragraphs: [
+        'When choosing poster size, consider viewing distance and display space. A2 suits close viewing (in-store decor, display boards). A1 is the most common exhibition size, balancing visual impact and space requirements. A0 suits long-distance viewing and large spaces (conference backdrops, mall atriums). For extra-large outdoor ads, mesh material with seam output is recommended.',
+        'Material choice determines poster lifespan and effect. Short-term indoor use (exhibitions, events) suits art paper or PP synthetic paper — economical with vibrant colors. Long-term indoor display suits PP synthetic paper or mounted boards that resist curling. Outdoor use must choose PVC or canvas with waterproof and UV-resistant properties for 2–3 year fade resistance.',
+        'Resolution settings are often overlooked. Large posters (A0+) are viewed from distance — 72–100dpi is sufficiently clear. Excessively high resolution increases file size and processing time without improving actual visual effect. Small posters (A2) viewed at close range should use 150dpi to ensure crisp detail.',
+        'Shopping mall atriums, transit corridors, and shop windows often generate searches for "poster printing," "A1 poster," and "waterproof poster." If displaying in semi-outdoor or humid environments (such as near outlying island ferries), prioritize PP / PVC and evaluate mounting options to avoid paper edge curling from moisture.',
+      ],
+    },
+    faq: [
+      { q: 'What is the minimum order for posters?', a: '1 pc (large-format output). Volume discounts available for 10+ pcs.' },
+      { q: 'What poster materials are available?', a: 'Art paper, PP synthetic paper, PVC, canvas, and mesh. Indoor and outdoor options available.' },
+      { q: 'How long do outdoor posters last?', a: 'UV-resistant PVC posters last 2–3 years outdoors without fading. Canvas lasts approximately 3–5 years.' },
+      { q: 'Can posters be mounted on boards?', a: 'Yes. KT, Foam, and Acrylic board mounting available — ready to hang.' },
+      { q: 'What is the fastest turnaround for posters?', a: 'Same-day large-format output (1–5 pcs). Standard bulk: 1–2 days. Mounting adds 1 day.' },
+      { q: 'Will self-adhesive backing leave residue?', a: 'Removable adhesive leaves no residue — ideal for short-term exhibitions. Permanent adhesive is long-lasting but may leave minimal residue.' },
+      { q: 'What resolution is needed for large-format output?', a: 'A2: 150dpi recommended; A1/A0: 72–100dpi sufficient. Higher resolution does not improve visual effect.' },
+      { q: 'Can custom sizes be ordered?', a: 'Yes. Fully custom sizes supported, maximum width 1.5 meters, unlimited length.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Large-format posters can be rolled for delivery; mounted boards require careful packaging.' },
+      { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit poster size, material, quantity, and mounting requirements for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check resolution and bleed based on output size.' },
+    ],
+  },
+  ja: {
+    featuredSnippet: 'ポスター印刷 10枚から: A2 ¥100-150/枚, A1 ¥170-260/枚 (100枚時), 500枚で 30% OFF, 1,000枚以上はオフセットでさらに 40% 削減。3-5 営業日納期, DHL グローバル 2-4日。',
+    lastUpdated: '2026-08-21',
+    h2: 'ポスター 印刷 / ポスター 印刷 費用 / ポスター プリント / a3 ポスター サイズ — A0-A3 全サイズ 10枚から, 即日特急対応',
+    coreAdvantages: {
+      title: 'ZprintPro ポスター印刷の強み',
+      items: [
+        {
+          heading: '1. 全サイズ対応：A2からA0、屋内から屋外まで',
+          points: [
+            'A2(420×594mm)、A1(594×841mm)、A0(841×1189mm)などの標準サイズに加え、完全カスタマイズの大判出力も対応。',
+            '「ポスター印刷」、「A1ポスター」、「A0大判出力」、「防水ポスター」などの高検索ボリュームキーワードをカバー。',
+            '屋内ポスター（コート紙、PP合成紙）と屋外ポスター（PVC、帆布、メッシュ）を全カバー。',
+          ],
+        },
+        {
+          heading: '2. 大判出力専門家、色彩精確で褪色しない',
+          points: [
+            'Epson大判インクジェット出力機で1440dpiの高精度。グラデーションの遷移が自然で粒感なし。',
+            '防水・UV耐性インク。屋外ポスターは2–3年褪色せず、雨や日差しに耐えます。',
+            'Pantone専色マッチングは95%以上。ブランドカラーの一貫性を保証。',
+          ],
+        },
+        {
+          heading: '3. 多様な取り付け方式、簡単に展示可能',
+          points: [
+            '粘着剤付きポスター（剥がしやすい）、PP吊り旗、帆布巻物、板貼りなど多様な形式を提供。',
+            '剥がしやすい粘着剤は残りません。短期展示やレンタル会場に最適。',
+            '板貼りサービス（KT板、Foam板、アクリル板）。追加準備不要で即展示可能。',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質・工法ガイド',
+      subtitle: 'ポスターによく使われる材質と用途',
+      columns: ['材質タイプ', '主な特徴', '最適な用途'],
+      rows: [
+        { material: 'コート紙ポスター', features: '発色鮮やか｜手頃｜屋内使用｜短期', scenarios: '展示会｜イベント宣伝｜店内装飾｜短期キャンペーン' },
+        { material: 'PP合成紙', features: '軽量｜防水｜非反射｜色彩還元良好', scenarios: '屋内展示｜ライトボックス｜ポスタースタンド｜長期展示' },
+        { material: 'PVCポスター', features: '完全防水｜屋外耐久｜UV耐性｜耐磨耗', scenarios: '屋外広告｜建築囲い｜工事標示｜長期屋外' },
+        { material: '帆布ポスター', features: 'アート感｜耐久｜巻物収納可｜高級', scenarios: '美術展｜写真展｜高級イベント｜装飾画' },
+        { material: 'メッシュバナー', features: '通風｜軽量｜大型屋外向き｜耐風', scenarios: '大型屋外広告｜建物外壁｜スタジアム｜コンサート' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工オプション',
+      items: [
+        { name: '板貼りサービス', description: 'KT板、Foam板、アクリル板への貼り付け。即展示可能。展示会や会議に最適。' },
+        { name: '粘着剤加工', description: '剥がしやすいタイプまたは永久タイプ。壁面、ガラス、展示板など多様な表面に簡単貼付。' },
+        { name: '穴あけ紐付き', description: '四辺または上部に穴あけと紐付き。吊り下げや吊り旗展示が簡単に。' },
+        { name: '箔押し', description: 'タイトルやロゴに金属光沢の高級感と季節感を演出。' },
+        { name: '局部UV', description: '重要なビジュアルを光沢で強調。触感も立体的で視覚的インパクトが強い。' },
+        { name: '蓄光印刷', description: '夜間の発光効果。緊急出口標示や安全案内に最適。' },
+      ],
+    },
+    techSpecs: {
+      title: '技術仕様',
+      items: [
+        { label: 'サイズ範囲', value: 'A2(420×594mm)、A1(594×841mm)、A0(841×1189mm)。完全カスタマイズ大判出力対応。' },
+        { label: '最小発注数', value: '1枚から（大判出力）。10枚以上は大口割引あり。' },
+        { label: '納期', value: '即日（大判出力、1–5枚）。標準1–2日（大口）。板貼りは追加1日。' },
+        { label: '解像度', value: '1440dpi高精度インクジェット。小サイズは150dpi推奨、大サイズは72–100dpiで十分。' },
+        { label: 'インクタイプ', value: '防水顔料インク（屋内1–2年耐久）。UV耐性溶剤インク（屋外2–3年耐久）。' },
+      ],
+    },
+    serviceNodes: {
+      title: 'ローカルサービス拠点',
+      items: [
+        { title: '無料板貼り相談', description: '展示シーンに応じて最適な板材と厚みを推奨。ポスターを平らで美しく仕上げます。' },
+        { title: '屋外耐久テスト', description: '防水、UV耐性、耐磨耗テストレポートを提供。最適な屋外材質の選択をサポート。' },
+        { title: '取り付け指導', description: 'ポスターの貼り付けや吊り下げのベストプラクティスガイドを提供。気泡やしわを防ぎます。' },
+      ],
+    },
+    buyingGuide: {
+      title: 'ポスター選び方ガイド',
+      paragraphs: [
+        'ポスターサイズを選ぶ際、視聴距離と展示スペースを考慮しましょう。A2は近距離視聴に適しています（店内装飾、展示板）。A1は最も一般的な展示サイズで、視覚的インパクトとスペース要件のバランスが良いです。A0は遠距離視聴や大空間（会議背景、商場アトリウム）に適しています。超大型の屋外広告には、メッシュ材質の継ぎ目出力をおすすめします。',
+        '材質の選択はポスターの寿命と効果を決定します。短期の屋内使用（展示会、イベント）にはコート紙やPP合成紙が適しており、手頃でありながら発色が鮮やかです。長期の屋内展示には、PP合成紙や板貼りが適し、捲れを防ぎます。屋外使用には、PVCや帆布を選び、防水・UV耐性で2–3年の褪色防止を確保する必要があります。',
+        '解像度設定は見落とされがちです。大判ポスター（A0以上）は遠距離から見られるため、72–100dpiで十分に鮮明です。過度に高い解像度はファイルサイズと処理時間を増加させるだけで、実際の視覚効果は改善されません。小さなポスター（A2）は近距離で見られるため、細部の鮮明さを確保するために150dpiを推奨します。',
+        '商場中庭、駅沿線、街舗ショーウィンドウでは「海報印刷」「A1 海報」「防水 海報」などの需要が見られます。半屋外や湿気の多い環境（離島フェリー周辺など）で展示する場合、PP／PVCを優先し、装板方案を検討して紙端の湿気による巻き上がりを防ぐ必要があります。',
+      ],
+    },
+    faq: [
+      { q: 'ポスター印刷の最小発注数は？', a: '1枚から（大判出力）。10枚以上は大口割引があります。' },
+      { q: 'どんな材質のポスターがありますか？', a: 'コート紙、PP合成紙、PVC、帆布、メッシュ。屋内用と屋外用があります。' },
+      { q: '屋外ポスターはどのくらい持ちますか？', a: 'UV耐性PVCポスターは屋外で2–3年褪色しません。帆布は約3–5年です。' },
+      { q: '板貼りは可能ですか？', a: 'はい。KT板、Foam板、アクリル板への貼り付けが可能。即展示可能です。' },
+      { q: 'ポスターの最短納期は？', a: '大判出力は即日（1–5枚）。大口標準は1–2日。板貼りは追加1日。' },
+      { q: '粘着剤は残りますか？', a: '剥がしやすい粘着剤は残りません。短期展示に最適。永久粘着剤は長期牢固ですが、微量の残りがある可能性があります。' },
+      { q: '大判出力に必要な解像度は？', a: 'A2は150dpi推奨。A1/A0は72–100dpiで十分。高解像度は視覚効果を改善しません。' },
+      { q: 'カスタムサイズは注文できますか？', a: 'はい。完全カスタマイズサイズ対応。最大幅1.5メートル、長さは無制限です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大判ポスターは巻いて配送可能。板貼りは丁寧な梱包が必要です。' },
+      { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずポスターサイズ、材質、数量、板貼りの有無をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが出力サイズに応じて解像度とbleedをチェックします。' },
+    ],
+  },
+};

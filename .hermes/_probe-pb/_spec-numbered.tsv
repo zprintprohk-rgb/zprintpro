@@ -1,0 +1,223 @@
+1	material	300g銅版紙或250g啞粉藝術紙；啞膠／光膠覆膜
+2	printMethod	四色柯式印刷（海德堡）
+3	finishing	覆膜（啞膠／光膠）、局部UV、燙金、圓角模切
+4	material	400g超厚銅版紙；啞膠／光膠覆膜；可選三合一裱貼（700-810g 超厚檔）
+5	printMethod	四色柯式印刷
+6	finishing	覆膜（啞膠／光膠）、燙金／燙銀、局部UV、擊凸、圓角模切
+7	material	300g銅版紙或棉質紙；燙金／燙銀／玫瑰金
+8	printMethod	四色柯式＋燙金
+9	finishing	覆膜（啞膠／光膠）、燙金、圓角模切
+10	material	300g銅版紙或合成紙；局部UV光油
+11	printMethod	四色柯式＋局部UV
+12	finishing	局部UV、覆膜（啞膠／光膠）、圓角模切
+13	material	300g啞粉紙或環保紙；啞膠覆膜
+14	finishing	啞膠覆膜、燙金、壓凹、圓角模切
+15	material	300g銅版紙或藝術紙；啞膠／光膠覆膜
+16	finishing	覆膜（啞膠／光膠）、燙金、局部UV、圓角模切
+17	material	PVC 防水／PP 合成紙；可覆啞膜或光膜
+18	printMethod	四色數碼或柯式（依數量）
+19	finishing	模切、覆膜（啞膜／光膜）、局部可選工藝
+20	material	透明 PET；可選白墨、啞膜／光膜
+21	printMethod	CMYK＋可選白墨（依設計）
+22	finishing	覆膜（啞膜／光膜）、模切、可選局部 UV
+23	material	PP 合成紙／PET 透明膜；可移膠
+24	finishing	模切、覆膜（啞膜／光膜）
+25	material	銅版紙／PP 合成紙／透明 PVC／Kraft 牛皮紙
+26	printMethod	四色數碼印刷（HP Indigo）
+27	finishing	模切、圓角、局部燙金、覆膜
+28	material	PVC／PP 合成紙／透明 PET；可覆膜
+29	printMethod	四色數碼或柯式
+30	finishing	模切（全切／吻切）、啞膜／光膜
+31	material	銅版紙／合成紙；可覆啞膜／光膜
+32	printMethod	四色印刷＋燙金（分版）
+33	finishing	燙金／燙銀、模切、可選局部 UV
+34	material	易碎紙／VOID／合成紙＋全息膜等（依方案）
+35	printMethod	可變數碼印刷為主；可搭配專色
+36	finishing	模切、全息冷燙或燙金（依稿）
+37	material	螢光 PVC 膜／螢光紙；螢光油墨
+38	finishing	模切、反光條紋覆合、覆膜
+39	material	牛皮紙 120–200g 級（依報價）；可配手挽材
+40	printMethod	單色至四色；可數碼打樣
+41	finishing	燙金／燙銀、局部 UV、覆膜（視材）
+42	material	白卡紙 200–300g 級（依報價）；可覆膜
+43	printMethod	四色＋可選專色／燙金
+44	finishing	覆膜、燙金／燙銀、局部 UV、模切糊袋
+45	material	白卡／特種紙／珠光紙（依稿）；可覆膜
+46	printMethod	四色＋燙金／局部 UV
+47	finishing	燙金、局部 UV、緞帶或棉繩手挽
+48	material	FSC 牛皮／再生紙（依供應）；大豆油墨
+49	printMethod	單色至四色（依設計）
+50	finishing	手挽、可選燙金／覆膜（視材）
+51	material	牛皮／白卡；手挽棉繩或扁紙
+52	printMethod	四色印刷為主
+53	finishing	穿孔打釘、底卡加固、可覆膜
+54	material	250g 白卡紙／300g 牛皮紙／280g 特種紋理紙
+55	finishing	燙金／燙銀、擊凸、手挽繩、底部加固
+56	material	157g銅版紙或128g啞粉紙
+57	printMethod	四色柯式或數碼印刷
+58	finishing	覆膜（啞膜／光膜可選）
+59	material	128g銅版紙或100g書紙
+60	printMethod	四色數碼印刷
+61	printMethod	四色雙面柯式印刷
+62	material	157g或200g銅版紙
+63	finishing	壓線、覆膜（啞膜／光膜可選）
+64	material	200g或250g銅版紙
+65	material	FSC認證再生紙；大豆油墨
+66	printMethod	四色數碼或柯式印刷
+67	finishing	無覆膜（環保）或水性光油
+68	material	157g銅版紙
+69	printMethod	四色高速數碼印刷
+70	finishing	無覆膜或啞膜（加時）
+71	material	157g 銅版紙（可升 200g／相紙）
+72	printMethod	柯式或高品數碼
+73	finishing	PP 裱貼、泡沫板裱貼（可選）
+74	material	157–200g 銅版或相紙
+75	printMethod	柯式為主；急件數碼
+76	finishing	PP 護膜、泡沫板裱貼（可選）
+77	material	戶外 PVC／PET／合成紙
+78	printMethod	戶外噴繪或 UV
+79	finishing	霧面護膜、打扣（可選）
+80	material	180g–200g PP 合成紙／背膠 PVC；UV 固化油墨
+81	printMethod	環保溶劑或 UV 大判噴繪
+82	finishing	覆膜（啞膜／光膜）、穿繩孔、雙面輸出
+83	material	200g–250g 啞粉藝術紙／260g 純棉無酸紙；12 色顏料墨水
+84	printMethod	12 色藝術微噴（Giclée）
+85	finishing	啞面／絲絨面／半光面、無框畫裝裱
+86	material	150g–180g 背膠 PP／鑄造級 PVC；導氣槽底紙
+87	finishing	模切、鏤空、光膜／啞膜覆合
+88	material	350g 食品級白卡／400g 灰底白板；PE 淋膜或 PLA 內層
+89	printMethod	四色柯式或數碼（依數量）
+90	finishing	燙金／燙銀、窗口（PET）、局部 UV、覆膜
+91	material	1200-1500g 灰板裱糊 白卡 / 觸感紙 / 珠光紙; 內托 EVA / 紙漿 / PET 吸塑
+92	printMethod	四色柯式 + 專色; 可逆向 UV
+93	finishing	覆膜 (啞/觸感/光) + 燙金 (金/銀/玫瑰金) + 局部 UV + 擊凸 + 糊盒
+94	material	E／B 坑瓦楞或白卡裱瓦（依載重）
+95	printMethod	柔性版或柯式（依量與色數）
+96	finishing	模切、壓線、自黏封口（可諮詢）
+97	material	300g–350g 白卡紙／E 坑瓦楞紙板
+98	finishing	覆膜（啞膜／光膜）、燙金、局部 UV、條碼
+99	material	灰板＋特種裱面紙；可選磁吸五金
+100	printMethod	柯式面紙印刷＋後工
+101	finishing	燙金、壓紋、局部 UV、手工糊盒
+102	material	120g紅色紙張；燙金／燙銀
+103	printMethod	四色印刷＋燙金
+104	finishing	燙金、壓凹、局部UV
+105	material	150g紅色紙張；浮雕＋燙金
+106	printMethod	四色印刷＋浮雕
+107	finishing	浮雕、燙金、壓凹
+108	material	120g–150g紅色或特殊色紙張
+109	printMethod	四色印刷＋燙金／UV
+110	finishing	燙金、局部UV、壓凹、異形模切
+111	material	120g銅版紙或環保紙
+112	finishing	燙金、局部UV（可選）
+113	material	FSC認證再生紙或種子紙；大豆油墨
+114	finishing	無覆膜（環保）
+115	material	150g–200g紅色紙張
+116	finishing	燙金、浮雕、局部UV
+117	material	250g–300g銅版紙或啞粉紙；金屬圈
+118	finishing	金屬圈裝訂、打掛孔
+119	material	200g–250g銅版紙或卡紙；三角座架
+120	finishing	三角座架、騎馬釘或膠裝
+121	material	250g–300g藝術紙或銅版紙
+122	finishing	燙金、局部UV、金屬圈或騎馬釘
+123	material	150g–200g銅版紙或卡紙
+124	finishing	騎馬釘或單張裁切
+125	material	250g–300g銅版紙或相紙；硬紙板相架
+126	finishing	硬紙板相架底座、騎馬釘
+127	material	200g–250g銅版紙或合成紙；0.5mm或1mm軟磁片
+128	finishing	軟磁片貼合、圓角裁切
+129	material	0.5mm–1.0mm透明或白色PVC膠片
+130	printMethod	四色UV印刷
+131	finishing	圓角或直角裁切
+132	material	200g–250g銅版紙或啞粉紙；啞膠或光膠覆膜
+133	printMethod	四色印刷
+134	finishing	覆膜（啞膠／光膠）、圓角裁切
+135	material	硬紙板封面裱糊銅版紙；內頁200g銅版紙
+136	finishing	燙金、壓凹、騎馬釘或膠裝
+137	material	200g–250g銅版紙或合成紙；啞膠覆膜
+138	finishing	覆膜（啞膠）、圓角裁切
+139	material	100g–120g書紙或再生紙
+140	finishing	無覆膜（即棄）
+141	material	外光／內光 PVC 燈布（依場景）
+142	printMethod	弱溶劑／溶劑／UV 噴繪
+143	finishing	打扣、焊邊、筒芯出貨（可選）
+144	material	PET／PVC 片或防水合成紙；鋁合金支架
+145	printMethod	噴繪或 UV 印刷（依材）
+146	finishing	加重桿、牛津布袋／硬殼箱（可選）
+147	material	PVC 車貼／可移膠／透明膜（依場景）
+148	printMethod	溶劑／弱溶劑／UV 噴繪
+149	finishing	霧面護膜、異形裁切（可選）
+150	material	鑄造級 PVC 車貼 80–100 微米；可移膠＋導氣槽
+151	printMethod	UV 固化或環保溶劑大判噴繪
+152	finishing	亮面／啞面覆膜、單透孔、3M／Avery 品牌升級
+153	material	270g–350g PVC 網格夾網布；UV 固化油墨
+154	printMethod	UV 大判噴繪
+155	finishing	熱封邊、銅扣眼、阻燃處理、雙面縫邊
+156	material	內頁157g–200g銅版紙；封面200g–250g銅版紙
+157	finishing	覆膜（啞膜／光膜）、燙金、騎馬釘或膠裝
+158	material	128g–157g銅版紙或書紙
+159	finishing	騎馬釘裝訂、覆膜（可選）
+160	finishing	膠裝、封面覆膜（啞膜／光膜）
+161	material	硬紙板封面裱糊銅版紙；內頁157g–200g銅版紙
+162	finishing	膠裝、燙金、壓凹、局部UV、封面覆膜
+163	material	內頁80g–100g書紙或道林紙；封面200g銅版紙或PP
+164	finishing	YO圈或螺旋裝訂、封面覆膜
+165	material	80–120g 書紙／本白書紙
+166	printMethod	單色至四色柯式或數碼
+167	finishing	自黏封口、開窗貼片（可選）
+168	material	80–120g 書紙／彩色書紙
+169	printMethod	柯式四色＋可選專色
+170	finishing	開窗、自黏封口（變數可選）
+171	material	100–120g 書紙為主（可諮詢）
+172	printMethod	單色至四色
+173	finishing	自黏封口、開窗（可選）
+174	material	珠光／冰白特種書紙
+175	printMethod	四色／專色＋可選燙金
+176	finishing	自黏封口、開窗、擊凸（可選）
+177	material	80g–100g書紙或道林紙；封面200g銅版紙
+178	printMethod	封面四色印刷；內頁單色或雙色
+179	finishing	騎馬釘裝訂、封面覆膜（可選）
+180	material	200g–250g水印紙或棉質紙
+181	finishing	燙金、壓凹、防偽底紋、浮水印
+182	finishing	覆膜（可選）
+183	material	80g–100g道林紙或書紙；封面200g銅版紙
+184	printMethod	封面四色；內頁單色或雙色
+185	finishing	膠裝或騎馬釘、封面覆膜（可選）
+186	material	灰板裱面＋隱藏磁吸；可觸感膜
+187	printMethod	面紙四色／專色＋後工
+188	material	1200g 灰板紙裱糊銅版紙；EVA／PET 吸塑／紙漿內托
+189	finishing	燙金／燙銀、局部 UV、軟觸膜、磁吸扣
+190	material	300g–350g FSC 牛皮卡紙；水性油墨
+191	printMethod	單色／雙色水性印刷或四色柯式
+192	finishing	燙黑、壓凹、絲印、手提繩
+193	material	350g/400g 單粉卡(超高松) / 375g 銀卡紙 / 375g 鐳射銀卡
+194	printMethod	四色柯式印刷 + 覆光膜/啞膜
+195	finishing	燙金 / UV 局部 / 擊凸 / 貼膠片 / 印白墨(銀卡類) / 逆向 UV(鐳射銀卡類)
+196	material	食品級 BOPP／PE／PLA；大豆油墨
+197	finishing	模切、覆膜（啞膜／光膜）、可變條碼
+198	material	300g 棉紙 / 350g 剛古紙 / 300g 銅版紙
+199	printMethod	柯式印刷 4C + 燙金
+200	finishing	燙金 (金/銀/玫瑰金/香檳金) + UV 局部 + 模切異形
+201	material	300g 銅版紙 / 棉紙 / 剛古紙
+202	printMethod	柯式印刷 4C
+203	finishing	光膠 / 啞膠 / 燙金 / UV 局部
+204	material	300g 棉紙 / 銅版紙 / 剛古紙
+205	printMethod	柯式印刷 4C + 折卡
+206	finishing	燙金 / UV / 模切 / 折卡
+207	printMethod	柯式印刷 4C 雙面
+208	finishing	光膠 / 啞膠 / 燙金
+209	material	300g 棉紙 (主) + 350g 剛古紙 (請帖)
+210	printMethod	柯式印刷 4C 雙面 + 燙金
+211	finishing	燙金 (玫瑰金) + UV 局部 + 模切 + 折卡
+212	finishing	燙金 / 壓紋 / 模切 / 折卡 / 站立
+213	material	0.5mm 透明 PVC / 300g 銅版紙 / 350g 黑卡紙
+214	printMethod	柯式印刷 4C + UV 防水層
+215	finishing	模切圓角 / 燙金 / 打孔掛繩
+216	finishing	燙金 / UV / 模切異形 / 折卡 / 站立
+217	material	300g 銅版紙 / 350g 白卡 / PVC 透明卡
+218	finishing	燙金 / UV / 磁鐵背貼 / 打孔掛繩
+219	material	300g 銅版紙 / 0.5mm 防水 PVC
+220	finishing	UV 防水 / 燙金 / 模切 / 折卡 / 站立
+221	material	300g 銅版紙 / 350g 剛古紙 (大尺寸加厚)
+222	printMethod	柯式印刷 4C 單面或雙面
+223	finishing	燙金 / UV / 模切 / 摺疊

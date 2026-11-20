@@ -1,0 +1,583 @@
+{
+  "issues": {
+    "missingPrice": [],
+    "currencyMismatch": [],
+    "missingColor": [
+      "en/premium-greeting-cards",
+      "ja/premium-greeting-cards",
+      "zh-hk/spot-uv-greeting-cards",
+      "zh-hk/matte-greeting-cards",
+      "zh-hk/rounded-corner-greeting-cards",
+      "en/spot-uv-greeting-cards",
+      "ja/rounded-corner-greeting-cards",
+      "zh-hk/waterproof-stickers",
+      "zh-hk/transparent-stickers",
+      "en/transparent-stickers",
+      "zh-hk/removable-stickers",
+      "ja/removable-stickers",
+      "en/small-batch-stickers",
+      "ja/small-batch-stickers",
+      "en/die-cut-stickers",
+      "zh-hk/foil-stickers",
+      "ja/foil-stickers",
+      "zh-hk/security-stickers",
+      "ja/security-stickers",
+      "en/fluorescent-stickers",
+      "zh-hk/white-card-bags",
+      "en/white-card-bags",
+      "zh-hk/gift-bags",
+      "ja/gift-bags",
+      "en/eco-paper-bags",
+      "ja/eco-paper-bags",
+      "en/handle-bags",
+      "zh-hk/large-bags",
+      "ja/large-bags",
+      "zh-hk/a4-flyers",
+      "ja/a4-flyers",
+      "en/a5-flyers",
+      "zh-hk/double-sided-flyers",
+      "en/double-sided-flyers",
+      "zh-hk/folded-leaflets",
+      "en/folded-leaflets",
+      "en/thick-paper-flyers",
+      "ja/thick-paper-flyers",
+      "en/eco-flyers",
+      "ja/eco-flyers",
+      "en/same-day-flyers",
+      "ja/same-day-flyers",
+      "zh-hk/a1-posters",
+      "ja/a2-posters",
+      "ja/a1-posters",
+      "zh-hk/outdoor-posters",
+      "ja/outdoor-posters",
+      "en/display-posters",
+      "zh-hk/art-posters",
+      "en/art-posters",
+      "zh-hk/adhesive-posters",
+      "en/adhesive-posters",
+      "zh-hk/food-boxes",
+      "ja/food-boxes",
+      "en/cosmetic-boxes",
+      "ja/cosmetic-boxes",
+      "en/mailer-boxes",
+      "zh-hk/rigid-boxes",
+      "ja/rigid-boxes",
+      "zh-hk/foil-red-packets",
+      "ja/foil-red-packets",
+      "en/embossed-red-packets",
+      "ja/embossed-red-packets",
+      "en/custom-red-packets",
+      "zh-hk/cartoon-red-packets",
+      "en/cartoon-red-packets",
+      "zh-hk/eco-red-packets",
+      "ja/eco-red-packets",
+      "en/large-red-packets",
+      "ja/large-red-packets",
+      "en/wall-calendars",
+      "zh-hk/desk-calendars",
+      "ja/desk-calendars",
+      "zh-hk/custom-calendars",
+      "ja/custom-calendars",
+      "zh-hk/mini-calendars",
+      "ja/mini-calendars",
+      "en/photo-frame-calendars",
+      "ja/photo-frame-calendars",
+      "en/magnetic-calendars",
+      "zh-hk/pvc-menus",
+      "ja/pvc-menus",
+      "zh-hk/laminated-menus",
+      "ja/laminated-menus",
+      "zh-hk/hardcover-menus",
+      "ja/hardcover-menus",
+      "en/drink-menus",
+      "zh-hk/disposable-menus",
+      "en/disposable-menus",
+      "zh-hk/outdoor-vinyl-banners",
+      "en/outdoor-vinyl-banners",
+      "zh-hk/roll-up-banners",
+      "ja/roll-up-banners",
+      "en/adhesive-banners",
+      "ja/adhesive-banners",
+      "en/vehicle-wraps",
+      "ja/vehicle-wraps",
+      "ja/mesh-banners",
+      "zh-hk/catalog-printing",
+      "ja/catalog-printing",
+      "zh-hk/saddle-stitch-booklets",
+      "ja/saddle-stitch-booklets",
+      "zh-hk/perfect-bound-books",
+      "zh-hk/hardcover-books",
+      "en/hardcover-books",
+      "en/spiral-notebooks",
+      "zh-hk/spiral-notebooks",
+      "en/business-envelopes",
+      "ja/business-envelopes",
+      "en/colored-envelopes",
+      "ja/colored-envelopes",
+      "ja/large-envelopes",
+      "en/large-envelopes",
+      "zh-hk/exercise-books",
+      "ja/pearl-envelopes",
+      "ja/exercise-books",
+      "zh-hk/certificates",
+      "ja/certificates",
+      "zh-hk/school-flyers",
+      "zh-hk/textbooks",
+      "en/textbooks",
+      "zh-hk/graduation-yearbook",
+      "en/graduation-yearbook",
+      "en/magnetic-closure-gift-box",
+      "ja/magnetic-closure-gift-box",
+      "en/electronics-packaging-box",
+      "ja/electronics-packaging-box",
+      "ja/kraft-paper-packaging-box",
+      "zh-hk/white-card-boxes",
+      "en/corrugated-boxes"
+    ],
+    "noProduct": [
+      "zh-hk/premium-greeting-cards (503)",
+      "zh-hk/thick-greeting-cards-400g (503)",
+      "en/thick-greeting-cards-400g (503)",
+      "ja/thick-greeting-cards-400g (503)",
+      "zh-hk/foil-greeting-cards (503)",
+      "en/foil-greeting-cards (503)",
+      "ja/foil-greeting-cards (503)",
+      "ja/spot-uv-greeting-cards (503)",
+      "en/matte-greeting-cards (503)",
+      "ja/matte-greeting-cards (503)",
+      "en/rounded-corner-greeting-cards (503)",
+      "en/waterproof-stickers (503)",
+      "ja/waterproof-stickers (503)",
+      "ja/transparent-stickers (503)",
+      "en/removable-stickers (503)",
+      "zh-hk/small-batch-stickers (503)",
+      "zh-hk/die-cut-stickers (503)",
+      "ja/die-cut-stickers (503)",
+      "en/foil-stickers (503)",
+      "en/security-stickers (503)",
+      "zh-hk/fluorescent-stickers (503)",
+      "ja/fluorescent-stickers (503)",
+      "ja/white-card-bags (503)",
+      "en/gift-bags (503)",
+      "zh-hk/eco-paper-bags (503)",
+      "zh-hk/handle-bags (503)",
+      "ja/handle-bags (503)",
+      "en/large-bags (503)",
+      "en/a4-flyers (503)",
+      "zh-hk/a5-flyers (503)",
+      "ja/a5-flyers (503)",
+      "ja/double-sided-flyers (503)",
+      "ja/folded-leaflets (503)",
+      "zh-hk/thick-paper-flyers (503)",
+      "zh-hk/eco-flyers (503)",
+      "zh-hk/same-day-flyers (503)",
+      "zh-hk/a2-posters (503)",
+      "en/a2-posters (503)",
+      "en/a1-posters (503)",
+      "en/outdoor-posters (503)",
+      "zh-hk/display-posters (503)",
+      "ja/display-posters (503)",
+      "ja/art-posters (503)",
+      "ja/adhesive-posters (503)",
+      "en/food-boxes (503)",
+      "zh-hk/cosmetic-boxes (503)",
+      "zh-hk/mailer-boxes (503)",
+      "ja/mailer-boxes (503)",
+      "en/rigid-boxes (503)",
+      "en/foil-red-packets (503)",
+      "zh-hk/embossed-red-packets (503)",
+      "zh-hk/custom-red-packets (503)",
+      "ja/custom-red-packets (503)",
+      "ja/cartoon-red-packets (503)",
+      "en/eco-red-packets (503)",
+      "zh-hk/large-red-packets (503)",
+      "zh-hk/wall-calendars (503)",
+      "ja/wall-calendars (503)",
+      "en/desk-calendars (503)",
+      "en/custom-calendars (503)",
+      "en/mini-calendars (503)",
+      "zh-hk/photo-frame-calendars (503)",
+      "zh-hk/magnetic-calendars (503)",
+      "ja/magnetic-calendars (503)",
+      "en/pvc-menus (503)",
+      "en/laminated-menus (503)",
+      "en/hardcover-menus (503)",
+      "zh-hk/drink-menus (503)",
+      "ja/drink-menus (503)",
+      "ja/disposable-menus (503)",
+      "ja/outdoor-vinyl-banners (503)",
+      "en/roll-up-banners (503)",
+      "zh-hk/adhesive-banners (503)",
+      "zh-hk/vehicle-wraps (503)",
+      "zh-hk/mesh-banners (503)",
+      "en/mesh-banners (503)",
+      "en/catalog-printing (503)",
+      "en/saddle-stitch-booklets (503)",
+      "en/perfect-bound-books (503)",
+      "ja/perfect-bound-books (503)",
+      "ja/hardcover-books (503)",
+      "ja/spiral-notebooks (503)",
+      "zh-hk/business-envelopes (503)",
+      "zh-hk/colored-envelopes (503)",
+      "zh-hk/large-envelopes (503)",
+      "zh-hk/pearl-envelopes (503)",
+      "en/pearl-envelopes (503)",
+      "en/exercise-books (503)",
+      "en/certificates (503)",
+      "en/school-flyers (503)",
+      "ja/school-flyers (503)",
+      "ja/textbooks (503)",
+      "ja/graduation-yearbook (503)",
+      "zh-hk/magnetic-closure-gift-box (503)",
+      "zh-hk/electronics-packaging-box (503)",
+      "zh-hk/kraft-paper-packaging-box (503)",
+      "en/kraft-paper-packaging-box (503)",
+      "zh-hk/gang-run-card-boxes (503)",
+      "en/gang-run-card-boxes (503)",
+      "ja/gang-run-card-boxes (503)",
+      "en/white-card-boxes (503)",
+      "ja/white-card-boxes (503)",
+      "zh-hk/corrugated-boxes (503)",
+      "ja/corrugated-boxes (503)",
+      "zh-hk/tuck-end-boxes (503)",
+      "en/tuck-end-boxes (503)",
+      "ja/tuck-end-boxes (503)",
+      "zh-hk/fruit-food-label-stickers (503)",
+      "en/fruit-food-label-stickers (503)",
+      "ja/fruit-food-label-stickers (503)",
+      "zh-hk/doujinshi-printing (503)",
+      "en/doujinshi-printing (503)",
+      "zh-hk/acrylic-keychain (503)",
+      "ja/doujinshi-printing (503)",
+      "en/acrylic-keychain (503)",
+      "zh-hk/can-badge (503)",
+      "ja/acrylic-keychain (503)",
+      "en/can-badge (503)",
+      "zh-hk/postcard-set (503)",
+      "ja/can-badge (503)",
+      "ja/postcard-set (503)",
+      "zh-hk/eco-tote-bag (503)",
+      "en/postcard-set (503)",
+      "en/eco-tote-bag (503)",
+      "ja/eco-tote-bag (503)",
+      "zh-hk/foil-wedding-invitations (503)",
+      "en/foil-wedding-invitations (503)",
+      "ja/foil-wedding-invitations (503)",
+      "zh-hk/save-the-date-cards (503)",
+      "en/save-the-date-cards (503)",
+      "ja/save-the-date-cards (503)",
+      "zh-hk/wedding-thank-you-cards (503)",
+      "en/wedding-thank-you-cards (503)",
+      "ja/wedding-thank-you-cards (503)",
+      "zh-hk/wedding-program-cards (503)",
+      "en/wedding-program-cards (503)",
+      "ja/wedding-program-cards (503)",
+      "zh-hk/wedding-menu-cards (503)",
+      "en/wedding-menu-cards (503)",
+      "ja/wedding-menu-cards (503)",
+      "zh-hk/wedding-suite-bundle (503)",
+      "en/wedding-suite-bundle (503)",
+      "ja/wedding-suite-bundle (503)",
+      "zh-hk/wedding-place-cards (503)",
+      "en/wedding-place-cards (503)",
+      "ja/wedding-place-cards (503)",
+      "zh-hk/drink-tokens (503)",
+      "en/drink-tokens (503)",
+      "ja/drink-tokens (503)",
+      "zh-hk/escort-cards (503)",
+      "en/escort-cards (503)",
+      "ja/escort-cards (503)",
+      "zh-hk/name-tags-badges (503)",
+      "en/name-tags-badges (503)",
+      "ja/name-tags-badges (503)",
+      "zh-hk/cafe-table-cards (503)",
+      "en/cafe-table-cards (503)",
+      "ja/cafe-table-cards (503)",
+      "zh-hk/wedding-seating-charts (503)",
+      "en/wedding-seating-charts (503)",
+      "ja/wedding-seating-charts (503)"
+    ]
+  },
+  "samplePrices": {
+    "premium-greeting-cards": {
+      "en": "33.12 USD",
+      "ja": "4875100 JPY"
+    },
+    "spot-uv-greeting-cards": {
+      "zh-hk": "140100 HKD",
+      "en": "46.37 USD"
+    },
+    "matte-greeting-cards": {
+      "zh-hk": "110100 HKD"
+    },
+    "rounded-corner-greeting-cards": {
+      "zh-hk": "100100 HKD",
+      "ja": "4875100 JPY"
+    },
+    "waterproof-stickers": {
+      "zh-hk": "0.42 HKD"
+    },
+    "transparent-stickers": {
+      "zh-hk": "0.38 HKD",
+      "en": "0.41 USD"
+    },
+    "removable-stickers": {
+      "zh-hk": "0.45 HKD",
+      "ja": "46 JPY"
+    },
+    "small-batch-stickers": {
+      "en": "0.55 USD",
+      "ja": "69 JPY"
+    },
+    "die-cut-stickers": {
+      "en": "0.46 USD"
+    },
+    "foil-stickers": {
+      "zh-hk": "0.78 HKD",
+      "ja": "64 JPY"
+    },
+    "security-stickers": {
+      "zh-hk": "1.15 HKD",
+      "ja": "51 JPY"
+    },
+    "fluorescent-stickers": {
+      "en": "0.46 USD"
+    },
+    "white-card-bags": {
+      "zh-hk": "1.40 HKD",
+      "en": "0.18 USD"
+    },
+    "gift-bags": {
+      "zh-hk": "10 HKD",
+      "ja": "600 JPY"
+    },
+    "eco-paper-bags": {
+      "en": "1.84 USD",
+      "ja": "240 JPY"
+    },
+    "handle-bags": {
+      "en": "1.84 USD"
+    },
+    "large-bags": {
+      "zh-hk": "6 HKD",
+      "ja": "450 JPY"
+    },
+    "a4-flyers": {
+      "zh-hk": "0.31 HKD",
+      "ja": "6.30 JPY"
+    },
+    "a5-flyers": {
+      "en": "0.02 USD"
+    },
+    "double-sided-flyers": {
+      "zh-hk": "0.40 HKD",
+      "en": "0.65 USD"
+    },
+    "folded-leaflets": {
+      "zh-hk": "0.38 HKD",
+      "en": "0.05 USD"
+    },
+    "thick-paper-flyers": {
+      "en": "0.70 USD",
+      "ja": "95 JPY"
+    },
+    "eco-flyers": {
+      "en": "0.09 USD",
+      "ja": "14 JPY"
+    },
+    "same-day-flyers": {
+      "en": "0.16 USD",
+      "ja": "25 JPY"
+    },
+    "a1-posters": {
+      "zh-hk": "2907200 HKD",
+      "ja": "600 JPY"
+    },
+    "a2-posters": {
+      "ja": "44 JPY"
+    },
+    "outdoor-posters": {
+      "zh-hk": "16 HKD",
+      "ja": "480 JPY"
+    },
+    "display-posters": {
+      "en": "7.36 USD"
+    },
+    "art-posters": {
+      "zh-hk": "26 HKD",
+      "en": "5.98 USD"
+    },
+    "adhesive-posters": {
+      "zh-hk": "13 HKD",
+      "en": "2.99 USD"
+    },
+    "food-boxes": {
+      "zh-hk": "2.50 HKD",
+      "ja": "101 JPY"
+    },
+    "cosmetic-boxes": {
+      "en": "1.84 USD",
+      "ja": "240 JPY"
+    },
+    "mailer-boxes": {
+      "en": "0.55 USD"
+    },
+    "rigid-boxes": {
+      "zh-hk": "8 HKD",
+      "ja": "240 JPY"
+    },
+    "foil-red-packets": {
+      "zh-hk": "1.10 HKD",
+      "ja": "64 JPY"
+    },
+    "embossed-red-packets": {
+      "en": "0.92 USD",
+      "ja": "129 JPY"
+    },
+    "custom-red-packets": {
+      "en": "0.74 USD"
+    },
+    "cartoon-red-packets": {
+      "zh-hk": "1.10 HKD",
+      "en": "0.46 USD"
+    },
+    "eco-red-packets": {
+      "zh-hk": "1.90 HKD",
+      "ja": "103 JPY"
+    },
+    "large-red-packets": {
+      "en": "0.92 USD",
+      "ja": "129 JPY"
+    },
+    "wall-calendars": {
+      "en": "0.40 USD"
+    },
+    "desk-calendars": {
+      "zh-hk": "3 HKD",
+      "ja": "75 JPY"
+    },
+    "custom-calendars": {
+      "zh-hk": "3 HKD",
+      "ja": "110 JPY"
+    },
+    "mini-calendars": {
+      "zh-hk": "3 HKD",
+      "ja": "50 JPY"
+    },
+    "photo-frame-calendars": {
+      "en": "0.95 USD",
+      "ja": "130 JPY"
+    },
+    "magnetic-calendars": {
+      "en": "0.40 USD"
+    },
+    "pvc-menus": {
+      "zh-hk": "8 HKD",
+      "ja": "50 JPY"
+    },
+    "laminated-menus": {
+      "zh-hk": "5 HKD",
+      "ja": "258 JPY"
+    },
+    "hardcover-menus": {
+      "zh-hk": "28 HKD",
+      "ja": "1288 JPY"
+    },
+    "drink-menus": {
+      "en": "3.68 USD"
+    },
+    "disposable-menus": {
+      "zh-hk": "0.22 HKD",
+      "en": "0.14 USD"
+    },
+    "outdoor-vinyl-banners": {
+      "zh-hk": "12 HKD",
+      "en": "2.76 USD"
+    },
+    "roll-up-banners": {
+      "zh-hk": "85 HKD",
+      "ja": "6440 JPY"
+    },
+    "adhesive-banners": {
+      "en": "2.30 USD",
+      "ja": "300 JPY"
+    },
+    "vehicle-wraps": {
+      "en": "6.44 USD",
+      "ja": "840 JPY"
+    },
+    "mesh-banners": {
+      "ja": "480 JPY"
+    },
+    "catalog-printing": {
+      "zh-hk": "2.80 HKD",
+      "ja": "644 JPY"
+    },
+    "saddle-stitch-booklets": {
+      "zh-hk": "1.20 HKD",
+      "ja": "23 JPY"
+    },
+    "perfect-bound-books": {
+      "zh-hk": "0.87 HKD"
+    },
+    "hardcover-books": {
+      "zh-hk": "40 HKD",
+      "en": "13.80 USD"
+    },
+    "spiral-notebooks": {
+      "en": "2.76 USD",
+      "zh-hk": "8 HKD"
+    },
+    "business-envelopes": {
+      "en": "0.14 USD",
+      "ja": "20 JPY"
+    },
+    "colored-envelopes": {
+      "en": "0.18 USD",
+      "ja": "25 JPY"
+    },
+    "large-envelopes": {
+      "ja": "39 JPY",
+      "en": "0.28 USD"
+    },
+    "exercise-books": {
+      "zh-hk": "0.90 HKD",
+      "ja": "18 JPY"
+    },
+    "pearl-envelopes": {
+      "ja": "64 JPY"
+    },
+    "certificates": {
+      "zh-hk": "8 HKD",
+      "ja": "386 JPY"
+    },
+    "school-flyers": {
+      "zh-hk": "0.20 HKD"
+    },
+    "textbooks": {
+      "zh-hk": "5 HKD",
+      "en": "9.20 USD"
+    },
+    "graduation-yearbook": {
+      "zh-hk": "45 HKD",
+      "en": "16.69 USD"
+    },
+    "magnetic-closure-gift-box": {
+      "en": "3.45 USD",
+      "ja": "450 JPY"
+    },
+    "electronics-packaging-box": {
+      "en": "1.84 USD",
+      "ja": "240 JPY"
+    },
+    "kraft-paper-packaging-box": {
+      "ja": "150 JPY"
+    },
+    "white-card-boxes": {
+      "zh-hk": "0.09 HKD"
+    },
+    "corrugated-boxes": {
+      "en": "0.07 USD"
+    }
+  }
+}

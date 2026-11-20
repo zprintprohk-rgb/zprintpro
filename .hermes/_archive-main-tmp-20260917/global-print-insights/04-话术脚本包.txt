@@ -1,0 +1,145 @@
+触达话术脚本包（EN） · 国内小批量印刷获客系统
+
+
+
+
+DELIVERABLE 04 · 话术包触达话术脚本包（EN）
+
+# 
+← 总览国内小批量印刷获客系统 · v1.0
+
+
+04 · 触达话术脚本包（海外版 v1.0 · EN）
+
+## 
+使用原则：先给价值、不强推、被拒即停；禁止绝对化表述（cheapest / best / guaranteed）。
+语气：对小企业主用 casual-professional（友好、直接、不端着）。
+时差提示：北京 15:00–23:00 覆盖欧美工作时段；首触尽量落在对方上午。
+合规：每类渠道先看《06 合规》；私信仅针对公开发出需求的对象。
+一、平台私信（Instagram / Facebook / TikTok）
+
+## 
+A. 回复"求推荐"帖
+
+### 
+Hi! Saw your post looking for a printing partner. I work with a print manufacturer that handles small batches — stickers, packaging boxes, booklets, labels, calendars and more. If you share what you need (product, quantity, size), I can send a quick reference quote for comparison. No pressure.
+B. 回复问价帖
+
+### 
+Saw you&#x27;re pricing out {product}. Price mostly depends on quantity, size, material and finishing. Send me those details and I&#x27;ll get you a real quote you can compare — takes me about a day.
+C. 软搭话（对方晒产品/开箱）
+
+### 
+Love what you did with {product}! If you ever need these produced in small batches, we do print manufacturing — happy to share options whenever helpful.
+二、Reddit（先评论，后私信）
+
+## 
+评论（公开、给价值）：
+- 
+For small batches, look for a digital-printing manufacturer and ask each quote to include the full spec (size, material, finishing, quantity) — much easier to compare that way.
+私信（仅当对方回复/表示需要时）：
+- 
+Following up from the thread — I work with a print manufacturer for small-batch production. Want me to put together a reference quote for your {product}?
+三、LinkedIn
+
+## 
+连接请求备注（≤300 字符）
+
+### 
+Hi {name} — saw your post about sourcing {category}. We&#x27;re a print manufacturer working with brands on small-batch production (packaging, labels, books). Would love to connect.
+私信开场
+
+### 
+Thanks for connecting! Quick context: we produce small-batch print for brands — {relevant products}. If {brand} is reviewing suppliers, I can share specs, sample photos, and a reference quote.
+四、邮件（B2B，必带退订与签名）
+
+## 
+Subject: Quick quote for {product} — small-batch printing
+
+
+Body:
+
+
+Hi {name},
+Saw your post in {group/thread} about {product}. We&#x27;re a print manufacturer (Asia-based) doing small-batch production: stickers, labels, packaging boxes, booklets, calendars, exercise books and more.
+If you share the basics — product, quantity, size, material, deadline — we&#x27;ll send a reference quote within 1 business day. Samples can be arranged.
+Best,
+{sender} · {company} · {address}
+Not interested? Reply "stop" or unsubscribe here: {unsubscribe link}
+五、WhatsApp（对方公开求助后）
+
+## 
+Hi {name}, this is {sender} from {company} — you asked in {platform/group} about {product} printing. We manufacture small batches (stickers, boxes, labels, books). Want me to send a reference quote?
+六、挖需问题库（六问）
+
+## 
+# | 问题 | 
+
+1 | What&#x27;s the product and what&#x27;s it for? | 
+
+2 | What quantity do you need (first run)? | 
+
+3 | Any size / material requirements? | 
+
+4 | Any finishing needs (lamination, foil, special paper)? | 
+
+5 | When do you need it delivered? | 
+
+6 | Do you have print-ready files? | 
+
+
+七、报价引导
+
+## 
+先要件再报价：缺数量/规格时给"影响价格的因素 + 参考区间"，不硬报价；
+- 给档位：economy / standard / premium 三档选项；
+- 留后手："Final price confirmed after spec review and sample.";
+- 不打价格战：被说贵时用"同规格比价"（见下）。
+- 
+八、异议处理（8 条）
+
+## 
+异议 | 应对话术 | 
+
+"Too expensive" | "Understood — may I check the spec you compared? Often the difference is paper thickness, finishing, or quantity tier. I can also send a more economy option." | 
+
+"I use a local printer" | "Makes sense! Keep us as a backup for peak seasons or when they&#x27;re backed up — we do fast samples." | 
+
+"Is shipping included?" | "Depends on destination and weight — share the address and I&#x27;ll quote door-to-door options." | 
+
+"How do I know the quality?" | "We can start with a sample or a small pilot order before a bigger run." | 
+
+"What&#x27;s your MOQ?" | "For most products small batches are fine — it depends on the process. Tell me the item and target quantity." | 
+
+"Lead time?" | "Typically a few days for samples; production timing depends on quantity and finishing — confirmed per order." | 
+
+"Payment terms?" | "Standard is deposit + balance; options depend on order size and history. Happy to walk through it." | 
+
+"Can I see samples/photos?" | "Sure — I&#x27;ll send reference photos now, and physical samples if you&#x27;re seriously comparing." | 
+
+
+九、跟进节奏
+
+## 
+1. Day 0 首触（对方公开需求当天或次日）；
+
+
+2. +5–7 天：带价值跟进（adjust 方案 / 参考价 / 案例图）；
+
+
+3. +5–7 天：一句话提醒（"Shall I hold a production slot for your {product}?" 慎用，仅对高意向）；
+
+
+4. 结束语："I&#x27;ll leave it with you — reach out anytime if it&#x27;s useful." → 状态置「搁置」。
+
+
+十、合规提醒
+
+## 
+每类渠道遵守《06 合规》频次上限；同一对象最多 3 次；
+- 被拒立即停止 + 记 Do-Not-Contact；
+- 不使用 absolute claims；价格标注"reference quote, final subject to spec"；
+- 邮件必含退订；私信在对方拒绝后不再发送。
+- 
+
+国内小批量印刷获客系统 v1.0 · 生成 2026-09-16 21:30 · 离线自包含文档，双击即可打开

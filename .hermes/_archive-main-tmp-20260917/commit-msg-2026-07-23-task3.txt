@@ -1,0 +1,17 @@
+feat(quote): fx-rates.json fallback for static FX rates
+
+M3 v7 任务卡 Task 3 缺的 20% (2026-07-23 拍板):
+- 把 fx.ts 的 STATIC_LIVE_RATES_HKD 从 inline 提取到 price-tables/fx-rates.json
+- 同 price-tables/ 其他表 SSoT 模式, 月度 cron 可自动更新
+- JSON 缺值时回退 fx.ts 内 INLINE_HARDCODED_RATES 兜底
+- 维护节奏: zprintpro-monthly-matrix-audit cron (1 号 14:00) 拉实时汇率对比 JSON
+  - diff > 2% 升级 user 决定
+  - diff <= 2% 自动更新 fx-rates.json
+  - 实时 API 连续失败 保留 JSON + 升级 user, 静默 7 天仍失败则保留不动
+
+9 个币种 (HKD/USD/GBP/AUD/JPY/CAD/CNY/SGD/NZD) 全覆盖, 锚币种 HKD, 数值 = 1 CCY = X HKD (mid-market)
+
+red line:
+- 保留 INLINE_HARDCODED_RATES 不删除, 防御性兜底
+- StaticFXProvider.lastUpdated 改为读 JSON 的 lastUpdated
+- build 实测 PASS (TypeScript 类型干净)

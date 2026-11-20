@@ -1,0 +1,1117 @@
+[
+ {
+  "v": "300g銅版紙或250g啞粉藝術紙；啞膠／光膠覆膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色柯式印刷（海德堡）",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "覆膜（啞膠／光膠）、局部UV、燙金、圓角模切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "400g超厚銅版紙；啞膠／光膠覆膜；可選三合一裱貼（700-810g 超厚檔）",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色柯式印刷",
+  "n": 9,
+  "field": "printMethod"
+ },
+ {
+  "v": "覆膜（啞膠／光膠）、燙金／燙銀、局部UV、擊凸、圓角模切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g銅版紙或棉質紙；燙金／燙銀／玫瑰金",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色柯式＋燙金",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "覆膜（啞膠／光膠）、燙金、圓角模切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g銅版紙或合成紙；局部UV光油",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色柯式＋局部UV",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "局部UV、覆膜（啞膠／光膠）、圓角模切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g啞粉紙或環保紙；啞膠覆膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "啞膠覆膜、燙金、壓凹、圓角模切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g銅版紙或藝術紙；啞膠／光膠覆膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "覆膜（啞膠／光膠）、燙金、局部UV、圓角模切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "PVC 防水／PP 合成紙；可覆啞膜或光膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色數碼或柯式（依數量）",
+  "n": 4,
+  "field": "printMethod"
+ },
+ {
+  "v": "模切、覆膜（啞膜／光膜）、局部可選工藝",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "透明 PET；可選白墨、啞膜／光膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "CMYK＋可選白墨（依設計）",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "覆膜（啞膜／光膜）、模切、可選局部 UV",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "PP 合成紙／PET 透明膜；可移膠",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "模切、覆膜（啞膜／光膜）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "銅版紙／PP 合成紙／透明 PVC／Kraft 牛皮紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色數碼印刷（HP Indigo）",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "模切、圓角、局部燙金、覆膜",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "PVC／PP 合成紙／透明 PET；可覆膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色數碼或柯式",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "模切（全切／吻切）、啞膜／光膜",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "銅版紙／合成紙；可覆啞膜／光膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色印刷＋燙金（分版）",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金／燙銀、模切、可選局部 UV",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "易碎紙／VOID／合成紙＋全息膜等（依方案）",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "可變數碼印刷為主；可搭配專色",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "模切、全息冷燙或燙金（依稿）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "螢光 PVC 膜／螢光紙；螢光油墨",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "模切、反光條紋覆合、覆膜",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "牛皮紙 120–200g 級（依報價）；可配手挽材",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "單色至四色；可數碼打樣",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金／燙銀、局部 UV、覆膜（視材）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "白卡紙 200–300g 級（依報價）；可覆膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色＋可選專色／燙金",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "覆膜、燙金／燙銀、局部 UV、模切糊袋",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "白卡／特種紙／珠光紙（依稿）；可覆膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色＋燙金／局部 UV",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金、局部 UV、緞帶或棉繩手挽",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "FSC 牛皮／再生紙（依供應）；大豆油墨",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "單色至四色（依設計）",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "手挽、可選燙金／覆膜（視材）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "牛皮／白卡；手挽棉繩或扁紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色印刷為主",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "穿孔打釘、底卡加固、可覆膜",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "250g 白卡紙／300g 牛皮紙／280g 特種紋理紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "燙金／燙銀、擊凸、手挽繩、底部加固",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "157g銅版紙或128g啞粉紙",
+  "n": 2,
+  "field": "material"
+ },
+ {
+  "v": "四色柯式或數碼印刷",
+  "n": 4,
+  "field": "printMethod"
+ },
+ {
+  "v": "覆膜（啞膜／光膜可選）",
+  "n": 4,
+  "field": "finishing"
+ },
+ {
+  "v": "128g銅版紙或100g書紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色數碼印刷",
+  "n": 7,
+  "field": "printMethod"
+ },
+ {
+  "v": "四色雙面柯式印刷",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "157g或200g銅版紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "壓線、覆膜（啞膜／光膜可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "200g或250g銅版紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "FSC認證再生紙；大豆油墨",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色數碼或柯式印刷",
+  "n": 5,
+  "field": "printMethod"
+ },
+ {
+  "v": "無覆膜（環保）或水性光油",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "157g銅版紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色高速數碼印刷",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "無覆膜或啞膜（加時）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "157g 銅版紙（可升 200g／相紙）",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "柯式或高品數碼",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "PP 裱貼、泡沫板裱貼（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "157–200g 銅版或相紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "柯式為主；急件數碼",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "PP 護膜、泡沫板裱貼（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "戶外 PVC／PET／合成紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "戶外噴繪或 UV",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "霧面護膜、打扣（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "180g–200g PP 合成紙／背膠 PVC；UV 固化油墨",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "環保溶劑或 UV 大判噴繪",
+  "n": 2,
+  "field": "printMethod"
+ },
+ {
+  "v": "覆膜（啞膜／光膜）、穿繩孔、雙面輸出",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "200g–250g 啞粉藝術紙／260g 純棉無酸紙；12 色顏料墨水",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "12 色藝術微噴（Giclée）",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "啞面／絲絨面／半光面、無框畫裝裱",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "150g–180g 背膠 PP／鑄造級 PVC；導氣槽底紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "模切、鏤空、光膜／啞膜覆合",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "350g 食品級白卡／400g 灰底白板；PE 淋膜或 PLA 內層",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色柯式或數碼（依數量）",
+  "n": 2,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金／燙銀、窗口（PET）、局部 UV、覆膜",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "1200-1500g 灰板裱糊 白卡 / 觸感紙 / 珠光紙; 內托 EVA / 紙漿 / PET 吸塑",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色柯式 + 專色; 可逆向 UV",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "覆膜 (啞/觸感/光) + 燙金 (金/銀/玫瑰金) + 局部 UV + 擊凸 + 糊盒",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "E／B 坑瓦楞或白卡裱瓦（依載重）",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "柔性版或柯式（依量與色數）",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "模切、壓線、自黏封口（可諮詢）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g–350g 白卡紙／E 坑瓦楞紙板",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "覆膜（啞膜／光膜）、燙金、局部 UV、條碼",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "灰板＋特種裱面紙；可選磁吸五金",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "柯式面紙印刷＋後工",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金、壓紋、局部 UV、手工糊盒",
+  "n": 2,
+  "field": "finishing"
+ },
+ {
+  "v": "120g紅色紙張；燙金／燙銀",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色印刷＋燙金",
+  "n": 3,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金、壓凹、局部UV",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "150g紅色紙張；浮雕＋燙金",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色印刷＋浮雕",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "浮雕、燙金、壓凹",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "120g–150g紅色或特殊色紙張",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色印刷＋燙金／UV",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金、局部UV、壓凹、異形模切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "120g銅版紙或環保紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "燙金、局部UV（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "FSC認證再生紙或種子紙；大豆油墨",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "無覆膜（環保）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "150g–200g紅色紙張",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "燙金、浮雕、局部UV",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "250g–300g銅版紙或啞粉紙；金屬圈",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "金屬圈裝訂、打掛孔",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "200g–250g銅版紙或卡紙；三角座架",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "三角座架、騎馬釘或膠裝",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "250g–300g藝術紙或銅版紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "燙金、局部UV、金屬圈或騎馬釘",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "150g–200g銅版紙或卡紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "騎馬釘或單張裁切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "250g–300g銅版紙或相紙；硬紙板相架",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "硬紙板相架底座、騎馬釘",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "200g–250g銅版紙或合成紙；0.5mm或1mm軟磁片",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "軟磁片貼合、圓角裁切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "0.5mm–1.0mm透明或白色PVC膠片",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色UV印刷",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "圓角或直角裁切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "200g–250g銅版紙或啞粉紙；啞膠或光膠覆膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色印刷",
+  "n": 3,
+  "field": "printMethod"
+ },
+ {
+  "v": "覆膜（啞膠／光膠）、圓角裁切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "硬紙板封面裱糊銅版紙；內頁200g銅版紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "燙金、壓凹、騎馬釘或膠裝",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "200g–250g銅版紙或合成紙；啞膠覆膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "覆膜（啞膠）、圓角裁切",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "100g–120g書紙或再生紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "無覆膜（即棄）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "外光／內光 PVC 燈布（依場景）",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "弱溶劑／溶劑／UV 噴繪",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "打扣、焊邊、筒芯出貨（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "PET／PVC 片或防水合成紙；鋁合金支架",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "噴繪或 UV 印刷（依材）",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "加重桿、牛津布袋／硬殼箱（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "PVC 車貼／可移膠／透明膜（依場景）",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "溶劑／弱溶劑／UV 噴繪",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "霧面護膜、異形裁切（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "鑄造級 PVC 車貼 80–100 微米；可移膠＋導氣槽",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "UV 固化或環保溶劑大判噴繪",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "亮面／啞面覆膜、單透孔、3M／Avery 品牌升級",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "270g–350g PVC 網格夾網布；UV 固化油墨",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "UV 大判噴繪",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "熱封邊、銅扣眼、阻燃處理、雙面縫邊",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "內頁157g–200g銅版紙；封面200g–250g銅版紙",
+  "n": 2,
+  "field": "material"
+ },
+ {
+  "v": "覆膜（啞膜／光膜）、燙金、騎馬釘或膠裝",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "128g–157g銅版紙或書紙",
+  "n": 2,
+  "field": "material"
+ },
+ {
+  "v": "騎馬釘裝訂、覆膜（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "膠裝、封面覆膜（啞膜／光膜）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "硬紙板封面裱糊銅版紙；內頁157g–200g銅版紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "膠裝、燙金、壓凹、局部UV、封面覆膜",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "內頁80g–100g書紙或道林紙；封面200g銅版紙或PP",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "YO圈或螺旋裝訂、封面覆膜",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "80–120g 書紙／本白書紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "單色至四色柯式或數碼",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "自黏封口、開窗貼片（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "80–120g 書紙／彩色書紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "柯式四色＋可選專色",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "開窗、自黏封口（變數可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "100–120g 書紙為主（可諮詢）",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "單色至四色",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "自黏封口、開窗（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "珠光／冰白特種書紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色／專色＋可選燙金",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "自黏封口、開窗、擊凸（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "80g–100g書紙或道林紙；封面200g銅版紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "封面四色印刷；內頁單色或雙色",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "騎馬釘裝訂、封面覆膜（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "200g–250g水印紙或棉質紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "燙金、壓凹、防偽底紋、浮水印",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "覆膜（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "80g–100g道林紙或書紙；封面200g銅版紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "封面四色；內頁單色或雙色",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "膠裝或騎馬釘、封面覆膜（可選）",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "灰板裱面＋隱藏磁吸；可觸感膜",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "面紙四色／專色＋後工",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "1200g 灰板紙裱糊銅版紙；EVA／PET 吸塑／紙漿內托",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "燙金／燙銀、局部 UV、軟觸膜、磁吸扣",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g–350g FSC 牛皮卡紙；水性油墨",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "單色／雙色水性印刷或四色柯式",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙黑、壓凹、絲印、手提繩",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "350g/400g 單粉卡(超高松) / 375g 銀卡紙 / 375g 鐳射銀卡",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "四色柯式印刷 + 覆光膜/啞膜",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金 / UV 局部 / 擊凸 / 貼膠片 / 印白墨(銀卡類) / 逆向 UV(鐳射銀卡類)",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "食品級 BOPP／PE／PLA；大豆油墨",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "模切、覆膜（啞膜／光膜）、可變條碼",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g 棉紙 / 350g 剛古紙 / 300g 銅版紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "柯式印刷 4C + 燙金",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金 (金/銀/玫瑰金/香檳金) + UV 局部 + 模切異形",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g 銅版紙 / 棉紙 / 剛古紙",
+  "n": 3,
+  "field": "material"
+ },
+ {
+  "v": "柯式印刷 4C",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "光膠 / 啞膠 / 燙金 / UV 局部",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g 棉紙 / 銅版紙 / 剛古紙",
+  "n": 3,
+  "field": "material"
+ },
+ {
+  "v": "柯式印刷 4C + 折卡",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金 / UV / 模切 / 折卡",
+  "n": 2,
+  "field": "finishing"
+ },
+ {
+  "v": "柯式印刷 4C 雙面",
+  "n": 5,
+  "field": "printMethod"
+ },
+ {
+  "v": "光膠 / 啞膠 / 燙金",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g 棉紙 (主) + 350g 剛古紙 (請帖)",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "柯式印刷 4C 雙面 + 燙金",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金 (玫瑰金) + UV 局部 + 模切 + 折卡",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "燙金 / 壓紋 / 模切 / 折卡 / 站立",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "0.5mm 透明 PVC / 300g 銅版紙 / 350g 黑卡紙",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "柯式印刷 4C + UV 防水層",
+  "n": 2,
+  "field": "printMethod"
+ },
+ {
+  "v": "模切圓角 / 燙金 / 打孔掛繩",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "燙金 / UV / 模切異形 / 折卡 / 站立",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g 銅版紙 / 350g 白卡 / PVC 透明卡",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "燙金 / UV / 磁鐵背貼 / 打孔掛繩",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g 銅版紙 / 0.5mm 防水 PVC",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "UV 防水 / 燙金 / 模切 / 折卡 / 站立",
+  "n": 1,
+  "field": "finishing"
+ },
+ {
+  "v": "300g 銅版紙 / 350g 剛古紙 (大尺寸加厚)",
+  "n": 1,
+  "field": "material"
+ },
+ {
+  "v": "柯式印刷 4C 單面或雙面",
+  "n": 1,
+  "field": "printMethod"
+ },
+ {
+  "v": "燙金 / UV / 模切 / 摺疊",
+  "n": 1,
+  "field": "finishing"
+ }
+]

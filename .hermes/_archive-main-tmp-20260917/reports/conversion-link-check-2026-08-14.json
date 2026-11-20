@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-08-14T09:27:34.056812+08:00",
+  "scope": "8/14 batch 27f0c7f push (3 in 1: batch 2 名片清扫 + 6 retrofit GA4 修复 + 16 files bundle)",
+  "pages_total": 6,
+  "verified": 1,
+  "broken": 5,
+  "results": [
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/baby-product-label-sticker-printing-guide/",
+      "step1_cta": {
+        "total_cta": 125,
+        "bad_cta": [],
+        "bad_cta_count": 0,
+        "ok": true
+      },
+      "step2_form": {
+        "form_action_match": false,
+        "quote_or_contact_present": true,
+        "ok": true
+      },
+      "step3_ga4": {
+        "ga4_event_present": false,
+        "ok": false
+      },
+      "step4_wa_mailto": {
+        "wa_me": true,
+        "mailto": false,
+        "ok": true
+      },
+      "step5_verdict": "broken"
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/paper-materials/",
+      "step1_cta": {
+        "total_cta": 130,
+        "bad_cta": [],
+        "bad_cta_count": 0,
+        "ok": true
+      },
+      "step2_form": {
+        "form_action_match": false,
+        "quote_or_contact_present": true,
+        "ok": true
+      },
+      "step3_ga4": {
+        "ga4_event_present": false,
+        "ok": false
+      },
+      "step4_wa_mailto": {
+        "wa_me": true,
+        "mailto": false,
+        "ok": true
+      },
+      "step5_verdict": "broken"
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/same-day-flyers-printing-hong-kong-guide/",
+      "step1_cta": {
+        "total_cta": 129,
+        "bad_cta": [],
+        "bad_cta_count": 0,
+        "ok": true
+      },
+      "step2_form": {
+        "form_action_match": false,
+        "quote_or_contact_present": true,
+        "ok": true
+      },
+      "step3_ga4": {
+        "ga4_event_present": false,
+        "ok": false
+      },
+      "step4_wa_mailto": {
+        "wa_me": true,
+        "mailto": false,
+        "ok": true
+      },
+      "step5_verdict": "broken"
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/apparel-shopping-bag-printing-guide/",
+      "step1_cta": {
+        "total_cta": 130,
+        "bad_cta": [],
+        "bad_cta_count": 0,
+        "ok": true
+      },
+      "step2_form": {
+        "form_action_match": false,
+        "quote_or_contact_present": true,
+        "ok": true
+      },
+      "step3_ga4": {
+        "ga4_event_present": false,
+        "ok": false
+      },
+      "step4_wa_mailto": {
+        "wa_me": true,
+        "mailto": false,
+        "ok": true
+      },
+      "step5_verdict": "broken"
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/cross-border-ecommerce-shipping-box-guide/",
+      "step1_cta": {
+        "total_cta": 128,
+        "bad_cta": [],
+        "bad_cta_count": 0,
+        "ok": true
+      },
+      "step2_form": {
+        "form_action_match": false,
+        "quote_or_contact_present": true,
+        "ok": true
+      },
+      "step3_ga4": {
+        "ga4_event_present": false,
+        "ok": false
+      },
+      "step4_wa_mailto": {
+        "wa_me": true,
+        "mailto": false,
+        "ok": true
+      },
+      "step5_verdict": "broken"
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/cmyk-guide/",
+      "step1_cta": {
+        "total_cta": 129,
+        "bad_cta": [],
+        "bad_cta_count": 0,
+        "ok": true
+      },
+      "step2_form": {
+        "form_action_match": false,
+        "quote_or_contact_present": true,
+        "ok": true
+      },
+      "step3_ga4": {
+        "ga4_event_present": true,
+        "ok": true
+      },
+      "step4_wa_mailto": {
+        "wa_me": true,
+        "mailto": false,
+        "ok": true
+      },
+      "step5_verdict": "verified"
+    }
+  ]
+}

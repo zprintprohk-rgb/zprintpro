@@ -1,0 +1,46 @@
+{
+ "slug": "spot-uv-greeting-cards",
+ "name_en": "Spot UV Greeting Cards",
+ "category_slug": "greeting-cards",
+ "category_name_en": "Greeting Cards",
+ "current_body_en": "ZprintPro spot UV greeting cards use 300gsm coated stock with a matte lamination base, then apply glossy UV coating to selected areas — logos, patterns, or greetings — creating a striking matte-vs-gloss contrast that makes key elements pop. Ideal for Christmas, New Year, and thank-you cards as well as branded corporate cards. 100-card MOQ, free design check and sample, FSC certified paper, ISO 9001 quality control, shipped direct from our Asia factory via DHL Express in 2-4 days worldwide.",
+ "current_body_words": 79,
+ "product": {
+  "descriptionEn": "Spot UV greeting cards with logo/pattern highlight + matte substrate for high contrast. Strong visual impact for Christmas, New Year, thank-you cards. 300g coated card with spot UV. Free sample, DHL Express 2-4 day global delivery.",
+  "price_range": "HK$140-260/100張",
+  "minQuantity": 100,
+  "specs": {
+   "material": "300g銅版紙或合成紙；局部UV光油",
+   "size": "127×178mm（標準）",
+   "printMethod": "四色柯式＋局部UV",
+   "finishing": "局部UV、覆膜（啞膠／光膠）、圓角模切"
+  },
+  "materials": "",
+  "features": [
+   "【127×178mm標準尺寸】兼容全球卡夾",
+   "【四色柯式印刷】網點細膩，色彩飽和度≥90%",
+   "【ICC色彩管理】品牌色還原穩定，批量一致",
+   "【局部UV】20–30微米立體光澤，視覺衝擊強烈",
+   "【100張起印】小批量數碼可當日取，大量轉柯式",
+   "【免費刀模檢查】確保圓角與模切精準",
+   "【覆膜保護】啞膠／光膠可選，耐磨防指紋"
+  ]
+ },
+ "category_conversion_en": null,
+ "category_gsc_words_en": [],
+ "regional_en": {
+  "trust": "ISO 9001 certified production · 30-second AI quote · free digital proof · no setup fees · free design mockup",
+  "shipping": "DHL Express / FedEx 3-5 days to the USA, 2-4 days to Japan · free shipping on US orders over $99 · worldwide delivery to 50+ countries",
+  "cta": "Ready to order? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
+ },
+ "rules": [
+  "只许从 4 个真实数据源组装: ① 本包 product 的 descriptionEn/specs/features/price_range/minQuantity ② 本包 category 的 conversion orderFlow 场景 (若有) ③ 现有 en body 的事实 (数字只能用它已含的) ④ 本包 GSC 词自然织入 1-2 次",
+  "禁止编造: 数字/认证/交期/客户名/行业事实 (价格只能用 price_range, 交期只能用 body/conversion 已有口径 3-5 天/2-4 天等)",
+  "禁止跨 SKU 复制同一段文字 — 每个 SKU 组装结果必须唯一 (同品类相邻 SKU 也禁整段雷同)",
+  "字数: 新 body ≥ 180 词 (英文词数, 含 FAQ 段); 结构 = 引言段 + 场景段 2-3 段 (含品类 GSC 词自然出现 1-2 次) + 材質/規格段 (从 specs/features 事实转英文散文) + 收費/交期段 (用 price_range/minQuantity + 已有交期口径) + **FAQ** 段 (2-3 问, 从现有 FAQ/事实改写, 禁新数字) + 結尾 CTA 段",
+  "段落用 \\n\\n 分隔; FAQ 段用 **FAQ** 开头, 问题用 **Q1: ...** 加答案",
+  "en 内容红线: 不出现 名片/business card (§0.0); 不出现「深圳」/「Shenzhen」作供应商前缀 (可用 \"Asia factory\"); 不出现简体中文; 不写 \"Hong Kong\" 作目标市场词",
+  "不要修改 title/description/h1/keywords — 只产出 body",
+  "输出 JSON: {\"slug\": \"<slug>\", \"body\": \"<完整 en body>\"}"
+ ]
+}

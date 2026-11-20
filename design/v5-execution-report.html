@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>v5 PLP/PDP 设计稿执行报告 | ZprintPro</title>
+<style>
+:root{--paper:#FAFAF8;--ink:#1E1E1C;--gray:#6B7280;--line:#E5E7EB;--blue:#2873F5;--deep:#0f1f3d;--orange:#F87314;--ok:#059669;--mono:ui-monospace,Consolas,monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.65;padding:40px 20px}
+.page{max-width:960px;margin:0 auto}
+.k{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--blue);text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.k::before{content:"";width:22px;height:3px;background:var(--orange)}
+h1{font-size:30px;font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
+.sub{color:var(--gray);font-size:14.5px;margin-bottom:28px}
+h2{font-size:19px;font-weight:800;margin:34px 0 14px;padding-top:18px;border-top:1px solid var(--line)}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+.metric{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+.metric b{display:block;font-size:24px;font-weight:800;font-variant-numeric:tabular-nums}
+.metric span{font-size:12.5px;color:var(--gray)}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:12px 0;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:10px 0;background:#fff}
+th{background:var(--deep);color:#fff;text-align:left;padding:9px 12px;font-weight:600}
+td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:#fcfcfb}
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px}
+.pill.ok{background:#ecfdf5;color:var(--ok)}
+.pill.warn{background:#fff7ed;color:#c2410c}
+ul{padding-left:20px;font-size:14px}
+li{margin:4px 0}
+.muted{color:var(--gray);font-size:13px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.files{font-family:var(--mono);font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;white-space:pre-wrap}
+@media(max-width:640px){.metrics{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="k">V5 EXECUTION REPORT · 2026-09-07</div>
+  <h1>PLP/PDP v5「印刷标本」设计稿 — 执行报告</h1>
+  <p class="sub">执行契约：只交设计稿（2 个独立 HTML + 截图 + 对比图），不改 src/ 任何文件；K3 审批后 M3 才转组件。目标 916b5c2f 深度交付模式。</p>
+
+  <div class="metrics">
+    <div class="metric"><b>2/2</b><span>设计稿 HTML 落盘（PDP+PLP）</span></div>
+    <div class="metric"><b>19/19</b><span>指令条目覆盖（台账逐条核对）</span></div>
+    <div class="metric"><b>20/20</b><span>价格数据抽查全部命中真实源</span></div>
+    <div class="metric"><b>0</b><span>src/ 改动 · 反模式违规 0</span></div>
+  </div>
+
+  <h2>① 交付物与验证证据</h2>
+  <div class="grid2">
+    <div class="card">
+      <b>设计稿</b>
+      <ul>
+        <li><b>pdp-v5.html</b> — 冻结区照抄线上（顶栏/导航/hero/报价栈 SVG 图标逐字）+ 4 问解答流 5 屏：价格阶梯 71% 主张 → 材质 3 卡 + 工艺 → TrustStrip + FAQ 4 问 → 相关产品 + 採購指南；移动端 mob-rail 悬浮报价轨</li>
+        <li><b>plp-v5.html</b> — 冻结区照抄（banner + 左类目导航）+ SpecFinder 三步选购向导 + 9 SKU 标本签栅格 + 行业场景 3 卡 + 材质表 5 行 + FAQ 6 问</li>
+      </ul>
+    </div>
+    <div class="card">
+      <b>截图证据（design/shots/）</b>
+      <ul>
+        <li>PDP 桌面 1440×5489 / 移动 375×9759</li>
+        <li>PLP 桌面 1440×4879 / 移动 375×10509</li>
+        <li>compare-rush-vs-plp-v5.png — 线上 rush 页 vs v5 并排对比</li>
+        <li>preview-*.png 800px 缩宽预览版</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>② 反模式黑名单自检（v5_check.py）</h2>
+  <table>
+    <tr><th>检查项</th><th>结果</th><th>说明</th></tr>
+    <tr><td>① Pastel 彩底</td><td><span class="pill ok">PASS</span></td><td>16 个黑名单色值 0 命中</td></tr>
+    <tr><td>② 红色爆炸贴</td><td><span class="pill ok">PASS</span></td><td>仅 PDP hero 冻结区 1 处（线上逐字复刻，含「今天下單·明天12點前到」）</td></tr>
+    <tr><td>③ emoji 当图标</td><td><span class="pill ok">PASS</span></td><td>首版 3 处（☎/✉/⚡）已修为线上同款 lucide/inline SVG，复检 0 emoji</td></tr>
+    <tr><td>④ 中文斜体</td><td><span class="pill ok">PASS</span></td><td>italic 声明 0 处</td></tr>
+    <tr><td>⑥ 编造卖点</td><td><span class="pill ok">PASS</span></td><td>SGS/FDA/ISO 9001 宣称 12 处均带数据源出处（HTML 头注释逐条登记）</td></tr>
+    <tr><td>⑦ 交期唯一版</td><td><span class="pill ok">PASS</span></td><td>「每日 18:00 截單 → 順豐翌日 12:00 前送達」唯一；违规变体 0</td></tr>
+  </table>
+
+  <h2>③ 价格算术核验（禁编造条款）</h2>
+  <div class="card">
+    价格阶梯全部由 <span class="muted" style="font-family:var(--mono)">src/lib/price-data.generated.ts</span> 实算：50 張 HK$1.46/張（整批 73）→ 100 張 0.71（71）→ 200 張 0.54（108）→ 500 張 0.45（226）→ 1,000 張 0.42（419）；最大节省主张 <b>(1.46−0.42)/1.46 = 71%</b>。9 个 SKU 价格带（HK$0.22-1.0 至 HK$1.15-4.00）与 products.ts 逐字核对 20/20 命中。
+  </div>
+
+  <h2>④ src/ 零改动证明</h2>
+  <div class="files">git status --porcelain -- src/ messages/
+→ M  src/generated/sitemap-content.ts   （W7-specs 并发车道产物，HEAD=c0c6c087）
+→ ?? src/data/*.bak_*                    （历史备份，非本次）
+本次产物全部在 design/（untracked 新目录），删除即完全回滚。</div>
+
+  <h2>⑤ 遗留与 M3 建议</h2>
+  <ul>
+    <li>SpecFinder 场景→材质联动逻辑需 M3 用 JS 实现（映射表已写入 HTML 注释）</li>
+    <li>PLP banner 未复刻线上 🎨/⚡ 蓝色胶囊（v5 降噪主张）— K3 若要求逐字冻结可补</li>
+    <li>M3 转组件映射表 + 视觉 token 速查已写入 <span style="font-family:var(--mono)">docs/2026-09-07-v5-handoff.md</span></li>
+  </ul>
+</div>
+</body>
+</html>

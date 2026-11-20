@@ -1,0 +1,7 @@
+fix(seo)+docs: 品类层 MOQ 矛盾大扫除 30 处/7 品类（真值=引擎 minQuantity 实查 99 SKU）+ 三层 meta 体检 + 活书记录
+
+- banners 1個起→100(引擎全100) ×6 | calendars 100→1000 ×6(03:20批漏seo.ts层) | greeting-cards 100→10 ×6
+- menus 100→10 ×4 | educational 100→10 ×4 | books en/ja 50→10 统一 ×2 | wedding zh 100→50 ×2
+- 新增只读审计 scripts/audit-sku-desc-moneyterm-20260921.mjs + 报告（描述宽度/钱词覆盖）
+- 活书 08:50 条: 体检三层结论 + 12段验证(MOQ编辑零结构破坏) + 同行MOQ调研(Print100/e-print/Mixam/ラクスル 1本起实证)
+- tsc 54=54 基线

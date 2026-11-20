@@ -1,0 +1,3 @@
+Modified 24 SKU blocks (expected 12)
+Updated specific fields for 24 SKU blocks
+Old size: 1609584, New size: 1616676

@@ -1,0 +1,150 @@
+{
+ "at": "2026-09-13T10-17-17-122Z",
+ "note": "T1 回滚映射 (before/after 片段) — 如需回滚, 用 scripts/rollback-title-batch.mjs",
+ "items": [
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 327,
+   "beforeSnippet": "0g 銅版紙或 300g 啞粉紙印出嚟嘅外賣單張,有手感、唔易皺、放得耐,直接決定客人係咪拎住行三條街定係揈咗入垃圾桶。智印港為香港餐飲品牌提供 200g-400g 全規格厚紙傳單印刷,100 張小批量到 多年急件連鎖店大批量,5-7 個工",
+   "afterSnippet": "0g 銅版紙或 300g 啞粉紙印出嚟嘅外賣單張,有手感、唔易皺、放得耐,直接決定客人係咪拎住行三條街定係揈咗入垃圾桶。智印港為香港餐飲品牌提供 200g-400g 全規格厚紙傳單印刷,100 張小批量到 多年急件連鎖店大批量,5-7 個工"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 334,
+   "beforeSnippet": "嚟講,一個有手感、有磁吸開合感覺、盒面燙金 logo 嘅磁吸禮盒,係你同 9.9 美元塑膠袋同行業拉開差距嘅最直接方法。智印港為跨境電商 DTC 品牌提供 157g 灰板，128g 雙銅紙 / 特種紙磁吸禮盒定制,100 個 Kicksta",
+   "afterSnippet": "嚟講,一個有手感、有磁吸開合感覺、盒面燙金 logo 嘅磁吸禮盒,係你同 9.9 美元塑膠袋同行業拉開差距嘅最直接方法。智印港為跨境電商 DTC 品牌提供 157g 灰板，128g 雙銅紙 / 特種紙磁吸禮盒定制,100 個 Kicksta"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 341,
+   "beforeSnippet": "牌、口紅品牌、彩妝品牌、手作護膚品品牌嚟講,一個環保 350g 牛卡紙折疊盒,係你同傳統塑膠盒同行業區分開嘅最直接方法。智印港為美妝護膚品牌提供 300g 牛卡紙 / 350g 白卡紙折疊盒定制,FSC 認證，大豆油墨，可回收標誌全套,50",
+   "afterSnippet": "牌、口紅品牌、彩妝品牌、手作護膚品品牌嚟講,一個環保 350g 牛卡紙折疊盒,係你同傳統塑膠盒同行業區分開嘅最直接方法。智印港為美妝護膚品牌提供 300g 牛卡紙 / 350g 白卡紙折疊盒定制,FSC 認證，大豆油墨，可回收標誌全套,50"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 348,
+   "beforeSnippet": "主流）</strong> — 聖餐盒、感謝卡、典禮程序單。啞面印刷，局部 UV 上光（凸顯十字架 / 佛像 / 經文），ZprintPro 100 套起 $480、500 套 $1,800，5-7 個工作天交期。</p>\\n<p><stro",
+   "afterSnippet": "主流）</strong> — 聖餐盒、感謝卡、典禮程序單。啞面印刷，局部 UV 上光（凸顯十字架 / 佛像 / 經文），智印港 100 套起 $480、500 套 $1,800，5-7 個工作天交期。</p>\\n<p><strong>2. "
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 355,
+   "beforeSnippet": "g> — UL969 認證 5-10 年耐久測試通過。耐 UV、耐化學（酸鹼溶劑）、耐溫 -40°C 至 +150°C。ZprintPro 100 張起 $180、多年急件 $1,200、多年急件 $8,800。</p>\\n<p><stro",
+   "afterSnippet": "g> — UL969 認證 5-10 年耐久測試通過。耐 UV、耐化學（酸鹼溶劑）、耐溫 -40°C 至 +150°C。智印港 100 張起 $180、多年急件 $1,200、多年急件 $8,800。</p>\\n<p><strong>2. "
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 362,
+   "beforeSnippet": "環保材質</strong>：設計師與終端客戶越來越重視環保。FSC 認證紙張，大豆油墨，可回收裝訂成為中高端品牌必選項。ZprintPro 全產品 FSC，大豆油墨，可回收包裝可選。</li>\\n</ul>\\n\\n<h3>2. 建築裝飾樣板",
+   "afterSnippet": "環保材質</strong>：設計師與終端客戶越來越重視環保。FSC 認證紙張，大豆油墨，可回收裝訂成為中高端品牌必選項。智印港 全產品 FSC，大豆油墨，可回收包裝可選。</li>\\n</ul>\\n\\n<h3>2. 建築裝飾樣板手冊 5 種"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 429,
+   "beforeSnippet": "><strong>1. 1200g 灰板硬盒（VIP 開戶禮盒主流）</strong> — 私人銀行 / 財富管理首選。ZprintPro 配緞帶手挽，燙金銀行 logo，內襯 EVA 泡棉，絲綢布。100 套 $2,800、500 套 $",
+   "afterSnippet": "><strong>1. 1200g 灰板硬盒（VIP 開戶禮盒主流）</strong> — 私人銀行 / 財富管理首選。智印港 配緞帶手挽，燙金銀行 logo，內襯 EVA 泡棉，絲綢布。100 套 $2,800、500 套 $11,200"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 437,
+   "beforeSnippet": "n\\n<p><strong>1. 250g 銅版紙，啞面膠膜（A1 戶型圖主流）</strong> — 售樓處主牆首選。ZprintPro 雙面 4 色，啞面膠膜，燙金樓盤名，防指紋塗層。10 張 $680、50 張 $2,400、500 ",
+   "afterSnippet": "n\\n<p><strong>1. 250g 銅版紙，啞面膠膜（A1 戶型圖主流）</strong> — 售樓處主牆首選。智印港 雙面 4 色，啞面膠膜，燙金樓盤名，防指紋塗層。10 張 $680、50 張 $2,400、500 張 $18,"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 619,
+   "beforeSnippet": " + 燙金卡片 4 種箔 + 5 種材質 + 6 種工藝 + 12 大行業 GSC pos 2.3 TOP3 突入 | 智印港 ZprintPro\\\",\\\"datePublished\\\":\\\"2026-09-04\\\",\\\"dateModif",
+   "afterSnippet": " + 燙金卡片 4 種箔 + 5 種材質 + 6 種工藝 + 12 大行業 GSC pos 2.3 TOP3 突入 | 智印港\\\",\\\"datePublished\\\":\\\"2026-09-04\\\",\\\"dateModified\\\":\\\"20"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 648,
+   "beforeSnippet": "tle\": \"牛皮紙盒 vs 坑盒 vs 彩盒 vs 禮盒 8 大盒型 5 維度全對比 GSC pos 9 衝首頁 | 智印港 ZprintPro\",",
+   "afterSnippet": "tle\": \"牛皮紙盒 vs 坑盒 vs 彩盒 vs 禮盒 8 大盒型 5 維度全對比 GSC pos 9 衝首頁 | 智印港\","
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 652,
+   "beforeSnippet": ":\\\"2026-09-05\\\",\\\"author\\\":{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"智印港印刷工程團隊\\\",\\\"jobTitle\\\":\\\"智印港 15 年膠印工程師\\\",\\\"worksFor\\\":{\\\"@",
+   "afterSnippet": ":\\\"2026-09-05\\\",\\\"author\\\":{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"智印港印刷工程團隊\\\",\\\"jobTitle\\\":\\\"智印港 15 年膠印工程師\\\",\\\"worksFor\\\":{\\\"@"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 665,
+   "beforeSnippet": " \"title\": \"2026 香港印刷成本基準報告：貼紙、傳單、冊子、包裝等 16 品類 99 SKU 價格數據 | 智印港 ZprintPro\",",
+   "afterSnippet": " \"title\": \"2026 香港印刷成本基準報告：貼紙、傳單、冊子、包裝等 16 品類 99 SKU 價格數據 | 智印港\","
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 681,
+   "beforeSnippet": "title\": \"印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港 ZprintPro\",",
+   "afterSnippet": "title\": \"印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港\","
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 72,
+   "beforeSnippet": "ntone 特色、5 つの印刷シーン（パッケージ / ポスター / ステッカー / 紙袋 / カード） 4 大 FAQ。ジープリントは ISO Coated v2 / GRACoL ICC プロファイル埋め込み，進口印刷設備 印刷機，X-R",
+   "afterSnippet": "ntone 特色、5 つの印刷シーン（パッケージ / ポスター / ステッカー / 紙袋 / カード） 4 大 FAQ。ZprintProは ISO Coated v2 / GRACoL ICC プロファイル埋め込み，進口印刷設備 印刷機，"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 80,
+   "beforeSnippet": "データ、5つの活用シーン、MOQ（50〜10,000部）を解説。教材テキスト印刷は50部から対応、DHLで2〜4日配送。ジープリントは300種類以上の用紙を在庫。</p>\\n<p class=\\\"text-base text-[#44444",
+   "afterSnippet": "データ、5つの活用シーン、MOQ（50〜10,000部）を解説。教材テキスト印刷は50部から対応、DHLで2〜4日配送。ZprintProは300種類以上の用紙を在庫。</p>\\n<p class=\\\"text-base text-[#44"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 104,
+   "beforeSnippet": "n 2026 レポート）に達し、CAGR 5.18-6.2%、アジア太平洋が 8.22% 成長で世界をリードしています。智印港 は 15 年の食品級包装実績、進口印刷設備 6+1 印刷機、FDA / EU / GB 三地認証、12 業界 多",
+   "afterSnippet": "n 2026 レポート）に達し、CAGR 5.18-6.2%、アジア太平洋が 8.22% 成長で世界をリードしています。ZprintPro は 15 年の食品級包装実績、進口印刷設備 6+1 印刷機、FDA / EU / GB 三地認証、1"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 112,
+   "beforeSnippet": "trong>インタラクティブ印刷</strong> — QR コードと AR 連動アートワーク</li></ol><p>ZprintProは全サイズで<a href=\\\"/ja/product/kraft-paper-bags/\\\">クラフ",
+   "afterSnippet": "trong>インタラクティブ印刷</strong> — QR コードと AR 連動アートワーク</li></ol><p>ZprintProは全サイズで<a href=\\\"/ja/product/kraft-paper-bags/\\\">クラフ"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 452,
+   "beforeSnippet": "、1-3 営業日待てるならオフセット 多枚以上、デザインや数量に迷うなら 30 秒 AI 見積で当日価格を確定できます。ジープリントは 國際認證體系 準拠の品質管理工程で生産しています。</p>\\n<h3 class=\\\"text-xl f",
+   "afterSnippet": "、1-3 営業日待てるならオフセット 多枚以上、デザインや数量に迷うなら 30 秒 AI 見積で当日価格を確定できます。ZprintProは 國際認證體系 準拠の品質管理工程で生産しています。</p>\\n<h3 class=\\\"text-x"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 468,
+   "beforeSnippet": "ticle\\\",\\\"headline\\\":\\\"A1 A2 A3 ポスターサイズガイド: 寸法早見表・用途・用紙選び | ZprintPro\\\",\\\"datePublished\\\":\\\"2026-09-03\\\",\\\"dateModified\\",
+   "afterSnippet": "ticle\\\",\\\"headline\\\":\\\"A1 A2 A3 ポスターサイズガイド: 寸法早見表・用途・用紙選び | ZprintPro\\\",\\\"datePublished\\\":\\\"2026-09-03\\\",\\\"dateModified\\"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 485,
+   "beforeSnippet": " border-gray-200\\\"><p class=\\\"mb-3\\\"><strong>著者チーム：</strong>ZprintPro 印刷アドバイザリーチーム、<strong>15 年以上</strong>の印刷経験、<strong>",
+   "afterSnippet": " border-gray-200\\\"><p class=\\\"mb-3\\\"><strong>著者チーム：</strong>ZprintPro 印刷アドバイザリーチーム、<strong>15 年以上</strong>の印刷経験、<strong>"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 508,
+   "beforeSnippet": "ログ印刷中国サプライヤーガイド 2026: 4 製本，4 紙質，大量卸売 100/500/1000/5000 段階 | ジープリント ZprintPro\",",
+   "afterSnippet": "ログ印刷中国サプライヤーガイド 2026: 4 製本，4 紙質，大量卸売 100/500/1000/5000 段階 | ZprintPro\","
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 512,
+   "beforeSnippet": "(500 冊)</strong>, 大量卸売 100/500/1000/5000 段階で 15-30% 数量割引解放. ZprintPro はアジア生産，DHL 2-4 日国際配送 (50 国)，30 秒 AI 見積もり，4 製本 × 4 ",
+   "afterSnippet": "(500 冊)</strong>, 大量卸売 100/500/1000/5000 段階で 15-30% 数量割引解放. ZprintPro はアジア生産，DHL 2-4 日国際配送 (50 国)，30 秒 AI 見積もり，4 製本 × 4 "
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 540,
+   "beforeSnippet": "ント主催者や直前クライアントが翌日朝 9 時までに 200 枚 A4 フライヤー必要時、3 ルートが競合：自社深圳工場（智印港 18:00 締切，SF Express 翌日正午）、印刷仲介（24-48 時間）、店頭 Kwik Kopy（4-",
+   "afterSnippet": "ント主催者や直前クライアントが翌日朝 9 時までに 200 枚 A4 フライヤー必要時、3 ルートが競合：自社深圳工場（ZprintPro 18:00 締切，SF Express 翌日正午）、印刷仲介（24-48 時間）、店頭 Kwik K"
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "line": 485,
+   "beforeSnippet": "signed at 150 dpi at final size for legibility at 4 meters. ZprintPro acpts AI/PDF/PSD, checks bleed for free and conver",
+   "afterSnippet": "signed at 150 dpi at final size for legibility at 4 meters. ZprintPro acpts AI/PDF/PSD, checks bleed for free and conver"
+  }
+ ]
+}

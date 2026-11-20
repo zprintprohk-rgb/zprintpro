@@ -1,0 +1,31 @@
+﻿  slug: ...a4-flyers
+  optimizedAt: ...2026-08-05
+  category: ...flyers
+  category_slug: ...flyers
+  name: ...A4宣傳單張 | 宣傳單張 / 折頁 / A4/A5
+  nameEn: ...A4 Flyers | A4/A5 Flyers & Leaflets
+  nameJa: ...A4チラシ | A4/A5 チラシ・フライヤー
+  title_zh: ...A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro
+  description: ...起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.
+  descriptionEn: ...O 9001:2015 certified quality management system 适配行业: Food delivery, Real estate, Retail, Education,
+  descriptionJa: ...標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ.
+  description_zh: ...飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。 **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Bea
+  material: ...157g銅版紙或128g啞粉紙
+  size: ...A4（210×297mm）
+  printMethod: ...四色柯式或數碼印刷
+  finishing: ...覆膜（啞膜／光膜可選）
+  price_range: ...HK$0.35-0.95/張
+  en: ...zprintpro-flyers-a4-flyers-en.webp
+  ja: ...zprintpro-flyers-a4-flyers-ja.webp
+  en: ...Flyer Printing & Leaflet Design | A4 Flyers | Professional Flyers Online
+  ja: ...チラシ印刷 / 折込フライヤー | A4チラシ | 高画質オフセット・短納期対応 | ZprintPro
+  value: ...a4
+  label: ...A4 (210×297mm)
+  value: ...a5
+  label: ...A5 (148×210mm)
+
+  "餐飲外賣、零售精品、跨境電商" found at offset 904, in field starting ~2015
+
+  "Food & Beverage, Retail, Cross" found at offset 952, in field starting ~2015
+
+  "飲食・ケータリング、小売・ブティック" found at offset 1080, in field starting ~2015

@@ -1,0 +1,42 @@
+fix(moq): 價目同步波 ① 最高優先 — 騎馬釘品類頁 + 校園教育 + 博客書刊 MOQ 對齊
+
+K3 指定: 騎馬釘品類頁 + 校園教育品類頁列為價目同步波 ① 最高優先級。
+使用者拍板: 「只修矛盾, 不改真實門檻」(campus certificates/textbooks/yearbook 維持 100/100/50)。
+
+=== 先驗證再改 (K3 要求) ===
+products.ts 實查 (2026-09-19):
+  書刊 5 個 (saddle-stitch / catalog / perfect-bound / hardcover / spiral) = 10 ✅
+  exercise-books = 10 ✅ | school-flyers = 10 ✅
+  certificates = 100 (未改) | textbooks = 100 (未改) | graduation-yearbook = 50 (未改)
+
+=== 修正內容 ===
+
+一、騎馬釘品類頁 (category-conversion-blocks.ts) — 8 條
+   title「100本起」→「10本起」| metaDescription「全部 100 本起印」→ 10 本
+   FAQ 騎馬釘價格 / 五款書刊劃一 / 定義句 / 練習冊 → 10 本起
+   USP label「五款書刊劃一 100 本起訂」→ 10 本起訂
+   CTA desc「全部 100 本起印」→ 10 本起印
+
+二、騎馬釘品類 SEO (category-seo-content.ts) — 5 條
+   zh-hk h2 與 featuredSnippet「50 本起」→「10 本起 (數碼) / 500 本起柯式」
+   en featuredSnippet「from 50 copies」→「from 10 copies」
+   ja featuredSnippet「50冊から」→「10冊から」；ja 對比句「50冊 MOQ」→「10冊 MOQ」
+
+三、vs Alibaba 黃頁對比口徑
+   競品側「500+ MOQ」= 事實陳述, **不動** (改了即造假)
+   我方側: zh-hk「100 本起工廠直送價格」→ 10 本起
+           en「50-copy MOQ vs 500+」→「10-copy MOQ vs 500+」
+   ⇒ 對比由「100 vs 500」強化為「10 vs 500」
+
+四、博客層書刊/校園 (blog-posts.ts) — 12 條
+   流程: 分類器按「產品關鍵詞 → SKU → 真實 minQuantity」判斷, 再**人工剔除 2 條誤判**:
+     · L1929「精裝盒」被誤判為精裝書 — 實為包裝盒 SKU (100 個起, 正確) ⇒ 不動
+     · L1476「線圈裝訂」被誤判為 spiral-notebooks — 實為月曆 SKU (minQ=1000) ⇒ 不動
+   修正: 騎馬釘 50 本起→10 (zh-hk + ja) | 地產組合 100 張→10 張
+         畫冊 50 本→10 本 | 練習簿 100 本→10 本 ×2 (title + 正文)
+         小誌 Zine 100 本→10 本 (zh-hk ×2 + ja) | 童書繪本 100 本→10 本 ×2
+         源碼註釋 (非客戶可見) 一併更新以免誤導後人
+   ★ 只改 MOQ 數字, 價格 (HK$6-32/本、85 折、500 本批量價) 一律保留。
+
+驗證: 騎馬釘/書刊殘留掃描 = 0
+閘門: smoke 0 / classify 0 / runtime 0 / residual MOQ 0 / 三檔門童 🔴0

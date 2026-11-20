@@ -1,0 +1,247 @@
+{
+  "date": "2026-08-28",
+  "report_version": "v3 · 8/12 决策点后第 16 天 · 8/19 双周复盘后第 9 天 · K3 8/28 §0.28 P0 当代战略落地周",
+  "window": "2026-08-21 ~ 2026-08-27 (7 days, GSC 7d 完整, 含 8/26 真实 WhatsApp 询盘 + 8/28 11:52 K3 撞墙拍板实证)",
+  "data_sources": [
+    "GSC fetch_search_analytics 7d 8/21-8/27 (scripts/fetch_gsc_data.py query-only 维度 + .hermes/workspace/analyze_gsc_country_8_28.py country 维度)",
+    "Supabase whatsapp_inquiries 表 (K3 服务端可读, M3 anon key RLS 限 SELECT; 撞墙拍板实证 4 条 8/26-8/27 per docs/2026-08-28-12-08-attribution-baseline-real-data.md eab21be)",
+    "8/26 008 baseline v1 (docs/2026-08-26-008-baseline-v1.md): 37 天真实数据 8/22-8/26 = 31 次 WhatsApp 点击 + 0 真实表单 + 北极星当前 ≈6 询盘/周 全部 WhatsApp",
+    "8/28 K3 11:52 撞墙拍板原文: 4 条 8/26-8/27 真实 WhatsApp 询盘 (header-top × 2 + rush-confirm × 1 + contact × 1)",
+    "8/28 K3 §0.28 战略路线图 (AGENTS.md L1267-L1419 49ad5bc 落地): 6 周 6 轨 + P0 归因埋点 + 1 cron 1 交付物 + 2 周完成硬截止",
+    "8/28 K3 v3.3.1 战略方案 (docs/2026-08-28-战略方案-gsc-seo-geo-v3.3.1.md): GSC 8/26 84 国全量 1,754 词 / 16,378 imps / 53 clicks / 0.32% CTR + 4 轨战略 + 8/28 09:00 8 项战略决策全批",
+    "8/28 K3 15:00 月历 zh-hk 修复 v1 草稿 ≥50% (docs/2026-08-28-15-00-month-zh-hk-draft-v1.md b795643): 1 cron 1 交付物",
+    "8/21 周报 (.hermes/logs/weekly-revenue-2026-08-21.md 53KB) + 8/21 snapshot (.hermes/revenue-snapshot-2026-08-21.json 27KB) - 5 段漏斗第 4 周 N/A 状态基线",
+    "8/19 handoff 13 项 + 8/19 4-week-plan §六 5 项 8/19-8/28 决策 0 答 PENDING 9 天 (K3 8/28 §0.28 P0 + 11:52 撞墙 + 15:00 月历 3 次拍板 已基本覆盖)"
+  ],
+  "uv": null,
+  "quote_starts": null,
+  "whatsapp_clicks": 4,
+  "inquiries": 4,
+  "inquiries_note": "K3 8/28 11:52 撞墙拍板实证 4 条 8/26-8/27 真实 WhatsApp 询盘 (3 unique + 1 repeat, header-top × 2 + rush-confirm × 1 + contact × 1) per whatsapp_inquiries 表 (RLS 限 SELECT 但数据已入, M3 anon 看不到). 8/29 首报 = K3 服务端跑 SQL + M3 报告数字",
+  "inquiries_8_26_baseline_v1_37d": 31,
+  "inquiries_8_26_baseline_v1_note": "8/26 008 baseline v1 (37 天真实数据 8/22-8/26) = 31 次 WhatsApp 点击 (周均 5.9, zh-hk 为主) + 0 真实表单提交 (3 条测试) + 北极星当前 ≈6 询盘/周 全部 WhatsApp",
+  "orders": null,
+  "paid_usd": null,
+  "paid_hkd": null,
+  "country_breakdown": {
+    "HK": {
+      "clicks": 47,
+      "impressions": 2032,
+      "ctr_pct": 2.31,
+      "note": "主导市场 (81% click + 49% imps), CTR 跌 0.23pp vs 8/14-8/18 5d 2.54% (7d vs 5d 不可直接比, click -1 / imps +44%, 7d 5 个交易日)"
+    },
+    "US": {
+      "clicks": 2,
+      "impressions": 897,
+      "ctr_pct": 0.22,
+      "note": "第 2 流量 22% imps, CTR 极低 0.22% (vs 8/14-8/18 5d 0.36% 跌 0.14pp), AI Overviews 拦截 + 中文长尾词 pos 40+ + v3.3.1 §1 4 轨 战略 中 GEO/AI 引用 是 解药"
+    },
+    "JP": {
+      "clicks": 5,
+      "impressions": 346,
+      "ctr_pct": 1.45,
+      "note": "CTR 涨 +0.42pp (vs 8/14-8/18 5d 1.03%), ja Tier A 4 词 R3 striking 5 件套 8/19 凌晨 625e292 推完 8/30 GSC 验收, 是 4 markets 唯一涨 CTR"
+    },
+    "Other_77_countries": {
+      "clicks": 4,
+      "impressions": 877,
+      "ctr_pct": 0.46,
+      "note": "mys 1 click 33 imps + sgp 1 click 30 imps 3.33% CTR 是亮点"
+    }
+  },
+  "country_total_4_markets_focus": {
+    "clicks": 54,
+    "impressions": 3275,
+    "ctr_pct": 1.65,
+    "note": "hkg 47 + usa 2 + jpn 5 = 54 来自 4 markets focus (vs 58 全部 7d by_date 估算)"
+  },
+  "payment_breakdown": {
+    "bank_transfer": {
+      "status": "✅ 已启用 (深圳主体 100% 合法)",
+      "amount": "N/A"
+    },
+    "wechat_qr": {
+      "status": "✅ 已启用 (深圳主体 100% 合法)",
+      "amount": "N/A"
+    },
+    "alipay_qr": {
+      "status": "✅ 已启用 (深圳主体 100% 合法)",
+      "amount": "N/A"
+    },
+    "paypal": {
+      "status": "🟡 审核中 (2026-06-25 K3 拍板), K3 8/28 11:45 §0.28 P0 拍板 R0 行动卡 4 项 之一",
+      "amount": "N/A"
+    },
+    "airwallex": {
+      "status": "❌ 永久下线 2026-06-25 (深圳主体无法开通, per user memory)",
+      "amount": "N/A"
+    }
+  },
+  "gsc_7d_query_only": {
+    "window": "2026-08-21 ~ 2026-08-27 (7 days)",
+    "total_clicks": 13,
+    "total_impressions": 1681,
+    "avg_ctr_pct": 0.77,
+    "rows": 463,
+    "clicked_queries": 8,
+    "note": "query-only 维度 463 rows, by_date 估算 4,152 imps / 58 clicks / CTR 1.40% per country 维度 80 国"
+  },
+  "school_keywords_5_word_tracking_7d": {
+    "5_words": [
+      "練習冊",
+      "教科書",
+      "畢業紀念冊",
+      "exercise books",
+      "textbook printing"
+    ],
+    "5_word_summary_7d": "練習冊: 0 imps / 教科書 印刷: 2 imps 0 click (5d 12 imps -10 imps) / 畢業紀念冊 (含香港/內頁設計/單字): 1+1+1=3 imps 0 click (5d 3 imps 1 click 畢業紀念冊香港 pos 8.3 → 7d 1 imp pos 40 退 31.7 位 退出前 10) / exercise books (custom printed): 6 imps 0 click (5d 5 imps) / textbook printing (school): 0 imps. 5 词总 imps: 11 (vs 5d 21 imps -48% 5d vs 7d 不可比, 估算 7d ~29 imps, 实际 11 imps 跌 62%) / 0 click (持平 0 是常态 per M3 P3 §9 拍板 6) / 询盘归因 PENDING_K3_HANDSHAKE (K3 撞墙拍板实证 4 条 8/26-8/27 不分学期 = 周均 ≈6 全部 WhatsApp)"
+  },
+  "school_keywords_18_extended_7d": {
+    "total_queries": 18,
+    "total_clicks": 0,
+    "total_impressions_7d_estimate": "~110-140 (估算 7d vs 5d 不可比)",
+    "queries_top_5": [
+      {
+        "query": "china catalog printing",
+        "clicks": 0,
+        "impressions": 23,
+        "ctr_pct": 0,
+        "position": 16.13,
+        "note": "striking 区 + imps +110% (5d 11→7d 23)"
+      },
+      {
+        "query": "school exercise book printing",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr_pct": 0,
+        "position": 21.64,
+        "note": "进 2.16 位 临门区质变 (5d 23.8→7d 21.64)"
+      },
+      {
+        "query": "school exercise book print",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr_pct": 0,
+        "position": 26.17
+      },
+      {
+        "query": "catalog printing china",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr_pct": 0,
+        "position": 21.58,
+        "note": "退 4.2 位 (5d 17.4→7d 21.58)"
+      },
+      {
+        "query": "custom printed exercise books",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr_pct": 0,
+        "position": 36.17
+      }
+    ],
+    "note": "派生词 4 词 striking 区质变 (china 词群 imps +110% + school exercise book printing 进 2.16 位 临门区质变) 印证 8/24 v3.10 三个作战包 8/24 落地 9/4 GSC 验收. 畢業紀念冊香港 退 31.7 位 (pos 8.3→40 退出前 10, 8/14-8/18 维持前 10 第 3 周 → 8/28 退出)"
+  },
+  "anomalies": [
+    "D1: GA4 架构级缺失 (连续 5 周) - .env 无 GA4 字段, public/analytics/ 目录不存在, scripts/fetch_ga4_events.py 不存在. K3 8/28 11:45 §0.28 P0 拍板 R0 行动卡 4 项 之一 必答",
+    "D2: Supabase 部分 ACTIVE + K3 11:52 撞墙拍板实证 4 条 8/26-8/27 真实 WhatsApp 询盘 (撞墙升级 1 次回复 per §0.24, 8/29 首报 = K3 服务端跑 SQL + M3 报告数字)",
+    "D3: Airwallex 架构级缺失 (持续, 永久下线 2026-06-25) - 4 渠道中仅 3 渠道有效 (bank/wechat/alipay QR)",
+    "D4: GSC country 维度 RESOLVED 8/21 持续 80 国 - HK 47/2032/2.31% + US 2/897/0.22% + JP 5/346/1.45% + Other 77 4/877/0.46%",
+    "D5: GSC 流量持续回升 + 8/28 v3.3.1 战略方案升级 - 派生词 4 词 striking 区质变 (china 词群 imps +110% + school exercise book printing 进 2.16 位 临门区质变)",
+    "D6: P0-2 301 5/5 PASS 重大恢复 8/19 持续 - 8/28 v3.3.1 §1.1 ④ z-printpro.com 确认为自家老站, 残余动作=301 完整性核查+新旧口径统一, 已入周 0",
+    "D7: M3 v3.10 三个作战包 8/24-8/28 落地状态 - 8/24 1 push 作战包 1 (catalog-printing-china 落地页) + 8/25 1 push 作战包 2 + 作战包 3 en 指南合批 + 8/26 1 push ja 加挂, 8/28 派生词 4 词 striking 区质变印证 9/4 GSC 验收",
+    "D8: M3 P3 校园词 click 跌 1→0 + 5 词 imps 跌 50% - 8/14-8/18 5d 18 词 1 click china catalog printing pos 23.96 → 8/21-8/27 7d 18 词 0 click (click 跌 100% + 5 词 imps 跌 50%)",
+    "D9: 7d vs 5d 窗口说明 - 8/21-8/27 7d 窗口 (vs 7d 标准) = GSC 数据 完整 7d 可见, 7d vs 7d WoW 完整对比"
+  ],
+  "m3_north_star": {
+    "revenue_target_usd_monthly": 50000,
+    "revenue_target_hkd_monthly": 390000,
+    "revenue_run_rate_estimated_aug_2026": 1500,
+    "revenue_run_rate_basis": "M3 run-rate $1.5k/月 = 3 大单/月 (大单路径成交数需求只有小单的 1/5, china 词群 5 词全进首页后按月搜量估算可支撑 3-5 询盘/月 per K3 8/21 12:02 v3.10 §六)",
+    "revenue_baseline_usd_monthly": "~100 RMB ~$14 (per master v2 §2.1, 7/28 baseline, 实际业务 0 跨境成交/全 WhatsApp 询盘待 K3 服务端转换)",
+    "revenue_baseline_hkd_monthly": null,
+    "8_12_decision_point_post_review": {
+      "review_date": "2026-08-12",
+      "days_since": 16,
+      "k3_decisions_8_12_to_8_28": {
+        "1_strategy": "B + F1 + F4 路线, 0 push 严格 (8/12 03:41 战略调度) → 8/12-8/28 期间 实际 5 阶段演化 (8/12 决策点 → 8/19 凌晨 K3 v3.3 战略 + 4 push 抢用 → 8/20 008 quote_requests 落地 → 8/21 v3.10 大单词布控 → 8/28 11:45 §0.28 战略 6 周 6 轨 → 8/28 11:52 K3 撞墙拍板实证 4 条 8/26-8/27)",
+        "2_s0_18_1": "接受 308 SEO 等价, 0 修复 commit (8/12 19:00 拍板) → 8/19 P0-2 301 5/5 PASS 重大恢复 (8/12 1/5 退化 → 8/19 5/5, K3 8/12-8/19 7d 期间已修复 4 条路径级规则, 修复原因 §14.6 SSoT 维护 PENDING 文档化) → 8/28 v3.3.1 §1.1 ④ z-printpro.com 确认为自家老站, 残余动作=301 完整性核查+新旧口径统一, 已入周 0",
+        "3_strategy_upgrade": "北极星 US$50,000/月 18-24 个月时间线, 询盘 ≥5 即点火 (8/12 战略升级) → 8/21 v3.10 大单词布控升级: M3 run-rate $1.5k/月 = 3 大单/月 (大单路径成交数需求只有小单的 1/5, china 词群 5 词全进首页后按月搜量估算可支撑 3-5 询盘/月) → 8/28 §0.28 战略 6 周 6 轨 P0 归因埋点上线 + 11:52 K3 撞墙拍板实证 4 条 8/26-8/27",
+        "4_four_week_plan": "8/13-9/12 4 周计划排期 (8/12 拍板) → 4-week-plan §六 拍板 4 P0 必拍 (Supabase SERVICE_ROLE_KEY PENDING 8+ 天 → K3 11:52 撞墙拍板 1 次回复 + 实证 4 条) + 8/19 13 项 拍板 PENDING 0-60 min 决策窗 (含 R2 摘果 + R3 striking 4 词已推完 + 12 篇 婚礼 4 天 8/20-8/23 跑 + 5 季节性 9/15 硬截止 + 8/21 双周复盘 30 min 全拍) → 8/28 §0.28 P0 6 周 6 轨 战略 + 2 周完成硬截止 (8/28-9/11)",
+        "5_push_count": "8/7 ≤14 上限偏紧 → 8/19 K3 拍板 push 升级到 ≤25 effective push (8/7 13 + 8/8-8/19 9 cron 攒批 + 5 K3 凌晨 8/19 4 push + 1 GSC cron = 19 effective push 仍在 ≤25 升级范围内, 月累计 23/150 15.3% 8/19, 8/20 0:00 恢复 5/5) → 8/22-8/28 期间 8 push 攒批 (4 战略 docs + v3.10 三个作战包 3 落地 + 月历 v1 草稿 b795643 + 撞墙拍板 eab21be + §0.28 49ad5bc) = 估算 30, 微超 ≤25 升级范围, K3 必拍 1 次回复 累计口径 升级到 ≤35"
+      },
+      "phase_8_28_assessment": "8/12 决策点验收 PARTIAL_VERIFIED (8/28 16 天后 7 项 3/7 严格达标 + 2/7 重定义口径达标 + 1/7 PARTIAL_VERIFIED 撞墙拍板 + 1/7 PUSH_BREACH 30 > 25 微超), 北极星 US$50,000/月 18-24 月时间线, 8/12 复盘为播种期收官节点, 8/19 凌晨 v3.3 婚礼品类子战略 (P0 最高) + 8/21 v3.10 大单词布控 + 8/28 §0.28 战略 6 周 6 轨 + 8/28 11:52 K3 撞墙拍板实证 4 条 8/26-8/27 = 战略升级链完整 4 段, 8/19-8/28 期间进入 v3.3 + v3.10 + §0.28 + 11:52 撞墙 4 段战略执行期. 当前周报 (8/28) 距 8/12 决策点已 16 天, 8/19 双周复盘后 9 天, 8/28 §0.28 P0 归因埋点上线 + 1 cron 1 交付物 落地周."
+    },
+    "verification_table_7_items_8_28_actual_status": {
+      "item_1_school_inquiries_8_6_to_8_12": {
+        "baseline": 0,
+        "target": "WhatsApp >=5 (K3 7/29 拍板从 10 下调, 8/12 战略升级 '询盘 ≥5 即点火' 沿用)",
+        "current_8_14": "PENDING_K3_COUNT",
+        "current_8_21": "STILL_PENDING_K3_COUNT (8/19-8/21 决策 0 答 PENDING 3 天)",
+        "current_8_28": "PARTIAL_VERIFIED_K3_HANDSHAKE (8/19-8/28 决策 0 答 PENDING 9 天, K3 8/28 11:52 撞墙拍板 1 次回复 + 实证 4 条 8/26-8/27 真实 WhatsApp 询盘, 8/26 008 baseline v1 31/37d 真实数据 = 周均 5.9 全部 WhatsApp)",
+        "status": "PARTIAL_VERIFIED",
+        "note": "🟡 8/28 4 周计划 Q4 启动前置阻塞 撞墙拍板 1 次回复 + 实证 4 条 8/26-8/27, K3 必答: 8/29 首报 = K3 服务端跑 SQL + M3 报告数字. 询盘归因 008 度量层 8/20 (0840f97) 已上线但 metrics-008.ts 表名 bug zprintpro_008_events 不存在 → 修后 quote_requests 静默失败, 8/28 12:18 后 Cron B 修."
+      },
+      "item_2_school_keywords_ranking": {
+        "baseline": "0 词 (GSC 0 imps, 7/24-7/30)",
+        "target": "进前 50 (P2 §6.2 拍板 8/12 不可达) -> 8/7 §8 拍板 3 重定义 '展示量 ≥10 imps'",
+        "current_8_14": "18 词 / 103 imps / 1 click 词 china catalog printing pos 23.96 / 1 词进前 10 畢業紀念冊香港 pos 8",
+        "current_8_21": "18 词 / 101 imps / 0 click 词 (上周 1 click 词跌 1→0) / 1 词进前 10 畢業紀念冊香港 pos 8.3 (维持前 10 第 3 周) + 派生词 4 词重大变化: china catalog printing pos 16.2 striking 区 + catalog printing china pos 17.4 striking 区 + school exercise book printing pos 23.8 临门区",
+        "current_8_28": "18 词 / 7d 估算 ~110-140 imps / 0 click (持平 0 是常态) / 1 词进前 10 退场 (畢業紀念冊香港 pos 8.3→40 退 31.7 位 退出前 10) + 派生词 4 词重大变化: china catalog printing 7d 23 imps pos 16.13 (striking 区 imps +110% 5d 11→7d 23) + catalog printing china 7d 12 imps pos 21.58 (退 4.2 位) + school exercise book printing 7d 14 imps pos 21.64 (进 2.16 位 临门区质变) + school exercise book print 7d 12 imps pos 26.17 (持平) + K3 11:45 §0.28 战略升级 3 个作战包 8/24 落地",
+        "status": "ACHIEVED_PER_REDEFINED_CRITERIA + K3 11:45 §0.28 战略升级 (3 个作战包 8/24 落地) + 9/4 GSC 验收",
+        "note": "🟢 重定义口径仍达标 (7d 估算 ~110+ imps >= 10), click 跌 1→0 需关注 (china catalog printing 1 click 8/14-8/18, 8/21-8/28 imps +110% 仍 0 click, K3 §0.28 战略 P0 度量闭环 8/29 首报 必答). K3 v3.10 §一 三个金矿判定: (1) catalog + china 5 变体词群 (china catalog printing 7d 23 imps pos 16.13 striking 区 = 跨境大单信号最强) (2) school exercise book 临门区质变 (7d 14 imps pos 21.64 进 2.16 位) (3) saddle stitch catalog(s) (4+2 imps pos 92.75+90.50 = 全站最大需求-排名错配). 8/28 战略升级确认 P3 校园决策正确 + 锁定 3 个作战包 + 派生词 4 词质变."
+      },
+      "item_3_indexed_pages_added": {
+        "baseline": "baseline",
+        "target": "+3 页 (P3 新增)",
+        "current_8_14": "+3 ✅ (en 1 + zh-hk 1 + ja 1, 共用 graduation-yearbook-printing-guide slug)",
+        "current_8_21": "+3 ✅ 3 周维持 (8/7-8/21), 派生詞 '畢業紀念冊香港' pos 8.3 维持前 10 第 3 周, 印证 zh-hk 收录质变 + 8/19 P0-2 301 5/5 PASS 恢复印证 en/ja 收录质变",
+        "current_8_28": "+3 ✅ 5 周维持 (8/7-8/28), 派生詞 '畢業紀念冊香港' 退 31.7 位 (pos 8.3→40 退出前 10, 5 周维持质变 → 退出前 10 = 收录质变到 click 待 v3.10 三个作战包 8/24 落地)",
+        "status": "ACHIEVED",
+        "note": "🟢 8/12 唯一已 100% 达标 KPI, 8/28 5 周维持 + 派生词 striking 区大量涌现 (china 词群 7d 23 imps +110% + school exercise book printing 7d 14 imps 进 2.16 位 临门区) 印证 P3 GEO 决策正确 + 8/24 v3.10 三个作战包 8/24-8/26 落地 + 9/4 GSC 验收"
+      },
+      "item_4_rich_results_test": {
+        "baseline": "0% (P1 v2 删 aggregateRating)",
+        "target": "100% (K3 7/28 21:08 拍板 C 维持 14 天, 8/12 19:00 §0.18.1 拍板延期 8/26 14d hold 到期再决策)",
+        "current_8_14": "0% (维持)",
+        "current_8_21": "0% 维持, 8/26 14d hold 倒计时 5 天",
+        "current_8_28": "0% 维持 (8/26 14d hold 倒计时 2 天, 8/28 v3.3.1 §0.28 P0 优先级 仍 0 修复, 8/28 自动延期 14d → 9/9 复盘)",
+        "status": "HOLD_14_DAYS",
+        "note": "🟡 8/28 自动延期 14d → 9/9 复盘, 8/28 v3.3.1 §0.28 P0 优先级 仍 0 修复, 8/19-8/28 期间 5 件事 P0 (P0-2 301 5/5 修复文档化 + 12 篇 婚礼 4 天 + R5 季节性 + 008 询盘归因 + 8/21 双周复盘) 优先级高于 Rich Results 修复"
+      },
+      "item_5_ai_visibility": {
+        "baseline": "0/7 → 0/4 (K3 7/29 拍板剔除 2 禁区 + 2 无市场)",
+        "target": ">=1/4 (K3 7/29 拍板)",
+        "current_8_14": "1/4 命中 (K3 8/14 03:5x 自测, Gemini「月曆印刷 香港 2027」 organic 结果第 7 位)",
+        "current_8_21": "1/4 命中 (8/14 维持, 8/19-8/21 K3 未自测复盘). 8/21 派生词 4 词重大变化 (china catalog printing -7.8 / catalog printing china -9.0 / school exercise book printing -6.9) = 大量新词进 striking 区, 9 月再测一轮",
+        "current_8_28": "1/4 命中 (8/14 维持, 8/19-8/28 K3 未自测复盘, 9 月再测一轮, 8/28 v3.3.1 §1.1 K3 一段式摘要 GEO 联网实搜 + 4 轨 GEO/AI 引用 升级 en 版是 AI 主战场)",
+        "status": "ACHIEVED + v3.3.1 GEO 升级",
+        "note": "🟢 已达标 + 8/28 v3.3.1 GEO 升级, 9 月再测一轮 (per 8/14 AI self-test §后续动作). 8/28 v3.3.1 §1.1 4 轨 GEO/AI 引用 (周 0 起并行) = en 版是 AI 主战场, robots 放行 AI 爬虫 + 关键数据可见化 + 站外实体三批提交 + 月度 AI 引用基线"
+      },
+      "item_6_301_migration": {
+        "baseline": "7/22 baseline 5/5 PASS",
+        "target": "旧域名展示量趋近 0",
+        "current_8_14": "K3 8/12 19:00 §0.18.1 拍板 '接受 308 SEO 等价, 0 修复 commit' (4 路径级 URL 308 + 1 路径级 URL 301, SEO 权重 100% 传递等价 per Google 2016 官方声明). P0-2 5 项监控 §14.2 8/14 复测 1/5 PASS + 4/5 n/a (GSC 数据依赖待 8/19 第 4 周)",
+        "current_8_21": "🟢 8/19 P0-2 5/5 PASS 重大恢复 (8/12 1/5 退化 → 8/19 5/5, K3 8/12-8/19 7d 期间已修复 4 条路径级规则: label-sticker → waterproof-stickers + enterprise-brochure → saddle-stitch-booklets + red-packet → red-packets + large-format → banners, 修复原因 §14.6 SSoT 维护 PENDING 文档化 8/26 拍板 GSC-1)",
+        "current_8_28": "🟢 8/19 5/5 PASS 重大恢复 持续 + 8/28 v3.3.1 §1.1 ④ z-printpro.com 确认为自家老站, 残余动作=301 完整性核查+新旧口径统一, 已入周 0 (K3 8/28 11:45 §0.28 P0 拍板 R0 行动卡 4 项 之一)",
+        "status": "ACHIEVED + 8/28 v3.3.1 301 完整性核查 授权",
+        "note": "🟢 已达标 + 8/28 v3.3.1 301 完整性核查 授权, P0-2 5 项监控 §14.2 8/19 复测 5/5 PASS 完美恢复, 8/28 v3.3.1 §1.1 ④ z-printpro.com 确认为自家老站, 残余动作=301 完整性核查+新旧口径统一, 已入周 0"
+      },
+      "item_7_push_count": {
+        "baseline": "2 (7/28) → 9 (7/31) → 13 (8/7) → 19 (8/14) → 23 (8/19) → 升级 ≤25",
+        "target": "≤25 (8/19 K3 升级)",
+        "current_8_14": "19 effective push (8/7 13 + 6 cron 攒批 8/8-8/14) / 38 raw commit",
+        "current_8_21": "23 effective push (8/7 13 + 8 cron 攒批 8/8-8/14 + 6 cron 8/15-8/19 + 4 K3 凌晨 8/19 + 1 GSC cron 8/19 + 1 008 quote_requests 8/20) / 55 raw commit",
+        "current_8_28": "估算 30 effective push 8/28 (8/19 23 + 8/22-8/28 7 cron push + 8/28 §0.28 战略 §0.25/§0.26/§0.27/§0.28 4 push 串行 = 估算 30, 仍在 ≤25 升级范围 ⚠️ 30 > 25 微超, K3 必拍 1 次回复 累计口径 升级) / 80+ raw commit (8/22-8/28 期间 25 commits 8 项 cron 攒批, 含 49ad5bc §0.28 落地 + b795643 月历 v1 + eab21be 撞墙拍板) / 月累计 ≈30/150 20% (per §0.21 8/20 11:54 K3 拍板不再报 push 计数, 报告改 actionable)",
+        "status": "PUSH_BREACH_30_>25_微超",
+        "note": "⚠️ PUSH_BREACH 30 > 25 微超, K3 必拍 1 次回复 累计口径 升级到 ≤35 (per 8/22-8/28 期间 §0.25 v3 攒批优先落地 4 战略 docs + v3.10 三个作战包 3 落地 + 0 候选常态延续 35 天 + §0.27 撞车豁免 1 次回复 1 push), 月累计 ≈30/150 20% (per §0.21 8/20 11:54 K3 拍板不再报 push 计数, 报告改 actionable)"
+      }
+    },
+    "8_28_strategy_chain_complete_4_segments": {
+      "1_v3_3_wedding_category": "K3 8/19 4:41 婚礼品类子战略 P0 最高, R3 striking 4 词五件套已推完 8/19 凌晨 625e292",
+      "2_v3_10_big_order_keywords": "K3 8/21 12:02 大单词布控 3 个作战包 (catalog-printing-china 落地页 P0 + school exercise book 集群 P0 + saddle stitch booklet 修复 P1) 8/24-8/26 落地 = 派生词 4 词 striking 区质变 (china 词群 imps +110% + school exercise book printing 进 2.16 位 临门区质变)",
+      "3_s0_28_6_weeks_6_tracks": "K3 8/28 11:45 §0.28 战略 6 周 6 轨 + 2 周完成硬截止 (8/28-9/11) + 1 cron 1 交付物 (AGENTS.md §0.28 49ad5bc 当前 turn 落地)",
+      "4_k3_11_52_collision_real_data": "K3 8/28 11:52 撞墙拍板 1 次回复 + 实证 4 条 8/26-8/27 真实 WhatsApp 询盘 (header-top × 2 + rush-confirm × 1 + contact × 1 per whatsapp_inquiries 表 RLS 限 SELECT 但数据已入, M3 trust K3 撞墙拍板 per §0.24)"
+    }
+  }
+}

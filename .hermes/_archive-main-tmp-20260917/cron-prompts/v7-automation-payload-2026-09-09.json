@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "e648805d-bc3d-41a6-928d-9f38582d12b1",
+      "name": "zprintpro-daily-content-1x7w",
+      "description": "daily-content 车道 (K3 9/8 06:15 拍板 19:00-07:00 窗口): blog + SKU 自进化 + matrix tracking, prompt SSoT = .hermes/cron-prompts/zprintpro-daily-content-1x7w.md",
+      "enabled": true,
+      "createdAtMs": 1788946914744,
+      "updatedAtMs": 1788946914744,
+      "agentId": "zprintpro",
+      "schedule": { "kind": "cron", "expr": "17 21 * * *", "tz": "Asia/Shanghai" },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【zprintpro daily-content · v7/v8】先完整读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\zprintpro-daily-content-1x7w.md（完整 prompt；顶部 v8 大脑指令段 + v7 执行层迁移段 = 必读第 0 优先级），再读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\sop-10-gate.md。然后按 prompt 当次完整执行全部流程（强制执行约束：不得因深夜/时段简化、拆分或延后）。硬红线：最高规则不做名片印刷（AGENTS.md §0.0，push 前必跑 node scripts/check-bc-ban.mjs）；无 K3 拍板来源不改 user-facing 文案；数字必标来源；幂等铁律——开工先查 git log，不重复做已完成的事；push 攒批 per AGENTS.md §0.25.9 且禁 Start-Sleep 阻塞。报告落 F:\\zprintpro-nextjs\\.hermes\\logs\\<今日日期>-daily-content.md（必含 SOP-10 5 问门禁段 + 数据来源行）。",
+        "timeoutSeconds": 3600
+      },
+      "delivery": { "mode": "none", "channel": "none", "bestEffort": true }
+    },
+    {
+      "id": "6f40b9de-f246-42a1-88b9-e9a32f16456e",
+      "name": "zprintpro-gsc-feedback-loop",
+      "description": "gsc-feedback 车道: GSC 数据回灌 matrix + 品牌词 CTR 追踪 + 301 承接验证, prompt SSoT = .hermes/cron-prompts/zprintpro-gsc-feedback-loop.md",
+      "enabled": true,
+      "createdAtMs": 1788946914744,
+      "updatedAtMs": 1788946914744,
+      "agentId": "zprintpro",
+      "schedule": { "kind": "cron", "expr": "43 22 * * *", "tz": "Asia/Shanghai" },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【zprintpro gsc-feedback · v7/v8】先完整读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\zprintpro-gsc-feedback-loop.md（完整 prompt；顶部 v8 大脑指令段 + v7 执行层迁移段 = 必读第 0 优先级），再读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\sop-10-gate.md。然后按 prompt 当次完整执行全部流程（强制执行约束：不得因深夜/时段简化、拆分或延后）。硬红线：最高规则不做名片印刷（AGENTS.md §0.0）；数据诚信红线——GSC 数字必标文件与日期范围，估算标待校准；幂等铁律——先查 matrix 既有 next_due，不重复回灌；push 攒批 per AGENTS.md §0.25.9 且禁阻塞等待。报告落 F:\\zprintpro-nextjs\\.hermes\\logs\\<今日日期>-gsc-feedback.md（必含 SOP-10 5 问门禁段 + 数据来源行）。",
+        "timeoutSeconds": 1800
+      },
+      "delivery": { "mode": "none", "channel": "none", "bestEffort": true }
+    },
+    {
+      "id": "70b88753-e0f0-4935-a9b1-33a475ef4462",
+      "name": "zprintpro-weekly-meta-refresh",
+      "description": "weekly-meta 车道: Tier B 行业 + 类目页 meta refresh (title 按 v4 写满区 50-54), prompt SSoT = .hermes/cron-prompts/zprintpro-weekly-meta-refresh.md",
+      "enabled": true,
+      "createdAtMs": 1788946914744,
+      "updatedAtMs": 1788946914744,
+      "agentId": "zprintpro",
+      "schedule": { "kind": "cron", "expr": "7 23 * * 5", "tz": "Asia/Shanghai" },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【zprintpro weekly-meta · v7/v8】先完整读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\zprintpro-weekly-meta-refresh.md（完整 prompt；顶部 v8 大脑指令段 + v7 执行层迁移段 = 必读第 0 优先级），再读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\sop-10-gate.md。然后按 prompt 当次完整执行全部流程（强制执行约束：不得因深夜/时段简化、拆分或延后）。硬红线：最高规则不做名片印刷（AGENTS.md §0.0，push 前必跑 node scripts/check-bc-ban.mjs）；title 改动按 v4 写满原则 50-54 半角当量 + 2-4 周冻结纪律；无 K3 拍板来源不改 user-facing 文案；push 攒批 per AGENTS.md §0.25.9 且禁阻塞等待。报告落 F:\\zprintpro-nextjs\\.hermes\\reports\\weekly-meta-<今日日期>.md（必含 SOP-10 5 问门禁段 + 数据来源行）。",
+        "timeoutSeconds": 1800
+      },
+      "delivery": { "mode": "none", "channel": "none", "bestEffort": true }
+    },
+    {
+      "id": "3d06be6d-8044-4835-a88f-46570d4daa7a",
+      "name": "zprintpro-blog-deepfix",
+      "description": "blog-deepfix 车道: 12 铁律深度重写 + 深度 blog 12 段骨架升级, prompt SSoT = .hermes/cron-prompts/zprintpro-blog-deepfix.md",
+      "enabled": true,
+      "createdAtMs": 1788946914744,
+      "updatedAtMs": 1788946914744,
+      "agentId": "zprintpro",
+      "schedule": { "kind": "cron", "expr": "37 5 * * 6", "tz": "Asia/Shanghai" },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【zprintpro blog-deepfix · v7/v8】先完整读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\zprintpro-blog-deepfix.md（完整 prompt；顶部 v8 大脑指令段 + v7 执行层迁移段 = 必读第 0 优先级），再读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\sop-10-gate.md。然后按 prompt 当次完整执行全部流程（强制执行约束：不得因深夜/时段简化、拆分或延后）。硬红线：最高规则不做名片印刷（AGENTS.md §0.0，push 前必跑 node scripts/check-bc-ban.mjs）；12 铁律门童 + 三闸门全 PASS 才算完；价格仅引 products.ts 现行条目禁编造；幂等铁律——开工先查 git log 防重复重写已达标篇目；push 攒批 per AGENTS.md §0.25.9 且禁阻塞等待。报告落 F:\\zprintpro-nextjs\\.hermes\\reports\\blog-deepfix-<今日日期>.md（必含 SOP-10 5 问门禁段 + 数据来源行）。",
+        "timeoutSeconds": 3600
+      },
+      "delivery": { "mode": "none", "channel": "none", "bestEffort": true }
+    },
+    {
+      "id": "df9ad4b9-ba03-4454-8b82-e2f71c370769",
+      "name": "zprintpro-monthly-matrix-audit",
+      "description": "monthly-matrix 车道: 全 matrix 覆盖率审计 + Tier 切换判定 + 品类记分卡, prompt SSoT = .hermes/cron-prompts/zprintpro-monthly-matrix-audit.md",
+      "enabled": true,
+      "createdAtMs": 1788946914744,
+      "updatedAtMs": 1788946914744,
+      "agentId": "zprintpro",
+      "schedule": { "kind": "cron", "expr": "13 6 1 * *", "tz": "Asia/Shanghai" },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【zprintpro monthly-matrix · v7/v8】先完整读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\zprintpro-monthly-matrix-audit.md（完整 prompt；顶部 v8 大脑指令段 + v7 执行层迁移段 = 必读第 0 优先级），再读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\sop-10-gate.md。然后按 prompt 当次完整执行全部流程（强制执行约束：不得因深夜/时段简化、拆分或延后）。硬红线：最高规则不做名片印刷（AGENTS.md §0.0）；matrix 词分层幂等核对——已覆盖词不重复派题；GSC 数字必标文件与日期范围；品类记分卡判定必引 §11.7 数据源；push 攒批 per AGENTS.md §0.25.9 且禁阻塞等待。报告落 F:\\zprintpro-nextjs\\.hermes\\reports\\monthly-matrix-<今日日期>.md（必含 SOP-10 5 问门禁段 + 数据来源行）。",
+        "timeoutSeconds": 3600
+      },
+      "delivery": { "mode": "none", "channel": "none", "bestEffort": true }
+    }
+  ]
+}

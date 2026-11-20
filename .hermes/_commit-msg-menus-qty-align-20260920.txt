@@ -1,0 +1,56 @@
+fix(menus)+data: 起印量「数字声称」全字段对齐 10 (P0 收口, 消除标题-正文矛盾)
+
+背景: a2f636e6 只改了标题 (10張/份/本起), 正文仍写 50本起/100張/100-MOQ/50冊 ⇒ 客户可见矛盾
+     (标题说 10、点进去正文说 100)。本批把数据层**全部数字声称**对齐到 products.ts 真值。
+
+真值 SSoT (实测 dump): pvc-menus=10張 · laminated-menus=10份 · hardcover-menus=10本
+                     · drink-menus=10份 · disposable-menus=100份 (已正确) · wedding-menu-cards=50
+
+一、替换范围 (35 + 3 = 38 处字段值, 全部结构定位 + 命中数断言)
+   zh-hk description  (5): 「50 本起」模板错值 → 各 SKU 真值口径
+       pvc「PVC 餐牌印刷 10 張起印。」/ laminated「過膠餐牌印刷 10 份起印。」/
+       hardcover「精裝餐牌印刷 10 本起印。」/ drink「酒水牌印刷 10 份起印。」/
+       disposable「一次性餐牌印刷 100 份起印。」
+   en description    (4×2): 100-MOQ → 10-MOQ ; | 100 MOQ → | 10 MOQ
+   ja description    (5): 50冊〜 → 10枚〜/10冊〜/100枚〜(disposable)
+   zh-hk body        (5): 起訂量為 100 張/本 → 10 份/10 張/10 本/100 份 (按 unitLabel)
+   en body           (4): with a minimum order of 100 → 10
+   ja body           (5): 最小注文100枚/100冊から → 10 ; 「ほとんどは50〜100枚から…10枚から対応」
+                          →「最小注文は10枚から。急ぎの少量は10枚から対応。」(消除同段自相矛盾)
+   en h1             (4): 100+ → 10+ (含 drink 顺带清「Laminated Durable」模板残留)
+                          ⚠️ h1 超出你列的 description/body 范围, 但同属「100」矛盾面,
+                             不改则 h1 仍写 100+ 与标题 10 打架, 故一并对齐并在此备案。
+
+二、单位必须 == products.ts unitLabel (本轮顺手纠出)
+   laminated/drink/disposable 的 zh-hk body 写「起訂量為 … 張」→「… 份」(unitLabel=份);
+   pvc 保留「張」、hardcover 保留「本」(与 unitLabel 一致)。
+
+三、方法 (避坑 21 延续)
+   scripts/apply-menus-qty-align.cjs + scripts/apply-menus-unit-align.cjs
+   均: 配平花括号结构定位 → 取字段旧值 → 全文断言旧值恰好 1 次 → 字段内断言子串恰好 1 次
+       → 替换 → dry-run 默认, --apply 才写盘。
+   ⚠️ 修 escape bug: body 值内的 \n 是**转义序列**, 初版 stringRange 解转义后写回时二次转义 ⇒
+      dry-run 报「旧值全文命中 0 次」当场拦下, 未落盘 (改原样保留转义后 35 处全过)。
+
+验证 (全实测)
+   - npx tsc --noEmit → 54 = 基线 54 (持平)
+   - node scripts/verify-menus.cjs → 仅余 disposable en/ja 当量 49/46 不足 50 (原存, 非本批引入)
+   - node scripts/audit-sku-locale.cjs → 四项 0/0/0/0
+   - node scripts/check-encoding.js → 0
+   - 复核 dump: menus 6 SKU 已无「50 本起 / 100-MOQ / 50冊 / minimum order of 100 / 起訂量為 100」
+   - disposable-menus 100 口径**全部保留** (真值 100, 本批刻意不动)
+
+未做 (留档, 不得声称已修)
+   1. 语义/材质矛盾: 4 个 SKU 的**数据层 name/description 写「防水PVC」「防水覆膜」**,
+      但 products.ts specs 是「200g–250g 銅版紙或啞粉紙 + 啞膠覆膜」(仅 pvc-menus 真为 PVC 膠片)。
+      本批只动数字声称, **未动材质词**——改名/改材质涉及主排名词与展示层, 需单独裁决。
+   2. menus 数据层写「ISO 9001 certified / 認證」→ 与门童 CRED_ISO_9001 计数同源, 证书真伪未核实。
+   3. disposable-menus ja body 仍留「ZprintProのほとんどの商品は50〜100枚からの最小注文です」
+      ——该句说的是**全站通用口径**非本品类, 牵涉全站政策, 未擅改。
+   4. wedding-menu-cards 价写 NT$ (本站 zh-hk 应为 HK$) + 缺 unitLabel。
+   5. 本批未 push (30 min 间隔纪律, commit 留本地)。
+
+数据来源:
+- src/data/products.ts minQuantity / unitLabel (实测 dump: node scripts/verify-menus.cjs)
+- src/data/sku-seo-data.ts (改动对象)
+- 全字段数字声称清单: 逐 SKU 结构解析 dump (59 条上下文, 见 .hermes/_tmp-menus-qty.cjs)

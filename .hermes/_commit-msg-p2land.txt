@@ -1,0 +1,48 @@
+feat(seo): P2 修剪第 1 批落盘 — 6 槽干净修剪 (TRIM 38→32), 进入 7-10 天验证窗
+
+来源: K3 2026-09-19 决策「P2 分批落盘 — 先落盘干净槽位, 不被 31 条重写阻塞」
+
+## 一、本批内容 (6 槽, 纯删除, 全部落在 50-57)
+| SKU / locale | 当量 | 变更 |
+|---|---|---|
+| small-batch-stickers/zh-hk | 63→**55** | 删末段 `2h 打稿` (子段级截尾) |
+| small-batch-stickers/en | 67→**51** | 删 `Free 2h Proof` |
+| small-batch-stickers/ja | 63→**55** | 删 `2h 校正` |
+| cosmetic-boxes/ja | 87→**52** | 删 `マグネット蓋・引き出し・ブック型` |
+| food-boxes/ja | 73→**55** | 删 `紙袋・耐油カード` (保留 `食品用紙箱`) |
+| gang-run-card-boxes/en | 90→**54** | 删 `8-15 Day Turnaround \| From USD 25` |
+
+落盘: 6 行 (期望 6) ✅ **断言 6/6 逐字命中** ✅
+census: OK 203→**209** / TRIM 38→**32** / FILL 59 (不变)
+
+## 二、★ 悬空碎片守卫二次补漏 (过程留痕)
+首轮守卫后仍有 1 条破损: `food-boxes/en` 把 `Food-Safe Boxes & Bags` 截成 **`Food-Safe`**
+—— 形容词留下了、被修饰的名词没了 ⇒ 仍是破损文本 (7→6 槽)。
+补漏判据 ⑤: 以复合形容词后缀结尾且无 CJK 者拒 (`-safe/-free/-ready/-proof/-resistant/-grade/-based/-friendly/-size/-cut`)。
+(CJK 工艺词如 `防水`/`透明` 单独成段合法, 不在此列。)
+⇒ 该槽位改判 `needsRewrite`, 本批剔除。
+
+## 三、★ 复核不变量修正 (重要, 避免误报)
+首版对 trim 批也套用「MOQ/价格须与 products.ts 一致」⇒ **大量误报**, 根因是**在看错对象**:
+- `small-batch-stickers` 是 `NO_MOQ_HOOK`, 但其**既有**标题本就含 `50 張起` / `50 pcs`。
+  `NO_MOQ_HOOK` 的语义 = 「生成器**不得新增** MOQ 钩子」, **不是**「标题里不许有 MOQ」;
+  修剪是**纯删除**, 保留既有数字 = 正确行为。
+- 既有价格 (`$0.045` / `HK$0.45`) 与本批无关, 回 products.ts 比对属**重审存量**。
+⇒ 修正为**模式感知**: trim 的正确不变量是**删除性** —— 候选数字集合必须是原标题数字集合的**子集**
+(只做减法, 未引入新数字); fill 才需要 MOQ/价格来源复核。
+修正后 7/38 → 6/38 (剔除悬空项), 与生成器自报一致。
+
+## 四、诚实结论 (不变)
+P2 自动化仅干净覆盖 **6/38** (16%); 其余 **32 条需「替代」而非「删除」**
+(长钩子如 `Free Shipping $99+` 占 18 当量: 删则 <50, 留则 >58 ⇒ 必须替换)。
+本批不阻塞后续 `替代` 模式的开发。
+
+## 数据来源
+- .hermes/reports/title-proposals-P2-修剪-2026-09-19.json (生成器提案)
+- src/data/products.ts · scripts/guards/title-equiv.js
+校准日期: 2026-09-20 00:05
+
+## 验收
+node scripts/apply-title-batch.mjs --from-proposals=... --apply → 6 槽, 断言 6/6 ✅
+node scripts/sku-title-census.mjs → OK 209 / TRIM 32 / FILL 59 ✅
+验证窗: **本批 6 槽进入 7-10 天只读**

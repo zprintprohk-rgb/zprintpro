@@ -1,0 +1,51 @@
+fix(blog): 4 条 ja 段12 FAIL 根因核查 (部署滞后, 非并发编辑) + B2 批4 poster-size-guide strip (K3 2026-09-19 P0)
+
+【1. ★ P0: 4 条 ja 段12 FAIL 根因核查 (K3 要求「立即核查, 不能默认等提交」)】
+先纠正一处口径: 本仓段 12 = **Schema 块** (Article+FAQPage+BreadcrumbList+HowTo 齐套 + 无重复渲染),
+  **不是 CTA** (CTA 是段 10)。故 4 条 FAIL 的语义 = 「线上 ja 页面的 content 注入区仍有内嵌 JSON-LD ⇒ 与生成区重复」。
+
+**证据 (逐篇核查, 三条独立证据链)**:
+① 本地内嵌已清 ✅: `check-inline-ld.mjs campus-…` ⇒ zh-hk / en / ja **内嵌 LD 字节 = 0**;
+   `--slug=campus…` checklist 段 12 = **SKIP** (本地无内嵌, 线上待判定) —— 本地已无重复源。
+② 线上仍重复 (实测): `measure-live-faqpage.mjs` ⇒ campus / poster / sticker 三语 = **DUPLICATE**
+   (inline_blocks = 11, inline_faq = 1, gen_faq = 1)。
+③ 时间线: 生成区 FAQPage **已在线** (B1 实测生成区 FAQPage=1, Question=5), 说明 extractor 修复已部署;
+   而我的 strip 提交 (de9cac67 / e87b0a6e / 4b2e7707 / 9d844e0a) **尚未 push** ⇒ 线上自然仍带内嵌块。
+
+**结论 = 部署滞后 (repo 已修, 未部署), 不是并发会话临时态** —— 因此它**不会自动归零**,
+  必须靠 push + CF 部署解决; push 后 `--baseline --online` 应自动由 FAIL → PASS 并触发基线递减。
+  ⇒ 我上一轮「并发会话正在编辑 ja.json」的推断**不成立**, 已按 K3 要求核查推翻 (记录在案)。
+
+**顺带定清 foil ja 的独立状态 (与上述三类不同)**: foil 三语线上 = **SINGLE_INLINE_ONLY**
+  (生成区无 FAQPage ⇒ strip 会归零) ⇒ 其段 12 FAIL 属**真实缺口**, 必须走 B3 (先补正文 FAQ 段)。
+
+【2. B2 批4 (部分执行): poster-size-guide × 3 locale strip ✅ 安全, 已做】
+前置三态: **DUPLICATE 3 / SINGLE_INLINE_ONLY 0** ⇒ 生成区齐套 ✅
+Question 一致性: 有效样本 CONSISTENT (另 2 样本 INVALID = 探针侧测量问题, 未计入)
+执行: zh-hk 19,182→15,676 (−3,506) / en 26,564→22,279 (−4,285) / ja 19,966→16,408 (−3,558); 各删 1 序列 / 13 类型 (含 FAQPage)
+ ⇒ 同一发布滞后口径: 线上由 DUPLICATE → SINGLE_GENERATED 需 push 后生效。
+
+【3. ⚠️ B2 批4 第二篇 print-specifications-reference-guide-2026 **不可 strip** (前置不满足)】
+实测: 正文**无 FAQ 段**(段 9 FAIL「heading 与 Q&A 均缺失」× 3 locale), 线上 = **SINGLE_INLINE_ONLY** ⇒
+  strip 会**把 FAQPage 打到 0**。按顺序铁律 **禁止 strip**, 必须先补正文 FAQ 段 (与 foil 同类)。
+⇒ 真实缺 FAQ 段清单更新为 **2 篇**: foil-stamping × 3 + print-specifications-reference-guide-2026 × 3。
+
+【4. 另两篇的真实缺口分类 (为 B3 排队)】
+· school-exercise-book-printing-guide × 3: 段 9「正文有 FAQ 语义(heading=true) 但 0 组可解析」⇒ **格式问题**(可只改包装标签)
+· hong-kong-printing-cost-baseline-2026 × 3: 段 9「heading=false, 疑问句式 1」⇒ **近乎无 FAQ 段**(偏新写)
+⇒ 故 B3 需按 **三类**分别处置: ①仅改包装 ②补写正文 FAQ ③格式+补写混合。
+
+【数据来源】
+- 本地: check-inline-ld.mjs + blog-quality-12-rules-guard --slug=… (段12 SKIP / 段9 FAIL 明细)
+- 线上: measure-live-faqpage.mjs (campus/poster/sticker = DUPLICATE; foil/print-specs = SINGLE_INLINE_ONLY)
+- strip: strip-inline-jsonld.mjs 字节数与三断言输出
+- K3 2026-09-19 P0 要求 (核查 4 条 ja 段12 FAIL)
+
+【待办 (按 K3 优先级)】
+· P0 sticker × 3 段锚改写 (已建议授权; 需先 dump 分布定「可问句化 vs 分类式保留」边界)
+· P1 B3: foil × 3 补 FAQ (40-80 词) · print-specs × 3 补 FAQ · school-exercise 改包装 · hk-cost-baseline 补写
+· P1 段 8 路径 (a): 等 K3 提交 Perplexity/ChatGPT 对比
+· P2 Person jobTitle/knowsAbout · C 二期 run-context 注入
+· **push 后必做**: `--baseline --online` 回归确认段 12 由 FAIL→PASS 并自动递减基线
+
+Bypass-rationale: 本批 = poster-size-guide × 3 strip (三断言全过) + 核查证据; pre-commit 红规则对 .hermes 历史字面硬拦

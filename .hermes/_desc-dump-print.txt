@@ -1,0 +1,112 @@
+﻿{
+  "waterproof-stickers": {
+    "zh-hk": {
+      "title": "防水貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.22起 | 智印港",
+      "description": "防水貼紙/防水貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    },
+    "ja": {
+      "title": "防水ステッカー | PVC ダイカット | 10枚〜¥41〜 | ZprintPro",
+      "description": "防水ステッカーの防水ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。"
+    }
+  },
+  "foil-stickers": {
+    "zh-hk": {
+      "title": "燙金貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.78起 | 智印港",
+      "description": "燙金貼紙/燙金貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    }
+  },
+  "die-cut-stickers": {
+    "zh-hk": {
+      "title": "異形模切貼紙 透明・模切・10起印・HK$0.58起 | 智印港",
+      "description": "異形模切貼紙/貼紙印刷 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    }
+  },
+  "exercise-books": {
+    "zh-hk": {
+      "title": "作業簿印刷 | 四色印刷 騎馬釘 | 10本起 HK$4起 | 智印港",
+      "description": "作業簿印刷/作業簿 50 本起。採用 內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    },
+    "en": {
+      "title": "Saddle-Stitched Exercise Books | Free US Ship | ZprintPro",
+      "description": "Custom exercise books from ZprintPro the US. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ"
+    }
+  },
+  "certificates": {
+    "zh-hk": {
+      "title": "證書印刷 | 專業印刷 品質保證 | 100個起 HK$8起 | 智印港",
+      "description": "證書印刷/證書印刷 100 起。採用 157g 銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    }
+  },
+  "business-envelopes": {
+    "zh-hk": {
+      "title": "公司信封 | DL/C5/C4 開窗全封 100個起 HK$0.22起 | 智印港",
+      "description": "公司信封/公司信封 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    },
+    "en": {
+      "title": "Business Envelopes | DL C5 C4 | 100 MOQ $0.14 | ZprintPro",
+      "description": "Custom business envelopes from ZprintPro the US. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ"
+    }
+  },
+  "adhesive-banners": {
+    "zh-hk": {
+      "title": "背膠噴繪 透明・10起印・HK$10起・4小時打稿 | 智印港",
+      "description": "背膠噴繪/噴繪 1 個起。採用 PP 合成紙/PVC 高品質材質，支援 80×200cm 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    }
+  },
+  "pvc-menus": {
+    "en": {
+      "title": "PVC Menus | Laminated Durable | Free US Ship | ZprintPro",
+      "description": "Custom pvc menus from ZprintPro the US. Laminated Durable, 4-color CMYK. 10-MOQ. Free US shipping over $100, DHL Express | Free Design | 10 MOQ"
+    },
+    "ja": {
+      "title": "PVC menu | 防水 ラミネート | 10枚〜 ¥386〜 | ZprintPro",
+      "description": "PVC menuのPVC menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。"
+    }
+  },
+  "textbooks": {
+    "en": {
+      "title": "Textbooks | Perfect Bound | Free US Ship | ZprintPro",
+      "description": "Custom textbooks from ZprintPro the US. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ"
+    },
+    "ja": {
+      "title": "教科書印刷｜中綴じ 無線綴じ｜100冊〜¥1288〜｜ZprintPro",
+      "description": "教科書印刷は ZprintPro にお任せ。本文 157g コート紙/表紙 250g、A4/A5/カスタム対応、4色 CMYK 印刷。100冊〜、5-7営業日、DHL で日本へ 2-4 日配送。無料デザイン校正 1 時間、30 秒 AI 見積もり。"
+    }
+  },
+  "a5-flyers": {
+    "en": {
+      "title": "A5 Flyers for Holiday Cards | Free US Ship | ZprintPro",
+      "description": "Custom a5 flyers from ZprintPro the US. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ"
+    }
+  },
+  "saddle-stitch-booklets": {
+    "ja": {
+      "title": "中綴じ冊子 ラミネート・中綴じ・100枚〜 | ZprintPro",
+      "description": "中綴じ冊子の中綴じ冊子は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。"
+    }
+  },
+  "eco-paper-bags": {
+    "ja": {
+      "title": "エコ紙袋 | エコ素材 多サイズ | 100枚〜 ¥240〜 | ZprintPro",
+      "description": "エコ紙袋のエコ紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。"
+    }
+  },
+  "double-sided-flyers": {
+    "ja": {
+      "title": "両面チラシ印刷 | フルカラー 10枚〜 | ¥85〜 | ZprintPro",
+      "description": "両面カラー印刷 両面チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。"
+    }
+  },
+  "catalog-printing": {
+    "ja": {
+      "title": "カタログ印刷｜箔押し ラミネート｜10枚〜¥644〜｜ZprintPro",
+      "description": "カタログ印刷は ZprintPro にお任せ。157g コート紙、標準/カスタム対応、4色 CMYK 高発色印刷。10枚〜、3-5営業日、DHL で日本へ 2-4 日配送。無料デザイン校正 1 時間、30 秒 AI 見積もり。"
+    }
+  },
+  "doujinshi-printing": {
+    "zh-hk": {
+      "title": "同人誌印刷 10本起印 | Comiket前24小時特急對應 | 智印港",
+      "description": "同人誌 / Comiket / 即售會專用同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色,10 本起印,Comiket 會期前 24 小時特急対応。自営工場 DHL Express 直送日本 2-4 個工作天,繁中客服 + 日文客服雙語支援 | 即時報價"
+    }
+  }
+}

@@ -1,0 +1,1741 @@
+{
+  "generated_at": "2026-10-16T04:11:23.899Z",
+  "task": "v28_5 图库换图部署脚本 · 站内接线面盘点（只读仓库，唯一写入本文件）",
+  "data_sources": [
+    "src/data/products.ts（Node utf8 双遍块解析：4空格 slug 行 + \\n  { 块切片 + 括号配对，遍数一致）",
+    "public/sitemap-image.xml（Node 直读实测 2026-10-16）",
+    "git log/show：f9935e4b / 5cc341b4 / 4c4cacbb / 06590c10 / 68125b8d / e7d4d1eb",
+    "docs/2026-10-12-fluorescent-verdict-roll-stickers-replacement-and-sku-pruning.md、docs/2026-10-12-batch-b-sku-image-completion-and-tier1-301-hotfix.md、docs/2026-10-13-red-packets-image-replacement.md、docs/2026-10-16-image-swap-risk-and-one-week-plan.md",
+    "scripts/generate-image-sitemap.js、scripts/indexnow-auto-submit.py、scripts/indexnow-submit.mjs、scripts/README-indexnow.md",
+    "src/middleware.ts L145-155 RETIRED_PRODUCT_REDIRECTS、src/lib/product-image.ts、src/app/[locale]/product/[slug]/page.tsx L419/L439、v9/ProductPageV9.tsx L286/L420-422、src/components/seo-image.tsx",
+    ".gitignore（git check-ignore -v 实测 + Node utf8 全文解码双方法）、zprintpro-en-us-images/v28_5_webp/（readdir 实测）"
+  ],
+  "live_slugs": [
+    "premium-greeting-cards",
+    "thick-greeting-cards-400g",
+    "foil-greeting-cards",
+    "spot-uv-greeting-cards",
+    "matte-greeting-cards",
+    "rounded-corner-greeting-cards",
+    "waterproof-stickers",
+    "transparent-stickers",
+    "removable-stickers",
+    "small-batch-stickers",
+    "die-cut-stickers",
+    "foil-stickers",
+    "security-stickers",
+    "roll-stickers",
+    "kraft-paper-bags",
+    "white-card-bags",
+    "gift-bags",
+    "eco-paper-bags",
+    "handle-bags",
+    "large-bags",
+    "a4-flyers",
+    "a5-flyers",
+    "double-sided-flyers",
+    "folded-leaflets",
+    "thick-paper-flyers",
+    "eco-flyers",
+    "same-day-flyers",
+    "a2-posters",
+    "a1-posters",
+    "outdoor-posters",
+    "display-posters",
+    "art-posters",
+    "adhesive-posters",
+    "food-boxes",
+    "cosmetic-boxes",
+    "mailer-boxes",
+    "folding-boxes",
+    "rigid-boxes",
+    "foil-red-packets",
+    "embossed-red-packets",
+    "custom-red-packets",
+    "cartoon-red-packets",
+    "eco-red-packets",
+    "large-red-packets",
+    "wall-calendars",
+    "desk-calendars",
+    "custom-calendars",
+    "mini-calendars",
+    "photo-frame-calendars",
+    "magnetic-calendars",
+    "pvc-menus",
+    "laminated-menus",
+    "hardcover-menus",
+    "drink-menus",
+    "outdoor-vinyl-banners",
+    "roll-up-banners",
+    "adhesive-banners",
+    "vehicle-wraps",
+    "catalog-printing",
+    "saddle-stitch-booklets",
+    "perfect-bound-books",
+    "hardcover-books",
+    "spiral-notebooks",
+    "business-envelopes",
+    "colored-envelopes",
+    "large-envelopes",
+    "pearl-envelopes",
+    "exercise-books",
+    "certificates",
+    "school-flyers",
+    "textbooks",
+    "graduation-yearbook",
+    "magnetic-closure-gift-box",
+    "electronics-packaging-box",
+    "kraft-paper-packaging-box",
+    "gang-run-card-boxes",
+    "white-card-boxes",
+    "corrugated-boxes",
+    "tuck-end-boxes",
+    "fruit-food-label-stickers",
+    "foil-wedding-invitations",
+    "wedding-thank-you-cards"
+  ],
+  "slug_count": 82,
+  "retired_check": {
+    "drink-tokens": false,
+    "cafe-table-cards": false,
+    "wedding-place-cards": false,
+    "save-the-date-cards": false,
+    "wedding-seating-charts": false,
+    "wedding-suite-bundle": false,
+    "eco-tote-bag": false,
+    "postcard-set": false,
+    "fluorescent-stickers": false
+  },
+  "retired_check_semantics": "false = 该 slug 不在 products.ts 存活集（已退役）。双方法核验：① Node 枚举 82 slug 集合 0 命中；② grep 正则备选在 products.ts 全文仅 roll-stickers 命中；③ middleware.ts L145-155 RETIRED_PRODUCT_REDIRECTS 实录 9 键（fluorescent→roll-stickers；drink-tokens/cafe-table-cards/wedding-place-cards/postcard-set→premium-greeting-cards；save-the-date-cards/wedding-seating-charts/wedding-suite-bundle→foil-wedding-invitations；eco-tote-bag→paper-bags）。",
+  "roll_stickers_in_live": true,
+  "per_slug_images": {
+    "premium-greeting-cards": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "v26",
+      "legacy_path_family": "v26",
+      "sample": "/images/v26/greeting-cards/premium/zh-hk/hero.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-greeting-cards-premium-greeting-cards-zh-hk-hero.webp",
+        "en": "zprintpro-stickers-premium-stickers-en.webp",
+        "ja": "zprintpro-stickers-premium-stickers-ja.webp"
+      }
+    },
+    "thick-greeting-cards-400g": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "v26",
+      "legacy_path_family": "v26",
+      "sample": "/images/v26/greeting-cards/thick-400g/zh-hk/hero.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-greeting-cards-thick-greeting-cards-400g-zh-hk-hero.webp",
+        "en": "zprintpro-stickers-thick-stickers-400g-en.webp",
+        "ja": "zprintpro-stickers-thick-stickers-400g-ja.webp"
+      }
+    },
+    "foil-greeting-cards": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "v26",
+      "legacy_path_family": "v26",
+      "sample": "/images/v26/greeting-cards/foil/zh-hk/hero.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-greeting-cards-foil-greeting-cards-zh-hk-hero.webp",
+        "en": "zprintpro-stickers-foil-stickers-en.webp",
+        "ja": "zprintpro-stickers-foil-stickers-ja.webp"
+      }
+    },
+    "spot-uv-greeting-cards": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "v26",
+      "legacy_path_family": "v26",
+      "sample": "/images/v26/greeting-cards/spot-uv/zh-hk/hero.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-greeting-cards-spot-uv-greeting-cards-zh-hk-hero.webp",
+        "en": "zprintpro-stickers-spot-uv-stickers-en.webp",
+        "ja": "zprintpro-stickers-spot-uv-stickers-ja.webp"
+      }
+    },
+    "matte-greeting-cards": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "v26",
+      "legacy_path_family": "v26",
+      "sample": "/images/v26/greeting-cards/matte/zh-hk/hero.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-greeting-cards-matte-greeting-cards-zh-hk-hero.webp",
+        "en": "zprintpro-stickers-matte-stickers-en.webp",
+        "ja": "zprintpro-stickers-matte-stickers-ja.webp"
+      }
+    },
+    "rounded-corner-greeting-cards": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "v26",
+      "legacy_path_family": "v26",
+      "sample": "/images/v26/greeting-cards/rounded-corner/zh-hk/hero.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-greeting-cards-rounded-corner-greeting-cards-zh-hk-hero.webp",
+        "en": "zprintpro-stickers-rounded-corner-cards-en.webp",
+        "ja": "zprintpro-stickers-rounded-corner-cards-ja.webp"
+      }
+    },
+    "waterproof-stickers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/waterproof-stickers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-stickers-waterproof-stickers-zh-hk.webp",
+        "en": "zprintpro-stickers-waterproof-stickers-en.webp",
+        "ja": "zprintpro-stickers-waterproof-stickers-ja.webp"
+      }
+    },
+    "transparent-stickers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-1.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-stickers-transparent-stickers-zh-hk-1.webp",
+        "en": "zprintpro-stickers-transparent-stickers-en.webp",
+        "ja": "zprintpro-stickers-transparent-stickers-ja.webp"
+      }
+    },
+    "removable-stickers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 3,
+        "en": 4,
+        "ja": 3
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/removable-stickers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-stickers-removable-stickers-zh-hk.webp",
+        "en": "zprintpro-stickers-removable-stickers-en.webp",
+        "ja": "zprintpro-stickers-removable-stickers-ja.webp"
+      }
+    },
+    "small-batch-stickers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 3,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/small-batch-stickers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-stickers-small-batch-stickers-zh-hk.webp",
+        "en": "zprintpro-stickers-small-batch-stickers-en.webp",
+        "ja": "zprintpro-stickers-small-batch-stickers-ja.webp"
+      }
+    },
+    "die-cut-stickers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/die-cut-stickers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-stickers-die-cut-stickers-zh-hk.webp",
+        "en": "zprintpro-stickers-die-cut-stickers-en.webp",
+        "ja": "zprintpro-stickers-die-cut-stickers-ja.webp"
+      }
+    },
+    "foil-stickers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/foil-stickers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-stickers-foil-stickers-zh-hk.webp",
+        "en": "zprintpro-stickers-foil-stickers-en.webp",
+        "ja": "zprintpro-stickers-foil-stickers-ja.webp"
+      }
+    },
+    "security-stickers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/security-stickers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-stickers-security-stickers-zh-hk.webp",
+        "en": "zprintpro-stickers-security-stickers-en.webp",
+        "ja": "zprintpro-stickers-security-stickers-ja.webp"
+      }
+    },
+    "roll-stickers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 3,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-stickers-roll-stickers-zh-hk-1.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-stickers-roll-stickers-zh-hk.webp",
+        "en": "zprintpro-stickers-roll-stickers-en.webp",
+        "ja": "zprintpro-stickers-roll-stickers-ja.webp"
+      }
+    },
+    "kraft-paper-bags": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 3,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/kraft-paper-bags.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-paper-bags-kraft-paper-bags-zh-hk.webp",
+        "en": "zprintpro-paper-bags-kraft-paper-bags-en.webp",
+        "ja": "zprintpro-paper-bags-kraft-paper-bags-ja.webp"
+      }
+    },
+    "white-card-bags": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-1.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-paper-bags-white-card-bags-zh-hk.webp",
+        "en": "zprintpro-paper-bags-white-card-bags-en.webp",
+        "ja": "zprintpro-paper-bags-white-card-bags-ja.webp"
+      }
+    },
+    "gift-bags": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/gift-bags.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-paper-bags-gift-bags-zh-hk.webp",
+        "en": "zprintpro-paper-bags-gift-bags-en.webp",
+        "ja": "zprintpro-paper-bags-gift-bags-ja.webp"
+      }
+    },
+    "eco-paper-bags": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 8,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/eco-paper-bags.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-paper-bags-eco-paper-bags-zh-hk.webp",
+        "en": "zprintpro-paper-bags-eco-paper-bags-en.webp",
+        "ja": "zprintpro-paper-bags-eco-paper-bags-ja.webp"
+      }
+    },
+    "handle-bags": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 3
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/handle-bags.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-paper-bags-handle-bags-zh-hk.webp",
+        "en": "zprintpro-paper-bags-handle-bags-en.webp",
+        "ja": "zprintpro-paper-bags-handle-bags-ja.webp"
+      }
+    },
+    "large-bags": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/large-bags.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-paper-bags-large-bags-zh-hk.webp",
+        "en": "zprintpro-paper-bags-large-bags-en.webp",
+        "ja": "zprintpro-paper-bags-large-bags-ja.webp"
+      }
+    },
+    "a4-flyers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 2,
+        "en": 2,
+        "ja": 2
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/a4-flyers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-flyers-a4-flyers-zh-hk.webp",
+        "en": "zprintpro-flyers-a4-flyers-en.webp",
+        "ja": "zprintpro-flyers-a4-flyers-ja.webp"
+      }
+    },
+    "a5-flyers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 1,
+        "ja": 2
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/a5-flyers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-flyers-a5-flyers-zh-hk.webp",
+        "en": "zprintpro-flyers-a5-flyers-en.webp",
+        "ja": "zprintpro-flyers-a5-flyers-ja.webp"
+      }
+    },
+    "double-sided-flyers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 2,
+        "ja": 2
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/double-sided-flyers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-flyers-double-sided-flyers-zh-hk.webp",
+        "en": "zprintpro-flyers-double-sided-flyers-en.webp",
+        "ja": "zprintpro-flyers-double-sided-flyers-ja.webp"
+      }
+    },
+    "folded-leaflets": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 2,
+        "en": 2,
+        "ja": 2
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/folded-leaflets.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-flyers-folded-leaflets-zh-hk.webp",
+        "en": "zprintpro-flyers-folded-leaflets-en.webp",
+        "ja": "zprintpro-flyers-folded-leaflets-ja.webp"
+      }
+    },
+    "thick-paper-flyers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 2,
+        "en": 2,
+        "ja": 2
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/thick-paper-flyers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-flyers-thick-paper-flyers-zh-hk.webp",
+        "en": "zprintpro-flyers-thick-paper-flyers-en.webp",
+        "ja": "zprintpro-flyers-thick-paper-flyers-ja.webp"
+      }
+    },
+    "eco-flyers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 3,
+        "en": 3,
+        "ja": 3
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/eco-flyers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-flyers-eco-flyers-zh-hk.webp",
+        "en": "zprintpro-flyers-eco-flyers-en.webp",
+        "ja": "zprintpro-flyers-eco-flyers-ja.webp"
+      }
+    },
+    "same-day-flyers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 3,
+        "en": 3,
+        "ja": 3
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/same-day-flyers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-flyers-same-day-flyers-zh-hk.webp",
+        "en": "zprintpro-flyers-same-day-flyers-en.webp",
+        "ja": "zprintpro-flyers-same-day-flyers-ja.webp"
+      }
+    },
+    "a2-posters": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 3,
+        "en": 3,
+        "ja": 3
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/a2-posters.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-posters-a2-posters-zh-hk.webp",
+        "en": "zprintpro-posters-a2-posters-en.webp",
+        "ja": "zprintpro-posters-a2-posters-ja.webp"
+      }
+    },
+    "a1-posters": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/a1-posters.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-posters-a1-posters-zh-hk.webp",
+        "en": "zprintpro-posters-a1-posters-en.webp",
+        "ja": "zprintpro-posters-a1-posters-ja.webp"
+      }
+    },
+    "outdoor-posters": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 3,
+        "ja": 0
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/outdoor-posters.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-posters-outdoor-posters-zh-hk.webp",
+        "en": "zprintpro-posters-outdoor-posters-en.webp",
+        "ja": "zprintpro-posters-outdoor-posters-ja.webp"
+      }
+    },
+    "display-posters": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/display-posters.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-posters-display-posters-zh-hk.webp",
+        "en": "zprintpro-posters-display-posters-en.webp",
+        "ja": "zprintpro-posters-display-posters-ja.webp"
+      }
+    },
+    "art-posters": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/art-posters.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-posters-art-posters-zh-hk.webp",
+        "en": "zprintpro-posters-art-posters-en.webp",
+        "ja": "zprintpro-posters-art-posters-ja.webp"
+      }
+    },
+    "adhesive-posters": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/adhesive-posters.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-posters-adhesive-posters-zh-hk.webp",
+        "en": "zprintpro-posters-adhesive-posters-en.webp",
+        "ja": "zprintpro-posters-adhesive-posters-ja.webp"
+      }
+    },
+    "food-boxes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 6,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/food-boxes.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-food-boxes-zh-hk.webp",
+        "en": "zprintpro-packaging-food-boxes-en.webp",
+        "ja": "zprintpro-packaging-food-boxes-ja.webp"
+      }
+    },
+    "cosmetic-boxes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 0,
+        "ja": 0
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/cosmetic-boxes.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-cosmetic-boxes-zh-hk.webp",
+        "en": "zprintpro-packaging-cosmetic-boxes-en.webp",
+        "ja": "zprintpro-packaging-cosmetic-boxes-ja.webp"
+      }
+    },
+    "mailer-boxes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/mailer-boxes.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-mailer-boxes-zh-hk.webp",
+        "en": "zprintpro-packaging-mailer-boxes-en.webp",
+        "ja": "zprintpro-packaging-mailer-boxes-ja.webp"
+      }
+    },
+    "folding-boxes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/folding-boxes.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-folding-boxes-zh-hk.webp",
+        "en": "zprintpro-packaging-folding-boxes-en.webp",
+        "ja": "zprintpro-packaging-folding-boxes-ja.webp"
+      }
+    },
+    "rigid-boxes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 3,
+        "ja": 3
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/rigid-boxes.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-rigid-boxes-zh-hk.webp",
+        "en": "zprintpro-packaging-rigid-boxes-en.webp",
+        "ja": "zprintpro-packaging-rigid-boxes-ja.webp"
+      }
+    },
+    "foil-red-packets": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-red-packets-foil-red-packets-zh-hk.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-red-packets-foil-red-packets-zh-hk.webp",
+        "en": "zprintpro-red-packets-foil-red-packets-en.webp",
+        "ja": "zprintpro-red-packets-foil-red-packets-ja.webp"
+      }
+    },
+    "embossed-red-packets": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-red-packets-embossed-red-packets-zh-hk.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-red-packets-embossed-red-packets-zh-hk.webp",
+        "en": "zprintpro-red-packets-embossed-red-packets-en.webp",
+        "ja": "zprintpro-red-packets-embossed-red-packets-ja.webp"
+      }
+    },
+    "custom-red-packets": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-red-packets-custom-red-packets-zh-hk.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-red-packets-custom-red-packets-zh-hk.webp",
+        "en": "zprintpro-red-packets-custom-red-packets-en.webp",
+        "ja": "zprintpro-red-packets-custom-red-packets-ja.webp"
+      }
+    },
+    "cartoon-red-packets": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-zh-hk.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-red-packets-cartoon-red-packets-zh-hk.webp",
+        "en": "zprintpro-red-packets-cartoon-red-packets-en.webp",
+        "ja": "zprintpro-red-packets-cartoon-red-packets-ja.webp"
+      }
+    },
+    "eco-red-packets": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-zh-hk.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-red-packets-eco-red-packets-zh-hk.webp",
+        "en": "zprintpro-red-packets-eco-red-packets-en.webp",
+        "ja": "zprintpro-red-packets-eco-red-packets-ja.webp"
+      }
+    },
+    "large-red-packets": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-zh-hk.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-red-packets-large-red-packets-zh-hk.webp",
+        "en": "zprintpro-red-packets-large-red-packets-en.webp",
+        "ja": "zprintpro-red-packets-large-red-packets-ja.webp"
+      }
+    },
+    "wall-calendars": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/wall-calendars.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-calendars-wall-calendars-zh-hk.webp",
+        "en": "zprintpro-calendars-wall-calendars-en.webp",
+        "ja": "zprintpro-calendars-wall-calendars-ja.webp"
+      }
+    },
+    "desk-calendars": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 4,
+        "ja": 0
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/desk-calendars.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-calendars-desk-calendars-zh-hk.webp",
+        "en": "zprintpro-calendars-desk-calendars-en.webp",
+        "ja": "zprintpro-calendars-desk-calendars-ja.webp"
+      }
+    },
+    "custom-calendars": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/custom-calendars.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-calendars-custom-calendars-zh-hk.webp",
+        "en": "zprintpro-calendars-custom-calendars-en.webp",
+        "ja": "zprintpro-calendars-custom-calendars-ja.webp"
+      }
+    },
+    "mini-calendars": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/mini-calendars.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-calendars-mini-calendars-zh-hk.webp",
+        "en": "zprintpro-calendars-mini-calendars-en.webp",
+        "ja": "zprintpro-calendars-mini-calendars-ja.webp"
+      }
+    },
+    "photo-frame-calendars": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/photo-frame-calendars.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-calendars-photo-frame-calendars-zh-hk.webp",
+        "en": "zprintpro-calendars-photo-frame-calendars-en.webp",
+        "ja": "zprintpro-calendars-photo-frame-calendars-ja.webp"
+      }
+    },
+    "magnetic-calendars": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/magnetic-calendars.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-calendars-magnetic-calendars-zh-hk.webp",
+        "en": "zprintpro-calendars-magnetic-calendars-en.webp",
+        "ja": "zprintpro-calendars-magnetic-calendars-ja.webp"
+      }
+    },
+    "pvc-menus": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/pvc-menus.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-menus-pvc-menus-zh-hk.webp",
+        "en": "zprintpro-menus-pvc-menus-en.webp",
+        "ja": "zprintpro-menus-pvc-menus-ja.webp"
+      }
+    },
+    "laminated-menus": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/laminated-menus.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-menus-laminated-menus-zh-hk.webp",
+        "en": "zprintpro-menus-laminated-menus-en.webp",
+        "ja": "zprintpro-menus-laminated-menus-ja.webp"
+      }
+    },
+    "hardcover-menus": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/hardcover-menus.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-menus-hardcover-menus-zh-hk.webp",
+        "en": "zprintpro-menus-hardcover-menus-en.webp",
+        "ja": "zprintpro-menus-hardcover-menus-ja.webp"
+      }
+    },
+    "drink-menus": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/drink-menus.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-menus-drink-menus-zh-hk.webp",
+        "en": "zprintpro-menus-drink-menus-en.webp",
+        "ja": "zprintpro-menus-drink-menus-ja.webp"
+      }
+    },
+    "outdoor-vinyl-banners": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/outdoor-vinyl-banners.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-banners-outdoor-vinyl-banners-zh-hk.webp",
+        "en": "zprintpro-banners-outdoor-vinyl-banners-en.webp",
+        "ja": "zprintpro-banners-outdoor-vinyl-banners-ja.webp"
+      }
+    },
+    "roll-up-banners": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/roll-up-banners.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-banners-roll-up-banners-zh-hk.webp",
+        "en": "zprintpro-banners-roll-up-banners-en.webp",
+        "ja": "zprintpro-banners-roll-up-banners-ja.webp"
+      }
+    },
+    "adhesive-banners": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 5,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/adhesive-banners.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-banners-adhesive-banners-zh-hk.webp",
+        "en": "zprintpro-banners-adhesive-banners-en.webp",
+        "ja": "zprintpro-banners-adhesive-banners-ja.webp"
+      }
+    },
+    "vehicle-wraps": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/vehicle-wraps.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-banners-vehicle-wraps-zh-hk.webp",
+        "en": "zprintpro-banners-vehicle-wraps-en.webp",
+        "ja": "zprintpro-banners-vehicle-wraps-ja.webp"
+      }
+    },
+    "catalog-printing": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 6,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/catalog-printing.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-books-catalog-printing-zh-hk.webp",
+        "en": "zprintpro-books-catalog-printing-en.webp",
+        "ja": "zprintpro-books-catalog-printing-ja.webp"
+      }
+    },
+    "saddle-stitch-booklets": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 3,
+        "en": 4,
+        "ja": 6
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/saddle-stitch-booklets.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-books-saddle-stitch-booklets-zh-hk.webp",
+        "en": "zprintpro-books-saddle-stitch-booklets-en.webp",
+        "ja": "zprintpro-books-saddle-stitch-booklets-ja.webp"
+      }
+    },
+    "perfect-bound-books": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 6,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/perfect-bound-books.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-books-perfect-bound-books-zh-hk.webp",
+        "en": "zprintpro-books-perfect-bound-books-en.webp",
+        "ja": "zprintpro-books-perfect-bound-books-ja.webp"
+      }
+    },
+    "hardcover-books": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 3,
+        "en": 3,
+        "ja": 3
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-books-hardcover-books-zh-hk.webp",
+        "en": "zprintpro-books-hardcover-books-en.webp",
+        "ja": "zprintpro-books-hardcover-books-ja.webp"
+      }
+    },
+    "spiral-notebooks": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/spiral-notebooks.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-books-spiral-notebooks-zh-hk.webp",
+        "en": "zprintpro-books-spiral-notebooks-en.webp",
+        "ja": "zprintpro-books-spiral-notebooks-ja.webp"
+      }
+    },
+    "business-envelopes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 6,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/business-envelopes.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-envelopes-business-envelopes-zh-hk.webp",
+        "en": "zprintpro-envelopes-business-envelopes-en.webp",
+        "ja": "zprintpro-envelopes-business-envelopes-ja.webp"
+      }
+    },
+    "colored-envelopes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 5,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/colored-envelopes.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-envelopes-colored-envelopes-zh-hk-1.webp",
+        "en": "zprintpro-envelopes-colored-envelopes-en-1.webp",
+        "ja": "zprintpro-envelopes-colored-envelopes-ja-1.webp"
+      }
+    },
+    "large-envelopes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 5,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/large-envelopes.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-envelopes-large-envelopes-zh-hk-1.webp",
+        "en": "zprintpro-envelopes-large-envelopes-en-1.webp",
+        "ja": "zprintpro-envelopes-large-envelopes-ja-1.webp"
+      }
+    },
+    "pearl-envelopes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 5,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/pearl-envelopes.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-envelopes-pearl-envelopes-zh-hk-1.webp",
+        "en": "zprintpro-envelopes-pearl-envelopes-en-1.webp",
+        "ja": "zprintpro-envelopes-pearl-envelopes-ja-1.webp"
+      }
+    },
+    "exercise-books": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 4,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/exercise-books.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-educational-exercise-books-zh-hk-1.webp",
+        "en": "zprintpro-educational-exercise-books-en-1.webp",
+        "ja": "zprintpro-educational-exercise-books-ja-1.webp"
+      }
+    },
+    "certificates": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 5,
+        "ja": 6
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/certificates.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-educational-certificates-zh-hk-1.webp",
+        "en": "zprintpro-educational-certificates-en-1.webp",
+        "ja": "zprintpro-educational-certificates-ja-1.webp"
+      }
+    },
+    "school-flyers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 5,
+        "ja": 6
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/school-flyers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-educational-school-flyers-zh-hk-1.webp",
+        "en": "zprintpro-educational-school-flyers-en-1.webp",
+        "ja": "zprintpro-educational-school-flyers-ja-1.webp"
+      }
+    },
+    "textbooks": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/textbooks.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-educational-textbooks-zh-hk-1.webp",
+        "en": "zprintpro-educational-textbooks-en-1.webp",
+        "ja": "zprintpro-educational-textbooks-ja-1.webp"
+      }
+    },
+    "graduation-yearbook": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 3,
+        "en": 3,
+        "ja": 3
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-educational-graduation-yearbook-zh-hk.webp",
+        "en": "zprintpro-educational-graduation-yearbook-en.webp",
+        "ja": "zprintpro-educational-graduation-yearbook-ja.webp"
+      }
+    },
+    "magnetic-closure-gift-box": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 4,
+        "ja": 6
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp",
+        "en": "zprintpro-packaging-magnetic-closure-gift-box-en-1.webp",
+        "ja": "zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp"
+      }
+    },
+    "electronics-packaging-box": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 5,
+        "ja": 6
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/cosmetic-boxes.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp",
+        "en": "zprintpro-packaging-electronics-packaging-box-en-1.webp",
+        "ja": "zprintpro-packaging-electronics-packaging-box-ja-1.webp"
+      }
+    },
+    "kraft-paper-packaging-box": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 6,
+        "ja": 6
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp",
+        "en": "zprintpro-packaging-kraft-paper-packaging-box-en-1.webp",
+        "ja": "zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp"
+      }
+    },
+    "gang-run-card-boxes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 3,
+        "ja": 3
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-gang-run-card-boxes-zh-hk.webp",
+        "en": "zprintpro-packaging-gang-run-card-boxes-en.webp",
+        "ja": "zprintpro-packaging-gang-run-card-boxes-ja.webp"
+      }
+    },
+    "white-card-boxes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-1.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-white-card-boxes-zh-hk-1.webp",
+        "en": "zprintpro-packaging-white-card-boxes-en-1.webp",
+        "ja": "zprintpro-packaging-white-card-boxes-ja-1.webp"
+      }
+    },
+    "corrugated-boxes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 5,
+        "en": 4,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-1.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-corrugated-boxes-zh-hk-1.webp",
+        "en": "zprintpro-packaging-corrugated-boxes-en-1.webp",
+        "ja": "zprintpro-packaging-corrugated-boxes-ja-1.webp"
+      }
+    },
+    "tuck-end-boxes": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 3,
+        "ja": 3
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp",
+        "en": "zprintpro-packaging-tuck-end-boxes-en-1.webp",
+        "ja": "zprintpro-packaging-tuck-end-boxes-ja-1.webp"
+      }
+    },
+    "fruit-food-label-stickers": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 6,
+        "en": 6,
+        "ja": 5
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "mixed",
+      "sample": "/images/products/transparent-stickers.jpg",
+      "seo_filename": {
+        "zh-hk": "zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp",
+        "en": "zprintpro-stickers-fruit-food-label-stickers-en-1.webp",
+        "ja": "zprintpro-stickers-fruit-food-label-stickers-ja-1.webp"
+      }
+    },
+    "foil-wedding-invitations": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-zh-hk-hero.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-wedding-invitations-foil-wedding-invitations-zh-hk-hero.webp",
+        "en": "zprintpro-wedding-invitations-foil-wedding-invitations-en-hero.webp",
+        "ja": "zprintpro-wedding-invitations-foil-wedding-invitations-ja-hero.webp"
+      }
+    },
+    "wedding-thank-you-cards": {
+      "entry_count": 1,
+      "has_ibl": true,
+      "ibl_counts": {
+        "zh-hk": 4,
+        "en": 4,
+        "ja": 4
+      },
+      "path_pattern": "byLocale",
+      "ibl_path_family": "seedream-webp",
+      "legacy_path_family": "seedream-webp",
+      "sample": "/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-zh-hk-hero.webp",
+      "seo_filename": {
+        "zh-hk": "zprintpro-wedding-invitations-wedding-thank-you-cards-zh-hk-hero.webp",
+        "en": "zprintpro-wedding-invitations-wedding-thank-you-cards-en-hero.webp",
+        "ja": "zprintpro-wedding-invitations-wedding-thank-you-cards-ja-hero.webp"
+      }
+    }
+  },
+  "render_chain": {
+    "v9_gate": "page.tsx L419 const isV9Pdp = (l: Locale): boolean => l===zh-hk||l===en||l===ja → 三语全 v9，旧分支为死代码",
+    "v9_entry": "page.tsx L439-440 {isV9Pdp(locale) ? <ProductPageV9 locale product …> : （死代码分支 L529-534 ProductGallery images={getProductImages(product,locale)} alt={getProductImageAlt(product,locale)}）}",
+    "gallery": "v9/ProductPageV9.tsx L286-288 galleryImages = getProductImages(product, locale).length ? getProductImages(product, locale) : [getProductMainImage(product, locale)]，L420-422 <GalleryV9 images={galleryImages} alt={getProductImageAlt(product, locale) || productTitle}>（2026-10-13 利是封批修复，commit 607591dc，此前 v9 旁路 alt=productTitle）",
+    "locale_image_selection": "src/lib/product-image.ts：getProductImages = imagesByLocale[locale]（非空优先）→ images[] → /images/placeholder.jpg；getProductMainImage = imagesByLocale[locale][0] → images[0] → placeholder。按 locale 选图为第一优先",
+    "other_consumers": [
+      "src/components/product/ProductCard.tsx L79 imagesByLocale?.[locale]?.[0] || images?.[0]",
+      "src/components/home/MobileCategoryEntry.tsx L89 imagesByLocale?.[locale]",
+      "app/api/merchant-feed/[locale]/route.ts L153 imagesByLocale?.[locale]?.[0]"
+    ],
+    "seo_image_component": "src/components/seo-image.tsx 存在（props 为 Record<Locale,string> src/alt，fallback locale→en→首个），但全仓 grep <SEOImage = 0 命中，不在 PDP 渲染链上",
+    "deploy_implication": "更新 imagesByLocale（3 locale 数组）即同时驱动 v9 gallery、列表卡、merchant feed；legacy images[0] 建议同批改指新 hero（Batch B/利是封批均做了该步），否则兜底链与 sitemap fallback 仍指旧图"
+  },
+  "alt_resolver": "products.ts getProductImageAlt(product, locale)（约 L7794）：先取 sku-seo-data.ts getSkuSeo(slug).imageAlt[locale]（过 isValidImageAlt）→ 否则降级短名+description 截断拼接（zh=香港X印刷…智印港 / en·ja=…ZprintPro）。与图片文件完全解耦：不读文件名、不读 EXIF；v28_5 内嵌 EXIF alt 不进渲染层（10-16 方案 §1 事实2，本轮不采纳 EXIF）",
+  "seo_images": {
+    "count": 82,
+    "count_note": "per-product seoImages 块 = 82（82 slug 全部各 1 块）；products.ts 全文 seoImages: { 裸出现 83 次（多出 1 次为同块重复字段，见 duplicate_block_seo）；类型声明 seoImages?: 1 次（L57）。10-16 策略文档「seoImages 83 块」= 裸出现计数口径，与本机解析一致",
+    "duplicate_block_seo": [
+      {
+        "slug": "fruit-food-label-stickers",
+        "seo_blocks": 2
+      }
+    ],
+    "bug_family": [
+      {
+        "slug": "premium-greeting-cards",
+        "en": "zprintpro-stickers-premium-stickers-en.webp",
+        "ja": "zprintpro-stickers-premium-stickers-ja.webp"
+      },
+      {
+        "slug": "thick-greeting-cards-400g",
+        "en": "zprintpro-stickers-thick-stickers-400g-en.webp",
+        "ja": "zprintpro-stickers-thick-stickers-400g-ja.webp"
+      },
+      {
+        "slug": "foil-greeting-cards",
+        "en": "zprintpro-stickers-foil-stickers-en.webp",
+        "ja": "zprintpro-stickers-foil-stickers-ja.webp"
+      },
+      {
+        "slug": "spot-uv-greeting-cards",
+        "en": "zprintpro-stickers-spot-uv-stickers-en.webp",
+        "ja": "zprintpro-stickers-spot-uv-stickers-ja.webp"
+      },
+      {
+        "slug": "matte-greeting-cards",
+        "en": "zprintpro-stickers-matte-stickers-en.webp",
+        "ja": "zprintpro-stickers-matte-stickers-ja.webp"
+      },
+      {
+        "slug": "rounded-corner-greeting-cards",
+        "en": "zprintpro-stickers-rounded-corner-cards-en.webp",
+        "ja": "zprintpro-stickers-rounded-corner-cards-ja.webp"
+      }
+    ],
+    "premium_greeting_cards_filename_bug": {
+      "en": "zprintpro-stickers-premium-stickers-en.webp",
+      "ja": "zprintpro-stickers-premium-stickers-ja.webp",
+      "zh_hk": "zprintpro-greeting-cards-premium-greeting-cards-zh-hk-hero.webp",
+      "evidence": "src/data/products.ts L202 seoImages.filename（zh-hk 为 greeting-cards 命名、en/ja 为 stickers 命名，v22 名片→贺卡改名残留）；BC 6 兄弟同族 bug 全中（rounded-corner 为 zprintpro-stickers-rounded-corner-cards-*），修复随 10-16 方案 §2.3 BC 批（10-27，随 §0.0 裁决）"
+    }
+  },
+  "sitemap": {
+    "cmd": "node scripts/generate-image-sitemap.js",
+    "inputs": "src/data/products.ts（4空格 slug 行定位 + \\n  { 到下一个 \\n  { 块切片；imagesByLocale 三语数组优先、images[] 兜底，仅收 webp/jpg/png）+ public/images/hero/<base>-<locale>.meta.json 侧车（HERO_BASE 16 类目 × 3 locale = 48 hero，slug→base 与 CategoryPageV9 V9_HERO_BASE 同源）",
+    "outputs": [
+      "public/sitemap-image.xml（BASE_URL=https://zprintpro.com，lastmod=运行日）"
+    ],
+    "auto_includes_v28_5": "conditional-yes：生成器无路径白名单，products.ts imagesByLocale/images 更新后重跑即收录新路径；但存在两处实测风险：① 当前 XML 与 products.ts 严重不同步（image:loc 987 / page loc 239；/images/v26/ 0 命中、premium-greeting-cards 0 命中；整页缺席 8 SKU = BC6 + foil-wedding-invitations + wedding-thank-you-cards，而这 8 个在 products.ts 全有 IBL）；② 生成器 imagesByLocale 正则 imagesByLocale:\\s*\\{([\\s\\S]*?)\\n\\s{4}\\} 依赖「\\n+4空白+}」收口，2 空格缩进块实际靠后续 4 空格子对象（如 alt: {）拖尾兜住，块结构变化即漏收（根因待证，未复现——复现需写 public/ 文件，本任务只读）",
+    "regen_assertion": "部署脚本 regen 后必须硬断言：image:loc = 新 IBL 总条目数（当前 1016）+ 48 hero，page loc = 82×3=246；不得沿用文档口径 1066/1068",
+    "current": {
+      "image_loc": 987,
+      "page_loc": 239,
+      "seedream_refs": 978,
+      "v26_refs": 0,
+      "v28_5_refs": 0,
+      "missing_page_slugs": [
+        "premium-greeting-cards",
+        "thick-greeting-cards-400g",
+        "foil-greeting-cards",
+        "spot-uv-greeting-cards",
+        "matte-greeting-cards",
+        "rounded-corner-greeting-cards",
+        "foil-wedding-invitations",
+        "wedding-thank-you-cards"
+      ]
+    },
+    "doc_baseline": "Batch B 后 82 产品/1066 图（4c4cacbb）；利是封批 1066→1068（06590c10）"
+  },
+  "indexnow": {
+    "cmd_auto": "python scripts/indexnow-auto-submit.py",
+    "cmd_oneoff": "node scripts/indexnow-submit.mjs",
+    "input_auto": "线上 https://zprintpro.com/sitemap.xml 全 URL，与 .hermes/secrets/indexnow-history.json diff 后仅提交新 URL；key 读 .hermes/secrets/indexnow-key.json（gitignored），keyLocation=https://zprintpro.com/b4743800634c73a56fc734e58d77a5d9.txt，POST https://api.indexnow.org/indexnow（Bing/Yandex/Seznam/Naver），log 落 .hermes/logs/indexnow-YYYY-MM-DD.json",
+    "reusability": "NOT-out-of-box：换图不改页面 URL，auto 脚本 diff 会判 no_new_urls，不会重提交已收录 PDP；indexnow-submit.mjs 为 9/2 硬编码 87 URL 一次性脚本（SKU 列表已过期）不可直接复用。复用路径 = README-indexnow.md 退路：同 key/keyLocation 手动 POST urlList=82 slug × 3 locale PDP（246 URL）或清 history 对应条目再跑 auto。近期先例：46e729ba（IndexNow 15 URL 200）、3fab203a、8e805a17 均走通"
+  },
+  "precedents": {
+    "batch_b": {
+      "commit": "4c4cacbb (2026-10-12)",
+      "form": "新增文件 + imagesByLocale/seoImages 新增 + legacy 修指",
+      "files": "36 webp 全部 Bin 0→N 新增至 public/images/products/seedream-webp/（保留 v28_5 原名 view 后缀：zprintpro-wedding-invitations-<slug>-<locale>-{hero,detail,multi-angle,variety}.webp，对应 WI-001→foil-wedding-invitations / WI-003→wedding-thank-you-cards / PC-001→place-cards 资产）",
+      "products_ts": "零图条目补 imagesByLocale+seoImages（per-locale alt：关键词|规格|品牌，zh=智印港 en/ja=ZprintPro）+ legacy images[] 修指 webp hero；PC-001 12 文件当时无条目引用（备用资产）；同 commit：blog per-locale hero 21、og:image 修复、Tier1 301 改指、sitemap-image regen（82 产品/1066 图）",
+      "note": "PC/WI 族里对应已退役 slug 的 v28_5 目录不部署（10-16 方案 §2.1 预检门①）"
+    },
+    "red_packets_1013": {
+      "commit": "06590c10 (2026-10-13)",
+      "form": "原位同名换血（in-place overwrite），非换路径",
+      "files": "6 SKU × 12 = 72 webp 同路径 Bin A→B 覆盖（public/images/products/seedream-webp/zprintpro-red-packets-<slug>-<locale>[-n|-view].webp，文件名保持 SEO 关键词命名，零路径漂移）；仅 cartoon ja-3/ja-4 为 Bin 0→N 新增（补视图）",
+      "products_ts": "cartoon images 数组 2→4（ja 补 -3/-4）+ legacy jpg→webp hero 修指 ×6；数组主体未改路径",
+      "alt": "72 文件 EXIF 重注 = products.ts seoAlt 逐字一致（GEO 公式：关键词簇|规格|MOQ100|品牌，zh=智印港 en/ja=ZprintPro，ja 紅包→ポチ袋）；alt 三源对照弃用 CSV（V22 改名疤痕污染）与 v28_5 ledger（双品牌+樣片+ISO 污染）",
+      "side_effects": "sitemap 1066→1068；同批修复 v9 GalleryV9 alt 旁路（607591dc，影响全站 PDP）",
+      "lesson": "与本次 v28_5 部署的关系：10-16 方案 §4 已裁定用「新 SEO 路径 /images/products/v28_5/<slug>/、旧图原位保留」→ 本波应套 Batch B 的「新增文件+数组改写」范式，而非利是封的原位覆盖范式；EXIF alt 仅作文件资产不进渲染层"
+    },
+    "roll_stickers": {
+      "commits": "f9935e4b (SKU 新建 10-12 13:02) + 5cc341b4 (图齐 10-12 16:1x)",
+      "form": "SKU 先行、图后补：11 张 seedream flash 生图新增至 public/images/products/seedream-webp/zprintpro-stickers-roll-stickers-{zh-hk,en,ja}-{1..4}.webp（zh 3 张），1200² <120KB + alt EXIF 内嵌（11/11 字节级验证）",
+      "products_ts": "imagesByLocale {zh-hk:3,en:4,ja:4} + seoImages filename/alt 三语 + legacy images[0]=zh-hk-1 webp",
+      "sitemap": "image-sitemap 重生成（commit 自述 roll 14 命中）",
+      "note": "证例：新图可用 -<n> 序号命名；三语张数可不等（zh 3 / en·ja 4）"
+    }
+  },
+  "gitignore": {
+    "zprintpro_en_us_images_ignored": true,
+    "evidence_ignored": ".gitignore L51 zprintpro-en-us-images/ ；git check-ignore -v zprintpro-en-us-images/v28_5_webp/x.webp → 命中 L51（exit 0）",
+    "public_images_products_ignored": false,
+    "evidence_not_ignored": "git check-ignore -v public/images/products/v28_5/x.webp → exit 1；…/roll-stickers/x.webp → exit 1",
+    "blocking_rules_for_v28_5": "none：全文（Node utf8 解码）无任何规则命中 public/images/products/v28_5/ 前缀；相邻易混淆规则仅 public/images/products-backup/（仅 backup 目录）与 .hermes/secrets/indexnow-key.json",
+    "method": "双方法：git check-ignore -v 实测 + 全文逐行人工复核"
+  },
+  "v28_5_source": {
+    "root": "zprintpro-en-us-images/v28_5_webp/",
+    "measured": {
+      "dirs": 93,
+      "webp_files": 1140
+    },
+    "reconcile": "实测 1140 webp = 91 SKU 目录 × 12 + 48 hero，与 10-16 方案/README 口径一致；93 目录 = 91 SKU + 2 辅助目录",
+    "deploy_path": "/images/products/v28_5/<slug>/<filename>",
+    "filter_gate": "部署白名单 = 93 目录 ∩ 82 存活 slug 取交集；PC/WI 族对应已退役 8 SKU 的目录与 fluorescent-stickers 目录不部署不入库（10-16 方案 §2.1）；roll-stickers 不在本库（10-12 已单独部署）",
+    "naming_convention": "既有两式：seedream-webp 式 zprintpro-<类目>-<slug>-<locale>[-<n|view>].webp；v26 式 /images/v26/<类目>/<变体>/<locale>/<view>.webp（BC6 现用）。v28_5 新路径为第三式 /images/products/v28_5/<slug>/<file>，三语 × hero/detail/variety/multi-angle"
+  },
+  "verification": {
+    "dual_method_checks": [
+      "退役 9 slug：Node 枚举 + grep 备选 + middleware 三方法一致 0 命中",
+      "products.ts 计数：本机 Node 解析（1031 处 /images/products/ + 78 处 /images/v26/）与 10-16 策略文档逐字一致",
+      "v28_5 规模：readdir 实测 1140 webp 与文档 91×12+48 一致",
+      "seoImages 83：裸出现计数与 10-16 文档一致，per-product 口径为 82（1 处同块重复 + 1 处类型声明）"
+    ],
+    "cross_checked": "premium filename bug 6/6 兄弟逐块摘录原文"
+  },
+  "open_questions": [
+    "generate-image-sitemap.js 对 2 空格 IBL 块的收口正则为何在 XML 里部分成立/部分失效（987 vs 预期 ~1064）——根因待证；复现需跑生成器写 public/，超出本任务只读边界，建议部署脚本作者用「改输出路径到临时目录」的 stdin 变体复现",
+    "第 83 个 seoImages 裸出现所在的重复字段块 slug 见 duplicate_block_seo（本次实测输出）"
+  ]
+}

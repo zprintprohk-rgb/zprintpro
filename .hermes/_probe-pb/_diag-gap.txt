@@ -1,0 +1,66 @@
+﻿file                                              M1(resolveLocale)  M2(en键直属)  差
+src/data/blog-data/en.json                        912               0             912
+    立即左键分布: content=672, DR=104, description=53, padding=50, category=33
+src/data/category-seo-content.ts                  12                0             12
+    立即左键分布: points=6, description=6
+src/data/buying-guides.ts                         38                38            0
+    立即左键分布: en=38
+src/data/sku-seo-data.ts                          28                4             24
+    立即左键分布: h1=10, description=8, keywords=6, en=4
+src/app/[locale]/payment-methods/page.tsx         16                0             16
+    立即左键分布: beneficiaryCn=13, bullets=3
+src/components/layout/Footer.tsx                  83                0             83
+    立即左键分布: productName=71, supportJA=12
+src/app/[locale]/category/[slug]/page.tsx         10                10            0
+    立即左键分布: en=10
+src/data/blog-posts.ts                            4                 4             0
+    立即左键分布: en=4
+
+合计: M1=1103  M2(仅 en 键直属)=56  差=1047
+
+=== 非 en 键 (resolveLocale 仍判 en) 的示例 ===
+-- src/data/blog-data/en.json
+   L5 ch=國 左键=description
+   L5 ch=際 左键=description
+   L5 ch=認 左键=description
+   L5 ch=證 左键=description
+   L5 ch=體 左键=description
+   L5 ch=系 左键=description
+   L8 ch=進 左键=content
+   L8 ch=口 左键=content
+-- src/data/category-seo-content.ts
+   L537 ch=满 左键=points
+   L537 ch=足 左键=points
+   L2108 ch=立 左键=description
+   L2108 ch=体 左键=description
+   L2109 ch=镂 左键=description
+   L2109 ch=空 左键=description
+   L2788 ch=镂 左键=points
+   L2788 ch=空 左键=points
+-- src/data/sku-seo-data.ts
+   L3482 ch=壓 左键=description
+   L3482 ch=紋 左键=description
+   L3482 ch=名 左键=description
+   L3482 ch=片 左键=description
+   L3483 ch=婚 左键=h1
+   L3483 ch=禮 左键=h1
+   L3483 ch=名 左键=h1
+   L3483 ch=片 左键=h1
+-- src/app/[locale]/payment-methods/page.tsx
+   L697 ch=深 左键=beneficiaryCn
+   L697 ch=圳 左键=beneficiaryCn
+   L697 ch=市 左键=beneficiaryCn
+   L697 ch=彩 左键=beneficiaryCn
+   L697 ch=龍 左键=beneficiaryCn
+   L697 ch=印 左键=beneficiaryCn
+   L697 ch=刷 左键=beneficiaryCn
+   L697 ch=包 左键=beneficiaryCn
+-- src/components/layout/Footer.tsx
+   L146 ch=中 左键=supportJA
+   L146 ch=国 左键=supportJA
+   L146 ch=本 左键=supportJA
+   L146 ch=土 左键=supportJA
+   L146 ch=時 左键=supportJA
+   L146 ch=間 左键=supportJA
+   L146 ch=対 左键=supportJA
+   L146 ch=応 左键=supportJA

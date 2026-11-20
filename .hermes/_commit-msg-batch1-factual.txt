@@ -1,0 +1,18 @@
+fix(data)+feat(gate): 批次1 事实错误级修复 — en 错误电话×36 + 虚构美国自提×36 + same-day-flyers 三语真值重排 (K3 2026-09-20 拍板「批次1开工」)
+
+P0-2 (en 共享模板, 36 槽):
+- 错误电话 +1 982 808 5133 → +86 198 8085 1334（真值 per AGENTS.md, 数字曾被错排为美区格式）
+- 虚构「Same-day USA pickup / 11 AM EST」→「DHL Express delivers to the lower 48 states in 3-5 days.」（本站无美国自提点, 深圳出货 DHL）
+
+P0-1 (same-day-flyers 三语槽位, 以 products.ts minQuantity=10 + price-data.generated.ts 为单源,
+     经 zh-hk/en/ja 三线上页面 hero 实测确证 HK$1.30 / $0.16 / ¥25 起):
+- zh-hk: title 100張起→10張起, HK$0.55→HK$1.30; desc 价同步
+- en: title/desc $0.95→$0.16, desc/body/h1 100 MOQ→10 MOQ; FAQ Q4 虚构 11am EST 自提→11 AM HKT 工厂速产+DHL 当日发运
+- ja: title/desc ¥125〜→¥25〜, 100枚→10枚×4; h1 英文整句→日文; keywords 去 HK$ 币种污染;
+  faq 答槽繁体→日文; imageAlt 100枚〜→10枚〜; en imageAlt 清贺卡模板残留
+- products-content.ts: en 长文 Size/MOQ 表 100→10, 单价 $1.00/$0.70→from $0.16（与 hero 一致）
+
+新 title 当量: zh-hk 50 / en 55 / ja 54 全在 50-57 目标区 ✓
+审计: audit-sku-locale 四项全 0 ✓; census byBand 258/25/17 不变; tsc 3 错为 quote-engine 存量(本批未触碰)
+脚本: scripts/fix-batch1-factual-errors.mjs（21 组替换计数断言, 不符 exit 2; 备份 .hermes/_bak-batch1-20260920/）
+范围纪律: ja 物流话术(全国送料無料/LINE ×62-72) 属批次5 待 K3 拍板, 本批未动

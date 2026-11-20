@@ -1,0 +1,36 @@
+﻿REPORT_CURATED=[]
+=== price-data 數值零改動 比對 ===
+before: .hermes/_bak-pricedata-20260918/price-data.generated.ts.before
+after : src/lib/price-data.generated.ts
+
+  PASS  (1) 數值字面量 token 序列 (語言字串抽空後): 3137 個, 差量 = 0
+  PASS  (1b) 含語言字串全文數值 token: before=4898 after=4925 (差異僅來自譯文中新增的漢字/假名量詞)
+  PASS  (2) 結構 (語言字串抽空後): 深度比對完全相同 (paths=7638)
+  PASS  (4) 實際差異路徑 358 條, 全部落在 productName.* / configs[].label.* (非語言欄位差量 = 0)
+  PASS  (5) UNIT_PRICE_ANCHORS: 深度比對完全相同 (paths=504)
+  PASS  (6) tiers 數值指紋: slugs=18 configs=114 tiers=636 全部數值逐項相同 (qty Σ=1465020 HKD Σ=1132682 USD Σ=145030 JPY Σ=22653640)
+  PASS  (7) after 內容 = i18n 管線輸出: 358 條全部可歸因 (其中 JSON 策展值 0 條)
+  PASS  (7b) 原文數值/尺寸 token 逐條存活: 1187 個含數字 token 全部原樣出現在新譯文中 (遺失/改寫 = 0, 新增可讀性空白 1350 個)
+  PASS  (7d) 譯文內自帶數字的術語 (經人工確認為名稱內符號, 非價格數字): 单粉卡→en:"C1S art card"/ja:"コートボール"
+
+  差異明細 (僅語言字串, 前 6 條):
+   - .gang-run-card-boxes.configs[0].label.zh-hk
+     before: 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒
+     after : 拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-普通扣底盒-90X60X30-單面-模切[異形],覆膜[覆光膜],黏吊口,黏盒
+   - .gang-run-card-boxes.configs[0].label.en
+     before: 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒
+     after : Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Standard lock-bottom box-90X60X30-Single-sid
+   - .gang-run-card-boxes.configs[0].label.ja
+     before: 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒
+     after : 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-標準ロック底箱-90X60X30-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口,のり付け
+   - .gang-run-card-boxes.configs[1].label.zh-hk
+     before: 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘
+     after : 拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-雙插盒-100X80X120-單面-模切[異形],覆膜[覆光膜],燙金[亮黃金][10x10],UV[10x10],貼膠片[0.15][50x30],黏吊口,黏
+   - .gang-run-card-boxes.configs[1].label.en
+     before: 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘
+     after : Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Double tuck-end box-100X80X120-Single-sided-
+   - .gang-run-card-boxes.configs[1].label.ja
+     before: 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘
+     after : 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-差し込み式ボックス-100X80X120-片面-型抜き[異形],ラミネート[光沢ラミネート],箔押し[ブライトゴールド][10x10],UV[1
+
+結果: PASS — 數值差量 = 0, 結構差量 = 0, 非語言欄位差量 = 0

@@ -1,0 +1,48 @@
+fix(blog): 清两个挂账 — 注册 3 条未接上的 BlogPostMeta (9 页 title/H1=slug) + 快速答案块跨语系识别 (K3 2026-09-18 裁决)
+
+队列依据: v10 §四 串行交付纪律 — 队列 A #3 验收发现的 2 项挂账, 按 K3 2026-09-18 拍板清完后再开第 2 篇
+          (K3 裁决: 挂账 1 = 选项 a「注册」; 挂账 2 = 选项 i「只对齐直译等价位」)
+
+── 挂账 1: 未注册 meta → 线上 9 页 title/H1 = slug (P0) ──
+根因:
+  blog-posts.ts 有 3 条 BlogPostMeta 已完整声明 (title/excerpt 三语齐备), 但从未加入
+  `export const blogPosts` 数组; getBlogPostMetaBySlug() 只查该数组 (L2190) ⇒ 恒 undefined;
+  其 blog-data JSON 条目只有 content (无 title/description), 亦无内联 legacyPost
+  ⇒ page.tsx L819 title 落到最后一档 = slug 本身
+线上实证 (2026-09-18 探针, 9 页全部命中):
+  wedding-invitation-pricing-guide / wedding-invitation-cost-guide / wedding-table-card-printing-guide
+  × zh-hk/en/ja → <title> 与 <h1> 均为 slug, 且无 meta description
+修复 (K3 选项 a):
+  3 条常量加入 blogPosts 数组 (置于婚慶簇 lpWeddingEnvelope 之后, 同簇归类)
+  ★ 零 sitemap churn: 实测这 3 个 slug 在 public/sitemap*.xml 中已有 30 处命中,
+    与已在数组的 wedding-favor-bag / wedding-red-packet 完全相同 —— 即这些 URL 早已在
+    sitemap 中且已向 Google 暴露 slug 标题, 注册后 sitemap 无任何变化
+验收:
+  注册后 9 组合全部解析出正确 title + description, 且品牌分层正确
+    (zh-hk 结尾「智印港」/ en·ja 结尾「ZprintPro」)
+  title 样例: 喜帖價格指南 2026 · 50-500 個中式西式婚禮請柬 4 檔 | 智印港
+              Wedding Invitation Pricing Guide 2026: 50-500 … | ZprintPro
+              結婚式招待状 価格ガイド 2026：50〜500個の中華式 | ZprintPro
+
+── 挂账 2: 快速答案块识别硬编码中文 → en/ja 无 AEO 样式 ──
+根因:
+  page.tsx L813 v5.1 预处理正则只匹配中文字面「快速答案」⇒ en/ja 的答案块拿不到
+  qa-answer class (线上实测: zh-hk 6 / en 0 / ja 0), 即琥珀底 + ⚡ 徽标样式缺失
+修复 (K3 选项 i, 仅直译等价位):
+  正则可选组补 (?:快速答案|Quick [Aa]nswer|クイック回答)
+  实测变体枚举: en「Quick Answer」18 + 「Quick answer」6 / ja「クイック回答」15 / zh-hk「快速答案」
+  范围外 (经 K3 裁决不纳入): en「Answer Nugget」9 / ja「答え nugget」9 / zh-hk「答案金塊」
+
+── 门禁补齐 (DoD 铁律: No fix without a rule) ──
+scripts/guards/meta-description-guard.js 新增两条 red 规则:
+  规则 E META_UNREGISTERED       : 凡 `const X: BlogPostMeta = { slug: … }` 声明即必须出现在
+                                   blogPosts 数组; 差集即报 (拦下本次 9 页 slug 标题根因)
+  规则 F BLOG_QA_ANSWER_LOCALE   : 快速答案块识别正则必须同时含 zh-hk/en/ja 三语直译标记
+scripts/test-meta-description-guard.js 扩至 11 用例 11/11 PASS
+  (新增 E 正负 2 例 + F 正负 3 例, 含「原事故写法必命中」与「修复后写法不得误报」)
+
+验收:
+  门童汇总 red 51 = 基线 (未新增) | 门童 #20 存量基线 120 不变, 0 新增
+  tsc 54 = 54 (blog-posts.ts 无 @ts-nocheck, 本次改动受类型闸门真实覆盖)
+  esbuild 语法校验 4/4 文件 OK
+  规则 E/F 对当前源码 0 命中

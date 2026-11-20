@@ -1,0 +1,3 @@
+test bytes: ['0x30', '0x20', '0x4d', '0x4f', '0x51']
+test repr: "en: 'Custom Calendars Free Shipping · 100 MOQ"
+len: 45

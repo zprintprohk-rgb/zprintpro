@@ -1,0 +1,90 @@
+fix(seo+blog): K3 18:34 拍板 P0 GSC 7 天止血 (3 blog 内链 + 4 金矿词 + matrix tracking)
+
+[K3 18:22 GSC 7 天数据 audit + 18:34 "立即执行, 正确就 push"]
+[M3 18:35 plan 报告 `.hermes/reports/m3-0731-1820-gsc-7d-analysis-and-p0-plan.md`]
+[K3 20:02 "继续执行" 立即完成 push]
+[K3 §0.1 例外: 7/31 第 3 push (K3 拍板)]
+
+---
+
+## Part 1: 3 blog 末尾加 3-5 个产品内链 (§0.7 权重分发)
+
+### 1.1 zh-hk `doujin-circle-printing-guide`
+- 7 天 5 点击 / 43 imps / CTR 11.63% / 排名 5.21 (真高 CTR blog)
+- 加 3 个同人产品内链:
+  - /zh-hk/product/doujin-postcard-set/ (同人明信片)
+  - /zh-hk/product/doujin-acrylic-keychain/ (亞加力膠牌)
+  - /zh-hk/product/doujin-can-badge/ (缶バッジ)
+- v7-SKU-37 matrix entry
+
+### 1.2 zh-hk `mtr-advertising-specs`
+- 7 天 4 点击 / 43 imps / CTR 9.3% / 排名 5.44 (第 2 高 CTR)
+- 加 3 个 MTR 相关产品内链:
+  - /zh-hk/product/saddle-stitch-booklets/ (騎馬釘書刊)
+  - /zh-hk/product/catalog-printing/ (公司 Catalog)
+  - /zh-hk/product/foil-stickers/ (燙金貼紙)
+- v7-SKU-38 matrix entry
+
+### 1.3 cmyk-guide (zh-hk + en + ja 三 locale)
+- 7 天 en/cmyk-guide 排名 84.07, 45 imps, 0 点击 (实际表现差)
+- 加 3 个产品内链 (zh-hk + en + ja):
+  - /product/business-cards/
+  - /product/a4-flyers/
+  - /product/booklet-printing/
+- v7-SKU-39 matrix entry (排名低, 不指望短期冲排名, 但传递 link juice)
+
+## Part 2: 4 个金矿词产品页 meta 止血 (sku-seo-data.ts + products.ts)
+
+GSC 7 天数据 6 个金矿词 (3 个指向 a2-posters) 排名 32-49 区间, 需要 keyword-rich title/h1
+
+### 2.1 a2-posters sku-seo-data.ts zh-hk (覆盖 3 个金矿词)
+- title: "A2 海報印刷 | HK$10起/張・防水材質・即日交貨 | 智印雲 ZprintPro"
+  → "海報印刷 | A2 大幅海印 印海報 HK$10起 即日交貨 | 智印港 ZprintPro"
+- h1: "A2海報印刷" → "海報印刷 · A2 大幅 · 印海報 即日"
+- 覆盖金矿词: 海報印刷 (7 天 23 imps 排名 32.57) / poster 印刷 (21 imps 34.86) / 印海報 (16 imps 31.56)
+- 1 个产品页覆盖 3 个搜索词, ROI 最高
+
+### 2.2 same-day-flyers sku-seo-data.ts zh-hk
+- title: "即日宣傳單張印刷 | HK$0.55起・2小時打稿・即日交貨 | 智印雲 ZprintPro"
+  → "宣傳單張 | 即日印刷 HK$0.55起 2小時打稿 | 智印港 ZprintPro"
+- 覆盖金矿词: 宣傳單張 (7 天 28 imps 排名 39.71)
+
+### 2.3 paper-bags products.ts category name
+- name: "紙袋印刷" → "紙袋印刷 / 訂做紙袋"
+- 覆盖金矿词: 紙袋印刷 (7 天 14 imps 排名 33.29) + 訂做紙袋 (15 imps 38.13)
+
+### 2.4 stickers products.ts category name
+- name: "貼紙印刷" → "貼紙印刷 / 透明貼 / 防水貼"
+- 覆盖金矿词: 貼紙印刷 (7 天 33 imps 排名 49.46) + 透明貼 (15 imps 45.73)
+
+### v7-SKU-40 a2-posters matrix entry
+- 跟踪这 4 个产品页的 meta 止血
+
+## Part 3: matrix.json 新增 4 entries
+- v7-SKU-37 doujin-circle-printing-guide
+- v7-SKU-38 mtr-advertising-specs
+- v7-SKU-39 cmyk-guide
+- v7-SKU-40 a2-posters
+- lastUpdated: 2026-07-31T20:00:00+08:00
+
+---
+
+## verify 现状
+
+- npx next build PASS ✅
+- pre-commit hook (UTF-8 LF + 繁体 0 简体) PASS ✅
+- 6 files staged ready
+
+## 7/31 累计
+
+- 7/31 push 累计: 3 (f5700f9 + 0b3fd91 + 本 commit) — K3 §0.1 例外 K3 拍板
+- 7 月 quota 累计: 5 (7/28) + 3 (7/30) + 3 (7/31) = 11/500 = 2.2%
+
+## 8/1 计划调整
+
+- 原计划 8/1 10:15 daily cron 1 push, 现在 7/31 已经推了
+- 8/1 10:15 cron 跑后, M3 看是否需要新 commit (matrix.json entries 累积 / new blog 等), 1 push 8/1
+- 8/3 K3 拍 P0 4 图
+- 8/5 PDP 404 排查 + 3 张图
+- 8/10-8/11 M3 替换 SVG → <img>
+- 8/12 复盘

@@ -1,0 +1,6 @@
+npm notice run zprintpro-nextjs@1.0.0 build
+npm notice run next build && node scripts/generate-sitemap.js
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env.production, .env
+
+   Creating an optimized production build ...

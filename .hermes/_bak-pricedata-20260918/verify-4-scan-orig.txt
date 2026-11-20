@@ -1,0 +1,50 @@
+﻿掃描欄位數: 396
+
+=== A) en / ja 鍵位含漢字 (語言污染) ===
+  命中欄位: 131 | 受影響 SKU: 18 個
+    30  gang-run-card-boxes
+    18  custom-flyers
+    15  white-card-boxes
+    14  a2-posters
+    11  corrugated-boxes
+     6  waterproof-stickers
+     6  digital-stickers
+     5  folded-leaflets
+     5  special-fold-leaflets
+     4  white-card-bags
+     3  tuck-end-boxes
+     2  a5-flyers
+     2  a4-flyers
+     2  same-day-flyers
+     2  eco-flyers
+     2  saddle-stitch-booklets
+     2  perfect-bound-books
+     2  exercise-books
+
+  前 14 條明細:
+   [ja] gang-run-card-boxes productName@L11 -> 合版白カードボックス
+   [ja] gang-run-card-boxes label@L19 -> 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-標準ロック底箱-90X60X30-片面-型抜き[異形],ラミネー
+   [ja] gang-run-card-boxes label@L63 -> 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-差し込み式ボックス-100X80X120-片面-型抜き[異形],
+   [ja] gang-run-card-boxes label@L107 -> 合版カードボックス-400gコートボール(345g超高嵩)[400g]-差し込み式ボックス-100X80X120-片面-型抜き[異形],ラミ
+   [ja] gang-run-card-boxes label@L151 -> 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-60X40X20-片面-型抜き[異形],ラミネート[光
+   [ja] gang-run-card-boxes label@L195 -> 合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-60X40X20-片面-型抜き[異形],ラミネート[光沢ラ
+   [ja] gang-run-card-boxes label@L232 -> 合版カードボックス-銀カード（375g）[375g]-飛行機箱-60X40X20-片面-型抜き[異形],吊り下げ口
+   [ja] gang-run-card-boxes label@L269 -> 合版カードボックス-ホログラム銀カード（375g）[375g]-飛行機箱-60X40X20-片面-型抜き[異形],吊り下げ口
+   [ja] gang-run-card-boxes label@L306 -> 合版カードボックス-ホログラム銀カード（375g）[375g]-飛行機箱-120X80X40-片面-[白インク印刷][リバースUV]-型抜き
+   [ja] gang-run-card-boxes label@L343 -> 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-120X80X40-片面-型抜き[異形],ラミネート[
+   [ja] gang-run-card-boxes label@L373 -> 合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-120X80X40-片面-型抜き[異形],ラミネート[光沢
+   [ja] gang-run-card-boxes label@L410 -> 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-150X100X60-片面-型抜き[異形],ラミネート
+   [ja] gang-run-card-boxes label@L447 -> 合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-150X100X60-片面-型抜き[異形],ラミネート[光
+   [ja] gang-run-card-boxes label@L484 -> 合版カードボックス-銀カード（375g）[375g]-飛行機箱-150X100X60-片面-[白インク印刷][リバースUV]-型抜き[異形]
+
+=== B) zh-hk 鍵位含簡體字 ===
+  命中欄位: 4 | 受影響 SKU: 2
+   waterproof-stickers label@L2337 -> HP indigo 6K數碼標籤-格仔底紙/銅板（熱熔膠）-105X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料
+   waterproof-stickers label@L2513 -> 卷裝/平裝標籤-格仔底紙/銅板（熱熔膠）-150X100-單面-模切(啤)[異形],卷裝[卷芯直徑4cm][出標方向橫版左出標][每卷張數1
+   digital-stickers label@L2540 -> HP indigo 6K數碼標籤-格仔底紙/銅板（熱熔膠）-105X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料
+   digital-stickers label@L2716 -> 卷裝/平裝標籤-格仔底紙/銅板（熱熔膠）-150X100-單面-模切(啤)[異形],卷裝[卷芯直徑4cm][出標方向橫版左出標][每卷張數1
+
+=== C) ja 鍵位有漢字但零假名 (疑似直貼中文) ===
+  命中欄位: 0
+
+明細已寫: .hermes/_probe-pb/price-data-pollution-report.json

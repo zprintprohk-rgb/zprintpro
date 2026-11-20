@@ -1,0 +1,243 @@
+{
+ "at": "2026-09-13T10:11:31.936Z",
+ "windowStart": "2026-08-26",
+ "exposureFiles": 145,
+ "hits": 3444,
+ "bySev": {
+  "orange": 1487,
+  "red": 457,
+  "yellow": 1500
+ },
+ "byRule": {
+  "orange/CRED_ISO_9001": 369,
+  "orange/CRED_FSC_C123456": 27,
+  "orange/CRED_1000_PLUS": 125,
+  "orange/CRED_4_PLUS_NUMBER": 637,
+  "orange/CRED_HEIDELBERG": 191,
+  "orange/CRED_INTL_TOP": 1,
+  "orange/CRED_15_YEARS": 1,
+  "orange/CRED_SELF_FACTORY": 53,
+  "orange/PHONE_NON_WHITELIST": 1,
+  "red/BRAND_LOCALE_MISMATCH": 319,
+  "orange/BRAND_JA_ALTERNATE": 67,
+  "red/BRAND_DOUBLE": 63,
+  "red/I18N_FOOD_BOXES_CROSS": 2,
+  "red/I18N_POLLUTION": 57,
+  "yellow/I18N_CURRENCY": 71,
+  "yellow/I18N_META_LENGTH": 255,
+  "yellow/I18N_TITLE_LENGTH": 305,
+  "red/SOP10_CERT_NO": 14,
+  "yellow/SOP10_4_PLUS_NUMBER": 637,
+  "yellow/SOP10_HEIDELBERG_6_1": 5,
+  "yellow/SOP10_INTL_TOP": 1,
+  "yellow/SOP10_15_YEARS": 1,
+  "red/ENTITY_FULL_NAME_ZH": 2,
+  "orange/COUNT_NO_SOURCE": 10,
+  "yellow/COUNT_NO_CALIBRATION": 15,
+  "orange/COUNT_NO_4_LOCALE": 5,
+  "yellow/GSC_NO_SOURCE": 112,
+  "yellow/GSC_NO_WORD_LEVEL_EVIDENCE": 98
+ },
+ "sample": [
+  {
+   "guard": "brand",
+   "file": "src/data/blog-data/ja.json",
+   "line": 104,
+   "match": "智印港 (locale=ja)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/data/blog-data/ja.json",
+   "line": 540,
+   "match": "智印港 (locale=ja)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 334,
+   "match": "ZprintPro (locale=zh-hk)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 348,
+   "match": "ZprintPro (locale=zh-hk)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/data/products.ts",
+   "line": 4745,
+   "match": "智印港 ZprintPro",
+   "severity": "red",
+   "ruleId": "BRAND_DOUBLE",
+   "ruleName": "双品牌同时出现",
+   "fix": "按 locale 单品牌分层: zh-hk=智印港 / en=ZprintPro / ja=ZprintPro (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/data/products.ts",
+   "line": 7380,
+   "match": "智印港 (locale=ja)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/app/[locale]/about/page.tsx",
+   "line": 38,
+   "match": "ZprintPro (locale=zh-hk)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 158,
+   "match": "ZprintPro (locale=zh-hk)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 305,
+   "match": "ZprintPro (locale=zh-hk)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 1162,
+   "match": "智印港 (locale=ja)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/components/layout/Footer.tsx",
+   "line": 266,
+   "match": "智印港 (locale=ja)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/data/sku-seo-data.ts",
+   "line": 1528,
+   "match": "智印港 (locale=ja)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/data/sku-seo-data.ts",
+   "line": 3028,
+   "match": "智印港 (locale=ja)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/app/[locale]/case-studies/page.tsx",
+   "line": 33,
+   "match": "智印港 ZprintPro",
+   "severity": "red",
+   "ruleId": "BRAND_DOUBLE",
+   "ruleName": "双品牌同时出现",
+   "fix": "按 locale 单品牌分层: zh-hk=智印港 / en=ZprintPro / ja=ZprintPro (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx",
+   "line": 307,
+   "match": "智印港 (locale=ja)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/data/buying-guides.ts",
+   "line": 139,
+   "match": "智印港 (locale=ja)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "src/data/pillar-content.ts",
+   "line": 60,
+   "match": "智印港 (locale=ja)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "brand",
+   "file": "GSC数据/gsc-fresh-2026-09-03.json",
+   "line": 3561,
+   "match": "智印港 (locale=en)",
+   "severity": "red",
+   "ruleId": "BRAND_LOCALE_MISMATCH",
+   "ruleName": "跨语言品牌混用",
+   "fix": "按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)"
+  },
+  {
+   "guard": "i18n",
+   "file": "src/lib/price-data.generated.ts",
+   "line": 4223,
+   "match": "开 (locale=zh-hk)",
+   "severity": "red",
+   "ruleId": "I18N_POLLUTION",
+   "ruleName": "zh-hk/ja 文本内简体字残留",
+   "fix": "改繁体字 (per §0.29 v3.1 跨语言污染零容忍)"
+  },
+  {
+   "guard": "i18n",
+   "file": "src/lib/price-data.generated.ts",
+   "line": 4663,
+   "match": "页 (locale=zh-hk)",
+   "severity": "red",
+   "ruleId": "I18N_POLLUTION",
+   "ruleName": "zh-hk/ja 文本内简体字残留",
+   "fix": "改繁体字 (per §0.29 v3.1 跨语言污染零容忍)"
+  }
+ ]
+}

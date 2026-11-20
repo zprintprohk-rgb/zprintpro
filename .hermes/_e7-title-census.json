@@ -1,0 +1,3566 @@
+{
+ "all": [
+  {
+   "loc": "zh-hk",
+   "slug": "company-intro",
+   "title": "智印港印刷公司簡介：專業設備與一站式印刷服務",
+   "equiv": 44,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "hong-kong-printing-guide",
+   "title": "香港印刷公司選擇完全指南：港島、九龍、新界哪裡最可靠？",
+   "equiv": 54,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "design-file-specs",
+   "title": "印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂",
+   "equiv": 50,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "brand-materials-checklist",
+   "title": "企業品牌物料清單：從貼紙到展架的全套印刷方案",
+   "equiv": 44,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "mtr-advertising-specs",
+   "title": "港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南",
+   "equiv": 54,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "sticker-guide",
+   "title": "香港貼紙印刷完全指南：材質、工藝與應用場景详解",
+   "equiv": 46,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "sticker-design",
+   "title": "貼紙設計的10個黃金法則：打造令人難忘的品牌形象",
+   "equiv": 46,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "packaging-trends",
+   "title": "2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出",
+   "equiv": 46,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "cmyk-guide",
+   "title": "CMYK vs RGB：印刷色彩模式完全詳解",
+   "equiv": 33,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "paper-materials",
+   "title": "印刷紙材選擇指南：從銅版紙到特種紙",
+   "equiv": 34,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "eco-printing",
+   "title": "環保印刷：企業ESG與可持續包裝的未來",
+   "equiv": 35,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "flyer-printing-guide",
+   "title": "香港傳單印刷完全指南：A4/A5 尺寸、紙質選擇與派發策略",
+   "equiv": 52,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "food-packaging-printing-guide",
+   "title": "食品包裝印刷完全指南：材質、安全認證與設計實務",
+   "equiv": 46,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "paper-bag-printing-guide",
+   "title": "香港紙袋印刷完全指南：材質、尺寸、手挽與設計趨勢",
+   "equiv": 48,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "poster-printing-guide",
+   "title": "香港海報印刷完全指南：尺寸、紙質、工藝與設計要點 | 智印港",
+   "equiv": 57,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "restaurant-opening-flyer-printing-guide",
+   "title": "餐廳開業傳單印刷指南 · 香港餐飲旺季速遞方案 | 智印港",
+   "equiv": 52,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "pet-food-sticker-printing-guide",
+   "title": "香港寵物食品品牌貼紙印刷指南 · 防水防油 FDA 認證 | 智印港",
+   "equiv": 57,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "real-estate-brochure-box-printing-guide",
+   "title": "香港新盤樓書印刷指南 · 豪宅資料匣與硬皮畫冊定製 | 智印港",
+   "equiv": 56,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "pharmaceutical-label-printing-guide",
+   "title": "香港藥品標籤印刷指南 · GMP 認證，防偽追溯碼定製 | 智印港",
+   "equiv": 56,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "jewellery-shopping-bag-printing-guide",
+   "title": "香港珠寶鐘錶品牌紙袋印刷指南 · 黑卡燙金，絲帶手挽定製 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "cosmetics-packaging-box-printing-guide",
+   "title": "化妝品包裝盒印刷指南 · 護膚品牌結構與材質全攻略 | 智印港",
+   "equiv": 56,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "tea-beverage-gift-box-printing-guide",
+   "title": "香港茶飲品牌禮盒印刷指南 · 手搖、中茶、茶葉電商適用 | 智印港",
+   "equiv": 60,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "retail-shop-poster-printing-guide",
+   "title": "香港零售精品店海報印刷指南 · 2026 開窗季檔期必備 | 智印港",
+   "equiv": 57,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "restaurant-menu-printing-guide",
+   "title": "香港餐廳菜單印刷指南 · 2026 餐飲旺季防水防油首選 | 智印港",
+   "equiv": 57,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "wedding-red-packet-printing-guide",
+   "title": "香港婚禮利是封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印港",
+   "equiv": 55,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "product-label-printing-guide",
+   "title": "跨境電商產品標籤印刷指南 · GS1 條碼，FDA 認證 SKU 標貼 | 智印港",
+   "equiv": 63,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "graduation-yearbook-printing-guide",
+   "title": "畢業紀念冊印刷指南 · 香港中學大學院校定制方案 | 智印港",
+   "equiv": 54,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "ip-character-sticker-printing-guide",
+   "title": "文創IP角色造型貼紙印刷指南 · 香港同人品牌模切定制方案 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "trade-show-banner-printing-guide",
+   "title": "香港貿易展易拉寶印刷指南 · 跨境電商品牌展會佈局 | 智印港",
+   "equiv": 56,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "wedding-invitation-envelope-printing-guide",
+   "title": "香港婚禮邀請信封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印港",
+   "equiv": 57,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "doujin-circle-printing-guide",
+   "title": "同人誌 / 同人周邊印刷指南 · 香港創作者小批量定製 | 智印港",
+   "equiv": 57,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "hotel-amenity-sticker-printing-guide",
+   "title": "酒店民宿迎賓貼紙印刷指南 · 行李標籤 / 房卡套 / 客用品定製 | 智印港",
+   "equiv": 66,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "finance-summit-gift-bag-printing-guide",
+   "title": "香港金融峰會禮品袋印刷指南 · 銀行財富管理活動贊助商紙袋定製 | 智印港",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "marathon-event-poster-printing-guide",
+   "title": "馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包，起跑拱門 | 智印港",
+   "equiv": 61,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "car-dealership-amenity-sticker-printing-guide",
+   "title": "汽車 4S 店 / 二手車行貼紙印刷指南 · 防水 PVC 試駕車身貼，服務提醒 | 智印港",
+   "equiv": 74,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "hotel-keycard-sleeve-printing-guide",
+   "title": "酒店房卡套，行李牌印刷指南 · 軟觸啞面，燙金 logo 客用品包裝 | 智印港",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "baby-product-label-sticker-printing-guide",
+   "title": "母嬰品牌貼紙印刷指南 · 嬰兒食品級安全標籤定製 | 智印港",
+   "equiv": 54,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "ecommerce-shipping-bag-printing-guide",
+   "title": "跨境電商快遞袋印刷指南 · 防水破壞袋，全球派送 | 智印港",
+   "equiv": 54,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "media-merchandise-box-printing-guide",
+   "title": "影視IP周邊禮盒印刷指南 · 香港品牌影迷集體回憶定製 | 智印港",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "thick-paper-flyer-printing-restaurant-takeout-guide",
+   "title": "厚紙傳單印刷指南 · 香港餐廳外賣單張厚紙選材攻略 | 智印港",
+   "equiv": 56,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "magnetic-closure-gift-box-ecommerce-brand-guide",
+   "title": "磁吸禮盒定制指南 · 跨境電商品牌升級包裝方案 | 智印港",
+   "equiv": 52,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "folding-box-cosmetics-brand-eco-friendly-guide",
+   "title": "折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印港",
+   "equiv": 50,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "religious-ceremony-printing-guide",
+   "title": "香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定製 | 智印港",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "industrial-nameplate-printing-guide",
+   "title": "工業設備銘牌 / GHS 危險標籤印刷指南 · UL 認證，ANSI Z535 標準 | 智印港",
+   "equiv": 70,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "construction-material-sample-book-printing-guide",
+   "title": "建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定製 | 智印港",
+   "equiv": 60,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "baby-food-packaging-box-printing-guide",
+   "title": "香港嬰幼兒食品包裝盒印刷指南 · 奶粉輔食米糊安全包裝定製 | 智印港",
+   "equiv": 64,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "real-estate-flyer-printing-guide",
+   "title": "香港房地產銷售單張印刷指南 · 新盤樓書派發 A4 摺頁定製 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "medical-device-packaging-box-guide",
+   "title": "醫療器械包裝盒印刷指南 · ISO 13485，滅菌袋定製 | 智印港",
+   "equiv": 55,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "auto-parts-shopping-bag-printing-guide",
+   "title": "汽車 4S 店售後服務紙袋印刷指南 · 維修保養零件包裝定製 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "sports-merchandise-gift-box-printing-guide",
+   "title": "體育賽事紀念禮盒印刷指南 · 球隊周邊收藏版定製 | 智印港",
+   "equiv": 54,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "custom-card-boxes-small-batch-usa",
+   "title": "小批量彩盒訂製:跨境電商賣家免刀模費方案 | 智印港",
+   "equiv": 48,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "cosmetic-card-boxes-gang-run-japan",
+   "title": "美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港",
+   "equiv": 50,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "financial-institution-gift-bag-printing-guide",
+   "title": "香港金融機構禮品袋印刷指南 · 銀行卡套，信用卡開卡禮盒定製 | 智印港",
+   "equiv": 66,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "real-estate-floor-plan-poster-printing-guide",
+   "title": "香港新盤樓盤戶型海報印刷指南 · A1/A2 防水戶型圖，售樓處佈局 | 智印港",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "same-day-flyers-printing-hong-kong-guide",
+   "title": "即日印刷・即日傳單印刷指南 · 香港餐廳開業 / 活動速遞方案 4-6 小時 | 智印港",
+   "equiv": 74,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "calendar-printing-guide",
+   "title": "月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印港",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "poster-size-guide",
+   "title": "A1 A2 A3 海報尺寸指南：印刷尺寸對照表・應用場景・紙材選擇 | 智印港",
+   "equiv": 66,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "a5-vs-a6-flyer-size",
+   "title": "A6 尺寸：A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港",
+   "equiv": 67,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "poster-printing-price-guide",
+   "title": "A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣全拆解 | 智印港",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "catalog-printing-guide",
+   "title": "畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全攻略 | 智印港",
+   "equiv": 64,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "catalog-printing-china-supplier-guide",
+   "title": "中國目錄印刷供應商指南 2026: 4 裝訂，4 紙質，大量印刷 100/500/1000/5000 階梯 | 智印港",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "saddle-stitch-booklet-printing-guide",
+   "title": "騎馬釘小冊子印刷完全指南：頁數、紙張、價格與低 MOQ 教學",
+   "equiv": 55,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "apparel-clothing-tag-printing-guide",
+   "title": "服裝吊牌印刷完全指南：材質、工藝、價格與品牌案例 | 智印港",
+   "equiv": 57,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "2027-calendar-printing-complete-guide",
+   "title": "2027 月曆印刷完全指南: 8 大材質，4 種工藝，中秋旺季提前 4-6 週預訂 | 智印港",
+   "equiv": 75,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "rush-printing-hk-guide",
+   "title": "即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智印港",
+   "equiv": 54,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "title": "包裝盒印刷價格 2026：500/1000/5000 個・禮盒訂製 | 智印港",
+   "equiv": 56,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "2027-monthly-calendar-printing-timetable",
+   "title": "2027 月曆印刷攻略：幾時印？起印量？4 種月曆紙材大對決 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "large-envelope-printing-c4-c5",
+   "title": "大信封印刷 C4/C5 規格，100 個起 HK$0.5/個起，即日特急 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "title": "防水貼紙材質指南: PVC / 透明 / 可移 / 燙金 | 智印港",
+   "equiv": 51,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "certificate-printing-guide",
+   "title": "證書印刷完整攻略 · 材質工藝呎吋合規認證全拆解 | 智印港",
+   "equiv": 54,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "instant-printing-30s-ai-quote-flow",
+   "title": "即日印刷 30 秒 AI 報價流程: 中午前確認 下午起貨 | 智印港",
+   "equiv": 56,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "title": "燙金印刷 3 大應用攻略: 貼紙/喜帖/禮盒卡片全對比 | 智印港",
+   "equiv": 56,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "title": "校園教育印刷指南: 開學季 5 大印刷品 × 12 場景 | 智印港",
+   "equiv": 54,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "kraft-paper-box-types-comparison-2026",
+   "title": "牛皮紙盒 vs 坑盒 vs 彩盒 vs 禮盒 8 大盒型 5 維度全對比 | 智印港",
+   "equiv": 63,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "title": "2026 香港印刷成本基準: 16 品類 99 SKU 價格數據 | 智印港",
+   "equiv": 55,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "title": "印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "textbook-printing-guide",
+   "title": "教科書印刷・教材印刷指南 100本起 製本方式 | 智印港",
+   "equiv": 50,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "title": "練習簿印刷完全指南 2026: 4 種紙材 3 種裝訂 100 本起印 HK$3.5/本起 B2B 開學季 | 智印港",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "rush-printing-delivery-guide",
+   "title": "急件印刷派送指南 · 最快邊間？幾錢？幾點截單？| 智印港",
+   "equiv": 53,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "packaging-box-price-2026",
+   "title": "包裝盒印刷報價 2026：500/1000/5000/10000 個 | 智印港",
+   "equiv": 52,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "zine-small-batch-booklet-printing-guide",
+   "title": "小誌 Zine 印刷: 騎馬釘 8-64 頁 100 本起 HK$6 起 | 智印港",
+   "equiv": 56,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "childrens-picture-book-printing-guide",
+   "title": "童書繪本印刷：精裝硬皮 32 頁 100 本起 HK$40 起 | 智印港",
+   "equiv": 55,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "photo-book-printing-guide",
+   "title": "寫真書印刷：相冊相簿精裝 1 本起印 100 本更平 | 智印港",
+   "equiv": 53,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "self-publishing-printing-guide",
+   "title": "自費出版印刷：1 本起印、無最低起訂量 平裝精裝 | 智印港",
+   "equiv": 54,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "folded-leaflet-printing-guide",
+   "title": "摺頁印刷完全指南：對摺／三摺・尺寸・報價 10 張起 | 智印港",
+   "equiv": 57,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "title": "易拉架印刷完全指南：尺寸・材質・報價 10 個起 | 智印港",
+   "equiv": 53,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "hong-kong-printing-guide",
+   "title": "Custom Sticker & Packaging Printing Guide for US Small Business | MOQ, Materials, FedEx Ground 5-7 Day",
+   "equiv": 102,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "design-file-specs",
+   "title": "Print File Design Specifications: Bleed, Resolution & Color Modes",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "brand-materials-checklist",
+   "title": "Corporate Brand Materials Checklist: From Stickers to Displays",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "mtr-advertising-specs",
+   "title": "Event Poster & Trade Show Print Specs for US B2B | Sizes, Paper, Finishes, FedEx 2-Day",
+   "equiv": 86,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "sticker-guide",
+   "title": "Complete Sticker Printing Guide: Materials, Finishes & Applications",
+   "equiv": 67,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "sticker-design",
+   "title": "10 Golden Rules for Sticker Design",
+   "equiv": 34,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "packaging-trends",
+   "title": "2024 Packaging Design Trends Analysis",
+   "equiv": 37,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "cmyk-guide",
+   "title": "CMYK vs RGB: Complete Guide to Print Color Modes",
+   "equiv": 48,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "paper-materials",
+   "title": "Paper Selection Guide: From Art Paper to Specialty Stock",
+   "equiv": 56,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "eco-printing",
+   "title": "Eco-Friendly Printing: The Future of Sustainable Packaging",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "flyer-printing-guide",
+   "title": "Custom Flyer Printing Guide for US Small Business: Sizes, Paper, Design | Free Shipping $99",
+   "equiv": 91,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "food-packaging-printing-guide",
+   "title": "Food Packaging Printing Guide: Materials, Safety & Compliance",
+   "equiv": 61,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "paper-bag-printing-guide",
+   "title": "Paper Bag Printing Guide: Materials, Sizes, Handles & 2026 Trends",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "poster-printing-guide",
+   "title": "Poster Printing Size Guide: Paper & Finishes | ZprintPro",
+   "equiv": 56,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "restaurant-opening-flyer-printing-guide",
+   "title": "Restaurant Opening Flyer Printing Guide · Sizes, Paper & Fast Turnaround | ZprintPro",
+   "equiv": 84,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "company-intro",
+   "title": "About ZprintPro: Professional Equipment & One-Stop Printing Services",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "pet-food-sticker-printing-guide",
+   "title": "Pet Food Brand Sticker Printing Guide: Waterproof, Food-Safe Labels | ZprintPro",
+   "equiv": 79,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "real-estate-brochure-box-printing-guide",
+   "title": "Real Estate Brochure & Property Box Printing Guide: Materials, Finishes & Luxury Tips | ZprintPro",
+   "equiv": 97,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "pharmaceutical-label-printing-guide",
+   "title": "Pharmaceutical Label Printing Guide: GMP-Grade, FDA/EMA Compliance & Tamper-Evident | ZprintPro",
+   "equiv": 95,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "jewellery-shopping-bag-printing-guide",
+   "title": "Jewellery & Watch Brand Paper Bag Printing Guide: Black Card, Foil & Satin Ribbon | ZprintPro",
+   "equiv": 93,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "cosmetics-packaging-box-printing-guide",
+   "title": "Cosmetics Packaging Guide: Materials & Sizes | ZprintPro",
+   "equiv": 56,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "tea-beverage-gift-box-printing-guide",
+   "title": "Tea & Beverage Gift Box Printing Guide: Loose Leaf, Bubble Tea & E-commerce Brands | ZprintPro",
+   "equiv": 94,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "retail-shop-poster-printing-guide",
+   "title": "Retail Shop Poster Printing Guide 2026: Sizes, Paper & Display Tips | ZprintPro",
+   "equiv": 79,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "restaurant-menu-printing-guide",
+   "title": "Restaurant Menu Printing Guide 2026: Waterproof, Fold & Material Tips | ZprintPro",
+   "equiv": 81,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "wedding-red-packet-printing-guide",
+   "title": "Wedding Red Packet Printing Guide 2026: Materials, Personalization & Bulk | ZprintPro",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "product-label-printing-guide",
+   "title": "Amazon FBA Product Label Printing: GS1 UPC Barcodes, FDA-Compliant SKU Labels for US Sellers | ZprintPro",
+   "equiv": 104,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "graduation-yearbook-printing-guide",
+   "title": "US High School Yearbook Printing Guide: Class of 2026 Binding Styles, Cover Designs & Sponsor Ad Pages | ZprintPro",
+   "equiv": 114,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "ip-character-sticker-printing-guide",
+   "title": "Custom Die-Cut Sticker Printing for US Creators, Etsy Sellers & Small Brands: Shapes, Premium Materials & Etsy US SEO | ZprintPro",
+   "equiv": 129,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "trade-show-banner-printing-guide",
+   "title": "Trade Show Banner Printing Guide 2026: Retractable, Backdrop & USA Shipping | ZprintPro",
+   "equiv": 87,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "wedding-invitation-envelope-printing-guide",
+   "title": "Wedding Invitation Envelope Printing Guide 2026: Pearl, Foil-Lined & Custom Sizes | ZprintPro",
+   "equiv": 93,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "doujin-circle-printing-guide",
+   "title": "Doujin Circle Printing Guide 2026: Small-Batch Booklets & Premium Quality for Indie Creators | ZprintPro",
+   "equiv": 104,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "hotel-amenity-sticker-printing-guide",
+   "title": "Hotel & Resort Amenity Sticker Printing Guide: Luggage Tags, Welcome Kits & Branded Service for US Properties | ZprintPro",
+   "equiv": 121,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "finance-summit-gift-bag-printing-guide",
+   "title": "Financial Summit Gift Bag Printing Guide: FSC, Foil Logo & VIP Bags for US Wealth Management | ZprintPro",
+   "equiv": 104,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "marathon-event-poster-printing-guide",
+   "title": "Marathon Event Poster Printing Guide: Waterproof A1/A2 Ra Posters, Runner Packets & Start-Line Arches | ZprintPro",
+   "equiv": 113,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "car-dealership-amenity-sticker-printing-guide",
+   "title": "Car Dealership Amenity Sticker Printing Guide: Waterproof PVC, Test Drive Decals & Service Reminders for US Auto Industry | ZprintPro",
+   "equiv": 133,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "hotel-keycard-sleeve-printing-guide",
+   "title": "Hotel Key Card Sleeve & Luggage Tag Printing Guide: Soft-Touch Matte, Foil Logo & Glass Welcome Signs for US Hospitality | ZprintPro",
+   "equiv": 132,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "baby-product-label-sticker-printing-guide",
+   "title": "Baby Product Sticker Printing Guide: FDA Food-Safe Labels for US Infant Brands | ZprintPro",
+   "equiv": 90,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "ecommerce-shipping-bag-printing-guide",
+   "title": "E-commerce Shipping Bag Printing Guide: Tamper-Evident & Waterproof Mailers for US Brands | ZprintPro",
+   "equiv": 101,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "media-merchandise-box-printing-guide",
+   "title": "Media Franchise Collector Box Printing Guide: Limited Edition, Pre-Order & Convention-Exclusive Boxes for US Fans | ZprintPro",
+   "equiv": 125,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "thick-paper-flyer-printing-restaurant-takeout-guide",
+   "title": "Thick Paper Flyer Printing Guide · Restaurant Menu Inserts & Takeout for US Food Service | ZprintPro",
+   "equiv": 100,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "magnetic-closure-gift-box-ecommerce-brand-guide",
+   "title": "Magnetic Closure Gift Box Guide · Cross-Border E-commerce Premium Packaging for US DTC Brands | ZprintPro",
+   "equiv": 105,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "folding-box-cosmetics-brand-eco-friendly-guide",
+   "title": "Folding Box Printing Guide · Eco-Friendly Cosmetics Brand Packaging for US Skincare & Beauty | ZprintPro",
+   "equiv": 104,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "religious-ceremony-printing-guide",
+   "title": "Religious ceremony Printing Guide: Custom Church / Temple / Memorial Boxes & Gift Bags | ZprintPro",
+   "equiv": 98,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "industrial-nameplate-printing-guide",
+   "title": "Industrial Equipment Nameplate & GHS Hazard Label Printing Guide: UL certified，ANSI Z535 Standard | ZprintPro",
+   "equiv": 110,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "construction-material-sample-book-printing-guide",
+   "title": "Construction Material Sample Book Printing Guide: Tile, Stone, Curtain, Flooring Color Card Custom | ZprintPro",
+   "equiv": 110,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "baby-food-packaging-box-printing-guide",
+   "title": "Baby Food Packaging Box Printing Guide: FDA Food-Safe Boxes for US Infant Brands | ZprintPro",
+   "equiv": 92,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "real-estate-flyer-printing-guide",
+   "title": "Real Estate Flyer Printing Guide: Property Listing Brochures for US Real Estate Agents | ZprintPro",
+   "equiv": 98,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "medical-device-packaging-box-guide",
+   "title": "Medical Device Packaging Box Printing Guide: ISO 13485, Sterile Bag Custom for US Healthcare | ZprintPro",
+   "equiv": 104,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "auto-parts-shopping-bag-printing-guide",
+   "title": "Auto Parts Shopping Bag Printing Guide: 4S Service Bags for US Auto Aftermarket | ZprintPro",
+   "equiv": 91,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "sports-merchandise-gift-box-printing-guide",
+   "title": "Sports Event Merchandise Gift Box Printing Guide: Team Memorabilia for US Leagues | ZprintPro",
+   "equiv": 93,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "custom-card-boxes-small-batch-usa",
+   "title": "Custom Card Boxes for E-commerce: 500 MOQ | ZprintPro",
+   "equiv": 53,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "cosmetic-card-boxes-gang-run-japan",
+   "title": "Cosmetic Card Boxes: Silver & Holographic Cardstock, No Die-Cut Fee | ZprintPro",
+   "equiv": 79,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "financial-institution-gift-bag-printing-guide",
+   "title": "Financial Institution Gift Bag Printing Guide: Bank Kits & Credit Card Welcome Boxes for US Financial Brands | ZprintPro",
+   "equiv": 120,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "real-estate-floor-plan-poster-printing-guide",
+   "title": "Real Estate Floor Plan Poster Printing Guide: A1/A2 Waterproof Layout Prints for US Property Developers | ZprintPro",
+   "equiv": 115,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "same-day-flyers-printing-hong-kong-guide",
+   "title": "Same Day Printing & Same-Day Flyer Guide · 4-6hr Rush, 10 MOQ, Free Shipping $99 | ZprintPro",
+   "equiv": 92,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "calendar-printing-guide",
+   "title": "Calendar Printing 2027: UK/US/AU, 1pc MOQ + Bulk 300+ | ZprintPro",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "poster-size-guide",
+   "title": "A1 A2 A3 Poster Size Guide: Dimensions Chart, Uses & Paper Choices | ZprintPro",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "a5-vs-a6-flyer-size",
+   "title": "A5 vs A6 Flyer Size: Dimensions, Use Cases & Print Cost Comparison | ZprintPro",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "poster-printing-price-guide",
+   "title": "A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk Discounts | ZprintPro",
+   "equiv": 76,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "catalog-printing-guide",
+   "title": "Catalog & Art Book Printing Guide: Paper, Binding & Finishing | ZprintPro",
+   "equiv": 73,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "saddle-stitch-booklet-printing-guide",
+   "title": "Saddle Stitch Booklet Printing Guide 2026: Pages, Paper, Pricing & Low MOQ | ZprintPro",
+   "equiv": 86,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "catalog-printing-china-supplier-guide",
+   "title": "Catalog Printing China Supplier Guide 2026: 4 Binding，4 Paper，Bulk Wholesale 100/500/1000/5000 Tier | ZprintPro",
+   "equiv": 113,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "apparel-clothing-tag-printing-guide",
+   "title": "Custom Apparel Tag & Label Printing Guide: Materials, Finishes, Pricing & Brand Cases | ZprintPro",
+   "equiv": 97,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "rush-printing-hk-guide",
+   "title": "Same-Day Printing HK Guide: Where Fastest? How Much? What Cut-Off? | ZprintPro",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "packaging-box-pricing-2026",
+   "title": "Packaging Box Printing Price 2026: 500/1000/5000 pcs・Custom Gift Box | ZprintPro",
+   "equiv": 81,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "2027-monthly-calendar-printing-timetable",
+   "title": "2027 Calendar Printing Complete Guide: When to Print? MOQ? 4 Calendar Paper Materials Compared | ZprintPro",
+   "equiv": 106,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "large-envelope-printing-c4-c5",
+   "title": "Large Envelope Printing C4/C5 Specs，100 MOQ from $0.07 USD，Same-Day Rush | ZprintPro",
+   "equiv": 86,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "rush-printing-delivery-guide",
+   "title": "Rush Printing Delivery Guide: Where's Fastest? Cost? Order Cutoff? | ZprintPro",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "packaging-box-price-2026",
+   "title": "Packaging Box Printing Price 2026: How Much for 500/1000/5000 Pieces? | ZprintPro",
+   "equiv": 81,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "title": "Sticker Material: PVC, Clear, Removable, Foil | ZprintPro",
+   "equiv": 57,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "certificate-printing-guide",
+   "title": "Certificate Printing Guide 2026: Materials, Finishes, Sizes & Compliance | ZprintPro",
+   "equiv": 84,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "instant-printing-30s-ai-quote-flow",
+   "title": "Instant Printing 30-Second AI Quote Flow: Confirm by Noon, Ship by Afternoon | ZprintPro",
+   "equiv": 88,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "title": "Foil Stamping Guide: Stickers & Invitations | ZprintPro",
+   "equiv": 55,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "title": "Campus Education Printing: 5 Products 12 Uses | ZprintPro",
+   "equiv": 57,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "kraft-paper-box-types-comparison-2026",
+   "title": "8 Packaging Box Types Compared: Kraft vs Corrugated vs Color vs Gift vs Aircraft vs Book vs Drawer vs Shoulder | ZprintPro",
+   "equiv": 122,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "title": "Hong Kong Printing Cost Report 2026: 99 SKU | ZprintPro",
+   "equiv": 55,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "title": "Print Specifications Complete Guide 2026: A1-A6 Sizes, CMYK Colors & 6 Print Modes | ZprintPro",
+   "equiv": 94,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "textbook-printing-guide",
+   "title": "Textbook Printing Guide: 3 Bindings, 100 Copies | ZprintPro",
+   "equiv": 59,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "title": "School Exercise Book Printing Guide 2026: 4 Stocks 3 Bindings 100 MOQ | ZprintPro",
+   "equiv": 81,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "2027-calendar-printing-complete-guide",
+   "title": "2027 Calendar Printing Complete Guide: 8 Paper Stocks, 4 Finishes, Order 4-6 Weeks Early | ZprintPro",
+   "equiv": 100,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "zine-small-batch-booklet-printing-guide",
+   "title": "Zine Printing Guide: 8-64pp, 100 MOQ, HK$6/pc | ZprintPro",
+   "equiv": 57,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "childrens-picture-book-printing-guide",
+   "title": "Custom Picture Book Printing: 32pp, 100 MOQ | ZprintPro",
+   "equiv": 55,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "photo-book-printing-guide",
+   "title": "Custom Photo Book Printing: MOQ 1, Bulk 100+ | ZprintPro",
+   "equiv": 56,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "self-publishing-printing-guide",
+   "title": "Self-Publishing Printing: 1 Copy, Paperback | ZprintPro",
+   "equiv": 55,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "etsy-seller-printing-guide",
+   "title": "Etsy Printing: 10-Piece Min, Free Proof | ZprintPro",
+   "equiv": 51,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "folded-leaflet-printing-guide",
+   "title": "Folded Leaflets: Bi-Fold & Tri-Fold, 10 MOQ | ZprintPro",
+   "equiv": 55,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "title": "Roll-Up Banner Printing: 10 MOQ From HK$85 | ZprintPro",
+   "equiv": 54,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "company-intro",
+   "title": "ZprintPro会社概要：専門設備とワンストップ印刷サービス",
+   "equiv": 53,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "hong-kong-printing-guide",
+   "title": "オリジナルステッカー・パッケージ印刷ガイド：小ロット・短納期・データ入稿 | ZprintPro",
+   "equiv": 84,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "design-file-specs",
+   "title": "印刷用デザインファイル仕様",
+   "equiv": 26,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "brand-materials-checklist",
+   "title": "企業ブランド物料チェックリスト",
+   "equiv": 30,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "mtr-advertising-specs",
+   "title": "イベントポスター・展示パネル印刷仕様：サイズ・用紙・加工・短納期 | ZprintPro",
+   "equiv": 76,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "sticker-guide",
+   "title": "ステッカー印刷完全ガイド：材質、加工と応用場面",
+   "equiv": 46,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "sticker-design",
+   "title": "ステッカーデザインの10の黄金法則",
+   "equiv": 32,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "packaging-trends",
+   "title": "2024年パッケージデザイントレンド解析",
+   "equiv": 36,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "cmyk-guide",
+   "title": "CMYK vs RGB：印刷カラーモード完全解説",
+   "equiv": 37,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "paper-materials",
+   "title": "印刷用紙選択ガイド：アート紙から特殊紙まで",
+   "equiv": 42,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "eco-printing",
+   "title": "エコ印刷：持続可能な包装の未来",
+   "equiv": 30,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "flyer-printing-guide",
+   "title": "オリジナルチラシ印刷ガイド：サイズ・用紙・デザイン・配布戦略 | 小ロット対応",
+   "equiv": 75,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "food-packaging-printing-guide",
+   "title": "食品パッケージ印刷完全ガイド：素材、安全認証、設計",
+   "equiv": 50,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "paper-bag-printing-guide",
+   "title": "オリジナル紙袋印刷完全ガイド：素材・サイズ・持ち手と2026年トレンド | 小ロット対応",
+   "equiv": 81,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "poster-printing-guide",
+   "title": "ポスター印刷ガイド：サイズ・用紙・加工 | ZprintPro",
+   "equiv": 50,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "restaurant-opening-flyer-printing-guide",
+   "title": "レストラン開業チラシ印刷ガイド · サイズ・用紙・短期納品 | ZprintPro",
+   "equiv": 67,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "pet-food-sticker-printing-guide",
+   "title": "ペットフードステッカー印刷ガイド：防水・FDA 準拠ラベル素材 | ZprintPro",
+   "equiv": 70,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "real-estate-brochure-box-printing-guide",
+   "title": "不動産パンフレット・資料箱カスタム印刷ガイド：素材・加工・高級感演出 | ZprintPro",
+   "equiv": 80,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "pharmaceutical-label-printing-guide",
+   "title": "医薬品ラベル印刷ガイド：GMP準拠・FDA/EMA対応・改ざん防止 | ZprintPro",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "jewellery-shopping-bag-printing-guide",
+   "title": "宝飾・腕時計ブランド紙袋印刷ガイド：ブラックカード・箔押し・サテンリボン | ZprintPro",
+   "equiv": 84,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "cosmetics-packaging-box-printing-guide",
+   "title": "化粧品パッケージ印刷ガイド：素材・構造 | ZprintPro",
+   "equiv": 50,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "tea-beverage-gift-box-printing-guide",
+   "title": "茶・ドリンクギフトボックス印刷ガイド：リーフティー・タピオカ・ECブランド向け | ZprintPro",
+   "equiv": 88,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "retail-shop-poster-printing-guide",
+   "title": "小売・セレクトショップ ポスター印刷ガイド2026：サイズ・用紙・ディスプレイ | ZprintPro",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "restaurant-menu-printing-guide",
+   "title": "レストランメニュー印刷ガイド2026：防水・折りたたみ・素材 | ZprintPro",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "wedding-red-packet-printing-guide",
+   "title": "ウエディング レッド packet 印刷ガイド2026：素材・パーソナライズ・大量印刷 | ZprintPro",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "product-label-printing-guide",
+   "title": "越境EC製品ラベル印刷ガイド：GS1 バーコード・FDA 準拠 SKU ラベル | ZprintPro",
+   "equiv": 75,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "graduation-yearbook-printing-guide",
+   "title": "卒業記念アルバム印刷ガイド：製本・用紙・パーソナライズ完全解説 | ZprintPro",
+   "equiv": 74,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "ip-character-sticker-printing-guide",
+   "title": "IP キャラクター型抜きステッカー印刷ガイド：カスタム形状・素材・工法の全解説 | ZprintPro",
+   "equiv": 87,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "trade-show-banner-printing-guide",
+   "title": "展示会バナー印刷ガイド2026：ロールアップ・バックドロップ・短期納品 | ZprintPro",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "wedding-invitation-envelope-printing-guide",
+   "title": "ウエディング招待状封筒印刷ガイド2026：パール・箔押し内側・カスタムサイズ | ZprintPro",
+   "equiv": 84,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "doujin-circle-printing-guide",
+   "title": "同人誌印刷ガイド：小ロット・少部数・高品質対応・短納期 | ZprintPro",
+   "equiv": 66,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "hotel-amenity-sticker-printing-guide",
+   "title": "ホテル・リゾート アメニティステッカー印刷ガイド：荷物タグ・ウェルカムキット・ロゴステッカー | ZprintPro",
+   "equiv": 103,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "finance-summit-gift-bag-printing-guide",
+   "title": "金融サミット ギフトバッグ印刷ガイド：FSC認証・箔押し・VIPバッグ 日本ウェルス・マネジメント向け | ZprintPro",
+   "equiv": 106,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "marathon-event-poster-printing-guide",
+   "title": "マラソン大会ポスター印刷ガイド：防水 A1/A2 レースポスター・ランナーパケット・スタートアーチ | ZprintPro",
+   "equiv": 103,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "car-dealership-amenity-sticker-printing-guide",
+   "title": "自動車ディーラー アメニティステッカー印刷ガイド：防水 PVC・試乗デカール・サービス注意喚起 日本自動車業界向け | ZprintPro",
+   "equiv": 120,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "hotel-keycard-sleeve-printing-guide",
+   "title": "ホテル ルームキー スリーブ・荷物タグ印刷ガイド：ソフトタッチマット・箔押し・ガラス ウェルカム 日本ホテル業界向け | ZprintPro",
+   "equiv": 124,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "baby-product-label-sticker-printing-guide",
+   "title": "ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro",
+   "equiv": 70,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "ecommerce-shipping-bag-printing-guide",
+   "title": "EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro",
+   "equiv": 61,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "media-merchandise-box-printing-guide",
+   "title": "メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro",
+   "equiv": 95,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "thick-paper-flyer-printing-restaurant-takeout-guide",
+   "title": "厚紙チラシ印刷ガイド · 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro",
+   "equiv": 75,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "magnetic-closure-gift-box-ecommerce-brand-guide",
+   "title": "マグネット式ギフト ボックス カスタムガイド · 越境EC・DTC ブランド向けプレミアム包装 | ZprintPro",
+   "equiv": 95,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "folding-box-cosmetics-brand-eco-friendly-guide",
+   "title": "折り畳み箱 カスタム ガイド · 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro",
+   "equiv": 80,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "religious-ceremony-printing-guide",
+   "title": "宗教儀式印刷ガイド：教会・寺院・メモリアル ボックス＆ギフト バッグ カスタム | ZprintPro",
+   "equiv": 87,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "industrial-nameplate-printing-guide",
+   "title": "工業設備銘板 / GHS 危険ラベル印刷ガイド：UL 認証，ANSI Z535 規格 | ZprintPro",
+   "equiv": 76,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "construction-material-sample-book-printing-guide",
+   "title": "建築装飾材料サンプルブック印刷ガイド：タイル・石材・カーテン・フローリング カラー カード カスタム | ZprintPro",
+   "equiv": 109,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "baby-food-packaging-box-printing-guide",
+   "title": "幼児食品パッケージ箱印刷ガイド：FDA食品衛生ボックス 日本向け | ZprintPro",
+   "equiv": 72,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "real-estate-flyer-printing-guide",
+   "title": "不動産販売チラシ印刷ガイド：物件資料・折り畳み 米国不動産エージェント向け | ZprintPro",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "medical-device-packaging-box-guide",
+   "title": "医療機器包装箱印刷ガイド：ISO 13485・滅菌バッグ カスタム 日本医療業界向け | ZprintPro",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "auto-parts-shopping-bag-printing-guide",
+   "title": "自動車部品ショッピングバッグ印刷ガイド：4S アフターマーケット サービスバッグ 日本自動車業界向け | ZprintPro",
+   "equiv": 107,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "sports-merchandise-gift-box-printing-guide",
+   "title": "スポーツイベント記念ギフトボックス印刷ガイド：チーム メモラビリア 米国スポーツ業界向け | ZprintPro",
+   "equiv": 98,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "cosmetic-card-boxes-gang-run-japan",
+   "title": "化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro",
+   "equiv": 76,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "custom-card-boxes-small-batch-usa",
+   "title": "小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro",
+   "equiv": 67,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "financial-institution-gift-bag-printing-guide",
+   "title": "金融機関ギフトバッグ印刷ガイド：銀行キット・クレジットカードウェリカムボックス 日本金融業界向け | ZprintPro",
+   "equiv": 107,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "real-estate-floor-plan-poster-printing-guide",
+   "title": "不動産フロアプラン ポスター印刷ガイド：A1/A2 防水レイアウト図 日本デベロッパー向け | ZprintPro",
+   "equiv": 94,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "same-day-flyers-printing-hong-kong-guide",
+   "title": "即日印刷・即日チラシ ガイド · 4-6時間特急、10枚〜、全国送料無料 | ZprintPro",
+   "equiv": 75,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "calendar-printing-guide",
+   "title": "カレンダー印刷：壁掛け・卓上 1部から短納期|ZprintPro",
+   "equiv": 52,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "poster-size-guide",
+   "title": "A1 A2 A3 ポスターサイズガイド：寸法早見表・用途・用紙選び | ZprintPro",
+   "equiv": 69,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "a5-vs-a6-flyer-size",
+   "title": "A5 と A6 チラシのサイズ比較：寸法・用途・印刷コスト | ZprintPro",
+   "equiv": 63,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "poster-printing-price-guide",
+   "title": "ポスター 印刷 費用 / ポスター印刷料金ガイド：A1 A2 単価・用紙・加工・ロット割引 | ZprintPro",
+   "equiv": 91,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "catalog-printing-guide",
+   "title": "カタログ・写真集印刷ガイド：用紙・製本・加工の選び方 | ZprintPro",
+   "equiv": 64,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "catalog-printing-china-supplier-guide",
+   "title": "カタログ印刷中国サプライヤーガイド 2026: 4 製本，4 紙質，大量卸売 100/500/1000/5000 段階 | ZprintPro",
+   "equiv": 100,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "saddle-stitch-booklet-printing-guide",
+   "title": "中綴じ冊子印刷完全ガイド：ページ数・用紙・価格・低 MOQ | 10冊から対応",
+   "equiv": 69,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "apparel-clothing-tag-printing-guide",
+   "title": "アパレルタグ・ネーム印刷完全ガイド：素材、加工、価格、事例 | ZprintPro",
+   "equiv": 70,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "rush-printing-hk-guide",
+   "title": "当日特急印刷 全ガイド：どこが一番早い？料金は？締切は？| ZprintPro",
+   "equiv": 66,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "title": "パッケージ印刷価格 2026：500/1000/5000 個・ギフトボックス | ZprintPro",
+   "equiv": 69,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "2027-monthly-calendar-printing-timetable",
+   "title": "2027年カレンダー印刷攻略：いつ注文？最小ロットは？4 種用紙比較 | ZprintPro",
+   "equiv": 74,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "large-envelope-printing-c4-c5",
+   "title": "大型封筒印刷 C4/C5 規格，100 個〜 \\$0.07〜，即日特急 | ZprintPro",
+   "equiv": 64,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "rush-printing-delivery-guide",
+   "title": "当日急行印刷攻略：どこが最速？料金？何時締切？ | ZprintPro",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "packaging-box-price-2026",
+   "title": "パッケージ箱印刷価格 2026：500/1000/5000 個でいくら？ | ZprintPro",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "title": "防水ステッカー材質ガイド: PVC / 透明 / 箔押し | ZprintPro",
+   "equiv": 57,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "certificate-printing-guide",
+   "title": "証書印刷完全ガイド 2026：素材・加工・サイズ・コンプライアンス認証を徹底解説 | ZprintPro",
+   "equiv": 87,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "instant-printing-30s-ai-quote-flow",
+   "title": "即日印刷 30秒AI見積もりフロー: 正午までに確認、午後に出荷 | ZprintPro",
+   "equiv": 69,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "title": "箔押し印刷ガイド 2026: ステッカー / 招待状 | ZprintPro",
+   "equiv": 54,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "title": "キャンパス教育印刷: 5 用品 × 12 シーン | ZprintPro",
+   "equiv": 50,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "kraft-paper-box-types-comparison-2026",
+   "title": "8 種パッケージボックス徹底比較: クラフト vs ダンボール vs キャラメル vs ギフト vs エアクラフト vs ブック vs ドロワー vs ショルダー | ZprintPro",
+   "equiv": 142,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "title": "香港印刷コスト 2026: 99 SKU 価格データ | ZprintPro",
+   "equiv": 50,
+   "band": "OK",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "title": "印刷スペック完全ガイド 2026: A1-A6 サイズ・CMYK 色モード・6 大印刷モード 一覧 | ZprintPro",
+   "equiv": 89,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "textbook-printing-guide",
+   "title": "教科書・教材の印刷製本 100冊から 3製本方式 | ZprintPro",
+   "equiv": 54,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "title": "練習帳印刷ガイド 2026: 4 用紙 3 製本 100 部から | ZprintPro",
+   "equiv": 59,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "2027-calendar-printing-complete-guide",
+   "title": "2027年カレンダー印刷 完全ガイド：8 種用紙・4 種加工・繁忙期は4〜6週間前の発注 | ZprintPro",
+   "equiv": 89,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "zine-small-batch-booklet-printing-guide",
+   "title": "ジン印刷ガイド: 中綴じ 8〜64 ページ 100 部から | ZprintPro",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "childrens-picture-book-printing-guide",
+   "title": "絵本印刷：ハードカバー 32 ページ 100 部から | ZprintPro",
+   "equiv": 55,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "photo-book-printing-guide",
+   "title": "フォトブック印刷：少部数 1部から 100部で割安 | ZprintPro",
+   "equiv": 56,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "self-publishing-printing-guide",
+   "title": "自費出版印刷：1 部から、最低注文数なし 並製本 | ZprintPro",
+   "equiv": 57,
+   "band": "OK",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "folded-leaflet-printing-guide",
+   "title": "折りたたみチラシ印刷 二つ折り三つ折り 10部から | ZprintPro",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "title": "ロールアップバナー印刷 10セットから 屋外対応 | ZprintPro",
+   "equiv": 56,
+   "band": "OK",
+   "longform": false
+  }
+ ],
+ "out": [
+  {
+   "loc": "ja",
+   "slug": "kraft-paper-box-types-comparison-2026",
+   "title": "8 種パッケージボックス徹底比較: クラフト vs ダンボール vs キャラメル vs ギフト vs エアクラフト vs ブック vs ドロワー vs ショルダー | ZprintPro",
+   "equiv": 142,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "car-dealership-amenity-sticker-printing-guide",
+   "title": "Car Dealership Amenity Sticker Printing Guide: Waterproof PVC, Test Drive Decals & Service Reminders for US Auto Industry | ZprintPro",
+   "equiv": 133,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "hotel-keycard-sleeve-printing-guide",
+   "title": "Hotel Key Card Sleeve & Luggage Tag Printing Guide: Soft-Touch Matte, Foil Logo & Glass Welcome Signs for US Hospitality | ZprintPro",
+   "equiv": 132,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "ip-character-sticker-printing-guide",
+   "title": "Custom Die-Cut Sticker Printing for US Creators, Etsy Sellers & Small Brands: Shapes, Premium Materials & Etsy US SEO | ZprintPro",
+   "equiv": 129,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "media-merchandise-box-printing-guide",
+   "title": "Media Franchise Collector Box Printing Guide: Limited Edition, Pre-Order & Convention-Exclusive Boxes for US Fans | ZprintPro",
+   "equiv": 125,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "hotel-keycard-sleeve-printing-guide",
+   "title": "ホテル ルームキー スリーブ・荷物タグ印刷ガイド：ソフトタッチマット・箔押し・ガラス ウェルカム 日本ホテル業界向け | ZprintPro",
+   "equiv": 124,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "kraft-paper-box-types-comparison-2026",
+   "title": "8 Packaging Box Types Compared: Kraft vs Corrugated vs Color vs Gift vs Aircraft vs Book vs Drawer vs Shoulder | ZprintPro",
+   "equiv": 122,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "hotel-amenity-sticker-printing-guide",
+   "title": "Hotel & Resort Amenity Sticker Printing Guide: Luggage Tags, Welcome Kits & Branded Service for US Properties | ZprintPro",
+   "equiv": 121,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "financial-institution-gift-bag-printing-guide",
+   "title": "Financial Institution Gift Bag Printing Guide: Bank Kits & Credit Card Welcome Boxes for US Financial Brands | ZprintPro",
+   "equiv": 120,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "car-dealership-amenity-sticker-printing-guide",
+   "title": "自動車ディーラー アメニティステッカー印刷ガイド：防水 PVC・試乗デカール・サービス注意喚起 日本自動車業界向け | ZprintPro",
+   "equiv": 120,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "real-estate-floor-plan-poster-printing-guide",
+   "title": "Real Estate Floor Plan Poster Printing Guide: A1/A2 Waterproof Layout Prints for US Property Developers | ZprintPro",
+   "equiv": 115,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "graduation-yearbook-printing-guide",
+   "title": "US High School Yearbook Printing Guide: Class of 2026 Binding Styles, Cover Designs & Sponsor Ad Pages | ZprintPro",
+   "equiv": 114,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "marathon-event-poster-printing-guide",
+   "title": "Marathon Event Poster Printing Guide: Waterproof A1/A2 Ra Posters, Runner Packets & Start-Line Arches | ZprintPro",
+   "equiv": 113,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "catalog-printing-china-supplier-guide",
+   "title": "Catalog Printing China Supplier Guide 2026: 4 Binding，4 Paper，Bulk Wholesale 100/500/1000/5000 Tier | ZprintPro",
+   "equiv": 113,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "industrial-nameplate-printing-guide",
+   "title": "Industrial Equipment Nameplate & GHS Hazard Label Printing Guide: UL certified，ANSI Z535 Standard | ZprintPro",
+   "equiv": 110,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "construction-material-sample-book-printing-guide",
+   "title": "Construction Material Sample Book Printing Guide: Tile, Stone, Curtain, Flooring Color Card Custom | ZprintPro",
+   "equiv": 110,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "construction-material-sample-book-printing-guide",
+   "title": "建築装飾材料サンプルブック印刷ガイド：タイル・石材・カーテン・フローリング カラー カード カスタム | ZprintPro",
+   "equiv": 109,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "auto-parts-shopping-bag-printing-guide",
+   "title": "自動車部品ショッピングバッグ印刷ガイド：4S アフターマーケット サービスバッグ 日本自動車業界向け | ZprintPro",
+   "equiv": 107,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "financial-institution-gift-bag-printing-guide",
+   "title": "金融機関ギフトバッグ印刷ガイド：銀行キット・クレジットカードウェリカムボックス 日本金融業界向け | ZprintPro",
+   "equiv": 107,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "2027-monthly-calendar-printing-timetable",
+   "title": "2027 Calendar Printing Complete Guide: When to Print? MOQ? 4 Calendar Paper Materials Compared | ZprintPro",
+   "equiv": 106,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "finance-summit-gift-bag-printing-guide",
+   "title": "金融サミット ギフトバッグ印刷ガイド：FSC認証・箔押し・VIPバッグ 日本ウェルス・マネジメント向け | ZprintPro",
+   "equiv": 106,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "magnetic-closure-gift-box-ecommerce-brand-guide",
+   "title": "Magnetic Closure Gift Box Guide · Cross-Border E-commerce Premium Packaging for US DTC Brands | ZprintPro",
+   "equiv": 105,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "product-label-printing-guide",
+   "title": "Amazon FBA Product Label Printing: GS1 UPC Barcodes, FDA-Compliant SKU Labels for US Sellers | ZprintPro",
+   "equiv": 104,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "doujin-circle-printing-guide",
+   "title": "Doujin Circle Printing Guide 2026: Small-Batch Booklets & Premium Quality for Indie Creators | ZprintPro",
+   "equiv": 104,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "finance-summit-gift-bag-printing-guide",
+   "title": "Financial Summit Gift Bag Printing Guide: FSC, Foil Logo & VIP Bags for US Wealth Management | ZprintPro",
+   "equiv": 104,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "folding-box-cosmetics-brand-eco-friendly-guide",
+   "title": "Folding Box Printing Guide · Eco-Friendly Cosmetics Brand Packaging for US Skincare & Beauty | ZprintPro",
+   "equiv": 104,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "medical-device-packaging-box-guide",
+   "title": "Medical Device Packaging Box Printing Guide: ISO 13485, Sterile Bag Custom for US Healthcare | ZprintPro",
+   "equiv": 104,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "hotel-amenity-sticker-printing-guide",
+   "title": "ホテル・リゾート アメニティステッカー印刷ガイド：荷物タグ・ウェルカムキット・ロゴステッカー | ZprintPro",
+   "equiv": 103,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "marathon-event-poster-printing-guide",
+   "title": "マラソン大会ポスター印刷ガイド：防水 A1/A2 レースポスター・ランナーパケット・スタートアーチ | ZprintPro",
+   "equiv": 103,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "hong-kong-printing-guide",
+   "title": "Custom Sticker & Packaging Printing Guide for US Small Business | MOQ, Materials, FedEx Ground 5-7 Day",
+   "equiv": 102,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "ecommerce-shipping-bag-printing-guide",
+   "title": "E-commerce Shipping Bag Printing Guide: Tamper-Evident & Waterproof Mailers for US Brands | ZprintPro",
+   "equiv": 101,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "thick-paper-flyer-printing-restaurant-takeout-guide",
+   "title": "Thick Paper Flyer Printing Guide · Restaurant Menu Inserts & Takeout for US Food Service | ZprintPro",
+   "equiv": 100,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "2027-calendar-printing-complete-guide",
+   "title": "2027 Calendar Printing Complete Guide: 8 Paper Stocks, 4 Finishes, Order 4-6 Weeks Early | ZprintPro",
+   "equiv": 100,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "catalog-printing-china-supplier-guide",
+   "title": "カタログ印刷中国サプライヤーガイド 2026: 4 製本，4 紙質，大量卸売 100/500/1000/5000 段階 | ZprintPro",
+   "equiv": 100,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "religious-ceremony-printing-guide",
+   "title": "Religious ceremony Printing Guide: Custom Church / Temple / Memorial Boxes & Gift Bags | ZprintPro",
+   "equiv": 98,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "real-estate-flyer-printing-guide",
+   "title": "Real Estate Flyer Printing Guide: Property Listing Brochures for US Real Estate Agents | ZprintPro",
+   "equiv": 98,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "sports-merchandise-gift-box-printing-guide",
+   "title": "スポーツイベント記念ギフトボックス印刷ガイド：チーム メモラビリア 米国スポーツ業界向け | ZprintPro",
+   "equiv": 98,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "real-estate-brochure-box-printing-guide",
+   "title": "Real Estate Brochure & Property Box Printing Guide: Materials, Finishes & Luxury Tips | ZprintPro",
+   "equiv": 97,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "apparel-clothing-tag-printing-guide",
+   "title": "Custom Apparel Tag & Label Printing Guide: Materials, Finishes, Pricing & Brand Cases | ZprintPro",
+   "equiv": 97,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "pharmaceutical-label-printing-guide",
+   "title": "Pharmaceutical Label Printing Guide: GMP-Grade, FDA/EMA Compliance & Tamper-Evident | ZprintPro",
+   "equiv": 95,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "media-merchandise-box-printing-guide",
+   "title": "メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro",
+   "equiv": 95,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "magnetic-closure-gift-box-ecommerce-brand-guide",
+   "title": "マグネット式ギフト ボックス カスタムガイド · 越境EC・DTC ブランド向けプレミアム包装 | ZprintPro",
+   "equiv": 95,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "tea-beverage-gift-box-printing-guide",
+   "title": "Tea & Beverage Gift Box Printing Guide: Loose Leaf, Bubble Tea & E-commerce Brands | ZprintPro",
+   "equiv": 94,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "title": "Print Specifications Complete Guide 2026: A1-A6 Sizes, CMYK Colors & 6 Print Modes | ZprintPro",
+   "equiv": 94,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "real-estate-floor-plan-poster-printing-guide",
+   "title": "不動産フロアプラン ポスター印刷ガイド：A1/A2 防水レイアウト図 日本デベロッパー向け | ZprintPro",
+   "equiv": 94,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "jewellery-shopping-bag-printing-guide",
+   "title": "Jewellery & Watch Brand Paper Bag Printing Guide: Black Card, Foil & Satin Ribbon | ZprintPro",
+   "equiv": 93,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "wedding-invitation-envelope-printing-guide",
+   "title": "Wedding Invitation Envelope Printing Guide 2026: Pearl, Foil-Lined & Custom Sizes | ZprintPro",
+   "equiv": 93,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "sports-merchandise-gift-box-printing-guide",
+   "title": "Sports Event Merchandise Gift Box Printing Guide: Team Memorabilia for US Leagues | ZprintPro",
+   "equiv": 93,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "baby-food-packaging-box-printing-guide",
+   "title": "Baby Food Packaging Box Printing Guide: FDA Food-Safe Boxes for US Infant Brands | ZprintPro",
+   "equiv": 92,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "same-day-flyers-printing-hong-kong-guide",
+   "title": "Same Day Printing & Same-Day Flyer Guide · 4-6hr Rush, 10 MOQ, Free Shipping $99 | ZprintPro",
+   "equiv": 92,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "flyer-printing-guide",
+   "title": "Custom Flyer Printing Guide for US Small Business: Sizes, Paper, Design | Free Shipping $99",
+   "equiv": 91,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "auto-parts-shopping-bag-printing-guide",
+   "title": "Auto Parts Shopping Bag Printing Guide: 4S Service Bags for US Auto Aftermarket | ZprintPro",
+   "equiv": 91,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "poster-printing-price-guide",
+   "title": "ポスター 印刷 費用 / ポスター印刷料金ガイド：A1 A2 単価・用紙・加工・ロット割引 | ZprintPro",
+   "equiv": 91,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "baby-product-label-sticker-printing-guide",
+   "title": "Baby Product Sticker Printing Guide: FDA Food-Safe Labels for US Infant Brands | ZprintPro",
+   "equiv": 90,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "title": "印刷スペック完全ガイド 2026: A1-A6 サイズ・CMYK 色モード・6 大印刷モード 一覧 | ZprintPro",
+   "equiv": 89,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "2027-calendar-printing-complete-guide",
+   "title": "2027年カレンダー印刷 完全ガイド：8 種用紙・4 種加工・繁忙期は4〜6週間前の発注 | ZprintPro",
+   "equiv": 89,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "instant-printing-30s-ai-quote-flow",
+   "title": "Instant Printing 30-Second AI Quote Flow: Confirm by Noon, Ship by Afternoon | ZprintPro",
+   "equiv": 88,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "tea-beverage-gift-box-printing-guide",
+   "title": "茶・ドリンクギフトボックス印刷ガイド：リーフティー・タピオカ・ECブランド向け | ZprintPro",
+   "equiv": 88,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "trade-show-banner-printing-guide",
+   "title": "Trade Show Banner Printing Guide 2026: Retractable, Backdrop & USA Shipping | ZprintPro",
+   "equiv": 87,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "ip-character-sticker-printing-guide",
+   "title": "IP キャラクター型抜きステッカー印刷ガイド：カスタム形状・素材・工法の全解説 | ZprintPro",
+   "equiv": 87,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "religious-ceremony-printing-guide",
+   "title": "宗教儀式印刷ガイド：教会・寺院・メモリアル ボックス＆ギフト バッグ カスタム | ZprintPro",
+   "equiv": 87,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "certificate-printing-guide",
+   "title": "証書印刷完全ガイド 2026：素材・加工・サイズ・コンプライアンス認証を徹底解説 | ZprintPro",
+   "equiv": 87,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "mtr-advertising-specs",
+   "title": "Event Poster & Trade Show Print Specs for US B2B | Sizes, Paper, Finishes, FedEx 2-Day",
+   "equiv": 86,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "saddle-stitch-booklet-printing-guide",
+   "title": "Saddle Stitch Booklet Printing Guide 2026: Pages, Paper, Pricing & Low MOQ | ZprintPro",
+   "equiv": 86,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "large-envelope-printing-c4-c5",
+   "title": "Large Envelope Printing C4/C5 Specs，100 MOQ from $0.07 USD，Same-Day Rush | ZprintPro",
+   "equiv": 86,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "catalog-printing-china-supplier-guide",
+   "title": "中國目錄印刷供應商指南 2026: 4 裝訂，4 紙質，大量印刷 100/500/1000/5000 階梯 | 智印港",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "title": "練習簿印刷完全指南 2026: 4 種紙材 3 種裝訂 100 本起印 HK$3.5/本起 B2B 開學季 | 智印港",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "wedding-red-packet-printing-guide",
+   "title": "Wedding Red Packet Printing Guide 2026: Materials, Personalization & Bulk | ZprintPro",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "retail-shop-poster-printing-guide",
+   "title": "小売・セレクトショップ ポスター印刷ガイド2026：サイズ・用紙・ディスプレイ | ZprintPro",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "wedding-red-packet-printing-guide",
+   "title": "ウエディング レッド packet 印刷ガイド2026：素材・パーソナライズ・大量印刷 | ZprintPro",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "real-estate-flyer-printing-guide",
+   "title": "不動産販売チラシ印刷ガイド：物件資料・折り畳み 米国不動産エージェント向け | ZprintPro",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "medical-device-packaging-box-guide",
+   "title": "医療機器包装箱印刷ガイド：ISO 13485・滅菌バッグ カスタム 日本医療業界向け | ZprintPro",
+   "equiv": 85,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "restaurant-opening-flyer-printing-guide",
+   "title": "Restaurant Opening Flyer Printing Guide · Sizes, Paper & Fast Turnaround | ZprintPro",
+   "equiv": 84,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "certificate-printing-guide",
+   "title": "Certificate Printing Guide 2026: Materials, Finishes, Sizes & Compliance | ZprintPro",
+   "equiv": 84,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "hong-kong-printing-guide",
+   "title": "オリジナルステッカー・パッケージ印刷ガイド：小ロット・短納期・データ入稿 | ZprintPro",
+   "equiv": 84,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "jewellery-shopping-bag-printing-guide",
+   "title": "宝飾・腕時計ブランド紙袋印刷ガイド：ブラックカード・箔押し・サテンリボン | ZprintPro",
+   "equiv": 84,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "wedding-invitation-envelope-printing-guide",
+   "title": "ウエディング招待状封筒印刷ガイド2026：パール・箔押し内側・カスタムサイズ | ZprintPro",
+   "equiv": 84,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "restaurant-menu-printing-guide",
+   "title": "Restaurant Menu Printing Guide 2026: Waterproof, Fold & Material Tips | ZprintPro",
+   "equiv": 81,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "packaging-box-pricing-2026",
+   "title": "Packaging Box Printing Price 2026: 500/1000/5000 pcs・Custom Gift Box | ZprintPro",
+   "equiv": 81,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "packaging-box-price-2026",
+   "title": "Packaging Box Printing Price 2026: How Much for 500/1000/5000 Pieces? | ZprintPro",
+   "equiv": 81,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "title": "School Exercise Book Printing Guide 2026: 4 Stocks 3 Bindings 100 MOQ | ZprintPro",
+   "equiv": 81,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "paper-bag-printing-guide",
+   "title": "オリジナル紙袋印刷完全ガイド：素材・サイズ・持ち手と2026年トレンド | 小ロット対応",
+   "equiv": 81,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "real-estate-brochure-box-printing-guide",
+   "title": "不動産パンフレット・資料箱カスタム印刷ガイド：素材・加工・高級感演出 | ZprintPro",
+   "equiv": 80,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "folding-box-cosmetics-brand-eco-friendly-guide",
+   "title": "折り畳み箱 カスタム ガイド · 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro",
+   "equiv": 80,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "pet-food-sticker-printing-guide",
+   "title": "Pet Food Brand Sticker Printing Guide: Waterproof, Food-Safe Labels | ZprintPro",
+   "equiv": 79,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "retail-shop-poster-printing-guide",
+   "title": "Retail Shop Poster Printing Guide 2026: Sizes, Paper & Display Tips | ZprintPro",
+   "equiv": 79,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "cosmetic-card-boxes-gang-run-japan",
+   "title": "Cosmetic Card Boxes: Silver & Holographic Cardstock, No Die-Cut Fee | ZprintPro",
+   "equiv": 79,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "title": "印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "poster-size-guide",
+   "title": "A1 A2 A3 Poster Size Guide: Dimensions Chart, Uses & Paper Choices | ZprintPro",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "a5-vs-a6-flyer-size",
+   "title": "A5 vs A6 Flyer Size: Dimensions, Use Cases & Print Cost Comparison | ZprintPro",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "rush-printing-hk-guide",
+   "title": "Same-Day Printing HK Guide: Where Fastest? How Much? What Cut-Off? | ZprintPro",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "rush-printing-delivery-guide",
+   "title": "Rush Printing Delivery Guide: Where's Fastest? Cost? Order Cutoff? | ZprintPro",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "trade-show-banner-printing-guide",
+   "title": "展示会バナー印刷ガイド2026：ロールアップ・バックドロップ・短期納品 | ZprintPro",
+   "equiv": 78,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "poster-printing-price-guide",
+   "title": "A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk Discounts | ZprintPro",
+   "equiv": 76,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "mtr-advertising-specs",
+   "title": "イベントポスター・展示パネル印刷仕様：サイズ・用紙・加工・短納期 | ZprintPro",
+   "equiv": 76,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "industrial-nameplate-printing-guide",
+   "title": "工業設備銘板 / GHS 危険ラベル印刷ガイド：UL 認証，ANSI Z535 規格 | ZprintPro",
+   "equiv": 76,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "cosmetic-card-boxes-gang-run-japan",
+   "title": "化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro",
+   "equiv": 76,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "2027-calendar-printing-complete-guide",
+   "title": "2027 月曆印刷完全指南: 8 大材質，4 種工藝，中秋旺季提前 4-6 週預訂 | 智印港",
+   "equiv": 75,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "flyer-printing-guide",
+   "title": "オリジナルチラシ印刷ガイド：サイズ・用紙・デザイン・配布戦略 | 小ロット対応",
+   "equiv": 75,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "product-label-printing-guide",
+   "title": "越境EC製品ラベル印刷ガイド：GS1 バーコード・FDA 準拠 SKU ラベル | ZprintPro",
+   "equiv": 75,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "thick-paper-flyer-printing-restaurant-takeout-guide",
+   "title": "厚紙チラシ印刷ガイド · 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro",
+   "equiv": 75,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "same-day-flyers-printing-hong-kong-guide",
+   "title": "即日印刷・即日チラシ ガイド · 4-6時間特急、10枚〜、全国送料無料 | ZprintPro",
+   "equiv": 75,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "car-dealership-amenity-sticker-printing-guide",
+   "title": "汽車 4S 店 / 二手車行貼紙印刷指南 · 防水 PVC 試駕車身貼，服務提醒 | 智印港",
+   "equiv": 74,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "same-day-flyers-printing-hong-kong-guide",
+   "title": "即日印刷・即日傳單印刷指南 · 香港餐廳開業 / 活動速遞方案 4-6 小時 | 智印港",
+   "equiv": 74,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "graduation-yearbook-printing-guide",
+   "title": "卒業記念アルバム印刷ガイド：製本・用紙・パーソナライズ完全解説 | ZprintPro",
+   "equiv": 74,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "2027-monthly-calendar-printing-timetable",
+   "title": "2027年カレンダー印刷攻略：いつ注文？最小ロットは？4 種用紙比較 | ZprintPro",
+   "equiv": 74,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "catalog-printing-guide",
+   "title": "Catalog & Art Book Printing Guide: Paper, Binding & Finishing | ZprintPro",
+   "equiv": 73,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "baby-food-packaging-box-printing-guide",
+   "title": "幼児食品パッケージ箱印刷ガイド：FDA食品衛生ボックス 日本向け | ZprintPro",
+   "equiv": 72,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "industrial-nameplate-printing-guide",
+   "title": "工業設備銘牌 / GHS 危險標籤印刷指南 · UL 認證，ANSI Z535 標準 | 智印港",
+   "equiv": 70,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "pet-food-sticker-printing-guide",
+   "title": "ペットフードステッカー印刷ガイド：防水・FDA 準拠ラベル素材 | ZprintPro",
+   "equiv": 70,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "baby-product-label-sticker-printing-guide",
+   "title": "ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro",
+   "equiv": 70,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "apparel-clothing-tag-printing-guide",
+   "title": "アパレルタグ・ネーム印刷完全ガイド：素材、加工、価格、事例 | ZprintPro",
+   "equiv": 70,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "poster-size-guide",
+   "title": "A1 A2 A3 ポスターサイズガイド：寸法早見表・用途・用紙選び | ZprintPro",
+   "equiv": 69,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "saddle-stitch-booklet-printing-guide",
+   "title": "中綴じ冊子印刷完全ガイド：ページ数・用紙・価格・低 MOQ | 10冊から対応",
+   "equiv": 69,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "title": "パッケージ印刷価格 2026：500/1000/5000 個・ギフトボックス | ZprintPro",
+   "equiv": 69,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "instant-printing-30s-ai-quote-flow",
+   "title": "即日印刷 30秒AI見積もりフロー: 正午までに確認、午後に出荷 | ZprintPro",
+   "equiv": 69,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "finance-summit-gift-bag-printing-guide",
+   "title": "香港金融峰會禮品袋印刷指南 · 銀行財富管理活動贊助商紙袋定製 | 智印港",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "hotel-keycard-sleeve-printing-guide",
+   "title": "酒店房卡套，行李牌印刷指南 · 軟觸啞面，燙金 logo 客用品包裝 | 智印港",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "real-estate-floor-plan-poster-printing-guide",
+   "title": "香港新盤樓盤戶型海報印刷指南 · A1/A2 防水戶型圖，售樓處佈局 | 智印港",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "company-intro",
+   "title": "About ZprintPro: Professional Equipment & One-Stop Printing Services",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "pharmaceutical-label-printing-guide",
+   "title": "医薬品ラベル印刷ガイド：GMP準拠・FDA/EMA対応・改ざん防止 | ZprintPro",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "restaurant-menu-printing-guide",
+   "title": "レストランメニュー印刷ガイド2026：防水・折りたたみ・素材 | ZprintPro",
+   "equiv": 68,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "a5-vs-a6-flyer-size",
+   "title": "A6 尺寸：A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港",
+   "equiv": 67,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "sticker-guide",
+   "title": "Complete Sticker Printing Guide: Materials, Finishes & Applications",
+   "equiv": 67,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "restaurant-opening-flyer-printing-guide",
+   "title": "レストラン開業チラシ印刷ガイド · サイズ・用紙・短期納品 | ZprintPro",
+   "equiv": 67,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "custom-card-boxes-small-batch-usa",
+   "title": "小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro",
+   "equiv": 67,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "hotel-amenity-sticker-printing-guide",
+   "title": "酒店民宿迎賓貼紙印刷指南 · 行李標籤 / 房卡套 / 客用品定製 | 智印港",
+   "equiv": 66,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "financial-institution-gift-bag-printing-guide",
+   "title": "香港金融機構禮品袋印刷指南 · 銀行卡套，信用卡開卡禮盒定製 | 智印港",
+   "equiv": 66,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "poster-size-guide",
+   "title": "A1 A2 A3 海報尺寸指南：印刷尺寸對照表・應用場景・紙材選擇 | 智印港",
+   "equiv": 66,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "doujin-circle-printing-guide",
+   "title": "同人誌印刷ガイド：小ロット・少部数・高品質対応・短納期 | ZprintPro",
+   "equiv": 66,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "rush-printing-hk-guide",
+   "title": "当日特急印刷 全ガイド：どこが一番早い？料金は？締切は？| ZprintPro",
+   "equiv": 66,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "calendar-printing-guide",
+   "title": "月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印港",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "poster-printing-price-guide",
+   "title": "A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣全拆解 | 智印港",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "design-file-specs",
+   "title": "Print File Design Specifications: Bleed, Resolution & Color Modes",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "paper-bag-printing-guide",
+   "title": "Paper Bag Printing Guide: Materials, Sizes, Handles & 2026 Trends",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "calendar-printing-guide",
+   "title": "Calendar Printing 2027: UK/US/AU, 1pc MOQ + Bulk 300+ | ZprintPro",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "packaging-box-price-2026",
+   "title": "パッケージ箱印刷価格 2026：500/1000/5000 個でいくら？ | ZprintPro",
+   "equiv": 65,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "baby-food-packaging-box-printing-guide",
+   "title": "香港嬰幼兒食品包裝盒印刷指南 · 奶粉輔食米糊安全包裝定製 | 智印港",
+   "equiv": 64,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "catalog-printing-guide",
+   "title": "畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全攻略 | 智印港",
+   "equiv": 64,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "catalog-printing-guide",
+   "title": "カタログ・写真集印刷ガイド：用紙・製本・加工の選び方 | ZprintPro",
+   "equiv": 64,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "large-envelope-printing-c4-c5",
+   "title": "大型封筒印刷 C4/C5 規格，100 個〜 \\$0.07〜，即日特急 | ZprintPro",
+   "equiv": 64,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "product-label-printing-guide",
+   "title": "跨境電商產品標籤印刷指南 · GS1 條碼，FDA 認證 SKU 標貼 | 智印港",
+   "equiv": 63,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "kraft-paper-box-types-comparison-2026",
+   "title": "牛皮紙盒 vs 坑盒 vs 彩盒 vs 禮盒 8 大盒型 5 維度全對比 | 智印港",
+   "equiv": 63,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "a5-vs-a6-flyer-size",
+   "title": "A5 と A6 チラシのサイズ比較：寸法・用途・印刷コスト | ZprintPro",
+   "equiv": 63,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "jewellery-shopping-bag-printing-guide",
+   "title": "香港珠寶鐘錶品牌紙袋印刷指南 · 黑卡燙金，絲帶手挽定製 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "ip-character-sticker-printing-guide",
+   "title": "文創IP角色造型貼紙印刷指南 · 香港同人品牌模切定制方案 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "real-estate-flyer-printing-guide",
+   "title": "香港房地產銷售單張印刷指南 · 新盤樓書派發 A4 摺頁定製 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "auto-parts-shopping-bag-printing-guide",
+   "title": "汽車 4S 店售後服務紙袋印刷指南 · 維修保養零件包裝定製 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "2027-monthly-calendar-printing-timetable",
+   "title": "2027 月曆印刷攻略：幾時印？起印量？4 種月曆紙材大對決 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "large-envelope-printing-c4-c5",
+   "title": "大信封印刷 C4/C5 規格，100 個起 HK$0.5/個起，即日特急 | 智印港",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "brand-materials-checklist",
+   "title": "Corporate Brand Materials Checklist: From Stickers to Displays",
+   "equiv": 62,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "marathon-event-poster-printing-guide",
+   "title": "馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包，起跑拱門 | 智印港",
+   "equiv": 61,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "en",
+   "slug": "food-packaging-printing-guide",
+   "title": "Food Packaging Printing Guide: Materials, Safety & Compliance",
+   "equiv": 61,
+   "band": "TRIM",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "ecommerce-shipping-bag-printing-guide",
+   "title": "EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro",
+   "equiv": 61,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "tea-beverage-gift-box-printing-guide",
+   "title": "香港茶飲品牌禮盒印刷指南 · 手搖、中茶、茶葉電商適用 | 智印港",
+   "equiv": 60,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "construction-material-sample-book-printing-guide",
+   "title": "建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定製 | 智印港",
+   "equiv": 60,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "textbook-printing-guide",
+   "title": "Textbook Printing Guide: 3 Bindings, 100 Copies | ZprintPro",
+   "equiv": 59,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "title": "練習帳印刷ガイド 2026: 4 用紙 3 製本 100 部から | ZprintPro",
+   "equiv": 59,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "media-merchandise-box-printing-guide",
+   "title": "影視IP周邊禮盒印刷指南 · 香港品牌影迷集體回憶定製 | 智印港",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "religious-ceremony-printing-guide",
+   "title": "香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定製 | 智印港",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "eco-printing",
+   "title": "Eco-Friendly Printing: The Future of Sustainable Packaging",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "rush-printing-delivery-guide",
+   "title": "当日急行印刷攻略：どこが最速？料金？何時締切？ | ZprintPro",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "zine-small-batch-booklet-printing-guide",
+   "title": "ジン印刷ガイド: 中綴じ 8〜64 ページ 100 部から | ZprintPro",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "folded-leaflet-printing-guide",
+   "title": "折りたたみチラシ印刷 二つ折り三つ折り 10部から | ZprintPro",
+   "equiv": 58,
+   "band": "TRIM",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "paper-bag-printing-guide",
+   "title": "香港紙袋印刷完全指南：材質、尺寸、手挽與設計趨勢",
+   "equiv": 48,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "custom-card-boxes-small-batch-usa",
+   "title": "小批量彩盒訂製:跨境電商賣家免刀模費方案 | 智印港",
+   "equiv": 48,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "cmyk-guide",
+   "title": "CMYK vs RGB: Complete Guide to Print Color Modes",
+   "equiv": 48,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "sticker-guide",
+   "title": "香港貼紙印刷完全指南：材質、工藝與應用場景详解",
+   "equiv": 46,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "sticker-design",
+   "title": "貼紙設計的10個黃金法則：打造令人難忘的品牌形象",
+   "equiv": 46,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "packaging-trends",
+   "title": "2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出",
+   "equiv": 46,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "food-packaging-printing-guide",
+   "title": "食品包裝印刷完全指南：材質、安全認證與設計實務",
+   "equiv": 46,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "sticker-guide",
+   "title": "ステッカー印刷完全ガイド：材質、加工と応用場面",
+   "equiv": 46,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "company-intro",
+   "title": "智印港印刷公司簡介：專業設備與一站式印刷服務",
+   "equiv": 44,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "brand-materials-checklist",
+   "title": "企業品牌物料清單：從貼紙到展架的全套印刷方案",
+   "equiv": 44,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "paper-materials",
+   "title": "印刷用紙選択ガイド：アート紙から特殊紙まで",
+   "equiv": 42,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "packaging-trends",
+   "title": "2024 Packaging Design Trends Analysis",
+   "equiv": 37,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "cmyk-guide",
+   "title": "CMYK vs RGB：印刷カラーモード完全解説",
+   "equiv": 37,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "packaging-trends",
+   "title": "2024年パッケージデザイントレンド解析",
+   "equiv": 36,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "eco-printing",
+   "title": "環保印刷：企業ESG與可持續包裝的未來",
+   "equiv": 35,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "paper-materials",
+   "title": "印刷紙材選擇指南：從銅版紙到特種紙",
+   "equiv": 34,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "en",
+   "slug": "sticker-design",
+   "title": "10 Golden Rules for Sticker Design",
+   "equiv": 34,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "cmyk-guide",
+   "title": "CMYK vs RGB：印刷色彩模式完全詳解",
+   "equiv": 33,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "sticker-design",
+   "title": "ステッカーデザインの10の黄金法則",
+   "equiv": 32,
+   "band": "FILL",
+   "longform": true
+  },
+  {
+   "loc": "ja",
+   "slug": "brand-materials-checklist",
+   "title": "企業ブランド物料チェックリスト",
+   "equiv": 30,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "eco-printing",
+   "title": "エコ印刷：持続可能な包装の未来",
+   "equiv": 30,
+   "band": "FILL",
+   "longform": false
+  },
+  {
+   "loc": "ja",
+   "slug": "design-file-specs",
+   "title": "印刷用デザインファイル仕様",
+   "equiv": 26,
+   "band": "FILL",
+   "longform": false
+  }
+ ]
+}

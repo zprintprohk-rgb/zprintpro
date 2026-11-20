@@ -1,0 +1,69 @@
+fix(i18n)+diag: ja imageAlt 折行清账 25 处 + brand-locale「门童 39 vs 我审 0」根因定位
+
+════ 一、ja imageAlt 折行修复 (25 处, 客户可见) ════
+
+分类工具 (scripts/diag-brand-audit-gap-and-alt.cjs, 三级判定, 只读):
+   🔴 确证 25 / 🟡 需人读 4 / 🟢 假阳性 56 (前次 audit-ja-imagealt-fold.cjs 的 🟠 28 中, 有 24 条其实含假名=正常日文)
+   🔴 判据: 「与 zh-hk 段完全相同」**或**「无假名 + 含繁体专用字」⇒ 结构上不可能是合法日文 alt
+   🟢 说明: 前次工具的口径是「无假名且含汉字」⇒ 把 56 条**合法含假名日文**也标成可疑 = 口径过宽 (假阳性率 56/81)
+
+落盘 25 处 (scripts/apply-ja-imagealt-fold-fix.cjs, dry-run 默认):
+   - 日文名来源 = src/data/products.ts 的 nameJa (**真值**), 逐条核对见 .hermes/_tmp-alt-truth.cjs
+     ⇒ 25/25 有源, **零凭空翻译**
+   - 形态参考本仓已有正常日文 alt 模型: `<主名> / <特徴> | 香港の<X>印刷 | ZprintPro`
+   - 硬断言: 新串必须含假名, 否则**拒绝写入** (确证折行的反面判据)
+   - 示例: transparent-stickers「一般為100張起訂，部分特殊工藝需500張起。」→
+           「透明ステッカー / 防水 | 香港の透明ステッカー印刷 | ZprintPro」
+
+**未动**: 🟡 4 条 (eco-paper-bags / small-bags / a1-posters / display-posters —— 无假名但用字可能是日本汉字, 需人读);
+         🟢 56 条 (实测含假名, 系前工具误报)。
+
+════ 二、「门童 BRAND_LOCALE_MISMATCH 39 处 vs 结构解析 0 处」根因 (已定案) ════
+
+结论: **不是口径谁对谁错, 是量测域不同 —— 且错在我的审计工具。**
+
+用 scripts/diag-brand-locale-2methods.cjs (复刻门童口径) + diag-brand-locale-classify.cjs 全量归类:
+   门童 src/ 全量真值 = **BRAND_LOCALE_MISMATCH 188 处** (未截断: trueCount=188 / retained=188 / capped=false),
+   其中落在 sku-seo-data.ts 的 = **39 处** —— 与我审「0 处」的 39 处**正是同一批**。
+   39 处全部落在 `faqs[].a`, 值是中文, 例: `"a": "專業可移貼紙(無殘膠)服務 | 智印港"`
+
+我的审计工具 (scripts/audit-sku-locale.cjs) 覆盖 seo[locale].{title,description,h1} + imageAlt[locale] 四个字段族,
+**完全没有看 faqs[]** (faqs 是**无 locale 结构**的共享数组 {q,a}, 结构解析遍历时被整族跳过) ⇒ 报 0 = **假阴性**。
+该缺口已用工具量化: 「未覆盖: faqs[].a 含智印港 = 39」恰等于门童数 (**合账**)。
+
+⚠️ 但 39 处的**客户可见影响尚未成立**: 渲染路径追查显示
+   产品页 FAQ 取 `coreProductFAQMap` (src/data/product-faqs.ts, 有 locale 结构),
+   全 src/ 内 `getSkuSeo(...).faqs` **零消费点** ⇒ sku-seo-data.faqs 疑为**死数据**。
+   并且该文件头注「从 zprintpro-sku-seo-data.csv 自动生成 (node scripts/csv-to-sku-seo.mjs 更新)」
+   ⇒ 手改会被下次再生成覆盖 (SOP-5 派生文件禁手搓; 冲突回源头)。
+   **故本批不动这 39 处**, 只交根因 + 两条候选修法待裁:
+     (a) 回 CSV 源头清 (需重生成, 面大)   (b) 若确证死数据 → 请求门童对该族设豁免台账 (须 K3 拍板, 禁自行绕过)
+
+其余 149 处分布 (同一次归类, 供后续批次):
+   seo-zh-hk-subfield 58 (products.ts 26 / pillar-content.ts 18 / buying-guides.ts 7 / product-seo.ts 5 / blog-posts.ts 1 / category-seo-content.ts 1)
+   other 91 (blog/[slug] 36 / trade-program 6 / lib-seo-keywords 6 / lib-seo 6 / case-studies 5 … 多为 zh-hk 正文 ZprintPro 与 ja 段残留)
+   title-field 0 / app-locale-ternary 0 (说明 title 类黄金位与三元写法**已干净**)
+
+════ 三、工具与方法 (新增 4 个只读分诊器, 均已去掉 _ 前缀正式入库) ════
+   scripts/diag-brand-locale-2methods.cjs      门童口径 vs 结构解析口径 逐条比对 + 差异落点
+   scripts/diag-brand-locale-classify.cjs      188 处按「文件 × 命中形态」归类 (只读)
+   scripts/diag-brand-audit-gap-and-alt.cjs    审计工具口径缺口量化 + ja imageAlt 三级分类
+   scripts/apply-ja-imagealt-fold-fix.cjs      🔴 确证项落盘 (dry-run 默认 / 新串必须含假名)
+
+   ★ 本轮新增避坑 (已在活书 §9 记录): **量测域不同 ≠ 口径冲突**。
+     「A 工具报 39、B 工具报 0」时, 第一动作**不是**判定谁错, 而是**把两个工具的字段域并排列出**
+     —— 本轮真因就是 B 工具少了 faqs[] 一族, 且 39 与 0 其实**合账**。
+
+验证 (全实测)
+   npx tsc --noEmit → 54 = 基线 54
+   node scripts/audit-sku-locale.cjs → 四项 0 (ja/en 智印港 / zh-hk ZprintPro / ja 繁体 / en CJK)
+   node scripts/diag-brand-audit-gap-and-alt.cjs → 🔴确证 25 → **0**; 🟡 4 / 🟢 81 (假阳性族)
+   node scripts/check-encoding.js → 0
+   node scripts/probe-skill-handover.mjs → 38 PASS / 0 FAIL
+   本批未 push (30 min 间隔纪律: 上次 push 19:38, 窗口 20:08)
+
+数据来源:
+- 门童未截断真值: common.SCAN_STATS (BRAND_LOCALE_MISMATCH trueCount=188)
+- 字段族缺口: scripts/diag-brand-audit-gap-and-alt.cjs 实测 (faqs[].a=39)
+- 渲染路径: src/app/[locale]/product/[slug]/page.tsx L244-248 (coreProductFAQMap)
+- nameJa 真值: src/data/products.ts (逐条 dump .hermes/_tmp-alt-truth.cjs)

@@ -1,0 +1,164 @@
+{
+ "zh_hk": {
+  "method1_openpyxl": {
+   "n_data_rows": 589,
+   "n_band_5_15": 202,
+   "picks": {
+    "食品包裝印刷": {
+     "position": 7.7,
+     "impressions": 147,
+     "clicks": 0
+    },
+    "a6 尺寸": {
+     "position": 8.62,
+     "impressions": 84,
+     "clicks": 0
+    },
+    "紙袋印刷": {
+     "position": 12.26,
+     "impressions": 73,
+     "clicks": 0
+    },
+    "印刷紙袋": {
+     "position": 12.15,
+     "impressions": 65,
+     "clicks": 0
+    },
+    "餐牌印刷": {
+     "position": 11.62,
+     "impressions": 60,
+     "clicks": 1
+    },
+    "小冊子印刷": {
+     "position": 10.15,
+     "impressions": 53,
+     "clicks": 0
+    },
+    "即日印刷": {
+     "position": 8.94,
+     "impressions": 51,
+     "clicks": 2
+    }
+   }
+  },
+  "method2_rawxml": {
+   "n_data_rows": 589,
+   "n_band_5_15": 202,
+   "picks": {
+    "食品包裝印刷": {
+     "position": 7.7,
+     "impressions": 147,
+     "clicks": 0
+    },
+    "a6 尺寸": {
+     "position": 8.62,
+     "impressions": 84,
+     "clicks": 0
+    },
+    "紙袋印刷": {
+     "position": 12.26,
+     "impressions": 73,
+     "clicks": 0
+    },
+    "印刷紙袋": {
+     "position": 12.15,
+     "impressions": 65,
+     "clicks": 0
+    },
+    "餐牌印刷": {
+     "position": 11.62,
+     "impressions": 60,
+     "clicks": 1
+    },
+    "小冊子印刷": {
+     "position": 10.15,
+     "impressions": 53,
+     "clicks": 0
+    },
+    "即日印刷": {
+     "position": 8.94,
+     "impressions": 51,
+     "clicks": 2
+    }
+   }
+  },
+  "agree_row_counts": true,
+  "agree_pick_values": true
+ },
+ "en": {
+  "method1_openpyxl": {
+   "n_data_rows": 510,
+   "n_band_5_15": 161,
+   "picks": {
+    "small batch sticker printing": {
+     "position": 6.48,
+     "impressions": 62,
+     "clicks": 0
+    },
+    "small batch stickers": {
+     "position": 5.31,
+     "impressions": 29,
+     "clicks": 0
+    },
+    "doujinshi printing": {
+     "position": 14.53,
+     "impressions": 34,
+     "clicks": 1
+    },
+    "exercise book printing business": {
+     "position": 11.43,
+     "impressions": 23,
+     "clicks": 0
+    },
+    "fluorescent stickers": {
+     "position": 12.33,
+     "impressions": 18,
+     "clicks": 0
+    },
+    "pvc menu": {
+     "position": 7.93,
+     "impressions": 15,
+     "clicks": 0
+    }
+   }
+  },
+  "method2_rawxml": {
+   "n_data_rows": 510,
+   "n_band_5_15": 161,
+   "picks": {
+    "small batch sticker printing": {
+     "position": 6.48,
+     "impressions": 62,
+     "clicks": 0
+    },
+    "small batch stickers": {
+     "position": 5.31,
+     "impressions": 29,
+     "clicks": 0
+    },
+    "doujinshi printing": {
+     "position": 14.53,
+     "impressions": 34,
+     "clicks": 1
+    },
+    "exercise book printing business": {
+     "position": 11.43,
+     "impressions": 23,
+     "clicks": 0
+    },
+    "fluorescent stickers": {
+     "position": 12.33,
+     "impressions": 18,
+     "clicks": 0
+    },
+    "pvc menu": {
+     "position": 7.93,
+     "impressions": 15,
+     "clicks": 0
+    }
+   }
+  },
+  "agree_row_counts": true,
+  "agree_pick_values": true
+ }
+}

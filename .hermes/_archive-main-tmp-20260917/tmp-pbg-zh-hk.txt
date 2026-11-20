@@ -1,0 +1,44 @@
+<p class="text-base text-[#1A56DB] font-medium mb-4"><strong>重點摘要：</strong>包裝盒訂製 100 個起印，精裝盒（rigid box）HK$8-42/個、摺盒 HK$2.5-15/個、白卡盒 HK$0.50-3.00/個，3-7 天交貨，無刀模費視乎批量。本文拆解 6 大盒型、材質×工藝組合、2026 真實價格階梯與選購避坑清單。完整<a href="/zh-hk/category/packaging/" class="text-[#1A56DB] underline">包裝盒印刷</a>服務可到包裝類目。</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp 聯絡智印港</strong></a>，30 秒 AI 即時報價；或直接睇<a href="/zh-hk/product/rigid-boxes/" class="text-[#1A56DB] underline">精裝盒產品頁</a>。</p>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>價格：</strong>精裝盒（灰板裱紙）HK$8-42/個、摺盒 HK$2.5-15/個、白卡盒 HK$0.50-3.00/個、磁吸盒 HK$15-80/個，全部 100 個起印（白卡盒 500 個起）。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>起訂：</strong>標準包裝盒 100 個起印，無刀模費視乎批量；拼版白卡盒更可免刀模費 + 免排版費，成本直降 40-60%。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>交期：</strong>3-7 個工作天完成生產，順豐本地送貨、DHL 全球 2-4 天；急單可選<a href="/zh-hk/blog/rush-printing-hk-guide/" class="text-[#1A56DB] underline">即日印刷服務</a>。</p></div>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">1. 包裝盒訂製幾錢一個？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">包裝盒價格由盒型、材質、尺寸、數量同工藝決定。以下係智印港 2026 真實價目（per products.ts 2026-09 價格口徑，全部 100 個起印）：</p>
+<table class="w-full text-sm border-collapse my-6"><thead><tr class="bg-gray-100"><th class="border p-3 text-left">盒型</th><th class="border p-3 text-left">價目（HK$/個）</th><th class="border p-3 text-left">起印量</th></tr></thead><tbody>
+<tr><td class="border p-3">精裝盒 / 硬盒</td><td class="border p-3">HK$8-42/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">磁吸翻蓋盒</td><td class="border p-3">HK$15-80/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">摺盒 / 卡盒</td><td class="border p-3">HK$2.5-15/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">郵寄盒 / 快遞盒</td><td class="border p-3">HK$3.5-10/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">白卡紙盒（卡盒）</td><td class="border p-3">HK$0.50-3.00/個</td><td class="border p-3">500 個</td></tr>
+<tr><td class="border p-3">食品包裝盒</td><td class="border p-3">HK$2.5-18/個</td><td class="border p-3">100 個</td></tr>
+</tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【包裝盒訂製 100 個起印、3-7 天交貨，精裝盒 HK$8-42/個、白卡盒 HK$0.50-3.00/個，量大單價遞減】</p></div>
+<p class="text-base text-[#444444] leading-relaxed mb-4">想比較其他印刷品成本，可參考<a href="/zh-hk/blog/hong-kong-printing-cost-baseline-2026/" class="text-[#1A56DB] underline">香港印刷成本基準 2026</a>與<a href="/zh-hk/blog/packaging-box-pricing-2026/" class="text-[#1A56DB] underline">包裝盒價格指南 2026</a>。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">2. 盒型點揀：天地蓋 vs 書型 vs 抽屜？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">包裝盒 6 大盒型各有特性，揀啱先慳成本又顯檔次：</p>
+<table class="w-full text-sm border-collapse my-6"><thead><tr class="bg-gray-100"><th class="border p-3 text-left">盒型</th><th class="border p-3 text-left">特點</th><th class="border p-3 text-left">典型應用</th></tr></thead><tbody>
+<tr><td class="border p-3">天地蓋盒</td><td class="border p-3">上下分開，高端大氣</td><td class="border p-3">高檔禮品、首飾</td></tr>
+<tr><td class="border p-3">書型盒</td><td class="border p-3">翻蓋式，像書本打開</td><td class="border p-3">高端品牌、收藏品</td></tr>
+<tr><td class="border p-3">抽屜盒</td><td class="border p-3">抽拉式設計，有儀式感</td><td class="border p-3">珠寶、限量版</td></tr>
+<tr><td class="border p-3">磁吸翻蓋盒</td><td class="border p-3">磁吸閉合，開合順滑</td><td class="border p-3">奢侈品、化妝品、電子產品</td></tr>
+<tr><td class="border p-3">開窗盒</td><td class="border p-3">透明窗展示產品</td><td class="border p-3">食品、化妝品陳列</td></tr>
+<tr><td class="border p-3">普通摺盒</td><td class="border p-3">瓦楞 / 卡紙摺疊，成本低</td><td class="border p-3">電商快遞、外賣</td></tr>
+</tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【零售走量揀摺盒/卡盒慳成本，品牌禮品揀精裝盒/磁吸盒顯檔次——盒型直接決定單價與開箱體驗】</p></div>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">3. 材質同工藝點配合先高級？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">常見材質：白卡紙（250-400g，挺度高）、灰板裱紙（結構穩固）、瓦楞紙（緩衝好，跨境運輸）、特種紙（珠光/棉絮，高端禮盒）、牛皮紙（環保復古）、PET/PP 膠片（開窗）。工藝組合：光膠/啞膠做基礎保護，UV 局部上光突出 Logo，燙金燙銀提升奢華感，擊凸壓凹走極簡高級。想睇材料延伸可參考<a href="/zh-hk/blog/kraft-paper-box-types-comparison-2026/" class="text-[#1A56DB] underline">牛皮紙盒比較</a>。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">4. 揀包裝盒要避開咩坑？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">5 大常見坑：(1) 低估起印量——精裝盒 100 個起，白卡盒 500 個起，試單前先計好；(2) 忽略刀模費——異形盒要刀模，拼版白卡盒免刀模費最抵；(3) 色差——RGB 設計轉 CMYK 會變色，一定要用 Pantone 專色；(4) 內托未預留——珠寶/電子產品要 EVA 內托，成本另計；(5) 交期太趕——3-7 天標準，急單要提前。完整選購框架可參考<a href="/zh-hk/blog/packaging-box-custom-guide/" class="text-[#1A56DB] underline">包裝盒訂製指南</a>。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">5. 包裝盒訂製常見問題有邊啲？</h2>
+<p><strong>Q：包裝盒最少訂幾多個？</strong><br/>A：標準精裝盒、摺盒、磁吸盒 100 個起印；白卡紙盒（卡盒）500 個起；拼版白卡盒亦 500 個起但可免刀模費。</p>
+<p><strong>Q：包裝盒訂製幾多錢一個？</strong><br/>A：視乎盒型：精裝盒 HK$8-42/個、摺盒 HK$2.5-15/個、白卡盒 HK$0.50-3.00/個、磁吸盒 HK$15-80/個，數量愈大單價愈平。</p>
+<p><strong>Q：有無設計服務？</strong><br/>A：提供設計服務，含 3D 模擬圖；亦接受客戶自備 AI/PDF 檔案，我哋免費做 PDF 預檢。</p>
+<p><strong>Q：環保盒材質有咩選擇？</strong><br/>A：FSC 認證紙板、大豆油墨、牛皮紙、食品級白卡（FDA 接觸安全）均可選，適合 ESG 品牌。</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp 聯絡智印港</strong></a>，攞 30 秒 AI 即時報價，順豐本地免運費、DHL 全球 2-4 天送貨。</p>
+<div class="mt-12 p-6 bg-[#F5F8FF] rounded-lg border border-[#2873F5]/20">
+<p class="text-base text-[#333333] font-semibold mb-2">關於智印港</p>
+<p class="text-sm text-[#444444] leading-relaxed">智印港 為香港、澳門、台灣及全球華人圈客戶提供 30 秒 AI 即時印刷報價，順豐本地，DHL 全球 2-4 天配送。ISO 9001 品質管理體系，FSC 認證紙張供應。專業包裝盒訂製 100 個起，化妝品、珠寶、食品、電子產品全場景覆蓋。</p>
+<p class="mb-0"><strong>資料來源：</strong>智印港 2026 內部報價資料庫（products.ts 2026-09 價目）；ISO 12647-2:2013 色彩管理標準；FSC 2025 永續印刷報告。</p>
+</div>
+<p class="text-sm text-[#444444] mt-4"><strong>本文作者：</strong>智印港印刷工程團隊 — 15 年膠印工程師，專注包裝盒／彩盒／精裝盒工藝。<strong>最後更新：2026-09-16。</strong></p>

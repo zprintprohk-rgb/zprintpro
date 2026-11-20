@@ -1,0 +1,3863 @@
+{
+ "schema": "v28_5-deploy-manifest/v1",
+ "built_at": "2026-10-21T11:52:04.972Z",
+ "data_sources": [
+  "zprintpro-en-us-images/v28_5_webp/_ledger/B_sku_consolidation.csv (1092 rows)",
+  "src/data/products.ts (live slugs regex, count=83)",
+  ".hermes/geo/v28_5-gsc-tiers.json (28d 10-15 三单站档, plan basis=per_site_sum)",
+  ".hermes/logs/b1c-queue-progress.json (cluster dates) + SESSION_LOCK.md + docs/2026-10-16-two-week-execution-plan-v2.md",
+  ".hermes/geo/v28_5-wiring.json (wiring facts)",
+  "byte-hash compare: library vs public/ served files"
+ ],
+ "live_slugs": [
+  "a1-posters",
+  "a2-posters",
+  "a4-flyers",
+  "a5-flyers",
+  "adhesive-banners",
+  "adhesive-posters",
+  "art-posters",
+  "business-envelopes",
+  "cartoon-red-packets",
+  "catalog-printing",
+  "certificates",
+  "colored-envelopes",
+  "corrugated-boxes",
+  "cosmetic-boxes",
+  "custom-calendars",
+  "custom-red-packets",
+  "desk-calendars",
+  "die-cut-stickers",
+  "display-posters",
+  "double-sided-flyers",
+  "doujinshi-printing",
+  "drink-menus",
+  "eco-flyers",
+  "eco-paper-bags",
+  "eco-red-packets",
+  "electronics-packaging-box",
+  "embossed-red-packets",
+  "exercise-books",
+  "foil-greeting-cards",
+  "foil-red-packets",
+  "foil-stickers",
+  "foil-wedding-invitations",
+  "folded-leaflets",
+  "folding-boxes",
+  "food-boxes",
+  "fruit-food-label-stickers",
+  "gang-run-card-boxes",
+  "gift-bags",
+  "graduation-yearbook",
+  "handle-bags",
+  "hardcover-books",
+  "hardcover-menus",
+  "kraft-paper-bags",
+  "kraft-paper-packaging-box",
+  "laminated-menus",
+  "large-bags",
+  "large-envelopes",
+  "large-red-packets",
+  "magnetic-calendars",
+  "magnetic-closure-gift-box",
+  "mailer-boxes",
+  "matte-greeting-cards",
+  "mini-calendars",
+  "outdoor-posters",
+  "outdoor-vinyl-banners",
+  "pearl-envelopes",
+  "perfect-bound-books",
+  "photo-frame-calendars",
+  "premium-greeting-cards",
+  "pvc-menus",
+  "removable-stickers",
+  "rigid-boxes",
+  "roll-stickers",
+  "roll-up-banners",
+  "rounded-corner-greeting-cards",
+  "saddle-stitch-booklets",
+  "same-day-flyers",
+  "school-flyers",
+  "security-stickers",
+  "small-batch-stickers",
+  "spiral-notebooks",
+  "spot-uv-greeting-cards",
+  "textbooks",
+  "thick-greeting-cards-400g",
+  "thick-paper-flyers",
+  "transparent-stickers",
+  "tuck-end-boxes",
+  "vehicle-wraps",
+  "wall-calendars",
+  "waterproof-stickers",
+  "wedding-thank-you-cards",
+  "white-card-bags",
+  "white-card-boxes"
+ ],
+ "retired_slugs": [
+  "drink-tokens",
+  "cafe-table-cards",
+  "wedding-place-cards",
+  "save-the-date-cards",
+  "wedding-seating-charts",
+  "wedding-suite-bundle",
+  "eco-tote-bag",
+  "postcard-set",
+  "fluorescent-stickers"
+ ],
+ "deploy_path_rule": "/images/products/v28_5/<slug>/<zprintpro-<类目>-<产品>-<locale>-<view>.webp>",
+ "entries": [
+  {
+   "dir": "BC-001",
+   "filename_mid": "greeting-cards-premium-greeting-cards",
+   "slug": "premium-greeting-cards",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.1,
+   "sources": "V27.5-PNG+V26",
+   "flags": [
+    "seoImages.filename en/ja stickers 残留 bug ×6 随本批修"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 2,
+    "clicks": 0,
+    "zh": 0,
+    "en": 2,
+    "ja": 0,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "defer-bc-ruling",
+   "wave": "BC-1027"
+  },
+  {
+   "dir": "BC-002",
+   "filename_mid": "greeting-cards-thick-greeting-cards-400g",
+   "slug": "thick-greeting-cards-400g",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.9,
+   "sources": "V26",
+   "flags": [
+    "seoImages.filename en/ja stickers 残留 bug ×6 随本批修"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 0,
+    "clicks": 1,
+    "zh": 0,
+    "en": 0,
+    "ja": 0,
+    "tier": "zero",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "defer-bc-ruling",
+   "wave": "BC-1027"
+  },
+  {
+   "dir": "BC-003",
+   "filename_mid": "greeting-cards-foil-greeting-cards",
+   "slug": "foil-greeting-cards",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.5,
+   "sources": "V26",
+   "flags": [
+    "seoImages.filename en/ja stickers 残留 bug ×6 随本批修"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 1,
+    "clicks": 2,
+    "zh": 1,
+    "en": 0,
+    "ja": 0,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "defer-bc-ruling",
+   "wave": "BC-1027"
+  },
+  {
+   "dir": "BC-004",
+   "filename_mid": "greeting-cards-spot-uv-greeting-cards",
+   "slug": "spot-uv-greeting-cards",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 116.2,
+   "sources": "V26",
+   "flags": [
+    "seoImages.filename en/ja stickers 残留 bug ×6 随本批修"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 0,
+    "clicks": 0,
+    "zh": 0,
+    "en": 0,
+    "ja": 0,
+    "tier": "zero",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "defer-bc-ruling",
+   "wave": "BC-1027"
+  },
+  {
+   "dir": "BC-005",
+   "filename_mid": "greeting-cards-matte-greeting-cards",
+   "slug": "matte-greeting-cards",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 114.2,
+   "sources": "V26",
+   "flags": [
+    "seoImages.filename en/ja stickers 残留 bug ×6 随本批修"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 0,
+    "clicks": 0,
+    "zh": 0,
+    "en": 0,
+    "ja": 0,
+    "tier": "zero",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "defer-bc-ruling",
+   "wave": "BC-1027"
+  },
+  {
+   "dir": "BC-006",
+   "filename_mid": "greeting-cards-rounded-corner-greeting-cards",
+   "slug": "rounded-corner-greeting-cards",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 117.4,
+   "sources": "V26",
+   "flags": [
+    "seoImages.filename en/ja stickers 残留 bug ×6 随本批修"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 0,
+    "clicks": 0,
+    "zh": 0,
+    "en": 0,
+    "ja": 0,
+    "tier": "zero",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "defer-bc-ruling",
+   "wave": "BC-1027"
+  },
+  {
+   "dir": "BK-001",
+   "filename_mid": "books-catalog-printing",
+   "slug": "catalog-printing",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 105.6,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 184,
+    "clicks": 2,
+    "zh": 41,
+    "en": 133,
+    "ja": 10,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "BK-002",
+   "filename_mid": "books-saddle-stitch-booklets",
+   "slug": "saddle-stitch-booklets",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 115.3,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 331,
+    "clicks": 6,
+    "zh": 89,
+    "en": 207,
+    "ja": 35,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "BK-003",
+   "filename_mid": "books-perfect-bound-books",
+   "slug": "perfect-bound-books",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 113.3,
+   "sources": "V26+V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 17,
+    "clicks": 0,
+    "zh": 6,
+    "en": 11,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "BK-004",
+   "filename_mid": "books-hardcover-books",
+   "slug": "hardcover-books",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.8,
+   "sources": "V26+V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 8,
+    "clicks": 1,
+    "zh": 5,
+    "en": 3,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "BK-005",
+   "filename_mid": "books-spiral-notebooks",
+   "slug": "spiral-notebooks",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 113.7,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 3,
+    "clicks": 0,
+    "zh": 0,
+    "en": 2,
+    "ja": 1,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W1-1017"
+  },
+  {
+   "dir": "BN-001",
+   "filename_mid": "banners-outdoor-vinyl-banners",
+   "slug": "outdoor-vinyl-banners",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 116.6,
+   "sources": "V26+V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 23,
+    "clicks": 1,
+    "zh": 22,
+    "en": 1,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "BN-002",
+   "filename_mid": "banners-roll-up-banners",
+   "slug": "roll-up-banners",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 116.7,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 32,
+    "clicks": 1,
+    "zh": 18,
+    "en": 5,
+    "ja": 9,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "BN-003",
+   "filename_mid": "banners-adhesive-banners",
+   "slug": "adhesive-banners",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 116.4,
+   "sources": "V26+V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 23,
+    "clicks": 1,
+    "zh": 1,
+    "en": 22,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "BN-004",
+   "filename_mid": "banners-vehicle-wraps",
+   "slug": "vehicle-wraps",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 111.1,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 138,
+    "clicks": 0,
+    "zh": 68,
+    "en": 70,
+    "ja": 0,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "CL-001",
+   "filename_mid": "calendars-wall-calendars",
+   "slug": "wall-calendars",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.8,
+   "sources": "V26",
+   "flags": [
+    "图随文: 簇7 内容 10-16 05:0x 已上线"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 7,
+    "clicks": 1,
+    "zh": 7,
+    "en": 0,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "CL-1017-with-cluster7"
+  },
+  {
+   "dir": "CL-002",
+   "filename_mid": "calendars-desk-calendars",
+   "slug": "desk-calendars",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 103.7,
+   "sources": "V28.5",
+   "flags": [
+    "图随文: 簇7 内容 10-16 05:0x 已上线"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 46,
+    "clicks": 1,
+    "zh": 38,
+    "en": 0,
+    "ja": 8,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "CL-1017-with-cluster7"
+  },
+  {
+   "dir": "CL-003",
+   "filename_mid": "calendars-custom-calendars",
+   "slug": "custom-calendars",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.6,
+   "sources": "V26",
+   "flags": [
+    "图随文: 簇7 内容 10-16 05:0x 已上线"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 205,
+    "clicks": 4,
+    "zh": 198,
+    "en": 2,
+    "ja": 5,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "CL-1017-with-cluster7"
+  },
+  {
+   "dir": "CL-004",
+   "filename_mid": "calendars-mini-calendars",
+   "slug": "mini-calendars",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 113.9,
+   "sources": "V28.5",
+   "flags": [
+    "图随文: 簇7 内容 10-16 05:0x 已上线"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 14,
+    "clicks": 1,
+    "zh": 4,
+    "en": 2,
+    "ja": 8,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "CL-1017-with-cluster7"
+  },
+  {
+   "dir": "CL-005",
+   "filename_mid": "calendars-photo-frame-calendars",
+   "slug": "photo-frame-calendars",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 116.4,
+   "sources": "V26",
+   "flags": [
+    "图随文: 簇7 内容 10-16 05:0x 已上线"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 16,
+    "clicks": 0,
+    "zh": 6,
+    "en": 1,
+    "ja": 9,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "CL-1017-with-cluster7"
+  },
+  {
+   "dir": "CL-006",
+   "filename_mid": "calendars-magnetic-calendars",
+   "slug": "magnetic-calendars",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 110.3,
+   "sources": "V26",
+   "flags": [
+    "图随文: 簇7 内容 10-16 05:0x 已上线"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 8,
+    "clicks": 1,
+    "zh": 7,
+    "en": 0,
+    "ja": 1,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "CL-1017-with-cluster7"
+  },
+  {
+   "dir": "DJ-001",
+   "filename_mid": "japan-doujin-doujinshi-printing",
+   "slug": "doujinshi-printing",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.1,
+   "sources": "V28.5",
+   "flags": [
+    "图随文原则: C107 专题 10/24-25 同批; 现役图为 /images/japan/ jpg 旧族, 收益大"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 242,
+    "clicks": 14,
+    "zh": 18,
+    "en": 38,
+    "ja": 186,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "C107-1024-with-content"
+  },
+  {
+   "dir": "DJ-004",
+   "filename_mid": "japan-doujin-postcard-set",
+   "slug": null,
+   "match_kind": null,
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.2,
+   "sources": "V28.5",
+   "flags": [],
+   "verdict": "exclude-retired",
+   "wave": null,
+   "note": "filename slug = set → 已退役 (middleware 301 / Tier1 10-12)"
+  },
+  {
+   "dir": "DJ-005",
+   "filename_mid": "japan-doujin-eco-tote-bag",
+   "slug": null,
+   "match_kind": null,
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 115.7,
+   "sources": "V28.5",
+   "flags": [],
+   "verdict": "exclude-retired",
+   "wave": null,
+   "note": "filename slug = bag → 已退役 (middleware 301 / Tier1 10-12)"
+  },
+  {
+   "dir": "ED-001",
+   "filename_mid": "educational-exercise-books",
+   "slug": "exercise-books",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 112.3,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 51,
+    "clicks": 9,
+    "zh": 13,
+    "en": 38,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "ED-002",
+   "filename_mid": "educational-certificates",
+   "slug": "certificates",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.4,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 25,
+    "clicks": 2,
+    "zh": 16,
+    "en": 2,
+    "ja": 7,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "ED-003",
+   "filename_mid": "educational-school-flyers",
+   "slug": "school-flyers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 112.5,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 16,
+    "clicks": 1,
+    "zh": 16,
+    "en": 0,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "ED-004",
+   "filename_mid": "educational-textbooks",
+   "slug": "textbooks",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 117.9,
+   "sources": "V26+V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 14,
+    "clicks": 1,
+    "zh": 1,
+    "en": 3,
+    "ja": 10,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "ED-005",
+   "filename_mid": "educational-graduation-yearbook",
+   "slug": "graduation-yearbook",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.4,
+   "sources": "V26+V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 43,
+    "clicks": 3,
+    "zh": 11,
+    "en": 22,
+    "ja": 10,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "EV-001",
+   "filename_mid": "envelopes-business-envelopes",
+   "slug": "business-envelopes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.9,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 51,
+    "clicks": 1,
+    "zh": 47,
+    "en": 1,
+    "ja": 3,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "EV-002",
+   "filename_mid": "envelopes-colored-envelopes",
+   "slug": "colored-envelopes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 114.8,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 12,
+    "clicks": 2,
+    "zh": 10,
+    "en": 2,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "EV-003",
+   "filename_mid": "envelopes-large-envelopes",
+   "slug": "large-envelopes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 102.4,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 84,
+    "clicks": 2,
+    "zh": 57,
+    "en": 27,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "EV-004",
+   "filename_mid": "envelopes-pearl-envelopes",
+   "slug": "pearl-envelopes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.5,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 8,
+    "clicks": 3,
+    "zh": 6,
+    "en": 2,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "FL-001",
+   "filename_mid": "flyers-a4-flyers",
+   "slug": "a4-flyers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 104.1,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 91,
+    "clicks": 3,
+    "zh": 63,
+    "en": 26,
+    "ja": 2,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "FL-002",
+   "filename_mid": "flyers-a5-flyers",
+   "slug": "a5-flyers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 117.6,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 32,
+    "clicks": 3,
+    "zh": 6,
+    "en": 25,
+    "ja": 1,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "FL-003",
+   "filename_mid": "flyers-double-sided-flyers",
+   "slug": "double-sided-flyers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 117.1,
+   "sources": "V28.5",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 75,
+    "clicks": 0,
+    "zh": 1,
+    "en": 55,
+    "ja": 19,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "FL-004",
+   "filename_mid": "flyers-folded-leaflets",
+   "slug": "folded-leaflets",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 25,
+    "clicks": 0,
+    "zh": 18,
+    "en": 2,
+    "ja": 5,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": "c3-flyers-leaflet",
+   "cluster_done": "2026-10-14T12:25+08:00",
+   "window": {
+    "done": "2026-10-14",
+    "earliest_plus5": "2026-10-19",
+    "safe_plus7": "2026-10-21"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W4-1020"
+  },
+  {
+   "dir": "FL-005",
+   "filename_mid": "flyers-thick-paper-flyers",
+   "slug": "thick-paper-flyers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 117.8,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 3,
+    "clicks": 1,
+    "zh": 3,
+    "en": 0,
+    "ja": 0,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W1-1017"
+  },
+  {
+   "dir": "FL-007",
+   "filename_mid": "flyers-eco-flyers",
+   "slug": "eco-flyers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 116.3,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 22,
+    "clicks": 1,
+    "zh": 10,
+    "en": 12,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "FL-008",
+   "filename_mid": "flyers-same-day-flyers",
+   "slug": "same-day-flyers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 117.4,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 107,
+    "clicks": 10,
+    "zh": 56,
+    "en": 31,
+    "ja": 20,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "MN-001",
+   "filename_mid": "menus-pvc-menus",
+   "slug": "pvc-menus",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 113.6,
+   "sources": "V28.5",
+   "flags": [
+    "CTR 批关联族, 10/22 首判通过才解冻; c5 kraft/eco 簇窗 10/22 同步满足"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 41,
+    "clicks": 1,
+    "zh": 28,
+    "en": 13,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy-gated",
+   "wave": "W6-1022-CTR-gated"
+  },
+  {
+   "dir": "MN-002",
+   "filename_mid": "menus-laminated-menus",
+   "slug": "laminated-menus",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 115.5,
+   "sources": "V28.5",
+   "flags": [
+    "CTR 批关联族, 10/22 首判通过才解冻; c5 kraft/eco 簇窗 10/22 同步满足"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 54,
+    "clicks": 1,
+    "zh": 30,
+    "en": 10,
+    "ja": 14,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy-gated",
+   "wave": "W6-1022-CTR-gated"
+  },
+  {
+   "dir": "MN-003",
+   "filename_mid": "menus-hardcover-menus",
+   "slug": "hardcover-menus",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 114.6,
+   "sources": "V28.5",
+   "flags": [
+    "CTR 批关联族, 10/22 首判通过才解冻; c5 kraft/eco 簇窗 10/22 同步满足"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 9,
+    "clicks": 0,
+    "zh": 1,
+    "en": 8,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy-gated",
+   "wave": "W6-1022-CTR-gated"
+  },
+  {
+   "dir": "MN-004",
+   "filename_mid": "menus-drink-menus",
+   "slug": "drink-menus",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 115,
+   "sources": "V28.5",
+   "flags": [
+    "CTR 批关联族, 10/22 首判通过才解冻; c5 kraft/eco 簇窗 10/22 同步满足"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 3,
+    "clicks": 0,
+    "zh": 3,
+    "en": 0,
+    "ja": 0,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy-gated",
+   "wave": "W6-1022-CTR-gated"
+  },
+  {
+   "dir": "PB-001",
+   "filename_mid": "paper-bags-kraft-paper-bags",
+   "slug": "kraft-paper-bags",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.4,
+   "sources": "V26",
+   "flags": [
+    "CTR 批关联族, 10/22 首判通过才解冻; c5 kraft/eco 簇窗 10/22 同步满足"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 68,
+    "clicks": 1,
+    "zh": 66,
+    "en": 1,
+    "ja": 1,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": "c5-bags+CTR-frozen",
+   "cluster_done": "2026-10-15T21:17+08:00",
+   "window": {
+    "done": "2026-10-15",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy-gated",
+   "wave": "W6-1022-CTR-gated"
+  },
+  {
+   "dir": "PB-002",
+   "filename_mid": "paper-bags-white-card-bags",
+   "slug": "white-card-bags",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.4,
+   "sources": "V26",
+   "flags": [
+    "CTR 批关联族, 10/22 首判通过才解冻; c5 kraft/eco 簇窗 10/22 同步满足"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 7,
+    "clicks": 0,
+    "zh": 7,
+    "en": 0,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy-gated",
+   "wave": "W6-1022-CTR-gated"
+  },
+  {
+   "dir": "PB-003",
+   "filename_mid": "paper-bags-gift-bags",
+   "slug": "gift-bags",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 114.7,
+   "sources": "V28.5",
+   "flags": [
+    "CTR 批关联族, 10/22 首判通过才解冻; c5 kraft/eco 簇窗 10/22 同步满足"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 21,
+    "clicks": 2,
+    "zh": 21,
+    "en": 0,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy-gated",
+   "wave": "W6-1022-CTR-gated"
+  },
+  {
+   "dir": "PB-004",
+   "filename_mid": "paper-bags-eco-paper-bags",
+   "slug": "eco-paper-bags",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.3,
+   "sources": "V28.5",
+   "flags": [
+    "CTR 批关联族, 10/22 首判通过才解冻; c5 kraft/eco 簇窗 10/22 同步满足"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 63,
+    "clicks": 0,
+    "zh": 42,
+    "en": 20,
+    "ja": 1,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": "c5-bags+CTR-frozen",
+   "cluster_done": "2026-10-15T21:17+08:00",
+   "window": {
+    "done": "2026-10-15",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy-gated",
+   "wave": "W6-1022-CTR-gated"
+  },
+  {
+   "dir": "PB-005",
+   "filename_mid": "paper-bags-handle-bags",
+   "slug": "handle-bags",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 113.6,
+   "sources": "V28.5",
+   "flags": [
+    "CTR 批关联族, 10/22 首判通过才解冻; c5 kraft/eco 簇窗 10/22 同步满足"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 186,
+    "clicks": 1,
+    "zh": 183,
+    "en": 3,
+    "ja": 0,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy-gated",
+   "wave": "W6-1022-CTR-gated"
+  },
+  {
+   "dir": "PB-007",
+   "filename_mid": "paper-bags-large-bags",
+   "slug": "large-bags",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.7,
+   "sources": "V26",
+   "flags": [
+    "CTR 批关联族, 10/22 首判通过才解冻; c5 kraft/eco 簇窗 10/22 同步满足"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 60,
+    "clicks": 3,
+    "zh": 59,
+    "en": 0,
+    "ja": 1,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy-gated",
+   "wave": "W6-1022-CTR-gated"
+  },
+  {
+   "dir": "PC-001",
+   "filename_mid": "place-cards-wedding-place-cards",
+   "slug": null,
+   "match_kind": null,
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 117.7,
+   "sources": "V28.5",
+   "flags": [],
+   "verdict": "exclude-retired",
+   "wave": null,
+   "note": "filename slug = cards → 已退役 (middleware 301 / Tier1 10-12)"
+  },
+  {
+   "dir": "PC-002",
+   "filename_mid": "place-cards-drink-tokens",
+   "slug": null,
+   "match_kind": null,
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 99,
+   "sources": "V28.5",
+   "flags": [],
+   "verdict": "exclude-retired",
+   "wave": null,
+   "note": "filename slug = tokens → 已退役 (middleware 301 / Tier1 10-12)"
+  },
+  {
+   "dir": "PC-005",
+   "filename_mid": "place-cards-cafe-table-cards",
+   "slug": null,
+   "match_kind": null,
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 117.9,
+   "sources": "V28.5",
+   "flags": [],
+   "verdict": "exclude-retired",
+   "wave": null,
+   "note": "filename slug = cards → 已退役 (middleware 301 / Tier1 10-12)"
+  },
+  {
+   "dir": "PC-006",
+   "filename_mid": "place-cards-wedding-seating-charts",
+   "slug": null,
+   "match_kind": null,
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 115.7,
+   "sources": "V28.5",
+   "flags": [],
+   "verdict": "exclude-retired",
+   "wave": null,
+   "note": "filename slug = charts → 已退役 (middleware 301 / Tier1 10-12)"
+  },
+  {
+   "dir": "PK-002",
+   "filename_mid": "packaging-cosmetic-boxes",
+   "slug": "cosmetic-boxes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.6,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — rolled back"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 23,
+    "clicks": 1,
+    "zh": 6,
+    "en": 11,
+    "ja": 6,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PK-003",
+   "filename_mid": "packaging-food-boxes",
+   "slug": "food-boxes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.7,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — held (never deployed)"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 161,
+    "clicks": 2,
+    "zh": 89,
+    "en": 51,
+    "ja": 21,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PK-004",
+   "filename_mid": "packaging-mailer-boxes",
+   "slug": "mailer-boxes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.2,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — rolled back"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 20,
+    "clicks": 0,
+    "zh": 14,
+    "en": 6,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PK-005",
+   "filename_mid": "packaging-folding-boxes",
+   "slug": "folding-boxes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — held (never deployed)"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 9,
+    "clicks": 0,
+    "zh": 3,
+    "en": 6,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PK-006",
+   "filename_mid": "packaging-rigid-boxes",
+   "slug": "rigid-boxes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 104,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — rolled back"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 5,
+    "clicks": 0,
+    "zh": 5,
+    "en": 0,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PKG-007",
+   "filename_mid": "packaging-magnetic-closure-gift-box",
+   "slug": "magnetic-closure-gift-box",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 89,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — rolled back"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 2,
+    "clicks": 4,
+    "zh": 1,
+    "en": 0,
+    "ja": 1,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PKG-008",
+   "filename_mid": "packaging-electronics-packaging-box",
+   "slug": "electronics-packaging-box",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 103.3,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — rolled back"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 81,
+    "clicks": 0,
+    "zh": 32,
+    "en": 49,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PKG-009",
+   "filename_mid": "packaging-kraft-paper-packaging-box",
+   "slug": "kraft-paper-packaging-box",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 86,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — rolled back"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 155,
+    "clicks": 1,
+    "zh": 64,
+    "en": 7,
+    "ja": 84,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PKG-013",
+   "filename_mid": "packaging-white-card-boxes",
+   "slug": "white-card-boxes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 85.3,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — rolled back"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 5,
+    "clicks": 0,
+    "zh": 5,
+    "en": 0,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PKG-014",
+   "filename_mid": "packaging-corrugated-boxes",
+   "slug": "corrugated-boxes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 97.4,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — rolled back"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 38,
+    "clicks": 1,
+    "zh": 24,
+    "en": 8,
+    "ja": 6,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PKG-015",
+   "filename_mid": "packaging-tuck-end-boxes",
+   "slug": "tuck-end-boxes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 96.8,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — rolled back"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 3,
+    "clicks": 1,
+    "zh": 3,
+    "en": 0,
+    "ja": 0,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PKG-016",
+   "filename_mid": "packaging-gang-run-card-boxes",
+   "slug": "gang-run-card-boxes",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 80.6,
+   "sources": "V26",
+   "flags": [
+    "K3 2026-10-21 packaging images substandard — rolled back"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 0,
+    "clicks": 0,
+    "zh": 0,
+    "en": 0,
+    "ja": 0,
+    "tier": "zero",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "hold-images-rejected",
+   "wave": null
+  },
+  {
+   "dir": "PO-001",
+   "filename_mid": "posters-a2-posters",
+   "slug": "a2-posters",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 111.7,
+   "sources": "V28.5",
+   "flags": [
+    "窗口校准: 完成于 10-15 23:35, +5d = 10-20 23:35 → 10/20 全日执行会早于 5 天窗, 排 10/21 (方案 W4 原定 10/20, 依 §2.3 5-7 天窗规后移 1 天)"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 516,
+    "clicks": 26,
+    "zh": 331,
+    "en": 110,
+    "ja": 75,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": "c6a-a1a2",
+   "cluster_done": "2026-10-15T23:35+08:00",
+   "window": {
+    "done": "2026-10-15",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W5-1021"
+  },
+  {
+   "dir": "PO-002",
+   "filename_mid": "posters-a1-posters",
+   "slug": "a1-posters",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 116.2,
+   "sources": "V28.5",
+   "flags": [
+    "窗口校准: 完成于 10-15 23:35, +5d = 10-20 23:35 → 10/20 全日执行会早于 5 天窗, 排 10/21 (方案 W4 原定 10/20, 依 §2.3 5-7 天窗规后移 1 天)"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 178,
+    "clicks": 4,
+    "zh": 114,
+    "en": 45,
+    "ja": 19,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": "c6a-a1a2",
+   "cluster_done": "2026-10-15T23:35+08:00",
+   "window": {
+    "done": "2026-10-15",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W5-1021"
+  },
+  {
+   "dir": "PO-003",
+   "filename_mid": "posters-outdoor-posters",
+   "slug": "outdoor-posters",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 117.6,
+   "sources": "V28.5",
+   "flags": [
+    "完成于 10-16 (c6b 03:40 / c8 12:10), +7d → 10/23; 方案 W4 原定 10/20 会撞 3-4 天幼窗"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 26,
+    "clicks": 1,
+    "zh": 10,
+    "en": 6,
+    "ja": 10,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": "c8-residual",
+   "cluster_done": "2026-10-16T12:10+08:00",
+   "window": {
+    "done": "2026-10-16",
+    "earliest_plus5": "2026-10-21",
+    "safe_plus7": "2026-10-23"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W7-1023"
+  },
+  {
+   "dir": "PO-004",
+   "filename_mid": "posters-display-posters",
+   "slug": "display-posters",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.3,
+   "sources": "V26+V28.5",
+   "flags": [
+    "完成于 10-16 (c6b 03:40 / c8 12:10), +7d → 10/23; 方案 W4 原定 10/20 会撞 3-4 天幼窗"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 3,
+    "clicks": 0,
+    "zh": 1,
+    "en": 1,
+    "ja": 1,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": "c6b-posters",
+   "cluster_done": "2026-10-16T03:40+08:00",
+   "window": {
+    "done": "2026-10-16",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W7-1023"
+  },
+  {
+   "dir": "PO-005",
+   "filename_mid": "posters-art-posters",
+   "slug": "art-posters",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 111.1,
+   "sources": "V26+V28.5",
+   "flags": [
+    "完成于 10-16 (c6b 03:40 / c8 12:10), +7d → 10/23; 方案 W4 原定 10/20 会撞 3-4 天幼窗"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 18,
+    "clicks": 0,
+    "zh": 18,
+    "en": 0,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": "c6b-posters",
+   "cluster_done": "2026-10-16T03:40+08:00",
+   "window": {
+    "done": "2026-10-16",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W7-1023"
+  },
+  {
+   "dir": "PO-006",
+   "filename_mid": "posters-adhesive-posters",
+   "slug": "adhesive-posters",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 117.4,
+   "sources": "V26+V28.5",
+   "flags": [
+    "完成于 10-16 (c6b 03:40 / c8 12:10), +7d → 10/23; 方案 W4 原定 10/20 会撞 3-4 天幼窗"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 44,
+    "clicks": 1,
+    "zh": 2,
+    "en": 41,
+    "ja": 1,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": "c6b-posters",
+   "cluster_done": "2026-10-16T03:40+08:00",
+   "window": {
+    "done": "2026-10-16",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W7-1023"
+  },
+  {
+   "dir": "RP-001",
+   "filename_mid": "red-packets-foil-red-packets",
+   "slug": "foil-red-packets",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.6,
+   "sources": "V26",
+   "flags": [
+    "10-13 已原位换血(EXIF 已重注对齐 products.ts), 本次为可选新路径升级"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 24,
+    "clicks": 0,
+    "zh": 1,
+    "en": 0,
+    "ja": 23,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": "c2-red-packets",
+   "cluster_done": "2026-10-15T09:20+08:00",
+   "window": {
+    "done": "2026-10-15",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W6-1022"
+  },
+  {
+   "dir": "RP-002",
+   "filename_mid": "red-packets-embossed-red-packets",
+   "slug": "embossed-red-packets",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.8,
+   "sources": "V26",
+   "flags": [
+    "10-13 已原位换血(EXIF 已重注对齐 products.ts), 本次为可选新路径升级"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 1,
+    "clicks": 0,
+    "zh": 1,
+    "en": 0,
+    "ja": 0,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": "c2-red-packets",
+   "cluster_done": "2026-10-15T09:20+08:00",
+   "window": {
+    "done": "2026-10-15",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W6-1022"
+  },
+  {
+   "dir": "RP-003",
+   "filename_mid": "red-packets-custom-red-packets",
+   "slug": "custom-red-packets",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.7,
+   "sources": "V26",
+   "flags": [
+    "10-13 已原位换血(EXIF 已重注对齐 products.ts), 本次为可选新路径升级"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 3,
+    "clicks": 0,
+    "zh": 2,
+    "en": 0,
+    "ja": 1,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": "c2-red-packets",
+   "cluster_done": "2026-10-15T09:20+08:00",
+   "window": {
+    "done": "2026-10-15",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W6-1022"
+  },
+  {
+   "dir": "RP-004",
+   "filename_mid": "red-packets-cartoon-red-packets",
+   "slug": "cartoon-red-packets",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.6,
+   "sources": "V26",
+   "flags": [
+    "10-13 已原位换血(EXIF 已重注对齐 products.ts), 本次为可选新路径升级"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 2,
+    "clicks": 0,
+    "zh": 2,
+    "en": 0,
+    "ja": 0,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": "c2-red-packets",
+   "cluster_done": "2026-10-15T09:20+08:00",
+   "window": {
+    "done": "2026-10-15",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W6-1022"
+  },
+  {
+   "dir": "RP-005",
+   "filename_mid": "red-packets-eco-red-packets",
+   "slug": "eco-red-packets",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.3,
+   "sources": "V26",
+   "flags": [
+    "10-13 已原位换血(EXIF 已重注对齐 products.ts), 本次为可选新路径升级"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 1,
+    "clicks": 0,
+    "zh": 1,
+    "en": 0,
+    "ja": 0,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": "c2-red-packets",
+   "cluster_done": "2026-10-15T09:20+08:00",
+   "window": {
+    "done": "2026-10-15",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W6-1022"
+  },
+  {
+   "dir": "RP-006",
+   "filename_mid": "red-packets-large-red-packets",
+   "slug": "large-red-packets",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.7,
+   "sources": "V26",
+   "flags": [
+    "10-13 已原位换血(EXIF 已重注对齐 products.ts), 本次为可选新路径升级"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 1,
+    "clicks": 2,
+    "zh": 1,
+    "en": 0,
+    "ja": 0,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": "c2-red-packets",
+   "cluster_done": "2026-10-15T09:20+08:00",
+   "window": {
+    "done": "2026-10-15",
+    "earliest_plus5": "2026-10-20",
+    "safe_plus7": "2026-10-22"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W6-1022"
+  },
+  {
+   "dir": "ST-001",
+   "filename_mid": "stickers-waterproof-stickers",
+   "slug": "waterproof-stickers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.4,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 151,
+    "clicks": 8,
+    "zh": 104,
+    "en": 18,
+    "ja": 29,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": "c1-stickers",
+   "cluster_done": "2026-10-12T09:05+08:00",
+   "window": {
+    "done": "2026-10-12",
+    "earliest_plus5": "2026-10-17",
+    "safe_plus7": "2026-10-19"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W3-1019"
+  },
+  {
+   "dir": "ST-002",
+   "filename_mid": "stickers-transparent-stickers",
+   "slug": "transparent-stickers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.8,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 110,
+    "clicks": 2,
+    "zh": 73,
+    "en": 37,
+    "ja": 0,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": "c1-stickers",
+   "cluster_done": "2026-10-12T09:05+08:00",
+   "window": {
+    "done": "2026-10-12",
+    "earliest_plus5": "2026-10-17",
+    "safe_plus7": "2026-10-19"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W3-1019"
+  },
+  {
+   "dir": "ST-003",
+   "filename_mid": "stickers-removable-stickers",
+   "slug": "removable-stickers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.8,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 87,
+    "clicks": 2,
+    "zh": 72,
+    "en": 15,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "ST-004",
+   "filename_mid": "stickers-small-batch-stickers",
+   "slug": "small-batch-stickers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.9,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 186,
+    "clicks": 4,
+    "zh": 23,
+    "en": 160,
+    "ja": 3,
+    "tier": "head",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "ST-005",
+   "filename_mid": "stickers-die-cut-stickers",
+   "slug": "die-cut-stickers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.3,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 34,
+    "clicks": 3,
+    "zh": 21,
+    "en": 2,
+    "ja": 11,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "ST-006",
+   "filename_mid": "stickers-foil-stickers",
+   "slug": "foil-stickers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.7,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 44,
+    "clicks": 6,
+    "zh": 17,
+    "en": 26,
+    "ja": 1,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": "c1-stickers",
+   "cluster_done": "2026-10-12T09:05+08:00",
+   "window": {
+    "done": "2026-10-12",
+    "earliest_plus5": "2026-10-17",
+    "safe_plus7": "2026-10-19"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W3-1019"
+  },
+  {
+   "dir": "ST-007",
+   "filename_mid": "stickers-security-stickers",
+   "slug": "security-stickers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.4,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 15,
+    "clicks": 1,
+    "zh": 4,
+    "en": 11,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": "c1-stickers",
+   "cluster_done": "2026-10-12T09:05+08:00",
+   "window": {
+    "done": "2026-10-12",
+    "earliest_plus5": "2026-10-17",
+    "safe_plus7": "2026-10-19"
+   },
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W3-1019"
+  },
+  {
+   "dir": "ST-008",
+   "filename_mid": "stickers-fluorescent-stickers",
+   "slug": null,
+   "match_kind": null,
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 119.5,
+   "sources": "V26",
+   "flags": [],
+   "verdict": "exclude-retired",
+   "wave": null,
+   "note": "filename slug = stickers → 已退役 (middleware 301 / Tier1 10-12)"
+  },
+  {
+   "dir": "ST-009",
+   "filename_mid": "stickers-fruit-food-label-stickers",
+   "slug": "fruit-food-label-stickers",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 118.7,
+   "sources": "V26",
+   "flags": [],
+   "slug_live": true,
+   "gsc": {
+    "imps": 21,
+    "clicks": 3,
+    "zh": 16,
+    "en": 5,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 0,
+    "library_named": 0,
+    "byte_identical": 0
+   },
+   "verdict": "deploy",
+   "wave": "W2-1018"
+  },
+  {
+   "dir": "WI-001",
+   "filename_mid": "wedding-invitations-foil-wedding-invitations",
+   "slug": "foil-wedding-invitations",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 114.6,
+   "sources": "V28.5",
+   "flags": [
+    "Batch B 10-12 已以同名 seedream-webp 入库上线 (byte_identical=0/13); 与 roll-stickers 同理, 新路径重部署增益≈0; 如 K3 要路径统一可在 W7 重估"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 3,
+    "clicks": 3,
+    "zh": 3,
+    "en": 0,
+    "ja": 0,
+    "tier": "tail",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 13,
+    "library_named": 13,
+    "byte_identical": 0
+   },
+   "verdict": "recommend-exclude",
+   "wave": null
+  },
+  {
+   "dir": "WI-002",
+   "filename_mid": "wedding-invitations-save-the-date-cards",
+   "slug": null,
+   "match_kind": null,
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 113.1,
+   "sources": "V28.5",
+   "flags": [],
+   "verdict": "exclude-retired",
+   "wave": null,
+   "note": "filename slug = cards → 已退役 (middleware 301 / Tier1 10-12)"
+  },
+  {
+   "dir": "WI-003",
+   "filename_mid": "wedding-invitations-wedding-thank-you-cards",
+   "slug": "wedding-thank-you-cards",
+   "match_kind": "suffix",
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 116.2,
+   "sources": "V28.5",
+   "flags": [
+    "Batch B 10-12 已以同名 seedream-webp 入库上线 (byte_identical=0/13); 与 roll-stickers 同理, 新路径重部署增益≈0; 如 K3 要路径统一可在 W7 重估"
+   ],
+   "slug_live": true,
+   "gsc": {
+    "imps": 28,
+    "clicks": 1,
+    "zh": 28,
+    "en": 0,
+    "ja": 0,
+    "tier": "mid",
+    "note": ""
+   },
+   "cluster": null,
+   "cluster_done": null,
+   "window": null,
+   "current_served": {
+    "image_refs": 13,
+    "library_named": 13,
+    "byte_identical": 0
+   },
+   "verdict": "recommend-exclude",
+   "wave": null
+  },
+  {
+   "dir": "WI-006",
+   "filename_mid": "wedding-invitations-wedding-suite-bundle",
+   "slug": null,
+   "match_kind": null,
+   "files": 12,
+   "locales": [
+    "en",
+    "ja",
+    "zh-hk"
+   ],
+   "views": [
+    "detail",
+    "hero",
+    "multi-angle",
+    "variety"
+   ],
+   "maxKB": 102.1,
+   "sources": "V26+V28.5",
+   "flags": [],
+   "verdict": "exclude-retired",
+   "wave": null,
+   "note": "filename slug = bundle → 已退役 (middleware 301 / Tier1 10-12)"
+  }
+ ]
+}

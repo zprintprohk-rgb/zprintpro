@@ -1,0 +1,81 @@
+fix(seo): a2-posters 三语修剪 + K3 MOQ 裁決对齐 + 全景违规清单 + 批次工具通用化
+
+来源: K3 2026-09-19 决策（「立即修剪 a2-posters zh-hk 65→50-57」/「评估分隔符」）
+       + K3 2026-09-19 19:43 commit c18107a0（「a2-posters minQuantity 100→10」真值裁決）
+
+## 一、a2-posters 修剪 (3 槽) + MOQ 对齐 (2 槽)
+全站展示第一页面 (zh-hk 980 展示 / 17 点击 / CTR 1.73% / pos 16.13) —— 问题是**超长**, 非零点击。
+- zh-hk 65→54: 删冗余填充「印海報一張小訂單適用」(21 当量) + 补尺寸实证 420×594mm (products.ts specs.size)
+- en    62→57: 删「from」, 价格钩 $2.30 原样保留 (basePrice_en=2.3)
+- ja    63→57: 删「・防水」(A2 海報核心卖点非防水, PP 裱貼仅为可选项)
+
+### ★ MOQ 对齐 (修剪后 12 分钟, K3 落 c18107a0 裁決真值 = 10)
+K3 裁定 a2-posters `minQuantity` **100→10**（产品层真值冲突: 原值与 price-tables 價階「由 10 起」
+及全站文案「10張起印」三方矛盾）。本批修剪时**原样保留**旧文案「1張起印」⇒ 修剪落地即与
+新裁決矛盾, 故追加小批 `a2-moq-align` 对齐:
+- zh-hk 54→**55**: `1張起印` → `10張起印`
+- ja    57→**56**: `1枚から` → `10枚〜`
+- en 标题无 MOQ 钩 (只有价格+运费), 不受影响。
+> 教训: 标题批次若跨越 K3 裁決时点, **必须重查裁決**, 不能假设「不动数字」永远安全。
+> 本批在 commit 前捕捉到该矛盾 (裁決 19:43 / 修剪 19:35 / 对齐 19:50), 未把错值写入线上。
+
+**遗留待对齐 (未擅自扩大范围, 仅登记)**: a2-posters `sku-seo-data.ts` 的 zh-hk description/body
+仍写「1 張起印」, en description 仍写「50 MOQ」; 与裁決真值 10 冲突, 属 description 字段
+(非本批 title 范围), 建议随门童 #24 判定域一并处理。
+
+## 二、census 复算 (§0.23.2)
+TRIM 41→38 / OK 182→185 / FILL 77; 违规 123→115; ledger open 115, fixed 3。
+open≤10 时升 red (当前 YELLOW_WARN)。
+
+## 三、违规全景清单 (K3 决策「ledger 若是 JSON 先转 Markdown」)
+新增 `.hermes/reports/sku-title-ledger-2026-09-19.md` — 115 条全清单 + 批次归属:
+- **P0-A 19 条** (位置≤20 + 展示≥30 + 当量<40) — 100% 逐条过目
+- **P0-B 4 条** (位置≤20 + 展示≥30 + 当量 40-49) — 抽检 30%
+- **P1 6 条** (位置 21-50 + 展示≥50) — 抽检 20%
+- **P2-修剪 38 条** (>58 超限, 需删内容) — 逐条过目
+- **P3-低优先 48 条** (其余 en/ja 低展示) — 抽检 10%
+含每条的 展示/位置/CTR/问题/title + 同簇同质化表 (修标题须差异化)。
+> 注: 原估 P0-B 20-30 / P1 30-40 **偏大**, 实测 4 / 6; P3 原估 20-30 **偏小**, 实测 48。
+
+## 四、⚠️ 过程缺陷留痕: 标题替换的 $ 反向引用 (已修 + 已加断言)
+首次 --apply 把 en 标题写坏成 "A2 Poster Printing A2 Poster Printing from $2.30 | ...ZprintPro.30 | ..."。
+根因: replace(re, "$1"+newEsc+"$3") 中新标题的 `$2.30` 被当成捕获组反向引用 ($2 = 旧标题)。
+发现方式: git diff 逐行核对 (§0.25.10.3 第 3 件) —— 该纪律直接拦下一次事故。
+修复: 改用 replacer 函数 + 新增落盘后断言 (新 title 必须逐字命中, 否则自动回滚备份)。
+复核: P0 批 (HK$0.22起 / HK$0.60起) 未受影响 ($0 非 JS 替换模式), 已逐字确认未受损。
+
+## 五、分隔符评估 (K3 决策「建议评估」) —— 前提不成立
+scripts/analyze-title-separators.mjs 全 300 槽实测:
+- 半角竖线 `|` 298/300 槽 (99.3%) ← 站点早已在用半角
+- 全角竖线 `｜` 仅 2 槽 (0.7%, ja same-day-flyers / a2-posters)
+- 中黑点 `・` zh-hk 28 / ja 37; 间隔号 `·` 2; 半角 `-` **0**
+结论: ①「大量使用全角 ｜」与事实不符; ② `｜→|` 每条省 2 当量但跨 50/58 边界者 0 条 ⇒ 零收益;
+③「dash 19.7% vs pipe 41%」确有一次 Semrush 研究, 但本轮未能取回原始数字复核, 按 §0.23 记未校准;
+④ 建议**不批量改** (改 `-` = 重写 298/300 条已达标标题 = 全站 churn, 收益未校准且因果混淆)。
+
+## 六、K3 决策对账
+- 立即修剪 a2-posters ✅ (+ MOQ 对齐)
+- 暂不 push ✅ (遵守)
+- 门禁 yellow, ≤10 升 red ✅ (ledger gatePhase/escalateThreshold)
+- 两个 JSON 从 tracking 移除 ✅ (git ls-files 空)
+- 2 个 cron prompt pre-existing red 注册 baseline ✅ 由并行会话按 K3 9/19 决策一(a) 落地
+  (.hermes/cron-prompts/ 进 common.js EXEMPT_PATHS + cron-prompts-exemption-manifest.json
+   + 门童 #23 对账); 本批不另建并行机制
+- 分隔符评估 ✅ (见五)
+- ledger → Markdown ✅ (见三)
+
+## 数据来源
+- src/data/sku-seo-data.ts (100 SKU × 3 locale) / src/data/products.ts (specs.size / minQuantity=10)
+- K3 裁決: commit c18107a0 (2026-09-19 19:43) 「a2-posters minQuantity 100→10」
+- .hermes/gsc-2026-09-18/extract.json (28d, 窗口 2026-08-19~09-15)
+- 规则 SSoT docs/2026-09-13-title-batch-T-freeze.md §6-3; 当量口径 scripts/guards/title-equiv.js
+校准日期: 2026-09-19 19:55
+
+## 验收
+tsc 54=54 基线持平 ✅ / git diff 逐行核对仅 5 行 title ✅ / 落盘断言 5/5 逐字命中 ✅ /
+encoding ✅ / check-brand-mentions --strict A 类 0 命中 ✅ / 门童 #24 MOQ gate PASS (🆕 0 漂移) ✅
+
+工具: scripts/apply-title-batch.mjs (批次化 p0|a2-trim|a2-moq-align + 落盘断言 + 品牌末尾兼容全角｜)
+     scripts/analyze-title-separators.mjs
+     scripts/sku-title-census.mjs (+ 批次归属 + ledger Markdown 输出)
+备份: F:\zprintpro-title-backups\2026-09-19\ (仓库外, 含 a2 patch + 全量未提交 patch + 脚本副本)

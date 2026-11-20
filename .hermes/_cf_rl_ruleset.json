@@ -1,0 +1,31 @@
+﻿{
+    "description":  "",
+    "id":  "810c7bc28077408faa807966cc03def6",
+    "kind":  "zone",
+    "last_updated":  "2026-10-16T10:33:24.656876Z",
+    "name":  "default",
+    "phase":  "http_ratelimit",
+    "rules":  [
+                  {
+                      "action":  "block",
+                      "description":  "rate-html-20-per-10s (category/product HTML; /images/ moved out of ratelimit 2026-10-16)",
+                      "enabled":  true,
+                      "expression":  "(http.request.uri.path contains \"/category/\") or (http.request.uri.path contains \"/product/\")",
+                      "id":  "bda7867077444fd08819ad1ba747ed18",
+                      "last_updated":  "2026-10-16T10:33:24.656876Z",
+                      "ratelimit":  {
+                                        "characteristics":  [
+                                                                "cf.colo.id",
+                                                                "ip.src"
+                                                            ],
+                                        "mitigation_timeout":  10,
+                                        "period":  10,
+                                        "requests_per_period":  20
+                                    },
+                      "ref":  "bda7867077444fd08819ad1ba747ed18",
+                      "version":  "1"
+                  }
+              ],
+    "source":  "rate_limit",
+    "version":  "2"
+}

@@ -1,0 +1,41 @@
+fix(blog): B2 批2 — strip kraft-paper-box-types-comparison-2026 内嵌 JSON-LD × 3 locale (K3 2026-09-19 P0)
+
+【前置确认 (B2 批2 要求: 生成区齐套必须先确认)】
+线上三态测量 (measure-live-faqpage.mjs --slug=kraft…):
+  DUPLICATE 1 (zh-hk) / SINGLE_GENERATED 2 (en, ja) / SINGLE_INLINE_ONLY 0 / NONE 0 / INVALID 0 (有效 3/3)
+⇒ **生成区齐套已在 3 locale 全部成立** (en/ja 本就无重复, 只剩生成区) ⇒ strip 后 FAQPage 不会归零。
+逐 locale 内嵌块盘点 (check-inline-ld.mjs):
+  zh-hk: 4,191 字节 / 14 类型 (含 FAQPage)   ← 重复源
+  en:    1,033 字节 / 5 类型 (无 FAQPage)
+  ja:      921 字节 / 5 类型 (无 FAQPage)
+⇒ 三语清理后本地内嵌 = 0, 且删掉的 5 类型 (Article/Person/Organization/ImageObject/WebPage)
+  在 page.tsx 生成区**均有对应** ⇒ 零损失 (与批1 同型)。
+
+【Question 语义一致性 (strip 前, K3 新增验收项)】
+verify-question-consistency.mjs --slug=kraft… ⇒ **CONSISTENT 3 / MISMATCH 0**
+样例句: ja「クラフトボックスと段ボール箱の違いは?」生成区 = 可见正文, 逐字一致
+⇒ strip 不引入实体歧义 (存在 MISMATCH 则必须推迟 strip, 本次不触发)。
+
+【执行 (结构断言全过, 工具 = strip-inline-jsonld.mjs)】
+  ① 被删片段恰好是开头连续 LD 序列 ✅  ② strip 后残留内嵌 LD = 0 ✅  ③ 剩余内容逐字节等价 ✅
+  zh-hk 20,853 → 16,662 (−4,191) | en 22,174 → 21,141 (−1,033) | ja 15,254 → 14,333 (−921)
+复验: 段 9 PASS (三语各 4 组可解析 Q&A 保持) | 段 12 FAIL → SKIP (本地无内嵌; 线上待 push 后 --online 判定)
+
+【安全约束遵守】每批 1 slug × 3 locale (≤3 篇) ✅; 每批后 --online 全量回归 (待 push 后); 24h 观察期。
+
+【数据来源】
+- measure-live-faqpage.mjs (kraft × 3 locale, 有效 3/3)
+- verify-question-consistency.mjs (CONSISTENT 3 / MISMATCH 0)
+- strip 前后字节数断言输出 (见上)
+- 门禁: blog-quality-12-rules-guard --slug=kraft… (段9 PASS / 段12 SKIP)
+- K3 2026-09-19 P0 清单第 1 项
+
+【待授权 / 待办 (不变)】
+- poster-printing-guide en/ja 段锚改写为问句式 (段3 真实内容缺口, 门禁保持 🔴 新增 3 条; 需指令包授权)
+- B3 foil × 3 补正文 FAQ 段 (格式预检已 8/8 PASS; 答案按 **40-120 词**新口径)
+- 段 8 可提取性测试 — 路径 (a) 由 K3 提交 Perplexity/ChatGPT 并回报, 我判读
+- Person schema jobTitle/knowsAbout (schema-extensions.ts, 渲染层)
+- C 二期 run-context 消费追踪注入
+
+Bypass-rationale: 本批 = 3 个 blog-data JSON (strip 内嵌 LD, 三条结构断言全过) + 1 只读盘点工具;
+ pre-commit 红规则对 .hermes 历史字面会硬拦; **未动任何客户可见文本** (FAQ 文本零改动)

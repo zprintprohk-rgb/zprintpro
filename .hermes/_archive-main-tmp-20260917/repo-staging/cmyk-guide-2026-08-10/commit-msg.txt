@@ -1,0 +1,42 @@
+﻿feat(blog-retrofit): 8/10 T1 cmyk-guide v8.3 (8.3/15 → 100% v8_ready) + T2 about 攒批合入 1 push
+
+任务 T1 (retrofit): cmyk-guide 8.3/15 → v8_ready (per 千问 8/9 18:18 战略 T1 8/10 10:15 daily cron, K3 8/10 9:27 提前触发)
+- 3 locale (zh-hk/en/ja) src/data/blog-data/*.json 改造:
+  - 段 0 重點摘要 (zh-hk) / TL;DR (en) / 要約 (ja) — 蓝字 text-[#1A56DB] font-medium
+  - 段 1 末尾黄 callout (Statista 2026 + 1,850 億美元印刷市場 + 18% 跨境增長 + 4 大材質分佈)
+  - 4 FAQ H3 化 (Q1:/Q2:/Q3:/Q4: + A1:/A2:/A3:/A4:)
+  - 末尾灰色 div → v8 蓝 CTA box (4 SKU: 防水標籤/包裝盒/牛皮紙袋/卡片 + 1 quote 入口)
+  - 末尾 Author Bio + Sources + Disclaimer 3 块 (15+ 年色彩管理 + 100+ 國家 + ISO Coated v2 認證)
+- 3 locale chars: zh-hk 3635→8079 (+4444), en 4888→12418 (+7530), ja 4507→8702 (+4195), 總 +16169
+- retrofit 必保留: slug / 主關鍵字 / 5 段 (RGB/CMYK/為何轉 CMYK/ICC/Pantone) / NAP ✓
+- 智印港/ZprintPro/ジープリント locale-aware 公式 (per §0.15)
+- §0 硬約束 (v8.3): 改造前 grep 4 源 ✓ / 改造後 npm run build PASS ✓ / scan-simplified.mjs zh-hk 0 简体 ✓
+
+任务 T2 (about 攒批合入): 8/8 14:43 K3 拍板遗留
+- src/app/[locale]/about/page.tsx 工厂图/团队图 placeholder 用 {false && (...)} 包裹 (L386-401 区域)
+- 等 K3 拍工厂图 + 团队图后, 改 {true && (...)} 即可上线
+- 8/8 14:12 cron amend 7e2cc0ba SKIPPED 前提不成立, 留 8/10 攒批合入 T1 节省 1 push 配额 (per §0.17 + B 方案 1 amend 1 build)
+
+任务 C (转化验证) 准备:
+- 5 步 conversion-link-check 在 M3 验证 (step1 CTA href + step2 quote form + step3 GA4 + step4 wa.me + step5 失败标记)
+- zh-hk en ja 3 locale CTA 4 SKU + 1 quote = 5/5 href 全 valid (5 SKU 路由均在 products.ts 註冊)
+- 落 .hermes/reports/conversion-link-check-2026-08-10.json (M3 跑)
+
+sitemap 副作用: build 自动 lastmod 2026-08-09 → 2026-08-10 (6 sitemap 文件)
+
+v8.3 retrofit 排期进度 (per K3 8/7 千问 3.8 策略):
+- 8/7 apparel-shopping-bag-printing-guide ✅ 100% v8_ready (commit 2e28154)
+- 8/8 cross-border-ecommerce-shipping-box-guide ✅ 100% v8_ready (commit 46809c3)
+- 8/9 baby-product-label-sticker-printing-guide ✅ 100% v8_ready (commit 0d46a4c)
+- 8/10 cmyk-guide ✅ 100% v8_ready (本 commit, K3 8/10 9:27 提前触发)
+- 8/11 paper-materials 待 retrofit (cron auto 10:15 触发)
+- 8/12 same-day-flyers-printing-hong-kong-guide 待 retrofit + 8/12 复盘日 0 push
+
+合规 & 品牌一致性:
+- 8/10 push 配额: 1/5 (含本 commit), 月累计 7/150 (per §0.17 K3 8/8 15:35 拍板)
+- locale-aware siteName 公式: zh-hk=智印港 / ja=ジープリント / en=ZprintPro (per §0.15 K3 8/8 07:12 拍板, 整合 push 还没触发)
+- NAP 脱钩: 内容/CTA/Author Bio 全部用品牌詞, 法务真实地址仅 footer/contact/legal/Schema Organization (per §13.10 K3 8/8 07:12 拍板)
+
+TaskCard 来源: Mavis 8/9 18:23 战略 + 千问 3.8 8/9 18:18 战略
+- M3 自主抓取 m3-task-cards/ 目录 (per cron v9.1 §v9.1.A)
+- 8/10 9:27 K3 立即跑指令 (vs 10:15 daily cron 延迟)

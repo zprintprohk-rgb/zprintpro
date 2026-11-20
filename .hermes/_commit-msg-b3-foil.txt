@@ -1,0 +1,52 @@
+feat(blog): B3 foil × 3 补正文 FAQ 段 (五要件全绿) + 随即 strip 内嵌 + sticker 段3 登记 accepted_deviation (K3 2026-09-19)
+
+【1. B3 foil × 3 补正文 FAQ —— 五要件 0 异常 (18 组全过)】
+格式: `<p><strong>Qn: 问?</strong><br/>A: 答</p>`（`<p>` 不带 class, 已过 precheck-faq-format.mjs 8/8）
+组数: **6 组** × 3 locale（区间 5-8）
+位置: 插到正文 CTA 块**之前**（与其它 Pillar 段序一致: …FAQ → CTA）
+断言: 除新增块外 content 逐字不变 + 长度守恒
+
+**词数口径（本轮实测校准, 已登记）**: 「40-80 词」= 英文口径; **CJK 等价区间 = 60-120 字**
+  （40 英词 ≈ 60-70 中文字, 取换算系数下限 1.5 倍 ⇒ K3 确认「偏严格的保守选择，维持不变」）。
+  首句 answer-first: en ≤12 词 / CJK ≤21 字。
+自检实测: en 49/55/54/66/59/56 词 ✅ · zh-hk 与 ja 全部落在 60-120 字 ✅ · 首句全部达标 ✅
+
+**ja Q2 超 5 字 → 按 K3 裁决 (b) 处理**: 把末分句「4 種の箔は単独・組合せの両方に対応します」
+  **从 Q2 搬到 Q1**（只搬运、不删事实、不新增文案）⇒ 复跑 **五要件异常 = 0**。
+  理由 (K3): 口径一旦有例外就从「规则」退化为「建议」; 5 字是搬运一个分句就能解决的事, 不值得开例外。
+
+**★ 数据诚信**: 全部事实**逐字取自该篇已发布的内嵌 FAQPage JSON-LD** ——
+  價格 HK$0.30-0.50 / 0.28-0.45 / 0.32-0.55 / 0.45-0.80 · MOQ 100 · 交期 5-7 工作天 / 急件 3 天 / 18:00 截單翌日 12:00
+  · 多重疊燙 +HK$0.80 · 5 種材質 · 6 種工藝 · FDA 21 CFR 175.300 + EU REACH + FSC + ISO 9001 · 18 SKU
+  ⇒ **零新增数字、零编造**（仅包装标签 + 句式重排, 落到正文可见层）。
+
+【2. ★ 顺带查明 foil 段 9 长期 FAIL 的**真根因**（非格式问题）】
+实测: foil 三语 content 里 **`<strong>Q…` 标记 = 0** ⇒ `extractFaqFromHtml` = 0 组 ⇒ `faqs = null`
+  ⇒ 生成区**从未**有 FAQPage（线上三态实测 = **SINGLE_INLINE_ONLY**, 与该推论一致）。
+  ⇒ 故 foil 的 FAQPage 一直只来自内嵌块; 「唯一 INLINE_ONLY」的根因是 **正文从未有可见 Q&A**, 不是格式不合规。
+  本批补写后: **段 9 PASS = 6 组可解析 Q&A × 3 locale** ⇒ 生成区将首次生成 FAQPage（依赖 push+部署）。
+
+【3. 随即 strip foil 内嵌块 (K3 授权)】
+  zh-hk 30,759→26,322 (−4,437) / en 41,932→35,889 (−6,043) / ja 30,302→25,681 (−4,621); 各删 1 序列 / 14 类型
+  三条结构断言全过（连续序列 / 零残留 / 长度守恒）; 段 12 由 FAIL → SKIP（本地无内嵌, 线上待判定）
+  ⇒ 部署后线上应由 **SINGLE_INLINE_ONLY → SINGLE_GENERATED**（旧 FAQPage 消失, 新的来自生成区 6 组）
+
+【4. sticker 段 3 登记 accepted_deviation (K3 建议)】
+写入 `blog-12seg-baseline.json` 的 **`accepted_deviations` 段（与 `fails` 分离）** 3 条 (zh-hk/en/ja):
+  reason = 「K3 裁决 (iii) 统一 ≥50% 后 sticker 三语 40-47%（zh-hk 7/15 / ja 7/15 / en 6/15, 三语一致差 ≤7pt）;
+  全量问句化改写会新增 6+ 处未授权文案改动」
+  review_due = **2026-12-19**（与 cron-prompts 豁免 review 季度同步）· registered_at = 2026-09-19
+语义说明一并落盘: **accepted deviation = 已知并接受, 与 fails（待清债务）分离**, 避免重演「存量被当噪音」。
+
+【数据来源】
+- 五要件自检: add-foil-faq.mjs 输出（18 组逐条词数/首句）⇒ 异常 0
+- 事实源: dump-foil-faq-source.mjs（本篇内嵌 FAQPage 6 组原文）
+- 门禁: blog-quality-12-rules-guard --slug=foil… (段9 PASS 6 组 / 段11 PASS 10 链 / 段12 SKIP)
+- 线上探针: measure-live-faqpage.mjs (foil = SINGLE_INLINE_ONLY × 3, 印证「生成区从未有 FAQPage」)
+- K3 2026-09-19 裁决 (b) + B3 授权 + accepted_deviation 建议
+
+【B3 队列进度】foil × 3 ✅ 完成 → 下一篇 print-specs × 3（同样 SINGLE_INLINE_ONLY, 需先补正文 FAQ）
+【push 后必做】① `--baseline --online` 确认段 12 归零 ② Schema.org Validator 验证 FAQPage @type/mainEntity
+  ③ foil 线上生成区 FAQPage 由 0 → ≥1 ④ 段 8 路径 (a): **push 后 2 小时窗口内先跑 Perplexity**（ChatGPT 滞后 6-12 周作长期参考）
+
+Bypass-rationale: 本批 = foil 正文 FAQ 补写(事实逐字取自既有发布内容) + 内嵌 strip(三断言过) + 台账登记; pre-commit 红规则对 .hermes 历史字面硬拦

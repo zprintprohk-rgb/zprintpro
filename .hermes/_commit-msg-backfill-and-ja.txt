@@ -1,0 +1,57 @@
+fix(blog)+docs(gate): 回溯验证补漏 + sticker ja 署名 + FAQ 口径收紧 40-80 词 + ja 问句覆盖率 57%→71% (K3 2026-09-19)
+
+【1. ★ strip 工具回溯验证 (K3 评估第二点) —— 发现并补做漏删】
+方法 (verify-strip-backfill.mjs, 双方法): 从 git 历史取「最后一次含内嵌 LD」的版本,
+  分别用旧版(仅开头) 与 新版(全位置) 逻辑统计字节, 并查当前 HEAD 残留。
+结果:
+  · **poster en/ja**: 旧版漏删 4,364 / 3,427 字节 (块在 5,816 / 8,405 处) → 已在 4b2e7707 补删 ✅
+  · **restaurant-menu-printing-guide zh-hk**: 旧版漏删 1,949 字节 (内容有**两段不连续** LD 序列)
+    → **本批补删 3 个序列 / 3,702 字节** (content 18,213 → 14,511); 线上三态 = DUPLICATE/SINGLE_GENERATED×2 ⇒ 生成区齐套, 补删安全 ✅
+  · 其余组合报「漏删 1-2 字节」= 新旧实现的**空白处理差** (旧版连前导换行一起删), 非漏块;
+    已逐一确认**已处理 5 篇 × 3 locale 现状内嵌 = 0** (packaging / kraft / poster / sticker / campus)。
+  ⇒ 结论: 真实漏删 **2 处** (poster en/ja + restaurant zh-hk), 均已补完; 教程口径入档:
+    「删除类工具的范围必须按**内容分布实测**确定, 不能假定位置」。
+
+【2. sticker ja 补作者署名块 (K3 评估第三点, 独立于 strip 的 content 修复)】
+现状: zh-hk / en 的 content 侧有作者署名块 (含 `linkedin.com/in/zprintpro-engineer`), **ja 缺** ⇒ 三语 E-E-A-T 不一致。
+修法: 在 ja content 末尾 CTA 块之后追加**与 zh-hk/en 同构**的日文署名块 (作者实体 + LinkedIn 锚 + 站点锚), 只新增该段:
+  `<p class="text-sm text-gray-600 mt-2">執筆: ZprintPro 印刷工程チーム (15 年オフセット印刷エンジニア) ・ <a href="https://www.linkedin.com/in/zprintpro-engineer">zprintpro-engineer</a> ・ ZprintPro 越境印刷 SaaS ・ <a href="https://zprintpro.com/ja/">zprintpro.com</a></p>`
+断言: 除新增块外原文逐字保留 + 长度守恒 (11,569 → 11,891, +322) ✅
+复验: **sticker 三语段 7 全部 PASS** (Person(生成层承载) + LinkedIn + FDA + EU REACH)。
+
+【3. FAQ 答案长度口径收紧: 40-120 词 → **40-80 词** (K3 评估第五点)】
+外部实测收敛到单一甜蜜点: **40-80 词**是 AI 引擎引用率最高的答案长度 —— 该区间提供足够上下文,
+且写成**可独立理解的完整段落** (不依赖问题本身即可读懂); 标准形态 = 「直接 Yes/No 开头 + 硬数据点 + 自包含」;
+FAQ 形态对 AI 引用的提升比散文替代方案约高 70-80%。
+同步三处 (SSoT §3.1 + cron prompt v11 两文件) + #21 重新绑定 sha256 ✅ (3 绑定一致)。
+存量已写 FAQ 不动 (churn 红线), 仅 B3 新写与批次 D 改写执行新口径。
+
+【4. ja 问句覆盖率复核: 57% → 71% (K3 评估第一点)】
+复核结论 (dump 实证): ja 段 3 分母仅 7, 剩余 3 个非问句标题 = 「🇯🇵 日本市場対応」(h3) / 「よくある質問 FAQ」(h3) / 「関連サービス」(h3)。
+  · 「よくある質問 FAQ」「関連サービス」= 功能性工具段, **保持陈述式** (强行问句化会降低语义准确性, 按不改处理);
+  · 「🇯🇵 日本市場対応」= **内容承载段** (内含「日本全国送料無料 / 3-5 営業日 / インボイス対応 / 30 枚から」等硬事实)
+    ⇒ 可问句化, 已改为 **「🇯🇵 日本市場のサポート内容は?」并 h3→h2** (与 zh-hk/en 层级对齐)。
+复验 (三语): **zh-hk H2 9 + H3 3, 问句 9 (75%) · en H2 4 + H3 2, 问句 4 (67%) · ja H2 5 + H3 2, 问句 5 (71%)** —— 三语均 PASS 且分布收敛。
+
+【数据来源】
+- 回溯验证: verify-strip-backfill.mjs (git 历史 vs HEAD, 旧版/新版双方法对比)
+- restaurant 线上三态: measure-live-faqpage.mjs (DUPLICATE 1 / SINGLE_GENERATED 2)
+- restaurant 补删字节数: strip-inline-jsonld.mjs 输出 (3 序列 / 3,702 字节)
+- sticker 段 7: blog-quality-12-rules-guard --slug=sticker… (三语 PASS)
+- poster 段 3: --slug=poster-printing-guide (三语 PASS: 67% / 71% / 75%)
+- #21 台账: rule-translation-ledger.json (3 绑定 sha256 一致)
+- K3 2026-09-19 评估第一/二/三/五点
+
+【B2 进度更新】已 strip = packaging / kraft / poster / sticker / campus / **restaurant(zh-hk)** 共 6 篇 (+poster en/ja 附带)
+剩余需处理 (内嵌仍在): poster-size-guide(5/5/5) · print-specifications-reference-guide-2026(5/5/5) ·
+  school-exercise-book-printing-guide(4/1/1) · hong-kong-printing-cost-baseline-2026(1/1/1) ·
+  foil-stamping-3-applications-2026(5/5/5, **必须最后做** —— 其 FAQPage 仅来自内嵌, 需先补正文 FAQ)
+
+【待授权 / 待办】
+· sticker × 3 段锚改写 (段 3 = 6/15 zh-hk、6/14 ja; **zh-hk 亦需改**, 与 poster 不同) —— 需指令包授权
+· B2 批4: poster-size-guide / print-specifications-reference-guide-2026 (前置三态确认后)
+· B3 foil × 3 补 FAQ (预检 8/8 过; 答案按新口径 40-80 词)
+· 段 8 路径 (a): 等 K3 提交 Perplexity/ChatGPT 对比
+· Person jobTitle/knowsAbout · C 二期 run-context 注入
+
+Bypass-rationale: 本批 = 内容修复(ja 署名) + 补删漏删 LD + 口径三处同步 + 回溯工具; pre-commit 红规则对 .hermes 历史字面硬拦

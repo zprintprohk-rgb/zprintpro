@@ -1,0 +1,46 @@
+{
+ "slug": "colored-envelopes",
+ "name_en": "Colored Envelopes",
+ "category_slug": "envelopes",
+ "category_name_en": "Envelopes",
+ "current_body_en": "ZprintPro Colored Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT.",
+ "current_body_words": 38,
+ "product": {
+  "descriptionEn": "Colorful printing, strong visual appeal. Perfect for invitations, greeting cards.",
+  "price_range": "HK$0.38-2.60/個",
+  "minQuantity": 100,
+  "specs": {
+   "material": "80–120g 書紙／彩色書紙",
+   "size": "DL、C5、C4（變數可選）",
+   "printMethod": "柯式四色＋可選專色",
+   "finishing": "開窗、自黏封口（變數可選）"
+  },
+  "materials": "",
+  "features": [
+   "四色／專色還原插畫與品牌色",
+   "彩色紙或白底滿版皆可",
+   "自黏封口便於大量封裝",
+   "DL／C5／C4 多規格",
+   "適合邀請、賀卡、營銷郵件",
+   "深色稿耐磨與邊緣檢查建議",
+   "可與喜帖／卡片同批對色"
+  ]
+ },
+ "category_conversion_en": null,
+ "category_gsc_words_en": [],
+ "regional_en": {
+  "trust": "ISO 9001 certified production · 30-second AI quote · free digital proof · no setup fees · free design mockup",
+  "shipping": "DHL Express / FedEx 3-5 days to the USA, 2-4 days to Japan · free shipping on US orders over $99 · worldwide delivery to 50+ countries",
+  "cta": "Ready to order? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
+ },
+ "rules": [
+  "只许从 4 个真实数据源组装: ① 本包 product 的 descriptionEn/specs/features/price_range/minQuantity ② 本包 category 的 conversion orderFlow 场景 (若有) ③ 现有 en body 的事实 (数字只能用它已含的) ④ 本包 GSC 词自然织入 1-2 次",
+  "禁止编造: 数字/认证/交期/客户名/行业事实 (价格只能用 price_range, 交期只能用 body/conversion 已有口径 3-5 天/2-4 天等)",
+  "禁止跨 SKU 复制同一段文字 — 每个 SKU 组装结果必须唯一 (同品类相邻 SKU 也禁整段雷同)",
+  "字数: 新 body ≥ 180 词 (英文词数, 含 FAQ 段); 结构 = 引言段 + 场景段 2-3 段 (含品类 GSC 词自然出现 1-2 次) + 材質/規格段 (从 specs/features 事实转英文散文) + 收費/交期段 (用 price_range/minQuantity + 已有交期口径) + **FAQ** 段 (2-3 问, 从现有 FAQ/事实改写, 禁新数字) + 結尾 CTA 段",
+  "段落用 \\n\\n 分隔; FAQ 段用 **FAQ** 开头, 问题用 **Q1: ...** 加答案",
+  "en 内容红线: 不出现 名片/business card (§0.0); 不出现「深圳」/「Shenzhen」作供应商前缀 (可用 \"Asia factory\"); 不出现简体中文; 不写 \"Hong Kong\" 作目标市场词",
+  "不要修改 title/description/h1/keywords — 只产出 body",
+  "输出 JSON: {\"slug\": \"<slug>\", \"body\": \"<完整 en body>\"}"
+ ]
+}

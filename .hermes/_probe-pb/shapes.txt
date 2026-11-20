@@ -1,0 +1,27 @@
+﻿=== content.en 長度: 5429 ===
+
+快速答案塊數 (bg-amber-50 div): 3
+
+--- 第 1 個完整形狀 ---
+<div class="bg-amber-50 border-l-4 border-amber-500 p-4 my-4"><p class="font-semibold mb-1">Quick Answer: What does a photo book cost?</p><p class="text-sm">Per copy: page count, trim size, stock and binding set the band.</p></div>
+
+
+FAQ 條數 (Q + br + A): 4
+
+--- 第 1 條完整形狀 ---
+<p><strong>Q1: What is the minimum order?</strong><br/>A: From 1 copy, no minimum order. Proofs print digitally with no plate fee.</p>
+
+
+表格數: 0
+
+
+CTA (wa.me) 數: 2
+
+--- CTA 形狀 ---
+<a href="https://wa.me/8619880851334" target="_blank" rel="noopener">WhatsApp your page count to ZprintPro</a>
+
+
+=== 首段 (前 320 字) ===
+<p>Photo books start at <strong>1 copy, no minimum order</strong>. Price is per copy, set by page count, trim size, paper and binding; digital short runs keep proofing and lead time short.</p>
+
+<div class="bg-amber-50 border-l-4 border-amber-500 p-4 my-4"><p class="font-semibold mb-1">Quick Answer: What does a photo bo

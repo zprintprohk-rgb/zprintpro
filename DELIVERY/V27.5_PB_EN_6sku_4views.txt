@@ -1,0 +1,295 @@
+V27.5 EN PB SERIES (Paper Bags) — COMPLETE IMAGE PROMPTS
+======================================================================
+Version: V27.5 (2026-09-09 full-alignment edition: K3 change list + products.ts truth + GSC money keywords + US market aesthetic research)
+Baseline: V27.3 (K3 8/28 16:25 GSC-driven 6-SKU truth)
+
+V27.5 CHANGE LIST:
+  [MATERIAL] Removed hard-coded "natural kraft brown bag". Multi-material palette: natural kraft / white kraft / white cardstock / premium art paper — AI adapts per SKU & scene. Only PB-001 stays natural kraft; other SKUs must NOT default to brown kraft.
+  [ARTWORK] Removed mandatory watercolor peony florals. Style pool: minimalist geometric graphics, brand monogram, clean wordmark layout, subtle heritage-etch linework, restrained modern-chinoiserie texture (lattice, fretwork). Florals optional, never mandatory.
+  [SCENE] Per-SKU differentiated US scenes (fixes V27.2's copy-pasted identical background across all 6 SKUs):
+     PB-001 artisan coffee roastery / bakery; PB-002 SoHo fashion boutique & beauty retail; PB-003 upscale gift shop; PB-004 farmers market / organic grocery; PB-005 sandwich deli takeout counter; PB-007 sneaker store / department store.
+  [US AESTHETIC 2026 — researched 2026-09-09]: "less but better" minimalism (Nielsen: minimalist packaging lifts trust ~25%), ultra-clean industrial (soft beige, muted grey, off-white, clean sans-serif), earthy bold tones (terracotta, forest green), heritage etch fine linework, sustainability as default baseline. NO red starburst badges, NO price tags on image — US e-commerce (Amazon/Etsy standard) reads badge+price overlays as low-trust discount signals.
+  [BADGE POLICY] EN market: NO explosive starburst stickers, NO price text on any view. Trust conveyed via small FSC / ISO 9001 mark bottom-right, low-key.
+  [NEGATIVE] Every prompt ends with Negative: no forced full-frame kraft brown base, no large-area watercolor peony / full-surface floral print, no red badge, no price, no Chinese characters.
+  [ENGINEERING INHERITED] two handles, two metal grommets, no hands/people, 80-85% frame occupancy, 1:1, cinematic realism, HERO/DETAIL/VARIETY/MULTI-ANGLE view rules.
+
+DATA SOURCES (integrity):
+  - src/data/products.ts PB-001/002/003/004/005/007 (names, descriptions, prices, materials, target industries)
+  - GSC money keywords EN: paper bag print file requirements (12 imp, pos 17), kraft paper bags (14 imp, pos 80 — early signal), paper bag gsm (18 imp)
+  - US packaging trend research 2026-09-09 (minimalism / ultra-clean industrial / heritage etch / earthy tones / sustainability baseline)
+
+Scope: 6 SKU x 4 views x EN = 24 prompts
+======================================================================
+
+### PB-001 | Eco Kraft Paper Bags | kraft-paper-bags
+
+SEO+GEO ALT: kraft paper bags custom paper bag printing eco paper bag 100 pieces minimum FSC certified cotton rope handles boutique bakery coffee shop ZprintPro sample ISO 9001
+Truth anchor: 120-200gsm kraft · twisted cotton/rope handles · foil & spot UV optional · $1.84 base · apparel brands, restaurant takeout, cafés, Etsy sellers
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-kraft-paper-bags-en-hero.webp
+Intent (for the AI): this is the main product image for PB-001 Eco Kraft Paper Bags on zprintpro.com's US store. Target viewers: American small-business owners — boutique clothing shops, coffee roasters, bakeries, Etsy sellers — who searched "custom kraft paper bags" and want eco credibility, low 100-piece minimum, and print quality they can trust at a glance.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright cheerful saturated color, warm sunlight mood.
+US market 2026 palette: warm natural kraft, Pantone Cloud Dancer soft white, sage green, earthy terracotta accents; refined neutral base; accurate color reproduction, soft but clear, never muddy. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: a "Kraftwell" fictional indie-brand eco kraft paper bag, 150gsm natural kraft paper (this SKU's own material), 4-color offset printing, twisted cotton rope handles, two silver grommets, reinforced turn-top. Surface design with real design sensibility: brand "Kraftwell" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — clean minimalist geometric lines, subtle brand monogram, or restrained heritage-etch linework; floral motifs allowed but not mandatory; all letters correctly spelled.
+Background softly blurred: a sunlit Brooklyn-style artisan coffee roastery / bakery counter — pour-over kettle, croissants on a wooden board, linen napkin, warm window-light bokeh; bright and airy; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: do not force full-frame kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-kraft-paper-bags-en-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: warm natural kraft, soft white, sage green, terracotta. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Kraftwell" eco kraft paper bag macro close-up — natural kraft paper fiber texture, twisted cotton rope weave, silver grommet detail, reinforced gusset fold edge, 4-color print dot detail; partial view of small brand logo and minimalist geometric or heritage-etch artwork, focus on material and craft.
+Background softly blurred: roastery counter props (linen swatch, kettle edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals surface texture and fiber direction, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced full-frame kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-kraft-paper-bags-en-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: warm natural kraft, soft white, sage green, terracotta. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Kraftwell" eco kraft paper bags in different designs side by side — monogram-centered, geometric corner motif, wordmark at top, heritage-etch line pattern; each with its own short copy and small brand logo at corner, no two identical, letters correctly spelled.
+Background softly blurred: same roastery scene, linen props, warm bokeh; consistent lighting and scale, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced full-frame kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-kraft-paper-bags-en-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: warm natural kraft, soft white, sage green, terracotta. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Kraftwell" eco kraft paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, showing gusset depth), back handle close-up (right); shows real dimensions and material thickness.
+Background softly blurred: clean light wooden surface, soft shadow, bright bokeh, linen swatch prop at edge.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced full-frame kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+======================================================================
+
+### PB-002 | Premium White Card Paper Bags | white-card-bags
+
+SEO+GEO ALT: white card paper bags custom paper bag printing premium matte lamination 100 pieces minimum fashion boutique jewelry cosmetics ZprintPro sample ISO 9001
+Truth anchor: 300gsm white cardstock · matte lamination · satin ribbon handles · silver foil logo option · $2.76 base · apparel, jewelry, cosmetics, lifestyle stores
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-white-card-bags-en-hero.webp
+Intent (for the AI): main product image for PB-002 Premium White Card Paper Bags on zprintpro.com's US store. Target viewers: SoHo-style fashion boutiques, beauty and jewelry brands upgrading their packaging — they buy "premium" and "brand feel", not discounts. The image must communicate: crisp white, flawless print reproduction, quiet luxury.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright luminous color, warm sunlight mood.
+US market 2026 palette: Pantone Cloud Dancer white, champagne gold, dusty rose blush, muted grey; ultra-clean premium neutrals; accurate color reproduction, soft but clear, never muddy. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: a "Whitewell" fictional indie-brand premium white card paper bag, 300gsm premium white art cardstock (this SKU's own material — never kraft brown), matte lamination, 4-color offset printing, satin ribbon handles, two silver grommets, optional silver foil logo. Surface design with real design sensibility: brand "Whitewell" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — minimalist brand geometry, fine-line abstract pattern, clean wordmark layout, or restrained modern texture; florals optional, never mandatory; letters correctly spelled.
+Background softly blurred: a sunlit SoHo fashion boutique — marble counter, linen garments on wooden hangers, fragrance bottles, soft window-light bokeh; bright and airy; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: never kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-white-card-bags-en-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: Cloud Dancer white, champagne gold, dusty rose, muted grey. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Whitewell" white card paper bag macro close-up — smooth cardstock surface, matte lamination sheen, satin ribbon weave, silver grommet, silver foil logo detail, gusset fold edge; partial minimalist geometric or fine-line artwork, focus on craft.
+Background softly blurred: boutique props (linen swatch, marble edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals paper surface quality, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-white-card-bags-en-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: Cloud Dancer white, champagne gold, dusty rose, muted grey. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Whitewell" white card paper bags in different designs side by side — monogram-centered, geometric corner motif, wordmark at top, fine-line abstract; each with its own short copy and small brand logo, no two identical, letters correctly spelled.
+Background softly blurred: same boutique scene, consistent lighting and scale, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-white-card-bags-en-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: Cloud Dancer white, champagne gold, dusty rose, muted grey. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Whitewell" white card paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, gusset depth), back ribbon-handle close-up (right); shows real dimensions and 300gsm thickness.
+Background softly blurred: clean marble surface, soft shadow, bright bokeh.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+======================================================================
+
+### PB-003 | Premium Gift Paper Bags | gift-bags
+
+SEO+GEO ALT: gift paper bags custom paper bag printing gold foil stamping spot UV 100 pieces minimum wedding favors brand events holiday gifting ZprintPro sample ISO 9001
+Truth anchor: 250gsm white cardstock · gold foil, spot UV, embossing · satin ribbon handles · $4.60 base · weddings, jewelry, brand events, hotels
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-gift-bags-en-hero.webp
+Intent (for the AI): main product image for PB-003 Premium Gift Paper Bags on zprintpro.com's US store. Target viewers: wedding planners, jewelry brands, corporate event buyers — they pay more for ceremony and refinement. The image must communicate: foil-stamped elegance, gift-worthy presence, flexible customization.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright celebratory color, warm sunlight mood.
+US market 2026 palette: ivory white, champagne gold, deep burgundy accent, rose gold; celebratory premium feel, never garish; accurate color reproduction, soft but clear, never muddy. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: a "Giftlux" fictional indie-brand premium gift paper bag, 250gsm premium white cardstock (this SKU uses white cardstock — never kraft brown), gold foil stamping, spot UV coating, satin ribbon handles, two silver grommets. Surface design with real design sensibility: brand "Giftlux" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — gold-foil minimalist geometry, brand monogram, or heritage-etch fine linework with decorative frame; florals optional, never mandatory; letters correctly spelled.
+Background softly blurred: an upscale American gift shop counter — ribbon-tied gift boxes, champagne-gold wrapping paper, velvet jewelry box, warm window-light bokeh; bright and airy; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: never kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-gift-bags-en-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: ivory white, champagne gold, burgundy, rose gold. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Giftlux" gift paper bag macro close-up — gold foil logo metallic sheen, spot UV relief, satin ribbon weave, silver grommet, cardstock surface; partial gold-foil geometric or heritage-etch artwork, focus on finishing craft.
+Background softly blurred: gift shop props (ribbon spool, velvet box edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals foil and paper texture, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-gift-bags-en-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: ivory white, champagne gold, burgundy, rose gold. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Giftlux" gift paper bags in different designs side by side — gold-foil monogram, geometric corner motif, wordmark at top, heritage-etch frame; each with its own short copy and small brand logo, no two identical, letters correctly spelled.
+Background softly blurred: same gift shop scene, consistent lighting and scale, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-gift-bags-en-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: ivory white, champagne gold, burgundy, rose gold. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Giftlux" gift paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, gusset depth), back ribbon-handle close-up (right); shows real dimensions and material thickness.
+Background softly blurred: clean velvet surface, soft shadow, bright bokeh.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+======================================================================
+
+### PB-004 | FSC Certified Eco Paper Bags | eco-paper-bags
+
+SEO+GEO ALT: eco paper bags custom paper bag printing FSC certified 100% recycled biodegradable 100 pieces minimum ESG brands organic food farmers market ZprintPro sample ISO 9001
+Truth anchor: 170gsm 100% recycled paper · soy-based inks · fully biodegradable · $1.84 base · ESG brands, eco beauty, organic food, fair trade
+GSC note: "eco paper bags" cluster is the only high-CTR paper-bag term — image must show credible eco signals (FSC mark, recycled fiber texture), not slogans.
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-eco-paper-bags-en-hero.webp
+Intent (for the AI): main product image for PB-004 FSC Certified Eco Paper Bags on zprintpro.com's US store. Target viewers: sustainability officers at DTC brands, organic grocers, eco-beauty founders — they verify claims. The image must communicate: certified sustainability, natural good taste, proof over promises.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright fresh saturated color, warm sunlight mood.
+US market 2026 palette: forest green, creamy ivory, earthy terracotta; sustainable natural feel; accurate color reproduction, soft but clear, never muddy. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: an "Ecogreener" fictional indie-brand FSC certified eco paper bag, 170gsm 100% recycled paper (light kraft or off-white recycled tone — AI adapts, never forced dark brown), soy-based ink printing, cotton rope handles, two silver grommets. Surface design with real design sensibility: brand "Ecogreener" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — leaf-vein fine-line geometry, brand monogram, or minimalist natural texture; botanical motifs optional, never mandatory; letters correctly spelled. Small FSC certification mark printed on the bag face.
+Background softly blurred: a sunlit farmers market / organic grocery stall — wooden crates of produce, canvas tote, wicker basket, recycled-paper packaging props, warm bokeh; bright and airy; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced full-frame dark kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-eco-paper-bags-en-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: forest green, creamy ivory, terracotta. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Ecogreener" eco paper bag macro close-up — recycled paper fiber and fleck texture, small printed FSC mark, soy-ink print quality, cotton rope weave, silver grommet; partial leaf-vein line or natural texture artwork.
+Background softly blurred: market props (canvas cloth, wicker edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals recycled fiber direction, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced dark kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-eco-paper-bags-en-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: forest green, creamy ivory, terracotta. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Ecogreener" eco paper bags in different designs side by side — leaf-vein monogram, fine-line geometric, wordmark at top, natural texture; each with its own short copy, small brand logo and FSC mark, no two identical, letters correctly spelled.
+Background softly blurred: same farmers market scene, consistent lighting and scale, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced dark kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-eco-paper-bags-en-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: forest green, creamy ivory, terracotta. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Ecogreener" eco paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, gusset depth), back handle close-up (right); shows real dimensions and material thickness.
+Background softly blurred: clean light wooden surface, soft shadow, bright bokeh, canvas and wicker props at edge.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced dark kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+======================================================================
+
+### PB-005 | Heavy-Duty Carry Paper Bags | handle-bags
+
+SEO+GEO ALT: carry paper bags custom paper bag printing reinforced bottom strong handles 100 pieces minimum restaurant takeout bakery retail ZprintPro sample ISO 9001
+Truth anchor: kraft or white card options · reinforced handles and bottom · cotton/flat-paper handles · $1.84 base · restaurant takeout, cafés, bakeries, retail, trade shows
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-handle-bags-en-hero.webp
+Intent (for the AI): main product image for PB-005 Heavy-Duty Carry Paper Bags on zprintpro.com's US store. Target viewers: restaurant and deli owners, bakery operators, retail managers — their first question is "will it hold?" The image must communicate: sturdy and reliable, practical capacity, honest value.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright cheerful saturated color, warm sunlight mood.
+US market 2026 palette: warm caramel, creamy ivory, natural kraft accent; practical and clean; accurate color reproduction, soft but clear, never muddy. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: a "Carrywell" fictional indie-brand heavy-duty carry paper bag, 250gsm paper (kraft tone or white card — AI adapts per composition, never forced brown), reinforced cotton rope handles, reinforced bottom, two silver grommets, 4-color offset printing. Surface design with real design sensibility: brand "Carrywell" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — clean minimalist geometric, brand monogram, or restrained modern texture; florals optional, never mandatory; letters correctly spelled.
+Background softly blurred: a sunlit American sandwich deli takeout counter — wrapped sandwiches, coffee cups, order tickets, stainless counter, warm bokeh; bright and airy; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced full-frame kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-handle-bags-en-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: warm caramel, creamy ivory, natural kraft accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Carrywell" carry paper bag macro close-up — reinforced handle anchor point and pull structure, silver grommet, reinforced bottom fold, paper fiber; partial minimalist geometric or monogram artwork, focus on strength construction.
+Background softly blurred: deli props (parchment wrap, wooden board edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals reinforcement structure and paper quality, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-handle-bags-en-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: warm caramel, creamy ivory, natural kraft accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Carrywell" carry paper bags in different designs side by side (mix kraft-tone and white-card pieces to show material choice) — monogram, geometric corner motif, wordmark at top, modern texture; each with its own short copy and small brand logo, no two identical, letters correctly spelled.
+Background softly blurred: same deli takeout scene, consistent lighting and scale, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-handle-bags-en-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: warm caramel, creamy ivory, natural kraft accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Carrywell" carry paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, gusset depth), back reinforced-handle close-up (right); shows real dimensions and material thickness.
+Background softly blurred: clean light wooden surface, soft shadow, bright bokeh.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+======================================================================
+
+### PB-007 | Large Shopping Paper Bags | large-bags
+
+SEO+GEO ALT: large paper bags custom paper bag printing reinforced 8kg capacity 100 pieces minimum clothing shoes department store retail ZprintPro sample ISO 9001
+Truth anchor: 320x120x380mm · 250g white card / 300g kraft / 280g art paper · base-board reinforced 8-10kg load · 4 handle options · $3.45 base · apparel, shoes, large items
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-large-bags-en-hero.webp
+Intent (for the AI): main product image for PB-007 Large Shopping Paper Bags on zprintpro.com's US store. Target viewers: apparel chains, sneaker stores, department-store buyers searching "large paper bags" — they need coat-and-shoebox capacity, 8kg load, and big-brand presence. The image must communicate: generous size, rigid stance, confident branding.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright confident saturated color, warm sunlight mood.
+US market 2026 palette: premium white, milk-tea beige, deep navy or terracotta accent; large-capacity premium feel; accurate color reproduction, soft but clear, never muddy. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: a "Bigcarry" fictional indie-brand large shopping paper bag, 300gsm heavyweight stock (white card or kraft tone — AI adapts per composition, never forced brown), reinforced handles, base-board reinforced bottom rated 8kg, two silver grommets, 4-color offset printing. Surface design with real design sensibility: brand "Bigcarry" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — bold minimalist geometry, brand monogram, or large-scale modern texture; florals optional, never mandatory; letters correctly spelled.
+Background softly blurred: a sunlit American apparel chain / sneaker store — garment racks, stacked shoeboxes, shopping aisle, warm bokeh; bright and airy; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced full-frame kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-large-bags-en-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: premium white, milk-tea beige, navy or terracotta accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Bigcarry" large shopping paper bag macro close-up — 300gsm thick stock cross-section, base-board reinforced bottom structure, reinforced handle root, silver grommet, 4-color print detail; partial bold geometric or monogram artwork.
+Background softly blurred: apparel store props (fabric swatch, shoebox edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals stock rigidity and structure, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-large-bags-en-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: premium white, milk-tea beige, navy or terracotta accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Bigcarry" large shopping paper bags in different designs side by side (mix white-card and kraft-tone pieces to show material choice) — monogram, bold geometric, wordmark at top, large modern texture; each with its own short copy and small brand logo, no two identical, letters correctly spelled.
+Background softly blurred: same apparel chain scene, consistent lighting and scale, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-large-bags-en-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+US palette: premium white, milk-tea beige, navy or terracotta accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Bigcarry" large shopping paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, showing 120mm gusset depth), back reinforced-handle close-up (right); shows real large dimensions and stock rigidity.
+Background softly blurred: clean light wooden surface, soft shadow, bright bokeh.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters.
+
+======================================================================
+END — V27.5 EN PB SERIES, 24 prompts complete
+Batch run advice: run PB-001 + PB-003 as samples first — verify ① white card / white kraft appears, not all brown kraft; ② minimalist geometric artwork appears, not all-over florals; ③ zero badges/prices on EN images. Pass, then batch the rest.

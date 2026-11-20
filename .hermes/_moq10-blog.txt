@@ -1,0 +1,327 @@
+﻿
+=== zh-hk (92 entries) ===
+  [     ] company-intro
+           title: 智印港印刷公司簡介：專業設備與一站式印刷服務
+           hits : 1 × 100 張起
+  [TOPIC] sticker-guide
+           title: 香港貼紙印刷完全指南：材質、工藝與應用場景详解
+           hits : 7 × 100 張起 | 100 張起印
+  [TOPIC] sticker-design
+           title: 貼紙設計的10個黃金法則：打造令人難忘的品牌形象
+           hits : 1 × 100 張起印
+  [     ] cmyk-guide
+           title: CMYK vs RGB：印刷色彩模式完全詳解
+           hits : 2 × 100 MOQ
+  [TOPIC] flyer-printing-guide
+           title: 香港傳單印刷完全指南：A4/A5 尺寸、紙質選擇與派發策略
+           hits : 5 × 100 張起印 | 100 張起
+  [     ] paper-bag-printing-guide
+           title: 香港紙袋印刷完全指南：材質、尺寸、手挽與設計趨勢
+           hits : 2 × 100 張起印
+  [TOPIC] pet-food-sticker-printing-guide
+           title: 香港寵物食品品牌貼紙印刷指南 · 防水防油 FDA 認證 | 智印港
+           hits : 1 × 100 張起
+  [     ] restaurant-menu-printing-guide
+           title: 香港餐廳菜單印刷指南 · 2026 餐飲旺季防水防油首選 | 智印港
+           hits : 2 × 100 張起印
+  [     ] marathon-event-poster-printing-guide
+           title: 馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包，起跑拱門 | 智印港
+           hits : 4 × 100 張起印
+  [TOPIC] car-dealership-amenity-sticker-printing-guide
+           title: 汽車 4S 店 / 二手車行貼紙印刷指南 · 防水 PVC 試駕車身貼，服務提醒 | 智印港
+           hits : 4 × 100 張起印
+  [     ] hotel-keycard-sleeve-printing-guide
+           title: 酒店房卡套，行李牌印刷指南 · 軟觸啞面，燙金 logo 客用品包裝 | 智印港
+           hits : 4 × 100 張起印
+  [TOPIC] baby-product-label-sticker-printing-guide
+           title: 母嬰品牌貼紙印刷指南 · 嬰兒食品級安全標籤定製 | 智印港
+           hits : 5 × 100 MOQ
+  [     ] media-merchandise-box-printing-guide
+           title: 影視IP周邊禮盒印刷指南 · 香港品牌影迷集體回憶定製 | 智印港
+           hits : 1 × 100 MOQ
+  [TOPIC] thick-paper-flyer-printing-restaurant-takeout-guide
+           title: 厚紙傳單印刷指南 · 香港餐廳外賣單張厚紙選材攻略 | 智印港
+           hits : 3 × 100 張起印
+  [     ] magnetic-closure-gift-box-ecommerce-brand-guide
+           title: 磁吸禮盒定制指南 · 跨境電商品牌升級包裝方案 | 智印港
+           hits : 1 × MOQ 100
+  [TOPIC] industrial-nameplate-printing-guide
+           title: 工業設備銘牌 / GHS 危險標籤印刷指南 · UL 認證，ANSI Z535 標準 | 智印港
+           hits : 10 × 100 張起
+  [TOPIC] real-estate-flyer-printing-guide
+           title: 香港房地產銷售單張印刷指南 · 新盤樓書派發 A4 摺頁定製 | 智印港
+           hits : 3 × 100 張起印
+  [TOPIC] same-day-flyers-printing-hong-kong-guide
+           title: 即日印刷・即日傳單印刷指南 · 香港餐廳開業 / 活動速遞方案 4-6 小時 | 智印港
+           hits : 13 × 100 張起印
+  [     ] poster-size-guide
+           title: A1 A2 A3 海報尺寸指南：印刷尺寸對照表・應用場景・紙材選擇 | 智印港
+           hits : 2 × 100 張起
+  [TOPIC] a5-vs-a6-flyer-size
+           title: A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港
+           hits : 6 × 100 張起印
+  [     ] poster-printing-price-guide
+           title: A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣全拆解 | 智印港
+           hits : 1 × 100 張起
+  [     ] wedding-table-card-printing-guide
+           title: wedding-table-card-printing-guide
+           hits : 1 × 100 張起印
+  [     ] saddle-stitch-booklet-printing-guide
+           title: 騎馬釘小冊子印刷完全指南：頁數、紙張、價格與低 MOQ 教學
+           hits : 1 × MOQ 100
+  [     ] apparel-clothing-tag-printing-guide
+           title: 服裝吊牌印刷完全指南：材質、工藝、價格與品牌案例 | 智印港
+           hits : 2 × MOQ 100 | 100 張起
+  [     ] 2027-calendar-printing-complete-guide
+           title: 2027 月曆印刷完全指南: 8 大材質，4 種工藝，中秋旺季提前 4-6 週預訂 | 智印港
+           hits : 1 × MOQ 100
+  [     ] rush-printing-hk-guide
+           title: 即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智印港
+           hits : 9 × 100 張起印 | 100 張起
+  [     ] large-envelope-printing-c4-c5
+           title: 大信封印刷 C4/C5 規格，100 個起 HK$0.5/個起，即日特急 | 智印港
+           hits : 2 × 100 MOQ
+  [TOPIC] sticker-material-pvc-vinyl-removable
+           title: 防水貼紙材質完全指南: PVC / 透明 / 可移 / 燙金 4 大材質 1 篇搞掂 | 智印港
+           hits : 5 × 100 張起印
+  [TOPIC] hong-kong-printing-cost-baseline-2026
+           title: 2026 香港印刷成本基準報告：貼紙、傳單、冊子、包裝等 16 品類 99 SKU 價格數據 | 智印港
+           hits : 2 × 100 張起
+  [     ] print-specifications-reference-guide-2026
+           title: 印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港
+           hits : 11 × 100 張起印
+  [     ] rush-printing-delivery-guide
+           title: 急件印刷派送指南 · 最快邊間？幾錢？幾點截單？| 智印港
+           hits : 7 × 100 張起印
+  --- zh-hk: 119 處命中
+
+=== en (92 entries) ===
+  [     ] design-file-specs
+           title: Print File Design Specifications: Bleed, Resolution & Color Modes
+           hits : 1 × 100 MOQ
+  [TOPIC] brand-materials-checklist
+           title: Corporate Brand Materials Checklist: From Stickers to Displays
+           hits : 1 × 100 MOQ
+  [TOPIC] sticker-guide
+           title: Complete Sticker Printing Guide: Materials, Finishes & Applications
+           hits : 2 × MOQ 100 | 100 pcs MOQ
+  [     ] packaging-trends
+           title: 2024 Packaging Design Trends Analysis
+           hits : 1 × 100 MOQ
+  [     ] cmyk-guide
+           title: CMYK vs RGB: Complete Guide to Print Color Modes
+           hits : 6 × 100 MOQ
+  [     ] eco-printing
+           title: Eco-Friendly Printing: The Future of Sustainable Packaging
+           hits : 1 × 100 MOQ
+  [     ] paper-bag-printing-guide
+           title: Paper Bag Printing Guide: Materials, Sizes, Handles & 2026 Trends
+           hits : 1 × 100 MOQ
+  [     ] cross-border-ecommerce-shipping-box-guide
+           title: cross-border-ecommerce-shipping-box-guide
+           hits : 1 × 100 MOQ
+  [     ] wedding-favor-bag-printing-guide
+           title: wedding-favor-bag-printing-guide
+           hits : 1 × 100 piece minimum
+  [     ] restaurant-menu-printing-guide
+           title: Restaurant Menu Printing Guide 2026: Waterproof, Fold & Material Tips | ZprintPro
+           hits : 2 × MOQ 100
+  [     ] wedding-red-packet-printing-guide
+           title: Wedding Red Packet Printing Guide 2026: Materials, Personalization & Bulk | ZprintPro
+           hits : 3 × MOQ 100 | 100 piece minimum
+  [     ] trade-show-banner-printing-guide
+           title: Trade Show Banner Printing Guide 2026: Retractable, Backdrop & USA Shipping | ZprintPro
+           hits : 4 × 100 MOQ | 100 pieces MOQ
+  [     ] wedding-invitation-envelope-printing-guide
+           title: Wedding Invitation Envelope Printing Guide 2026: Pearl, Foil-Lined & Custom Sizes | ZprintPro
+           hits : 3 × 100 MOQ
+  [TOPIC] hotel-amenity-sticker-printing-guide
+           title: Hotel & Resort Amenity Sticker Printing Guide: Luggage Tags, Welcome Kits & Branded Service for US Properties 
+           hits : 4 × 100 MOQ
+  [     ] finance-summit-gift-bag-printing-guide
+           title: Financial Summit Gift Bag Printing Guide: FSC, Foil Logo & VIP Bags for US Wealth Management | ZprintPro
+           hits : 3 × 100 MOQ
+  [     ] marathon-event-poster-printing-guide
+           title: Marathon Event Poster Printing Guide: Waterproof A1/A2 Ra Posters, Runner Packets & Start-Line Arches | Zprint
+           hits : 3 × 100 MOQ
+  [TOPIC] car-dealership-amenity-sticker-printing-guide
+           title: Car Dealership Amenity Sticker Printing Guide: Waterproof PVC, Test Drive Decals & Service Reminders for US Au
+           hits : 3 × 100 MOQ
+  [     ] hotel-keycard-sleeve-printing-guide
+           title: Hotel Key Card Sleeve & Luggage Tag Printing Guide: Soft-Touch Matte, Foil Logo & Glass Welcome Signs for US H
+           hits : 3 × 100 MOQ
+  [TOPIC] baby-product-label-sticker-printing-guide
+           title: Baby Product Sticker Printing Guide: FDA Food-Safe Labels for US Infant Brands | ZprintPro
+           hits : 5 × 100 MOQ
+  [     ] media-merchandise-box-printing-guide
+           title: Media Franchise Collector Box Printing Guide: Limited Edition, Pre-Order & Convention-Exclusive Boxes for US F
+           hits : 1 × 100 MOQ
+  [TOPIC] industrial-nameplate-printing-guide
+           title: Industrial Equipment Nameplate & GHS Hazard Label Printing Guide: UL certified，ANSI Z535 Standard | ZprintPro
+           hits : 4 × 100 piece MOQ | 100 piece minimum
+  [     ] baby-food-packaging-box-printing-guide
+           title: Baby Food Packaging Box Printing Guide: FDA Food-Safe Boxes for US Infant Brands | ZprintPro
+           hits : 3 × 100 MOQ | 100 piece minimum
+  [TOPIC] real-estate-flyer-printing-guide
+           title: Real Estate Flyer Printing Guide: Property Listing Brochures for US Real Estate Agents | ZprintPro
+           hits : 2 × 100 MOQ
+  [     ] medical-device-packaging-box-guide
+           title: Medical Device Packaging Box Printing Guide: ISO 13485, Sterile Bag Custom for US Healthcare | ZprintPro
+           hits : 3 × 100 MOQ | 100 piece minimum
+  [     ] auto-parts-shopping-bag-printing-guide
+           title: Auto Parts Shopping Bag Printing Guide: 4S Service Bags for US Auto Aftermarket | ZprintPro
+           hits : 3 × 100 MOQ | 100 piece minimum
+  [     ] sports-merchandise-gift-box-printing-guide
+           title: Sports Event Merchandise Gift Box Printing Guide: Team Memorabilia for US Leagues | ZprintPro
+           hits : 3 × 100 MOQ | 100 piece minimum
+  [     ] financial-institution-gift-bag-printing-guide
+           title: Financial Institution Gift Bag Printing Guide: Bank Kits & Credit Card Welcome Boxes for US Financial Brands |
+           hits : 2 × 100 MOQ
+  [     ] real-estate-floor-plan-poster-printing-guide
+           title: Real Estate Floor Plan Poster Printing Guide: A1/A2 Waterproof Layout Prints for US Property Developers | Zpri
+           hits : 2 × 100 MOQ
+  [TOPIC] same-day-flyers-printing-hong-kong-guide
+           title: Same Day Printing & Same-Day Flyer Guide · 4-6hr Rush, 100 MOQ, Free Shipping $99 | ZprintPro
+           hits : 5 × 100 MOQ
+  [     ] poster-printing-price-guide
+           title: A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk Discounts | ZprintPro
+           hits : 2 × 100 MOQ
+  [     ] wedding-invitation-pricing-guide
+           title: wedding-invitation-pricing-guide
+           hits : 1 × 100 MOQ
+  [     ] saddle-stitch-booklet-printing-guide
+           title: Saddle Stitch Booklet Printing Guide 2026: Pages, Paper, Pricing & Low MOQ | ZprintPro
+           hits : 3 × 100-copy MOQ
+  [     ] catalog-printing-china-supplier-guide
+           title: Catalog Printing China Supplier Guide 2026: 4 Binding，4 Paper，Bulk Wholesale 100/500/1000/5000 Tier | ZprintPr
+           hits : 2 × 100 pcs MOQ
+  [TOPIC] apparel-clothing-tag-printing-guide
+           title: Custom Apparel Tag & Label Printing Guide: Materials, Finishes, Pricing & Brand Cases | ZprintPro
+           hits : 5 × 100 MOQ | MOQ 100
+  [     ] rush-printing-hk-guide
+           title: Same-Day Printing HK Guide: Where Fastest? How Much? What Cut-Off? | ZprintPro
+           hits : 13 × 100 MOQ
+  [     ] packaging-box-pricing-2026
+           title: Packaging Box Printing Price 2026: 500/1000/5000 pcs・Custom Gift Box | ZprintPro
+           hits : 3 × 100 pcs MOQ
+  [     ] 2027-monthly-calendar-printing-timetable
+           title: 2027 Calendar Printing Complete Guide: When to Print? MOQ? 4 Calendar Paper Materials Compared | ZprintPro
+           hits : 9 × 100 MOQ
+  [     ] large-envelope-printing-c4-c5
+           title: Large Envelope Printing C4/C5 Specs，100 MOQ from $0.07 USD，Same-Day Rush | ZprintPro
+           hits : 7 × 100 MOQ | 100 pcs MOQ
+  [     ] rush-printing-delivery-guide
+           title: Rush Printing Delivery Guide: Where's Fastest? Cost? Order Cutoff? | ZprintPro
+           hits : 13 × 100 MOQ
+  [     ] packaging-box-price-2026
+           title: Packaging Box Printing Price 2026: How Much for 500/1000/5000 Pieces? | ZprintPro
+           hits : 3 × 100 MOQ
+  [TOPIC] sticker-material-pvc-vinyl-removable
+           title: Waterproof Sticker Material Guide: PVC / Clear / Removable / Hot Foil 4 Stocks in 1 Read | ZprintPro
+           hits : 5 × 100 MOQ | 100 pcs MOQ
+  [     ] instant-printing-30s-ai-quote-flow
+           title: Instant Printing 30-Second AI Quote Flow: Confirm by Noon, Ship by Afternoon | ZprintPro
+           hits : 8 × 100 MOQ
+  [TOPIC] foil-stamping-3-applications-2026
+           title: Foil Stamping 3-Application Guide 2026: Stickers / Wedding Invitations / Gift Box Cards | ZprintPro
+           hits : 22 × 100 MOQ | 100 pcs MOQ
+  [     ] campus-education-printing-pillar-guide
+           title: Campus Education 5 Products 5 Materials 12 Apps | ZprintPro
+           hits : 21 × MOQ 100 | 100 pcs MOQ
+  [     ] kraft-paper-box-types-comparison-2026
+           title: 8 Packaging Box Types Compared: Kraft vs Corrugated vs Color vs Gift vs Aircraft vs Book vs Drawer vs Shoulder
+           hits : 10 × 100 MOQ
+  [TOPIC] hong-kong-printing-cost-baseline-2026
+           title: 2026 Hong Kong Printing Cost Baseline Report: 99-SKU Price Data for Stickers, Flyers, Books, Packaging & 12 Mo
+           hits : 8 × 100-copy MOQ | MOQ 100
+  [     ] school-exercise-book-printing-guide
+           title: School Exercise Book Printing Guide 2026: 4 Stocks 3 Bindings 100 MOQ | ZprintPro
+           hits : 9 × 100 MOQ
+  [     ] zine-small-batch-booklet-printing-guide
+           title: Zine Printing Guide: 8-64pp, 100 MOQ, HK$6/pc | ZprintPro
+           hits : 1 × 100 MOQ
+  [     ] childrens-picture-book-printing-guide
+           title: Custom Picture Book Printing: 32pp, 100 MOQ | ZprintPro
+           hits : 2 × 100 MOQ
+  --- en: 223 處命中
+
+=== ja (92 entries) ===
+  [     ] company-intro
+           title: ZprintPro会社概要：専門設備とワンストップ印刷サービス
+           hits : 1 × 100 枚から
+  [TOPIC] sticker-guide
+           title: ステッカー印刷完全ガイド：材質、加工と応用場面
+           hits : 7 × 100 枚から
+  [TOPIC] sticker-design
+           title: ステッカーデザインの10の黄金法則
+           hits : 1 × 100枚から
+  [     ] cmyk-guide
+           title: CMYK vs RGB：印刷カラーモード完全解説
+           hits : 2 × 100 枚から
+  [TOPIC] flyer-printing-guide
+           title: オリジナルチラシ印刷ガイド：サイズ・用紙・デザイン・配布戦略 | 小ロット対応
+           hits : 5 × 100 枚から
+  [     ] cross-border-ecommerce-shipping-box-guide
+           title: cross-border-ecommerce-shipping-box-guide
+           hits : 1 × 100 MOQ
+  [     ] restaurant-menu-printing-guide
+           title: レストランメニュー印刷ガイド2026：防水・折りたたみ・素材 | ZprintPro
+           hits : 2 × 100 枚から
+  [     ] trade-show-banner-printing-guide
+           title: 展示会バナー印刷ガイド2026：ロールアップ・バックドロップ・短期納品 | ZprintPro
+           hits : 2 × 100 MOQ
+  [     ] wedding-invitation-envelope-printing-guide
+           title: ウエディング招待状封筒印刷ガイド2026：パール・箔押し内側・カスタムサイズ | ZprintPro
+           hits : 3 × 100 MOQ
+  [     ] marathon-event-poster-printing-guide
+           title: マラソン大会ポスター印刷ガイド：防水 A1/A2 レースポスター・ランナーパケット・スタートアーチ | ZprintPro
+           hits : 4 × 100 枚から
+  [TOPIC] car-dealership-amenity-sticker-printing-guide
+           title: 自動車ディーラー アメニティステッカー印刷ガイド：防水 PVC・試乗デカール・サービス注意喚起 日本自動車業界向け | ZprintPro
+           hits : 4 × 100 枚から
+  [     ] hotel-keycard-sleeve-printing-guide
+           title: ホテル ルームキー スリーブ・荷物タグ印刷ガイド：ソフトタッチマット・箔押し・ガラス ウェルカム 日本ホテル業界向け | ZprintPro
+           hits : 4 × 100 枚から
+  [TOPIC] baby-product-label-sticker-printing-guide
+           title: ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro
+           hits : 8 × 100 MOQ | 100 枚から
+  [     ] media-merchandise-box-printing-guide
+           title: メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro
+           hits : 1 × 100 MOQ
+  [TOPIC] same-day-flyers-printing-hong-kong-guide
+           title: 即日印刷・即日チラシ ガイド · 4-6時間特急、100枚〜、全国送料無料 | ZprintPro
+           hits : 12 × 100枚から | 100 枚から
+  [     ] poster-size-guide
+           title: A1 A2 A3 ポスターサイズガイド：寸法早見表・用途・用紙選び | ZprintPro
+           hits : 1 × 100 枚から
+  [TOPIC] a5-vs-a6-flyer-size
+           title: A5 と A6 チラシのサイズ比較：寸法・用途・印刷コスト | ZprintPro
+           hits : 6 × 100 枚から
+  [     ] poster-printing-price-guide
+           title: ポスター 印刷 費用 / ポスター印刷料金ガイド：A1 A2 単価・用紙・加工・ロット割引 | ZprintPro
+           hits : 1 × 100 枚から
+  [     ] wedding-invitation-pricing-guide
+           title: wedding-invitation-pricing-guide
+           hits : 2 × 100 枚から
+  [     ] wedding-invitation-cost-guide
+           title: wedding-invitation-cost-guide
+           hits : 1 × 100枚から
+  [     ] wedding-table-card-printing-guide
+           title: wedding-table-card-printing-guide
+           hits : 1 × 100枚から
+  [     ] saddle-stitch-booklet-printing-guide
+           title: 中綴じ冊子印刷完全ガイド：ページ数・用紙・価格・低 MOQ | 100冊から対応
+           hits : 1 × MOQ 100
+  [     ] apparel-clothing-tag-printing-guide
+           title: アパレルタグ・ネーム印刷完全ガイド：素材、加工、価格、事例 | ZprintPro
+           hits : 6 × 100 枚から | MOQ 100
+  [     ] large-envelope-printing-c4-c5
+           title: 大型封筒印刷 C4/C5 規格，100 個〜 \$0.07〜，即日特急 | ZprintPro
+           hits : 3 × 100 MOQ
+  [     ] instant-printing-30s-ai-quote-flow
+           title: 即日印刷 30秒AI見積もりフロー: 正午までに確認、午後に出荷 | ZprintPro
+           hits : 9 × 100枚から
+  [TOPIC] hong-kong-printing-cost-baseline-2026
+           title: 2026年香港印刷コスト ベースラインレポート: ステッカー・チラシ・冊子・パッケージ他 16 カテゴリ 99 SKU 価格データ | ZprintPro
+           hits : 10 × MOQ 100
+  --- ja: 98 處命中

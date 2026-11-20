@@ -1,0 +1,9 @@
+﻿python : F:\zprintpro-nextjs\zprintpro\.cluster\m3-exec-20260811\v20_gen_autoglm3.py:133: DeprecationWarning: Image.Ima
+ge.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+所在位置 行:1 字符: 171
++ ... c-20260811; python -X utf8 v20_gen_autoglm3.py --skus WI-001,WI-002,W ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (F:\zprintpro-ne...d_data instead.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  px = list(edges.getdata())

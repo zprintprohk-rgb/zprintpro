@@ -1,0 +1,14 @@
+﻿file                                                resolveLocale 门童作用域  交集  res独有  guard独有
+src/data/blog-data/en.json                          912           912        912   0        0
+src/data/category-seo-content.ts                    132           12         12    120      0
+    res独有行: L809×5 L903×5 L1534×6 L1851×12 L2149×13 L2150×25 L2151×17 L2155×12 L3081×2 L3171×16
+src/data/buying-guides.ts                           38            38         38    0        0
+src/data/sku-seo-data.ts                            28            28         28    0        0
+src/app/[locale]/payment-methods/page.tsx           16            16         16    0        0
+src/components/layout/Footer.tsx                    83            12         12    71       0
+    res独有行: L451×11 L479×23 L480×16 L481×21
+src/app/[locale]/category/[slug]/page.tsx           10            10         10    0        0
+src/data/blog-posts.ts                              16            4          4     12       0
+    res独有行: L532×12
+
+= 8 档合计: resolveLocale=1235  门童作用域=1032  交集=1032  res独有=203  guard独有=0

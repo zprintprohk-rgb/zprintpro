@@ -1,0 +1,3 @@
+Updated F:\zprintpro-nextjs\src\data\products.ts
+Old size: 1583922, New size: 1600172
+Added 16250 bytes

@@ -1,0 +1,26 @@
+﻿fix(i18n): Step C 批 1 — en 值内中文 248 字清零 (title 10 + description 67 + category 33 + JSON-LD 138)
+
+性质三类, 处置三类 (逐条对齐 .hermes/logs/i18n-en-cjk-classification-v2-2026-09-19.md):
+① 人工漏译 category 9 条 → 补英文 (餐飲外賣→Food & Beverage / 書籍印刷→Book Printing 等)
+② 术语欠译 description 组 → 对齐站内已批准英文表述
+   (國際認證體系→ISO 9001 certified / 進口印刷設備→imported presses / 急件 18:00 截單→rush orders, 18:00 cutoff)
+③ 撤值遗留 + 误填 (JSON-LD 档)
+   - SOP-10 第 4 款撤 certNo 后遗留中文 ×14: Cert No. [證書編號備索] → Cert No. available on request
+   - 第三方来源名删除: MINDS CMYK (麥思印刷整合) → MINDS CMYK (对外字段禁第三方品牌名)
+   - sku-seo-data en 块 h1/description 中文误填 ×4 → 对齐该 SKU 既有英文标题
+   - category-seo-content en 块内联中文 ×3 (立体/镂空/離島) → 英文
+   - en 正文日文术语 並製本/上製本 → 英文括注 (perfect binding / case binding)
+
+执行: 37 条规则 / 46 处, 断言四道 (逐条计数期望次数 + 备份 + scope 内形状残留守恒 + JSON 合法性 + 篇目数 92 守恒)
+      en.json 1129283→1129299 B, 仍为合法 JSON
+
+基线递减: .hermes/i18n-pollution-baseline.json total 1320 → 1071 (递减 249; 按文件记账只许递减,
+      30 档逐档 min(旧, 实测), 新增污染 0)
+验收: 门禁汇总 🔴 0 / ★新增缺陷 0 | tsc 54=54 基线 | 门童 #16 0 命中
+
+数据来源:
+- 分档清单 .hermes/logs/i18n-en-cjk-classification-v2-2026-09-19.md + 逐笔 CSV (双方法三层判据一致)
+- 批 1 枚举 .hermes/_probe-pb/stepC-batch1-items.json (28 条值级, 与派活书 248 字一致)
+- 执行/断言 .hermes/_probe-pb/stepC1-execute.cjs
+- 基线递减 .hermes/_probe-pb/stepC1-baseline-decrease.cjs
+- 回滚备份 .hermes/_probe-pb/_stepC1.{en,cat,sku}.bak + _i18n-pollution-baseline.bak

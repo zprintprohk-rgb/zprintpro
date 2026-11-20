@@ -1,0 +1,44 @@
+fix(gate): 段7 度量口径修正 (Person 属生成层信号) + 基线刷新 + poster 改写/B2批3 收尾 (K3 2026-09-19)
+
+【段 7 度量口径修正 —— strip 后实测暴露的假阳性】
+现象: strip 内嵌 LD 后, campus / poster / sticker × 3 locale 的**段 7 (E-E-A-T)** 立刻由 PASS 转 FAIL,
+      报「信号缺失: Person」。
+根因 (口径错, 非内容错): `Person` 是**页面生成层**产物 —— page.tsx 的 `generateBlogArticleJsonLd()`
+      (定义于 src/lib/seo/schema-extensions.ts) 生成 `Article.author = { @type: Person, name, url, sameAs }`;
+      它**从来不在 content 里**。旧判定却把它当 content 信号 ⇒ 内嵌 LD 一删就报缺失, 而线上该信号仍在生成区。
+      ⇒ 属**离线度量假阳性**, 与段 12 同类 (该信号本就在生成层)。
+修法: 离线只判 content 侧可判信号 (LinkedIn 文本 / FDA / EU REACH), Person 交线上断言;
+      证据里显式标注「Person(生成层承载,待 --online)」, 不做无限豁免式放行。
+**修正后实证发现一个真实缺口 (非假阳性)**: `sticker-material-pvc-vinyl-removable` 的 **ja 版 content 侧缺 LinkedIn**
+      (zh-hk / en 均有) ⇒ 三语 E-E-A-T 署名段不一致, 登记为内容缺口 (待授权补)。
+
+【基线刷新 (线上模式, 段7修正后)】
+  [12段骨架汇总] PASS=107 FAIL=54 WARN=19 SKIP=0 INVALID=0
+  [基线对账] 基线 54 / 现存 50 / 已修 4 / 剩余待修 50 ⇒ ✅ **0 条新增** + ⬇️ 自动递减移除已修 4 条 → **剩余 50**
+刷新理由 (诚实记录): 段 7 度量口径修正属**门禁口径变更**, 基线随之重估; poster en/ja 段锚改写
+  (K3 授权方案 a) 已消除先前 3 条新增 FAIL。**未做**的是「把真实新增 FAIL 塞进基线」这类掩盖动作。
+
+【本批累计成果 (poster 改写 + B2 批3)】
+· poster en/ja 4 个内容段锚改写为问句式 + h3→h2 (答案文字零改动, 字节级断言保证):
+  en 「H2 4 + H3 2 = 6, 问句 4 (67%)」PASS / ja 「H2 4 + H3 3 = 7, 问句 4 (57%)」PASS / zh-hk 75% PASS
+· B2 已 strip **5 篇 × 3 locale = 15 组合** (packaging / kraft / poster / sticker / campus)
+· strip 工具缺陷已修: 原只处理 content **开头**的 LD 序列 ⇒ 漏删 poster en/ja (块位于 5,816 / 8,405 处);
+  改为全位置扫描 + 三条断言 (连续序列 / 零残留 / 长度守恒)。
+· 全站内嵌 LD 普查落盘 (B2 剩余 8 篇清单): .hermes/reports/inline-ld-census-2026-09-19.json
+
+【数据来源】
+- 段 7 复验: blog-quality-12-rules-guard --slug=sticker… (zh-hk/en PASS, ja 缺 LinkedIn)
+- 基线: --stamp-baseline --online → 54; --baseline --online → 基线 54 / 现存 50 / 已修 4 / 新增 0
+- poster 三语结构对齐: H1/H2/H3 + 问句占比实测 (zh-hk 75% / en 67% / ja 57%)
+- K3 2026-09-19 授权 (方案 a) + P0 清单
+
+【待授权 / 待办】
+· sticker × 3 段 3 真实缺口: 问句 6/15 (zh-hk) / 6/14 (ja) —— 非问句为分类式标题 (如「PVC、透明、可移、燙金 4 種材質」),
+  与 poster 同型 ⇒ 同方案 (a) 改写段锚; **zh-hk 亦需改** (与 poster 不同, poster 的 zh-hk 本就合规)
+· sticker ja 段 7 缺 LinkedIn (content 侧)
+· B2 批4: poster-size-guide / print-specifications-reference-guide-2026 (前置三态确认后)
+· B3 foil × 3 补 FAQ (格式预检 8/8 已过; 答案 40-120 词)
+· 段 8 路径 (a): 等 K3 提交 Perplexity/ChatGPT 对比结果
+· Person jobTitle/knowsAbout (schema-extensions.ts) · C 二期 run-context 注入
+
+Bypass-rationale: 本批 = 门禁判定修正 + 台账 + 普查证据; pre-commit 红规则对 .hermes 历史字面会硬拦; 无客户可见文本改动

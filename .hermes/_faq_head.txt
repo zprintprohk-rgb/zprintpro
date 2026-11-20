@@ -1,0 +1,31 @@
+skuMoneyFAQs — SKU 级带钱问答 (kw-flywheel W1, 2026-09-22)
+ *
+ * 数据源: DELIVERY/kw-flywheel/page_action_plan.csv faq_inject 列 + aeo_question_bank.csv (571 问句)
+ * 数字真值: products.ts minQuantity / basePrice(_en/_ja) + 页面价格锚点; 交期沿用各 SKU body 现行口径
+ * 挂载: src/app/[locale]/product/[slug]/page.tsx — SKU 级优先, 类目 coreProductFAQMap 随后;
+ *       可见 FAQ 手风琴与 FAQPage JSON-LD 同源 (Google FAQPage 指南: schema 内容须页面可见)
+ * AEO 口径: 首句直答 (价格+MOQ+交期), 次句补规格/工艺, 不堆砌
+ */
+export const skuMoneyFAQs: Record<string, FAQItem[]> = {
+  'a2-posters': [
+    {
+      question: {
+        'zh-hk': 'A2 海報幾多錢一張？',
+        en: 'How much does an A2 poster cost?',
+        ja: 'A2ポスターの印刷料金は？',
+      },
+      answer: {
+        'zh-hk': 'A2 海報 10 張起印，HK$9 起/張（157g 銅版紙）。200g 或 PP 合成紙另計，1-2 個工作天交貨，即日特急可選。',
+        en: 'A2 posters start from $2.30/pc at 10 MOQ (157gsm gloss paper). 200gsm and PP synthetic upgrades available, 1-2 business day production with same-day rush option.',
+        ja: 'A2ポスターは10枚〜¥300〜（157gコート紙）。200g・PP合成紙も対応、1-2営業日生産、特急当日仕上げ可。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': 'A2 海報幾大張？可以即日取貨嗎？',
+        en: 'What size is an A2 poster and can I get it same-day?',
+        ja: 'A2ポスターのサイズは？即日仕上げは可能？',
+      },
+      answer: {
+        'zh-hk': 'A2 尺寸為 420×594mm。上午確認稿件最快即日交收，常規 1-2 個工作天，全港送貨。',
+        en: 'A2 measures 420×594mm (16.5×23.4 in). Artwork confirmed in the morning can go into same-day pro

@@ -1,0 +1,235 @@
+TOTAL Imps: 16378, Clicks: 53, CTR: 0.32%, Unique queries: 1754
+
+=== Top 25 by clicks ===
+智印港                                      imps=   35 clk=  9 ctr=25.71% pos=  2.11
+證書印刷                                     imps=   30 clk=  5 ctr=16.67% pos= 13.50
+a2 印刷 即日                                 imps=   13 clk=  2 ctr=15.38% pos=  7.46
+flyer printing                           imps=    3 clk=  2 ctr=66.67% pos=  4.67
+z print                                  imps=    9 clk=  2 ctr=22.22% pos= 19.89
+即日印刷                                     imps=   79 clk=  2 ctr= 2.53% pos= 15.80
+海報印刷一張                                   imps=    8 clk=  2 ctr=25.00% pos= 26.50
+a4 flyer printing                        imps=    1 clk=  1 ctr=100.00% pos=  3.00
+a4 印刷                                    imps=    2 clk=  1 ctr=50.00% pos= 24.00
+china catalog printing                   imps=   71 clk=  1 ctr= 1.41% pos= 21.76
+doujin printing                          imps=    8 clk=  1 ctr=12.50% pos= 16.50
+kraft paper box                          imps=    5 clk=  1 ctr=20.00% pos= 32.20
+print a5 flyers                          imps=    1 clk=  1 ctr=100.00% pos=  7.00
+print flyers                             imps=    1 clk=  1 ctr=100.00% pos=  5.00
+pvc menu                                 imps=   22 clk=  1 ctr= 4.55% pos= 29.23
+pvc 貼紙                                   imps=    9 clk=  1 ctr=11.11% pos=  9.22
+オリジナル 箱 安い                               imps=    2 clk=  1 ctr=50.00% pos=  8.00
+係邊買                                      imps=    1 clk=  1 ctr=100.00% pos=  4.00
+利是封訂製                                    imps=   45 clk=  1 ctr= 2.22% pos= 43.87
+印海報價錢                                    imps=    2 clk=  1 ctr=50.00% pos= 11.50
+同人印刷                                     imps=    7 clk=  1 ctr=14.29% pos=  6.43
+同人誌印刷                                    imps=    7 clk=  1 ctr=14.29% pos=  7.00
+學校印刷                                     imps=   57 clk=  1 ctr= 1.75% pos= 36.96
+宣傳單                                      imps=    1 clk=  1 ctr=100.00% pos=  2.00
+宣傳單張印刷                                   imps=  400 clk=  1 ctr= 0.25% pos= 35.53
+
+=== Top 25 by imps ===
+宣傳單張                                     imps=  423 clk=  0 ctr= 0.00% pos= 38.98
+宣傳單張印刷                                   imps=  400 clk=  1 ctr= 0.25% pos= 35.53
+貼紙印刷                                     imps=  390 clk=  0 ctr= 0.00% pos= 41.52
+海報印刷                                     imps=  373 clk=  0 ctr= 0.00% pos= 29.41
+印海報                                      imps=  357 clk=  0 ctr= 0.00% pos= 32.33
+食品包裝印刷                                   imps=  324 clk=  0 ctr= 0.00% pos= 39.51
+月曆印刷                                     imps=  278 clk=  1 ctr= 0.36% pos= 33.00
+紙袋印刷                                     imps=  269 clk=  0 ctr= 0.00% pos= 21.02
+紙袋訂製                                     imps=  230 clk=  0 ctr= 0.00% pos= 45.64
+包裝盒訂製                                    imps=  210 clk=  0 ctr= 0.00% pos= 34.92
+海報與印刷                                    imps=  210 clk=  0 ctr= 0.00% pos= 46.83
+餐牌印刷                                     imps=  196 clk=  0 ctr= 0.00% pos= 17.86
+包裝盒印刷                                    imps=  190 clk=  0 ctr= 0.00% pos= 45.44
+poster 印刷                                imps=  181 clk=  0 ctr= 0.00% pos= 27.51
+訂做紙袋                                     imps=  178 clk=  0 ctr= 0.00% pos= 36.26
+印刷紙袋                                     imps=  162 clk=  0 ctr= 0.00% pos= 29.35
+騎馬釘                                      imps=  161 clk=  0 ctr= 0.00% pos= 40.77
+食品包裝訂製                                   imps=  157 clk=  0 ctr= 0.00% pos= 20.93
+騎馬釘印刷                                    imps=  151 clk=  0 ctr= 0.00% pos= 37.30
+印書                                       imps=  149 clk=  0 ctr= 0.00% pos= 33.72
+紙盒訂製                                     imps=  144 clk=  0 ctr= 0.00% pos= 49.92
+貼紙訂製                                     imps=  144 clk=  0 ctr= 0.00% pos= 46.06
+saddle stitch booklet                    imps=  138 clk=  0 ctr= 0.00% pos= 80.60
+透明貼                                      imps=  136 clk=  0 ctr= 0.00% pos= 39.14
+可移貼紙                                     imps=  133 clk=  0 ctr= 0.00% pos= 16.90
+
+=== Striking distance (zero click, imps >= 10, pos <= 50) ===
+宣傳單張                                     imps=  423 pos= 38.98
+貼紙印刷                                     imps=  390 pos= 41.52
+海報印刷                                     imps=  373 pos= 29.41
+印海報                                      imps=  357 pos= 32.33
+食品包裝印刷                                   imps=  324 pos= 39.51
+紙袋印刷                                     imps=  269 pos= 21.02
+紙袋訂製                                     imps=  230 pos= 45.64
+包裝盒訂製                                    imps=  210 pos= 34.92
+海報與印刷                                    imps=  210 pos= 46.83
+餐牌印刷                                     imps=  196 pos= 17.86
+包裝盒印刷                                    imps=  190 pos= 45.44
+poster 印刷                                imps=  181 pos= 27.51
+訂做紙袋                                     imps=  178 pos= 36.26
+印刷紙袋                                     imps=  162 pos= 29.35
+騎馬釘                                      imps=  161 pos= 40.77
+食品包裝訂製                                   imps=  157 pos= 20.93
+騎馬釘印刷                                    imps=  151 pos= 37.30
+印書                                       imps=  149 pos= 33.72
+紙盒訂製                                     imps=  144 pos= 49.92
+貼紙訂製                                     imps=  144 pos= 46.06
+透明貼                                      imps=  136 pos= 39.14
+可移貼紙                                     imps=  133 pos= 16.90
+利是封印刷                                    imps=  121 pos= 31.07
+印海報一張                                    imps=  108 pos= 46.56
+包裝食品 裡印                                  imps=  105 pos= 23.35
+教科書 印刷                                   imps=  105 pos= 40.34
+戶外貼紙                                     imps=  103 pos= 28.43
+咭片                                       imps=   99 pos= 38.63
+咭片印刷                                     imps=   99 pos= 34.31
+両面カラー印刷                                  imps=   92 pos= 25.59
+月歷印刷                                     imps=   90 pos= 32.48
+paper bag print file requirements        imps=   89 pos= 16.57
+大信封                                      imps=   89 pos=  2.16
+印咭片                                      imps=   88 pos= 31.36
+膠裝書                                      imps=   85 pos= 38.82
+印紙袋                                      imps=   80 pos= 27.27
+食品印刷                                     imps=   76 pos= 38.46
+紙袋訂造                                     imps=   70 pos= 37.83
+catalog printing                         imps=   66 pos= 41.12
+school exercise book print               imps=   63 pos= 27.90
+紙袋訂做                                     imps=   63 pos= 45.57
+膠裝書印刷                                    imps=   63 pos= 37.65
+school exercise book printing            imps=   61 pos= 25.79
+印刷公司                                     imps=   60 pos= 38.98
+戶外海報                                     imps=   59 pos= 20.31
+a2 poster                                imps=   58 pos= 39.81
+紙袋印製                                     imps=   57 pos= 35.58
+small batch stickers                     imps=   56 pos=  6.95
+卡片印刷                                     imps=   56 pos= 40.12
+校 簿 印刷                                   imps=   54 pos= 25.37
+pôster a2                                imps=   53 pos= 42.47
+環保印刷                                     imps=   53 pos= 23.15
+即日急件                                     imps=   50 pos= 19.80
+膠片餐牌                                     imps=   49 pos= 23.18
+月曆訂製                                     imps=   47 pos= 33.51
+紙盒印刷                                     imps=   47 pos= 43.34
+訂製利是封                                    imps=   46 pos= 42.00
+印卡片                                      imps=   45 pos= 36.84
+small batch sticker printing             imps=   43 pos= 13.47
+包裝印刷                                     imps=   43 pos= 48.02
+印貼紙                                      imps=   40 pos= 38.77
+膠卡餐牌                                     imps=   40 pos= 31.52
+環保材質貼紙                                   imps=   39 pos= 15.26
+a1海報                                     imps=   38 pos=  1.00
+クラフト紙 パッケージ印刷                            imps=   38 pos= 29.68
+禮盒訂做                                     imps=   38 pos= 43.74
+公司信封                                     imps=   37 pos=  1.03
+クラフト紙 パッケージ 印刷                           imps=   36 pos= 32.28
+膠裝書價格                                    imps=   36 pos= 30.86
+security sticker printing                imps=   35 pos= 26.43
+a3海報印刷                                   imps=   34 pos= 35.41
+catalog printing china                   imps=   33 pos= 25.09
+防水貼紙                                     imps=   33 pos= 21.33
+教材 テキスト印刷                                imps=   32 pos= 42.72
+訂制月曆                                     imps=   32 pos= 29.56
+透明貼紙                                     imps=   32 pos= 27.50
+a2 海報 印刷                                 imps=   31 pos=  5.74
+摺頁印刷                                     imps=   31 pos= 42.13
+卡紙印刷                                     imps=   29 pos= 39.03
+易拉寶                                      imps=   29 pos= 11.79
+印紙盒                                      imps=   28 pos= 45.36
+紙袋批發                                     imps=   28 pos= 49.11
+香港印刷公司                                   imps=   28 pos= 32.75
+袋印刷                                      imps=   27 pos= 48.56
+訂 做 紙袋                                   imps=   27 pos= 44.11
+a5 flyer size                            imps=   26 pos= 45.77
+small batch custom stickers              imps=   25 pos= 15.08
+學校 印刷                                    imps=   25 pos= 41.72
+紙袋                                       imps=   24 pos= 35.50
+印傳單                                      imps=   23 pos= 33.43
+海報大小                                     imps=   23 pos= 44.91
+doujinshi printing                       imps=   22 pos= 31.05
+a2 クリアポスター 印刷                            imps=   21 pos= 47.95
+catalogue printing china                 imps=   21 pos= 23.29
+custom printed exercise books            imps=   21 pos= 38.95
+sticker guide                            imps=   21 pos= 48.48
+傳單印刷                                     imps=   21 pos= 37.29
+a2海報                                     imps=   20 pos=  1.20
+adhesive banner printing                 imps=   19 pos= 45.74
+pvc シール                                  imps=   19 pos= 20.21
+カタログ 印刷                                  imps=   19 pos= 49.26
+宣傳咭印刷                                    imps=   19 pos= 44.89
+海報size                                   imps=   19 pos= 41.32
+證書 影印                                    imps=   19 pos= 23.00
+貼紙設計                                     imps=   19 pos= 16.74
+車身廣告貼紙                                   imps=   19 pos= 36.00
+mtr 12 sheet size                        imps=   18 pos=  8.56
+paper bag gsm                            imps=   18 pos= 12.33
+pvc貼紙                                    imps=   18 pos=  7.00
+what gsm for paper bags                  imps=   18 pos= 13.11
+燙金貼紙                                     imps=   18 pos=  2.83
+a1 printing                              imps=   17 pos= 47.29
+adhesive banners                         imps=   17 pos= 35.41
+bag printing                             imps=   17 pos= 47.00
+大紙袋                                      imps=   17 pos=  8.94
+禮物盒訂製                                    imps=   17 pos= 32.47
+adhesive posters                         imps=   16 pos= 33.81
+double sided flyer printing              imps=   16 pos= 40.44
+fluorescent stickers                     imps=   16 pos=  9.62
+マグネットレス 貼り箱                              imps=   16 pos= 48.44
+包裝 印刷                                    imps=   16 pos= 38.25
+觀塘印刷公司                                   imps=   16 pos= 14.56
+a5 a6 尺寸                                 imps=   15 pos=  9.53
+book printing hong kong                  imps=   15 pos= 32.67
+室內海報                                     imps=   15 pos= 23.60
+a2 poster printing                       imps=   14 pos= 47.36
+a5 vs a6 flyer                           imps=   14 pos=  7.07
+adhesive poster printing                 imps=   14 pos= 46.21
+batch stickers                           imps=   14 pos=  2.07
+パッケージ箱 オーダーメイド 食品                        imps=   14 pos= 47.57
+貼紙印製                                     imps=   14 pos= 47.29
+a1 海報                                    imps=   13 pos=  2.00
+exercise book printing business          imps=   13 pos= 16.00
+利 是 封 印刷                                 imps=   13 pos= 33.23
+特種紙                                      imps=   13 pos=  6.08
+香港貼紙印刷                                   imps=   13 pos= 30.00
+flyers a5 standards                      imps=   12 pos= 32.33
+ダイカット ステッカー 防水                           imps=   12 pos=  4.42
+可移貼                                      imps=   12 pos= 18.67
+新蒲崗影印                                    imps=   12 pos=  9.00
+新蒲崗影印舖                                   imps=   12 pos=  9.75
+牛皮紙盒                                     imps=   12 pos=  1.75
+防偽貼紙                                     imps=   12 pos=  4.33
+can badge                                imps=   11 pos= 21.73
+small batch labels                       imps=   11 pos= 46.82
+waterproof sticker                       imps=   11 pos= 46.00
+zprint                                   imps=   11 pos= 37.27
+ステッカー印刷 小ロット                             imps=   11 pos= 49.55
+彩色信封                                     imps=   11 pos=  2.55
+標籤 印刷                                    imps=   11 pos= 37.64
+訂 做 利 是 封                                imps=   11 pos= 39.64
+食品包裝袋印刷                                  imps=   11 pos= 29.09
+a2 size poster                           imps=   10 pos= 47.90
+zprin                                    imps=   10 pos=  8.00
+印刷 推薦                                    imps=   10 pos= 43.40
+印月曆                                      imps=   10 pos= 23.40
+同人誌 印刷                                   imps=   10 pos=  6.50
+地鐵燈箱廣告尺寸                                 imps=   10 pos=  6.60
+海報尺寸                                     imps=   10 pos= 15.10
+酒水牌                                      imps=   10 pos=  4.40
+香港 印刷                                    imps=   10 pos= 37.30
+
+=== Pos 1-10 winners (clicks > 0) ===
+智印港                                      imps=   35 clk=  9 ctr=25.71% pos=  2.11
+a2 印刷 即日                                 imps=   13 clk=  2 ctr=15.38% pos=  7.46
+flyer printing                           imps=    3 clk=  2 ctr=66.67% pos=  4.67
+a4 flyer printing                        imps=    1 clk=  1 ctr=100.00% pos=  3.00
+print a5 flyers                          imps=    1 clk=  1 ctr=100.00% pos=  7.00
+print flyers                             imps=    1 clk=  1 ctr=100.00% pos=  5.00
+pvc 貼紙                                   imps=    9 clk=  1 ctr=11.11% pos=  9.22
+オリジナル 箱 安い                               imps=    2 clk=  1 ctr=50.00% pos=  8.00
+係邊買                                      imps=    1 clk=  1 ctr=100.00% pos=  4.00
+同人印刷                                     imps=    7 clk=  1 ctr=14.29% pos=  6.43
+同人誌印刷                                    imps=    7 clk=  1 ctr=14.29% pos=  7.00
+宣傳單                                      imps=    1 clk=  1 ctr=100.00% pos=  2.00
+環保紙袋                                     imps=    3 clk=  1 ctr=33.33% pos=  2.00
+磁吸禮盒                                     imps=    3 clk=  1 ctr=33.33% pos=  2.00
+香港那裏有                                    imps=    1 clk=  1 ctr=100.00% pos=  1.00

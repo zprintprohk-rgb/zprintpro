@@ -1,0 +1,36 @@
+fix(brand): 单品牌分层 B+C 批 — 非 title 面 292 处清毒 + 数据层 ①②③ + 门童 #3 全量基线
+
+K3 2026-09-13 批准范围: B(先清非 title 面) + C(门禁升全域) + 数据层 ①②③;
+ja 侧统一为 ZprintPro(按 9/1 §2 字面); ④(faqs 结构)只出方案不动手。
+
+一、代码层非 title 面 292 处 / 26 文件 -> 单品牌
+  - 智印港 ZprintPro -> 智印港; ZprintPro 智印港 -> 智印港; ジープリント ZprintPro -> ZprintPro
+  - 覆盖: getWebLogoAlt / layout 元数据(author/creator/publisher) / JSON-LD name(schema-extensions 6) /
+    Footer / terms / legal / privacy / payment-methods / press-kit / about / rush-data / textbooks.html /
+    products-content.ts(224) / blog-data ja(6) / quote-engine desk 等
+  - 脚本 scripts/fix-dual-brand-nontitle.mjs: 清单人工过审(.hermes/dual-brand-allowlist.json
+    allow 292 / hold 30), §12 三件套(计数断言+形状断言+备份), 断言未过不写盘
+
+二、数据层 ①②③ (scripts/fix-single-brand-data-layer.mjs, 同样三件套)
+  ① CSV: 图片Alt标签(ZH) 69+6 格 / SEO标题(ZH) 6 格 / SEO描述(ZH) 6 格 / 正文内容优化(ZH) 6 格 -> 0
+     (列感知替换 + EN/JA 列零改动断言 + 75x31 守恒)
+  ② products.ts L8491 alt 兜底模板 ZprintPro智印港 -> 智印港 (title 面 13 处未动, 越界断言)
+  ③ sku-seo-data.ts: ZprintPro 15+ 年自有品牌 x9 -> 智印港; zh-hk imageAlt 尾缀 x4 -> 智印港
+
+三、门童 #3 品牌分层 升全域 (方案 C)
+  - 新增 scripts/check-brand-baseline.mjs: 全量扫 src/+messages/, 对 .hermes/brand-baseline.json
+    基线只许递减(新增即 exit 1)
+  - 接入 pre-commit (scripts/canonical/pre-commit SSoT + 已安装 hook) 步骤 3.5
+  - 基线记录 150 处 / 33 文件(剩余 = title 面 + 多行 locale-map 页 title, 待 K3 定窗口做 A)
+  - 负向测试通过: 注入 1 处 -> exit 1 拦截
+
+四、docs
+  - docs/2026-09-13-single-brand-code-layer-gap.md: 呈报 + K3 裁决 + 执行结果 + 两条工具教训
+  - docs/2026-09-13-sku-seo-faqs-structure-assessment.md: ④ 评估(死字段+脏数据, 线上 0 命中) + 3 方案
+
+门禁: tsc 54=54(错误全在 quote-engine __tests__, 本批改动文件 0 错) / build exit 0 /
+check-encoding 35 文件 UTF-8 LF / check-brand-mentions --strict A 类 0 /
+check-brand-baseline PASS(150) / regen-guard 105 entries 700 keys 300 titles 不掉
+数据来源: .hermes/tsc-analyze.cjs / .hermes/dual-brand-allowlist.json / .hermes/selftest-brand-gate.cjs
+工具教训(已固化 .hermes/logs/tool-lessons-2026-09-13.md 教训 7/8): 假零(命令没跑起来被当 0 错) +
+  替换正则吃尾随逗号(备份让回滚零成本)

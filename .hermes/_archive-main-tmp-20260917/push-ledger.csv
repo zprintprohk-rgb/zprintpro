@@ -1,0 +1,65 @@
+date,time,sha,remote_via,note
+2026-08-01,10:26:22,c2eb910,origin_ssh,
+2026-08-03,00:29:08,e1cedda,origin_ssh,ledger 漏计: 当日最后一笔
+2026-08-03,01:28:14,bb3817b,origin_ssh,
+2026-08-03,23:02:18,f2156dc,origin_ssh,ledger/日运营均漏计
+2026-08-04,06:01:59,e6a61a6,origin_ssh,
+2026-08-04,11:21:04,626a22a,origin_ssh,
+2026-08-04,11:41:08,3bf6e1c,origin_ssh,
+2026-08-04,14:29:28,8f3948d,origin_ssh,
+2026-08-04,14:31:49,98d1425,origin_ssh,
+2026-08-04,14:45:58,0992089,origin_ssh,
+2026-08-04,15:09:30,f726359,origin_ssh,
+2026-08-04,18:49:32,66b922d,origin_ssh,
+2026-08-05,09:25:39,e4c9dc2,origin_ssh,
+2026-08-05,12:37:09,16413b0,origin_ssh,
+2026-08-05,14:03:09,15d6721,origin_ssh,
+2026-08-05,14:26:09,cc5d2c8,origin_ssh,
+2026-08-05,14:51:17,bc7cd62,origin_ssh,
+2026-08-05,15:10:36,c3b6f3f,origin_ssh,
+2026-08-05,16:11:32,56f254c,origin_ssh+origin,双 remote 同 tip, 去重计 1
+2026-08-05,17:13:49,c22d626,origin_ssh,
+2026-08-05,18:43:04,c177781,origin_ssh,
+2026-08-05,20:26:21,853ebee,origin_ssh,ledger/日运营均漏计(或归日偏差)
+2026-08-05,20:28:23,b8b4e1c,origin_ssh,当日最后一笔, ledger 漏计
+2026-08-06,01:04:36,664f9e3,origin_ssh,
+2026-08-06,01:17:45,3d029f1,origin_ssh,
+2026-08-06,01:46:34,95d24ce,origin_ssh,
+2026-08-06,02:34:15,260831d,origin_ssh,
+2026-08-06,18:40:50,a66af72,origin_ssh,
+2026-08-07,01:15:48,471eda7,origin_ssh,
+2026-08-07,01:26:33,6ce6f81,origin_ssh,
+2026-08-07,02:29:02,b845497,origin_ssh,
+2026-08-07,09:22:40,2e28154,origin_ssh,
+2026-08-07,09:29:39,4c4bf87,origin_ssh,
+2026-08-07,09:48:52,677b4ed,origin_ssh,
+2026-08-07,18:39:27,9ab9ee4,origin_ssh,
+2026-08-07,18:51:14,788f1d3,origin_ssh,
+2026-08-08,05:13:00,568087a,origin_ssh,
+2026-08-08,14:20:21,46809c3,origin_ssh,
+2026-08-08,15:08:20,4703262,origin_ssh,被 117f9fc amend 替换, 仍计 1
+2026-08-08,15:17:24,117f9fc,origin_ssh,amend force-with-lease (当月第 1 次 amend)
+2026-08-09,16:34:09,0d46a4c,origin_ssh,
+2026-08-09,16:42:23,a69f0c1,origin_ssh,
+2026-08-10,10:00:26,8664488,origin,本克隆经 origin 推送(评估「另一 clone」推测证伪)
+2026-08-10,10:28:23,c48181b,origin,同上
+2026-08-10,10:39:35,cefe895,origin,同上
+2026-08-10,10:56:59,055d87e,origin+origin_ssh,双 remote 同 tip, 计 1
+2026-08-10,18:42:17,9924772,origin_ssh,handoff 漏计的历史第 5 push
+2026-08-11,04:42:38,c4a8c5f,origin_ssh,autoclaw: paper-materials retrofit + Batch A
+2026-08-11,04:51:05,edb9e69,origin_ssh,autoclaw: matrix 台账回写
+2026-08-11,06:30:03,3fdf13a,origin_ssh,autoclaw: same-day-flyers v8.3 shouguan (6/6)
+2026-08-11,10:13:00,d119014,origin_ssh,autoclaw: 转化验证 3 篇坏链接修复 (外部会话 10:13 代推)
+2026-08-11,18:37:00,db2cb5f,origin_ssh,外部会话: K3 8/11 10:33 SEO 优化 3 件事 + 5 PDP schema 修复
+2026-08-11,18:41:13,0a9bca9,origin_ssh,外部会话: K3 类目名优化补完 (年曆印刷→月曆印刷)
+2026-08-12,01:10:00,a7e7342,origin_ssh,autoclaw: matrix 收官回写 (遗留补推, 8/12 = 1/5)
+2026-08-12,06:10:00,9de2479,origin_ssh,autoclaw: 内链补链 18 条 + zh-hk 前缀修复 10 条 (9.4%→23.2%)
+2026-08-12,15:45:00,a6c7b4c,origin_ssh,M3 gsc-feedback v4 weekly cron (matrix + 14 章节报告 + 8/12 P4 收尾 7 项验收 + 6 K3 拍板项, push 5/5 at limit)
+2026-08-13,03:40:00,353a8fa,origin_ssh,autoclaw: e-print 26 处全清 + 内链升级 30.4% (Phase A)
+2026-08-12,11:15:39,e06c1d0,origin,外部会话: §0.16 batch1 zh-hk Header/Footer 6 替换 + CF Web Analytics
+2026-08-12,11:45:46,b77cddf,origin,外部会话: §11 名片禁区清扫 products.ts 9 类 150 处全清
+2026-08-12,11:50:06,f0dd885,origin,外部会话: batch1 残留 53 文件 101 处 label 全清
+2026-08-12,12:01:05,232ece5,origin,外部会话: §0.16 batch2 智印雲 985 处 context-aware 替换
+2026-08-16,07:35:00,516b757,origin_ssh,autoclaw: blog 封面全量 65 篇 x3 语言 + products.ts V18 SEO/GEO + gsc/matrix (516b757)
+2026-08-16,07:47:00,804cf22,origin_ssh,autoclaw: 撤回 blog 封面 (用户判定质量不达预期) - 移除 74 cover 块, SEO 部分保留 (804cf22)
+2026-08-19,15:11:30,2805074,origin_ssh,M3 gsc-feedback v4 weekly v2 (matrix v2026-08-01-v1 + gsc_targeting_weekly_v2 + 14 章节报告 + 8/4-8/10 4 markets 3203 imps + P0-2 301 5/5 PASS 恢复 + 拍板 13 项 PENDING, cron 触发 1 push, 不算手动 push 配额 per AGENTS §11.5)

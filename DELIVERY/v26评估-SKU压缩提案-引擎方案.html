@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="zh-HK"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>v26 生图质量评估 + SKU 压缩提案 + 引擎/充值方案</title><style>
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:#f4f1ea;color:#1c1a17;margin:0;line-height:1.65}
+.wrap{max-width:1080px;margin:0 auto;padding:40px 28px 72px}
+h1{font-size:30px;margin:0 0 6px} .meta{color:#7a746a;font-size:13px;margin-bottom:28px}
+h2{font-size:20px;border-bottom:1px solid #d8d2c6;padding-bottom:8px;margin:34px 0 14px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;margin:12px 0 20px;background:#fff}
+th{background:#26221c;color:#f3efe7;text-align:left;padding:8px 10px;font-weight:600}
+td{border-bottom:1px solid #e2dccf;padding:7px 10px;vertical-align:top}
+tr:nth-child(even) td{background:#faf7f0}
+.note{background:#fff;border-left:3px solid #b3541e;padding:10px 14px;margin:14px 0;font-size:14px}
+</style></head><body><div class="wrap">
+<h1>v26 生图质量评估 + SKU 压缩提案 + 引擎/充值方案</h1><div class="meta">2026-09-22 · zprintpro · 智印港 · 数据：v26_0_pro_raw 全量 1173 张色调统计 + 14 张识图抽样 + products.ts 真值（99 SKU）+ 联网调研</div>
+<h2>一、v26 质量评估</h2>
+<p>类目内图片相似度（8×8 缩略图两两 RMS，越低越雷同）——WI 全站雷同第一，RP 红金独立成系：</p>
+<table><thead><tr><th>类目</th><th>张数</th><th>类内平均RMS</th><th>判读</th></tr></thead><tbody><tr><td>WI 喜帖</td><td>72</td><td>38.0（全站最低）</td><td>六条 SKU 色调均值几乎一致，雷同最严重</td></tr><tr><td>PKG 包装</td><td>84</td><td>40.2</td><td>偏雷同</td></tr><tr><td>ST 贴纸</td><td>108</td><td>48.1</td><td>中等，EN 版多彩款有区分度</td></tr><tr><td>PB 纸袋</td><td>63</td><td>48.0</td><td>棕色系趋同，PB-001 花占画面 35-45%</td></tr><tr><td>MN 餐牌</td><td>60</td><td>48.9</td><td>偏雷同</td></tr><tr><td>PC 枱卡</td><td>72</td><td>52.8</td><td>PC-001/002/005 三张色调几乎相同</td></tr><tr><td>RP 利是封</td><td>72</td><td>57.6</td><td>红金主色独立成系</td></tr><tr><td>EV 信封</td><td>48</td><td>64.2</td><td>类内差异较大</td></tr><tr><td>FL/PO/BK 对照</td><td>—</td><td>68-72</td><td>差异最大（参考组）</td></tr></tbody></table>
+<div class="note">识图抽样 14 张：全部存在「水彩花卉+固定色板+宴会/桌面虚化」模板化公式；根因是 V26 提示词强制水彩牡丹+统一色板（V27.5 已移除并分 SKU 场景化）。</div>
+<h2>二、四个问题的直接回答</h2>
+<table><thead><tr><th>类目</th><th>你的判断</th><th>核验结论</th><th>建议</th></tr></thead><tbody><tr><td>RP 红包</td><td>可以</td><td>证实：红金独立、花克制（5-10%）</td><td>沿用（转规格）</td></tr><tr><td>PB 手袋</td><td>有些可以</td><td>PB-001 花 35-45% 不达标；PB-005 不可用</td><td>少量沿用，多数重做</td></tr><tr><td>EV 信封</td><td>好像可以</td><td>证实：花 10-15% 克制、类内差异大</td><td>沿用</td></tr><tr><td>ST 贴纸</td><td>ja/en 可以</td><td>ST-007_en 无花多彩、ST-003_ja 花克制</td><td>ja/en 沿用；zh-hk 重做</td></tr><tr><td>PC 枱卡 ja/en</td><td>？</td><td>三张抽样同一模板公式，同色调全站最严重</td><td>不建议沿用，重做</td></tr><tr><td>WI 喜帖 ja/en</td><td>？</td><td>全站雷同第一；WI-006 假品牌 GoldenHour™ 有授权风险</td><td>不建议沿用，重做</td></tr></tbody></table>
+<h2>三、SKU 压缩提案（99 → 92，共 7 条）</h2>
+<table><thead><tr><th>类目</th><th>裁剪</th><th>保留（4 条）</th></tr></thead><tbody><tr><td>japan-doujin 5→4</td><td>DJ-002 亞克力鑰匙扣（点名）</td><td>DJ-001 同人誌 / DJ-003 罐型襟章 / DJ-004 明信片 / DJ-005 托特袋</td></tr><tr><td>wedding-invitations 6→4</td><td>WI-004 婚禮節目單、WI-005 婚禮菜單卡</td><td>WI-001 燙金喜帖 / WI-002 Save the Date / WI-003 感謝卡 / WI-006 整套配套</td></tr><tr><td>place-cards 6→4</td><td>PC-005 餐廳枱卡、PC-006 席位圖</td><td>PC-001 婚宴枱卡 / PC-002 酒水牌 / PC-003 座位卡 / PC-004 名牌卡</td></tr><tr><td>menus 5→4</td><td>MN-004 酒水牌（与 PC-002 重叠）</td><td>MN-001 PVC / MN-002 過膠 / MN-003 精裝 / MN-005 一次性</td></tr><tr><td>banners 5→4</td><td>BN-005 網格布噴繪（点名）</td><td>BN-001 戶外燈布 / BN-002 易拉寶 / BN-003 背膠 / BN-004 車身</td></tr></tbody></table>
+<p>影响面（确认后执行，四层同改）：products.ts 删 7 条 → PDP 路由/sitemap/内链/分类页联动；3 语 SEO 数据同步；redirect 承接 21 条（含单复数形态共 42 条规则，已预演）；V27.5 任务清单 −84 段。</p>
+<h2>四、裁剪后的生图量与成本</h2>
+<table><thead><tr><th>方案</th><th>生成量</th><th>成本（0.3元/张）</th><th>说明</th></tr></thead><tbody><tr><td>A. 全部重做（v26 全弃）</td><td>1057 张</td><td>≈317 元</td><td>质量最统一</td></tr><tr><td>B. 沿用 RP/EV/ST(ja+en) 192 张</td><td>865 张</td><td>≈260 元</td><td>沿用图免费转规格</td></tr><tr><td>C. 不压缩直接跑</td><td>1141 张</td><td>≈342 元</td><td>不推荐（Workers 压力照旧）</td></tr></tbody></table>
+<p>沿用图一律本地免费转规格（1200² WebP &lt;120KB + 档案命名 + alt 內嵌）。</p>
+<h2>五、引擎与充值结论</h2>
+<p>全项目深扫 14,984 个文件：仅 3 把 ARK key——两把欠费（403 AccountOverdueError）、一把已注销（401），<b>不存在「便宜充值 key 文件」</b>；网上代充属黑灰产，封号风险高。官方路径：火山方舟控制台直接充值（约 0.3 元/张）——最便宜且质量基准的唯一合规路径。替代商用引擎（gemini-3-image / gpt-image / fal Seedream）需新开账号、USD 计价，单价普遍更高且需重调管线。</p>
+<h2>六、下一步（等两项确认）</h2>
+<p>1. SKU 裁剪名单（上表 7 条）——确认后执行四层同改 + push；2. 生图方案 A/B——确认后充值 ARK，runner v3 一键续跑（BC 47 张已就位不计费）。</p>
+</div></body></html>

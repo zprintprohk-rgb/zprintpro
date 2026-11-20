@@ -1,0 +1,76 @@
+# 2026-09-16
+
+## 印刷需求雷达交付（唐总 · L3 深度交付）
+- 交付：全球印刷需求采集 + 供应商匹配 + 触达闭环系统。
+- 系统目录：F:\全球印刷资讯\print-demand-system（每日 01:00 定时任务已配置并实测，job 944e809b-e3bf-42f1-bb37-0ec5659c61a8）
+- 交付物目录：F:\全球印刷资讯\DELIVERY（00-09 文档 + 3 个 CSV）
+- 数字：线索 76 / 供应商 43（34 核验）/ 渠道 143 / 关键词 302（10 语种）/ 话术 6 语种 / 演练 49+19 通过 / 抽检 20-20 链接有效
+- 待办（唐总）：替换 __YOUR_*__ 占位符；提供 SMTP 凭据；确认首轮 50+20 试发名单。
+
+## 经验教训（写给未来的我）
+1. **别一次派 9 路 subagent**：平台并发限流（403）会导致大批量超时；同类任务 2-4 路小批量或主线直做更稳。
+2. **写文件与执行该文件不能放同一条消息**（竞态）：先 write，下一条消息再 exec。
+3. **避免文件删除命令**（安全审批超时会直接拒绝）：演练计数用"前后差值"，不要清理重建。
+4. **Windows 控制台编码**：每个 exec 前加 `chcp 65001` + `$env:PYTHONUTF8='1'`。
+5. **Google News 链接 >500 字符**：入库字段不允许截断 URL（已修复）。
+6. 失败会话的**现场缓存**（.openclaw/tmp、会话 transcript）是有效的补救来源——抢救出 7 份供应商页面 + 4 条招标线索。
+
+## 低饱和市场开发方案（追加需求，同日完成）
+- 需求：重点开发「印刷业欠发达、供应不饱和」市场，要可执行可复制方案。
+- 产出：44 国分级（Tier1×11：尼日利亚、加纳、埃塞俄比亚、坦桑尼亚、莫桑比克、孟加拉、乌兹别克、玻利维亚、危地马拉、洪都拉斯、巴新）+ 四条腿打法 + UNGM 通道 + 每周触达节奏。
+- 系统接入：渠道 143→173（+30 门户）、关键词 302→336（+6 语种：斯瓦希里/孟加拉/乌尔都/乌兹别克/尼泊尔/阿姆哈拉）。
+- 交付：DELIVERY/11-低饱和市场开发方案.html + 11-低饱和市场清单.csv；01/02/00 文档同步刷新。
+- 关键洞察：孟加拉教材已开放国际招标（600 亿塔卡外印报道）；加纳教材 6-8 成外包境外；尼日利亚/肯尼亚有本地保护（走合资/代理）；UNICEF 通道需先注册 UNGM。
+
+## 项目收尾（00:25）
+- 目标状态：complete（全部验收具备可检查证据）；此前 blocked 标记为等待用户凭据时的保守状态，已核销。
+- 交付：F:\全球印刷资讯\DELIVERY 共 21 个文件；系统 F:\全球印刷资讯\print-demand-system，每日 01:00 自动运行。
+- 已排定一次性复查任务：id 0122edb7-6f61-4027-a43b-b3e386ed8dc4，2026-09-16 01:12 验证首轮自动运行（未触发则自动补跑一次），结果见 App「定时」面板。
+- 唯一用户侧事项：提供发件邮箱 SMTP 凭据 + 确认首轮试发名单 → 一键执行 50 封邮件 + 20 条 WhatsApp/社媒试发。
+
+## ZprintPro 信息接入与本地合作模式（00:32）
+- 公司核验：智印港 ZprintPro（zprintpro.com；香港市场国际印刷品牌 + 亚洲生产基地；教科书/包装盒/贴纸/册子；ISO 9001/FSC；DHL 全球 2–4 天）。
+- 联系方式：zprintpro@outlook.com；WhatsApp +86 198 8085 1334（wa.me/8619880851334）。
+- settings.json 已替换占位符（含 unsubscribe → https://zprintpro.com/unsubscribe、reply_to → 邮箱）；outreach.py 新增 {{our_whatsapp}}/{{our_address}} 映射。
+- 新增资产：partner_pitch.md（6 语种合作话术）；《12-模板-合作与中标跟进.csv》；playbook 第 6 节升级为「本地化合作与中标跟进（合作供货模式）」（本地保护 → 本地伙伴投标+我方供货；中标信息 → 接洽中标方供应链）。
+- 提醒：建议在 zprintpro.com 上补一个 /unsubscribe 页面（或改为邮件退订方案）；SMTP 凭据仍待用户。
+
+## 退订页与发信方案（同日深夜完成）
+- 已完成：站点 /unsubscribe 页面（zh-hk/en/ja 三语 + 动态 [id] + /api/unsubscribe 通知接口），本地验证通过（跳转链 200、API ok、截图存证）。
+- 站点栈：Next 14 App Router + [locale] 中间件 + Resend（域名已验证，发送方 quotes@zprintpro.com）；api-security 守卫（origin/限流/honeypot）。
+- 发信结论：outlook SMTP 被微软禁用（535 SmtpClientAuthentication disabled）；推荐 Resend API Key（用户提供后 → 雷达 resend 模式全自动）；雷达已支持 smtp/resend 双通道 + 退订链接带 ?e= 参数。
+- 待办：用户提供 RESEND_API_KEY（或启用 SMTP AUTH）；提交/部署 4 个新站点文件（未自动提交，仓库有在途改动）。
+- 收尾：01:00 首轮自动运行成功（17/17 源、619 条、4.5s、去重生效、runs 表已记录）；退订页文案一致性问题已修复并截图复检通过（unsub_shot.png）；全盘扫描 8,594 文件确认本地无 Resend key。
+- 密钥安全交接方案（06:08 唐总问"怎么给才安全"）：已建投递文件 `print-demand-system\config\secrets\resend_api_key.txt`（PASTE_HERE 占位）；outreach.py 升级「环境变量→本机文件」双通道（resend_api_key() 助手 + api_key_file 配置项），5 项单元测试全绿；答复：推荐文件投递（不进聊天记录）、Key 建议开 Sending access 并限域名 zprintpro.com、助手全程掩码不回显、可随时 Revoke。
+- Resend 验收通过（06:16 收到 Key）：已存 config\secrets\resend_api_key.txt（掩码 re_bm****Tusy）；发送专用权限确认（/domains→401 restricted_api_key 属预期）；修复 Cloudflare 1010（Python 默认 UA 被拦→_send_via_resend 加 UA/Accept 头）；测试邮件实发成功（id 5c03ffb2-54b1-4d8a-aa15-97202bcd211d → zprintpro@outlook.com）。队列：含邮箱新线索 2 条（Star Academies UK / Venelles FR）；email 草稿 0；auto_send 仍 false，待唐总确认首轮名单/策略。
+- 事故记录：01:12 一次性复查 cron（0122edb7）因平台模型服务瞬时 403（系统繁忙·pay-view）失败未出简报（deleteAfterRun 已自动消失）；已人工核实首轮 01:00 运行 ok；若复发考虑重排。
+- 【首轮真实触达（B+C 执行）】06:27 首轮 3 封实发成功（Resend）：Star Academies eefa3650 / Venelles 6444323d / KICD cd67ccaf；lead 217/218/225 → contacted。C 启用：auto_send=true、require_confirmation=false；run_daily 新增 2b 补全 + 3b 自动发送（queue→send ≤30/日）。B 永久化：enrich_contacts.py --auto（≤6 抓取/日、kv 防重、投诉/监察邮箱拉黑——UNICEF complaints/integrity 已被正确拦截）。
+- 定向补全（round2）：NTA procurement@nta.ac.in（GeM 招标文件）/ BSTBPC textbookmd@gmail.com（官网）/ NCTB info@nctb.gov.bd → 草稿 #19/#20/#21 入池待 01:00 自动发送。
+- 修复汇总：Resend 加 Reply-To + List-Unsubscribe mailto 兜底；称呼大小写（STAR ACADEMIES→Star Academies）；法语问候「Bonjour,」；旧占位符草稿全部 superseded 重建（#5-#12）；WA 国际区号修复（#17→wa.me/33442549317）。
+- 限制说明：发送专用 Key 无法 GET /emails/{id}（401 预期，投递状态看 Resend 后台）；退订页仍未部署（生产 404，邮件有 reply/mailto 兜底；分支 redesign/plp-pdp-v9 有 28 个未推提交，不宜代推）。
+- 定时：首夜复查任务 cc15100c-1716-4cf2-a468-61b4e0592c1e（01:12 一次性自愈式）。
+- 集群残留清账：9/15 22:47 启动的旧子任务批次今晨收尾：学校与包装调研 failed、关键词词库 failed=0 输出（内容由既有交付覆盖）；话术资产 08 组（英西葡）+ 09 组（法阿俄）实际落盘于 .cluster\print-radar\templates\（6 语种×3 渠道 + 报价单/FAQ + manifest_08/09，07:31-07:33）。与现用 templates.json 功能重叠（现用版经实发验证），未替换、留存备查；后续可做一次模板升级评估（对比 08/09 全量版 vs 现用版）。该批次已全部收口，再遇此批通知按残留处理。
+
+## 小批量获客系统（国内）启动交付（09-16 上午）
+- 目标 94819970（deep_delivery，长周期）：绕开大平台竞标，从中小企业+社媒找小批量印刷需求
+- 交付目录：F:\全球印刷资讯\DELIVERY\小批量获客系统\（00-总览 + 01 地图13品类 + 02 清单9平台354条 + 03 手册 + 04 话术 + 05 内容 + 06 合规 + 07 报告 + 08 复盘 + 09 台账 + 10 明细）
+- 首批线索 14 条（猪八戒 12/贴吧 2；93% 强信号；11 条已核验；台账含自动备份/导出/流转留痕）
+- 工作台：.cluster\smallbatch-cn\（脚本 ledger_tool/docs_common/md_page/build_pages/build_index/link_check；素材 kw1-4、cm1-3、harvest 日志、qa_notes、acceptance_tracker）
+- 通道结论：猪八戒需求大厅（m.zbj.com/xq/*）公开可读、最优；贴吧“求推荐”句式次之；小红书/微信需 App 内；微博/闲鱼收录差
+- 子代理批次教训：R1 八路全失败（LLM request failed/20 分钟超时）；可用窗口时好时坏；大任务需“先落盘”、小步快跑
+- 遗留：补扫一路未回收；试点期目标 ≥100 条 / ≥50 触达由执行侧按手册推进；07/08 按周更新
+
+## 海外版切换交付（09-16 晚）★重要方向修正
+- 唐总明确：要海外市场，不要国内（国内太卷）。国内版资料保留备查，主线 = 海外版
+- 交付：F:\全球印刷资讯\DELIVERY\小批量获客系统-海外版\（00-08 + 09 台账 + 10 明细）
+ - 02 渠道清单：FB/IG/Reddit/LinkedIn/TikTok/X/Quora 主渠道 + 补充（Pinterest/YouTube/Telegram/论坛/Alibaba RFQ）；254 条英文条目
+ - 首批线索 15 条（Reddit 深链，100% 明确信号；贴纸5/包装3/台历3/书籍2/标签1/综合1）
+ - 台账（海外版）15 条已入库+备份+导出；07/08 首版已出
+- 通道学习：Reddit 是公开检索可得的最佳海外需求源（DDG html 端点 + Bing 快照可拿深链；reddit 页面本身禁抓）；r/sourcing_from_china 为一号监测版块；FB/IG/LinkedIn/TikTok/X 需账号（执行侧 App 内）
+- 工作台：.cluster\smallbatch-intl\（scripts 含 env 感知的 ledger_tool：SMALLBATCH_LEDGER_DIR）
+- 遗留：论坛路未产出；试点期 ≥100 条/≥50 触达；账号准备与信任资产为下一步
+
+## 深夜续（第三轮 + 收口）
+- 库容 59→139（三轮 15/44/80），100% 强信号；新增近十类品类（菜单/请柬/小志/童书/写真书/横幅等）
+- 交付物 00/07/08/10 刷新复检通过；国内教育地图归档至国内版参考资料/
+- 剩余动作在用户侧：社媒账号就绪后执行首轮触达（≥50 家）；话术/台账/清单全部就绪

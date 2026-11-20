@@ -1,0 +1,59 @@
+=== en block head (195-215) ===
+195|      { q: '香港港島、九龍、新界都可以安排送貨嗎？', a: '可以。支援順豐／專車配送，港島（如中環、銅鑼灣）、九龍（如旺角、觀塘）、新界（如沙田、屯門）均可安排；大批量可協調貨車送倉或寫字樓，運費與時效會按重量與區域於報價單列明。' },
+196|      { q: '可以先網上報價再上傳設計稿嗎？', a: '可以。建議先提交盒型、展開尺寸、數量、紙材與表面工藝（燙金／UV／覆膜等）取得報價；確認後再上傳 AI／PDF，印前會檢查刀模、出血與色彩模式，避免批量後才發現結構或檔案問題。' },
+197|        { q: '你哋做唔做膠袋／真空袋？', a: '唔做。智印港專注紙質食品包裝——食品紙盒、食品紙袋、防油紙卡（FDA 食品級 + FSC 認證紙）。膠袋同真空袋唔喺我哋服務範圍；如你需要紙質食品包裝方案，100 個起印、免費 2 小時打稿、WhatsApp 即時報價。' },
+198|    ],
+199|  },
+200|  en: {
+201|    h2: 'Custom Packaging Box Printing — From 100 Units, Free Die-Cut Design, 3-Day Delivery',
+202|    coreAdvantages: {
+203|      title: 'Why Choose ZprintPro for Packaging?',
+204|      items: [
+205|        {
+206|          heading: '1. Complete Material & Scene Coverage: From E-Commerce Color Boxes to Pharmaceutical Compliance Cases',
+207|          points: [
+208|            'We offer 10 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, FSC eco-friendly boxes, festiv
+209|            'Food-grade paper materials, international food safety authorities compliance, export packaging standards, QR tracking codes, and moisture
+210|            'Ideal for e-commerce logistics, beauty brands, food gift boxes, pharmaceutical health products, wedding favors, and corporate gifts.',
+211|          ],
+212|        },
+213|        {
+214|          heading: '2. Low MOQ + Fast Turnaround, Reducing Inventory Risk',
+215|          points: [
+=== ja block head (299-315) ===
+299|      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for wa
+300|      { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit box type, unfolded dimensions, quantity, paper material, and surface 
+301|        { q: 'Do you make plastic bags or vacuum bags for food packaging?', a: 'No — we specialise in paper food packaging: food-safe paper boxes, pap
+302|    ],
+303|  },
+304|  ja: {
+305|    h2: 'パッケージ印刷・箱製作 — 100個から、無料型設計、3日納品',
+306|    coreAdvantages: {
+307|      title: 'ZprintPro パッケージの強み',
+308|      items: [
+309|        {
+310|          heading: '1. 全素材・全シーン対応：ECカラーボックスから医薬品規格箱まで',
+311|          points: [
+312|            'カスタムカラーボックス、段ボール箱、磁石式化粧品箱、FSC認証エコ箱、ギフト箱、ウエディングボックスなど10大シリーズを提供。',
+313|            '食品グレード紙材、日本の食品衛生基準対応、輸出規格、QR追跡コード、防湿加工 — 法規制と越境要件を満たします。',
+314|            'EC物流、美容ブランド、食品ギフト、医薬品・健康食品、結婚式引き出物、企業ギフトなど多様なシーンに対応。',
+315|          ],
+=== record tail / next record (395-412) ===
+395|      { q: 'パッケージ印刷の料金はいくらから？', a: '《料金表・最低ロット×単価》折りたたみ箱100個¥69〜／発送箱100個¥105〜／食品箱100個¥101〜／化粧品ボックス100個¥240〜（500個+15%OFF・1,000個+30%OFF）／上製本箱100個¥240〜／マ
+396|      { q: 'パッケージの最小発注数は？', a: 'ウエディングボックス30個から、カラーボックス50個から、標準工業用100–200個から。従来の工場基準500–1,000個を大きく下回ります。' },
+397|      { q: '対応している箱型は？', a: '化粧箱、ブック型箱、引き出し箱、組み立て箱、ダンボール箱、磁石式箱など20種類以上の標準箱型。完全カスタムデザインも対応。' },
+398|      { q: 'エコ紙は使えますか？', a: 'はい。全箱型でFSC認証エコ紙を選択可能。欧米輸出に対応した国際環境基準を満たします。' },
+399|      { q: '食品パッケージは安全ですか？', a: 'はい。食品グレード紙と無毒大豆油インクを使用。SGS認証取得済み、日本の食品衛生基準に準拠。' },
+400|      { q: 'パッケージ印刷にどのくらいかかりますか？', a: '通常注文3日、急行サービス2日、サンプル当日。大量注文（5,000個以上）は約5–7日。' },
+401|      { q: '型抜き線を自分で設計できますか？', a: 'はい。AI／PDF形式の型抜き線データ（CMYK、300dpi）を受け付けます。型抜き設計に不慣れな場合は無料型設計サービスをご利用ください。' },
+402|      { q: '段ボール箱は圧縮テストを通りますか？', a: 'はい。ISTA基準の圧縮・落下テストを実施し、物流安全を確保。テストレポートは輸出通関書類として利用可能です。' },
+403|      { q: '輸出包装規格に対応していますか？', a: 'はい。EU WEEE、米国FTCグリーンガイドなどの輸出包装法規に精通しており、コンプライアンス文書の準備をサポートします。' },
+404|      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
+405|      { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず箱型、展開寸法、数量、紙材、表面加工をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが抜き型、bleed、カラーモードをチェックします。' },
+406|        { q: '食品用のビニール袋・真空パックは作れますか？', a: 'いいえ。当社は紙製の食品パッケージ（食品用紙箱・紙袋・耐油紙カード、FDA 適合 + FSC 認証紙）に特化しています。ビニール袋・真空パックは対応範囲外です。紙製の食品パッケージをご希望でしたら、100 個から、
+407|    ],
+408|  },
+409|  'en': {
+410|    featuredSnippet: 'Custom packaging boxes from 100 MOQ: food-grade boxes from US$0.74, folding cartons from US$0.51, mailer and rigid gift boxes. F
+411|    lastUpdated: '2026-10-17',
+412|    h2: 'Custom Packaging Boxes — Food-Grade, Folding & Mailer | 100 MOQ, 1-Hour Free Proof',

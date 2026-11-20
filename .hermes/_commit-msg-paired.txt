@@ -1,0 +1,64 @@
+fix(gate): en_pcs 配对 commit — 模式 + 注册 + 分层三者同 commit, 两法 43=43 统一, 硬门开启
+
+来源: K3 2026-09-19 决策 4.1「配对 commit: 模式 + 5 个注册 + approved/pending 分层, 同一 commit 完成」
+
+## 一、配对 commit 内容 (三者不可拆分)
+### ① 模式: 新增 `en_pcs`
+`/(?<![A-Za-z0-9,])(\d{2,})\s*pcs\b/g` — 补上 en 标题的 `100pcs` / `50 pcs` 形态
+(例 `Premium Greeting Cards 100pcs Foil & UV`)。
+数字要求 **≥2 位**: 排除套装件数式 «6 Pcs»; 与两脚本的 en 判据完全一致 ⇒ 保证两法同源。
+
+### ② 先枚举**完整级联**, 再一次性登记 (避免打地鼠)
+`en_pcs` 全站命中 **39 条**, 分布 4 档:
+| 文件 | 命中 | 是否需登记 |
+|---|---|---|
+| `sku-seo-data.ts` | 25 | ❌ 已被 `PENDING_FILE_PREFIXES` 整档覆盖 |
+| `products-content.ts` | 8 | ❌ 同上 |
+| `products.ts` | 2 | ✅ 需登记 |
+| `category-seo-content.ts` | 4 | ✅ 需登记 |
+⇒ **真正需登记的只有 4 个唯一 key** (不是逐条打地鼠)。这是本次与上次失败(逐轮扩面)的关键差别。
+
+### ③ 分层登记 (4 条, 语义各不相同, 不一律 pending)
+- **APPROVED_BULK_TIERS 增 1 条**: `〔品類級〕stickers|en_pcs(品類級)|100`
+  —— 与既有已核准档 **`en_MOQ(品類級)|100` 是同一句话**
+  (category-seo-content.ts:2769「outdoor vinyl stickers 100 pcs MOQ」),
+  仅因**抽取模式换了**而以新 kind 命中。判据: kind 只是模式标签, 不改变语句语义
+  ⇒ **沿用 K3 原裁定**(3M 戶外貼／可移貼大量檔 100), 属已核准分層。
+  不登记则同一句话会因「换了正则」被重复计为新漂移。
+- **PENDING_LIST 增 3 条** (不自行核准, 核准权在 K3):
+  · `catalog-printing|en_pcs|100` — products.ts:5754 含 "bulk" 字样, 疑大量檔口径 (同 3M 案)
+  · `〔品類級〕stickers|en_pcs(品類級)|50` — 數碼 vs 柯式**方法門檻**說明 (FAQ)
+  · `〔品類級〕stickers|en_pcs(品類級)|500` — 即日數碼 50–500 pcs **交期**說明
+  后两条属本扫描器既有分类 `industry_fact` (行業事實陳述, 應保留), 非 SKU 起訂量。
+
+## 二、✅ 硬门开启 (K3 约束达成)
+```
+A(title scope): 43 行 / 27 SKU
+B(300 槽):      43 行 / 27 SKU
+SKU 集合一致: ✅   行键一致: ✅   语义一致: ✅
+>>> UNIFIED — 生成器可构建   (exit 0)
+```
+门童: **PASS, exit 0** (🆕 新漂移 0 / 待裁決 325 / 已核准分層 6) ⇒ 生产安全网健康 ✅
+
+## 三、统一后分类结果 (硬门判据)
+| 分类 | 数量 | 生成器行为 |
+|---|---|---|
+| TRUE_DRIFT | 24 | 用 K3 裁决真值 |
+| LOCALE_SPECIFIC_KEEP | 7 | 保留 locale 值 (ja flyers 100枚), 不归一化 |
+| NO_MOQ_HOOK | 3 | 不发 MOQ 钩子 (small-batch-stickers) |
+| MANUAL_REVIEW | 9 | 暂不生成, 待人工裁决 |
+
+## 四、过程留痕 (本批含 1 次回退 + 1 次成对上台)
+- 首次试扩 `en_pcs`(2026-09-19, commit f0c4adac 记录) → 逐轮揭发新命中, 门童由 PASS 翻 🔴
+  ⇒ **回退**, 并写下「模式+注册+分层须一次成对上台」的修法。
+- 本次按该修法执行: **先枚举完整级联(39 条) → 定位真正需登记的 4 key → 一次性分层登记**
+  ⇒ 门童保持 PASS 且两法统一。**教训: 扩面前先枚举全集, 不要边扩边补。**
+
+## 数据来源
+- scripts/moq10-books-context-scan.ts (MOQ_PATTERNS / PENDING_LIST / APPROVED_BULK_TIERS)
+- .hermes/logs/moq-scan-latest.json (findings 331) · src/data/products.ts · src/data/category-seo-content.ts
+校准日期: 2026-09-19 22:05
+
+## 验收
+npx tsx scripts/moq10-books-context-scan.ts --gate → **PASS, exit 0** ✅
+node scripts/unify-moq-classification.mjs → **UNIFIED, exit 0** ✅ (43=43 / 27=27 / 语义一致)

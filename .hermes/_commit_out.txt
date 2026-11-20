@@ -1,0 +1,239 @@
+﻿git : 🔍 反审门童 v1 pre-commit (K3 9/1 15:06 拍板)...
+所在位置 行:1 字符: 163
++ ... pro-nextjs; git commit -m "feat(b-layer): money-FAQ x5 (31->36/83) +  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (🔍 反审门童 v1 pre-.../1 15:06 拍板)...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+1️⃣  Encoding check...
+🔍 Checking staged files for encoding issues...
+
+✅ All 6 checked files are UTF-8 LF — safe to commit.
+2️⃣  Simplified Chinese check...
+
+📋 简体字检测报告
+
+================================================================================
+✅ 没有检测到简体字残留
+✅ 所有 zh-hk 产品名称都是纯繁体中文
+
+================================================================================
+🎯 简体字检测完成！
+2️⃣.5  blog-data JSON 严格校验 (门童 #15)...
+3️⃣  反审门童 v1 (5 道门童 + 3 道防线)...
+🔍 反审门童 v1 启动 (K3 9/1 15:06 拍板)
+════════════════════════════════════════════════════════════
+模式: 仅 red 硬拦 (shadow mode)
+范围: src/
+DoD 铁律: 禁用
+
+📁 扫描文件数: 6
+
+📉 品牌存量基线: total=431 files=51 (基线内命中不拦, 只拦新增)
+
+📉 CRED 存量基线: head=8806521d hits=0 files=0 (基线内命中不拦, 只拦新增)
+
+门童 #1 数据诚信: 15 命中
+  🟡 SHADOW [orange] SESSION_LOCK.md:25
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] SESSION_LOCK.md:26
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] SESSION_LOCK.md:88
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] SESSION_LOCK.md:93
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] SESSION_LOCK.md:104
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] SESSION_LOCK.md:88
+    规则: CRED_FSC_C123456 - FSC 证书号 (Cd{6})
+    命中: FSC C123456
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "FSC 認証紙" (材质描述, 经营参数白名单)
+  🟡 SHADOW [orange] SESSION_LOCK.md:88
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] SESSION_LOCK.md:88
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 15,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] SESSION_LOCK.md:88
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] SESSION_LOCK.md:301
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,564
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] SESSION_LOCK.md:691
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 40,131
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] SESSION_LOCK.md:691
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,193
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] SESSION_LOCK.md:694
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 8,188
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] SESSION_LOCK.md:694
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,885
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] SESSION_LOCK.md:88
+    规则: CRED_SELF_FACTORY - 自設廠房 / 自设厂房
+    命中: 自設廠房
+    修法: 撤除 (per §0.23 数据诚信), 改用 "深圳平湖廠房 + 香港服務點" 描述 (per §13.10 真实主体)
+
+门童 #2 真实电话: ✅ 0 命中
+
+门童 #3 品牌分层: 1 命中
+  🔴 HARD [red] .hermes/logs/b1c-queue-progress.json:613
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+
+ℹ️ 门童 #4 双向污染存量基线: 实测命中 0 → 基线 162 (录于 2026-09-19); 本次基线内豁免 0, 既有内向 red 保留 0, ★新增缺陷 0
+   ⚠️ 实测(0) ≠ 基线(162) ⇒ 存量已递减 162 条 (可将基线同步下调)
+门童 #4 跨语言污染 (v2 扩展 en 8 禁词 + ja 8 禁词 per K3 9/2 08:50 GLM 评估): ✅ 0 命中
+
+门童 #5 SOP-10 5 问门禁: 8 命中
+  🟡 SHADOW [yellow] SESSION_LOCK.md:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 15,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] SESSION_LOCK.md:88
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] SESSION_LOCK.md:301
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,564
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] SESSION_LOCK.md:691
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 40,131
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] SESSION_LOCK.md:691
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,193
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] SESSION_LOCK.md:694
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 8,188
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] SESSION_LOCK.md:694
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,885
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/product-faqs.ts:2210
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 6,440
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+
+门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留): ✅ 0 命中
+
+门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发): 6 命中
+  🟡 SHADOW [yellow] .hermes/logs/b1c-queue-progress.json:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+  🟡 SHADOW [yellow] .hermes/logs/b1c-queue-progress.json:0
+    规则: COUNT_NO_RETRACTION - 报告撤回数据/数字, 无原 commit ID + 撤回日期 (per K3 §0.23)
+    命中: 报告含 "撤回" 但缺原 commit ID + 撤回日期
+    修法: 补撤回声明 (per §0.23 撤回必含原 commit ID + 撤回日期)
+  🟡 SHADOW [yellow] SESSION_LOCK.md:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+  🟡 SHADOW [yellow] SESSION_LOCK.md:0
+    规则: COUNT_NO_RETRACTION - 报告撤回数据/数字, 无原 commit ID + 撤回日期 (per K3 §0.23)
+    命中: 报告含 "撤回" 但缺原 commit ID + 撤回日期
+    修法: 补撤回声明 (per §0.23 撤回必含原 commit ID + 撤回日期)
+  🟡 SHADOW [orange] src/data/product-faqs.ts:0
+    规则: COUNT_NO_SOURCE - 报告无数据来源行 (per K3 §0.23 数据诚信红线)
+    命中: 报告含数字, 但缺 "数据来源:" 行
+    修法: 补 "数据来源:" 行 (格式: 数据源文件名 + 校准日期)
+  🟡 SHADOW [yellow] src/data/product-faqs.ts:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+
+门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT): 1 命中
+  🟡 SHADOW [yellow] /SESSION_LOCK.md:0
+    规则: REGISTER_NO_ID - 报告含 ✅ 状态字样, 但缺决策登记簿 ID (per K3 9/2 09:05 拍板 #3)
+    命中: 报告含 1 处 ✅ 状态字样, 但缺决策登记簿 ID
+    修法: 补登记簿 ID (格式: D-9/2-NN, 详见 .hermes/decision-register.md)
+
+门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h): 9 命中
+  🟡 SHADOW [yellow] /.hermes/geo/geo_citation_baseline-2026-10-23.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/geo/geo_citation_baseline-2026-10-23.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/logs/b1c-queue-progress.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/logs/b1c-queue-progress.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/logs/recovery-read-2026-10-23.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /SESSION_LOCK.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /SESSION_LOCK.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /src/data/product-faqs.ts:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /src/data/product-faqs.ts:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+
+门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数): ✅ 0 命中
+
+门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则): ✅ 0 命中
+
+门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学
+得 323 条基线全量修复): ✅ 0 命中
+
+门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件): ✅ 0 命中
+
+门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57): ✅ 0 
+命中
+
+ℹ️ 门童 #20 存量基线: 基线 120, 现存 53, 已修 67, 剩余待修 53
+门童 #20 meta description 完整性 (K3 2026-09-18 决策 3-B 专用基线通道: 语言错配/首词前缀重复/空 meta; 存量 120 条只许递减): ✅ 0 命中
+
+════════════════════════════════════════════════════════════
+📊 汇总: 🔴 1 | 🟠 16 | 🟡 23 | ⚪ 0
+📊 真實計數 (未截斷): SOP10_4_PLUS_NUMBER=8 | CRED_4_PLUS_NUMBER=7 | CRED_ISO_9001=5 | CRED_FSC_C123456=1 | CRED_1000_PLUS=1 |
+ CRED_SELF_FACTORY=1 | BRAND_LOCALE_MISMATCH=1 | CRED_TUV_RHEINLAND=0 | CRED_X_INDUSTRIES=0 | CRED_X_FOLD=0 | CRED_INTL
+_TOP=0 | CRED_15_YEARS=0 | CRED_HEIDELBERG=0 | PHONE_HK_BLACKLIST=0 | PHONE_WA_852=0 | PHONE_NON_WHITELIST=0 | BRAND_DO
+UBLE=0 | BRAND_TYPO=0 | BRAND_JA_ALTERNATE=0 | I18N_META_LENGTH=0 | I18N_CURRENCY=0 | SOP10_CERT_NO=0 | SOP10_24H_SLA=0
+ | SOP10_HEIDELBERG_6_1=0 | SOP10_12_INDUSTRIES=0 | SOP10_INTL_TOP=0 | SOP10_15_YEARS=0 | SECRET_LEAK=0
+
+❌ 反审门童拦截 (硬拦)

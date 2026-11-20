@@ -1,0 +1,377 @@
+==== ts food-boxes (L1070-L1141) ====
+1070	  "food-boxes": {
+1071	    "name": {
+1072	      "zh-hk": "食品包裝盒",
+1073	      "en": "Food Boxes",
+1074	      "ja": "食品包装箱"
+1075	    },
+1076	    "seo": {
+1077	      "zh-hk": {
+1078	        "title": "食品包裝盒印刷 訂製 100個起 HK$2.5 防油紙卡 | 智印港",
+1079	        "description": "食品包裝印刷訂製：FDA 認可食品級材質 + FSC 認證紙，100 個起印、HK$2.5 起/個，燙金 UV 全工藝支援。糕點/茶葉/保健品品牌首選，3-5 天交貨、免費 2 小時打稿。30 秒 AI 報價，WhatsApp 2 小時內回覆。 FDA食品級 (FDA 21 CFR 176.170), 跨境合規。月饼端午禮盒 / 茶葉禮盒 / 烘焙坊 / 保健品品牌 / 手搖飲品店 適用。",
+1080	        "h1": "紙質食品包裝印刷訂製｜食品紙盒・食品紙袋・防油紙卡｜FDA 食品級",
+1081	        "keywords": ["食品包裝盒","食品包裝印刷","食品包裝訂製","包裝盒印刷","瓦楞紙盒","禮品盒","定制包裝","化妝品盒","食品盒","快遞盒"],
+1082	        "body": "食品包裝印刷訂製，100 個起印、HK$2.5 起/個，標準 3-5 個工作天交貨。提交檔案 1 小時內免費數碼打稿，30 秒 AI 報價即時出價，WhatsApp 2 小時內回覆。\n\n食品包裝盒專為香港中小企、本地餐廳、茶飲烘焙品牌及跨境食品電商設計。100 個起印，無開版費，港九新界訂單滿 HK$500 免費順豐速遞。ISO 9001 認證工廠，FSC 認證紙張，大豆油墨，FDA 認可（適用於間接食品接觸），15+ 年印刷經驗。\n\n廣泛應用於糕點烘焙、茶葉禮盒、月餅節日禮盒、保健品、手搖飲品及餐廳外賣場景。選材與法規細節可參考[食品包裝印刷完全指南](/zh-hk/blog/food-packaging-printing-guide/)；嬰幼兒食品品牌請參考[嬰幼兒食品包裝盒印刷指南](/zh-hk/blog/baby-food-packaging-box-printing-guide/)，奶粉、輔食、米糊類包裝有專門的安全材質建議。\n\n材質選擇：350g 食品級白卡／400g 灰底白板（標準盒），PE 淋膜或 PLA 可降解內層防油防濕；B 楞瓦楞紙（運輸箱）；硬身磁石禮盒（高級禮品）。全部材質通過 FSC 認證、採用大豆油墨及 FDA 認可（間接食品接觸）。表面處理可選啞光膠、亮面膠、局部 UV、燙金燙銀，支援 CMYK 全彩印刷。\n\n盒型與結構：插口盒（自動扣／直插／反插）、天地蓋、書型盒、磁石蓋禮盒、抽屜式盒、瓦楞運輸箱及異形切割盒，所有標準款式提供免費刀模線模板下載。可做 PET 透明窗口設計展示內裝產品，亦可印可變 QR Code 做批次追溯與防偽。更多盒型與配套見[包裝盒印刷類目](/zh-hk/category/packaging/)。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，專業設計團隊免費打稿——只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。\n\n收費透明：100 個起印、HK$2.5 起/個（按尺寸、材質、工藝浮動；自訂尺寸或異形切割 500 個起），無開版費、無製版費。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達；加急訂單（24 小時打稿 + 2 天生產）加收 20%。跨境訂單 DHL 全球 2-4 個工作天配送。\n\n食品品牌通常同時需要標籤與外帶配套：[防水貼紙](/zh-hk/product/waterproof-stickers/)適合飲品杯貼與冷藏標籤，[紙袋印刷類目](/zh-hk/category/paper-bags/)可配同款設計一站式交付，省返分開搵供應商嘅時間。\n\n旺季檔期提示：聖誕及 2027 春節禮盒建議提前 3-4 週落單，預留打樣與生產檔期。\n\n準備落單？1 小時免費打稿——WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
+1083	      },
+1084	      "en": {
+1085	        "title": "Food-Safe Packaging Printing | 100 MOQ | ZprintPro",
+1086	        "description": "Custom food packaging printing with FDA-safe, FSC-certified materials. 100 MOQ, foil & UV finishes, free 2-hour digital proof, free US shipping $99+. 30-second AI quote. FDA-compliant (FDA 21 CFR 176.170). Mooncake & Dragon Boat Festival gift box, tea gift box, bakery, supplement brand, bubble tea shop all welcome.",
+1087	        "h1": "Paper Food Packaging 100+ | Food-Grade Paper Boxes, Bags & Greaseproof Cards",
+1088	        "keywords": ["food boxes","custom food boxes","food packaging boxes","food grade boxes","takeout boxes custom","bakery boxes wholesale","food boxes free shipping","bulk food packaging","bespoke food packaging","packaging box printing"],
+1089	        "body": "Custom food boxes designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nFood Boxes are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our food boxes service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 1 hour. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 1 hour — WhatsApp us at +86 198 8085 1334 or use the 30-second AI quote button on this page. DHL Express delivers to the lower 48 states in 3-5 days."
+1090	      },
+1091	      "ja": {
+1092	        "title": "食品包装箱印刷 小ロット 防油 100個〜 ¥101〜 | ZprintPro",
+1093	        "description": "食品パッケージ印刷を100個から小ロット対応。FDA適合・FSC認証紙、箔押し・UV加工、無料2時間デジタル校正。日本全国送料無料、DHLで2-4日納品。30秒無料見積もり。 FDA適合 (FDA 21 CFR 176.170 認証)。月餅・端午節ギフトボックス、茶葉ギフト、ベーカリー、ヘルスケアブランド、タピオカ店対応。",
+1094	        "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
+1095	        "keywords": ["食品パッケージ","食品パッケージ 印刷","food boxes","パッケージボックス印刷","化粧箱","食品箱","ギフトボックス","メール便箱","オリジナルパッケージ","組み立て箱"],
+1096	        "body": "カスタム 食品包裝箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n食品包裝箱 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 食品包裝箱 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 1 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 1 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
+1097	      }
+1098	    },
+1099	    "faqs": [],
+1100	    "imageAlt": {
+1101	      "zh-hk": "一般為100個起訂，定制盒型需500個起。",
+1102	      "en": "Custom Food Boxes for pet food and brand labels — ZprintPro",
+1103	      "ja": "食品パッケージ / 食品包裝箱 | 香港の食品パッケージ印刷 | ZprintPro"
+1104	    }
+1105	  },
+1106	  "mailer-boxes": {
+1107	    "name": {
+1108	      "zh-hk": "快遞盒/飛機盒",
+1109	      "en": "Mailer Boxes",
+1110	      "ja": "発送箱"
+1111	    },
+1112	    "seo": {
+1113	      "zh-hk": {
+1114	        "title": "訂製郵寄盒 | 燙金 UV 100%訂製 | 100個起 HK$3.5起 | 智印港",
+1115	        "description": "郵寄盒/郵寄盒 100 個起。採用 白卡/牛皮紙/灰板 高品質材質，支援 訂製尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
+1116	        "h1": "快遞盒/飛機盒",
+1117	        "keywords": ["郵寄盒","包裝盒印刷","瓦楞紙盒","禮品盒","定制包裝","化妝品盒","食品盒","快遞盒","天地蓋盒","紙盒定制"],
+1118	        "body": "快遞盒/飛機盒 專為香港中小企、本地餐廳及跨境電商品牌設計。10 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FSC 認證紙張，大豆油墨，FDA 認可（適用於間接食品接觸），15+ 年印刷經驗。\n\n快遞盒/飛機盒 廣泛應用於 禮品包裝及精品零售盒、化妝品及護膚品包裝、DTC 電商運輸及訂閱制禮盒 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，快遞盒/飛機盒 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 350 克光面卡紙配啞光膠（標準盒）（標準用途，性價比高）、B 楞瓦楞紙（重型運輸箱）（中檔質感，主流選擇）、硬身禮盒配磁石蓋（高級禮品）（特殊需求或精品用途）。三種材質均通過 FSC 認證紙張，大豆油墨 及 FDA 認可（適用於間接食品接觸） 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 包裝盒有哪些款式可選？**\n插口盒（自動扣、直插、反插）、硬身盒（上下蓋）、磁石蓋禮盒、抽屜式盒、瓦楞運輸箱、及不規則異形切割盒。所有標準款式均提供免費刀模線模板下載。\n\n**Q2: 最低起印量是多少？**\n100 個起印（標準尺寸無開版費、無刀模費）。自訂尺寸 / 異形切割起印量為 500 個。標準生產 5-7 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看 3D 模擬圖嗎？**\n可以 — 提交檔案後 4 小時內提供免費 3D 渲染圖。如需實物樣本，我們提供 HK$299 付費樣本套裝，DHL 速遞送達，含您的設計印在實際盒材上。\n\n**Q4: 包裝盒適合食品接觸嗎？**\n我們的食品級包裝盒使用 FDA 認可膠水及食品接觸安全油墨，認證適用於間接食品接觸（燕麥、茶、巧克力、零食）。直接食品接觸（糖果、新鮮水果），我們提供專業食品級內襯。請告知食品類型，我們會推薦合適紙材。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
+1119	      },
+1120	      "en": {
+1121	        "title": "Custom Kraft Mailer Boxes | 100 MOQ $0.80 | ZprintPro",
+1122	        "description": "Mailer boxes for e-commerce. Self-locking, 70% storage save, kraft or white. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
+1123	        "h1": "Mailer Boxes 100+ | Self-Lock | ZprintPro",
+1124	        "keywords": ["mailer boxes","e-commerce mailers","self locking boxes","corrugated mailers","folding carton mailers","DTC shipping boxes","subscription boxes","mailer boxes free shipping","bulk mailers","bespoke shipping boxes"],
+1125	        "body": "Custom mailer boxes designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nMailer Boxes are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our mailer boxes service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 1 hour. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 1 hour — WhatsApp us at +86 198 8085 1334 or use the 30-second AI quote button on this page. DHL Express delivers to the lower 48 states in 3-5 days."
+1126	      },
+1127	      "ja": {
+1128	        "title": "発送箱 メーラーボックス｜100個〜 ¥105〜｜ZprintPro",
+1129	        "description": "メーラーボックスのメーラーボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+1130	        "h1": "Sturdy and durable",
+1131	        "keywords": ["メーラーボックス","メーラーボックス 印刷","mailer boxes","パッケージボックス印刷","化粧箱","食品箱","ギフトボックス","メール便箱","オリジナルパッケージ","組み立て箱"],
+1132	        "body": "カスタム 発送箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n発送箱 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 発送箱 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 1 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 1 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
+1133	      }
+1134	    },
+1135	    "faqs": [],
+1136	    "imageAlt": {
+1137	      "zh-hk": "快遞盒/飛機盒 / 訂製 | 香港快遞盒/飛機盒訂製 E／B 坑瓦楞或白卡裱瓦（依載重） | 智印港",
+1138	      "en": "Custom Mailer Boxes for pet food and brand labels — ZprintPro",
+1139	      "ja": "メーラーボックス / 宅配対応 | メーラーボックス印刷 厚紙 100個〜 日本向け | ZprintPro"
+1140	    }
+1141	  },
+==== ts folding-boxes (L1142-L1186) ====
+1142	  "folding-boxes": {
+1143	    "name": {
+1144	      "zh-hk": "折疊盒",
+1145	      "en": "Folding Boxes",
+1146	      "ja": "折りたたみ箱"
+1147	    },
+1148	    "seo": {
+1149	      "zh-hk": {
+1150	        "title": "折疊盒印刷訂製 | 燙金 UV | 100個起 HK$2.5起 | 智印港",
+1151	        "description": "折疊禮盒/折疊盒 100 個起。採用 白卡/牛皮紙/灰板 高品質材質，支援 訂製尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
+1152	        "h1": "可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。智印港提供專業折疊盒服務，香港本地印刷，品質保證，價格透明。",
+1153	        "keywords": ["折疊禮盒","折疊盒","禮盒訂製","包裝盒印刷","瓦楞紙盒","禮品盒","定制包裝","化妝品盒","食品盒","快遞盒"],
+1154	        "body": "折疊盒 專為香港中小企、本地餐廳及跨境電商品牌設計。100 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FSC 認證紙張，大豆油墨，FDA 認可（適用於間接食品接觸），15+ 年印刷經驗。\n\n折疊盒 廣泛應用於 禮品包裝及精品零售盒、化妝品及護膚品包裝、DTC 電商運輸及訂閱制禮盒 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，折疊盒 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 350 克光面卡紙配啞光膠（標準盒）（標準用途，性價比高）、B 楞瓦楞紙（重型運輸箱）（中檔質感，主流選擇）、硬身禮盒配磁石蓋（高級禮品）（特殊需求或精品用途）。三種材質均通過 FSC 認證紙張，大豆油墨 及 FDA 認可（適用於間接食品接觸） 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 包裝盒有哪些款式可選？**\n插口盒（自動扣、直插、反插）、硬身盒（上下蓋）、磁石蓋禮盒、抽屜式盒、瓦楞運輸箱、及不規則異形切割盒。所有標準款式均提供免費刀模線模板下載。\n\n**Q2: 最低起印量是多少？**\n100 個起印（標準尺寸無開版費、無刀模費）。自訂尺寸 / 異形切割起印量為 500 個。標準生產 5-7 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看 3D 模擬圖嗎？**\n可以 — 提交檔案後 4 小時內提供免費 3D 渲染圖。如需實物樣本，我們提供 HK$299 付費樣本套裝，DHL 速遞送達，含您的設計印在實際盒材上。\n\n**Q4: 包裝盒適合食品接觸嗎？**\n我們的食品級包裝盒使用 FDA 認可膠水及食品接觸安全油墨，認證適用於間接食品接觸（燕麥、茶、巧克力、零食）。直接食品接觸（糖果、新鮮水果），我們提供專業食品級內襯。請告知食品類型，我們會推薦合適紙材。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
+1155	      },
+1156	      "en": {
+1157	        "title": "Folding Boxes | Auto-Lock | 100 MOQ $0.51 | ZprintPro",
+1158	        "description": "Folding Boxes custom printing, eco-friendly kraft paper. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for retail packaging. | ZprintPro",
+1159	        "h1": "Folding Boxes 100+ | Auto-Lock | ZprintPro",
+1160	        "keywords": ["folding boxes","folding cartons","tuck end boxes","auto lock bottom boxes","retail packaging boxes","cosmetic boxes","food boxes folding","folding boxes free shipping","bulk folding boxes","bespoke folding cartons"],
+1161	        "body": "Custom folding boxes designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nFolding Boxes are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our folding boxes service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 1 hour. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 1 hour — WhatsApp us at +86 198 8085 1334 or use the 30-second AI quote button on this page. DHL Express delivers to the lower 48 states in 3-5 days."
+1162	      },
+1163	      "ja": {
+1164	        "title": "折りたたみ箱｜箔押し ラミネート｜100枚〜 ¥69〜｜ZprintPro",
+1165	        "description": "折り畳み箱の折り畳み箱は ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+1166	        "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
+1167	        "keywords": ["折り畳み箱","折り畳み箱 印刷","folding boxes","パッケージボックス印刷","化粧箱","食品箱","ギフトボックス","メール便箱","オリジナルパッケージ","組み立て箱"],
+1168	        "body": "カスタム 折りたたみ箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n折りたたみ箱 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 折りたたみ箱 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 1 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 1 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
+1169	      }
+1170	    },
+1171	    "faqs": [],
+1172	    "imageAlt": {
+1173	      "zh-hk": "一般為100個起訂，定制盒型需500個起。",
+1174	      "en": "Custom Folding Boxes for pet food and brand labels — ZprintPro",
+1175	      "ja": "折りたたみ箱 / パッケージボックス | 香港の折りたたみ箱印刷 | ZprintPro"
+1176	    }
+1177	  },
+1178	  "rigid-boxes": {
+1179	    "name": {
+1180	      "zh-hk": "精裝盒",
+1181	      "en": "Rigid Boxes",
+1182	      "ja": "上製本箱"
+1183	    },
+1184	    "seo": {
+1185	      "zh-hk": {
+1186	        "title": "精裝禮盒 | 燙金 UV 100%訂製 | 100個起 HK$8起 | 智印港",
+
+==== products.ts food-boxes (L3234-L3343) ====
+3234	    slug: 'food-boxes',
+3235	    optimizedAt: '2026-07-21',
+3236	    optimizationRound: 1,
+3237	    category: 'packaging',
+3238	    category_slug: 'packaging',
+3239	    name: '食品包裝訂製 / 食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Packaging / Food Boxes | Custom Packaging & Gift Boxes', nameJa: '食品パッケージ / 食品包裝箱 | パッケージボックス・化粧箱', title_zh: '食品包裝訂製 100個起印 HK$4起/個 FDA級 | 智印港 · 食品級茶飲烘焙定製',
+3240	    description: '食品包裝盒印刷訂製，100個起印，HK$2.5起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。適配行業: 茶葉品牌、手搖飲品店、烘焙坊、咖啡店、月餅端午節禮盒、餐廳外賣、跨境食品電商。', descriptionEn: 'Food-grade material, safe and eco-friendly., ISO 9001:2015 certified quality management system Best for: tea brands, bubble tea shops, bakeries, coffee shops, mooncake / Dragon Boat Festival gift boxes, restaurant takeout, cross-border food e-commerce.', descriptionJa: '食品グレード素材、安全で環境に優しい。 適用業界: 茶ブランド、タピオカ店、ベーカリー、カフェ、月餅・端午節ギフト ボックス、レストラン テイクアウト、越境食品EC。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。 2026 旺季: 春節年糕禮盒、端午粽、夏日冰品配送、中秋月餅聖誕禮籃。',
+3241	    features: [
+3242	      '【食品級認證】SGS 與香港衛生署標準通過，安全接觸食品',
+3243	      '【350g／400g 紙板】高挺度，保護糕點與茶葉不變形',
+3244	      '【PE／PLA 內層】防油防濕，可降解選項滿足環保需求',
+3245	      '【窗口設計】PET 透明片或鏤空，展示內裝產品',
+3246	      '【燙金 LOGO】金／銀箔或局部 UV，提升品牌高級感',
+3247	      '【可變 QR Code】批次追溯與防偽，方便消費者查驗',
+3248	      '【免費刀模】天地蓋、書型盒、折疊插口盒結構設計',
+3249	    ],
+3250	    specs: {
+3251	      material: '350g 食品級白卡／400g 灰底白板；PE 淋膜或 PLA 內層',
+3252	      size: '完全訂製，常見 15×10×5cm 至 25×20×8cm',
+3253	      printMethod: '四色柯式或數碼（依數量）',
+3254	      finishing: '燙金／燙銀、窗口（PET）、局部 UV、覆膜',
+3255	    },
+3256	    price_range: 'HK$2.5-18/個',
+3257	    basePrice: 2.5,
+3258	    basePrice_en: 0.74,
+3259	    basePrice_ja: 101,
+3260	    weight_score: 90,
+3261	    isHot: true,
+3262	    isNew: false,
+3263	    minQuantity: 100,
+3264	    images: ['/images/products/food-boxes.jpg'],
+3265	  imagesByLocale: {
+3266	    'zh-hk': [
+3267	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-zh-hk.webp',
+3268	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-zh-hk-2.webp',
+3269	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-zh-hk-3.webp',
+3270	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-zh-hk-4.webp',
+3271	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-zh-hk-5.webp',
+3272	    ],
+3273	    'en': [
+3274	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-en.webp',
+3275	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-en-2.webp',
+3276	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-en-3.webp',
+3277	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-en-4.webp',
+3278	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-en-5.webp',
+3279	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-en-6.webp',
+3280	    ],
+3281	    'ja': [
+3282	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-ja.webp',
+3283	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-ja-2.webp',
+3284	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-ja-3.webp',
+3285	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-ja-4.webp',
+3286	      '/images/products/seedream-webp/zprintpro-packaging-food-boxes-ja-5.webp',
+3287	    ],
+3288	  },
+3289	    variables: {
+3290	      sizes: [
+3291	        { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
+3292	        { value: 'medium', label: '中號(150×120×80mm)', multiplier: 1.6 },
+3293	        { value: 'large', label: '大號(200×180×100mm)', multiplier: 2.5 },
+3294	      ],
+3295	      materials: [
+3296	        { value: 'white-card', label: '白卡紙', surcharge: 0 },
+3297	        { value: 'kraft', label: '牛皮紙', surcharge: 10 },
+3298	        { value: 'rigid', label: '硬紙板', surcharge: 80 },
+3299	      ],
+3300	      finishings: [
+3301	        { value: 'none', label: '無', surcharge: 0 },
+3302	        { value: 'foil', label: '燙金', surcharge: 60 },
+3303	        { value: 'uv', label: 'UV', surcharge: 50 },
+3304	        { value: 'emboss', label: '擊凸', surcharge: 70 },
+3305	      ],
+3306	      quantities: [
+3307	        { value: 100, label: '100個', discount: 1 },
+3308	        { value: 500, label: '500個', discount: 0.85 },
+3309	        { value: 1000, label: '1000個', discount: 0.7 },
+3310	      ],
+3311	    },
+3312	  seoImages: {
+3313	    filename: { 'zh-hk': 'zprintpro-packaging-food-boxes-zh-hk.webp', en: 'zprintpro-packaging-food-boxes-en.webp', ja: 'zprintpro-packaging-food-boxes-ja.webp' },
+3314	    alt: {
+3315	      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港食品包裝盒印刷 350g 食品級白卡／400g 灰底白板 燙金／燙銀',
+3316	      en: 'Custom Packaging Boxes & Gift Boxes | Food Boxes | Professional Packaging Online',
+3317	      ja: 'パッケージボックス / ギフトボックス | 食品包裝箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+3318	    },
+3319	  },
+3320	  
+3321	    // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
+3322	    seoTitle: {"zh-hk": "", "en": "", "ja": ""},
+3323	    seoDescription: {"zh-hk": "", "en": "", "ja": ""},
+3324	    metaTitle: "",
+3325	    aiSearchSummary: {"en": "", "zh-hk": "", "ja": ""},
+3326	    knowledgePanelData: {"brand": "", "foundingDate": "", "parentOrg": "", "products": [], "industries": []},
+3327	    faqSchema: [{"question": "What is the MOQ for custom packaging boxes?", "answer": "MOQ for custom packaging is 500 pieces for 4C+0 offset print, with gang-run (shared tooling) starting at 100 pieces. Volume discounts available at 1000/5000/10000 pieces."}, {"question": "What is the difference between FBB and SBS cardboard?", "answer": "FBB (Folding Box Board) has a cream back and is ideal for cosmetics and pharmaceuticals. SBS (Solid Bleached Sulfate) is bright white both sides, premium for luxury beauty, electronics, and gift packaging. We use 350gsm SBS for premium boxes."}, {"question": "Can you do structural design for my packaging?", "answer": "Yes, our structural design team provides free dieline creation and 3D mockup for orders above 1000 pieces. Auto-bottom, tuck-end, and rigid box structures available."}, {"question": "What is the lead time for custom packaging?", "answer": "Standard lead time is 10-15 business days for offset print, plus 3-5 days for finishing. Rush service (7-10 days) available for orders above 2000 pieces. Same-week rush for emergencies."}],
+3328	    relatedEntities: {"sameAs": [], "mentions": []},
+3329	    expertReview: {"reviewer": "", "credentials": "", "review": ""},
+3330	    authorBio: {"name": "", "role": "", "bio": ""},
+3331	},
+3332	  {
+3333	    id: 'PK-002',
+3334	    sku_code: 'PK-002',
+3335	    slug: 'cosmetic-boxes',
+3336	    optimizedAt: '2026-07-22',
+3337	    optimizationRound: 1,
+3338	    category: 'packaging',
+3339	    category_slug: 'packaging',
+3340	    name: '化妝品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Cosmetic Packaging Boxes | Gift Boxes & Custom Packaging', nameJa: '化粧品パッケージボックス | パッケージボックス・化粧箱', title_zh: '化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚面膜精華液品牌適配 | 智印港',
+3341	    description: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托 EVA / 紙托 / 吸塑可定製, 燙金 + 局部 UV + 內襯緞布。香港本地、跨境美妝電商、日本市場適用。 **适配行业**:美妝護膚品牌、面膜品牌、精華液品牌、口紅彩妝、香水品牌、手作護膚品、跨境電商', descriptionEn: 'Custom cosmetic packaging boxes for beauty and skincare brands — 4 box styles (lift-off lid, magnetic, drawer, book-style) with EVA/molded pulp/PET inner trays. Foil stamping, spot UV, satin lining. Cross-border e-commerce and Japan market ready. **Best for**:skincare brands, sheet mask brands, serum brands, lipstick & makeup, perfume brands, hand-made skincare, cross-border e-commerce', descriptionJa: '化粧品パッケージボックス カスタム — 天地蓋 / マグネット蓋 / 引き出し式 / ブック型の 4 種類, EVA / 紙 / ペット内裝トレイ選択可。箔押し・スポット UV ・サテン裏地対応。越境 EC ・日本市場向け。 **適用業界**:スキンケアブランド、シートマスクブランド、美容液ブランド、口紅・メイク、香水ブランド、手作りスキンケア、越境EC', description_zh: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托可定製, 燙金 + 局部 UV + 內襯緞布。',
+3342	    features: [
+3343	      '【4 種盒型】天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型, 全部可選',
+
+==== products.ts folding-boxes (L3538-L3647) ====
+3538	    slug: 'folding-boxes',
+3539	
+3540	    optimizedAt: '2026-07-23',
+3541	    optimizationRound: 1,    category: 'packaging',
+3542	    category_slug: 'packaging',
+3543	    name: '折疊盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Folding Boxes | Gift Boxes & Custom Packaging', nameJa: '折りたたみ箱 | パッケージボックス・化粧箱', title_zh: '折疊盒',
+3544	    description: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。', descriptionEn: 'Foldable design, saves warehouse space. Custom size · 100 MOQ · Eco kraft options · Free shipping over $99 USA. Fits DTC ecommerce, tea/beverage, food packaging.', descriptionJa: '折りたたみ可能なデザイン、倉庫スペースを節約。。カスタムサイズ・100個から・クラフト紙対応・全国送料込み。D2C EC・茶/飲料・食品パッケージに適合。', description_zh: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。 2026 旺季: 環保品牌限定、ESG 碳審計合規、月餅糕點禮盒、聖誕節日禮盒。',
+3545	    features: [
+3546	      '【平板出貨】節省倉儲空間 70% 以上，降低庫存成本',
+3547	      '【自動鎖底】插口結構經 80cm 跌落測試，5kg 不開口',
+3548	      '【300g–350g 白卡】高挺度摺疊，成型後棱角分明',
+3549	      '【E 坑瓦楞】可選加固，適合較重電商產品',
+3550	      '【燙金條碼】支援金／銀箔與可變條碼，品牌與物流兼顧',
+3551	      '【免費展開圖】提供組裝指引，確保摺痕角度精準',
+3552	      '【覆膜選項】啞膜／光膜／局部 UV，防刮耐磨',
+3553	    ],
+3554	    specs: {
+3555	      material: '300g–350g 白卡紙／E 坑瓦楞紙板',
+3556	      size: '展開平板約 40×30cm 至 60×50cm；成型後約 15×10×5cm 起',
+3557	      printMethod: '四色柯式或數碼（依數量）',
+3558	      finishing: '覆膜（啞膜／光膜）、燙金、局部 UV、條碼',
+3559	    },
+3560	    price_range: 'HK$2.5-15/個',
+3561	    basePrice: 2.5,
+3562	    basePrice_en: 0.51,
+3563	    basePrice_ja: 69,
+3564	    weight_score: 85,
+3565	    isHot: false,
+3566	    isNew: false,
+3567	    minQuantity: 100,
+3568	    images: ['/images/products/folding-boxes.jpg'],
+3569	  imagesByLocale: {
+3570	    'zh-hk': [
+3571	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-zh-hk.webp',
+3572	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-zh-hk-2.webp',
+3573	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-zh-hk-3.webp',
+3574	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-zh-hk-4.webp',
+3575	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-zh-hk-5.webp',
+3576	    ],
+3577	    'en': [
+3578	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-en.webp',
+3579	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-en-2.webp',
+3580	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-en-3.webp',
+3581	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-en-4.webp',
+3582	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-en-5.webp',
+3583	    ],
+3584	    'ja': [
+3585	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-ja.webp',
+3586	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-ja-2.webp',
+3587	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-ja-3.webp',
+3588	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-ja-4.webp',
+3589	      '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-ja-5.webp',
+3590	    ],
+3591	  },
+3592	    variables: {
+3593	      sizes: [
+3594	        { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
+3595	        { value: 'medium', label: '中號(150×120×80mm)', multiplier: 1.6 },
+3596	        { value: 'large', label: '大號(200×180×100mm)', multiplier: 2.5 },
+3597	      ],
+3598	      materials: [
+3599	        { value: 'white-card', label: '白卡紙', surcharge: 0 },
+3600	        { value: 'kraft', label: '牛皮紙', surcharge: 10 },
+3601	        { value: 'rigid', label: '硬紙板', surcharge: 80 },
+3602	      ],
+3603	      finishings: [
+3604	        { value: 'none', label: '無', surcharge: 0 },
+3605	        { value: 'foil', label: '燙金', surcharge: 60 },
+3606	        { value: 'uv', label: 'UV', surcharge: 50 },
+3607	        { value: 'emboss', label: '擊凸', surcharge: 70 },
+3608	      ],
+3609	      quantities: [
+3610	        { value: 100, label: '100個', discount: 1 },
+3611	        { value: 500, label: '500個', discount: 0.85 },
+3612	        { value: 1000, label: '1000個', discount: 0.7 },
+3613	      ],
+3614	    },
+3615	  seoImages: {
+3616	    filename: { 'zh-hk': 'zprintpro-packaging-folding-boxes-zh-hk.webp', en: 'zprintpro-packaging-folding-boxes-en.webp', ja: 'zprintpro-packaging-folding-boxes-ja.webp' },
+3617	    alt: {
+3618	      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港折疊盒印刷 300g–350g 白卡紙／E 坑瓦楞紙 覆膜（啞膜／光膜）',
+3619	      en: 'Custom Packaging Boxes & Gift Boxes | Folding Boxes | Professional Packaging Online',
+3620	      ja: 'パッケージボックス / ギフトボックス | 折りたたみ箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+3621	    },
+3622	  },
+3623	  
+3624	    // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
+3625	    seoTitle: {"zh-hk": "", "en": "", "ja": ""},
+3626	    seoDescription: {"zh-hk": "", "en": "", "ja": ""},
+3627	    metaTitle: "",
+3628	    aiSearchSummary: {"en": "", "zh-hk": "", "ja": ""},
+3629	    knowledgePanelData: {"brand": "", "foundingDate": "", "parentOrg": "", "products": [], "industries": []},
+3630	    faqSchema: [{"question": "What is the MOQ for custom packaging boxes?", "answer": "MOQ for custom packaging is 500 pieces for 4C+0 offset print, with gang-run (shared tooling) starting at 100 pieces. Volume discounts available at 1000/5000/10000 pieces."}, {"question": "What is the difference between FBB and SBS cardboard?", "answer": "FBB (Folding Box Board) has a cream back and is ideal for cosmetics and pharmaceuticals. SBS (Solid Bleached Sulfate) is bright white both sides, premium for luxury beauty, electronics, and gift packaging. We use 350gsm SBS for premium boxes."}, {"question": "Can you do structural design for my packaging?", "answer": "Yes, our structural design team provides free dieline creation and 3D mockup for orders above 1000 pieces. Auto-bottom, tuck-end, and rigid box structures available."}, {"question": "What is the lead time for custom packaging?", "answer": "Standard lead time is 10-15 business days for offset print, plus 3-5 days for finishing. Rush service (7-10 days) available for orders above 2000 pieces. Same-week rush for emergencies."}],
+3631	    relatedEntities: {"sameAs": [], "mentions": []},
+3632	    expertReview: {"reviewer": "", "credentials": "", "review": ""},
+3633	    authorBio: {"name": "", "role": "", "bio": ""},
+3634	},
+3635	  {
+3636	    id: 'PK-006',
+3637	    sku_code: 'PK-006',
+3638	    slug: 'rigid-boxes',
+3639	    category: 'packaging',
+3640	    category_slug: 'packaging',
+3641	    name: '精裝盒 / 精裝盒報價 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes / Custom Quote | Gift Boxes & Premium Packaging', nameJa: '上製本箱 / 上製本箱 見積もり | パッケージボックス・化粧箱', title_zh: '精裝盒報價 100個起印 HK$4.5起/個 天地蓋書型磁吸 · 智印港',
+3642	    description: '精品盒/禮品盒訂製印刷，100個起印，HK$4.5起/個。硬殼天地盒磁吸盒抽屜盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾婚慶禮盒週年慶品牌活動贈品，3-7天交貨，全球配送。 **适配行业**:鐘錶珠寶品牌、3C電子產品、手機配件、禮品店、婚慶喜糖、聖誕禮盒、跨境電商亞馬遜', descriptionEn: 'Hardcover rigid construction, luxurious and premium. Premium setup box · 100 MOQ · Magnetic closure available · Foil + spot UV finish. Luxury packaging for jewelry, electronics, high-end gifts. **Best for**:watch & jewellery brands, 3C electronics, phone accessories, premium gift shops, wedding favours, Christmas hampers, Amazon FBA sellers', descriptionJa: '硬い上製本構造、豪華でプレミアム。。プレミアムセットアップ箱・100個から・マグネット式・箔押し+スポットUV。宝飾/電子機器/高級ギフト向けラグジュアリーパッケージ。 **適用業界**:腕時計・宝飾ブランド、3C電子機器、携帯電話アクセサリー、プレミアムギフト、ブライダル、クリスマス、Amazon FBA', description_zh: '硬殼精裝/禮品盒，高檔奢華。適合高端產品、限量版、婚慶/週年慶贈品。',
+3643	    features: [
+3644	      '灰板裱面，結構挺括',
+3645	      '磁吸、緞帶等開合儀式感配置',
+3646	      '多工藝疊加：燙金、壓紋、局部 UV',
+3647	      '適合限量與高客單價商品',
+
+==== CSV food-boxes ====
+产品名称(ZH) | '食品包裝盒'
+SEO标题(ZH) | '食品包裝盒印刷 訂製 100個起 HK$2.5 防油紙卡 | 智印港'
+SEO标题(EN) | 'Food-Safe Packaging Printing | 100 MOQ | ZprintPro'
+SEO标题(JA) | '食品包装箱印刷 小ロット 防油 100個〜 ¥101〜 | ZprintPro'
+SEO描述(ZH) | '食品包裝印刷訂製：FDA 認可食品級材質 + FSC 認證紙，100 個起印、HK$2.5 起/個，燙金 UV 全工藝支援。糕點/茶葉/保健品品牌首選，3-5 天交貨、免費 2 小時打稿。30 秒 AI 報價，WhatsApp 2 小時內回覆。 FDA食品級 (FDA 21 CFR 176.170), 跨境合規。月饼端午禮盒 / 茶葉禮盒 / 烘焙坊 / 保健品品牌 / 手搖飲品店 適用。'
+SEO描述(EN) | 'Custom food packaging printing with FDA-safe, FSC-certified materials. 100 MOQ, foil & UV finishes, free 2-hour digital proof, free US shipping $99+. 30-second AI quote. FDA-compliant (FDA 21 CFR 176.170). Mooncake & Dragon Boat Festival gift box, tea gift box'
+SEO描述(JA) | '食品パッケージ印刷を100個から小ロット対応。FDA適合・FSC認証紙、箔押し・UV加工、無料2時間デジタル校正。日本全国送料無料、DHLで2-4日納品。30秒無料見積もり。 FDA適合 (FDA 21 CFR 176.170 認証)。月餅・端午節ギフトボックス、茶葉ギフト、ベーカリー、ヘルスケアブランド、タピオカ店対応。'
+H1标题(ZH) | '紙質食品包裝印刷訂製｜食品紙盒・食品紙袋・防油紙卡｜FDA 食品級'
+H1标题(EN) | 'Paper Food Packaging 100+ | Food-Grade Paper Boxes, Bags & Greaseproof Cards'
+H1标题(JA) | '高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。'
+SEO关键词(ZH) | '食品包裝盒,食品包裝印刷,食品包裝訂製,包裝盒印刷,瓦楞紙盒,禮品盒,定制包裝,化妝品盒,食品盒,快遞盒'
+SEO关键词(EN) | 'food boxes,custom food boxes,food packaging boxes,food grade boxes,takeout boxes custom,bakery boxes wholesale,food boxes free shipping,bulk food packaging,bespoke food packaging,packaging box printing'
+SEO关键词(JA) | '食品パッケージ,食品パッケージ 印刷,food boxes,パッケージボックス印刷,化粧箱,食品箱,ギフトボックス,メール便箱,オリジナルパッケージ,組み立て箱'
+图片Alt标签(ZH) | '一般為100個起訂，定制盒型需500個起。'
+内部链接建议 | '包裝盒→/product/gift-boxes/ | 即日印刷→/product/same-day-flyers/ | 聯繫我們→/contact/'
+
+==== CSV folding-boxes ====
+产品名称(ZH) | '折疊盒'
+SEO标题(ZH) | '折疊盒印刷訂製 | 燙金 UV | 100個起 HK$2.5起 | 智印港'
+SEO标题(EN) | 'Folding Boxes | Auto-Lock | 100 MOQ $0.51 | ZprintPro'
+SEO标题(JA) | '折りたたみ箱｜箔押し ラミネート｜100枚〜 ¥69〜｜ZprintPro'
+SEO描述(ZH) | '折疊禮盒/折疊盒 100 個起。採用 白卡/牛皮紙/灰板 高品質材質，支援 訂製尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。'
+SEO描述(EN) | 'Folding Boxes custom printing, eco-friendly kraft paper. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for retail packaging. | ZprintPro'
+SEO描述(JA) | '折り畳み箱の折り畳み箱は ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。'
+H1标题(ZH) | '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。智印港提供專業折疊盒服務，香港本地印刷，品質保證，價格透明。'
+H1标题(EN) | 'Folding Boxes 100+ | Auto-Lock | ZprintPro'
+H1标题(JA) | '高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。'
+SEO关键词(ZH) | '折疊禮盒,折疊盒,禮盒訂製,包裝盒印刷,瓦楞紙盒,禮品盒,定制包裝,化妝品盒,食品盒,快遞盒'
+SEO关键词(EN) | 'folding boxes,folding cartons,tuck end boxes,auto lock bottom boxes,retail packaging boxes,cosmetic boxes,food boxes folding,folding boxes free shipping,bulk folding boxes,bespoke folding cartons'
+SEO关键词(JA) | '折り畳み箱,折り畳み箱 印刷,folding boxes,パッケージボックス印刷,化粧箱,食品箱,ギフトボックス,メール便箱,オリジナルパッケージ,組み立て箱'
+图片Alt标签(ZH) | '一般為100個起訂，定制盒型需500個起。'
+内部链接建议 | '包裝盒→/product/gift-boxes/ | 即日印刷→/product/same-day-flyers/ | 聯繫我們→/contact/'

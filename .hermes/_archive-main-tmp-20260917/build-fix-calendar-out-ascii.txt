@@ -1,0 +1,14 @@
+======================================================================
+M3 P0 价格修复 — 6 calendar SKU 批量价口径 1000 本起 + HK$3-8
+开始时间: 2026-07-30 06:03:46
+======================================================================
+
+[1/4] 改 products.ts 6 SKU × 4 字段 + minQuantity 100→1000
+  OK wall-calendars                  pr=HK$12-40/本 → HK$3-8/本 bp=12 → 3  bpe=4.6 → 0.40 bpj=644 → 50 moq=100 → 1000
+  OK desk-calendars                  pr=HK$16-50/本 → HK$3-8/本 bp=16 → 3  bpe=5.52 → 0.40 bpj=773 → 50 moq=100 → 1000
+  OK custom-calendars                pr=HK$20-65/本 → HK$3-8/本 bp=20 → 3  bpe=7.36 → 0.40 bpj=1030 → 50 moq=100 → 1000
+  OK mini-calendars                  pr=HK$6-20/本 → HK$3-8/本 bp=6 → 3   bpe=2.76 → 0.40 bpj=386 → 50 moq=100 → 1000
+  OK photo-frame-calendars           pr=HK$24-80/本 → HK$3-8/本 bp=24 → 3  bpe=9.2 → 0.40 bpj=1288 → 50 moq=100 → 1000
+  OK magnetic-calendars              pr=HK$10-30/本 → HK$3-8/本 bp=10 → 3  bpe=3.68 → 0.40 bpj=515 → 50 moq=100 → 1000
+
+[2/4] 改 pricing.ts 6 SKU INDEPENDENT_PRICES + desk-calendars anchor

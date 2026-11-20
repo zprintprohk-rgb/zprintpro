@@ -1,0 +1,10 @@
+feat(engine)+fix(copy): K3 08:36「全部按1件起」落地 — banners minQ 100→1 ×5 + 畢業紀念冊 50→1 引擎/文案全層 + banners meta 回真
+
+- products.ts: banners 5 SKU minQuantity 100→1 (outdoor-vinyl/roll-up/adhesive/vehicle-wraps/mesh) + graduation-yearbook 50→1 + en/ja 描述 50→1
+- sku-seo-data.ts: 畢業冊三语 title/desc/h1/body/FAQ 50→1 ×14 (三语 title 当量复测全 OK)
+- products-content.ts: 畢業冊 socialProof+FAQ 50→1 ×2
+- category-conversion-blocks.ts: educational meta/stat/label/价格表 畢業冊 50→1 ×4
+- seo.ts: banners 品类 meta 回改 1（引擎变 1 后原声称恢复为真，昨 100 修正是中间态）
+- 应用器 scripts/apply-moq1-universal-batch-20260921.mjs（34 规则 exact+计数断言+幂等）
+- 不动（已登记）: 月曆族 1000 口径 vs「全部按1件起」冲突升级中 | wedding/place-cards minQ=50 | educational 通用 10 (exercise-books 引擎=10)
+- tsc 54=54 基线

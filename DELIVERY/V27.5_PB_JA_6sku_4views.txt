@@ -1,0 +1,296 @@
+V27.5 JA PB SERIES (Paper Bags) — COMPLETE IMAGE PROMPTS
+======================================================================
+Version: V27.5 (2026-09-09 full-alignment edition: K3 change list + products.ts truth + GSC money keywords + Japan market aesthetic research)
+Baseline: V27.3 (K3 8/28 16:25 GSC-driven 6-SKU truth)
+NOTE: Prompts written in English (Seedream reads English best); on-image text rules per SKU; ALT keywords in Japanese real GSC terms.
+
+V27.5 CHANGE LIST:
+  [MATERIAL] Removed hard-coded "natural kraft brown bag". Multi-material palette: natural kraft / white kraft / white cardstock / premium art paper — AI adapts per SKU & scene. Only PB-001 stays natural kraft; other SKUs must NOT default to brown kraft.
+  [ARTWORK] Removed mandatory watercolor peony florals. Style pool: minimalist geometric, brand monogram, clean wordmark layout, refined Japanese-inspired texture (asanoha hemp-leaf geometry, seigaiha wave lines, kumiko lattice, washi grain). Florals optional, never mandatory.
+  [SCENE] Per-SKU differentiated Japan scenes (fixes V27.2 copy-pasted identical backgrounds):
+     PB-001 Tokyo kissaten coffee shop / bakery; PB-002 Omotesando fashion boutique & cosmetics; PB-003 depachika gift floor / Ginza gift shop; PB-004 organic store / weekend farmers market; PB-005 bakery & takeout counter; PB-007 Shibuya apparel select shop / sneaker store.
+  [JAPAN AESTHETIC 2026 — researched 2026-09-09]: ma (meaningful negative space), kinari unbleached off-white, indigo ai, sumi charcoal, muted sophisticated palettes with one seasonal accent (sakura pink / matcha green / yuzu yellow); sustainable + high-value-added packaging is the established standard; personalization appreciated. Quiet craftsmanship over loud promotion.
+  [BADGE POLICY] JA market: NO red starburst stickers, NO price text — loud promotional overlays read as untrustworthy in Japanese retail; trust conveyed via small FSC / quality mark and precise craft detail.
+  [ON-IMAGE TEXT] Product face copy in English wordmark ("CARRY JOY" + brand logo) as is standard for Japanese retail packaging; NO Chinese characters, NO garbled kana. If any Japanese text appears it must be correct: 「紙袋」 only, never machine-garbled kana.
+  [NEGATIVE] Every prompt ends with Negative: no forced full-frame kraft brown base, no large-area watercolor floral print, no red badge, no price, no Chinese characters, no garbled Japanese kana.
+  [ENGINEERING INHERITED] two handles, two metal grommets, no hands/people, 80-85% frame occupancy, 1:1, cinematic realism, HERO/DETAIL/VARIETY/MULTI-ANGLE view rules.
+
+DATA SOURCES (integrity):
+  - src/data/products.ts PB-001/002/003/004/005/007 (names, descriptions, prices, materials, target industries)
+  - GSC money keywords JA: 紙袋 印刷 (6 imp, pos 58), クラフト紙袋 印刷 (2 imp, pos 30) — early-stage; ALT seeds these real terms
+  - Japan packaging trend research 2026-09-09 (sustainability + high added value / personalization / minimalist customization)
+
+Scope: 6 SKU x 4 views x JA = 24 prompts
+======================================================================
+
+### PB-001 | クラフト紙袋 | Kraft Paper Bags | kraft-paper-bags
+
+SEO+GEO ALT: クラフト紙袋 紙袋 印刷 オリジナル紙袋 エコ FSC認証 100枚から 小ロット アパレル カフェ ベーカリー ZprintPro サンプル ISO 9001
+Truth anchor: 120-200gsm kraft · cotton/paper rope handles · foil & UV optional · ¥240 base · apparel brands, cafés, bakeries, cross-border Etsy sellers
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-kraft-paper-bags-ja-hero.webp
+Intent (for the AI): main product image for PB-001 Kraft Paper Bags on zprintpro.com's Japan store. Target viewers: Japanese small-business owners — select shops, kissaten coffee shops, bakeries — who searched クラフト紙袋/紙袋 印刷. They value quiet craft, natural materials, and precise finishing over loud claims.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright warm saturated color with Japanese restraint, soft natural light.
+Japan market 2026 palette: kinari unbleached off-white, natural kraft, matcha green, one yuzu-yellow accent; warm daylight, clean and honest. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: a "Kraftwell" fictional indie-brand kraft paper bag, 150gsm natural kraft paper (this SKU's own material), 4-color offset printing, cotton rope handles, two silver grommets, reinforced turn-top. Surface design with real design sensibility: brand "Kraftwell" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — minimalist geometric, subtle brand monogram, or refined asanoha / kumiko lattice texture; floral motifs allowed but not mandatory; all letters correctly spelled.
+Background softly blurred: a sunlit Tokyo kissaten coffee shop / bakery counter — ceramic dripper, wooden tray with shokupan, linen cloth, warm window-light bokeh; bright and airy with generous negative space; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: do not force full-frame kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters, no garbled Japanese kana.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-kraft-paper-bags-ja-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: kinari off-white, natural kraft, matcha green, yuzu accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Kraftwell" kraft paper bag macro close-up — natural kraft fiber texture, cotton rope weave, silver grommet detail, gusset fold edge, 4-color print detail; partial small brand logo and minimalist geometric or kumiko lattice artwork, focus on material and craft.
+Background softly blurred: kissaten props (linen swatch, ceramic edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals fiber direction, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced full-frame kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-kraft-paper-bags-ja-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: kinari off-white, natural kraft, matcha green, yuzu accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Kraftwell" kraft paper bags in different designs side by side — monogram-centered, geometric corner motif, wordmark at top, asanoha texture; each with its own short copy and small brand logo, no two identical, letters correctly spelled.
+Background softly blurred: same kissaten scene, consistent lighting and scale, generous negative space, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced full-frame kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-kraft-paper-bags-ja-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: kinari off-white, natural kraft, matcha green, yuzu accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Kraftwell" kraft paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, gusset depth), back handle close-up (right); shows real dimensions and material thickness.
+Background softly blurred: clean light wooden surface, soft shadow, bright bokeh, linen prop at edge.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced full-frame kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+======================================================================
+
+### PB-002 | 白カード紙袋 | White Card Bags | white-card-bags
+
+SEO+GEO ALT: 白カード紙袋 紙袋 印刷 オリジナル紙袋 高級 マットラミネート 100枚から アパレル ジュエリー コスメ ZprintPro サンプル ISO 9001
+Truth anchor: 300gsm white cardstock · matte lamination · satin ribbon handles · silver foil logo option · ¥360 base · apparel, jewelry, cosmetics, lifestyle stores
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-white-card-bags-ja-hero.webp
+Intent (for the AI): main product image for PB-002 White Card Paper Bags on zprintpro.com's Japan store. Target viewers: Omotesando / Ginza apparel and beauty brands upgrading packaging — they buy quiet luxury and print fidelity, never discount cues.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright luminous color with Japanese restraint, soft natural light.
+Japan market 2026 palette: kinari white, champagne gold, sakura blush, sumi charcoal accent; quiet luxury, accurate color reproduction, never muddy. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: a "Whitewell" fictional indie-brand white card paper bag, 300gsm premium white art cardstock (this SKU's own material — never kraft brown), matte lamination, 4-color offset printing, satin ribbon handles, two silver grommets, optional silver foil logo. Surface design with real design sensibility: brand "Whitewell" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — minimalist brand geometry, fine-line abstract, clean wordmark layout, or refined seigaiha line texture; florals optional, never mandatory; letters correctly spelled.
+Background softly blurred: a sunlit Omotesando fashion boutique — pale stone counter, garments on wooden hangers, glass fragrance bottles, soft window-light bokeh; bright and airy with generous negative space; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: never kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters, no garbled Japanese kana.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-white-card-bags-ja-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: kinari white, champagne gold, sakura blush, sumi accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Whitewell" white card paper bag macro close-up — smooth cardstock surface, matte lamination sheen, satin ribbon weave, silver grommet, silver foil logo detail, gusset fold edge; partial minimalist geometric or fine-line artwork, focus on craft.
+Background softly blurred: boutique props (linen swatch, stone edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals surface quality, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-white-card-bags-ja-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: kinari white, champagne gold, sakura blush, sumi accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Whitewell" white card paper bags in different designs side by side — monogram-centered, geometric corner motif, wordmark at top, seigaiha fine-line; each with its own short copy and small brand logo, no two identical, letters correctly spelled.
+Background softly blurred: same boutique scene, consistent lighting and scale, generous negative space, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-white-card-bags-ja-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: kinari white, champagne gold, sakura blush, sumi accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Whitewell" white card paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, gusset depth), back ribbon-handle close-up (right); shows real dimensions and 300gsm thickness.
+Background softly blurred: clean pale stone surface, soft shadow, bright bokeh.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+======================================================================
+
+### PB-003 | ギフト紙袋 | Gift Bags | gift-bags
+
+SEO+GEO ALT: ギフト紙袋 紙袋 印刷 オリジナル紙袋 箔押し 高級 100枚から ウェディング ブランドイベント ホテル ZprintPro サンプル ISO 9001
+Truth anchor: 250gsm white cardstock · gold foil, spot UV, embossing · satin ribbon handles · ¥600 base · weddings, jewelry, brand events, hotels
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-gift-bags-ja-hero.webp
+Intent (for the AI): main product image for PB-003 Gift Paper Bags on zprintpro.com's Japan store. Target viewers: wedding planners, jewelry maisons, hotel and event buyers — Japanese gift culture (omotenashi) demands flawless wrapping presentation. The image must communicate: foil-stamped refinement, gift-worthiness, exacting craft.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright celebratory color with Japanese restraint, soft natural light.
+Japan market 2026 palette: ivory white, champagne gold, deep indigo ai accent, rose gold; refined celebratory feel, never garish. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: a "Giftlux" fictional indie-brand gift paper bag, 250gsm premium white cardstock (this SKU uses white cardstock — never kraft brown), gold foil stamping, spot UV coating, satin ribbon handles, two silver grommets. Surface design with real design sensibility: brand "Giftlux" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — gold-foil minimalist geometry, brand monogram, or refined kumiko lattice / seigaiha line texture; florals optional, never mandatory; letters correctly spelled.
+Background softly blurred: a Ginza gift shop / depachika gift floor counter — ribbon-tied boxes, gold wrapping paper, lacquer-tone display tray, warm window-light bokeh; bright and airy with generous negative space; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: never kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters, no garbled Japanese kana.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-gift-bags-ja-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: ivory white, champagne gold, indigo ai, rose gold. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Giftlux" gift paper bag macro close-up — gold foil logo metallic sheen, spot UV relief, satin ribbon weave, silver grommet, cardstock surface; partial gold-foil geometric or kumiko lattice artwork, focus on finishing craft.
+Background softly blurred: gift shop props (ribbon spool, lacquer tray edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals foil and paper texture, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-gift-bags-ja-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: ivory white, champagne gold, indigo ai, rose gold. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Giftlux" gift paper bags in different designs side by side — gold-foil monogram, geometric corner motif, wordmark at top, kumiko lattice; each with its own short copy and small brand logo, no two identical, letters correctly spelled.
+Background softly blurred: same gift shop scene, consistent lighting and scale, generous negative space, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-gift-bags-ja-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: ivory white, champagne gold, indigo ai, rose gold. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Giftlux" gift paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, gusset depth), back ribbon-handle close-up (right); shows real dimensions and material thickness.
+Background softly blurred: clean lacquer-tone surface, soft shadow, bright bokeh.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: never kraft brown base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+======================================================================
+
+### PB-004 | FSC認証エコ紙袋 | Eco Paper Bags | eco-paper-bags
+
+SEO+GEO ALT: エコ紙袋 紙袋 印刷 オリジナル紙袋 FSC認証 再生紙100% 100枚から オーガニック サステナブルブランド ZprintPro サンプル ISO 9001
+Truth anchor: 170gsm 100% recycled paper · soy-based inks · fully biodegradable · ¥240 base · ESG brands, eco beauty, organic food, fair trade
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-eco-paper-bags-ja-hero.webp
+Intent (for the AI): main product image for PB-004 FSC Certified Eco Paper Bags on zprintpro.com's Japan store. Target viewers: sustainability-minded brand owners, organic stores, eco-beauty founders — in Japan sustainable + high-quality is the established standard, so the image must show certified proof (FSC mark, recycled fiber) with quiet good taste.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright fresh saturated color with Japanese restraint, soft natural light.
+Japan market 2026 palette: matcha green, kinari creamy white, warm terracotta; natural sustainable feel. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: an "Ecogreener" fictional indie-brand FSC certified eco paper bag, 170gsm 100% recycled paper (light kraft or off-white recycled tone — AI adapts, never forced dark brown), soy-based ink printing, cotton rope handles, two silver grommets. Surface design with real design sensibility: brand "Ecogreener" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — leaf-vein fine-line geometry, brand monogram, or minimalist asanoha natural texture; botanical motifs optional, never mandatory; letters correctly spelled. Small FSC certification mark printed on the bag face.
+Background softly blurred: a sunlit Tokyo organic store / weekend farmers market stall — wooden crates of produce, canvas tote, bamboo basket, recycled-paper packaging props, warm bokeh; bright and airy with generous negative space; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced full-frame dark kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters, no garbled Japanese kana.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-eco-paper-bags-ja-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: matcha green, kinari white, terracotta. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Ecogreener" eco paper bag macro close-up — recycled paper fiber and fleck texture, small printed FSC mark, soy-ink print quality, cotton rope weave, silver grommet; partial leaf-vein line or asanoha texture artwork.
+Background softly blurred: market props (canvas cloth, bamboo edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals recycled fiber direction, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced dark kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-eco-paper-bags-ja-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: matcha green, kinari white, terracotta. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Ecogreener" eco paper bags in different designs side by side — leaf-vein monogram, fine-line geometric, wordmark at top, asanoha texture; each with its own short copy, small brand logo and FSC mark, no two identical, letters correctly spelled.
+Background softly blurred: same organic market scene, consistent lighting and scale, generous negative space, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced dark kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-eco-paper-bags-ja-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: matcha green, kinari white, terracotta. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Ecogreener" eco paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, gusset depth), back handle close-up (right); shows real dimensions and material thickness.
+Background softly blurred: clean light wooden surface, soft shadow, bright bokeh, canvas and bamboo props at edge.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced dark kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+======================================================================
+
+### PB-005 | 手提げ紙袋 | Handle Bags | handle-bags
+
+SEO+GEO ALT: 手提げ紙袋 紙袋 印刷 オリジナル紙袋 底補強 耐荷重 100枚から 飲食テイクアウト ベーカリー 小売 ZprintPro サンプル ISO 9001
+Truth anchor: kraft or white card options · reinforced handles and bottom · cotton/flat-paper handles · ¥240 base · restaurant takeout, cafés, bakeries, retail, exhibitions
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-handle-bags-ja-hero.webp
+Intent (for the AI): main product image for PB-005 Handle (Carry) Paper Bags on zprintpro.com's Japan store. Target viewers: bakery and takeout shop owners, retail managers — their first question is load strength and reliability. The image must communicate: sturdy construction, practical capacity, honest value.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright warm saturated color with Japanese restraint, soft natural light.
+Japan market 2026 palette: warm caramel, kinari ivory, natural kraft accent; practical and clean. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: a "Carrywell" fictional indie-brand heavy-duty carry paper bag, 250gsm paper (kraft tone or white card — AI adapts per composition, never forced brown), reinforced cotton rope handles, reinforced bottom, two silver grommets, 4-color offset printing. Surface design with real design sensibility: brand "Carrywell" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — clean minimalist geometric, brand monogram, or refined washi-grain texture; florals optional, never mandatory; letters correctly spelled.
+Background softly blurred: a sunlit Japanese bakery takeout counter — bread on wooden boards, paper-wrapped pastries, coffee cups, order tickets, warm bokeh; bright and airy with generous negative space; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced full-frame kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters, no garbled Japanese kana.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-handle-bags-ja-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: warm caramel, kinari ivory, kraft accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Carrywell" carry paper bag macro close-up — reinforced handle anchor point and pull structure, silver grommet, reinforced bottom fold, paper fiber; partial minimalist geometric or monogram artwork, focus on strength construction.
+Background softly blurred: bakery props (parchment wrap, wooden board edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals reinforcement structure and paper quality, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-handle-bags-ja-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: warm caramel, kinari ivory, kraft accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Carrywell" carry paper bags in different designs side by side (mix kraft-tone and white-card pieces to show material choice) — monogram, geometric corner motif, wordmark at top, washi-grain texture; each with its own short copy and small brand logo, no two identical, letters correctly spelled.
+Background softly blurred: same bakery takeout scene, consistent lighting and scale, generous negative space, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-handle-bags-ja-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: warm caramel, kinari ivory, kraft accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Carrywell" carry paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, gusset depth), back reinforced-handle close-up (right); shows real dimensions and material thickness.
+Background softly blurred: clean light wooden surface, soft shadow, bright bokeh.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+======================================================================
+
+### PB-007 | 大判紙袋 | Large Bags | large-bags
+
+SEO+GEO ALT: 大判紙袋 紙袋 印刷 オリジナル紙袋 耐荷重8kg 大型 100枚から アパレル 靴 セレクトショップ ZprintPro サンプル ISO 9001
+Truth anchor: 320x120x380mm · 250g white card / 300g kraft / 280g art paper · base-board reinforced 8-10kg load · 4 handle options · ¥450 base · apparel, shoes, large items
+
+[HERO]
+SEO_FILENAME: zprintpro-paper-bags-large-bags-ja-hero.webp
+Intent (for the AI): main product image for PB-007 Large Shopping Paper Bags on zprintpro.com's Japan store. Target viewers: Shibuya / Harajuku apparel select shops and sneaker stores — they need coat-and-shoebox capacity, 8kg load, and a bag customers want to reuse (walking advertisement). The image must communicate: generous size, rigid stance, refined branding.
+1:1 square high-definition e-commerce main image, cinematic film quality, bright confident saturated color with Japanese restraint, soft natural light.
+Japan market 2026 palette: premium kinari white, milk-tea beige, deep indigo ai accent; large-capacity premium feel. NO RED BADGES, NO PRICE TAGS, NO EXPLOSIVE STICKERS.
+Foreground: a "Bigcarry" fictional indie-brand large shopping paper bag, 300gsm heavyweight stock (white card or kraft tone — AI adapts per composition, never forced brown), reinforced handles, base-board reinforced bottom rated 8kg, two silver grommets, 4-color offset printing. Surface design with real design sensibility: brand "Bigcarry" small logo at bottom corner, short copy "CARRY JOY" large centered, decorative artwork in ONE chosen style — bold minimalist geometry, brand monogram, or large-scale kumiko lattice texture; florals optional, never mandatory; letters correctly spelled.
+Background softly blurred: a sunlit Shibuya apparel select shop / sneaker store — garment racks, stacked shoeboxes, clean shopping aisle, warm bokeh; bright and airy with generous negative space; no flower bouquets filling the frame.
+Small subtle FSC certification badge bottom-right corner, low-key clean sans-serif design. No starburst, no price text, no promotional overlay.
+Product centered 80-85% of frame, slight angle for depth, strong depth of field, product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no harsh flash, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced full-frame kraft brown base color, no large-area watercolor peony or full-surface floral print, no red badge, no price tag, no promotional overlay, no Chinese characters, no garbled Japanese kana.
+
+[DETAIL]
+SEO_FILENAME: zprintpro-paper-bags-large-bags-ja-detail.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: kinari white, milk-tea beige, indigo ai accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Bigcarry" large shopping paper bag macro close-up — 300gsm thick stock cross-section, base-board reinforced bottom structure, reinforced handle root, silver grommet, 4-color print detail; partial bold geometric or monogram artwork.
+Background softly blurred: select shop props (fabric swatch, shoebox edge), soft bokeh.
+Extreme close-up 85-95% of frame, raking light reveals stock rigidity and structure, tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[VARIETY]
+SEO_FILENAME: zprintpro-paper-bags-large-bags-ja-variety.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: kinari white, milk-tea beige, indigo ai accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: 3-4 "Bigcarry" large shopping paper bags in different designs side by side (mix white-card and kraft-tone pieces to show material choice) — monogram, bold geometric, wordmark at top, large kumiko lattice texture; each with its own short copy and small brand logo, no two identical, letters correctly spelled.
+Background softly blurred: same select shop scene, consistent lighting and scale, generous negative space, each bag fully visible, product tack-sharp.
+No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+[MULTI-ANGLE]
+SEO_FILENAME: zprintpro-paper-bags-large-bags-ja-multi-angle.webp
+1:1 square high-definition e-commerce image, cinematic film quality.
+Japan palette: kinari white, milk-tea beige, indigo ai accent. NO RED BADGES, NO PRICE TAGS.
+Foreground: "Bigcarry" large shopping paper bag three views in one frame — front (centered, "CARRY JOY" centered), 45-degree angle (left, showing 120mm gusset depth), back reinforced-handle close-up (right); shows real large dimensions and stock rigidity.
+Background softly blurred: clean light wooden surface, soft shadow, bright bokeh.
+Product tack-sharp. No garbled text, no misspellings, no torn edges, no plastic look, no floating objects, no watermark, no hands no people, two handles only, two grommets only, no triple rope handles.
+Negative: no forced kraft brown full-frame base, no large-area watercolor floral print, no red badge, no price tag, no Chinese characters, no garbled kana.
+
+======================================================================
+END — V27.5 JA PB SERIES, 24 prompts complete
+Batch run advice: run PB-001 + PB-003 as samples first — verify ① white card / white kraft appears, not all brown kraft; ② minimalist geometric artwork appears, not all-over florals; ③ zero badges/prices and zero garbled kana on JA images. Pass, then batch the rest.

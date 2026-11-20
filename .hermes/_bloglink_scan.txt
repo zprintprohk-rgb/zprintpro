@@ -1,0 +1,113 @@
+=== zh-hk : 102 posts (top-level type dict) ===
+  [company-intro] 智印港印刷公司簡介：專業設備與一站式印刷服務 | food-boxes links: 0 | len: 2429
+  [hong-kong-printing-guide] 香港印刷公司選擇完全指南：港島、九龍、新界哪裡最可靠？ | food-boxes links: 0 | len: 3730
+  [brand-materials-checklist] 企業品牌物料清單：從貼紙到展架的全套印刷方案 | food-boxes links: 0 | len: 4375
+  [packaging-trends] 2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出 | food-boxes links: 0 | len: 4611
+  [cmyk-guide] CMYK vs RGB：印刷色彩模式完全詳解 | food-boxes links: 0 | len: 8424
+  [eco-printing] 環保印刷：企業ESG與可持續包裝的未來 | food-boxes links: 0 | len: 3098
+  [food-packaging-printing-guide] 食品包裝印刷完全指南：材質、安全認證與設計實務 | food-boxes links: 1 | len: 11860
+  [poster-printing-guide] 香港海報印刷完全指南：尺寸、紙質、工藝與設計要點 | 智印港 | food-boxes links: 0 | len: 19247
+  [?] ? | food-boxes links: 1 | len: 8672
+  [?] 香港寵物食品品牌貼紙印刷指南 · 防水防油 FDA 認證 | 智印港 | food-boxes links: 0 | len: 2800
+  [?] ? | food-boxes links: 0 | len: 9075
+  [?] ? | food-boxes links: 0 | len: 10225
+  [real-estate-brochure-box-printing-guide] 香港新盤樓書印刷指南 · 豪宅資料匣與硬皮畫冊定製 | 智印港 | food-boxes links: 0 | len: 4643
+  [pharmaceutical-label-printing-guide] 香港藥品標籤印刷指南 · GMP 認證，防偽追溯碼定製 | 智印港 | food-boxes links: 0 | len: 3841
+  [?] 化妝品包裝盒印刷指南 · 護膚品牌結構與材質全攻略 | 智印港 | food-boxes links: 0 | len: 8421
+  [?] 香港茶飲品牌禮盒印刷指南 · 手搖、中茶、茶葉電商適用 | 智印港 | food-boxes links: 1 | len: 7017
+  [restaurant-menu-printing-guide] 香港餐廳菜單印刷指南 · 2026 餐飲旺季防水防油首選 | 智印港 | food-boxes links: 0 | len: 15152
+  [baby-product-label-sticker-printing-guide] 母嬰品牌貼紙印刷指南 · 嬰兒食品級安全標籤定製 | 智印港 | food-boxes links: 0 | len: 7402
+  [media-merchandise-box-printing-guide] 影視IP周邊禮盒印刷指南 · 香港品牌影迷集體回憶定製 | 智印港 | food-boxes links: 0 | len: 4984
+  [?] 厚紙傳單印刷指南 · 香港餐廳外賣單張厚紙選材攻略 | 智印港 | food-boxes links: 0 | len: 3488
+  [baby-food-packaging-box-printing-guide] 香港嬰幼兒食品包裝盒印刷指南 · 奶粉輔食米糊安全包裝定製 | 智印港 | food-boxes links: 2 | len: 3792
+  [medical-device-packaging-box-guide] 醫療器械包裝盒印刷指南 · ISO 13485，滅菌袋定製 | 智印港 | food-boxes links: 1 | len: 3918
+  [sports-merchandise-gift-box-printing-guide] 體育賽事紀念禮盒印刷指南 · 球隊周邊收藏版定製 | 智印港 | food-boxes links: 0 | len: 3823
+  [poster-printing-price-guide] A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣全拆解 | 智印港 | food-boxes links: 0 | len: 9395
+  [saddle-stitch-booklet-printing-guide] 騎馬釘小冊子印刷完全指南：頁數、紙張、價格與低 MOQ 教學 | food-boxes links: 0 | len: 7825
+  [2027-calendar-printing-complete-guide] 2027 月曆印刷完全指南: 8 大材質，4 種工藝，中秋旺季提前 4-6 週預訂 | 智印港 | food-boxes links: 0 | len: 10385
+  [rush-printing-hk-guide] 即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智印港 | food-boxes links: 0 | len: 10090
+  [packaging-box-pricing-2026] 包裝盒印刷價格 2026：500/1000/5000 個・禮盒訂製 | 智印港 | food-boxes links: 0 | len: 18915
+  [2027-monthly-calendar-printing-timetable] 2027 月曆印刷攻略：幾時印？起印量？4 種月曆紙材大對決 | 智印港 | food-boxes links: 0 | len: 5298
+  [large-envelope-printing-c4-c5] 大信封印刷 C4/C5 規格，100 個起 HK$0.5/個起，即日特急 | 智印港 | food-boxes links: 0 | len: 8449
+  [sticker-material-pvc-vinyl-removable] 防水貼紙材質指南: PVC / 透明 / 可移 / 燙金 | 智印港 | food-boxes links: 0 | len: 14550
+  [certificate-printing-guide] 證書印刷完整攻略 · 材質工藝呎吋合規認證全拆解 | 智印港 | food-boxes links: 0 | len: 16714
+  [instant-printing-30s-ai-quote-flow] 即日印刷 30 秒 AI 報價流程: 中午前確認 下午起貨 | 智印港 | food-boxes links: 0 | len: 6225
+  [foil-stamping-3-applications-2026] 燙金印刷 3 大應用攻略: 貼紙/喜帖/禮盒卡片全對比 | 智印港 | food-boxes links: 0 | len: 28919
+  [campus-education-printing-pillar-guide] 校園教育印刷指南: 開學季 5 大印刷品 × 12 場景 | 智印港 | food-boxes links: 0 | len: 19504
+  [kraft-paper-box-types-comparison-2026] 牛皮紙盒 vs 坑盒 vs 彩盒 vs 禮盒 8 大盒型 5 維度全對比 | 智印港 | food-boxes links: 0 | len: 17789
+  [hong-kong-printing-cost-baseline-2026] 2026 香港印刷成本基準: 16 品類 82 SKU 價格數據 | 智印港 | food-boxes links: 1 | len: 15115
+  [print-specifications-reference-guide-2026] 印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港 | food-boxes links: 0 | len: 20593
+  [school-exercise-book-printing-guide] 練習簿印刷完全指南 2026: 4 種紙材 3 種裝訂 100 本起印 HK$3.5/本起 B2B 開學季 | 智印港 | food-boxes links: 0 | len: 6429
+  [rush-printing-delivery-guide] 急件印刷派送指南 · 最快邊間？幾錢？幾點截單？| 智印港 | food-boxes links: 0 | len: 13646
+  [packaging-box-price-2026] 包裝盒印刷報價 2026：500/1000/5000/10000 個 | 智印港 | food-boxes links: 0 | len: 14343
+  [zine-small-batch-booklet-printing-guide] 小誌 Zine 印刷: 騎馬釘 8-64 頁 100 本起 HK$6 起 | 智印港 | food-boxes links: 0 | len: 7308
+  [roll-up-banner-printing-guide] 易拉架印刷完全指南：尺寸・材質・報價 10 個起 | 智印港 | food-boxes links: 0 | len: 8844
+=== en : 103 posts (top-level type dict) ===
+  [hong-kong-printing-guide] Custom Sticker & Packaging Printing Guide for US Small Busin | food-boxes links: 0 | len: 7483
+  [packaging-trends] 2024 Packaging Design Trends Analysis | food-boxes links: 0 | len: 5658
+  [cmyk-guide] CMYK vs RGB: Complete Guide to Print Color Modes | food-boxes links: 0 | len: 12846
+  [eco-printing] Eco-Friendly Printing: The Future of Sustainable Packaging | food-boxes links: 0 | len: 5954
+  [food-packaging-printing-guide] Food Packaging Printing Guide: Materials, Safety & Complianc | food-boxes links: 1 | len: 15601
+  [poster-printing-guide] Poster Printing Size Guide: Paper & Finishes | ZprintPro | food-boxes links: 0 | len: 11782
+  [?] ? | food-boxes links: 1 | len: 14264
+  [?] Pet Food Brand Sticker Printing Guide: Waterproof, Food-Safe | food-boxes links: 0 | len: 5996
+  [?] ? | food-boxes links: 0 | len: 12335
+  [?] ? | food-boxes links: 0 | len: 13050
+  [pharmaceutical-label-printing-guide] Pharmaceutical Label Printing Guide: GMP-Grade, FDA/EMA Comp | food-boxes links: 0 | len: 6890
+  [?] Cosmetics Packaging Guide: Materials & Sizes | ZprintPro | food-boxes links: 0 | len: 13414
+  [?] Tea & Beverage Gift Box Printing Guide: Loose Leaf, Bubble T | food-boxes links: 1 | len: 12757
+  [baby-product-label-sticker-printing-guide] Baby Product Sticker Printing Guide: FDA Food-Safe Labels fo | food-boxes links: 0 | len: 12634
+  [media-merchandise-box-printing-guide] Media Franchise Collector Box Printing Guide: Limited Editio | food-boxes links: 0 | len: 8831
+  [baby-food-packaging-box-printing-guide] Baby Food Packaging Box Printing Guide: FDA Food-Safe Boxes  | food-boxes links: 2 | len: 6079
+  [medical-device-packaging-box-guide] Medical Device Packaging Box Printing Guide: ISO 13485, Ster | food-boxes links: 1 | len: 6298
+  [sports-merchandise-gift-box-printing-guide] Sports Event Merchandise Gift Box Printing Guide: Team Memor | food-boxes links: 0 | len: 6374
+  [poster-printing-price-guide] A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk Disco | food-boxes links: 0 | len: 13770
+  [saddle-stitch-booklet-printing-guide] Saddle Stitch Booklet Printing Guide 2026: Pages, Paper, Pri | food-boxes links: 0 | len: 16389
+  [packaging-box-pricing-2026] Packaging Box Printing Price 2026: 500/1000/5000 pcs・Custom  | food-boxes links: 0 | len: 22027
+  [2027-monthly-calendar-printing-timetable] 2027 Calendar Printing Complete Guide: When to Print? MOQ? 4 | food-boxes links: 0 | len: 6240
+  [large-envelope-printing-c4-c5] Large Envelope Printing C4/C5 Specs，100 MOQ from $0.07 USD，S | food-boxes links: 0 | len: 12055
+  [rush-printing-delivery-guide] Rush Printing Delivery Guide: Where's Fastest? Cost? Order C | food-boxes links: 0 | len: 19564
+  [packaging-box-price-2026] Packaging Box Printing Price 2026: How Much for 500/1000/500 | food-boxes links: 0 | len: 22169
+  [sticker-material-pvc-vinyl-removable] Sticker Material: PVC, Clear, Removable, Foil | ZprintPro | food-boxes links: 0 | len: 22443
+  [certificate-printing-guide] Certificate Printing Guide 2026: Materials, Finishes, Sizes  | food-boxes links: 0 | len: 29712
+  [instant-printing-30s-ai-quote-flow] Instant Printing 30-Second AI Quote Flow: Confirm by Noon, S | food-boxes links: 0 | len: 5953
+  [foil-stamping-3-applications-2026] Foil Stamping Guide: Stickers & Invitations | ZprintPro | food-boxes links: 0 | len: 39485
+  [campus-education-printing-pillar-guide] Campus Education Printing: 5 Products 12 Uses | ZprintPro | food-boxes links: 0 | len: 30784
+  [kraft-paper-box-types-comparison-2026] 8 Packaging Box Types Compared: Kraft vs Corrugated vs Color | food-boxes links: 0 | len: 22413
+  [hong-kong-printing-cost-baseline-2026] Hong Kong Printing Cost Report 2026: 82 SKU | ZprintPro | food-boxes links: 1 | len: 24722
+  [print-specifications-reference-guide-2026] Print Specifications Complete Guide 2026: A1-A6 Sizes, CMYK  | food-boxes links: 0 | len: 29154
+  [school-exercise-book-printing-guide] School Exercise Book Printing Guide 2026: 4 Stocks 3 Binding | food-boxes links: 0 | len: 6296
+  [2027-calendar-printing-complete-guide] 2027 Calendar Printing Complete Guide: 8 Paper Stocks, 4 Fin | food-boxes links: 0 | len: 17391
+  [etsy-seller-printing-guide] Etsy Printing: 10-Piece Min, Free Proof | ZprintPro | food-boxes links: 0 | len: 11367
+  [roll-up-banner-printing-guide] Roll-Up Banner Printing: 10 MOQ From HK$85 | ZprintPro | food-boxes links: 0 | len: 15975
+=== ja : 102 posts (top-level type dict) ===
+  [company-intro] ZprintPro会社概要：専門設備とワンストップ印刷サービス | food-boxes links: 0 | len: 2485
+  [packaging-trends] 2024年パッケージデザイントレンド解析 | food-boxes links: 0 | len: 5277
+  [cmyk-guide] CMYK vs RGB：印刷カラーモード完全解説 | food-boxes links: 0 | len: 9062
+  [eco-printing] エコ印刷：持続可能な包装の未来 | food-boxes links: 0 | len: 3892
+  [food-packaging-printing-guide] 食品パッケージ印刷完全ガイド：素材、安全認証、設計 | food-boxes links: 1 | len: 10127
+  [poster-printing-guide] ポスター印刷ガイド：サイズ・用紙・加工 | ZprintPro | food-boxes links: 0 | len: 8291
+  [?] ? | food-boxes links: 1 | len: 8908
+  [?] ? | food-boxes links: 0 | len: 9245
+  [?] 化粧品パッケージ印刷ガイド：素材・構造 | ZprintPro | food-boxes links: 0 | len: 9339
+  [?] 茶・ドリンクギフトボックス印刷ガイド：リーフティー・タピオカ・ECブランド向け | ZprintPro | food-boxes links: 1 | len: 7777
+  [baby-product-label-sticker-printing-guide] ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro | food-boxes links: 0 | len: 7741
+  [media-merchandise-box-printing-guide] メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro | food-boxes links: 0 | len: 5677
+  [baby-food-packaging-box-printing-guide] 幼児食品パッケージ箱印刷ガイド：FDA食品衛生ボックス 日本向け | ZprintPro | food-boxes links: 2 | len: 4127
+  [medical-device-packaging-box-guide] 医療機器包装箱印刷ガイド：ISO 13485・滅菌バッグ カスタム 日本医療業界向け | ZprintPro | food-boxes links: 1 | len: 4137
+  [sports-merchandise-gift-box-printing-guide] スポーツイベント記念ギフトボックス印刷ガイド：チーム メモラビリア 米国スポーツ業界向け | ZprintPro | food-boxes links: 0 | len: 4397
+  [saddle-stitch-booklet-printing-guide] 中綴じ冊子印刷完全ガイド：ページ数・用紙・価格・低 MOQ | 10冊から対応 | food-boxes links: 0 | len: 8248
+  [packaging-box-pricing-2026] パッケージ印刷価格 2026：500/1000/5000 個・ギフトボックス | ZprintPro | food-boxes links: 0 | len: 16495
+  [2027-monthly-calendar-printing-timetable] 2027年カレンダー印刷攻略：いつ注文？最小ロットは？4 種用紙比較 | ZprintPro | food-boxes links: 0 | len: 5134
+  [rush-printing-delivery-guide] 当日急行印刷攻略：どこが最速？料金？何時締切？ | ZprintPro | food-boxes links: 0 | len: 10055
+  [packaging-box-price-2026] パッケージ箱印刷価格 2026：500/1000/5000 個でいくら？ | ZprintPro | food-boxes links: 0 | len: 12447
+  [sticker-material-pvc-vinyl-removable] 防水ステッカー材質ガイド: PVC / 透明 / 箔押し | ZprintPro | food-boxes links: 0 | len: 15898
+  [instant-printing-30s-ai-quote-flow] 即日印刷 30秒AI見積もりフロー: 正午までに確認、午後に出荷 | ZprintPro | food-boxes links: 0 | len: 3435
+  [foil-stamping-3-applications-2026] 箔押し印刷ガイド 2026: ステッカー / 招待状 | ZprintPro | food-boxes links: 0 | len: 28266
+  [campus-education-printing-pillar-guide] キャンパス教育印刷: 5 用品 × 12 シーン | ZprintPro | food-boxes links: 0 | len: 20869
+  [kraft-paper-box-types-comparison-2026] 8 種パッケージボックス徹底比較: クラフト vs ダンボール vs キャラメル vs ギフト vs エアクラフト vs | food-boxes links: 0 | len: 15405
+  [hong-kong-printing-cost-baseline-2026] 香港印刷コスト 2026: 82 SKU 価格データ | ZprintPro | food-boxes links: 1 | len: 16616
+  [print-specifications-reference-guide-2026] 印刷スペック完全ガイド 2026: A1-A6 サイズ・CMYK 色モード・6 大印刷モード 一覧 | ZprintPr | food-boxes links: 0 | len: 21655
+  [school-exercise-book-printing-guide] 練習帳印刷ガイド 2026: 4 用紙 3 製本 100 部から | ZprintPro | food-boxes links: 0 | len: 4213
+  [2027-calendar-printing-complete-guide] 2027年カレンダー印刷 完全ガイド：8 種用紙・4 種加工・繁忙期は4〜6週間前の発注 | ZprintPro | food-boxes links: 0 | len: 10890
+  [roll-up-banner-printing-guide] ロールアップバナー印刷 10セットから 屋外対応 | ZprintPro | food-boxes links: 0 | len: 9673

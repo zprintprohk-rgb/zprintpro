@@ -1,0 +1,2056 @@
+{
+ "version": 1,
+ "updated": "2026-09-16",
+ "note": "种子词库（将由 subagent_07 调研结果扩充合并）。type: category|intent|tender|exclude|geo",
+ "terms": [
+  {
+   "lang": "en",
+   "term": "book printing",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "book printer",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "book manufacturer",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "textbook printing",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "en",
+   "term": "hardcover books",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "paperback books",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "bookbinding",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "children's books",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "coloring books",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "yearbook printing",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "packaging boxes",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "custom boxes",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "folding cartons",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "corrugated boxes",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "gift boxes",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "cosmetic packaging",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "mailer boxes",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "printed boxes",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "food packaging",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "paper bags",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "labels printing",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "exercise books",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "en",
+   "term": "notebooks",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "en",
+   "term": "copybooks",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "en",
+   "term": "notepads",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "en",
+   "term": "stationery",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "en",
+   "term": "school books",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "en",
+   "term": "workbooks",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "en",
+   "term": "exam papers",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "en",
+   "term": "educational books",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "en",
+   "term": "offset printing",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "digital printing",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "printing services",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "printing company",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "print supplier",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "commercial printing",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "looking for",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "supplier wanted",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "request for quotation",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "need printing",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "seek supplier",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "quotation request",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "procurement of",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "supply of",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "we require",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "tender for",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "tender",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "bid",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "rfq",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "rfp",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "expression of interest",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "sealed bid",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "contract notice",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "framework agreement",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "invitation to tender",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "submission deadline",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "jobs",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "hiring",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "salary",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "recruitment",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "tutorial",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "course",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "second hand",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "free download",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "mockup",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "template",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "clipart",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "freelance job",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "imprenta",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "impresión de libros",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "es",
+   "term": "libros de texto",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "es",
+   "term": "cuadernos",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "es",
+   "term": "libretas",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "es",
+   "term": "papelería",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "es",
+   "term": "cajas de cartón",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "es",
+   "term": "cajas personalizadas",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "es",
+   "term": "empaques",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "es",
+   "term": "embalaje",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "es",
+   "term": "etiquetas",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "es",
+   "term": "licitación",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "cotización",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "concurso público",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "proveedor",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "suministro de",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "se solicita",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "presupuesto",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "empleo",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "imprimerie",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "impression de livres",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "fr",
+   "term": "manuels scolaires",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "fr",
+   "term": "livres scolaires",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "fr",
+   "term": "cahiers",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "fr",
+   "term": "papeterie",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "fr",
+   "term": "boîtes en carton",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "fr",
+   "term": "emballage",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "fr",
+   "term": "étiquettes",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "fr",
+   "term": "appel d'offres",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "marché public",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "devis",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "fournisseur",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "fourniture de",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "recrutement",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "de",
+   "term": "druckerei",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "de",
+   "term": "buchdruck",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "de",
+   "term": "schulbücher",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "de",
+   "term": "hefte",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "de",
+   "term": "schreibwaren",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "de",
+   "term": "kartons",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "de",
+   "term": "verpackung",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "de",
+   "term": "etiketten",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "de",
+   "term": "ausschreibung",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "de",
+   "term": "angebot",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "de",
+   "term": "lieferung von",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "ar",
+   "term": "مطبعة",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "ar",
+   "term": "طباعة الكتب",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "ar",
+   "term": "كتب مدرسية",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "ar",
+   "term": "دفاتر",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "ar",
+   "term": "قرطاسية",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "ar",
+   "term": "علب كرتون",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "ar",
+   "term": "تغليف",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "ar",
+   "term": "ملصقات",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "ar",
+   "term": "مناقصة",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "ar",
+   "term": "عرض سعر",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "ar",
+   "term": "توريد",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "ar",
+   "term": "وظائف",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "ru",
+   "term": "типография",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "ru",
+   "term": "печать книг",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "ru",
+   "term": "учебники",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "ru",
+   "term": "тетради",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "ru",
+   "term": "канцтовары",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "ru",
+   "term": "картонные коробки",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "ru",
+   "term": "упаковка",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "ru",
+   "term": "этикетки",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "ru",
+   "term": "тендер",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "ru",
+   "term": "закупка",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "ru",
+   "term": "коммерческое предложение",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "ru",
+   "term": "поставка",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "ru",
+   "term": "вакансия",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "pt",
+   "term": "gráfica",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "pt",
+   "term": "impressão de livros",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "pt",
+   "term": "livros didáticos",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "pt",
+   "term": "cadernos",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "pt",
+   "term": "papelaria",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "pt",
+   "term": "caixas de papelão",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "pt",
+   "term": "embalagens",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "pt",
+   "term": "etiquetas",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "pt",
+   "term": "licitação",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "pt",
+   "term": "pregão",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "pt",
+   "term": "orçamento",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "pt",
+   "term": "fornecedor",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "id",
+   "term": "percetakan",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "id",
+   "term": "cetak buku",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "id",
+   "term": "buku sekolah",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "id",
+   "term": "buku tulis",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "id",
+   "term": "kotak karton",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "id",
+   "term": "kemasan",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "id",
+   "term": "tender",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "id",
+   "term": "penawaran",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "id",
+   "term": "pengadaan",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "id",
+   "term": "lowongan",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "tr",
+   "term": "matbaa",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "tr",
+   "term": "kitap baskısı",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "tr",
+   "term": "ders kitapları",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "tr",
+   "term": "defter",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "tr",
+   "term": "karton kutu",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "tr",
+   "term": "ambalaj",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "tr",
+   "term": "ihale",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "tr",
+   "term": "teklif",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "tr",
+   "term": "tedarik",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "nhà in",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "in sách",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "vi",
+   "term": "sách giáo khoa",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "vi",
+   "term": "vở",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "vi",
+   "term": "hộp giấy",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "vi",
+   "term": "bao bì",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "vi",
+   "term": "đấu thầu",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "báo giá",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "tuyển dụng",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "prosecute",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "prosecution",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "indicted",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "fraud",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "corruption",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "bribery",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "scandal",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "lawsuit",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "truy tố",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "khởi tố",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "bị bắt",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "vụ án",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "hối lộ",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "corrupción",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "corruption",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "ru",
+   "term": "коррупция",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "ar",
+   "term": "فساد",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "scam",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "we manufacture",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "we supply",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "we are manufacturers",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "our factory",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "printing tender",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "printing contract",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "print procurement",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "supply and delivery",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "request for proposal",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "supply of books",
+   "type": "intent",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "supply of textbooks",
+   "type": "intent",
+   "cat": "school"
+  },
+  {
+   "lang": "en",
+   "term": "supply of exercise books",
+   "type": "intent",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "en",
+   "term": "book supplier",
+   "type": "intent",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "box manufacturer",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "packaging supplier",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "carton printing",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "en",
+   "term": "printed materials",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "publication printing",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "brochure printing",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "poster printing",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "calendar printing",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "envelope printing",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "diary printing",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "self-publishing",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "en",
+   "term": "GCC",
+   "type": "geo",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "MENA",
+   "type": "geo",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "LATAM",
+   "type": "geo",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "East Africa",
+   "type": "geo",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "Southeast Asia",
+   "type": "geo",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "impresión offset",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "impresión digital",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "trabajos de impresión",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "suministro de libros",
+   "type": "intent",
+   "cat": "books"
+  },
+  {
+   "lang": "es",
+   "term": "material didáctico",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "es",
+   "term": "útiles escolares",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "es",
+   "term": "papelería escolar",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "es",
+   "term": "proveedores de imprenta",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "solicitud de cotización",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "caja de cartón corrugado",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "es",
+   "term": "bolsas de papel",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "es",
+   "term": "catálogo impreso",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "imprimeur",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "impression numérique",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "travaux d'impression",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "fournitures scolaires",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "fr",
+   "term": "manuel scolaire",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "fr",
+   "term": "commande d'impression",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "demande de devis",
+   "type": "tender",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "boîtes en carton ondulé",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "fr",
+   "term": "sacs en papier",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "fr",
+   "term": "brochure",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "affiches",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "de",
+   "term": "druckauftrag",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "de",
+   "term": "angebot einholen",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "de",
+   "term": "schulhefte",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "de",
+   "term": "bücher drucken",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "de",
+   "term": "broschüren",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "de",
+   "term": "kalender",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "de",
+   "term": "verpackungen",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "de",
+   "term": "kartons",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "de",
+   "term": "lieferung von druckerzeugnissen",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "ar",
+   "term": "طباعة",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "ar",
+   "term": "طلب عرض سعر",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "ar",
+   "term": "توريد كتب",
+   "type": "intent",
+   "cat": "books"
+  },
+  {
+   "lang": "ar",
+   "term": "توريد دفاتر",
+   "type": "intent",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "ar",
+   "term": "مطبعة كتب",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "ar",
+   "term": "علب تغليف",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "ar",
+   "term": "كتب دراسية",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "ar",
+   "term": "دفتر مدرسي",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "ru",
+   "term": "заказ на печать",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "ru",
+   "term": "поставка учебников",
+   "type": "intent",
+   "cat": "school"
+  },
+  {
+   "lang": "ru",
+   "term": "печать бланков",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "ru",
+   "term": "блокноты",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "ru",
+   "term": "упаковочные материалы",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "ru",
+   "term": "каталог",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "pt",
+   "term": "impressão offset",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "pt",
+   "term": "material escolar",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "pt",
+   "term": "fornecimento de livros",
+   "type": "intent",
+   "cat": "books"
+  },
+  {
+   "lang": "pt",
+   "term": "cotação impressão",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "pt",
+   "term": "editora",
+   "type": "category",
+   "cat": "books"
+  },
+  {
+   "lang": "pt",
+   "term": "caixa de papelão ondulado",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "id",
+   "term": "buku pelajaran",
+   "type": "category",
+   "cat": "school"
+  },
+  {
+   "lang": "id",
+   "term": "jasa cetak",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "id",
+   "term": "permintaan penawaran",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "id",
+   "term": "pengadaan buku",
+   "type": "intent",
+   "cat": "books"
+  },
+  {
+   "lang": "id",
+   "term": "kardus",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "id",
+   "term": "label produk",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "tr",
+   "term": "baskı hizmeti",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "tr",
+   "term": "fiyat teklifi",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "tr",
+   "term": "okul defteri",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "tr",
+   "term": "kağıt kutu",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "tr",
+   "term": "kitap ihalesi",
+   "type": "tender",
+   "cat": "books"
+  },
+  {
+   "lang": "vi",
+   "term": "in ấn",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "vở học sinh",
+   "type": "category",
+   "cat": "exercise_books"
+  },
+  {
+   "lang": "vi",
+   "term": "hộp carton",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "vi",
+   "term": "nhãn mác",
+   "type": "category",
+   "cat": "packaging"
+  },
+  {
+   "lang": "vi",
+   "term": "dịch vụ in",
+   "type": "category",
+   "cat": "general"
+  },
+  {
+   "lang": "vi",
+   "term": "đặt in",
+   "type": "intent",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "used books",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "ebook",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "e-book",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "kindle",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "audiobook",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "es",
+   "term": "descargar gratis",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "fr",
+   "term": "téléchargement",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "ru",
+   "term": "скачать",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "en",
+   "term": "tender offer",
+   "type": "exclude",
+   "cat": "general"
+  },
+  {
+   "lang": "sw",
+   "term": "uchapishaji",
+   "type": "category",
+   "cat": "general",
+   "note": "printing/publishing（斯瓦希里）"
+  },
+  {
+   "lang": "sw",
+   "term": "vitabu",
+   "type": "category",
+   "cat": "books",
+   "note": "books"
+  },
+  {
+   "lang": "sw",
+   "term": "kitabu",
+   "type": "category",
+   "cat": "books",
+   "note": "book"
+  },
+  {
+   "lang": "sw",
+   "term": "daftari",
+   "type": "category",
+   "cat": "exercise_books",
+   "note": "notebook/exercise book"
+  },
+  {
+   "lang": "sw",
+   "term": "zabuni",
+   "type": "tender",
+   "cat": "general",
+   "note": "tender（招标）"
+  },
+  {
+   "lang": "sw",
+   "term": "karatasi",
+   "type": "category",
+   "cat": "general",
+   "note": "paper"
+  },
+  {
+   "lang": "bn",
+   "term": "মুদ্রণ",
+   "type": "category",
+   "cat": "general",
+   "note": "printing（孟加拉语）"
+  },
+  {
+   "lang": "bn",
+   "term": "ছাপাখানা",
+   "type": "category",
+   "cat": "general",
+   "note": "printing press"
+  },
+  {
+   "lang": "bn",
+   "term": "বই",
+   "type": "category",
+   "cat": "books",
+   "note": "book"
+  },
+  {
+   "lang": "bn",
+   "term": "পাঠ্যবই",
+   "type": "category",
+   "cat": "school",
+   "note": "textbook"
+  },
+  {
+   "lang": "bn",
+   "term": "খাতা",
+   "type": "category",
+   "cat": "exercise_books",
+   "note": "exercise book"
+  },
+  {
+   "lang": "bn",
+   "term": "দরপত্র",
+   "type": "tender",
+   "cat": "general",
+   "note": "tender"
+  },
+  {
+   "lang": "bn",
+   "term": "টেন্ডার",
+   "type": "tender",
+   "cat": "general",
+   "note": "tender（音译）"
+  },
+  {
+   "lang": "ur",
+   "term": "طباعت",
+   "type": "category",
+   "cat": "general",
+   "note": "printing（乌尔都语）"
+  },
+  {
+   "lang": "ur",
+   "term": "چھاپہ خانہ",
+   "type": "category",
+   "cat": "general",
+   "note": "printing house"
+  },
+  {
+   "lang": "ur",
+   "term": "کتاب",
+   "type": "category",
+   "cat": "books",
+   "note": "book"
+  },
+  {
+   "lang": "ur",
+   "term": "کاپی",
+   "type": "category",
+   "cat": "exercise_books",
+   "note": "copy/notebook"
+  },
+  {
+   "lang": "ur",
+   "term": "ٹینڈر",
+   "type": "tender",
+   "cat": "general",
+   "note": "tender"
+  },
+  {
+   "lang": "uz",
+   "term": "bosmaxona",
+   "type": "category",
+   "cat": "general",
+   "note": "printing house（乌兹别克语）"
+  },
+  {
+   "lang": "uz",
+   "term": "kitob",
+   "type": "category",
+   "cat": "books",
+   "note": "book"
+  },
+  {
+   "lang": "uz",
+   "term": "chop etish",
+   "type": "category",
+   "cat": "general",
+   "note": "printing/publishing"
+  },
+  {
+   "lang": "uz",
+   "term": "daftar",
+   "type": "category",
+   "cat": "exercise_books",
+   "note": "notebook"
+  },
+  {
+   "lang": "uz",
+   "term": "qog'oz",
+   "type": "category",
+   "cat": "general",
+   "note": "paper"
+  },
+  {
+   "lang": "uz",
+   "term": "tender",
+   "type": "tender",
+   "cat": "general",
+   "note": "tender"
+  },
+  {
+   "lang": "ne",
+   "term": "छापाखाना",
+   "type": "category",
+   "cat": "general",
+   "note": "printing press（尼泊尔语）"
+  },
+  {
+   "lang": "ne",
+   "term": "मुद्रण",
+   "type": "category",
+   "cat": "general",
+   "note": "printing"
+  },
+  {
+   "lang": "ne",
+   "term": "पुस्तक",
+   "type": "category",
+   "cat": "books",
+   "note": "book"
+  },
+  {
+   "lang": "ne",
+   "term": "कापी",
+   "type": "category",
+   "cat": "exercise_books",
+   "note": "notebook"
+  },
+  {
+   "lang": "ne",
+   "term": "बोलपत्र",
+   "type": "tender",
+   "cat": "general",
+   "note": "tender（bolpatra）"
+  },
+  {
+   "lang": "am",
+   "term": "ህትመት",
+   "type": "category",
+   "cat": "general",
+   "note": "printing（阿姆哈拉语）"
+  },
+  {
+   "lang": "am",
+   "term": "መጽሐፍ",
+   "type": "category",
+   "cat": "books",
+   "note": "book"
+  },
+  {
+   "lang": "am",
+   "term": "ደብተር",
+   "type": "category",
+   "cat": "exercise_books",
+   "note": "exercise book/notebook"
+  },
+  {
+   "lang": "am",
+   "term": "ጨረታ",
+   "type": "tender",
+   "cat": "general",
+   "note": "tender"
+  }
+ ]
+}

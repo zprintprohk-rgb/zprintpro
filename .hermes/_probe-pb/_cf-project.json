@@ -1,0 +1,28 @@
+{
+  "accountId": "32c174efaa22353f357c0fdff9d61b86",
+  "project": "aitoptools",
+  "deployment_configs": {
+    "preview": {
+      "env_vars": null,
+      "fail_open": true,
+      "always_use_latest_compatibility_date": false,
+      "compatibility_date": "2026-06-25",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": "standard"
+    },
+    "production": {
+      "env_vars": null,
+      "fail_open": true,
+      "always_use_latest_compatibility_date": false,
+      "compatibility_date": "2026-06-25",
+      "compatibility_flags": [],
+      "build_image_major_version": 3,
+      "usage_model": "standard"
+    }
+  },
+  "latest": {
+    "id": "204a1cc8-2736-42b5-b5e0-5d75d0a80ae8",
+    "environment": "production"
+  }
+}

@@ -1,0 +1,1413 @@
+{
+ "totals": {
+  "3mo_queries": 1000,
+  "3mo_imps": 20486,
+  "24h_queries": 143,
+  "24h_imps": 225
+ },
+ "matrix": [
+  {
+   "q": "海報印刷",
+   "cluster": "posters",
+   "imps3mo": 465,
+   "pos3mo": 24.2,
+   "imps24h": 4,
+   "pos24h": 11.5
+  },
+  {
+   "q": "貼紙印刷",
+   "cluster": "stickers",
+   "imps3mo": 449,
+   "pos3mo": 34.3,
+   "imps24h": 3,
+   "pos24h": 21.7
+  },
+  {
+   "q": "宣傳單張",
+   "cluster": "flyers",
+   "imps3mo": 417,
+   "pos3mo": 38.0,
+   "imps24h": 2,
+   "pos24h": 16.5
+  },
+  {
+   "q": "宣傳單張印刷",
+   "cluster": "flyers",
+   "imps3mo": 405,
+   "pos3mo": 32.9,
+   "imps24h": 2,
+   "pos24h": 8.0
+  },
+  {
+   "q": "月曆印刷",
+   "cluster": "calendar",
+   "imps3mo": 398,
+   "pos3mo": 27.6,
+   "imps24h": 5,
+   "pos24h": 4.6
+  },
+  {
+   "q": "印海報",
+   "cluster": "posters",
+   "imps3mo": 396,
+   "pos3mo": 25.8,
+   "imps24h": 6,
+   "pos24h": 8.2
+  },
+  {
+   "q": "食品包裝印刷",
+   "cluster": "packaging",
+   "imps3mo": 368,
+   "pos3mo": 25.4,
+   "imps24h": 2,
+   "pos24h": 24.0
+  },
+  {
+   "q": "紙袋印刷",
+   "cluster": "paperbag",
+   "imps3mo": 223,
+   "pos3mo": 18.5,
+   "imps24h": 2,
+   "pos24h": 3.0
+  },
+  {
+   "q": "poster 印刷",
+   "cluster": "posters",
+   "imps3mo": 200,
+   "pos3mo": 22.3,
+   "imps24h": 2,
+   "pos24h": 24.5
+  },
+  {
+   "q": "餐牌印刷",
+   "cluster": "menus",
+   "imps3mo": 199,
+   "pos3mo": 15.9,
+   "imps24h": 3,
+   "pos24h": 3.0
+  },
+  {
+   "q": "訂做紙袋",
+   "cluster": "paperbag",
+   "imps3mo": 195,
+   "pos3mo": 28.7,
+   "imps24h": 2,
+   "pos24h": 3.5
+  },
+  {
+   "q": "包裝盒訂製",
+   "cluster": "packaging",
+   "imps3mo": 192,
+   "pos3mo": 31.1,
+   "imps24h": 3,
+   "pos24h": 17.7
+  },
+  {
+   "q": "印刷紙袋",
+   "cluster": "paperbag",
+   "imps3mo": 191,
+   "pos3mo": 22.5,
+   "imps24h": 2,
+   "pos24h": 2.0
+  },
+  {
+   "q": "騎馬釘",
+   "cluster": "books",
+   "imps3mo": 190,
+   "pos3mo": 33.3,
+   "imps24h": 1,
+   "pos24h": 1.0
+  },
+  {
+   "q": "china catalog printing",
+   "cluster": "other",
+   "imps3mo": 187,
+   "pos3mo": 18.5,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "紙袋訂製",
+   "cluster": "paperbag",
+   "imps3mo": 186,
+   "pos3mo": 34.3,
+   "imps24h": 4,
+   "pos24h": 1.2
+  },
+  {
+   "q": "騎馬釘印刷",
+   "cluster": "books",
+   "imps3mo": 183,
+   "pos3mo": 29.7,
+   "imps24h": 2,
+   "pos24h": 2.0
+  },
+  {
+   "q": "印書",
+   "cluster": "books",
+   "imps3mo": 182,
+   "pos3mo": 33.0,
+   "imps24h": 1,
+   "pos24h": 32.0
+  },
+  {
+   "q": "海報與印刷",
+   "cluster": "posters",
+   "imps3mo": 182,
+   "pos3mo": 36.3,
+   "imps24h": 2,
+   "pos24h": 14.0
+  },
+  {
+   "q": "騎馬釘書刊",
+   "cluster": "books",
+   "imps3mo": 180,
+   "pos3mo": 43.3,
+   "imps24h": 1,
+   "pos24h": 35.0
+  },
+  {
+   "q": "包裝盒印刷",
+   "cluster": "packaging",
+   "imps3mo": 174,
+   "pos3mo": 39.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "コミケ 印刷",
+   "cluster": "other",
+   "imps3mo": 172,
+   "pos3mo": 26.6,
+   "imps24h": 8,
+   "pos24h": 14.4
+  },
+  {
+   "q": "透明貼",
+   "cluster": "other",
+   "imps3mo": 169,
+   "pos3mo": 32.3,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "紙盒訂製",
+   "cluster": "packaging",
+   "imps3mo": 169,
+   "pos3mo": 44.9,
+   "imps24h": 2,
+   "pos24h": 31.0
+  },
+  {
+   "q": "saddle stitch booklet",
+   "cluster": "books",
+   "imps3mo": 167,
+   "pos3mo": 75.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "月歷印刷",
+   "cluster": "other",
+   "imps3mo": 156,
+   "pos3mo": 26.3,
+   "imps24h": 3,
+   "pos24h": 2.0
+  },
+  {
+   "q": "戶外貼紙",
+   "cluster": "stickers",
+   "imps3mo": 153,
+   "pos3mo": 19.6,
+   "imps24h": 2,
+   "pos24h": 1.5
+  },
+  {
+   "q": "両面カラー印刷",
+   "cluster": "other",
+   "imps3mo": 148,
+   "pos3mo": 29.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "大信封",
+   "cluster": "other",
+   "imps3mo": 146,
+   "pos3mo": 3.1,
+   "imps24h": 1,
+   "pos24h": 2.0
+  },
+  {
+   "q": "食品包裝訂製",
+   "cluster": "other",
+   "imps3mo": 145,
+   "pos3mo": 18.2,
+   "imps24h": 2,
+   "pos24h": 4.5
+  },
+  {
+   "q": "利是封印刷",
+   "cluster": "redpacket",
+   "imps3mo": 141,
+   "pos3mo": 28.4,
+   "imps24h": 3,
+   "pos24h": 11.7
+  },
+  {
+   "q": "small batch label printing",
+   "cluster": "stickers",
+   "imps3mo": 140,
+   "pos3mo": 37.8,
+   "imps24h": 1,
+   "pos24h": 13.0
+  },
+  {
+   "q": "食品印刷",
+   "cluster": "other",
+   "imps3mo": 135,
+   "pos3mo": 29.0,
+   "imps24h": 1,
+   "pos24h": 21.0
+  },
+  {
+   "q": "車身廣告",
+   "cluster": "other",
+   "imps3mo": 132,
+   "pos3mo": 49.7,
+   "imps24h": 1,
+   "pos24h": 25.0
+  },
+  {
+   "q": "可移貼紙",
+   "cluster": "stickers",
+   "imps3mo": 132,
+   "pos3mo": 17.0,
+   "imps24h": 3,
+   "pos24h": 17.7
+  },
+  {
+   "q": "即日印刷",
+   "cluster": "sameday",
+   "imps3mo": 131,
+   "pos3mo": 11.6,
+   "imps24h": 1,
+   "pos24h": 10.0
+  },
+  {
+   "q": "small batch sticker printing",
+   "cluster": "stickers",
+   "imps3mo": 127,
+   "pos3mo": 9.0,
+   "imps24h": 1,
+   "pos24h": 4.0
+  },
+  {
+   "q": "paper bag print file requirements",
+   "cluster": "paperbag",
+   "imps3mo": 124,
+   "pos3mo": 15.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "印海報一張",
+   "cluster": "posters",
+   "imps3mo": 121,
+   "pos3mo": 43.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "貼紙訂製",
+   "cluster": "stickers",
+   "imps3mo": 120,
+   "pos3mo": 32.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "月曆訂製",
+   "cluster": "calendar",
+   "imps3mo": 117,
+   "pos3mo": 27.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "戶外橫額",
+   "cluster": "other",
+   "imps3mo": 117,
+   "pos3mo": 58.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "貼紙",
+   "cluster": "stickers",
+   "imps3mo": 116,
+   "pos3mo": 51.4,
+   "imps24h": 1,
+   "pos24h": 80.0
+  },
+  {
+   "q": "紙盒印刷",
+   "cluster": "packaging",
+   "imps3mo": 115,
+   "pos3mo": 37.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "包裝食品 裡印",
+   "cluster": "other",
+   "imps3mo": 110,
+   "pos3mo": 17.2,
+   "imps24h": 1,
+   "pos24h": 7.0
+  },
+  {
+   "q": "易拉架製作",
+   "cluster": "other",
+   "imps3mo": 109,
+   "pos3mo": 68.2,
+   "imps24h": 1,
+   "pos24h": 61.0
+  },
+  {
+   "q": "書刊印刷",
+   "cluster": "books",
+   "imps3mo": 104,
+   "pos3mo": 37.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "a6 尺寸",
+   "cluster": "other",
+   "imps3mo": 99,
+   "pos3mo": 8.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "クラフト紙 パッケージ印刷",
+   "cluster": "other",
+   "imps3mo": 99,
+   "pos3mo": 26.2,
+   "imps24h": 1,
+   "pos24h": 7.0
+  },
+  {
+   "q": "クラフト紙 パッケージ 印刷",
+   "cluster": "other",
+   "imps3mo": 98,
+   "pos3mo": 27.8,
+   "imps24h": 2,
+   "pos24h": 9.5
+  },
+  {
+   "q": "saddle stitch booklet printing",
+   "cluster": "books",
+   "imps3mo": 97,
+   "pos3mo": 4.7,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "small batch stickers",
+   "cluster": "stickers",
+   "imps3mo": 97,
+   "pos3mo": 6.1,
+   "imps24h": 5,
+   "pos24h": 4.2
+  },
+  {
+   "q": "school exercise book printing",
+   "cluster": "other",
+   "imps3mo": 95,
+   "pos3mo": 22.6,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "a2 poster",
+   "cluster": "posters",
+   "imps3mo": 93,
+   "pos3mo": 33.5,
+   "imps24h": 1,
+   "pos24h": 5.0
+  },
+  {
+   "q": "saddle stitch booklets",
+   "cluster": "books",
+   "imps3mo": 91,
+   "pos3mo": 82.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "貼紙設計",
+   "cluster": "stickers",
+   "imps3mo": 88,
+   "pos3mo": 16.1,
+   "imps24h": 1,
+   "pos24h": 30.0
+  },
+  {
+   "q": "膠裝書印刷",
+   "cluster": "other",
+   "imps3mo": 88,
+   "pos3mo": 33.7,
+   "imps24h": 1,
+   "pos24h": 24.0
+  },
+  {
+   "q": "訂制月曆",
+   "cluster": "calendar",
+   "imps3mo": 82,
+   "pos3mo": 26.1,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "膠裝書",
+   "cluster": "other",
+   "imps3mo": 81,
+   "pos3mo": 38.7,
+   "imps24h": 1,
+   "pos24h": 30.0
+  },
+  {
+   "q": "doujinshi printing",
+   "cluster": "other",
+   "imps3mo": 80,
+   "pos3mo": 18.4,
+   "imps24h": 3,
+   "pos24h": 9.7
+  },
+  {
+   "q": "pôster a2",
+   "cluster": "other",
+   "imps3mo": 79,
+   "pos3mo": 41.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "catalog printing",
+   "cluster": "other",
+   "imps3mo": 78,
+   "pos3mo": 42.3,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "即日急件",
+   "cluster": "sameday",
+   "imps3mo": 76,
+   "pos3mo": 16.9,
+   "imps24h": 3,
+   "pos24h": 10.0
+  },
+  {
+   "q": "教科書 印刷",
+   "cluster": "other",
+   "imps3mo": 76,
+   "pos3mo": 39.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "印刷 カラー モード",
+   "cluster": "other",
+   "imps3mo": 76,
+   "pos3mo": 74.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "school exercise book print",
+   "cluster": "other",
+   "imps3mo": 75,
+   "pos3mo": 26.4,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "摺頁印刷",
+   "cluster": "other",
+   "imps3mo": 75,
+   "pos3mo": 37.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "custom foil stickers",
+   "cluster": "stickers",
+   "imps3mo": 74,
+   "pos3mo": 45.4,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "香港印刷公司",
+   "cluster": "other",
+   "imps3mo": 73,
+   "pos3mo": 23.4,
+   "imps24h": 1,
+   "pos24h": 19.0
+  },
+  {
+   "q": "catalog printing china",
+   "cluster": "other",
+   "imps3mo": 72,
+   "pos3mo": 21.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "paper bag gsm",
+   "cluster": "paperbag",
+   "imps3mo": 70,
+   "pos3mo": 12.3,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "小冊子印刷",
+   "cluster": "books",
+   "imps3mo": 69,
+   "pos3mo": 10.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "利是封訂製",
+   "cluster": "redpacket",
+   "imps3mo": 67,
+   "pos3mo": 32.9,
+   "imps24h": 1,
+   "pos24h": 3.0
+  },
+  {
+   "q": "訂製利是封",
+   "cluster": "redpacket",
+   "imps3mo": 67,
+   "pos3mo": 29.6,
+   "imps24h": 3,
+   "pos24h": 5.7
+  },
+  {
+   "q": "亞加力匙扣訂製",
+   "cluster": "other",
+   "imps3mo": 66,
+   "pos3mo": 25.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "poster print a2",
+   "cluster": "posters",
+   "imps3mo": 65,
+   "pos3mo": 61.5,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "環保材質貼紙",
+   "cluster": "stickers",
+   "imps3mo": 61,
+   "pos3mo": 15.3,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "small quantity label printing",
+   "cluster": "stickers",
+   "imps3mo": 60,
+   "pos3mo": 67.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "膠裝書價格",
+   "cluster": "other",
+   "imps3mo": 59,
+   "pos3mo": 30.9,
+   "imps24h": 1,
+   "pos24h": 15.0
+  },
+  {
+   "q": "教材 印刷製本",
+   "cluster": "books",
+   "imps3mo": 59,
+   "pos3mo": 48.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "膠片餐牌",
+   "cluster": "menus",
+   "imps3mo": 58,
+   "pos3mo": 19.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "環保印刷",
+   "cluster": "other",
+   "imps3mo": 56,
+   "pos3mo": 22.4,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "禮盒訂製",
+   "cluster": "packaging",
+   "imps3mo": 56,
+   "pos3mo": 40.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "咭片",
+   "cluster": "other",
+   "imps3mo": 56,
+   "pos3mo": 41.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "邊度有紙袋買",
+   "cluster": "paperbag",
+   "imps3mo": 55,
+   "pos3mo": 7.1,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "戶外海報",
+   "cluster": "posters",
+   "imps3mo": 55,
+   "pos3mo": 19.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "膠卡餐牌",
+   "cluster": "menus",
+   "imps3mo": 55,
+   "pos3mo": 22.4,
+   "imps24h": 1,
+   "pos24h": 13.0
+  },
+  {
+   "q": "紙袋",
+   "cluster": "paperbag",
+   "imps3mo": 55,
+   "pos3mo": 32.5,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "wholesale catalog printing",
+   "cluster": "other",
+   "imps3mo": 55,
+   "pos3mo": 41.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "校 簿 印刷",
+   "cluster": "other",
+   "imps3mo": 54,
+   "pos3mo": 24.2,
+   "imps24h": 2,
+   "pos24h": 16.0
+  },
+  {
+   "q": "calendar sizes",
+   "cluster": "calendar",
+   "imps3mo": 53,
+   "pos3mo": 43.9,
+   "imps24h": 3,
+   "pos24h": 47.0
+  },
+  {
+   "q": "防水貼紙",
+   "cluster": "stickers",
+   "imps3mo": 52,
+   "pos3mo": 17.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "透明貼紙",
+   "cluster": "stickers",
+   "imps3mo": 52,
+   "pos3mo": 25.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "印咭片",
+   "cluster": "other",
+   "imps3mo": 51,
+   "pos3mo": 33.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "咭片印刷",
+   "cluster": "other",
+   "imps3mo": 51,
+   "pos3mo": 36.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "what gsm for paper bags",
+   "cluster": "paperbag",
+   "imps3mo": 50,
+   "pos3mo": 13.6,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "海報列印",
+   "cluster": "posters",
+   "imps3mo": 50,
+   "pos3mo": 52.7,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "pvc シール",
+   "cluster": "stickers",
+   "imps3mo": 49,
+   "pos3mo": 20.1,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "small batch custom stickers",
+   "cluster": "stickers",
+   "imps3mo": 48,
+   "pos3mo": 12.2,
+   "imps24h": 1,
+   "pos24h": 4.0
+  },
+  {
+   "q": "custom printed exercise books",
+   "cluster": "other",
+   "imps3mo": 48,
+   "pos3mo": 38.4,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "印刷 カラー cmyk",
+   "cluster": "other",
+   "imps3mo": 48,
+   "pos3mo": 95.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "catalogue printing china",
+   "cluster": "other",
+   "imps3mo": 46,
+   "pos3mo": 20.8,
+   "imps24h": 1,
+   "pos24h": 17.0
+  },
+  {
+   "q": "bulk catalog printing",
+   "cluster": "other",
+   "imps3mo": 45,
+   "pos3mo": 34.6,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "易拉架印刷",
+   "cluster": "other",
+   "imps3mo": 44,
+   "pos3mo": 60.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "pvc menu",
+   "cluster": "menus",
+   "imps3mo": 43,
+   "pos3mo": 18.4,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "學校印刷",
+   "cluster": "other",
+   "imps3mo": 43,
+   "pos3mo": 41.5,
+   "imps24h": 1,
+   "pos24h": 49.0
+  },
+  {
+   "q": "a3海報印刷",
+   "cluster": "posters",
+   "imps3mo": 42,
+   "pos3mo": 31.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "禮盒訂做",
+   "cluster": "packaging",
+   "imps3mo": 42,
+   "pos3mo": 31.9,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "智印港",
+   "cluster": "other",
+   "imps3mo": 41,
+   "pos3mo": 1.4,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "公司信封",
+   "cluster": "other",
+   "imps3mo": 41,
+   "pos3mo": 1.0,
+   "imps24h": 1,
+   "pos24h": 1.0
+  },
+  {
+   "q": "a5 flyer size",
+   "cluster": "flyers",
+   "imps3mo": 41,
+   "pos3mo": 36.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "doujin full color",
+   "cluster": "other",
+   "imps3mo": 41,
+   "pos3mo": 41.6,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "條碼紙",
+   "cluster": "other",
+   "imps3mo": 40,
+   "pos3mo": 43.3,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "z print",
+   "cluster": "other",
+   "imps3mo": 39,
+   "pos3mo": 13.7,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "易拉寶",
+   "cluster": "other",
+   "imps3mo": 38,
+   "pos3mo": 9.7,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "exercise book printing business",
+   "cluster": "other",
+   "imps3mo": 37,
+   "pos3mo": 14.0,
+   "imps24h": 1,
+   "pos24h": 11.0
+  },
+  {
+   "q": "香港印刷",
+   "cluster": "other",
+   "imps3mo": 37,
+   "pos3mo": 19.8,
+   "imps24h": 1,
+   "pos24h": 27.0
+  },
+  {
+   "q": "standard calendar size",
+   "cluster": "calendar",
+   "imps3mo": 37,
+   "pos3mo": 37.9,
+   "imps24h": 1,
+   "pos24h": 44.0
+  },
+  {
+   "q": "a2 クリアポスター 印刷",
+   "cluster": "posters",
+   "imps3mo": 37,
+   "pos3mo": 42.3,
+   "imps24h": 1,
+   "pos24h": 39.0
+  },
+  {
+   "q": "a1 poster print cost",
+   "cluster": "posters",
+   "imps3mo": 37,
+   "pos3mo": 58.3,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "fluorescent stickers",
+   "cluster": "stickers",
+   "imps3mo": 36,
+   "pos3mo": 10.7,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "特急快印",
+   "cluster": "sameday",
+   "imps3mo": 36,
+   "pos3mo": 31.3,
+   "imps24h": 1,
+   "pos24h": 9.0
+  },
+  {
+   "q": "膠裝書刊",
+   "cluster": "books",
+   "imps3mo": 36,
+   "pos3mo": 45.6,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "pvc貼紙",
+   "cluster": "stickers",
+   "imps3mo": 35,
+   "pos3mo": 7.5,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "海報大小",
+   "cluster": "posters",
+   "imps3mo": 35,
+   "pos3mo": 42.1,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "信封",
+   "cluster": "other",
+   "imps3mo": 35,
+   "pos3mo": 56.6,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "a1 poster print",
+   "cluster": "posters",
+   "imps3mo": 35,
+   "pos3mo": 62.1,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "印月曆",
+   "cluster": "calendar",
+   "imps3mo": 34,
+   "pos3mo": 15.6,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "摺頁傳單",
+   "cluster": "flyers",
+   "imps3mo": 34,
+   "pos3mo": 25.9,
+   "imps24h": 1,
+   "pos24h": 36.0
+  },
+  {
+   "q": "adhesive banners",
+   "cluster": "other",
+   "imps3mo": 34,
+   "pos3mo": 30.4,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "food grade boxes supplier",
+   "cluster": "packaging",
+   "imps3mo": 34,
+   "pos3mo": 65.7,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "易拉架",
+   "cluster": "other",
+   "imps3mo": 34,
+   "pos3mo": 70.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "訂 做 紙袋",
+   "cluster": "paperbag",
+   "imps3mo": 33,
+   "pos3mo": 27.7,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "カタログ 印刷",
+   "cluster": "other",
+   "imps3mo": 33,
+   "pos3mo": 44.6,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "印刷公司",
+   "cluster": "other",
+   "imps3mo": 32,
+   "pos3mo": 35.2,
+   "imps24h": 1,
+   "pos24h": 41.0
+  },
+  {
+   "q": "座檯月曆",
+   "cluster": "calendar",
+   "imps3mo": 32,
+   "pos3mo": 37.6,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "教材 テキスト印刷",
+   "cluster": "other",
+   "imps3mo": 32,
+   "pos3mo": 39.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "教材 印刷 製本",
+   "cluster": "books",
+   "imps3mo": 32,
+   "pos3mo": 48.4,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "zprint",
+   "cluster": "other",
+   "imps3mo": 31,
+   "pos3mo": 13.7,
+   "imps24h": 3,
+   "pos24h": 11.3
+  },
+  {
+   "q": "security sticker printing",
+   "cluster": "stickers",
+   "imps3mo": 31,
+   "pos3mo": 27.5,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "double sided flyer printing",
+   "cluster": "flyers",
+   "imps3mo": 31,
+   "pos3mo": 37.8,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "印刷 用 cmyk",
+   "cluster": "other",
+   "imps3mo": 31,
+   "pos3mo": 91.2,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "大紙袋",
+   "cluster": "paperbag",
+   "imps3mo": 30,
+   "pos3mo": 7.1,
+   "imps24h": 1,
+   "pos24h": 1.0
+  },
+  {
+   "q": "書刊",
+   "cluster": "books",
+   "imps3mo": 30,
+   "pos3mo": 52.0,
+   "imps24h": 0,
+   "pos24h": null
+  },
+  {
+   "q": "a1 poster printing prices",
+   "cluster": "posters",
+   "imps3mo": 30,
+   "pos3mo": 63.5,
+   "imps24h": 0,
+   "pos24h": null
+  }
+ ],
+ "top24h": [
+  {
+   "q": "コミケ 印刷",
+   "imps": 8,
+   "pos": 14.4,
+   "cluster": "other"
+  },
+  {
+   "q": "印海報",
+   "imps": 6,
+   "pos": 8.2,
+   "cluster": "posters"
+  },
+  {
+   "q": "small batch stickers",
+   "imps": 5,
+   "pos": 4.2,
+   "cluster": "stickers"
+  },
+  {
+   "q": "月曆印刷",
+   "imps": 5,
+   "pos": 4.6,
+   "cluster": "calendar"
+  },
+  {
+   "q": "紙袋訂製",
+   "imps": 4,
+   "pos": 1.2,
+   "cluster": "paperbag"
+  },
+  {
+   "q": "海報印刷",
+   "imps": 4,
+   "pos": 11.5,
+   "cluster": "posters"
+  },
+  {
+   "q": "large envelopes",
+   "imps": 4,
+   "pos": 13.5,
+   "cluster": "other"
+  },
+  {
+   "q": "calendar size",
+   "imps": 4,
+   "pos": 61.2,
+   "cluster": "calendar"
+  },
+  {
+   "q": "月歷印刷",
+   "imps": 3,
+   "pos": 2.0,
+   "cluster": "other"
+  },
+  {
+   "q": "evaluate the printing services company moo on vinyl banners",
+   "imps": 3,
+   "pos": 2.3,
+   "cluster": "other"
+  },
+  {
+   "q": "餐牌印刷",
+   "imps": 3,
+   "pos": 3.0,
+   "cluster": "menus"
+  },
+  {
+   "q": "訂製利是封",
+   "imps": 3,
+   "pos": 5.7,
+   "cluster": "redpacket"
+  },
+  {
+   "q": "ラミネート メニュー表 制作",
+   "imps": 3,
+   "pos": 7.7,
+   "cluster": "menus"
+  },
+  {
+   "q": "doujinshi printing",
+   "imps": 3,
+   "pos": 9.7,
+   "cluster": "other"
+  },
+  {
+   "q": "即日急件",
+   "imps": 3,
+   "pos": 10.0,
+   "cluster": "sameday"
+  },
+  {
+   "q": "zprint",
+   "imps": 3,
+   "pos": 11.3,
+   "cluster": "other"
+  },
+  {
+   "q": "利是封印刷",
+   "imps": 3,
+   "pos": 11.7,
+   "cluster": "redpacket"
+  },
+  {
+   "q": "包裝盒訂製",
+   "imps": 3,
+   "pos": 17.7,
+   "cluster": "packaging"
+  },
+  {
+   "q": "可移貼紙",
+   "imps": 3,
+   "pos": 17.7,
+   "cluster": "stickers"
+  },
+  {
+   "q": "貼紙印刷",
+   "imps": 3,
+   "pos": 21.7,
+   "cluster": "stickers"
+  },
+  {
+   "q": "calendar sizes",
+   "imps": 3,
+   "pos": 47.0,
+   "cluster": "calendar"
+  },
+  {
+   "q": "戶外貼紙",
+   "imps": 2,
+   "pos": 1.5,
+   "cluster": "stickers"
+  },
+  {
+   "q": "印刷紙袋",
+   "imps": 2,
+   "pos": 2.0,
+   "cluster": "paperbag"
+  },
+  {
+   "q": "騎馬釘印刷",
+   "imps": 2,
+   "pos": 2.0,
+   "cluster": "books"
+  },
+  {
+   "q": "紙袋印刷",
+   "imps": 2,
+   "pos": 3.0,
+   "cluster": "paperbag"
+  },
+  {
+   "q": "訂做紙袋",
+   "imps": 2,
+   "pos": 3.5,
+   "cluster": "paperbag"
+  },
+  {
+   "q": "食品包裝訂製",
+   "imps": 2,
+   "pos": 4.5,
+   "cluster": "other"
+  },
+  {
+   "q": "a2 印刷 即日",
+   "imps": 2,
+   "pos": 6.5,
+   "cluster": "sameday"
+  },
+  {
+   "q": "型抜きステッカー",
+   "imps": 2,
+   "pos": 6.5,
+   "cluster": "stickers"
+  },
+  {
+   "q": "燙金貼紙",
+   "imps": 2,
+   "pos": 6.5,
+   "cluster": "stickers"
+  },
+  {
+   "q": "ラミネート メニュー表 デザイン",
+   "imps": 2,
+   "pos": 7.0,
+   "cluster": "menus"
+  },
+  {
+   "q": "喜帖印刷",
+   "imps": 2,
+   "pos": 8.0,
+   "cluster": "other"
+  },
+  {
+   "q": "宣傳單張印刷",
+   "imps": 2,
+   "pos": 8.0,
+   "cluster": "flyers"
+  },
+  {
+   "q": "クラフト紙 パッケージ 印刷",
+   "imps": 2,
+   "pos": 9.5,
+   "cluster": "other"
+  },
+  {
+   "q": "ポチ袋 オリジナル 小ロット",
+   "imps": 2,
+   "pos": 10.0,
+   "cluster": "redpacket"
+  },
+  {
+   "q": "海報尺寸",
+   "imps": 2,
+   "pos": 10.5,
+   "cluster": "posters"
+  },
+  {
+   "q": "海報與印刷",
+   "imps": 2,
+   "pos": 14.0,
+   "cluster": "posters"
+  },
+  {
+   "q": "校 簿 印刷",
+   "imps": 2,
+   "pos": 16.0,
+   "cluster": "other"
+  },
+  {
+   "q": "next day delivery flyers",
+   "imps": 2,
+   "pos": 16.5,
+   "cluster": "flyers"
+  },
+  {
+   "q": "宣傳單張",
+   "imps": 2,
+   "pos": 16.5,
+   "cluster": "flyers"
+  }
+ ],
+ "generated": "2026-09-30 ~02:30"
+}

@@ -1,0 +1,164 @@
+{
+  "report_date": "2026-08-05",
+  "gsc_window": "2026-07-28 to 2026-08-04 (7 days)",
+  "gsc_total_imps": 1301,
+  "gsc_total_clicks": 3,
+  "gsc_total_rows": 390,
+  "gsc_28_baseline_matched": 19,
+  "gsc_28_baseline_not_matched": 9,
+  "gsc_zhiyin_brand_row": {
+    "热门查询": "智印港",
+    "点击次数": "1",
+    "展示": "1",
+    "点击率(%)": "100.00",
+    "排名": "1.00"
+  },
+  "gsc_high_imps_zero_click_top25": [
+    {
+      "q": "貼紙印刷",
+      "imps": 32,
+      "pos": 41.94
+    },
+    {
+      "q": "月曆印刷",
+      "imps": 31,
+      "pos": 23.61
+    },
+    {
+      "q": "即日印刷",
+      "imps": 28,
+      "pos": 15.25
+    },
+    {
+      "q": "宣傳單張",
+      "imps": 28,
+      "pos": 39.93
+    },
+    {
+      "q": "両面カラー印刷",
+      "imps": 27,
+      "pos": 22.19
+    },
+    {
+      "q": "宣傳單張印刷",
+      "imps": 25,
+      "pos": 35.32
+    },
+    {
+      "q": "海報印刷",
+      "imps": 23,
+      "pos": 29.35
+    },
+    {
+      "q": "saddle stitch booklet",
+      "imps": 18,
+      "pos": 78.17
+    },
+    {
+      "q": "印海報",
+      "imps": 18,
+      "pos": 36.78
+    },
+    {
+      "q": "a2 prints",
+      "imps": 15,
+      "pos": 61.0
+    },
+    {
+      "q": "印書",
+      "imps": 15,
+      "pos": 37.07
+    },
+    {
+      "q": "包裝盒訂製",
+      "imps": 14,
+      "pos": 35.36
+    },
+    {
+      "q": "貼紙",
+      "imps": 14,
+      "pos": 58.21
+    },
+    {
+      "q": "餐牌印刷",
+      "imps": 14,
+      "pos": 17.93
+    },
+    {
+      "q": "騎馬釘書刊",
+      "imps": 14,
+      "pos": 54.71
+    },
+    {
+      "q": "small quantity label printing",
+      "imps": 13,
+      "pos": 78.92
+    },
+    {
+      "q": "印刷 カラー cmyk",
+      "imps": 13,
+      "pos": 95.85
+    },
+    {
+      "q": "印咭片",
+      "imps": 13,
+      "pos": 35.0
+    },
+    {
+      "q": "戶外橫額",
+      "imps": 13,
+      "pos": 60.85
+    },
+    {
+      "q": "教材 印刷製本",
+      "imps": 13,
+      "pos": 53.31
+    },
+    {
+      "q": "透明貼",
+      "imps": 13,
+      "pos": 45.31
+    },
+    {
+      "q": "印刷 カラー モード",
+      "imps": 12,
+      "pos": 75.58
+    },
+    {
+      "q": "咭片",
+      "imps": 12,
+      "pos": 44.25
+    },
+    {
+      "q": "紙盒訂製",
+      "imps": 12,
+      "pos": 51.0
+    },
+    {
+      "q": "騎馬釘",
+      "imps": 12,
+      "pos": 43.75
+    }
+  ],
+  "matrix_total_queue": 35,
+  "matrix_completed": 13,
+  "matrix_pending": 22,
+  "matrix_campus_pending": [
+    {
+      "id": "Q-008",
+      "slug": "graduation-yearbook-printing-guide",
+      "category": "educational",
+      "priority": "P1"
+    }
+  ],
+  "matrix_campus_completed": [],
+  "matrix_q005_status": "pending",
+  "matrix_q005_slug": "cross-border-ecommerce-shipping-box-guide",
+  "matrix_covered_count": 49,
+  "matrix_v7_sku_count_field": 54,
+  "matrix_v7_pdp_count_field": 13,
+  "matrix_v7_cron_sessions_count_field": 11,
+  "matrix_v7_skip_log_count_field": 2,
+  "matrix_k3_section6_skip_count_field": 28,
+  "matrix_last_updated": "2026-08-01T10:35:00+08:00"
+}

@@ -1,0 +1,18 @@
+fix(gate): pre-commit 门禁装到 core.hooksPath (.githooks) + setup 脚本按 hooksPath 安装 + 端到端集成测试
+
+事故 (2026-09-13 发现): 8/26 为 submodule guard 设了 `git config core.hooksPath .githooks`,
+而 canonical hook 一直装在 .git/hooks/ -> **pre-commit 门禁整条静默失效 (8/26 ~ 9/13)**:
+encoding / 简体字 / blog-data JSON / 反审门童 v1 / DoD / 本轮新增的品牌全量基线 全部没跑。
+
+取证: `git config --get core.hooksPath` = .githooks; `.githooks/` 只有 pre-push;
+      端到端测试: 注入双品牌后 `git commit` **成功** (exit 0) -> 证实 hook 未运行。
+
+修法:
+1. `.githooks/pre-commit` (新, 受版本控制) = scripts/canonical/pre-commit; 同时同步 .git/hooks/ 兜底
+2. `scripts/setup-hooks.sh`: 先 `git config --get core.hooksPath` 再决定安装路径 + 兜底副本 +
+   验证步骤改为「必须两条」(空 commit 通过 + 注入双品牌必须被拦)
+3. AGENTS.md §12: 明确 hook 生效路径 = core.hooksPath 目录, 并写入「端到端才算验证」口径
+4. `.hermes/logs/tool-lessons-2026-09-13.md` 教训 9 (最严重): 只测脚本负向用例 ≠ 测通门禁
+
+验证: 端到端集成测试 PASS — 注入「智印港 ZprintPro」的临时文件 commit 被门童 #3 拦下 (exit 1),
+      清理后工作树干净。脚本: .hermes/selftest-hook-integration.cjs

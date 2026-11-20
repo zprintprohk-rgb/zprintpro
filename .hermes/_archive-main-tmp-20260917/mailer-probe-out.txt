@@ -1,0 +1,24 @@
+﻿
+== title_zh (len 41) ==
+  preview: 100 MOQ 快遞盒/飛機盒 · 跨境電商 FBA 標配 · DHL 2-4 天
+
+== nameEn (len 87) ==
+  preview: 100 MOQ Mailer Boxes · Free Design · DHL 2-4 Day Global | Gift Boxes & Custom Packaging
+
+== nameJa (len 49) ==
+  preview: 100個〜 発送箱 · 越境EC FBA · DHL 2-4日配送 | パッケージボックス・化粧箱
+
+== description (len 87) ==
+  preview: 堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。適配行業: 亞馬遜 FBA、Shopify 獨立站、Etsy、跨境電商品牌、訂閱盒直運、DTC 品牌、3PL 物流倉。
+
+== descriptionEn (len 248) ==
+  preview: Sturdy and durable, first choice for e-commerce shipping., ISO 9001:2015 certified quality management system Best for: Amazon FBA, Shopify DTC, Etsy, cross-border e-commerce brands, subscription box dropship, DTC brands, 3PL fulfillment warehouses.
+
+== descriptionJa (len 112) ==
+  preview: 頑丈で耐久性があり、EC発送の第一選択。 適用業界: Amazon FBA、Shopify DTC、Etsy、越境ECブランド、サブスクリプション ボックス dropship、DTC ブランド、3PL フルフィルメント倉庫。
+
+== description_zh (len 80) ==
+  preview: 堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。 2026 旺季重點: D2C 美妝配送、茶飲/手搖外送、訂閱盒盲盒、Kickstarter 集資送貨。
+
+== optimizedAt (len 10) ==
+  preview: 2026-07-23

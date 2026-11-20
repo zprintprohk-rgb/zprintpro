@@ -1,0 +1,40 @@
+{
+ "slug": "wedding-menu-cards",
+ "name_zh": "婚禮菜單卡",
+ "category_slug": "wedding-invitations",
+ "current_body_len": 0,
+ "current_body": "",
+ "product": {
+  "description": "婚禮菜單卡 100 套起印,300g 銅版紙 / 棉紙 + 燙金 + 模切,4 折或對摺。順豐本地 + DHL 全球。**適配行業**: 婚宴菜單/西式婚禮/海外婚禮/酒店宴會/米其林宴席.",
+  "description_zh": "婚禮菜單卡 100 套起印,300g 銅版紙 / 棉紙 + 燙金 + 模切,4 折或對摺。順豐本地 + DHL 全球。**適配行業**: 婚宴菜單/西式婚禮/海...",
+  "price_range": "NT$25-95 / 套",
+  "minQuantity": 50,
+  "specs": {
+   "material": "300g 銅版紙 / 棉紙 / 剛古紙",
+   "size": "A5 對摺 (148×210mm) / 自訂",
+   "finishing": "燙金 / UV / 模切 / 折卡",
+   "printMethod": "柯式印刷 4C 雙面"
+  },
+  "materials": "",
+  "title_zh": "婚禮菜單卡 · 訂製"
+ },
+ "category_gsc_words": [
+  "喜帖印刷(imp<15)",
+  "結婚請柬(imp<15)"
+ ],
+ "regional_zh": {
+  "trustSignals": "深圳自有工廠 · 順豐香港本地派送 (48小時) · 24小時報價 · ISO9001認證",
+  "shipping": "順豐香港本地送貨 · 港島/九龍/新界 48小時達 · DHL 全球 2-4 日",
+  "pricingNote": "以上價格以港幣（HKD）計算。量大價優，歡迎致電查詢批量報價。",
+  "expertIntro": "智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務日本及全球客戶。提供 IP 保護、ISO 認證品質保證，以及全球物流支援。"
+ },
+ "rules": [
+  "只许从 4 个真实数据源组装: ①本包 description/specs/materials/price_range/minQuantity ②category 现有文案与本包 category 行业场景 ③现有 body 内 FAQ 答案改写为场景句 ④category GSC 词(自然织入, 禁堆砌)",
+  "禁止编造: 数字/认证/交期/客户名/行业事实 (价格只能用 price_range, 交期只能用交稿規範里的 3-5 天等已有口径)",
+  "禁止跨 SKU 复制同一段文字: 每个 SKU 组装结果必须唯一 (同品类相邻 SKU 也禁止整段雷同)",
+  "字数: 新 body ≥ 300 字 (中文, 不含 **加粗** 标记); 结构 = 场景段(2-3 段, 含品类 GSC 词自然出现 1-2 次) + 交稿規範段(照抄现有交稿規範句, 无则按本包 specs) + 收费段(用 price_range/minQuantity)",
+  "简体转繁体: 全部输出繁体中文 (香港用法)",
+  "段落用 \\n\\n 分隔; 不要写 **常見問題** 部分 (FAQ 由模板单独渲染)",
+  "不要修改 title/description/keywords — 只产出 body"
+ ]
+}

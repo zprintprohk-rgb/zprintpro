@@ -1,0 +1,124 @@
+{
+ "wave": "W3-1019",
+ "patched": [
+  {
+   "slug": "waterproof-stickers",
+   "dir": "ST-001",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "transparent-stickers",
+   "dir": "ST-002",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "foil-stickers",
+   "dir": "ST-006",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "security-stickers",
+   "dir": "ST-007",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-hero.webp']"
+  }
+ ],
+ "skipped": [],
+ "entries": [
+  {
+   "dir": "ST-001",
+   "slug": "waterproof-stickers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-hero.webp",
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-detail.webp",
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-variety.webp",
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-hero.webp",
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-detail.webp",
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-variety.webp",
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-hero.webp",
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-detail.webp",
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-variety.webp",
+     "/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ST-002",
+   "slug": "transparent-stickers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-hero.webp",
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-detail.webp",
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-variety.webp",
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-hero.webp",
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-detail.webp",
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-variety.webp",
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-hero.webp",
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-detail.webp",
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-variety.webp",
+     "/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ST-006",
+   "slug": "foil-stickers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-hero.webp",
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-detail.webp",
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-variety.webp",
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-hero.webp",
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-detail.webp",
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-variety.webp",
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-hero.webp",
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-detail.webp",
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-variety.webp",
+     "/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ST-007",
+   "slug": "security-stickers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-hero.webp",
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-detail.webp",
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-variety.webp",
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-hero.webp",
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-detail.webp",
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-variety.webp",
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-hero.webp",
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-detail.webp",
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-variety.webp",
+     "/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-multi-angle.webp"
+    ]
+   }
+  }
+ ]
+}

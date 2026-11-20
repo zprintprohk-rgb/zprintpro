@@ -1,0 +1,73 @@
+fix(seo): 标题规则口径归一 — 清除残留 50-58/50-54/≥55 与失效归属 (K3 2026-09-19 裁决 50-57)
+
+K3 2026-09-19 裁决「目标区 50-57 半角当量, 58 为阻断线」已于 604695a0 落到
+代码 (title-equiv.js TITLE_MAX 58→57)。本轮清除**书面侧与周边脚本**残留,
+使「规则文本 / 门禁阈值 / 报告元数据」三者同源。
+
+一、AGENTS.md (书面 SSoT)
+- §5 Title / §0.34.1 / §0.34.3: 50-58 → 50-57, 归属 K3 2026-09-19 裁决
+- §0.29.2.0 字符体检 3 区间表: 加取代声明 (理想 50-60 / 可接受 60-80 /
+  满格 ≥55 / 不足 <45 → 50-57 / >57 / <50)。9/1 原文保留为史实 (per §0.34.2)
+- §0.29.2.2 字符体检 3 行: 加取代声明 + 第 1/2 行逐行标注 (第 3 行跨语言污染继续有效)
+- §0.29 v3.1 3 行块: 同上
+- 规则表 I18N_TITLE_LENGTH 行: 50-60 → 50-57 当量
+- **事实性更正**: 原写「i18n-guard.js 用中文字符=1.5 当量」「当量上限 65」——经读码
+  核实两者皆不成立。该 guard 自 2026-09-15 起 require('./title-equiv.js') 取
+  TITLE_MIN/TITLE_MAX, 口径 CJK×2, 无独立阈值。旧文为 9/15 前旧实现, 已失效。
+
+二、5 条车道 prompt (真触发层 prompt, 清单 SSoT = .hermes/cron-lanes.json)
+- gsc-feedback / weekly-meta / monthly-matrix: 归属「K3 9/13 终裁」→ K3 2026-09-19 裁决
+- weekly-meta 尾部**实证残留**: 「meta refresh 如涉及 title 一律按 v4 写满区 50-54」
+  (一行内混有历史陈述与现行指令, 上一版行级 HIST_ALLOW 误护该行)
+- 5 条 prompt 统一加「取代声明」块 + 第 1/2 行护栏逐一标注
+  (源 = 9/1 派活包原文, 保留为史实)
+
+三、脚本 (报告元数据 / 阈值)
+- sku-title-census.mjs: ruleSSoT 与 §E 标签写死 50-58 → 改由 TITLE_MIN/TITLE_MAX
+  插值 (原先与门禁 57 分叉 ⇒ 每次跑 census 都复述错误规则)
+- title-audit-v4.mjs: **真阈值分叉** — 自带 equiv 实现 + band 阈值硬编码 50/58/65,
+  且填充上限写死 v4 的 54 ⇒ 当量 58 判 OK (门禁判 TRIM), 55-57 静默欠填。
+  改为 require title-equiv.js 常量
+- guards/title-equiv.js: 模块自身 doc block 仍写 50-58, 与常量 (57) 矛盾 → 更正
+- apply-title-batch.mjs / gen-title-fill-proposals.mjs: 规则声明 50-58 → 50-57
+- guards/i18n-guard.js: 报告面 name/fix 字符串与注释 50-60 → 50-57, 归属更正
+- 删除 scripts/sync-title-rule-50-58.mjs (被 sync-title-rule-50-57.mjs 取代)
+
+四、验证 (§0.23.2 双方法: 行为不变, 仅文本更正)
+- sku-title-census: byBand OK 242 / FILL 30 / TRIM 28 —— 改前改后一致
+- title-audit-v4: byBand OK 349 / FILL 32 / TRIM 178 / RED 45 —— 改前改后一致
+  (其作用域 = 全站 604: sku 297 + blog 282 + home 1 + category 24;
+   与 census 的 297 槽位不同口径, 两组数字不可互比)
+- band() 直接实测: 当量 57 → OK, 58 → TRIM
+- node --check 6/6 PASS; census 与 title-audit-v4 实跑 exit 0
+
+五、门禁缺口修复: `.hermes/cron-prompts/` 全规则豁免 (K3 2026-09-19 决策一(a) 落地)
+- **现象**: 本轮提交被 pre-commit 反审门童硬拦, 且**无法绕开** —— 2 条 live 车道
+  prompt 因**既有**字面 `FSC-C123456` (SOP-10 第 4 款反例原文) 各命中 2 处 red。
+- **根因 (读码核实)**: `.hermes/cron-prompts/` 此前只在 `common.js` 的 `EXEMPT_PATHS`
+  (仅豁免 QUOTE_RULES 品牌/i18n/电话), **未**入 `FULL_EXEMPT_PATHS` (全规则豁免);
+  而 `SOP10_CERT_NO` 非引用型规则 ⇒ 照拦。门童 #23
+  (`cron-prompts-exemption-guard.js`) 头注称「已由 `apply-cron-prompts-exemption.mjs`
+  施加」, 但**该脚本不存在** (实测 `Get-ChildItem` 无此文件) ⇒ 豁免从未生效, 台账形同虚设
+  (#23 自身对账 exit 0, 与主门童行为矛盾)。
+- **修法**: 把 `/\.hermes[\/\\]cron-prompts[\/\\]/` 加入 `FULL_EXEMPT_PATHS`, 与
+  AGENTS.md / `.hermes/logs` 同族 —— 指令书/规则书**必然引用**禁用形态字面。
+- **补偿控制不变**: 门童 #23 的「逐条登记 + 对称对账」保留 —— 任何**新增**字面必须在
+  `cron-prompts-exemption-manifest.json` 登记, 否则报漂移; 故不等于「整目录放行」。
+  上线面 (src/ public/) 扫描**不变**。
+- **验证**: 修前 🔴 54 (含 cron-prompts 4) ⇒ 修后 🔴 0 / 🟠 0 / 🟡 15, 门禁 exit 0;
+  门童 #23 复跑仍 `0 命中, 5 文件声明集合 = 实际集合` (未被本改动破坏)。
+- 备注: `.hermes/reports/sku-title-census-2026-09-19.json` 不随本 commit 落库 ——
+  它是**可重生成的审计产物** (census 每次可重跑), 且作为**新增文件**在品牌存量基线
+  (`brand-baseline.json`) 无条目 ⇒ 门童 #3 将其 50 处 `BRAND_LOCALE_MISMATCH`
+  全部计为新增而硬拦 (人读版 `.md` 正常入库)。
+
+数据来源:
+- K3 2026-09-19 裁决 (本会话输入): 目标区 50-57, 58 为阻断线
+- commit 604695a0「58 为阻断线, TITLE_MAX 58→57」
+- docs/2026-09-13-title-batch-T-freeze.md §6-3 (取代说明, 已含 9/19 口径)
+- scripts/guards/title-equiv.js (TITLE_MIN=50 / TITLE_MAX=57, 文件实测)
+- .hermes/cron-lanes.json (车道清单 SSoT, 5 条 live prompt 判定依据)
+校准日期: 2026-09-19
+
+范围: 仅规则文本 + 脚本元数据/阈值; 无 src/ 业务数据改动, 无 SKU title 变更。

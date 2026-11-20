@@ -1,0 +1,797 @@
+{
+ "at": "2026-09-13T10-54-09-825Z",
+ "moneyMap": "F:\\zprintpro-nextjs\\重要文件\\money-keyword-map-20260905.md",
+ "items": [
+  {
+   "file": "src/data/products.ts",
+   "line": 238,
+   "slug": "thick-greeting-cards-400g",
+   "beforeSnippet": "厚卡名片｜400g 超厚 · 三合一裱貼 · 90×54mm",
+   "afterSnippet": "厚卡名片｜400g 超厚 · 三合一裱貼 · 90×54mm · 智印港",
+   "e0": 45,
+   "e1": 55,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 433,
+   "slug": "spot-uv-greeting-cards",
+   "beforeSnippet": "UV局部光油賀卡",
+   "afterSnippet": "UV局部光油賀卡 · 智印港",
+   "e0": 14,
+   "e1": 24,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 802,
+   "slug": "transparent-stickers",
+   "beforeSnippet": "透明貼 / 透明貼紙 訂製 · 100張起印",
+   "afterSnippet": "透明貼 / 透明貼紙 訂製 · 100張起印 · 貼紙印刷 · 智印港",
+   "e0": 35,
+   "e1": 57,
+   "added": [
+    "貼紙印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 899,
+   "slug": "removable-stickers",
+   "beforeSnippet": "可移貼紙訂製 玻璃不留膠 50張起印 · 智印港",
+   "afterSnippet": "可移貼紙訂製 玻璃不留膠 50張起印 · 貼紙印刷 · 智印港",
+   "e0": 42,
+   "e1": 54,
+   "added": [
+    "貼紙印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 993,
+   "slug": "small-batch-stickers",
+   "beforeSnippet": "小批量貼紙 / label printing · 訂製",
+   "afterSnippet": "小批量貼紙 / label printing · 訂製 · 貼紙印刷 · 智印港",
+   "e0": 35,
+   "e1": 57,
+   "added": [
+    "貼紙印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1089,
+   "slug": "die-cut-stickers",
+   "beforeSnippet": "異形模切貼紙 · 文創IP角色造型模切定製 | 智印港",
+   "afterSnippet": "異形模切貼紙 · 文創IP角色造型模切定製 · 透明貼 · 智印港",
+   "e0": 47,
+   "e1": 58,
+   "added": [
+    "透明貼"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1187,
+   "slug": "foil-stickers",
+   "beforeSnippet": "燙金貼紙 · 訂製",
+   "afterSnippet": "燙金貼紙 · 訂製 · 貼紙印刷 · 戶外貼紙 · 智印港",
+   "e0": 16,
+   "e1": 50,
+   "added": [
+    "貼紙印刷",
+    "戶外貼紙"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1453,
+   "slug": "kraft-paper-bags",
+   "beforeSnippet": "牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 · 服裝品牌跨境電商適配 | 智印港",
+   "afterSnippet": "牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 · 智印港",
+   "e0": 76,
+   "e1": 53,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1549,
+   "slug": "white-card-bags",
+   "beforeSnippet": "白卡紙袋 · 服裝珠寶品牌升級首選",
+   "afterSnippet": "白卡紙袋 · 服裝珠寶品牌升級首選 · 紙袋印刷 · 智印港",
+   "e0": 32,
+   "e1": 54,
+   "added": [
+    "紙袋印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1741,
+   "slug": "eco-paper-bags",
+   "beforeSnippet": "環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印港",
+   "afterSnippet": "環保紙袋印刷訂製 FSC再生認證 100個起印 · 大紙袋 · 智印港",
+   "e0": 47,
+   "e1": 58,
+   "added": [
+    "大紙袋"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1841,
+   "slug": "handle-bags",
+   "beforeSnippet": "手挽紙袋訂製 · 邊度買紙袋 餐飲零售採購首選",
+   "afterSnippet": "手挽紙袋訂製 · 邊度買紙袋 餐飲零售採購首選 · 智印港",
+   "e0": 43,
+   "e1": 53,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2011,
+   "slug": "a4-flyers",
+   "beforeSnippet": "A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港",
+   "afterSnippet": "A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 · 智印港",
+   "e0": 48,
+   "e1": 49,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2102,
+   "slug": "a5-flyers",
+   "beforeSnippet": "A5傳單印刷 100張起印 雙面四色 免費設計 | 智印港",
+   "afterSnippet": "A5傳單印刷 100張起印 雙面四色 免費設計 · 智印港",
+   "e0": 47,
+   "e1": 48,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2195,
+   "slug": "double-sided-flyers",
+   "beforeSnippet": "雙面傳單印刷",
+   "afterSnippet": "雙面傳單印刷 · 宣傳單張印刷 · 宣傳單張 · 智印港",
+   "e0": 12,
+   "e1": 50,
+   "added": [
+    "宣傳單張印刷",
+    "宣傳單張"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2288,
+   "slug": "folded-leaflets",
+   "beforeSnippet": "折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印港",
+   "afterSnippet": "折疊傳單印刷 A4 雙面 對摺三摺 · 宣傳單張印刷 · 智印港",
+   "e0": 70,
+   "e1": 55,
+   "added": [
+    "宣傳單張印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2379,
+   "slug": "thick-paper-flyers",
+   "beforeSnippet": "厚紙傳單印刷",
+   "afterSnippet": "厚紙傳單印刷 · 宣傳單張印刷 · 宣傳單張 · 智印港",
+   "e0": 12,
+   "e1": 50,
+   "added": [
+    "宣傳單張印刷",
+    "宣傳單張"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2470,
+   "slug": "eco-flyers",
+   "beforeSnippet": "環保傳單印刷",
+   "afterSnippet": "環保傳單印刷 · 宣傳單張印刷 · 宣傳單張 · 智印港",
+   "e0": 12,
+   "e1": 50,
+   "added": [
+    "宣傳單張印刷",
+    "宣傳單張"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2564,
+   "slug": "same-day-flyers",
+   "beforeSnippet": "即日傳單印刷",
+   "afterSnippet": "即日傳單印刷 · 宣傳單張印刷 · 宣傳單張 · 智印港",
+   "e0": 12,
+   "e1": 50,
+   "added": [
+    "宣傳單張印刷",
+    "宣傳單張"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2732,
+   "slug": "a1-posters",
+   "beforeSnippet": "A1大幅海報",
+   "afterSnippet": "A1大幅海報 · 海報印刷 · 印海報 · poster 印刷 · 智印港",
+   "e0": 10,
+   "e1": 57,
+   "added": [
+    "海報印刷",
+    "印海報",
+    "poster 印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3176,
+   "slug": "food-boxes",
+   "beforeSnippet": "食品包裝訂製 100個起印 HK$4起/個 FDA級 | 智印港 · 食品級茶飲烘焙定製",
+   "afterSnippet": "食品包裝訂製 100個起印 HK$4起/個 FDA級 · 包裝盒 · 智印港",
+   "e0": 69,
+   "e1": 58,
+   "added": [
+    "包裝盒"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3277,
+   "slug": "cosmetic-boxes",
+   "beforeSnippet": "化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚面膜精華液品牌適配 | 智印港",
+   "afterSnippet": "化妝品盒訂製 100個起印 燙金局部UV · 包裝盒訂製 · 智印港",
+   "e0": 72,
+   "e1": 57,
+   "added": [
+    "包裝盒訂製"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3675,
+   "slug": "foil-red-packets",
+   "beforeSnippet": "燙金利是封 · 婚慶/年會/品牌活動定製 | 智印港",
+   "afterSnippet": "燙金利是封 · 婚慶/年會/品牌活動定製 · 智印港",
+   "e0": 45,
+   "e1": 46,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3751,
+   "slug": "embossed-red-packets",
+   "beforeSnippet": "浮雕利是封 · 訂製",
+   "afterSnippet": "浮雕利是封 · 訂製 · 智印港",
+   "e0": 18,
+   "e1": 28,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3845,
+   "slug": "custom-red-packets",
+   "beforeSnippet": "定製利是封",
+   "afterSnippet": "定製利是封 · 智印港",
+   "e0": 10,
+   "e1": 20,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3939,
+   "slug": "cartoon-red-packets",
+   "beforeSnippet": "卡通利是封 · 訂製",
+   "afterSnippet": "卡通利是封 · 訂製 · 智印港",
+   "e0": 18,
+   "e1": 28,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4031,
+   "slug": "eco-red-packets",
+   "beforeSnippet": "環保利是封 · 訂製",
+   "afterSnippet": "環保利是封 · 訂製 · 智印港",
+   "e0": 18,
+   "e1": 28,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4125,
+   "slug": "large-red-packets",
+   "beforeSnippet": "大號利是封 · 訂製",
+   "afterSnippet": "大號利是封 · 訂製 · 智印港",
+   "e0": 18,
+   "e1": 28,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4220,
+   "slug": "wall-calendars",
+   "beforeSnippet": "掛牆年曆 · 訂製",
+   "afterSnippet": "掛牆年曆 · 訂製 · 月曆印刷 · 月歷印刷 · 智印港",
+   "e0": 16,
+   "e1": 50,
+   "added": [
+    "月曆印刷",
+    "月歷印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4296,
+   "slug": "desk-calendars",
+   "beforeSnippet": "座檯年曆 · 訂製",
+   "afterSnippet": "座檯年曆 · 訂製 · 月曆印刷 · 月歷印刷 · 智印港",
+   "e0": 16,
+   "e1": 50,
+   "added": [
+    "月曆印刷",
+    "月歷印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4470,
+   "slug": "mini-calendars",
+   "beforeSnippet": "迷你年曆 · 訂製",
+   "afterSnippet": "迷你年曆 · 訂製 · 月曆印刷 · 月歷印刷 · 智印港",
+   "e0": 16,
+   "e1": 50,
+   "added": [
+    "月曆印刷",
+    "月歷印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4560,
+   "slug": "photo-frame-calendars",
+   "beforeSnippet": "相框年曆 · 訂製",
+   "afterSnippet": "相框年曆 · 訂製 · 月曆印刷 · 月歷印刷 · 智印港",
+   "e0": 16,
+   "e1": 50,
+   "added": [
+    "月曆印刷",
+    "月歷印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4651,
+   "slug": "magnetic-calendars",
+   "beforeSnippet": "磁石年曆 · 訂製",
+   "afterSnippet": "磁石年曆 · 訂製 · 月曆印刷 · 月歷印刷 · 智印港",
+   "e0": 16,
+   "e1": 50,
+   "added": [
+    "月曆印刷",
+    "月歷印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4745,
+   "slug": "pvc-menus",
+   "beforeSnippet": "PVC 餐牌印刷 · 防水防油可水洗 | 餐廳/咖啡店/酒吧菜單 | 智印港 · 訂製",
+   "afterSnippet": "PVC 餐牌印刷 · 防水防油可水洗 · 膠片餐牌 · 智印港",
+   "e0": 70,
+   "e1": 52,
+   "added": [
+    "膠片餐牌"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4822,
+   "slug": "laminated-menus",
+   "beforeSnippet": "過膠餐牌 · 訂製",
+   "afterSnippet": "過膠餐牌 · 訂製 · 餐牌印刷 · 膠片餐牌 · 智印港",
+   "e0": 16,
+   "e1": 50,
+   "added": [
+    "餐牌印刷",
+    "膠片餐牌"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4918,
+   "slug": "hardcover-menus",
+   "beforeSnippet": "精裝餐牌 · 訂製",
+   "afterSnippet": "精裝餐牌 · 訂製 · 餐牌印刷 · 膠片餐牌 · 智印港",
+   "e0": 16,
+   "e1": 50,
+   "added": [
+    "餐牌印刷",
+    "膠片餐牌"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 5015,
+   "slug": "drink-menus",
+   "beforeSnippet": "酒水牌 · 訂製",
+   "afterSnippet": "酒水牌 · 訂製 · 餐牌印刷 · 膠片餐牌 · 智印港",
+   "e0": 14,
+   "e1": 48,
+   "added": [
+    "餐牌印刷",
+    "膠片餐牌"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 5109,
+   "slug": "disposable-menus",
+   "beforeSnippet": "一次性餐牌 · 訂製",
+   "afterSnippet": "一次性餐牌 · 訂製 · 餐牌印刷 · 膠片餐牌 · 智印港",
+   "e0": 18,
+   "e1": 52,
+   "added": [
+    "餐牌印刷",
+    "膠片餐牌"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 5204,
+   "slug": "outdoor-vinyl-banners",
+   "beforeSnippet": "戶外燈布噴繪",
+   "afterSnippet": "戶外燈布噴繪 · 智印港",
+   "e0": 12,
+   "e1": 22,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 5561,
+   "slug": "mesh-banners",
+   "beforeSnippet": "網格布噴繪",
+   "afterSnippet": "網格布噴繪 · 智印港",
+   "e0": 10,
+   "e1": 20,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 5656,
+   "slug": "catalog-printing",
+   "beforeSnippet": "香港畫冊印刷 / Bulk Catalog Printing 50本起 · 全球配送 DHL 2-4天",
+   "afterSnippet": "香港畫冊印刷 / Bulk Catalog Printing 50本起 · 智印港",
+   "e0": 65,
+   "e1": 53,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 5734,
+   "slug": "saddle-stitch-booklets",
+   "beforeSnippet": "騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 — 目錄/雜誌/練習冊 50 本起",
+   "afterSnippet": "騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 · 智印港",
+   "e0": 74,
+   "e1": 56,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 5829,
+   "slug": "perfect-bound-books",
+   "beforeSnippet": "香港無線膠裝書籍 — 學術論文集 / 年度報告 / CSR 社會責任報告 / 文學作品集",
+   "afterSnippet": "香港無線膠裝書籍 / 學術論文集 / 年度報告 · 智印港",
+   "e0": 73,
+   "e1": 50,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 5927,
+   "slug": "hardcover-books",
+   "beforeSnippet": "香港精裝書籍 — 婚慶紀念書 / 家族史冊 / 畢業紀念冊 / 校友會刊",
+   "afterSnippet": "香港精裝書籍 / 婚慶紀念書 / 家族史冊 · 智印港",
+   "e0": 61,
+   "e1": 46,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 6018,
+   "slug": "spiral-notebooks",
+   "beforeSnippet": "香港線圈筆記本 — 企業禮品 / 補習社教材 / 活頁筆記本 / 校園紀念本",
+   "afterSnippet": "香港線圈筆記本 / 企業禮品 / 補習社教材 · 智印港",
+   "e0": 65,
+   "e1": 48,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 6482,
+   "slug": "exercise-books",
+   "beforeSnippet": "香港練習簿印刷 / School Exercise Book Printing — MOQ 50 30秒AI報價 DHL 2-4天",
+   "afterSnippet": "香港練習簿印刷 / School Exercise Book Printing · 智印港",
+   "e0": 77,
+   "e1": 56,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 6656,
+   "slug": "school-flyers",
+   "beforeSnippet": "香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊",
+   "afterSnippet": "香港學校單張 / 校刊 / 通告 / 校史特刊 / 校友會刊 · 智印港",
+   "e0": 49,
+   "e1": 58,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 6754,
+   "slug": "textbooks",
+   "beforeSnippet": "香港教科書印刷 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊",
+   "afterSnippet": "香港教科書印刷 教科書 印刷 / K12 教科書 · 智印港",
+   "e0": 75,
+   "e1": 49,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 6852,
+   "slug": "graduation-yearbook",
+   "beforeSnippet": "香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊",
+   "afterSnippet": "香港畢業紀念冊 / 畢業紀念冊 / 校史特刊 · 智印港",
+   "e0": 61,
+   "e1": 48,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 6909,
+   "slug": "magnetic-closure-gift-box",
+   "beforeSnippet": "磁吸翻蓋禮盒印刷",
+   "afterSnippet": "磁吸翻蓋禮盒印刷 · 食品包裝印刷 · 包裝盒訂製 · 智印港",
+   "e0": 16,
+   "e1": 56,
+   "added": [
+    "食品包裝印刷",
+    "包裝盒訂製"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 6986,
+   "slug": "electronics-packaging-box",
+   "beforeSnippet": "電子產品包裝盒定製",
+   "afterSnippet": "電子產品包裝盒定製 · 食品包裝印刷 · 包裝盒訂製 · 智印港",
+   "e0": 18,
+   "e1": 58,
+   "added": [
+    "食品包裝印刷",
+    "包裝盒訂製"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7088,
+   "slug": "kraft-paper-packaging-box",
+   "beforeSnippet": "牛皮紙盒印刷訂製 · 環保品牌跨境電商首選",
+   "afterSnippet": "牛皮紙盒印刷訂製 · 環保品牌跨境電商首選 · 智印港",
+   "e0": 40,
+   "e1": 50,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7189,
+   "slug": "gang-run-card-boxes",
+   "beforeSnippet": "拼版白卡彩盒(免刀模費) 彩盒印刷 500個起印 · 香港無對手價 · 智印港",
+   "afterSnippet": "拼版白卡彩盒(免刀模費) 彩盒印刷 500個起印 · 智印港",
+   "e0": 67,
+   "e1": 51,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7261,
+   "slug": "white-card-boxes",
+   "beforeSnippet": "白卡彩盒印刷訂製 卡盒/紙盒訂製 · 100個起印 5-7天交期 · 智印港",
+   "afterSnippet": "白卡彩盒印刷訂製 卡盒/紙盒訂製 · 食品包裝印刷 · 智印港",
+   "e0": 63,
+   "e1": 56,
+   "added": [
+    "食品包裝印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7320,
+   "slug": "corrugated-boxes",
+   "beforeSnippet": "瓦楞彩盒印刷訂製 坑盒/紙盒印刷 · 跨境電商物流抗壓首選 · 智印港",
+   "afterSnippet": "瓦楞彩盒印刷訂製 坑盒/紙盒印刷 · 食品包裝印刷 · 智印港",
+   "e0": 64,
+   "e1": 56,
+   "added": [
+    "食品包裝印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7380,
+   "slug": "tuck-end-boxes",
+   "beforeSnippet": "卡盒/插口盒印刷訂製 免刀模 · 餐飲外賣零售快消首選 · 智印港",
+   "afterSnippet": "卡盒/插口盒印刷訂製 免刀模 · 食品包裝印刷 · 智印港",
+   "e0": 60,
+   "e1": 52,
+   "added": [
+    "食品包裝印刷"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7437,
+   "slug": "fruit-food-label-stickers",
+   "beforeSnippet": "水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印港",
+   "afterSnippet": "水果貼紙食品標籤印刷 · 貼紙印刷 · 戶外貼紙 · 智印港",
+   "e0": 60,
+   "e1": 54,
+   "added": [
+    "貼紙印刷",
+    "戶外貼紙"
+   ]
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7518,
+   "slug": "doujinshi-printing",
+   "beforeSnippet": "同人誌印刷 | Comiket 對應 | 智印港",
+   "afterSnippet": "同人誌印刷 · Comiket 對應 · 智印港",
+   "e0": 34,
+   "e1": 36,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7620,
+   "slug": "acrylic-keychain",
+   "beforeSnippet": "亞克力鑰匙扣 角色造型",
+   "afterSnippet": "亞克力鑰匙扣 角色造型 · 智印港",
+   "e0": 21,
+   "e1": 31,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7726,
+   "slug": "can-badge",
+   "beforeSnippet": "罐型襟章印刷 | 安全扣標準 | 智印港",
+   "afterSnippet": "罐型襟章印刷 · 安全扣標準 · 智印港",
+   "e0": 34,
+   "e1": 36,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7830,
+   "slug": "postcard-set",
+   "beforeSnippet": "明信片套裝 | 和紙風藝術紙 | 智印港",
+   "afterSnippet": "明信片套裝 · 和紙風藝術紙 · 智印港",
+   "e0": 34,
+   "e1": 36,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7960,
+   "slug": "eco-tote-bag",
+   "beforeSnippet": "環保托特袋 | 100% 有機棉 | 智印港",
+   "afterSnippet": "環保托特袋 · 100% 有機棉 · 智印港",
+   "e0": 33,
+   "e1": 35,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 8085,
+   "slug": "save-the-date-cards",
+   "beforeSnippet": "Save the Date 卡片",
+   "afterSnippet": "Save the Date 卡片 · 智印港",
+   "e0": 18,
+   "e1": 28,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 8109,
+   "slug": "wedding-thank-you-cards",
+   "beforeSnippet": "婚禮感謝卡",
+   "afterSnippet": "婚禮感謝卡 · 智印港",
+   "e0": 10,
+   "e1": 20,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 8133,
+   "slug": "wedding-program-cards",
+   "beforeSnippet": "婚禮節目單",
+   "afterSnippet": "婚禮節目單 · 智印港",
+   "e0": 10,
+   "e1": 20,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 8157,
+   "slug": "wedding-menu-cards",
+   "beforeSnippet": "婚禮菜單卡 · 訂製",
+   "afterSnippet": "婚禮菜單卡 · 訂製 · 智印港",
+   "e0": 18,
+   "e1": 28,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 8181,
+   "slug": "wedding-suite-bundle",
+   "beforeSnippet": "婚慶整套配套",
+   "afterSnippet": "婚慶整套配套 · 智印港",
+   "e0": 12,
+   "e1": 22,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 8231,
+   "slug": "drink-tokens",
+   "beforeSnippet": "酒水牌 / 飲品標記",
+   "afterSnippet": "酒水牌 / 飲品標記 · 智印港",
+   "e0": 17,
+   "e1": 27,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 8255,
+   "slug": "escort-cards",
+   "beforeSnippet": "座位卡 / 賓客標記",
+   "afterSnippet": "座位卡 / 賓客標記 · 智印港",
+   "e0": 17,
+   "e1": 27,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 8279,
+   "slug": "name-tags-badges",
+   "beforeSnippet": "名牌卡 / 會議名牌",
+   "afterSnippet": "名牌卡 / 會議名牌 · 智印港",
+   "e0": 17,
+   "e1": 27,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 8303,
+   "slug": "cafe-table-cards",
+   "beforeSnippet": "餐廳 / 咖啡廳枱卡",
+   "afterSnippet": "餐廳 / 咖啡廳枱卡 · 智印港",
+   "e0": 17,
+   "e1": 27,
+   "added": []
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 8327,
+   "slug": "wedding-seating-charts",
+   "beforeSnippet": "婚宴席位圖",
+   "afterSnippet": "婚宴席位圖 · 智印港",
+   "e0": 10,
+   "e1": 20,
+   "added": []
+  }
+ ]
+}

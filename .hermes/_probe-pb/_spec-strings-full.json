@@ -1,0 +1,2559 @@
+[
+ {
+  "v": "300g銅版紙或250g啞粉藝術紙；啞膠／光膠覆膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "premium-greeting-cards"
+  ]
+ },
+ {
+  "v": "四色柯式印刷（海德堡）",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "premium-greeting-cards"
+  ]
+ },
+ {
+  "v": "覆膜（啞膠／光膠）、局部UV、燙金、圓角模切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "premium-greeting-cards"
+  ]
+ },
+ {
+  "v": "400g超厚銅版紙；啞膠／光膠覆膜；可選三合一裱貼（700-810g 超厚檔）",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "thick-greeting-cards-400g"
+  ]
+ },
+ {
+  "v": "四色柯式印刷",
+  "n": 9,
+  "field": "printMethod",
+  "slugs": [
+   "thick-greeting-cards-400g",
+   "matte-greeting-cards",
+   "rounded-corner-greeting-cards",
+   "large-bags",
+   "thick-paper-flyers",
+   "catalog-printing",
+   "perfect-bound-books",
+   "hardcover-books",
+   "electronics-packaging-box"
+  ]
+ },
+ {
+  "v": "覆膜（啞膠／光膠）、燙金／燙銀、局部UV、擊凸、圓角模切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "thick-greeting-cards-400g"
+  ]
+ },
+ {
+  "v": "300g銅版紙或棉質紙；燙金／燙銀／玫瑰金",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "foil-greeting-cards"
+  ]
+ },
+ {
+  "v": "四色柯式＋燙金",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "foil-greeting-cards"
+  ]
+ },
+ {
+  "v": "覆膜（啞膠／光膠）、燙金、圓角模切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "foil-greeting-cards"
+  ]
+ },
+ {
+  "v": "300g銅版紙或合成紙；局部UV光油",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "spot-uv-greeting-cards"
+  ]
+ },
+ {
+  "v": "四色柯式＋局部UV",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "spot-uv-greeting-cards"
+  ]
+ },
+ {
+  "v": "局部UV、覆膜（啞膠／光膠）、圓角模切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "spot-uv-greeting-cards"
+  ]
+ },
+ {
+  "v": "300g啞粉紙或環保紙；啞膠覆膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "matte-greeting-cards"
+  ]
+ },
+ {
+  "v": "啞膠覆膜、燙金、壓凹、圓角模切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "matte-greeting-cards"
+  ]
+ },
+ {
+  "v": "300g銅版紙或藝術紙；啞膠／光膠覆膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "rounded-corner-greeting-cards"
+  ]
+ },
+ {
+  "v": "覆膜（啞膠／光膠）、燙金、局部UV、圓角模切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "rounded-corner-greeting-cards"
+  ]
+ },
+ {
+  "v": "PVC 防水／PP 合成紙；可覆啞膜或光膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "waterproof-stickers"
+  ]
+ },
+ {
+  "v": "四色數碼或柯式（依數量）",
+  "n": 4,
+  "field": "printMethod",
+  "slugs": [
+   "waterproof-stickers",
+   "removable-stickers",
+   "fluorescent-stickers",
+   "fruit-food-label-stickers"
+  ]
+ },
+ {
+  "v": "模切、覆膜（啞膜／光膜）、局部可選工藝",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "waterproof-stickers"
+  ]
+ },
+ {
+  "v": "透明 PET；可選白墨、啞膜／光膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "transparent-stickers"
+  ]
+ },
+ {
+  "v": "CMYK＋可選白墨（依設計）",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "transparent-stickers"
+  ]
+ },
+ {
+  "v": "覆膜（啞膜／光膜）、模切、可選局部 UV",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "transparent-stickers"
+  ]
+ },
+ {
+  "v": "PP 合成紙／PET 透明膜；可移膠",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "removable-stickers"
+  ]
+ },
+ {
+  "v": "模切、覆膜（啞膜／光膜）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "removable-stickers"
+  ]
+ },
+ {
+  "v": "銅版紙／PP 合成紙／透明 PVC／Kraft 牛皮紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "small-batch-stickers"
+  ]
+ },
+ {
+  "v": "四色數碼印刷（HP Indigo）",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "small-batch-stickers"
+  ]
+ },
+ {
+  "v": "模切、圓角、局部燙金、覆膜",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "small-batch-stickers"
+  ]
+ },
+ {
+  "v": "PVC／PP 合成紙／透明 PET；可覆膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "die-cut-stickers"
+  ]
+ },
+ {
+  "v": "四色數碼或柯式",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "die-cut-stickers"
+  ]
+ },
+ {
+  "v": "模切（全切／吻切）、啞膜／光膜",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "die-cut-stickers"
+  ]
+ },
+ {
+  "v": "銅版紙／合成紙；可覆啞膜／光膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "foil-stickers"
+  ]
+ },
+ {
+  "v": "四色印刷＋燙金（分版）",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "foil-stickers"
+  ]
+ },
+ {
+  "v": "燙金／燙銀、模切、可選局部 UV",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "foil-stickers"
+  ]
+ },
+ {
+  "v": "易碎紙／VOID／合成紙＋全息膜等（依方案）",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "security-stickers"
+  ]
+ },
+ {
+  "v": "可變數碼印刷為主；可搭配專色",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "security-stickers"
+  ]
+ },
+ {
+  "v": "模切、全息冷燙或燙金（依稿）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "security-stickers"
+  ]
+ },
+ {
+  "v": "螢光 PVC 膜／螢光紙；螢光油墨",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "fluorescent-stickers"
+  ]
+ },
+ {
+  "v": "模切、反光條紋覆合、覆膜",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "fluorescent-stickers"
+  ]
+ },
+ {
+  "v": "牛皮紙 120–200g 級（依報價）；可配手挽材",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "kraft-paper-bags"
+  ]
+ },
+ {
+  "v": "單色至四色；可數碼打樣",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "kraft-paper-bags"
+  ]
+ },
+ {
+  "v": "燙金／燙銀、局部 UV、覆膜（視材）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "kraft-paper-bags"
+  ]
+ },
+ {
+  "v": "白卡紙 200–300g 級（依報價）；可覆膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "white-card-bags"
+  ]
+ },
+ {
+  "v": "四色＋可選專色／燙金",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "white-card-bags"
+  ]
+ },
+ {
+  "v": "覆膜、燙金／燙銀、局部 UV、模切糊袋",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "white-card-bags"
+  ]
+ },
+ {
+  "v": "白卡／特種紙／珠光紙（依稿）；可覆膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "gift-bags"
+  ]
+ },
+ {
+  "v": "四色＋燙金／局部 UV",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "gift-bags"
+  ]
+ },
+ {
+  "v": "燙金、局部 UV、緞帶或棉繩手挽",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "gift-bags"
+  ]
+ },
+ {
+  "v": "FSC 牛皮／再生紙（依供應）；大豆油墨",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "eco-paper-bags"
+  ]
+ },
+ {
+  "v": "單色至四色（依設計）",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "eco-paper-bags"
+  ]
+ },
+ {
+  "v": "手挽、可選燙金／覆膜（視材）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "eco-paper-bags"
+  ]
+ },
+ {
+  "v": "牛皮／白卡；手挽棉繩或扁紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "handle-bags"
+  ]
+ },
+ {
+  "v": "四色印刷為主",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "handle-bags"
+  ]
+ },
+ {
+  "v": "穿孔打釘、底卡加固、可覆膜",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "handle-bags"
+  ]
+ },
+ {
+  "v": "250g 白卡紙／300g 牛皮紙／280g 特種紋理紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "large-bags"
+  ]
+ },
+ {
+  "v": "燙金／燙銀、擊凸、手挽繩、底部加固",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "large-bags"
+  ]
+ },
+ {
+  "v": "157g銅版紙或128g啞粉紙",
+  "n": 2,
+  "field": "material",
+  "slugs": [
+   "a4-flyers",
+   "double-sided-flyers"
+  ]
+ },
+ {
+  "v": "四色柯式或數碼印刷",
+  "n": 4,
+  "field": "printMethod",
+  "slugs": [
+   "a4-flyers",
+   "folded-leaflets",
+   "wall-calendars",
+   "custom-calendars"
+  ]
+ },
+ {
+  "v": "覆膜（啞膜／光膜可選）",
+  "n": 4,
+  "field": "finishing",
+  "slugs": [
+   "a4-flyers",
+   "a5-flyers",
+   "double-sided-flyers",
+   "thick-paper-flyers"
+  ]
+ },
+ {
+  "v": "128g銅版紙或100g書紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "a5-flyers"
+  ]
+ },
+ {
+  "v": "四色數碼印刷",
+  "n": 7,
+  "field": "printMethod",
+  "slugs": [
+   "a5-flyers",
+   "cartoon-red-packets",
+   "mini-calendars",
+   "magnetic-calendars",
+   "disposable-menus",
+   "spiral-notebooks",
+   "school-flyers"
+  ]
+ },
+ {
+  "v": "四色雙面柯式印刷",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "double-sided-flyers"
+  ]
+ },
+ {
+  "v": "157g或200g銅版紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "folded-leaflets"
+  ]
+ },
+ {
+  "v": "壓線、覆膜（啞膜／光膜可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "folded-leaflets"
+  ]
+ },
+ {
+  "v": "200g或250g銅版紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "thick-paper-flyers"
+  ]
+ },
+ {
+  "v": "FSC認證再生紙；大豆油墨",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "eco-flyers"
+  ]
+ },
+ {
+  "v": "四色數碼或柯式印刷",
+  "n": 5,
+  "field": "printMethod",
+  "slugs": [
+   "eco-flyers",
+   "eco-red-packets",
+   "desk-calendars",
+   "photo-frame-calendars",
+   "saddle-stitch-booklets"
+  ]
+ },
+ {
+  "v": "無覆膜（環保）或水性光油",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "eco-flyers"
+  ]
+ },
+ {
+  "v": "157g銅版紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "same-day-flyers"
+  ]
+ },
+ {
+  "v": "四色高速數碼印刷",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "same-day-flyers"
+  ]
+ },
+ {
+  "v": "無覆膜或啞膜（加時）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "same-day-flyers"
+  ]
+ },
+ {
+  "v": "157g 銅版紙（可升 200g／相紙）",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "a2-posters"
+  ]
+ },
+ {
+  "v": "柯式或高品數碼",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "a2-posters"
+  ]
+ },
+ {
+  "v": "PP 裱貼、泡沫板裱貼（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "a2-posters"
+  ]
+ },
+ {
+  "v": "157–200g 銅版或相紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "a1-posters"
+  ]
+ },
+ {
+  "v": "柯式為主；急件數碼",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "a1-posters"
+  ]
+ },
+ {
+  "v": "PP 護膜、泡沫板裱貼（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "a1-posters"
+  ]
+ },
+ {
+  "v": "戶外 PVC／PET／合成紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "outdoor-posters"
+  ]
+ },
+ {
+  "v": "戶外噴繪或 UV",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "outdoor-posters"
+  ]
+ },
+ {
+  "v": "霧面護膜、打扣（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "outdoor-posters"
+  ]
+ },
+ {
+  "v": "180g–200g PP 合成紙／背膠 PVC；UV 固化油墨",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "display-posters"
+  ]
+ },
+ {
+  "v": "環保溶劑或 UV 大判噴繪",
+  "n": 2,
+  "field": "printMethod",
+  "slugs": [
+   "display-posters",
+   "adhesive-posters"
+  ]
+ },
+ {
+  "v": "覆膜（啞膜／光膜）、穿繩孔、雙面輸出",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "display-posters"
+  ]
+ },
+ {
+  "v": "200g–250g 啞粉藝術紙／260g 純棉無酸紙；12 色顏料墨水",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "art-posters"
+  ]
+ },
+ {
+  "v": "12 色藝術微噴（Giclée）",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "art-posters"
+  ]
+ },
+ {
+  "v": "啞面／絲絨面／半光面、無框畫裝裱",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "art-posters"
+  ]
+ },
+ {
+  "v": "150g–180g 背膠 PP／鑄造級 PVC；導氣槽底紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "adhesive-posters"
+  ]
+ },
+ {
+  "v": "模切、鏤空、光膜／啞膜覆合",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "adhesive-posters"
+  ]
+ },
+ {
+  "v": "350g 食品級白卡／400g 灰底白板；PE 淋膜或 PLA 內層",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "food-boxes"
+  ]
+ },
+ {
+  "v": "四色柯式或數碼（依數量）",
+  "n": 2,
+  "field": "printMethod",
+  "slugs": [
+   "food-boxes",
+   "folding-boxes"
+  ]
+ },
+ {
+  "v": "燙金／燙銀、窗口（PET）、局部 UV、覆膜",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "food-boxes"
+  ]
+ },
+ {
+  "v": "1200-1500g 灰板裱糊 白卡 / 觸感紙 / 珠光紙; 內托 EVA / 紙漿 / PET 吸塑",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "cosmetic-boxes"
+  ]
+ },
+ {
+  "v": "四色柯式 + 專色; 可逆向 UV",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "cosmetic-boxes"
+  ]
+ },
+ {
+  "v": "覆膜 (啞/觸感/光) + 燙金 (金/銀/玫瑰金) + 局部 UV + 擊凸 + 糊盒",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "cosmetic-boxes"
+  ]
+ },
+ {
+  "v": "E／B 坑瓦楞或白卡裱瓦（依載重）",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "mailer-boxes"
+  ]
+ },
+ {
+  "v": "柔性版或柯式（依量與色數）",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "mailer-boxes"
+  ]
+ },
+ {
+  "v": "模切、壓線、自黏封口（可諮詢）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "mailer-boxes"
+  ]
+ },
+ {
+  "v": "300g–350g 白卡紙／E 坑瓦楞紙板",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "folding-boxes"
+  ]
+ },
+ {
+  "v": "覆膜（啞膜／光膜）、燙金、局部 UV、條碼",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "folding-boxes"
+  ]
+ },
+ {
+  "v": "灰板＋特種裱面紙；可選磁吸五金",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "rigid-boxes"
+  ]
+ },
+ {
+  "v": "柯式面紙印刷＋後工",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "rigid-boxes"
+  ]
+ },
+ {
+  "v": "燙金、壓紋、局部 UV、手工糊盒",
+  "n": 2,
+  "field": "finishing",
+  "slugs": [
+   "rigid-boxes",
+   "magnetic-closure-gift-box"
+  ]
+ },
+ {
+  "v": "120g紅色紙張；燙金／燙銀",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "foil-red-packets"
+  ]
+ },
+ {
+  "v": "四色印刷＋燙金",
+  "n": 3,
+  "field": "printMethod",
+  "slugs": [
+   "foil-red-packets",
+   "large-red-packets",
+   "certificates"
+  ]
+ },
+ {
+  "v": "燙金、壓凹、局部UV",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "foil-red-packets"
+  ]
+ },
+ {
+  "v": "150g紅色紙張；浮雕＋燙金",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "embossed-red-packets"
+  ]
+ },
+ {
+  "v": "四色印刷＋浮雕",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "embossed-red-packets"
+  ]
+ },
+ {
+  "v": "浮雕、燙金、壓凹",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "embossed-red-packets"
+  ]
+ },
+ {
+  "v": "120g–150g紅色或特殊色紙張",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "custom-red-packets"
+  ]
+ },
+ {
+  "v": "四色印刷＋燙金／UV",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "custom-red-packets"
+  ]
+ },
+ {
+  "v": "燙金、局部UV、壓凹、異形模切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "custom-red-packets"
+  ]
+ },
+ {
+  "v": "120g銅版紙或環保紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "cartoon-red-packets"
+  ]
+ },
+ {
+  "v": "燙金、局部UV（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "cartoon-red-packets"
+  ]
+ },
+ {
+  "v": "FSC認證再生紙或種子紙；大豆油墨",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "eco-red-packets"
+  ]
+ },
+ {
+  "v": "無覆膜（環保）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "eco-red-packets"
+  ]
+ },
+ {
+  "v": "150g–200g紅色紙張",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "large-red-packets"
+  ]
+ },
+ {
+  "v": "燙金、浮雕、局部UV",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "large-red-packets"
+  ]
+ },
+ {
+  "v": "250g–300g銅版紙或啞粉紙；金屬圈",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "wall-calendars"
+  ]
+ },
+ {
+  "v": "金屬圈裝訂、打掛孔",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "wall-calendars"
+  ]
+ },
+ {
+  "v": "200g–250g銅版紙或卡紙；三角座架",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "desk-calendars"
+  ]
+ },
+ {
+  "v": "三角座架、騎馬釘或膠裝",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "desk-calendars"
+  ]
+ },
+ {
+  "v": "250g–300g藝術紙或銅版紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "custom-calendars"
+  ]
+ },
+ {
+  "v": "燙金、局部UV、金屬圈或騎馬釘",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "custom-calendars"
+  ]
+ },
+ {
+  "v": "150g–200g銅版紙或卡紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "mini-calendars"
+  ]
+ },
+ {
+  "v": "騎馬釘或單張裁切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "mini-calendars"
+  ]
+ },
+ {
+  "v": "250g–300g銅版紙或相紙；硬紙板相架",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "photo-frame-calendars"
+  ]
+ },
+ {
+  "v": "硬紙板相架底座、騎馬釘",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "photo-frame-calendars"
+  ]
+ },
+ {
+  "v": "200g–250g銅版紙或合成紙；0.5mm或1mm軟磁片",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "magnetic-calendars"
+  ]
+ },
+ {
+  "v": "軟磁片貼合、圓角裁切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "magnetic-calendars"
+  ]
+ },
+ {
+  "v": "0.5mm–1.0mm透明或白色PVC膠片",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "pvc-menus"
+  ]
+ },
+ {
+  "v": "四色UV印刷",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "pvc-menus"
+  ]
+ },
+ {
+  "v": "圓角或直角裁切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "pvc-menus"
+  ]
+ },
+ {
+  "v": "200g–250g銅版紙或啞粉紙；啞膠或光膠覆膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "laminated-menus"
+  ]
+ },
+ {
+  "v": "四色印刷",
+  "n": 3,
+  "field": "printMethod",
+  "slugs": [
+   "laminated-menus",
+   "hardcover-menus",
+   "drink-menus"
+  ]
+ },
+ {
+  "v": "覆膜（啞膠／光膠）、圓角裁切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "laminated-menus"
+  ]
+ },
+ {
+  "v": "硬紙板封面裱糊銅版紙；內頁200g銅版紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "hardcover-menus"
+  ]
+ },
+ {
+  "v": "燙金、壓凹、騎馬釘或膠裝",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "hardcover-menus"
+  ]
+ },
+ {
+  "v": "200g–250g銅版紙或合成紙；啞膠覆膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "drink-menus"
+  ]
+ },
+ {
+  "v": "覆膜（啞膠）、圓角裁切",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "drink-menus"
+  ]
+ },
+ {
+  "v": "100g–120g書紙或再生紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "disposable-menus"
+  ]
+ },
+ {
+  "v": "無覆膜（即棄）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "disposable-menus"
+  ]
+ },
+ {
+  "v": "外光／內光 PVC 燈布（依場景）",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "outdoor-vinyl-banners"
+  ]
+ },
+ {
+  "v": "弱溶劑／溶劑／UV 噴繪",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "outdoor-vinyl-banners"
+  ]
+ },
+ {
+  "v": "打扣、焊邊、筒芯出貨（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "outdoor-vinyl-banners"
+  ]
+ },
+ {
+  "v": "PET／PVC 片或防水合成紙；鋁合金支架",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "roll-up-banners"
+  ]
+ },
+ {
+  "v": "噴繪或 UV 印刷（依材）",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "roll-up-banners"
+  ]
+ },
+ {
+  "v": "加重桿、牛津布袋／硬殼箱（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "roll-up-banners"
+  ]
+ },
+ {
+  "v": "PVC 車貼／可移膠／透明膜（依場景）",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "adhesive-banners"
+  ]
+ },
+ {
+  "v": "溶劑／弱溶劑／UV 噴繪",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "adhesive-banners"
+  ]
+ },
+ {
+  "v": "霧面護膜、異形裁切（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "adhesive-banners"
+  ]
+ },
+ {
+  "v": "鑄造級 PVC 車貼 80–100 微米；可移膠＋導氣槽",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "vehicle-wraps"
+  ]
+ },
+ {
+  "v": "UV 固化或環保溶劑大判噴繪",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "vehicle-wraps"
+  ]
+ },
+ {
+  "v": "亮面／啞面覆膜、單透孔、3M／Avery 品牌升級",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "vehicle-wraps"
+  ]
+ },
+ {
+  "v": "270g–350g PVC 網格夾網布；UV 固化油墨",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "mesh-banners"
+  ]
+ },
+ {
+  "v": "UV 大判噴繪",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "mesh-banners"
+  ]
+ },
+ {
+  "v": "熱封邊、銅扣眼、阻燃處理、雙面縫邊",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "mesh-banners"
+  ]
+ },
+ {
+  "v": "內頁157g–200g銅版紙；封面200g–250g銅版紙",
+  "n": 2,
+  "field": "material",
+  "slugs": [
+   "catalog-printing",
+   "perfect-bound-books"
+  ]
+ },
+ {
+  "v": "覆膜（啞膜／光膜）、燙金、騎馬釘或膠裝",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "catalog-printing"
+  ]
+ },
+ {
+  "v": "128g–157g銅版紙或書紙",
+  "n": 2,
+  "field": "material",
+  "slugs": [
+   "saddle-stitch-booklets",
+   "school-flyers"
+  ]
+ },
+ {
+  "v": "騎馬釘裝訂、覆膜（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "saddle-stitch-booklets"
+  ]
+ },
+ {
+  "v": "膠裝、封面覆膜（啞膜／光膜）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "perfect-bound-books"
+  ]
+ },
+ {
+  "v": "硬紙板封面裱糊銅版紙；內頁157g–200g銅版紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "hardcover-books"
+  ]
+ },
+ {
+  "v": "膠裝、燙金、壓凹、局部UV、封面覆膜",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "hardcover-books"
+  ]
+ },
+ {
+  "v": "內頁80g–100g書紙或道林紙；封面200g銅版紙或PP",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "spiral-notebooks"
+  ]
+ },
+ {
+  "v": "YO圈或螺旋裝訂、封面覆膜",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "spiral-notebooks"
+  ]
+ },
+ {
+  "v": "80–120g 書紙／本白書紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "business-envelopes"
+  ]
+ },
+ {
+  "v": "單色至四色柯式或數碼",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "business-envelopes"
+  ]
+ },
+ {
+  "v": "自黏封口、開窗貼片（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "business-envelopes"
+  ]
+ },
+ {
+  "v": "80–120g 書紙／彩色書紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "colored-envelopes"
+  ]
+ },
+ {
+  "v": "柯式四色＋可選專色",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "colored-envelopes"
+  ]
+ },
+ {
+  "v": "開窗、自黏封口（變數可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "colored-envelopes"
+  ]
+ },
+ {
+  "v": "100–120g 書紙為主（可諮詢）",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "large-envelopes"
+  ]
+ },
+ {
+  "v": "單色至四色",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "large-envelopes"
+  ]
+ },
+ {
+  "v": "自黏封口、開窗（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "large-envelopes"
+  ]
+ },
+ {
+  "v": "珠光／冰白特種書紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "pearl-envelopes"
+  ]
+ },
+ {
+  "v": "四色／專色＋可選燙金",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "pearl-envelopes"
+  ]
+ },
+ {
+  "v": "自黏封口、開窗、擊凸（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "pearl-envelopes"
+  ]
+ },
+ {
+  "v": "80g–100g書紙或道林紙；封面200g銅版紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "exercise-books"
+  ]
+ },
+ {
+  "v": "封面四色印刷；內頁單色或雙色",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "exercise-books"
+  ]
+ },
+ {
+  "v": "騎馬釘裝訂、封面覆膜（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "exercise-books"
+  ]
+ },
+ {
+  "v": "200g–250g水印紙或棉質紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "certificates"
+  ]
+ },
+ {
+  "v": "燙金、壓凹、防偽底紋、浮水印",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "certificates"
+  ]
+ },
+ {
+  "v": "覆膜（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "school-flyers"
+  ]
+ },
+ {
+  "v": "80g–100g道林紙或書紙；封面200g銅版紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "textbooks"
+  ]
+ },
+ {
+  "v": "封面四色；內頁單色或雙色",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "textbooks"
+  ]
+ },
+ {
+  "v": "膠裝或騎馬釘、封面覆膜（可選）",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "textbooks"
+  ]
+ },
+ {
+  "v": "灰板裱面＋隱藏磁吸；可觸感膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "magnetic-closure-gift-box"
+  ]
+ },
+ {
+  "v": "面紙四色／專色＋後工",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "magnetic-closure-gift-box"
+  ]
+ },
+ {
+  "v": "1200g 灰板紙裱糊銅版紙；EVA／PET 吸塑／紙漿內托",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "electronics-packaging-box"
+  ]
+ },
+ {
+  "v": "燙金／燙銀、局部 UV、軟觸膜、磁吸扣",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "electronics-packaging-box"
+  ]
+ },
+ {
+  "v": "300g–350g FSC 牛皮卡紙；水性油墨",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "kraft-paper-packaging-box"
+  ]
+ },
+ {
+  "v": "單色／雙色水性印刷或四色柯式",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "kraft-paper-packaging-box"
+  ]
+ },
+ {
+  "v": "燙黑、壓凹、絲印、手提繩",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "kraft-paper-packaging-box"
+  ]
+ },
+ {
+  "v": "350g/400g 單粉卡(超高松) / 375g 銀卡紙 / 375g 鐳射銀卡",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "gang-run-card-boxes"
+  ]
+ },
+ {
+  "v": "四色柯式印刷 + 覆光膜/啞膜",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "gang-run-card-boxes"
+  ]
+ },
+ {
+  "v": "燙金 / UV 局部 / 擊凸 / 貼膠片 / 印白墨(銀卡類) / 逆向 UV(鐳射銀卡類)",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "gang-run-card-boxes"
+  ]
+ },
+ {
+  "v": "食品級 BOPP／PE／PLA；大豆油墨",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "fruit-food-label-stickers"
+  ]
+ },
+ {
+  "v": "模切、覆膜（啞膜／光膜）、可變條碼",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "fruit-food-label-stickers"
+  ]
+ },
+ {
+  "v": "FSC 認證道林紙 90g / 銅版紙 90g (封面)",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "doujinshi-printing"
+  ]
+ },
+ {
+  "v": "封面: 柯式四色 / 內頁: 數碼或柯式印刷",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "doujinshi-printing"
+  ]
+ },
+ {
+  "v": "膠裝 / 騎馬釘 (8-64頁) / 書脊封面",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "doujinshi-printing"
+  ]
+ },
+ {
+  "v": "透明亞加力膠板 2mm / 3mm (可選:白底 / 滿版印刷)",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "acrylic-keychain"
+  ]
+ },
+ {
+  "v": "UV 噴墨四色 (CMYK + 白墨)",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "acrylic-keychain"
+  ]
+ },
+ {
+  "v": "安全扣 / 珠鏈 / 掛鉤扣 / OPP 袋封裝",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "acrylic-keychain"
+  ]
+ },
+ {
+  "v": "金屬底座 + 紙 / PET 印刷面 + 安全扣",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "can-badge"
+  ]
+ },
+ {
+  "v": "柯式 / 數碼四色 (CMYK)",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "can-badge"
+  ]
+ },
+ {
+  "v": "安全扣標準配備 / OPP 袋獨立包裝可選",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "can-badge"
+  ]
+ },
+ {
+  "v": "和紙風藝術紙 180g / 雙面霧面 PP 貼膜",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "postcard-set"
+  ]
+ },
+ {
+  "v": "數碼 / 柯式四色 (CMYK)",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "postcard-set"
+  ]
+ },
+ {
+  "v": "OPP 獨立袋包裝 + 集合 OPP 袋",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "postcard-set"
+  ]
+ },
+ {
+  "v": "100% 有機棉 / 12oz 厚實帆布",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "eco-tote-bag"
+  ]
+ },
+ {
+  "v": "絲網印刷 (1-3 色) / DTG 全彩印刷",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "eco-tote-bag"
+  ]
+ },
+ {
+  "v": "內袋 / 底板加強 / 繡名字 (可選)",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "eco-tote-bag"
+  ]
+ },
+ {
+  "v": "300g 棉紙 / 350g 剛古紙 / 300g 銅版紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "foil-wedding-invitations"
+  ]
+ },
+ {
+  "v": "柯式印刷 4C + 燙金",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "foil-wedding-invitations"
+  ]
+ },
+ {
+  "v": "燙金 (金/銀/玫瑰金/香檳金) + UV 局部 + 模切異形",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "foil-wedding-invitations"
+  ]
+ },
+ {
+  "v": "300g 銅版紙 / 棉紙 / 剛古紙",
+  "n": 3,
+  "field": "material",
+  "slugs": [
+   "save-the-date-cards",
+   "wedding-program-cards",
+   "wedding-menu-cards"
+  ]
+ },
+ {
+  "v": "柯式印刷 4C",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "save-the-date-cards"
+  ]
+ },
+ {
+  "v": "光膠 / 啞膠 / 燙金 / UV 局部",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "save-the-date-cards"
+  ]
+ },
+ {
+  "v": "300g 棉紙 / 銅版紙 / 剛古紙",
+  "n": 3,
+  "field": "material",
+  "slugs": [
+   "wedding-thank-you-cards",
+   "wedding-place-cards",
+   "escort-cards"
+  ]
+ },
+ {
+  "v": "柯式印刷 4C + 折卡",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "wedding-thank-you-cards"
+  ]
+ },
+ {
+  "v": "燙金 / UV / 模切 / 折卡",
+  "n": 2,
+  "field": "finishing",
+  "slugs": [
+   "wedding-thank-you-cards",
+   "wedding-menu-cards"
+  ]
+ },
+ {
+  "v": "柯式印刷 4C 雙面",
+  "n": 5,
+  "field": "printMethod",
+  "slugs": [
+   "wedding-program-cards",
+   "wedding-menu-cards",
+   "wedding-place-cards",
+   "escort-cards",
+   "name-tags-badges"
+  ]
+ },
+ {
+  "v": "光膠 / 啞膠 / 燙金",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "wedding-program-cards"
+  ]
+ },
+ {
+  "v": "300g 棉紙 (主) + 350g 剛古紙 (請帖)",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "wedding-suite-bundle"
+  ]
+ },
+ {
+  "v": "柯式印刷 4C 雙面 + 燙金",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "wedding-suite-bundle"
+  ]
+ },
+ {
+  "v": "燙金 (玫瑰金) + UV 局部 + 模切 + 折卡",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "wedding-suite-bundle"
+  ]
+ },
+ {
+  "v": "燙金 / 壓紋 / 模切 / 折卡 / 站立",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "wedding-place-cards"
+  ]
+ },
+ {
+  "v": "0.5mm 透明 PVC / 300g 銅版紙 / 350g 黑卡紙",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "drink-tokens"
+  ]
+ },
+ {
+  "v": "柯式印刷 4C + UV 防水層",
+  "n": 2,
+  "field": "printMethod",
+  "slugs": [
+   "drink-tokens",
+   "cafe-table-cards"
+  ]
+ },
+ {
+  "v": "模切圓角 / 燙金 / 打孔掛繩",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "drink-tokens"
+  ]
+ },
+ {
+  "v": "燙金 / UV / 模切異形 / 折卡 / 站立",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "escort-cards"
+  ]
+ },
+ {
+  "v": "300g 銅版紙 / 350g 白卡 / PVC 透明卡",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "name-tags-badges"
+  ]
+ },
+ {
+  "v": "燙金 / UV / 磁鐵背貼 / 打孔掛繩",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "name-tags-badges"
+  ]
+ },
+ {
+  "v": "300g 銅版紙 / 0.5mm 防水 PVC",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "cafe-table-cards"
+  ]
+ },
+ {
+  "v": "UV 防水 / 燙金 / 模切 / 折卡 / 站立",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "cafe-table-cards"
+  ]
+ },
+ {
+  "v": "300g 銅版紙 / 350g 剛古紙 (大尺寸加厚)",
+  "n": 1,
+  "field": "material",
+  "slugs": [
+   "wedding-seating-charts"
+  ]
+ },
+ {
+  "v": "柯式印刷 4C 單面或雙面",
+  "n": 1,
+  "field": "printMethod",
+  "slugs": [
+   "wedding-seating-charts"
+  ]
+ },
+ {
+  "v": "燙金 / UV / 模切 / 摺疊",
+  "n": 1,
+  "field": "finishing",
+  "slugs": [
+   "wedding-seating-charts"
+  ]
+ },
+ {
+  "v": "127×178mm（標準）；R3mm圓角可選",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "premium-greeting-cards"
+  ]
+ },
+ {
+  "v": "90×54mm（標準名片）；54×54mm 方形可選",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "thick-greeting-cards-400g"
+  ]
+ },
+ {
+  "v": "127×178mm（標準）",
+  "n": 3,
+  "field": "size",
+  "slugs": [
+   "foil-greeting-cards",
+   "spot-uv-greeting-cards",
+   "matte-greeting-cards"
+  ]
+ },
+ {
+  "v": "127×178mm（標準）；R3mm圓角",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "rounded-corner-greeting-cards"
+  ]
+ },
+ {
+  "v": "最小約 10×10mm，最大約 300×400mm（依稿而定）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "waterproof-stickers"
+  ]
+ },
+ {
+  "v": "客製模切外形，常用寬邊 20–120mm 級距",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "transparent-stickers"
+  ]
+ },
+ {
+  "v": "最小約 15×15mm，最大約 250×350mm",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "removable-stickers"
+  ]
+ },
+ {
+  "v": "A4 起印；單張尺寸最小 10×10mm，最大 300×400mm",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "small-batch-stickers"
+  ]
+ },
+ {
+  "v": "依稿模切；建議最小元素寬度 ≥1.5mm（視材質）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "die-cut-stickers"
+  ]
+ },
+ {
+  "v": "依稿模切；箔面最小字高視稿評估",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "foil-stickers"
+  ]
+ },
+ {
+  "v": "依應用模切；小標籤至 A4 拼版皆可",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "security-stickers"
+  ]
+ },
+ {
+  "v": "最小約 20×20mm，最大約 280×380mm",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "fluorescent-stickers"
+  ]
+ },
+ {
+  "v": "小／中／大袋型或客製展開尺寸",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "kraft-paper-bags"
+  ]
+ },
+ {
+  "v": "小／中／大或客製展開",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "white-card-bags"
+  ]
+ },
+ {
+  "v": "禮品常用中／大袋或客製",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "gift-bags"
+  ]
+ },
+ {
+  "v": "小／中／大袋或客製",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "eco-paper-bags"
+  ]
+ },
+ {
+  "v": "中／大袋為主；可客製",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "handle-bags"
+  ]
+ },
+ {
+  "v": "展開約 320×120×380mm（可客製）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "large-bags"
+  ]
+ },
+ {
+  "v": "A4（210×297mm）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "a4-flyers"
+  ]
+ },
+ {
+  "v": "A5（148×210mm）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "a5-flyers"
+  ]
+ },
+ {
+  "v": "A4（210×297mm）或A5（148×210mm）",
+  "n": 12,
+  "field": "size",
+  "slugs": [
+   "double-sided-flyers",
+   "thick-paper-flyers",
+   "eco-flyers",
+   "same-day-flyers",
+   "pvc-menus",
+   "hardcover-menus",
+   "catalog-printing",
+   "saddle-stitch-booklets",
+   "perfect-bound-books",
+   "hardcover-books",
+   "exercise-books",
+   "school-flyers"
+  ]
+ },
+ {
+  "v": "A4展開（210×297mm）或DL（99×210mm）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "folded-leaflets"
+  ]
+ },
+ {
+  "v": "A2 420×594mm（可改比例）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "a2-posters"
+  ]
+ },
+ {
+  "v": "A1 594×841mm",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "a1-posters"
+  ]
+ },
+ {
+  "v": "依稿面；可對標 A 系列或全幅",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "outdoor-posters"
+  ]
+ },
+ {
+  "v": "X 展架 60×160cm／80×180cm；易拉寶 85×200cm（可客製）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "display-posters"
+  ]
+ },
+ {
+  "v": "A4 至 A0（59.4×84.1cm），更大尺寸可拼接",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "art-posters"
+  ]
+ },
+ {
+  "v": "A4 至 A0，異形模切依稿件而定",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "adhesive-posters"
+  ]
+ },
+ {
+  "v": "完全訂製，常見 15×10×5cm 至 25×20×8cm",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "food-boxes"
+  ]
+ },
+ {
+  "v": "依瓶器三維客製; 標準 50×50×30mm 至 250×250×120mm",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "cosmetic-boxes"
+  ]
+ },
+ {
+  "v": "小／中／大或依內裝物客製",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "mailer-boxes"
+  ]
+ },
+ {
+  "v": "展開平板約 40×30cm 至 60×50cm；成型後約 15×10×5cm 起",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "folding-boxes"
+  ]
+ },
+ {
+  "v": "全客製內徑；常用禮品三階尺寸",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "rigid-boxes"
+  ]
+ },
+ {
+  "v": "標準約90×170mm（可客製）",
+  "n": 2,
+  "field": "size",
+  "slugs": [
+   "foil-red-packets",
+   "embossed-red-packets"
+  ]
+ },
+ {
+  "v": "完全訂製",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "custom-red-packets"
+  ]
+ },
+ {
+  "v": "標準約90×170mm",
+  "n": 2,
+  "field": "size",
+  "slugs": [
+   "cartoon-red-packets",
+   "eco-red-packets"
+  ]
+ },
+ {
+  "v": "約110×200mm（較標準大30%–50%）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "large-red-packets"
+  ]
+ },
+ {
+  "v": "A3（297×420mm）或A4（210×297mm）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "wall-calendars"
+  ]
+ },
+ {
+  "v": "A5（148×210mm）或A4（210×297mm）",
+  "n": 5,
+  "field": "size",
+  "slugs": [
+   "desk-calendars",
+   "photo-frame-calendars",
+   "magnetic-calendars",
+   "drink-menus",
+   "disposable-menus"
+  ]
+ },
+ {
+  "v": "A3、A4或完全客製",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "custom-calendars"
+  ]
+ },
+ {
+  "v": "約85×55mm或90×60mm",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "mini-calendars"
+  ]
+ },
+ {
+  "v": "A4（210×297mm）或A3（297×420mm）",
+  "n": 2,
+  "field": "size",
+  "slugs": [
+   "laminated-menus",
+   "certificates"
+  ]
+ },
+ {
+  "v": "按客製長寬平方米計",
+  "n": 2,
+  "field": "size",
+  "slugs": [
+   "outdoor-vinyl-banners",
+   "adhesive-banners"
+  ]
+ },
+ {
+  "v": "常見 850×2000mm 至 1200×3000mm 級",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "roll-up-banners"
+  ]
+ },
+ {
+  "v": "依車型版型，常見轎車約 15–20 平方米",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "vehicle-wraps"
+  ]
+ },
+ {
+  "v": "最大寬度 5 米，長度無限；常見 3×6m、4×8m",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "mesh-banners"
+  ]
+ },
+ {
+  "v": "A5（148×210mm）或B5（176×250mm）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "spiral-notebooks"
+  ]
+ },
+ {
+  "v": "DL／C5／C4 等常用規格",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "business-envelopes"
+  ]
+ },
+ {
+  "v": "DL、C5、C4（變數可選）",
+  "n": 2,
+  "field": "size",
+  "slugs": [
+   "colored-envelopes",
+   "pearl-envelopes"
+  ]
+ },
+ {
+  "v": "C4（229×324mm）等",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "large-envelopes"
+  ]
+ },
+ {
+  "v": "A4（210×297mm）或B5（176×250mm）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "textbooks"
+  ]
+ },
+ {
+  "v": "依產品＋內襯厚度全客製",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "magnetic-closure-gift-box"
+  ]
+ },
+ {
+  "v": "完全訂製，常見 10×10×4cm 至 20×15×6cm",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "electronics-packaging-box"
+  ]
+ },
+ {
+  "v": "常見 12×8×5cm 至 20×15×8cm（可客製）",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "kraft-paper-packaging-box"
+  ]
+ },
+ {
+  "v": "60x40x20 / 80x60x35 / 100x70x35 / 100x80x120 / 120x80x40 / 150x100x60 / 150x50x100 / 200x150x80 mm (8 檔標準尺寸, 飛機盒/扣底盒/雙插盒 3 種盒型)",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "gang-run-card-boxes"
+  ]
+ },
+ {
+  "v": "最小約 20×20mm，最大約 200×300mm",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "fruit-food-label-stickers"
+  ]
+ },
+ {
+  "v": "A5 (148×210mm) / B5 (182×257mm) / A4 (可選)",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "doujinshi-printing"
+  ]
+ },
+ {
+  "v": "30-80mm (自訂形狀,Illustrator パス路徑入稿)",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "acrylic-keychain"
+  ]
+ },
+ {
+  "v": "57mm (標準) / 76mm (大尺寸) / 44mm (迷你)",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "can-badge"
+  ]
+ },
+ {
+  "v": "105×148mm (A6 標準明信片)",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "postcard-set"
+  ]
+ },
+ {
+  "v": "38×42×10cm (可收納 A4) / 側寬 10cm",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "eco-tote-bag"
+  ]
+ },
+ {
+  "v": "130×190mm 標準請帖 / 190×260mm 對摺請帖",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "foil-wedding-invitations"
+  ]
+ },
+ {
+  "v": "A6 (105×148mm) / 自訂",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "save-the-date-cards"
+  ]
+ },
+ {
+  "v": "A6 (105×148mm) / 對摺 A5",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "wedding-thank-you-cards"
+  ]
+ },
+ {
+  "v": "A5 對摺 (148×210mm) / A4 對摺",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "wedding-program-cards"
+  ]
+ },
+ {
+  "v": "A5 對摺 (148×210mm) / 自訂",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "wedding-menu-cards"
+  ]
+ },
+ {
+  "v": "6 件不同尺寸 (請帖 130×190mm 等)",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "wedding-suite-bundle"
+  ]
+ },
+ {
+  "v": "A6 (105×148mm) / A5 對摺 / 自訂站立式",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "wedding-place-cards"
+  ]
+ },
+ {
+  "v": "A8 (52×74mm) / A7 (74×105mm) / 自訂圓形",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "drink-tokens"
+  ]
+ },
+ {
+  "v": "A7 (74×105mm) / A6 對摺 / 自訂站立",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "escort-cards"
+  ]
+ },
+ {
+  "v": "A7 (74×105mm) / 90×120mm / 自訂",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "name-tags-badges"
+  ]
+ },
+ {
+  "v": "A6 (105×148mm) / A5 對摺 / 自訂站立",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "cafe-table-cards"
+  ]
+ },
+ {
+  "v": "A1 (594×841mm) / A2 (420×594mm) / 自訂",
+  "n": 1,
+  "field": "size",
+  "slugs": [
+   "wedding-seating-charts"
+  ]
+ }
+]

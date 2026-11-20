@@ -1,0 +1,142 @@
+[
+ {
+  "slug": "premium-greeting-cards",
+  "sku": null,
+  "n_missing": 1,
+  "missing": [
+   {
+    "loc": "en",
+    "path": "images/products/seedream-webp/zprintpro-stickers-premium-stickers-en-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-premium-stickers-en-5"
+   }
+  ]
+ },
+ {
+  "slug": "thick-greeting-cards-400g",
+  "sku": null,
+  "n_missing": 3,
+  "missing": [
+   {
+    "loc": "zh-hk",
+    "path": "images/products/seedream-webp/zprintpro-stickers-thick-stickers-400g-zh-hk-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-thick-stickers-400g-zh-hk-5"
+   },
+   {
+    "loc": "en",
+    "path": "images/products/seedream-webp/zprintpro-stickers-thick-stickers-400g-en-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-thick-stickers-400g-en-5"
+   },
+   {
+    "loc": "ja",
+    "path": "images/products/seedream-webp/zprintpro-stickers-thick-stickers-400g-ja-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-thick-stickers-400g-ja-5"
+   }
+  ]
+ },
+ {
+  "slug": "foil-greeting-cards",
+  "sku": null,
+  "n_missing": 2,
+  "missing": [
+   {
+    "loc": "zh-hk",
+    "path": "images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-foil-stickers-zh-hk-5"
+   },
+   {
+    "loc": "ja",
+    "path": "images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-foil-stickers-ja-5"
+   }
+  ]
+ },
+ {
+  "slug": "matte-greeting-cards",
+  "sku": null,
+  "n_missing": 2,
+  "missing": [
+   {
+    "loc": "en",
+    "path": "images/products/seedream-webp/zprintpro-stickers-matte-stickers-en-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-matte-stickers-en-5"
+   },
+   {
+    "loc": "ja",
+    "path": "images/products/seedream-webp/zprintpro-stickers-matte-stickers-ja-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-matte-stickers-ja-5"
+   }
+  ]
+ },
+ {
+  "slug": "rounded-corner-greeting-cards",
+  "sku": null,
+  "n_missing": 3,
+  "missing": [
+   {
+    "loc": "zh-hk",
+    "path": "images/products/seedream-webp/zprintpro-stickers-rounded-corner-cards-zh-hk-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-rounded-corner-cards-zh-hk-5"
+   },
+   {
+    "loc": "en",
+    "path": "images/products/seedream-webp/zprintpro-stickers-rounded-corner-cards-en-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-rounded-corner-cards-en-5"
+   },
+   {
+    "loc": "ja",
+    "path": "images/products/seedream-webp/zprintpro-stickers-rounded-corner-cards-ja-5.webp",
+    "view": null,
+    "base": "zprintpro-stickers-rounded-corner-cards-ja-5"
+   }
+  ]
+ },
+ {
+  "slug": "roll-stickers",
+  "sku": null,
+  "n_missing": 1,
+  "missing": [
+   {
+    "loc": "legacy",
+    "path": "images/products/roll-stickers.jpg",
+    "view": null,
+    "base": "roll-stickers"
+   }
+  ]
+ },
+ {
+  "slug": "foil-wedding-invitations",
+  "sku": null,
+  "n_missing": 1,
+  "missing": [
+   {
+    "loc": "legacy",
+    "path": "images/products/foil-wedding-invitations-1.jpg",
+    "view": null,
+    "base": "foil-wedding-invitations-1"
+   }
+  ]
+ },
+ {
+  "slug": "wedding-thank-you-cards",
+  "sku": null,
+  "n_missing": 1,
+  "missing": [
+   {
+    "loc": "legacy",
+    "path": "images/products/wedding-thank-you-cards-1.jpg",
+    "view": null,
+    "base": "wedding-thank-you-cards-1"
+   }
+  ]
+ }
+]

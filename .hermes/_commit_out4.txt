@@ -1,0 +1,580 @@
+﻿git : 🔍 反审门童 v1 pre-commit (K3 9/1 15:06 拍板)...
+所在位置 行:1 字符: 252
++ ... Host "---"; git commit -m "docs(x13-prep): number-redaction manifest  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (🔍 反审门童 v1 pre-.../1 15:06 拍板)...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+1️⃣  Encoding check...
+🔍 Checking staged files for encoding issues...
+
+✅ All 2 checked files are UTF-8 LF — safe to commit.
+2️⃣  Simplified Chinese check...
+
+📋 简体字检测报告
+
+================================================================================
+✅ 没有检测到简体字残留
+✅ 所有 zh-hk 产品名称都是纯繁体中文
+
+================================================================================
+🎯 简体字检测完成！
+2️⃣.5  blog-data JSON 严格校验 (门童 #15)...
+3️⃣  反审门童 v1 (5 道门童 + 3 道防线)...
+🔍 反审门童 v1 启动 (K3 9/1 15:06 拍板)
+════════════════════════════════════════════════════════════
+模式: 仅 red 硬拦 (shadow mode)
+范围: src/
+DoD 铁律: 禁用
+
+📁 扫描文件数: 2
+
+📉 品牌存量基线: total=431 files=51 (基线内命中不拦, 只拦新增)
+
+📉 CRED 存量基线: head=8806521d hits=0 files=0 (基线内命中不拦, 只拦新增)
+
+门童 #1 数据诚信: 54 命中
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:28
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 20,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:29
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 25,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:130
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:141
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:143
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:193
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:195
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:198
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:248
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 20,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:276
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 20,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:279
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 20,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:294
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:297
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:301
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:303
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:320
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,144
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:332
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:336
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:353
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,677
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:365
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:368
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:385
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,872
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:397
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:400
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:417
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,800
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:426
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:429
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:431
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:453
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:457
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:460
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:544
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:546
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:549
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:551
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:602
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:606
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:612
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:618
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:636
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:636
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:639
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:642
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:647
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:648
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:651
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:818
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:818
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 3,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:818
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.json:820
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.md:18
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.md:29
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.md:29
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] .hermes/number-redaction-manifest-2026-10-23.md:29
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 10,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+
+门童 #2 真实电话: ✅ 0 命中
+
+门童 #3 品牌分层: 7 命中
+  🔴 HARD [red] .hermes/number-redaction-manifest-2026-10-23.json:6985
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/number-redaction-manifest-2026-10-23.json:7018
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/number-redaction-manifest-2026-10-23.json:7198
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/number-redaction-manifest-2026-10-23.json:7322
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/number-redaction-manifest-2026-10-23.json:7353
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/number-redaction-manifest-2026-10-23.json:7388
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/number-redaction-manifest-2026-10-23.json:7425
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+
+ℹ️ 门童 #4 双向污染存量基线: 实测命中 0 → 基线 162 (录于 2026-09-19); 本次基线内豁免 0, 既有内向 red 保留 0, ★新增缺陷 0
+   ⚠️ 实测(0) ≠ 基线(162) ⇒ 存量已递减 162 条 (可将基线同步下调)
+门童 #4 跨语言污染 (v2 扩展 en 8 禁词 + ja 8 禁词 per K3 9/2 08:50 GLM 评估): ✅ 0 命中
+
+门童 #5 SOP-10 5 问门禁: 60 命中
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:22
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 20,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:22
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 25,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:28
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 20,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:29
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 25,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:130
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:141
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:143
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:193
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:195
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:198
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:246
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 20,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:248
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 20,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:274
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 20,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:276
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 20,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:279
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 20,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:294
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:297
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:301
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:303
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:310
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,144
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:320
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,144
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:325
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:325
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,144
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:327
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:332
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:336
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:343
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,677
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:353
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,677
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:358
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:358
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,677
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:360
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:365
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:368
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:375
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,872
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:385
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,872
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:390
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:390
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,872
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:392
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:397
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:400
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:407
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,800
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:417
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,800
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:422
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:422
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,800
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:426
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:429
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:431
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:450
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:453
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.json:457
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.md:18
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.md:28
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 6,300
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.md:28
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,950
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.md:28
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 24,750
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.md:28
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.md:28
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.md:28
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.md:29
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.md:29
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] .hermes/number-redaction-manifest-2026-10-23.md:29
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+
+门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留): ✅ 0 命中
+
+门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发): ✅ 0 命中
+
+门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT): ✅ 0 命中
+
+门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h): 4 命中
+  🟡 SHADOW [yellow] /.hermes/number-redaction-manifest-2026-10-23.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/number-redaction-manifest-2026-10-23.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/number-redaction-manifest-2026-10-23.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/number-redaction-manifest-2026-10-23.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+
+门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数): ✅ 0 命中
+
+门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则): ✅ 0 命中
+
+门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学
+得 323 条基线全量修复): ✅ 0 命中
+
+门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件): ✅ 0 命中
+
+门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57): ✅ 0 
+命中
+
+ℹ️ 门童 #20 存量基线: 基线 120, 现存 53, 已修 67, 剩余待修 53
+门童 #20 meta description 完整性 (K3 2026-09-18 决策 3-B 专用基线通道: 语言错配/首词前缀重复/空 meta; 存量 120 条只许递减): ✅ 0 命中
+
+════════════════════════════════════════════════════════════
+📊 汇总: 🔴 7 | 🟠 54 | 🟡 64 | ⚪ 0
+📊 真實計數 (未截斷): SOP10_4_PLUS_NUMBER=896 | CRED_4_PLUS_NUMBER=672 | BRAND_LOCALE_MISMATCH=7 | CRED_ISO_9001=0 | CRED_FSC_
+C123456=0 | CRED_TUV_RHEINLAND=0 | CRED_1000_PLUS=0 | CRED_X_INDUSTRIES=0 | CRED_X_FOLD=0 | CRED_INTL_TOP=0 | CRED_15_Y
+EARS=0 | CRED_SELF_FACTORY=0 | CRED_HEIDELBERG=0 | PHONE_HK_BLACKLIST=0 | PHONE_WA_852=0 | PHONE_NON_WHITELIST=0 | BRAN
+D_DOUBLE=0 | BRAND_TYPO=0 | BRAND_JA_ALTERNATE=0 | I18N_META_LENGTH=0 | I18N_CURRENCY=0 | SOP10_CERT_NO=0 | SOP10_24H_S
+LA=0 | SOP10_HEIDELBERG_6_1=0 | SOP10_12_INDUSTRIES=0 | SOP10_INTL_TOP=0 | SOP10_15_YEARS=0 | SECRET_LEAK=0
+⚠️ 明細截斷 (真實命中 > 保留上限 50): SOP10_4_PLUS_NUMBER 真值 896 / 僅保留 60 | CRED_4_PLUS_NUMBER 真值 672 / 僅保留 54
+
+❌ 反审门童拦截 (硬拦)

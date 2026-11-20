@@ -1,0 +1,41 @@
+feat(price-tables+pdp): K3 04:29 5 类目 360 tier + 3 PDP 404 redirect (§0.1 第 5 例外)
+
+Part 1: price-tables 15 文件 360 tier (K3 04:29 拍板 5 类目 §11 主营 + 包装盒拆分)
+  - 5 类目 (K3 04:29 拍板, 替换旧 §11 packaging + labels 拆 2):
+    - corrugated-boxes (瓦通盒, 3 layer / 5 layer, 100 MOQ)
+    - rigid-boxes (硬盒, lid / book / magnetic / drawer, 50 MOQ)
+    - paper-bags (紙袋, kraft / white card / coated, 100 MOQ)
+    - stickers (貼紙, transparent / waterproof / matte/glossy/foil, 50 MOQ)
+    - flyers (宣傳單張, A3 / A4 / A5 / custom, 100 MOQ)
+  - 3 locale: zh-hk HKD / en USD / ja JPY
+  - schema: { category, currency, label, name, description, tiers[24], source, fx_rate, last_updated }
+  - tier 结构: 3 size × 8 qty = 24 tier, HKD 锚定 fx USD 0.128 / JPY 19.5
+  - 避开 §11 business-cards 禁区
+  - §13.10 NAP 脱钩 (zh-hk 寫香港, en 美國市場, ja 日本)
+  - §13.16.1 zh-hk 100% 繁体 0 简体字残留 (修了 "面" → "光" + source 字段 5 字)
+  - 覆盖 8/3 01:30 bb3817b 旧 §11 5 类目骨架 (stickers / flyers / packaging / paper-bags / labels)
+  - 22 files / +3093 / -82
+
+Part 2: 3 PDP 301 redirect (8/3 K3 10:09 拍板 §0.6 P0 修, 矩阵 88 hits 继承)
+  - 根因: products.ts 4 字段简化对象 (slug + name + 3 locale name + sort_order) 缺 category_slug / description / images / basePrice, build 时 generateStaticParams 不生成路径
+  - /product/paper-bags/ 3 locale -> /category/paper-bags/ (78 hits matrix 继承)
+  - /product/stickers/ 3 locale -> /category/stickers/ (1 hit matrix 保留)
+  - /product/custom-stickers/ 3 locale -> /category/stickers/ (9 hits matrix 合并)
+  - 6 redirects × 3 locale = 18 rules (跟 v22 名片改造 21 rules 模式一致)
+  - §0.7 301 接收端 /category/{slug}/ 200 OK + 5+ 内链入口
+  - next.config.js +26 lines
+
+§0.1 攒批 1 push/天, 8/3 第 5 例外 (K3 04:29 + 10:09 主动拍板)
+8/3 quota 累计 = 12 (8/3 01:30 bb3817b 第 4 例外) + 1 (8/3 daily cron 10:15) + 1 (8/3 22:00 第 5 例外) = 14/500 = 2.8%
+
+[verify 期望]
+- 3 locale 5 类目 = 15 URL 200 (虽然 URL 没路由到 price-tables 数据, 但 build 编译过)
+- 3 PDP 3 locale = 9 URL 301 -> 200 (location header 跟 destination)
+- 8/3 daily cron + 8/3 攒批 18 rules + 15 文件 360 tier 全部 200
+- 9 URL 跳转链实测 §0.7 内链分发 (matrix 88 hits 落地)
+
+[8/3 全天节奏]
+- 04:30-05:30  price-tables 9 文件 (前 3 类目)
+- 10:15       daily cron 自动 1 push (8/3 c2eb910)
+- 10:30-11:30 3 PDP 404 根因 + next.config.js 18 rules
+- 22:00       攒批 1 commit + 1 push (本 commit)

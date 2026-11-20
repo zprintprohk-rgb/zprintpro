@@ -1,0 +1,2819 @@
+{
+  "fieldCount": 396,
+  "colA": [
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "productName@L11",
+      "val": "合版白カードボックス"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L18",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L19",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L62",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L63",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L106",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L107",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L150",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L151",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L194",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L195",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L231",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L232",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L268",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L269",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L305",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L306",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L342",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L343",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L372",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L373",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L409",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L410",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L446",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L447",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L483",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L484",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L520",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L521",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L557",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L558",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L594",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L595",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L631",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L632",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L668",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L669",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L705",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L706",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L742",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L743",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L779",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L780",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L816",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L817",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L853",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L854",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L890",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L891",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L927",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L928",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L964",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-150X100X50-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L965",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-150X100X50-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L1001",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-150X50X100-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L1002",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-150X50X100-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L1038",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L1039",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "en",
+      "path": "label@L1075",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L1076",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "productName@L1116",
+      "val": "白カードボックス(飛行機箱)"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1123",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1124",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1167",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1168",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1204",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1205",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1241",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1242",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1278",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1279",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1315",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1316",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1345",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1346",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1382",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1383",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1419",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1420",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1456",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1457",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1493",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1494",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1530",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1531",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1567",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1568",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "en",
+      "path": "label@L1604",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1605",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口"
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "loc": "ja",
+      "path": "productName@L1645",
+      "val": "差し込み式ボックス(両挿)"
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "loc": "en",
+      "path": "label@L1652",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "loc": "ja",
+      "path": "label@L1653",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "loc": "en",
+      "path": "label@L1696",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "loc": "ja",
+      "path": "label@L1697",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "productName@L1744",
+      "val": "段ボール箱(専版)"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "en",
+      "path": "label@L1751",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[A9（加强芯）黄色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1752",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[A9（加强芯）黄色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "en",
+      "path": "label@L1795",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1796",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "en",
+      "path": "label@L1839",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1840",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "en",
+      "path": "label@L1883",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1884",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "en",
+      "path": "label@L1927",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1928",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "en",
+      "path": "label@L1971",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[B9（加强蕊）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1972",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[B9（加强蕊）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "en",
+      "path": "label@L2015",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[AF（加强芯）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L2016",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[AF（加强芯）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "en",
+      "path": "label@L2059",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[WF（加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],贴胶片[0.1][50x30],粘盒,瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L2060",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[WF（加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],贴胶片[0.1][50x30],粘盒,瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "en",
+      "path": "label@L2103",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-180X50X120-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L2104",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-180X50X120-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "en",
+      "path": "label@L2140",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-300X80X200-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L2141",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-300X80X200-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "ja",
+      "path": "productName@L2188",
+      "val": "白カード手提げ袋(専版)"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "en",
+      "path": "label@L2195",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-200X100X250-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],粘盒"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "ja",
+      "path": "label@L2196",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-200X100X250-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],粘盒"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "en",
+      "path": "label@L2239",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[150x100],粘盒"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "ja",
+      "path": "label@L2240",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[150x100],粘盒"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "en",
+      "path": "label@L2283",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[100x100],击凸[100x100],粘盒"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "ja",
+      "path": "label@L2284",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[100x100],击凸[100x100],粘盒"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "productName@L2331",
+      "val": "デジタルステッカー(専版)"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "en",
+      "path": "label@L2338",
+      "val": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "label@L2339",
+      "val": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "en",
+      "path": "label@L2382",
+      "val": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "label@L2383",
+      "val": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "en",
+      "path": "label@L2426",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "label@L2427",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "en",
+      "path": "label@L2470",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "label@L2471",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "en",
+      "path": "label@L2514",
+      "val": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "label@L2515",
+      "val": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "productName@L2534",
+      "val": "デジタルステッカー(専版)"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "en",
+      "path": "label@L2541",
+      "val": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "label@L2542",
+      "val": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "en",
+      "path": "label@L2585",
+      "val": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "label@L2586",
+      "val": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "en",
+      "path": "label@L2629",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "label@L2630",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "en",
+      "path": "label@L2673",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "label@L2674",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "en",
+      "path": "label@L2717",
+      "val": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "label@L2718",
+      "val": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜"
+    },
+    {
+      "slug": "a5-flyers",
+      "loc": "en",
+      "path": "productName@L2736",
+      "val": "A5 (210x148mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "a5-flyers",
+      "loc": "ja",
+      "path": "productName@L2737",
+      "val": "A5 (210x148mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "a5-flyers",
+      "loc": "en",
+      "path": "label@L2744",
+      "val": "A5 (210x148mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "a5-flyers",
+      "loc": "ja",
+      "path": "label@L2745",
+      "val": "A5 (210x148mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "a4-flyers",
+      "loc": "en",
+      "path": "productName@L2812",
+      "val": "A4 (297x210mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "a4-flyers",
+      "loc": "ja",
+      "path": "productName@L2813",
+      "val": "A4 (297x210mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "a4-flyers",
+      "loc": "en",
+      "path": "label@L2820",
+      "val": "A4 (297x210mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "a4-flyers",
+      "loc": "ja",
+      "path": "label@L2821",
+      "val": "A4 (297x210mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "same-day-flyers",
+      "loc": "en",
+      "path": "productName@L2874",
+      "val": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面"
+    },
+    {
+      "slug": "same-day-flyers",
+      "loc": "ja",
+      "path": "productName@L2875",
+      "val": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面"
+    },
+    {
+      "slug": "same-day-flyers",
+      "loc": "en",
+      "path": "label@L2882",
+      "val": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面"
+    },
+    {
+      "slug": "same-day-flyers",
+      "loc": "ja",
+      "path": "label@L2883",
+      "val": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面"
+    },
+    {
+      "slug": "eco-flyers",
+      "loc": "en",
+      "path": "productName@L2943",
+      "val": "A5/A4 再生纸/FSC 双面彩色"
+    },
+    {
+      "slug": "eco-flyers",
+      "loc": "ja",
+      "path": "productName@L2944",
+      "val": "A5/A4 再生纸/FSC 双面彩色"
+    },
+    {
+      "slug": "eco-flyers",
+      "loc": "en",
+      "path": "label@L2951",
+      "val": "A5/A4 再生纸/FSC 双面彩色"
+    },
+    {
+      "slug": "eco-flyers",
+      "loc": "ja",
+      "path": "label@L2952",
+      "val": "A5/A4 再生纸/FSC 双面彩色"
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "loc": "en",
+      "path": "productName@L2977",
+      "val": "A4 8P 骑马钉"
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "loc": "ja",
+      "path": "productName@L2978",
+      "val": "A4 8P 骑马钉"
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "loc": "en",
+      "path": "label@L2985",
+      "val": "A4 8P 骑马钉"
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "loc": "ja",
+      "path": "label@L2986",
+      "val": "A4 8P 骑马钉"
+    },
+    {
+      "slug": "perfect-bound-books",
+      "loc": "en",
+      "path": "productName@L3046",
+      "val": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)"
+    },
+    {
+      "slug": "perfect-bound-books",
+      "loc": "ja",
+      "path": "productName@L3047",
+      "val": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)"
+    },
+    {
+      "slug": "perfect-bound-books",
+      "loc": "en",
+      "path": "label@L3054",
+      "val": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)"
+    },
+    {
+      "slug": "perfect-bound-books",
+      "loc": "ja",
+      "path": "label@L3055",
+      "val": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)"
+    },
+    {
+      "slug": "exercise-books",
+      "loc": "en",
+      "path": "productName@L3115",
+      "val": "A5 (148×210mm) 32PP (16张双面) 骑马钉"
+    },
+    {
+      "slug": "exercise-books",
+      "loc": "ja",
+      "path": "productName@L3116",
+      "val": "A5 (148×210mm) 32PP (16张双面) 骑马钉"
+    },
+    {
+      "slug": "exercise-books",
+      "loc": "en",
+      "path": "label@L3123",
+      "val": "A5 (148×210mm) 32PP (16张双面) 骑马钉"
+    },
+    {
+      "slug": "exercise-books",
+      "loc": "ja",
+      "path": "label@L3124",
+      "val": "A5 (148×210mm) 32PP (16张双面) 骑马钉"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "ja",
+      "path": "productName@L3171",
+      "val": "特殊折りチラシ"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "en",
+      "path": "label@L3178",
+      "val": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "ja",
+      "path": "label@L3179",
+      "val": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "en",
+      "path": "label@L3306",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "ja",
+      "path": "label@L3307",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "en",
+      "path": "label@L3434",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "ja",
+      "path": "label@L3435",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "en",
+      "path": "label@L3562",
+      "val": "風琴摺 210x444→A5 2條骨 書紙100g 雙面"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "ja",
+      "path": "label@L3563",
+      "val": "風琴摺 210x444→A5 2條骨 書紙100g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "ja",
+      "path": "productName@L3694",
+      "val": "特殊折りチラシ"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "en",
+      "path": "label@L3701",
+      "val": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "ja",
+      "path": "label@L3702",
+      "val": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "en",
+      "path": "label@L3829",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "ja",
+      "path": "label@L3830",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "en",
+      "path": "label@L3957",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "ja",
+      "path": "label@L3958",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "en",
+      "path": "label@L4085",
+      "val": "風琴摺 210x444→A5 2條骨 書紙100g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "ja",
+      "path": "label@L4086",
+      "val": "風琴摺 210x444→A5 2條骨 書紙100g 雙面"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "productName@L4217",
+      "val": "チラシ(専版コスト)"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4224",
+      "val": "专版单页/折页-双胶纸[120克]-大度32开140X210-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4225",
+      "val": "专版单页/折页-双胶纸[120克]-大度32开140X210-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4268",
+      "val": "专版单页/折页-铜版纸高松[157克]-大度32开140X210-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4269",
+      "val": "专版单页/折页-铜版纸高松[157克]-大度32开140X210-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4312",
+      "val": "专版单页/折页-铜版纸高松[128克]-大度16开210X285-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4313",
+      "val": "专版单页/折页-铜版纸高松[128克]-大度16开210X285-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4356",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4357",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4400",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4401",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4444",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4445",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4488",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4489",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4532",
+      "val": "专版单页/折页-双胶纸[80克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4533",
+      "val": "专版单页/折页-双胶纸[80克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4576",
+      "val": "专版单页/折页-双胶纸[100克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4577",
+      "val": "专版单页/折页-双胶纸[100克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4627",
+      "val": "专版单页/折页-双胶纸[120克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4628",
+      "val": "专版单页/折页-双胶纸[120克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4664",
+      "val": "专版单页/折页-双胶纸[120克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4665",
+      "val": "专版单页/折页-双胶纸[120克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4708",
+      "val": "专版单页/折页-双胶纸[100克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4709",
+      "val": "专版单页/折页-双胶纸[100克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4752",
+      "val": "专版单页/折页-双胶纸[80克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4753",
+      "val": "专版单页/折页-双胶纸[80克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4796",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜,折页[2折3页][包心折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4797",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜,折页[2折3页][包心折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4840",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜,折页[1折2页][对折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4841",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜,折页[1折2页][对折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4884",
+      "val": "专版单页/折页-铜版纸高松[128克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4885",
+      "val": "专版单页/折页-铜版纸高松[128克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "en",
+      "path": "label@L4928",
+      "val": "专版单页/折页-铜版纸高松[157克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4929",
+      "val": "专版单页/折页-铜版纸高松[157克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L4983",
+      "val": "A2 · 铜版纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L4984",
+      "val": "A2 · 铜版纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5034",
+      "val": "A2 · 铜版纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5035",
+      "val": "A2 · 铜版纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5085",
+      "val": "A3 · 铜版纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5086",
+      "val": "A3 · 铜版纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5136",
+      "val": "A3 · 铜版纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5137",
+      "val": "A3 · 铜版纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5187",
+      "val": "A2 · 哑粉纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5188",
+      "val": "A2 · 哑粉纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5238",
+      "val": "A2 · 哑粉纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5239",
+      "val": "A2 · 哑粉纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5289",
+      "val": "A3 · 哑粉纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5290",
+      "val": "A3 · 哑粉纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5340",
+      "val": "A3 · 哑粉纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5341",
+      "val": "A3 · 哑粉纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5391",
+      "val": "A2 · 铜版纸 · 250g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5392",
+      "val": "A2 · 铜版纸 · 250g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5442",
+      "val": "A2 · 铜版纸 · 250g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5443",
+      "val": "A2 · 铜版纸 · 250g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5493",
+      "val": "A3 · 铜版纸 · 250g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5494",
+      "val": "A3 · 铜版纸 · 250g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5544",
+      "val": "A3 · 铜版纸 · 250g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5545",
+      "val": "A3 · 铜版纸 · 250g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5595",
+      "val": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5596",
+      "val": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "en",
+      "path": "label@L5639",
+      "val": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5640",
+      "val": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼"
+    }
+  ],
+  "colB": [
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L17",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L61",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L105",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L149",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L193",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L230",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L267",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L304",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L341",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L371",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L408",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L445",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L482",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L519",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L556",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L593",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L630",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L667",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L704",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L741",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L778",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L815",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L852",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L889",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L926",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L963",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-150X100X50-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1000",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-150X50X100-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1037",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1074",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1122",
+      "val": "【飛機盒】拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1166",
+      "val": "【飛機盒】拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1203",
+      "val": "【飛機盒】拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1240",
+      "val": "【飛機盒】拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1277",
+      "val": "【飛機盒】拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1314",
+      "val": "【飛機盒】拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1344",
+      "val": "【飛機盒】拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1381",
+      "val": "【飛機盒】拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1418",
+      "val": "【飛機盒】拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1455",
+      "val": "【飛機盒】拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1492",
+      "val": "【飛機盒】拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1529",
+      "val": "【飛機盒】拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1566",
+      "val": "【飛機盒】拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1603",
+      "val": "【飛機盒】拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口"
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1651",
+      "val": "【雙插盒】拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1695",
+      "val": "【雙插盒】拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1750",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[A9（加强芯）黄色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1794",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1838",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1882",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1926",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "zh-hk",
+      "path": "label@L1970",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[B9（加强蕊）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "zh-hk",
+      "path": "label@L2014",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[AF（加强芯）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "zh-hk",
+      "path": "label@L2058",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[WF（加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],贴胶片[0.1][50x30],粘盒,瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "zh-hk",
+      "path": "label@L2102",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-180X50X120-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "zh-hk",
+      "path": "label@L2139",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-300X80X200-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "zh-hk",
+      "path": "label@L2194",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-200X100X250-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],粘盒"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "zh-hk",
+      "path": "label@L2238",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[150x100],粘盒"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "zh-hk",
+      "path": "label@L2282",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[100x100],击凸[100x100],粘盒"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "zh-hk",
+      "path": "label@L2337",
+      "val": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "zh-hk",
+      "path": "label@L2381",
+      "val": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "zh-hk",
+      "path": "label@L2425",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "zh-hk",
+      "path": "label@L2469",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "zh-hk",
+      "path": "label@L2513",
+      "val": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "zh-hk",
+      "path": "label@L2540",
+      "val": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "zh-hk",
+      "path": "label@L2584",
+      "val": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "zh-hk",
+      "path": "label@L2628",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "zh-hk",
+      "path": "label@L2672",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "zh-hk",
+      "path": "label@L2716",
+      "val": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜"
+    },
+    {
+      "slug": "same-day-flyers",
+      "loc": "zh-hk",
+      "path": "productName@L2873",
+      "val": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面"
+    },
+    {
+      "slug": "same-day-flyers",
+      "loc": "zh-hk",
+      "path": "label@L2881",
+      "val": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面"
+    },
+    {
+      "slug": "perfect-bound-books",
+      "loc": "zh-hk",
+      "path": "productName@L3045",
+      "val": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)"
+    },
+    {
+      "slug": "perfect-bound-books",
+      "loc": "zh-hk",
+      "path": "label@L3053",
+      "val": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "productName@L4215",
+      "val": "宣传单张(专版成本)"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4223",
+      "val": "专版单页/折页-双胶纸[120克]-大度32开140X210-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4267",
+      "val": "专版单页/折页-铜版纸高松[157克]-大度32开140X210-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4311",
+      "val": "专版单页/折页-铜版纸高松[128克]-大度16开210X285-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4355",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4399",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4443",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4487",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4531",
+      "val": "专版单页/折页-双胶纸[80克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4575",
+      "val": "专版单页/折页-双胶纸[100克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4626",
+      "val": "专版单页/折页-双胶纸[120克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4663",
+      "val": "专版单页/折页-双胶纸[120克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4707",
+      "val": "专版单页/折页-双胶纸[100克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4751",
+      "val": "专版单页/折页-双胶纸[80克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4795",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜,折页[2折3页][包心折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4839",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜,折页[1折2页][对折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4883",
+      "val": "专版单页/折页-铜版纸高松[128克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "zh-hk",
+      "path": "label@L4927",
+      "val": "专版单页/折页-铜版纸高松[157克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]"
+    }
+  ],
+  "colC": [
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L19",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L63",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L107",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L151",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L195",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L232",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L269",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L306",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L343",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L373",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L410",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L447",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L484",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L521",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L558",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L595",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L632",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L669",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L706",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L743",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L780",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L817",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L854",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L891",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L928",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L965",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-150X100X50-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L1002",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-150X50X100-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L1039",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "loc": "ja",
+      "path": "label@L1076",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1124",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1168",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1205",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1242",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1279",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1316",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1346",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1383",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1420",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1457",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1494",
+      "val": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1531",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1568",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+    },
+    {
+      "slug": "white-card-boxes",
+      "loc": "ja",
+      "path": "label@L1605",
+      "val": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口"
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "loc": "ja",
+      "path": "label@L1653",
+      "val": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "loc": "ja",
+      "path": "label@L1697",
+      "val": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1752",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[A9（加强芯）黄色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1796",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1840",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1884",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度横纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1928",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L1972",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[B9（加强蕊）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L2016",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[AF（加强芯）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L2060",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[WF（加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],贴胶片[0.1][50x30],粘盒,瓦楞纸纹[长度竖纹]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L2104",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-180X50X120-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]"
+    },
+    {
+      "slug": "corrugated-boxes",
+      "loc": "ja",
+      "path": "label@L2141",
+      "val": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-300X80X200-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "ja",
+      "path": "label@L2196",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-200X100X250-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],粘盒"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "ja",
+      "path": "label@L2240",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[150x100],粘盒"
+    },
+    {
+      "slug": "white-card-bags",
+      "loc": "ja",
+      "path": "label@L2284",
+      "val": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[100x100],击凸[100x100],粘盒"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "label@L2339",
+      "val": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "label@L2383",
+      "val": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "label@L2427",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "label@L2471",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "waterproof-stickers",
+      "loc": "ja",
+      "path": "label@L2515",
+      "val": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "label@L2542",
+      "val": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "label@L2586",
+      "val": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "label@L2630",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "label@L2674",
+      "val": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+    },
+    {
+      "slug": "digital-stickers",
+      "loc": "ja",
+      "path": "label@L2718",
+      "val": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜"
+    },
+    {
+      "slug": "a5-flyers",
+      "loc": "ja",
+      "path": "productName@L2737",
+      "val": "A5 (210x148mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "a5-flyers",
+      "loc": "ja",
+      "path": "label@L2745",
+      "val": "A5 (210x148mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "a4-flyers",
+      "loc": "ja",
+      "path": "productName@L2813",
+      "val": "A4 (297x210mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "a4-flyers",
+      "loc": "ja",
+      "path": "label@L2821",
+      "val": "A4 (297x210mm) 157g哑粉纸 双面彩色"
+    },
+    {
+      "slug": "same-day-flyers",
+      "loc": "ja",
+      "path": "productName@L2875",
+      "val": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面"
+    },
+    {
+      "slug": "same-day-flyers",
+      "loc": "ja",
+      "path": "label@L2883",
+      "val": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面"
+    },
+    {
+      "slug": "eco-flyers",
+      "loc": "ja",
+      "path": "productName@L2944",
+      "val": "A5/A4 再生纸/FSC 双面彩色"
+    },
+    {
+      "slug": "eco-flyers",
+      "loc": "ja",
+      "path": "label@L2952",
+      "val": "A5/A4 再生纸/FSC 双面彩色"
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "loc": "ja",
+      "path": "productName@L2978",
+      "val": "A4 8P 骑马钉"
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "loc": "ja",
+      "path": "label@L2986",
+      "val": "A4 8P 骑马钉"
+    },
+    {
+      "slug": "perfect-bound-books",
+      "loc": "ja",
+      "path": "productName@L3047",
+      "val": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)"
+    },
+    {
+      "slug": "perfect-bound-books",
+      "loc": "ja",
+      "path": "label@L3055",
+      "val": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)"
+    },
+    {
+      "slug": "exercise-books",
+      "loc": "ja",
+      "path": "productName@L3116",
+      "val": "A5 (148×210mm) 32PP (16张双面) 骑马钉"
+    },
+    {
+      "slug": "exercise-books",
+      "loc": "ja",
+      "path": "label@L3124",
+      "val": "A5 (148×210mm) 32PP (16张双面) 骑马钉"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "ja",
+      "path": "label@L3179",
+      "val": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "ja",
+      "path": "label@L3307",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "ja",
+      "path": "label@L3435",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面"
+    },
+    {
+      "slug": "folded-leaflets",
+      "loc": "ja",
+      "path": "label@L3563",
+      "val": "風琴摺 210x444→A5 2條骨 書紙100g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "ja",
+      "path": "label@L3702",
+      "val": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "ja",
+      "path": "label@L3830",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "ja",
+      "path": "label@L3958",
+      "val": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面"
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "loc": "ja",
+      "path": "label@L4086",
+      "val": "風琴摺 210x444→A5 2條骨 書紙100g 雙面"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4225",
+      "val": "专版单页/折页-双胶纸[120克]-大度32开140X210-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4269",
+      "val": "专版单页/折页-铜版纸高松[157克]-大度32开140X210-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4313",
+      "val": "专版单页/折页-铜版纸高松[128克]-大度16开210X285-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4357",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4401",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4445",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4489",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4533",
+      "val": "专版单页/折页-双胶纸[80克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4577",
+      "val": "专版单页/折页-双胶纸[100克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4628",
+      "val": "专版单页/折页-双胶纸[120克]-210X148-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4665",
+      "val": "专版单页/折页-双胶纸[120克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4709",
+      "val": "专版单页/折页-双胶纸[100克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4753",
+      "val": "专版单页/折页-双胶纸[80克]-210X297-双面不同-切成品,不覆膜"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4797",
+      "val": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜,折页[2折3页][包心折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4841",
+      "val": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜,折页[1折2页][对折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4885",
+      "val": "专版单页/折页-铜版纸高松[128克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]"
+    },
+    {
+      "slug": "custom-flyers",
+      "loc": "ja",
+      "path": "label@L4929",
+      "val": "专版单页/折页-铜版纸高松[157克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L4984",
+      "val": "A2 · 铜版纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5035",
+      "val": "A2 · 铜版纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5086",
+      "val": "A3 · 铜版纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5137",
+      "val": "A3 · 铜版纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5188",
+      "val": "A2 · 哑粉纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5239",
+      "val": "A2 · 哑粉纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5290",
+      "val": "A3 · 哑粉纸 · 157g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5341",
+      "val": "A3 · 哑粉纸 · 157g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5392",
+      "val": "A2 · 铜版纸 · 250g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5443",
+      "val": "A2 · 铜版纸 · 250g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5494",
+      "val": "A3 · 铜版纸 · 250g · 單面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5545",
+      "val": "A3 · 铜版纸 · 250g · 雙面"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5596",
+      "val": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼"
+    },
+    {
+      "slug": "a2-posters",
+      "loc": "ja",
+      "path": "label@L5640",
+      "val": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼"
+    }
+  ],
+  "uniqA": [
+    "gang-run-card-boxes",
+    "white-card-boxes",
+    "tuck-end-boxes",
+    "corrugated-boxes",
+    "white-card-bags",
+    "waterproof-stickers",
+    "digital-stickers",
+    "a5-flyers",
+    "a4-flyers",
+    "same-day-flyers",
+    "eco-flyers",
+    "saddle-stitch-booklets",
+    "perfect-bound-books",
+    "exercise-books",
+    "folded-leaflets",
+    "special-fold-leaflets",
+    "custom-flyers",
+    "a2-posters"
+  ],
+  "uniqB": [
+    "gang-run-card-boxes",
+    "white-card-boxes",
+    "tuck-end-boxes",
+    "corrugated-boxes",
+    "white-card-bags",
+    "waterproof-stickers",
+    "digital-stickers",
+    "same-day-flyers",
+    "perfect-bound-books",
+    "custom-flyers"
+  ]
+}

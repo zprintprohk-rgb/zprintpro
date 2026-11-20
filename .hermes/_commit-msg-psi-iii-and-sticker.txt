@@ -1,0 +1,44 @@
+fix(blog)+fix(gate): 口径分叉裁决 iii (≥50%) 三处统一 + sticker 两个三语不一致点修复 (K3 2026-09-19 授权)
+
+【1. 口径分叉裁决 (iii) —— 采纳, 零内容改动】
+分叉: SSoT §3.1 字面写「问句式 **>50%**」, 而门禁实现为「非问句 ≤ 问句」(等价 **≥50% 含边界**)。
+裁决 (iii): 门禁保留现行实现, SSoT 字面**同步为 ≥50%（含边界）** ⇒ 分叉消除, 任何页面判定不变。
+外部依据: GEO 规则库 (geo-lint) 门槛为「≥20% 的问句式标题」; Writesonic / FuelOnline 均把问句式标题列为
+  「成本最低、回报最大的格式化改动」但**未设百分比硬线** ⇒ 50% 属本仓自定门槛, 而「>50%」与「≥50%」无语义差异
+  (占比恰好 50% 的页面, 其问句结构已足以让 AI 引擎匹配查询)。
+同步三处: SSoT §3.1 + cron prompt v11 两文件 + 门禁注释 ⇒ #21 sha256 重绑定 ✅ (3 绑定一致)
+
+【2. sticker × 3 两个三语不一致点 (K3 授权执行, 不做全量改写)】
+① 段锚层级 + 句式双重不一致 (同一小节):
+   en   = `<h2>Why Does PVC Waterproof Sticker Lead 6 Field Tests?>` (已合规)
+   zh-hk = `<h3>PVC 防水貼紙 6 大實測優勢</h3>` (陈述式 H3)  → `<h2>PVC 防水貼紙點解 6 項實測都勝出?</h2>`
+   ja   = `<h3>PVC 防水ステッカー 6 大実測優位性</h3>` (陈述式 H3) → `<h2>PVC 防水ステッカーはなぜ 6 項目の実測で優位なのか?</h2>`
+   ⇒ 三语对齐为 H2 问句式; **答案文字逐字保留** (断言: 除该标题行外零改动)
+② ja 缺「延伸閱讀 / Further Reading」整节 (zh-hk 与 en 均有):
+   补建 `<h2>関連記事</h2>` 节 = **镜像 zh-hk/en 的 11 条内链目标**(本地化锚文本 + 日文说明):
+   /ja/blog/packaging-box-pricing-2026/ · /ja/blog/foil-stamping-3-applications-2026/ · /ja/ ·
+   /ja/blog/ · /ja/services/rush-printing-delivery/ · /ja/category/stickers/ · /ja/product/waterproof-stickers/ ·
+   /ja/blog/ · /ja/blog/cross-border-ecommerce-shipping-box-guide/ · /ja/category/menus/ · /ja/blog/food-packaging-printing-guide/
+断言通过: ja content 11,891 → 13,521 (+1,630) | zh-hk 12,385 → 12,389 (+4)
+复验: 段 11 内链 **en 11 / ja 18 (补节后) / zh-hk 11** 全部 PASS (Pillar 硬线 ≥10);
+  段 3 问句占比 zh-hk 6→**7/15 (47%)** / ja 6→**7/15 (47%)** / en 6/15 (40%) —— 三语一致 (差 ≤7pt)
+
+【3. 关于 sticker 段 3 判定 (口径统一后的实际状态, 如实说明)】
+按 K3 裁决 (iii) 统一为 ≥50% 后: sticker 三语 40-47% ⇒ **段 3 判 FAIL (非问句 8 > 问句 7)**, 
+  但该 FAIL 属**存量基线内条目**(基线台账已含 sticker 段3 × 3), 不构成新增;
+  且这是 K3 已知并接受的状态 (裁决 (i) 会扩大改写范围至 6+ 处 / (ii) 保留分叉 / (iii) 统一口径零内容改动 ⇒ 已选 iii)。
+  ⇒ 结论: sticker 段 3 保持现状 (不做全量问句化改写), 仅完成上面两个**有实证的三语不一致点**修复。
+
+【数据来源】
+- 口径裁决: K3 2026-09-19 决策 (iii) + 外部依据 (geo-lint 20% / Writesonic / FuelOnline)
+- sticker 分布与修复: dump-sticker-headings.mjs / fix-sticker-inconsistency.mjs (断言输出)
+- 门禁复验: blog-quality-12-rules-guard --slug=sticker… (段3 / 段11 明细)
+- #21: rule-translation-ledger.json (3 绑定 sha256 一致)
+
+【待办 (按 K3 优先级)】
+· P0 B3 foil × 3 补 FAQ (格式预检 8/8; 40-80 词; 首句 8-12 词直答; 自包含; 5-8 组) —— 下一步开工
+· P1 B3 print-specs × 3 → school-exercise × 3 (仅改包装) → hk-cost-baseline × 3
+· P1 push + CF 部署 → 段 12 FAIL 归零 (--baseline --online + Schema.org Validator)
+· P2 Person jobTitle/knowsAbout · C 二期 run-context 注入 · 段 8 路径 (a) 等 K3 提交对比
+
+Bypass-rationale: 本批 = 口径三处同步 + sticker 两处精确修复(答案逐字保留, 断言通过) + 门禁注释; pre-commit 红规则对 .hermes 历史字面硬拦

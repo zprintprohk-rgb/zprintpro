@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "task": "W4 AI citation baseline probe (Day 1)",
+    "project": "zprintpro (F:\\zprintpro-nextjs)",
+    "report_date": "2026-09-30",
+    "session_window": { "start": "2026-09-30T00:21:35+08:00", "end": "2026-09-30T00:30:33+08:00" },
+    "data_source_line": "工具: AutoClaw source_check (provider=auto 多 provider 聚合检索式引用列表; perplexity provider 不可用 - API key 缺失, 错误原文 'Perplexity API key not found'); 会话时间窗 2026-09-30 00:21:35 → 00:30:33 +08:00 (PowerShell Get-Date); 16 次 probe 调用 responseId 见 probes[].runs[].responseId",
+    "tool": "source_check (AutoClaw), provider=auto",
+    "tool_unavailable": [ { "provider": "perplexity", "reason": "Perplexity API key not found (source_check error, 2026-09-30 00:21 +08:00)" } ],
+    "double_method_rule": "§0.23.2 — all 8 probes run twice; positions matched exactly for all zprintpro hits; P7 run2 list composition differed (raksul.com/orilab.jp entered, others dropped) but zprintpro conclusion unchanged",
+    "caveats": [
+      "source_check returns an ordered retrieval-style citation list, not an AI answer with inline citations; parameter values extracted from citation titles/summaries",
+      "per-probe exact timestamps not returned by tool; approximate by session window + execution order",
+      "run2 returned top-10 only; absence in run2 outside top-10 is window truncation, not disappearance",
+      "W3 context (sameAs empty, weak Organization signals) referenced from .hermes/geo/w3-technical-audit-2026-09-30.md, not re-verified"
+    ],
+    "visibility": "internal only (.hermes/geo/) — never enters customer-visible content per §0.23.1"
+  },
+  "summary": {
+    "hit_rate": "3/8",
+    "hit_rate_pct": 37.5,
+    "by_locale": { "en": "0/3", "zh-hk": "3/3", "ja": "0/2" },
+    "zprintpro_citation_slots_total": 13,
+    "best_position": { "probe": 4, "position": 6, "domain": "z-printpro.com (old domain)" },
+    "old_vs_new_domain_split": { "z-printpro.com_old": 4, "zprintpro.com_new": 3, "note": "old domain still cited on P4 packaging product pages; entity signal split" },
+    "competitor_leaderboard_top10": [
+      { "domain": "e-print.com.hk", "count": 11, "probes": [4, 5, 6], "type": "HK web-print leader" },
+      { "domain": "bmpack.com", "count": 4, "probes": [4], "type": "HK packaging platform" },
+      { "domain": "zeamisticker.com", "count": 4, "probes": [7], "type": "JP sticker specialist" },
+      { "domain": "stickerkiko.com", "count": 4, "probes": [2], "type": "EN sticker specialist" },
+      { "domain": "luny.tw", "count": 4, "probes": [5], "type": "TW sticker (leaked into zh-hk probe)" },
+      { "domain": "apple-print.com.tw", "count": 4, "probes": [5], "type": "TW sticker (leaked)" },
+      { "domain": "everprinter.com", "count": 4, "probes": [5], "type": "TW sticker (leaked)" },
+      { "domain": "youstickers.com", "count": 3, "probes": [2], "type": "EN sticker" },
+      { "domain": "makestickers.com", "count": 3, "probes": [2], "type": "EN sticker" },
+      { "domain": "mixam.com", "count": 3, "probes": [3], "type": "EN booklet platform (incl .co.uk)" }
+    ],
+    "competitor_leaderboard_honorable_mentions": [
+      { "domain": "tealpackaging.com", "count": 3, "probes": [1] },
+      { "domain": "cubitpackaging.com", "count": 3, "probes": [1] },
+      { "domain": "visipri.com", "count": 3, "probes": [7] },
+      { "domain": "amazingstudiohk.com", "count": 2, "probes": [6] },
+      { "domain": "teammate.com.hk", "count": 2, "probes": [6] },
+      { "domain": "print100.com", "count": 2, "probes": [5, 6] },
+      { "domain": "growthmarketingpro.com", "count": 2, "probes": [1], "type": "listicle" },
+      { "domain": "packlane.com", "count": 2, "probes": [1] },
+      { "domain": "canva.com", "count": 2, "probes": [3] },
+      { "domain": "staples.com", "count": 2, "probes": [3] },
+      { "domain": "mbe.co.jp", "count": 2, "probes": [8] },
+      { "domain": "matsumoto-gift.jp", "count": 2, "probes": [8] }
+    ],
+    "top2_exploitable_gaps": [
+      {
+        "rank": 1,
+        "probe": 6,
+        "probe_text": "月曆印刷 訂製 2027",
+        "rationale": "Already cited at #6/#11/#17; category page is the only citation in the list carrying MOQ+Q4-season+60-day-booking-window parameters; competitors ahead rely on catalog density (e-print '1本起印') and gift-shop pages; 2027 booking window opening now; fix entity signals (W3: empty sameAs) + internal links to push into Top 5 at lowest cost"
+      },
+      {
+        "rank": 2,
+        "probe": "1 & 2",
+        "probe_text": "best custom packaging boxes supplier... 2026 / custom stickers printing low MOQ free shipping (en)",
+        "rationale": "The parameterized-citation playbook that wins in zh-hk (100個起/HK$0.8起/3天出貨/18:00截單) is exactly what wins in en ('No Minimum Order, Free Shipping' / 'from $0.35' / 'Zero MOQ & Free US Shipping'); zprintpro holds equivalent real parameters (100 MOQ / USD pricing / DHL 2-4 days) but en pages get zero citations; plus old-domain z-printpro.com still cited on P4 splitting entity signal — en Organization/sameAs completion + parameter-front-loading + old/new domain entity consolidation is the targeted breakthrough"
+      }
+    ],
+    "ja_note": "P7/P8 complete dark zone; competitor set 100% domestic JP; requires JP-market entity presence first — observation track, not this cycle's main push"
+  },
+  "probes": [
+    {
+      "id": 1,
+      "text": "best custom packaging boxes supplier for small business 2026",
+      "locale": "en",
+      "zprintpro_cited": false,
+      "zprintpro_position": null,
+      "zprintpro_note": "未出现在引用中 (both runs)",
+      "recount_consistent": true,
+      "runs": [
+        { "run": 1, "approx_time": "2026-09-30 00:22 +08:00", "responseId": "mumvx5ez7q0h06", "citation_count": 14 },
+        { "run": 2, "approx_time": "2026-09-30 00:29 +08:00", "responseId": "mumw4adne2pym0", "citation_count": 10 }
+      ],
+      "citations_run1_in_order": [
+        { "pos": 1, "url": "https://www.centpackaging.com/", "domain": "centpackaging.com" },
+        { "pos": 2, "url": "https://tealpackaging.com/best-custom-packaging-companies-small-business/", "domain": "tealpackaging.com" },
+        { "pos": 3, "url": "https://www.growthmarketingpro.com/11-best-companies-for-custom-boxes-and-packaging/", "domain": "growthmarketingpro.com", "type": "listicle" },
+        { "pos": 4, "url": "https://www.cubitpackaging.com/custom-boxes", "domain": "cubitpackaging.com" },
+        { "pos": 5, "url": "https://packlane.com/", "domain": "packlane.com" },
+        { "pos": 6, "url": "https://printnpackage.com/", "domain": "printnpackage.com" },
+        { "pos": 7, "url": "https://packagingship.com/", "domain": "packagingship.com" },
+        { "pos": 8, "url": "https://discountedpackaging.com/", "domain": "discountedpackaging.com" },
+        { "pos": 9, "url": "https://packings.co/", "domain": "packings.co" },
+        { "pos": 10, "url": "https://www.boxgenie.com/pages/small-business-packaging-solutions", "domain": "boxgenie.com" },
+        { "pos": 11, "url": "https://www.cubitpackaging.com/blog/best-custom-packaging-companies-2025", "domain": "cubitpackaging.com", "type": "listicle" },
+        { "pos": 12, "url": "https://apexiopackaging.com/custom-mailer-boxes/", "domain": "apexiopackaging.com" },
+        { "pos": 13, "url": "https://tealpackaging.com/custom-folding-carton-boxes/", "domain": "tealpackaging.com" },
+        { "pos": 14, "url": "https://kreativepackaging.com/custom-boxes/", "domain": "kreativepackaging.com" }
+      ],
+      "citations_run2_note": "= run1 top 10, same order",
+      "top5_competitor_domains": ["tealpackaging.com (3)", "cubitpackaging.com (3)", "centpackaging.com (2)", "growthmarketingpro.com (2)", "packlane.com (2)"],
+      "params_in_citations": [
+        { "param": "price", "value": "from $0.35", "from": "cubitpackaging.com" },
+        { "param": "MOQ", "value": "No Minimum Order", "from": "packagingship.com" },
+        { "param": "shipping", "value": "Free Shipping / Free US Shipping", "from": "packagingship.com, apexiopackaging.com" },
+        { "param": "year hook", "value": "[2026]", "from": "growthmarketingpro.com, cubitpackaging.com" }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "custom stickers printing low MOQ free shipping",
+      "locale": "en",
+      "zprintpro_cited": false,
+      "zprintpro_position": null,
+      "zprintpro_note": "未出现在引用中 (both runs)",
+      "recount_consistent": true,
+      "runs": [
+        { "run": 1, "approx_time": "2026-09-30 00:24 +08:00", "responseId": "mumvxeleaj5i39", "citation_count": 17 },
+        { "run": 2, "approx_time": "2026-09-30 00:29 +08:00", "responseId": "mumw1k3rz446wq", "citation_count": 10 }
+      ],
+      "citations_run1_in_order": [
+        { "pos": 1, "url": "https://www.printful.com/custom-stickers", "domain": "printful.com" },
+        { "pos": 2, "url": "https://stickerkiko.com/products/die-cut-stickers", "domain": "stickerkiko.com" },
+        { "pos": 3, "url": "https://printify.com/custom-stickers/", "domain": "printify.com" },
+        { "pos": 4, "url": "https://www.stickermule.com/custom-stickers", "domain": "stickermule.com" },
+        { "pos": 5, "url": "https://youstickers.com/product/sticker-maker/", "domain": "youstickers.com" },
+        { "pos": 6, "url": "https://www.stickerine.com/custom-stickers", "domain": "stickerine.com" },
+        { "pos": 7, "url": "https://printsticker.com/", "domain": "printsticker.com" },
+        { "pos": 8, "url": "https://stickerobot.com/products/sticker-maker/", "domain": "stickerobot.com" },
+        { "pos": 9, "url": "https://www.makestickers.com/products/custom-stickers", "domain": "makestickers.com" },
+        { "pos": 10, "url": "https://customstickers.com/", "domain": "customstickers.com" },
+        { "pos": 11, "url": "https://stickerkiko.com/", "domain": "stickerkiko.com" },
+        { "pos": 12, "url": "https://stickermint.com/products/custom-stickers", "domain": "stickermint.com" },
+        { "pos": 13, "url": "https://apexiopackaging.com/custom-design-stickers/", "domain": "apexiopackaging.com" },
+        { "pos": 14, "url": "https://youstickers.com/", "domain": "youstickers.com" },
+        { "pos": 15, "url": "https://stickerkiko.com/products/sticker-sheets", "domain": "stickerkiko.com" },
+        { "pos": 16, "url": "https://www.makestickers.com/products/print-custom-stickers", "domain": "makestickers.com" },
+        { "pos": 17, "url": "https://www.standoutstickers.com/order/custom-stickers/vinyl", "domain": "standoutstickers.com" }
+      ],
+      "citations_run2_note": "= run1 top 10, same order",
+      "top5_competitor_domains": ["stickerkiko.com (4)", "youstickers.com (3)", "makestickers.com (3)", "printful.com (2)", "stickermule.com (2)"],
+      "params_in_citations": [
+        { "param": "MOQ", "value": "No Minimum", "from": "stickerkiko.com" },
+        { "param": "price", "value": "from $0.06/ea", "from": "stickerine.com" },
+        { "param": "shipping", "value": "Free Shipping", "from": "stickermule.com, makestickers.com, customstickers.com, stickermint.com" },
+        { "param": "trust", "value": "Since 2009", "from": "standoutstickers.com" }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "booklet printing services for small business",
+      "locale": "en",
+      "zprintpro_cited": false,
+      "zprintpro_position": null,
+      "zprintpro_note": "未出现在引用中 (both runs)",
+      "recount_consistent": true,
+      "runs": [
+        { "run": 1, "approx_time": "2026-09-30 00:24 +08:00", "responseId": "mumvxhif6ny73v", "citation_count": 15 },
+        { "run": 2, "approx_time": "2026-09-30 00:29 +08:00", "responseId": "mumw4b6ektus07", "citation_count": 10 }
+      ],
+      "citations_run1_in_order": [
+        { "pos": 1, "url": "https://www.businessprinting.com/booklets/", "domain": "businessprinting.com" },
+        { "pos": 2, "url": "https://www.canva.com/booklets/", "domain": "canva.com" },
+        { "pos": 3, "url": "https://www.mimeo.com/lp/booklet-printing/", "domain": "mimeo.com" },
+        { "pos": 4, "url": "https://www.printmagic.com/booklet-printing/", "domain": "printmagic.com" },
+        { "pos": 5, "url": "https://smartpress.com/shop/custom-booklets", "domain": "smartpress.com" },
+        { "pos": 6, "url": "https://www.officedepot.com/b/booklets/N-1212284", "domain": "officedepot.com" },
+        { "pos": 7, "url": "https://www.uprinting.com/booklet-printing.html", "domain": "uprinting.com" },
+        { "pos": 8, "url": "https://www.printingcenterusa.com/printing/booklet-printing", "domain": "printingcenterusa.com" },
+        { "pos": 9, "url": "https://www.lulu.com/create/booklets", "domain": "lulu.com" },
+        { "pos": 10, "url": "https://www.staples.com/services/printing/copies-documents-printing/booklets/", "domain": "staples.com" },
+        { "pos": 11, "url": "https://www.vistaprint.com/marketing-materials/booklets", "domain": "vistaprint.com" },
+        { "pos": 12, "url": "https://www.overnightprints.com/booklets", "domain": "overnightprints.com" },
+        { "pos": 13, "url": "https://mixam.com/booklets", "domain": "mixam.com" },
+        { "pos": 14, "url": "https://mixam.co.uk/booklets", "domain": "mixam.co.uk" },
+        { "pos": 15, "url": "https://www.catdi.com/printing/booklet-printing", "domain": "catdi.com" }
+      ],
+      "citations_run2_note": "= run1 top 10, same order",
+      "top5_competitor_domains": ["mixam.com incl .co.uk (3)", "staples.com (2)", "canva.com (2)", "mimeo.com (2)", "uprinting.com (2)"],
+      "params_in_citations": [
+        { "param": "page range", "value": "8 to 72 Pages", "from": "catdi.com" },
+        { "param": "lead time", "value": "On Demand", "from": "mimeo.com, lulu.com" }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "包裝盒訂製 香港邊間好",
+      "locale": "zh-hk",
+      "zprintpro_cited": true,
+      "zprintpro_positions": [
+        { "run": 1, "pos": 6, "url": "https://www.z-printpro.com/products/packaging-box-printing/custom-packaging-box-printing-100pcs-3day-hk.html", "domain": "z-printpro.com (old)", "title": "香港包裝盒印刷 | Custom Box Printing HK | 彩盒瓦楞盒100個起 | 3天出貨 | 智印港" },
+        { "run": 1, "pos": 7, "url": "https://www.z-printpro.com/products/packaging-box-printing/small-batch-packaging-box-printing-100pcs-from-hk08-hk.html", "domain": "z-printpro.com (old)", "title": "小批量包裝盒印刷｜100個起｜HK$0.8起｜即日報價 - 智印港" },
+        { "run": 1, "pos": 14, "url": "https://zprintpro.com/zh-hk/", "domain": "zprintpro.com (new)", "title": "智印港 | 香港印刷公司 | 急件印刷·即日交貨" },
+        { "run": 1, "pos": 17, "url": "https://zprintpro.com/zh-hk/product/rigid-boxes/", "domain": "zprintpro.com (new)", "title": "精裝禮盒 | 燙金 UV 100%訂製 | 智印港" },
+        { "run": 2, "pos": 6, "url": "https://www.z-printpro.com/products/packaging-box-printing/custom-packaging-box-printing-100pcs-3day-hk.html", "domain": "z-printpro.com (old)" },
+        { "run": 2, "pos": 7, "url": "https://www.z-printpro.com/products/packaging-box-printing/small-batch-packaging-box-printing-100pcs-from-hk08-hk.html", "domain": "z-printpro.com (old)" }
+      ],
+      "recount_consistent": true,
+      "recount_note": "old-domain positions #6/#7 identical across runs; run2 top-10 window excludes new-domain #14/#17 (truncation, not contradiction)",
+      "runs": [
+        { "run": 1, "approx_time": "2026-09-30 00:25 +08:00", "responseId": "mumvxs7fjx4mw1", "citation_count": 17 },
+        { "run": 2, "approx_time": "2026-09-30 00:28 +08:00", "responseId": "mumw1jd183vpne", "citation_count": 10 }
+      ],
+      "citations_run1_in_order": [
+        { "pos": 1, "url": "https://bmpack.com/", "domain": "bmpack.com" },
+        { "pos": 2, "url": "https://www.xobox.hk/pages/custom-boxes-packaging-online", "domain": "xobox.hk" },
+        { "pos": 3, "url": "https://bmpack.com/products", "domain": "bmpack.com" },
+        { "pos": 4, "url": "https://www.e-print.com.hk/products_personalized-packaging-boxes", "domain": "e-print.com.hk" },
+        { "pos": 5, "url": "https://ezbox.com.hk/zh/", "domain": "ezbox.com.hk" },
+        { "pos": 6, "url": "https://www.z-printpro.com/products/packaging-box-printing/custom-packaging-box-printing-100pcs-3day-hk.html", "domain": "z-printpro.com (old)", "zprintpro": true },
+        { "pos": 7, "url": "https://www.z-printpro.com/products/packaging-box-printing/small-batch-packaging-box-printing-100pcs-from-hk08-hk.html", "domain": "z-printpro.com (old)", "zprintpro": true },
+        { "pos": 8, "url": "https://www.ginkgoproductionhk.com/packaging", "domain": "ginkgoproductionhk.com" },
+        { "pos": 9, "url": "https://flintgift.com/product-category/宣傳禮品/包裝盒訂製", "domain": "flintgift.com" },
+        { "pos": 10, "url": "https://www.pro360.com.hk/zh-hk/price/packaging_design", "domain": "pro360.com.hk", "type": "comparison platform" },
+        { "pos": 11, "url": "https://www.wwpc.hk/", "domain": "wwpc.hk" },
+        { "pos": 12, "url": "https://www.packnbox.com/zh-hant/", "domain": "packnbox.com" },
+        { "pos": 13, "url": "https://www.winprint.hk/?product=packingbox", "domain": "winprint.hk" },
+        { "pos": 14, "url": "https://zprintpro.com/zh-hk/", "domain": "zprintpro.com (new)", "zprintpro": true },
+        { "pos": 15, "url": "https://www.ubf.com.hk/?lang=zh", "domain": "ubf.com.hk" },
+        { "pos": 16, "url": "https://www.goldenfame.com.hk/Hinged-Boxes/27.html", "domain": "goldenfame.com.hk" },
+        { "pos": 17, "url": "https://zprintpro.com/zh-hk/product/rigid-boxes/", "domain": "zprintpro.com (new)", "zprintpro": true }
+      ],
+      "citations_run2_note": "= run1 top 10 (incl #6/#7 old domain, same positions)",
+      "top5_competitor_domains": ["bmpack.com (4)", "e-print.com.hk (2)", "xobox.hk (2)", "ezbox.com.hk (2)", "ginkgoproductionhk.com (2); flintgift/pro360 also 2"],
+      "params_in_citations": [
+        { "param": "MOQ/quote", "value": "100件起訂・即時報價", "from": "bmpack.com" },
+        { "param": "MOQ/lead time", "value": "低至10個起印 3日交貨", "from": "e-print.com.hk" },
+        { "param": "MOQ/price/quote (zprintpro, highest density in list)", "value": "100個起｜HK$0.8起｜即日報價 / 100個起 | 3天出貨", "from": "z-printpro.com (old domain product pages)" },
+        { "param": "MOQ", "value": "100個起", "from": "xobox.hk (title context)" }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "貼紙印刷 小批量 快交貨",
+      "locale": "zh-hk",
+      "zprintpro_cited": true,
+      "zprintpro_positions": [
+        { "run": 1, "pos": 6, "url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/", "domain": "zprintpro.com", "title": "即日印刷 18:00 截單・順豐翌日 12:00 前送達 | 智印港" },
+        { "run": 1, "pos": 20, "url": "https://zprintpro.com/zh-hk/", "domain": "zprintpro.com" },
+        { "run": 2, "pos": 6, "url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/", "domain": "zprintpro.com" }
+      ],
+      "recount_consistent": true,
+      "recount_note": "#6 identical across runs; #20 outside run2 top-10 window (truncation)",
+      "runs": [
+        { "run": 1, "approx_time": "2026-09-30 00:26 +08:00", "responseId": "mumvxtsetxzq59", "citation_count": 20 },
+        { "run": 2, "approx_time": "2026-09-30 00:28 +08:00", "responseId": "mumw3avs9nhw5c", "citation_count": 10 }
+      ],
+      "citations_run1_in_order": [
+        { "pos": 1, "url": "https://www.luny.tw/urgent-stickers", "domain": "luny.tw", "locale_note": "TW" },
+        { "pos": 2, "url": "https://www.luny.tw/", "domain": "luny.tw", "locale_note": "TW" },
+        { "pos": 3, "url": "https://apple-print.com.tw/shop/urgent-sticker-3h/", "domain": "apple-print.com.tw", "locale_note": "TW" },
+        { "pos": 4, "url": "https://everprinter.com/product/24hr-single-stickers", "domain": "everprinter.com", "locale_note": "TW" },
+        { "pos": 5, "url": "https://everprinter.com/product/pdt-110", "domain": "everprinter.com", "locale_note": "TW" },
+        { "pos": 6, "url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/", "domain": "zprintpro.com", "zprintpro": true },
+        { "pos": 7, "url": "https://www.e-print.com.hk/products_online_design", "domain": "e-print.com.hk" },
+        { "pos": 8, "url": "https://apple-print.com.tw/shop/die-cut-stickers/", "domain": "apple-print.com.tw", "locale_note": "TW" },
+        { "pos": 9, "url": "https://haokan.com.tw/product/pay_5/", "domain": "haokan.com.tw", "locale_note": "TW" },
+        { "pos": 10, "url": "https://theprint.com.hk/index.php/en/digital-fast-label-printing-detail", "domain": "theprint.com.hk" },
+        { "pos": 11, "url": "https://www.e-print.com.hk/products_Digital_Stickers", "domain": "e-print.com.hk" },
+        { "pos": 12, "url": "https://www.golden-co.com/sticker-printing/", "domain": "golden-co.com" },
+        { "pos": 13, "url": "https://www.cpct-copycat.com/index.php/instant-sticker-printing.html", "domain": "cpct-copycat.com" },
+        { "pos": 14, "url": "https://www.design-easy.com/labels-digital-stickers.html", "domain": "design-easy.com" },
+        { "pos": 15, "url": "https://www.golden-co.com/", "domain": "golden-co.com" },
+        { "pos": 16, "url": "https://www.e-print.com.hk/products_Labels", "domain": "e-print.com.hk" },
+        { "pos": 17, "url": "https://www.print100.com/hk/html/prod_d_smallamountsticker.aspx", "domain": "print100.com" },
+        { "pos": 18, "url": "https://www.e-print.com.hk/", "domain": "e-print.com.hk" },
+        { "pos": 19, "url": "https://www.fungyiuco.com/", "domain": "fungyiuco.com" },
+        { "pos": 20, "url": "https://zprintpro.com/zh-hk/", "domain": "zprintpro.com", "zprintpro": true }
+      ],
+      "citations_run2_note": "= run1 top 10 (incl #6, same position)",
+      "top5_competitor_domains": ["e-print.com.hk (5)", "luny.tw (4)", "apple-print.com.tw (4)", "everprinter.com (4)", "golden-co.com (2)"],
+      "params_in_citations": [
+        { "param": "lead time", "value": "3小時急件", "from": "apple-print.com.tw" },
+        { "param": "lead time", "value": "24hr", "from": "everprinter.com" },
+        { "param": "MOQ/lead time", "value": "1張起印 即日", "from": "e-print.com.hk, cpct-copycat.com, design-easy.com" },
+        { "param": "cutoff+courier+SLA (zprintpro, only full-chain params in list)", "value": "18:00 截單・順豐翌日 12:00 前送達", "from": "zprintpro.com/zh-hk/services/rush-printing-delivery/" }
+      ],
+      "locale_leakage_note": "TW suppliers (luny/apple-print/everprinter/haokan) occupy citations — probe phrase has weak HK geo signal; add 香港 qualifier as future iteration experiment"
+    },
+    {
+      "id": 6,
+      "text": "月曆印刷 訂製 2027",
+      "locale": "zh-hk",
+      "zprintpro_cited": true,
+      "zprintpro_positions": [
+        { "run": 1, "pos": 6, "url": "https://zprintpro.com/zh-hk/product/custom-calendars/", "domain": "zprintpro.com", "title": "定制年曆 | 企業禮品 多款式 | 智印港" },
+        { "run": 1, "pos": 11, "url": "https://zprintpro.com/zh-hk/category/calendars/", "domain": "zprintpro.com", "title": "月曆印刷 2027 | 100本起印・Q4旺季・60天預訂・燙金精裝・企業LOGO | 智印港" },
+        { "run": 1, "pos": 17, "url": "https://zprintpro.com/zh-hk/product/desk-calendars/", "domain": "zprintpro.com", "title": "座檯年曆 | 企業禮品 多款式 | 智印港" },
+        { "run": 2, "pos": 6, "url": "https://zprintpro.com/zh-hk/product/custom-calendars/", "domain": "zprintpro.com" }
+      ],
+      "recount_consistent": true,
+      "recount_note": "#6 identical across runs; #11/#17 outside run2 top-10 window (truncation)",
+      "runs": [
+        { "run": 1, "approx_time": "2026-09-30 00:26 +08:00", "responseId": "mumvxwb3wtytku", "citation_count": 17 },
+        { "run": 2, "approx_time": "2026-09-30 00:28 +08:00", "responseId": "mumw3bquq3b3x8", "citation_count": 10 }
+      ],
+      "citations_run1_in_order": [
+        { "pos": 1, "url": "https://www.e-print.com.hk/products_Custom_Desk_Calendar", "domain": "e-print.com.hk" },
+        { "pos": 2, "url": "https://www.print100.com/hk/html/prod_desk.aspx", "domain": "print100.com" },
+        { "pos": 3, "url": "https://www.e-print.com.hk/products_desk_calendar_printing", "domain": "e-print.com.hk" },
+        { "pos": 4, "url": "https://www.amazingstudiohk.com/calendar", "domain": "amazingstudiohk.com" },
+        { "pos": 5, "url": "https://www.runtoogift.com/product_de/2107.html", "domain": "runtoogift.com" },
+        { "pos": 6, "url": "https://zprintpro.com/zh-hk/product/custom-calendars/", "domain": "zprintpro.com", "zprintpro": true },
+        { "pos": 7, "url": "https://www.uu-lian.com/wallcalendars.php", "domain": "uu-lian.com" },
+        { "pos": 8, "url": "https://www.teammate.com.hk/series/2027-Creative-calendar/", "domain": "teammate.com.hk" },
+        { "pos": 9, "url": "https://www.uu-lian.com/c2cnt-c2_356137-c2-13182.html", "domain": "uu-lian.com" },
+        { "pos": 10, "url": "https://www.guantai.com.tw/product", "domain": "guantai.com.tw", "locale_note": "TW" },
+        { "pos": 11, "url": "https://zprintpro.com/zh-hk/category/calendars/", "domain": "zprintpro.com", "zprintpro": true },
+        { "pos": 12, "url": "https://www.amazingstudiohk.com/corporatecalendar", "domain": "amazingstudiohk.com" },
+        { "pos": 13, "url": "https://www.fingerprint.com.hk/cms/promotion/products/calendar", "domain": "fingerprint.com.hk" },
+        { "pos": 14, "url": "https://www.teammate.com.hk/calendar2027/", "domain": "teammate.com.hk" },
+        { "pos": 15, "url": "https://www.doublecreativehk.com/en/calendar", "domain": "doublecreativehk.com" },
+        { "pos": 16, "url": "https://www.doublecreativehk.com/", "domain": "doublecreativehk.com" },
+        { "pos": 17, "url": "https://zprintpro.com/zh-hk/product/desk-calendars/", "domain": "zprintpro.com", "zprintpro": true }
+      ],
+      "citations_run2_note": "= run1 top 10 (incl #6, same position)",
+      "top5_competitor_domains": ["e-print.com.hk (4)", "amazingstudiohk.com (2)", "uu-lian.com (2)", "teammate.com.hk (2)", "print100.com (2); runtoogift/doublecreative also 2"],
+      "params_in_citations": [
+        { "param": "MOQ", "value": "1本起印", "from": "e-print.com.hk" },
+        { "param": "offer", "value": "早鳥優惠・免費樣板", "from": "amazingstudiohk.com" },
+        { "param": "MOQ+season+booking window (zprintpro, unique in list)", "value": "100本起印・Q4旺季・60天預訂", "from": "zprintpro.com/zh-hk/category/calendars/" },
+        { "param": "year hook", "value": "2027", "from": "multiple sites" }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "ステッカー印刷 小ロット おすすめ",
+      "locale": "ja",
+      "zprintpro_cited": false,
+      "zprintpro_position": null,
+      "zprintpro_note": "未出现在引用中 (both runs)",
+      "recount_consistent": true,
+      "recount_note": "zprintpro absent in both runs; run2 list composition differed (raksul.com #4 and orilab.jp listicle #9 entered; megaprint/stickerjapan/decaplus/gekisute/aiprintshop/originalprint dropped) — conclusion unchanged, logged per §0.23.2",
+      "runs": [
+        { "run": 1, "approx_time": "2026-09-30 00:27 +08:00", "responseId": "mumvyla6whhbnv", "citation_count": 15 },
+        { "run": 2, "approx_time": "2026-09-30 00:28 +08:00", "responseId": "mumw1l6qezqwg2", "citation_count": 10 }
+      ],
+      "citations_run1_in_order": [
+        { "pos": 1, "url": "https://www.megaprint.jp/OrderInfo?viewName=sticker-small-lot", "domain": "megaprint.jp" },
+        { "pos": 2, "url": "https://www.graphic.jp/lineup/sticker", "domain": "graphic.jp" },
+        { "pos": 3, "url": "https://www.zeamisticker.com/small-lot/", "domain": "zeamisticker.com" },
+        { "pos": 4, "url": "https://www.yotsuba-insatsu.com/print/sticker.php", "domain": "yotsuba-insatsu.com" },
+        { "pos": 5, "url": "https://print.denno-saurus.com/sticker.php", "domain": "denno-saurus.com" },
+        { "pos": 6, "url": "https://weblabels.net/seal/small-lot", "domain": "weblabels.net" },
+        { "pos": 7, "url": "https://visipri.com/sticker/single-type.php", "domain": "visipri.com" },
+        { "pos": 8, "url": "https://www.zeamisticker.com/", "domain": "zeamisticker.com" },
+        { "pos": 9, "url": "https://www.stickerjapan.com/", "domain": "stickerjapan.com" },
+        { "pos": 10, "url": "https://makel.jp/sticker", "domain": "makel.jp" },
+        { "pos": 11, "url": "https://visipri.com/sticker/intro_order.php", "domain": "visipri.com" },
+        { "pos": 12, "url": "https://www.decaplus.jp/", "domain": "decaplus.jp" },
+        { "pos": 13, "url": "https://gekisute.com/", "domain": "gekisute.com" },
+        { "pos": 14, "url": "https://aiprintshop.jp/", "domain": "aiprintshop.jp" },
+        { "pos": 15, "url": "https://originalprint.jp/store.php/campaign/stickerPrint", "domain": "originalprint.jp" }
+      ],
+      "citations_run2_in_order": [
+        { "pos": 1, "url": "https://www.graphic.jp/lineup/sticker", "domain": "graphic.jp" },
+        { "pos": 2, "url": "https://weblabels.net/seal/small-lot", "domain": "weblabels.net" },
+        { "pos": 3, "url": "https://www.zeamisticker.com/small-lot/", "domain": "zeamisticker.com" },
+        { "pos": 4, "url": "https://raksul.com/print/sticker/", "domain": "raksul.com", "note": "new in run2" },
+        { "pos": 5, "url": "https://www.yotsuba-insatsu.com/print/sticker.php", "domain": "yotsuba-insatsu.com" },
+        { "pos": 6, "url": "https://www.zeamisticker.com/", "domain": "zeamisticker.com" },
+        { "pos": 7, "url": "https://visipri.com/sticker/single-type.php", "domain": "visipri.com" },
+        { "pos": 8, "url": "https://print.denno-saurus.com/sticker.php", "domain": "denno-saurus.com" },
+        { "pos": 9, "url": "https://original-goods.orilab.jp/magazine/original-sticker-create-service-small-lot", "domain": "orilab.jp", "note": "new in run2, listicle" },
+        { "pos": 10, "url": "https://makel.jp/sticker", "domain": "makel.jp" }
+      ],
+      "top5_competitor_domains": ["zeamisticker.com (4)", "visipri.com (3)", "graphic.jp (2)", "weblabels.net (2)", "yotsuba-insatsu.com (2)"],
+      "params_in_citations": [
+        { "param": "price", "value": "1枚32円〜", "from": "zeamisticker.com" },
+        { "param": "MOQ", "value": "1枚から", "from": "graphic.jp, yotsuba-insatsu.com" },
+        { "param": "MOQ", "value": "5枚から", "from": "makel.jp" },
+        { "param": "plate fee", "value": "型代0円", "from": "zeamisticker.com" },
+        { "param": "MOQ", "value": "50枚から", "from": "aiprintshop.jp" }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "カレンダー印刷 ノベルティ 注文",
+      "locale": "ja",
+      "zprintpro_cited": false,
+      "zprintpro_position": null,
+      "zprintpro_note": "未出现在引用中 (both runs)",
+      "recount_consistent": true,
+      "runs": [
+        { "run": 1, "approx_time": "2026-09-30 00:27 +08:00", "responseId": "mumvymp3wjk2jp", "citation_count": 19 },
+        { "run": 2, "approx_time": "2026-09-30 00:29 +08:00", "responseId": "mumw4bwnyk0jgg", "citation_count": 10 }
+      ],
+      "citations_run1_in_order": [
+        { "pos": 1, "url": "https://spc.askul.co.jp/naire/calendar", "domain": "askul.co.jp" },
+        { "pos": 2, "url": "https://printrider.jp/products/calendar/", "domain": "printrider.jp" },
+        { "pos": 3, "url": "https://calendo365.com/guide/", "domain": "calendo365.com" },
+        { "pos": 4, "url": "https://ddsp.jp/product/goods/calendar/", "domain": "ddsp.jp" },
+        { "pos": 5, "url": "https://www.calepro.com/detail/natural/NA-01_double.html", "domain": "calepro.com" },
+        { "pos": 6, "url": "https://originalgoods.press/products/detail/6046", "domain": "originalgoods.press" },
+        { "pos": 7, "url": "https://matsumoto-gift.jp/products/detail/5936", "domain": "matsumoto-gift.jp" },
+        { "pos": 8, "url": "https://shop.kayo.co.jp/calendar/full-order/standard", "domain": "kayo.co.jp" },
+        { "pos": 9, "url": "https://matsumoto-gift.jp/products/detail/4610", "domain": "matsumoto-gift.jp" },
+        { "pos": 10, "url": "https://hi-ad.jp/products/detail/T102601418", "domain": "hi-ad.jp" },
+        { "pos": 11, "url": "https://www.mbe.co.jp/seasonal/calendar", "domain": "mbe.co.jp" },
+        { "pos": 12, "url": "https://calendar-pr.jp/original", "domain": "calendar-pr.jp" },
+        { "pos": 13, "url": "https://www.ypg.jp/specials/calendar.html", "domain": "ypg.jp" },
+        { "pos": 14, "url": "https://www.pripress.co.jp/lp/calendar/", "domain": "pripress.co.jp" },
+        { "pos": 15, "url": "https://www.calendar-direct.jp/index.php", "domain": "calendar-direct.jp" },
+        { "pos": 16, "url": "https://raksul.com/print/calendar/", "domain": "raksul.com" },
+        { "pos": 17, "url": "https://www.hs-honpo.com/calendar/original/", "domain": "hs-honpo.com" },
+        { "pos": 18, "url": "https://www.mbe.co.jp/calendar/mbecustom", "domain": "mbe.co.jp" },
+        { "pos": 19, "url": "https://www.original-calendar.com/", "domain": "original-calendar.com" }
+      ],
+      "citations_run2_note": "= run1 top 10, same order",
+      "top5_competitor_domains": ["spc.askul.co.jp (2, platform)", "matsumoto-gift.jp (2)", "mbe.co.jp (2)", "printrider.jp (2)", "calepro.com (2)"],
+      "params_in_citations": [
+        { "param": "discount", "value": "早期20%OFF", "from": "spc.askul.co.jp" },
+        { "param": "price", "value": "最安値352円", "from": "originalgoods.press" },
+        { "param": "price+MOQ", "value": "最安20.9円/部〜 最小ロット10部", "from": "calendar-direct.jp" },
+        { "param": "MOQ", "value": "10部から", "from": "matsumoto-gift.jp" },
+        { "param": "price", "value": "200円〜", "from": "hs-honpo.com" },
+        { "param": "year hook", "value": "2027年（令和9年度）", "from": "multiple sites" }
+      ]
+    }
+  ],
+  "daily_diff_keys": [
+    "summary.hit_rate / summary.by_locale",
+    "per-probe zprintpro_cited + best position",
+    "summary.competitor_leaderboard_top10 counts (esp. e-print.com.hk)",
+    "summary.old_vs_new_domain_split (entity consolidation progress; Day1: old 4 / new 3)"
+  ]
+}

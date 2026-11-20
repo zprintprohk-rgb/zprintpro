@@ -1,0 +1,1802 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "4f19a24a-1d7e-4c94-a02e-2894058c0a04",
+      "name": "W1-0814 T+7首读+kit诊断",
+      "description": "8/14 07:15 T+7 首读数决策 + kittl review 专项诊断（K3 V2 对齐，避开高峰时段）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786654464541,
+      "updatedAtMs": 1786654464541,
+      "agentId": "main",
+      "sessionKey": "agent:main:65140247",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-13T23:15:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 8/14 T+7 首读数 + kittl review 专项诊断（路线图 PHASE-2026-08-13-09-13.md 第四节决策树 + K3 V2 STRATEGY-2026-08-14 附录 A）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python，禁止 write 工具；禁止读写 F:\\zprintpro-nextjs。\n\n【预读输入】8/13 已提前拉取并落盘 .hermes/logs/t7-prelim-0813.md（GSC 覆盖至 8/12：两变现页 pos 72.6/81.0 较基线 +0.9/+1.5，全站点击仍 0，预判分支 B）——先读它，再拉当日最新数据复核。\n\n任务：\n1. 读 .hermes/logs/t7-prelim-0813.md（预读数据 + 决策预判）\n2. GSC API 拉取当日最新（scripts/gsc_query.py 模式，gsc-oauth.json + SOCKS5 127.0.0.1:7892；若 PyJWT/cryptography 缺失先 pip install PyJWT requests[socks] cryptography）：覆盖至 8/13 数据（基线=8/4-8/9：展示 152/230/212/182/134/273，点击 0，均 pos 59-71）\n3. 对比：全站展示/点击/均 pos + Boost 两页（printful-alternatives/printify-alternatives）位置变化\n4. 决策树分流：A（点击>0 且 ≥1 query 改善 ≥5）→ 加速；B（点击 0 但位置改善）→ 保持；C（位置无变化）→ 48h 内链诊断；D（大面积下滑 ≥10）→ 紧急审计+升级 user\n5. 提醒：Boost 8/13 上线，本窗口最多含 1 天 Boost 后数据，效果未显属预期，不要误判分支\n6. Kittl Impact 点击数据只读快照（user 已登录，不做操作）\n7. **kittl review 专项诊断（K3 V2 附录 A）**：SERP 分析（web_search 搜 'kittl review' Top 10 竞品：DR/内容长度/结构/schema/最后更新）；内容差距分析（我们页 vs Top 3 竞品，缺失实体/模块）；输出重写方案（1,500-2,000 词结构模板 + 内链 ≥4 + 引用链 ≥1）→ .hermes/logs/kittl-diagnosis-0814.md（8/16 cron 将直接消费此方案执行重写）\n8. 输出 handoff/results/RESULT-2026-08-14.md（AUTOCLAW_PRIMARY + 决策依据三要素：输入数据/分支选择/结论）+ .hermes/logs/t7-0814.md。输出用中文。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1786662900000,
+        "runningAtMs": 1786656550819,
+        "lastError": "disabled by 8/16 cron T5 governance (zombie one-shot W1-0814, already fired)"
+      }
+    },
+    {
+      "id": "19de4109-c944-4a74-9948-2d198e8f6eb7",
+      "name": "季节集群执行",
+      "description": "8/18 19:37 Halloween 上线判定（8/10 节点已完成，仅保留 8/18；cron 丢失后重建）",
+      "enabled": false,
+      "createdAtMs": 1786654525578,
+      "updatedAtMs": 1788491344698,
+      "agentId": "main",
+      "sessionKey": "agent:main:65140247",
+      "schedule": {
+        "kind": "cron",
+        "expr": "37 19 18 8 *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 季节集群执行（当前活跃: halloween-2026，8/18 deadline 模式）。\n\n⚠️ 路径铁律（不可覆盖）：\n项目根目录：F:\\aitoptools（PROJECT_ROOT）\n每条 exec 命令必须以 cd /d F:\\aitoptools 开头\n禁止读写 F:\\zprintpro-nextjs 及其任何子目录\n写文件一律用 exec node/python（node -e \"require('fs').writeFileSync('F:/aitoptools/...', 内容, 'utf-8')\"），禁止用 write 工具。写完后 exec 验证文件存在。\n\n【8/18 deadline 模式】先读任务卡 .hermes\\cron-prompts\\aitoptools-halloween-chain.md + 跟踪器 .hermes\\logs\\halloween-asset-chain.md，检查：\n1. 素材链 4 阶段完成度（设计/下单/收货拍照 public\\photos\\wall\\ / 毛利）——设计源 = Kittl/Claid 内置 Halloween 模板；下单平台：printful_session_cookie 有效用 Printful，否则 Printify；预算硬限 $25/单 $50/日；test-address.json 存在？\n2. 内容：《Halloween POD ideas 2026》支柱帖在 blog-posts.json？+ 辐条①\n3. sitemap/IndexNow 已推？（C2b 表）\n4. GEO 检查：新 URL schema 完整 + robots.txt + llms.txt 包含\n判定：LAUNCHED / PARTIAL / MISSED → 输出判定报告 .hermes/logs/halloween-deadline-0818.md\n5. 无论判定 → 用 cron 工具删除本 job（name=季节集群执行）\n\n约束：支付二次确认（test_mode OR amount<=HARD_LIMIT）；403/captcha 重试≤2 后停止告警；不 push；输出用中文。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1787053020000,
+        "runningAtMs": 1786656540711
+      }
+    },
+    {
+      "id": "1c606a9d-2f51-4627-850d-6877ea646c6e",
+      "name": "季节集群执行",
+      "description": "季节集群执行重建（8/18 19:37 Halloween 判定：原 19de4109 仅在 jobs.json 不在调度权威 sqlite，8/17 05:1x 核对发现重建；判定后自删）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786914244988,
+      "updatedAtMs": 1788491340606,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "cron",
+        "expr": "37 19 18 8 *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 季节集群执行（当前活跃: halloween-2026，8/18 deadline 模式）。\n\n路径铁律（不可覆盖）：\n项目根目录：F:\\aitoptools（PROJECT_ROOT）\n每条 exec 命令必须以 cd /d F:\\aitoptools 开头\n禁止读写 F:\\zprintpro-nextjs 及其任何子目录\n写文件一律用 exec node/python，禁止用 write 工具。写完后 exec 验证文件存在。\n\n【8/18 deadline 模式】先读任务卡 .hermes\\cron-prompts\\aitoptools-halloween-chain.md + 跟踪器 .hermes\\logs\\halloween-asset-chain.md，检查：\n1. 素材链 4 阶段完成度（设计/下单/收货拍照 public\\photos\\wall\\ / 毛利）——设计源 = Kittl/Claid 内置 Halloween 模板；下单平台：printful_session_cookie 有效用 Printful，否则 Printify；预算硬限 $25/单 $50/日；test-address.json 存在？\n2. 内容：《Halloween POD ideas 2026》支柱帖在 blog-posts.json？+ 辐条①（kittl-halloween-template-test-2026 已上线）\n3. sitemap/IndexNow 已推？（C2b 表；sitemap 当前 346 条含 5 篇 halloween）\n4. GEO 检查：新 URL schema 完整 + robots.txt + llms.txt 包含\n判定：LAUNCHED / PARTIAL / MISSED → 输出判定报告 .hermes/logs/halloween-deadline-0818.md\n5. 无论判定 → 用 cron 工具删除本 job（name=季节集群执行）\n\n约束：支付二次确认（test_mode OR amount<=HARD_LIMIT）；403/captcha 重试≤2 后停止告警；不 push；输出用中文。",
+        "thinking": "off",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1818589020000,
+        "lastRunAtMs": 1787086349993,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 52455,
+        "lastDiagnostics": {
+          "summary": "402 status code (no body)",
+          "entries": [
+            {
+              "ts": 1787086402364,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "402 status code (no body)"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "402 status code (no body)",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 2,
+        "consecutiveSkipped": 0,
+        "lastError": "FailoverError: 402 status code (no body)"
+      }
+    },
+    {
+      "id": "71d0face-e035-4a86-8297-0db9853f2aca",
+      "name": "8/28 print-price 终判",
+      "description": "print-price 8/28 T+7 终判（二期战略 S8：<67.75 作废预案 / ≥67.75 已回滚对照；一次性）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1787750071773,
+      "updatedAtMs": 1788491334053,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-28T12:37:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools print-price 8/28 T+7 终判（2026-08-26 二期战略 S8 + STRATEGY T2 纪律）。路径铁律：cd /d F:\\aitoptools；显式 model=deepseek-v4-flash。\n\n任务：\n1. 用 scripts/gsc_query.py 拉 print price ai tool 词 8/21-8/27 窗口位置/展示\n2. 判定：位置 <67.75 → 方案 A 作废预案（恢复旧 H1/首段，记入 RESULT）；位置 ≥67.75 且 imps>0 → 维持方案 A 已回滚对照（8/26 已回滚，确认状态）\n3. 悬崖期数据不可信（0 imps / NODATA）→ 按 Branch B 纪律顺延并记录（不恐慌）\n4. 输出 .hermes/logs/print-price-verdict-0828.md（数据+判定+动作）+ 追加 RESULT-2026-08-28\n输出用中文。幂等：当日 verdict 日志存在→NOOP。",
+        "model": "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+        "thinking": "off",
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1787920620000
+      }
+    },
+    {
+      "id": "ca0a3c4d-b4a6-44b6-b565-9b333738c226",
+      "name": "Campus Pillar go-启动日",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1788841938361,
+      "updatedAtMs": 1788841938361,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:a3f81e7d",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-09-09T02:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "A scheduled reminder has been triggered. The reminder content is:\n\n【K3 已拍板 go】校园 Pillar 投放启动（campus 简报 §2，9/8-14 窗口剩 6 天）：① en 速赢词优先——school exercise book printing pos 7.29，校刊/练习册 cluster 内容直达 landing；② ja 教科書簇 343 imps 承接（教科書 印刷 104 imps/pos 40.6 等无内容词）；③ hk 學校印刷 pos 36.5 攻坚；④ 8/9 校园博客 3-locale 按 W7 §F 排期同步；红线：不删页面/不回滚 title/新增内容走双向内链（證書↔月曆↔校刊↔pillar）。9/16 M1 一并复核，10/4 十四天回看定降级线。\n\nPlease relay this reminder to the user in a helpful and friendly way."
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1788919200000,
+        "runningAtMs": 1788919200060
+      }
+    },
+    {
+      "id": "147a5135-1018-4356-8db4-8abe49096538",
+      "name": "ZprintPro · 每日内容 1x7w（带钱词日更）",
+      "description": "K3 9/10 02:31 拍板派活: 全部定时任务由 autoclaw 执行层承接（Kimi 侧同名任务已停用, 不烧 Kimi 额度）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1788979132818,
+      "updatedAtMs": 1789267251591,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:cron-daily-content-4f8c6f",
+      "schedule": {
+        "kind": "cron",
+        "expr": "17 21 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【K3 派活 · ZprintPro · 每日内容 1x7w（带钱词日更）】你是 zprintpro-nextjs（智印港 / ZprintPro）每日内容执行层（带钱词日更）（v7 新执行层 autoclaw / deepseek hermes）。开工必读（按序）: ①统一入口技能 C:\\Users\\Administrator\\.openclaw-autoclaw\\skills\\zprintpro-content-standards\\SKILL.md ②规则 SSoT F:\\zprintpro-nextjs\\docs\\2026-09-08-title-rules-and-deep-blog-standard.md ③本任务 SSoT F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\zprintpro-daily-content-1x7w.md（含 v7 迁移段 + W7 addendum） ④战略主报告 F:\\zprintpro-nextjs\\docs\\2026-09-08-v4-full-alignment-master-report.md。当次任务: 按 SSoT 从 .hermes/industry-keyword-matrix.json queue 取 priority_boost 最高选题写 1 篇（12 铁律 + 门童全过）, queue 空则按 SSoT 规则处理。 铁律: §0.23 数据诚信（报告必含数据来源行: GSC 文件名 + 日期范围 + canonical 口径; 只引用实测值, 禁止编造 baseline）; 9/3 官方口径 7d 全站 CTR 0.54%（旧 0.79% 已撤回禁用）; 零改文案; §0.28 1 cron 1 交付物; push 守 §0.25.9（攒批 + 30 min 硬下限, 禁 Start-Sleep 阻塞等待）。验收: 脚本/数据改动跑 check-encoding + tsc。",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "92141523-5942-4c36-96bd-aa4e4be92a6d",
+      "name": "ZprintPro · GSC 数据回灌反馈环",
+      "description": "K3 9/10 02:31 拍板派活: 全部定时任务由 autoclaw 执行层承接（Kimi 侧同名任务已停用, 不烧 Kimi 额度）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1788979132818,
+      "updatedAtMs": 1789267251591,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:cron-gsc-feedback-161341",
+      "schedule": {
+        "kind": "cron",
+        "expr": "43 22 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【K3 派活 · ZprintPro · GSC 数据回灌反馈环】你是 zprintpro-nextjs（智印港 / ZprintPro）GSC 反馈环专员（v7 新执行层 autoclaw / deepseek hermes）。开工必读（按序）: ①统一入口技能 C:\\Users\\Administrator\\.openclaw-autoclaw\\skills\\zprintpro-content-standards\\SKILL.md ②规则 SSoT F:\\zprintpro-nextjs\\docs\\2026-09-08-title-rules-and-deep-blog-standard.md ③本任务 SSoT F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\zprintpro-gsc-feedback-loop.md（含 v7 迁移段 + W7 addendum） ④战略主报告 F:\\zprintpro-nextjs\\docs\\2026-09-08-v4-full-alignment-master-report.md。当次任务: 读 F:\\zprintpro-nextjs\\GSC数据 最新 canonical（全站 + zh-hk/en/ja × 24h/7d/28d/3m）: ①回灌 .hermes/industry-keyword-matrix.json 词价值分层 priority_boost（T1-T4 规则见 SSoT）②零点击高展示词 / CTR 异常词 / striking distance 词（pos 5-20）清单更新 ③若当日为校准日（v4 §5.1 排期: 9/10、9/12 等）执行 Pillar 收录验证 + 抓取状态表补齐 + 同口径导出 ④校准报告落 docs/（文件名含当日日期）。 铁律: §0.23 数据诚信（报告必含数据来源行: GSC 文件名 + 日期范围 + canonical 口径; 只引用实测值, 禁止编造 baseline）; 9/3 官方口径 7d 全站 CTR 0.54%（旧 0.79% 已撤回禁用）; 零改文案; §0.28 1 cron 1 交付物; push 守 §0.25.9（攒批 + 30 min 硬下限, 禁 Start-Sleep 阻塞等待）。验收: 脚本/数据改动跑 check-encoding + tsc。",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "4c7eb4dd-6cf0-4c1f-a3bf-e5cbb8df1911",
+      "name": "ZprintPro · 周五 Track B 槽位 + meta 刷新",
+      "description": "K3 9/10 02:31 拍板派活: 全部定时任务由 autoclaw 执行层承接（Kimi 侧同名任务已停用, 不烧 Kimi 额度）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1788979132818,
+      "updatedAtMs": 1789267251591,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:cron-weekly-meta-3bed3c",
+      "schedule": {
+        "kind": "cron",
+        "expr": "7 23 * * 5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【K3 派活 · ZprintPro · 周五 Track B 槽位 + meta 刷新】你是 zprintpro-nextjs（智印港 / ZprintPro）周五 meta 刷新 + Track B 槽位执行层（v7 新执行层 autoclaw / deepseek hermes）。开工必读（按序）: ①统一入口技能 C:\\Users\\Administrator\\.openclaw-autoclaw\\skills\\zprintpro-content-standards\\SKILL.md ②规则 SSoT F:\\zprintpro-nextjs\\docs\\2026-09-08-title-rules-and-deep-blog-standard.md ③本任务 SSoT F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\zprintpro-weekly-meta-refresh.md（含 v7 迁移段 + W7 addendum） ④战略主报告 F:\\zprintpro-nextjs\\docs\\2026-09-08-v4-full-alignment-master-report.md。当次任务: 按 SSoT 跑 weekly meta refresh（T3 词类目页 meta 覆盖）+ Track B 槽位内容 1 篇（验证窗纪律: 仅白名单词）。 铁律: §0.23 数据诚信（报告必含数据来源行: GSC 文件名 + 日期范围 + canonical 口径; 只引用实测值, 禁止编造 baseline）; 9/3 官方口径 7d 全站 CTR 0.54%（旧 0.79% 已撤回禁用）; 零改文案; §0.28 1 cron 1 交付物; push 守 §0.25.9（攒批 + 30 min 硬下限, 禁 Start-Sleep 阻塞等待）。验收: 脚本/数据改动跑 check-encoding + tsc。",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "5507b798-561d-4685-be35-d2d194461a15",
+      "name": "ZprintPro · 周六存量 blog 深度重写",
+      "description": "K3 9/10 02:31 拍板派活: 全部定时任务由 autoclaw 执行层承接（Kimi 侧同名任务已停用, 不烧 Kimi 额度）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1788979132818,
+      "updatedAtMs": 1789267251591,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:cron-blog-deepfix-5cc9a1",
+      "schedule": {
+        "kind": "cron",
+        "expr": "37 5 * * 6",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【K3 派活 · ZprintPro · 周六存量 blog 深度重写】你是 zprintpro-nextjs（智印港 / ZprintPro）周六存量 blog 深度重写执行层（v7 新执行层 autoclaw / deepseek hermes）。开工必读（按序）: ①统一入口技能 C:\\Users\\Administrator\\.openclaw-autoclaw\\skills\\zprintpro-content-standards\\SKILL.md ②规则 SSoT F:\\zprintpro-nextjs\\docs\\2026-09-08-title-rules-and-deep-blog-standard.md ③本任务 SSoT F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\zprintpro-blog-deepfix.md（含 v7 迁移段 + W7 addendum） ④战略主报告 F:\\zprintpro-nextjs\\docs\\2026-09-08-v4-full-alignment-master-report.md。当次任务: 按 SSoT 挑 1 篇存量 thin blog 做 12 段骨架深度重写, 门童 15 道全过后攒批提交。 铁律: §0.23 数据诚信（报告必含数据来源行: GSC 文件名 + 日期范围 + canonical 口径; 只引用实测值, 禁止编造 baseline）; 9/3 官方口径 7d 全站 CTR 0.54%（旧 0.79% 已撤回禁用）; 零改文案; §0.28 1 cron 1 交付物; push 守 §0.25.9（攒批 + 30 min 硬下限, 禁 Start-Sleep 阻塞等待）。验收: 脚本/数据改动跑 check-encoding + tsc。",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "8b4e30b8-ce31-4daa-af7a-ea0778e46d82",
+      "name": "ZprintPro · 月度复盘 + 关键词矩阵审计",
+      "description": "K3 9/10 02:31 拍板派活: 全部定时任务由 autoclaw 执行层承接（Kimi 侧同名任务已停用, 不烧 Kimi 额度）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1788979132818,
+      "updatedAtMs": 1789267251591,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:cron-monthly-matrix-473d6d",
+      "schedule": {
+        "kind": "cron",
+        "expr": "13 6 1 * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【K3 派活 · ZprintPro · 月度复盘 + 关键词矩阵审计】你是 zprintpro-nextjs（智印港 / ZprintPro）月度复盘 + 矩阵审计执行层（v7 新执行层 autoclaw / deepseek hermes）。开工必读（按序）: ①统一入口技能 C:\\Users\\Administrator\\.openclaw-autoclaw\\skills\\zprintpro-content-standards\\SKILL.md ②规则 SSoT F:\\zprintpro-nextjs\\docs\\2026-09-08-title-rules-and-deep-blog-standard.md ③本任务 SSoT F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\zprintpro-monthly-matrix-audit.md（含 v7 迁移段 + W7 addendum） ④战略主报告 F:\\zprintpro-nextjs\\docs\\2026-09-08-v4-full-alignment-master-report.md。当次任务: 按 SSoT 跑月度复盘（v4 §7.4 口径）+ .hermes/industry-keyword-matrix.json 全量审计, 报告落 docs/。 铁律: §0.23 数据诚信（报告必含数据来源行: GSC 文件名 + 日期范围 + canonical 口径; 只引用实测值, 禁止编造 baseline）; 9/3 官方口径 7d 全站 CTR 0.54%（旧 0.79% 已撤回禁用）; 零改文案; §0.28 1 cron 1 交付物; push 守 §0.25.9（攒批 + 30 min 硬下限, 禁 Start-Sleep 阻塞等待）。验收: 脚本/数据改动跑 check-encoding + tsc。",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "4a207f72-7a51-4e4e-9106-75c28e0bde87",
+      "name": "K3-0910 GSC校准日提醒",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1788824166015,
+      "updatedAtMs": 1788824584337,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:a3f81e7d",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-09-10T02:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "A scheduled reminder has been triggered. The reminder content is:\n\n【K3 提醒】今天是 9/10 GSC 校准日（v4.0 指令 A5）：① GSC URL Inspection 逐条记录 9 篇重写 blog 抓取状态，未抓取者 IndexNow 补推；② 复核 BC 旧名片 URL 404 清零（HEAD 42d897b2 修复验证）；③ 新增：校准信封/月曆 PDP FAQ schema 收录（63af89ab，Rich Results 抽检）。数据窗口见 docs/2026-09-08-k3-masterplan-and-a1a12-mapping.md 排期表。\n\nPlease relay this reminder to the user in a helpful and friendly way.",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1789005600000,
+        "runningAtMs": 1789005600051
+      }
+    },
+    {
+      "id": "a9427f21-d66d-4308-bc3f-efc1d3b43243",
+      "name": "zprintpro-w7-strategy-m1-weekly-check",
+      "enabled": true,
+      "createdAtMs": 1788647262094,
+      "updatedAtMs": 1788904901577,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:29c984cd",
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 10 * * 1",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【W7 战略 M1 周校准 · zprintpro】先完整读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\w7-strategy-addendum-2026-09-06.md（W7 战略 addendum，2026-09-06 K3 拍板），再读 F:\\zprintpro-nextjs\\.hermes\\cron-prompts\\sop-10-gate.md。这是 180 天路线图 M1 阶段（堵漏+埋点）的每周校准任务，按 addendum §F 排期逐项核对 M1 清单状态并推进可自走项：①others 三语 404 堵漏（§A：URL 层 next.config.js 308 M3 可自走，词层 43 词分流进各车道；先用 curl -I 验证 /zh-hk/category/others/、/en/category/others/、/ja/category/others/ 终态，已 308 则记录 DONE，仍 404 则按 §A.2 执行，写内链前先 curl 验证目标 200）②posters en/ja 转化区块缺口（§B，注册表以 src/data/category-conversion-blocks.ts 实测 23 键为准，旧 7 格缺口 TOP10 已停用）③头部 7 词 CTR 标题改写队列（§C，只改 title/meta 不改 H1；en 禁 Made in USA/Free Shipping 类 FTC 词，ja 禁 激安/業界最安）④三语《印刷尺寸对照表》FAQ 资产（§E，daily-content 车道，含 FAQPage JSON-LD）⑤WA/GA4 埋点（§D）触及组件层 = M3 停手，只产出实施方案写入 .hermes/reports/ 等 K3 拍板，不擅自改码。硬约束：每天≤1 push 攒批 origin_ssh main、push 前三闸门（tsc/门童/build）、封版文件不动（page.tsx hero/Card 类/HotProducts/RelatedProducts/pricing.ts/price_range/price-data.generated.ts）、不删文件只加 308 与内容、动手前 git log/status 核对多车道动态、显式 stage 指名文件并 git diff --cached 断言。报告写入 F:\\zprintpro-nextjs\\.hermes\\reports\\m3-w7-m1-weekly-<日期>.md，必含 SOP-10 5 问门禁段 + 数据来源行（GSC gsc-fresh-2026-09-03、注册表实测、线上探针），无来源数字不进报告。竞品 SERP 对标为待补缺口（搜索额度恢复后补 6 query），不得用估算填补。",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1788749505653,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 307117,
+        "lastError": "cron: job execution timed out (last phase: model-call-started)",
+        "lastDiagnostics": {
+          "summary": "cron: job execution timed out (last phase: model-call-started)",
+          "entries": [
+            {
+              "ts": 1788749812770,
+              "source": "cron-setup",
+              "severity": "error",
+              "message": "cron: job execution timed out (last phase: model-call-started)"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "cron: job execution timed out (last phase: model-call-started)",
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 4,
+        "consecutiveSkipped": 0,
+        "nextRunAtMs": 1789353000000
+      }
+    },
+    {
+      "id": "9926da8d-88c0-47c5-8cce-011856726422",
+      "name": "K3-0916 M1联合验收提醒",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1788824166055,
+      "updatedAtMs": 1788824584378,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:a3f81e7d",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-09-16T02:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "A scheduled reminder has been triggered. The reminder content is:\n\n【K3 提醒】今天是 M1 联合验收日（v4.0 指令 A11）：验收口径三线对照——① 7d clicks 12→≥25 ② 首页词（pos≤10）→≥8 ③ WA 有效询盘≥2/周（GA4 缺口则标 [数据缺口] 降级验收）。对照基线：GSC 9/3 canonical JSON + docs/2026-09-08-weekly-dashboard-template.md 看板。验收通过签发 M2（转化区块 26→31 + ja 教材专题 + 竞品 R2）。\n\nPlease relay this reminder to the user in a helpful and friendly way.",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1789524000000
+      }
+    },
+    {
+      "id": "7f5e607c-3881-47ec-b5b9-262f567c92e3",
+      "name": "Track B 每周五内容槽位提醒",
+      "enabled": true,
+      "createdAtMs": 1788824166073,
+      "updatedAtMs": 1789154224265,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:a3f81e7d",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "A scheduled reminder has been triggered. The reminder content is:\n\n【K3 提醒】今天是周五 Track B 内容槽位（v4.0 指令 A12/G4 地基）：按 9/3 GSC imps 排序产出 1-2 篇 12 铁律达标支撑内容（大词：貼紙印刷 28d 133 imp / 宣傳單張 137 imp / 包裝盒訂製 / 紙袋訂製 / en small batch label printing），过门童 15 道后按攒批纪律提交。当前待写：B1 貼紙支撑内容（9/12 顺延）。\n\nPlease relay this reminder to the user in a helpful and friendly way.",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1789696800000,
+        "lastRunAtMs": 1789154124372,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 99893,
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1,
+        "consecutiveSkipped": 0,
+        "lastError": "FailoverError: ⚠️ You have exceeded the weekly usage quota. It will reset at 2026-09-14 00:00:00 +0800 CST. We recommend upgrading your plan for more quota, or waiting for the reset. Request id: 0217891542239742fd371616c426ef2ef1e8283345b07abc65329",
+        "lastDiagnostics": {
+          "summary": "⚠️ You have exceeded the weekly usage quota. It will reset at 2026-09-14 00:00:00 +0800 CST. We recommend upgrading your plan for more quota, or waiting for the reset. Request id: 0217891542239742fd371616c426ef2ef1e8283345b07abc65329",
+          "entries": [
+            {
+              "ts": 1789154223931,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ You have exceeded the weekly usage quota. It will reset at 2026-09-14 00:00:00 +0800 CST. We recommend upgrading your plan for more quota, or waiting for the reset. Request id: 0217891542239742fd371616c426ef2ef1e8283345b07abc65329"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ You have exceeded the weekly usage quota. It will reset at 2026-09-14 00:00:00 +0800 CST. We recommend upgrading your plan for more quota, or waiting for the reset. Request id: 0217891542239742fd371616c426ef2ef1e8283345b07abc65329"
+      }
+    },
+    {
+      "id": "a8ad8c45-83c4-4e73-881c-957cab08542d",
+      "name": "Campus 14天回看(降级线判定)",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1788841938315,
+      "updatedAtMs": 1788841938315,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:a3f81e7d",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-10-04T02:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【K3 已拍板 go · 14 天回看】campus 简报 §2 降级线判定日：复核校园 cluster 14 天 CTR 与询盘归档——若 0 进位（en school exercise book printing 仍 pos 7.29 无点击、ja 教科書簇无承接、hk 學校印刷无进位），按品类记分卡降级观察线处理（闭项不删页）；有进位则续投并申报 M2 校园专题。数据源：GSC 导出 + GA4（G-248QMCT2S3 已接线，校园相关 whatsapp_click/quote_submit）。"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1791079200000
+      }
+    },
+    {
+      "id": "02fee02d-4fc5-400c-af1a-4144c716cfcb",
+      "name": "W4-0913 T30全量校准",
+      "description": "W4-0913 T30全量校准（9/13 18:47 晚间窗口：由 07:15 调整，重任务留晚间更宽裕）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786661925054,
+      "updatedAtMs": 1788491349379,
+      "agentId": "aitoptools",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-09-13T10:47:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 9/13 T+30 全量校准（PHASE-2026-08-13 第四节三分支 + K3 STRATEGY-2026-08-13 Phase 1 KPI + K3 V2 修正目标，产出 Phase 3）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python，禁止 write 工具；禁止读写 F:\\zprintpro-nextjs。\n\n任务：\n1. 三源汇总：GSC 30 天（scripts/gsc_query.py）+ beacon 30 天（CF Web Analytics）+ 联盟后台（Impact/Printful/Rewardful 只读快照）\n2. **K3 KPI 六项核验**：① B 级 title/meta 100%（8/16 应完成）② B 级 50% 扩写 1,200+ 词（队列 20 页）③ 内链 53→200+（8/23 第二轮）④ 20+ query 排名提升 ≥5 位（对比 8/4-8/9 基线）⑤ 日均展示 197→500+（T+7 实测 216.5，9/13 目标按 V2 修正为 100-150 UV）⑥ 外链 ≥20 目录提交\n3. **K3 V2 修正目标核验**：日均 UV 100-150；Kittl 假设值替换（Impact 真实数据，替换前后对比）\n4. 决策树：月化 ≥$400 → Phase 3 提强度；$200-400 → 重排资源；<$200 → 升级 user 拍板战略复审\n5. 产出 handoff/strategy/PHASE-2026-09-14-*.md（Phase 3，含真实 CTR/转化率/均佣；按 K3 Phase 2 要点：外链建设/剩余 B 级扩写/E-E-A-T/变现 A-B 测试/原创数据报告）\n6. 输出 handoff/results/RESULT-2026-09-13.md + .hermes/logs/t30-0913.md\n7. 输出用中文。\n\n## DEEPDIVE 目标模式四项核验（2026-08-18 新增，DEEPDIVE-2026-08-17 §五-1/§六）\n9/13 校准除 KPI 六项外，并行核验 DEEPDIVE 目标模式四项目标（与三引擎成果对账）：\n1. legit 产线：目标 10 篇上线（当前 blog-posts.json 中 is-*-legit 计数，8/18 为 1）\n2. 外链收录：目标 ≥5（当前 link-building 台账 LIVE 计数，8/17 为 1）；<3 → 「12 月目标自动下调一档」标注\n3. 日均展示：目标 ≥500（GSC 7d 日均，8/17 为 374）\n4. top-20 页面：目标 ≥5 个（GSC pos<20 页面数，8/17 为 1）\n每项给「目标/当前/偏差%」，偏差 >20% 标红 ⚠️，随校准结论写入 RESULT-0913 与 Phase 3 文档。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786910700103,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 630938,
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ cd F:\\aitoptools; Select-String -Path .env.local, .env.exam…'(=|\\\":\\s*).*$', '$1<redacted>') } | Select-Object -First 30 (in F:\\aitoptools) failed",
+          "entries": [
+            {
+              "ts": 1786911331026,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ cd F:\\aitoptools; Select-String -Path .env.local, .env.exam…'(=|\\\":\\s*).*$', '$1<redacted>') } | Select-Object -First 30 (in F:\\aitoptools) failed"
+            },
+            {
+              "ts": 1786911331027,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ cd F:\\aitoptools; Select-String -Path .env.local, .env.exam…'(=|\\\":\\s*).*$', '$1<redacted>') } | Select-Object -First 30 (in F:\\aitoptools) failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ cd F:\\aitoptools; Select-String -Path .env.local, .env.exam…'(=|\\\":\\s*).*$', '$1<redacted>') } | Select-Object -First 30 (in F:\\aitoptools) failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 3,
+        "consecutiveSkipped": 0,
+        "lastError": "⚠️ 🛠️ cd F:\\aitoptools; Select-String -Path .env.local, .env.exam…'(=|\\\":\\s*).*$', '$1<redacted>') } | Select-Object -First 30 (in F:\\aitoptools) failed"
+      }
+    },
+    {
+      "id": "08726208-f29c-4d49-906c-c9f8eece5cf1",
+      "name": "8/16 07:20 主任务触发核验",
+      "description": "8/16 07:15 主任务触发后核验（R-14 纪律：以 jobs.json 为准）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786827746649,
+      "updatedAtMs": 1786837650616,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-15T23:20:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "核验 aitoptools 8/16 07:15 主任务（id 84c86e36-fd6f-479b-9f6c-b05699945bb9，名称「8/16 B类快修+辐条补正+外链合并push」）是否已触发执行。只读检查（不修改任何文件、不重建任务、不 push）：① 读 C:\\Users\\Administrator\\.openclaw-autoclaw\\cron\\jobs.json 中 84c86e36 的 state 字段（lastRunAtMs/lastRunStatus/runningAtMs），判断是否已运行；② 检查 F:\\aitoptools\\handoff\\results\\RESULT-2026-08-16.md 是否存在及其最后修改时间；③ 检查 F:\\aitoptools\\.hermes\\logs\\ 下今日新增日志（daily-ops/daily-search/rank-sentinel/bfix-0816/link-building-0816 等）。结论写 F:\\aitoptools\\.cluster\\goal-flow-c52c6564-e8d7-44f3-a451-e84dc2949645\\probe-0720.md：RUNNING（已触发执行中）/ DONE（已跑完，附 RESULT 摘要）/ NOT_RUN（未触发 → 置顶告警：jobs.json state 原文 + 建议手工重建，但本次不执行重建）。",
+        "thinking": "off",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786837505291,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 145325,
+        "lastError": "⚠️ 🛠️ $content = @' # probe-0720.md — 8/16 07:15 主任务触发核验 - 核验时间: …) mtime=$($f.LastWriteTime.ToString('yyyy-MM-dd HH:mm:ss'))\" failed",
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ $content = @' # probe-0720.md — 8/16 07:15 主任务触发核验 - 核验时间: …) mtime=$($f.LastWriteTime.ToString('yyyy-MM-dd HH:mm:ss'))\" failed",
+          "entries": [
+            {
+              "ts": 1786837650080,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ $content = @' # probe-0720.md — 8/16 07:15 主任务触发核验 - 核验时间: …) mtime=$($f.LastWriteTime.ToString('yyyy-MM-dd HH:mm:ss'))\" failed"
+            },
+            {
+              "ts": 1786837650082,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ $content = @' # probe-0720.md — 8/16 07:15 主任务触发核验 - 核验时间: …) mtime=$($f.LastWriteTime.ToString('yyyy-MM-dd HH:mm:ss'))\" failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ $content = @' # probe-0720.md — 8/16 07:15 主任务触发核验 - 核验时间: …) mtime=$($f.LastWriteTime.ToString('yyyy-MM-dd HH:mm:ss'))\" failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1,
+        "consecutiveSkipped": 0
+      }
+    },
+    {
+      "id": "1727c0ce-64d4-4643-82aa-d5906e3dcf76",
+      "name": "W2-0823 集群合并push",
+      "description": "8/23 07:15 集群+存量改造合并 push + 内链第二轮 + 外链第 2 批",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786661925003,
+      "updatedAtMs": 1786798234519,
+      "agentId": "main",
+      "sessionKey": "agent:main:65140247",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-22T23:15:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 8/23 集群+改造合并 push（PHASE-2026-08-13 W2 + K3 STRATEGY-2026-08-13 轨道一 + T+7 Branch A）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python，禁止 write 工具；禁止读写 F:\\zprintpro-nextjs。\n\n⚠️ Push 部署纪律（2026-08-15 user 拍板：每日 ≤5 次 push，重点内容当日部署）：\n- 本节点内容**合并一次 push**（集群页+改造+内链+E-E-A-T），当日累计 ≤5 次\n- 8/15 至 8/23 期间的重点改动（Boost/快修已各自当日 push）→ 检查未推 commit 一并纳入\n- push-count 记录入 .hermes/logs/cluster-push-0823.md\n\n【输入】\n1. .cluster/content-expansion-queue.md：扩写队列（8/16 做 Top 10 则续做 11-20；未做从 Top 5 开始，标准 1,500 词）\n2. .cluster/link-directory-list.md：外链第 2 批 10-12 站（8/16 首批 8 站后续批；统一实体描述：aitoptools.net — Print AI Tools review site specializing in AI-powered solutions for print shops, packaging design, and e-commerce store operations. Founded by Jerome Tang of Shenzhen Cai Long Printing；邮箱 jerome@aitoptools.net；CAPTCHA → BLOCKED_BY_CAPTCHA）\n3. .hermes/logs/halloween-deadline-0818.md：8/18 上线判定（LAUNCHED → 继续；PARTIAL/MISSED → 记录缺口）\n4. .hermes/logs/boost-0817.md：Boost 状态\n5. .hermes/logs/review-0815.md：8/15 复核结论\n\n任务：\n1. 8/18 判定消费\n2. 集群剩余页（枢纽交叉链+辐条补全，辐条②模板 printful-vs-printify-halloween-2026 先例）+ A 类 programmatic 页改造（内容加深+内链）\n3. **内链第二轮 53→200+**（工具→对比→列表→场景四层，自然锚文本，禁过度优化）\n4. **E-E-A-T**：reviews 页 author schema（Person: Jerome Tang）+ 测试方法论声明段（Tested by Jerome Tang, Shenzhen Cai Long Printing）\n5. 外链第 2 批提交（10-12 站）+ 记录 .hermes/logs/link-building-0823.md\n6. 合并一次 build + 一次 push\n7. 改造前后对比（GSC 位置/展示）落 .hermes/logs/cluster-push-0823.md（含 push-count）\n8. 输出用中文。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786797276211,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 958308,
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ create git commit -> run select-object 5 → view git history → run === push === → push git changes -> run select-object 5 → check git status -> run select-object 3 (in F:aitoptools) failed",
+          "entries": [
+            {
+              "ts": 1786798234301,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ create git commit -> run select-object 5 → view git history → run === push === → push git changes -> run select-object 5 → check git status -> run select-object 3 (in F:aitoptools) failed"
+            },
+            {
+              "ts": 1786798234302,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ create git commit -> run select-object 5 → view git history → run === push === → push git changes -> run select-object 5 → check git status -> run select-object 3 (in F:aitoptools) failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ create git commit -> run select-object 5 → view git history → run === push === → push git changes -> run select-object 5 → check git status -> run select-object 3 (in F:aitoptools) failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 2,
+        "consecutiveSkipped": 0,
+        "lastError": "⚠️ 🛠️ create git commit -> run select-object 5 → view git history → run === push === → push git changes -> run select-object 5 → check git status -> run select-object 3 (in F:aitoptools) failed"
+      }
+    },
+    {
+      "id": "26a0ac2a-f3d3-4bd7-8ec7-ba2faa999041",
+      "name": "W3-0831 IndexNow全推",
+      "description": "8/31 07:15 IndexNow 增量全推 + sitemap 核验 + 月末 push 收口",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786661925036,
+      "updatedAtMs": 1786797975748,
+      "agentId": "main",
+      "sessionKey": "agent:main:65140247",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-30T23:15:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 8/31 IndexNow 增量全推 + sitemap 核验（PHASE-2026-08-13 W3）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python，禁止 write 工具；禁止读写 F:\\zprintpro-nextjs。\n\n任务：\n1. 对比 public/sitemap.xml 与 .hermes/logs/gsc-indexnow-state.json → 新 URL 增量推送（scripts/submit_indexnow_blog_20260808.py 模式）\n2. sitemap 核验（全部 URL 200？verify-deploy-v2.py 或抽样）\n3. 月末 push 收口（未推 commit 合并推送）\n4. C2b 表更新 + 输出 .hermes/logs/indexnow-0831.md\n5. 输出用中文。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786797276232,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 699516,
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ run remove-item .hermeslogs_w3_commit_msg.txt → run write-output → check git status -> run select-object 4 → run write-output → run get-item .hermeslogsindexnow-0831.md -> run select-object → run write-output → run $outputencoding → run 15 -> run node (in F:\\aitoptools) failed",
+          "entries": [
+            {
+              "ts": 1786797975718,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ run remove-item .hermeslogs_w3_commit_msg.txt → run write-output → check git status -> run select-object 4 → run write-output → run get-item .hermeslogsindexnow-0831.md -> run select-object → run write-output → run $outputencoding → run 15 -> run node (in F:\\aitoptools) failed"
+            },
+            {
+              "ts": 1786797975720,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ run remove-item .hermeslogs_w3_commit_msg.txt → run write-output → check git status -> run select-object 4 → run write-output → run get-item .hermeslogsindexnow-0831.md -> run select-object → run write-output → run $outputencoding → run 15 -> run node (in F:\\aitoptools) failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ run remove-item .hermeslogs_w3_commit_msg.txt → run write-output → check git status -> run select-object 4 → run write-output → run get-item .hermeslogsindexnow-0831.md -> run select-object → run write-output → run $outputencoding → run 15 -> run node (in F:\\aitoptools) failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 2,
+        "consecutiveSkipped": 0,
+        "lastError": "⚠️ 🛠️ run remove-item .hermeslogs_w3_commit_msg.txt → run write-output → check git status -> run select-object 4 → run write-output → run get-item .hermeslogsindexnow-0831.md -> run select-object → run write-output → run $outputencoding → run 15 -> run node (in F:\\aitoptools) failed"
+      }
+    },
+    {
+      "id": "2b7d37e4-cc34-47b1-9a3a-6a513f2d81c1",
+      "name": "旧页刷新产线",
+      "description": "旧页刷新产线（二期战略 S5：每周更新 2 旧页，记录 GSC 对照；本周 Kittl+merger 已完成）",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1787750071669,
+      "updatedAtMs": 1788491335265,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "cron",
+        "expr": "37 20 * * 2",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 旧页刷新产线（2026-08-26 二期战略 S5：沙盒期最低成本排名信号——更新过的页面回升概率更高）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python；禁止读写 F:\\zprintpro-nextjs；显式 model=deepseek-v4-flash。\n\n任务：\n1. 选页：从 reviews.json/comparisons.json 按 GSC imp 排序取 2 个旧页（上次 dateModified 最久优先，避开本周已更新页）\n2. 更新：每页做「内容 refresh」——补 1-2 个新事实（官方博客/新闻带源）+ dateModified 刷新 + 若有 rubric 则补 Exclusive Test 锚点；禁止改 H1/URL/结构（沙盒期纪律）\n3. 校验：validate_content_data.py + build 预检（若改数据文件）\n4. 记录：.hermes/logs/refresh-line-{今天}.md（页/更新内容/旧-新 dateModified/来源 URL），供 GSC 对照\n5. 不单独 push（攒入当日合并 push）\n输出用中文。幂等：当日 refresh-line 日志存在非空→NOOP。",
+        "model": "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+        "thinking": "off",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1788276679679,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 237,
+        "lastError": "FallbackSummaryError: All models failed (1): deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash: Provider deepseek__4111173b-944d-4961-9d08-d4635ee75e4b is in cooldown (suspending lanes) (billing)",
+        "lastDiagnostics": {
+          "summary": "All models failed (1): deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash: Provider deepseek__4111173b-944d-4961-9d08-d4635ee75e4b is in cooldown (suspending lanes) (billing)",
+          "entries": [
+            {
+              "ts": 1788276679908,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "All models failed (1): deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash: Provider deepseek__4111173b-944d-4961-9d08-d4635ee75e4b is in cooldown (suspending lanes) (billing)"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "All models failed (1): deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash: Provider deepseek__4111173b-944d-4961-9d08-d4635ee75e4b is in cooldown (suspending lanes) (billing)",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1,
+        "consecutiveSkipped": 0
+      }
+    },
+    {
+      "id": "42f8dbcb-8316-4fc1-8468-a89ee459b79e",
+      "name": "legit 信任产线",
+      "description": "legit 信任产线（PLAN-09 §六：每晚取队列 1-2 篇，事实核实→成稿→攒次日 push；D12/D13 视为已拍板 8/22 激活）",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1787338076558,
+      "updatedAtMs": 1788491338293,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "cron",
+        "expr": "47 19 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools legit 信任产线（PLAN-2026-09-MONTHLY.md §六 + STRATEGY-2026-08-22 T4；D12/D13 已由 user 全权授权视为拍板，8/22 激活）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python；禁止读写 F:\\zprintpro-nextjs；显式 model=deepseek-v4-flash。\n\n任务：\n1. 取队列：读 .hermes/drafts/legit-queue-status.md，按 GSC imp 排序取未完成 1-2 篇（优先 Spocket/Kittl/Society6，核实数据见 .hermes/drafts/legit-factcheck-0819.md；若无核实数据则先补事实核实，抓取 403 则用 web_search/其他源，仍无则标 SKIP 不硬写）\n2. 成稿：按 legit-template-v2.md（公开 rubric 30/25/25/20 + answer-first + 2,500 词 + FAQ≥5 + 来源 URL 必带 + 双向互链 + 替代品 CTA）写入 src/data/blog-posts.json（slug is-{tool}-legit 规范）\n3. 截图：public/tool-screenshots/blog/ 下 3-5 张（若无截图资源则记录缺口，不阻塞成稿）\n4. 校验：python scripts/validate_content_data.py + wordCount≥2500 检查，不过则修\n5. 产物：本次只成稿不 push（攒次日/当次合并 push）；输出 .hermes/logs/legit-line-{今天日期}.md（篇目+字数+校验结果）\n输出用中文。幂等：当日 legit-line 日志已存在且非空→NOOP。",
+        "model": "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+        "thinking": "off",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1788447562403,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 9558,
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 10,
+        "consecutiveSkipped": 0,
+        "lastError": "FailoverError: ⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+        "lastDiagnostics": {
+          "summary": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+          "entries": [
+            {
+              "ts": 1788447571944,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key."
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+        "lastErrorReason": "billing"
+      }
+    },
+    {
+      "id": "43b01d80-e525-4318-a250-b83171fea0ff",
+      "name": "W2-0819 GEO首读数",
+      "description": "W2-0819 GEO首读数（已按 user 指令提前执行 05:40；禁用防 12:47 重复，手动轮完成后 deleteAfterRun 清除）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786914116915,
+      "updatedAtMs": 1787090301922,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-19T04:47:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 8/19 GEO 首读数（PHASE-2026-08-13 第四节 + STRATEGY-2026-08-17 T5 + .cluster/geo-baseline-0813.md）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python；禁止读写 F:\\zprintpro-nextjs。\n\n任务：\n1. beacon 7 天读数：CF Web Analytics（GPTBot/ClaudeBot/PerplexityBot 等 AI UA 引荐流量）——D7 CF token 未就位则如实记 NODATA，并执行 dashboard 人工导出兜底（按 .hermes/logs/ 下 README 指引，若无则写一条兜底 README 给 user）\n2. GSC query 位置对比（scripts/gsc_query.py，对比 geo-baseline-0813.md 基线）\n3. 20 query AI 引擎引用状态（浏览器只读，CAPTCHA 不硬闯）\n4. 基线表更新 + GEO 决策：AI 引荐流量 >0 → 持续投入（schema/FAQ/集群/答案句）；=0 → 降维护级；D7 未就位顺延且 >=3 天升级 user\n5. 输出 .hermes/logs/geo-0819.md + handoff/results/RESULT-2026-08-19.md（含 NORTH-STAR-DATA）\n6. 输出用中文。幂等键：geo-0819.md 已存在且非空→NOOP。",
+        "model": "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+        "thinking": "off",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1787090025314,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 276608,
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ run set-location → run remove-item .openclaw-tmp-geo0819-part1.py → run write-output → run $env:pythonioencoding=utf-8 → run python inline script → run write-output → run get-item -> run select-object failed",
+          "entries": [
+            {
+              "ts": 1787090301908,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ run set-location → run remove-item .openclaw-tmp-geo0819-part1.py → run write-output → run $env:pythonioencoding=utf-8 → run python inline script → run write-output → run get-item -> run select-object failed"
+            },
+            {
+              "ts": 1787090301909,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ run set-location → run remove-item .openclaw-tmp-geo0819-part1.py → run write-output → run $env:pythonioencoding=utf-8 → run python inline script → run write-output → run get-item -> run select-object failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ run set-location → run remove-item .openclaw-tmp-geo0819-part1.py → run write-output → run $env:pythonioencoding=utf-8 → run python inline script → run write-output → run get-item -> run select-object failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 3,
+        "consecutiveSkipped": 0,
+        "lastError": "⚠️ 🛠️ run set-location → run remove-item .openclaw-tmp-geo0819-part1.py → run write-output → run $env:pythonioencoding=utf-8 → run python inline script → run write-output → run get-item -> run select-object failed"
+      }
+    },
+    {
+      "id": "4e8a920d-4433-4668-841f-eb0f0f4e9b6f",
+      "name": "W1-0815 复核节点",
+      "description": "8/15 07:15 复核：#1/#2 T+7 严格复核 + kittl 哨兵复读 + tax-audit + Branch A 风险开关（Branch A 数据驱动）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786661905106,
+      "updatedAtMs": 1786792554417,
+      "agentId": "main",
+      "sessionKey": "agent:main:65140247",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-14T23:15:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 8/15 复核节点（T+7 Branch A 加速·温和版落地 + K3 V2）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python，禁止 write 工具；禁止读写 F:\\zprintpro-nextjs。\n\n【输入】\n1. .hermes/reports/t7-reading-2026-08-14.md：T+7 读数（日均展示 216.5 ≥200；kittl review 74.0 后已回落 67.0；copy ai -7.5 入 8/16 快修）\n2. .hermes/logs/rank-sentinel-2026-08-14.md：哨兵（窗口 8/7-8/13，kittl review 67.0 正向）\n3. .hermes/logs/daily-ops-2026-08-14.md：联盟状态（Printful W-8 Pending / Printify promo 0 回复 / Synthesia 待激活）\n4. .cluster/node-recovery-plan.md：恢复预案\n\n任务：\n1. #1/#2（sticker-mule/runway-ml）T+7 严格复核：GSC 拉取两 query 当前位次（scripts/gsc_query.py 模式，SOCKS5 127.0.0.1:7892）对比基线，记录变化\n2. GSC T+2 并入：补拉 8/12-8/13 数据复核（T+7 窗口 8/6-8/11 补齐）\n3. kittl 哨兵复读：窗口 8/8-8/14 重新拉取，确认 67.0 是否稳住（连续 2 日改善则 T14 内链补强见效；再跌 ≥5 位则 ALERT）\n4. tax-audit 复核：浏览器（autoglm）查 Printful affiliate 后台 Tax & Legal：Approved → 更新 affiliate-programs.json tax_status=approved + payout_ready=true；Still Pending → 记录并升级 user（8/9 已提示补 4/5 行）\n5. **Branch A 风险开关**：对比 8/14 与 8/15 哨兵：大面积下滑 ≥10 位 → 转 Branch D（紧急排查 robots/sitemap + 暂停 Boost 2 天）；正常 → 确认 Branch A 继续\n6. 输出 .hermes/logs/review-0815.md（复核表 + 风险开关结论 + 对 8/16 快修的影响）\n7. 输出用中文。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1500
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786791837498,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 716919,
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ run set-location → run node inline script failed",
+          "entries": [
+            {
+              "ts": 1786792554156,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ run set-location → run node inline script failed"
+            },
+            {
+              "ts": 1786792554157,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ run set-location → run node inline script failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ run set-location → run node inline script failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 5,
+        "consecutiveSkipped": 0,
+        "lastError": "⚠️ 🛠️ run set-location → run node inline script failed"
+      }
+    },
+    {
+      "id": "681966d9-b10f-4165-8cc0-11673caa7a58",
+      "name": "站外提及运营",
+      "description": "站外提及运营（PLAN-2026-09 §六新增：收录状态核查+下一批候选调研+种子草稿；只调研起草不发布，发布交 user 行动卡）",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1787334454893,
+      "updatedAtMs": 1788491339730,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "cron",
+        "expr": "17 20 * * 3",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 站外提及运营（PLAN-2026-09-MONTHLY.md §三-修订2/§六：站外品牌提及升级为与外链并列的 GEO 主引擎，相关性 0.664 vs 外链 0.218）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python；禁止读写 F:\\zprintpro-nextjs；模型显式 model=deepseek-v4-flash。\n\n任务：\n1. 收录状态核查：读 .hermes/logs/link-building-*.md 与 backlink-ledger（最新），更新站外提及+外链收录计数（KPI：9/13 ≥5，当前 1）\n2. 下一批候选调研：在已有 link-directory-list.md（112 站）与 LaunchBuck 类机会基础上，新增 Reddit/Quora 种子选题（按 legit 队列页面主题：Spocket/Kittl/Society6 等，自然语境单链接），选题记入 .hermes/drafts/reddit-seed-queue.md\n3. 种子草稿：为 queue 中最高优先的 1 个选题起草（300-500 词，真实问题开头，自然融入 1 个链接，不吹嘘不编造数据），存 .hermes/drafts/reddit-seed-NN.md，发布交 user（不自动发布，铁律）\n4. 台账更新：当日产物写入 .hermes/logs/mention-ops-{今天日期}.md，含收录计数/KPI 偏差（偏差>20% 标红）\n输出用中文。幂等：当日日志已存在非空→NOOP。\n【战略聚焦（2026-08-24 千问指令 #3 新增）】\n- 停止 TheNextAI 等低质目录站提交（2026 年对 Google 无权重贡献），不再新增目录类候选\n- 全力聚焦 Reddit/Quora 种子帖质量（真实人类口吻、自然讨论、品牌提及优先于链接——2026 Google 看重品牌全网自然讨论度）\n- 即使不带链接，目标也是让 \"aitoptools {tool}\" 可被搜索到（信任分）",
+        "model": "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+        "thinking": "off",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1788351420050,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 10247,
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1,
+        "consecutiveSkipped": 0,
+        "lastError": "FailoverError: ⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+        "lastDiagnostics": {
+          "summary": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+          "entries": [
+            {
+              "ts": 1788351430279,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key."
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+        "lastErrorReason": "billing"
+      }
+    },
+    {
+      "id": "6db4582b-4726-44e9-ae86-a0f2103e65f5",
+      "name": "W2-0817 Boost56",
+      "description": "W2-0817 Boost56（已按 user 指令提前执行 06:32；禁用防 12:47 重复触发）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786661905153,
+      "updatedAtMs": 1786919857805,
+      "agentId": "main",
+      "sessionKey": "agent:main:65140247",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-17T04:47:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 8/17 Boost #5-6（STRATEGY-2026-08-14 S5 + T+7 Branch A：每天 Boost 1 页节奏中本次 2 页）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python，禁止 write 工具；禁止读写 F:\\zprintpro-nextjs。\n\n⚠️ Push 部署纪律（2026-08-15 user 拍板：每日 ≤5 次 push，重点内容当日部署）：\n- Boost 完成页属重点内容更新 → **当日 build 验证后 commit + push**（不再攒批 8/23）\n- 与 8/16 快修同一日时（时间重叠），合并为一次 push 优先，记录实际次数\n- 当日 push 次数记录入 .hermes/logs/boost-0817.md（push-count 行）\n\n任务：\n1. Boost #5 = midjourney-review（T+7 显示 -2.2 位 84.6→86.8）：信任型补强（FAQ≥5 + 引用链≥2 + 内链≥4 + 更新日期/功能行）\n2. Boost #6 = jasper-ai-review（+1.0 位保持）：同标准补强\n3. 复用 autoLinkTools v2（<a> 整体不可入侵规则已修复）\n4. 辐条①补全：Halloween 集群剩余辐条页（blog-posts.json 核对，设计源 Kittl/Claid 模板）\n5. geo-technical（周一）：robots_txt_audit + llms_txt_check + schema_coverage + citation_spot_check → 修复建议清单 → 修复项一并当日 push\n6. 四杠杆达标记录（每页）\n7. 记录 .hermes/logs/boost-0817.md（含 push-count）\n8. 输出用中文。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786919552100,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 305705,
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ print text → run @(outmidjourney-review,outjasper-ai-review,outhalloween-pod-ideas-2026,outprintful-vs-printify-halloween-2026,outkittl-halloween-template-test-2026,outhalloween-shirt-designs-2026,outhalloween-sublimation-2026) -> run foreach-object → print text → run (get-item → print text → run gh api -> run select-object 15 (in F:aitoptools) failed",
+          "entries": [
+            {
+              "ts": 1786919857773,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ print text → run @(outmidjourney-review,outjasper-ai-review,outhalloween-pod-ideas-2026,outprintful-vs-printify-halloween-2026,outkittl-halloween-template-test-2026,outhalloween-shirt-designs-2026,outhalloween-sublimation-2026) -> run foreach-object → print text → run (get-item → print text → run gh api -> run select-object 15 (in F:aitoptools) failed"
+            },
+            {
+              "ts": 1786919857774,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ print text → run @(outmidjourney-review,outjasper-ai-review,outhalloween-pod-ideas-2026,outprintful-vs-printify-halloween-2026,outkittl-halloween-template-test-2026,outhalloween-shirt-designs-2026,outhalloween-sublimation-2026) -> run foreach-object → print text → run (get-item → print text → run gh api -> run select-object 15 (in F:aitoptools) failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ print text → run @(outmidjourney-review,outjasper-ai-review,outhalloween-pod-ideas-2026,outprintful-vs-printify-halloween-2026,outkittl-halloween-template-test-2026,outhalloween-shirt-designs-2026,outhalloween-sublimation-2026) -> run foreach-object → print text → run (get-item → print text → run gh api -> run select-object 15 (in F:aitoptools) failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 3,
+        "consecutiveSkipped": 0,
+        "lastError": "⚠️ 🛠️ print text → run @(outmidjourney-review,outjasper-ai-review,outhalloween-pod-ideas-2026,outprintful-vs-printify-halloween-2026,outkittl-halloween-template-test-2026,outhalloween-shirt-designs-2026,outhalloween-sublimation-2026) -> run foreach-object → print text → run (get-item → print text → run gh api -> run select-object 15 (in F:aitoptools) failed"
+      }
+    },
+    {
+      "id": "78e5671a-5f16-4648-8c6a-51e388e0a4c6",
+      "name": "每日搜索增长",
+      "description": "每日 19:23 · GSC选题 + 工具雷达(一三五) + 内容生产/推排名 Boost + GEO检查(周一)（2026-08-14 cron 丢失后重建）",
+      "enabled": false,
+      "createdAtMs": 1786654512307,
+      "updatedAtMs": 1788491350582,
+      "agentId": "aitoptools",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "cron",
+        "expr": "23 19 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools daily-search（合并: STRATEGY-TASKS + gsc-mining + discovery-radar + content-production + geo-technical）。\n\n⚠️ 路径铁律（不可覆盖）：\n项目根目录：F:\\aitoptools（PROJECT_ROOT）\n每条 exec 命令必须以 cd /d F:\\aitoptools 开头\n禁止读写 F:\\zprintpro-nextjs 及其任何子目录\n写文件一律用 exec node/python（node -e \"require('fs').writeFileSync('F:/aitoptools/...', 内容, 'utf-8')\"），禁止用 write 工具。写完后 exec 验证文件存在。\n\n⚠️ 命令容错（2026-08-14 加固）：\n- **禁止复杂 PowerShell 管道链**：git 历史/状态改用 node 读：node -e \"console.log(require('child_process').execSync('git log --oneline -5',{cwd:'F:/aitoptools'}).toString())\"\n- 任何单条命令失败（退出码非 0）→ 记录该步 FAILED 继续后续，不得中断任务\n- 任务结束前必须把本日产物写入 .hermes/logs/daily-search-{今天日期}.md 并验证存在——产物正常即视为成功\n\n⚠️ Push 部署纪律（2026-08-15 user 拍板更新，最高优先级）：\n- **每日 push 上限 5 次内**（不再攒批等节点）\n- **有重点内容更新就要当日 push 部署**：内容生产/页面修复/新页上线/IndexNow 推送页 → 本地 npm run build 验证通过后 → commit + push（单次 build）；同批多个改动合并一次 push\n- 前置：本地预检（build 通过 + 产物正常）→ 才允许 push\n- 消费 .hermes/logs/daily-ops-{今天日期}.md 中 PUSH_READY 标记（联盟运营哨兵 ALERT 处置产物）→ 一并 push\n- 当日 push 次数记录入 .hermes/logs/daily-search-{今天日期}.md（push-count 行）\n- 非重点微小改动（typo/注释）→ 可攒批到当日已有 push 或次日，不单独占 push 次数\n\nStep 0 STRATEGY 消费（协议 T9b）：\n- 读 handoff/strategy/ 日期最新一份 STRATEGY 文件，执行其中**日期=今天**的 TASKS（幂等键先查：产出文件已存在→NOOP 记录）\n- 当前已知排期（STRATEGY-2026-08-10 + T+7 Branch A）：8/15 = #1/#2 严格复核（review-0815 cron 已排）；8/17 = T8 Boost #5-6 midjourney-review + jasper-ai-review（boost-0817 cron 已排）；8/21 = T+14 读数；完成 TASKS 后追加 handoff/results/RESULT-{今天日期}.md（PER-TASK + NORTH-STAR-DATA）\n\nStep 1 IndexNow + GSC mining（每日）：\n- 对比 public/sitemap.xml 与 .hermes/logs/gsc-indexnow-state.json → 新 URL 增量推送（scripts/submit_indexnow_blog_20260808.py 模式）→ C2b 表更新\n- 数据源优先级：① GSC API（gsc-oauth.json 有效）② data/gsc_data.json ③ gsc_data.csv ④ keywords-200.csv；全无 → blocked_missing_credentials\n- mining：展示≥10 且 CTR<0.05 无专页 → CONTENT_PLAN Data-Driven Queue（幂等）；boosting：排名 20-70 → Boost Queue\n\nStep 2 discovery-radar（仅周一/三/五）：\n- 幂等：discovery\\{今天日期}.md 存在 → SKIP\n- 10 源扫描（web_search）→ 垂直过滤 → 候选表 → discovery\\{今天日期}.md + observation.md 更新\n\nStep 3 content-production（每日，消费 radar）：\n- GEO 内容规则：BLUF 首段 / 数据锚点 / 列表优先 / FAQ≥3（信任型≥5）/ 引用链 / author schema\n- 更新旧评测（reviews.json 功能行/日期行，附来源）→ 周更帖素材（CF freebies）\n- **产出即部署**：完成的内容/修复当日 build + push（见 Push 纪律）\n\nStep 4 geo-technical（仅周一）：\n- robots_txt_audit + llms_txt_check（含全部 URL?）+ schema_coverage + citation_spot_check → 修复建议清单 → 修复项当日 push\n\n输出 .hermes/logs/daily-search-{今天日期}.md（AUTOCLAW_PRIMARY + 各 Step 小结 + push-count）。约束：凭证缺失如实标注；WebSearch 限流重试≤2；输出用中文。\n\n## DEEPDIVE 战略消费段（2026-08-18 新增，DEEPDIVE-2026-08-17-GEO-SEO-MASTERPLAN）\n每日 Step 0 在消费 PHASE/STRATEGY 后，顺带核对 DEEPDIVE 三引擎一底座状态：\n1. legit 产线（引擎1）：若 D12 已拍板 → 按 .hermes/drafts/legit-queue-status.md 取篇（GSC imp 排序，幂等键 is-{tool}-legit），用 legit-template-v2.md（rubric 30/25/25/20 + answer-first + 方法页先行）产 1-2 篇/日夜间窗口；未拍板 → 仅 GearLaunch pilot（v1 模板），不批量放量\n2. answer-first 审计（引擎3）：准首页 5 资产（is-magicdrop-legit / printful-vs-printify-halloween / merger-fyul / kittl-vs-placeit / gear-launch-review-2026）页首 150-200 词直接答案检查，一次性扫描批量修（不动页面结构，核心更新滚动期纪律）\n3. 外链收录运营（底座）：台账状态从「提交数」改为「收录数」口径，LIVE 计数入 RESULT\n4. 测量闭环（底座）：GA4 凭证未就位期间，RESULT NORTH-STAR-DATA 如实标 NODATA；就位后 affiliate_click + AI Assistant 渠道读数接入\n幂等：各段当日产物/日志存在→NOOP。\n\n## STRATEGY-2026-08-19 战略修订消费段（2026-08-19 07:0x 同步，STRATEGY-2026-08-19 §二 R1/R2）\n每日 Step 0 消费当日 STRATEGY 后，顺带核对以下两条修订的落地状态：\n1. **R1 GEO 兑现时点提前**：AIO 引用 top-10 份额已降至 <54%（2026-05 核心更新后）→ pos 17-30 的 legit 簇现在就是 AI 引用候选。20 词 AI 引用审计（8/21 T+14 窗口）通过标准下调：出现 1-2 条引用即算验证成功，不要求 top-10。\n2. **R2 Bing/ChatGPT 第一站外通道**：技术栈预测因子全命中（SSR/canonical/内链/schema/IndexNow）；Bing 收录核查报告 .hermes/logs/bing-index-check-0819.md（BWT 验证 = user 行动卡，Import from GSC 5 分钟；IndexNow 近 7 天全 200；site: 抽样以 BWT 后台为准）。BWT 验证完成后：用 BWT 后台 URL Inspection 确认关键页收录（legit 2 + Halloween 2 + money 3 + 首页/对比 3）并记录。\n3. **legit 产线状态**：GearLaunch pilot 已上线（is-gearlaunch-legit，2,562 词 8 FAQ）；queue 第 3-5 篇（spocket/kittl/society6）事实核实缺口见 .hermes/drafts/legit-factcheck-0819.md（Trustpilot 403 抓取受限，D13 拍板后补或 user 手动截图）；D12/D13 未拍板前只备不部署。\n4. **8/21 T+14 判定数据位**：预案 .hermes/drafts/t14-check-0819.md —— #1 stickermule 38.93（口径冲突待 8/21 新拉窗口）、#2 runway NODATA（8/21 必须新拉）、print-price 60.25（≤30 目标大概率 PARTIAL，H1 改 calculator 意图预案已备）。8/21 当日按预案取数判定。\n5. **402 绕行状态**：cron 会话显式 model=deepseek-v4-flash（本任务 payload.model 已设）；若 zai 恢复且 D15 拍板（充值/换 key/MINIMAX），可移除显式 model 恢复默认链——以 BOARD D15 状态为准。\n幂等：本段各核对项以当日产物/日志存在为准→NOOP。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1788447555153,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 7250,
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 4,
+        "consecutiveSkipped": 0,
+        "lastError": "FallbackSummaryError: All models failed (3): zai/zai_auto: 402 status code (no body) (billing) | deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash: 402 Insufficient Balance (billing) | deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash: Unknown model: deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash (model_not_found)",
+        "lastDiagnostics": {
+          "summary": "All models failed (3): zai/zai_auto: 402 status code (no body) (billing) | deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash: 402 Insufficient Balance (billing) | deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash: Unknown model: deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash (model_not_found)",
+          "entries": [
+            {
+              "ts": 1788447562387,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "All models failed (3): zai/zai_auto: 402 status code (no body) (billing) | deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash: 402 Insufficient Balance (billing) | deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash: Unknown model: deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash (model_not_found)"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "All models failed (3): zai/zai_auto: 402 status code (no body) (billing) | deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash: 402 Insufficient Balance (billing) | deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash: Unknown model: deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash (model_not_found)",
+        "lastErrorReason": "model_not_found"
+      }
+    },
+    {
+      "id": "84248cd6-8345-464a-a2c0-34a2b48a333e",
+      "name": "Printful 税表监控",
+      "description": "Printful 税表审核监控（千问 2026-08-24 战略指令#3：每日早 9 点 IMAP 查 Printful tax 邮件，P0 状态降级逻辑；轻量核查时段）",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1787526205614,
+      "updatedAtMs": 1788491336999,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "cron",
+        "expr": "7 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools Printful 税表监控（千问 2026-08-24 战略指令 #3：每日早 9 点 IMAP 监控税表审核邮件）。路径铁律：cd /d F:\\aitoptools；禁止读写 F:\\zprintpro-nextjs；显式 model=deepseek-v4-flash。\n\n任务（轻量只读）：\n1. 用 IMAP（代理 127.0.0.1:7892，凭证 secrets/gmail_credentials.json 或 hermes .env IMAP_PASSWORD）查近 24h 来自 Printful（support@printful.co / no-reply@printful 等）主题含 W-8/tax/Tax/Legal 的邮件\n2. 解析状态：Approved/Verified → P0 告警降级（写 .hermes/logs/tax-monitor-{今天}.md: RESOLVED）；reupload-required/unreadable/Pending → 保持 P0（写: BLOCKED_USER_ACTION）；无新邮件 → 维持上次状态（写: NO_CHANGE 附上次时间）\n3. 用户已重传 W-8BEN（若 credentials/台账标记）→ 输出 RESOLVED-PENDING-REVIEW\n4. 输出 .hermes/logs/tax-monitor-{今天}.md 一行状态 + 证据（邮件主题/时间）；若连续 3 天 BLOCKED → 追加 ⚠️ SYSTEM BLOCKED BY HUMAN BOTTLENECK（千问指令 #4）\n输出用中文。幂等：当日 tax-monitor 日志存在非空→NOOP。",
+        "model": "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+        "thinking": "off",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1788484371434,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 51874,
+        "lastError": "FailoverError: ⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+        "lastDiagnostics": {
+          "summary": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+          "entries": [
+            {
+              "ts": 1788484421622,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key."
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 13,
+        "consecutiveSkipped": 0,
+        "lastErrorReason": "billing"
+      }
+    },
+    {
+      "id": "84c86e36-fd6f-479b-9f6c-b05699945bb9",
+      "name": "8/16 B类快修+辐条补正+外链合并push",
+      "description": "消费 STRATEGY-2026-08-16.md 执行 T0-T8（重建：原 de9fad65 因 gateway restart 中断+3 次错误被自动禁用，千问 03:50 声明重建但未入库，本任务为主线核实后重建）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786823635606,
+      "updatedAtMs": 1786874907021,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-15T23:15:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 8/16 当日任务：先读 handoff/strategy/STRATEGY-2026-08-16.md，按 T0→T8 顺序执行（T0 同步 origin/main + 核对 AGENTS.md diff；T1 copy-ai-review 快修 title 50-60/meta 150-160/dateModified；T2 sitemap 脚本替换为 .cluster/goal-flow-c52c6564-e8d7-44f3-a451-e84dc2949645/DELIVERY/generate-sitemap_merged.py + 单测 27/27 + 实跑 343 无重复；T3 辐条①补正：保留 slug，补 publishedAt/wordCount/status + 新建 public/tool-screenshots/blog/ 放 3-5 张截图；T3b 全 11 篇 blog 补 publishedAt/status；T4 外链提交（user 全权授权，nofollow 回链默认，CAPTCHA 不硬闯，台账写 .hermes/logs/link-building-0816.md）；T5 cron 排期治理：disable 4f19a24a、确认 98ebd150、记录 02fee02d 9/13 前重建 TODO、调查 8/15 晚外部实例；T6 .gitignore 补 HEARTBEAT/IDENTITY/SOUL/TOOLS/USER.md + GSC数据/；T7 合并 1 push：build PASS + 线上 CSS hash 核对 + IndexNow 增量；T8 写 handoff/results/RESULT-2026-08-16.md 含 NORTH-STAR-DATA）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python；禁止写 F:\\zprintpro-nextjs。幂等键先行；遇 402 余额错误置顶告警并记录中断点。",
+        "thinking": "off",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786840015180,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 34891841,
+        "lastDiagnostics": {
+          "summary": "cron: job execution timed out (last phase: tool-execution-started)",
+          "entries": [
+            {
+              "ts": 1786839955167,
+              "source": "cron-setup",
+              "severity": "error",
+              "message": "cron: job execution timed out (last phase: tool-execution-started)"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "cron: job execution timed out (last phase: tool-execution-started)",
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "unknown",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 3,
+        "consecutiveSkipped": 0,
+        "lastError": "cron: job interrupted by gateway restart",
+        "lastDelivered": false,
+        "lastDeliveryError": "cron: job interrupted by gateway restart"
+      }
+    },
+    {
+      "id": "9dcdde69-78d6-4029-8dc5-b204a4b4237d",
+      "name": "Schema 覆盖审计",
+      "description": "Schema 覆盖审计（二期战略 S6：Review/Product/Article/Organization/Author 实体补齐，2026 AI 引擎真信号）",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1787750071712,
+      "updatedAtMs": 1788491334671,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "cron",
+        "expr": "37 20 * * 1",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools Schema 覆盖审计（2026-08-26 二期战略 S6：GEO 主杠杆=结构化数据+第一方数据锚点，非 llms.txt）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python；禁止读写 F:\\zprintpro-nextjs；显式 model=deepseek-v4-flash。\n\n任务：\n1. 审计：检查 src/app/[slug]/page.js（Review schema）、blog/[slug]/page.js（Article+FAQPage+BreadcrumbList）、about/methodology 页的 JSON-LD 输出——确认 Organization/Author 实体（name/url/logo）在布局层注入\n2. 缺口修复：缺 Organization/Author → 在 src/app/layout.js 或相关页面 JSON-LD 补齐（改前备份）；Review 页保持 reviewRating（勿改 aggregateRating）\n3. 顺手：reviews.json 22 处裸 & 残留（notion/nordvpn/stickermule/nordpass/printreadybook/best-ai-writing）一并清理（文本字段 & → &amp;，URL 字段除外）\n4. 校验：npm run build 预检 PASS\n5. 记录：.hermes/logs/schema-audit-{今天}.md（覆盖矩阵：页面类型×Schema 类型 + 修复清单）\n输出用中文。幂等：当日 schema-audit 日志存在非空→NOOP。",
+        "model": "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+        "thinking": "off",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1788196798368,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 7733,
+        "lastError": "FailoverError: ⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+        "lastDiagnostics": {
+          "summary": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+          "entries": [
+            {
+              "ts": 1788196806080,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key."
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ deepseek__4111173b-944d-4961-9d08-d4635ee75e4b (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your deepseek__4111173b-944d-4961-9d08-d4635ee75e4b billing dashboard and top up or switch to a different API key.",
+        "lastErrorReason": "billing",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1,
+        "consecutiveSkipped": 0
+      }
+    },
+    {
+      "id": "a4edd6c2-6542-40a9-944f-b0594d01e1bd",
+      "name": "8/20 恢复每日联盟运营",
+      "description": "恢复每日联盟运营 12:17（8/19 临时禁用，明日 00:07 自动恢复，随后自删）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1787089264465,
+      "updatedAtMs": 1787156173672,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-19T16:07:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行一次性恢复操作：用 cron 工具把任务 id cf28f53d-e5a3-43db-b566-6ac372d7ae16（每日联盟运营）的 enabled 更新为 true（patch: {\"enabled\": true}）。验证：读 C:\\Users\\Administrator\\.openclaw-autoclaw\\state\\openclaw.sqlite 的 cron_jobs 表确认 enabled 字段=1；工具视图不可达时以 sqlite 为准。结果写 F:\\aitoptools\\.cluster\\goal-flow-c52c6564-e8d7-44f3-a451-e84dc2949645\\restore-0820.log（一行：SUCCESS/FAIL + 证据）。本任务 run 完自动删除。",
+        "thinking": "off",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1787155952997,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 220675,
+        "lastError": "⚠️ 🛠️ Remove-Item \"F:\\zprintpro-nextjs\\.openclaw\\tmp\\restore-0820…tore-0820.log\" | Select-Object FullName,Length,LastWriteTime failed",
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ Remove-Item \"F:\\zprintpro-nextjs\\.openclaw\\tmp\\restore-0820…tore-0820.log\" | Select-Object FullName,Length,LastWriteTime failed",
+          "entries": [
+            {
+              "ts": 1787156173655,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ Remove-Item \"F:\\zprintpro-nextjs\\.openclaw\\tmp\\restore-0820…tore-0820.log\" | Select-Object FullName,Length,LastWriteTime failed"
+            },
+            {
+              "ts": 1787156173656,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ Remove-Item \"F:\\zprintpro-nextjs\\.openclaw\\tmp\\restore-0820…tore-0820.log\" | Select-Object FullName,Length,LastWriteTime failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ Remove-Item \"F:\\zprintpro-nextjs\\.openclaw\\tmp\\restore-0820…tore-0820.log\" | Select-Object FullName,Length,LastWriteTime failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 2,
+        "consecutiveSkipped": 0
+      }
+    },
+    {
+      "id": "b4fa582d-395a-4ea8-b111-9d5492e5714b",
+      "name": "K3-0912 CTR判定日提醒",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1788824166040,
+      "updatedAtMs": 1789240439395,
+      "agentId": "zprintpro",
+      "sessionKey": "agent:zprintpro:a3f81e7d",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-09-12T02:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "A scheduled reminder has been triggered. The reminder content is:\n\n【K3 提醒】今天是 8/30 批 CTR 判定日（v4.0 指令 A8）：导出同口径 GSC 数据（31 词 + food-boxes 3 locale），按词对比 CTR 前后值写 seo-weekly-history.json；仍 0 点击词进 title v2 清单待 9/13 放行。判定方法见 docs/2026-09-08-weekly-dashboard-template.md §3 验证窗判定表。今天是周六，Track B B1 貼紙支撑内容顺延至周五槽位。\n\nPlease relay this reminder to the user in a helpful and friendly way.",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1789240422320,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 17075,
+        "lastError": "FailoverError: 402 status code (no body)",
+        "lastDiagnostics": {
+          "summary": "402 status code (no body)",
+          "entries": [
+            {
+              "ts": 1789240438770,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "402 status code (no body)"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "402 status code (no body)",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1,
+        "consecutiveSkipped": 0
+      }
+    },
+    {
+      "id": "c3a11910-ff8a-4852-9986-de14d2ad11c2",
+      "name": "每周复盘",
+      "description": "每周复盘（周日 12:47 午间窗口：由 07:47 调整，避开早晨电脑未开机时段）",
+      "enabled": false,
+      "createdAtMs": 1786654525558,
+      "updatedAtMs": 1788491349341,
+      "agentId": "aitoptools",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "cron",
+        "expr": "47 12 * * 0",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools weekly-review（合并: data-quality-gate + weekly-report + milestone-check + north-star）。\n\n⚠️ 路径铁律（不可覆盖）：\n项目根目录：F:\\aitoptools（PROJECT_ROOT）\n每条 exec 命令必须以 cd /d F:\\aitoptools 开头\n禁止读写 F:\\zprintpro-nextjs 及其任何子目录\n写文件一律用 exec node/python（node -e \"require('fs').writeFileSync('F:/aitoptools/...', 内容, 'utf-8')\")，禁止用 write 工具。写完后 exec 验证文件存在。\n\nStep 0 data-quality-gate：\n- 过去 7 天 daily-ops/daily-search 日志缺失 >2 天 → ⚠️ DATA_GAP；IMAP 失败 >3 → ⚠️ PIPELINE_DEGRADED；AI 爬虫无数据源 → ⚠️ GEO_BLIND\n- 检查 data/gsc_data.json 存在性\n\nStep 0b push 纪律核对（2026-08-15 user 拍板：每日 ≤5 次 push）：\n- 用 node 读 git log 统计本周每日 push 次数（git log --since=7.days --format='%ad' --date=format:'%Y-%m-%d' | sort | uniq -c）\n- 任何一天 >5 次 → ⚠️ PUSH_OVER_LIMIT 告警 + 归因分析；≤5 → ✅ 记录\n- 本周 push 总览行（日期:次数）入周报块 4\n\nStep 1 weekly-report（模板 .hermes\\cron-prompts\\aitoptools-weekly-report.md）：\n- 块 1 GSC top queries（gsc-oauth.json API → data/gsc_data.json → blocked 标注）；块 2 CTR 榜；块 3 联盟状态（含 Printful W-8 审核：tax_status=w8ben-e-uploaded-pending-review，Approved → payout_ready）；块 4 AutoClaw 待执行项 + push 纪律核对；块 5 GEO 状态\n- 输出 .hermes/reports/weekly-{今天日期}.md（AUTOCLAW_PRIMARY）\n\nStep 2 milestone-check（done_flag 机制）：\n- 2026-08-18 Halloween deadline / 2026-08-21 print-price ≤30 / 8/21 Boost #3-4 效果验证（T+14，见 boost-tracking.md v2）\n- **8/22 后首跑**：执行 Boost 效果验证（8/8 首批优化 T+14 对比）→ Branch A/B/C/D 判定（见 boost-tracking.md v2），输出分支建议\n\nStep 3 north-star（仅每月 1 日）：累计佣金 vs $3000/6 月曲线复盘（K3 V2 修正：12 月目标 $2,200，$3,000 为 stretch）\n\n约束：只读+写报告；不 push；凭证缺失如实标注；输出用中文。\n\n## DEEPDIVE 目标模式自检（2026-08-18 新增，DEEPDIVE-2026-08-17-GEO-SEO-MASTERPLAN §五）\n9/13 T+30 四项目标进度自检（每次周报必填，偏差 >20% 标红 ⚠️ 供 K3 只处理标红项）：\n1. legit 产线：9/13 目标 10 篇上线（当前计数：src/data/blog-posts.json 中 is-*-legit 类 slug 数量）→ 偏差 = |当前-目标|/目标\n2. 外链收录：9/13 目标 ≥5（当前：.hermes/logs/link-building-*.md 台账 LIVE 计数，8/17 为 1）→ <3 时额外标注「12 月目标自动下调一档」（DEEPDIVE §六敏感性）\n3. 日均展示：9/13 目标 ≥500（当前：GSC 7d 日均，8/17 为 374）→ 连续 2 周 <400 标红\n4. top-20 页面：9/13 目标 ≥5 个（当前：GSC pos<20 页面数，8/17 为 1）\n输出格式：周报块 5 追加「目标模式」小节，每项一行「目标/当前/偏差%/状态」，任一标红项在周报顶部置顶 ⚠️ GOAL-ALERT。\n\n## GEO 引用监控（2026-08-18 新增，并入本任务不单独建 cron）\n对 20 个核心词（rank-sentinel-20q.json 清单）做 AI 引擎引用审计：\n- 工具：浏览器只读（autoglm-browser-agent），ChatGPT/Perplexity/Gemini 各问一次\n- 记录：引用有无（是/否）、引用页面 URL、引用上下文摘要\n- 输出：.hermes/logs/geo-citation-weekly-{日期}.md（表格：query | ChatGPT | Perplexity | Gemini | 引用URL）\n- 分平台监控依据：各平台引用重叠仅 11%（DEEPDIVE §二-5）\n- 幂等：当日文件已存在非空→NOOP\n约束：无凭证/无浏览器→记 BROWSER_UNAVAILABLE 次日再试；CAPTCHA 不硬闯。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1788067085817,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 653032,
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0,
+        "consecutiveSkipped": 0
+      }
+    },
+    {
+      "id": "c4db8941-9e18-4d91-bc43-b0b188f5f376",
+      "name": "8/18 恢复每日联盟运营",
+      "description": "恢复每日联盟运营 12:17（8/17 临时禁用，明日 00:07 自动恢复，随后自删）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786919762858,
+      "updatedAtMs": 1786983268597,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-17T16:07:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行一次性恢复操作：用 cron 工具把任务 id cf28f53d-e5a3-43db-b566-6ac372d7ae16（每日联盟运营）的 enabled 更新为 true（patch: {\"enabled\": true}）。验证：cron get 该 id 返回 enabled=true 即成功；若工具视图不可达，读 C:\\Users\\Administrator\\.openclaw-autoclaw\\state\\openclaw.sqlite 的 cron_jobs 表确认 enabled 字段=1。结果写 F:\\aitoptools\\.cluster\\goal-flow-c52c6564-e8d7-44f3-a451-e84dc2949645\\restore-0818.log（一行：SUCCESS/FAIL + 证据）。本任务 run 完自动删除，无需手动清理。",
+        "thinking": "off",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786983151717,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 116880,
+        "lastError": "⚠️ 🛠️ run del /q → print text failed",
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ run del /q → print text failed",
+          "entries": [
+            {
+              "ts": 1786983268584,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ run del /q → print text failed"
+            },
+            {
+              "ts": 1786983268584,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ run del /q → print text failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ run del /q → print text failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 2,
+        "consecutiveSkipped": 0
+      }
+    },
+    {
+      "id": "cf28f53d-e5a3-43db-b566-6ac372d7ae16",
+      "name": "每日联盟运营",
+      "description": "每日联盟运营（8/19 已提前执行，今日 12:17 临时跳过；8/20 00:07 自动恢复）",
+      "enabled": false,
+      "createdAtMs": 1786654512293,
+      "updatedAtMs": 1788491352336,
+      "agentId": "aitoptools",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "cron",
+        "expr": "17 12 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【P0 动作追踪（2026-08-24 千问指令 #4 新增 — 报告顶部置顶）】\n每日 daily-ops 报告顶部置顶显示 User P0 动作完成状态：\n1. W-8BEN 重传（Printful Tax & Legal）：✅ 已传（看 tax-monitor 日志/台账）/ ❌ 未传\n2. Gmail app password 轮换：✅ 已闭环（8/24 完成）/ ❌ 未做\n3. Printful Cookie 或 Printify 切换确认：✅ / ❌\n若 User 连续 3 天未完成任意 P0 动作 → 报告输出 \"⚠️ SYSTEM BLOCKED BY HUMAN BOTTLENECK\"。\n执行 aitoptools daily-ops（合并: affiliate-monitor + printful-watcher + tax-audit + ai-crawler-monitor + 排名哨兵）。\n\n⚠️ 路径铁律（不可覆盖）：\n项目根目录：F:\\aitoptools（PROJECT_ROOT）\n每条 exec 命令必须以 cd /d F:\\aitoptools 开头\n禁止读写 F:\\zprintpro-nextjs 及其任何子目录\n写文件一律用 exec node/python（node -e \"require('fs').writeFileSync('F:/aitoptools/...', 内容, 'utf-8')\")，禁止用 write 工具。写完后 exec 验证文件存在。\n⚠️ 读文件容错（2026-08-13 加固，历史 6 次 error 根因已定位）：\n- **AFFILIATE_LOG.md 在项目根目录（F:\\aitoptools\\AFFILIATE_LOG.md），不在 .hermes/ 下**——读它用 node：node -e \"console.log(require('fs').readFileSync('F:/aitoptools/AFFILIATE_LOG.md','utf-8').split('\\n').slice(-40).join('\\n'))\"；禁止 Get-Content -Tail（历史 ENOENT + 管道误报来源）\n- 任何文件读取失败 → 改用 node 读或跳过该 Step，继续后续；不得中断任务\n- 任务结束前必须把本日产物写入 .hermes/logs/daily-ops-{今天日期}.md 并验证存在——产物正常即视为成功\n\n⚠️ Push 联动（2026-08-15 user 拍板：每日 ≤5 次 push，重点内容当日部署）：\n- 本任务不直接 push（监控职责），但哨兵 ALERT / 重点修复处置后：在 daily-ops 产物中标注 **PUSH_READY: <页面/修复描述>** 行——每日搜索增长 19:23 会消费该标记并当日 push\n- 若当日无搜索增长运行（异常），PUSH_READY 累积到次日\n\nStep 0 PHASE 路线图消费（协议 T9b 扩展）：\n- 读 handoff/strategy/PHASE-2026-08-13-09-13.md，确认当日节点（8/16 B类快修、8/19 GEO、8/23 集群、8/25 万圣节、8/31 IndexNow、9/13 T+30）；当日有节点 → 在 RESULT 置顶执行状态；无节点 → 一行 NOOP\n\nStep 0b 排名哨兵（每日）：\n- 读 .hermes/logs/rank-sentinel-20q.json（20 个核心 query 清单与昨日位置）\n- 复用 scripts/gsc_query.py 模式（gsc-oauth.json + SOCKS5 127.0.0.1:7892）拉取 20 query 今日位置（GSC 数据有 2-3 天延迟，比较同一覆盖窗口）\n- 任何 query 位置变动 ≥5 位 → RESULT 置顶 ⚠️ RANK-ALERT {query} {旧pos}→{新pos} + 处置建议（PUSH_READY 标记）\n- 更新 rank-sentinel-20q.json + .hermes/logs/rank-sentinel-{今天日期}.md\n\nStep 1 affiliate-monitor：\n- 幂等：.hermes\\logs\\{今天日期}-daily-ops.md 已存在非空 → 检查内容时效（若含过时状态可刷新）\n- **状态以 .hermes\\affiliate-programs.json 为准**（8/8 已实证: Printful email_verified=true 无验证流程、status=active、tax_status=w8ben-e-uploaded-pending-review）——禁止沿用旧日志/AFFILIATE_LOG 的过时 BLOCKER 表述\n- IMAP 拉邮件：凭证 .hermes\\secrets\\gmail_credentials.json（imap_requires_proxy=true，必须走 SOCKS5 代理 127.0.0.1:7892）；失败再试 C:\\Users\\Administrator\\AppData\\Local\\hermes\\.env 的 IMAP_PASSWORD\n- 解析审批/商户邮件/CF free picks（→ .hermes/logs/cf-freebies/{日期}.md，万圣节素材标 🎃）→ 更新 affiliate-programs.json + 根目录 AFFILIATE_LOG.md\n\nStep 2 printful-watcher（条件：affiliate-programs.json printful.email_verified != true）：\n- 8/8 实证无验证流程（email_verified=true）→ 通常跳过；仅状态异常时检查\n\nStep 2b tax-audit（条件：printful.tax_status 含 pending 或 upload）：\n- **W-8BEN-E 审核状态跟踪（2026-08-15 上传 v2）**：浏览器（autoglm）访问 affiliate 后台 Tax & Legal 页面：Approved → tax_status=approved + payout_ready=true + 🎉 + PUSH_READY 台账更新；Rejected → 记录原因告警升级；Still Pending → NOOP\n- 浏览器不可用 → 记录 BROWSER_UNAVAILABLE 次日再试\n\nStep 3 ai-crawler-monitor（GEO）：\n- 统计 AI 爬虫 UA 访问量（无 CF token/access log 则记录 GEO_BLIND NODATA；beacon 数据源: CF Web Analytics 已上线 8/12）\n\n输出 .hermes/logs/daily-ops-{今天日期}.md（AUTOCLAW_PRIMARY + P0/P1/P2 表 + user 动作清单≤3 + PUSH_READY 行）。约束：不自动登录/发信/付款；关键激活邮件 SINCE≥90 天；凭证缺失如实标注；本任务不直接 git push；输出用中文。",
+        "model": "zai/zai_auto",
+        "fallbacks": [],
+        "timeoutSeconds": 1500
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1788447527843,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 18371,
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 5,
+        "consecutiveSkipped": 0,
+        "lastError": "FailoverError: 402 status code (no body)",
+        "lastDiagnostics": {
+          "summary": "402 status code (no body)",
+          "entries": [
+            {
+              "ts": 1788447545690,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "402 status code (no body)"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "402 status code (no body)"
+      }
+    },
+    {
+      "id": "d3bc84df-0b0e-49df-89ab-4fde94918281",
+      "name": "stock-lab 龙虎榜每日盘后采集",
+      "description": "每日 18:30 盘后自动采集龙虎榜数据（东财公开接口，聚源不可用兜底），输出 CSV 到本地 G:\\stock-lab\\realtime\\data\\lhb，--days 5 自带回溯自愈；退出码 2 时标记失败提醒人工",
+      "enabled": false,
+      "createdAtMs": 1786586385957,
+      "updatedAtMs": 1787507972582,
+      "agentId": "agent-a3jp9i",
+      "sessionKey": "agent:agent-a3jp9i:ce35c966",
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 18 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "运行龙虎榜采集任务：python G:\\stock-lab\\.cluster\\lx6-v6\\dragon_tiger.py --days 5 --out G:\\stock-lab\\realtime\\data\\lhb；然后检查今日 CSV 是否生成（行数>0 或空表标注），核对文件头数据源标注；若退出码非 0 或采集失败，在结果中明确报告失败原因。全程中文，简洁汇报采集结果与文件路径。",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1787308200028,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 229014,
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 3,
+        "consecutiveSkipped": 0,
+        "lastError": "⚠️ ⏰ Cron failed",
+        "lastDiagnostics": {
+          "summary": "⚠️ ⏰ Cron failed",
+          "entries": [
+            {
+              "ts": 1787308428713,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ ⏰ Cron failed"
+            },
+            {
+              "ts": 1787308428715,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ ⏰ Cron failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ ⏰ Cron failed"
+      }
+    },
+    {
+      "id": "d5a45047-554f-487f-bbbb-788f9b91cc61",
+      "name": "8/16 12:30 午间复核",
+      "description": "午间窗口复核：主任务触发、push 次数、402 余额（千问 8/16 指令）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786827746670,
+      "updatedAtMs": 1786876338004,
+      "agentId": "main",
+      "sessionKey": "agent:aitoptools:3794506a",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-16T04:30:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 8/16 午间复核（只读，不修改文件、不 push）：① 读 C:\\Users\\Administrator\\.openclaw-autoclaw\\cron\\jobs.json 确认 84c86e36-fd6f-479b-9f6c-b05699945bb9 的 state（lastRunStatus/lastError），确认主任务是否已触发；② git -C F:\\aitoptools log --oneline -5 origin/main 统计今日 push 次数（应=1，T7 纪律）；③ grep gateway 日志/C:\\Users\\Administrator\\.openclaw-autoclaw\\state 下是否有 402/insufficient balance 错误（模型余额，若出现置顶告警并记录）；④ 检查 F:\\aitoptools\\handoff\\results\\RESULT-2026-08-16.md 是否存在及 NORTH-STAR-DATA 段；⑤ 检查 F:\\aitoptools\\.hermes\\logs\\link-building-0816.md 台账更新时间。结论写 F:\\aitoptools\\.cluster\\goal-flow-c52c6564-e8d7-44f3-a451-e84dc2949645\\probe-1230.md，含四项状态表 + 偏差告警（若有）。",
+        "thinking": "off",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786876048926,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 289078,
+        "lastError": "⚠️ 🛠️ Remove-Item 'F:\\zprintpro-nextjs\\.openclaw\\tmp\\probe-1230.md' -ErrorAction SilentlyContinue; 'tmp staging cleaned' failed",
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ Remove-Item 'F:\\zprintpro-nextjs\\.openclaw\\tmp\\probe-1230.md' -ErrorAction SilentlyContinue; 'tmp staging cleaned' failed",
+          "entries": [
+            {
+              "ts": 1786876337791,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ Remove-Item 'F:\\zprintpro-nextjs\\.openclaw\\tmp\\probe-1230.md' -ErrorAction SilentlyContinue; 'tmp staging cleaned' failed"
+            },
+            {
+              "ts": 1786876337792,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ Remove-Item 'F:\\zprintpro-nextjs\\.openclaw\\tmp\\probe-1230.md' -ErrorAction SilentlyContinue; 'tmp staging cleaned' failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ Remove-Item 'F:\\zprintpro-nextjs\\.openclaw\\tmp\\probe-1230.md' -ErrorAction SilentlyContinue; 'tmp staging cleaned' failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 2,
+        "consecutiveSkipped": 0
+      }
+    },
+    {
+      "id": "d9aacbed-75b1-46cb-ba42-7ec016df3896",
+      "name": "W3-0825 万圣节全量push",
+      "description": "8/25 07:15 万圣节集群全量 push + Kittl 设计联动 + GEO 词覆盖（2026-08-15 重建以修复 ID 脱敏，排期/内容与原任务一致）",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786796919641,
+      "updatedAtMs": 1786911657658,
+      "agentId": "main",
+      "sessionKey": "agent:main:65140247",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-24T23:15:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 8/25 万圣节集群全量 push（PHASE-2026-08-13 W3 + K3 STRATEGY-2026-08-13，9/1 前最后全量窗口）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python，禁止 write 工具；禁止读写 F:\\zprintpro-nextjs。\n\n任务：\n1. Halloween 集群全部页面检查（枢纽+辐条，blog-posts.json 就位；设计源 Kittl/Claid 模板，.hermes/designs/ 已有素材优先）→ 缺失页当日补全\n2. **Kittl 联动**：万圣节内容页内嵌 Kittl 系互链（kittl-review/kittl-vs-canva/kittl-vs-placeit），素材来源标注 Kittl（联盟链接附 UTM: ?utm_source=aitoptools&utm_medium=blog&utm_campaign=halloween2026）\n3. **GEO 词覆盖**：halloween 三词（halloween shirt designs/ halloween print on demand / halloween sublimation）进 GSC 监控 + FAQPage schema 完整\n4. 全量 build + push（一次）\n5. sitemap 更新 + IndexNow 即推（scripts/submit_indexnow_blog_20260808.py 模式）\n6. 辐条②模板批量生产有效率记录落 .hermes/logs/halloween-full-0825.md\n7. 输出用中文。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786910700062,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 957596,
+        "lastDiagnostics": {
+          "summary": "⚠️ 🛠️ cd F:\\aitoptools; gh api repos/zprintprohk-rgb/aitoptools/a…onclusion) \\(.head_sha[0:7])\"' 2>&1 | Select-Object -First 6 (in F:aitoptools) failed",
+          "entries": [
+            {
+              "ts": 1786911657644,
+              "source": "tool",
+              "severity": "error",
+              "message": "⚠️ 🛠️ cd F:\\aitoptools; gh api repos/zprintprohk-rgb/aitoptools/a…onclusion) \\(.head_sha[0:7])\"' 2>&1 | Select-Object -First 6 (in F:aitoptools) failed"
+            },
+            {
+              "ts": 1786911657645,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "⚠️ 🛠️ cd F:\\aitoptools; gh api repos/zprintprohk-rgb/aitoptools/a…onclusion) \\(.head_sha[0:7])\"' 2>&1 | Select-Object -First 6 (in F:aitoptools) failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ 🛠️ cd F:\\aitoptools; gh api repos/zprintprohk-rgb/aitoptools/a…onclusion) \\(.head_sha[0:7])\"' 2>&1 | Select-Object -First 6 (in F:aitoptools) failed",
+        "lastDeliveryStatus": "not-requested",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 3,
+        "consecutiveSkipped": 0,
+        "lastError": "⚠️ 🛠️ cd F:\\aitoptools; gh api repos/zprintprohk-rgb/aitoptools/a…onclusion) \\(.head_sha[0:7])\"' 2>&1 | Select-Object -First 6 (in F:aitoptools) failed"
+      }
+    },
+    {
+      "id": "de9fad65-fae4-43f9-9997-a0b67c4b3b84",
+      "name": "W1-0816 B类快修push",
+      "description": "8/16 07:15 B 类快修 push：+copy ai +kittl 重写（诊断已就绪）+ 外链首批 8 站",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1786661905137,
+      "updatedAtMs": 1786799774652,
+      "agentId": "main",
+      "sessionKey": "agent:main:65140247",
+      "schedule": {
+        "kind": "at",
+        "at": "2026-08-15T23:15:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 aitoptools 8/16 T13 B 类快修 push（PHASE-2026-08-13 W1 + K3 STRATEGY-2026-08-13 轨道一 + T+7 Branch A 附加动作）。路径铁律：cd /d F:\\aitoptools；写文件用 exec node/python，禁止 write 工具；禁止读写 F:\\zprintpro-nextjs。\n\n⚠️ Push 部署纪律（2026-08-15 user 拍板：每日 ≤5 次 push，重点内容当日部署）：\n- 本节点为当日主 push（快修全部内容合并一次 push），当日累计 push 不超过 5 次\n- 消费 .hermes/logs/daily-ops-2026-08-15.md 与 8/16 当日 daily-ops 的 PUSH_READY 标记 → 一并纳入本次 push\n- push-count 记录入 .hermes/logs/bfix-0816.md\n\n【输入（全部预生成，按序读取）】\n1. .cluster/bfix-plan-0816.md：79 页诊断 + 修正规则 5 条 + 高优先 25 页\n2. .cluster/content-expansion-queue.md：扩写队列 Top 10 启动（标准 1,500 词：BLUF 首段/对比表/FAQ≥5/内链 3-5/引用链≥1）\n3. .hermes/logs/kittl-diagnosis-0814.md：kittl review 专项诊断（已就绪）→ 重写 1,500-2,000 词 + 内链≥4 + 引用链≥1（T14 内链补强已生效 74→67，重写须延续）\n4. .cluster/cfix-registry-0813.md：C 级组 B（gear-launch/packify/removebg ≥800 词 + FAQ）\n5. .cluster/link-directory-list.md：外链首批 8 站提交（免费可投 [已核实] 优先；统一实体描述：aitoptools.net — Print AI Tools review site specializing in AI-powered solutions for print shops, packaging design, and e-commerce store operations. Founded by Jerome Tang of Shenzhen Cai Long Printing；邮箱 jerome@aitoptools.net；CAPTCHA → 记 BLOCKED_BY_CAPTCHA）\n6. **copy ai review 快修（T+7 附加：-7.5 位 73.4→80.9）**：title/meta 重写 + 正文首段补强 + 内链补 2 处\n7. .hermes/logs/review-0815.md：8/15 复核节点产物（sticker-mule/runway-ml 复核 + kittl 哨兵复读 + Branch A 风险开关结论）→ 快修清单按此调整优先级\n\n任务：\n1. 读输入文件\n2. bfix-plan 高优先 25 页 title/metaDesc 修正\n3. 扩写 Top 10（≥1,200 词/页）\n4. kittl review 重写（消费诊断）\n5. copy ai review 快修（附加项）\n6. C 级组 B 补充\n7. 外链首批 8 站提交 + 记录 .hermes/logs/link-building-0816.md\n8. 幂等：git log 查今日 B 类 commit → 有则 NOOP\n9. npm run build → commit + push（当日主 push）→ 重跑记分卡对比 → 记录 .hermes/logs/bfix-0816.md（含 push-count）\n10. 输出用中文。",
+        "fallbacks": [
+          "deepseek__4111173b-944d-4961-9d08-d4635ee75e4b/deepseek-v4-flash",
+          "deepseek__840d2872-525a-4637-9aad-bc8b003ebdd5/deepseek-v4-flash"
+        ],
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "none",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1786798478410,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 1296242,
+        "lastError": "cron: job interrupted by gateway restart",
+        "lastDiagnostics": {
+          "summary": "cron: job execution timed out (last phase: model-call-started)",
+          "entries": [
+            {
+              "ts": 1786797311618,
+              "source": "cron-setup",
+              "severity": "error",
+              "message": "cron: job execution timed out (last phase: model-call-started)"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "cron: job execution timed out (last phase: model-call-started)",
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "unknown",
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "consecutiveErrors": 3,
+        "consecutiveSkipped": 0,
+        "lastDelivered": false,
+        "lastDeliveryError": "cron: job interrupted by gateway restart"
+      }
+    }
+  ]
+}

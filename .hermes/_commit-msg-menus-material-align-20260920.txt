@@ -1,0 +1,66 @@
+fix(menus)+data: 材质声称与 specs 对齐 12 处 —— 清「防水PVC」跨 SKU 共享模板尾巴 (P0, K3 2026-09-20 裁决)
+
+背景 (已实测**上线**, 证据等级 = 线上 og:title):
+   curl https://zprintpro.com/zh-hk/product/laminated-menus/
+   → og:title = 「過膠餐牌 | 餐牌 / 菜單 / 防水PVC | 智印港」
+   「防水PVC」是跨 5 个 menus SKU 共享的模板尾巴, 但只有 pvc-menus 真为 PVC 膠片:
+     pvc-menus        0.5mm–1.0mm 透明/白色 PVC 膠片            → 声称正确, **本批不动**
+     laminated-menus  200g–250g 銅版紙或啞粉紙；啞膠或光膠覆膜    → 误声称
+     hardcover-menus  硬紙板封面裱糊銅版紙；內頁 200g 銅版紙      → 误声称
+     drink-menus      200g–250g 銅版紙或合成紙；啞膠覆膜         → 误声称
+     disposable-menus 100g–120g 書紙或再生紙；**無覆膜（即棄）**  → 误声称 (最严重: 声称防水而实为无覆膜)
+
+修法: 统一用「覆膜 / 硬殼裝訂 / 即棄」——**取自已在本字段写出的真实工艺** (products.ts 自己的
+     imageAlt.zh-hk 后半段已写「200g–250g銅版紙 覆膜（啞膠／光膠）」等), 故非新增声称;
+     同一词贯穿 title↔og:title↔description 三层, 避免口径再分叉。**不碰主詞**(餐牌/酒水牌)、不碰价格/起印量。
+
+一、products.ts (4 处 name + 4 处 gallery imageAlt.zh-hk)
+   name:       「餐牌 / 菜單 / 防水PVC」→ 過膠「覆膜」· 精裝「硬殼裝訂」· 酒水牌「覆膜」· 一次性「即棄」
+   imageAlt:   「餐牌印刷 / 防水PVC / 精裝菜單 | …」→ 同上词替换首段 (真实材质段原样保留)
+   ⇒ og:title (name 源) 线上误声称直接消除
+
+二、sku-seo-data.ts (4 处 seo['zh-hk'].description)
+   「採用 250g 銅版紙/防水覆膜」(模板句, 跨 4 SKU 相同) → 逐 SKU 真实材质
+     過膠「200g–250g 銅版紙/啞膠或光膠覆膜」· 精裝「硬紙板封面裱糊銅版紙/內頁 200g 銅版紙」
+     酒水牌「200g–250g 銅版紙或合成紙/啞膠覆膜」· 一次性「100g–120g 書紙或再生紙/無覆膜即棄」
+   ⚠️ 注意 250g 与 specs 原本就不一致 (过胶/酒水牌实为 200g–250g, 一次性实为 100g–120g 书纸) —— 一并纠正。
+
+三、方法
+   scripts/apply-menus-material-align.cjs (dry-run 默认 / --apply 才写盘)
+   逐条断言: 旧串全文**恰好命中 1 次** + 新串不存在 ⇒ 才替换。
+   dry-run 当场拦下 4 处: 我按 grep 输出写的「防水 PVC」(带空格) 与源文件实际「防水PVC」不符
+   ⇒ 命中 0 次未落盘, 重新 dump 真实串后 12/12 通过 (延续避坑 21: 先 dump 再改)。
+
+验证 (全实测)
+   npx tsc --noEmit → 54 = 基线 54
+   node scripts/verify-menus.cjs → 6 SKU 真值与标题一致 (仅余 disposable en/ja 当量 49/46 不足 50, 原存)
+   node scripts/check-brand-baseline.mjs → [PASS] 未新增 (431 → 303)
+   node scripts/check-encoding.js → 0
+   残留「防水PVC」: products.ts 仅剩 1 处 = pvc-menus 自身 (正确声称) · sku-seo-data.ts menus 上下文 0 处
+   ※ 其余「防水PVC」在贴纸/喷繪上下文属**正确**声称, 未动 (全文件 10 处 → 不影响)
+
+════ 关联处置 (K3 裁决同步, 本批**不执行**, 仅登记) ════
+
+A. FSC / 食品接触双轨 (K3 指正: 两套独立合规体系, 不得互相替代)
+   - FSC = 原料可持续/可追溯;  食品接触 = 需独立合规 (CN GB 4806.8-2022 / US FDA 21 CFR 176.170 /
+     EU BfR XXXVI / ISEGA)。FSC 认证的銅版纸 ≠ 食品级銅版纸。
+   - 现状取证: src/ 内 FSC 出现在 **45** 个文件 / FDA **23** / GB 4806 **3** / BfR **3** / SGS **10** (**ISEGA 0**)。
+   - ISO 9001 (CRED_ISO_9001=167) 与食品安全**无关**; 若页面用它暗示食品安全 = 语境误导。
+   - **本批未改任何认证/合规声称**: 补「FSC + 食品安全合规声明」= 对外事实性声称, 须先有拍板来源
+     (§0.23 无来源数字红线 / SOP-10 第 3 款); 且门童 §18/§19 正拦「保证/承诺」类表述。
+     ⇒ 登记为待核实项 + 待 K3 给出口径, **不得**据营销来源自补。
+
+B. faqs[].a 39 处: 按 K3 裁决选 (b) —— 先**确证死数据**, 确证后请 K3 拍板建豁免台账 (不自行绕过门童);
+   同期启动 **CSV 反向同步排期** (该文件由 zprintpro-sku-seo-data.csv 再生成, 手改会被覆盖, per SOP-5)。
+
+C. seo-zh-hk-subfield 58 处 / 其他 91 处: 独立单变量批次 (下一批)。
+
+D. ja imageAlt 🟡4 条: 先补 products.ts 的 `nameJa` (实测 small-bags 缺失), 再修 alt —— 否则是「用无源数据修无源数据」。
+
+E. about/page.tsx 双品牌: 按 K3 裁决**保留** (实体归一正当用法), 本批未动。
+
+数据来源:
+- 线上取证: curl og:title (4 URL, 绕缓存 ?_cb=) 2026-09-20 20:2x
+- specs 真值: src/data/products.ts 的 material / finishing / unitLabel (逐 SKU dump)
+- 合规词分布: src/ 全量 grep 计数 (FSC/FDA/GB 4806/BfR/ISEGA/SGS)
+- 门童未截断真值: CRED_ISO_9001=167 (pre-commit 门童输出)

@@ -1,0 +1,39 @@
+=== lines 403-414 ===
+403|      { q: '輸出包装規格に対応していますか？', a: 'はい。EU WEEE、米国FTCグリーンガイドなどの輸出包装法規に精通しており、コンプライアンス文書の準備をサポートします。' },
+404|      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
+405|      { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず箱型、展開寸法、数量、紙材、表面加工をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが抜き型、bleed、カラーモードをチェックします。' },
+406|        { q: '食品用のビニール袋・真空パックは作れますか？', a: 'いいえ。当社は紙製の食品パッケージ（食品用紙箱・紙袋・耐油紙カード、FDA 適合 + FSC 認証紙）に特化しています。ビニール袋・真空パックは対応範囲外です。紙製の食品パッケージをご希望でしたら、100 個から、無料 2 時間校正、WhatsApp で即時お見積もり。' },
+407|    ],
+408|  },
+409|  'en': {
+410|    featuredSnippet: 'Custom packaging boxes from 100 MOQ: food-grade boxes from US$0.74, folding cartons from US$0.51, mailer and rigid gift boxes. Foil, spot UV, embossing, PET windows and variable 
+411|    lastUpdated: '2026-10-17',
+412|    h2: 'Custom Packaging Boxes — Food-Grade, Folding & Mailer | 100 MOQ, 1-Hour Free Proof',
+413|    coreAdvantages: {
+414|      title: 'Why brands order packaging boxes here',
+=== lines 498-508 ===
+498|      { q: 'Are the food boxes food-safe?', a: 'Food-grade card with FDA-safe indirect food contact as standard, plus optional PE or PLA greaseproof linings; share the product type and we match the bu
+499|      { q: 'How fast can packaging be delivered?', a: '3-5 business days (digital) or 5-7 days (offset), plus DHL 2-4 days worldwide; rush production runs 2-3 days.' },
+500|      { q: 'Can boxes carry windows, QR codes or foil?', a: 'Yes — PET windows, variable-data QR codes and foil or spot UV finishes all work on the same panel.' },
+501|    ],
+502|  },
+503|  'ja': {
+504|    featuredSnippet: 'オリジナルパッケージ・箱印刷は100個から。食品グレード箱 HK$2.5〜（¥101〜）、折りたたみ箱 HK$2.5〜（¥69〜）、箔押し・スポットUV・型抜き・可変QR対応。1時間で無料デジタル校正、3-5営業日で生産、DHL2-4日で日本へお届け。',
+505|    lastUpdated: '2026-10-17',
+506|    h2: 'パッケージ印刷・オリジナルボックス — 食品・クラフト・折りたたみ 100個から 1時間無料校正',
+507|    coreAdvantages: {
+508|      title: 'ブランドの箱をこの工場で',
+=== lines 586-598 ===
+586|        { label: '食品パッケージ印刷ガイド', href: '/ja/blog/food-packaging-printing-guide/' },
+587|      ],
+588|    },
+589|    faq: [
+590|      { q: 'オリジナルパッケージの最小注文数は？', a: '食品・折りたたみ箱は100個から。カスタムサイズ・型抜きは500個からです。' },
+591|      { q: '箱の価格は？', a: '食品グレード箱はHK$2.5（¥101）から、折りたたみ箱はHK$2.5（¥69）から。最終価格はサイズ・紙・加工・部数で変動し、30秒AI見積りで即時表示されます。' },
+592|      { q: '食品箱の安全性は？', a: 'フードグレード紙+FDAセーフの間接食品接触を標準とし、PE/PLA防油内層を選択できます。中身の種類をお知らせいただければ構成をご提案します。' },
+593|      { q: '納期はどのくらい？', a: 'デジタル3-5営業日、オフセット5-7営業日。お急ぎは2-3営業日。DHLで日本へ2-4日です。' },
+594|      { q: '窓・QR・箔押しは入れられますか？', a: 'はい。PET窓・可変データQR・箔押し/スポットUVは同じ面板に併用できます。' },
+595|    ],
+596|  },
+597|};;
+598|

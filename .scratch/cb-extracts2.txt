@@ -1,0 +1,16 @@
+##### zh-hk #####
+inline-JSON-LD @type count: 6
+[DHL] 制與更新頻率   本基準只涵蓋 智印港 自身牌價——它是由一家供應商的透明價格表建立的香港市場採購基準，不是全市場調查，引用時請照實標明。價格以港幣、出廠價計，DHL 或本地快遞另計，反映各 SKU 起訂量下的入門規格；不含設計服務及任何季節性附加費。數據集每季度全面重拍一次，下次更新為 2026 年 12 月；屆時版本化 URL 與本頁結構化數據的 dateModified 欄會一併更新，被取代的數字移入存檔區而非悄悄覆寫。如要轉載上表，請連同引用行一併保留——沒有時間戳的價格表是基準最快的過期方式。    引用本報告   建議引用格式（APA）：zprintpro. (2026, Sept
+[proof] 最低起訂量（MOQ）。 想直接對比各盒型價目，可到 紙盒印刷 類目按尺寸篩選。     防水貼紙每張 HK$0.22 起 （起訂量 100 張）—— waterproof-stickers SKU 。   A5 傳單每張 HK$0.18 起 （起訂量 100 張）—— a5-flyers SKU 的入門檔。   膠裝 A4 冊子每本 HK$16 起 （起訂量 100 本）—— perfect-bound-books SKU 加頁數與加工前的下限。     以上是入門價。每個 SKU 都有一條隨紙張、尺寸與後加工浮動的報價帶——例如燙金卡每張報價 HK$1.80–3.20，100 張起訂即 HK
+[配送]  vs Vinyl vs 可移除 ——貼紙價格帶背後的材質邏輯。   2027 日曆印刷時間表 ——如何圍繞 1,000 本的日曆起訂量做計劃。   特快印刷與配送 ——影響上述報價帶的交期選項。      30 秒取得實時報價 → 本報告每個數字都是真實落單價；你的報價只差一則訊息。 
+[柯式] log/hong-kong-printing-cost-baseline-2026/   報告由 zprintpro 報價引擎維護；數據由 智印港印刷工程團隊（柯式印刷機工程，15 年）覆核。勘誤與數據請求： WhatsApp +86 198 8085 1334 。    延伸閱讀     Packaging Box Pricing 2026 ——包裝品類的批量檔與後加工價格深度拆解。   燙金三大應用指南 ——燙金為本報告的上限價加了多少。   貼紙材質指南：PVC vs Vinyl vs 可移除 ——貼紙價格帶背後的材質邏輯。   2027 日曆印刷時間表 ——如何圍繞 1,000 本的日
+##### en #####
+inline-JSON-LD @type count: 6
+[DHL] survey, and it should be cited as such. Prices are in HKD, quoted ex-works with DHL or local courier billed separately, and reflect the entry specification at each SKU's MOQ; they exclude design services and any seasonal surcharges. The dataset is scheduled for a full re-snapshot every quarter, with
+[proof] price and a minimum order quantity (MOQ). Three numbers worth quoting:     Waterproof stickers from HK$0.22 each (100-piece MOQ) — waterproof-stickers SKU .   A5 flyers from HK$0.18 each at the 100-piece MOQ — the entry tier of the a5-flyers SKU .   Perfect-bound A4 books from HK$16 per copy (100-co
+##### ja #####
+inline-JSON-LD @type count: 6
+[DHL]  サプライヤーの透明な価格表から作った香港市場の調達ベンチマークであり、市場全体の調査ではないため、そのように引用してください。価格は香港ドル建て、持出条件で、DHL または地域宅配は別途請求です。各 SKU の MOQ におけるエントリー仕様を反映し、デザインサービスと季節サーチャージは含みません。データセットは四半期ごとに完全な再スナップショットを予定しており、次回更新は 2026年12月です。版管理された URL とページ構造化データの dateModified はそれに合わせて変わり、置き換えられた数字は黙って上書きされずアーカイブセクションに移動します。上の表を埋め込む場合は引用行も
+[proof] 示価格と最小ロット（MOQ）が設定されています。引用に値する 3 つの数字:     防水ステッカー 1枚 HK$0.22〜 （MOQ 100枚）— waterproof-stickers SKU 。   A5 チラシ 1枚 HK$0.18〜 （MOQ 100枚）— a5-flyers SKU のエントリー帯。   無線綴じ A4 冊子 1部 HK$16〜 （MOQ 100部）— perfect-bound-books SKU の下限値（ページ数・加工オプション追加前）。     これらはエントリー価格です。各 SKU は用紙・サイズ・仕上げに応じて幅を持つ見積帯を持ちます。例えば箔押しカード
+[配送] ステッカー価格帯の背後にある素材ロジック。   2027年 カレンダー印刷スケジュール — MOQ 1,000 個のカレンダーをどう計画するか。   特急印刷・配送 — 上の見積帯に影響する納期オプション。      30 秒で実見積もりを取る → 本レポートの数字はすべて実発注価格です。あなたの見積もりもメッセージ 1 通です。 
+[最短] 字は黙って上書きされずアーカイブセクションに移動します。上の表を埋め込む場合は引用行も一緒に残してください。タイムスタンプのない価格表はベンチマークが陳腐化する最短経路です。    本レポートの引用   引用例（APA）: zprintpro. (2026, September 5). 2026 Hong Kong Printing Cost Baseline Report . zprintpro.com. https://zprintpro.com/ja/blog/hong-kong-printing-cost-baseline-2026/   レポートは zprintpro 見積エンジンが

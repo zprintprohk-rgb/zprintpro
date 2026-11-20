@@ -1,0 +1,35 @@
+--- https://zprintpro.com/zh-hk/blog/photo-book-printing-guide/
+    HTTP 200
+    name=description : !! ABSENT
+    og:description   : !! ABSENT
+    qa-answer        : 6
+--- https://zprintpro.com/en/blog/photo-book-printing-guide/
+    HTTP 200
+    name=description : !! ABSENT
+    og:description   : !! ABSENT
+    qa-answer        : 0
+--- https://zprintpro.com/ja/blog/photo-book-printing-guide/
+    HTTP 200
+    name=description : !! ABSENT
+    og:description   : !! ABSENT
+    qa-answer        : 0
+--- https://zprintpro.com/zh-hk/blog/childrens-picture-book-printing-guide/
+    HTTP 200
+    name=description : !! ABSENT
+    og:description   : !! ABSENT
+    qa-answer        : 6
+--- https://zprintpro.com/en/blog/childrens-picture-book-printing-guide/
+    HTTP 200
+    name=description : !! ABSENT
+    og:description   : !! ABSENT
+    qa-answer        : 0
+--- https://zprintpro.com/zh-hk/category/books/
+    HTTP 200
+    name=description : <meta name="description" content="書刊印刷 50 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 
+    og:description   : <meta property="og:description" content="書刊印刷 50 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，
+    qa-answer        : 0
+--- https://zprintpro.com/en/product/hardcover-books/
+    HTTP 200
+    name=description : <meta name="description" content="Custom hardcover books from ZprintPro the US. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Desig
+    og:description   : <meta property="og:description" content="Hardcover book printing for wedding albums, family histories, graduation yearbooks, schoo
+    qa-answer        : 0

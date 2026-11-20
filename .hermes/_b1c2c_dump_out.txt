@@ -1,0 +1,441 @@
+﻿
+============================== products.ts cartoon-red-packets (up to eco start) (L3990-L4092) ==============================
+3990	    expertReview: {"reviewer": "", "credentials": "", "review": ""},
+3991	    authorBio: {"name": "", "role": "", "bio": ""},
+3992	},
+3993	  {
+3994	    id: 'RP-004',
+3995	    sku_code: 'RP-004',
+3996	    slug: 'cartoon-red-packets',
+3997	    category: 'red-packets',
+3998	    category_slug: 'red-packets',
+3999	    name: '卡通利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Cartoon Red Packets | CNY Red Packets & Foil', nameJa: 'キャラクターポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '卡通利是封 · 訂製',
+4000	    description: '可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。', descriptionEn: 'Cute cartoon design, loved by young people.', descriptionJa: 'かわいいキャラクターデザイン、若者に人気。', description_zh: '可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。',
+4001	    features: [
+4002	      '【120g–150g紅色紙張】喜慶質感，挺度適中',
+4003	      '【四色印刷】金色文字與圖案鮮豔持久',
+4004	      '【卡通設計】活潑圖案，親子品牌首選',
+4005	      '【免費刀模】異形或標準長方形可選',
+4006	      '【燙金定位】±0.3mm精度，細線清晰',
+4007	      '【節慶檔期】農曆新年前3週為高峰期，建議提早下單'
+4008	    ],
+4009	    specs: {
+4010	      material: '120g銅版紙或環保紙',
+4011	      size: '標準約90×170mm',
+4012	      printMethod: '四色數碼印刷',
+4013	      finishing: '燙金、局部UV（可選）',
+4014	    },
+4015	    price_range: 'HK$1.10-3.80/個',
+4016	    basePrice: 1.10,
+4017	    basePrice_en: 0.46,
+4018	    basePrice_ja: 64,
+4019	    weight_score: 88,
+4020	    isHot: false,
+4021	    isNew: false,
+4022	    minQuantity: 100,
+4023	    images: ['/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-zh-hk.webp'],
+4024	  imagesByLocale: {
+4025	    'zh-hk': [
+4026	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-zh-hk.webp',
+4027	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-zh-hk-2.webp',
+4028	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-zh-hk-3.webp',
+4029	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-zh-hk-4.webp',
+4030	    ],
+4031	    'en': [
+4032	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-en.webp',
+4033	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-en-2.webp',
+4034	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-en-3.webp',
+4035	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-en-4.webp',
+4036	    ],
+4037	    'ja': [
+4038	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-ja.webp',
+4039	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-ja-2.webp',
+4040	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-ja-3.webp',
+4041	      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-ja-4.webp',
+4042	    ],
+4043	  },
+4044	    variables: {
+4045	      sizes: [
+4046	        { value: 'standard', label: '標準 (90×170mm)', multiplier: 1 },
+4047	        { value: 'large', label: '大號 (100×190mm)', multiplier: 1.3 },
+4048	        { value: 'premium', label: '豪華 (120×220mm)', multiplier: 1.8 },
+4049	      ],
+4050	      materials: [
+4051	        { value: '128g', label: '128g紅紙', surcharge: 0 },
+4052	        { value: '157g', label: '157g厚紅紙', surcharge: 15 },
+4053	        { value: 'special', label: '特種紙', surcharge: 40 },
+4054	      ],
+4055	      finishings: [
+4056	        { value: 'none', label: '燙金', surcharge: 0 },
+4057	        { value: 'foil', label: '燙金浮雕', surcharge: 50 },
+4058	        { value: 'emboss', label: '立體燙金', surcharge: 100 },
+4059	      ],
+4060	      quantities: [
+4061	        { value: 100, label: '100個', discount: 1 },
+4062	        { value: 500, label: '500個', discount: 0.85 },
+4063	        { value: 1000, label: '1000個', discount: 0.7 },
+4064	      ],
+4065	    },
+4066	  seoImages: {
+4067	    filename: { 'zh-hk': 'zprintpro-red-packets-cartoon-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-cartoon-red-packets-en.webp', ja: 'zprintpro-red-packets-cartoon-red-packets-ja.webp' },
+4068	    alt: {
+4069	      'zh-hk': '利是封印刷 / 卡通 / 春節紅包 | 香港卡通利是封印刷 120g銅版紙 彩色 100個起印 | 智印港',
+4070	      en: 'Red Packet Printing / Cartoon / Lunar New Year | Cartoon Red Packets 120gsm Art Paper, 100 pcs MOQ | ZprintPro',
+4071	      ja: 'ポチ袋印刷 / 旧正月 / キャラクター | キャラクターポチ袋 120gコート紙・100枚から | ZprintPro'
+4072	    },
+4073	  },
+4074	  
+4075	    // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
+4076	    seoTitle: {"zh-hk": "", "en": "", "ja": ""},
+4077	    seoDescription: {"zh-hk": "", "en": "", "ja": ""},
+4078	    metaTitle: "",
+4079	    aiSearchSummary: {"en": "", "zh-hk": "", "ja": ""},
+4080	    knowledgePanelData: {"brand": "", "foundingDate": "", "parentOrg": "", "products": [], "industries": []},
+4081	    faqSchema: [{"question": "What is the traditional Chinese red packet design?", "answer": "Traditional red packets (利是封/紅包) feature auspicious symbols like dragons, phoenixes, fu (福) characters, and Chinese New Year motifs. ZprintPro offers 6 variants: foil stamped, embossed, custom, cartoon, eco, and large format."}, {"question": "Can I print my company logo on red packets?", "answer": "Yes, custom logo printing is popular with hotels, banks, and luxury brands for corporate Chinese New Year gifting. Gold foil logo on red paper is our most popular combination. MOQ 500 pieces."}, {"question": "What is the standard red packet size?", "answer": "Standard size is 90x170mm for CNY currency. We also offer large format (120x200mm) for gift cards and small (75x130mm) for candy. Custom sizes available for orders above 1000 pieces."}, {"question": "Do you offer eco-friendly red packets?", "answer": "Yes, our RP-005 Eco Red Packets use FSC-certified recycled paper with soy-based ink. Biodegradable and carbon-neutral production. Popular with sustainable brands and ESG-conscious companies."}],
+4082	    relatedEntities: {"sameAs": [], "mentions": []},
+4083	    expertReview: {"reviewer": "", "credentials": "", "review": ""},
+4084	    authorBio: {"name": "", "role": "", "bio": ""},
+4085	},
+4086	  {
+4087	    id: 'RP-005',
+4088	    sku_code: 'RP-005',
+4089	    slug: 'eco-red-packets',
+4090	    category: 'red-packets',
+4091	    category_slug: 'red-packets',
+4092	    name: '環保利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Eco Red Packets | CNY Red Packets & Foil', nameJa: 'エコポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '環保利是封 · 訂製',
+
+============================== products.ts eco-red-packets (up to large start) (L4085-L4188) ==============================
+4085	},
+4086	  {
+4087	    id: 'RP-005',
+4088	    sku_code: 'RP-005',
+4089	    slug: 'eco-red-packets',
+4090	    category: 'red-packets',
+4091	    category_slug: 'red-packets',
+4092	    name: '環保利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Eco Red Packets | CNY Red Packets & Foil', nameJa: 'エコポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '環保利是封 · 訂製',
+4093	    description: '採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。', descriptionEn: 'Eco-friendly paper and ink, sustainable development concept.', descriptionJa: '環境に優しい紙とインク、持続可能な開発の理念。', description_zh: '採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。',
+4094	    features: [
+4095	      '【120g–150g紅色紙張】喜慶質感，挺度適中',
+4096	      '【四色印刷】金色文字與圖案鮮豔持久',
+4097	      '【FSC再生紙／種子紙】可降解或種植，環保承諾',
+4098	      '【免費刀模】異形或標準長方形可選',
+4099	      '【燙金定位】±0.3mm精度，細線清晰',
+4100	      '【節慶檔期】農曆新年前3週為高峰期，建議提早下單'
+4101	    ],
+4102	    specs: {
+4103	      material: 'FSC認證再生紙或種子紙；大豆油墨',
+4104	      size: '標準約90×170mm',
+4105	      printMethod: '四色數碼或柯式印刷',
+4106	      finishing: '無覆膜（環保）',
+4107	    },
+4108	    price_range: 'HK$1.90-5.20/個',
+4109	    basePrice: 1.90,
+4110	    basePrice_en: 0.74,
+4111	    basePrice_ja: 103,
+4112	    weight_score: 85,
+4113	    isHot: false,
+4114	    isNew: false,
+4115	    minQuantity: 100,
+4116	    images: ['/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-zh-hk.webp'],
+4117	  imagesByLocale: {
+4118	    'zh-hk': [
+4119	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-zh-hk.webp',
+4120	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-zh-hk-2.webp',
+4121	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-zh-hk-3.webp',
+4122	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-zh-hk-4.webp',
+4123	    ],
+4124	    'en': [
+4125	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-en.webp',
+4126	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-en-2.webp',
+4127	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-en-3.webp',
+4128	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-en-4.webp',
+4129	    ],
+4130	    'ja': [
+4131	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-ja.webp',
+4132	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-ja-2.webp',
+4133	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-ja-3.webp',
+4134	      '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-ja-4.webp',
+4135	    ],
+4136	  },
+4137	    variables: {
+4138	      sizes: [
+4139	        { value: 'standard', label: '標準 (90×170mm)', multiplier: 1 },
+4140	        { value: 'large', label: '大號 (100×190mm)', multiplier: 1.3 },
+4141	        { value: 'premium', label: '豪華 (120×220mm)', multiplier: 1.8 },
+4142	      ],
+4143	      materials: [
+4144	        { value: '128g', label: '128g紅紙', surcharge: 0 },
+4145	        { value: '157g', label: '157g厚紅紙', surcharge: 15 },
+4146	        { value: 'special', label: '特種紙', surcharge: 40 },
+4147	      ],
+4148	      finishings: [
+4149	        { value: 'none', label: '燙金', surcharge: 0 },
+4150	        { value: 'foil', label: '燙金浮雕', surcharge: 50 },
+4151	        { value: 'emboss', label: '立體燙金', surcharge: 100 },
+4152	      ],
+4153	      quantities: [
+4154	        { value: 100, label: '100個', discount: 1 },
+4155	        { value: 500, label: '500個', discount: 0.85 },
+4156	        { value: 1000, label: '1000個', discount: 0.7 },
+4157	      ],
+4158	    },
+4159	  seoImages: {
+4160	    filename: { 'zh-hk': 'zprintpro-red-packets-eco-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-eco-red-packets-en.webp', ja: 'zprintpro-red-packets-eco-red-packets-ja.webp' },
+4161	    alt: {
+4162	      'zh-hk': '利是封印刷 / 環保 / 春節紅包 | 香港環保利是封印刷 FSC認證再生紙 無覆膜 100個起印 | 智印港',
+4163	      en: 'Red Packet Printing / Eco / Lunar New Year | Eco Red Packets FSC Recycled Paper Unlaminated, 100 pcs MOQ | ZprintPro',
+4164	      ja: 'ポチ袋印刷 / 旧正月 / エコ | エコポチ袋 FSC再生紙 無PP加工・100枚から | ZprintPro'
+4165	    },
+4166	  },
+4167	  
+4168	    // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
+4169	    seoTitle: {"zh-hk": "", "en": "", "ja": ""},
+4170	    seoDescription: {"zh-hk": "", "en": "", "ja": ""},
+4171	    metaTitle: "",
+4172	    aiSearchSummary: {"en": "", "zh-hk": "", "ja": ""},
+4173	    knowledgePanelData: {"brand": "", "foundingDate": "", "parentOrg": "", "products": [], "industries": []},
+4174	    faqSchema: [{"question": "What is the traditional Chinese red packet design?", "answer": "Traditional red packets (利是封/紅包) feature auspicious symbols like dragons, phoenixes, fu (福) characters, and Chinese New Year motifs. ZprintPro offers 6 variants: foil stamped, embossed, custom, cartoon, eco, and large format."}, {"question": "Can I print my company logo on red packets?", "answer": "Yes, custom logo printing is popular with hotels, banks, and luxury brands for corporate Chinese New Year gifting. Gold foil logo on red paper is our most popular combination. MOQ 500 pieces."}, {"question": "What is the standard red packet size?", "answer": "Standard size is 90x170mm for CNY currency. We also offer large format (120x200mm) for gift cards and small (75x130mm) for candy. Custom sizes available for orders above 1000 pieces."}, {"question": "Do you offer eco-friendly red packets?", "answer": "Yes, our RP-005 Eco Red Packets use FSC-certified recycled paper with soy-based ink. Biodegradable and carbon-neutral production. Popular with sustainable brands and ESG-conscious companies."}],
+4175	    relatedEntities: {"sameAs": [], "mentions": []},
+4176	    expertReview: {"reviewer": "", "credentials": "", "review": ""},
+4177	    authorBio: {"name": "", "role": "", "bio": ""},
+4178	},
+4179	  {
+4180	    id: 'RP-006',
+4181	    sku_code: 'RP-006',
+4182	    slug: 'large-red-packets',
+4183	    category: 'red-packets',
+4184	    category_slug: 'red-packets',
+4185	    name: '大號利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Large Red Packets | CNY Red Packets & Foil', nameJa: '大判ポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '大號利是封 · 訂製',
+4186	    description: '加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。', descriptionEn: 'Larger size, can hold more cash or gift cards.', descriptionJa: '大きなサイズ、より多くの現金やギフトカードを入れられます。', description_zh: '加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。',
+4187	    features: [
+4188	      '【120g–150g紅色紙張】喜慶質感，挺度適中',
+
+============================== products.ts large-red-packets (to block end ~93 lines) (L4176-L4280) ==============================
+4176	    expertReview: {"reviewer": "", "credentials": "", "review": ""},
+4177	    authorBio: {"name": "", "role": "", "bio": ""},
+4178	},
+4179	  {
+4180	    id: 'RP-006',
+4181	    sku_code: 'RP-006',
+4182	    slug: 'large-red-packets',
+4183	    category: 'red-packets',
+4184	    category_slug: 'red-packets',
+4185	    name: '大號利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Large Red Packets | CNY Red Packets & Foil', nameJa: '大判ポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '大號利是封 · 訂製',
+4186	    description: '加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。', descriptionEn: 'Larger size, can hold more cash or gift cards.', descriptionJa: '大きなサイズ、より多くの現金やギフトカードを入れられます。', description_zh: '加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。',
+4187	    features: [
+4188	      '【120g–150g紅色紙張】喜慶質感，挺度適中',
+4189	      '【四色印刷】金色文字與圖案鮮豔持久',
+4190	      '【加大30%–50%】容量更大，適合厚禮金',
+4191	      '【免費刀模】異形或標準長方形可選',
+4192	      '【燙金定位】±0.3mm精度，細線清晰',
+4193	      '【節慶檔期】農曆新年前3週為高峰期，建議提早下單'
+4194	    ],
+4195	    specs: {
+4196	      material: '150g–200g紅色紙張',
+4197	      size: '約110×200mm（較標準大30%–50%）',
+4198	      printMethod: '四色印刷＋燙金',
+4199	      finishing: '燙金、浮雕、局部UV',
+4200	    },
+4201	    price_range: 'HK$2.20-7.50/個',
+4202	    basePrice: 2.20,
+4203	    basePrice_en: 0.92,
+4204	    basePrice_ja: 129,
+4205	    weight_score: 82,
+4206	    isHot: false,
+4207	    isNew: false,
+4208	    minQuantity: 100,
+4209	    images: ['/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-zh-hk.webp'],
+4210	  imagesByLocale: {
+4211	    'zh-hk': [
+4212	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-zh-hk.webp',
+4213	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-zh-hk-2.webp',
+4214	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-zh-hk-3.webp',
+4215	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-zh-hk-4.webp',
+4216	    ],
+4217	    'en': [
+4218	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-en.webp',
+4219	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-en-2.webp',
+4220	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-en-3.webp',
+4221	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-en-4.webp',
+4222	    ],
+4223	    'ja': [
+4224	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-ja.webp',
+4225	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-ja-2.webp',
+4226	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-ja-3.webp',
+4227	      '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-ja-4.webp',
+4228	    ],
+4229	  },
+4230	    variables: {
+4231	      sizes: [
+4232	        { value: 'standard', label: '標準 (90×170mm)', multiplier: 1 },
+4233	        { value: 'large', label: '大號 (100×190mm)', multiplier: 1.3 },
+4234	        { value: 'premium', label: '豪華 (120×220mm)', multiplier: 1.8 },
+4235	      ],
+4236	      materials: [
+4237	        { value: '128g', label: '128g紅紙', surcharge: 0 },
+4238	        { value: '157g', label: '157g厚紅紙', surcharge: 15 },
+4239	        { value: 'special', label: '特種紙', surcharge: 40 },
+4240	      ],
+4241	      finishings: [
+4242	        { value: 'none', label: '燙金', surcharge: 0 },
+4243	        { value: 'foil', label: '燙金浮雕', surcharge: 50 },
+4244	        { value: 'emboss', label: '立體燙金', surcharge: 100 },
+4245	      ],
+4246	      quantities: [
+4247	        { value: 100, label: '100個', discount: 1 },
+4248	        { value: 500, label: '500個', discount: 0.85 },
+4249	        { value: 1000, label: '1000個', discount: 0.7 },
+4250	      ],
+4251	    },
+4252	  seoImages: {
+4253	    filename: { 'zh-hk': 'zprintpro-red-packets-large-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-large-red-packets-en.webp', ja: 'zprintpro-red-packets-large-red-packets-ja.webp' },
+4254	    alt: {
+4255	      'zh-hk': '利是封印刷 / 大號 / 春節紅包 | 香港大號利是封印刷 150g–200g紅色紙張 100個起印 | 智印港',
+4256	      en: 'Red Packet Printing / Large Size / Lunar New Year | Large Red Packets 150–200gsm, 100 pcs MOQ | ZprintPro',
+4257	      ja: 'ポチ袋印刷 / 旧正月 / 大判 | 大判ポチ袋 150g–200g・100枚から | ZprintPro'
+4258	    },
+4259	  },
+4260	  
+4261	    // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
+4262	    seoTitle: {"zh-hk": "", "en": "", "ja": ""},
+4263	    seoDescription: {"zh-hk": "", "en": "", "ja": ""},
+4264	    metaTitle: "",
+4265	    aiSearchSummary: {"en": "", "zh-hk": "", "ja": ""},
+4266	    knowledgePanelData: {"brand": "", "foundingDate": "", "parentOrg": "", "products": [], "industries": []},
+4267	    faqSchema: [{"question": "What is the traditional Chinese red packet design?", "answer": "Traditional red packets (利是封/紅包) feature auspicious symbols like dragons, phoenixes, fu (福) characters, and Chinese New Year motifs. ZprintPro offers 6 variants: foil stamped, embossed, custom, cartoon, eco, and large format."}, {"question": "Can I print my company logo on red packets?", "answer": "Yes, custom logo printing is popular with hotels, banks, and luxury brands for corporate Chinese New Year gifting. Gold foil logo on red paper is our most popular combination. MOQ 500 pieces."}, {"question": "What is the standard red packet size?", "answer": "Standard size is 90x170mm for CNY currency. We also offer large format (120x200mm) for gift cards and small (75x130mm) for candy. Custom sizes available for orders above 1000 pieces."}, {"question": "Do you offer eco-friendly red packets?", "answer": "Yes, our RP-005 Eco Red Packets use FSC-certified recycled paper with soy-based ink. Biodegradable and carbon-neutral production. Popular with sustainable brands and ESG-conscious companies."}],
+4268	    relatedEntities: {"sameAs": [], "mentions": []},
+4269	    expertReview: {"reviewer": "", "credentials": "", "review": ""},
+4270	    authorBio: {"name": "", "role": "", "bio": ""},
+4271	},
+4272	  // 年曆印刷 (6 SKU)
+4273	  {
+4274	    id: 'CL-001',
+4275	    sku_code: 'CL-001',
+4276	    slug: 'wall-calendars',
+4277	    category: 'calendars',
+4278	    category_slug: 'calendars',
+4279	    name: '掛牆年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Wall Calendars | Wall & Desk Calendars 2027', nameJa: '壁掛けカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '掛牆年曆 · 訂製',
+4280	    description: '標準A3或A2掛牆年曆，13頁設計（封面+12個月）。適合家庭、辦公室使用，全年品牌曝光。', descriptionEn: 'Standard A3 or A2 wall calendars, 13-page design. Perfect for home and office use.', descriptionJa: '標準A3またはA2壁掛けカレンダー、13ページデザイン。家庭やオフィスに最適。', description_zh: '標準A3或A2掛牆年曆，13頁設計（封面+12個月）。適合家庭、辦公室使用，全年品牌曝光。',
+
+============================== sku-seo cartoon (L1322-L1360) ==============================
+1322	  "cartoon-red-packets": {
+1323	    "name": {
+1324	      "zh-hk": "卡通利是封",
+1325	      "en": "Cartoon Red Packets",
+1326	      "ja": "キャラクターポチ袋"
+1327	    },
+1328	    "seo": {
+1329	      "zh-hk": {
+1330	        "title": "卡通利是封印刷 | 燙金 局部UV | 100個起 HK$1.10起 | 智印港",
+1331	        "description": "智印港卡通利是封印刷：以客戶插畫或吉祥物稿件印製，120g 銅版紙或環保紙配四色數碼印刷，可選燙金或局部 UV。100 個起 HK$1.10 起，標準 90×170mm 並支援異形刀模，3-5 個工作天交貨，30 秒 AI 報價。",
+1332	        "h1": "卡通利是封印刷 — 插畫與吉祥物稿件，100 個起訂製",
+1333	        "keywords": ["卡通利是封","利是封","利是封印刷","春聯","中秋賀卡","聖誕卡","婚禮請柬","嬰兒滿月卡","感謝卡","燙金紅包"],
+1334	        "body": "卡通利是封以可愛設計取勝，深受年輕一代喜愛。新春期間，無論是送給小朋友的壓歲利是，還是親友之間的賀歲心意，活潑的卡通圖案都能令祝福更有趣味。對親子品牌、教育機構與兒童產品相關企業來說，一套可愛討喜的利是封，正好配合品牌調性，讓小朋友與家長都留下深刻印象。\n\n揀卡通利是封之前，先分清三條路線。第一條是「自家吉祥物」——把品牌角色固定下來，每年只換動作與祝福語，兩三年就累積成品牌資產；第二條是「節慶插畫」——生肖、年花、賀年食品等通用題材，起訂彈性最高，適合首次試水或小批量派發；第三條是「聯乘圖稿」——與插畫師或 IP 合作的限定設計，通常配燙金或局部 UV 令畫面更立體。三條路線的刀模與尺寸可以共用（標準 90×170mm，亦可選大號 100×190mm 或豪華 120×220mm），分別主要在於稿件來源與授權安排，建議在打樣前先確認圖稿使用範圍。\n\n卡通利是封採用 120g 銅版紙或環保紙，標準尺寸約 90×170mm，以四色數碼印刷呈現色彩鮮明的卡通角色與插畫，可按設計選配燙金或局部 UV，提升質感之餘亦保持親和力。學校、補習社、兒童用品店與親子活動主辦方進行利是封印刷時，卡通風格往往比傳統款式更易引起共鳴，亦適合用於品牌聯乘與節日推廣。\n\n卡通利是封選用 120g 銅版紙或環保紙，標準尺寸約 90×170mm，印刷方式為四色數碼印刷，燙金與局部 UV 可按設計選配。下單時附上插畫或設計檔案，廠方免費 AI 預檢並確認打樣；正常交期約 3-5 個工作天，港九新界免費速遞。\n\n卡通利是封 100 個起印，價格由 HK$1.10-3.80/個 起，實際收費視乎紙材、印刷數量與選配工藝而定，批量訂購可向智印港查詢更優惠的報價。"
+1335	      },
+1336	      "en": {
+1337	        "title": "Custom Cartoon Red Packets | 100 MOQ $0.46 | ZprintPro",
+1338	        "description": "Cartoon red packet printing from your own illustration or mascot artwork, four-colour digital print on 120gsm art or eco paper, with optional gold foil or spot UV. 100 pcs MOQ from US$0.46, standard 90x170mm, free die-cutting, 3-5 business day production and a 30-second AI quote.",
+1339	        "h1": "Cartoon Red Packet Printing: Your Artwork, 100 pcs MOQ",
+1340	        "keywords": ["cartoon red packets","custom cartoon red packets","cartoon red packets printing online","cartoon red packets free shipping","bulk cartoon red packets","cartoon red packets DHL","bespoke cartoon red packets","cartoon red packets wholesale","cartoon red packets pricing","red packet printing"],
+1341	        "body": "ZprintPro cartoon red packets bring a playful twist to the Lunar New Year tradition, pairing cheerful characters with festive red. Younger generations love them, and they make lucky-money gifting feel fresh while keeping the ritual intact. Production is ISO 9001 certified with FSC-conscious materials, and orders are confirmed for print the same day.\n\nBefore you choose a cartoon design, decide which of three routes you are on. The first is your own mascot: fix the character once, then change only the pose and the greeting each year, so the artwork compounds into brand equity. The second is festive illustration, such as zodiac animals, New Year flowers or festive foods, which is the most flexible route for a first run or a small giveaway. The third is a collaboration piece with an illustrator or a licensed character, usually finished with foil or spot UV so the artwork lifts off the paper. All three routes share the same die and size options (standard 90x170mm, plus large 100x190mm or premium 120x220mm); what differs is where the artwork comes from and how usage rights are arranged, so settle both before proofing.\n\nFamilies choose cartoon designs for children's hongbao during Spring Festival, and schools and cultural groups hand them out at New Year activities. Child-focused brands, toy retailers, and baby-product companies add them to seasonal gift sets and store displays, because the artwork speaks directly to kids and their parents. For e-commerce brands, a cartoon red packet tucked into a Spring Festival order turns a transaction into a celebration.\n\nFor community events and Lunar New Year fairs across the diaspora, cartoon red packets make the tradition accessible to a new generation while still holding cash, candy, or small surprises. They work equally well as staff giveaways in shops that target young families, adding a cheerful touch that plain envelopes cannot match.\n\nMade from 120g red paper with a festive texture and balanced stiffness, cartoon red packets are printed in four-color digital print so gold text and lively artwork stay bright. The standard size is about 90×170mm, and either shaped die-cut or the classic rectangle is available using the free die template. An optional gold foil finish holds ±0.3mm positioning precision, keeping fine lines clean.\n\nPricing is HK$1.10–3.80 per piece with a minimum order of 100 pieces; small batches run digital while larger volumes switch to offset for economy. Note that the three weeks before Lunar New Year are the peak production window, so ordering early is recommended. DHL Express or FedEx delivers in 3–5 days to the USA and 2–4 days to Japan, with free US shipping over $100 and worldwide delivery to more than 50 countries.\n\n**FAQ**\n\n**Q1: Can I print my own characters or logo?**\nYes — four-color digital printing handles custom artwork, and a free die template lets you choose shaped or standard rectangle formats.\n\n**Q2: What is the standard size?**\nAbout 90×170mm, with shaped die-cut options available on request.\n\n**Q3: When should I order for Lunar New Year?**\nThe three weeks before the festival are the busiest production period, so ordering early keeps your gifts on schedule.\n\nMake this year's red packets the liveliest on the table — click the 30-second AI quote button for an instant price, or message us on WhatsApp at +86 198 8085 1334 for a free digital proof within 1 hour."
+1342	      },
+1343	      "ja": {
+1344	        "title": "キャラクターポチ袋｜イラスト｜100枚〜 ¥64〜｜ZprintPro",
+1345	        "description": "キャラクターポチ袋のオリジナル印刷は100枚から、1枚¥64〜。お客様のイラストやマスコット原稿を120gコート紙またはエコ紙に4色デジタル印刷、箔押し・スポットUVも選択できます。標準90×170mm・型代無料、納期3〜5営業日。30秒AI見積り。",
+1346	        "h1": "キャラクターポチ袋の印刷 100枚〜：イラスト原稿に4色デジタル印刷・箔押し対応",
+1347	        "keywords": ["cartoon red packets","紅包印刷","旧正月","箔押し紅包","オリジナル紅包","キャラクター紅包","中華風招待状","挨拶状","24時間出荷","UV 招待状"],
+1348	        "body": "かわいいキャラクターデザインのポチ袋は、お年玉やイベントのノベルティとして若い世代に人気です。ZprintPro のキャラクターポチ袋印刷は、親しみやすいイラストを高品質な印刷で仕上げ、透明な価格と迅速な納品でご提供します。\n\nキャラクターデザインを選ぶ前に、3つの進め方を整理しておきましょう。1つ目は「自社マスコット」——キャラクターを一度決めれば、毎年ポーズと挨拶文だけを変えて更新でき、作り重ねるほどブランド資産になります。2つ目は「季節イラスト」——干支や正月飾り、縁起物など定番モチーフで、初回の試作や少ロット配布に向いています。3つ目は「イラストレーター・IPとのコラボ」——限定デザインに箔押しやスポットUVを重ねると、絵柄が紙から浮き上がる立体感を出せます。どのルートも型とサイズは共通（標準90×170mm、大判100×190mm、プレミアム120×220mm）で、違いは原稿の出所と使用許諾の範囲です。校正前に必ず確認しておきましょう。\n\n保育園・幼稚園の新年行事やこども会では、キャラクター柄のポチ袋が子どもたちに大人気。親子ブランドの販促ノベルティや、カフェ・雑貨店の季節限定グッズとしてもご好評をいただいています。四色印刷なら、細かいイラストの色合いも鮮やかに再現できます。\n\nポチ袋印刷のご注文は100個から承ります。型抜きは無料で、標準の長方形に加えてハート形などの異形デザインも選択可能。キャラクターデザインに合わせた形状で、オリジナリティを一段と高められます。\n\n素材は120g〜150gの赤い紙を使用し、お祝いの質感と適度な腰を両立しました。四色デジタル印刷で金文字や模様を鮮やかに、色褪せしにくく仕上げます。オプションの箔押しやスポットUV加工にも対応し、±0.3mm精度の箔押しで細い線もくっきりと表現します。\n\n価格はHK$1.10〜3.80/個（100個から）です。旧正月の3週間前は繁忙期のため、余裕を持ったご注文をおすすめします。標準納期は3〜5営業日、急ぎの場合は24〜48時間以内にも対応し、DHL・FedExで日本全国へ2〜4日でお届けします。\n\n原稿仕様：印刷データはAI・PDF・EPS形式でご入稿ください。解像度は300DPI以上、カラーモードはCMYK、塗り足し3mmを推奨します。フォントはアウトライン化してください。箔押しやスポットUVなどの加工位置は、K100黒版で指定いただくと確実です。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 最小注文数はいくつですか？**\nZprintProのほとんどの商品は50〜100個/部/枚から注文できます。当商品は100個から承り、即日少量の急ぎは10枚から対応しています。大量注文は段階割引がありますので、お気軽にご相談ください。\n\n**Q2: 印刷と納品にはどのくらい時間がかかりますか？**\n標準納期は3〜5営業日、急ぎの場合は24〜48時間以内に対応します。完成後はDHL・FedExで日本全国へ2〜4日でお届けします。\n\n**Q3: 入稿データの仕様を教えてください。**\nAI・PDF・EPS形式で、300dpi以上、CMYKカラーモード、3mmの塗り足しを推奨します。フォントはアウトライン化し、加工位置はK100黒版でご指定ください。\n\nかわいいキャラクターポチ袋で、お年玉の時間をもっと楽しく。日本語対応スタッフが無料でお見積りいたします。WhatsAppまたはお問い合わせフォームから、デザインと数量をお送りください。"
+1349	      }
+1350	    },
+1351	    "faqs": [],
+1352	    "imageAlt": {
+1353	      "zh-hk": "利是封印刷 / 卡通 / 春節紅包 | 香港卡通利是封印刷 120g銅版紙 彩色 100個起印 | 智印港",
+1354	      "en": "Red Packet Printing / Cartoon / Lunar New Year | Cartoon Red Packets 120gsm Art Paper, 100 pcs MOQ | ZprintPro",
+1355	      "ja": "ポチ袋印刷 / 旧正月 / キャラクター | キャラクターポチ袋 120gコート紙・100枚から | ZprintPro"
+1356	    }
+1357	  },
+1358	  "eco-red-packets": {
+1359	    "name": {
+1360	      "zh-hk": "環保利是封",
+
+============================== sku-seo eco (L1358-L1396) ==============================
+1358	  "eco-red-packets": {
+1359	    "name": {
+1360	      "zh-hk": "環保利是封",
+1361	      "en": "Eco Red Packets",
+1362	      "ja": "エコポチ袋"
+1363	    },
+1364	    "seo": {
+1365	      "zh-hk": {
+1366	        "title": "環保利是封 燙金・覆膜・100起印・HK$1.90起 | 智印港",
+1367	        "description": "環保利是封/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
+1368	        "h1": "採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。智印港提供專業環保利是封服務，香港本地印刷，品質保證，價格透明。",
+1369	        "keywords": ["環保利是封","利是封","利是封印刷","利是封訂製","春聯","中秋賀卡","聖誕卡","婚禮請柬","嬰兒滿月卡","感謝卡"],
+1370	        "body": "環保利是封以可持續發展為理念，採用 FSC 認證再生紙或種子紙，配合大豆油墨印刷，派利是之餘亦傳遞對環境的尊重。新春過後大量利是封被丟棄，選用環保材質可大大減輕浪費，種子紙更可種出植物，令祝福延續下去，特別適合注重環保的企業、社企與 ESG 相關機構。\n\n對重視品牌價值的企業而言，一張印有環保承諾的利是封，本身就是最好的企業社會責任宣傳。環保利是封以四色數碼或柯式印刷呈現設計，紙面不覆膜，觸感自然樸實，配合簡約祝福語與品牌標誌，便可在節日期間傳遞理念；利是封印刷過程加入再生紙與大豆油墨選項，令節日營銷更具內涵。\n\n訂製利是封選用 FSC 認證再生紙或種子紙，標準尺寸約 90×170mm，印刷方式為四色數碼或柯式印刷，紙面不覆膜，保持天然環保質感。落單前交出設計檔案，廠方免費 AI 預檢並與您確認打樣；約 3-5 個工作天完成生產，港九新界免運費直送。\n\n環保利是封 100 個起印，價格由 HK$1.90-5.20/個 起，實際收費視乎紙材與印刷方式而定，批量訂購可向智印港查詢專屬報價。"
+1371	      },
+1372	      "en": {
+1373	        "title": "Eco Red Packets | 100 MOQ $0.74 | Free Ship | ZprintPro",
+1374	        "description": "Custom eco red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
+1375	        "h1": "Eco Red Packets 100+ | Gold Foil Print | ZprintPro",
+1376	        "keywords": ["eco red packets","custom eco red packets","eco red packets printing online","eco red packets free shipping","bulk eco red packets","eco red packets DHL","bespoke eco red packets","eco red packets wholesale","eco red packets pricing","red packet printing"],
+1377	        "body": "ZprintPro eco red packets prove that festive tradition and sustainability can share one envelope. Printed on FSC-certified recycled paper or seed paper with soy-based ink, they are lamination-free and can degrade naturally — some versions can even be planted. Production is ISO 9001 certified, and files are confirmed for print the same day.\n\nSustainability-minded companies choose eco red packets for their Lunar New Year CSR programs, and green brands and organic retailers give them to customers as gifts that match their values. Community groups and schools use them in New Year celebrations that double as environmental education, letting families talk about composting and planting while the hongbao is still in their hands.\n\nEco-conscious families appreciate a red packet they can compost or plant instead of tossing in the bin after the holiday, and wedding couples planning low-waste celebrations pick them for guest gifts. For brands that report on environmental commitments, choosing recycled or seed paper is a small, visible gesture that buyers notice.\n\nThe standard size is about 90×170mm, printed in four-color digital or offset on FSC-certified recycled or seed paper with soy-based ink. The paper keeps the festive red look with balanced stiffness, and the finish is deliberately lamination-free so the whole packet stays biodegradable. A free die template allows shaped or standard rectangle formats.\n\nPricing runs HK$1.90–5.20 per piece with a minimum order of 100 pieces; digital suits small runs while offset covers larger volumes. As with all red packets, the three weeks before Lunar New Year are the peak window, so early ordering is wise. DHL Express or FedEx delivers in 3–5 days to the USA and 2–4 days to Japan, with free US shipping over $100 and worldwide delivery to more than 50 countries.\n\n**FAQ**\n\n**Q1: What makes these packets eco-friendly?**\nThey are printed on FSC-certified recycled paper or seed paper with soy-based ink and no plastic lamination, so they can degrade naturally — seed-paper versions can even be planted.\n\n**Q2: Do eco packets still look festive?**\nYes — the recycled and seed papers keep the traditional red tone with good stiffness and full-color printing.\n\n**Q3: Can I customise the design?**\nYes — four-color digital or offset printing accepts your artwork, and a free die template covers shaped or standard rectangle formats.\n\nCelebrate sustainably this Lunar New Year — click the 30-second AI quote for an instant price, or WhatsApp +86 198 8085 1334 for a free digital proof within 1 hour."
+1378	      },
+1379	      "ja": {
+1380	        "title": "エコポチ袋｜再生紙 箔押し｜100枚〜 ¥103〜｜ZprintPro",
+1381	        "description": "エコ年賀状のエコ年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+1382	        "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
+1383	        "keywords": ["eco red packets","紅包印刷","旧正月","箔押し紅包","オリジナル紅包","キャラクター紅包","中華風招待状","挨拶状","24時間出荷","UV 招待状"],
+1384	        "body": "環境に優しい紙とインクで作るエコポチ袋は、持続可能な開発への想いを形にする贈り物です。ZprintPro のエコポチ袋印刷は、再生紙や種子紙を使いながら高品質な仕上がりを実現し、透明な価格と迅速な納品でご提供します。\n\n企業のサステナビリティ活動やSDGsの取り組みとして、エコ素材のポチ袋はお客様に好印象を与えます。エシカル消費に関心の高い若い世代や、自然派ブランドのギフト・ノベルティにもぴったり。お年玉やギフトカードを包むだけでなく、贈る側の思いやりも一緒に届けられます。\n\nFSC認証の再生紙はリサイクル性が高く、種子紙は使い終わった後に植えると花やハーブが育つユニークな素材です。ポチ袋印刷でありながら環境負荷を抑えたいという方に、ぜひお試しいただきたいラインナップです。\n\n素材はFSC認証の再生紙または種子紙を使用し、インクは大豆油インクを採用。コーティングを施さない無覆膜仕上げで、紙本来の風合いを活かしています。四色デジタルまたはオフセット印刷で、赤を基調とした鮮やかなデザインを表現できます。標準サイズは約90×170mmです。\n\n価格はHK$1.90〜5.20/個（100個から）です。旧正月の3週間前は繁忙期ですので、余裕をもってご注文ください。標準納期は3〜5営業日、急ぎは24〜48時間以内に対応し、DHL・FedExで日本全国へ2〜4日でお届けします。\n\n原稿仕様：印刷データはAI・PDF・EPS形式でご入稿ください。解像度は300DPI以上、CMYKカラーモード、塗り足し3mmを推奨します。フォントはアウトライン化してください。箔押しなどのオプション加工を使う場合は、K100黒版で位置をご指定ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 注文できる最小の数量は？**\nZprintProのほとんどの商品は50〜100個/部/枚からです。本商品も100個からご注文いただけます。少量の即日対応は10枚から、大量注文は段階割引があります。\n\n**Q2: お届けまでの日数は？**\n標準納期は3〜5営業日、お急ぎなら24〜48時間以内に対応できます。日本全国にはDHL・FedExで2〜4日でお届けします。\n\n**Q3: 入稿データの仕様は？**\nAI/PDF/EPS形式で、300dpi以上、CMYKモード、3mmの塗り足しを推奨します。フォントはアウトライン化してください。\n\nエコポチ袋で、環境にやさしい新年のご挨拶を。無料のお見積りは日本語対応スタッフが承ります。WhatsAppまたはお問い合わせフォームからお気軽にご連絡ください。"
+1385	      }
+1386	    },
+1387	    "faqs": [],
+1388	    "imageAlt": {
+1389	      "zh-hk": "利是封印刷 / 環保 / 春節紅包 | 香港環保利是封印刷 FSC認證再生紙 無覆膜 100個起印 | 智印港",
+1390	      "en": "Red Packet Printing / Eco / Lunar New Year | Eco Red Packets FSC Recycled Paper Unlaminated, 100 pcs MOQ | ZprintPro",
+1391	      "ja": "ポチ袋印刷 / 旧正月 / エコ | エコポチ袋 FSC再生紙 無PP加工・100枚から | ZprintPro"
+1392	    }
+1393	  },
+1394	  "large-red-packets": {
+1395	    "name": {
+1396	      "zh-hk": "大號利是封",
+
+============================== sku-seo large (L1394-L1432) ==============================
+1394	  "large-red-packets": {
+1395	    "name": {
+1396	      "zh-hk": "大號利是封",
+1397	      "en": "Large Red Packets",
+1398	      "ja": "大判ポチ袋"
+1399	    },
+1400	    "seo": {
+1401	      "zh-hk": {
+1402	        "title": "大號利是封印刷 | 燙金 局部UV | 100個起 HK$2.20起 | 智印港",
+1403	        "description": "大利是封/大利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
+1404	        "h1": "加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。智印港提供專業大號利是封服務，香港本地印刷，品質保證，價格透明。",
+1405	        "keywords": ["大利是封","利是封","利是封印刷","春聯","中秋賀卡","聖誕卡","婚禮請柬","嬰兒滿月卡","感謝卡","燙金紅包"],
+1406	        "body": "大號利是封以加大尺寸設計，約 110×200mm，比標準款式大約 30% 至 50%，可以放入更多鈔票、利是錢或禮品卡，實用大氣，送禮更有面子。新春拜年、開年派利是或婚宴回禮時，一封分量十足的利是封，往往令收禮者感受到更濃厚的誠意與喜慶氣氛。\n\n大號利是封特別適合企業開年團拜、客戶禮贈、婚宴喜慶與酒店迎賓等需要大方得體的場合。採用 150g 至 200g 紅色紙張，紙身挺括厚實，配合四色印刷與燙金，並可按設計加上浮雕或局部 UV，令大尺寸設計更具氣派；進行利是封印刷時選擇加大款式，能讓品牌祝福更顯分量。無論是公司開年還是客戶答謝，大號利是封都能同時兼顧體面與實用。\n\n大號利是封選用 150g–200g 紅色紙張，尺寸約 110×200mm，較標準款式大 30%–50%；印刷方式為四色印刷配合燙金，另可選擇浮雕或局部 UV 點綴。設計稿提交後廠方提供免費 AI 預檢與打樣確認，隨即排期生產；標準交期 3-5 個工作天，港九新界免費速遞送抵。\n\n大號利是封 100 個起印，價格由 HK$2.20-7.50/個 起，實際收費視乎紙材與工藝組合而定，批量訂購可向智印港查詢更優惠的報價。"
+1407	      },
+1408	      "en": {
+1409	        "title": "Large Red Packets | 100 MOQ $0.92 | Free Ship | ZprintPro",
+1410	        "description": "Custom large red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
+1411	        "h1": "Large Red Packets 100+ | ZprintPro",
+1412	        "keywords": ["large red packets","custom large red packets","large red packets printing online","large red packets free shipping","bulk large red packets","large red packets DHL","bespoke large red packets","large red packets wholesale","large red packets pricing","red packet printing"],
+1413	        "body": "ZprintPro large red packets give you room to give generously. Sized about 110×200mm — roughly 30–50% bigger than the standard — they hold thicker envelopes of cash, gift cards, and lucky money without bulging. Production is ISO 9001 certified with FSC-conscious materials, and files are confirmed for print the same day.\n\nFamilies choose large red packets for milestone celebrations, wedding banquets, and multi-banknote hongbao where the amount deserves a bigger envelope. Employers use them at annual dinners and bonus ceremonies, and retailers pair them with gift cards during Spring Festival promos. Because they hold more, they are also the choice for hotel welcome gifts and premium client packs.\n\nFor overseas Chinese communities, a generous-sized red packet carries extra meaning at New Year visits and reunion dinners, making the gesture feel bigger before the gift is even opened. Brands that want their gift to stand out in a stack of envelopes will find the larger format draws the eye first.\n\nPrinted in four-color with gold foil on 150g–200g red paper, large red packets keep a sturdy, festive feel despite the bigger footprint. Finishing options include foil stamping, embossing, and spot UV. The enlarged format is about 110×200mm, and a free die template covers shaped or standard rectangle options.\n\nPricing runs HK$2.20–7.50 per piece with a minimum order of 100 pieces; digital suits small batches and offset handles large volumes. Remember that the three weeks before Lunar New Year are the peak production window, so order early. DHL Express or FedEx delivers in 3–5 days to the USA and 2–4 days to Japan, with free US shipping over $100 and worldwide delivery to more than 50 countries.\n\n**FAQ**\n\n**Q1: How much bigger is a large red packet?**\nAt about 110×200mm, it is roughly 30–50% larger than the standard size, with room for thicker gifts and multiple banknotes.\n\n**Q2: Will it still hold its shape?**\nThe 150g–200g red paper keeps the envelope sturdy and festive even at the larger size.\n\n**Q3: Can I add foil or embossing?**\nYes — gold foil, embossing, and spot UV finishing are available.\n\nGive a little extra this year — start with the 30-second AI quote, or message us on WhatsApp at +86 198 8085 1334 for a free digital proof within 1 hour."
+1414	      },
+1415	      "ja": {
+1416	        "title": "大判ポチ袋｜箔押し UV 厚紙｜100枚〜 ¥129〜｜ZprintPro",
+1417	        "description": "大型年賀状の大型年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+1418	        "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
+1419	        "keywords": ["large red packets","紅包印刷","旧正月","箔押し紅包","オリジナル紅包","キャラクター紅包","中華風招待状","挨拶状","24時間出荷","UV 招待状"],
+1420	        "body": "標準よりひと回り大きな大判ポチ袋は、厚めの現金やギフトカードもゆったり収まる便利なサイズです。ZprintPro の大判ポチ袋印刷は、高品質・透明な価格・迅速な納品でご提供します。\n\n目上の方へのお年玉や、結婚式のご祝儀返し、企業の賞与・寸志の贈呈など、包む金額が厚くなるシーンほど大判サイズが重宝します。ギフトカードや商品券を折り曲げずにスマートに収納したい場合にもぴったりです。\n\n式典やイベントの景品、茶ギフトなど高級品の贈答用ラッピングとしてもご好評です。約110×200mmの大判サイズは、標準のポチ袋より30%〜50%大きな容量を確保しています。ポチ袋印刷の中でも「ゆとりのある見た目」を求める方におすすめです。\n\n素材は150g〜200gの赤色紙を使用し、大きいサイズでも型崩れしにくいしっかりとした腰に仕上げました。四色印刷と箔押しの組み合わせで、金文字や模様を鮮やかに表現します。オプションのエンボスやスポットUV加工を加えれば、より豪華な質感を演出できます。\n\n価格はHK$2.20〜7.50/個（100個から）です。旧正月の3週間前は繁忙期となりますので、早めのご注文を推奨します。標準納期は3〜5営業日、急ぎは24〜48時間以内に対応し、DHL・FedExで日本全国へ2〜4日でお届けします。\n\n原稿仕様：データはAI・PDF・EPS形式でご入稿ください。解像度300DPI以上、CMYKカラーモード、塗り足し3mmを推奨します。フォントはアウトライン化してください。箔押しやエンボスの位置はK100黒版で指定いただけます。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 最小注文数はいくつですか？**\nZprintProのほとんどの商品は50〜100個/部/枚からです。当商品は100個からご注文いただけます。即日少量の急ぎは10枚から、大量注文は段階割引に対応しています。\n\n**Q2: 印刷から納品までの日数は？**\n標準納期は3〜5営業日、お急ぎの場合は24〜48時間以内に対応します。完成後はDHL・FedExで日本全国へ2〜4日でお届けします。\n\n**Q3: 入稿データの仕様を教えてください。**\nAI・PDF・EPS形式で、300dpi以上、CMYKカラーモード、3mmの塗り足しを推奨します。フォントはアウトライン化し、加工位置はK100黒版でご指定ください。\n\n大きめのお年玉もスマートに包める大判ポチ袋。無料のお見積りは日本語で対応いたします。WhatsAppまたはお問い合わせフォームからお気軽にご連絡ください。"
+1421	      }
+1422	    },
+1423	    "faqs": [],
+1424	    "imageAlt": {
+1425	      "zh-hk": "利是封印刷 / 大號 / 春節紅包 | 香港大號利是封印刷 150g–200g紅色紙張 100個起印 | 智印港",
+1426	      "en": "Red Packet Printing / Large Size / Lunar New Year | Large Red Packets 150–200gsm, 100 pcs MOQ | ZprintPro",
+1427	      "ja": "ポチ袋印刷 / 旧正月 / 大判 | 大判ポチ袋 150g–200g・100枚から | ZprintPro"
+1428	    }
+1429	  },
+1430	  "wall-calendars": {
+1431	    "name": {
+1432	      "zh-hk": "掛牆年曆",

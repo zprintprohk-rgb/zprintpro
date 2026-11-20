@@ -1,3 +1,45 @@
+<!-- COORDINATED-FLYWHEEL-2026-11-14 BEGIN -->
+# 2026-11-14 协同飞轮：统一证据供给与复测交接
+
+1. **先消费同一协同板**：读 `run-context-ZP-gsc-feedback.json` 的 `coordination` 与 `.hermes/logs/coordination-board.json`，只处理本车道 READY 的测量任务。保留每项 query／baseline／window／export_date；缺精确行写 `NO_CURRENT_BASELINE`，缺 query×page 写 `CANNIBALIZATION_NOT_MEASURABLE`。
+2. **本车道职责**：向 weekly 提供首页零点击 CTR 证据，向 daily／Blog 提供深位词、连续两窗恶化与真值诊断输入，向 k3／monthly 提供可比复测；不直接写长文、不改 title、不做 canonical／301。
+3. **交接纪律**：每项含 owner／baseline／approval_gate／retry_at／production_deploy／online_verify／retest／exit_criteria；同一 GSC export + query + route 幂等消费，窗口移动只判方向，不判实验胜负，不推询盘／订单／收入结论。
+4. **降级与停止**：协同板构建失败必须 BLOCKED；可选输入缺失标 `available:false` 并保留最近真实日期，不伪造今日数据。SERP 不可达写 `SERP_UNAVAILABLE`，不得猜真实展示标题或摘要。
+<!-- COORDINATED-FLYWHEEL-2026-11-14 END -->
+
+<!-- TRUTH-CTR-MEASUREMENT-2026-11-13 BEGIN -->
+# 2026-11-13 当前执行块：真实数据日期、晚到补消费与 CTR 分流
+
+1. **窗口日期从工作簿读取**：24h／7d／28d 的实际 start/end 必须取当前 xlsx 的 Summary／window 元数据，禁止固定写 lag=3；导出日不等于数据结束日。最新完整复核资产为 `gsc-2026-11-12-four-window-analysis.json`，其 7d／28d 均结束于 2026-11-10。
+2. **晚到导出只补消费一次**：若本轮结束后出现新导出，下轮标记 `LATE_ARRIVAL_BACKFILL`，记录 export_date／window_end／content_hash；同一导出不得重复派单，缺新档则明确沿用最近档，不伪造今日数据。
+3. **query×page 缺失即不可测**：没有同窗口逐词逐页表时写 `CANNIBALIZATION_NOT_MEASURABLE`，不得确认或否认蚕食；query／page／country 独立表不得拼接。海报／喜帖主承接份额按 2026-11-21 同基线复测。
+4. **先真值后 CTR**：首页高展示零点击词先保存真实 SERP title／snippet、query×page 和可见采购信息；价格／MOQ／交期／尺寸冲突先进入 WAITING_K3，不拿未拍板数字改 title／FAQ／schema。7d 短窗不单独派单，24h 不作趋势。
+5. **真实 verdict**：完整四字段的 OK／PARTIAL／NO_OP 都可正常收尾；PARTIAL 只跟进 NEXT 并进 ATTENTION，NO_OP 不重试，FAILED／BLOCKED／STALE 仍拒绝。不得把 PARTIAL 写成 OK 或旧规则误判 STALE。
+<!-- TRUTH-CTR-MEASUREMENT-2026-11-13 END -->
+
+<!-- FLYWHEEL-MEASUREMENT-2026-11-07 BEGIN -->
+# 2026-11-07 当前执行块：四窗差分与可复测交接
+
+1. **测量顺序**：结果总线与锁之后，读取最新 24h／7d／28d／3mo 原始档和 `gsc-*-four-window-analysis.json`、`gsc-*-money-keyword-delta.json`。今日无 3mo 新档时必须沿用最近档并标日期，不得伪称今日三个月数据。
+2. **同口径比较**：24h 只作健康信号；7d 报风险；28d 判断连续两窗方向；3mo 只作背景。正负位置 delta 必须同窗口、同 xlsx 口径，query／page／country 独立表不得拼接成 locale KPI。
+3. **重点词交接**：首页零点击以 `FIX → ZP-weekly-meta` 提案；连续两窗恶化或跌出首页以 `MEASURE → 根因诊断` 提案；缺当前精确行只记 `NO_CURRENT_BASELINE`，不沿用旧值、不派内容任务；7d 短窗恶化不得单独派单。
+4. **每项交接必填**：`owner_lane / baseline / required_action / approval_gate / retry_at / cooldown_days / production_deploy / online_verify / retest / exit_criteria`。同因只 recurrence，不重复派单；窗口移动不判实验胜负。
+5. **状态闸门**：lane-status 超过 1 天或生成时间未知即 `STALE_STATUS`，先刷新 bus＋scheduler 对账，不能用旧 verdict 自动派运维修复。最新 xlsx 存在不证明 API 平面新鲜。
+<!-- FLYWHEEL-MEASUREMENT-2026-11-07 END -->
+
+<!-- EVIDENCE-LEARNING-CLOSED-LOOP-2026-11-03 BEGIN -->
+# 2026-11-03 最新执行块：证据分流与学习闭环
+
+> 本块是当前执行口径，置于历史恢复／增产指令之前；不取代 K3 拍板、AGENTS.md、结果总线契约和商业真值门禁。配置文本更新不等于自然定时调度已验证恢复。
+
+1. **先读证据再选题**：依次消费结果总线、不晚于当日的最新 `.hermes/logs/gsc-daily-anomaly-*.json`、最新 `.hermes/logs/periodic-review-weekly-*.json`（月度再加 `periodic-review-monthly-*`）、`evidence_handoffs`、本车道队列及上轮报告。缺失可选输入必须写 `available:false`，不得编造。
+2. **统一口径**：xlsx 文件新鲜不代表 API 平面新鲜；首个 `RECOVERY` 值必须使用当日 detector 的 `recovery_ratio_vs_mean28_dynamic`。123.7% 是 2026-11-03 全国家曝光指标口径，不等于排名、处罚、询盘、订单或收入恢复。
+3. **FIX／MEASURE／SCALE 分流**：页一高展示零点击只进入 FIX 候选，先记录 SERP feature 与真实 title/snippet，再决定单变量修改；深位词、query×page 分散和 AI 缺席进入 MEASURE，不直接发长文、301、canonical 或 noindex；只有 `baseline + change + production_deploy + online_verify + retest + scale_evidence` 全部齐全才可 SCALE。
+4. **实验账本**：每项 FIX 必须记录审批门、冻结 baseline、唯一变更、production deploy／CF 状态、线上核验、D1/D2 健康检查及 7/14/28 天复测、结果、失败原因和下一动作。窗口移动只是观察，不是实验胜负。
+5. **重试与退出**：同因失败不得无间隔重试；写明 retry_at／cooldown、恢复条件和 owner。复测完成、WAITING_K3、BLOCKED_INFRA 或有依据的 NO_OP 都是合法退出，禁止为产文而产文。
+6. **学习只沉淀证据**：周／月反馈由既有 `scripts/strategy-feedback.py` 生成；未部署或缺 online_verify 不得进入学习候选。不得自行放宽权限、自批准 WAITING_K3、自动改写共享 prompt，或新建 cron／Kimi Automation。
+<!-- EVIDENCE-LEARNING-CLOSED-LOOP-2026-11-03 END -->
+
 <!-- RECOVERY-MODE-2026-10-12 BEGIN -->
 > # 🚨 【恢复模式 · 限定凌驾级】spam 命中恢复期 (K3 2026-10-12 拍板 · SSoT: `docs/2026-10-12-recovery-lane-defense-plan.md`)
 >

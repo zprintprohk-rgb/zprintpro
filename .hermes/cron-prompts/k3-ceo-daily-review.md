@@ -1,3 +1,35 @@
+<!-- COORDINATED-FLYWHEEL-2026-11-14 BEGIN -->
+# 2026-11-14 协同飞轮：日协调、独立生产验收与次日派单
+
+1. **先消费同一协同板**：读 `run-context-ZP-k3-review.json` 的 `coordination`、`.hermes/logs/coordination-board.json`、lane-status 与 recent bus。按 lane 汇总 READY／WAITING_K3／BLOCKED_INFRA／MEASURE_HOLD，次日指令不得越权改状态。
+2. **独立验收优先**：`VERIFY-FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL` 为 READY 时，只核查 Cloudflare 部署证据与线上 URL 断言；ff97d235／push 只能证明代码推送，线上未核实前保持 PENDING，不重做 daily 的源修改。
+3. **本车道职责**：检查各车道是否消费同一 baseline、是否同文件撞车、是否缺 production_deploy／online_verify／retest，再把未完成交接退回原 owner；不替 GSC 造数、不替 weekly 自批 snippet、不替 Blog 产文。
+4. **运行与业务分账**：2147946720、自然缺跑和协同板构建失败单列；手动 Harness、报告存在、隔离测试通过均不证明自然调度恢复。GSC 只说明搜索表现，AI 引用和转化仍按各自实测门槛。
+<!-- COORDINATED-FLYWHEEL-2026-11-14 END -->
+
+<!-- TRUTH-CEO-REVIEW-2026-11-13 BEGIN -->
+# 2026-11-13 当前执行块：真实完成度与商业裁决优先级
+
+1. `days[].status` 现含 `OK|PARTIAL|NO_OP|MISSING|FAILED|BLOCKED|STALE|PENDING`；PARTIAL=completed+ATTENTION，只跟进 NEXT，NO_OP=completed 且不重试。不得把 PARTIAL 写成 OK，也不得把完整真实报告误判为空转。
+2. 首读 `docs/2026-11-13-three-market-seo-aeo-geo-two-week-flywheel.md` 与最新 GSC 复核资产：全站不是全面排名下跌，28d 展示增加、平均位置微升，但点击与 CTR 回落；不得宣称询盘、订单或收入变化。
+3. 第一商业优先级是 posters／stickers／flyers／en small-batch／en catalog／ja 教材与 C109 的商业真值冲突裁决，其次才是首页零点击 CTR 和深层 Blog。未拍板数字只列冲突与推荐裁决流程，不替 K3 选值。
+4. 调度器 LastTaskResult=2147946720 与自然触发缺跑必须独立列出；手动立即执行、wrapper=0、脚本测试通过均不证明自然调度恢复。不得自行改触发时刻或新增任务。
+5. 次日指令只派 bounded 项：owner／baseline／approval／deploy／verify／retest／exit 必填；历史异常若后续已有 OK／PARTIAL／NO_OP 真实终态，读 suppressed_retry_queue 并不再重排。
+<!-- TRUTH-CEO-REVIEW-2026-11-13 END -->
+
+<!-- EVIDENCE-LEARNING-CLOSED-LOOP-2026-11-03 BEGIN -->
+# 2026-11-03 最新执行块：证据分流与学习闭环
+
+> 本块是当前执行口径，置于历史恢复／增产指令之前；不取代 K3 拍板、AGENTS.md、结果总线契约和商业真值门禁。配置文本更新不等于自然定时调度已验证恢复。
+
+1. **先读证据再选题**：依次消费结果总线、不晚于当日的最新 `.hermes/logs/gsc-daily-anomaly-*.json`、最新 `.hermes/logs/periodic-review-weekly-*.json`（月度再加 `periodic-review-monthly-*`）、`evidence_handoffs`、本车道队列及上轮报告。缺失可选输入必须写 `available:false`，不得编造。
+2. **统一口径**：xlsx 文件新鲜不代表 API 平面新鲜；首个 `RECOVERY` 值必须使用当日 detector 的 `recovery_ratio_vs_mean28_dynamic`。123.7% 是 2026-11-03 全国家曝光指标口径，不等于排名、处罚、询盘、订单或收入恢复。
+3. **FIX／MEASURE／SCALE 分流**：页一高展示零点击只进入 FIX 候选，先记录 SERP feature 与真实 title/snippet，再决定单变量修改；深位词、query×page 分散和 AI 缺席进入 MEASURE，不直接发长文、301、canonical 或 noindex；只有 `baseline + change + production_deploy + online_verify + retest + scale_evidence` 全部齐全才可 SCALE。
+4. **实验账本**：每项 FIX 必须记录审批门、冻结 baseline、唯一变更、production deploy／CF 状态、线上核验、D1/D2 健康检查及 7/14/28 天复测、结果、失败原因和下一动作。窗口移动只是观察，不是实验胜负。
+5. **重试与退出**：同因失败不得无间隔重试；写明 retry_at／cooldown、恢复条件和 owner。复测完成、WAITING_K3、BLOCKED_INFRA 或有依据的 NO_OP 都是合法退出，禁止为产文而产文。
+6. **学习只沉淀证据**：周／月反馈由既有 `scripts/strategy-feedback.py` 生成；未部署或缺 online_verify 不得进入学习候选。不得自行放宽权限、自批准 WAITING_K3、自动改写共享 prompt，或新建 cron／Kimi Automation。
+<!-- EVIDENCE-LEARNING-CLOSED-LOOP-2026-11-03 END -->
+
 # K3 复盘 / 次日指令生成器 — SSoT prompt (v2, 2026-09-19 重写)
 
 > **v1 (2026-08-17) 作废原因**: 正文引用 `F:\zprintpro-main-tmp`（worktree 已于 2026-09-17 移除）、`mavis cron`（执行层已迁移）、`.hermes/logs/$(date).md`（`date` 是 bash 语法，Windows 不成立），

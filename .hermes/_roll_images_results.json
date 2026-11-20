@@ -1,0 +1,47 @@
+[
+  {
+    "base": "zprintpro-stickers-roll-stickers-en-4",
+    "status": "OK",
+    "raw_kb": 6629,
+    "webp_kb": 108,
+    "q": 80,
+    "exif_ok": true,
+    "model": "doubao-seedream-5-0-flash-260915"
+  },
+  {
+    "base": "zprintpro-stickers-roll-stickers-ja-1",
+    "status": "OK",
+    "raw_kb": 6835,
+    "webp_kb": 116,
+    "q": 80,
+    "exif_ok": false,
+    "model": "doubao-seedream-5-0-flash-260915"
+  },
+  {
+    "base": "zprintpro-stickers-roll-stickers-ja-2",
+    "status": "OK",
+    "raw_kb": 6756,
+    "webp_kb": 98,
+    "q": 80,
+    "exif_ok": false,
+    "model": "doubao-seedream-5-0-flash-260915"
+  },
+  {
+    "base": "zprintpro-stickers-roll-stickers-ja-3",
+    "status": "OK",
+    "raw_kb": 7142,
+    "webp_kb": 111,
+    "q": 70,
+    "exif_ok": false,
+    "model": "doubao-seedream-5-0-flash-260915"
+  },
+  {
+    "base": "zprintpro-stickers-roll-stickers-ja-4",
+    "status": "OK",
+    "raw_kb": 6137,
+    "webp_kb": 82,
+    "q": 80,
+    "exif_ok": false,
+    "model": "doubao-seedream-5-0-flash-260915"
+  }
+]

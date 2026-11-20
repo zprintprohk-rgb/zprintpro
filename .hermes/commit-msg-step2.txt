@@ -1,0 +1,41 @@
+fix(i18n): Step 2 — price-data 跨语系语言污染源头治理 + 重生成 (禁手搓派生档, SOP-5)
+
+队列依据: K3 2026-09-18 批准「zh-hk/ja 简体污染治理」专项批次 Step 2「治本重生成」
+
+── 根因 ──
+scripts/gen-price-data.mjs 把同一个源头字串写进三个语系键位:
+  label: { 'zh-hk': cfg.config, en: cfg.config, ja: cfg.config }   (L40/50/59/70/79/85 等同构写法)
+cfg.config 来自 PRICE_TABLE_DIR/*.json 的简体中文供应商原始标签
+⇒ 18 SKU / 342 栏位污染: en·ja 含中文 252 栏位、zh-hk 含简体 90 栏位、ja 零假名 121 栏位
+
+── 修法 (零件级术语词典, 非逐条硬翻) ──
+新增 scripts/lib/price-label-i18n.mjs (112 条术语 / 200 键)
+  标签文法稳定 {产品}-{纸张}[{克重}]-{盒型/装订}-{尺寸}-{面数}-{工艺}[…] ⇒ 切片→逐零件映射→按语系重组
+gen-price-data.mjs 改为三语系分别取 localize()/localizeName() + 写盘前断言 + 覆盖前自动备份
+zh-hk 一律源头本地化(繁体港式) / en 门店常用印刷英文 / ja 日文印刷术语
+★ 未手搓 price-data.generated.ts (该档头声明 DO NOT EDIT; 全部改动由重生成产生)
+
+── 交付层独立复核 (不采信专项单元自检) ──
+① 数值零改动 (最高风险项, 决定性比对) —— 排除「语系标签字串」后:
+   数值 token 序列 3137 = 3137, **序列一致 ✅**, 总和 26,841,955.33 = 26,841,955.33 ✅
+   (未排除前 raw 差 27 个 token, 经上下文定位确认全部落在**被翻译的标签字串内嵌数字**
+    如 350g / 90X60X30 / 10x10 —— 属标签文本, 非价格字段 ⇒ 价格/数量/结构数字零改动)
+② diff 性质: 行数 5798 = 5798, 变动 358 行, **非「语系字串值」形状的变动行 = 0 ✅**
+③ diff 范围: 仅 gen-price-data.mjs + price-data.generated.ts + 新增 scripts/lib/ ✅
+④ 污染复扫 (交付层自扫 396 个语系栏位): en 含汉字 **0** / ja 有汉字零假名 **0** / zh-hk 含简体专用 **0** / ja 含简体专用(窄集) **0**
+   注: 专项单元原扫描器 A 类残余 131 栏位**全为 ja 且全部含假名(正确日文)**; B 类 4 栏位唯一命中字 = 格 (繁简同形误报)
+⑤ 确定性: 二次生成 sha256 相同, byte diff = 0 (可重生成, 未来不复发)
+⑥ tsc = **54** (K3 红线; 本档 0 错) | 生成档头声明保留 | BOM=false CRLF=false
+
+── 过程中的自查修正 (已闭环) ──
+首轮曾漏「专」字 (localizeName 沿用了 JSON 内 zh-hk 简体策展值)
+⇒ 改为 zh-hk 一律源头本地化 + 新增「字符来源」守卫 + 扩充简体字表(只套 zh-hk, 不误判日文新字体)
+⇒ 负向测试: 注入原缺陷重跑生成器 → exit 1、命中 2 条守卫、输出档未写盘、模块原样还原 (守卫为真守卫)
+
+── 留待 K3 复核 (不影响本次验收, 词典一处即全站一致) ──
+15 个中信心术语建议复核: 贴胶片→Film patch/フィルム貼り、切成品→Trimmed to size/断裁済み、
+大度32开→Large size 32mo/大判32判、格底→格仔底紙/Grid backing/グリッド台紙、出标方向横版左出标 等
+(明细见 .hermes/_bak-pricedata-20260918/STEP2-REPORT.md §4)
+
+── 未动 (他 lane 未提交改动, 原样保留) ──
+src/app/[locale]/product/[slug]/page.tsx / src/components/category/CategoryProductCard.tsx / src/data/print-method-policy.ts

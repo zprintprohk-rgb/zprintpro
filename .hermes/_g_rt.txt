@@ -1,0 +1,51 @@
+﻿A. 展示口徑 getDisplayMinOrderV2
+  ✓ a5-flyers (minQuantity=10) → "10"
+  ✓ die-cut-stickers (minQuantity=10) → "10"
+  ✓ premium-greeting-cards (minQuantity=10) → "10"
+  ✓ fluorescent-stickers (minQuantity=10) → "10"
+  ✓ catalog-printing (minQuantity=10) → "10 本起印（數碼）· 100 本以上柯式更經濟"
+  ✓ saddle-stitch-booklets (minQuantity=10) → "10 本起印（數碼）· 100 本以上柯式更經濟"
+  ✓ gang-run-card-boxes (minQuantity=500) → "500"
+  ✓ wall-calendars (minQuantity=1000) → "1000"
+  ✓ a1-posters (minQuantity=1) → "1"
+  ✓ white-card-bags (minQuantity=100) → "100"
+
+B. isPaperGoodsSmallBatch 邊界
+  ✓ a5-flyers = true
+  ✓ foil-stickers = true
+  ✓ die-cut-stickers = true
+  ✓ saddle-stitch-booklets = false
+  ✓ a1-posters = false
+  ✓ gang-run-card-boxes = false
+
+C. 三語文案齊備且含 10 起印口徑
+  ✓ zh-hk: note + AEO 齊備, 且明示 10 起印 (問題句為提問不計)
+  ✓ en: note + AEO 齊備, 且明示 10 起印 (問題句為提問不計)
+  ✓ ja: note + AEO 齊備, 且明示 10 起印 (問題句為提問不計)
+  ✓ PAPER_GOODS_MOQ = 10
+
+D. price table 渲染資料 (runtime)
+  ✓ a5-flyers: 首檔 10 張 · 整批 HK$80
+  ✓ a4-flyers: 首檔 10 張 · 整批 HK$140
+  ✓ waterproof-stickers: 首檔 10 張 · 整批 HK$71
+  ✓ folded-leaflets: 首檔 10 張 · 整批 HK$161
+  ✓ custom-flyers: 首檔 10 張 · 整批 HK$69
+  ✓ same-day-flyers: 首檔 10 張 · 整批 HK$184
+  ✓ eco-flyers: 首檔 10 張 · 整批 HK$80
+  ✓ die-cut-stickers: 無 price table → 走 QuoteCalculator (預期)
+  ✓ small-batch-stickers: 無 price table → 走 QuoteCalculator (預期)
+  ✓ transparent-stickers: 無 price table → 走 QuoteCalculator (預期)
+
+E. P2-6 傳統膠印軟分流 (邊界)
+  ✓ a5-flyers qty 99 → digital
+  ✓ a5-flyers qty 100 → digital
+  ✓ a5-flyers qty 199 → digital
+  ✓ a5-flyers qty 200 → offset
+  ✓ 非適用品類 → null (不顯示建議)
+
+F. P2-7 書刊 10-99 本價階 (price table runtime)
+  ✓ saddle-stitch-booklets: 10本 HK$179 ≤ anchor 100本 HK$941
+  ✓ perfect-bound-books: 10本 HK$308 ≤ anchor 100本 HK$1624
+  ✓ exercise-books: 10本 HK$53 ≤ anchor 500本 HK$1414
+
+結果: 38 通過 / 0 失敗

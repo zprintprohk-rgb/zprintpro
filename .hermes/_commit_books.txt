@@ -1,0 +1,1421 @@
+﻿git : 🔍 反审门童 v1 pre-commit (K3 9/1 15:06 拍板)...
+所在位置 行:1 字符: 244
++ ... ontent.ts'; git commit -m "fix(price-truth): books category meta desc ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (🔍 反审门童 v1 pre-.../1 15:06 拍板)...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+1️⃣  Encoding check...
+🔍 Checking staged files for encoding issues...
+
+✅ All 2 checked files are UTF-8 LF — safe to commit.
+2️⃣  Simplified Chinese check...
+
+📋 简体字检测报告
+
+================================================================================
+✅ 没有检测到简体字残留
+✅ 所有 zh-hk 产品名称都是纯繁体中文
+
+================================================================================
+🎯 简体字检测完成！
+2️⃣.5  blog-data JSON 严格校验 (门童 #15)...
+3️⃣  反审门童 v1 (5 道门童 + 3 道防线)...
+🔍 反审门童 v1 启动 (K3 9/1 15:06 拍板)
+════════════════════════════════════════════════════════════
+模式: 仅 red 硬拦 (shadow mode)
+范围: src/
+DoD 铁律: 禁用
+
+📁 扫描文件数: 2
+
+📉 品牌存量基线: total=431 files=51 (基线内命中不拦, 只拦新增)
+
+📉 CRED 存量基线: head=8806521d hits=0 files=0 (基线内命中不拦, 只拦新增)
+
+门童 #1 数据诚信: 37 命中
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2845
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2866
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2877
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3730
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3771
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3793
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3805
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3816
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3819
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:280
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:280
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:294
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:298
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:915
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:915
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:915
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1015
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1015
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1015
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1479
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1512
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1523
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1536
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1860
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1872
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2845
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2866
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2877
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3177
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3177
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 3,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3177
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3187
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3187
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 3,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3730
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3771
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3793
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:4413
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 4,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+
+门童 #2 真实电话: ✅ 0 命中
+
+门童 #3 品牌分层: 0 命中 (另有 12 条属存量基线内, 不计)
+门童 #3 品牌分层: ✅ 0 新增命中 (存量基线内 12)
+
+ℹ️ 门童 #4 双向污染存量基线: 实测命中 8 → 基线 162 (录于 2026-09-19); 本次基线内豁免 8, 既有内向 red 保留 0, ★新增缺陷 0
+   ⚠️ 实测(8) ≠ 基线(162) ⇒ 存量已递减 154 条 (可将基线同步下调)
+门童 #4 跨语言污染 (v2 扩展 en 8 禁词 + ja 8 禁词 per K3 9/2 08:50 GLM 评估): 54 命中 (另有 3 条属存量基线内, 不计)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:131
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'LOGO 或圖案局部金屬光澤，奢華感立現'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:132
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '凸顯重點元素，觸感立體'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:133
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '透明 PVC 或鏤空，展示內裝產品（中秋禮盒首選）'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:134
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '方便綁緞帶，提升禮贈儀式感'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:135
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '支援批次管理、防偽驗證或連結官網'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:136
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '婚禮或兒童產品專用，安全美觀'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:152
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '可預約查看實物樣本（燙金效果、紙質手感、結構強度）'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:153
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '確認外觀與結構無誤後再批量生產，避免 costly 錯誤'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:154
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '小批量順豐寄送，大批量安排貨車直送倉庫或辦公室'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:246
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Metallic sheen on logos or patterns for instant luxury appeal.'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:247
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Highlight key elements with a raised, tactile glossy finish.'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:248
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Transparent PVC or die-cut windows to showcase contents — perfect 
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:249
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Pre-cut holes for satin ribbons, enhancing gift-giving ceremony.'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:250
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Batch management, anti-counterfeit verification, or link to offici
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:251
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Safe and beautiful for wedding or children\'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:267
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Book an appointment to view physical samples — foil effects, paper
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:268
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Confirm appearance and structure before mass production to avoid c
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:269
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Small batches via DHL / FedEx; large batches by freight to warehou
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:353
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'ロゴやパターンに金属光沢の高級感を演出。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:354
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '重要な要素を立体的な光沢で強調。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:355
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '透明PVCや抜き加工で中身を見せる — 月餅箱に最適。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:356
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'サテンリボンを通せる穴加工でギフト感アップ。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:357
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'ロット管理、偽造防止、または公式サイトへリンク。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:358
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'ウエディングや子供向け製品に安全で美しい仕上がり。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:374
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '実物サンプル（箔押し効果、紙質触感、構造強度）をご覧いただけます。予約製。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:375
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '外観と構造を確認してから量産し、高額なミスを防ぎます。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:376
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '小ロットはSFエクスプレス、大ロットは専用トラックで倉庫またはオフィスへ直送。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:471
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '邊緣打金屬扣並穿繩，方便懸掛和固定於桁架'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:472
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '高溫熱縫邊緣，防止布料散邊，增加耐用度'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:473
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '橫幅布雙面印刷，正反均可見，適合懸掛於通道上方'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:474
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '符合消防條例的阻燃處理，適合室內展覽和公共場所'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:475
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '額外抗 UV 塗層，延長戶外使用壽命至 3 年＋'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:476
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '可反覆粘貼於鐵質表面，適合經常更換廣告的零售店'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:492
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'X展架和易拉寶框架出租 + 畫面更換，適合一次性活動，節省成本'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:493
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '港島、九龍主要展覽場館和商業區提供安裝服務，桁架搭建、燈光配置一條龍'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:494
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '晚間活動或翌日晨早開幕？夜間急件專線確保您的廣告準時到位'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:569
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Metal eyelets with rope for easy hanging and truss attachment.'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:570
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'High-temperature sealed edges prevent fabric fraying and increase 
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:571
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Both sides visible when hung over pathways — maximum visibility.'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:572
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Fire-rated treatment compliant with building codes for indoor exhi
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:573
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Additional UV-resistant coating extends outdoor lifespan to 3+ yea
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:574
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Reusable adhesion to ferrous surfaces — ideal for retail stores wi
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:590
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'X-stand and roll-up frame rental + graphic replacement — ideal for
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:591
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Installation at major exhibition venues and commercial areas in ma
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:592
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Evening event or next-morning opening? Our night rush hotline ensu
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:663
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '金属製ハトメにロープを通し、吊り下げやトラス固定が簡単に。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:664
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '高温で縁を溶着し、生地のほつれを防止して耐久性を向上。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:665
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '通路上方に吊るす場合、表裏両方が見えて視認性が最大化。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:666
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '消防条例に準拠した難燃処理。屋内展示や公共施設に最適。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:667
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '追加の抗UVコーティングで屋外使用寿命を3年以上に延長。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/lib/seo.ts:105
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description:
+    'ZprintPro is a global printing partner for businesses, schools
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/lib/seo.ts:315
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '香港智印港印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、傳單印刷、包裝盒印刷、紙袋、海報等。線上30秒獲取初步報價，複雜
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/lib/seo.ts:325
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Custom printing service for USA businesses. Stickers, packaging bo
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/lib/seo.ts:330
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'ZprintProはプロの印刷通販サービス。高品質ステッカー印刷、チラシ印刷、パッケージボックスカスタマイズ、紙袋・ラベル・ポスター
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+
+门童 #5 SOP-10 5 问门禁: 51 命中
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:84
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:165
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:165
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:169
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:169
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:182
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:183
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:185
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:187
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:191
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:280
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:280
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:294
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:298
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:387
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:387
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:400
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:401
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:405
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:814
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:814
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:814
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:915
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:915
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:915
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1015
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1015
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1015
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1380
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1381
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1413
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1414
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1424
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1437
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1441
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1445
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1445
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1445
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1445
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1445
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1479
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1480
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1512
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1513
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1523
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1536
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1540
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1547
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1547
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1547
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/lib/seo.ts:614
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,500
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+
+门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留): ✅ 0 命中
+
+门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发): 2 命中
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:0
+    规则: COUNT_NO_SOURCE - 报告无数据来源行 (per K3 §0.23 数据诚信红线)
+    命中: 报告含数字, 但缺 "数据来源:" 行
+    修法: 补 "数据来源:" 行 (格式: 数据源文件名 + 校准日期)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+
+门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT): ✅ 0 命中
+
+门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h): 3 命中
+  🟡 SHADOW [yellow] /src/data/category-seo-content.ts:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /src/lib/seo.ts:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /src/lib/seo.ts:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+
+门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数): ✅ 0 命中
+
+门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则): ✅ 0 命中
+
+门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学
+得 323 条基线全量修复): ✅ 0 命中
+
+门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件): ✅ 0 命中
+
+门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57): ✅ 0 
+命中
+
+ℹ️ 门童 #20 存量基线: 基线 120, 现存 53, 已修 67, 剩余待修 53
+门童 #20 meta description 完整性 (K3 2026-09-18 决策 3-B 专用基线通道: 语言错配/首词前缀重复/空 meta; 存量 120 条只许递减): ✅ 0 命中
+
+ℹ️ 存量基线内豁免命中: 15 条 (方案 C 白名单, 只许递减)
+════════════════════════════════════════════════════════════
+📊 汇总: 🔴 0 | 🟠 38 | 🟡 109 | ⚪ 0
+📊 真實計數 (未截斷): I18N_META_LENGTH=451 | SOP10_4_PLUS_NUMBER=120 | CRED_4_PLUS_NUMBER=28 | CRED_1000_PLUS=9 | BRAND_LOCALE
+_MISMATCH=7 | BRAND_JA_ALTERNATE=5 | CRED_ISO_9001=0 | CRED_FSC_C123456=0 | CRED_TUV_RHEINLAND=0 | CRED_X_INDUSTRIES=0 
+| CRED_X_FOLD=0 | CRED_INTL_TOP=0 | CRED_15_YEARS=0 | CRED_SELF_FACTORY=0 | CRED_HEIDELBERG=0 | PHONE_HK_BLACKLIST=0 | 
+PHONE_WA_852=0 | PHONE_NON_WHITELIST=0 | BRAND_DOUBLE=0 | BRAND_TYPO=0 | I18N_CURRENCY=0 | SOP10_CERT_NO=0 | SOP10_24H_
+SLA=0 | SOP10_HEIDELBERG_6_1=0 | SOP10_12_INDUSTRIES=0 | SOP10_INTL_TOP=0 | SOP10_15_YEARS=0 | SECRET_LEAK=0
+⚠️ 明細截斷 (真實命中 > 保留上限 50): I18N_META_LENGTH 真值 451 / 僅保留 54 | SOP10_4_PLUS_NUMBER 真值 120 / 僅保留 51
+
+⚠️ 反审门童预警 (shadow mode, 不拦截)
+3️⃣.5  门童 #3 品牌分层 全量基线闸门...
+=== 门童 #3 品牌分层 · 全量基线闸门 ===
+扫描 301 文件 | 当前双品牌总量 = 259
+基线 (2026-09-16): total=431
+[PASS] 未新增 (431 → 259, 已减 172 — 记得 --update 重录基线)
+3️⃣.6  门童 #24 MOQ 口径一致性闸门 (条件式扫描域)...
+MOQ 口徑一致性掃描（真值 = src/data/products.ts minQuantity）
+[SCOPE] 真值源未變更 → 只掃 staged ∩ 目標檔（2/5） ｜ 實際掃 2/5 檔: src/lib/seo.ts, src/data/category-seo-content.ts
+        ⚠️ 本次為**局部掃描**，僅涵蓋上述檔案；未掃檔案 ≠ 已檢查通過
+真值 SKU: 82 ｜ 掃描檔: 2 ｜ 命中: 8 ｜ 漂移: 8
+形狀斷言: ✓ 真值表 = 產品 slug 行 = minQuantity 行 ｜ 分類 slug 已排除
+
+雙方法復算 (products.ts, 逐樣式同定義域): ✓ 掃描器 ≤ grep 全數成立
+   zh_本起       grep  19 / 掃描器   0
+   zh_張起       grep  24 / 掃描器   0
+   zh_個起       grep  22 / 掃描器   0
+   zh_份起       grep   0 / 掃描器   0
+   zh_起印(無單位)  grep   0 / 掃描器   0
+   ja_枚から      grep  17 / 掃描器   0
+   ja_冊から      grep   4 / 掃描器   0
+   en_MOQ      grep  25 / 掃描器   0
+   en_pcs      grep   8 / 掃描器   0
+
+── 漂移明細（1 個 SKU / 8 條）──
+   📋 已登錄待裁決 2 ｜ ✅ 已核准分層 6 ｜ 🆕 新漂移 0
+
+  [〔品類級〕stickers] 真值 10
+    ✅ 已核准 category-seo-content.ts:2680 找到 100 (zh_個起(品類級))
+       …eaturedSnippet: '貼紙印刷 10 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球…
+       核准依據: K3 裁定：3M 戶外貼／可移貼需更高門檻 → 大量檔 100（非 SKU 起訂量）
+    ✅ 已核准 category-seo-content.ts:2680 找到 100 (zh_個起(品類級))
+       …t: '貼紙印刷 10 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球 2-4 天。',…
+       核准依據: K3 裁定：3M 戶外貼／可移貼需更高門檻 → 大量檔 100（非 SKU 起訂量）
+    ✅ 已核准 category-seo-content.ts:2786 找到 100 (en_MOQ(品類級))
+       …of matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs M…
+       核准依據: 同上（en：outdoor vinyl / removable stickers 100 pcs MOQ）
+    ✅ 已核准 category-seo-content.ts:2786 找到 100 (en_MOQ(品類級))
+       …oor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL glob…
+       核准依據: 同上（en：outdoor vinyl / removable stickers 100 pcs MOQ）
+    ✅ 已核准 category-seo-content.ts:2786 找到 100 (en_pcs(品類級))
+       …f matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 p…
+       核准依據: 同 en_MOQ(品類級)|100：同一句「outdoor vinyl / removable stickers 100 pcs MOQ」，沿用 K3「3M 戶外貼／可移貼大量檔 100」裁定
+    ✅ 已核准 category-seo-content.ts:2786 找到 100 (en_pcs(品類級))
+       …or vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL…
+       核准依據: 同 en_MOQ(品類級)|100：同一句「outdoor vinyl / removable stickers 100 pcs MOQ」，沿用 K3「3M 戶外貼／可移貼大量檔 100」裁定
+    📋 已登錄 category-seo-content.ts:2877 找到 50 (en_pcs(品類級))
+       …q: 'What is the minimum order for stickers?', a: '50 pcs (digital printing). 1,000+ pc…
+       登錄理由: 待裁決：數碼 vs 柯式方法門檻說明（category-seo-content.ts:2860 FAQ），非 SKU 起訂量 → 待 K3 確認歸 industry_fact
+    📋 已登錄 category-seo-content.ts:2884 找到 500 (en_pcs(品類級))
+       …for stickers?', a: 'Same-day digital printing (50–500 pcs). Standard offset: 2–3 days.'…
+       登錄理由: 待裁決：即日數碼 50–500 pcs 交期說明（category-seo-content.ts:2867），同前一條
+
+[GATE] PASS — 🆕 新漂移 0 條（待裁決 2 / 已核准分層 6，皆不阻擋） ｜ 範圍 2/5（局部，非全站結論）
+3️⃣.7  門童清單編號衝突檢查...
+✅ [GUARD-MANIFEST] 0 衝突 — 門童編號 28 個（最大 #29）｜ 規則 ID 622 個
+3️⃣.8  門童 #26 hook SSoT/active 同步一致性...
+✅ [HOOK-SYNC] SSoT 與 active 一致（sha256 50768ebf40b0，2 個目標）
+3️⃣.9  門童 #25 標題當量帶閘門 (staged 新增 ≥58 硬攔)...
+[门童 #25] title-band: 252 槽全量审计 -> .hermes/logs/sku-title-audit-2026-10-25.json (存量 issue 0)
+[门童 #25] staged 新增 title 当量全过 ✅
+3️⃣.10  門童 #27 標題 v5 全面審查 (staged title 變更硬攔)...
+[门童 #27] title-v5: staged 无 title 变更, 跳过 (全量审计仍落日志)
+[门童 #27] title-v5: 252 槽审计 → .hermes/logs/sku-title-v5-audit-2026-10-25.json
+[门童 #27] HARD=7 (PRICE_MISMATCH:7) | WARN=28 | 冻结槽=2
+[门童 #27] ⚠️ WARN 分布: LONGTAIL_SOURCE:13 MOQ_DRIFT:5 MOQ_UNVERIFIABLE:6 FROZEN_FILLER_WORD:2 PRICE_UNVERIFIABLE:2
+[门童 #27] staged title 变更 0 槽: 0 HARD ✅
+3️⃣.11  門童 #28 品牌·語種全鏈路掃描...
+SKU 数: 84  ← 结构解析 (源1 sku-seo-data.ts)
+博客 title/excerpt 块: 672 条 (源2 blog-posts.ts)
+blog-data JSON: 3 语系文件 (源3)
+渲染模板层: generateProductMetadata/generateCategoryMetadata 断言完成 (源4 seo.ts)
+
+──────────── 结果 (v3.1 品牌·语种全链路) ────────────
+
+=== en/ja 段出现「智印港」: 0 处 ===
+
+=== zh-hk 段出现 ZprintPro (双品牌): 0 处 ===
+
+=== ja 段出现繁体专用字: 0 处 ===
+
+=== en 段出现 CJK: 0 处 ===
+
+=== 渲染模板层断言: 0 处 ===
+
+违规模板源总计: 0 处 (品牌·语种门童铁律 B-3)
+3️⃣.12  門童 #29 keywords 去毒閘門 (防 9/6 清洗後 regen 回流重演)...
+[门童 #29] keywords-detox: 252 槽全扫 -> .hermes/logs/keywords-detox-audit-2026-10-25.json (违规 0 / 显式豁免 6)
+[门童 #29] ℹ️ 豁免槽 (待 K3 §0.0 裁决, 见 data/keywords-detox-blacklist.json known_exemptions): thick-greeting-cards-400g/zh-hk,
+ thick-greeting-cards-400g/en, thick-greeting-cards-400g/ja, foil-greeting-cards/zh-hk, foil-greeting-cards/en, foil-gr
+eeting-cards/ja
+[门童 #29] 本次 commit 未触及 keywords 数据文件, 跳过硬拦 (全扫报告已落)
+4️⃣  DoD 铁律 (No fix without a rule)...
+🔍 反审门童 v1 启动 (K3 9/1 15:06 拍板)
+════════════════════════════════════════════════════════════
+模式: 仅 red 硬拦 (shadow mode)
+范围: src/
+DoD 铁律: 启用
+
+📁 扫描文件数: 2
+
+📉 品牌存量基线: total=431 files=51 (基线内命中不拦, 只拦新增)
+
+📉 CRED 存量基线: head=8806521d hits=0 files=0 (基线内命中不拦, 只拦新增)
+
+门童 #1 数据诚信: 37 命中
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2845
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2866
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2877
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3730
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3771
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3793
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3805
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3816
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3819
+    规则: CRED_1000_PLUS - 1,000+ / 1000+ 客户 (3 位数加号)
+    命中: 1,000+
+    修法: 撤除 (per §0.23 数据诚信), 改用 "全球客户" 等描述性文案
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:280
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:280
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:294
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:298
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:915
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:915
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:915
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1015
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1015
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1015
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1479
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1512
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1523
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1536
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1860
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:1872
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2845
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2866
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:2877
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3177
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3177
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 3,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3177
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 50,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3187
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3187
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 3,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3730
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3771
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:3793
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:4413
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 4,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+
+门童 #2 真实电话: ✅ 0 命中
+
+门童 #3 品牌分层: 0 命中 (另有 12 条属存量基线内, 不计)
+门童 #3 品牌分层: ✅ 0 新增命中 (存量基线内 12)
+
+ℹ️ 门童 #4 双向污染存量基线: 实测命中 8 → 基线 162 (录于 2026-09-19); 本次基线内豁免 8, 既有内向 red 保留 0, ★新增缺陷 0
+   ⚠️ 实测(8) ≠ 基线(162) ⇒ 存量已递减 154 条 (可将基线同步下调)
+门童 #4 跨语言污染 (v2 扩展 en 8 禁词 + ja 8 禁词 per K3 9/2 08:50 GLM 评估): 54 命中 (另有 3 条属存量基线内, 不计)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:131
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'LOGO 或圖案局部金屬光澤，奢華感立現'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:132
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '凸顯重點元素，觸感立體'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:133
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '透明 PVC 或鏤空，展示內裝產品（中秋禮盒首選）'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:134
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '方便綁緞帶，提升禮贈儀式感'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:135
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '支援批次管理、防偽驗證或連結官網'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:136
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '婚禮或兒童產品專用，安全美觀'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:152
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '可預約查看實物樣本（燙金效果、紙質手感、結構強度）'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:153
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '確認外觀與結構無誤後再批量生產，避免 costly 錯誤'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:154
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '小批量順豐寄送，大批量安排貨車直送倉庫或辦公室'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:246
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Metallic sheen on logos or patterns for instant luxury appeal.'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:247
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Highlight key elements with a raised, tactile glossy finish.'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:248
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Transparent PVC or die-cut windows to showcase contents — perfect 
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:249
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Pre-cut holes for satin ribbons, enhancing gift-giving ceremony.'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:250
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Batch management, anti-counterfeit verification, or link to offici
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:251
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Safe and beautiful for wedding or children\'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:267
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Book an appointment to view physical samples — foil effects, paper
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:268
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Confirm appearance and structure before mass production to avoid c
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:269
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Small batches via DHL / FedEx; large batches by freight to warehou
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:353
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'ロゴやパターンに金属光沢の高級感を演出。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:354
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '重要な要素を立体的な光沢で強調。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:355
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '透明PVCや抜き加工で中身を見せる — 月餅箱に最適。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:356
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'サテンリボンを通せる穴加工でギフト感アップ。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:357
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'ロット管理、偽造防止、または公式サイトへリンク。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:358
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'ウエディングや子供向け製品に安全で美しい仕上がり。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:374
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '実物サンプル（箔押し効果、紙質触感、構造強度）をご覧いただけます。予約製。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:375
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '外観と構造を確認してから量産し、高額なミスを防ぎます。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:376
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '小ロットはSFエクスプレス、大ロットは専用トラックで倉庫またはオフィスへ直送。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:471
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '邊緣打金屬扣並穿繩，方便懸掛和固定於桁架'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:472
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '高溫熱縫邊緣，防止布料散邊，增加耐用度'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:473
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '橫幅布雙面印刷，正反均可見，適合懸掛於通道上方'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:474
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '符合消防條例的阻燃處理，適合室內展覽和公共場所'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:475
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '額外抗 UV 塗層，延長戶外使用壽命至 3 年＋'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:476
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '可反覆粘貼於鐵質表面，適合經常更換廣告的零售店'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:492
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'X展架和易拉寶框架出租 + 畫面更換，適合一次性活動，節省成本'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:493
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '港島、九龍主要展覽場館和商業區提供安裝服務，桁架搭建、燈光配置一條龍'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:494
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '晚間活動或翌日晨早開幕？夜間急件專線確保您的廣告準時到位'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:569
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Metal eyelets with rope for easy hanging and truss attachment.'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:570
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'High-temperature sealed edges prevent fabric fraying and increase 
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:571
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Both sides visible when hung over pathways — maximum visibility.'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:572
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Fire-rated treatment compliant with building codes for indoor exhi
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:573
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Additional UV-resistant coating extends outdoor lifespan to 3+ yea
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:574
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Reusable adhesion to ferrous surfaces — ideal for retail stores wi
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:590
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'X-stand and roll-up frame rental + graphic replacement — ideal for
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:591
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Installation at major exhibition venues and commercial areas in ma
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:592
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Evening event or next-morning opening? Our night rush hotline ensu
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:663
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '金属製ハトメにロープを通し、吊り下げやトラス固定が簡単に。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:664
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '高温で縁を溶着し、生地のほつれを防止して耐久性を向上。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:665
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '通路上方に吊るす場合、表裏両方が見えて視認性が最大化。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:666
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '消防条例に準拠した難燃処理。屋内展示や公共施設に最適。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:667
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '追加の抗UVコーティングで屋外使用寿命を3年以上に延長。'
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/lib/seo.ts:105
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description:
+    'ZprintPro is a global printing partner for businesses, schools
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/lib/seo.ts:315
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: '香港智印港印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、傳單印刷、包裝盒印刷、紙袋、海報等。線上30秒獲取初步報價，複雜
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/lib/seo.ts:325
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'Custom printing service for USA businesses. Stickers, packaging bo
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+  🟡 SHADOW [yellow] src/lib/seo.ts:330
+    规则: I18N_META_LENGTH - meta description 字符体检 150-160
+    命中: description: 'ZprintProはプロの印刷通販サービス。高品質ステッカー印刷、チラシ印刷、パッケージボックスカスタマイズ、紙袋・ラベル・ポスター
+    修法: meta description 长度 150-160 字符 (per §0.29 v3.1)
+
+门童 #5 SOP-10 5 问门禁: 51 命中
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:84
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:165
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:165
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:169
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:169
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 10,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:182
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:183
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:185
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:187
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:191
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:280
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:280
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:294
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:298
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:387
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:387
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:400
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:401
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:405
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:814
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:814
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:814
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:915
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:915
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:915
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1015
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1015
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1015
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1380
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1381
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1413
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1414
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1424
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1437
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1441
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1445
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1445
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1445
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1445
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 50,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1445
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1479
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1480
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1512
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1513
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1523
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1536
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1540
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1547
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1547
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:1547
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/lib/seo.ts:614
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,500
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+
+门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留): ✅ 0 命中
+
+门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发): 2 命中
+  🟡 SHADOW [orange] src/data/category-seo-content.ts:0
+    规则: COUNT_NO_SOURCE - 报告无数据来源行 (per K3 §0.23 数据诚信红线)
+    命中: 报告含数字, 但缺 "数据来源:" 行
+    修法: 补 "数据来源:" 行 (格式: 数据源文件名 + 校准日期)
+  🟡 SHADOW [yellow] src/data/category-seo-content.ts:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+
+门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT): ✅ 0 命中
+
+门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h): 3 命中
+  🟡 SHADOW [yellow] /src/data/category-seo-content.ts:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /src/lib/seo.ts:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /src/lib/seo.ts:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+
+门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数): ✅ 0 命中
+
+门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则): ✅ 0 命中
+
+门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学
+得 323 条基线全量修复): ✅ 0 命中
+
+门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件): ✅ 0 命中
+
+门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57): ✅ 0 
+命中
+
+ℹ️ 门童 #20 存量基线: 基线 120, 现存 53, 已修 67, 剩余待修 53
+门童 #20 meta description 完整性 (K3 2026-09-18 决策 3-B 专用基线通道: 语言错配/首词前缀重复/空 meta; 存量 120 条只许递减): ✅ 0 命中
+
+ℹ️ 存量基线内豁免命中: 15 条 (方案 C 白名单, 只许递减)
+════════════════════════════════════════════════════════════
+📊 汇总: 🔴 0 | 🟠 38 | 🟡 109 | ⚪ 0
+📊 真實計數 (未截斷): I18N_META_LENGTH=451 | SOP10_4_PLUS_NUMBER=120 | CRED_4_PLUS_NUMBER=28 | CRED_1000_PLUS=9 | BRAND_LOCALE
+_MISMATCH=7 | BRAND_JA_ALTERNATE=5 | CRED_ISO_9001=0 | CRED_FSC_C123456=0 | CRED_TUV_RHEINLAND=0 | CRED_X_INDUSTRIES=0 
+| CRED_X_FOLD=0 | CRED_INTL_TOP=0 | CRED_15_YEARS=0 | CRED_SELF_FACTORY=0 | CRED_HEIDELBERG=0 | PHONE_HK_BLACKLIST=0 | 
+PHONE_WA_852=0 | PHONE_NON_WHITELIST=0 | BRAND_DOUBLE=0 | BRAND_TYPO=0 | I18N_CURRENCY=0 | SOP10_CERT_NO=0 | SOP10_24H_
+SLA=0 | SOP10_HEIDELBERG_6_1=0 | SOP10_12_INDUSTRIES=0 | SOP10_INTL_TOP=0 | SOP10_15_YEARS=0 | SECRET_LEAK=0
+⚠️ 明細截斷 (真實命中 > 保留上限 50): I18N_META_LENGTH 真值 451 / 僅保留 54 | SOP10_4_PLUS_NUMBER 真值 120 / 僅保留 51
+
+ℹ️ DoD: 147 条命中来自规则书/日志/非 src 路径, 不计入 DoD
+✅ DoD 铁律通过: 所有命中规则已入 error-patterns.md
+⚠️ 反审门童预警 (shadow mode, 不拦截)
+
+✅ 反审门童 v1 pre-commit 全部通过
+  5 道门童: 0 red / 0 orange (shadow) / 0 yellow (shadow)
+  DoD 铁律: 通过
+  Encoding: 通过
+  Simplified Chinese: 通过
+[main a02aab3d] fix(price-truth): books category meta descriptions + paper-bags catalog FAQ aligned to SSoT
+ 2 files changed, 4 insertions(+), 4 deletions(-)

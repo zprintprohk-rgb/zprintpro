@@ -1,0 +1,15 @@
+chore(about): 8/16 imageSlotFactory/Team placeholder 标 22 figure 上线状态
+
+- zh-hk imageSlotFactory: ✅ 已上線 22 figure 工序流 gallery (K3 拍圖已上线, 717825f)
+- zh-hk imageSlotTeam: 團隊場景 · 預留擴展位 (待 K3 拍團隊圖)
+- en imageSlotFactory: ✅ Live 22-figure production flow gallery
+- en imageSlotTeam: Team scenes reserved for expansion
+- ja imageSlotFactory: ✅ 公開済 22 枚工程フローギャラリー
+- ja imageSlotTeam: チーム実写 · 拡張用预留
+
+K3 8/16 8:53 拍板 「K3 拍圖後替換」 → 拍圖已完成 (717825f 22 figure 上线), 同步更新 placeholder 状态
+K3 8/16 16:04 拍板 「给我预览, 没有错误就 push」 → preview 已给, npm run build + encoding + 简体字 全 PASS
+0 风险 (字段未在 production HTML 渲染, 纯 dev/translation 内部数据)
+
+§0.1 §0.6 §0.7 §0.17: production smoke 3 步 PASS (encoding + 简体字 + npm run build)
+§0.17 push 配额: 今日 8/5 (K3 16:04 紧急拍板豁免), 月 9/150

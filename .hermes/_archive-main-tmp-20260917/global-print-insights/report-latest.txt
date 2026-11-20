@@ -1,0 +1,56 @@
+# 印刷需求雷达 · 日报 2026-09-17
+
+> 生成时间: 2026-09-17 05:45:57 | 数据源: 公开招标/新闻/社媒 RSS | 台账: data/leads.db
+
+## 一、今日新增
+
+- 新增线索: **7** 条（有效线索累计 83 条）
+- 最近一次采集: 2026-09-17 01:00:20 → 2026-09-17 01:00:51（触发: cron, 源 17 个, 原始条目 619, 新增 7）
+- 待触达（未联系且高相关）: 75 条，其中含邮箱 0 条 / 含电话 0 条
+
+## 二、转化漏斗（累计，截至 2026-09-17）
+
+| 环节 | 数量 | 环节转化率 | 总转化率 |
+|---|---:|---:|---:|
+| 线索量 | 83 | - | 100.0% |
+| 有效线索 | 83 | 100.0% | 100.0% |
+| 已触达 | 6 | 7.2% | 7.2% |
+| 有回复 | 0 | 0.0% | 0.0% |
+| 询盘 | 0 | 0% | 0.0% |
+| 已报价 | 0 | 0% | 0.0% |
+| 成交 | 0 | 0% | 0.0% |
+
+## 三、今日线索分布
+
+**按品类**: general 3、books 1、exercise_books 1、packaging 1、school 1
+
+**按来源**: gnews_ar 2、reddit_print 2、gnews_pt 1、gnews_vi 1、worldbank 1
+
+## 四、高价值线索（Top 7）
+
+| # | 标题 | 品类 | 评分 | 国家 | 联系方式 | 链接 |
+|---:|---|---|---:|---|---|---|
+| 1 | Không in sách giáo khoa trước đấu thầu - Báo Tin tức và Dân tộc | school | 9 | — | — | [打开](https://news.google.com/rss/articles/CBMigAFBVV95cUxQMkh6Y190cnRiSTUzazNqWFdsaXlPUTRtbTBIMnRiakFVZGpORTN0Wmg0QnRLSGJVaHpibGlJUU9hNk9rVkkxNWVwaUVHNG1KRnZnOFBVM2k2UHc5ZmV2QktXN2hwRHFVQmVpa3hfV1ZsdTcyT3hNMEhaTGxDSUFkRA?oc=5) |
+| 2 | مناقصة لهيئة جودة التعليم والتدريب لطباعة وتغليف الامتحانات الوطنية - | packaging | 9 | — | — | [打开](https://news.google.com/rss/articles/CBMiXkFVX3lxTFB3bnZZMDZlVW8wUTJHNFFKZ3BHY054QmRQc2VHRzhyZDcyUHVaS3VrUFo0VHhWNWZfMnFtTDhYRDNNamRnaGw4czlfbnh4T1RpcHNJbFRabFR0VVFzZ2c?oc=5) |
+| 3 | "الحرة للتغيير السلمى": شروط مناقصة "التعليم" تقصى 150 ألف عامل مطبعة | general | 6 | — | — | [打开](https://news.google.com/rss/articles/CBMi2ANBVV95cUxOQU1nQkh3LWZ6VkROWEJ2NUF2dHJwLXpIeGpBU0E3dDcwZ0QxYUsyMTBCTm96eE1telVNVWkzOXktWXRLNnhvZ1I1d2lZS3hSeDV5My1kbWdpRVV5Wi1qTTV0UU1ySG1ydFAzUVB6cE54bDFfb1Q3cWY1Z1V0T3FFMWFFRzZBVWgwY1MzQWNpbW4xZVdsaWc3RFNRSkRpejRqZDk2bGlKRXdnSVdnWUhMYmV6a3VpU0tBNzdEYWk3M0t1VG5NdjVPa3BPUjVuZXZDS3FLWU9vc21zaXh4ZDlteVhiMFpRNVg0ZGgtTWZYczRFSHdMdlJEOE12Q01MVTItSGp1SmhUcktqenVwVFFqcXotZEpxWGJlNkMtNEEya19fZV9qV3JoeHRqWmYxZzRxa0U2LTBxbk9WcUppYWZDNWlocng4TWsxTGNTelpxZ01Pc3NwNDNTQVF1amxVSmdFeFdUTFhadnFvWHptSWNnMjJhelFfaXVQNnNMR2dPM3ltMGNrSWtfczZWUTFzYkMxaktveXBDMk90UVlpclk2VFZqaVQ1bl94cjhnNjdwakpQWDdTUElpSmJHQkliMHBnVnFTM3RTdlFISjdzN2NNMFlWdkc1VDdE0gHTA0FVX3lxTE9ueDQ5UC1vd1lLLXUtRFB3TFlBdi1PU1J2YTR6bm5kS0hWanNBYzVhYTg3UldZS1lhcWFZNlowc1MySmxPcnNNVEtvZV9vNXc0Sk1HWjZwY3YxT0gxMXdoVklZM2ZPWkZKMHRwXzZqUm1SaFJES0lsVTJxS3JTajNjU0s3TndIakRHNkhDZHlUZWh2bDFuTnR2RHpqSFJLaEtnSmMwZjBGbXdfdlNtR01jeVhVSzA1SmFMQm9IUmRiR3k5U0wwdGRXbGw0TEpiWXpqSTBvMlB2VDFBVTNONFo1YXNSNVFxczc3UGw0bHU3SmhiNnVESGZrVkl0S2FWLXFmUS1GWm1oM1pXMXNCQXRzOU5JUnUtTWg2STlsUVkzTXk4U0xyVkVyOE1nWFA1WThHR1JxSHV2bzJkX2NOT3ZCc05IM0FXZENVenZWcVoxd3NLRnRPYlRjWFJJYXlVV2tKY1VzVEJialZ6dlBJVjZFZ2RsaXZvRV9rclBIM0hXMmpnaFc2WjFmaE9ITThLMVJub0lScGdodEFNdFA0M0hBNmZrc3lSN1ROQ3RkSG5lMHVYVnpycVUtS2V0YzdwZnVlN1JqcWd1Mm9iWW82UTczd1dF?oc=5) |
+| 4 | MEC consegue dispensa de licitação e contrata nova gráfica para imprim | general | 6 | — | — | [打开](https://news.google.com/rss/articles/CBMiswFBVV95cUxQQXFrRkxFb1ctVldnQm1iUUhsaFoxdWVvM0tCcTZzYl9qbkRSUy1lb0tLQ19mX1F6SjFKWlJxRjNLdVdxLU9vZUR6OUJBdk5nWk9meW5laE5zeDdYOUQ2VUpfZVVCa0lTOG5zV1VQUWl2a1ZPQ1Z3TjEwck9qRTZHWWZma01tZ05NU1FIV2Jham1mNWhWRVhkVWtpNExiTjc1MXNTTWFkTTV0emNwOGV4ZHBhMA?oc=5) |
+| 5 | Overwhelmed: What's the easiest method for binding a novel draft? | books | 5 | — | — | [打开](https://www.reddit.com/r/bookbinding/comments/1whgfm5/overwhelmed_whats_the_easiest_method_for_binding/) |
+| 6 | Softcover materials and construction | exercise_books | 5 | — | — | [打开](https://www.reddit.com/r/bookbinding/comments/1wi1o0f/softcover_materials_and_construction/) |
+| 7 | Procurement and Delivery of Assorted Office Automation Equipment (Cop | general | 4 | Liberia | — | [打开](https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00468913) |
+
+## 五、触达队列状态
+
+| 渠道 | 状态 | 数量 |
+|---|---|---:|
+| email | sent | 6 |
+| email | superseded | 4 |
+| social | queued | 4 |
+| social | superseded | 2 |
+| whatsapp | queued | 1 |
+| whatsapp | superseded | 2 |
+
+## 六、下一步建议
+
+1. 复核 Top 线索中无联系方式条目，补齐联系人后进入触达队列。
+2. 检查触达队列草稿，确认后发送（自动发送需在 config/settings.json 开启 auto_send）。
+3. 关注高评分招标的截止日期，提前准备报价单与样品资料。

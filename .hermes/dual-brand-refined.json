@@ -1,0 +1,1184 @@
+{
+ "generatedAt": "2026-09-13T09:45:50.843Z",
+ "total": 147,
+ "bodyCount": 19,
+ "titleCount": 128,
+ "items": [
+  {
+   "file": "src/app/[locale]/about/page.tsx",
+   "line": 37,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "metaDesc: '智印港 ZprintPro 扎根香港超過15年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環"
+  },
+  {
+   "file": "src/app/[locale]/about/page.tsx",
+   "line": 38,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:metaTitle: '關於智印港 | 香港專業印刷服務 | 15年經驗服務10",
+   "ctx": "h1: '關於智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/about/page.tsx",
+   "line": 344,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "metaDesc: '智印港 ZprintProは香港で15年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、"
+  },
+  {
+   "file": "src/app/[locale]/blog/page.tsx",
+   "line": 17,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '印刷知識 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 157,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '證書印刷完整攻略 · 材質工藝呎吋合規認證全拆解 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 158,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "2021/FSC/G7/海德堡 6+1/ISO 9001）+ 4 條 FAQ。智印港 ZprintPro 香港深圳雙廠，10-10,000 張小至大批量，3-5 個工作天交付，WhatsApp 198"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 314,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '餐廳開業傳單印刷指南 · 香港餐飲旺季速遞方案 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 320,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '化妝品包裝盒印刷指南 · 護膚品牌結構與材質全攻略 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 326,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '香港寵物食品品牌貼紙印刷指南 · 防水防油 FDA 認證 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 338,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定製 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 344,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": " GHS 危險標籤印刷指南 · UL 認證 + ANSI Z535 標準 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 350,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定製 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 357,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 365,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "itle: '香港拼版白卡彩盒印刷指南 · 免刀模費直降40%的預算首選 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 373,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": ": 'A1 A2 A3 海報尺寸指南：印刷尺寸對照表・應用場景・紙材選擇 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 379,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "le: 'A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣全拆解 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 385,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: 'A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 391,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全攻略 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 400,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "e: '香港金融機構禮品袋印刷指南 · 銀行卡套 + 信用卡開卡禮盒定製 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 407,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "香港新盤樓盤戶型海報印刷指南 · A1/A2 防水戶型圖 + 售樓處佈局 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/blog/[slug]/page.tsx",
+   "line": 414,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "e: '月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/cart/page.tsx",
+   "line": 11,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '購物車 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/case-studies/page.tsx",
+   "line": 33,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "metaTitle: '客戶案例 | 智印港 ZprintPro 印刷成功案例',"
+  },
+  {
+   "file": "src/app/[locale]/checkout/page.tsx",
+   "line": 11,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '結算 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/company-news/page.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '公司新聞 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/contact/page.tsx",
+   "line": 24,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: \"聯絡我們 · 免費獲取報價 | 智印港 ZprintPro\","
+  },
+  {
+   "file": "src/app/[locale]/contact/page.tsx",
+   "line": 137,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: \"無料お見積もり · 30秒返信 | 智印港 ZprintPro\","
+  },
+  {
+   "file": "src/app/[locale]/help-center/page.tsx",
+   "line": 11,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '幫助中心 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/insights/hk-print-inquiry-index/page.tsx",
+   "line": 27,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "? `${INDEX_VOL1.title} | 智印港 ZprintPro`"
+  },
+  {
+   "file": "src/app/[locale]/insights/hk-print-inquiry-index/page.tsx",
+   "line": 29,
+   "form": "ジープリント ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "? `${jaSummary.title} | ジープリント ZprintPro`"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "line": 40,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "ogTitle: '智印港 ZprintPro | 香港印刷服務 — 全球 72 小時交貨',"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "line": 42,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "twitterTitle: '智印港 ZprintPro | 香港印刷服務',"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "line": 50,
+   "form": "ジープリント ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "ogTitle: 'ジープリント ZprintPro | 印刷サービス — グローバル 72 時間配送',"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "line": 52,
+   "form": "ジープリント ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "twitterTitle: 'ジープリント ZprintPro | 印刷サービス',"
+  },
+  {
+   "file": "src/app/[locale]/legal/page.tsx",
+   "line": 35,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '經營者資訊披露 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/order-confirmation/page.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '訂單確認 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/payment-methods/page.tsx",
+   "line": 17,
+   "form": "ZprintPro 智印港",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "付款方式 · 銀行電匯 / 微信 / 支付寶 / PayPal / 跨境匯款 | ZprintPro 智印港',"
+  },
+  {
+   "file": "src/app/[locale]/press-kit/page.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '媒體中心 & Press Kit | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/press-kit/page.tsx",
+   "line": 13,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "description: '智印港 ZprintPro 媒體中心——獲取公司介紹、品牌素材、高解析度產品圖片及媒體聯絡資訊。歡迎媒體、博主及合作夥"
+  },
+  {
+   "file": "src/app/[locale]/privacy/page.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '隱私政策 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/quote/page.tsx",
+   "line": 20,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '免費獲取報價 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/search/page.tsx",
+   "line": 14,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '搜尋結果 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/service-areas/page.tsx",
+   "line": 18,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '香港印刷服務地區 | 全港送貨 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/services/catalog-printing-china/page.tsx",
+   "line": 23,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": " MOQ + Shenzhen Factory + DHL 2-4 Days | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/services/page.tsx",
+   "line": 25,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '印刷服務 | 貼紙・傳單印刷・包裝盒・紙袋訂製 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/app/[locale]/terms/page.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '服務條款 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/components/insights/HKPrintInquiryIndex/OrganizationSchema.tsx",
+   "line": 12,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "alternateName: '智印港 ZprintPro / ジープリント ZprintPro',"
+  },
+  {
+   "file": "src/components/insights/HKPrintInquiryIndex/OrganizationSchema.tsx",
+   "line": 12,
+   "form": "ジープリント ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "alternateName: '智印港 ZprintPro / ジープリント ZprintPro',"
+  },
+  {
+   "file": "src/components/services/RushHero.tsx",
+   "line": 10,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "g} role=\"img\" aria-label=\"即日印刷-智印港印刷車間-智印港 ZprintPro\" />"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 120,
+   "form": "ZprintPro 智印港",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"ZprintPro 智印港\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 508,
+   "form": "ジープリント ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "6: 4 製本，4 紙質，大量卸売 100/500/1000/5000 段階 | ジープリント ZprintPro\","
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 548,
+   "form": "ZprintPro 智印港",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"ZprintPro 智印港\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 597,
+   "form": "ZprintPro 智印港",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"ZprintPro 智印港\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 629,
+   "form": "ZprintPro 智印港",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"ZprintPro 智印港\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/ja.json",
+   "line": 645,
+   "form": "ZprintPro 智印港",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"ZprintPro 智印港\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 120,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\"},\\\"sameAs"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 120,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"logo\\\":{\\\"@type\\\":\\\"ImageObject\\\",\\\"url\\\""
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 120,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":\\\"ListItem\\\",\\\"position\\\":1,\\\"name\\\":\\\"智印港 ZprintPro 首頁\\\",\\\"item\\\":\\\"https://zprintpro.com/zh-hk/\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 120,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 120,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "text-[#2873F5] hover:underline\\\"><strong>智印港 ZprintPro 首頁</strong></a></p>\\n\\n<h3>常見問題 FAQ</h3>\\n\\n<"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 200,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\"},\\\"sameAs"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 200,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"logo\\\":{\\\"@type\\\":\\\"ImageObject\\\",\\\"url\\\""
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 200,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":\\\"ListItem\\\",\\\"position\\\":1,\\\"name\\\":\\\"智印港 ZprintPro 首頁\\\",\\\"item\\\":\\\"https://zprintpro.com/zh-hk/\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 200,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "隊</strong> ・ 智印港 15 年膠印工程師 ・ 香港印刷業商會會員 ・ 智印港 ZprintPro 跨境印刷 SaaS 聯合創辦人</p><p><strong> :</strong> <a "
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 200,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 461,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\"},\\\"publis"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 461,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"logo\\\":{\\\"@type\\\":\\\"ImageObject\\\",\\\"url\\\""
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 461,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":\\\"ListItem\\\",\\\"position\\\":1,\\\"name\\\":\\\"智印港 ZprintPro 首頁\\\",\\\"item\\\":\\\"https://zprintpro.com/zh-hk/\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 461,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 461,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "class=\\\"text-[#2873F5] hover:underline\\\">智印港 ZprintPro 首頁</a> — 跨境印刷 SaaS, 30 秒 AI 報價</li>\\n</ul>\\n\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 552,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\"},\\\"sameAs"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 552,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"logo\\\":{\\\"@type\\\":\\\"ImageObject\\\",\\\"url\\\""
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 552,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":\\\"ListItem\\\",\\\"position\\\":1,\\\"name\\\":\\\"智印港 ZprintPro 首頁\\\",\\\"item\\\":\\\"https://zprintpro.com/zh-hk/\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 552,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 552,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "ver:underline\\\">zprintpro-engineer</a> ・ 智印港 ZprintPro 跨境印刷 SaaS ・ <a href=\\\"https://zprintpro.com/z"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 587,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\"},\\\"sameAs"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 587,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"logo\\\":{\\\"@type\\\":\\\"ImageObject\\\",\\\"url\\\""
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 587,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":\\\"ListItem\\\",\\\"position\\\":1,\\\"name\\\":\\\"智印港 ZprintPro 首頁\\\",\\\"item\\\":\\\"https://zprintpro.com/zh-hk/\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 587,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 587,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "ver:underline\\\">zprintpro-engineer</a> ・ 智印港 ZprintPro 跨境印刷 SaaS ・ <a href=\\\"https://zprintpro.com/z"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 619,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "質 + 6 種工藝 + 12 大行業 GSC pos 2.3 TOP3 突入 | 智印港 ZprintPro\\\",\\\"datePublished\\\":\\\"2026-09-04\\\",\\\"dateModi"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 619,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\"},\\\"sameAs"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 619,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"logo\\\":{\\\"@type\\\":\\\"ImageObject\\\",\\\"url\\\""
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 619,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":\\\"ListItem\\\",\\\"position\\\":1,\\\"name\\\":\\\"智印港 ZprintPro 首頁\\\",\\\"item\\\":\\\"https://zprintpro.com/zh-hk/\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 619,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 619,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "nderline\\\">zprintpro-foil-engineer</a> ・ 智印港 ZprintPro 跨境印刷 SaaS ・ <a href=\\\"https://zprintpro.com/z"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 635,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"logo\\\":{\\\"@type\\\":\\\"ImageObject\\\",\\\"url\\\""
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 635,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":\\\"ListItem\\\",\\\"position\\\":1,\\\"name\\\":\\\"智印港 ZprintPro 首頁\\\",\\\"item\\\":\\\"https://zprintpro.com/zh-hk/\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 635,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 635,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "class=\\\"text-[#2873F5] hover:underline\\\">智印港 ZprintPro 首頁</a> — 跨境印刷 SaaS, 30 秒 AI 報價</li>\\n</ul>\\n\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 648,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "s 彩盒 vs 禮盒 8 大盒型 5 維度全對比 GSC pos 9 衝首頁 | 智印港 ZprintPro\","
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 652,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\"},\\\"sameAs"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 652,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"logo\\\":{\\\"@type\\\":\\\"ImageObject\\\",\\\"url\\\""
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 652,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":\\\"ListItem\\\",\\\"position\\\":1,\\\"name\\\":\\\"智印港 ZprintPro 首頁\\\",\\\"item\\\":\\\"https://zprintpro.com/zh-hk/\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 652,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 652,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "1>牛皮紙盒 vs 坑盒 vs 彩盒 vs 禮盒 8 大盒型 5 維度全對比 | 智印港 ZprintPro</h1>\\n<p class=\\\"text-sm text-gray-600\\\">作者: "
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 652,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "ver:underline\\\">zprintpro-engineer</a> ・ 智印港 ZprintPro 跨境印刷 SaaS ・ <a href=\\\"https://zprintpro.com/z"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 665,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "刷成本基準報告：貼紙、傳單、冊子、包裝等 16 品類 99 SKU 價格數據 | 智印港 ZprintPro\","
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 681,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港 ZprintPro\","
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 683,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\"},\\\"sameAs"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 683,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"logo\\\":{\\\"@type\\\":\\\"ImageObject\\\",\\\"url\\\""
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 683,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\":\\\"ListItem\\\",\\\"position\\\":1,\\\"name\\\":\\\"智印港 ZprintPro 首頁\\\",\\\"item\\\":\\\"https://zprintpro.com/zh-hk/\\"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 683,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "\\\",\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"智印港 ZprintPro\\\",\\\"url\\\":\\\"https://zprintpro.com\\\",\\\"logo\\\":"
+  },
+  {
+   "file": "src/data/blog-data/zh-hk.json",
+   "line": 687,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港 Zprin - 智印港 ZprintPro 印刷規格指南\""
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1042,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "'zh-hk': \"母嬰品牌貼紙印刷指南 · 嬰兒食品級安全標籤定製 | 智印港 ZprintPro\","
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1059,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "'zh-hk': \"跨境電商快遞袋印刷指南 · 防水破壞袋 + 全球派送 | 智印港 ZprintPro\","
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1076,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "'zh-hk': \"影視IP周邊禮盒印刷指南 · 香港品牌影迷集體回憶定製 | 智印港 ZprintPro\","
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1677,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "3 大應用攻略: 貼紙/喜帖/禮盒卡片 GSC pos 2.3 衝首頁全對比 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1724,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "s 彩盒 vs 禮盒 8 大盒型 5 維度全對比 GSC pos 9 衝首頁 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1745,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "刷成本基準報告：貼紙、傳單、冊子、包裝等 16 品類 99 SKU 價格數據 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "line": 1769,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 908,
+   "form": "ジープリント ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "r 9/4 順位目標: カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送. ジープリント ZprintPro.',"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1338,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "HK$0.5/個起 | DL/B4 4 尺寸可選 | 24h 出貨 順豐本地 | 智印港 ZprintPro. 雙面彩色 + 燙金 + 120g-250g 4 紙張, 商務/婚禮/節日信封通用. 即日"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1536,
+   "form": "ジープリント ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "ら HK$0.5／枚 | DL/B4 4サイズ対応 | 24h出荷 工場直送 | ジープリント ZprintPro. 両面カラー + 箔押し + 120-250gsm 4紙質, 招待状・ビジネス・年賀"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1641,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": " 月旺季軍令狀 | 100 本起 HK$28 起 | 24h 出貨 順豐本地 | 智印港 ZprintPro. 掛曆 HK$18 / 檯曆 HK$9 / 年曆卡 HK$3, 2027 早鳥 9 折 +"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 1853,
+   "form": "ジープリント ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "1月繁忙期軍令状 | 100冊から HK$28／冊 | 24h出荷 工場直送 | ジープリント ZprintPro. 卓上 HK$9 / 壁掛け HK$18 / カード HK$3, 2027 早期予約"
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "line": 2869,
+   "form": "ジープリント ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": " 種対応, 両面印刷+正方形+はがきサイズ, 5-7日納期, DHL 2-4日. ジープリント ZprintPro 工場直送価格. 9/4 ja CTR ≥2% 目標: ステッカー印刷/オリジナル/作"
+  },
+  {
+   "file": "src/data/product-seo.ts",
+   "line": 11,
+   "form": "ZprintPro 智印港",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "itle: '防水貼紙印刷 香港 | 透明/PVC/燙金貼紙 少批量定製 | ZprintPro 智印港',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1089,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "カット', title_zh: '異形模切貼紙 · 文創IP角色造型模切定製 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1453,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 · 服裝品牌跨境電商適配 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1741,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "ル', title_zh: '環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2011,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2102,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "ー', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2288,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "h: '折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3277,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": " '化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚面膜精華液品牌適配 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3675,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": " 箔押し', title_zh: '燙金利是封 · 婚慶/年會/品牌活動定製 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4745,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "_zh: 'PVC 餐牌印刷 · 防水防油可水洗 | 餐廳/咖啡店/酒吧菜單 | 智印港 ZprintPro · 訂製',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7295,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '白卡彩盒印刷定製 | 香港零售精品美妝護膚包裝盒 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7355,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": " '瓦楞彩盒印刷定製 (E坑/F坑) | 香港跨境電商物流快遞包裝盒 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7411,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "口盒印刷定製 (直插/反插/飛機插) | 香港餐飲外賣零售快消包裝盒 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7437,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "e_zh: '水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/lib/metadata.ts",
+   "line": 72,
+   "form": "ZprintPro 智印港",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "hk': (n, p) => `${n} 香港 | ${p}| 專業印刷服務 - ZprintPro 智印港`,"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 32,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "'zh-hk': '食品包裝印刷 香港 | 智印港 ZprintPro — 食品級包裝盒/袋 定制印刷',"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 42,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:h1: {",
+   "ctx": "'zh-hk': '香港食品包裝印刷定製 — 智印港 ZprintPro',"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 48,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '香港專業食品包裝印刷服務，智印港 ZprintPro 為您提供食品級包裝盒、食品袋、食品標籤等一站式定制印刷方案。',"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 79,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '智印港 ZprintPro 深耕香港印刷行業，食品包裝印刷客戶遍布港九新界。立即聯絡報價，免費打樣確認品質後再大貨生產，零"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 88,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "'zh-hk': '紙袋印刷 香港 | 智印港 ZprintPro — 牛皮紙袋/白卡紙袋 訂製印刷',"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 104,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '香港專業紙袋印刷服務，智印港 ZprintPro 提供牛皮紙袋、白卡紙袋、精品紙袋一站式定制印刷，品質保證。',"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 147,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "'zh-hk': '傳單印刷印刷 香港 | 智印港 ZprintPro — 傳單/單張/Leaflet 特價印刷',"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 163,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '香港傳單印刷印刷服務，智印港 ZprintPro 專業承接各類傳單/單張/Leaflet 印刷，價格透明，時效保證。',"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 206,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "'zh-hk': '餐牌印刷 香港 | 智印港 ZprintPro — 餐廳菜單/Menu 訂製印刷',"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 222,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '香港專業餐牌印刷服務，智印港 ZprintPro 為各類餐飲企業提供菜單、酒水牌、餐桌牌等一站式印刷方案。',"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 265,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "up-key:title: {",
+   "ctx": "'zh-hk': '利是封印刷 香港 | 智印港 ZprintPro — 利是封/紅包/婚慶利是封 訂製',"
+  },
+  {
+   "file": "src/lib/seo-keywords.ts",
+   "line": 281,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '香港專業利是封印刷定制服務，智印港 ZprintPro 承接企業年會、婚禮喜慶、春節賀年用利是封批量印刷。',"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 43,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "// 原问题: name = \"智印港 ZprintPro\", alternateName 直接含 \"ZprintPro\" / \"ZprintPr"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 263,
+   "form": "智印港 ZprintPro",
+   "face": "title",
+   "why": "same-line-title-field",
+   "ctx": "title: '智印港 ZprintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒印刷',"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "line": 1621,
+   "form": "智印港 ZprintPro",
+   "face": "body",
+   "why": "no-title-key",
+   "ctx": "'zh-hk': '即時報價 | 智印港 ZprintPro',"
+  }
+ ]
+}

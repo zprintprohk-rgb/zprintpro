@@ -1,0 +1,14 @@
+[
+  { "url": "https://zprintpro.com/zh-hk/category/stickers/", "expect": "貼紙印刷 10張起", "bad": "small batch" },
+  { "url": "https://zprintpro.com/zh-hk/category/packaging/", "expect": "包裝盒訂製", "bad": "紙質食品包裝" },
+  { "url": "https://zprintpro.com/en/category/packaging/", "expect": "Custom Packaging Boxes", "bad": "Paper Food Packaging" },
+  { "url": "https://zprintpro.com/zh-hk/category/posters/", "expect": "海報印刷 A0/A1/A2", "bad": "a1a2" },
+  { "url": "https://zprintpro.com/zh-hk/category/educational/", "expect": "香港證書印刷", "bad": "香港校園教育印刷" },
+  { "url": "https://zprintpro.com/en/category/educational/", "expect": "Certificate Printing", "bad": "Custom Education Printing" },
+  { "url": "https://zprintpro.com/en/category/menus/", "expect": "Menu Printing", "bad": "Custom Menus" },
+  { "url": "https://zprintpro.com/ja/category/stickers/", "expect": "シール印刷", "bad": "small batch PVC" },
+  { "url": "https://zprintpro.com/ja/category/japan-doujin/", "expect": "コミケ", "bad": "USA コミッション" },
+  { "url": "https://zprintpro.com/zh-hk/services/business-cards-printing/", "expect": "名片印刷", "bad": "" },
+  { "url": "https://zprintpro.com/en/services/business-cards-printing/", "expect": "Business Card Printing", "bad": "" },
+  { "url": "https://zprintpro.com/ja/services/business-cards-printing/", "expect": "名刺印刷", "bad": "" }
+]

@@ -1,0 +1,55 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./src/data/products.ts
+Error: 
+  [31mx[0m Expected ']', got '{'
+       ,-[[36;1;4mF:\zprintpro-nextjs\src\data\products.ts[0m:20559:1]
+ [2m20559[0m |   };
+ [2m20560[0m |   return titles[locale] || titles['zh-hk'
+ [2m20561[0m |   // === 喜帖印刷 (6 SKU, K3 8/17 拍板 Step 2) ===
+ [2m20562[0m |   {
+       : [31;1m  ^[0m
+ [2m20563[0m |     id: 'WI-001',
+ [2m20564[0m |     sku_code: 'WI-001',
+ [2m20564[0m |     slug: 'foil-wedding-invitations',
+       `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/data/products.ts
+./src/app/[locale]/not-found.tsx
+
+./src/data/products.ts
+Error: 
+  [31mx[0m Expected ']', got '{'
+       ,-[[36;1;4mF:\zprintpro-nextjs\src\data\products.ts[0m:20559:1]
+ [2m20559[0m |   };
+ [2m20560[0m |   return titles[locale] || titles['zh-hk'
+ [2m20561[0m |   // === 喜帖印刷 (6 SKU, K3 8/17 拍板 Step 2) ===
+ [2m20562[0m |   {
+       : [31;1m  ^[0m
+ [2m20563[0m |     id: 'WI-001',
+ [2m20564[0m |     sku_code: 'WI-001',
+ [2m20564[0m |     slug: 'foil-wedding-invitations',
+       `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/data/products.ts
+./src/app/[locale]/guide/[slug]/page.tsx
+./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2F%5Blocale%5D%2Fguide%2F%5Bslug%5D%2Fpage&page=%2F%5Blocale%5D%2Fguide%2F%5Bslug%5D%2Fpage&pagePath=private-next-app-dir%2F%5Blocale%5D%2Fguide%2F%5Bslug%5D%2Fpage.tsx&appDir=F%3A%5Czprintpro-nextjs%5Csrc%5Capp&appPaths=%2F%5Blocale%5D%2Fguide%2F%5Bslug%5D%2Fpage&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!./src/app/[locale]/guide/[slug]/page.tsx?__next_edge_ssr_entry__
+
+
+> Build failed because of webpack errors

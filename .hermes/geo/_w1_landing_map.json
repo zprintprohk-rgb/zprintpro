@@ -1,0 +1,317 @@
+{
+ "generated_at": "2026-09-30T00:24:48",
+ "source": "gsc_page_query.csv (2026-08-26 mtime)",
+ "mappings": {
+  "zh_hk": {
+   "食品包裝印刷": [
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+     "imp": "110",
+     "pos": "30.35"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/packaging/",
+     "imp": "64",
+     "pos": "75.31"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+     "imp": "297",
+     "pos": "52.07"
+    }
+   ],
+   "a6 尺寸": [
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/a5-vs-a6-flyer-size/",
+     "imp": "3",
+     "pos": "10.33"
+    }
+   ],
+   "紙袋印刷": [
+    {
+     "page": "https://www.zprintpro.com/zh-hk/product/eco-paper-bags/",
+     "imp": "8",
+     "pos": "14.25"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/paper-bag-buying-guide/",
+     "imp": "166",
+     "pos": "54.54"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/paper-bag-printing-guide/",
+     "imp": "31",
+     "pos": "37.16"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+     "imp": "187",
+     "pos": "33.58"
+    }
+   ],
+   "印刷紙袋": [
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/paper-bag-buying-guide/",
+     "imp": "67",
+     "pos": "40.27"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/paper-bag-printing-guide/",
+     "imp": "27",
+     "pos": "38.78"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+     "imp": "138",
+     "pos": "42.60"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/eco-paper-bags/",
+     "imp": "35",
+     "pos": "57.63"
+    }
+   ],
+   "餐牌印刷": [
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/menu-buying-guide/",
+     "imp": "5",
+     "pos": "26.80"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/restaurant-menu-printing-guide/",
+     "imp": "6",
+     "pos": "13.17"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/menus/",
+     "imp": "193",
+     "pos": "19.41"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/disposable-menus/",
+     "imp": "29",
+     "pos": "31.07"
+    }
+   ],
+   "小冊子印刷": [
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+     "imp": "3",
+     "pos": "10.67"
+    }
+   ],
+   "即日印刷": [
+    {
+     "page": "https://zprintpro.com/zh-hk/product/same-day-flyers/",
+     "imp": "51",
+     "pos": "14.86"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/same-day-flyers-printing-hong-kong-guide/",
+     "imp": "7",
+     "pos": "25.14"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+     "imp": "57",
+     "pos": "26.51"
+    }
+   ],
+   "騎馬釘印刷": [
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+     "imp": "3",
+     "pos": "14.33"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/books/",
+     "imp": "1",
+     "pos": "39.00"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+     "imp": "151",
+     "pos": "38.14"
+    }
+   ],
+   "食品包裝訂製": [
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/baby-food-packaging-box-printing-guide/",
+     "imp": "1",
+     "pos": "19.00"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/packaging/",
+     "imp": "39",
+     "pos": "31.15"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+     "imp": "143",
+     "pos": "22.12"
+    }
+   ],
+   "大信封": [
+    {
+     "page": "https://zprintpro.com/zh-hk/product/large-envelopes/",
+     "imp": "89",
+     "pos": "2.16"
+    }
+   ],
+   "邊度有紙袋買": [
+    {
+     "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+     "imp": "3",
+     "pos": "8.00"
+    }
+   ],
+   "a1 印刷 即日": [
+    {
+     "page": "https://zprintpro.com/zh-hk/category/posters/",
+     "imp": "1",
+     "pos": "34.00"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/a1-posters/",
+     "imp": "3",
+     "pos": "18.33"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/same-day-flyers/",
+     "imp": "2",
+     "pos": "55.00"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+     "imp": "4",
+     "pos": "10.00"
+    }
+   ]
+  },
+  "en": {
+   "small batch sticker printing": [
+    {
+     "page": "https://zprintpro.com/en/product/small-batch-stickers/",
+     "imp": "43",
+     "pos": "13.47"
+    }
+   ],
+   "doujinshi printing": [
+    {
+     "page": "https://zprintpro.com/en/category/japan-doujin/",
+     "imp": "17",
+     "pos": "38.76"
+    },
+    {
+     "page": "https://zprintpro.com/en/product/doujinshi-printing/",
+     "imp": "6",
+     "pos": "9.50"
+    }
+   ],
+   "small batch stickers": [
+    {
+     "page": "https://zprintpro.com/en/product/small-batch-stickers/",
+     "imp": "56",
+     "pos": "6.95"
+    }
+   ],
+   "exercise book printing business": [
+    {
+     "page": "https://zprintpro.com/en/product/exercise-books/",
+     "imp": "13",
+     "pos": "16.00"
+    }
+   ],
+   "small batch custom stickers": [
+    {
+     "page": "https://zprintpro.com/en/product/small-batch-stickers/",
+     "imp": "25",
+     "pos": "15.08"
+    }
+   ],
+   "fluorescent stickers": [
+    {
+     "page": "https://zprintpro.com/en/product/fluorescent-stickers/",
+     "imp": "16",
+     "pos": "9.62"
+    }
+   ],
+   "pvc menu": [
+    {
+     "page": "https://zprintpro.com/en/product/pvc-menus/",
+     "imp": "14",
+     "pos": "25.00"
+    },
+    {
+     "page": "https://zprintpro.com/ja/product/pvc-menus/",
+     "imp": "6",
+     "pos": "42.67"
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/pvc-menus/",
+     "imp": "5",
+     "pos": "26.80"
+    }
+   ],
+   "saddle stitch booklet maker": [],
+   "doujin printing": [
+    {
+     "page": "https://zprintpro.com/en/product/doujinshi-printing/",
+     "imp": "5",
+     "pos": "13.40"
+    },
+    {
+     "page": "https://zprintpro.com/en/category/japan-doujin/",
+     "imp": "5",
+     "pos": "13.40"
+    }
+   ],
+   "exercise book printing": [
+    {
+     "page": "https://zprintpro.com/en/product/exercise-books/",
+     "imp": "9",
+     "pos": "14.00"
+    }
+   ],
+   "school exercise book printing": [
+    {
+     "page": "https://zprintpro.com/en/product/exercise-books/",
+     "imp": "61",
+     "pos": "25.79"
+    }
+   ]
+  },
+  "ja": {
+   "pvcシールとは": [
+    {
+     "page": "https://zprintpro.com/ja/blog/sticker-materials/",
+     "imp": "1",
+     "pos": "12.00"
+    },
+    {
+     "page": "https://zprintpro.com/ja/product/waterproof-stickers/",
+     "imp": "1",
+     "pos": "28.00"
+    }
+   ],
+   "封筒 両面印刷": [],
+   "教材 印刷製本": [
+    {
+     "page": "https://zprintpro.com/ja/product/textbooks/",
+     "imp": "53",
+     "pos": "52.38"
+    }
+   ],
+   "中 綴じ 無線 綴じ": [],
+   "dhl 当日集荷 何時まで": [],
+   "型抜きステッカー": [
+    {
+     "page": "https://zprintpro.com/ja/product/die-cut-stickers/",
+     "imp": "1",
+     "pos": "23.00"
+    }
+   ],
+   "バナースタンド 即日": []
+  }
+ }
+}

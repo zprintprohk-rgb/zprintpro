@@ -1,0 +1,102 @@
+﻿行動清單① (改 MOQ) 共 383 條; 抽驗 25 條
+
+[書刊/畫冊] src/data/blog-posts.ts:936 (moq_display)
+   'zh-hk': '插畫師、漫畫家、Comic-Con 同人攤位、VTuber 周邊設計師、文創品牌必睇。一本高質素同人誌決定品牌辨識度與粉絲忠誠度。智印港為香港同人市場提供 30 本起印 + 5 大裝訂 + 燙金封面 + 5-7 個工作天
+[書刊/畫冊] src/data/blog-posts.ts:1977 (moq_display)
+   ja: '絵本印刷：ハードカバー 32 ページ 100 部から | ZprintPro',
+[貼紙/標籤] src/data/buying-guides.ts:181 (moq_display)
+   <div class="bg-amber-50 rounded-lg p-4 my-4"><p>ステッカーは50枚から注文可（デジタル小ロット）。標準注文は100枚から、箔押し・偽造防止などの特殊加工は500枚から。</p></div>
+[貼紙/標籤] src/data/buying-guides.ts:916 (moq_display)
+   'zh-hk': 'FDA 認可膠水、防水面層、細 MOQ 100 張起。智印港食品級貼紙完整規格：FDA 21 CFR 175.105 文件、防水啞面／亮面、免費異形模切、DHL 2-4 日送達美國／歐盟手工品牌。',
+[傳單] src/data/category-conversion-blocks.ts:835 (moq_display)
+   "100 張起"
+[書刊/畫冊] src/data/category-conversion-blocks.ts:3020 (moq_display)
+   "a": "同人本 10 本起印；亞克力匙扣同罐型襟章 10 件起；明信片套裝 4 套起，社團同個人團隊細批量都印得到。"
+[書刊/畫冊] src/data/category-conversion-blocks.ts:3992 (moq_display)
+   { "q": "無線綴じの小ロット製本には対応していますか？", "a": "対応しています。中綴じ・無線綴じ・上製本すべて100冊からのご注文で、教材やテキストの小ロット製本にも対応します。ページ数と部数をいただければ30秒AI見積もりで
+[貼紙/標籤] src/data/category-seo-content.ts:2745 (moq_display)
+   '搜「貼紙訂製」嘅客戶最常問色差同起訂量：數碼印刷 50 張起免製版，打樣當日完成；柯式 1,000 張起更抵。戶外貼紙記得指明要 UV 油墨加過膠，先頂得住香港夏天嘅日曬雨淋。',
+[貼紙/標籤] src/data/category-seo-content.ts:3556 (moq_display)
+   { label: '最小発注数', value: '1枚から（大判出力）。10枚以上は大口割引あり。' },
+[書刊/畫冊] src/data/print-method-policy.ts:65 (moq_display)
+   * 2026-09-19 K3 拍板第三波: 書刊本冊 minQuantity 100 → **10**, 故本口徑由「1 本起印」改為
+[傳單] src/data/product-faqs.ts:118 (moq_display)
+   'ja': 'ZprintProではA5チラシ印刷に対応しており、最小ロットは10枚からです。チラシ配布、開業チラシ、イベントプロモーションなど、スタートアップや地域宣伝に最適です。詳しくは「チラシ印刷マスターガイド」をご覧ください。',
+[貼紙/標籤] src/data/products-content.ts:1779 (moq_display)
+   <p>ZprintPro の再剥離ステッカー（剥がせるステッカー）は、貼付後 90 日以内に糊残らずクリーンに剥がせる短期キャンペーン・レンタル機器・イベントバッジ・ウィンドウデカール専用設計のラベル印刷サービスです。ビニール基材または P
+[貼紙/標籤] src/data/products-content.ts:3522 (moq_display)
+   <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有
+[傳單] src/data/products-content.ts:5275 (moq_display)
+   <p>智印港（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+[貼紙/標籤] src/data/products-content.ts:7352 (moq_display)
+   <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有
+[貼紙/標籤] src/data/products-content.ts:8999 (moq_display)
+   <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有
+[貼紙/標籤] src/data/products-content.ts:10451 (moq_display)
+   <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有
+[貼紙/標籤] src/data/products.ts:1408 (moq_display)
+   '【數碼快印】10 張起印，當日打樣，急單無憂',
+[貼紙/標籤] src/data/sku-seo-data.ts:82 (moq_display)
+   "description": "透明貼紙/透明貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞
+[貼紙/標籤] src/data/sku-seo-data.ts:530 (moq_display)
+   "description": "Eco-friendly paper bags for sustainable brands. 100% recycled or FSC kraft, soy inks, GOTS cotton. 100-M
+[海報] src/data/sku-seo-data.ts:1207 (moq_display)
+   "description": "背膠海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作
+[貼紙/標籤] src/data/sku-seo-data.ts:2938 (moq_display)
+   "keywords": ["magnetic closure gift box","custom magnetic closure gift box","magnetic closure gift box free shipping","m
+[書刊/畫冊] src/data/sku-seo-data.ts:3408 (moq_display)
+   { "q": "畢業紀念冊印刷", "a": "香港畢業紀念冊 50 本起印, 騎馬釘 / 膠裝 / 精裝三種裝訂可選" },
+[海報] src/lib/seo.ts:462 (moq_display)
+   'zh-hk': 'a1a2 海報印刷 A0/A1/A2 + MTR 12 sheet 燈箱 | 防水 + 1張起印 + 4小時打稿 | 智印港',
+[賀卡] src/app/[locale]/category/[slug]/page.tsx:212 (moq_display)
+   'en': 'Greeting Cards Free Shipping · 10 MOQ Foil UV Christmas Wedding · Same Day 24h Rush USA',
+
+=== 反向驗證: 抽 12 條, 回原文看品類 ===
+
+[書刊/畫冊] src/data/blog-posts.ts:936
+   原文: 'zh-hk': '插畫師、漫畫家、Comic-Con 同人攤位、VTuber 周邊設計師、文創品牌必睇。一本高質素同人誌決定品牌辨識度與粉絲忠誠度。智印港為香港同人市場提供 30 本起印 + 5 大裝訂 + 燙金封面 + 5-7 個工作天交付,DHL 全球 2-4 天配送至 Comiket、Ani
+   上文: … }, excerpt: { 'zh-hk': '插畫師、漫畫家、Comic-Con 同人攤位、VTuber 周邊設計師、文創品牌必睇。一本高質素同人誌決定品牌辨識度與粉絲忠誠度。智印港為香港同人市場提供 30 本起印 + 5 大裝訂 + 燙金封面 + 5-7…
+
+[傳單] src/data/buying-guides.ts:252
+   原文: <p>智印港傳單標準起印量係 <strong>100 張</strong>（per 智印港 A4/A5 傳單產品頁 MOQ 參數）。100 張適合活動當日街派或測試設計；穩步派發建議 500-1,000 張；大型推廣或長期派發先需要 5,000 張以上——數量愈大，單價愈平（500 張 8 折、1,
+   上文: …<p>單面印刷成本最低，適合內容精簡、即睇即棄嘅街派傳單；雙面印刷背面可以放地圖、餐牌、優惠條款，適合要畀客人留低慢慢睇嘅傳單。雙面印刷一般加 20%（per 智印港 A5 傳單產品頁加工參數），但記得揀 157g 或以上銅版紙先唔會透底。需要雙面規格可直接睇…
+
+[海報] src/data/category-conversion-blocks.ts:1491
+   原文: "title": "海報印刷｜印海報 A0-A3 大圖輸出・戶外防水 PVC 100 張起｜智印港",
+   上文: … "category": "posters", "locale": "zh-hk", "title": "海報印刷｜印海報 A0-A3 大圖輸出・戶外防水 PVC 100 張起｜智印港", "metaDescription": "香港海報印刷｜印海報 1 張起…
+
+[書刊/畫冊] src/data/category-seo-content.ts:904
+   原文: { q: 'What changed in the book market in 2026 H1?', a: 'In H1 2026, ZprintPro served 47 Africa/Middle East education ministries (average 5,000 copies/
+   上文: … { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit binding method, page count, book size, paper type, cov…
+
+[貼紙/標籤] src/data/category-seo-content.ts:4112
+   原文: { q: 'Can I get custom die-cut stickers?', a: 'Yes. Any shape die-cut (rounded, irregular, character silhouette). Free die-cut design service, MOQ 50 
+   上文: … { q: 'Can you handle pre-Comiket rush orders?', a: 'Yes. 5-book rush in 3 days, 10-book rush in 2 days. Place orders 2 weeks befo…
+
+[貼紙/標籤] src/data/products-content.ts:319
+   原文: <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格
+   上文: …<p>智印港の同仕様クラフト紙袋 500 枚から 市場小売 の小売天井を 76% 下回ります。大量発注ほど単価が素材原価に近づきます。智印港は 15+ 年の印刷実績、15,000+ 顧客、100+ か国出荷の信頼。クラフト紙袋は全商品 FSC 認証、ISO 1…
+
+[貼紙/標籤] src/data/products-content.ts:4733
+   原文: <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格
+   上文: …<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 90…
+
+[貼紙/標籤] src/data/products-content.ts:8132
+   原文: <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格
+   上文: …<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 90…
+
+[貼紙/標籤] src/data/products-content.ts:11726
+   原文: <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格
+   上文: …<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 90…
+
+[貼紙/標籤] src/data/sku-seo-data.ts:372
+   原文: "ja": "一般為100張起訂，部分特殊工藝需500張起。"
+   上文: … "zh-hk": "螢光貼紙 / 不干膠 | 香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 | 智印港", "en": "Custom Fluorescent Stickers for pet food and brand labels — ZprintPro…
+
+[傳單] src/data/sku-seo-data.ts:1466
+   原文: "keywords": ["精裝禮盒", "精裝盒", "禮盒訂製", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒", "100個起印", "2天出貨", "FSC認證", "HK衛生署", 
+   上文: … "description": "精品盒訂製印刷，100個起印，HK$8起/個。硬殼天地盒磁吸盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾高端品牌，5-7天交貨，全球配送。100張起印, 順豐本地速遞, 立即 WhatsApp 報價。智印港 15+ …
+
+[海報] src/lib/seo-related-queries.ts:77
+   原文: ja: ['最も安いポスター印刷は？', 'ポスター1枚から印刷？', 'A1 ポスター即日受取'],
+   上文: … 'zh-hk': ['印海報邊間最平？', '印海報一張起印？', 'A1 海報印即時取'], en: ['Where is cheapest poster printing?', 'Single poster printing?', 'A1 poster …

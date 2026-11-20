@@ -1,0 +1,8 @@
+small-batch-stickers [zh-hk] 小批量貼紙 10 張起 HK$0.45 | 防水 PVC 異形切割 | 智印港 | [{"rule": "PRICE_MISMATCH", "msg": "标题价 0.45 ≠ basePrice(zh-hk)=38 (数字钩子须从 products.ts 现取, title-hooks SSoT)"}]
+small-batch-stickers [en] Small Batch Custom Stickers 50pcs from $0.045 | ZprintPro | [{"rule": "PRICE_MISMATCH", "msg": "标题价 0.045 ≠ basePrice(en)=0.55 (数字钩子须从 products.ts 现取, title-hooks SSoT)"}]
+same-day-flyers [zh-hk] 即日印刷 傳單 即日急件 覆膜 10張起 HK$1.30起 | 智印港 | [{"rule": "PRICE_MISMATCH", "msg": "标题价 1.3 ≠ basePrice(zh-hk)=0.55 (数字钩子须从 products.ts 现取, title-hooks SSoT)"}]
+same-day-flyers [en] Same-Day Flyer Printing from $0.16 | 10 MOQ | ZprintPro | [{"rule": "PRICE_MISMATCH", "msg": "标题价 0.16 ≠ basePrice(en)=0.95 (数字钩子须从 products.ts 现取, title-hooks SSoT)"}]
+same-day-flyers [ja] 即日チラシ印刷｜¥25〜・10枚〜・無料デザイン｜ZprintPro | [{"rule": "PRICE_MISMATCH", "msg": "标题价 25 ≠ basePrice(ja)=125 (数字钩子须从 products.ts 现取, title-hooks SSoT)"}]
+a2-posters [zh-hk] A2 海報印刷 420×594mm 10張起印 HK$9起 即日交貨 | 智印港 | [{"rule": "PRICE_MISMATCH", "msg": "标题价 9 ≠ basePrice(zh-hk)=16 (数字钩子须从 products.ts 现取, title-hooks SSoT)"}]
+a1-posters [zh-hk] A1 大幅海報 厚紙 | 1張起印 HK$45起 4小時打稿 | 智印港 | [{"rule": "PRICE_MISMATCH", "msg": "标题价 45 ≠ basePrice(zh-hk)=20 (数字钩子须从 products.ts 现取, title-hooks SSoT)"}]
+white-card-boxes [zh-hk] 白卡彩盒印刷訂製 化妝品盒 500個起 免費送貨 | 智印港 | [{"rule": "FILLER_WORD", "msg": "空洞/无源/条件承诺词「免費送貨」 (v5 禁令, 禁用于标题)"}]

@@ -1,0 +1,47 @@
+fix(seo): 替代池按 locale 分池 (修致命跨市场污染) + 从线上既有标题采集短钩子
+
+来源: K3 2026-09-19 决策「扩充替代池: 将现有已上线标题中的短钩子纳入池」
+
+## 一、池扩充 (harvestShortHooks)
+从 `title-input-bank` 的**现行标题**采集短钩子 (≤12 当量, 服务承诺类, 频次 ≥3):
+- 来源 = **已上线文案** ⇒ 不引入新数字、不编造
+- 只收**服务承诺类** (`free/proof/ship/design/turnaround/delivery/校正/打稿/交貨/配送/送料/設計`)
+  —— 全站统一承诺; **SKU 专有数字 (MOQ/价格) 绝不跨 SKU 复用**
+- 频次 ≥3 才算「全站既有约定」(单次出现不足以证明)
+- 实测产出: `en = [Free US Ship]` (线上 24 处在用) ; `zh-hk = []` ; `ja = []`
+
+## 二、★ 致命 bug 修复: 池必须按 locale 分池
+首版跨 locale 共用一个池 ⇒ 把 en 钩子 `Free US Ship` 塞进 **ja** 标题:
+`両面カラー印刷 両面チラシ | Free US Ship | ZprintPro`
+= 向日本用户承诺「**美国**免运费」= **跨市场错误文案**。
+⚠️ 关键: **G3 语言纯净挡不住它** —— G3 只查字形污染 (CJK/假名/简体),
+而 `Free US Ship` 是纯拉丁串, 在 ja 标题里**字形上合法、语义上错误**。
+⇒ 修法: 池按 locale 隔离 + 采集时同语言校验
+(en 段不许含 CJK; CJK 段不许含 ≥3 字母英文实词) + 取池时 `SHORT_HOOKS[locale]`。
+(另: 既有 en 标题里 `Free US Ship` 共 24 处、**全部在 en 区块**, 证明它确为 en 侧约定。)
+
+## 三、效果 (P2, 38 槽)
+纯删除 **6** / 替代 **11** / 仍需改写 **21**; 替换后**裸价格 0 条** ✅
+(原先 8 条替代候选都靠裸价格 `$0.32` 充数 —— 池扩充后由 `Free US Ship` 替代, copy 质量更好)
+样例: `waterproof-stickers/en` 59→**53** `Custom Waterproof Stickers | Free US Ship | ZprintPro`
+
+## 四、⚠️ 未落盘 (诚实登记, 未解决项)
+本次复核**仍见 1 条 ja 候选含 `Free US Ship`**:
+`double-sided-flyers/ja` → `両面カラー印刷 両面チラシ | Free US Ship | ZprintPro`。
+- 已证: 采集侧是 en-only (全仓 24 处 `Free US Ship` 均在 en 标题);
+  池日志亦显示 `ja=[(空)]` ⇒ **理论上 ja 段不应出现 en 钩子**。
+- **未能确认**该条是「读取了上一轮未刷新的 JSON」还是「残留的取池路径 bug」
+  (取池已改 `SHORT_HOOKS[locale]`, 但未逐行验证所有分支)。
+⇒ **据「未解释的跨语言残迹不得上线」原则, 本批不落盘**; 待定位后再走
+「独立复核 → 落盘」流程 (复核器已有 fill/trim/subst 模式感知)。
+> 纪律: 宁可少落 17 槽, 不可把一条「日文页承诺美国免运费」放上线。
+
+## 数据来源
+- .hermes/reports/title-input-bank-2026-09-19.json (现行标题, 采集源)
+- src/data/products.ts (MOQ/basePrice) · src/data/sku-seo-data.ts (24 处 Free US Ship 实证)
+校准日期: 2026-09-20 00:45
+
+## 验收
+短钩子池日志: `zh-hk=[(空)] | en=[Free US Ship] | ja=[(空)]` ✅ (分池生效)
+P2 汇总: 纯删除 6 / 替代 11 / 需改写 21 / **裸价格 0** ✅
+⚠️ 本批**未改 src** (ja 残迹未定位)

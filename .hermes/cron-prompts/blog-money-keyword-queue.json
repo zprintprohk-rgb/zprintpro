@@ -1,18 +1,20 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-08",
-  "source_window": "2026-10-08..2026-11-04",
-  "source_file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-07.xlsx",
+  "updated_at": "2026-11-14",
+  "source_window": "2026-10-14..2026-11-10",
+  "source_file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-12.xlsx",
   "measurement_scope": "all countries; query, page and country tables are not joined",
   "latest_evidence_handoff": {
-    "date": "2026-11-07",
-    "source": ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json",
-    "observation_window": "2026-10-08..2026-11-04",
-    "xlsx_status": "AVAILABLE; data day 2026-11-04",
-    "api_status": "NOT_EVALUATED; API freshness was not checked in this review",
+    "date": "2026-11-12",
+    "source": ".hermes/logs/gsc-2026-11-12-money-keyword-delta.json",
+    "observation_window": "2026-10-14..2026-11-10",
+    "xlsx_status": "AVAILABLE; 7d/28d data day 2026-11-10; latest 3mo export remains 2026-11-03",
+    "api_status": "NOT_EVALUATED; no current query-page join is claimed",
     "baseline_policy": "Keep each item's original frozen baseline and append current observations to measurement_history; a moving window is not an experiment win/loss.",
     "action_policy": "Page-1 zero-click queries are FIX candidates only after SERP/snippet audit; deep positions and split attribution are MEASURE. No automatic new article, canonical, redirect or K3 self-approval.",
-    "geo_status": "S1 complete with partial citation URLs; S2 2026-11-20..2026-11-24; do not rerun S1"
+    "geo_status": "S1 complete with partial citation URLs; S2 2026-11-20..2026-11-24; do not rerun S1",
+    "serp_status": "SERP_UNAVAILABLE; do not infer live displayed titles/snippets",
+    "coordination_board": ".hermes/logs/coordination-board.json"
   },
   "selection_policy": {
     "max_articles_per_run": 1,
@@ -35,7 +37,7 @@
       "Deep-position queries require index, intent, query-by-page attribution and page-change diagnosis before content work.",
       "Create or rewrite at most one article only after a genuine procurement information gap is verified; no information gain means NO_OP.",
       "Do not create an article when review_or_rewrite can close the evidence gap.",
-      "A commercial truth conflict changes the item to blocked_waiting_k3; never choose a value independently.",
+      "A commercial truth conflict not covered by CT-20261113-D1-D6 changes the item to blocked_waiting_k3; covered conflicts consume only their linked READY task and decision_record. Never choose a value independently.",
       "A delivered item becomes remeasure for 7/14/28-day checks, then completed; it cannot be regenerated without a new evidence gap.",
       "NO_OP is valid when no item has enough verified evidence or information gain."
     ]
@@ -70,9 +72,9 @@
         }
       },
       "constraints": [
-        "Do not invent or reconcile MOQ, price, turnaround, certification or capacity without an approved source.",
+        "Use CT-20261113-D1-D6 D2 and the linked READY residual task for MOQ/price/fulfilment; do not infer values.",
         "Support the category page; do not target the transaction head term with the blog URL.",
-        "Add natural bidirectional links only when both pages and slugs exist."
+        "Add natural bidirectional links only when both pages and slugs exist; no new generic flyer article without a new information gap."
       ],
       "learning": {
         "last_failure_mode": "queue_evidence_gap_inaccurate",
@@ -163,6 +165,13 @@
           "urls": 4
         },
         "measured_at": "2026-10-31T23:20+08:00"
+      },
+      "commercial_truth": {
+        "decision_id": "D2",
+        "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+        "execution_task_id": "FIX-20261031-FIVE-CATEGORY-TRUTH",
+        "execution_status": "READY_NOT_DEPLOYED",
+        "measurement_reset_after_deploy": true
       }
     },
     {
@@ -196,7 +205,8 @@
       "constraints": [
         "Do not create another generic sticker guide.",
         "Do not merge, redirect or canonicalize pages without query-by-page evidence.",
-        "Block commercial claims when 10/100-copy or 2-3/5-7-day conditions cannot be tied to an approved SKU source."
+        "Use CT-20261113-D1-D6 D2: ordinary matching SKUs 10, food labels 500, default 3mm bleed with template exceptions, and quote/order confirmation for unverified fulfilment.",
+        "Guide price-table work belongs only to FIX-20261030-STICKER-PRICE-THREE-LAYER; category work belongs to FIX-20261030-STICKER-ZH-TRUTH-CONFLICT."
       ],
       "learning": {
         "last_failure_mode": "conflicting_commercial_truth",
@@ -371,6 +381,13 @@
         "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
         "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
         "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      },
+      "commercial_truth": {
+        "decision_id": "D2",
+        "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+        "execution_task_id": "FIX-20261030-STICKER-PRICE-THREE-LAYER",
+        "execution_status": "READY_NOT_DEPLOYED",
+        "measurement_reset_after_deploy": true
       }
     },
     {
@@ -605,13 +622,13 @@
       ],
       "primary_url": "/zh-hk/category/packaging/",
       "search_intent": "custom packaging procurement by box type, material, structure, quantity, finishing and proof",
-      "evidence_gap": "Long pricing and box-type guides already exist; 100/500-unit and imposition conditions need commercial-truth reconciliation before content changes.",
+      "evidence_gap": "Packaging batch 1 is DONE (7b396bd9). Existing guides remain; only per-SKU condition labels in the five-category residual task are relevant. No generic packaging article is justified.",
       "target_slug": "packaging-box-pricing-2026",
       "alternate_slug": "kraft-paper-box-types-comparison-2026",
-      "action": "commercial_truth_audit_only",
-      "status": "blocked_waiting_k3",
-      "last_delivered": null,
-      "recheck_after": null,
+      "action": "remeasure_existing_assets_no_new_article",
+      "status": "remeasure",
+      "last_delivered": "2026-10-30",
+      "recheck_after": "2026-11-14",
       "source_window": "2026-10-04..2026-10-31",
       "baseline": {
         "紙盒印刷": {
@@ -631,14 +648,15 @@
         }
       },
       "constraints": [
-        "Packaging batch 1 remains WAITING_K3; do not publish commercial changes.",
         "Do not create a generic packaging trends article.",
-        "After approval, rewrite only one existing guide and preserve its slug."
+        "Preserve approved per-SKU MOQ and prices; only FIX-20261031-FIVE-CATEGORY-TRUTH may add residual box-type/SKU condition labels.",
+        "No new commercial claim without a matching decision record and SKU source."
       ],
       "learning": {
-        "last_failure_mode": "commercial_truth_gate",
+        "last_failure_mode": "stale_queue_gate_after_k3_approval",
         "next_run_constraints": [
-          "Require the K3 decision record before changing queue status."
+          "Packaging batch 1 DONE at 7b396bd9; do not resurrect WAITING_K3 from an old prompt.",
+          "Measure existing assets and execute only residual condition labels; no new article without a verified information gap."
         ]
       },
       "measurement_history": [
@@ -789,6 +807,13 @@
         "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
         "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
         "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      },
+      "commercial_truth": {
+        "decision_id": "D2-related residual only",
+        "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+        "execution_task_id": "FIX-20261031-FIVE-CATEGORY-TRUTH",
+        "execution_status": "READY_NOT_DEPLOYED",
+        "measurement_reset_after_deploy": true
       }
     },
     {
@@ -814,15 +839,15 @@
         }
       },
       "constraints": [
-        "K3 2026-11-08 01:38 approved /zh-hk/category/posters/ as the primary URL; prices and certifications remain outside this approval.",
-        "Do not change titles, prices, canonicals or redirects.",
-        "Do not rebuild the existing poster guide family."
+        "K3 2026-11-08 approved /zh-hk/category/posters/ as primary URL; do not change canonicals or redirects.",
+        "Do not rebuild the existing poster guide family.",
+        "Price/title/fulfilment residuals are allowed only through FIX-20261113-POSTER-BLOG-TRUTH and CT-20261113-D1-D6; one existing article in the first run."
       ],
       "learning": {
         "last_failure_mode": "waiting_k3_resolved_for_primary_url_only",
         "next_run_constraints": [
-          "Measure query-by-page attribution on 2026-11-14 and 2026-11-21; do not interpret deployment as ranking improvement.",
-          "Any later price, certification, title, canonical or redirect work requires separate authorization."
+          "Measure query-by-page attribution on 2026-11-14 and 2026-11-21 unless a truth-fix deployment resets the window; do not interpret deployment as ranking improvement.",
+          "Keep A2 HK$16 and the three approved A1 product lines; remove unsourced claims instead of selecting a new SEO-friendly number."
         ]
       },
       "measurement_history": [
@@ -915,6 +940,13 @@
         "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
         "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
         "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      },
+      "commercial_truth": {
+        "decision_id": "D1+D6",
+        "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+        "execution_task_id": "FIX-20261113-POSTER-BLOG-TRUTH",
+        "execution_status": "READY_NOT_DEPLOYED",
+        "measurement_reset_after_deploy": true
       }
     },
     {
@@ -930,7 +962,7 @@
       "action": "remeasure_serp_snippet",
       "status": "remeasure",
       "last_delivered": "2026-10-30",
-      "recheck_after": "2026-11-28",
+      "recheck_after": "2026-11-18",
       "source_window": "2026-10-04..2026-10-31",
       "baseline": {
         "small batch sticker printing": {
@@ -942,14 +974,15 @@
       "constraints": [
         "K3 2026-10-30 approved 10 stickers from US$0.55 with verified fulfilment wording; strategy-task-queue.json is DONE with commits 7b396bd9, 9f7b348c.",
         "Do not create another small-batch synonym article.",
-        "Keep title, description, H1 and body unchanged during the current page-level measurement window; any later snippet test requires real SERP evidence and separate bounded approval."
+        "Snippet/title experiments remain HOLD pending real SERP evidence, but known false residual claims may be corrected only by FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL; actual deployment resets the measurement window."
       ],
       "learning": {
         "last_failure_mode": "stale_queue_gate_after_k3_approval",
         "next_run_constraints": [
           "Before applying blocked_waiting_k3, reconcile strategy-task-queue.json, the K3 decision record and execution commits.",
           "On 2026-11-28 refresh same-scope GSC and query-by-page evidence and capture the real US-English SERP; if unavailable, retain SERP_UNAVAILABLE rather than inferring the displayed snippet.",
-          "Do not treat overlapping 28-day windows as independent experiment results or deployment as a CTR/ranking win."
+          "Do not treat overlapping 28-day windows as independent experiment results or deployment as a CTR/ranking win.",
+          "If FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL deploys, mark the old snippet experiment RESET_BY_TRUTH_FIX and append a new actual-deployment baseline; otherwise keep the 2026-11-28 recheck."
         ]
       },
       "measurement_history": [
@@ -992,6 +1025,20 @@
           "production_observation": "HTTP 200, self-canonical, index/follow; current title, description and H1 are recorded in the diagnosis report.",
           "action": "hold_measure_no_op",
           "judgement": "Corrected the stale commercial WAITING_K3 gate. Concentrated PDP attribution supports SERP/CTR diagnosis, not another article. Exact-match wording is only a hypothesis; the 2026-10-30 page changes remain inside the 2-4 week measurement window. No src change, commit, push or deployment."
+        },
+        {
+          "date": "2026-11-13",
+          "action": "commercial_truth_fix_committed_and_pushed",
+          "commit": "ff97d235",
+          "evidence": ".hermes/logs/2026-11-13-ZP-daily-content.md + lane-runs.jsonl",
+          "deploy": "PUSHED; Cloudflare deployment and independent live assertions not yet evidenced",
+          "online_verify": "PENDING",
+          "retest": [
+            "2026-11-18",
+            "2026-11-25",
+            "2026-12-11"
+          ],
+          "judgement": "RESET_BY_TRUTH_FIX. Do not overlay snippet/title variables; pushed code is not independent production verification."
         }
       ],
       "query_page_evidence": {
@@ -1026,6 +1073,17 @@
         "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
         "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
         "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      },
+      "commercial_truth": {
+        "decision_id": "D3",
+        "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+        "execution_task_id": "FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
+        "execution_status": "DONE_PUSHED_ONLINE_VERIFY_PENDING",
+        "measurement_reset_after_deploy": true,
+        "execution_commit": "ff97d235",
+        "production_deploy": "PUSHED_NOT_INDEPENDENTLY_ONLINE_VERIFIED",
+        "online_verify": "PENDING",
+        "experiment_status": "RESET_BY_TRUTH_FIX"
       }
     },
     {
@@ -1036,11 +1094,11 @@
       ],
       "primary_url": "/en/category/books/",
       "search_intent": "catalog procurement, binding and international order conditions",
-      "evidence_gap": "Commercial truth and query-to-page attribution are pending; no automatic content production.",
+      "evidence_gap": "MOQ 10 copies and 11-09 H1/description deployments are resolved. Residual proof/fulfilment/colour claims require a bounded truth fix; no new procurement article is justified.",
       "target_slug": null,
-      "action": "measurement_only",
-      "status": "blocked_waiting_k3",
-      "last_delivered": null,
+      "action": "remeasure_and_bounded_truth_residual",
+      "status": "remeasure",
+      "last_delivered": "2026-11-09",
       "recheck_after": "2026-11-28",
       "source_window": "2026-10-04..2026-10-31",
       "baseline": {
@@ -1051,12 +1109,16 @@
         }
       },
       "constraints": [
-        "The en catalog commercial item remains WAITING_K3 for blog content decisions.",
-        "PDP H1 MOQ truth resolved by K3-3 A ruling; execution belongs to weekly-meta single-variable batch (proposed 2026-11-09)."
+        "Preserve a33abd3b and 392c5f30 history; do not repeat the H1/description changes.",
+        "Only FIX-20261113-CATALOG-TRUTH-RESIDUAL may clean residual proof/fulfilment/colour claims under CT-20261113-D1-D6 D4.",
+        "If that truth fix deploys, mark the prior experiment RESET_BY_TRUTH_FIX and start a new baseline; otherwise retain the existing 2026-11-14/2026-11-21 observations."
       ],
       "learning": {
-        "last_failure_mode": "commercial_truth_gate",
-        "next_run_constraints": []
+        "last_failure_mode": "stale_queue_gate_after_k3_approval",
+        "next_run_constraints": [
+          "Before applying blocked_waiting_k3, reconcile DONE history, execution commits and CT-20261113-D1-D6.",
+          "Do not add a snippet/title variable during truth remediation; deployment and measurement are separate evidence objects."
+        ]
       },
       "measurement_history": [
         {
@@ -1176,6 +1238,13 @@
         "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
         "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
         "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      },
+      "commercial_truth": {
+        "decision_id": "D4",
+        "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+        "execution_task_id": "FIX-20261113-CATALOG-TRUTH-RESIDUAL",
+        "execution_status": "READY_NOT_DEPLOYED",
+        "measurement_reset_after_deploy": true
       }
     },
     {
@@ -1326,6 +1395,13 @@
         "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
         "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
         "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      },
+      "commercial_truth": {
+        "decision_id": "D5",
+        "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+        "execution_task_id": "FIX-20261113-JA-EDUCATION-C109-TRUTH",
+        "execution_status": "READY_NOT_DEPLOYED",
+        "measurement_reset_after_deploy": true
       }
     }
   ],
@@ -1385,6 +1461,34 @@
       ],
       "judgement": "MEASURE；部署不等于排名提升，不得 SCALE。",
       "source": ".hermes/logs/money-kw-share-baseline-2026-10-31.md + .hermes/logs/2026-11-08-poster-wedding-primary-url-execution.md"
+    },
+    {
+      "date": "2026-11-13",
+      "by": "Kimi Work manual session; CT-20261113-D1-D6",
+      "change": [
+        "catalog-en stale blocked_waiting_k3 reconciled to remeasure; 11-09 deployment history preserved and residual truth task linked.",
+        "small-batch snippet HOLD separated from known-truth remediation; any actual truth-fix deployment resets measurement.",
+        "packaging stale batch-1 WAITING rule reconciled to DONE 7b396bd9; no new generic article.",
+        "posters/stickers/flyers/comiket linked to bounded decision tasks; DONE history was not rewritten."
+      ],
+      "production_src_modified": false,
+      "source": ".hermes/logs/commercial-truth-decisions-2026-11-13.json"
+    },
+    {
+      "date": "2026-11-14",
+      "by": "Kimi Work manual session; evidence reconciliation",
+      "change": [
+        "Latest GSC handoff advanced to the 2026-11-12 export with exact 7d/28d observation window 2026-10-14..2026-11-10.",
+        "small-batch truth task reconciled to ff97d235 pushed, online verification PENDING, old experiment RESET_BY_TRUTH_FIX.",
+        "No canonical, primary-URL, title or approval state was changed."
+      ],
+      "source": ".hermes/logs/2026-11-13-ZP-daily-content.md + .hermes/logs/lane-runs.jsonl + .hermes/logs/gsc-2026-11-12-four-window-analysis.json"
     }
-  ]
+  ],
+  "commercial_truth_decision": {
+    "decision_id": "CT-20261113-D1-D6",
+    "record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+    "document": "docs/2026-11-13-commercial-truth-optimal-value-decisions.md",
+    "rule": "Consume only linked READY tasks. Known false claims are not preserved for experiment cleanliness; actual truth-fix deployment resets measurement."
+  }
 }

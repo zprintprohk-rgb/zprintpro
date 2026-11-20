@@ -1,0 +1,32 @@
+docs(daily-cron): 8/9 v8.3 retrofit baby-product 报告 + matrix 标记 (v8_ready + conversion_status verified)
+
+8/9 retrofit 完成报告 (per v8.3 cron §0.1 .hermes 改动):
+- .hermes/k3-inbox/2026-08-09-0930-v8.3-retrofit-baby-product.md (升级 K3):
+  - baby-product 8.3/15 → 100% v8_ready ✅
+  - 5 步转化验证 3 locale 全 verified ✅
+  - 3 locale chars: zh-hk 6928 / en 11755 / ja 7186 (总 +9653)
+  - commit 0d46a4c → CF Pages run 93221129040 success
+  - 5 步 live verify 6/6 PASS
+  - 6 篇 partial retrofit 进度 3/6 done (8/7 apparel / 8/8 cross-border / 8/9 baby-product)
+- .hermes/logs/2026-08-09-日运营报告.md (K3 14 章节格式):
+  - §1 摘要 / §2 数据 / §3 已完成动作 / §4 v8.3 §0 验收 / §5 转化验证 5 步
+  - §6 §0 红线 / §7 v8.3 §0 硬约束 / §8 §K3 §6 段 / §9 §建议扩容段
+  - §10 §Commits / §11 §Live verify / §12 §Next Steps / §13 §附录 / §14 §push 配额
+- .hermes/industry-keyword-matrix.json (matrix 标记 v8.3):
+  - queue[Q-014] baby-product: status=completed / v8_ready_score=15 / conversion_status=verified
+  - locale_chars: zh-hk 6928 / en 11755 / ja 7186
+  - last_conversion_test: 2026-08-09T09:30:00+08:00
+  - v8_retrofit.v8_ready_count: 1 → 4 (cosmetics + apparel + cross-border + baby-product)
+  - v8_retrofit.phase_a_progress 3/6 completed (8/7 / 8/8 / 8/9)
+  - 8/9 push_quota: 2/5 daily, 2/150 monthly
+
+8/9 push: 2 effective push (retrofit 0d46a4c + report 报告), 仍 ≤5 push/天 上限 (per §0.14 K3 8/8 15:35 拍板)
+8/9 build: 1 CF Pages build (retrofit 0d46a4c), 报告 commit 不触发 build (只 .hermes 改动)
+
+未 commit (8/10 攒批):
+- src/app/[locale]/about/page.tsx (8/8 K3 14:43 拍板 {false && (...)} 工厂图/团队图 placeholder 修复, 8/9 retrofit 不在 scope)
+- 残留 .hermes/88fd-*.txt 等临时文件 (untracked, 不主动 add)
+
+8/10 retrofit cron auto 任务 (per matrix 8_10 retrofit):
+- cmyk-guide (8.0/15) — Tier A 跨境電商 / 美妝護膚, P0 优先级提升 + 拆 5 长尾 query 内链 + FAQPage 5 Q
+- 8/10 攒批合并 1 push: cmyk-guide + about 修复 + 8/10 日运营报告

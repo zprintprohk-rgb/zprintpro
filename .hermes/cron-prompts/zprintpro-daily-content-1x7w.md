@@ -1,3 +1,36 @@
+<!-- COORDINATED-FLYWHEEL-2026-11-14 BEGIN -->
+# 2026-11-14 协同飞轮：共享证据、分工执行、生产验收、复测学习
+
+1. **先消费同一协同板**：依次读 `run-context-ZP-daily-content.json` 的 `coordination`、`.hermes/logs/coordination-board.json` 与本任务 `upstream_inputs`。只执行本车道 `ready_tasks` 中 `status=READY`、`owner_lane=ZP-daily-content` 的一项；WAITING_K3／BLOCKED_INFRA／SCHEDULED／MEASURE_HOLD 不得转成 READY。
+2. **本车道职责**：修交易页商业真值与采购路径，承接 GSC 证据和 K3 裁决；每轮一个 bounded task，按协同板优先级选择，DONE 不重做，PARTIAL 只做 remaining_scope，不替 Blog 写文，不替 weekly 改 snippet。
+3. **交接与验收**：执行前核对 sibling_lanes 与文件写入范围；完成后把 baseline／change／approval／production_deploy／online_verify／retest／retry_at／exit_criteria 写回报告，供 k3-review 独立线上验收和 weekly/monthly 学习。push/HEAD 不是部署证明。
+4. **降级与停止**：可选 GSC／周报缺失保留 `available:false` 与 `NO_CURRENT_BASELINE`；协同板构建失败必须 BLOCKED，不得退回独立选词。无已批准可执行项就 NO_OP，不新增任务、不新增 cron。
+<!-- COORDINATED-FLYWHEEL-2026-11-14 END -->
+
+<!-- COMMERCIAL-TRUTH-2026-11-13 BEGIN -->
+# 2026-11-13 当前最高执行块：D1–D6 已裁决，按边界消费
+
+> 本块取代下方旧块中 packaging／catalog／C109 等陈旧 `WAITING_K3` 列表，以及 small-batch／catalog“实验窗内不得修任何真值”的旧表述；不取代 K3 最新拍板、AGENTS.md、结果总线、并发锁和既有门禁。配置更新不等于生产部署或自然调度恢复。
+
+1. **先对账再执行**：读 `docs/2026-11-13-commercial-truth-optimal-value-decisions.md`、`.hermes/logs/commercial-truth-decisions-2026-11-13.json` 与 `strategy-task-queue.json`。只消费 `status=READY`、`decision_record` 指向本包且 `write_scope` 完整的一项；DONE 不重做，PARTIAL 只做 remaining_scope，无裁决字段不得自行推导商业值。
+2. **统一口径**：普通匹配贴纸 SKU 10 张、食品标签 500 张；flyers 10 张；A2 10 张 HK$16 起；A1 柯式 20／喷绘成品 290 起／喷绘基材 45–56；en small-batch 10 stickers、from US$0.55 带条件；catalog 10 copies。未核实 proof／生产／运输／交付均报价或订单确认，无源认证／退款／统计／满意度删除，默认 3mm 出血但模板优先。
+3. **真值优先于实验完整**：small-batch／catalog 的 snippet 实验继续 HOLD，但已知错误不得为保护旧窗口而保留。残留真值修正是独立批次；实际部署后标 `RESET_BY_TRUTH_FIX` 并重置 baseline，未部署则保留原复测计划。
+4. **写入与验收**：每轮一个 bounded task；同一文件不得跨车道同日写。SKU SEO 必须回 `zprintpro-sku-seo-data.csv` 再跑生成器，禁手改派生 TS。输出 baseline／approval／production_deploy／online_verify／D1-D2／7-14-28d retest／exit；裁决文档、wrapper=0、报告完成均不是部署证明。
+5. **学习边界**：只追加 measurement_history，不覆盖旧 baseline；缺部署或线上核验不进入学习，未获 scale_evidence 不 SCALE；同因只累加 recurrence，不新建 cron／Automation，不自动改共享 prompt。
+<!-- COMMERCIAL-TRUTH-2026-11-13 END -->
+
+<!-- FLYWHEEL-EVIDENCE-2026-11-07 BEGIN -->
+# 2026-11-07 当前执行块：带钱词承接与证据飞轮
+
+> 本块是当前执行口径，优先于下方历史增产、铺量和固定主题指令；不取代 K3 最新拍板、AGENTS.md、结果总线契约、商业真值门禁和并发锁。配置更新不等于自然调度恢复。
+
+1. **STEP 0 证据消费**：先读 run-context、结果总线契约、最新 lane-runs、lane-status  freshness、不晚于当日的最新 `gsc-daily-anomaly-*`、`gsc-*-money-keyword-delta.json`、最近 periodic-review 与上轮报告。lane-status 超过 1 天只能标 `STALE_STATUS`，不得用旧 verdict 派运维单。
+2. **本车道优先解决承接与真值**：先查 query×page、实际 category／PDP／Blog 分工、索引与商业真值，再决定是否改内容。海报、EN sticker、C109 等价格／交期／打稿／运输冲突未拍板时只做诊断，不铺新文。
+3. **三类问题不得混治**：首页高展示零点击先交 weekly 做 SERP／真实 title/snippet 审查；深位词先 MEASURE 索引、意图、承接 URL 和页面变更；只有仍存在真实采购信息缺口才允许复写或新建。
+4. **生产台账**：每项动作输出 `FIX／MEASURE／SCALE／STOP + owner + baseline + approval_gate + production_deploy + online_verify + retest + retry_at + exit_criteria`。窗口移动、手动执行和报告完成都不是 SEO 实验成功。
+5. **学习与停止**：没有生产部署和线上核验不得进入学习候选或 SCALE；同因重复只累加 recurrence 并遵守 cooldown。无信息增益、WAITING_K3、BLOCKED_INFRA 与有证据的 NO_OP 均为合法结果，不新建 cron，不自动改共享 prompt。
+<!-- FLYWHEEL-EVIDENCE-2026-11-07 END -->
+
 <!-- RECOVERY-MODE-2026-10-12 BEGIN -->
 > # 🚨 【恢复模式 · 限定凌驾级】spam 命中恢复期 (K3 2026-10-12 拍板 · SSoT: `docs/2026-10-12-recovery-lane-defense-plan.md`)
 >

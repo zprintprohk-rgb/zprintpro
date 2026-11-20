@@ -1,0 +1,30 @@
+K3 2026-09-23: 下架 can-badge SKU (罐型襟章印刷 非业务范围, 首頁/同人周邊/罐型襟章印刷 删除)
+
+[数据层]
+- products.ts: 删 can-badge 块 (L7497-7600, -104 行)
+- sku-seo-data.ts: 删 can-badge 条目 (-36 行)
+- next.config.js: SKU_CUT_301 新增 ['can-badge','/category/japan-doujin/'];
+  旧 '/product/doujin-badges'→can-badge 改指 /category/japan-doujin/ (链式收拢)
+- DoujinSKU.tsx: 3 语卡片删 can-badge (4→3), 网格 lg:grid-cols-5→3
+
+[SEO/内容]
+- seo.ts: japan-doujin 类目 titles/keywords/descriptions 去罐型襟章/缶バッジ/
+  亞克力鑰匙扣/acrylic keychain (顺带清 9/22 遗留死品词)
+- category-conversion-blocks.ts: zh-hk/ja 转换块去匙扣+襟章全部提及, ja 块
+  商品线改 同人誌/ポストカードセット/エコトート (仅用有源数字, 无编造 MOQ)
+- industry-scenario-links.ts: anime_goods/vtuber 场景 can-badge→doujinshi-printing
+- blog-data 定价基准三语: 92→91 SKU (en/ja content 9 处 99→91 系 9/22 漏改),
+  日本同人(4)→(3), 品类 SKU 清单去死品词; en 同人博客 can-badge 死链锚文本
+  改指 postcard-set/eco-tote-bag; zh IP 博客表 模切貼紙,亞克力鑰匙扣→明信片套裝
+
+[派生/资产]
+- 孤儿图 git rm: japan/can-badge.webp + zprintpro-doujinshi-can-badge-ja-{1..5}.jpg
+- sitemap 重建: Products 92→91, image 80→79 唯一; sitemap-content.ts 重生成
+
+[惰性残留, 先例保留]
+- pricing.ts / image-alt-map.ts: keyed lookup 死条目留 (acrylic-keychain 同先例)
+
+[门禁]
+- census 92 entries / 276 slots 全绿 (slotsMissing 0, recountMismatch 0)
+- title-band 276 槽 0 issue; brand-mentions A 类 0; gsc-leak 0; blog-integrity PASS
+- tsc 54 = 基线 (quote-engine __tests__ 存量, 无新增)

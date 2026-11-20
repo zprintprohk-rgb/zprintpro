@@ -1,0 +1,28 @@
+﻿fix(i18n): 波 1 — en 值内中文 778→68 (递减 710) + ja 侧 1 处 + 基线递减 716
+
+K3 拍板的 6 个核心术语 (一次拍板, 三语分别取值):
+  國際認證體系 → internationally certified  (泛指, 避 ISO 9001 重复)
+  進口印刷設備 → Heidelberg presses / ja: ハイデルベルク印刷機
+  認證紙      → FSC-certified paper (消费前缀 FSC + 尾部 certified)
+  急件+截單   → rush orders, 18:00 cutoff (固定句式, 合并替换防语法断裂)
+  答案 nugget → Answer nugget (12 处正常文案改英文, K3 终裁)
+  答案×13 连重复 → 整串删除 (生成器坏输出, K3 终裁)
+
+抽样救下的 4 类「原建议会误伤」的合法内容 (显式保留断言保护):
+  ① 术语对照注: 餐牌 (HK 叫法对照) / 騎馬釘·中綴じ (括注) / 坑紙·段ボール (括注)
+  ② 第三方引文出处: 万邑通 (Winit) 2025 白皮书 — 引文出处非品牌宣传
+  ③ 合规他语系内容: sku-seo 的 zh-hk 块标题 / ja 块文案 (厚口チラシ·箔押し)
+  ④ 合规品牌名: 彩龍印刷 (白名单 4 行 32 字, 已显式排除)
+
+执行: 25 条规则 / 195 处; 七道断言 (逐条计数 + 备份 + scope 形状 + 保留(防误删) + 重复词 + JSON 合法 + 篇目守恒)
+修后自检抓到 1 处异常搭配 'certified internationally certified' 并修正 (计数+形状+JSON 四道断言)
+
+locale 守卫真实验证: en.json 704 → 26 (递减 678), 未引入反向污染 ✅
+基线递减: total 1071 → 360 (只许递减, 新增污染 0)
+验收: 门禁 🔴 0 / ★新增缺陷 0 | tsc 54=54 | 编码 7 档无 BOM 无乱码
+
+数据来源:
+- 门童口径测量 .hermes/_probe-pb/wave1-verify.cjs (I18N_POLLUTION_EN 逐字符)
+- 执行/断言 .hermes/_probe-pb/wave1-execute.cjs
+- 抽样取证 .hermes/_probe-pb/stepC2-iso-context-sample.cjs (10/10 抓到 FSC 前缀重复)
+- 回滚备份 .hermes/_probe-pb/_wave1.*.bak (7 档)

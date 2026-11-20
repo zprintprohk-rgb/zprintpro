@@ -1,0 +1,8 @@
+docs(gate): pre-commit 门禁失效事故报告 (8/26~9/13, 338 commit 暴露面) + DoD 判定收窄到 src/
+
+1. docs/2026-09-13-precommit-gate-incident.md: 事故/取证/修复/教训/待 K3 三问
+   - 根因: core.hooksPath=.githooks, 而 .githooks/ 只有 pre-push; canonical hook 装到 .git/hooks/ 被忽略
+   - 暴露面: 2026-08-26 ~ 09-13 共 338 个 commit 未经 pre-commit 门禁
+2. scripts/check-regression-guard.js: DoD 判定收窄为「仅 src/ 命中」
+   - 依据: DoD 函数头注释本意 = 「本次 commit 涉及的 **src/** 文件改动…必查 error-patterns.md」
+   - 否则提交纯 docs/报告(含数字与✅状态)必被 DoD 拦, 门禁不可用

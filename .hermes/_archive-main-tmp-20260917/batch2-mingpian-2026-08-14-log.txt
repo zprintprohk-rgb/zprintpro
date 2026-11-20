@@ -1,0 +1,7 @@
+=== batch 2 §11 名片清扫执行日志 8/14 ===
+src\data\blog-data\zh-hk.json: 20 substitutions, 名片/名刺/咭片 20 -> 0
+src\data\category-seo-content.ts: 32 substitutions, 名片/名刺/咭片 52 -> 20
+src\app\[locale]\case-studies\page.tsx: 9 substitutions, 名片/名刺/咭片 18 -> 9
+src\data\blog-data\ja.json: 12 substitutions, 名片/名刺/咭片 12 -> 0
+
+GRAND: 73 substitutions total

@@ -1,0 +1,66 @@
+feat(seo): MOQ 冲突裁决表 (阶段三前置) — 24 DRIFT / 10 PENDING_K3 / 9 ALIGNED
+
+来源: K3 2026-09-19 指令「30 分钟 MOQ reconciliation, 输出 moq-conflict-resolution.json」
+纪律: **真值优先级 = 最新 K3 裁决 > products.ts 当前值** (products.ts 可能滞后于裁决)
+
+## 一、裁决基线 (三条已落裁决)
+- 4593937c (11:56) 第一波 紙品線 (傳單/貼紙/賀卡) 100→10, 22 SKU (實測 diff: 46 行 minQuantity)
+- bb2a1f71 (16:47) 第三波 書刊本冊 100→10
+- c18107a0 (19:43) a2-posters 100→10; 且明示「餐牌【50本起訂】 vs 真值 100」为矛盾
+- cc1d5293 (20:03) art-posters 真值 (第二批)
+
+## 二、判定方法 (逐 locale 独立, 不强统一)
+- ALIGNED    — 标题声称 == 真值, 或 products.ts 自身文本自证该 SKU 有独立口径 ⇒ **不改**
+- DRIFT      — 与裁决真值冲突且无自证/无簇约定 ⇒ **须修**
+- PENDING_K3 — 同 category+locale 全体一致声称同一值 (疑为分市场/产品线约定) ⇒ **挂起, 不阻塞其他批次**
+
+## 三、结果 (全 300 槽扫描, 不限 115 违规 ⇒ 合规标题也有冲突)
+| 判定 | 条数 |
+|---|---|
+| DRIFT | 24 |
+| PENDING_K3 | 10 |
+| ALIGNED | 9 |
+
+### 3.1 DRIFT 中的「裁决已点名」组 (证据最硬, 可直接修)
+- **menus 4 条 zh-hk** (pvc / laminated / hardcover / drink): 标题称 50, 真值 100
+  —— c18107a0 已把这个矛盾**点名**过一次 (当时移除的是 features 版「【50本起訂】」), **标题版残留至今**。
+  其中 `laminated-menus` 属 **P0-A** (位置≤20+展示≥30), 错值代价最大。
+- **premium-greeting-cards 3 locale**: 标题称 100, 真值 10
+  —— 4593937c 明列「賀卡」在第一波 100→10 内, 标题未随之更新。
+- **art-posters/ja**: 标题称 100枚〜, 真值 1 (cc1d5293 第二批真值已落)。
+
+### 3.2 DRIFT 其余 (传单/书刊/横幅, 与 4593937c+bb2a1f71 冲突)
+folded-leaflets/zh-hk (P1) · thick-paper-flyers/zh-hk · same-day-flyers/zh-hk ·
+school-flyers/zh-hk+ja · catalog/perfect-bound/saddle-stitch /ja · hardcover-books/ja ·
+spiral-notebooks/zh-hk+ja · exercise-books/zh-hk (P0-B)+ja · textbooks/ja ·
+roll-up-banners/zh-hk · adhesive-banners/zh-hk (后两条方向相反: 标题称 10 vs 真值 100)
+
+### 3.3 PENDING_K3 (10 条, 须 K3 定「口径层级」)
+- **ja 传单 7 条全一致声称 100枚〜** (簇 7/7) ⇒ 强信号: ja 市场可能确有 100 起订约定,
+  与全局真值 10 并存。**不判 DRIFT, 不强改为 10** (K3 纪律: locale 独立判断)。
+- small-batch-stickers 3 locale: products.ts en description 自载「50-sticker MOQ for the
+  small-batch line」⇒ 该 SKU 自身即小批量产品线。须 K3 裁定「产品线口径」是否高于「品类线口径」。
+
+## 四、假阳性修正 (§0.23.2 闸门 1: 先验证指标本身)
+首版 en 抽取器用裸 `(\d{1,4})\s*pcs`, 把 wedding-suite-bundle 的「6 Pcs」(套装件数)
+误判为起订量 ⇒ 多报 1 条。修法: 本站 MOQ 全 ≥10 ⇒ pcs 回退要求 **2 位数以上**。
+修正后 DRIFT 25→24, 该 FP 消失。
+⚠️ 残存假阳性风险: zh-hk/ja 的 `N張起印` 也可能命中非 MOQ 语境的数字, 故本表**定位为筛选清单**,
+   每条修复前须回 products.ts 复核 (尤其 PENDING_K3 组)。
+
+## 五、与并行会话门童 #24 的差异 (待对账)
+门童 #24 (SKU 级扫描) 报「🆕 0 漂移 / 6 条已登录」, 本表在 **title 字段**上报 24 DRIFT + 10 PENDING。
+两法不一致 (§0.23.2) ⇒ 可能原因: ① 门童 #24 的 SKU 判定域未覆盖 title 字段
+(ex: menus 的【50本起訂】features 版已按裁决移除, title 版仍在 ⇒ 若 title 在域内应报红);
+② 本表 FP。**建议**: 把门童 #24 的判定域显式覆盖 `sku-seo-data.ts` 的 title 字段后复跑,
+两法对账一致再动手修 —— 避免「把正确标题改错」。
+
+## 数据来源
+- src/data/products.ts (minQuantity / description 自证语料) · src/data/sku-seo-data.ts (300 槽 title)
+- K3 裁决: 4593937c / bb2a1f71 / c18107a0 / cc1d5293
+- .hermes/reports/sku-title-census-2026-09-19.json (批次归属)
+校准日期: 2026-09-19 20:25
+
+## 验收
+node scripts/resolve-moq-conflicts.mjs → DRIFT 24 / PENDING_K3 10 / ALIGNED 9 ✅
+FP 修正后 wedding-suite-bundle 消失 ✅ · 5 条带裁决原文背书 ✅

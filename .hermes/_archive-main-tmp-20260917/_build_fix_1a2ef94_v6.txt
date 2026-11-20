@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/components/category/CategorySidebar.tsx:23:3
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 21 |[39m [36mconst[39m iconMap[33m:[39m [33mRecord[39m[33m<[39m[33mstring[39m[33m,[39m [33mReact[39m[33m.[39m[33mElementType[39m[33m>[39m [33m=[39m {[0m
+[0m [90m 22 |[39m   [32m'stickers'[39m[33m:[39m [33mCreditCard[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 23 |[39m   [32m'stickers'[39m[33m:[39m [33mTag[39m[33m,[39m[0m
+[0m [90m    |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 24 |[39m   [32m'paper-bags'[39m[33m:[39m [33mShoppingBag[39m[33m,[39m[0m
+[0m [90m 25 |[39m   [32m'flyers'[39m[33m:[39m [33mFileText[39m[33m,[39m[0m
+[0m [90m 26 |[39m   [32m'posters'[39m[33m:[39m [33mImageIcon[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

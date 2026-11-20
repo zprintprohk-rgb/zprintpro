@@ -1,0 +1,52 @@
+feat(seo): P0-A1 批次落盘 — 18 槽标题补满 (FILL 77→59), 进入 7-10 天验证窗
+
+来源: K3 2026-09-19 决策「100% 逐条审核 18 条候选 → apply-title-batch 落盘 → 进入验证窗」
+
+## 一、独立复核 (逐条, 不抽检) — 18/19 槽通过
+新增 `apply-title-batch.mjs --from-proposals=<file>`: **不信生成器的 trace, 自己重算**。
+对每条候选独立验证 7 项:
+① 当量 50-57 ② 主词保留(逐字比对首段) ③ 品牌末尾一次 ④ 语言纯净
+⑤ **MOQ 与 moqStatus 期望一致**(回 products.ts minQuantity / K3 裁决真值重算)
+⑥ **价格与 products.ts basePrice 一致**(回源头重算)
+⑦ **单一 MOQ**(候选内不得有两个互斥起订量 —— laminated-menus 矛盾的根因防线)
+
+结果: **18 槽通过 / 1 槽拒绝**(`laminated-menus`: 剥掉错值段后仅 34 当量, 无全闸门通过候选)
+。与生成器自报的 18/19 **完全一致** (§0.23.2 双方法: 生成器闸门 vs 独立复核, 两法一致)。
+
+## 二、落盘结果 (18 槽, 全部 zh-hk)
+| 变化 | 数值 |
+|---|---|
+| census OK | 185 → **203** |
+| census FILL (<50) | 77 → **59** |
+| census TRIM (>58) | 38 (不变) |
+| 违规总数 | 115 → **97** |
+| 写入行数 | 18 (期望 18) ✅ 落盘断言 18/18 逐字命中 ✅ |
+
+样例 (全部落在 50-57 最优/写满区):
+- `waterproof-stickers` 37→**56**: `防水貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.22起 | 智印港` (304 展示/pos 9.44)
+- `pearl-envelopes` 37→**57**: `珍珠光信封 | 雙面印刷 多規格 | 100個起 HK$1.15起 | 智印港`
+- `mailer-boxes` 38→**57**: `訂製郵寄盒 | 燙金 UV 100%訂製 | 100個起 HK$3.5起 | 智印港`
+- `certificates` 37→**54**: `證書印刷 | 專業印刷 品質保證 | 100個起 HK$8起 | 智印港`
+
+## 三、纪律遵守
+- **最小增量**: 全部 18 条保留原主词与原既有修饰段, 只补缺失的数字钩子 (churn 最小)
+- **不发明数字**: 每条的数字钩子均可回 products.ts 复算 (已由独立复核逐条验证)
+- **MANUAL_REVIEW 不落盘**: `laminated-menus` 无候选即拒绝; 该槽与 menus 争议簇一并待 K3 裁决
+- **保留既有 wording**: `foil-greeting-cards` 的 `燙金名片印刷` 措辞**未改** (触及 §0.0 展示层待裁决面, 只补钩子不动措辞)
+
+## 四、★ 遗留待处理 (诚实登记, 不夸大)
+1. `過膠餐牌/zh-hk` (laminated-menus): 34 当量, 需人工补内容 —— 随 menus 簇 MANUAL_REVIEW 裁决
+2. 多条候选**保留了已知填充词** `品質保證` / `100%環保 多尺寸` (如 certificates / kraft-paper-bags)。
+   本批按「最小增量」原则未动 (避免同批既加钩子又改措辞 = 双变量, 破坏验证窗归因)。
+   ⇒ 建议作为**独立后续批次** (单变量) 评估替换。
+3. `畫冊印刷 | 專業印刷 品質保證 | 10個起 HK$24起` — catalogue 价格钩 HK$24 已回 basePrice 复核通过。
+
+## 数据来源
+- .hermes/reports/title-proposals-P0-A1-2026-09-19.json (生成器提案) + title-input-bank / moq-precision-classification
+- src/data/products.ts (minQuantity / basePrice 回源头复核) · scripts/guards/title-equiv.js
+校准日期: 2026-09-19 22:50
+
+## 验收
+node scripts/apply-title-batch.mjs --from-proposals=... --apply → 18 槽落盘, 断言 18/18 ✅
+node scripts/sku-title-census.mjs → OK 203 / FILL 59 / TRIM 38 ✅
+验证窗: **本批 18 槽进入 7-10 天只读** (不得再改同批词)

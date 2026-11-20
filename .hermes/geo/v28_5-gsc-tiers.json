@@ -1,0 +1,1052 @@
+{
+ "source_files": {
+  "threesite_28d": {
+   "file": "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx",
+   "sheets": [
+    "图表",
+    "查询数",
+    "网页",
+    "国家_地区",
+    "设备",
+    "搜索结果呈现",
+    "过滤器"
+   ],
+   "pages_sheet": "网页",
+   "slug_rows": 98
+  },
+  "zh-hk_28d": {
+   "file": "香港站点28天数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx",
+   "sheets": [
+    "图表",
+    "查询数",
+    "网页",
+    "国家_地区",
+    "设备",
+    "搜索结果呈现",
+    "过滤器"
+   ],
+   "pages_sheet": "网页",
+   "slug_rows": 81
+  },
+  "en_28d": {
+   "file": "美国站点28天数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx",
+   "sheets": [
+    "图表",
+    "查询数",
+    "网页",
+    "国家_地区",
+    "设备",
+    "搜索结果呈现",
+    "过滤器"
+   ],
+   "pages_sheet": "网页",
+   "slug_rows": 57
+  },
+  "ja_28d": {
+   "file": "日本站点28天数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx",
+   "sheets": [
+    "图表",
+    "查询数",
+    "网页",
+    "国家_地区",
+    "设备",
+    "搜索结果呈现",
+    "过滤器"
+   ],
+   "pages_sheet": "网页",
+   "slug_rows": 42
+  }
+ },
+ "per_slug": {
+  "a2-posters": {
+   "imps": 1340,
+   "clicks": 26,
+   "imps_zh": 331,
+   "imps_en": 110,
+   "imps_ja": 75,
+   "per_site_sum": 516,
+   "tier": "head"
+  },
+  "same-day-flyers": {
+   "imps": 318,
+   "clicks": 10,
+   "imps_zh": 56,
+   "imps_en": 31,
+   "imps_ja": 20,
+   "per_site_sum": 107,
+   "tier": "head"
+  },
+  "doujinshi-printing": {
+   "imps": 488,
+   "clicks": 14,
+   "imps_zh": 18,
+   "imps_en": 38,
+   "imps_ja": 186,
+   "per_site_sum": 242,
+   "tier": "head"
+  },
+  "exercise-books": {
+   "imps": 194,
+   "clicks": 9,
+   "imps_zh": 13,
+   "imps_en": 38,
+   "imps_ja": 0,
+   "per_site_sum": 51,
+   "tier": "head"
+  },
+  "waterproof-stickers": {
+   "imps": 320,
+   "clicks": 8,
+   "imps_zh": 104,
+   "imps_en": 18,
+   "imps_ja": 29,
+   "per_site_sum": 151,
+   "tier": "head"
+  },
+  "foil-stickers": {
+   "imps": 137,
+   "clicks": 6,
+   "imps_zh": 17,
+   "imps_en": 26,
+   "imps_ja": 1,
+   "per_site_sum": 44,
+   "tier": "head"
+  },
+  "custom-calendars": {
+   "imps": 278,
+   "clicks": 4,
+   "imps_zh": 198,
+   "imps_en": 2,
+   "imps_ja": 5,
+   "per_site_sum": 205,
+   "tier": "head"
+  },
+  "saddle-stitch-booklets": {
+   "imps": 450,
+   "clicks": 6,
+   "imps_zh": 89,
+   "imps_en": 207,
+   "imps_ja": 35,
+   "per_site_sum": 331,
+   "tier": "head"
+  },
+  "large-bags": {
+   "imps": 146,
+   "clicks": 3,
+   "imps_zh": 59,
+   "imps_en": 0,
+   "imps_ja": 1,
+   "per_site_sum": 60,
+   "tier": "head"
+  },
+  "a4-flyers": {
+   "imps": 186,
+   "clicks": 3,
+   "imps_zh": 63,
+   "imps_en": 26,
+   "imps_ja": 2,
+   "per_site_sum": 91,
+   "tier": "head"
+  },
+  "pearl-envelopes": {
+   "imps": 143,
+   "clicks": 3,
+   "imps_zh": 6,
+   "imps_en": 2,
+   "imps_ja": 0,
+   "per_site_sum": 8,
+   "tier": "head"
+  },
+  "foil-wedding-invitations": {
+   "imps": 46,
+   "clicks": 3,
+   "imps_zh": 3,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 3,
+   "tier": "mid"
+  },
+  "graduation-yearbook": {
+   "imps": 94,
+   "clicks": 3,
+   "imps_zh": 11,
+   "imps_en": 22,
+   "imps_ja": 10,
+   "per_site_sum": 43,
+   "tier": "mid"
+  },
+  "magnetic-closure-gift-box": {
+   "imps": 76,
+   "clicks": 4,
+   "imps_zh": 1,
+   "imps_en": 0,
+   "imps_ja": 1,
+   "per_site_sum": 2,
+   "tier": "mid"
+  },
+  "fruit-food-label-stickers": {
+   "imps": 50,
+   "clicks": 3,
+   "imps_zh": 16,
+   "imps_en": 5,
+   "imps_ja": 0,
+   "per_site_sum": 21,
+   "tier": "mid"
+  },
+  "small-batch-stickers": {
+   "imps": 403,
+   "clicks": 4,
+   "imps_zh": 23,
+   "imps_en": 160,
+   "imps_ja": 3,
+   "per_site_sum": 186,
+   "tier": "head"
+  },
+  "a1-posters": {
+   "imps": 374,
+   "clicks": 4,
+   "imps_zh": 114,
+   "imps_en": 45,
+   "imps_ja": 19,
+   "per_site_sum": 178,
+   "tier": "head"
+  },
+  "large-envelopes": {
+   "imps": 286,
+   "clicks": 2,
+   "imps_zh": 57,
+   "imps_en": 27,
+   "imps_ja": 0,
+   "per_site_sum": 84,
+   "tier": "head"
+  },
+  "transparent-stickers": {
+   "imps": 219,
+   "clicks": 2,
+   "imps_zh": 73,
+   "imps_en": 37,
+   "imps_ja": 0,
+   "per_site_sum": 110,
+   "tier": "head"
+  },
+  "food-boxes": {
+   "imps": 224,
+   "clicks": 2,
+   "imps_zh": 89,
+   "imps_en": 51,
+   "imps_ja": 21,
+   "per_site_sum": 161,
+   "tier": "head"
+  },
+  "removable-stickers": {
+   "imps": 148,
+   "clicks": 2,
+   "imps_zh": 72,
+   "imps_en": 15,
+   "imps_ja": 0,
+   "per_site_sum": 87,
+   "tier": "head"
+  },
+  "certificates": {
+   "imps": 75,
+   "clicks": 2,
+   "imps_zh": 16,
+   "imps_en": 2,
+   "imps_ja": 7,
+   "per_site_sum": 25,
+   "tier": "mid"
+  },
+  "colored-envelopes": {
+   "imps": 61,
+   "clicks": 2,
+   "imps_zh": 10,
+   "imps_en": 2,
+   "imps_ja": 0,
+   "per_site_sum": 12,
+   "tier": "mid"
+  },
+  "die-cut-stickers": {
+   "imps": 103,
+   "clicks": 3,
+   "imps_zh": 21,
+   "imps_en": 2,
+   "imps_ja": 11,
+   "per_site_sum": 34,
+   "tier": "head"
+  },
+  "gift-bags": {
+   "imps": 42,
+   "clicks": 2,
+   "imps_zh": 21,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 21,
+   "tier": "mid"
+  },
+  "wedding-seating-charts": {
+   "imps": 17,
+   "clicks": 2,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "mid"
+  },
+  "large-red-packets": {
+   "imps": 16,
+   "clicks": 2,
+   "imps_zh": 1,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 1,
+   "tier": "mid"
+  },
+  "handle-bags": {
+   "imps": 304,
+   "clicks": 1,
+   "imps_zh": 183,
+   "imps_en": 3,
+   "imps_ja": 0,
+   "per_site_sum": 186,
+   "tier": "head"
+  },
+  "catalog-printing": {
+   "imps": 343,
+   "clicks": 2,
+   "imps_zh": 41,
+   "imps_en": 133,
+   "imps_ja": 10,
+   "per_site_sum": 184,
+   "tier": "head"
+  },
+  "business-envelopes": {
+   "imps": 205,
+   "clicks": 1,
+   "imps_zh": 47,
+   "imps_en": 1,
+   "imps_ja": 3,
+   "per_site_sum": 51,
+   "tier": "head"
+  },
+  "kraft-paper-packaging-box": {
+   "imps": 220,
+   "clicks": 1,
+   "imps_zh": 64,
+   "imps_en": 7,
+   "imps_ja": 84,
+   "per_site_sum": 155,
+   "tier": "head"
+  },
+  "adhesive-posters": {
+   "imps": 106,
+   "clicks": 1,
+   "imps_zh": 2,
+   "imps_en": 41,
+   "imps_ja": 1,
+   "per_site_sum": 44,
+   "tier": "head"
+  },
+  "pvc-menus": {
+   "imps": 111,
+   "clicks": 1,
+   "imps_zh": 28,
+   "imps_en": 13,
+   "imps_ja": 0,
+   "per_site_sum": 41,
+   "tier": "head"
+  },
+  "a5-flyers": {
+   "imps": 126,
+   "clicks": 3,
+   "imps_zh": 6,
+   "imps_en": 25,
+   "imps_ja": 1,
+   "per_site_sum": 32,
+   "tier": "head"
+  },
+  "laminated-menus": {
+   "imps": 91,
+   "clicks": 1,
+   "imps_zh": 30,
+   "imps_en": 10,
+   "imps_ja": 14,
+   "per_site_sum": 54,
+   "tier": "mid"
+  },
+  "corrugated-boxes": {
+   "imps": 114,
+   "clicks": 1,
+   "imps_zh": 24,
+   "imps_en": 8,
+   "imps_ja": 6,
+   "per_site_sum": 38,
+   "tier": "head"
+  },
+  "desk-calendars": {
+   "imps": 68,
+   "clicks": 1,
+   "imps_zh": 38,
+   "imps_en": 0,
+   "imps_ja": 8,
+   "per_site_sum": 46,
+   "tier": "mid"
+  },
+  "eco-flyers": {
+   "imps": 82,
+   "clicks": 1,
+   "imps_zh": 10,
+   "imps_en": 12,
+   "imps_ja": 0,
+   "per_site_sum": 22,
+   "tier": "mid"
+  },
+  "wedding-thank-you-cards": {
+   "imps": 39,
+   "clicks": 1,
+   "imps_zh": 28,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 28,
+   "tier": "mid"
+  },
+  "kraft-paper-bags": {
+   "imps": 194,
+   "clicks": 1,
+   "imps_zh": 66,
+   "imps_en": 1,
+   "imps_ja": 1,
+   "per_site_sum": 68,
+   "tier": "head"
+  },
+  "fluorescent-stickers": {
+   "imps": 92,
+   "clicks": 1,
+   "imps_zh": 3,
+   "imps_en": 19,
+   "imps_ja": 5,
+   "per_site_sum": 27,
+   "tier": "mid"
+  },
+  "magnetic-calendars": {
+   "imps": 44,
+   "clicks": 1,
+   "imps_zh": 7,
+   "imps_en": 0,
+   "imps_ja": 1,
+   "per_site_sum": 8,
+   "tier": "mid"
+  },
+  "school-flyers": {
+   "imps": 32,
+   "clicks": 1,
+   "imps_zh": 16,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 16,
+   "tier": "mid"
+  },
+  "outdoor-vinyl-banners": {
+   "imps": 76,
+   "clicks": 1,
+   "imps_zh": 22,
+   "imps_en": 1,
+   "imps_ja": 0,
+   "per_site_sum": 23,
+   "tier": "mid"
+  },
+  "foil-greeting-cards": {
+   "imps": 34,
+   "clicks": 2,
+   "imps_zh": 1,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 1,
+   "tier": "mid"
+  },
+  "mini-calendars": {
+   "imps": 46,
+   "clicks": 1,
+   "imps_zh": 4,
+   "imps_en": 2,
+   "imps_ja": 8,
+   "per_site_sum": 14,
+   "tier": "mid"
+  },
+  "cosmetic-boxes": {
+   "imps": 102,
+   "clicks": 1,
+   "imps_zh": 6,
+   "imps_en": 11,
+   "imps_ja": 6,
+   "per_site_sum": 23,
+   "tier": "head"
+  },
+  "thick-paper-flyers": {
+   "imps": 34,
+   "clicks": 1,
+   "imps_zh": 3,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 3,
+   "tier": "mid"
+  },
+  "security-stickers": {
+   "imps": 55,
+   "clicks": 1,
+   "imps_zh": 4,
+   "imps_en": 11,
+   "imps_ja": 0,
+   "per_site_sum": 15,
+   "tier": "mid"
+  },
+  "tuck-end-boxes": {
+   "imps": 26,
+   "clicks": 1,
+   "imps_zh": 3,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 3,
+   "tier": "mid"
+  },
+  "outdoor-posters": {
+   "imps": 65,
+   "clicks": 1,
+   "imps_zh": 10,
+   "imps_en": 6,
+   "imps_ja": 10,
+   "per_site_sum": 26,
+   "tier": "mid"
+  },
+  "hardcover-books": {
+   "imps": 27,
+   "clicks": 1,
+   "imps_zh": 5,
+   "imps_en": 3,
+   "imps_ja": 0,
+   "per_site_sum": 8,
+   "tier": "mid"
+  },
+  "disposable-menus": {
+   "imps": 20,
+   "clicks": 1,
+   "imps_zh": 4,
+   "imps_en": 3,
+   "imps_ja": 0,
+   "per_site_sum": 7,
+   "tier": "mid"
+  },
+  "roll-up-banners": {
+   "imps": 57,
+   "clicks": 1,
+   "imps_zh": 18,
+   "imps_en": 5,
+   "imps_ja": 9,
+   "per_site_sum": 32,
+   "tier": "mid"
+  },
+  "acrylic-keychain": {
+   "imps": 34,
+   "clicks": 1,
+   "imps_zh": 17,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 17,
+   "tier": "mid"
+  },
+  "postcard-set": {
+   "imps": 15,
+   "clicks": 1,
+   "imps_zh": 2,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 2,
+   "tier": "mid"
+  },
+  "thick-greeting-cards-400g": {
+   "imps": 19,
+   "clicks": 1,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "mid"
+  },
+  "wall-calendars": {
+   "imps": 24,
+   "clicks": 1,
+   "imps_zh": 7,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 7,
+   "tier": "mid"
+  },
+  "adhesive-banners": {
+   "imps": 47,
+   "clicks": 1,
+   "imps_zh": 1,
+   "imps_en": 22,
+   "imps_ja": 0,
+   "per_site_sum": 23,
+   "tier": "mid"
+  },
+  "textbooks": {
+   "imps": 29,
+   "clicks": 1,
+   "imps_zh": 1,
+   "imps_en": 3,
+   "imps_ja": 10,
+   "per_site_sum": 14,
+   "tier": "mid"
+  },
+  "double-sided-flyers": {
+   "imps": 136,
+   "clicks": 0,
+   "imps_zh": 1,
+   "imps_en": 55,
+   "imps_ja": 19,
+   "per_site_sum": 75,
+   "tier": "head"
+  },
+  "electronics-packaging-box": {
+   "imps": 133,
+   "clicks": 0,
+   "imps_zh": 32,
+   "imps_en": 49,
+   "imps_ja": 0,
+   "per_site_sum": 81,
+   "tier": "head"
+  },
+  "vehicle-wraps": {
+   "imps": 160,
+   "clicks": 0,
+   "imps_zh": 68,
+   "imps_en": 70,
+   "imps_ja": 0,
+   "per_site_sum": 138,
+   "tier": "head"
+  },
+  "eco-paper-bags": {
+   "imps": 142,
+   "clicks": 0,
+   "imps_zh": 42,
+   "imps_en": 20,
+   "imps_ja": 1,
+   "per_site_sum": 63,
+   "tier": "head"
+  },
+  "foil-red-packets": {
+   "imps": 71,
+   "clicks": 0,
+   "imps_zh": 1,
+   "imps_en": 0,
+   "imps_ja": 23,
+   "per_site_sum": 24,
+   "tier": "mid"
+  },
+  "folded-leaflets": {
+   "imps": 68,
+   "clicks": 0,
+   "imps_zh": 18,
+   "imps_en": 2,
+   "imps_ja": 5,
+   "per_site_sum": 25,
+   "tier": "mid"
+  },
+  "mesh-banners": {
+   "imps": 44,
+   "clicks": 0,
+   "imps_zh": 32,
+   "imps_en": 0,
+   "imps_ja": 1,
+   "per_site_sum": 33,
+   "tier": "mid"
+  },
+  "mailer-boxes": {
+   "imps": 50,
+   "clicks": 0,
+   "imps_zh": 14,
+   "imps_en": 6,
+   "imps_ja": 0,
+   "per_site_sum": 20,
+   "tier": "mid"
+  },
+  "rigid-boxes": {
+   "imps": 56,
+   "clicks": 0,
+   "imps_zh": 5,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 5,
+   "tier": "mid"
+  },
+  "perfect-bound-books": {
+   "imps": 43,
+   "clicks": 0,
+   "imps_zh": 6,
+   "imps_en": 11,
+   "imps_ja": 0,
+   "per_site_sum": 17,
+   "tier": "mid"
+  },
+  "can-badge": {
+   "imps": 52,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 2,
+   "imps_ja": 11,
+   "per_site_sum": 13,
+   "tier": "mid"
+  },
+  "white-card-bags": {
+   "imps": 47,
+   "clicks": 0,
+   "imps_zh": 7,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 7,
+   "tier": "mid"
+  },
+  "art-posters": {
+   "imps": 51,
+   "clicks": 0,
+   "imps_zh": 18,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 18,
+   "tier": "mid"
+  },
+  "display-posters": {
+   "imps": 34,
+   "clicks": 0,
+   "imps_zh": 1,
+   "imps_en": 1,
+   "imps_ja": 1,
+   "per_site_sum": 3,
+   "tier": "mid"
+  },
+  "folding-boxes": {
+   "imps": 40,
+   "clicks": 0,
+   "imps_zh": 3,
+   "imps_en": 6,
+   "imps_ja": 0,
+   "per_site_sum": 9,
+   "tier": "mid"
+  },
+  "rounded-corner-greeting-cards": {
+   "imps": 22,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "mid"
+  },
+  "name-tags-badges": {
+   "imps": 20,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "mid"
+  },
+  "white-card-boxes": {
+   "imps": 26,
+   "clicks": 0,
+   "imps_zh": 5,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 5,
+   "tier": "mid"
+  },
+  "hardcover-menus": {
+   "imps": 30,
+   "clicks": 0,
+   "imps_zh": 1,
+   "imps_en": 8,
+   "imps_ja": 0,
+   "per_site_sum": 9,
+   "tier": "mid"
+  },
+  "premium-greeting-cards": {
+   "imps": 16,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 2,
+   "imps_ja": 0,
+   "per_site_sum": 2,
+   "tier": "mid"
+  },
+  "gang-run-card-boxes": {
+   "imps": 22,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "mid"
+  },
+  "photo-frame-calendars": {
+   "imps": 25,
+   "clicks": 0,
+   "imps_zh": 6,
+   "imps_en": 1,
+   "imps_ja": 9,
+   "per_site_sum": 16,
+   "tier": "mid"
+  },
+  "spiral-notebooks": {
+   "imps": 20,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 2,
+   "imps_ja": 1,
+   "per_site_sum": 3,
+   "tier": "mid"
+  },
+  "embossed-red-packets": {
+   "imps": 18,
+   "clicks": 0,
+   "imps_zh": 1,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 1,
+   "tier": "mid"
+  },
+  "drink-menus": {
+   "imps": 17,
+   "clicks": 0,
+   "imps_zh": 3,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 3,
+   "tier": "mid"
+  },
+  "wedding-suite-bundle": {
+   "imps": 11,
+   "clicks": 0,
+   "imps_zh": 2,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 2,
+   "tier": "mid"
+  },
+  "eco-tote-bag": {
+   "imps": 9,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "mid"
+  },
+  "matte-greeting-cards": {
+   "imps": 12,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "mid"
+  },
+  "custom-red-packets": {
+   "imps": 14,
+   "clicks": 0,
+   "imps_zh": 2,
+   "imps_en": 0,
+   "imps_ja": 1,
+   "per_site_sum": 3,
+   "tier": "mid"
+  },
+  "wedding-place-cards": {
+   "imps": 5,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "mid"
+  },
+  "eco-red-packets": {
+   "imps": 10,
+   "clicks": 0,
+   "imps_zh": 1,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 1,
+   "tier": "mid"
+  },
+  "spot-uv-greeting-cards": {
+   "imps": 9,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "mid"
+  },
+  "cartoon-red-packets": {
+   "imps": 8,
+   "clicks": 0,
+   "imps_zh": 2,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 2,
+   "tier": "mid"
+  },
+  "save-the-date-cards": {
+   "imps": 3,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "tail"
+  },
+  "cafe-table-cards": {
+   "imps": 2,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "tail"
+  },
+  "roll-stickers": {
+   "imps": 1,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "tail"
+  },
+  "wedding-menu-cards": {
+   "imps": 1,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "tail"
+  },
+  "rounded-corner-cards": {
+   "imps": 1,
+   "clicks": 0,
+   "imps_zh": 0,
+   "imps_en": 0,
+   "imps_ja": 0,
+   "per_site_sum": 0,
+   "tier": "tail"
+  }
+ },
+ "counts": {
+  "total_slugs": 98,
+  "zero": 0,
+  "tail": 5,
+  "mid": 61,
+  "head": 32
+ },
+ "crosscheck_top10": {
+  "a2-posters": {
+   "plan": 516,
+   "parsed": 1340,
+   "match": false
+  },
+  "saddle-stitch-booklets": {
+   "plan": 331,
+   "parsed": 450,
+   "match": false
+  },
+  "doujinshi-printing": {
+   "plan": 242,
+   "parsed": 488,
+   "match": false
+  },
+  "custom-calendars": {
+   "plan": 205,
+   "parsed": 278,
+   "match": false
+  },
+  "handle-bags": {
+   "plan": 186,
+   "parsed": 304,
+   "match": false
+  },
+  "small-batch-stickers": {
+   "plan": 186,
+   "parsed": 403,
+   "match": false
+  },
+  "catalog-printing": {
+   "plan": 184,
+   "parsed": 343,
+   "match": false
+  },
+  "a1-posters": {
+   "plan": 178,
+   "parsed": 374,
+   "match": false
+  },
+  "food-boxes": {
+   "plan": 161,
+   "parsed": 224,
+   "match": false
+  },
+  "kraft-paper-packaging-box": {
+   "plan": 155,
+   "parsed": 220,
+   "match": false
+  }
+ },
+ "crosscheck_counts": {
+  "plan": {
+   "with_imps": 84,
+   "tail_lt5": 16,
+   "zero": 7
+  },
+  "parsed": {
+   "total_slugs": 98,
+   "zero": 0,
+   "tail": 5,
+   "mid": 61,
+   "head": 32
+  }
+ },
+ "appearance_sheet": {
+  "sheet": "搜索结果呈现",
+  "rows": [
+   [
+    "搜索结果呈现",
+    "点击次数",
+    "展示",
+    "点击率",
+    "排名"
+   ],
+   [
+    "产品摘要",
+    "176.0",
+    "8373.0",
+    "0.021",
+    "22.62"
+   ],
+   [
+    "商家信息",
+    "4.0",
+    "52.0",
+    "0.07690000000000001",
+    "1.88"
+   ],
+   [
+    "评价摘要",
+    "0.0",
+    "1.0",
+    "0.0",
+    "8.0"
+   ]
+  ]
+ },
+ "extracted_at": "2026-10-16T12:4x+08:00",
+ "method": "totals=3-site 28d 网页 sheet; per-locale=3 single-site 28d 网页 sheets; no double counting"
+}

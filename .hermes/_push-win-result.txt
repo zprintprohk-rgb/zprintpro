@@ -1,0 +1,515 @@
+WINDOW_OPEN poll=28 12:28:01
+origin=40e1231ed74b94e2176edb4dc87a30f01ad9b546 head=03bfa0c1a33cdfacbcac6d875d84cd85917cfb24
+
+14 [GUARD #14] 12 �ιǼ� checklist + ���߶��� (ֻ������/�ع�μ� FAIL, ����������)...
+
+=== 12 �ιǼ���ʽ checklist (SSoT docs/2026-09-08-title-rules-and-deep-blog-standard.md ��3.1) ===
+
+--- en/packaging-box-pricing-2026  [�μ��� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 14 �� | "? Quick Answer��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 11 ���飬���� 394/194/293/242/��
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 9 = 9 �����ʾ� 7 ����78%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 4 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 171 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α��
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 4 ��ɽ��� Q&A | ���� Q="How much does packaging box printing cos"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=212236
+
+--- en/sticker-material-pvc-vinyl-removable  [�μ��� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 31 �� | "? Quick Answer (40-second read)��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 13 ���飬���� 418/402/257/214/��
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 11 + H3 4 = 15 �����ʾ� 9 ����60%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 4 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 187 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α��
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 4 ��ɽ��� Q&A | ���� Q="Which waterproof sticker material lasts "
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=210978
+
+--- en/poster-printing-guide  [2 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 183 �� | "US poster sizes at a glance: A3 (11x17) tabletop, A2 window/��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 3 ���飬���� 230/227/193
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 4 + H3 2 = 6 �����ʾ� 4 ����67%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 2 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 68 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+        ���� �޷�: �� poster-printing-guide �� LinkedIn��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 7 ��ɽ��� Q&A | ���� Q="What is the minimum order quantity?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=188340
+
+--- en/campus-education-printing-pillar-guide  [2 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 122 �� | "Campus education printing MOQ 100 HK$8-300/copy, 5-7 working��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 3 ���飬���� 74/78/65
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 11 + H3 3 = 14 �����ʾ� 11 ����79%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 2 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 514 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+        ���� �޷�: �� campus-education-printing-pillar-guide �� LinkedIn��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 24 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 5 ��ɽ��� Q&A | ���� Q="Does campus journal MOQ start from 100 p"
+  ��10 PASS    CTA  | ֤��: CTA 3 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=226438
+
+--- en/foil-stamping-3-applications-2026  [�μ��� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 31 �� | "? Quick Answer (40-second read)��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 19 ���飬���� 519/229/270/275/��
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 15 = 15 �����ʾ� 13 ����87%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 8 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 477 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α��
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 6 ��ɽ��� Q&A | ���� Q="What is the minimum order quantity for f"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=254827
+
+--- en/hong-kong-printing-cost-baseline-2026  [5 �� FAIL] ---
+  ��01 FAIL    ���������׶�  | ֤��: �׶� 230 �� > 200 ��
+        ���� �޷�: �� hong-kong-printing-cost-baseline-2026 �׶ε� 100-200 ����ֱ�ӻش��������
+  ��02 FAIL    ���ٴ𰸿�  | ֤��: �� 0 ���Ϲ���ٴ𰸿飨���ȷֲ� ?��
+        ���� �޷�: Ϊ hong-kong-printing-cost-baseline-2026 ���� >=3 �� 40-60 �ֿ��ٴ𰸿�
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 0/10 (H2 10)�����ʾ� 10����: The Key Numbers at a Glance / Methodology: How This Baseli��
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 PASS    �Ƚϱ���  | ֤��: 2 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 215 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+        ���� �޷�: �� hong-kong-printing-cost-baseline-2026 �� LinkedIn + EU REACH��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 6 ��ɽ��� Q&A | ���� Q="Why does the online reference price diff"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 23 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=218404
+
+--- en/roll-up-banner-printing-guide  [4 �� FAIL] ---
+  ��01 FAIL    ���������׶�  | ֤��: �׶� 487 �� > 200 ��
+        ���� �޷�: �� roll-up-banner-printing-guide �׶ε� 100-200 ����ֱ�ӻش��������
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 3 ���飬���� 341/373/472
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 3/8 (H2 8)�����ʾ� 5����: Sizes and price tiers / Artwork specs and safe areas��
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 PASS    �Ƚϱ���  | ֤��: 3 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 95 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+        ���� �޷�: �� roll-up-banner-printing-guide �� LinkedIn + EU REACH��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 6 ��ɽ��� Q&A | ���� Q="How much is one roll-up banner set?"
+  ��10 PASS    CTA  | ֤��: CTA 3 ��
+  ��11 PASS    ����ê������  | ֤��: 13 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=198236
+
+--- en/print-specifications-reference-guide-2026  [2 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 14 �� | "? Quick Answer��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 16 ���飬���� 415/362/274/364/��
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 1/17 (H2 10 + H3 7)�����ʾ� 16����: 1. A1-A6 Standard Paper Size / 2. CMYK vs RGB vs Pantone: 3��
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 PASS    �Ƚϱ���  | ֤��: 4 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 402 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 5 ��ɽ��� Q&A | ���� Q="What is the size difference between A5 a"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 14 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=227078
+
+--- en/school-exercise-book-printing-guide  [6 �� FAIL] ---
+  ��01 FAIL    ���������׶�  | ֤��: �׶� 211 �� > 200 ��
+        ���� �޷�: �� school-exercise-book-printing-guide �׶ε� 100-200 ����ֱ�ӻش��������
+  ��02 FAIL    ���ٴ𰸿�  | ֤��: �� 0 ���Ϲ���ٴ𰸿飨���ȷֲ� ?��
+        ���� �޷�: Ϊ school-exercise-book-printing-guide ���� >=3 �� 40-60 �ֿ��ٴ𰸿�
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 0/7 (H2 7)�����ʾ� 7����: Back-to-School 2026 Market / 4 Paper Stocks��
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 FAIL    �Ƚϱ���  | ֤��: �� 0 �� <table>���� >=2��
+        ���� �޷�: Ϊ school-exercise-book-printing-guide ���Ӳ��ʡ�ά�ȱ� + �۸�/����/ʱЧ��
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 94 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+        ���� �޷�: �� school-exercise-book-printing-guide �� LinkedIn��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 4 ��ɽ��� Q&A | ���� Q="100 MOQ accepted?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=174002
+
+--- ja/packaging-box-pricing-2026  [1 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 8 �� | "? �����å����󥵩`��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 10 ���飬���� 211/460/392/94/��
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 9 = 9 �����ʾ� 7 ����78%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 4 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 154 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 4 ��ɽ��� Q&A | ���� Q="�ѥå��`���ܥå���ӡˢ 500 ���� 5000 ���΅g�����?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=185453
+
+--- ja/sticker-material-pvc-vinyl-removable  [�μ��� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 14 �� | "? �����å����󥵩` (40 ����i���)��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 17 ���飬���� 244/460/358/178/��
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 12 + H3 3 = 15 �����ʾ� 9 ����60%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 4 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 199 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α��
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 4 ��ɽ��� Q&A | ���� Q="��ˮ���ƥå��`�Ϥɤ��زĤ�һ���L�֤�?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 18 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=182268
+
+--- ja/poster-printing-guide  [2 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 53 �� | "�ݥ����`��������狼�꣺ A3��11x17��׿�ϡ�A2 ��?���٥�ȡ�A1 ���ڥᥤ��ڡ�A0 ����?���⡣A2 10ö��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 4 ���飬���� 116/97/111/460
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 5 + H3 2 = 7 �����ʾ� 5 ����71%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 2 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 86 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+        ���� �޷�: �� poster-printing-guide �� LinkedIn��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 7 ��ɽ��� Q&A | ���� Q="��Сע�����ϣ�"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=164809
+
+--- ja/campus-education-printing-pillar-guide  [2 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 36 �� | "�����ѥ�����ӡˢ 100 ��? HK$8-300/��, 5-7 �ӘI��, ZprintPro 4 ���Ј� 5 ��ӡˢƷ��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 4 ���飬���� 61/52/46/460
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 11 + H3 3 = 14 �����ʾ� 11 ����79%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 2 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 527 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+        ���� �޷�: �� campus-education-printing-pillar-guide �� LinkedIn��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 20 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 5 ��ɽ��� Q&A | ���� Q="У�@����� 100 ������ӡˢ�Ǥ��ޤ���?"
+  ��10 PASS    CTA  | ֤��: CTA 3 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=191430
+
+--- ja/foil-stamping-3-applications-2026  [�μ��� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 11 �� | "? �����å��� (40 ����i��)��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 18 ���飬���� 325/162/164/189/��
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 14 = 14 �����ʾ� 12 ����86%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 7 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 473 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α��
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 6 ��ɽ��� Q&A | ���� Q="��Ѻ������Сע�����Ϥ����ĤǤ���?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 10 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=214587
+
+--- ja/hong-kong-printing-cost-baseline-2026  [4 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 85 �� | "����ݩ`�ȤΤ��٤Ƥ΁���� ZprintPro ��ע�����ƥ�ΌgҊ�e���Ǥ���16 �uƷ���ƥ���?82 �Όg SKU ����"
+  ��02 FAIL    ���ٴ𰸿�  | ֤��: �� 1 ���Ϲ���ٴ𰸿飨���ȷֲ� 460��
+        ���� �޷�: Ϊ hong-kong-printing-cost-baseline-2026 ���� >=3 �� 40-60 �ֿ��ٴ𰸿�
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 0/10 (H2 10)�����ʾ� 10����: ��Ҫ����һ�E / �������: ���Υ٩`���饤������귽��
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 PASS    �Ƚϱ���  | ֤��: 2 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 219 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+        ���� �޷�: �� hong-kong-printing-cost-baseline-2026 �� LinkedIn + EU REACH��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 6 ��ɽ��� Q&A | ���� Q="�ͥåȤβο��������ʽҊ�e��꤬�`���ΤϤʤ���"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 23 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=184867
+
+--- ja/roll-up-banner-printing-guide  [3 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 157 �� | "���`�륢�åץХʩ`��ӡˢ������˛Q�ޤ�Τϡ� ��ͥ��å���?1 ���åȤ΁���?�{�� �� 3 �ĤǤ���ZprintPro ��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 4 ���飬���� 181/186/200/460
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 0/8 (H2 8)�����ʾ� 8����: �������ȁ������` / ���أ�����?����?��������x�ӷ֤���
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 PASS    �Ƚϱ���  | ֤��: 3 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 96 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+        ���� �޷�: �� roll-up-banner-printing-guide �� LinkedIn + EU REACH��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 6 ��ɽ��� Q&A | ���� Q="���`�륢�åץХʩ` 1 ���åȤ΁���ϣ�"
+  ��10 PASS    CTA  | ֤��: CTA 3 ��
+  ��11 PASS    ����ê������  | ֤��: 13 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=169597
+
+--- ja/print-specifications-reference-guide-2026  [2 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 133 �� | "ӡˢ���ڥå� 3 ��Ԫ����: ������ (A1-A6 �˜� + �I�՚���) + ɫ (CMYK ӡˢ / RGB ��˥��`��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 17 ���飬���� 282/224/199/273/��
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 1/17 (H2 10 + H3 7)�����ʾ� 16����: 1. A1-A6 �˜ʼ�������: ӡˢ���ڥå��� 1 �i / 2. CMYK vs RGB vs Pantone: ӡ��
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 PASS    �Ƚϱ���  | ֤��: 4 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 377 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 18 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 5 ��ɽ��� Q&A | ���� Q="A5 �� A6 �Υ��������?�ɤ��餬�󤭤�?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 14 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=195366
+
+--- ja/school-exercise-book-printing-guide  [5 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 51 �� | "ѧУ������ 3 ���n�}: ��������ߤ��� (5,000?), �ü������� (60gsm �Yд��), �{���L����. Zpr��"
+  ��02 FAIL    ���ٴ𰸿�  | ֤��: �� 1 ���Ϲ���ٴ𰸿飨���ȷֲ� 460��
+        ���� �޷�: Ϊ school-exercise-book-printing-guide ���� >=3 �� 40-60 �ֿ��ٴ𰸿�
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 0/6 (H2 6)�����ʾ� 6����: 4 �ü� / 3 �u�� + 4 Ҏ��
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 FAIL    �Ƚϱ���  | ֤��: �� 0 �� <table>���� >=2��
+        ���� �޷�: Ϊ school-exercise-book-printing-guide ���Ӳ��ʡ�ά�ȱ� + �۸�/����/ʱЧ��
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 80 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+        ���� �޷�: �� school-exercise-book-printing-guide �� LinkedIn��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 4 ��ɽ��� Q&A | ���� Q="100 �������?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=154316
+
+--- zh-hk/packaging-box-pricing-2026  [�μ��� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 8 �� | "? ���ٴ� (40 ���x��)��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 14 ���飬���� 205/475/339/121/��
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 10 = 10 �����ʾ� 8 ����80%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 4 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 216 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α�� + �������
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 4 ��ɽ��� Q&A | ���� Q="���b��ӡˢ 500 ��ͬ 5000 ��,�΃r��׶�?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 12 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=191496
+
+--- zh-hk/sticker-material-pvc-vinyl-removable  [�μ��� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 8 �� | "? ���ٴ� (40 ���x��)��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 15 ���飬���� 211/451/295/148/��
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 12 + H3 3 = 15 �����ʾ� 9 ����60%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 4 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 193 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α�� + �������
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 4 ��ɽ��� Q&A | ���� Q="��ˮ�N��������|���"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=180467
+
+--- zh-hk/poster-printing-guide  [�μ��� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 29 �� | "���ǰ�������rͬ���ڣ�ֱ�ӵ� ����ӡˢ �Ŀ퓣�30 �� AI ��r���rӋ������"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 12 ���飬���� 167/143/153/162/��
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 10 + H3 3 = 13 �����ʾ� 10 ����77%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 4 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 270 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α��
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 5 ��ɽ��� Q&A | ���� Q="����ӡˢ���㼈���?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 12 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=192562
+
+--- zh-hk/campus-education-printing-pillar-guide  [2 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 37 �� | "У�@����ӡˢ 100 ����ӡ HK$8-300/��, 5-7 ��������, ��ӡ�� 4 ���Ј� 5 ��ӡˢƷ �� 5 ��ġ�"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 4 ���飬���� 58/52/52/451
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 11 + H3 3 = 14 �����ʾ� 11 ����79%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 2 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 526 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+        ���� �޷�: �� campus-education-printing-pillar-guide �� LinkedIn��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 18 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 5 ��ɽ��� Q&A | ���� Q="У�@���� 100 ����ӡ��?"
+  ��10 PASS    CTA  | ֤��: CTA 3 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=189599
+
+--- zh-hk/foil-stamping-3-applications-2026  [�μ��� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 8 �� | "? ���ٴ� (40 ���x��)��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 20 ���飬���� 298/105/110/151/��
+  ��03 PASS    H2 �ʾ��Ⱥ  | ֤��: H2 15 = 15 �����ʾ� 13 ����87%��
+  ��04 PASS    �Ƚϱ���  | ֤��: 8 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 492 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α�� + �������
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 6 ��ɽ��� Q&A | ���� Q="�C��ӡˢ�����ӡ���ǎ׶�?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 10 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=217492
+
+--- zh-hk/hong-kong-printing-cost-baseline-2026  [4 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 48 �� | "��������Ѓr������� ��ӡ�� ӆ��ϵ�y�Č��H��r����16 ��Ʒ�82 ������ SKU��ÿ�����иێŹ̶��ƃr�c�����ӆ����"
+  ��02 FAIL    ���ٴ𰸿�  | ֤��: �� 1 ���Ϲ���ٴ𰸿飨���ȷֲ� 451��
+        ���� �޷�: Ϊ hong-kong-printing-cost-baseline-2026 ���� >=3 �� 40-60 �ֿ��ٴ𰸿�
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 1/10 (H2 10)�����ʾ� 9����: �P�I����һ�[ / Ʒr����ʱ���16 Ʒ�?82 SKU����
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 PASS    �Ƚϱ���  | ֤��: 2 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 218 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+        ���� �޷�: �� hong-kong-printing-cost-baseline-2026 �� LinkedIn + EU REACH��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 6 ��ɽ��� Q&A | ���� Q="�W�υ����rͬ��ʽ��r�c����г��룿"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 23 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=182666
+
+--- zh-hk/roll-up-banner-printing-guide  [3 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 116 �� | "�����ܣ���������ӡˢҪ�ȴ����l���}�� ����ӡ�׶��ס�ÿ�׎��X���וr��؛ ����ӡ����������� 10 �� ��ӡ���׃r HK$��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 4 ���飬���� 154/145/165/451
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 3/8 (H2 8)�����ʾ� 5����: �ߴ��c�׃r�A�� / ����Ҏ���c��Ѫ��ȫ�^��
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 PASS    �Ƚϱ���  | ֤��: 3 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 98 ������ + ���������Դ���
+  ��06 FAIL    �ͻ�����  | ֤��: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+        ���� �޷�: �� 1 ��һ�ְ�������ҵ+����+���������ʽ�꡸�� 008 ������У׼��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+        ���� �޷�: �� roll-up-banner-printing-guide �� LinkedIn + EU REACH��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 6 ��ɽ��� Q&A | ���� Q="������ӡˢһ�׎��X��"
+  ��10 PASS    CTA  | ֤��: CTA 3 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=168687
+
+--- zh-hk/print-specifications-reference-guide-2026  [1 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 65 �� | "ӡˢҎ�� 3 �S�Ȍ���: �ߴ� (A1-A6 �˜� + �I�ճ�Ҋ) + ɫ�� (CMYK ӡˢ / RGB ΞĻ / P��"
+  ��02 PASS    ���ٴ𰸿�  | ֤��: 17 ���飬���� 234/199/183/243/��
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 1/17 (H2 10 + H3 7)�����ʾ� 16����: 1. A1-A6 �˜ʼ����ߴ�: ӡˢҎ���һ�� / 2. CMYK vs RGB vs Pantone: ӡ��
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 PASS    �Ƚϱ���  | ֤��: 4 �� <table>
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 377 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α�� + �������
+  ��07 PASS    E-E-A-T ������  | ֤��: Person(���ɲ����,�� --online) + LinkedIn + FDA + EU REACH��content �ࣩ
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 20 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 5 ��ɽ��� Q&A | ���� Q="A5 ͬ A6 ��׶�?߅������?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 14 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=194249
+
+--- zh-hk/school-exercise-book-printing-guide  [4 �� FAIL] ---
+  ��01 PASS    ���������׶�  | ֤��: �׶� 67 �� | "�WУӆ���������²� 3 ����: ��ӡ��̫�� (5,000 ����), ����̫�� (60gsm ͸��), ����̫�� (4 �L��"
+  ��02 FAIL    ���ٴ𰸿�  | ֤��: �� 1 ���Ϲ���ٴ𰸿飨���ȷֲ� 451��
+        ���� �޷�: Ϊ school-exercise-book-printing-guide ���� >=3 �� 40-60 �ֿ��ٴ𰸿�
+  ��03 FAIL    H2 �ʾ��Ⱥ  | ֤��: �ʾ� 0/8 (H2 8)�����ʾ� 8����: 2026 Q3-Q4 �_�W���Ј��śr / 4 �N�����c����
+        ���� �޷�: �ѳ���ʽ�����Ϊ�û���ʵ�����ʾ�
+  ��04 FAIL    �Ƚϱ���  | ֤��: �� 0 �� <table>���� >=2��
+        ���� �޷�: Ϊ school-exercise-book-printing-guide ���Ӳ��ʡ�ά�ȱ� + �۸�/����/ʱЧ��
+  ��05 PASS    ԭ�����ݶ�  | ֤��: 133 ������ + ���������Դ���
+  ��06 PASS    �ͻ�����  | ֤��: ����ͻ������α��
+  ��07 FAIL    E-E-A-T ������  | ֤��: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+        ���� �޷�: �� school-exercise-book-printing-guide �� LinkedIn��FDA/EU REACH ����������, ����д�� content �ڣ�
+  ��08 PASS    GEO ֪ʶԭ�Ӷ�  | ֤��: 12 ������ԭ�� + 1 �� <section>
+  ��09 PASS    FAQ ��  | ֤��: 4 ��ɽ��� Q&A | ���� Q="�WУ������ 100 ����ӡ��?"
+  ��10 PASS    CTA  | ֤��: CTA 2 ��
+  ��11 PASS    ����ê������  | ֤��: 11 ���������
+  ��12 PASS    Schema ��  | ֤��: generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] ��Ƕ=[] blocks=6+0 len=161373
+
+[12�ιǼܻ���] PASS=270 FAIL=54 WARN=0 SKIP=0 INVALID=0
+[�ھ�] FAIL = �μ����ϸ�; WARN = ���˹��ж�; SKIP = ��ģʽδ�⣨����ͨ����; INVALID = ������Ч��������ͨ����
+
+[BLOG-QUALITY-12-RULES-GUARD] 54 �� FAIL ��ϸ (���ݾ� ruleId �ھ�):
+  src/data/blog-data/en.json [SEG6_CUSTOMER_CASE] poster-printing-guide [en] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/en.json [SEG7_EEAT] poster-printing-guide [en] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+  src/data/blog-data/en.json [SEG6_CUSTOMER_CASE] campus-education-printing-pillar-guide [en] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/en.json [SEG7_EEAT] campus-education-printing-pillar-guide [en] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+  src/data/blog-data/en.json [SEG1_INVERTED_PYRAMID] hong-kong-printing-cost-baseline-2026 [en] ��1 ���������׶�: �׶� 230 �� > 200 ��
+  src/data/blog-data/en.json [SEG2_QUICK_ANSWER] hong-kong-printing-cost-baseline-2026 [en] ��2 ���ٴ𰸿�: �� 0 ���Ϲ���ٴ𰸿飨���ȷֲ� ?��
+  src/data/blog-data/en.json [SEG3_H2_QUESTION] hong-kong-printing-cost-baseline-2026 [en] ��3 H2 �ʾ��Ⱥ: �ʾ� 0/10 (H2 10)�����ʾ� 10����: The Key Numbers at a Glance / Methodology: How This Baseli��
+  src/data/blog-data/en.json [SEG6_CUSTOMER_CASE] hong-kong-printing-cost-baseline-2026 [en] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/en.json [SEG7_EEAT] hong-kong-printing-cost-baseline-2026 [en] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+  src/data/blog-data/en.json [SEG1_INVERTED_PYRAMID] roll-up-banner-printing-guide [en] ��1 ���������׶�: �׶� 487 �� > 200 ��
+  src/data/blog-data/en.json [SEG3_H2_QUESTION] roll-up-banner-printing-guide [en] ��3 H2 �ʾ��Ⱥ: �ʾ� 3/8 (H2 8)�����ʾ� 5����: Sizes and price tiers / Artwork specs and safe areas��
+  src/data/blog-data/en.json [SEG6_CUSTOMER_CASE] roll-up-banner-printing-guide [en] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/en.json [SEG7_EEAT] roll-up-banner-printing-guide [en] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+  src/data/blog-data/en.json [SEG3_H2_QUESTION] print-specifications-reference-guide-2026 [en] ��3 H2 �ʾ��Ⱥ: �ʾ� 1/17 (H2 10 + H3 7)�����ʾ� 16����: 1. A1-A6 Standard Paper Size / 2. CMYK vs RGB vs Pantone: 3��
+  src/data/blog-data/en.json [SEG6_CUSTOMER_CASE] print-specifications-reference-guide-2026 [en] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/en.json [SEG1_INVERTED_PYRAMID] school-exercise-book-printing-guide [en] ��1 ���������׶�: �׶� 211 �� > 200 ��
+  src/data/blog-data/en.json [SEG2_QUICK_ANSWER] school-exercise-book-printing-guide [en] ��2 ���ٴ𰸿�: �� 0 ���Ϲ���ٴ𰸿飨���ȷֲ� ?��
+  src/data/blog-data/en.json [SEG3_H2_QUESTION] school-exercise-book-printing-guide [en] ��3 H2 �ʾ��Ⱥ: �ʾ� 0/7 (H2 7)�����ʾ� 7����: Back-to-School 2026 Market / 4 Paper Stocks��
+  src/data/blog-data/en.json [SEG4_COMPARISON_TABLE] school-exercise-book-printing-guide [en] ��4 �Ƚϱ���: �� 0 �� <table>���� >=2��
+  src/data/blog-data/en.json [SEG6_CUSTOMER_CASE] school-exercise-book-printing-guide [en] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/en.json [SEG7_EEAT] school-exercise-book-printing-guide [en] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] packaging-box-pricing-2026 [ja] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] poster-printing-guide [ja] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/ja.json [SEG7_EEAT] poster-printing-guide [ja] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] campus-education-printing-pillar-guide [ja] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/ja.json [SEG7_EEAT] campus-education-printing-pillar-guide [ja] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+  src/data/blog-data/ja.json [SEG2_QUICK_ANSWER] hong-kong-printing-cost-baseline-2026 [ja] ��2 ���ٴ𰸿�: �� 1 ���Ϲ���ٴ𰸿飨���ȷֲ� 460��
+  src/data/blog-data/ja.json [SEG3_H2_QUESTION] hong-kong-printing-cost-baseline-2026 [ja] ��3 H2 �ʾ��Ⱥ: �ʾ� 0/10 (H2 10)�����ʾ� 10����: ��Ҫ����һ�E / �������: ���Υ٩`���饤������귽��
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] hong-kong-printing-cost-baseline-2026 [ja] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/ja.json [SEG7_EEAT] hong-kong-printing-cost-baseline-2026 [ja] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+  src/data/blog-data/ja.json [SEG3_H2_QUESTION] roll-up-banner-printing-guide [ja] ��3 H2 �ʾ��Ⱥ: �ʾ� 0/8 (H2 8)�����ʾ� 8����: �������ȁ������` / ���أ�����?����?��������x�ӷ֤���
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] roll-up-banner-printing-guide [ja] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/ja.json [SEG7_EEAT] roll-up-banner-printing-guide [ja] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+  src/data/blog-data/ja.json [SEG3_H2_QUESTION] print-specifications-reference-guide-2026 [ja] ��3 H2 �ʾ��Ⱥ: �ʾ� 1/17 (H2 10 + H3 7)�����ʾ� 16����: 1. A1-A6 �˜ʼ�������: ӡˢ���ڥå��� 1 �i / 2. CMYK vs RGB vs Pantone: ӡ��
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] print-specifications-reference-guide-2026 [ja] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/ja.json [SEG2_QUICK_ANSWER] school-exercise-book-printing-guide [ja] ��2 ���ٴ𰸿�: �� 1 ���Ϲ���ٴ𰸿飨���ȷֲ� 460��
+  src/data/blog-data/ja.json [SEG3_H2_QUESTION] school-exercise-book-printing-guide [ja] ��3 H2 �ʾ��Ⱥ: �ʾ� 0/6 (H2 6)�����ʾ� 6����: 4 �ü� / 3 �u�� + 4 Ҏ��
+  src/data/blog-data/ja.json [SEG4_COMPARISON_TABLE] school-exercise-book-printing-guide [ja] ��4 �Ƚϱ���: �� 0 �� <table>���� >=2��
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] school-exercise-book-printing-guide [ja] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/ja.json [SEG7_EEAT] school-exercise-book-printing-guide [ja] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+  src/data/blog-data/zh-hk.json [SEG6_CUSTOMER_CASE] campus-education-printing-pillar-guide [zh-hk] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/zh-hk.json [SEG7_EEAT] campus-education-printing-pillar-guide [zh-hk] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+  src/data/blog-data/zh-hk.json [SEG2_QUICK_ANSWER] hong-kong-printing-cost-baseline-2026 [zh-hk] ��2 ���ٴ𰸿�: �� 1 ���Ϲ���ٴ𰸿飨���ȷֲ� 451��
+  src/data/blog-data/zh-hk.json [SEG3_H2_QUESTION] hong-kong-printing-cost-baseline-2026 [zh-hk] ��3 H2 �ʾ��Ⱥ: �ʾ� 1/10 (H2 10)�����ʾ� 9����: �P�I����һ�[ / Ʒr����ʱ���16 Ʒ�?82 SKU����
+  src/data/blog-data/zh-hk.json [SEG6_CUSTOMER_CASE] hong-kong-printing-cost-baseline-2026 [zh-hk] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/zh-hk.json [SEG7_EEAT] hong-kong-printing-cost-baseline-2026 [zh-hk] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+  src/data/blog-data/zh-hk.json [SEG3_H2_QUESTION] roll-up-banner-printing-guide [zh-hk] ��3 H2 �ʾ��Ⱥ: �ʾ� 3/8 (H2 8)�����ʾ� 5����: �ߴ��c�׃r�A�� / ����Ҏ���c��Ѫ��ȫ�^��
+  src/data/blog-data/zh-hk.json [SEG6_CUSTOMER_CASE] roll-up-banner-printing-guide [zh-hk] ��6 �ͻ�����: �޿ͻ������Σ�Ҳ�ޡ���У׼����ע
+  src/data/blog-data/zh-hk.json [SEG7_EEAT] roll-up-banner-printing-guide [zh-hk] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn, EU REACH | Person(���ɲ����,�� --online)
+  src/data/blog-data/zh-hk.json [SEG3_H2_QUESTION] print-specifications-reference-guide-2026 [zh-hk] ��3 H2 �ʾ��Ⱥ: �ʾ� 1/17 (H2 10 + H3 7)�����ʾ� 16����: 1. A1-A6 �˜ʼ����ߴ�: ӡˢҎ���һ�� / 2. CMYK vs RGB vs Pantone: ӡ��
+  src/data/blog-data/zh-hk.json [SEG2_QUICK_ANSWER] school-exercise-book-printing-guide [zh-hk] ��2 ���ٴ𰸿�: �� 1 ���Ϲ���ٴ𰸿飨���ȷֲ� 451��
+  src/data/blog-data/zh-hk.json [SEG3_H2_QUESTION] school-exercise-book-printing-guide [zh-hk] ��3 H2 �ʾ��Ⱥ: �ʾ� 0/8 (H2 8)�����ʾ� 8����: 2026 Q3-Q4 �_�W���Ј��śr / 4 �N�����c����
+  src/data/blog-data/zh-hk.json [SEG4_COMPARISON_TABLE] school-exercise-book-printing-guide [zh-hk] ��4 �Ƚϱ���: �� 0 �� <table>���� >=2��
+  src/data/blog-data/zh-hk.json [SEG7_EEAT] school-exercise-book-printing-guide [zh-hk] ��7 E-E-A-T ������: content ���ź�ȱʧ: LinkedIn | Person(���ɲ����,�� --online)
+
+[���߶���] ���� 54 / �ִ� 54 / ���� 0 / ʣ����� 54
+? [���߶���] 0 �������μ� FAIL (����ȱ�ݰ�������, ����ϱ��η���)
+[֤������] .hermes/reports/blog-12seg-checklist-2026-10-27-online.json
+21 [GUARD #21] ������� (SSoT / ����λ�� / �Ž����� ������)...
+
+? [RULE-TRANSLATION-GUARD] 0 ���� - 3 ���󶨵ġ�����/����/�Ž������� sha256 ȫ��һ��
+git : To github.com:zprintprohk-rgb/zprintpro.git
+����λ�� ��:12 �ַ�: 7
++       git push origin main 2>&1 | Out-String | Add-Content $log
++       ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (To github.com:z...b/zprintpro.git:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+   40e1231e..03bfa0c1  main -> main
+
+PUSH_DONE 12:28:37
+AFTER origin=03bfa0c1

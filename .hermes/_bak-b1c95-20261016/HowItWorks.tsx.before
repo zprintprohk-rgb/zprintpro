@@ -1,0 +1,240 @@
+/**
+ * HowItWorks — 首页 5 步流程图 (P0.3 en-US market local optimization)
+ * 5-step process diagram, 3 locale support
+ * Replaces 70% of US SMB buyer mental friction (per Sticker Mule / CustomStickers.com UX research)
+ *
+ * 5 steps:
+ *   1. Choose Your Product (browse 84 SKUs × 14 categories)
+ *   2. Upload Your Design (drag & drop PDF/PNG/AI up to 100MB)
+ *   3. Free Proof in 4 hours (human review, unlimited revisions)
+ *   4. Approve & Pay Securely (Stripe / PayPal / wire / WeChat)
+ *   5. Free US Shipping on $99+ (5-7 day DHL Express door-to-door)
+ *
+ * 3 locale text: en (primary, US market targeted) / zh-hk / ja
+ */
+
+import { ShoppingCart, Upload, FileCheck2, ShieldCheck, Truck, ArrowRight } from 'lucide-react';
+import { Locale } from '@/types/locale';
+
+interface HowItWorksProps {
+  locale: Locale;
+}
+
+interface Step {
+  num: number;
+  title: string;
+  desc: string;
+  icon: string;
+  /** 次要信息 (如加密/关税细节) 挪到 tooltip, 卡片正文保持 ≤2 行 */
+  tip?: string;
+}
+
+const STEPS: Record<Locale, Step[]> = {
+  en: [
+    {
+      num: 1,
+      title: 'Choose Your Product',
+      desc: '84 SKUs, 14 categories. 30-second AI instant quote.',
+      icon: '🛒',
+    },
+    {
+      num: 2,
+      title: 'Upload Your Design',
+      desc: 'PDF / PNG / AI up to 100MB. Free design help available.',
+      icon: '📤',
+    },
+    {
+      num: 3,
+      title: 'Free Human Proof',
+      desc: 'Human review, unlimited revisions. Emailed before printing.',
+      icon: '✅',
+      tip: '100% satisfaction guarantee',
+    },
+    {
+      num: 4,
+      title: 'Approve & Pay Securely',
+      desc: 'Stripe / PayPal / wire / WeChat. No hidden fees.',
+      icon: '💳',
+      tip: '256-bit SSL encrypted checkout',
+    },
+    {
+      num: 5,
+      title: 'Free US Shipping on $99+',
+      desc: 'DHL Express 5-7 days, door-to-door. No surprise tariffs.',
+      icon: '📦',
+      tip: 'DDP customs-friendly · FedEx Ground option',
+    },
+  ],
+  'zh-hk': [
+    {
+      num: 1,
+      title: '選擇產品',
+      desc: '14 類別 84 款產品，30 秒 AI 即時報價。',
+      icon: '🛒',
+    },
+    {
+      num: 2,
+      title: '上傳設計檔案',
+      desc: '拖放 PDF / PNG / AI（最大 100MB），免費設計協助。',
+      icon: '📤',
+    },
+    {
+      num: 3,
+      title: '免費打稿・人工審稿',
+      desc: '人工審稿不限修改，開印前電郵確認。',
+      icon: '✅',
+      tip: '100% 滿意保證',
+    },
+    {
+      num: 4,
+      title: '確認並安全付款',
+      desc: 'Stripe / PayPal / 匯款 / 微信，零隱藏費用。',
+      icon: '💳',
+      tip: '256-bit SSL 加密結帳',
+    },
+    {
+      num: 5,
+      title: '港九新界免費速遞',
+      desc: '順豐本地 / DHL 全球 5-7 天，滿 $500 免運。',
+      icon: '📦',
+      tip: '即日急件可選 · DDP 關稅預付',
+    },
+  ],
+  ja: [
+    {
+      num: 1,
+      title: '商品を選ぶ',
+      desc: '14 カテゴリー 84 SKU、30 秒 AI 即時見積もり。',
+      icon: '🛒',
+    },
+    {
+      num: 2,
+      title: 'デザインをアップロード',
+      desc: 'PDF / PNG / AI（最大 100MB）。無料デザイン対応。',
+      icon: '📤',
+    },
+    {
+      num: 3,
+      title: '無料校正・人による審査',
+      desc: '校了まで無制限。印刷前にメールで確認。',
+      icon: '✅',
+      tip: '100% 満足保証',
+    },
+    {
+      num: 4,
+      title: '確認して安全決済',
+      desc: 'カード / PayPal / 振込。追加料金なし。',
+      icon: '💳',
+      tip: '256-bit SSL 暗号化チェックアウト',
+    },
+    {
+      num: 5,
+      title: '日本全国送料無料',
+      desc: 'DHL 5-7 日でお届け。全国送料 0 円。',
+      icon: '📦',
+      tip: '沖縄・北海道も同料金 · DDP 関税先払い',
+    },
+  ],
+};
+
+const HEADING: Record<Locale, { title: string; subtitle: string }> = {
+  en: {
+    title: 'How It Works',
+    subtitle: '5 simple steps from order to door. Free US shipping on $99+. Free design proof in 4 hours. 100% satisfaction guarantee.',
+  },
+  'zh-hk': {
+    title: '印刷流程',
+    subtitle: '5 步由訂單到送達 · 港九新界 $500+ 免費速遞 · 免費打稿 · 100% 滿意保證',
+  },
+  ja: {
+    title: 'ご注文の流れ',
+    subtitle: '無料校正・人による審査',
+  },
+};
+
+const STEP_ICONS = [ShoppingCart, Upload, FileCheck2, ShieldCheck, Truck];
+
+function StepIcon({ index }: { index: number }) {
+  const Icon = STEP_ICONS[index % STEP_ICONS.length];
+  return (
+    <span className="text-[#2873F5]" aria-hidden="true">
+      <Icon size={20} strokeWidth={2} />
+    </span>
+  );
+}
+
+export function HowItWorks({ locale }: HowItWorksProps) {
+  const steps = STEPS[locale] || STEPS['en'];
+  const heading = HEADING[locale] || HEADING['en'];
+
+  return (
+<section
+      className="bg-gradient-to-b from-slate-50 to-white py-8 md:py-12"
+      aria-label="How it works - 5 steps"
+      data-testid="how-it-works"
+    >
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-6 md:mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+            {heading.title}
+          </h2>
+          <p className="text-sm md:text-base text-slate-600 max-w-3xl mx-auto">
+            {heading.subtitle}
+          </p>
+        </div>
+
+        <ol className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-4 relative">
+          {steps.map((step, idx) => (
+            <li
+              key={step.num}
+              title={step.tip}
+              className="relative bg-white rounded-xl border border-slate-200 px-4 py-5 md:px-5 md:py-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            >
+              {/* Connector arrow for desktop (between steps) */}
+              {idx < steps.length - 1 && (
+                <div
+                  className="hidden lg:block absolute top-1/2 -right-2 -translate-y-1/2 text-[#F87314] z-10 animate-pulse"
+                  aria-hidden="true"
+                >
+                  →
+                </div>
+              )}
+
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#2873F5] text-white font-bold text-lg flex items-center justify-center shadow-sm shadow-blue-200">
+                  {step.num}
+                </span>
+                <StepIcon index={idx} />
+              </div>
+
+              <h3 className="text-[15px] md:text-base font-semibold text-slate-900 mb-1.5">
+                {step.title}
+              </h3>
+              <p className="text-[13px] text-slate-500 leading-relaxed">
+                {step.desc}
+              </p>
+            </li>
+          ))}
+        </ol>
+
+        {/* Bottom trust + CTA bar — 单行浅灰条 + 橙色 CTA 按钮 (2026-07-13 v3: 浅蓝 65% 改很浅的中性灰 gray-100, 灰橙无缝拼接同 category sort bar 样式) */}
+        <div className="mt-6 md:mt-8 -mb-6 md:-mb-8 bg-gray-100 rounded-xl overflow-hidden flex flex-col sm:flex-row items-stretch">
+          <p className="text-slate-700 text-xs sm:text-sm font-medium leading-snug text-center sm:text-left px-5 md:px-6 py-3 flex-1 flex items-center justify-center sm:justify-start">
+            {locale === 'zh-hk'
+              ? '多年印刷經驗 · 國際認證體系 · 15,000+ 全球客戶 · 100+ 國家發貨'
+              : locale === 'ja'
+              ? '長年の印刷実績 · 國際認証 · 15,000+ グローバル顧客 · 100+ 国へ発送'
+              : 'Over a decade in business · Internationally certified · Global customers · Ships worldwide'}
+          </p>
+          <a
+            href={`/${locale}/quote/`}
+            className="bg-[#F87314] hover:bg-[#E06613] text-white text-[22px] font-bold whitespace-nowrap px-5 py-3 flex items-center justify-center gap-1.5 transition-colors flex-shrink-0 leading-none"
+          >
+            {locale === 'zh-hk' ? '免費獲取報價' : locale === 'ja' ? '無料見積もり' : 'Get Free Quote'}
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

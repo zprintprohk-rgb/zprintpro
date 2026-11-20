@@ -1,0 +1,72 @@
+{
+  "report_at": "2026-08-07T02:15:00+08:00",
+  "trigger": "K3 8/7 02:12 千问 3.8 策略 P1 301 止血 + K3 8/6 0:39 早会 §6.6 验收项",
+  "config_rules_count": 11,
+  "sample_results": [
+    {
+      "url": "https://zprintpro.com/zh-hk/guide",
+      "status": 200,
+      "final": "https://zprintpro.com/zh-hk/guide",
+      "chain": [
+        {
+          "url": "https://zprintpro.com/zh-hk/guide",
+          "status": 200
+        }
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://zprintpro.com/en/guide/buying-guide",
+      "status": 200,
+      "final": "https://zprintpro.com/en/guide/buying-guide",
+      "chain": [
+        {
+          "url": "https://zprintpro.com/en/guide/buying-guide",
+          "status": 200
+        }
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/gift-boxes",
+      "status": 200,
+      "final": "https://zprintpro.com/ja/product/gift-boxes",
+      "chain": [
+        {
+          "url": "https://zprintpro.com/ja/product/gift-boxes",
+          "status": 200
+        }
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/custom-gift-boxes",
+      "status": 200,
+      "final": "https://zprintpro.com/zh-hk/product/custom-gift-boxes",
+      "chain": [
+        {
+          "url": "https://zprintpro.com/zh-hk/product/custom-gift-boxes",
+          "status": 200
+        }
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://zprintpro.com/en/returns",
+      "status": 200,
+      "final": "https://zprintpro.com/en/returns",
+      "chain": [
+        {
+          "url": "https://zprintpro.com/en/returns",
+          "status": 200
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "pass_count": 5,
+  "fail_count": 0,
+  "verdict": "PASS",
+  "k3_action_required": "5min check CF Dashboard Bulk Redirect List enabled state",
+  "notes": "next.config.js 是 Next.js 应用层 301, CF Bulk Redirect List 是边缘层 301. 双层缺一, GSC 会报 '重定向错误'. K3 8/6 0:39 早会: 7/22 5/5 PASS → 8/5 1/5 PASS, 怀疑 Bulk Redirect List 被 disabled"
+}

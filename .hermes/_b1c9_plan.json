@@ -1,0 +1,3517 @@
+{
+ "generated_at": "2026-10-16T05:58:43.919Z",
+ "method": "ts slug-line block scan -> products.ts minQuantity cross-check",
+ "patterns": {
+  "10 張起印，無開版費": [
+   {
+    "slug": "roll-stickers",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 84
+   },
+   {
+    "slug": "waterproof-stickers",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 2
+   },
+   {
+    "slug": "transparent-stickers",
+    "pattern": "10 張起印，無開版費",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 3
+   },
+   {
+    "slug": "removable-stickers",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 4
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 5
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 6
+   },
+   {
+    "slug": "foil-stickers",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 7
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 15
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 16
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 17
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 19
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 20
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "KEEP",
+    "csvRow": 21
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "seo",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   }
+  ],
+  "ISO 9001 認證工廠": [
+   {
+    "slug": "waterproof-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 2
+   },
+   {
+    "slug": "transparent-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 3
+   },
+   {
+    "slug": "removable-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 5
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 6
+   },
+   {
+    "slug": "foil-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 7
+   },
+   {
+    "slug": "security-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 8
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "eco-paper-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 12
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 20
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "outdoor-posters",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 24
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "food-boxes",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 29
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "seo",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   }
+  ],
+  "ISO 9001 certified": [
+   {
+    "slug": "waterproof-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 2
+   },
+   {
+    "slug": "transparent-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 3
+   },
+   {
+    "slug": "removable-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 5
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 6
+   },
+   {
+    "slug": "foil-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 7
+   },
+   {
+    "slug": "security-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 8
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 20
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "outdoor-posters",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 24
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "embossed-red-packets",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 34
+   },
+   {
+    "slug": "cartoon-red-packets",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 36
+   },
+   {
+    "slug": "eco-red-packets",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 37
+   },
+   {
+    "slug": "large-red-packets",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 38
+   },
+   {
+    "slug": "pvc-menus",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 45
+   },
+   {
+    "slug": "laminated-menus",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 46
+   },
+   {
+    "slug": "hardcover-menus",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 47
+   },
+   {
+    "slug": "drink-menus",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 48
+   },
+   {
+    "slug": "outdoor-vinyl-banners",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 49
+   },
+   {
+    "slug": "roll-up-banners",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 50
+   },
+   {
+    "slug": "adhesive-banners",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 51
+   },
+   {
+    "slug": "vehicle-wraps",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 52
+   },
+   {
+    "slug": "business-envelopes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 58
+   },
+   {
+    "slug": "colored-envelopes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 59
+   },
+   {
+    "slug": "large-envelopes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 60
+   },
+   {
+    "slug": "pearl-envelopes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 61
+   },
+   {
+    "slug": "certificates",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 63
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "gang-run-card-boxes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 500,
+    "verdict": "FIX",
+    "csvRow": 82
+   },
+   {
+    "slug": "seo",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "foil-wedding-invitations",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 50,
+    "verdict": "FIX",
+    "csvRow": 74
+   },
+   {
+    "slug": "wedding-thank-you-cards",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 50,
+    "verdict": "FIX",
+    "csvRow": 75
+   }
+  ],
+  "15+ 年": [
+   {
+    "slug": "waterproof-stickers",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 2
+   },
+   {
+    "slug": "transparent-stickers",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 3
+   },
+   {
+    "slug": "removable-stickers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 5
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 6
+   },
+   {
+    "slug": "foil-stickers",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 7
+   },
+   {
+    "slug": "security-stickers",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 8
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "eco-paper-bags",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 12
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 20
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "outdoor-posters",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 24
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "food-boxes",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 29
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "seo",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "graduation-yearbook",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 73
+   }
+  ],
+  "ISO 9001 認証工場": [
+   {
+    "slug": "removable-stickers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 5
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 6
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "eco-paper-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 12
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 20
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "outdoor-posters",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 24
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "seo",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   }
+  ],
+  "15+ 年の": [
+   {
+    "slug": "removable-stickers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 5
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 6
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "eco-paper-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 12
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 20
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "outdoor-posters",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 24
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "seo",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   }
+  ],
+  " | 100 MOQ": [
+   {
+    "slug": "removable-stickers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 9
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 10
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 11
+   },
+   {
+    "slug": "eco-paper-bags",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 12
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 13
+   },
+   {
+    "slug": "small-bags",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "large-bags",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 14
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 28
+   },
+   {
+    "slug": "food-boxes",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 29
+   },
+   {
+    "slug": "mailer-boxes",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 30
+   },
+   {
+    "slug": "folding-boxes",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 31
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 32
+   },
+   {
+    "slug": "embossed-red-packets",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 34
+   },
+   {
+    "slug": "cartoon-red-packets",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 36
+   },
+   {
+    "slug": "outdoor-vinyl-banners",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 49
+   },
+   {
+    "slug": "roll-up-banners",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 50
+   },
+   {
+    "slug": "adhesive-banners",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 51
+   },
+   {
+    "slug": "vehicle-wraps",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 52
+   },
+   {
+    "slug": "catalog-printing",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 53
+   },
+   {
+    "slug": "saddle-stitch-booklets",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 54
+   },
+   {
+    "slug": "perfect-bound-books",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 55
+   },
+   {
+    "slug": "hardcover-books",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 56
+   },
+   {
+    "slug": "spiral-notebooks",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 57
+   },
+   {
+    "slug": "business-envelopes",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 58
+   },
+   {
+    "slug": "colored-envelopes",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 59
+   },
+   {
+    "slug": "large-envelopes",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 60
+   },
+   {
+    "slug": "pearl-envelopes",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 61
+   },
+   {
+    "slug": "exercise-books",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 62
+   },
+   {
+    "slug": "certificates",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 63
+   },
+   {
+    "slug": "school-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 64
+   },
+   {
+    "slug": "textbooks",
+    "pattern": " | 100 MOQ",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 65
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 79
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "doujinshi-printing",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": 72
+   }
+  ],
+  "100-MOQ": [
+   {
+    "slug": "removable-stickers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 10
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 11
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 13
+   },
+   {
+    "slug": "small-bags",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 14
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "mailer-boxes",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 30
+   },
+   {
+    "slug": "vehicle-wraps",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 52
+   },
+   {
+    "slug": "catalog-printing",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 53
+   },
+   {
+    "slug": "saddle-stitch-booklets",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 54
+   },
+   {
+    "slug": "perfect-bound-books",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 55
+   },
+   {
+    "slug": "hardcover-books",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 56
+   },
+   {
+    "slug": "spiral-notebooks",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 57
+   },
+   {
+    "slug": "business-envelopes",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 58
+   },
+   {
+    "slug": "colored-envelopes",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 59
+   },
+   {
+    "slug": "large-envelopes",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 60
+   },
+   {
+    "slug": "pearl-envelopes",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 61
+   },
+   {
+    "slug": "exercise-books",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 62
+   },
+   {
+    "slug": "certificates",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 63
+   },
+   {
+    "slug": "school-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 64
+   },
+   {
+    "slug": "textbooks",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "KEEP",
+    "csvRow": 65
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   }
+  ],
+  "50-MOQ": [
+   {
+    "slug": "rigid-boxes",
+    "pattern": "50-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   }
+  ]
+ },
+ "batches": {
+  "A_low_risk": [
+   {
+    "slug": "waterproof-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 2
+   },
+   {
+    "slug": "waterproof-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 2
+   },
+   {
+    "slug": "waterproof-stickers",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 2
+   },
+   {
+    "slug": "transparent-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 3
+   },
+   {
+    "slug": "transparent-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 3
+   },
+   {
+    "slug": "transparent-stickers",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 3
+   },
+   {
+    "slug": "removable-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "removable-stickers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "removable-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "removable-stickers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "removable-stickers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 5
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 5
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 5
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 5
+   },
+   {
+    "slug": "small-batch-stickers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 5
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 6
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 6
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 6
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 6
+   },
+   {
+    "slug": "die-cut-stickers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 6
+   },
+   {
+    "slug": "foil-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 7
+   },
+   {
+    "slug": "foil-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 7
+   },
+   {
+    "slug": "foil-stickers",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 7
+   },
+   {
+    "slug": "security-stickers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 8
+   },
+   {
+    "slug": "security-stickers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 8
+   },
+   {
+    "slug": "security-stickers",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 8
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "eco-paper-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 12
+   },
+   {
+    "slug": "eco-paper-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 12
+   },
+   {
+    "slug": "eco-paper-bags",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 12
+   },
+   {
+    "slug": "eco-paper-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 12
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 20
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 20
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 20
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 20
+   },
+   {
+    "slug": "same-day-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 20
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "outdoor-posters",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 24
+   },
+   {
+    "slug": "outdoor-posters",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 24
+   },
+   {
+    "slug": "outdoor-posters",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 24
+   },
+   {
+    "slug": "outdoor-posters",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 24
+   },
+   {
+    "slug": "outdoor-posters",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 24
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "15+ 年",
+    "count": 2,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "food-boxes",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 29
+   },
+   {
+    "slug": "food-boxes",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 29
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "embossed-red-packets",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 34
+   },
+   {
+    "slug": "cartoon-red-packets",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 36
+   },
+   {
+    "slug": "eco-red-packets",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 37
+   },
+   {
+    "slug": "large-red-packets",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 38
+   },
+   {
+    "slug": "pvc-menus",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 45
+   },
+   {
+    "slug": "laminated-menus",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 46
+   },
+   {
+    "slug": "hardcover-menus",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 47
+   },
+   {
+    "slug": "drink-menus",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 48
+   },
+   {
+    "slug": "outdoor-vinyl-banners",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 49
+   },
+   {
+    "slug": "roll-up-banners",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 50
+   },
+   {
+    "slug": "adhesive-banners",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 51
+   },
+   {
+    "slug": "vehicle-wraps",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 52
+   },
+   {
+    "slug": "business-envelopes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 58
+   },
+   {
+    "slug": "colored-envelopes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 59
+   },
+   {
+    "slug": "large-envelopes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 60
+   },
+   {
+    "slug": "pearl-envelopes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 61
+   },
+   {
+    "slug": "certificates",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 63
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "gang-run-card-boxes",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 500,
+    "verdict": "FIX",
+    "csvRow": 82
+   },
+   {
+    "slug": "seo",
+    "pattern": "ISO 9001 認證工廠",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "seo",
+    "pattern": "ISO 9001 認証工場",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "seo",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "seo",
+    "pattern": "15+ 年",
+    "count": 3,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "seo",
+    "pattern": "15+ 年の",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "graduation-yearbook",
+    "pattern": "15+ 年",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 73
+   },
+   {
+    "slug": "foil-wedding-invitations",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 50,
+    "verdict": "FIX",
+    "csvRow": 74
+   },
+   {
+    "slug": "wedding-thank-you-cards",
+    "pattern": "ISO 9001 certified",
+    "count": 1,
+    "minQ": 50,
+    "verdict": "FIX",
+    "csvRow": 75
+   }
+  ],
+  "B_needs_truth": [
+   {
+    "slug": "removable-stickers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "removable-stickers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 4
+   },
+   {
+    "slug": "kraft-paper-bags",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 9
+   },
+   {
+    "slug": "white-card-bags",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 10
+   },
+   {
+    "slug": "gift-bags",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 11
+   },
+   {
+    "slug": "handle-bags",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 13
+   },
+   {
+    "slug": "small-bags",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "small-bags",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "large-bags",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 14
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a4-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 15
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "a5-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 16
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "double-sided-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 17
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "thick-paper-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 19
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "eco-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 21
+   },
+   {
+    "slug": "cosmetic-boxes",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 28
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "rigid-boxes",
+    "pattern": "50-MOQ",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 32
+   },
+   {
+    "slug": "outdoor-vinyl-banners",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 49
+   },
+   {
+    "slug": "roll-up-banners",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 50
+   },
+   {
+    "slug": "adhesive-banners",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 51
+   },
+   {
+    "slug": "vehicle-wraps",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 52
+   },
+   {
+    "slug": "vehicle-wraps",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 1,
+    "verdict": "FIX",
+    "csvRow": 52
+   },
+   {
+    "slug": "catalog-printing",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 53
+   },
+   {
+    "slug": "catalog-printing",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 53
+   },
+   {
+    "slug": "saddle-stitch-booklets",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 54
+   },
+   {
+    "slug": "saddle-stitch-booklets",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 54
+   },
+   {
+    "slug": "perfect-bound-books",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 55
+   },
+   {
+    "slug": "perfect-bound-books",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 55
+   },
+   {
+    "slug": "hardcover-books",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 56
+   },
+   {
+    "slug": "hardcover-books",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 56
+   },
+   {
+    "slug": "spiral-notebooks",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 57
+   },
+   {
+    "slug": "spiral-notebooks",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 57
+   },
+   {
+    "slug": "exercise-books",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 62
+   },
+   {
+    "slug": "exercise-books",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 62
+   },
+   {
+    "slug": "school-flyers",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 64
+   },
+   {
+    "slug": "school-flyers",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 10,
+    "verdict": "FIX",
+    "csvRow": 64
+   },
+   {
+    "slug": "magnetic-closure-gift-box",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 100,
+    "verdict": "FIX",
+    "csvRow": 79
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "electronics-packaging-box",
+    "pattern": "100-MOQ",
+    "count": 1,
+    "minQ": 200,
+    "verdict": "FIX",
+    "csvRow": 77
+   },
+   {
+    "slug": "kraft-paper-packaging-box",
+    "pattern": "10 張起印，無開版費",
+    "count": 1,
+    "minQ": 300,
+    "verdict": "FIX",
+    "csvRow": 78
+   },
+   {
+    "slug": "seo",
+    "pattern": "10 張起印，無開版費",
+    "count": 3,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": null
+   },
+   {
+    "slug": "doujinshi-printing",
+    "pattern": " | 100 MOQ",
+    "count": 1,
+    "minQ": "UNKNOWN",
+    "verdict": "FIX",
+    "csvRow": 72
+   }
+  ]
+ },
+ "blocks_scanned": 85,
+ "summary": {
+  "totalKeep": 77,
+  "totalFix": 224,
+  "patterns": {
+   "10 張起印，無開版費": {
+    "instances": 47,
+    "skus": 24,
+    "keep": 34,
+    "fix": 13
+   },
+   "ISO 9001 認證工廠": {
+    "instances": 27,
+    "skus": 27,
+    "keep": 0,
+    "fix": 27
+   },
+   "ISO 9001 certified": {
+    "instances": 45,
+    "skus": 45,
+    "keep": 0,
+    "fix": 45
+   },
+   "15+ 年": {
+    "instances": 58,
+    "skus": 28,
+    "keep": 0,
+    "fix": 58
+   },
+   "ISO 9001 認証工場": {
+    "instances": 22,
+    "skus": 22,
+    "keep": 0,
+    "fix": 22
+   },
+   "15+ 年の": {
+    "instances": 22,
+    "skus": 22,
+    "keep": 0,
+    "fix": 22
+   },
+   " | 100 MOQ": {
+    "instances": 52,
+    "skus": 40,
+    "keep": 32,
+    "fix": 20
+   },
+   "100-MOQ": {
+    "instances": 27,
+    "skus": 27,
+    "keep": 11,
+    "fix": 16
+   },
+   "50-MOQ": {
+    "instances": 1,
+    "skus": 1,
+    "keep": 0,
+    "fix": 1
+   }
+  },
+  "batchA_instances": 174,
+  "batchB_instances": 50
+ }
+}

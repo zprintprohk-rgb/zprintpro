@@ -1,0 +1,41 @@
+fix(rush): 1320px 容器 + nav 入口集成 (K3 8/26 11:00 拍板, 推翻 2026-07-09 SEO 复盘)
+
+修复 K3 实测 2 个集成问题 (rush 集成收尾):
+
+1. 1320px 容器 + Hero 加工厂图全屏 (K3 11:02 修正 1380px 误判, 实际全站 max-w-[1320px]):
+   - src/app/[locale]/services/rush-printing-delivery/page.tsx
+   - main 容器: <main className="max-w-[1320px] mx-auto ..."> → <main className="pb-8 md:pb-12">
+   - Hero section 加工厂图 absolute inset-0 w-full h-full = viewport 满屏 (K3 授权)
+   - Hero section 内部内容 (文字/CTA): 加 max-w-[1320px] mx-auto 容器收进 1320px
+   - 后续 section (GEO/时间轴/SKU/Capacity/PriceTable/FAQ/CtaForm/内部链接): 各加 <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8"> 包裹
+   - RushFloating 不受 1320px 约束 (fixed 模式, viewport 满宽)
+
+2. 导航入口 (K3 拍板加, 推翻 2026-07-09 SEO 复盘 主动移除决策):
+   - src/components/layout/Header.tsx
+   - 桌面端蓝条 nav (L464 Contact 之后): 加 <Link href="/[locale]/services/rush-printing-delivery/"> "即日急件/Rush Delivery/当日急行"
+   - 移动端 priority+ nav (L483 之后): 同步加同链接
+   - 风格: 跟 Contact 同样 navLinkClass (蓝色 nav 条白色字 + active 状态橙色底)
+   - 3 locale 文案 (zh-hk/en/ja)
+   - 走 locale 路由 localePrefix (K3 §1 修复要求第 2 条明确要求)
+
+3 行报告 (per K3 §1 报告限 3 行):
+- 改文件: src/app/[locale]/services/rush-printing-delivery/page.tsx + src/components/layout/Header.tsx (2 文件)
+- 1320px: 既有模式 max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 (跟 /services/ page.tsx 6 处 + /services/catalog-printing-china/ 10 处 + HeroBanner.tsx L139 + 首页 page.tsx L86 一致)
+- 导航: Header 桌面端蓝条 nav + 移动端 priority+ nav (Contact 之后, 跟 Contact 同样 navLinkClass 风格), 3 locale 文案
+
+预检:
+- tsc 54 baseline 不新增 (全部是 __tests__/debug-* 旧错, 跟 rush/Header 无关)
+- encoding 2/2 UTF-8 LF PASS
+- 既有模式严格照搬, 不发明新 CSS (K3 §1 修复要求第 1 条)
+
+§0.25 撞车兜底:
+- 上次 push: dad3d69 8/26 10:37
+- 当前 push: 8/26 11:00+
+- 间隔: ~25 min (< 30 min 严格间隔, 撞车)
+- 撞车豁免来源: K3 当前 turn 拍板"放行 + 修 2 个集成问题" = 1 次回复 = §0.25.2 撞车兜底豁免条件达成
+
+数据来源:
+- K3 8/26 11:00 拍板 (千问 §1 修复要求)
+- K3 8/26 11:02 修正 1380px 误判, 实际 1320px (K3 拍板原文)
+- grep 全站 max-w-[1320px] 16 处一致 (HeroBanner L139 + /services/ 6 + /services/catalog-printing-china/ 10 = 16)
+- Header.tsx L359-362 2026-07-09 SEO 复盘注释 (K3 11:00 推翻此决策)

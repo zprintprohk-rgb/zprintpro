@@ -1,3 +1,46 @@
+<!-- COORDINATED-FLYWHEEL-2026-11-14 BEGIN -->
+# 2026-11-14 协同飞轮：周复盘、CTR 提案与阻断再派单
+
+1. **先消费同一协同板**：读 `run-context-ZP-weekly-meta.json` 的 `coordination`、`.hermes/logs/coordination-board.json` 与最新 periodic-review。周报按生产变更／测量报告／PARTIAL 跟进／调度异常分栏，不以手动执行或 wrapper=0 宣称自然调度恢复。
+2. **本车道职责**：消费 GSC 交接，最多形成一个 bounded CTR／snippet 提案；真实 SERP、title／snippet、query×page 与商业真值未齐时只写提案或 HOLD，不改 src。食品包裝印刷当前是提案候选，不是自动改页授权。
+3. **再派单门**：只把有证据的问题交给既有 owner lane，写全 baseline／approval／deploy／online_verify／retest／retry_at／exit；WAITING_K3、复测未到和 BLOCKED_INFRA 不得被 weekly 转成 READY，同因只 recurrence。
+4. **学习门**：只有 baseline＋change＋approval＋production_deploy＋online_verify＋retest 齐全才进入学习候选，SCALE 另需 scale_evidence；small-batch 旧实验为 `RESET_BY_TRUTH_FIX`，11-18 前不得叠加 snippet 变量。
+<!-- COORDINATED-FLYWHEEL-2026-11-14 END -->
+
+<!-- COMMERCIAL-TRUTH-2026-11-13 BEGIN -->
+# 2026-11-13 当前最高执行块：D1–D6 已裁决，按边界消费
+
+> 本块取代下方旧块中 packaging／catalog／C109 等陈旧 `WAITING_K3` 列表，以及 small-batch／catalog“实验窗内不得修任何真值”的旧表述；不取代 K3 最新拍板、AGENTS.md、结果总线、并发锁和既有门禁。配置更新不等于生产部署或自然调度恢复。
+
+1. **先对账再执行**：读 `docs/2026-11-13-commercial-truth-optimal-value-decisions.md`、`.hermes/logs/commercial-truth-decisions-2026-11-13.json` 与 `strategy-task-queue.json`。只消费 `status=READY`、`decision_record` 指向本包且 `write_scope` 完整的一项；DONE 不重做，PARTIAL 只做 remaining_scope，无裁决字段不得自行推导商业值。
+2. **统一口径**：普通匹配贴纸 SKU 10 张、食品标签 500 张；flyers 10 张；A2 10 张 HK$16 起；A1 柯式 20／喷绘成品 290 起／喷绘基材 45–56；en small-batch 10 stickers、from US$0.55 带条件；catalog 10 copies。未核实 proof／生产／运输／交付均报价或订单确认，无源认证／退款／统计／满意度删除，默认 3mm 出血但模板优先。
+3. **真值优先于实验完整**：small-batch／catalog 的 snippet 实验继续 HOLD，但已知错误不得为保护旧窗口而保留。残留真值修正是独立批次；实际部署后标 `RESET_BY_TRUTH_FIX` 并重置 baseline，未部署则保留原复测计划。
+4. **写入与验收**：每轮一个 bounded task；同一文件不得跨车道同日写。SKU SEO 必须回 `zprintpro-sku-seo-data.csv` 再跑生成器，禁手改派生 TS。输出 baseline／approval／production_deploy／online_verify／D1-D2／7-14-28d retest／exit；裁决文档、wrapper=0、报告完成均不是部署证明。
+5. **学习边界**：只追加 measurement_history，不覆盖旧 baseline；缺部署或线上核验不进入学习，未获 scale_evidence 不 SCALE；同因只累加 recurrence，不新建 cron／Automation，不自动改共享 prompt。
+<!-- COMMERCIAL-TRUTH-2026-11-13 END -->
+
+**Weekly 车道补充**：周报必须检查 READY 真值任务是否有真实 deploy／online_verify／retest；small-batch／catalog 若发生真值修正，把旧实验标 RESET_BY_TRUTH_FIX，禁止继续用旧窗口判 CTR 胜负。
+
+<!-- TRUTH-CTR-WEEKLY-2026-11-13 BEGIN -->
+# 2026-11-13 当前执行块：周总结、CTR 单变量与 GEO 复测
+
+1. **先跑反馈器再复盘**：沿用 `strategy-feedback.py --period weekly`，短窗 previous／current 字段由数据动态读取；总结必须分生产变更、测量报告、PARTIAL 跟进、调度异常四栏。PARTIAL 有交付但不是 OK，NO_OP 是合法完成，均不得误判 STALE。
+2. **本周 CTR 候选池**：优先复核 `食品包裝印刷`、`small batch sticker printing`、`c109/c109 日期`、`a1海報`、`海報印刷即日／一張` 等首页高展示零点击精确词；信息词与采购词分开，不承诺点击或排名提升。先存 SERP／snippet／query×page，再提案最多一个变量。
+3. **商业真值阻断**：posters／stickers／flyers／en small-batch／en catalog／ja 教材与 C109 的冲突数字未拍板前，不生成新价格、MOQ、交期、认证或退款文案。catalog 在单变量复测窗不叠加修改，small-batch 保持 HOLD／MEASURE 至 2026-11-28。
+4. **GEO S2 固定协议**：2026-11-20..24 沿用固定引擎与问题集，保存完整答案、引用域名和 citation URL；不重跑 S1，不用普通 WebSearch 代替 GEO，不把 AI 缺席直接派成长文。
+5. **周任务必须可退出**：每项含 owner／baseline／approval／deploy／online_verify／retest／retry_at／exit；未部署或缺复测不进入学习，2147946720 等调度异常不得凭 wrapper=0 或手动成功关闭。
+<!-- TRUTH-CTR-WEEKLY-2026-11-13 END -->
+
+<!-- FLYWHEEL-WEEKLY-REVIEW-2026-11-07 BEGIN -->
+# 2026-11-07 当前执行块：周总结必须形成阻断解决任务
+
+1. **先跑既有反馈器**：在不向生产队列写入的默认模式下执行 `python scripts/strategy-feedback.py --period weekly --date <YYYY-MM-DD>`，读取同日期 periodic-review JSON／MD；只有审批明确且输入新鲜时才考虑既有 `--write-queue`，不得自行翻转 WAITING_K3。
+2. **周报分开验收**：真实生产 URL 改动、仅测量／报告、preflight 阻断、调度缺跑分四栏。wrapper exit=0、手动立即执行、报告完成均不得证明自然调度或 SEO 实验成功。
+3. **首页零点击 SOP**：先保存 query×page、SERP features、Google 实际 title／snippet 与页面可见采购信息，再提出最多一个 snippet 变量；不得把 `pos≤10 & CTR<1%` 机械等同于强制改写 title／description。
+4. **派发解决阻断的 bounded FIX**：每项含 owner、baseline、approval_gate、唯一变更、production_deploy、online_verify、7／14／28 天 retest、retry_at、cooldown 和 exit_criteria；商业真值未决只派取证／裁决准备，不替 K3 选值。
+5. **周学习门槛**：只有 baseline＋change＋production_deploy＋online_verify＋retest 完整才进入学习候选，另需 scale_evidence 才可 SCALE；缺证据就 HOLD／STOP／NO_OP，不能因移动窗口上涨复制到全站。
+<!-- FLYWHEEL-WEEKLY-REVIEW-2026-11-07 END -->
+
 <!-- EVIDENCE-LEARNING-CLOSED-LOOP-2026-11-03 BEGIN -->
 # 2026-11-03 最新执行块：证据分流与学习闭环
 

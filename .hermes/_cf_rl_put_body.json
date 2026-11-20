@@ -1,0 +1,23 @@
+﻿{
+    "rules":  [
+                  {
+                      "action":  "block",
+                      "description":  "rate-html-60-per-10s (category/product; verified bots excluded 2026-10-29 - GMC manual review fix; anti-AI-scrape retained for unverified bots)",
+                      "enabled":  true,
+                      "expression":  "((http.request.uri.path contains \"/category/\") or (http.request.uri.path contains \"/product/\")) and not cf.client.bot",
+                      "id":  "bda7867077444fd08819ad1ba747ed18",
+                      "last_updated":  "2026-10-16T10:33:24.656876Z",
+                      "ratelimit":  {
+                                        "characteristics":  [
+                                                                "cf.colo.id",
+                                                                "ip.src"
+                                                            ],
+                                        "mitigation_timeout":  10,
+                                        "period":  10,
+                                        "requests_per_period":  60
+                                    },
+                      "ref":  "bda7867077444fd08819ad1ba747ed18",
+                      "version":  "1"
+                  }
+              ]
+}

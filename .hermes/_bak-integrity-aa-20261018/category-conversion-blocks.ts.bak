@@ -1,0 +1,4330 @@
+/**
+ * Category Conversion Blocks — M1 大词攻坚转化区块数据 (B1 策略 2026-09-04)
+ *
+ * 独立于 category-seo-content.ts，只做 M1 增量：
+ *   - quickAnswers     3 问快速答案（AEO featured snippet）
+ *   - socialProof      第一方信任状数字
+ *   - comparisonTable  渠道/选项比较表（GEO 比较列表）
+ *   - orderFlow        6 步落单流程（降 B2B 决策门槛）
+ *   - whatsappTemplates 3 个预填 WhatsApp CTA
+ *   - newFaqs          新 FAQ（合入 FAQPage schema）
+ *   - title / metaDescription  SEO Title/Meta 覆盖建议
+ *
+ * 可独立回滚：本文件 + CategoryConversionBlocks.tsx + page.tsx 挂载点。
+ */
+
+export interface QuickAnswer {
+  q: string;
+  a: string;
+}
+
+export interface SocialProof {
+  stat: string;
+  label: string;
+  desc?: string;
+}
+
+export interface ComparisonTable {
+  title: string;
+  columns: string[];
+  rows: string[][];
+  note?: string;
+}
+
+export interface FlowStep {
+  title: string;
+  desc: string;
+}
+
+export interface OrderFlow {
+  title: string;
+  steps: FlowStep[];
+}
+
+export interface WhatsAppTemplate {
+  label: string;
+  message: string;
+}
+
+export interface FaqItem {
+  q: string;
+  a: string;
+}
+
+export interface CategoryConversionContent {
+  category: string;
+  locale: 'zh-hk' | 'en' | 'ja';
+  title?: string;
+  // ⚠️ 2026-10-09 实测证伪：本字段**无任何消费者**（全站 grep `\.metaDescription` = 0 命中）。
+  // 类目页 live <meta name="description"> 由 `src/lib/seo.ts` 的 categorySeoData[slug].descriptions[locale]
+  // （+ CATEGORY_INDUSTRIES 后缀）生成。**改 CTR meta 必改 seo.ts，不要改这里。**
+  // 本字段保留仅为历史数据 + 内部一致性；若某块与真值（products.ts MOQ/价格）冲突，仍应修正以免误导。
+  metaDescription?: string;
+  quickAnswers: QuickAnswer[];
+  socialProof: SocialProof[];
+  comparisonTable: ComparisonTable;
+  orderFlow: OrderFlow;
+  whatsappTemplates: WhatsAppTemplate[];
+  newFaqs: FaqItem[];
+}
+
+export const categoryConversionBlocks: Record<string, CategoryConversionContent> = {};
+
+// === M1 内容包注入 (2026-09-04) ===
+
+categoryConversionBlocks['stickers:zh-hk'] = {
+  "category": "stickers",
+  "locale": "zh-hk",
+  "title": "貼紙印刷｜香港最快 2 日起貨｜小批量 10 張起印｜ZprintPro",
+  "metaDescription": "貼紙印刷 HK$0.22 起/張（防水 PVC），10 張起印、2-3 日出貨。PVC／透明／啞銀／光粉多款材質，異形切割、燙金、局部 UV 都做。滿 HK$500 免費順豐，WhatsApp 30 秒報價 8619880851334。",
+  "quickAnswers": [
+    {
+      "q": "香港貼紙印刷 1000 張幾錢？",
+      "a": "50×50mm 光粉貼紙 1000 張約 HK$200-350，MOQ 低至 10 張，2-3 日出貨。"
+    },
+    {
+      "q": "貼紙印刷最快幾日有貨？",
+      "a": "常規 2-3 天交貨，平均出貨 2.3 天，加急可聯絡 WhatsApp 安排，累計 4820+ 訂單實證。"
+    },
+    {
+      "q": "香港最受歡迎貼紙尺寸係邊啲？",
+      "a": "Top5 熱門尺寸：50×50mm、40×60mm、30×30mm、圓形 38mm、70×25mm。"
+    },
+    {
+      "q": "可移貼紙同永久貼紙有咩分別？",
+      "a": "可移貼紙用可移除背膠，撕落唔留殘膠，最啱促銷價錢牌、期間限定活動同櫥窗佈置；永久膠貼實咗就難撕，適合長期產品標籤。兩款都係 10 張起印，2-3 日出貨。"
+    },
+    {
+      "q": "透明貼印刷係咩效果？",
+      "a": "透明 PVC 貼紙背景完全透明，只有圖案同文字顯示，貼玻璃、杯身、樽裝產品通透無白邊，質感即時升級；10 張起印，可配燙金或白墨打底。"
+    },
+    {
+      "q": "可變數據貼紙 / 流水碼貼紙係咩？點訂？",
+      "a": "可變數據印刷令每張貼紙印唔同序號、流水碼、QR Code 或條碼，產品追溯、抽獎券、會員標籤都用到；10 張起印，Excel/CSV 入稿即可，免費數據檢查。"
+    },
+    {
+      "q": "透明貼紙白墨打底係咩？一定要加？",
+      "a": "白墨係透明或深色材質嘅打底墨層，冇白墨圖案會透底發灰；透明貼可選全白墨 / 局部白墨 / 無白墨三種效果，10 張起印，WhatsApp 免費打稿睇效果。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "累計訂單 真實客戶信賴"
+    },
+    {
+      "stat": "2.3 天",
+      "label": "貼紙平均出貨速度"
+    },
+    {
+      "stat": "10 張起",
+      "label": "MOQ 低 小批量無壓力"
+    },
+    {
+      "stat": "9 種材質",
+      "label": "PVC/透明/啞銀/燙金等任揀"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港貼紙印刷渠道比較",
+    "columns": [
+      "比較項目",
+      "網上自助平台",
+      "實體印刷店",
+      "智印港 香港"
+    ],
+    "rows": [
+      [
+        "最少起印量",
+        "500-1000 張起",
+        "1000 張以上",
+        "10 張起"
+      ],
+      [
+        "交貨時間",
+        "5-7 個工作天",
+        "3-5 個工作天",
+        "常規 2-3 天出貨"
+      ],
+      [
+        "報價方式",
+        "系統自助，難調整",
+        "到店或電話查詢",
+        "WhatsApp 一對一即時報價"
+      ],
+      [
+        "材質選擇",
+        "基本 2-3 款",
+        "款式有限",
+        "9 款以上（PVC/透明/啞銀/燙金/UV 等）"
+      ],
+      [
+        "適合場景",
+        "大量標準單",
+        "本地熟客",
+        "小批量、趕單、定制化"
+      ]
+    ],
+    "note": "以上為市場常見情況參考，實際視乎個別商戶而定；智印港 專注小批量快閃定制。"
+  },
+  "orderFlow": {
+    "title": "6 步落單流程",
+    "steps": [
+      {
+        "title": "WhatsApp 查詢",
+        "desc": "講清楚尺寸、數量、材質同用途"
+      },
+      {
+        "title": "報價確認",
+        "desc": "2 小時內回覆價錢同交期"
+      },
+      {
+        "title": "提供設計檔",
+        "desc": "AI/PNG/PDF 都得，可代簡單調整"
+      },
+      {
+        "title": "打樣確認",
+        "desc": "印前提供數碼樣，滿意先開印"
+      },
+      {
+        "title": "生產製作",
+        "desc": "廠房直接印刷，平均 2.3 日出貨"
+      },
+      {
+        "title": "收貨驗收",
+        "desc": "香港本地派送或自取，跟進到滿意"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "報價貼紙",
+      "message": "你好，我想報價貼紙印刷：\n【尺寸】例如 50×50mm\n【數量】例如 1000 張\n【材質】例如光粉 / 透明 / 啞銀\n【用途】例如包裝 / 產品標籤 / 宣傳\n【交貨日期】例如 X 月 X 日前\n麻煩報價，多謝！"
+    },
+    {
+      "label": "加急貼紙",
+      "message": "你好，我有加急貼紙印刷需求：\n【尺寸】\n【數量】\n【材質】\n【最遲要貨日期】\n【是否有現成設計檔】有 / 無\n麻煩幫忙睇下趕唔趕到，多謝！"
+    },
+    {
+      "label": "返單補印",
+      "message": "你好，我之前喺貴司印過貼紙，想返單補印：\n【之前訂單編號 / 聯絡人】\n【補印數量】\n【尺寸與材質】同上次 / 需調整\n【交貨地址】\n麻煩報價，多謝！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "香港貼紙印刷 1000 張幾錢？", "a": "50×50mm 光粉貼紙 1000 張約 HK$200-350，MOQ 低至 10 張，2-3 日出貨，WhatsApp 即時報價。" },
+    { "q": "香港最受歡迎貼紙尺寸係邊啲？", "a": "Top5 熱門尺寸：50×50mm、40×60mm、30×30mm、圓形 38mm、70×25mm，全部 100 張起可印。" },
+    {
+      "q": "貼紙印刷 MOQ 係幾多？小批量都接嗎？",
+      "a": "MOQ 低至 10 張，適合新品牌測試市場或細活動使用。"
+    },
+    {
+      "q": "你哋有邊啲貼紙材質同工藝？",
+      "a": "提供 PVC、透明貼、啞銀、光粉、啞粉、防水、可移、燙金、局部 UV 等 9 款以上選擇，可混搭。"
+    },
+    {
+      "q": "香港本地交貨要幾耐？可以加急嗎？",
+      "a": "常規 2-3 天出貨，平均 2.3 天完成。趕單可 WhatsApp 溝通，視乎工廠排單安排加急。"
+    },
+    {
+      "q": "付款方式有邊啲？接受轉數快嗎？",
+      "a": "接受銀行轉賬、轉數快 FPS、支付寶香港等方式，確認報價後安排收款，WhatsApp 全程跟進。"
+    }
+  ]
+};
+
+categoryConversionBlocks['stickers:en'] = {
+  "category": "stickers",
+  "locale": "en",
+  "title": "Small Batch Label Printing & Custom Stickers HK | ZprintPro",
+  "metaDescription": "Small batch sticker printing from US$0.32/pc (waterproof PVC), 10 pcs MOQ, 2-3 day turnaround. Custom labels, transparent, foil, die-cut & removable stickers. Free 1-hour digital proof, DHL 2-4 day US delivery, 30-second AI quote.",
+  "quickAnswers": [
+    {
+      "q": "What's the minimum order for custom stickers in Hong Kong?",
+      "a": "Our MOQ starts at just 10 pcs — perfect for small batch label printing — with prices from US$0.55 per sticker and 1-2 day digital turnaround, so startups can trial a design with no inventory pressure."
+    },
+    {
+      "q": "How fast is small batch label printing turnaround?",
+      "a": "Standard turnaround is 2-3 working days for custom stickers, with average sticker shipping in 2.3 days."
+    },
+    {
+      "q": "How much do 1000 custom stickers cost in Hong Kong?",
+      "a": "1000 pcs of 50×50mm gloss stickers cost roughly HK$200–350 — get an exact quote via WhatsApp in minutes."
+    },
+    {
+      "q": "Can I print different serial numbers or QR codes on each sticker?",
+      "a": "Yes — variable data printing puts a unique serial number, running code, QR code or barcode on every sticker for product tracking, coupons and member labels. 10 pcs MOQ; just send an Excel/CSV file and we run a free data check."
+    },
+    {
+      "q": "What is white ink backing for clear stickers?",
+      "a": "White ink is an underbase layer beneath CMYK on clear or dark materials; without it colors print grey and translucent. Choose full white ink, partial white ink or no white ink on clear stickers — 10 pcs MOQ with a free proof."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "Orders completed"
+    },
+    {
+      "stat": "2.3 days",
+      "label": "Avg. sticker shipping"
+    },
+    {
+      "stat": "10 pcs",
+      "label": "MOQ from 10 pcs"
+    },
+    {
+      "stat": "2–3 days",
+      "label": "Standard turnaround"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Small-Batch Label Printing & Custom Stickers Options in Hong Kong Compared",
+    "columns": [
+      "Option",
+      "Minimum Order",
+      "Turnaround",
+      "Best For"
+    ],
+    "rows": [
+      [
+        "ZprintPro (WhatsApp direct)",
+        "10 pcs",
+        "2–3 working days",
+        "Startups, e-commerce sellers & small brands needing fast small batch label printing with human support"
+      ],
+      [
+        "Self-service online platforms",
+        "500–1000 pcs",
+        "3–7 working days",
+        "Simple designs with no custom tweaks; budget-only buyers"
+      ],
+      [
+        "Local print shops",
+        "500–2000 pcs",
+        "5–10 working days",
+        "Walk-in customers with flexible timelines and larger budgets"
+      ],
+      [
+        "Marketplace sellers",
+        "100–500 pcs",
+        "7–14 days (incl. shipping)",
+        "Price hunters who can wait and accept quality variance"
+      ]
+    ],
+    "note": "ZprintPro combines the lowest MOQ, fastest turnaround, and direct WhatsApp support for small batch custom stickers and labels."
+  },
+  "orderFlow": {
+    "title": "How to Order Custom Stickers in 6 Steps",
+    "steps": [
+      {
+        "title": "Share Your Specs",
+        "desc": "Send your specs & design via WhatsApp"
+      },
+      {
+        "title": "Get a Quote",
+        "desc": "Clear HK$ price — often within minutes"
+      },
+      {
+        "title": "Approve Artwork",
+        "desc": "Confirm digital proof before production"
+      },
+      {
+        "title": "Make Payment",
+        "desc": "Bank transfer or FPS QR — fast & secure"
+      },
+      {
+        "title": "We Print & Pack",
+        "desc": "Custom stickers printed in 2–3 days"
+      },
+      {
+        "title": "Ship to You",
+        "desc": "Local delivery or DHL worldwide 2–4 days"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get Sticker Quote",
+      "message": "Hi ZprintPro! I'd like a quote for custom stickers:\n- Size: [e.g. 50×50mm]\n- Quantity: [e.g. 1000 pcs]\n- Material: [e.g. gloss / matte / transparent / PVC]\n- Shape: [e.g. square / round / custom die-cut]\n- Turnaround: [e.g. standard / rush]\n\nPlease send me the price and delivery timeline. Thanks!"
+    },
+    {
+      "label": "Rush Order",
+      "message": "Hi! I need a rush order for small batch label printing:\n- Size: [e.g. 40×60mm]\n- Quantity: [e.g. 200 pcs]\n- Material: [e.g. waterproof / matte silver]\n- Needed by: [date]\n\nIs 2-day turnaround possible? Please confirm cost ASAP. Thanks!"
+    },
+    {
+      "label": "Reorder Stickers",
+      "message": "Hi ZprintPro team! I'd like to reorder:\n- Previous order ref / name: [your name or order #]\n- Quantity: [e.g. 500 pcs]\n- Same design? [yes / minor changes]\n\nPlease confirm price and ETA. Thank you!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "Can I order just 10 custom stickers for my startup?",
+      "a": "Absolutely. Our MOQ starts at 10 pcs for most custom stickers and small batch label printing jobs — ideal for startups and e-commerce sellers testing designs."
+    },
+    {
+      "q": "What sticker materials are available for small batch orders?",
+      "a": "We offer PVC, transparent, matte silver, gloss, matte, waterproof, removable, foil-stamped, and spot-UV finishes — all available from 10 pcs with 2–3 day turnaround."
+    },
+    {
+      "q": "How long does small batch label printing take in Hong Kong?",
+      "a": "Standard production takes 2–3 working days after artwork confirmation. Average sticker shipping is 2.3 days, and DHL worldwide delivery takes 2–4 days."
+    },
+    {
+      "q": "What are the most popular sticker sizes in Hong Kong?",
+      "a": "Our top-selling sizes are 50×50mm, 40×60mm, 30×30mm, round 38mm, and 70×25mm. Custom sizes and die-cut shapes are also available for small batch orders."
+    }
+  ]
+};
+
+categoryConversionBlocks['stickers:ja'] = {
+  "category": "stickers",
+  "locale": "ja",
+  "title": "オリジナルステッカー印刷｜香港発・小ロット10枚から・2〜3日出荷｜ZprintPro",
+  "metaDescription": "香港発のオリジナルステッカー印刷。PVC・透明・マット銀・光沢など9種以上、10枚から対応、2〜3日出荷。WhatsAppで今すぐお見積もり—ZprintPro",
+  "quickAnswers": [
+    {
+      "q": "ステッカー印刷 1000枚の値段は？",
+      "a": "50×50mm 光沢パウダーステッカー 1000枚 約HK$200-350。"
+    },
+    {
+      "q": "ステッカー印刷 納期はどれくらい？",
+      "a": "通常2〜3営業日で出荷、平均出荷は2.3日。お急ぎはWhatsAppでご相談ください。累計4820+注文実績。"
+    },
+    {
+      "q": "人気のステッカーサイズは？",
+      "a": "香港で人気Top5：50×50mm、40×60mm、30×30mm、円形38mm、70×25mm。"
+    },
+    {
+      "q": "可変データシール・連番シールは印刷できますか？",
+      "a": "はい。可変データ印刷で1枚ごとに異なるシリアル番号・連番・QRコード・バーコードが印字可能です。製品追跡、抽選券、会員ラベルに最適。10枚から、Excel/CSV入稿で対応、データチェック無料。"
+    },
+    {
+      "q": "透明ステッカーの白インキは必要ですか？",
+      "a": "白インキは透明・濃色素材の下地墨で、無いと色が透けてグレーに発色します。全面白インキ・部分白インキ・無白インキの3択が選べます。10枚から、無料デザイン校正付き。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "累計注文件数 実績多数"
+    },
+    {
+      "stat": "2.3日",
+      "label": "ステッカー平均出荷スピード"
+    },
+    {
+      "stat": "10枚〜",
+      "label": "低MOQ 小ロット対応"
+    },
+    {
+      "stat": "9種以上",
+      "label": "素材/加工（PVC/透明/箔押し/UVなど）"
+    }
+  ],
+  "comparisonTable": {
+    "title": "ステッカー印刷 選び方比較",
+    "columns": [
+      "比較項目",
+      "ネット印刷通販",
+      "地元印刷店",
+      "智印港 香港"
+    ],
+    "rows": [
+      [
+        "最低ロット",
+        "500〜1000枚〜",
+        "1000枚以上が多い",
+        "10枚〜"
+      ],
+      [
+        "納期",
+        "5〜7営業日",
+        "3〜5営業日",
+        "通常2〜3日で出荷"
+      ],
+      [
+        "見積もり方法",
+        "システム自動見積もり",
+        "ご訪問または電話",
+        "WhatsApp マンツー即対応"
+      ],
+      [
+        "素材の種類",
+        "基本2〜3種",
+        "選択肢少なめ",
+        "9種以上（PVC/透明/マット銀/箔押し/UVなど）"
+      ],
+      [
+        "向いているシーン",
+        "大量の定型発注",
+        "地域の常連客",
+        "小ロット・急ぎ・カスタム"
+      ]
+    ],
+    "note": "上記は一般的な市場状況の参考であり、実際は事業者により異なります。小ロット短納期のカスタマイズを専門としています—ZprintPro"
+  },
+  "orderFlow": {
+    "title": "ご注文の流れ 6ステップ",
+    "steps": [
+      {
+        "title": "WhatsApp お問い合わせ",
+        "desc": "サイズ・枚数・素材・用途をお知らせください"
+      },
+      {
+        "title": "お見積もり・確認",
+        "desc": "2時間以内に金額と納期をご返答"
+      },
+      {
+        "title": "デザインデータ入稿",
+        "desc": "AI/PNG/PDF対応、簡単な調整も承ります"
+      },
+      {
+        "title": "校正・確認",
+        "desc": "印刷前にデジタル確認稿をご提示"
+      },
+      {
+        "title": "印刷・製造",
+        "desc": "自社工場で印刷、平均2.3日で出荷"
+      },
+      {
+        "title": "お届け・検収",
+        "desc": "香港配達またはお引渡し、アフターフォロー"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "お見積もり",
+      "message": "初めまして、ステッカー印刷のお見積もりをお願いします。\n【サイズ】例：50×50mm\n【枚数】例：1000枚\n【素材】例：光沢 / 透明 / マット銀\n【用途】例：パッケージ / 商品ラベル / 販促\n【希望納期】〇月〇日まで\nよろしくお願いいたします。"
+    },
+    {
+      "label": "特急・急ぎ",
+      "message": "お急ぎでステッカー印刷をお願いしたいです。\n【サイズ】\n【枚数】\n【素材】\n【最遅必要日】\n【データの有無】あり / なし\n間に合うか確認お願いします。"
+    },
+    {
+      "label": "リピート注文",
+      "message": "以前ステッカーを注文した者です。リピートでお願いします。\n【前回の注文番号 / 担当者名】\n【追加枚数】\n【サイズ・素材】前回と同じ / 変更あり\n【配送先】\nお見積もりよろしくお願いします。"
+    }
+  ],
+  "newFaqs": [
+    { "q": "ステッカー印刷 1000枚の値段は？", "a": "50×50mm 光沢パウダーステッカー 1000枚 約HK$200-350。MOQ10枚〜、2〜3日で出荷、WhatsAppで即見積もり。" },
+    { "q": "人気のステッカーサイズは？", "a": "香港で人気Top5：50×50mm、40×60mm、30×30mm、円形38mm、70×25mm。いずれも10枚から印刷可能。" },
+    {
+      "q": "ステッカー印刷のMOQは何枚からですか？",
+      "a": "MOQは10枚から。新ブランドのテストや小規模イベントに最適です。"
+    },
+    {
+      "q": "どんな素材や加工に対応していますか？",
+      "a": "PVC、透明ステッカー、マット銀、光沢パウダー、マットパウダー、防水、再剥離、箔押し、部分UVなど9種以上から選べます。"
+    },
+    {
+      "q": "香港への配送は何日くらいかかりますか？",
+      "a": "通常2〜3営業日で出荷、平均2.3日で完成します。お急ぎの場合はWhatsAppでご相談ください、状況に応じ特急対応も可能です。"
+    },
+    {
+      "q": "支払い方法は何がありますか？",
+      "a": "銀行振込、FPS（転数快）、アリペイ香港などに対応。お見積もり確定後にお支払い手続きをお願いし、WhatsAppで全程サポートします。"
+    }
+  ]
+};
+
+categoryConversionBlocks['packaging:zh-hk'] = {
+  "category": "packaging",
+  "locale": "zh-hk",
+  "title": "包裝盒訂製｜100個起印 免刀模費｜香港B2B定制包裝方案",
+  "metaDescription": "香港包裝盒訂製專家，100個起印低至HK$0.03/個，拼版免刀模費，FDA食品級+FSC認證可選。30秒AI即時報價，立即WhatsApp查詢：8619880851334",
+  "quickAnswers": [
+    {
+      "q": "包裝盒訂製最少要做幾多個？",
+      "a": "100個起印，彈性MOQ 100-10K個，適合初創品牌試產同電商小批量補貨，降低庫存風險。"
+    },
+    {
+      "q": "訂製包裝盒仲使唔使畀刀模費？",
+      "a": "拼版彩盒免刀模費，對比傳統印刷廠HK$300-800刀模費，100個起都可以開新盒，慳返開模成本。"
+    },
+    {
+      "q": "由報價到交貨大概要幾耐？",
+      "a": "30秒AI即時報價，8-15天生產，香港本地1-2個工作天順豐直送，DHL全球2-4日送到。"
+    },
+    {
+      "q": "食品包裝印刷有咩認證要求？",
+      "a": "必須用食品級紙材加環保油墨選項（落單時註明），FDA認可（間接食品接觸）加FSC認證紙，可出SGS檢測文件；烘焙、茶葉、保健品盒100個起印，防潮處理同QR碼溯源都可以安排。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "香港及跨境B2B訂單累計"
+    },
+    {
+      "stat": "100個",
+      "label": "全行業最低起印量"
+    },
+    {
+      "stat": "HK$0.03/個起",
+      "label": "白卡彩盒拼版價"
+    },
+    {
+      "stat": "5大場景",
+      "label": "電商/美妝/餐飲/零售/婚慶"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港包裝盒訂製渠道比較",
+    "columns": [
+      "比較項目",
+      "傳統印刷廠",
+      "網上自助平台",
+      "智印港 訂製包裝"
+    ],
+    "rows": [
+      [
+        "最低起印量",
+        "500-1000個起",
+        "200-500個起",
+        "100個起，彈性MOQ 100-10K"
+      ],
+      [
+        "刀模費用",
+        "HK$300-800/款",
+        "個別款式豁免",
+        "拼版彩盒全免刀模費"
+      ],
+      [
+        "交貨時間",
+        "15-30工作日",
+        "7-20工作日",
+        "8-15天，香港順豐1-2日送到"
+      ],
+      [
+        "專人跟單",
+        "電話/email來回",
+        "無人看管自助落單",
+        "WhatsApp一對一直屬對接"
+      ],
+      [
+        "適合客戶",
+        "大單量訂單",
+        "標準款快速補貨",
+        "初創/電商品牌試產及長期補貨"
+      ]
+    ],
+    "note": "比較基準：同類白卡彩盒、標準尺寸、四色印刷。實際價格按數量、物料同工藝調整。"
+  },
+  "orderFlow": {
+    "title": "B2B 定制包裝 6 步流程（含打樣）",
+    "steps": [
+      {
+        "title": "AI 即時報價",
+        "desc": "30秒輸入盒型/數量/尺寸，系統即時出價"
+      },
+      {
+        "title": "打樣確認",
+        "desc": "按設計稿輸出實物樣板，核對顏色同結構"
+      },
+      {
+        "title": "定稿確認",
+        "desc": "確認印刷文件、物料同生產工藝細節"
+      },
+      {
+        "title": "批量生產",
+        "desc": "8-15天廠房生產，全程QC把關"
+      },
+      {
+        "title": "出貨驗貨",
+        "desc": "出廠前隨機抽驗，確保數量同品質"
+      },
+      {
+        "title": "送貨交付",
+        "desc": "香港順豐1-2日，DHL全球2-4日送達"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "立即報價",
+      "message": "你好，我想報價【盒型：____】【數量：____個】【尺寸：____mm】【用途：____】，麻煩報價同講下交期，多謝！"
+    },
+    {
+      "label": "申請打樣",
+      "message": "你好，我想申請打樣【盒型：____】【尺寸：____mm】【數量：____個】，麻煩講下打樣費用同時間，多謝！"
+    },
+    {
+      "label": "批量復購",
+      "message": "你好，我想復購之前訂開嘅【盒型：____】【數量：____個】，麻煩報價同確認最快交期，多謝！"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "我哋係初創品牌，第一次做包裝盒應該點揀？",
+      "a": "建議由100個小批量試產開始，白卡彩盒低至HK$0.03/個仲要免刀模費，可以測試市場反應先再決定補貨，風險低好多。"
+    },
+    {
+      "q": "做食品包裝有冇相關認證？",
+      "a": "我哋提供FDA食品級認證同FSC森林認證物料可選，適合餐飲外賣、零食、保健品等食品接觸類包裝，合規安全。"
+    },
+    {
+      "q": "包裝盒有邊幾款盒型同尺寸可以揀？",
+      "a": "涵蓋坑盒、卡盒、天地蓋等全盒型，提供8檔標準尺寸揀，由細件美妝品到服裝盒都有對應size，靈活性高。"
+    },
+    {
+      "q": "跨境電商賣家點樣慳包裝成本？",
+      "a": "用100-10K彈性MOQ方案，細批量測試爆品、大批量補貨備用，配合拼版免刀模費政策，整體成本比傳統印刷廠低30%以上。"
+    }
+  ]
+};
+
+categoryConversionBlocks['packaging:en'] = {
+  "category": "packaging",
+  "locale": "en",
+  "title": "Custom Packaging Boxes | 100 MOQ, No Die Cut Fee | B2B Packaging Solutions",
+  "metaDescription": "Premium custom packaging boxes from 100 pcs starting at HK$0.03 each. No die-cut fee on gang-run orders, FDA & FSC-certified options. Get instant quote & WhatsApp us: +8619880851334",
+  "quickAnswers": [
+    {
+      "q": "What's the minimum order for custom packaging boxes?",
+      "a": "100 pieces minimum with flexible MOQ from 100 to 10K pcs — perfect for startups, e-commerce test runs, and small batch restocks with lower inventory risk."
+    },
+    {
+      "q": "Do I have to pay die-cut fees for custom box shapes?",
+      "a": "Gang-run printed boxes include FREE die-cut fees, saving you HK$300-800 compared to traditional printers. Even 100-piece orders qualify for custom box shapes."
+    },
+    {
+      "q": "How long does it take from quote to delivery?",
+      "a": "30-second AI instant quote, 8-15 day production, 1-2 working days local SF Express in Hong Kong, and 2-4 days worldwide via DHL."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "B2B orders delivered globally"
+    },
+    {
+      "stat": "100 pcs",
+      "label": "Industry-low minimum order"
+    },
+    {
+      "stat": "From HK$0.03",
+      "label": "White card colour box price"
+    },
+    {
+      "stat": "5 sectors",
+      "label": "E-commerce, beauty, F&B, retail, wedding"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Custom Packaging Options Compared",
+    "columns": [
+      "Criteria",
+      "Traditional Printer",
+      "Online Self-Service",
+      "ZprintPro Custom Packaging"
+    ],
+    "rows": [
+      [
+        "Minimum Order",
+        "500 - 1K pcs",
+        "200 - 500 pcs",
+        "100 pcs, flexible MOQ 100 - 10K"
+      ],
+      [
+        "Die-Cut Fee",
+        "HK$300 - 800 per design",
+        "Waived on selected SKUs only",
+        "Free on all gang-run colour boxes"
+      ],
+      [
+        "Lead Time",
+        "15 - 30 working days",
+        "7 - 20 working days",
+        "8 - 15 days + 1-2 day SF Express in HK"
+      ],
+      [
+        "Account Support",
+        "Phone / email back-and-forth",
+        "Fully self-service, no rep",
+        "Dedicated WhatsApp 1-to-1 support"
+      ],
+      [
+        "Best For",
+        "High-volume bulk orders",
+        "Standard box restocks",
+        "Startups & e-commerce brands testing and scaling"
+      ]
+    ],
+    "note": "Comparison based on standard white card colour boxes in common sizes. Final pricing varies by quantity, material, and finishing options."
+  },
+  "orderFlow": {
+    "title": "B2B Custom Packaging 6-Step Workflow (With Sampling)",
+    "steps": [
+      {
+        "title": "Instant AI Quote",
+        "desc": "Enter box type, qty & size — get priced in 30 seconds"
+      },
+      {
+        "title": "Pre-Production Sample",
+        "desc": "Physical sample to verify colour, structure and fit"
+      },
+      {
+        "title": "Artwork Sign-Off",
+        "desc": "Confirm print files, materials and production specs"
+      },
+      {
+        "title": "Bulk Production",
+        "desc": "8-15 day factory run with full QC checkpoints"
+      },
+      {
+        "title": "Pre-Shipment Inspection",
+        "desc": "Random sampling before dispatch for quality assurance"
+      },
+      {
+        "title": "Delivery & Handover",
+        "desc": "1-2 day SF in HK, 2-4 day DHL to worldwide"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, I'd like a quote for [box type: ____] [quantity: ____ pcs] [size: ____ mm] [use case: ____]. Please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "Request a Sample",
+      "message": "Hi, I'd like to request a sample for [box type: ____] [size: ____ mm] [quantity: ____ pcs]. Please advise sampling cost and timeline, thanks!"
+    },
+    {
+      "label": "Repeat / Bulk Order",
+      "message": "Hi, I'd like to reorder our previous [box type: ____] [quantity: ____ pcs]. Please confirm pricing and the earliest delivery date, thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "We're a startup — what's the best way to launch custom packaging?",
+      "a": "Start with a 100-piece small batch test run. White card colour boxes start at HK$0.03 each with free die-cut fees, so you can validate market fit before committing to larger volumes with far less risk."
+    },
+    {
+      "q": "Do you offer food-safe and sustainable packaging certifications?",
+      "a": "Yes — FDA food-grade and FSC forest-certified materials are both available, ideal for F&B, snacks, supplements and any packaging with direct food contact. Fully compliant and traceable."
+    },
+    {
+      "q": "What box styles and standard sizes are available?",
+      "a": "Full range including corrugated mailer boxes, folding cartons and rigid lid-and-base boxes, with 8 standard sizes to choose from — everything from small beauty boxes to apparel packaging."
+    },
+    {
+      "q": "How can e-commerce brands reduce packaging costs?",
+      "a": "Use our flexible 100-10K MOQ model: small batches to test winners, larger runs for bestsellers. Combined with free gang-run die-cut fees, overall cost is typically 30% lower than traditional printers."
+    }
+  ]
+};
+
+categoryConversionBlocks['flyers:zh-hk'] = {
+  "category": "flyers",
+  "locale": "zh-hk",
+  "title": "宣傳單張印刷 | 香港傳單印製 | A4/A5/A6/DL 小批量快交｜ZprintPro",
+  "metaDescription": "宣傳單張印刷 A5 單面 HK$0.25 起/張、A4 HK$0.35 起/張，10 張起印免開版費。A4/A5/A6/DL＋對摺三摺，銅版紙／啞膠／光膠任揀，3 個工作天交貨，即日特急可選。WhatsApp 30 秒報價 8619880851334。",
+  "quickAnswers": [
+    {
+      "q": "香港印傳單幾多錢一張？",
+      "a": "視乎尺寸、紙張同數量，A5 157g 銅版紙 1000 張大約幾毫起一張，數量愈多單價愈平，最終以報價為準。"
+    },
+    {
+      "q": "傳單印刷有咩常用尺寸？",
+      "a": "香港最常見係 A4（210×297mm）、A5（148×210mm）、適合唔同派發場景。。"
+    },
+    {
+      "q": "最快幾日可以拎到傳單？",
+      "a": "常規單張 2-3 個工作天交貨，趕時間可問加急安排。MOQ 低至 10 張起印，適合小批量推廣。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "香港累計訂單，餐飲零售樓上舖都用"
+    },
+    {
+      "stat": "100張起",
+      "label": "小批量都印，新店試水無壓力"
+    },
+    {
+      "stat": "2-3日",
+      "label": "常規交貨快，趕活動趕得切"
+    },
+    {
+      "stat": "WhatsApp直連",
+      "label": "報價落單一條龍，唔使填表等回覆"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港宣傳單張尺寸 × 紙張 × 適用場景對照表",
+    "columns": [
+      "尺寸",
+      "常用紙張",
+      "適用場景",
+      "大概起印量"
+    ],
+    "rows": [
+      [
+        "A4 單張 (210×297mm)",
+        "157g / 200g 銅版紙，啞膠/光膠",
+        "餐廳菜單、產品目錄、活動主傳單",
+        "10 張起"
+      ],
+      [
+        "A5 單張 (148×210mm)",
+        "157g 銅版紙最常見",
+        "樓上舖推廣、地鐵派發、開業傳單",
+        "10 張起"
+      ],
+      [
+        "A6 單張 (105×148mm)",
+        "157g / 200g 銅版紙",
+        "優惠券、小禮品卡、口岸街頭派發",
+        "10 張起"
+      ],
+      [
+        "DL 單張 (99×210mm)",
+        "157g 銅版紙，可做對折/三折",
+        "餐牌夾頁、宣傳信、直銷郵件",
+        "10 張起"
+      ],
+      [
+        "對折/三折頁",
+        "200g / 250g 銅版紙，啞膠",
+        "產品介紹、價目表、活動手冊",
+        "10 張起"
+      ]
+    ],
+    "note": "紙張同工藝可自由配搭，最終價錢同交期以 WhatsApp 報價為準。"
+  },
+  "orderFlow": {
+    "title": "6 步落單流程",
+    "steps": [
+      {
+        "title": "WhatsApp 聯絡",
+        "desc": "講明尺寸、數量、紙張同交期要求"
+      },
+      {
+        "title": "報價確認",
+        "desc": "我哋盡快回覆價錢同交貨時間"
+      },
+      {
+        "title": "提供檔案",
+        "desc": "AI/PDF/CDR 都得，亦可代為設計"
+      },
+      {
+        "title": "簽樣確認",
+        "desc": "印前睇稿核對內容顏色冇錯"
+      },
+      {
+        "title": "安排付款",
+        "desc": "銀行轉賬或轉數快，確認後開印"
+      },
+      {
+        "title": "交貨收貨",
+        "desc": "順豐到府或自取，2-3 日搞掂"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "立即報價",
+      "message": "你好，我想印【A5】宣傳單張，數量大約【1000】張，紙張想用【157g 銅版紙啞膠】，麻煩報價同講埋交期，多謝！"
+    },
+    {
+      "label": "加急詢問",
+      "message": "你好，我有【活動/開業】趕住用傳單，尺寸【A4】，數量【500】張，想問下最快幾日有貨同加急費用，謝謝！"
+    },
+    {
+      "label": "回頭客落單",
+      "message": "你好，之前喺你哋度印過傳單，今次想再加印【A5 單張】，數量【2000】張，內容同上次一樣，麻煩報價，多謝！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "傳單印刷有咩常用尺寸？", "a": "香港最常見係 A4（210×297mm）、A5（148×210mm）、A6（105×148mm）同 DL（99×210mm），適合唔同派發場景。" },
+    {
+      "q": "印傳單最少要印幾多張？",
+      "a": "MOQ 低至 10 張起印，適合小店同新開舖頭試水。數量愈多單價愈抵，500 張、1000 張都係常見選擇。"
+    },
+    {
+      "q": "傳單可以做啞膠或光膠嗎？",
+      "a": "可以。銅版紙可選光膠（顏色鮮艷有光澤）或啞膠（高階唔反光），250g 厚紙再加膠手感更紮實。"
+    },
+    {
+      "q": "我冇設計檔案，可以代設計嗎？",
+      "a": "可以代為設計，你只要提供文字同圖片就得。設計費視乎複雜度，WhatsApp 講下你嘅需求我哋會報價。"
+    },
+    {
+      "q": "香港地區包送貨嗎？",
+      "a": "印好後經順豐寄出，一般 1-2 日送到香港各區。滿一定金額可傾包郵，細聲講：WhatsApp 問下有冇優惠。"
+    }
+  ]
+};
+
+categoryConversionBlocks['paper-bags:zh-hk'] = {
+  "category": "paper-bags",
+  "locale": "zh-hk",
+  "title": "紙袋訂製 | 香港紙袋印刷 | 牛皮紙/白卡/燙金小批量定制｜ZprintPro",
+  "metaDescription": "香港紙袋訂製，白卡紙、牛皮紙、銅版紙任揀，棉繩絲帶扭繩款齊全，燙金UV工藝都做。MOQ 約 100-250 個起，WhatsApp 報價：8619880851334",
+  "quickAnswers": [
+    {
+      "q": "香港訂製紙袋幾多錢一個？",
+      "a": "視乎尺寸、物料同數量，一般牛皮紙袋幾毫至幾蚊一個，燙金UV等工藝另計。MOQ 約 100-250 個起，以報價為準。"
+    },
+    {
+      "q": "紙袋訂製有咩常用尺寸？",
+      "a": "常見有細碼（約 20×25×8cm）、中碼（約 26×32×10cm）、大碼（約 32×40×12cm）同禮品袋。"
+    },
+    {
+      "q": "訂造紙袋最快幾日有貨？",
+      "a": "常規定制袋 7-12 個工作天交貨，視乎數量同工藝複雜度。趕單可 WhatsApp 問下加急安排。"
+    },
+    {
+      "q": "邊度有紙袋買？",
+      "a": "兩條路：急住用可以去包裝材料店或 Carousell 買現貨即取；要印品牌 Logo／公司名嘅訂製紙袋搵智印港——100 個起印、免費設計打稿、7-12 個工作天交貨、滿 HK$500 免費順豐送港九新界。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "香港累計訂單，零售餐飲精品店都幫襯"
+    },
+    {
+      "stat": "100個起",
+      "label": "小批量都訂，新品牌無負擔"
+    },
+    {
+      "stat": "7-12日",
+      "label": "定制交貨快，趕開業趕活動都得"
+    },
+    {
+      "stat": "WhatsApp直連",
+      "label": "報價落單一條龍，唔使網上填表",
+      "desc": "報價落單一條龍，唔使網上填表"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港紙袋訂製物料 × 工藝 × 適用場景比較",
+    "columns": [
+      "袋型/物料",
+      "常用工藝",
+      "適用場景",
+      "大概起訂量"
+    ],
+    "rows": [
+      [
+        "白卡紙袋（250g/300g）",
+        "彩色印刷、燙金、UV、啞膜",
+        "零售服裝、精品店、品牌包裝",
+        "250 個起"
+      ],
+      [
+        "牛皮紙袋（120g/150g）",
+        "絲印、燙金、加貼紙",
+        "餐飲外賣、手作、環保小店",
+        "100 個起"
+      ],
+      [
+        "銅版紙袋",
+        "全彩印刷、光膜/啞膜",
+        "化妝品、禮品、促銷活動",
+        "250 個起"
+      ],
+      [
+        "禮品袋（緞面/特種紙）",
+        "燙金、凹凸壓紋、絲帶",
+        "婚禮回禮、節日禮盒、VIP 贈品",
+        "100 個起"
+      ]
+    ],
+    "note": "尺寸同繩頭（棉繩/絲帶/扭繩）可自由搭配，最終價錢交期以 WhatsApp 報價為準。"
+  },
+  "orderFlow": {
+    "title": "6 步紙袋訂製流程",
+    "steps": [
+      {
+        "title": "WhatsApp 諮詢",
+        "desc": "話我哋知尺寸、數量、物料同預算"
+      },
+      {
+        "title": "報價確認",
+        "desc": "按需求出價，列明工期同額外費用"
+      },
+      {
+        "title": "設計定稿",
+        "desc": "提供檔案或由我哋代為設計logo"
+      },
+      {
+        "title": "打樣確認",
+        "desc": "印前睇樣核對顏色尺寸冇問題"
+      },
+      {
+        "title": "落單付款",
+        "desc": "銀行轉賬或轉數快，確認後開工"
+      },
+      {
+        "title": "交貨收貨",
+        "desc": "順豐到府或自取，7-12 日搞掂"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "報價查詢",
+      "message": "你好，我想訂製【牛皮紙袋】，尺寸大約【中碼 26×32×10cm】，數量【500】個，需要【印logo + 棉繩】，麻煩報價同交期，多謝！"
+    },
+    {
+      "label": "加急詢問",
+      "message": "你好，我哋【開業/活動】趕住用紙袋，物料【白卡紙】，數量【300】個，想問下最快幾日有貨同加急費用，謝謝！"
+    },
+    {
+      "label": "回頭客加訂",
+      "message": "你好，之前喺你哋度訂過紙袋，今次想再加印【同款牛皮紙袋】，數量【1000】個，設計同上次一樣，麻煩報價，多謝！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "紙袋訂製有咩常用尺寸？", "a": "常見有細碼（約 20×25×8cm）、中碼（約 26×32×10cm）、大碼（約 32×40×12cm）同禮品袋，可按產品尺寸定制。" },
+    {
+      "q": "紙袋最小可以訂幾多個？",
+      "a": "視乎物料，牛皮紙袋 MOQ 約 100 個起，白卡紙袋同銅版紙袋約 250 個起。小品牌細單都接，詳情 WhatsApp 傾。"
+    },
+    {
+      "q": "可以做燙金或 UV 工藝嗎？",
+      "a": "可以。白卡紙袋同銅版紙袋可加燙金、燙銀、局部 UV、凹凸壓紋等高階工藝，提升品牌質感，費用另計。"
+    },
+    {
+      "q": "紙袋有咩繩頭可以揀？",
+      "a": "常用有棉繩（最常見，手感好）、扭繩（牛皮紙袋常用）、絲帶（禮品袋首選），仲有紙繩等環保選擇，可按需搭配。"
+    },
+    {
+      "q": "我冇設計圖，可以印logo嗎？",
+      "a": "可以。你只要提供 logo 檔案（AI/PNG 高清都得），我哋可以免費幫你排版。完全冇設計都可以代為設計，費用另報。"
+    }
+  ]
+};
+
+
+
+// === W2 内容包注入 (2026-09-05) ===
+
+// W2 跨语言铺开 (2026-09-05): paper-bags ja / packaging ja / calendars zh-hk
+
+categoryConversionBlocks['paper-bags:ja'] = {
+  "category": "paper-bags",
+  "locale": "ja",
+  "title": "紙袋印刷 | 紙袋オーダーメイド | クラフト紙袋・箔押し 小ロット100個から｜ZprintPro",
+  "metaDescription": "紙袋印刷・オーダーメイドならお任せ。クラフト紙袋1個￥22〜、白カード紙袋1個￥28〜、パール箔押し1個￥55〜。小ロット100個から対応し、箔押し・エンボス・局部UVも選べます。AI即時見積もり30秒対応。標準3-5営業日製造、DHL Expressで日本全国へ2-4日配送。B2B納品実績4,820件超。",
+  "quickAnswers": [
+    {
+      "q": "オリジナル紙袋の印刷は1個いくらですか？",
+      "a": "クラフト紙袋は1個￥22〜、白カード紙袋は1個￥28〜、パール紙＋箔押しは1個￥55〜。"
+    },
+    {
+      "q": "紙袋を注文してから届くまで何日かかりますか？",
+      "a": "デジタル印刷は標準3-5営業日、オフセット印刷は5-7営業日、特急は2-3営業日で製造します。サンプル確認に2-3日。"
+    },
+    {
+      "q": "紙袋のサイズと材質はどう選べばいいですか？",
+      "a": "耐荷重は標準3-5kg、強化タイプは8-10kg。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4,820+",
+      "label": "小売・飲食・ギフト業界のB2B納品実績"
+    },
+    {
+      "stat": "100個〜",
+      "label": "小ロットOK。新ブランドの試作・限定イベントにも"
+    },
+    {
+      "stat": "3-5営業日",
+      "label": "デジタル印刷の標準製造リードタイム"
+    },
+    {
+      "stat": "￥22〜",
+      "label": "クラフト紙袋の1個あたり目安価格"
+    }
+  ],
+  "comparisonTable": {
+    "title": "紙袋の材質 × 工法 × シーン別 比較表",
+    "columns": [
+      "袋型・材質",
+      "主な工法",
+      "おすすめシーン",
+      "目安ロット"
+    ],
+    "rows": [
+      [
+        "白カード紙袋（250g）",
+        "カラー印刷・箔押し・局部UV",
+        "アパレル・化粧品・小売のブランド紙袋",
+        "100個〜（デジタル）"
+      ],
+      [
+        "クラフト紙袋（200g）",
+        "スクリーン印刷・箔押し・紙紐",
+        "カフェ・ベーカリー・エコブランド・手作り品",
+        "100個〜（デジタル）"
+      ],
+      [
+        "黒カード紙袋（300g）",
+        "箔押し・エンボス",
+        "ジュエリー・高級コスメ・VIPギフト",
+        "100個〜（デジタル）"
+      ],
+      [
+        "パール紙・ギフト紙袋",
+        "箔押し・リボン持ち手",
+        "ブライダル・季節ギフト・高級イベント",
+        "100個〜（デジタル）"
+      ]
+    ],
+    "note": "持ち手（綿紐・紙紐・リボン・革紐）とサイズは自由に組み合わせ可能。1,000個以上はオフセット印刷がお得。最終価格・納期はお見積もり制です。"
+  },
+  "orderFlow": {
+    "title": "紙袋オーダーメイド 6ステップ",
+    "steps": [
+      {
+        "title": "お問い合わせ",
+        "desc": "WhatsAppでサイズ・数量・材質・持ち手のご要望をお知らせください"
+      },
+      {
+        "title": "AI即時見積もり",
+        "desc": "30秒で概算価格と納期をご提示します"
+      },
+      {
+        "title": "デザイン入稿",
+        "desc": "展開図データ（AI／PDF）の入稿、または無料デザインサービスをご利用いただけます"
+      },
+      {
+        "title": "サンプル確認",
+        "desc": "無料サンプルで色・サイズ・持ち手の仕上がりをチェック（2-3日）"
+      },
+      {
+        "title": "製造・品質検査",
+        "desc": "デジタル3-5営業日／オフセット5-7営業日で製造し、出荷前に検品します"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "DHL Express／FedExで日本全国へ。全世界2-4日で到着します"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "オリジナル紙袋の見積もりをお願いします。【クラフト紙袋】／サイズ【M 220×100×280mm】／数量【500個】／仕様【ロゴ印刷＋綿紐】。単価と納期を教えてください。"
+    },
+    {
+      "label": "納期・特急相談",
+      "message": "【開店イベント】で紙袋が急ぎです。材質【白カード紙】／数量【300個】。最短でいつ納品できるか、特急料金とあわせて教えてください。"
+    },
+    {
+      "label": "リピート追加発注",
+      "message": "前に発注した【同デザインのクラフト紙袋】を追加したいです。数量【1,000個】、デザインは前回と同じです。見積もりをお願いします。"
+    }
+  ],
+  "newFaqs": [
+    { "q": "オリジナル紙袋の印刷は1個いくらですか？", "a": "クラフト紙袋は1個￥22〜、白カード紙袋は1個￥28〜、パール紙＋箔押しは1個￥55〜。100個からの小ロットに対応し、1,000個以上はオフセット印刷で単価が下がります。最終単価はサイズ・材質・持ち手により変わるため、まずはお見積もりを。" },
+    { "q": "紙袋を注文してから届くまで何日かかりますか？", "a": "デジタル印刷は標準3-5営業日、オフセット印刷は5-7営業日、特急は2-3営業日で製造します。サンプル確認に2-3日。完成後はDHL Expressで全世界2-4日、東京・大阪・名古屋など日本全国へお届けします。" },
+    { "q": "紙袋のサイズと材質はどう選べばいいですか？", "a": "標準サイズは小（150×80×200mm）・中（220×100×280mm）・大（320×120×380mm）、完全カスタマイズにも対応。材質は発色重視なら白カード紙（250g）、ナチュラル・エコ系ならクラフト紙（200g）、高級感なら黒カード紙＋箔押しが定番です。耐荷重は標準3-5kg、強化タイプは8-10kg。" },
+    {
+      "q": "紙袋の最小発注数（MOQ）はいくつからですか？",
+      "a": "100個から（デジタル印刷）で承ります。1,000個以上はオフセット印刷で単価を大幅に抑えられ、5,000個以上は15-25%の段階割引があります。新ブランドの試作や小ロットのイベント配布にも最適です。"
+    },
+    {
+      "q": "箔押しやエンボスなどの加工はできますか？",
+      "a": "はい。箔押し、エンボス、デボス、局部UV、スクリーン印刷など多様な加工に対応しています。パール紙＋箔押しのギフト紙袋（1個￥55〜）はブライダルや高級ギフトで特に人気です。"
+    },
+    {
+      "q": "持ち手（紐）の種類は選べますか？",
+      "a": "綿紐・紙紐・リボン・革紐から選択できます。標準タイプは耐荷重3-5kg、強化タイプは8-10kgまで対応し、ボトルやガラス製品も安心です。持ち手の色をブランドカラーに合わせると統一感が出ます。"
+    },
+    {
+      "q": "デザインデータがなくても発注できますか？",
+      "a": "はい。ロゴデータ（AI／PNGなど）をいただければ、展開図デザインを無料で作成します。サイズ・形状・窓デザインの完全カスタマイズにも対応。まずはサイズ・紙質・持ち手・数量をお知らせいただければ、お見積もり可能です。"
+    }
+  ]
+};
+
+
+categoryConversionBlocks['packaging:ja'] = {
+  "category": "packaging",
+  "locale": "ja",
+  "title": "オリジナルパッケージ印刷｜小ロット30個〜・クラフト紙・食品グレード対応｜ZprintPro",
+  "metaDescription": "オリジナルパッケージ印刷は小ロット30個〜に対応。クラフト紙やFSC認証エコ紙、食品グレード紙＋大豆インク（SGS検査済み）から選べ、箔押し・UV加工にも対応。価格はお見積り制で、通常3日出荷・急行2日。30秒AI見積もり、無料型設計対応。20種類以上の箱型をDHL／FedExで日本全国へお届けします。",
+  "quickAnswers": [
+    {
+      "q": "オリジナルパッケージの最小ロットは何個からですか？",
+      "a": "ウエディングボックスは30個〜、カラーボックスは50個〜、標準・工業用は100–200個〜。"
+    },
+    {
+      "q": "クラフト紙でパッケージ印刷はできますか？",
+      "a": "可能です。クラフト紙はエコ・オーガニックな印象が魅力で、全箱型でFSC認証エコ紙を選択可能。"
+    },
+    {
+      "q": "食品用パッケージは安全ですか？",
+      "a": "はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用し、SGS検査済み、日本の食品衛生基準に準拠しています。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "B2B注文実績（累計）"
+    },
+    {
+      "stat": "30個〜",
+      "label": "小ロット対応（ウエディングボックス）"
+    },
+    {
+      "stat": "HK$0.8〜",
+      "label": "カラーボックス単価"
+    },
+    {
+      "stat": "20種類以上",
+      "label": "標準箱型ラインナップ"
+    }
+  ],
+  "comparisonTable": {
+    "title": "パッケージの材質・加工・シーン・最小ロット早見表",
+    "columns": [
+      "材質",
+      "特徴・加工",
+      "おすすめシーン",
+      "最小ロット"
+    ],
+    "rows": [
+      [
+        "高級カラーボックス（白カード300–350g）",
+        "発色鮮やか、箔押し・UV局部コーティング対応",
+        "美容・ギフト・ウエディング",
+        "50個〜"
+      ],
+      [
+        "クラフト紙／FSC認証エコ紙",
+        "エコ・オーガニックな印象、生分解性・無可塑剤",
+        "有機食品・サステナブルブランド・環境企業",
+        "お見積り制"
+      ],
+      [
+        "段ボール箱（E／Fフルート）",
+        "工業級強度、カスタムサイズ、輸出対応",
+        "EC物流・越境倉庫・卸売包装",
+        "100–200個〜"
+      ],
+      [
+        "食品グレード／防湿紙材",
+        "環境配慮インク（ご注文時に指定）、防湿加工、QRコード対応",
+        "ベーカリー・健康食品・漢方包装",
+        "お見積り制"
+      ]
+    ],
+    "note": "記載の最小ロットと加工は標準仕様の一例です。最終価格は数量・紙材・加工内容によりお見積りいたします。"
+  },
+  "orderFlow": {
+    "title": "オリジナルパッケージ制作の6ステップ（サンプル込み）",
+    "steps": [
+      {
+        "title": "AI即時見積もり",
+        "desc": "箱型・数量・サイズを入力して30秒で見積もり"
+      },
+      {
+        "title": "サンプル確認",
+        "desc": "実物サンプルで発色と構造をチェック（当日完成）"
+      },
+      {
+        "title": "データ確定",
+        "desc": "印刷ファイル・紙材・加工仕様を最終確認"
+      },
+      {
+        "title": "量産",
+        "desc": "工場で量産し、工程ごとに品質をチェック"
+      },
+      {
+        "title": "出荷前検品",
+        "desc": "出荷前に抜き取り検査で数量と品質を確認"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "DHL／FedExで日本全国へお届け。大口は倉庫やオフィスへの直送も相談可能"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "こんにちは、オリジナルパッケージの見積もりをお願いします。【箱型：____】【数量：____個】【サイズ：____mm】【用途：____】。納期についても合わせて教えてください。"
+    },
+    {
+      "label": "サンプル依頼",
+      "message": "こんにちは、サンプルを依頼したいです。【箱型：____】【サイズ：____mm】【数量：____個】。サンプルの費用と所要日数を教えてください。"
+    },
+    {
+      "label": "リピート注文",
+      "message": "こんにちは、前に発注した【箱型：____】を【数量：____個】で再発注したいです。最短納期と見積もりを確認お願いします。"
+    }
+  ],
+  "newFaqs": [
+    { "q": "オリジナルパッケージの最小ロットは何個からですか？", "a": "ウエディングボックスは30個〜、カラーボックスは50個〜、標準・工業用は100–200個〜。一般的な工場基準500–1,000個を大きく下回るので、スタートアップの試作や小ロット発注に向いています。" },
+    { "q": "クラフト紙でパッケージ印刷はできますか？", "a": "可能です。クラフト紙はエコ・オーガニックな印象が魅力で、全箱型でFSC認証エコ紙を選択可能。有機食品やサステナブルブランドのパッケージに最適で、欧米輸出向けの国際環境基準にも対応します。" },
+    { "q": "食品用パッケージは安全ですか？", "a": "はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用し、SGS検査済み、日本の食品衛生基準に準拠しています。ベーカリーや健康食品、茶葉用の箱には防湿加工やQRコードの追加も可能です。" },
+    {
+      "q": "食品パッケージ印刷で防湿加工やQRコードには対応していますか？",
+      "a": "はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用し、SGS検査済み。ベーカリーや茶葉、サプリメント用の箱には防湿加工を推奨しており、QRコードによるロット追跡も追加できます。"
+    },
+    {
+      "q": "納期はどのくらいかかりますか？",
+      "a": "通常注文は3日出荷、急行サービスは2日、サンプルは当日完成です。5,000個以上の大口注文は約5–7日。DHL／FedExで日本全国へ配送します。"
+    },
+    {
+      "q": "選べる箱型はどのくらいありますか？",
+      "a": "化粧箱、ブック型箱、引き出し箱、組み立て箱、段ボール箱、磁石式箱など20種類以上の標準箱型をご用意。完全カスタムデザインにも対応します。"
+    },
+    {
+      "q": "型抜き線のデータは自分で用意する必要がありますか？",
+      "a": "AI／PDF形式（CMYK、300dpi、型抜き線含む）でご入稿いただけます。型抜き設計に不慣れな場合は、無料の型設計サービスをご利用ください。"
+    }
+  ]
+};
+
+
+categoryConversionBlocks['calendars:zh-hk'] = {
+  "category": "calendars",
+  "locale": "zh-hk",
+  "title": "月曆印刷 | 香港月曆訂製 | 座枱曆/掛曆/月曆卡 2027 企業禮品｜智印港",
+  "metaDescription": "香港月曆印刷同月曆訂製一條龍，座枱曆、掛曆、年曆卡、記事簿月曆任揀，燙金年份、局部UV、圓環裝訂都做。1本起訂（數碼），批量300本起上印刷機，月曆價錢掛曆HK$18起、檯曆HK$9起、年曆卡HK$3起，數碼3-5日交貨，順豐到港。2027企業禮品月曆早鳥9折連免費設計，WhatsApp 8619880851334 報價落單搞掂。",
+  "quickAnswers": [
+    {
+      "q": "香港月曆印刷幾多錢？月曆價錢點計？",
+      "a": "視乎款式同數量：掛曆 / 檯曆 / 年曆卡一律 HK$3-8/本起（按尺寸與工藝浮動）。"
+    },
+    {
+      "q": "月曆訂製最快幾日有貨？",
+      "a": "數碼印刷標準 3-5 日，柯式 5-7 日，急件 2-3 日（數碼）。"
+    },
+    {
+      "q": "月曆最少訂幾多本？有咩尺寸揀？",
+      "a": "1 本起訂（數碼印刷），大批量上印刷機更經濟，燙金可選。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "香港累計訂單，企業禮品、學校紀念、NGO 派發都幫襯"
+    },
+    {
+      "stat": "1本起",
+      "label": "批量訂製都接，企業禮品同機構派發都啱"
+    },
+    {
+      "stat": "3-5日",
+      "label": "數碼印刷標準交貨，趕旺季都來得切"
+    },
+    {
+      "stat": "365日",
+      "label": "品牌擺喺客戶桌面全年的曝光，仲唔使續費"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港月曆訂製類型 × 工藝 × 適用場景比較",
+    "columns": [
+      "月曆類型",
+      "常用工藝",
+      "適用場景",
+      "大概起訂量"
+    ],
+    "rows": [
+      [
+        "座枱曆（三角架）150×180 / 200×230mm",
+        "燙金年份、局部UV、圓環裝訂、底板加厚",
+        "辦公桌面、收銀台、前台、企業贈禮",
+        "1 本起（燙金可選）"
+      ],
+      [
+        "掛牆曆（A3 / A2）",
+        "打孔掛繩、防水覆膜、燙金",
+        "家居、辦公室、學校、餐廳",
+        "1 本起"
+      ],
+      [
+        "月曆卡（100×150mm）",
+        "雙面彩色印刷、覆膜",
+        "郵寄贈品、活動派發、展會、促銷",
+        "100 張起（HK$3/張 價）"
+      ],
+      [
+        "記事簿月曆",
+        "圓環裝訂、可變數據印刷（每本印唔同姓名/分店）",
+        "員工福利、客戶贈禮、學校紀念品、VIP 禮品",
+        "1 本起"
+      ]
+    ],
+    "note": "仲有磁石冰箱貼月曆等款式，紙張 200g-300g 銅版紙/啞粉紙、底板 1-2mm 灰板可自由搭配，最終價錢交期以 WhatsApp 報價為準。"
+  },
+  "orderFlow": {
+    "title": "6 步月曆訂製流程",
+    "steps": [
+      {
+        "title": "WhatsApp 諮詢",
+        "desc": "話我哋知款式（座枱/掛牆/月曆卡）、數量、尺寸同預算"
+      },
+      {
+        "title": "報價確認",
+        "desc": "數碼定柯式方案任揀，列明交期同燙金等額外費用"
+      },
+      {
+        "title": "設計定稿",
+        "desc": "有 12 個月免費模板（連節日假期標記），冇設計檔都做得"
+      },
+      {
+        "title": "打樣確認",
+        "desc": "核對顏色、紙張同月份排版冇問題先開機"
+      },
+      {
+        "title": "落單付款",
+        "desc": "銀行轉賬或轉數快，2027 早鳥預訂窗口內落單鎖價"
+      },
+      {
+        "title": "交貨收貨",
+        "desc": "數碼 3-5 日搞掂，順豐到港，企業大單可傾貨車分區派"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "報價查詢",
+      "message": "你好，我想訂製【座枱曆/掛曆】，尺寸【A3 / 150×180mm】，數量【300】本，需要【印公司logo + 燙金年份】，麻煩報個月曆價錢同交期，多謝！"
+    },
+    {
+      "label": "2027 早鳥查詢",
+      "message": "你好，想幫公司做【2027 年企業禮品月曆】，款式【座枱曆/記事簿月曆】，數量【500】本，想問下早鳥預訂同免費設計點樣申請，謝謝！"
+    },
+    {
+      "label": "趕旺季交貨",
+      "message": "你好，我哋【聖誕/新年】要派月曆畀客戶，趕住【12 月】前收貨，數量【100】本，想問下最快幾日交到同可唔可以加急，多謝！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "香港月曆印刷幾多錢？月曆價錢點計？", "a": "視乎款式同數量：掛曆 / 檯曆 / 年曆卡一律 HK$3-8/本起（按尺寸與工藝浮動），1 本起訂，大批量上印刷機更抵，燙金另計。2027 年曆早鳥預訂連免費設計，實價以 WhatsApp 報價為準。" },
+    { "q": "月曆訂製最快幾日有貨？", "a": "數碼印刷標準 3-5 日，柯式 5-7 日，急件 2-3 日（數碼）。11-12 月旺季工廠排期會拉長到 7-10 日，想趕 Q4 交貨建議 10 月底前確認鎖定檔期。" },
+    { "q": "月曆最少訂幾多本？有咩尺寸揀？", "a": "1 本起訂（數碼印刷），大批量上印刷機更經濟，燙金可選。座枱曆 150×180 / 200×230mm，掛曆 A3/A2，月曆卡 100×150mm，支援完全訂製。" },
+    {
+      "q": "2027 月曆幾時開始訂最穩陣？",
+      "a": "最好提前 2-3 個月準備：8-9 月落單 → 9-11 月柯式印刷 → 10-12 月旺季交貨。拖到 11-12 月高峰期，紙張加價 15-20%、工廠排期拉長到 7-10 日，交貨風險大增。想穩陣趕 Q4 旺季，10 月底前確認，早鳥預訂連免費設計。"
+    },
+    {
+      "q": "月曆印刷有咩辦法慳多啲？",
+      "a": "三個位可以慳：(1) 數量上大批量轉柯式印刷；(2) 揀檯曆或者月曆卡，單價低過掛曆；(3) 2027 早鳥期預訂兼免費設計。詳細報價 WhatsApp 傾。"
+    },
+    {
+      "q": "我冇設計檔，可以做月曆嗎？",
+      "a": "可以。我哋有 12 個月份免費模板框架（連節日假期標記），你淨係畀 logo 同產品圖，我哋幫你排版；企業訂製仲有設計師幫手融入品牌色同產品元素。"
+    },
+    {
+      "q": "月曆可以送到港島九龍新界嗎？",
+      "a": "可以。座枱曆／掛曆按箱規安排順豐或貨車，企業大單可以先集中送到總部再分區派發；海外客戶有 DHL。旺季建議提早鎖定檔期同數量。"
+    }
+  ]
+};
+
+
+// === W2 wave2 内容包注入 (2026-09-05) ===
+
+categoryConversionBlocks['posters:zh-hk'] = {
+  "category": "posters",
+  "locale": "zh-hk",
+  "title": "海報印刷｜印海報 A0-A3 大圖輸出・戶外防水 PVC 1 張起｜智印港",
+  "metaDescription": "香港海報印刷｜印海報 1 張起印，A2 128g銅版紙 HK$6-9/張、A1 HK$10-16/張，500 張減 30%，1,000 張以上轉柯式再降 40%。室內銅版紙/PP，戶外防水 PVC 抗 UV，MTR 燈箱 12-sheet 大圖輸出都做，最快即日交貨，DHL 全球 2-4 天，WhatsApp 報價。",
+  "quickAnswers": [
+    {
+      "q": "海報印刷幾多錢一張？",
+      "a": "128g 銅版紙 A2 約 HK$6-9/張、A1 約 HK$10-16/張（100 張批量價）；"
+    },
+    {
+      "q": "海報有咩 size 同材質揀？",
+      "a": "室內揀銅版紙或 PP 合成紙，戶外必須 PVC／帆布／網布，防水抗 UV。"
+    },
+    {
+      "q": "印海報最快幾日有貨？",
+      "a": "大圖輸出 1-5 張最快即日交貨，批量標準 1-2 日；柯式批量 3-5 個工作天，DHL 全球 2-4 天到。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "香港累計訂單，展覽活動、零售餐飲都幫襯"
+    },
+    {
+      "stat": "1 張起印",
+      "label": "大圖輸出散張都接，10 張起有批量優惠"
+    },
+    {
+      "stat": "2-3 年",
+      "label": "防 UV PVC 戶外海報日曬雨淋唔褪色"
+    },
+    {
+      "stat": "95%+",
+      "label": "Pantone 專色匹配，品牌色一致有保證"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港海報印刷材質 × 工藝 × 適用場景比較",
+    "columns": [
+      "海報類型",
+      "材質/工藝",
+      "適用場景",
+      "起訂量"
+    ],
+    "rows": [
+      [
+        "銅版紙海報（128g）",
+        "全彩 CMYK 印刷，A2 約 HK$6-9/張（100 張價）",
+        "展覽會、活動宣傳、店內裝飾，室內短期 3-6 個月",
+        "1 張起印，100 張起批量價"
+      ],
+      [
+        "PP 合成紙海報（200g）",
+        "防水不反光、色彩還原佳，A2 約 HK$12-18/張",
+        "燈箱、海報架、室內長期展示 1-2 年",
+        "1 張起印，10 張起批量優惠"
+      ],
+      [
+        "PVC 海報（440g）",
+        "完全防水、抗 UV 耐磨，A2 約 HK$20-35/張",
+        "戶外廣告、建築圍板、工地標示，2-3 年不褪色",
+        "1 張起印（大圖輸出）"
+      ],
+      [
+        "帆布／網布海報",
+        "帆布藝術質感可捲收；網布透風抗風輕量",
+        "藝術展、攝影展；大型戶外、體育場、演唱會",
+        "1 張起印（大圖輸出）"
+      ]
+    ],
+    "note": "仲有背膠（可移除／永久）、KT 板／Foam 板／亞加力裱板、打孔穿繩、燙金、局部 UV、夜光等加工。A2 價以 100 張批量計，最終價錢交期以 WhatsApp 報價為準，其他海報與印刷疑問歡迎逐單傾。"
+  },
+  "orderFlow": {
+    "title": "6 步海報印刷流程",
+    "steps": [
+      {
+        "title": "WhatsApp 諮詢",
+        "desc": "話我哋知尺寸（A2/A1/A0 或訂製）、數量、室內定戶外"
+      },
+      {
+        "title": "報價確認",
+        "desc": "按材質同數量出價，列明交期同裱板等額外費用"
+      },
+      {
+        "title": "上傳設計檔",
+        "desc": "PDF/X-1a 或 AI 檔，CMYK 150dpi（A0 大圖 72-100dpi 已夠）"
+      },
+      {
+        "title": "印前檢查",
+        "desc": "逐檔案核對解析度、3-5mm 出血同色彩模式，Pantone 匹配 95%+"
+      },
+      {
+        "title": "落單付款",
+        "desc": "確認報價後付款開工，急件可加 30% 費用趕 24-48 小時"
+      },
+      {
+        "title": "交貨收貨",
+        "desc": "大圖最快即日、批量 1-2 日；捲筒順豐寄送或貨車直送場地"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "報價查詢",
+      "message": "你好，我想印海報，尺寸【A2】，材質【128g 銅版紙】，數量【200】張，室內用，麻煩報價同交期，多謝！"
+    },
+    {
+      "label": "戶外海報加急",
+      "message": "你好，我哋【開張/活動】趕住用戶外海報，尺寸【A1】，PVC 防水材質，數量【50】張，想問下最快幾日有貨同加急費用，謝謝！"
+    },
+    {
+      "label": "燈箱/裱板查詢",
+      "message": "你好，想查詢【MTR 燈箱 12-sheet 海報】，尺寸【3048×1524mm】，需要【KT 板裱板】，檔案係 PDF，麻煩報價同交期，多謝！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "海報印刷幾多錢一張？", "a": "128g 銅版紙 A2 約 HK$6-9/張、A1 約 HK$10-16/張（100 張批量價）；500 張再減 30%，1,000 張以上轉柯式再降約 40%。大圖輸出 1 張都印，實際價錢按尺寸、材質、數量報價。" },
+    { "q": "海報有咩 size 同材質揀？", "a": "標準 A2（420×594mm）、A1（594×841mm）、A0（841×1189mm），訂製最大闊 1.5 米、長度不限。室內揀銅版紙或 PP 合成紙，戶外必須 PVC／帆布／網布，防水抗 UV。" },
+    { "q": "印海報最快幾日有貨？", "a": "大圖輸出 1-5 張最快即日交貨，批量標準 1-2 日；柯式批量 3-5 個工作天，DHL 全球 2-4 天到。加裱板額外 1 日，趕單可以 WhatsApp 問下加急安排。" },
+    {
+      "q": "印海報一張幾多錢？",
+      "a": "大圖輸出 1 張都印，散張按尺寸同材質計價；批量價參考：128g 銅版紙 A2 100 張約 HK$6-9/張、A1 約 HK$10-16/張，1,000 張以上轉柯式再降約 40%。實際以 WhatsApp 報價為準。"
+    },
+    {
+      "q": "戶外海報用邊種材質先唔怕日曬雨淋？",
+      "a": "440g PVC 硬片完全防水抗 UV，戶外 2-3 年不褪色；帆布約 3-5 年；大型戶外或建築外牆可用網布，透風抗風更穩陣。"
+    },
+    {
+      "q": "海報 size 有咩標準？可唔可以訂製？",
+      "a": "標準 A2（420×594mm）、A1（594×841mm）、A0（841×1189mm），支援完全訂製，最大闊 1.5 米、長度不限。近看（A2）建議 150dpi，遠看（A0）72-100dpi 已夠清晰。"
+    },
+    {
+      "q": "港鐵燈箱海報 12-sheet 印要幾耐？",
+      "a": "12-sheet（3048×1524mm）大圖輸出 3-5 個工作天，急件可加 30% 費用趕 24-48 小時；印前請確認 PDF/X-1a、150dpi CMYK 同 30mm 出血。"
+    }
+  ]
+};
+
+// 2026-09-06 W7 §B 真实缺口 #1: posters en (9 词/103 展示) - W7 战略 addendum §B.2 priority 1
+categoryConversionBlocks['posters:en'] = {
+  "category": "posters",
+  "locale": "en",
+  "title": "Custom Poster Printing | A2/A1/A0, Indoor & Outdoor, Same-Day Rush | ZprintPro",
+  "metaDescription": "Custom poster printing from 1 piece. A2 art paper from US$0.85, A1 from US$1.45, A0 from US$2.80. Factory-direct from Shenzhen, DHL 2-4 day worldwide delivery.",
+  "quickAnswers": [
+    {
+      "q": "How much does a custom poster cost per piece?",
+      "a": "128g art paper A2 from US$0.85/pc, A1 from US$1.45/pc, A0 from US$2.80/pc (based on 100 pcs offset runs); 500 pcs drops another 30%, 1,000+ pcs offset drops up to 40%. Bulk offset 1 piece is also accepted — confirm size, material and quantity on WhatsApp for an instant factory-direct quote."
+    },
+    {
+      "q": "What poster sizes and materials are available?",
+      "a": "Standard A2 (420×594mm), A1 (594×841mm), A0 (841×1189mm), plus fully custom sizes up to 1.5m wide. Indoor use: 128g art paper, 200g PP synthetic. Outdoor use: 440g PVC hard sheet, canvas or liquid-laminated fabric. All outdoor prints are waterproof。"
+    },
+    {
+      "q": "How fast can I get my posters?",
+      "a": "Bulk offset 1-5 pieces ship same day, standard runs 1-2 days, custom runs 3-5 working days. DHL Express delivers worldwide in 2-4 days. Add 1 day for lamination, board mounting or any finishing. Rush 24-48h available on request via WhatsApp with a 30% rush fee."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4,820+",
+      "label": "Poster orders shipped worldwide, covering exhibitions, retail promotions, and event campaigns"
+    },
+    {
+      "stat": "From 1 pc",
+      "label": "Bulk offset accepts 1 piece; tier pricing unlocks at 10 pcs and above"
+    },
+    {
+      "stat": "2-3 years",
+      "label": "Outdoor UV-resistant PVC posters without fading"
+    },
+    {
+      "stat": "95%+",
+      "label": "Pantone color match, brand colors stay consistent"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Poster Material × Finish × Use Case Compared",
+    "columns": [
+      "Poster type",
+      "Material / finish",
+      "Use case",
+      "Min order"
+    ],
+    "rows": [
+      [
+        "Art paper poster (128g)",
+        "Full CMYK print, A2 from US$0.85/pc (100 pcs offset)",
+        "Exhibitions, event promos, in-store visuals, indoor 3-6 months",
+        "1 piece, 100 pcs get best price"
+      ],
+      [
+        "PP synthetic paper poster (200g)",
+        "Waterproof, no reflection, true colors, A2 from US$1.65/pc",
+        "Window displays, poster frames, short-term outdoor 1-2 years",
+        "1 piece, 10 pcs get tier price"
+      ],
+      [
+        "PVC poster (440g)",
+        "Fully waterproof, UV-resistant, A2 from US$2.85/pc",
+        "Outdoor advertising, construction hoarding, factory zones, 2-3 years no fade",
+        "1 piece (bulk offset)"
+      ],
+      [
+        "Canvas / liquid-laminated fabric poster",
+        "Canvas texture with optional lamination; fabric is breathable and light-resistant",
+        "Art prints, photo walls, large format outdoor, hanging banners, exhibitions",
+        "1 piece (bulk offset)"
+      ]
+    ],
+    "note": "All materials can be paired with optional services like tear-resistant lamination, KT board / Foam board mounting, eyelets, gold foil, spot UV, etc. A2 prices are based on 100 pcs offset runs. For urgent or bulk orders get a quote directly via WhatsApp, other poster custom printing needs welcome to discuss anytime."
+  },
+  "orderFlow": {
+    "title": "6-Step Poster Printing Process",
+    "steps": [
+      {
+        "title": "WhatsApp Inquiry",
+        "desc": "Tell us size (A2/A1/A0 or custom), quantity, and whether it's for indoor or outdoor use"
+      },
+      {
+        "title": "Get a Quote",
+        "desc": "Quote by material and quantity, listing lead time and finishing options"
+      },
+      {
+        "title": "Upload Artwork",
+        "desc": "PDF/X-1a or AI file, CMYK 150dpi (A0 large format 72-100dpi is enough)"
+      },
+      {
+        "title": "Pre-Press Check",
+        "desc": "We check each artwork's resolution, 3-5mm bleed, same color mode, 95%+ Pantone match"
+      },
+      {
+        "title": "Production & Payment",
+        "desc": "Pay the deposit after the quote is confirmed; rush orders add 30% to ship within 24-48h"
+      },
+      {
+        "title": "Ship & Deliver",
+        "desc": "Bulk offset fastest same day, custom runs 1-2 days; DHL door-to-door or pick up at our factory"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, I'd like to print posters, size [A2], material [128g art paper], quantity [100] pcs, for indoor use, please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "Outdoor Poster Rush",
+      "message": "Hi, I need [size: A1] outdoor PVC waterproof posters for [use: construction hoarding], quantity [50] pcs, want the fastest turnaround with rush fee, please share details, thanks!"
+    },
+    {
+      "label": "Lightbox / Board Mounting",
+      "message": "Hi, I'd like to inquire about [MTR 12-sheet lightbox poster], size [3048×1524mm], need [KT board mounting], with PDF artwork ready, please share pricing and lead time, thanks!"
+    }
+  ],
+  "newFaqs": [
+    { "q": "What poster sizes and materials are available?", "a": "Standard A2 (420×594mm), A1 (594×841mm), A0 (841×1189mm), plus fully custom sizes up to 1.5m wide. Indoor use: 128g art paper, 200g PP synthetic. Outdoor use: 440g PVC hard sheet, canvas or liquid-laminated fabric. All outdoor prints are waterproof, UV-resistant and built to last 2-3 years without fading." },
+    {
+      "q": "Can I print just 1 poster and how much?",
+      "a": "Bulk offset 1 piece is accepted, the price is by size and material: 128g art paper A2 US$0.85/pc, A1 US$1.45/pc, A0 US$2.80/pc; 1,000+ pcs offset drops up to 40%. For details get a direct quote on WhatsApp."
+    },
+    {
+      "q": "Which outdoor poster material is most durable and does not fade?",
+      "a": "440g PVC hard sheet is fully waterproof and UV-resistant, lasting 2-3 years without fading; liquid-laminated canvas lasts 3-5 years; for large outdoor or construction hoarding use canvas with light-resistant lamination, breathable and more durable."
+    },
+    {
+      "q": "Are poster sizes standardized? Can I customize?",
+      "a": "Standard A2 (420×594mm), A1 (594×841mm), A0 (841×1189mm), fully custom supported, max width 1.5m, length unlimited. Close view (A2) recommend 150dpi, far view (A0) 72-100dpi is enough for clarity."
+    },
+    {
+      "q": "How long does MTR 12-sheet poster printing take?",
+      "a": "12-sheet (3048×1524mm) large format output 3-5 working days, rush available with 30% extra fee to ship within 24-48h; please confirm PDF/X-1a, 150dpi CMYK and 30mm bleed before printing."
+    }
+  ]
+};
+
+// 2026-09-06 W7 §B 真实缺口 #2: posters ja (12 词/60 展示) - W7 战略 addendum §B.2 priority 2
+categoryConversionBlocks['posters:ja'] = {
+  "category": "posters",
+  "locale": "ja",
+  "title": "カスタムポスター印刷 | A2/A1/A0サイズ・屋内屋外対応 | ZprintPro",
+  "metaDescription": "1枚から製作可能なポスター印刷。アートペーパー128g A2は125円/枚〜、A1は215円/枚〜、A0は415円/枚〜。中国深セン工場直送、無料サンプル対応、見積もり即時、DHL 2-4日 worldwide delivery.",
+  "quickAnswers": [
+    {
+      "q": "ポスター印刷の1枚単価はいくらですか？",
+      "a": "アートペーパー128g A2は125円/枚〜、A1は215円/枚〜、A0は415円/枚〜（100枚オフセット参考価格）。"
+    },
+    {
+      "q": "ポスターのサイズと素材はどう選べばいいですか？",
+      "a": "屋内用は128gアートペーパー、200g PP合成紙。屋外印刷は全種防水・UV加工で、色褪せなく2-3年持ちます。"
+    },
+    {
+      "q": "ポスターの最短納期はどのくらいですか？",
+      "a": "大口オフセットは1-5枚でも当日発送、標準納期1-2日、カスタムは3-5営業日。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4,820件以上",
+      "label": "日本・香港・worldwide向けポスター出荷実績、展示会・小売プロモーション・キャンペーンをカバー"
+    },
+    {
+      "stat": "1枚から",
+      "label": "大口オフセット1枚対応、10枚以上でロット別価格"
+    },
+    {
+      "stat": "2-3年",
+      "label": "屋外UV加工PVCポスター、色褪せ保証"
+    },
+    {
+      "stat": "95%以上",
+      "label": "Pantoneカラーマッチ、ブランド色を一貫保持"
+    }
+  ],
+  "comparisonTable": {
+    "title": "ポスター素材 × 加工 × 用途比較",
+    "columns": [
+      "ポスター種類",
+      "素材 / 加工",
+      "用途",
+      "最小ロット"
+    ],
+    "rows": [
+      [
+        "アートペーパーポスター（128g）",
+        "全色CMYK印刷、A2 125円/枚〜（100枚オフセット）",
+        "展示会、イベント広告、店舗ビジュアル、屋内3-6ヶ月",
+        "1枚から、100枚で適正価格"
+      ],
+      [
+        "PP合成紙ポスター（200g）",
+        "防水・反射なし・本色再現、A2 245円/枚〜",
+        "ウィンドウディスプレイ、ポスターフレーム、短期屋外1-2年",
+        "1枚から、10枚でロット別価格"
+      ],
+      [
+        "PVCポスター（440g）",
+        "完全防水・UV耐性、A2 425円/枚〜",
+        "屋外広告、工事現場仮囲い、工場エリア、2-3年色褪せず",
+        "1枚から（オフセット大口）"
+      ],
+      [
+        "キャンバス / ラミネート生地ポスター",
+        "キャンバス質感、ラミネート加工可能、生地は通気性・耐光性",
+        "アートプリント、写真ウォール、大型屋外、吊り下げバナー、展示会",
+        "1枚から（オフセット大口）"
+      ]
+    ],
+    "note": "全素材にオプション加工あり：耐撕裂ラミネート、KTボード／フォームボードパネル取付、ハトメ、金箔、スポットUVなど。A2価格は100枚オフセット参考価格です。お急ぎ・大口はWhatsAppで直接見積もり（無料サンプル対応、送料のみご負担）。他サイズ・カスタム印刷もお気軽にご相談ください。ロット別価格表あり。"
+  },
+  "orderFlow": {
+    "title": "6ステップでポスター印刷完了",
+    "steps": [
+      {
+        "title": "WhatsAppお問い合わせ",
+        "desc": "サイズ（A2/A1/A0またはカスタム）、数量、屋内か屋外かをお知らせください"
+      },
+      {
+        "title": "見積もり即時取得",
+        "desc": "素材と数量で見積もり、納期と加工オプションを明記"
+      },
+      {
+        "title": "データ入稿",
+        "desc": "PDF/X-1aまたはAIファイル、CMYK 150dpi（A0大型は72-100dpiで十分）"
+      },
+      {
+        "title": "印刷前チェック",
+        "desc": "解像度、3-5mm余白、カラーモード、Pantone 95%以上一致を確認"
+      },
+      {
+        "title": "生産・決済",
+        "desc": "見積もり確定後着手金お支払い、特急は30%追加で24-48時間出荷"
+      },
+      {
+        "title": "出荷・配送",
+        "desc": "大口オフセット最速当日、カスタム1-2日；DHL玄関先配達または工場受取"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "こんにちは、ポスター印刷をお願いしたいのですが、サイズ[A2]、素材[128gアートペーパー]、数量[100]枚、屋内用です。価格と納期を教えてください、よろしくお願いします！"
+    },
+    {
+      "label": "屋外ポスター特急",
+      "message": "こんにちは、[サイズ：A1]の屋外PVC防水ポスターを[用途：工事現場仮囲い]に使いたいです。数量[50]枚、特急対応と追加料金を知りたいです。よろしくお願いします！"
+    },
+    {
+      "label": "広告灯箱 / パネル加工",
+      "message": "こんにちは、[12枚灯箱ポスター]、[サイズ：3048×1524mm]、[KTボードパネル加工]希望、PDFデータあります。価格と納期を教えてください、よろしくお願いします！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "ポスター印刷の1枚単価はいくらですか？", "a": "アートペーパー128g A2は125円/枚〜、A1は215円/枚〜、A0は415円/枚〜（100枚オフセット参考価格）。500枚でさらに30%オフ、1,000枚以上のオフセットなら最大40%オフ。1枚から大口まで対応、サイズ・素材・数量をWhatsAppでお伝えいただければ、工場直販のお見積もりを即時ご提示します。" },
+    { "q": "ポスターのサイズと素材はどう選べばいいですか？", "a": "標準サイズはA2（420×594mm）、A1（594×841mm）、A0（841×1189mm）のほか、最大幅1.5mのフルカスタム対応。屋内用は128gアートペーパー、200g PP合成紙。屋外用は440g PVC硬質シート、キャンバスまたはラミネート加工生地。屋外印刷は全種防水・UV加工で、色褪せなく2-3年持ちます。" },
+    { "q": "ポスターの最短納期はどのくらいですか？", "a": "大口オフセットは1-5枚でも当日発送、標準納期1-2日、カスタムは3-5営業日。DHL Expressで世界中2-4日でお届け。ラミネートやパネル貼りなどの加工は+1日。お急ぎの場合はWhatsAppでご相談ください。30%追加料金で24-48時間特急対応も可能です。" },
+    {
+      "q": "ポスター1枚から印刷できますか？料金はいくらですか？",
+      "a": "大口オフセット1枚から対応、サイズと素材別価格：アートペーパー128g A2 125円/枚〜、A1 215円/枚〜、A0 415円/枚〜。1,000枚以上のオフセットなら最大40%オフ。詳細はWhatsAppで直接見積もり（無料サンプル対応）。"
+    },
+    {
+      "q": "屋外で色褪せしない最も耐久性のある素材は？",
+      "a": "440g PVC硬質シートは完全防水・UV耐性、2-3年色褪せず；ラミネートキャンバスは3-5年持ちます；大型屋外や工事現場仮囲いには耐光ラミネート加工のキャンバス、通気性がありより耐久。"
+    },
+    {
+      "q": "ポスターサイズに規格がありますか？カスタムできますか？",
+      "a": "標準A2（420×594mm）、A1（594×841mm）、A0（841×1189mm）のほか、フルカスタム対応、最大幅1.5m、長さ無制限。近くで見る（A2）は150dpi推奨、遠く用（A0）は72-100dpiで十分鮮明。"
+    },
+    {
+      "q": "12枚ポスター印刷の納期は？",
+      "a": "12枚（3048×1524mm）大型出力は3-5営業日、30%追加料金で24-48時間特急対応可能。印刷前にPDF/X-1a、150dpi CMYK、30mm余白をご確認ください。"
+    }
+  ]
+};
+
+categoryConversionBlocks['paper-bags:en'] = {
+  "category": "paper-bags",
+  "locale": "en",
+  "title": "Custom Paper Bags | 100 MOQ, Free Dieline Design | Kraft & Foil Gift Bag Printing | ZprintPro",
+  "metaDescription": "Custom paper bags from 100 pcs: kraft from US$0.19, white card from US$0.23, foil gift bags US$0.45. Free dieline design, 3-5 day production, DHL worldwide.",
+  "quickAnswers": [
+    {
+      "q": "How much do custom paper bags cost per piece?",
+      "a": "Kraft paper bags start at US$0.19 each (200gsm, offset runs of 1,000+), white card bags from US$0.23 each (digital printing from 100 pcs), and pearl foil gift bags from US$0.45 each. Orders of 5,000+ pcs unlock 15-25% tier discounts."
+    },
+    {
+      "q": "What is the minimum order and turnaround for printed paper bags?",
+      "a": "MOQ is 100 pcs for digital printing; 1,000+ pcs is recommended for offset pricing. Digital production takes 3-5 days, offset 5-7 days, rush 2-3 days, with DHL Express delivery worldwide in 2-4 days."
+    },
+    {
+      "q": "What sizes and materials are available for paper bags?",
+      "a": "20+ materials including 200gsm kraft, 250gsm white card, 300gsm black card, pearl and eco recycled paper. Standard sizes run from small 200×250×80 mm to extra large 450×550×150 mm, and fully custom dimensions are welcome."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "Orders delivered worldwide"
+    },
+    {
+      "stat": "100 pcs",
+      "label": "Low minimum for digital printing"
+    },
+    {
+      "stat": "From US$0.19",
+      "label": "200gsm kraft bag, offset 1,000+ pcs"
+    },
+    {
+      "stat": "5 handle styles",
+      "label": "Twisted rope, ribbon, die-cut, satin, cotton"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Printed Paper Bag Options Compared",
+    "columns": [
+      "Criteria",
+      "Traditional Printer",
+      "Online Self-Service",
+      "ZprintPro Custom Paper Bags"
+    ],
+    "rows": [
+      [
+        "Minimum Order",
+        "500 - 1,000 pcs",
+        "200 - 500 pcs",
+        "100 pcs digital, 1,000+ offset"
+      ],
+      [
+        "Entry Price",
+        "Quote-based, plate fees common",
+        "Fixed sizes only",
+        "Kraft from US$0.19, white card from US$0.23"
+      ],
+      [
+        "Lead Time",
+        "15 - 30 working days",
+        "7 - 20 working days",
+        "3-5 days digital, rush 2-3 days"
+      ],
+      [
+        "Design Support",
+        "Paid dieline and design fees",
+        "Templates only",
+        "Free dieline design + free sample confirmation"
+      ]
+    ],
+    "note": "Comparison based on standard kraft and white card shopping bags in common sizes. Final pricing varies by quantity, paper weight, handle, and finishing options."
+  },
+  "orderFlow": {
+    "title": "Custom Paper Bag Ordering in 6 Steps",
+    "steps": [
+      {
+        "title": "Instant AI Quote",
+        "desc": "Send bag size, quantity and material — priced in 30 seconds"
+      },
+      {
+        "title": "Free Dieline Design",
+        "desc": "Our designers prep the dieline; AI/PDF files checked at 300dpi, CMYK, 3mm bleed"
+      },
+      {
+        "title": "Free Sample Confirmation",
+        "desc": "Approve a sample to verify color, paper and handle before mass production"
+      },
+      {
+        "title": "Bulk Production",
+        "desc": "3-5 days digital or 5-7 days offset with full QC checkpoints"
+      },
+      {
+        "title": "Pre-Shipment Inspection",
+        "desc": "Random print and load-capacity checks before dispatch"
+      },
+      {
+        "title": "DHL Express Delivery",
+        "desc": "2-4 days to the US, UK, AU and worldwide; orders over $99 ship free"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, I'd like a quote for [bag type: kraft / white card / pearl] [size: W x H x D mm] [quantity: pcs] with [handle: twisted rope / ribbon / die-cut]. Please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "Rush Order",
+      "message": "Hi, I need printed paper bags for [event date: ____]. Quantity [pcs], size [mm], handle [type]. What is the fastest turnaround and any rush fee, thanks!"
+    },
+    {
+      "label": "Repeat Order",
+      "message": "Hi, I'd like to reorder our previous [bag type] in [size: mm] x [quantity: pcs], same artwork and handle as last time. Please confirm pricing and the earliest ship date, thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "What are the paper bag print file requirements?",
+      "a": "Send AI or PDF artwork with dieline design at 300dpi in CMYK, reserving 3mm bleed and glue area. No dieline yet? Our designers provide free dieline design and prepress checks before printing."
+    },
+    {
+      "q": "Which paper material is most cost-effective for kraft paper bags?",
+      "a": "200gsm kraft is the most economical at US$0.19/pc for offset runs of 1,000+ — ideal for coffee shops, eco brands and handmade goods. White card (250gsm) at US$0.23/pc suits fashion and beauty retail, while pearl paper with foil stamping (US$0.45/pc) is the wedding favor upgrade."
+    },
+    {
+      "q": "How much weight can custom paper bags hold?",
+      "a": "Standard bags carry 3-5kg; reinforced builds with bottom board hold 8-10kg, suitable for bottles and glassware. Load testing is recommended for heavy retail products before large runs."
+    },
+    {
+      "q": "Can you ship printed paper bags internationally?",
+      "a": "Yes. DHL Express and FedEx deliver in 2-4 business days to the US, UK, Australia and worldwide. Orders over $99 ship free, and split shipments to multiple store locations are available on request."
+    }
+  ]
+};
+
+categoryConversionBlocks['flyers:en'] = {
+  "category": "flyers",
+  "locale": "en",
+  "title": "Flyer Printing | Custom Leaflets A4/A5/A6/DL From 100 Pcs, Same-Day Rush | ZprintPro",
+  "metaDescription": "Flyer & leaflet printing from 100 pcs. A5 single-sided from US$0.045 each, double-sided US$0.06, offset from US$0.03. Same-day rush and DHL worldwide delivery.",
+  "quickAnswers": [
+    {
+      "q": "How much does flyer printing cost?",
+      "a": "It depends on size, paper and quantity. A5 single-sided on 128gsm coated paper starts at US$0.045 each, double-sided from US$0.06, and offset runs of 1,000+ pcs drop to as low as US$0.03 per piece. Final pricing is quote-based."
+    },
+    {
+      "q": "What flyer sizes are available?",
+      "a": "Six standard formats: A6 (105x148mm), A5 (148x210mm), A4 (210x297mm), A3 (297x420mm), DL (99x210mm) and folded leaflets. Fully custom sizes are also available on request."
+    },
+    {
+      "q": "How fast can I get my flyers?",
+      "a": "Digital orders of 100-500 pcs can be printed same day, while standard offset turnaround is 2-3 business days. Same-day rush is available for a +50% fee, and DHL delivers worldwide in 2-4 days."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "Orders delivered worldwide - restaurants, retail and brands"
+    },
+    {
+      "stat": "100 pcs",
+      "label": "Low minimum order, ideal for test campaigns"
+    },
+    {
+      "stat": "2-3 days",
+      "label": "Standard turnaround with same-day rush available"
+    },
+    {
+      "stat": "6 formats",
+      "label": "A6 to A3, DL and folded leaflets in one place"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Flyer Types x Paper & Finish x Use Case x MOQ",
+    "columns": [
+      "Flyer Type",
+      "Paper & Finish",
+      "Best Use Case",
+      "Minimum Order"
+    ],
+    "rows": [
+      [
+        "A5 flyer (148x210mm)",
+        "128gsm-157gsm art paper, gloss or matte lamination",
+        "Street handouts, grand openings, mailbox drops",
+        "From 100 pcs"
+      ],
+      [
+        "A4 flyer (210x297mm)",
+        "157gsm-200gsm art paper, optional spot UV",
+        "Takeaway menus, product catalogs, main event flyer",
+        "From 100 pcs"
+      ],
+      [
+        "A6 flyer (105x148mm)",
+        "128gsm-157gsm coated paper",
+        "Coupons, gift cards, counter drop cards",
+        "From 100 pcs"
+      ],
+      [
+        "Folded leaflet (half-fold / tri-fold)",
+        "200gsm-250gsm card, matte lamination",
+        "Price lists, product intros, event programs",
+        "From 100 pcs"
+      ]
+    ],
+    "note": "Paper and finishing can be combined freely. Final pricing and lead time are confirmed by quote."
+  },
+  "orderFlow": {
+    "title": "6-Step Flyer Ordering Flow",
+    "steps": [
+      {
+        "title": "Send Your Specs",
+        "desc": "Share size, quantity, paper and deadline on WhatsApp"
+      },
+      {
+        "title": "Quote Confirmation",
+        "desc": "We reply promptly with pricing and lead time"
+      },
+      {
+        "title": "Upload Artwork",
+        "desc": "AI / PDF / InDesign files accepted, or ask for design help"
+      },
+      {
+        "title": "Proof Sign-Off",
+        "desc": "Review content and colors before anything goes to press"
+      },
+      {
+        "title": "Arrange Payment",
+        "desc": "Production starts as soon as payment is confirmed"
+      },
+      {
+        "title": "Delivery",
+        "desc": "DHL / FedEx worldwide in 2-4 business days"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, I'd like a quote for [size: A5] flyers, around [quantity: 1000] pcs, on [paper: 157gsm art paper with matte lamination]. Please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "Rush Order Inquiry",
+      "message": "Hi, I need [size: A4] flyers for an [occasion: grand opening] - [quantity: 500] pcs. What's the fastest turnaround and the rush fee? Thanks!"
+    },
+    {
+      "label": "Repeat Order",
+      "message": "Hi, I printed flyers with you before and would like to reorder [size: A5], [quantity: 2000] pcs, same design as last time. Please confirm the quote, thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "What's the minimum order for flyer printing?",
+      "a": "100 pcs with digital printing - great for small campaigns and targeted distribution. For 1,000 pcs and up, offset printing brings the unit price down to as low as US$0.03 per piece."
+    },
+    {
+      "q": "Can flyers be printed double-sided or folded?",
+      "a": "Yes. Double-sided flyers double your information capacity, and folding options include half-fold, tri-fold, Z-fold and gate-fold. Finishes like gloss or matte lamination, spot UV and foil stamping are also available."
+    },
+    {
+      "q": "I don't have a design file - can you design the flyer for me?",
+      "a": "Yes. Start from 50+ free industry flyer templates, or share your text and images for custom design help. Design fees depend on complexity, so tell us your needs and we'll quote first."
+    },
+    {
+      "q": "Do you ship flyers internationally?",
+      "a": "Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days, and bulk quantities can be arranged for warehouse or office delivery."
+    }
+  ]
+};
+
+categoryConversionBlocks['calendars:en'] = {
+  "category": "calendars",
+  "locale": "en",
+  "title": "Custom Calendar Printing | 2027 Wall & Desk Calendars from 50 pcs｜ZprintPro",
+  "metaDescription": "Custom calendar printing from 50 pcs: desk, wall, card & planner formats, foil stamping, 3-5 day digital turnaround, DHL worldwide. 2027 pre-orders open.",
+  "quickAnswers": [
+    {
+      "q": "How much does custom calendar printing cost?",
+      "a": "Desk, wall, and card calendars start at US$3.60 per piece for 100-copy orders, and 500+ offset runs bring the unit price down further. Final pricing is quote-based - it varies with size, paper, and finishing such as foil stamping - and a free quote is one WhatsApp message away."
+    },
+    {
+      "q": "How long does calendar printing take, and when should I order 2027 calendars?",
+      "a": "Standard turnaround is 3-5 days for digital printing and 5-7 days for offset, plus 2-4 business days worldwide via DHL Express / FedEx. For 2027 corporate calendars, order 2-3 months ahead: the August-October ordering window feeds September-December delivery。"
+    },
+    {
+      "q": "What types of custom calendars can I print?",
+      "a": "Desk calendars (easel), wall calendars in A3/A2, postcard-size calendar cards, planner calendars, and magnetic fridge calendars. Standard sizes run from 150×180mm desk formats up to 420×594mm A2 wall versions - all fully customizable in paper, binding, and finish."
+    },
+    {
+      "q": "What sizes do custom calendars come in?",
+      "a": "Desk calendars come in 150×180mm and 200×230mm, wall calendars in A3 (297×420mm) and A2 (420×594mm), and calendar cards in 100×150mm. Every size is fully customizable with your branding, and digital runs start at just 50 pcs with 3-5 day turnaround."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "Orders delivered to global B2B and corporate buyers"
+    },
+    {
+      "stat": "50 pcs",
+      "label": "Digital printing minimum for low-risk 2027 test runs"
+    },
+    {
+      "stat": "3-5 days",
+      "label": "Standard digital turnaround before the peak-season crunch"
+    },
+    {
+      "stat": "365 days",
+      "label": "Of desk-and-wall brand exposure, no renewal fees"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Custom Calendar Types Compared: Format × Finish × Use Case × MOQ",
+    "columns": [
+      "Calendar Type",
+      "Binding & Finish",
+      "Typical Use Case",
+      "MOQ"
+    ],
+    "rows": [
+      [
+        "Desk Calendar (Easel) - 150×180 / 200×230mm",
+        "Foil-stamped year, spot UV, metal ring binding, 2mm thickened base",
+        "Office desks, reception counters, corporate gifts",
+        "From 50 pcs (digital)"
+      ],
+      [
+        "Wall Calendar - A3 (297×420mm) / A2 (420×594mm)",
+        "Hole punch & hanging string, waterproof lamination, foil accents",
+        "Homes, offices, schools, restaurants",
+        "From 50 pcs (digital)"
+      ],
+      [
+        "Calendar Card - 100×150mm postcard size",
+        "Double-sided color printing, lamination",
+        "Mail giveaways, event handouts, trade shows, promos",
+        "From 50 pcs (digital)"
+      ],
+      [
+        "Planner Calendar",
+        "Ring binding, variable data printing (unique names or branch info per copy)",
+        "Employee benefits, client gifts, school souvenirs, VIP gifts",
+        "From 50 pcs (digital)"
+      ]
+    ],
+    "note": "Magnetic fridge calendars are also available. Paper: 200g-300gsm art or matte stock with 1-2mm greyboard bases. Offset runs at 500+ pcs are more economical for corporate bulk; foil and specialty finishes are quote-based via WhatsApp."
+  },
+  "orderFlow": {
+    "title": "Custom Calendar Printing: 6-Step Ordering Flow",
+    "steps": [
+      {
+        "title": "WhatsApp Inquiry",
+        "desc": "Share calendar type (desk / wall / card / planner), quantity, size, and budget"
+      },
+      {
+        "title": "Quote & Print Method",
+        "desc": "Digital or offset options side by side, with lead times and finishing costs spelled out"
+      },
+      {
+        "title": "Design & Templates",
+        "desc": "Free 12-month templates with holiday markings - your logo and product photos are enough to start"
+      },
+      {
+        "title": "Proof Approval",
+        "desc": "Verify colors, paper, and monthly page layouts before production begins"
+      },
+      {
+        "title": "Order Confirmation",
+        "desc": "Lock quantities and specs; 2027 early-bird pre-orders secure discount pricing before the rush"
+      },
+      {
+        "title": "Production & Delivery",
+        "desc": "Digital in 3-5 days or offset in 5-7, then 2-4 business days worldwide via DHL / FedEx"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, I'd like a quote for [calendar type: desk / wall / card] calendars, size [____ mm], quantity [____ pcs], with [finishing: foil / spot UV / none]. Please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "2027 Corporate Pre-Order",
+      "message": "Hi, we're planning [2027 corporate gift calendars], type [desk / wall / planner], quantity [____ pcs], delivery by [month: ____]. How do we apply the early-bird discount and free design, thanks!"
+    },
+    {
+      "label": "Rush / Peak-Season Order",
+      "message": "Hi, I need [____ pcs] [calendar type] calendars delivered before [____]. What's the shortest turnaround, and is rush production available, thanks!"
+    }
+  ],
+  "newFaqs": [
+    { "q": "How long does calendar printing take, and when should I order 2027 calendars?", "a": "Standard turnaround is 3-5 days for digital printing and 5-7 days for offset, plus 2-4 business days worldwide via DHL Express / FedEx. For 2027 corporate calendars, order 2-3 months ahead: the August-October ordering window feeds September-December delivery, ahead of the November-December factory rush." },
+    {
+      "q": "When should I order 2027 calendars?",
+      "a": "Work backward from your distribution date and order 2-3 months before calendars need to be in hand. The seasonal rhythm runs August-October ordering into September-December delivery, with September-November concentrating roughly 60% of annual calendar demand. Ordering before the November-December peak helps lock factory schedules and paper pricing, and 2027 pre-orders placed in the early-bird window also earn 10% off with free design support."
+    },
+    {
+      "q": "How do I keep custom calendar costs down?",
+      "a": "Three practical levers: move to offset printing at 500+ copies where unit prices drop, favor compact formats such as calendar cards or desk easels over full A2 wall spreads, and order inside the 2027 early-bird window for 10% off plus free design. Foil stamping, spot UV, and variable-data personalization are quoted as add-ons."
+    },
+    {
+      "q": "I don't have print-ready artwork - can you still produce my calendar?",
+      "a": "Yes. Start from our free 12-month templates with holiday markings - your logo and product photos are enough for our team to lay out every monthly page. Corporate orders can integrate brand colors and product imagery with designer support. Camera-ready files follow AI / PDF / InDesign, 300dpi, CMYK, with 3mm bleed."
+    },
+    {
+      "q": "Do you ship custom calendars internationally?",
+      "a": "Yes - DHL Express and FedEx deliver worldwide in 2-4 business days, and bulk corporate orders can be arranged for warehouse or office delivery. Peak-season production slots fill quickly between September and November, so confirm quantities and delivery dates early."
+    }
+  ]
+};
+
+
+// === W2 wave2 内容包注入 (2026-09-05) ===
+
+categoryConversionBlocks['flyers:ja'] = {
+  "category": "flyers",
+  "locale": "ja",
+  "title": "チラシ印刷 | フライヤー印刷・チラシ作成 | A6〜A3 100枚から 即日特急対応｜ZprintPro",
+  "metaDescription": "チラシ印刷は10枚から小ロット対応。A5片面128gコート紙が1枚¥6〜、両面は¥8〜。A6〜A3・DL・三つ折りに対応し、両面印刷・スポットUV・箔押しも選べます。デジタル100〜500枚は即日納品可、オフセットは2-3営業日。AI即時見積もり30秒、DHL／FedExで東京・大阪など日本全国へ2-4日配送。",
+  "quickAnswers": [
+    {
+      "q": "チラシ印刷は1枚いくらからですか？",
+      "a": "A5片面128gコート紙で1枚¥6〜、両面は1枚¥8〜（両面は+¥1.5／枚）です。"
+    },
+    {
+      "q": "チラシの最小発注数（MOQ）は何枚からですか？",
+      "a": "デジタル印刷は10枚から承ります。新店開業やイベントの試し配布にも十分な枚数です。"
+    },
+    {
+      "q": "チラシはどのくらい早く受け取れますか？",
+      "a": "デジタル印刷は100〜500枚で即日納品が可能です。オフセット印刷は標準2-3営業日で仕上がります。"
+    },
+    {
+      "q": "特急・即日チラシ印刷の料金はいくら？",
+      "a": "A5片面1枚¥6〜の通常価格に対し、即日納品は条件付き対応、特急便は+50%料金です。100〜500枚のデジタル印刷なら最短即日、オフセットのお急ぎ便もご相談ください。納期と料金はAI見積もり30秒で確認できます。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "¥6〜",
+      "label": "A5片面128gコート紙の1枚あたり目安価格"
+    },
+    {
+      "stat": "10枚〜",
+      "label": "デジタル印刷の最小ロット。新店開業・イベント配布にも"
+    },
+    {
+      "stat": "即日対応",
+      "label": "デジタル印刷10枚〜500枚。特急は+50%料金"
+    },
+    {
+      "stat": "+22%",
+      "label": "2026年上半期のチラシ問い合わせ伸び率"
+    }
+  ],
+  "comparisonTable": {
+    "title": "チラシの種類 × 紙・加工 × シーン別 比較表",
+    "columns": [
+      "チラシ種類",
+      "紙・加工",
+      "おすすめシーン",
+      "最小ロット"
+    ],
+    "rows": [
+      [
+        "A4チラシ（210×297mm）",
+        "128g／157gコート紙、マット／グロスラミネート可",
+        "製品紹介・企業案内・イベントのメインチラシ",
+        "10枚〜"
+      ],
+      [
+        "A5チラシ（148×210mm）",
+        "128gコート紙が定番（片面1枚¥6〜）",
+        "店舗配布・ポスト投函・開業PR",
+        "10枚〜"
+      ],
+      [
+        "A6・DLチラシ（105×148／99×210mm）",
+        "128g／157gコート紙、ナンバリング可",
+        "クーポン・街頭配布など小サイズの大量配布",
+        "10枚〜"
+      ],
+      [
+        "折りチラシ（三つ折り・対折・Z折り）",
+        "200gマット紙／250gカード、スポットUV・箔押し",
+        "メニュー・製品カタログ・案内冊子",
+        "10枚〜"
+      ]
+    ],
+    "note": "サイズ・紙・加工は自由に組み合わせ可能。1,000枚以上はオフセット印刷がお得です。最終価格・納期はお見積もり制です。"
+  },
+  "orderFlow": {
+    "title": "チラシ印刷 6ステップ",
+    "steps": [
+      {
+        "title": "お問い合わせ",
+        "desc": "WhatsAppでサイズ・数量・片面／両面・紙のご要望をお知らせください"
+      },
+      {
+        "title": "AI即時見積もり",
+        "desc": "30秒で概算価格と納期をご提示します"
+      },
+      {
+        "title": "デザイン入稿",
+        "desc": "AI／PDFデータの入稿、または50種類以上の無料業界テンプレートをご利用いただけます"
+      },
+      {
+        "title": "サンプル確認",
+        "desc": "無料サンプルで色・紙質・折りの仕上がりをチェック（サンプル当日対応）"
+      },
+      {
+        "title": "製造・品質検査",
+        "desc": "デジタル即日／オフセット2-3営業日で製造し、出荷前に検品します"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "DHL／FedExで東京・大阪・名古屋など日本全国へ2-4日で到着します"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "チラシ印刷の見積もりをお願いします。サイズ【A5 148×210mm】／片面・両面【両面】／数量【1,000枚】／紙【128gコート紙】。1枚あたりの単価と納期を教えてください。"
+    },
+    {
+      "label": "納期・特急相談",
+      "message": "【開業イベント】でチラシが急ぎです。サイズ【A6 105×148mm】／数量【300枚】。即日対応が可能か、特急料金とあわせて教えてください。"
+    },
+    {
+      "label": "折りチラシ相談",
+      "message": "【三つ折り】のメニューチラシを検討しています。紙【200gマット】／数量【500枚】。折り加工込みの見積もりと納期をお願いします。"
+    }
+  ],
+  "newFaqs": [
+    { "q": "チラシ印刷は1枚いくらからですか？", "a": "A5片面128gコート紙で1枚¥6〜、両面は1枚¥8〜（両面は+¥1.5／枚）です。枚数が増えるほど単価が下がり、1,000枚以上はオフセット印刷がお得。最終価格はサイズ・紙・数量により変わるため、まずはお見積もりをどうぞ。" },
+    { "q": "チラシの最小発注数（MOQ）は何枚からですか？", "a": "デジタル印刷は10枚から承ります。新店開業やイベントの試し配布にも十分な枚数です。1,000枚以上はオフセット印刷に切り替えると単価を抑えられ、大口配布に向いています。" },
+    { "q": "チラシはどのくらい早く受け取れますか？", "a": "デジタル印刷は100〜500枚で即日納品が可能です。オフセット印刷は標準2-3営業日で仕上がります。お急ぎの場合は特急対応（+50%料金）もございますので、まずはご相談ください。" },
+    {
+      "q": "チラシの入稿ファイルはどの形式に対応していますか？",
+      "a": "AI／PDF／InDesign、300dpi、CMYKカラー、3mmの塗り足し（bleed）をご用意ください。入稿前に印刷チームが解像度と裁ち落とし線をチェックします。"
+    },
+    {
+      "q": "三つ折りや対折などの折り加工は可能ですか？",
+      "a": "はい。対折・三つ折り・Z折りなど多様な折り加工に対応しています。折りチラシは情報量が3〜5倍に増え、メニューや製品カタログで人気の形式です。"
+    },
+    {
+      "q": "シリアル番号やQRコードの印刷はできますか？",
+      "a": "はい。可変データ印刷で1枚ずつ異なるシリアル番号・バーコード・QRコードの印字が可能です。抽選券やクーポン、イベント入場券にご活用いただけます。"
+    },
+    {
+      "q": "東京や大阪など日本全国への配送はできますか？",
+      "a": "はい。DHL／FedExで日本全国へ2-4日でお届けします。大口注文は倉庫やオフィスへの直接納品も調整可能です。まずはお見積もりをご依頼ください。"
+    },
+    {
+      "q": "特急印刷・即日チラシの料金はいくらですか？",
+      "a": "通常価格（A5片面1枚¥6〜）に対し、100〜500枚のデジタル印刷は最短即日納品が可能で、特急便は+50%料金です。オフセット印刷のお急ぎ便や、当日出荷が必要な締切直前のご依頼も、まずはAI見積もりまたはWhatsAppで納期と料金をご確認ください。"
+    }
+  ]
+};
+
+categoryConversionBlocks['menus:zh-hk'] = {
+  "category": "menus",
+  "locale": "zh-hk",
+  "title": "餐牌印刷 | 香港菜單印刷 | PVC膠片/過膠/精裝餐牌·酒水牌 防水防油 10張起｜智印港",
+  "metaDescription": "香港餐牌印刷訂製：PVC膠片餐牌、過膠餐牌、精裝菜單、酒水牌四類齊全，防水防油易清潔。過膠HK$5起/張、PVC膠片HK$8起/張、精裝HK$28起/本，10張起訂，標準2-3個工作天交貨，急單可傾。WhatsApp免費報價，茶餐廳、酒樓、咖啡店、外賣店都啱用，菜單印刷支持中英雙語對照排版。",
+  "quickAnswers": [
+    {
+      "q": "餐牌印刷幾多錢？",
+      "a": "視乎材質同數量：過膠餐牌 HK$5 起/張、PVC 膠片餐牌 HK$8 起/張、酒水牌 HK$12 起/張、精裝餐牌 HK$28 起/本，10 張起訂。"
+    },
+    {
+      "q": "咩餐牌先至防水耐用？",
+      "a": "PVC 膠片餐牌（0.5–1.0mm）同過膠餐牌都防水防油，湯汁油漬用濕布一抹就淨，啱茶餐廳、火鍋店呢類多油煙場景；"
+    },
+    {
+      "q": "茶餐廳趕住開業換餐牌，最快幾耐有貨？",
+      "a": "標準柯式印刷 2–3 個工作天交貨，打樣當日完成對色；"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "HK$5起",
+      "label": "過膠餐牌低至五蚊一張，外賣店咖啡店都印得起"
+    },
+    {
+      "stat": "10張起",
+      "label": "小批量都接，新開餐廳試菜單冇壓力"
+    },
+    {
+      "stat": "2-3日",
+      "label": "標準柯式交貨，打樣當日對色，開業唔使齋等"
+    },
+    {
+      "stat": "四類任揀",
+      "label": "PVC膠片、過膠、精裝、酒水牌一條龍搞掂"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港餐牌印刷類型 × 材質工藝 × 適用場景比較",
+    "columns": [
+      "餐牌類型",
+      "材質/工藝",
+      "適用場景",
+      "起訂量"
+    ],
+    "rows": [
+      [
+        "PVC膠片餐牌（防水款）",
+        "0.5–1.0mm 透明或白色 PVC，四色UV印刷，圓角或直角裁切",
+        "茶餐廳、火鍋店、酒吧、居酒屋",
+        "10 張起"
+      ],
+      [
+        "過膠餐牌（經濟款）",
+        "200–250g 銅版紙或啞粉紙，啞膠/光膠覆膜",
+        "咖啡店、甜品店、西餐廳",
+        "10 張起"
+      ],
+      [
+        "精裝餐牌（高級款）",
+        "硬紙板封面裱糊銅版紙，內頁 200g 銅版紙",
+        "酒樓、高級餐廳、酒店宴會",
+        "10 本起"
+      ]
+    ],
+    "note": "仲有酒水牌（HK$12 起/張，銅版紙或合成紙過啞膠）可以加配；燙金、打洞穿繩、QR Code 電子菜單等加工都做得，價錢同交期以 WhatsApp 報價為準。"
+  },
+  "orderFlow": {
+    "title": "6 步餐牌訂製流程",
+    "steps": [
+      {
+        "title": "WhatsApp 諮詢",
+        "desc": "傳店名、菜式數量、尺寸（A4/A5）同想要的材質"
+      },
+      {
+        "title": "免費報價",
+        "desc": "列明單價、起訂量同交期，急單先講明死線"
+      },
+      {
+        "title": "設計排版",
+        "desc": "提供菜價相片或現成設計檔，免費幫你執靚個版"
+      },
+      {
+        "title": "打樣對色",
+        "desc": "打樣當日完成，顏色尺寸核對冇問題先開印"
+      },
+      {
+        "title": "落單付款",
+        "desc": "轉數快或銀行轉賬，確認後即刻開工"
+      },
+      {
+        "title": "交貨收貨",
+        "desc": "標準 2–3 個工作天，順豐送到全港各區"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "報價查詢",
+      "message": "你好，我想印【A4過膠餐牌】，菜式大約【60】款，數量【200】張，需要【中英對照】，麻煩報價同交期，多謝！"
+    },
+    {
+      "label": "急單詢問",
+      "message": "你好，我哋【茶餐廳】【下星期開業】趕住用餐牌，想要【PVC防水款】，數量【100】張，想問最快幾日交到同急單安排，謝謝！"
+    },
+    {
+      "label": "換季菜單",
+      "message": "你好，之前喺你哋度印過【過膠餐牌】，今次想更新【季節菜式同價錢】，數量【100】張，設計跟返上一次版面，麻煩報價，多謝！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "餐牌印刷幾多錢？", "a": "視乎材質同數量：過膠餐牌 HK$5 起/張、PVC 膠片餐牌 HK$8 起/張、酒水牌 HK$12 起/張、精裝餐牌 HK$28 起/本，全部 10 張起訂，實際價錢以報價為準。" },
+    { "q": "咩餐牌先至防水耐用？", "a": "PVC 膠片餐牌（0.5–1.0mm）同過膠餐牌都防水防油，湯汁油漬用濕布一抹就淨，啱茶餐廳、火鍋店呢類多油煙場景；想檔次高啲可以揀精裝餐牌配硬殼封面。" },
+    { "q": "茶餐廳趕住開業換餐牌，最快幾耐有貨？", "a": "標準柯式印刷 2–3 個工作天交貨，打樣當日完成對色；開業或急單記得 WhatsApp 講明死線，我哋有急件專線幫你排期，盡量配合開張日子。" },
+    {
+      "q": "餐牌真係防水嗎？油漬湯汁抹得走嗎？",
+      "a": "PVC 膠片餐牌（0.5–1.0mm）同過膠餐牌都達到防水防油效果，湯汁、油漬用濕布一抹就淨；PVC 款成塊係膠，可以直接擦拭清潔，茶餐廳、火鍋店呢類多油煙場景用最穩陣。"
+    },
+    {
+      "q": "過膠餐牌同 PVC 餐牌，邊款耐用啲？",
+      "a": "兩款都防水，但耐用度唔同：PVC 膠片餐牌成塊係膠，係最襟用嘅一款，長期翻枱都冇咁易殘；過膠餐牌係紙過啞膠或光膠，成本低啲、手感貼近紙本，啱諗住成季換一次菜單嘅店。實際揀邊款，WhatsApp 講低你嘅翻枱情況我哋幫你配。"
+    },
+    {
+      "q": "茶餐廳趕住開業，餐牌最快幾耐交到？",
+      "a": "標準柯式印刷 2–3 個工作天，打樣當日完成對色；趕開業記得 WhatsApp 講明死線，我哋有急件專線幫你排期。建議開張旺季提早兩星期落單，預留執相同改稿時間。"
+    },
+    {
+      "q": "餐牌可以加 QR Code 電子菜單或者中英對照嗎？",
+      "a": "可以。可以幫你生成 QR Code 連電子菜單，晚市繁忙時間客人自己掃碼睇餸；排版支持中英文、中日文對照，連鎖分店仲可以每間印唔同價錢。"
+    }
+  ]
+};
+categoryConversionBlocks['educational:zh-hk'] = {
+  "category": "educational",
+  "locale": "zh-hk",
+  "title": "香港學校印刷：證書・校簿・教科書・畢業紀念冊 訂製｜智印港",
+  "metaDescription": "香港證書印刷 HK$8-40/張，200g-250g 水印紙或棉質紙，燙金壓凹防偽底紋都做到；校簿印刷 HK$4-16/本，A4/A5 內頁橫線方格空白任揀；畢業紀念冊 HK$45-180/本，騎馬釘膠裝精裝三種裝訂，1 本起訂。證書 100 張起，WhatsApp 想訂幾多張都傾得掂，即刻報價。",
+  "quickAnswers": [
+    {
+      "q": "證書印刷幾多錢一張？",
+      "a": "證書 HK$8-40 一張，視乎紙材、尺寸（A4 或 A3）同工藝：燙金、壓凹、防偽底紋、浮水印都可以加。"
+    },
+    {
+      "q": "證書紙有咩材質？點揀先啱？",
+      "a": "常見係 200g-250g 水印紙同棉質紙。水印紙本身帶浮水印，加埋防偽底紋就穩陣，機構認證、畢業證書都用得；"
+    },
+    {
+      "q": "校簿印刷起訂量要幾多本？",
+      "a": "練習簿 10 本起訂，小批量數碼、大量柯式，補習社同學校細單都接得。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "100張起",
+      "label": "證書小批量都接，畢業禮同培訓班都印得起"
+    },
+    {
+      "stat": "1本起",
+      "label": "畢業紀念冊 1 本起印，班級同校友會都訂得逢"
+    },
+    {
+      "stat": "48小時",
+      "label": "畢業紀念冊香港本地交付，個別規格以報價為準"
+    },
+    {
+      "stat": "免費排版",
+      "label": "校簿頁碼、章節同習題欄位幫你排好，唔使自己搞"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港學校印刷：證書 × 校簿 × 紀念冊 × 教科書 比較",
+    "columns": [
+      "產品",
+      "常用工藝",
+      "適用場景",
+      "起訂量"
+    ],
+    "rows": [
+      [
+        "證書（A4/A3）",
+        "四色印刷＋燙金、壓凹、防偽底紋、浮水印",
+        "畢業證書、獎狀、校友會證書、培訓證書",
+        "100 張起"
+      ],
+      [
+        "校簿／練習簿（A4/A5）",
+        "封面四色＋內頁單色或雙色，騎馬釘，封面覆膜可選",
+        "K12 練習簿、補習社教材、學年作業本",
+        "10 本起"
+      ],
+      [
+        "畢業紀念冊",
+        "騎馬釘／膠裝／精裝三種裝訂，班級照片師長題詞全頁",
+        "中學大學畢業紀念冊、校史特刊、校友會刊",
+        "1 本起"
+      ],
+      [
+        "教科書／年級教材",
+        "免費排版（頁碼、章節、習題欄），騎馬釘或膠裝",
+        "學校自編教科書、年級作業本、導師講義",
+        "10 本起"
+      ]
+    ],
+    "note": "紙材、釘裝同工藝可以自由搭配，最終價錢交期以 WhatsApp 報價為準。"
+  },
+  "orderFlow": {
+    "title": "6 步學校印刷流程",
+    "steps": [
+      {
+        "title": "WhatsApp 諮詢",
+        "desc": "話我哋知係證書、校簿定紀念冊，講低數量同大日子"
+      },
+      {
+        "title": "報價確認",
+        "desc": "按紙材、工藝同數量出價，列明工期同費用"
+      },
+      {
+        "title": "設計定稿",
+        "desc": "提供檔案，或者免費幫你排版頁碼章節習題欄"
+      },
+      {
+        "title": "打樣確認",
+        "desc": "核對紙材、顏色同釘裝，冇問題先開機"
+      },
+      {
+        "title": "落單付款",
+        "desc": "銀行轉賬或轉數快，確認後即刻開工"
+      },
+      {
+        "title": "交貨收貨",
+        "desc": "香港本地交付，開學季畢業季記得預鬆少少時間"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "證書報價查詢",
+      "message": "你好，我想印【畢業證書】，紙材想用【水印紙】，尺寸【A4】，數量【100】張，封面要【燙金＋防偽底紋】，麻煩報價同交期，多謝！"
+    },
+    {
+      "label": "校簿開學季查詢",
+      "message": "你好，我哋係【補習社】，想訂【A4 練習簿】，內頁【方格】，數量【200】本，開學前要到貨，想問下最快幾日有貨同報價，謝謝！"
+    },
+    {
+      "label": "畢業紀念冊查詢",
+      "message": "你好，我想訂造【中學畢業紀念冊】，裝訂想揀【膠裝】，數量【50】本，會有班級照片同師長題詞，想了解設計流程同報價，多謝！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "證書印刷幾多錢一張？", "a": "證書 HK$8-40 一張，視乎紙材、尺寸（A4 或 A3）同工藝：燙金、壓凹、防偽底紋、浮水印都可以加。常用 200g-250g 水印紙或棉質紙，100 張起訂，確實價錢 WhatsApp 報價。" },
+    { "q": "證書紙有咩材質？點揀先啱？", "a": "常見係 200g-250g 水印紙同棉質紙。水印紙本身帶浮水印，加埋防偽底紋就穩陣，機構認證、畢業證書都用得；棉質紙手感厚實，寫獎狀、榮譽證書企理啲。唔知點揀就話我哋知用途，幫你配。" },
+    { "q": "校簿印刷起訂量要幾多本？", "a": "練習簿 100 本起訂，小批量數碼、大量柯式，補習社同學校細單都接得。A4/A5 內頁可揀橫線、方格或空白，封面 200g 銅版紙四色，HK$4-16/本，開學前兩個星期係高峰期，記得早啲落單。" },
+    {
+      "q": "證書紙係咩材質？邊種防偽效果好啲？",
+      "a": "證書常用 200g-250g 水印紙或棉質紙。水印紙造紙時已帶浮水印，再加防偽底紋，臨摹難度高啲，機構認證同畢業證書都適用；棉質紙厚實企理，適合獎狀同榮譽證書。A4/A3 都得，想睇實物可以 WhatsApp 話我哋知。"
+    },
+    {
+      "q": "畢業紀念冊應該幾時落單？",
+      "a": "建議畢業禮之前早啲開始傾，因為要預位收集相片、排版、打樣先至開印。校簿方面，開學前兩個星期係高峰期，想檔期鬆動啲就避開呢段時間提早落單。你話我哋知幾時要用，我哋幫你倒後排期。"
+    },
+    {
+      "q": "校簿同教科書可以幫手排版嗎？",
+      "a": "可以，免費排版：頁碼、章節同習題欄位都幫你排好。內頁有橫線、方格、空白三種可揀，封面 200g 銅版紙四色印刷，騎馬釘或膠裝，封面覆膜都加到。"
+    },
+    {
+      "q": "證書印刷起訂量係幾多？工藝有咩揀？",
+      "a": "證書 100 張起訂，小批量數碼、大量柯式。工藝方面燙金、壓凹、防偽底紋、浮水印都做到，畢業證書、獎狀、校友會證書、培訓證書都啱用，確實價錢按規格報價。"
+    }
+  ]
+};
+
+categoryConversionBlocks['educational:en'] = {
+  "category": "educational",
+  "locale": "en",
+  "title": "Exercise Book Printing & Custom School Workbooks｜ZprintPro",
+  "metaDescription": "Custom printed exercise books & school workbook printing from US$1.84. 10-book MOQ for exercise books; certificates from 100 pcs. Free typesetting, DHL 2-4 day delivery. 30-second quote for schools.",
+  "quickAnswers": [
+    {
+      "q": "How much does school exercise book printing cost?",
+      "a": "Exercise books start at US$1.84 each, certificates at US$2.76, textbooks at US$9.20 and graduation yearbooks at US$10.35. Final cost depends on page count, paper, size and quantity, so request a quote for exact pricing."
+    },
+    {
+      "q": "What is the MOQ for custom printed exercise books?",
+      "a": "Exercise books and textbooks from 10 books; yearbooks from 1 copy; certificates from 100 pcs. Small runs print digitally, while offset presses handle larger volume orders."
+    },
+    {
+      "q": "How long does a school printing order take from quote to delivery?",
+      "a": "Production time is quoted per order based on page count and binding. After dispatch, DHL Express delivers worldwide in 2-4 days, and Hong Kong schools receive local delivery within 48 hours. Order early — the two weeks before term starts are the busiest."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "10 books",
+      "label": "Exercise book MOQ, vs 500+ minimums common on trade platforms"
+    },
+    {
+      "stat": "From US$1.84",
+      "label": "Per-book entry price for K12 exercise books"
+    },
+    {
+      "stat": "2-4 days",
+      "label": "DHL Express delivery to Africa, the Middle East & Southeast Asia"
+    },
+    {
+      "stat": "G7 Master",
+      "label": "Certified press color control with FSC-certified paper options"
+    }
+  ],
+  "comparisonTable": {
+    "title": "School Printing Product Comparison",
+    "columns": [
+      "Product",
+      "Finishing & Binding",
+      "Typical Use Case",
+      "MOQ"
+    ],
+    "rows": [
+      [
+        "Exercise Books",
+        "Saddle stitch or perfect bound; 80-100g woodfree interior; lined, grid or blank pages",
+        "K12 workbooks, term exercise books, tutoring-center materials",
+        "10 books"
+      ],
+      [
+        "Certificates",
+        "200-250g watermark or cotton paper; foil stamping, embossing, anti-counterfeit background pattern",
+        "Diplomas, awards, alumni and training certificates",
+        "100 pcs"
+      ],
+      [
+        "Textbooks",
+        "Perfect bound or saddle stitch; A4 or B5; ISBN and barcode support",
+        "Grade-level curricula, training manuals, question banks",
+        "10 books"
+      ],
+      [
+        "Yearbooks",
+        "Saddle stitch, perfect bound or hardcover; foil-stamped crest, ribbon bookmark, dust jacket",
+        "Graduation yearbooks, school anniversary and alumni publications",
+        "1 copy"
+      ]
+    ],
+    "note": "Paper and finishing options vary by product. Pricing is quote-based on page count, paper, size and quantity."
+  },
+  "orderFlow": {
+    "title": "School Printing Order Flow — From Spec Sheet to Delivery",
+    "steps": [
+      {
+        "title": "Submit Specs",
+        "desc": "Send page count, size, binding and quantity — single titles or multi-title school sets welcome"
+      },
+      {
+        "title": "30-Second AI Quote",
+        "desc": "Get instant pricing online, then confirm paper and finishing options"
+      },
+      {
+        "title": "Free Typesetting",
+        "desc": "We lay out page numbers, chapter headers and exercise fields; yearbooks include a free design mockup"
+      },
+      {
+        "title": "Proof Sign-Off",
+        "desc": "Approve a digital proof or sample before the bulk run begins"
+      },
+      {
+        "title": "Bulk Production",
+        "desc": "Digital printing for small batches, offset for volume, with quality checks throughout"
+      },
+      {
+        "title": "DHL Delivery",
+        "desc": "2-4 days worldwide via DHL Express; 48-hour delivery for Hong Kong schools"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, we're a [school / tutoring center: ____] in [country: ____] and need a quote for [exercise books / textbooks / certificates: ____]. Quantity: [____ pcs], size: [A4 / A5 / B5: ____], page count: [____], binding: [saddle stitch / perfect bound / hardcover: ____]. Please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "Request a Sample",
+      "message": "Hi, we'd like to check paper and print quality before placing our school order. Could you send a sample of [product: ____] with [interior paper weight: ____]? Target quantity is [____ pcs], delivery to [country: ____]. Thanks!"
+    },
+    {
+      "label": "Back-to-School Bulk Order",
+      "message": "Hi, we're preparing for the [term / school year: ____] and need [product: ____] for [number of students: ____] students. Please advise bulk pricing, payment terms and the latest order date to receive delivery by [date: ____]. Thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "Do you offer bulk discounts for school-wide or district orders?",
+      "a": "Yes. Classroom sets and school-wide orders are priced in quantity tiers, so the per-unit rate drops as volume grows. Share your student count and page specs and we'll quote exercise books, workbooks and certificates together as one combined order."
+    },
+    {
+      "q": "What artwork do you need for custom workbook printing?",
+      "a": "Print-ready PDFs work smoothly — CMYK color with fonts embedded and high-resolution images. If you're starting from Word, PowerPoint or Canva files, send them as-is: free typesetting covers page numbers, chapter headers and exercise-field layouts before printing."
+    },
+    {
+      "q": "Which paper should we choose for children's workbooks?",
+      "a": "80gsm uncoated woodfree paper is the standard workbook interior — smooth to write on and gentle on the eyes. Covers use 250gsm coated stock for vibrant graphics, and 100% recycled FSC-certified paper is available for eco-friendly programs."
+    },
+    {
+      "q": "Can you deliver school orders internationally?",
+      "a": "Yes — orders ship worldwide from our Asia factory via DHL Express in 2-4 days, a route commonly used by education ministries and school groups in Africa, the Middle East and Southeast Asia. Hong Kong schools receive local delivery within 48 hours."
+    }
+  ]
+};
+
+categoryConversionBlocks['educational:ja'] = {
+  "category": "educational",
+  "locale": "ja",
+  "title": "教材 印刷製本｜教科書印刷・教材テキスト印刷・問題集を小ロット10部から製本対応｜ZprintPro",
+  "metaDescription": "教材 印刷製本なら小ロット10部から対応。教科書印刷は1冊￥1,288〜、問題集・練習帳は1冊￥258〜。中綴じ・無線綴じ・上製本から選択でき、ISBN・バーコードにも対応します。AI即時見積もり30秒、DHL Expressで日本全国へ2-4日配送。卒業アルバムの上製本や学年内教材もお見積もり制。",
+  "quickAnswers": [
+    {
+      "q": "教材 印刷の最小ロットは何部からですか？",
+      "a": "教科書・テキスト・問題集はすべて10部から承ります。最終価格はお見積もり制です。"
+    },
+    {
+      "q": "教科書 印刷のサイズと仕様はどう選べばいいですか？",
+      "a": "表紙はカラー4C＋200gコート紙、内文はモノクロまたは2色。"
+    },
+    {
+      "q": "教材 製本の種類は選べますか？",
+      "a": "中綴じ・無線綴じから選択でき、表紙のラミネート加工もオプションで可能です。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "10部〜",
+      "label": "教科書・テキスト・問題集の小ロット製本対応"
+    },
+    {
+      "stat": "￥258〜",
+      "label": "問題集・練習帳の1冊あたり目安価格"
+    },
+    {
+      "stat": "30秒",
+      "label": "AI即時見積もりで部数別の概算価格を提示"
+    },
+    {
+      "stat": "2-4日",
+      "label": "DHL Expressで日本全国へ配送（製造後）"
+    }
+  ],
+  "comparisonTable": {
+    "title": "教材 印刷 製本 早見表（種類 × 製本 × シーン × 最小ロット）",
+    "columns": [
+      "教材の種類",
+      "製本",
+      "おすすめシーン",
+      "最小ロット"
+    ],
+    "rows": [
+      [
+        "教科書（A4／B5）",
+        "無線綴じ・中綴じ＋表紙ラミネート（オプション）",
+        "K12教科書・補習校教材・学年内教材（ISBN・バーコード対応）",
+        "10部〜"
+      ],
+      [
+        "研修テキスト・マニュアル",
+        "無線綴じ（内文モノクロ／2色）",
+        "企業研修・教室テキスト・教材 テキスト印刷",
+        "10部〜"
+      ],
+      [
+        "問題集・練習帳（A4／A5）",
+        "中綴じ＋罫線（マス・横罫・無地）から選択",
+        "塾・予備校のドリル・家庭学習用問題集",
+        "10部〜"
+      ],
+      [
+        "卒業アルバム",
+        "上製本＋箔押し・栞紐・ダストジャケット",
+        "学校・学級の記念アルバム・周年誌",
+        "お見積もり制"
+      ]
+    ],
+    "note": "価格・納期は数量・紙質・ページ数・製本によりお見積もり制です。問題集1冊￥258〜、教科書1冊￥1,288〜が目安価格で、部数が多いほど単価は下がります。"
+  },
+  "orderFlow": {
+    "title": "教材 印刷製本のオーダーフロー 6ステップ",
+    "steps": [
+      {
+        "title": "お問い合わせ",
+        "desc": "WhatsAppで教材の種類・サイズ・ページ数・部数・製本方法のご要望をお知らせください"
+      },
+      {
+        "title": "AI即時見積もり",
+        "desc": "30秒で概算価格と納期をご提示します"
+      },
+      {
+        "title": "デザイン入稿",
+        "desc": "レイアウトデータ（AI／PDF）の入稿、または無料デザインサービスをご利用いただけます（頁番号・章立て・習題欄の組版も対応）"
+      },
+      {
+        "title": "サンプル確認",
+        "desc": "色・紙質・製本の仕上がりをチェックしてから量産へ進めます"
+      },
+      {
+        "title": "製造・品質検査",
+        "desc": "印刷から綴じ加工まで一貫製造し、出荷前に全数検品のうえ梱包します"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "DHL Express／FedExで日本全国へ。全世界2-4日でお届けします"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "教材の見積もりをお願いします。【教科書（B5）】／部数【300部】／製本【無線綴じ＋表紙ラミネート】／内文【モノクロ】。1冊の単価と納期を教えてください。"
+    },
+    {
+      "label": "学期納期相談",
+      "message": "【開学前】に教材を納品したいです。【問題集（A4・中綴じ）】／部数【500部】。最短納期と特急対応の可否をあわせて教えてください。"
+    },
+    {
+      "label": "卒業アルバム相談",
+      "message": "【卒業アルバム】の製作を検討しています。部数【　部】／製本【上製本＋校章の箔押し】。デザインテンプレートの有無とお見積もりをお願いします。"
+    }
+  ],
+  "newFaqs": [
+    { "q": "教材 印刷の最小ロットは何部からですか？", "a": "教科書・テキスト・問題集はすべて100部から承ります。問題集・練習帳は1冊￥258〜、教科書は1冊￥1,288〜が目安です。学校や塾の学年内教材など、部数がまとまると単価も下がるため、まずは仕様と部数をお知らせください。最終価格はお見積もり制です。" },
+    { "q": "教科書 印刷のサイズと仕様はどう選べばいいですか？", "a": "教科書はA4（210×297mm）またはB5（176×250mm）、問題集・練習帳はA4またはA5（148×210mm）が定番です。表紙はカラー4C＋200gコート紙、内文はモノクロまたは2色。目に優しい80g–100gの上質紙を使い、ISBN・バーコードの掲載にも対応します。" },
+    { "q": "教材 製本の種類は選べますか？", "a": "中綴じ・無線綴じから選択でき、表紙のラミネート加工もオプションで可能です。卒業アルバムは上製本に対応し、校章の箔押し・栞紐・ダストジャケットで仕上げます。ページ数・予算・配布シーンに合わせて、教材 印刷 製本の組み合わせをご提案します。" },
+    {
+      "q": "教材印刷の部数と価格はいくらからですか？",
+      "a": "教科書・テキスト・問題集は100部から承ります。問題集・練習帳は1冊￥258〜、教科書は1冊￥1,288〜が目安で、部数が多いほど単価は下がります。最終価格はサイズ・紙質・ページ数・製本方法によりお見積もり制です。"
+    },
+    {
+      "q": "納期はどのくらいかかりますか？",
+      "a": "完成後はDHL Expressで全世界2-4日、日本全国へお届けします。製造期間はページ数・製本・部数により変わるため、学期の納品スケジュールに合わせてご相談ください。開学前の2週間は混み合う時期なので、早めのご相談がおすすめです。"
+    },
+    {
+      "q": "教科書印刷でISBNやバーコードは対応できますか？",
+      "a": "はい。教科書・テキストではISBN・バーコードの掲載に対応しています。内文は目に優しい80g–100gの上質紙でモノクロまたは2色から選べ、表紙はカラー印刷＋ラミネート加工（オプション）で長く使える仕上がりにします。"
+    },
+    {
+      "q": "卒業アルバムの製本はどんな仕様にできますか？",
+      "a": "上製本に対応し、校章の箔押し・栞紐・ダストジャケットで仕上げます。無料のデザインテンプレートをご用意しているほか、学年末の繁忙期には制作サポートも行っています。価格と最小部数は仕様によりお見積もり制です。"
+    }
+  ]
+};
+
+categoryConversionBlocks['japan-doujin:zh-hk'] = {
+  "category": "japan-doujin",
+  "locale": "zh-hk",
+  "title": "同人本印刷｜同人印刷 10 本起印＋Comiket 特急對應｜智印港",
+  "metaDescription": "香港同人本印刷／同人印刷推薦：A5/B5 同人誌 10 本起印，封面彩色＋內頁單色，騎馬釘（8-64 頁）／膠裝可選，Comiket 前 24 小時特急對應；仲有明信片套裝、環保托特袋一站式訂製，深圳自營工廠 ISO 12647 色彩管理，DHL 國際速遞出貨，WhatsApp 即時報價。",
+  "quickAnswers": [
+    {
+      "q": "同人本印刷幾多錢？",
+      "a": "同人本 10 本起印，價錢視乎開本（A5/B5）、頁數、紙材同裝訂方式，WhatsApp 即時報價。。"
+    },
+    {
+      "q": "同人印刷起訂量係幾多？",
+      "a": "同人本 10 本起印；明信片套裝 4 套起；環保托特袋少量起印，社團同個人團隊細批量都印得到。"
+    },
+    {
+      "q": "同人本交期要幾耐？",
+      "a": "常規 5-7 個工作天生產，Comiket 前有 24 小時特急對應；"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "10 本起",
+      "label": "同人本 10 本起・明信片套裝 4 套起"
+    },
+    {
+      "stat": "24 小時",
+      "label": "Comiket 前特急對應"
+    },
+    {
+      "stat": "3 個營業日",
+      "label": "明信片套裝特急交期可協調"
+    },
+    {
+      "stat": "ISO 12647",
+      "label": "色彩管理＋FSC 認證紙材"
+    }
+  ],
+  "comparisonTable": {
+    "title": "同人周邊產品線比較",
+    "columns": [
+      "產品",
+      "工藝",
+      "適用場景",
+      "起訂量"
+    ],
+    "rows": [
+      [
+        "同人本",
+        "封面柯式四色＋內頁單色，騎馬釘（8-64 頁）／膠裝，A5／B5 標準開本",
+        "同人展場販售、社團場刊、粉絲誌",
+        "10 本起"
+      ],
+      [
+        "明信片套裝",
+        "和紙風藝術紙 180g，雙面印刷＋霧面 PP 貼膜，OPP 獨立袋",
+        "活動限定贈品、收藏、感謝卡",
+        "4 套起"
+      ],
+      [
+        "環保托特袋",
+        "有機棉帆布＋絲印印刷",
+        "活動贈品、品牌禮物",
+        "少量起訂"
+      ]
+    ],
+    "note": "以上規格以智印港 japan-doujin 產品線為準，實際報價視乎設計細節同數量。"
+  },
+  "orderFlow": {
+    "title": "同人周邊 6 步落單流程",
+    "steps": [
+      {
+        "title": "WhatsApp 查詢",
+        "desc": "講明產品：同人本／明信片／環保托特袋，連開本尺寸同數量"
+      },
+      {
+        "title": "報價確認",
+        "desc": "2 小時內回覆價錢同交期"
+      },
+      {
+        "title": "提供設計檔",
+        "desc": "AI／PDF／PNG 都收，CMYK 300dpi+，異形圖案要 Illustrator 路徑檔"
+      },
+      {
+        "title": "打樣確認",
+        "desc": "印前檢查設計檔，確認冇問題先開機"
+      },
+      {
+        "title": "生產製作",
+        "desc": "深圳自營工廠印刷，Comiket 前特急可協調排單"
+      },
+      {
+        "title": "收貨驗收",
+        "desc": "DHL Express 國際速遞出貨，跟進到滿意為止"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "同人本報價",
+      "message": "你好，我想報價同人本印刷：\n【開本】A5 / B5 / A4\n【頁數】\n【裝訂】騎馬釘 / 膠裝\n【數量】例如 50 本\n【封面】彩色\n【交貨日期】例如 X 月 X 日\n麻煩報價，多謝！"
+    },
+    {
+      "label": "周邊報價",
+      "message": "你好，我想訂製同人周邊：\n【產品】明信片套裝 / 環保托特袋\n【尺寸】例如明信片 A6\n【數量】\n【工藝】例如霧面 PP 貼膜\n【交貨日期】\n麻煩報價，多謝！"
+    },
+    {
+      "label": "展前特急",
+      "message": "你好，我趕住展會出貨：\n【活動名稱／日期】例如 X 月 X 日\n【產品】\n【數量】\n【設計檔現況】已有 / 未完成\n【最遲收貨日期】\n麻煩幫手睇下趕唔趕到，多謝！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "同人本印刷幾多錢？", "a": "同人本 10 本起印，價錢視乎開本（A5/B5）、頁數、紙材同裝訂方式，50／100／500 本仲有 5%-15% 量購折扣，WhatsApp 即時報價。" },
+    { "q": "同人本交期要幾耐？", "a": "常規 5-7 個工作天生產，Comiket 前有 24 小時特急對應；明信片套裝 3-5 個營業日，之後 DHL Express 速遞出貨。" },
+    {
+      "q": "同人本同普通畫冊印刷有咩分別？",
+      "a": "同人本主打小批量：10 本起印，A5/B5 標準開本，騎馬釘（8-64 頁）或膠裝都得，封面彩色＋內頁單色，適合同人展同社團場刊；普通畫冊一般針對較大訂量同企業用途，裝訂同用紙設定唔同。想清楚配置可以先 WhatsApp 講需求。"
+    },
+    {
+      "q": "Comic Market 或者書展前落單，交貨節奏應該點安排？",
+      "a": "同人本常規 5-7 個工作天生產，Comiket 前有 24 小時特急對應，展前高峰期（暑假同年底場次前）廠房排單較密，建議預留 10-15 個工作日會更穩陣，落單前先喺 WhatsApp 確認交期。"
+    },
+    {
+      "q": "可唔可以同人本同周邊一齊落單？",
+      "a": "得。同人本、明信片套裝、環保托特袋全部屬同一條 japan-doujin 產品線，深圳自營工廠統一以 ISO 12647 色彩管理，色調一致，一齊出貨方便管理物販。"
+    },
+    {
+      "q": "設計檔有咩要求？",
+      "a": "AI／PDF／PNG 都收，建議 CMYK 色彩模式、300dpi 以上；異形圖案需要 Illustrator 路徑檔入稿。印前有免費設計檔檢查，有問題會先同你確認先開印。"
+    }
+  ]
+};
+
+categoryConversionBlocks['japan-doujin:ja'] = {
+  "category": "japan-doujin",
+  "locale": "ja",
+  "title": "同人グッズ印刷｜同人誌・ポストカードセット・エコトートバッグ 小ロットから｜ZprintPro",
+  "metaDescription": "同人グッズ印刷はお任せ。同人誌1部￥7,500〜、ポストカード1枚￥750〜、エコトートバッグ1個￥9,000〜。10部・4セットからの小ロットに対応し、コミケ前24時間特急製造も可能。AI即時見積もり30秒、DHL Expressで日本全国へ2-4営業日でお届けします。",
+  "quickAnswers": [
+    {
+      "q": "同人グッズの印刷はいくらから依頼できますか？",
+      "a": "数量や仕様によって単価が変わるため、最終価格はお見積もり制となります。"
+    },
+    {
+      "q": "コミケや即売会に間に合う納期はどのくらいですか？",
+      "a": "標準は3-7営業日で製造します。"
+    },
+    {
+      "q": "ポストカードセットとエコトートバッグはどんな仕様を選べますか？",
+      "a": "ポストカードセットは和紙風アート紙・両面印刷・OPPスリーブ封入、エコトートバッグはオーガニックコットン帆布＋シルク印刷が標準です。"
+    },
+    {
+      "q": "コミケ向けの印刷はどのくらい前に注文すべきですか？",
+      "a": "標準は3-7営業日で製造します。コミケ前の24時間特急製造（同人誌）にも対応していますが、繁忙期は特急枠が埋まりやすいため、1ヶ月前のご注文が最も安心です。DHL Expressで日本全国2-4営業日でお届けします。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4セット〜",
+      "label": "ポストカードセット・エコトートバッグの小ロットに対応（同人誌は10部から）"
+    },
+    {
+      "stat": "24時間",
+      "label": "コミケ前の特急製造に対応（同人誌）"
+    },
+    {
+      "stat": "2-4営業日",
+      "label": "DHL Expressによる日本への配送日数目安"
+    },
+    {
+      "stat": "￥750〜",
+      "label": "ポストカードセットの1枚あたり目安価格"
+    }
+  ],
+  "comparisonTable": {
+    "title": "同人グッズの商品タイプ × 加工 × シーン別 比較表",
+    "columns": [
+      "商品タイプ",
+      "主な加工・仕様",
+      "おすすめシーン",
+      "最小ロット"
+    ],
+    "rows": [
+      [
+        "同人誌（A5／B5）",
+        "表紙フルカラー＋本文モノクロ",
+        "コミケ・即売会での本編物販",
+        "10部〜"
+      ],
+      [
+        "エコトートバッグ",
+        "オーガニックコットン・シルク印刷",
+        "イベントグッズ・ブランドノベルティ",
+        "少量〜"
+      ],
+      [
+        "ポストカードセット（105×148mm）",
+        "和紙風アート紙・両面印刷・OPPスリーブ封入",
+        "イラストコレクション・来場者特典",
+        "4セット〜（4-8枚組）"
+      ]
+    ],
+    "note": "目安価格は同人誌1部￥7,500〜／ポストカード1枚￥750〜／エコトートバッグ1個￥9,000〜。最終価格・納期は仕様と数量により変わるため、お見積もり制です。"
+  },
+  "orderFlow": {
+    "title": "同人グッズ印刷 6ステップ",
+    "steps": [
+      {
+        "title": "お問い合わせ",
+        "desc": "WhatsAppで商品・数量・仕様・イベント日程をご相談ください"
+      },
+      {
+        "title": "AI即時見積もり",
+        "desc": "30秒で概算価格と納期をご提示します"
+      },
+      {
+        "title": "データ入稿",
+        "desc": "印刷データをご入稿いただき、スタッフが仕様を確認します"
+      },
+      {
+        "title": "内容の最終確認",
+        "desc": "サイズ・加工・部数のご確認のあと、製造を開始します"
+      },
+      {
+        "title": "製造・品質検査",
+        "desc": "標準3-7営業日で製造。FSC認証紙とISO 12647の色管理のもと、出荷前に検品します"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "DHL Expressで日本へ2-4営業日でお届けします"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "同人グッズの見積もりをお願いします。商品【ポストカードセット】／サイズ【A6】／数量【20セット】／仕様【両面印刷・OPPスリーブ封入】。1個あたりの単価と納期を教えてください。"
+    },
+    {
+      "label": "コミケ特急相談",
+      "message": "【コミケ】の物販が急ぎです。商品【同人誌（B5・表紙カラー／本文モノクロ）】／数量【50部】。24時間特急製造が使えるか、費用とあわせて教えてください。"
+    },
+    {
+      "label": "リピート追加発注",
+      "message": "前に発注した【同じデザインのポストカードセット】を追加したいです。数量【20セット】、デザインは前回と同じです。見積もりをお願いします。"
+    }
+  ],
+  "newFaqs": [
+    { "q": "同人グッズの印刷はいくらから依頼できますか？", "a": "同人誌は1部￥7,500〜（10部から）、ポストカードセットは1枚￥750〜（4セットから）、エコトートバッグは1個￥9,000〜（少量から）です。数量や仕様によって単価が変わるため、最終価格はお見積もり制となります。" },
+    { "q": "コミケや即売会に間に合う納期はどのくらいですか？", "a": "標準は3-7営業日で製造します。同人誌はコミケ前の24時間特急製造にも対応しています（特急料金はお見積もり制）。完成後はDHL Expressで日本へ2-4営業日でお届けするため、イベント日程はあらかじめお知らせください。" },
+    { "q": "ポストカードセットとエコトートバッグはどんな仕様を選べますか？", "a": "ポストカードセットは105×148mm（A6）の和紙風アート紙・両面印刷・OPPスリーブ封入、4-8枚組です。エコトートバッグはオーガニックコットン帆布＋シルク印刷で、少量から対応します。" },
+    {
+      "q": "小部数でも注文できますか？部数と価格の関係は？",
+      "a": "はい。同人誌は10部から、ポストカードセットは4セットから、エコトートバッグは少量から承ります。目安価格は同人誌1部￥7,500〜、ポストカード1枚￥750〜、エコトートバッグ1個￥9,000〜です。部数が増えるほど1点あたりの単価は下がり、最終価格はお見積もり制となります。"
+    },
+    {
+      "q": "入稿データの形式や仕様はどこで確認できますか？",
+      "a": "主要フォーマットでのデータ入稿に対応しています。カラーモード・塗り足し・解像度などの詳細仕様は、担当スタッフまでお気軽にお問い合わせください。同人誌は表紙フルカラー＋本文モノクロという標準構成にも対応し、入稿後にスタッフが仕様を確認してから製造に入ります。"
+    },
+    {
+      "q": "ポストカードセットの枚数や印刷方法は選べますか？",
+      "a": "選べます。4-8枚組で枚数を指定でき、両面フルカラー印刷・和紙風アート紙・OPPスリーブ封入に対応します。エコトートバッグはオーガニックコットン帆布へのシルク印刷で、推し活グッズにはポストカードセットとエコトートバッグの組み合わせが人気です。"
+    },
+    {
+      "q": "コミケ前に間に合わせる特急製造は可能ですか？",
+      "a": "可能です。同人誌はコミケ前の24時間特急製造に対応しており、標準の3-7営業日より短い納期で製造できます（特急料金はお見積もり制）。完成後はDHL Expressで日本へ2-4営業日でお届けします。イベントの開始日をあらかじめお知らせください。"
+    }
+  ]
+};
+categoryConversionBlocks['envelopes:zh-hk'] = {
+  "category": "envelopes",
+  "locale": "zh-hk",
+  "title": "香港信封印刷｜大信封/公文信封/開窗信封訂製 100個起｜智印港",
+  "metaDescription": "香港信封印刷訂製：公司信封 HK$0.22 起/個、彩色信封 HK$0.38 起、大號信封 HK$0.60 起、珠光信封 HK$1.15 起，全部 100 個起印。公文信封、牛皮信封、開窗信封、大信封都可以印公司 logo。標準 3-5 個工作天交貨，滿 HK$500 順豐免運，WhatsApp 30 秒報價。",
+  "quickAnswers": [
+    {
+      "q": "信封印刷幾多錢一個？",
+      "a": "實際價錢視乎尺寸、紙質同數量，WhatsApp 30 秒就有報價。"
+    },
+    {
+      "q": "邊種信封可以先印公司 logo？",
+      "a": "公司信封就係標準公文信封款：logo、地址、合規字樣一體排版，仲會預留郵資區同條碼位；"
+    },
+    {
+      "q": "大信封可以裝 A4 文件嗎？",
+      "a": "得。HK$0.60-3.40/個，100 個起印。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "HK$0.22起",
+      "label": "公司信封幾毫一個，月結單、公函大量郵寄都唔肉赤"
+    },
+    {
+      "stat": "100個起印",
+      "label": "四款信封劃一 100 個起訂，初創同細企業試版冇壓力"
+    },
+    {
+      "stat": "3-5個工作天",
+      "label": "標準交貨期，滿 HK$500 順豐香港免運費"
+    },
+    {
+      "stat": "30秒報價",
+      "label": "WhatsApp 講低數量尺寸，好快有價有期"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港信封印刷四款信封 × 材質工藝 × 適用場景 × 價錢比較",
+    "columns": [
+      "品類",
+      "材質/工藝",
+      "適用場景",
+      "起訂量/價格"
+    ],
+    "rows": [
+      [
+        "公司信封（公文信封）",
+        "80–120g 書紙／本白書紙，單色至四色柯式或數碼，自黏封口、開窗貼片可選",
+        "寄月結單、公函、發票，適合機械封裝大量郵寄",
+        "100 個起・HK$0.22-1.80/個"
+      ],
+      [
+        "彩色信封",
+        "80–120g 書紙／彩色書紙，柯式四色＋可選專色，開窗、自黏封口可選",
+        "邀請函、賀卡、營銷郵件，可與喜帖卡片同批對色",
+        "100 個起・HK$0.38-2.60/個"
+      ],
+      [
+        "大號信封（大信封）",
+        "100–120g 書紙為主，C4（229×324mm），可平放 A4 減少摺痕",
+        "合約、標書、公文寄遞，多頁文件唔使摺",
+        "100 個起・HK$0.60-3.40/個"
+      ],
+      [
+        "珠光信封",
+        "珠光／冰白特種書紙，四色／專色＋可選燙金、擊凸，實紙打樣確認珠光走向",
+        "婚禮請柬、高端活動卡套，可與喜帖同色系",
+        "100 個起・HK$1.15-5.20/個"
+      ]
+    ],
+    "note": "牛皮紙質感、開窗貼片、印郵資區同條碼位等要求，落單時提出都可以安排；實際價錢視乎規格同數量，以 WhatsApp 報價為準。"
+  },
+  "orderFlow": {
+    "title": "6 步信封訂製流程",
+    "steps": [
+      {
+        "title": "WhatsApp 諮詢",
+        "desc": "講低信封種類、數量、尺寸（DL／C5／C4），有冇現成設計檔話聲知"
+      },
+      {
+        "title": "30 秒報價",
+        "desc": "列明單價、起訂量同交期，急單先講明死線"
+      },
+      {
+        "title": "設計排版",
+        "desc": "提供 logo 同地址資料，免費幫你排靚個版，郵資區條碼位一併預留"
+      },
+      {
+        "title": "打樣對色",
+        "desc": "實紙打樣確認顏色、封口位同珠光走向，核對冇問題先開印"
+      },
+      {
+        "title": "落單付款",
+        "desc": "轉數快或銀行轉賬，確認後即刻排產"
+      },
+      {
+        "title": "交貨收貨",
+        "desc": "標準 3-5 個工作天，滿 HK$500 順豐香港免運費"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "報價查詢",
+      "message": "你好，我想印【公司信封】，尺寸【DL】，數量【500】個，印【公司logo同地址】，單色或四色都得，麻煩報價同交期，多謝！"
+    },
+    {
+      "label": "開窗信封查詢",
+      "message": "你好，我想查【開窗信封】，用嚟寄【月結單】，窗口位要對準【收件人地址】，數量【1000】個，想知價錢同起訂量，謝謝！"
+    },
+    {
+      "label": "大信封急單",
+      "message": "你好，我哋要寄【合約文件】畀客戶，需要【C4大信封】可以平放A4，數量【200】個，【下星期】要交到，想問最快幾日同報價，多謝！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "信封印刷幾多錢一個？", "a": "公司信封 HK$0.22 起/個、彩色信封 HK$0.38 起/個、大號信封 HK$0.60 起/個、珠光信封 HK$1.15 起/個，全部 100 個起印；實際價錢視乎尺寸、紙質同數量，WhatsApp 30 秒就有報價。" },
+    { "q": "邊種信封可以先印公司 logo？", "a": "公司信封就係標準公文信封款：logo、地址、合規字樣一體排版，仲會預留郵資區同條碼位；80–120g 書紙，DL／C5／C4 規格都齊，仲可以加開窗。HK$0.22-1.80/個，100 個起印。" },
+    { "q": "大信封可以裝 A4 文件嗎？", "a": "得。大號信封 C4（229×324mm）可以成張 A4 平放，減少摺痕，100–120g 書紙多頁承重都穩陣，啱裝合約、標書同公文；HK$0.60-3.40/個，100 個起印。" },
+    {
+      "q": "大信封尺寸點揀？A4 文件要用邊個碼？",
+      "a": "寄 A4 文件揀 C4（229×324mm）就可以成張平放，唔使摺；得幾頁紙可以用 C5 對摺放入去。大號信封用 100–120g 書紙，多頁合約標書都承到，HK$0.60-3.40/個，100 個起印。"
+    },
+    {
+      "q": "開窗信封係咩？點解要開窗？",
+      "a": "開窗信封係封面上開一個透明貼片窗口，收件人地址預先印喺內頁，就唔使逐個手寫或者貼地址貼紙，機械封裝大量郵寄慳好多工夫。公司信封同彩色信封都可以加開窗，HK$0.22 起/個，100 個起印。"
+    },
+    {
+      "q": "珠光信封可以做婚禮請柬卡套嗎？",
+      "a": "好適合。珠光／冰白特種書紙有細膩閃爍質感，配婚禮請柬、晚宴卡套夠晒體面，仲可以加細線燙金或者擊凸提升層次；DL／C5／C4 規格齊，HK$1.15-5.20/個，100 個起印，建議先攞實紙打樣睇珠光走向。"
+    },
+    {
+      "q": "公文信封可以印公司 logo 同地址嗎？",
+      "a": "可以。公司信封就係公文信封標準款：logo、地址、合規字樣一體排版，仲會預留郵資區同條碼位，單色至四色都做得，同信紙卡片對齊色系；HK$0.22-1.80/個，100 個起印。"
+    }
+  ]
+};
+categoryConversionBlocks['envelopes:en'] = {
+  "category": "envelopes",
+  "locale": "en",
+  "title": "Custom Envelope Printing | Business, Colored, Large C4 & Pearl from $0.14 | ZprintPro",
+  "metaDescription": "Custom envelope printing from 100 pcs: business envelopes from US$0.14/pc, colored from US$0.18, large C4 from US$0.28, pearl from US$0.46. Window, self-seal and logo printing available. Standard 3-5 business days, free US shipping over $99, 30-second AI quote.",
+  "quickAnswers": [
+    {
+      "q": "How much does custom envelope printing cost?",
+      "a": "Business envelopes start at US$0.14/pc, colored at US$0.18/pc, large C4 at US$0.28/pc, and pearl at US$0.46/pc — all from 100 pcs. Final pricing is quote-based and varies with size, paper, window, and sealing options."
+    },
+    {
+      "q": "What is the minimum order for custom envelopes?",
+      "a": "All four envelope types start at 100 pcs with digital printing, so small businesses and startups can trial a design without inventory pressure."
+    },
+    {
+      "q": "Can large envelopes fit A4 documents flat?",
+      "a": "Yes. Large envelopes in C4 (229×324mm) hold a full A4 sheet flat with no folding, on 100-120g paper that carries multi-page contracts. From US$0.28/pc, 100 pcs minimum."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "US$0.14",
+      "label": "Starting unit price for business envelopes — painless for bulk statement mailing"
+    },
+    {
+      "stat": "100 pcs",
+      "label": "One MOQ across all four envelope types, easy trial runs for startups"
+    },
+    {
+      "stat": "3-5 days",
+      "label": "Standard turnaround, free US shipping on orders over $99"
+    },
+    {
+      "stat": "30s quote",
+      "label": "AI instant estimate once you share size, paper, and quantity"
+    }
+  ],
+  "comparisonTable": {
+    "title": "4 Custom Envelope Types × Material & Craft × Use Case × Pricing",
+    "columns": [
+      "Envelope Type",
+      "Material / Craft",
+      "Typical Use Case",
+      "MOQ / Price"
+    ],
+    "rows": [
+      [
+        "Business Envelopes",
+        "80-120g offset / woodfree paper, 1-4 color offset or digital, self-seal and window options",
+        "Statements, invoices, official correspondence, machine-stuffed bulk mailing",
+        "100 pcs · from US$0.14/pc"
+      ],
+      [
+        "Colored Envelopes",
+        "80-120g offset / colored stock, CMYK + optional spot color, window and self-seal options",
+        "Invitations, greeting cards, marketing mailers, color-matched with card sets",
+        "100 pcs · from US$0.18/pc"
+      ],
+      [
+        "Large Envelopes (C4)",
+        "100-120g offset paper, C4 (229×324mm), A4 fits flat with no creasing",
+        "Contracts, tenders, multi-page documents that should not be folded",
+        "100 pcs · from US$0.28/pc"
+      ],
+      [
+        "Pearl Envelopes",
+        "Pearl / ice-white specialty stock, CMYK / spot color + optional foil and embossing",
+        "Wedding invitations, premium event card sleeves, color-matched with invites",
+        "100 pcs · from US$0.46/pc"
+      ]
+    ],
+    "note": "Kraft paper texture, window films, postage zones, and barcode areas can all be arranged at order time. Final pricing is quote-based by specification and quantity."
+  },
+  "orderFlow": {
+    "title": "6-Step Custom Envelope Process",
+    "steps": [
+      {
+        "title": "Inquiry",
+        "desc": "Tell us envelope type, quantity, and size (DL / C5 / C4) via WhatsApp, with or without artwork"
+      },
+      {
+        "title": "30-Second Quote",
+        "desc": "Unit price, MOQ, and turnaround listed clearly — mention deadlines for rush orders"
+      },
+      {
+        "title": "Design & Typesetting",
+        "desc": "Send your logo and address details — free layout with postage zone and barcode areas reserved"
+      },
+      {
+        "title": "Proofing",
+        "desc": "Physical proof confirms color, seal position, and pearl direction before printing starts"
+      },
+      {
+        "title": "Order & Payment",
+        "desc": "Pay by PayPal or bank transfer — production is scheduled right after confirmation"
+      },
+      {
+        "title": "Delivery",
+        "desc": "Standard 3-5 business days, free US shipping on orders over $99 via DHL Express"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Quote Request",
+      "message": "Hi, I'd like to print business envelopes, size DL, quantity 500, with our company logo and address, 1 or 4 colors both fine. Please quote price and turnaround. Thanks!"
+    },
+    {
+      "label": "Window Envelope Inquiry",
+      "message": "Hi, I need window envelopes for monthly statements — the window must align with the recipient address, quantity 1000. Please advise price and MOQ. Thanks!"
+    },
+    {
+      "label": "Rush C4 Order",
+      "message": "Hi, we need C4 large envelopes that fit A4 flat for contract documents, quantity 200, needed by next week. What's the fastest turnaround and price? Thanks!"
+    }
+  ],
+  "newFaqs": [
+    { "q": "How much does custom envelope printing cost?", "a": "Business envelopes from US$0.14/pc, colored from US$0.18/pc, large C4 from US$0.28/pc, pearl from US$0.46/pc — all 100 pcs minimum. Final pricing varies with size, paper, window, and sealing options; a 30-second AI quote or WhatsApp message gives exact numbers." },
+    { "q": "Which envelope types can carry my company logo?", "a": "Business envelopes are the standard corporate format: logo, address, and compliance text in one layout, with postage zone and barcode areas reserved. 80-120g paper in DL / C5 / C4, window optional. From US$0.14/pc, 100 pcs minimum." },
+    { "q": "Can large envelopes hold A4 documents?", "a": "Yes. C4 large envelopes (229×324mm) hold a full A4 sheet flat, reducing creases. 100-120g paper carries multi-page contracts and tenders reliably. From US$0.28/pc, 100 pcs minimum." },
+    { "q": "How do I choose a large envelope size for A4 documents?", "a": "Pick C4 (229×324mm) for flat A4 sheets without folding; C5 works if the content can be folded in half. Large envelopes use 100-120g paper for multi-page strength. From US$0.28/pc, 100 pcs minimum." },
+    { "q": "What is a window envelope and why use one?", "a": "A window envelope has a transparent film on the face — the recipient address printed on the inner page shows through, so you skip handwriting or address labels entirely. Window option available on business and colored envelopes from US$0.14/pc, 100 pcs minimum." },
+    { "q": "Can pearl envelopes be used for wedding invitation sleeves?", "a": "Very much so. Pearl / ice-white specialty stock has a subtle shimmer that pairs elegantly with wedding invitations and dinner cards, and can be upgraded with fine-line foil or embossing. DL / C5 / C4 available, from US$0.46/pc, 100 pcs minimum. A physical proof is recommended to check the pearl direction." },
+    { "q": "Can business envelopes print my company logo and address?", "a": "Yes. Business envelopes are the standard corporate format: logo, address, and compliance text in one layout, with postage zone and barcode areas reserved, in 1-4 colors matched to your letterhead. From US$0.14/pc, 100 pcs minimum." }
+  ]
+};
+categoryConversionBlocks['envelopes:ja'] = {
+  "category": "envelopes",
+  "locale": "ja",
+  "title": "封筒印刷 | ビジネス・カラー・大判C4・パール 100枚から ¥20〜｜ZprintPro",
+  "metaDescription": "封筒印刷は100枚からの小ロット対応。ビジネス封筒¥20〜、カラー封筒¥25〜、大判C4封筒¥39〜、パール封筒¥64〜。窓付き・シール留め・ロゴ印刷対応。標準3-5営業日、日本全国DHL 2-4日配送、30秒AI見積もり。",
+  "quickAnswers": [
+    {
+      "q": "封筒印刷の料金はいくらからですか？",
+      "a": "ビジネス封筒は1枚¥20〜、カラー封筒は¥25〜、大判C4封筒は¥39〜、パール封筒は¥64〜。すべて100枚から承ります。最終価格はサイズ・紙質・窓付き・留め具の組み合わせにより変わるため、まずはお見積もりをどうぞ。"
+    },
+    {
+      "q": "封筒の最小発注数は何枚からですか？",
+      "a": "4種類すべて100枚から、デジタル印刷で対応。少ロットでも在庫リスクなく試作いただけます。"
+    },
+    {
+      "q": "大判封筒はA4を折らずに入れられますか？",
+      "a": "はい。大判封筒のC4（229×324mm）ならA4を折らずに平らに入れられ、100-120gの紙質が複数ページの書類にも対応します。1枚¥39〜、100枚から。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "¥20〜",
+      "label": "ビジネス封筒の1枚あたり目安価格"
+    },
+    {
+      "stat": "100枚〜",
+      "label": "4種類共通の最小ロット。少ロットでも在庫リスクなし"
+    },
+    {
+      "stat": "3-5営業日",
+      "label": "標準納期、DHLで日本全国へ2-4日配送"
+    },
+    {
+      "stat": "30秒見積もり",
+      "label": "AI即時見積もりで概算価格と納期を確認"
+    }
+  ],
+  "comparisonTable": {
+    "title": "封筒4種類 × 材質・工法 × 用途 × 価格比較",
+    "columns": [
+      "封筒タイプ",
+      "材質・工法",
+      "おすすめ用途",
+      "最小ロット／価格"
+    ],
+    "rows": [
+      [
+        "ビジネス封筒",
+        "80-120g書き紙／上質紙、1色〜4色オフセットまたはデジタル、シール留め・窓付き対応",
+        "請求書・納品書・公式文書の機械封入大量郵送",
+        "100枚〜・1枚¥20〜"
+      ],
+      [
+        "カラー封筒",
+        "80-120g書き紙／色上質紙、CMYK＋特色対応、窓付き・シール留め可",
+        "招待状・グリーティングカード・ダイレクトメール",
+        "100枚〜・1枚¥25〜"
+      ],
+      [
+        "大判封筒（C4）",
+        "100-120g書き紙、C4（229×324mm）、A4を折らずに平置き可能",
+        "契約書・入札書類・複数ページの公文書",
+        "100枚〜・1枚¥39〜"
+      ],
+      [
+        "パール封筒",
+        "パール／アイスホワイト特殊紙、CMYK／特色＋箔押し・エンボス対応",
+        "結婚式招待状・高級イベントのカード入れ",
+        "100枚〜・1枚¥64〜"
+      ]
+    ],
+    "note": "クラフト紙質感、窓フィルム、郵便番号エリアやバーコードエリアの指定は発注時にご相談ください。最終価格は仕様と数量によりお見積もり制です。"
+  },
+  "orderFlow": {
+    "title": "封筒印刷 6ステップ",
+    "steps": [
+      {
+        "title": "お問い合わせ",
+        "desc": "WhatsAppで封筒タイプ・数量・サイズ（DL／C5／C4）をお知らせください。データの有無も併せてどうぞ"
+      },
+      {
+        "title": "30秒見積もり",
+        "desc": "単価・最小ロット・納期を明確に提示。お急ぎの場合は締切をお知らせください"
+      },
+      {
+        "title": "デザイン・入稿",
+        "desc": "ロゴと宛名情報をお送りいただければ無料で排版。郵便番号エリアやバーコード位置も併せて設定"
+      },
+      {
+        "title": "サンプル確認",
+        "desc": "実物サンプルで色・留め具位置・パールの流れを確認してから印刷開始"
+      },
+      {
+        "title": "発注・決済",
+        "desc": "PayPal／銀行振込で決済、確認後すぐに製造スケジュールに入ります"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "標準3-5営業日、DHL Expressで日本全国へ2-4日でお届けします"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "ビジネス封筒の見積もりをお願いします。サイズ【DL】／数量【500枚】／会社ロゴと住所入り／1色または4色。単価と納期を教えてください。"
+    },
+    {
+      "label": "窓付き封筒相談",
+      "message": "月々の請求書用に窓付き封筒を検討しています。窓位置は【宛名欄】に合わせて、数量【1,000枚】。価格と最小ロットを教えてください。"
+    },
+    {
+      "label": "大判封筒・お急ぎ",
+      "message": "契約書の送付用に、A4を折らずに入るC4大判封筒が必要です。数量【200枚】、【来週中】の納品希望です。最短納期と料金をご相談ください。"
+    }
+  ],
+  "newFaqs": [
+    { "q": "封筒印刷の料金はいくらからですか？", "a": "ビジネス封筒は1枚¥20〜、カラー封筒¥25〜、大判C4封筒¥39〜、パール封筒¥64〜。すべて100枚から承ります。サイズ・紙質・窓付き・留め具により最終価格は変わるため、30秒AI見積もりまたはWhatsAppで正確な金額をご確認ください。" },
+    { "q": "どの封筒に会社ロゴを印刷できますか？", "a": "ビジネス封筒が標準的な公文書フォーマットです。ロゴ・住所・コンプラインス表記を一体排版し、郵便番号エリアやバーコード位置も確保します。80-120gのDL／C5／C4サイズに窓付きも対応。1枚¥20〜、100枚から。" },
+    { "q": "大判封筒はA4書類を入れられますか？", "a": "はい。大判封筒のC4（229×324mm）はA4を折らずに平らに収納でき、折りジワを防ぎます。100-120gの紙質で複数ページの契約書や入札書類も安定して運べます。1枚¥39〜、100枚から。" },
+    { "q": "大判封筒のサイズはどう選べば？A4書類にはどの規格？", "a": "A4書類はC4（229×324mm）を選べば折らずに平置きできます。ページ数が少なければC5に折りたたんで入れる選択肢もあります。100-120gの紙質で複数ページも対応。1枚¥39〜、100枚から。" },
+    { "q": "窓付き封筒とは？なぜ使うのですか？", "a": "窓付き封筒は表面に透明フィルム窓があり、内側のページに印刷した宛名がそのまま見える仕組みです。宛名の手書きやラベル貼りが不要になり、機械封入の大量郵送で大幅な工数削減が可能です。ビジネス封筒とカラー封筒に対応。1枚¥20〜、100枚から。" },
+    { "q": "パール封筒は結婚式招待状の入れ物に使えますか？", "a": "とても適しています。パール／アイスホワイト特殊紙の繊細な輝きは、結婚式招待状や披露宴のカード入れに格調を添え、細線の箔押しやエンボス加工でさらに上質感を高められます。DL／C5／C4の規格があり、1枚¥64〜、100枚から。パールの流れを確認するため実物サンプルをおすすめします。" },
+    { "q": "公文封筒に会社ロゴと住所は印刷できますか？", "a": "はい。ビジネス封筒が公文封筒の標準フォーマットで、ロゴ・住所・コンプラインス表記を一体排版し、郵便番号エリアやバーコード位置を確保。1色〜4色でレターヘッドやカードと色合わせも可能です。1枚¥20〜、100枚から。" }
+  ]
+};
+categoryConversionBlocks['red-packets:zh-hk'] = {
+  "category": "red-packets",
+  "locale": "zh-hk",
+  "title": "利是封印刷及訂製利是封｜六款工藝 HK$1.10 起｜智印港",
+  "metaDescription": "利是封印刷及訂製利是封一站式服務：燙金、浮雕、卡通、環保、大號等六款工藝，可印公司 logo、品牌色同專屬祝福語，適合婚慶喜宴、企業年會及品牌活動；HK$1.10 起/個，100 個起印，免費設計排版，WhatsApp 即時報價，滿 HK$500 順豐香港免運費；新年旺季建議提早落單，急件可傾，以報價為準。",
+  "quickAnswers": [
+    {
+      "q": "利是封印刷幾多錢一個？",
+      "a": "實際價格睇數量、紙張同後加工，WhatsApp 就攞到逐款報價。"
+    },
+    {
+      "q": "最少要印幾多個？",
+      "a": "六款利是封一律 100 個起印，小批量數碼印刷都接得；"
+    },
+    {
+      "q": "可唔可以印自己個 logo 同公司色？",
+      "a": "可以，定製利是封支援 logo、品牌色同專屬圖案，另有燙金、浮雕、異形模切等工藝配搭；"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "國際認證",
+      "label": "認證印刷廠直出・免費設計排版有據可依"
+    },
+    {
+      "stat": "6 款",
+      "label": "燙金、浮雕、卡通、環保、大號、全定製工藝可揀"
+    },
+    {
+      "stat": "100 個",
+      "label": "起印門檻，小批量節令單都接"
+    },
+    {
+      "stat": "HK$500",
+      "label": "滿額順豐香港免運費"
+    }
+  ],
+  "comparisonTable": {
+    "title": "六款利是封點揀？工藝、場景同價格一覽",
+    "columns": [
+      "款式",
+      "工藝",
+      "適用場景",
+      "起訂量/價格"
+    ],
+    "rows": [
+      [
+        "定製利是封",
+        "全客製四色印刷＋燙金/UV，免費刀模",
+        "企業派發、品牌活動、節日營銷",
+        "100 個起印／HK$1.90-6.40/個"
+      ],
+      [
+        "燙金利是封",
+        "傳統燙金，多款吉祥圖案或專屬設計",
+        "婚慶喜宴、企業年會、客戶禮贈",
+        "100 個起印／HK$1.10-4.80/個"
+      ],
+      [
+        "浮雕利是封",
+        "0.3–0.5mm 浮雕壓紋，立體觸感",
+        "VIP 客戶、高端送禮、酒店迎賓",
+        "100 個起印／HK$3.00-9.50/個"
+      ],
+      [
+        "卡通利是封",
+        "四色數碼印刷，活潑卡通圖案",
+        "親子品牌、教育機構、兒童產品",
+        "100 個起印／HK$1.10-3.80/個"
+      ],
+      [
+        "環保利是封",
+        "FSC 再生紙／種子紙＋大豆油墨，無覆膜",
+        "注重環保的企業、可持續主題活動",
+        "100 個起印／HK$1.90-5.20/個"
+      ],
+      [
+        "大號利是封",
+        "加大 30%–50% 容量，燙金/浮雕可選",
+        "厚禮金、禮品卡、送禮場合",
+        "100 個起印／HK$2.20-7.50/個"
+      ]
+    ]
+  },
+  "orderFlow": {
+    "steps": [
+      {
+        "title": "揀款式",
+        "desc": "六款利是封揀啱心水，定唔到就直接講需求同預算"
+      },
+      {
+        "title": "WhatsApp 報價",
+        "desc": "話我哋知【數量】同工藝要求，攞實價同貨期"
+      },
+      {
+        "title": "免費設計排版",
+        "desc": "冇現成檔案都做得，設計師幫手排靚版"
+      },
+      {
+        "title": "確認稿",
+        "desc": "核對色稿、字體同刀模細節，確認先開機生產"
+      },
+      {
+        "title": "生產同檢查",
+        "desc": "柯式或數碼生產，工藝逐批檢查"
+      },
+      {
+        "title": "順豐香港配送",
+        "desc": "滿 HK$500 免運費，新年急件可傾，以報價為準"
+      }
+    ],
+    "title": "利是封訂製 6 步流程"
+  },
+  "whatsappTemplates": [
+    {
+      "label": "報價查詢",
+      "message": "你好！我想查詢【款式】利是封報價，預計印【數量】個，想加公司 logo 同祝福語，麻煩報埋價同貨期，唔該！"
+    },
+    {
+      "label": "新年急單",
+      "message": "Hello，新年急單：需要【款式】利是封【數量】個，想趕得切年前收貨，請問而家落單出唔出到？"
+    },
+    {
+      "label": "設計檔案檢查",
+      "message": "想訂【款式】利是封【數量】個，我哋有自己嘅設計檔案，可以幫手檢查埋 CMYK 色值同出血位嗎？"
+    }
+  ],
+  "newFaqs": [
+    { "q": "利是封印刷幾多錢一個？", "a": "視乎款式同工藝：燙金利是封同卡通利是封 HK$1.10 起，定製利是封同環保利是封 HK$1.90 起，大號利是封 HK$2.20 起，浮雕利是封 HK$3.00 起；實際價格睇數量、紙張同後加工，WhatsApp 就攞到逐款報價。" },
+    { "q": "最少要印幾多個？", "a": "六款利是封一律 100 個起印，小批量數碼印刷都接得；數量上去有分層報價，直接 WhatsApp 話我哋知數量同款式就計到。" },
+    { "q": "可唔可以印自己個 logo 同公司色？", "a": "可以，定製利是封支援 logo、品牌色同專屬圖案，另有燙金、浮雕、異形模切等工藝配搭；唔識設計都唔使驚，免費設計排版幫你執好個檔。" },
+    {
+      "q": "利是封印刷幾多錢？",
+      "a": "全部明碼標價：燙金利是封 HK$1.10-4.80/個、卡通利是封 HK$1.10-3.80/個、定製利是封 HK$1.90-6.40/個、環保利是封 HK$1.90-5.20/個、大號利是封 HK$2.20-7.50/個、浮雕利是封 HK$3.00-9.50/個；一律 100 個起印，實際單價按數量同工藝計，WhatsApp 攞報價。"
+    },
+    {
+      "q": "趕新年貨期，幾時落單先趕得切？",
+      "a": "利是封係節令貨，農曆新年前 3 週係接單高峰期，建議提早落單預留檔期；急件可以傾，實際交期同安排以報價為準。"
+    },
+    {
+      "q": "設計檔案有咩要求？",
+      "a": "建議提供 CMYK 色值、預留出血位嘅可編輯檔案；如果只有圖片或者想改字改色，交俾我哋免費設計排版處理就得。"
+    },
+    {
+      "q": "利是封用咩紙？",
+      "a": "主流款式用 120g–150g 紅色紙張，大號款用 150g–200g 更挺身；卡通款另有銅版紙，環保款揀 FSC 再生紙或種子紙配大豆油墨。"
+    }
+  ]
+};
+
+
+
+
+
+// 2026-09-05 W5 v34: books 三语转化区块 (词图 v2 审计 REMAP 承接: booklets 404 词群经重定向落 books)
+categoryConversionBlocks['books:zh-hk'] = {
+  "category": "books",
+  "locale": "zh-hk",
+  "title": "騎馬釘小冊子印刷 10本起｜騎馬釘/膠裝/精裝/校簿印書訂製 | 智印港",
+  "metaDescription": "香港騎馬釘書刊印刷訂製：騎馬釘小冊子 HK$6-32/本、無線膠裝書 HK$16-80/本、精裝書 HK$40-240/本、線圈筆記本 HK$8-40/本，全部 10 本起印（數碼）。印書、校簿練習冊、活動場刊、公司年報、畢業紀念冊都印得，免費設計打稿 4 小時，國際認證體系，港九新界滿 HK$500 免費順豐速遞，WhatsApp 30 秒即時報價。",
+  "quickAnswers": [
+    {
+      "q": "騎馬釘小冊子印刷幾多錢一本？",
+      "a": "騎馬釘小冊子印刷 HK$6-32/本，10 本起印；"
+    },
+    {
+      "q": "印書最少要印幾多本？有冇批量優惠？",
+      "a": "五款書刊（騎馬釘書刊小冊子、無線膠裝書、精裝書、線圈筆記本、畫冊型錄）劃一 10 本起印（數碼）；"
+    },
+    {
+      "q": "騎馬釘、膠裝定精裝點揀？",
+      "a": "8-64 頁揀騎馬釘最抵，可平攤 180° 易翻閱；小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。"
+    },
+    {
+      "q": "印書邊款裝訂最抵？有冇批量價？",
+      "a": "8-64 頁揀騎馬釘書刊最抵（HK$6-32/本），可 180° 平攤；64-200 頁揀無線膠裝書（HK$16-80/本）；畫冊年鑑揀精裝書（HK$40-240/本）。五款書刊全部 10 本起印，100 本以上有階梯折扣。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "HK$2.8 起",
+      "label": "畫冊/型錄印刷低至 HK$2.8/本，印書入門冇難度"
+    },
+    {
+      "stat": "10 本起印",
+      "label": "五款書刊劃一 10 本起訂，校簿教材小批量都接得"
+    },
+    {
+      "stat": "國際認證 + FSC",
+      "label": "認證印刷廠直出，品質同環保雙重認證"
+    },
+    {
+      "stat": "48 小時",
+      "label": "畫冊類香港本地速遞到貨，DHL 全球 2-4 天"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港印書點揀？五款書刊 × 裝訂工藝 × 適用場景 × 價錢比較",
+    "columns": [
+      "品類",
+      "材質/工藝",
+      "適用場景",
+      "起訂量/價格"
+    ],
+    "rows": [
+      [
+        "騎馬釘小冊子（場刊/校簿/練習冊）",
+        "128g–157g 銅版紙或書紙，四色數碼或柯式，8-64 頁平攤 180° 翻閱",
+        "企業手冊、活動場刊、學校練習冊（校簿）、雜誌同產品目錄",
+        "10 本起、HK$6-32/本"
+      ],
+      [
+        "無線膠裝書籍",
+        "內頁 157g–200g 銅版紙/啞粉紙，書脊平整牢固，可印書名/條碼/ISBN，48-400 頁",
+        "學術論文集、年度報告、CSR 社會責任報告、文學作品集",
+        "10 本起、HK$16-80/本"
+      ],
+      [
+        "精裝書籍",
+        "2.5mm 灰紙板封面，可加燙金書名、絲帶書籤",
+        "畢業紀念冊、婚慶紀念書、家族史冊、校友會刊",
+        "10 本起、HK$40-240/本"
+      ],
+      [
+        "線圈筆記本",
+        "內頁 80g–100g 書紙或道林紙，YO 圈/螺旋裝訂可拆卸重組，180° 平攤",
+        "企業禮品、補習社教材、培訓手冊、學校紀念本",
+        "10 本起、HK$8-40/本"
+      ],
+      [
+        "畫冊/產品型錄",
+        "內頁 157g–200g 銅版紙，封面覆膜（啞膜/光膜）或燙金，騎馬釘或膠裝",
+        "攝影集、展覽圖錄、產品型錄、公司年報",
+        "10 本起、HK$2.8-1000/本"
+      ]
+    ],
+    "note": "以騎馬釘小冊子計價階梯為準：100 本有 85 折、500 本 7 折；小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。Q4 係印刷高峰期，建議提早落單；實際價錢視乎頁數、紙張同數量，以 WhatsApp 報價為準。"
+  },
+  "orderFlow": {
+    "title": "書刊訂製 6 步流程",
+    "steps": [
+      {
+        "title": "查價",
+        "desc": "WhatsApp 講低品類（騎馬釘小冊子/膠裝書/校簿練習冊）、頁數同數量，30 秒 AI 即時報價；騎馬釘小冊子 HK$6-32/本、畫冊型錄 HK$2.8-1000/本，全部 10 本起印"
+      },
+      {
+        "title": "交稿",
+        "desc": "提供 CMYK 設計檔連出血位；冇現成檔案都可以，免費排版幫你處理目錄、頁碼與章節標註"
+      },
+      {
+        "title": "校樣",
+        "desc": "免費設計打稿 4 小時，核對色稿、字體同頁序，確認冇問題先開印；Q4 係高峰期，建議提早確認檔期"
+      },
+      {
+        "title": "印刷",
+        "desc": "小批量數碼、大量柯式四色印刷；內頁 128g–200g 銅版紙或 80g–100g 書紙任揀，色彩飽和圖文清晰"
+      },
+      {
+        "title": "裝訂（騎馬釘／膠裝）",
+        "desc": "騎馬釘 8-64 頁平攤 180°；無線膠裝 48-400 頁書脊可印 ISBN；小冊子升級膠裝 +HK$30/本、升級精裝 +HK$100/本"
+      },
+      {
+        "title": "交貨",
+        "desc": "畫冊類 48 小時香港本地速遞，DHL 全球 2-4 天；港九新界滿 HK$500 免費順豐速遞"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "騎馬釘小冊子報價",
+      "message": "你好，我想印【騎馬釘小冊子】，A4 【16頁】，數量【300】本，128g銅版紙，用嚟做【活動場刊】，麻煩報價同交期，唔該！"
+    },
+    {
+      "label": "校簿練習冊批量查詢",
+      "message": "你好，我哋係【補習社】，想印【騎馬釘練習冊（校簿）】A5 【32頁】，數量【500】本，想知批量價同埋幾時交到，多謝！"
+    },
+    {
+      "label": "膠裝年報急單",
+      "message": "你好，公司【年度報告】要印【無線膠裝】A4 【100本】，書脊要印書名同年份，下星期要收貨，想問最快幾日同報價，謝謝！"
+    }
+  ],
+  "newFaqs": [
+    { "q": "騎馬釘小冊子印刷幾多錢一本？", "a": "騎馬釘小冊子印刷 HK$6-32/本，10 本起印；8-64 頁小冊子可以平攤 180° 翻閱，最啱活動場刊、校簿練習冊、產品目錄同宣傳冊子。實價視乎頁數、紙張（128g–157g 銅版紙或書紙）同數量，WhatsApp 30 秒即時報價。" },
+    { "q": "印書最少要印幾多本？有冇批量優惠？", "a": "五款書刊（騎馬釘書刊小冊子、無線膠裝書、精裝書、線圈筆記本、畫冊型錄）劃一 10 本起印；以騎馬釘小冊子為例，100 本有 85 折、500 本 7 折。學校教材、補習社練習冊批量單，WhatsApp 攞分層報價。" },
+    { "q": "騎馬釘、膠裝定精裝點揀？", "a": "8-64 頁揀騎馬釘最抵，可平攤 180° 易翻閱；48-400 頁用無線膠裝，書脊平整牢固，可以印書名、條碼同 ISBN；畢業紀念冊、婚慶紀念書等珍藏版揀精裝，2.5mm 灰紙板封面可加燙金書名。小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。" },
+    {
+      "q": "騎馬釘書刊係咩？邊啲書刊適合用騎馬釘？",
+      "a": "騎馬釘即係喺書脊中央用釘書釘裝訂，8-64 頁小冊子可以完全平攤 180°，翻閱方便、成本最低；活動場刊、校簿練習冊、產品目錄、宣傳冊子都啱用。HK$6-32/本，10 本起印。"
+    },
+    {
+      "q": "校簿／練習冊可以批量印嗎？",
+      "a": "可以。騎馬釘練習冊用 128g–157g 銅版紙或書紙，10 本起印，100 本有 85 折、500 本 7 折；補習社教材、學校作業簿、培訓手冊批量單，WhatsApp 攞分層報價。"
+    },
+    {
+      "q": "印書交期要幾耐？",
+      "a": "免費設計打稿 4 小時，確認校樣後開印；畫冊類香港本地速遞 48 小時到貨，DHL 全球 2-4 天，港九新界滿 HK$500 免費順豐速遞。Q4 係印刷高峰期，建議提早落單。"
+    },
+    {
+      "q": "膠裝同精裝有咩分別？",
+      "a": "無線膠裝書脊平整牢固，48-400 頁適用，可印書名/條碼/ISBN，HK$16-80/本；精裝用 2.5mm 灰紙板封面，可加燙金書名同絲帶書籤，HK$40-240/本，適合畢業紀念冊、婚慶紀念書。小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。"
+    }
+  ]
+};
+
+categoryConversionBlocks['books:en'] = {
+  "category": "books",
+  "locale": "en",
+  "title": "Saddle Stitch Booklet Printing from $1.20 | 10 MOQ + Free Proof | ZprintPro",
+  "metaDescription": "Custom saddle stitch booklet printing from $1.20 with a 10-copy MOQ. Saddle stitch booklets, catalog book printing, exercise books, perfect bound & hardcover books. Free proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. internationally certified + FSC-certified.",
+  "quickAnswers": [
+    {
+      "q": "How much does booklet printing cost?",
+      "a": "Saddle stitch booklets run US$1.84-7.36 per copy with a 10-copy MOQ (8-64 pages). Perfect bound books and catalog book printing start at US$4.6 per copy from 10 copies — WhatsApp for a 30-second AI quote."
+    },
+    {
+      "q": "Where can I get book printing in Hong Kong with a low MOQ?",
+      "a": "ZprintPro prints saddle stitch booklets from 10 copies, plus perfect bound, spiral and hardcover books from 10 copies — with volume discounts at 500 / 1,000 / 5,000 copies and DHL 2-4 day global delivery."
+    },
+    {
+      "q": "How fast can you print and ship custom books?",
+      "a": "Free design proof in 4 hours, production starts once you approve, then DHL worldwide in 2-4 days. US orders over $99 ship free, and the facility is internationally certified + FSC-certified."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "US$1.84",
+      "label": "Saddle stitch booklet printing, per copy",
+      "desc": "10-copy MOQ, 8-64 pages; volume discounts at 500 / 1,000 / 5,000 copies."
+    },
+    {
+      "stat": "10 copies",
+      "label": "Lowest book MOQ — saddle stitch",
+      "desc": "Perfect bound, spiral and hardcover books start at 10 copies."
+    },
+    {
+      "stat": "4,820+",
+      "label": "Orders completed for schools, publishers & brands",
+      "desc": "From exercise books and workbooks to annual reports and product catalogs."
+    },
+    {
+      "stat": "Quality Certified + FSC",
+      "label": "Certified printing quality & responsible paper",
+      "desc": "Four-color printing with 95%+ color accuracy for catalogs and photo books."
+    }
+  ],
+  "comparisonTable": {
+    "title": "Custom Book Printing Options Compared: Saddle Stitch, Perfect Bound, Spiral & Hardcover",
+    "columns": [
+      "Binding Option",
+      "Page Count",
+      "Price (Per Copy)",
+      "MOQ",
+      "Best For"
+    ],
+    "rows": [
+      [
+        "Saddle stitch booklets",
+        "8-64 pages",
+        "US$1.84-7.36",
+        "10 copies",
+        "Event programs, exercise books, company profile booklets, zines"
+      ],
+      [
+        "Perfect bound books",
+        "48-400 pages",
+        "From US$4.6",
+        "10 copies",
+        "Annual reports, CSR reports, product catalogs, literary collections"
+      ],
+      [
+        "Spiral notebooks & manuals",
+        "Lay-flat, fully removable pages",
+        "From US$2.76",
+        "10 copies",
+        "Training handbooks, workbooks, corporate gifts"
+      ],
+      [
+        "Hardcover books",
+        "2.5mm grayboard case",
+        "From US$13.8",
+        "10 copies",
+        "Yearbooks, photo books, premium keepsakes"
+      ]
+    ],
+    "note": "Prices are from ZprintPro's live catalog; final quotes vary with page count, paper stock and quantity. Get a 30-second AI quote on WhatsApp before you commit."
+  },
+  "orderFlow": {
+    "title": "How to Order Custom Booklets & Books in 6 Steps",
+    "steps": [
+      {
+        "title": "Pick Your Binding",
+        "desc": "Choose saddle stitch (8-64 pages), perfect bound, spiral or hardcover — we match the binding to your page count and budget."
+      },
+      {
+        "title": "Send Your Artwork",
+        "desc": "Upload your PDF or AI files on WhatsApp; free layout support for catalogs, page numbers and chapter markers."
+      },
+      {
+        "title": "Approve Your Proof",
+        "desc": "Free digital proof within 4 hours — nothing goes to press until you say go."
+      },
+      {
+        "title": "We Print",
+        "desc": "Four-color printing with 95%+ color accuracy; small runs print digitally, large runs on offset."
+      },
+      {
+        "title": "Bind & Finish",
+        "desc": "Saddle stitch, PUR perfect binding, spiral rings or 2.5mm grayboard hardcover — optional foil stamping, spot UV and lamination."
+      },
+      {
+        "title": "Delivery to Your Door",
+        "desc": "DHL worldwide in 2-4 days and free US shipping over $99. Reorders are one WhatsApp message away."
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Booklet Quote",
+      "message": "Hi ZprintPro! I'd like a quote for saddle stitch booklet printing:\n- Page count: [e.g. 24 pages]\n- Size: [e.g. A4 / A5]\n- Quantity: [e.g. 500 copies]\n- Paper: [e.g. 157gsm coated]\n- Needed by: [date]\n\nPlease send the price and delivery timeline. Thanks!"
+    },
+    {
+      "label": "Catalog & Book Quote",
+      "message": "Hi ZprintPro! I'm looking for a quote for catalog book printing:\n- Book type: [e.g. product catalog / annual report / exercise books]\n- Binding: [e.g. saddle stitch / perfect bound / hardcover]\n- Page count: [e.g. 48 pages]\n- Quantity: [e.g. 1,000 copies]\n- Ship to: [city, country]\n\nPlease quote the best price. Thank you!"
+    },
+    {
+      "label": "Rush Order",
+      "message": "Hi ZprintPro! I have a rush book printing request:\n- Item: [e.g. 200 saddle stitch booklets, 32 pages]\n- Deadline: [date]\n- Artwork: [print-ready / needs design help]\n\nCan you meet this timeline? Please confirm cost ASAP. Thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "What is the difference between saddle stitch and perfect bound?",
+      "a": "Saddle stitch booklets (8-64 pages) are stapled and lay flat at 180° — the most economical binding. Perfect bound books use PUR adhesive for a sturdy square spine, best for 64+ page annual reports, catalogs and literary collections."
+    },
+    {
+      "q": "How much does saddle stitch booklet printing cost?",
+      "a": "US$1.84-7.36 per copy with a 10-copy MOQ, depending on page count, size and paper stock. Catalog book printing and perfect bound books start at US$4.6 per copy from 10 copies."
+    },
+    {
+      "q": "Can you print exercise books and workbooks for schools?",
+      "a": "Yes — exercise books, workbooks and training handbooks are popular saddle stitch and spiral orders, starting from 10 copies with volume discounts at 500 / 1,000 / 5,000 copies. Every order includes a free design proof within 4 hours."
+    },
+    {
+      "q": "Do you ship book printing orders to the USA?",
+      "a": "Yes. DHL worldwide delivery takes 2-4 days and US orders over $99 ship free. The facility is internationally certified + FSC-certified, and a free digital proof is ready in 4 hours before anything goes to press."
+    }
+  ]
+};
+
+categoryConversionBlocks['books:ja'] = {
+  "category": "books",
+  "locale": "ja",
+  "title": "冊子印刷｜中綴じ・無線綴じ・上製本 小ロット10冊〜｜ZprintPro",
+  "metaDescription": "教材・テキスト・冊子印刷は工場直送。中綴じ冊子は1冊￥258〜、無線綴じ書籍は1冊￥644〜、上製本は1冊￥1,932〜、カタログは1冊￥644〜。いずれも10冊からで、学校・塾・企業のテキスト印刷・製本に対応します。30秒AI無料見積もり、DHL Expressで日本全国へ2-4営業日でお届け。国際認証工場。",
+  "quickAnswers": [
+    {
+      "q": "教材やテキストの印刷はいくらから依頼できますか？",
+      "a": "ページ数・紙質・製本方法によって単価が変わるため、最終価格はお見積もり制となります。"
+    },
+    {
+      "q": "無線綴じと上製本はそれぞれ何冊から注文できますか？",
+      "a": "無線綴じ書籍は1冊￥644〜、上製本（ハードカバー）は1冊￥1,932〜で、いずれも10冊から製造します。"
+    },
+    {
+      "q": "無線綴じの小ロット製本には対応していますか？",
+      "a": "対応しています。中綴じ・無線綴じ・上製本すべて10冊からのご注文で、教材やテキストの小ロット製本にも対応します。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "10冊〜",
+      "label": "中綴じ・無線綴じ・上製本すべて小ロット発注に対応"
+    },
+    {
+      "stat": "￥258〜",
+      "label": "中綴じ冊子の1冊あたり目安価格"
+    },
+    {
+      "stat": "国際認証",
+      "label": "認証工場の品質管理のもと、教材・製本を一貫製造"
+    },
+    {
+      "stat": "2-4営業日",
+      "label": "DHL Expressによる日本への配送日数目安"
+    }
+  ],
+  "comparisonTable": {
+    "title": "教材・テキスト・冊子の製本タイプ × 仕様 × シーン別 比較表",
+    "columns": [
+      "製本タイプ",
+      "主な仕様",
+      "おすすめシーン",
+      "最小ロット／目安価格"
+    ],
+    "rows": [
+      [
+        "中綴じ冊子（8-64ページ）",
+        "128g-157gコート紙または書籍用紙・四色印刷・180°フラット開き",
+        "テキスト・ワークブック・プログラム・カタログ",
+        "10冊〜／1冊￥258〜"
+      ],
+      [
+        "無線綴じ書籍（48-400ページ）",
+        "157g-200gコート紙・平らで丈夫な背・書名・バーコード・ISBN印刷可",
+        "論文集・年次報告書・CSRレポート・配布資料",
+        "10冊〜／1冊￥644〜"
+      ],
+      [
+        "上製本（ハードカバー）",
+        "2.5mm厚のボード表紙・箔押しタイトル・リボン栞対応",
+        "卒業記念アルバム・記念誌・保存版テキスト",
+        "10冊〜／1冊￥1,932〜"
+      ],
+      [
+        "カタログ・図録",
+        "157g-200gコート紙またはマット紙・表紙はマット／光沢フィルム、箔押しも可",
+        "作品集・展覧会図録・製品カタログ",
+        "10冊〜／1冊￥644〜"
+      ],
+      [
+        "スパイラルノート（リング綴じ）",
+        "80g-100g上質紙・YOリング／スパイラル綴じ・180°平開き",
+        "研修教材・企業ノート・学校記念品",
+        "10冊〜／1冊￥386〜"
+      ]
+    ],
+    "note": "目安価格は中綴じ冊子1冊￥258〜／無線綴じ書籍1冊￥644〜／上製本1冊￥1,932〜／スパイラルノート1冊￥386〜。最終価格・納期はページ数・紙質・部数により変わるため、お見積もり制です。"
+  },
+  "orderFlow": {
+    "title": "教材・冊子印刷 6ステップ",
+    "steps": [
+      {
+        "title": "お見積もり",
+        "desc": "WhatsAppでページ数・部数・製本方法をご相談ください。10冊からの小ロットに対応し、30秒AI見積もりで概算価格と納期をご提示します"
+      },
+      {
+        "title": "データ入稿",
+        "desc": "印刷データをご入稿いただき、スタッフがページ数と製本仕様を確認します"
+      },
+      {
+        "title": "校了確認",
+        "desc": "内容と色指定をご確認いただき、校了のご承認後に印刷へ進みます"
+      },
+      {
+        "title": "印刷",
+        "desc": "FSC認証紙と国際品質管理のもとで四色印刷。本文・表紙の仕上がりを検品してから製本工程へ進みます"
+      },
+      {
+        "title": "製本（無線綴じ／上製本）",
+        "desc": "ページ数と用途に合わせて中綴じ・無線綴じ・上製本で製本し、丁合いや表紙の仕上がりを検品します"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "DHL Expressで日本へ2-4営業日でお届けします。大口部数は分割出荷にも対応できます"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "教材・テキスト見積もり",
+      "message": "教材・テキストの印刷見積もりをお願いします。商品【テキスト（A4・100ページ）】／部数【100部】／製本【無線綴じ】。1冊あたりの単価と納期を教えてください。"
+    },
+    {
+      "label": "製本仕様相談",
+      "message": "【卒業記念アルバム】の製本仕様を相談したいです。部数【10冊】、ページ数【64ページ】を想定しています。無線綴じと上製本（ハードカバー）それぞれの価格とおすすめ仕様を教えてください。"
+    },
+    {
+      "label": "小ロット急ぎ相談",
+      "message": "講習会用テキストを急ぎで作りたいです。商品【A5・24ページの中綴じ冊子】／部数【100部】。最短納期と費用を教えてください。"
+    }
+  ],
+  "newFaqs": [
+    { "q": "教材やテキストの印刷はいくらから依頼できますか？", "a": "教材・テキストでよく使われる中綴じ冊子は1冊￥258〜、ページ数の多いカタログ・図録は1冊￥644〜で、いずれも10冊から承ります。ページ数・紙質・製本方法によって単価が変わるため、最終価格はお見積もり制となります。" },
+    { "q": "無線綴じと上製本はそれぞれ何冊から注文できますか？", "a": "無線綴じ書籍は1冊￥644〜、上製本（ハードカバー）は1冊￥1,932〜で、いずれも10冊から製造します。無線綴じは48〜400ページの論文集・報告書に、上製本は卒業記念アルバムや記念誌におすすめです。国際認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。" },
+    { "q": "無線綴じの小ロット製本には対応していますか？", "a": "対応しています。中綴じ・無線綴じ・上製本すべて10冊からのご注文で、教材やテキストの小ロット製本にも対応します。ページ数と部数をいただければ30秒AI見積もりで概算価格と納期をご提示し、大口部数は段階的に単価が下がります。" },
+    {
+      "q": "教材・テキスト印刷の最小部数と目安価格を教えてください",
+      "a": "中綴じ冊子・無線綴じ書籍・上製本はいずれも10冊から承ります。目安価格は中綴じ冊子1冊￥258〜、無線綴じ1冊￥644〜、上製本1冊￥1,932〜です。ページ数・紙質・部数により単価が変わり、大口ほど単価が下がります。最終価格はお見積もり制となります。"
+    },
+    {
+      "q": "無線綴じと中綴じはどう使い分ければよいですか？",
+      "a": "8〜64ページ程度の薄い冊子は、180°フラット開きの中綴じが読みやすく経済的です。48ページ以上の論文集・報告書・配布資料は、背が平らで丈夫な無線綴じがおすすめで、書名・バーコード・ISBNの印刷にも対応します。ページ数と予算に応じて、最適な製本方法をご提案します。"
+    },
+    {
+      "q": "上製本にはどんな加工を選べますか？",
+      "a": "2.5mm厚のボード表紙にクロスまたは紙を装丁し、箔押しタイトルやリボン栞を追加できます。卒業記念アルバム・記念誌・保存版テキストに人気の仕様です。上製本は10冊から、1冊￥1,932〜で製造します。"
+    },
+    {
+      "q": "学校や塾の発注でも小ロットから注文できますか？",
+      "a": "はい。中綴じ・無線綴じ・上製本とも10冊から承りますので、講習会テキストや配布資料などの小ロットにも対応します。大口部数は段階的な数量割引が適用され、学校・塾・企業の定期発注にも対応します。国際認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。"
+    }
+  ]
+};
+
+export function getConversionBlocks(
+  categorySlug: string,
+  locale: string
+): CategoryConversionContent | null {
+  return categoryConversionBlocks[`${categorySlug}:${locale}`] || null;
+}
+
+/** 合并到 FAQPage schema 的新 FAQ */
+export function getConversionFaqs(
+  categorySlug: string,
+  locale: string
+): FaqItem[] {
+  const b = getConversionBlocks(categorySlug, locale);
+  return b?.newFaqs || [];
+}
+
+export const WHATSAPP_PHONE = '8619880851334';
+
+export function buildWhatsAppUrl(message: string): string {
+  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+}

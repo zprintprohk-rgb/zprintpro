@@ -1,0 +1,46 @@
+fix(blog)+feat(gate): 批次 A campus FAQ 格式修复 + K3 三项决策落地 (2026-09-19)
+
+【K3 决策落地 (本轮拍板)】
+1. 决策一 Pillar 字数: pillar-wordcount-targets.json status → APPROVED (采纳 12,000 目标/6,000 下限 + 季度递减)
+   · 门禁自动按当季 floor 生效 (2026Q3 floor=6,000 target=8,000), 零代码改动 (getPillarWordTarget)
+2. 决策二 cron-prompts 豁免: 确认冻结 + 附加季度 review 机制
+   · manifest 增 review_policy { last_reviewed: 2026-09-19, next_review_due: 2026-12-19, cadence: quarterly }
+   · 门童 #23 增时效判定: 过期 ≤30 天 = 🟡 WARN; 过期 >30 天 = 🔴 FAIL 拒 push
+   · 口径: 豁免「在 review 之前有效」, 不是永久有效 (防僵尸配置)
+3. bypass 唯一入口 (评估建议): 新增 `ZP_BYPASS_REASON` 环境变量
+   · `ZP_BYPASS_REASON="<理由>" git commit --no-verify -F <msgfile>` ⇒ 理由自动落 bypass-audit.jsonl
+   · 判定优先级: ZP_BYPASS_REASON > message footer > UNATTRIBUTED(警告)
+   · 台账新增 rationale_source 字段 (env / message-footer / none), 便于审计来源
+
+【批次 A campus FAQ 格式修复 (零改文案, 3 locale × 5 组 = 15 组)】
+· 转换: `<ol><li><strong>问?</strong> 答</li></ol>` → `<p><strong>Qn: 问?</strong><br/>A: 答</p>`
+· 前置断言 (硬闸门): 转换前后**全文可见文本逐字等价** (归一化掉新增标签令牌 Qn:/A: 后比对)
+  zh-hk 14,663 / en 25,807 / ja 16,049 字 —— 前=后, 等价 ✅; 断言不过则 abort 不写盘
+· 幂等: 复跑 0 组 (已含目标格式即跳过); diff 仅 4 行 (3 文件)
+· 效果: campus 段 9 由 FAIL → PASS (3 locale, 5 组可解析 Q&A) ⇒ 线上 FAQPage 将由 page.tsx 生成
+  (线上生效待 push+deploy; 本轮仅本地可验证)
+· 工具留档: .hermes/_probe-pb/apply-campus-faq-format.mjs (--apply / dry-run 双模) + dump-campus-faq.mjs
+
+【门禁加固补丁 (评估指出项)】
+· 基线解析加 BOM 剥离 + 解析失败显式报警 (实测踩到: PS `Set-Content -Encoding UTF8` 写 BOM
+  ⇒ JSON.parse 抛错被静默吞 ⇒ 「基线 49」变「基线 0」⇒ 49 条存量被当新增, 假拦死全站)
+· 基线自动递减落地并**实测生效**: 基线 49 → 46 (移除 campus 段9 已修 3 条), 台账已落盘
+
+【数据来源】
+- campus 转换前后文本等价断言输出 (zh-hk 14,663 / en 25,807 / ja 16,049, 前=后)
+- 门童实测: blog-quality-12-rules-guard --baseline (基线 49 → 现存 46 / 已修 3 / 新增 0)
+- blog-standard-guard (季度目标生效: 0 条字数 FAIL, 仅 3 条 campus title 当量红 + 4 条字数目标 WARN)
+- cron-prompts-exemption-guard (声明集合 = 实际集合 ✅ + review 时效正常)
+- bypass-audit-guard --since=3 (0 命中)
+- K3 2026-09-19 评估回报: 决策一/二 + C 二期建议
+
+【未做 / 待授权】
+· foil × 3 正文缺 FAQ 段 (新写内容, 与 campus 格式修复分开批次) —— 待指令包授权
+· 13 篇 content 内嵌 JSON-LD 去重 (顺序铁律: 先确认 page.tsx 生成区已有 FAQPage 再 strip;
+  campus 已就地合规, strip 前仍须 curl 快照 + diff 验收)
+· C 二期 run-context 消费追踪注入 (评估建议列为 B 批前置条件) —— 下一步
+· safecommit / session-id 断言 (评估建议的结构性防护) —— 下一步
+
+Bypass-rationale: 本批含 .hermes/reports 证据类 JSON 与门禁基础设施改动, pre-commit 红规则
+ (SOP10_CERT_NO 对历史字面) 会硬拦; 本批改动集 = 1 src/data 内容格式修复 (纯包装标签, 文本等价已断言)
+ + 门禁/台账/配置; 无价格/文案口径变更

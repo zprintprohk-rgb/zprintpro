@@ -1,0 +1,1993 @@
+{
+ "method": "B",
+ "authority": "en 语系值结构化解析 (locale 键作用域; 别名键按语系归属, 不按字段名猜测)",
+ "files": {
+  "src/data/blog-data/en.json": {
+   "chars": 912,
+   "byBucket": {
+    "description": 53,
+    "content": 688,
+    "category": 33,
+    "JSON-LD": 138
+   },
+   "entries": 59,
+   "values": 91
+  },
+  "src/data/category-seo-content.ts": {
+   "chars": 12,
+   "byBucket": {
+    "description": 6,
+    "content": 6
+   },
+   "entries": 6,
+   "values": 6
+  },
+  "src/data/buying-guides.ts": {
+   "chars": 38,
+   "byBucket": {
+    "其他": 38
+   },
+   "entries": 1,
+   "values": 1
+  },
+  "src/data/sku-seo-data.ts": {
+   "chars": 28,
+   "byBucket": {
+    "description": 8,
+    "title": 10,
+    "其他": 10
+   },
+   "entries": 8,
+   "values": 8
+  },
+  "src/app/[locale]/payment-methods/page.tsx": {
+   "chars": 16,
+   "byBucket": {
+    "其他": 13,
+    "content": 3
+   },
+   "entries": 2,
+   "values": 2
+  },
+  "src/components/layout/Footer.tsx": {
+   "chars": 12,
+   "byBucket": {
+    "其他": 12
+   },
+   "entries": 1,
+   "values": 1
+  },
+  "src/app/[locale]/category/[slug]/page.tsx": {
+   "chars": 10,
+   "byBucket": {
+    "其他": 10
+   },
+   "entries": 2,
+   "values": 2
+  },
+  "src/data/blog-posts.ts": {
+   "chars": 4,
+   "byBucket": {
+    "其他": 4
+   },
+   "entries": 1,
+   "values": 1
+  }
+ },
+ "totals": {
+  "description": {
+   "chars": 67,
+   "entryCount": 12,
+   "valueCount": 12
+  },
+  "content": {
+   "chars": 697,
+   "entryCount": 41,
+   "valueCount": 41
+  },
+  "undefined": {
+   "chars": 0,
+   "entryCount": 1,
+   "valueCount": 33
+  },
+  "category": {
+   "chars": 33,
+   "entryCount": 9,
+   "valueCount": 9
+  },
+  "JSON-LD": {
+   "chars": 138,
+   "entryCount": 5,
+   "valueCount": 5
+  },
+  "其他": {
+   "chars": 87,
+   "entryCount": 10,
+   "valueCount": 10
+  },
+  "title": {
+   "chars": 10,
+   "entryCount": 2,
+   "valueCount": 2
+  }
+ },
+ "grand": {
+  "chars": 1032
+ },
+ "rendersChineseFAQ": {
+  "chars": 311,
+  "values": 7,
+  "detail": [
+   {
+    "file": "src/data/blog-data/en.json",
+    "field": "content",
+    "lines": [
+     8
+    ],
+    "chars": 18,
+    "reason": "html-QA-block@4138"
+   },
+   {
+    "file": "src/data/blog-data/en.json",
+    "field": "content",
+    "lines": [
+     166
+    ],
+    "chars": 12,
+    "reason": "html-QA-block@4940"
+   },
+   {
+    "file": "src/data/blog-data/en.json",
+    "field": "content",
+    "lines": [
+     207
+    ],
+    "chars": 50,
+    "reason": "html-QA-block@12057 + html-QA-block@12637"
+   },
+   {
+    "file": "src/data/blog-data/en.json",
+    "field": "content",
+    "lines": [
+     231
+    ],
+    "chars": 12,
+    "reason": "html-QA-block@9904"
+   },
+   {
+    "file": "src/data/blog-data/en.json",
+    "field": "content",
+    "lines": [
+     393
+    ],
+    "chars": 6,
+    "reason": "html-QA-block@4935"
+   },
+   {
+    "file": "src/data/blog-data/en.json",
+    "field": "content",
+    "lines": [
+     580
+    ],
+    "chars": 95,
+    "reason": "html-QA-block@15463"
+   },
+   {
+    "file": "src/data/blog-data/en.json",
+    "field": "content",
+    "lines": [
+     612
+    ],
+    "chars": 118,
+    "reason": "html-QA-block@22017"
+   }
+  ]
+ },
+ "records": [
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "description",
+   "keys": "hong-kong-printing-guide.description",
+   "bucket": "description",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    5
+   ],
+   "excerpt": "\"description\": \"Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day",
+   "arrayElement": false,
+   "valueSpan": [
+    213,
+    462
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "hong-kong-printing-guide.content",
+   "bucket": "content",
+   "chars": 18,
+   "charList": "進口印刷設備進口印刷設備進口印刷設備",
+   "lines": [
+    8
+   ],
+   "excerpt": "\"content\": \"<p>US small business and DTC brand owners order custom stickers, packaging boxes, and labels weekly from Asia factory-direct printing suppliers. With hundreds of competing suppliers — Stic",
+   "arrayElement": false,
+   "valueSpan": [
+    536,
+    5354
+   ],
+   "rendersChineseFAQ": true
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "design-file-specs.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    16
+   ],
+   "excerpt": "\"content\": \"<p>Many designers and corporate marketing teams fa issues when preparing print files: white edges appearing on finished prints, blurry images, color vastly different from screen — most com",
+   "arrayElement": false,
+   "valueSpan": [
+    5691,
+    10848
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "brand-materials-checklist.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    24
+   ],
+   "excerpt": "\"content\": \"<p>Brand image building needs systematic material support. From a sticker to product packaging, every touchpoint is a brand-to-customer communication opportunity. This article provides a c",
+   "arrayElement": false,
+   "valueSpan": [
+    11182,
+    16378
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "packaging-trends.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    56
+   ],
+   "excerpt": "\"content\": \"<p>In competitive retail, packaging is both protection and a brand's first touchpoint with consumers. What new directions will packaging design take in 2024-2026? This article systematical",
+   "arrayElement": false,
+   "valueSpan": [
+    40356,
+    45803
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "cmyk-guide.content",
+   "bucket": "content",
+   "chars": 30,
+   "charList": "進口印刷設備進口印刷設備進口印刷設備進口印刷設備進口印刷設備",
+   "lines": [
+    64
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>TL;DR:</strong> CMYK vs RGB is the core decision for print color quality control. CMYK 4-color overprint reproduces ~85% of s",
+   "arrayElement": false,
+   "valueSpan": [
+    46072,
+    58661
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "paper-materials.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    72
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>TL;DR:</strong> Choose paper by use case first: weight for function, coating for finish, budget for volume. This guide covers",
+   "arrayElement": false,
+   "valueSpan": [
+    58943,
+    73145
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "eco-printing.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    80
+   ],
+   "excerpt": "\"content\": \"<p>Sustainability is now a global trend. More companies embed ESG (Environmental, Social, Governance) into core strategy, and eco-printing is a key part of that. This article provides syst",
+   "arrayElement": false,
+   "valueSpan": [
+    73419,
+    79135
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "food-packaging-printing-guide.content",
+   "bucket": "content",
+   "chars": 21,
+   "charList": "進口印刷設備國際認證體系認證紙國際認證體系",
+   "lines": [
+    96
+   ],
+   "excerpt": "\"content\": \"<p><strong>Food packaging printing</strong> is the most strictly regulated branch of <a href=\\\"/en/category/packaging/\\\">packaging box</a> production. The global food packaging market reac",
+   "arrayElement": false,
+   "valueSpan": [
+    91954,
+    107161
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "paper-bag-printing-guide.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    104
+   ],
+   "excerpt": "\"content\": \"<p>Paper bags are a critical part of brand packaging. Whether you run a boutique, gift store, café, or event business, a well-crafted <a href=\\\"/en/product/kraft-paper-bags/\\\">branded pape",
+   "arrayElement": false,
+   "valueSpan": [
+    107555,
+    130894
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[0]",
+   "keys": [
+    "poster-printing-guide",
+    "schemas",
+    "[0]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[1]",
+   "keys": [
+    "poster-printing-guide",
+    "schemas",
+    "[1]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[2]",
+   "keys": [
+    "poster-printing-guide",
+    "schemas",
+    "[2]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[3]",
+   "keys": [
+    "poster-printing-guide",
+    "schemas",
+    "[3]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[4]",
+   "keys": [
+    "poster-printing-guide",
+    "schemas",
+    "[4]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "category",
+   "keys": "restaurant-opening-flyer-printing-guide.category",
+   "bucket": "category",
+   "chars": 4,
+   "charList": "餐飲外賣",
+   "lines": [
+    125
+   ],
+   "excerpt": "\"category\": \"餐飲外賣\",",
+   "arrayElement": false,
+   "valueSpan": [
+    145259,
+    145263
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "description",
+   "keys": "company-intro.description",
+   "bucket": "description",
+   "chars": 6,
+   "charList": "進口印刷設備",
+   "lines": [
+    131
+   ],
+   "excerpt": "\"description\": \"ZprintPro features 進口印刷設備 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing solutions.\",",
+   "arrayElement": false,
+   "valueSpan": [
+    163568,
+    163707
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "company-intro.content",
+   "bucket": "content",
+   "chars": 24,
+   "charList": "進口印刷設備進口印刷設備進口印刷設備國際認證體系",
+   "lines": [
+    134
+   ],
+   "excerpt": "\"content\": \"<p>ZprintPro is a Shenzhen-rooted, globally-serving printing enterprise with 15 years of expertise. From corporate stationery to retail packaging, this article gives an in-depth look at ou",
+   "arrayElement": false,
+   "valueSpan": [
+    163784,
+    167469
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "packaging-box-custom-guide.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    137
+   ],
+   "excerpt": "\"content\": \"<p>Custom packaging box printing — from lid-base boxes to mailer boxes, white card to specialty paper, foil stamping to embossing. This guide decodes box styles, paper materials, finish co",
+   "arrayElement": false,
+   "valueSpan": [
+    167526,
+    181761
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "category",
+   "keys": "pet-food-sticker-printing-guide.category",
+   "bucket": "category",
+   "chars": 2,
+   "charList": "寵物",
+   "lines": [
+    143
+   ],
+   "excerpt": "\"category\": \"寵物\",",
+   "arrayElement": false,
+   "valueSpan": [
+    182210,
+    182212
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "apparel-shopping-bag-printing-guide.content",
+   "bucket": "content",
+   "chars": 12,
+   "charList": "國際認證體系國際認證體系",
+   "lines": [
+    147
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>TL;DR:</strong> Apparel, streetwear, and boutique owners — a premium branded paper bag drives Instagram, TikTok, and repeat s",
+   "arrayElement": false,
+   "valueSpan": [
+    187884,
+    200157
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "cross-border-ecommerce-shipping-box-guide.content",
+   "bucket": "content",
+   "chars": 12,
+   "charList": "國際認證體系國際認證體系",
+   "lines": [
+    150
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>TL;DR:</strong> Shopify, Amazon FBA, Etsy, and Lazada sellers — a premium printed cross-border e-commerce shipping box decide",
+   "arrayElement": false,
+   "valueSpan": [
+    200229,
+    213212
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "pharmaceutical-label-printing-guide.content",
+   "bucket": "content",
+   "chars": 12,
+   "charList": "國際認證體系國際認證體系",
+   "lines": [
+    166
+   ],
+   "excerpt": "\"content\": \"<p>The pharmaceutical and supplement industry is one of the most strictly regulated printing applications worldwide. A <a href=\\\"en/category/stickers/\\\">pharmaceutical label</a> not only a",
+   "arrayElement": false,
+   "valueSpan": [
+    221510,
+    227831
+   ],
+   "rendersChineseFAQ": true
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "category",
+   "keys": "cosmetics-packaging-box-printing-guide.category",
+   "bucket": "category",
+   "chars": 4,
+   "charList": "美妝護膚",
+   "lines": [
+    180
+   ],
+   "excerpt": "\"category\": \"美妝護膚\",",
+   "arrayElement": false,
+   "valueSpan": [
+    234808,
+    234812
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "cosmetics-packaging-box-printing-guide.content",
+   "bucket": "content",
+   "chars": 12,
+   "charList": "國際認證體系國際認證體系",
+   "lines": [
+    181
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>TL;DR:</strong> Cosmetic packaging boxes are the first impression of any skincare brand. 3 main box styles (lid-base / magnet",
+   "arrayElement": false,
+   "valueSpan": [
+    234831,
+    247772
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "tea-beverage-gift-box-printing-guide.content",
+   "bucket": "content",
+   "chars": 9,
+   "charList": "坑紙段國際認證體系",
+   "lines": [
+    188
+   ],
+   "excerpt": "\"content\": \"<p><span class=\\\"text-[#1A56DB] font-medium text-lg\\\">Key Takeaways:</span> Tea and beverage brand gift box printing drives premium unboxing for bubble tea, loose leaf tea, and DTC tea e-c",
+   "arrayElement": false,
+   "valueSpan": [
+    248288,
+    260573
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "restaurant-menu-printing-guide.content",
+   "bucket": "content",
+   "chars": 50,
+   "charList": "認證紙國際認證體系進口印刷設備進口印刷設備餐牌認證紙進口印刷設備急件截單國際認證體系餐牌進口印刷設備",
+   "lines": [
+    207
+   ],
+   "excerpt": "\"content\": \"<p>The 2026 US F&B industry is entering a new era of experience upgrade. A menu is no longer a sheet of paper — it is the \\\"last gate\\\" of order decisions and an extension of brand identit",
+   "arrayElement": false,
+   "valueSpan": [
+    274748,
+    290987
+   ],
+   "rendersChineseFAQ": true
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "graduation-yearbook-printing-guide.content",
+   "bucket": "content",
+   "chars": 12,
+   "charList": "進口印刷設備進口印刷設備",
+   "lines": [
+    231
+   ],
+   "excerpt": "\"content\": \"<p>US high school yearbook season runs from August build kickoff through May graduation, and the Class of 2026 is the largest cohort in over a decade with 3.9 million projected graduates. ",
+   "arrayElement": false,
+   "valueSpan": [
+    311568,
+    323628
+   ],
+   "rendersChineseFAQ": true
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "wedding-invitation-envelope-printing-guide.content",
+   "bucket": "content",
+   "chars": 27,
+   "charList": "認證紙國際認證體系進口印刷設備認證紙進口印刷設備万邑通",
+   "lines": [
+    255
+   ],
+   "excerpt": "\"content\": \"<p>The US wedding invitation market is valued at US$3.1 billion in 2026 with 2.4 million weddings annually. Engaged couples, wedding planners, and stationery designers know that the envelo",
+   "arrayElement": false,
+   "valueSpan": [
+    347139,
+    365553
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "baby-product-label-sticker-printing-guide.content",
+   "bucket": "content",
+   "chars": 8,
+   "charList": "國際認證體系衍生",
+   "lines": [
+    311
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>TL;DR:</strong> Baby brand owners (infant formula, baby food, baby skincare, maternal nutrition) — an FDA-compliant, BPA-free",
+   "arrayElement": false,
+   "valueSpan": [
+    416277,
+    428254
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "category",
+   "keys": "baby-food-packaging-box-printing-guide.category",
+   "bucket": "category",
+   "chars": 4,
+   "charList": "母嬰食品",
+   "lines": [
+    376
+   ],
+   "excerpt": "\"category\": \"母嬰食品\",",
+   "arrayElement": false,
+   "valueSpan": [
+    490081,
+    490085
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "category",
+   "keys": "real-estate-flyer-printing-guide.category",
+   "bucket": "category",
+   "chars": 3,
+   "charList": "房地產",
+   "lines": [
+    384
+   ],
+   "excerpt": "\"category\": \"房地產\",",
+   "arrayElement": false,
+   "valueSpan": [
+    496231,
+    496234
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "category",
+   "keys": "medical-device-packaging-box-guide.category",
+   "bucket": "category",
+   "chars": 4,
+   "charList": "醫藥保健",
+   "lines": [
+    392
+   ],
+   "excerpt": "\"category\": \"醫藥保健\",",
+   "arrayElement": false,
+   "valueSpan": [
+    503142,
+    503146
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "medical-device-packaging-box-guide.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    393
+   ],
+   "excerpt": "\"content\": \"<p>The global medical device packaging market exceeds US$60 billion in 2026, with US medical device exports growing 12% year-over-year. For medical device manufacturers, hospital suppliers",
+   "arrayElement": false,
+   "valueSpan": [
+    503165,
+    508958
+   ],
+   "rendersChineseFAQ": true
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "category",
+   "keys": "auto-parts-shopping-bag-printing-guide.category",
+   "bucket": "category",
+   "chars": 4,
+   "charList": "汽車汽配",
+   "lines": [
+    400
+   ],
+   "excerpt": "\"category\": \"汽車汽配\",",
+   "arrayElement": false,
+   "valueSpan": [
+    509446,
+    509450
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "category",
+   "keys": "sports-merchandise-gift-box-printing-guide.category",
+   "bucket": "category",
+   "chars": 4,
+   "charList": "體育賽事",
+   "lines": [
+    408
+   ],
+   "excerpt": "\"category\": \"體育賽事\",",
+   "arrayElement": false,
+   "valueSpan": [
+    516301,
+    516305
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "gang-run-card-boxes-hk-guide.content",
+   "bucket": "content",
+   "chars": 12,
+   "charList": "進口印刷設備進口印刷設備",
+   "lines": [
+    412
+   ],
+   "excerpt": "\"content\": \"<h2>Gang-Run White Card Boxes: Budget-Friendly 100-MOQ Starter for US Small Brands</h2>\\n<p>US retail boutique, skincare, IP merchandise, and gift brand owners fa a familiar dilemma when o",
+   "arrayElement": false,
+   "valueSpan": [
+    522289,
+    531406
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "custom-card-boxes-small-batch-usa.content",
+   "bucket": "content",
+   "chars": 12,
+   "charList": "國際認證體系國際認證體系",
+   "lines": [
+    420
+   ],
+   "excerpt": "\"content\": \"<h2>Custom Card Boxes for E-commerce: Why 500 MOQ Changes the Game for US DTC Brands</h2>\\n<p>US DTC brand owners and Amazon FBA sellers fa a familiar pain when launching a new SKU or refr",
+   "arrayElement": false,
+   "valueSpan": [
+    532012,
+    539820
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "cosmetic-card-boxes-gang-run-japan.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    428
+   ],
+   "excerpt": "\"content\": \"<h2>Cosmetic Card Boxes: Silver & Holographic Cardstock That Wins the 3-Second Shelf Test</h2>\\n<p>US indie cosmetics brand owners, skincare founders, serum and mask labels, and fragrance ",
+   "arrayElement": false,
+   "valueSpan": [
+    540474,
+    549579
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "same-day-flyers-printing-hong-kong-guide.content",
+   "bucket": "content",
+   "chars": 12,
+   "charList": "國際認證體系國際認證體系",
+   "lines": [
+    452
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>TL;DR:</strong> How do you print same-day flyers? Approve your artwork by noon and collect within 4-6 hours, with runs starti",
+   "arrayElement": false,
+   "valueSpan": [
+    566721,
+    585168
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "poster-size-guide.content",
+   "bucket": "JSON-LD",
+   "chars": 6,
+   "charList": "麥思印刷整合",
+   "lines": [
+    468
+   ],
+   "excerpt": "\"content\": \"<script type=\\\"application/ld+json\\\">\\n{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"A1 A2 A3 Poster Size Guide: Dimensions Chart, Uses, Material Selection | Zp",
+   "arrayElement": false,
+   "valueSpan": [
+    604603,
+    632127
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "poster-printing-price-guide.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    485
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>TL;DR:</strong> A1 (594×841 mm) vs A2 (420×594 mm) poster printing in 2026: A2 gloss art paper 128 gsm starts at <strong>$0.4",
+   "arrayElement": false,
+   "valueSpan": [
+    652574,
+    665911
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "catalog-printing-guide.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "進口印刷設備",
+   "lines": [
+    493
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>TL;DR:</strong> Custom catalog &amp; art book printing 2026 — hardcover 100 copies from $5.80/book, perfect bound from $2.30,",
+   "arrayElement": false,
+   "valueSpan": [
+    666432,
+    673005
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "wedding-invitation-pricing-guide.content",
+   "bucket": "content",
+   "chars": 36,
+   "charList": "進口印刷設備國際認證體系認證紙進口印刷設備進口印刷設備國際認證體系認證紙",
+   "lines": [
+    496
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>Quick Answer:</strong> 2026 dragon year drives <strong> HK weddings</strong>, market past HK$1.5B. ZprintPro 50-500 piece run",
+   "arrayElement": false,
+   "valueSpan": [
+    673068,
+    678592
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "wedding-table-card-printing-guide.content",
+   "bucket": "content",
+   "chars": 2,
+   "charList": "紅包",
+   "lines": [
+    503
+   ],
+   "excerpt": "\"content\": \"<p>Wedding table cards (place cards，seating charts，escort cards) are essential for any wedding with assigned seating. The 2026 average cost for 100-500 table cards is $0.40-1.20/piece, wit",
+   "arrayElement": false,
+   "valueSpan": [
+    688850,
+    694681
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "saddle-stitch-booklet-printing-guide.content",
+   "bucket": "content",
+   "chars": 5,
+   "charList": "騎馬釘中綴",
+   "lines": [
+    511
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>Key takeaway:</strong> Saddle stitch booklets print from <strong>100 copies</strong>, with 8-64 pages, <strong>US$1.84-7.36 p",
+   "arrayElement": false,
+   "valueSpan": [
+    695273,
+    710875
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "apparel-clothing-tag-printing-guide.content",
+   "bucket": "content",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    531
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>Key takeaway:</strong> Custom apparel hang tags from 100 MOQ, 8 materials (coated / kraft / PVC / specialty / matte / recycle",
+   "arrayElement": false,
+   "valueSpan": [
+    726016,
+    731624
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[0]",
+   "keys": [
+    "packaging-box-pricing-2026",
+    "schemas",
+    "[0]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[1]",
+   "keys": [
+    "packaging-box-pricing-2026",
+    "schemas",
+    "[1]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[2]",
+   "keys": [
+    "packaging-box-pricing-2026",
+    "schemas",
+    "[2]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[3]",
+   "keys": [
+    "packaging-box-pricing-2026",
+    "schemas",
+    "[3]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[4]",
+   "keys": [
+    "packaging-box-pricing-2026",
+    "schemas",
+    "[4]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "2027-monthly-calendar-printing-timetable.content",
+   "bucket": "content",
+   "chars": 3,
+   "charList": "核心頁",
+   "lines": [
+    563
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>Quick Answer:</strong> 2027 calendar printing <strong>hard deadline: September 15, 2026</strong> for December 2026 Christmas ",
+   "arrayElement": false,
+   "valueSpan": [
+    768787,
+    774476
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "description",
+   "keys": "rush-printing-delivery-guide.description",
+   "bucket": "description",
+   "chars": 10,
+   "charList": "急件截單國際認證體系",
+   "lines": [
+    577
+   ],
+   "excerpt": "\"description\": \"Rush printing delivery 2026 US: FedEx Express 2-day, DHL 2-4 day, USPS Priority 1-3 day, ZprintPro 急件 18:00 截單, 4 cut-off tiers, 4 cost tiers, 4 use cases, 4 FAQs, factory-direct prici",
+   "arrayElement": false,
+   "valueSpan": [
+    786827,
+    787085
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "rush-printing-delivery-guide.content",
+   "bucket": "content",
+   "chars": 95,
+   "charList": "急件截單急件截單急件截單急件截單急件截單進口印刷設備國際認證體系認證紙急件截單急件截單急件截單急件截單急件截單急件截單急件截單急件截單國際認證體系認證紙急件截單國際認證體系認證紙進口印刷設備",
+   "lines": [
+    580
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>Quick Answer:</strong> Rush printing delivery in the US 2026: fastest is <strong>FedEx Express 2-day</strong> for cross-count",
+   "arrayElement": false,
+   "valueSpan": [
+    787163,
+    805974
+   ],
+   "rendersChineseFAQ": true
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "packaging-box-price-2026.content",
+   "bucket": "content",
+   "chars": 40,
+   "charList": "認證紙認證紙急件截單認證紙國際認證體系進口印刷設備國際認證體系認證紙進口印刷設備",
+   "lines": [
+    588
+   ],
+   "excerpt": "\"content\": \"<p class=\\\"text-base text-[#1A56DB] font-medium mb-4\\\"><strong>Quick Answer:</strong> Packaging box printing pricing 2026 US: <strong>500 pcs from $0.45-1.80/box</strong>, 4 from $0.30-1.2",
+   "arrayElement": false,
+   "valueSpan": [
+    806515,
+    828136
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "description",
+   "keys": "sticker-material-pvc-vinyl-removable.description",
+   "bucket": "description",
+   "chars": 6,
+   "charList": "國際認證體系",
+   "lines": [
+    593
+   ],
+   "excerpt": "\"description\": \"Which waterproof sticker material? 4 stocks compared (PVC vinyl 3-yr outdoor / clear vinyl 90% transparency / removable no residue / hot foil finishing)，100 MOQ from $0.045 USD/pc，5 us",
+   "arrayElement": false,
+   "valueSpan": [
+    828376,
+    828748
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[0]",
+   "keys": [
+    "sticker-material-pvc-vinyl-removable",
+    "schemas",
+    "[0]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[1]",
+   "keys": [
+    "sticker-material-pvc-vinyl-removable",
+    "schemas",
+    "[1]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[2]",
+   "keys": [
+    "sticker-material-pvc-vinyl-removable",
+    "schemas",
+    "[2]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[3]",
+   "keys": [
+    "sticker-material-pvc-vinyl-removable",
+    "schemas",
+    "[3]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[4]",
+   "keys": [
+    "sticker-material-pvc-vinyl-removable",
+    "schemas",
+    "[4]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "description",
+   "keys": "certificate-printing-guide.description",
+   "bucket": "description",
+   "chars": 12,
+   "charList": "進口印刷設備國際認證體系",
+   "lines": [
+    609
+   ],
+   "excerpt": "\"description\": \"2026 Certificate Printing 8000 word guide: 7 scenarios (academic/corporate/institutional/event/training/wedding/medical)，4 materials (200-300gsm C2S/parchment/cotton/specialty)，4 finis",
+   "arrayElement": false,
+   "valueSpan": [
+    854968,
+    855433
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "certificate-printing-guide.content",
+   "bucket": "content",
+   "chars": 118,
+   "charList": "進口印刷設備國際認證體系進口印刷設備認證紙國際認證體系國際認證體系國際認證體系認證紙進口印刷設備國際認證體系認證紙進口印刷設備進口印刷設備進口印刷設備進口印刷設備國際認證體系急件截單認證紙進口印刷設備認證紙進口印刷設備認證紙國際認證體系",
+   "lines": [
+    612
+   ],
+   "excerpt": "\"content\": \"<p>ZprintPro's 2026 Certificate Printing Guide: 7 scenarios (academic/corporate/institutional/event/training/wedding/medical)，4 materials (200-300gsm art card/parchment/cotton/specialty)，4",
+   "arrayElement": false,
+   "valueSpan": [
+    855506,
+    884245
+   ],
+   "rendersChineseFAQ": true
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "description",
+   "keys": "instant-printing-30s-ai-quote-flow.description",
+   "bucket": "description",
+   "chars": 9,
+   "charList": "國際認證體系認證紙",
+   "lines": [
+    617
+   ],
+   "excerpt": "\"description\": \"Rush order FAQ answered: where is fastest, exact price, cutoff time. ZprintPro 30-second AI quote, 18:00 cutoff, next-day 12:00 SF Express, DHL 2-4 day international, 100 MOQ from HK$0",
+   "arrayElement": false,
+   "valueSpan": [
+    884469,
+    884723
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "instant-printing-30s-ai-quote-flow.content",
+   "bucket": "content",
+   "chars": 30,
+   "charList": "進口印刷設備進口印刷設備國際認證體系認證紙國際認證體系認證紙",
+   "lines": [
+    620
+   ],
+   "excerpt": "\"content\": \"<p>Need 200 C4 envelopes for a 9 AM contract meeting. ZprintPro's 30-second AI quote flow answers three pain points: fastest delivery, exact price, cutoff time. Confirm by noon, ship same ",
+   "arrayElement": false,
+   "valueSpan": [
+    884796,
+    890187
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[0]",
+   "keys": [
+    "foil-stamping-3-applications-2026",
+    "schemas",
+    "[0]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[1]",
+   "keys": [
+    "foil-stamping-3-applications-2026",
+    "schemas",
+    "[1]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[2]",
+   "keys": [
+    "foil-stamping-3-applications-2026",
+    "schemas",
+    "[2]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[3]",
+   "keys": [
+    "foil-stamping-3-applications-2026",
+    "schemas",
+    "[3]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[4]",
+   "keys": [
+    "foil-stamping-3-applications-2026",
+    "schemas",
+    "[4]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "campus-education-printing-pillar-guide.content",
+   "bucket": "JSON-LD",
+   "chars": 92,
+   "charList": "细分證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索答案答案答案答案答案答案答案答案答案答案答案答案",
+   "lines": [
+    644
+   ],
+   "excerpt": "\"content\": \"<script type=\\\"application/ld+json\\\">\\n{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Campus education printing Sept back-to-school complete guide: 5 Products x ",
+   "arrayElement": false,
+   "valueSpan": [
+    932388,
+    966111
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[0]",
+   "keys": [
+    "campus-education-printing-pillar-guide",
+    "schemas",
+    "[0]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[1]",
+   "keys": [
+    "campus-education-printing-pillar-guide",
+    "schemas",
+    "[1]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[2]",
+   "keys": [
+    "campus-education-printing-pillar-guide",
+    "schemas",
+    "[2]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[3]",
+   "keys": [
+    "campus-education-printing-pillar-guide",
+    "schemas",
+    "[3]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[4]",
+   "keys": [
+    "campus-education-printing-pillar-guide",
+    "schemas",
+    "[4]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[0]",
+   "keys": [
+    "kraft-paper-box-types-comparison-2026",
+    "schemas",
+    "[0]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[1]",
+   "keys": [
+    "kraft-paper-box-types-comparison-2026",
+    "schemas",
+    "[1]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[2]",
+   "keys": [
+    "kraft-paper-box-types-comparison-2026",
+    "schemas",
+    "[2]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[3]",
+   "keys": [
+    "kraft-paper-box-types-comparison-2026",
+    "schemas",
+    "[3]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "hong-kong-printing-cost-baseline-2026.content",
+   "bucket": "JSON-LD",
+   "chars": 6,
+   "charList": "並製本上製本",
+   "lines": [
+    677
+   ],
+   "excerpt": "\"content\": \"<script type=\\\"application/ld+json\\\">\\n{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"2026 Hong Kong Printing Cost Baseline Report: 99-SKU Price Data for Sticker",
+   "arrayElement": false,
+   "valueSpan": [
+    990689,
+    1011664
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[0]",
+   "keys": [
+    "hong-kong-printing-cost-baseline-2026",
+    "schemas",
+    "[0]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[1]",
+   "keys": [
+    "hong-kong-printing-cost-baseline-2026",
+    "schemas",
+    "[1]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[2]",
+   "keys": [
+    "hong-kong-printing-cost-baseline-2026",
+    "schemas",
+    "[2]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "[3]",
+   "keys": [
+    "hong-kong-printing-cost-baseline-2026",
+    "schemas",
+    "[3]"
+   ],
+   "error": "定位失败",
+   "chars": 0,
+   "lines": [],
+   "excerpt": ""
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "print-specifications-reference-guide-2026.content",
+   "bucket": "JSON-LD",
+   "chars": 18,
+   "charList": "證書編號備索證書編號備索證書編號備索",
+   "lines": [
+    691
+   ],
+   "excerpt": "\"content\": \"<script type=\\\"application/ld+json\\\">\\n{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Print Specifications Complete Guide 2026: A1-A6 Sizes, CMYK Colors & 6 Prin",
+   "arrayElement": false,
+   "valueSpan": [
+    1012532,
+    1043037
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "category",
+   "keys": "textbook-printing-guide.category",
+   "bucket": "category",
+   "chars": 4,
+   "charList": "書籍印刷",
+   "lines": [
+    702
+   ],
+   "excerpt": "\"category\": \"書籍印刷\",",
+   "arrayElement": false,
+   "valueSpan": [
+    1043691,
+    1043695
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "description",
+   "keys": "school-exercise-book-printing-guide.description",
+   "bucket": "description",
+   "chars": 4,
+   "charList": "认证体系",
+   "lines": [
+    709
+   ],
+   "excerpt": "\"description\": \"School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes ZprintPro global clients, ISO 认证体系 + FSC + FDA + EU REACH, DHL 2-4 day, 30s WhatsApp quote.\",",
+   "arrayElement": false,
+   "valueSpan": [
+    1053289,
+    1053463
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "school-exercise-book-printing-guide.content",
+   "bucket": "JSON-LD",
+   "chars": 16,
+   "charList": "认证体系月月认证体系认证认证体系",
+   "lines": [
+    712
+   ],
+   "excerpt": "\"content\": \"<script type=\\\"application/ld+json\\\">\\n{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"School Exercise Book Printing Guide 2026: 4 Stocks 3 Bindings 100 MOQ\\\",\\\"d",
+   "arrayElement": false,
+   "valueSpan": [
+    1053543,
+    1057576
+   ]
+  },
+  {
+   "file": "src/data/blog-data/en.json",
+   "field": "content",
+   "keys": "zine-small-batch-booklet-printing-guide.content",
+   "bucket": "content",
+   "chars": 4,
+   "charList": "彩龍印刷",
+   "lines": [
+    728
+   ],
+   "excerpt": "\"content\": \"<p>If you are printing a zine in 2026, the two questions that decide everything are <strong>how many copies you must order</strong> and <strong>what one copy costs</strong>. Saddle-stitche",
+   "arrayElement": false,
+   "valueSpan": [
+    1075474,
+    1087461
+   ]
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "field": "description",
+   "path": "description",
+   "bucket": "description",
+   "chars": 2,
+   "charList": "立体",
+   "lines": [
+    2108
+   ],
+   "arrayElement": false,
+   "excerpt": "{ name: '3D Craft', description: 'Three-dimensional effects transform flat packets into立体 artworks with extremely high collectible value.' },",
+   "valueSpan": [
+    132547,
+    132650
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "field": "description",
+   "path": "description",
+   "bucket": "description",
+   "chars": 2,
+   "charList": "镂空",
+   "lines": [
+    2109
+   ],
+   "arrayElement": false,
+   "excerpt": "{ name: 'Laser Cutting', description: 'Fine pattern镂空 cutting with dreamy light-through effects — ideal for premium customization.' },",
+   "valueSpan": [
+    132702,
+    132793
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "field": "description",
+   "path": "description",
+   "bucket": "description",
+   "chars": 2,
+   "charList": "離島",
+   "lines": [
+    4655
+   ],
+   "arrayElement": false,
+   "excerpt": "{ title: 'SF Express Local 24h', description: 'HK 24h delivery,離島 1-2 days, free pickup over HKD 500' },",
+   "valueSpan": [
+    295806,
+    295859
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "field": "points",
+   "path": "points[array]",
+   "bucket": "content",
+   "chars": 2,
+   "charList": "满足",
+   "lines": [
+    537
+   ],
+   "arrayElement": true,
+   "excerpt": "'Variable size output up to 3.2 meters wide, unlimited length —满足 building hoarding and other large-scale needs.',",
+   "valueSpan": [
+    30528,
+    30639
+   ]
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "field": "points",
+   "path": "points[array]",
+   "bucket": "content",
+   "chars": 2,
+   "charList": "镂空",
+   "lines": [
+    2788
+   ],
+   "arrayElement": true,
+   "excerpt": "'Precision die-cutting with fully customizable shapes: round, irregular,镂空.',",
+   "valueSpan": [
+    177528,
+    177602
+   ]
+  },
+  {
+   "file": "src/data/category-seo-content.ts",
+   "field": "points",
+   "path": "points[array]",
+   "bucket": "content",
+   "chars": 2,
+   "charList": "離島",
+   "lines": [
+    4606
+   ],
+   "arrayElement": true,
+   "excerpt": "'Local SF Express 24h HK,離島 1-2 days, free pickup over HKD 500',",
+   "valueSpan": [
+    292195,
+    292256
+   ]
+  },
+  {
+   "file": "src/data/buying-guides.ts",
+   "field": "en",
+   "path": "en",
+   "bucket": "其他",
+   "chars": 38,
+   "charList": "輸入六色印刷設備批量以上批量以上数据来源数据数据数据九数据诚信红线校准拍板日",
+   "lines": [
+    930
+   ],
+   "arrayElement": false,
+   "excerpt": "en: '<p>Candle and soap labels need <strong>FDA food-safe materials</strong>, <strong>water-resistant finishes</strong>, and <strong>small-batch MOQ (100-500 pcs)</strong> to survive handmade soap lat",
+   "valueSpan": [
+    163433,
+    172319
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "field": "description",
+   "path": "description",
+   "bucket": "description",
+   "chars": 4,
+   "charList": "壓紋名片",
+   "lines": [
+    3482
+   ],
+   "arrayElement": false,
+   "excerpt": "\"description\": \"壓紋名片\",",
+   "valueSpan": [
+    646828,
+    646832
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "field": "h1",
+   "path": "h1",
+   "bucket": "title",
+   "chars": 4,
+   "charList": "婚禮名片",
+   "lines": [
+    3483
+   ],
+   "arrayElement": false,
+   "excerpt": "\"h1\": \"婚禮名片\",",
+   "valueSpan": [
+    646850,
+    646854
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "field": "en",
+   "path": "en",
+   "bucket": "其他",
+   "chars": 2,
+   "charList": "厚口",
+   "lines": [
+    3515
+   ],
+   "arrayElement": false,
+   "excerpt": "\"en\": \"厚口 カード\",",
+   "valueSpan": [
+    647566,
+    647572
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "field": "description",
+   "path": "description",
+   "bucket": "description",
+   "chars": 4,
+   "charList": "婚禮名片",
+   "lines": [
+    3537
+   ],
+   "arrayElement": false,
+   "excerpt": "\"description\": \"婚禮名片\",",
+   "valueSpan": [
+    648067,
+    648071
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "field": "h1",
+   "path": "h1",
+   "bucket": "title",
+   "chars": 6,
+   "charList": "金屬光澤名片",
+   "lines": [
+    3538
+   ],
+   "arrayElement": false,
+   "excerpt": "\"h1\": \"金屬光澤名片\",",
+   "valueSpan": [
+    648089,
+    648095
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "field": "en",
+   "path": "en",
+   "bucket": "其他",
+   "chars": 2,
+   "charList": "箔押",
+   "lines": [
+    3570
+   ],
+   "arrayElement": false,
+   "excerpt": "\"en\": \"箔押し カード\",",
+   "valueSpan": [
+    648808,
+    648815
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "field": "keywords",
+   "path": "keywords[array]",
+   "bucket": "其他",
+   "chars": 2,
+   "charList": "名片",
+   "lines": [
+    3485
+   ],
+   "arrayElement": true,
+   "excerpt": "\"400g名片\"",
+   "valueSpan": [
+    646890,
+    646896
+   ]
+  },
+  {
+   "file": "src/data/sku-seo-data.ts",
+   "field": "keywords",
+   "path": "keywords[array]",
+   "bucket": "其他",
+   "chars": 4,
+   "charList": "燙金名片",
+   "lines": [
+    3540
+   ],
+   "arrayElement": true,
+   "excerpt": "\"燙金名片\"",
+   "valueSpan": [
+    648131,
+    648135
+   ]
+  },
+  {
+   "file": "src/app/[locale]/payment-methods/page.tsx",
+   "field": "beneficiaryCn",
+   "path": "beneficiaryCn",
+   "bucket": "其他",
+   "chars": 13,
+   "charList": "深圳市彩龍印刷包裝有限公司",
+   "lines": [
+    697
+   ],
+   "arrayElement": false,
+   "excerpt": "beneficiaryCn: '深圳市彩龍印刷包裝有限公司',",
+   "valueSpan": [
+    30402,
+    30415
+   ],
+   "isJsonLdInnerContent": false,
+   "whitelist": [
+    "WL-1(法人全称)",
+    "WL-4(品牌名)"
+   ]
+  },
+  {
+   "file": "src/app/[locale]/payment-methods/page.tsx",
+   "field": "bullets",
+   "path": "bullets[array]",
+   "bucket": "content",
+   "chars": 3,
+   "charList": "唐运提",
+   "lines": [
+    758
+   ],
+   "arrayElement": true,
+   "excerpt": "'Official QR issued by 唐运提 (Mr. Tang, founder)',",
+   "valueSpan": [
+    32337,
+    32382
+   ],
+   "whitelist": [
+    "WL-2(法定代表人姓名)",
+    "WL-4(品牌名)"
+   ]
+  },
+  {
+   "file": "src/components/layout/Footer.tsx",
+   "field": "supportJA",
+   "path": "supportJA",
+   "bucket": "其他",
+   "chars": 12,
+   "charList": "中国本土時間対応香港現地",
+   "lines": [
+    146
+   ],
+   "arrayElement": false,
+   "excerpt": "supportJA: '中国本土 24時間対応 · 香港現地サポート',",
+   "valueSpan": [
+    5573,
+    5595
+   ],
+   "isJsonLdInnerContent": false,
+   "whitelist": [
+    "WL-3(别名键(ja 语系值))"
+   ]
+  },
+  {
+   "file": "src/app/[locale]/category/[slug]/page.tsx",
+   "field": "en",
+   "path": "en",
+   "bucket": "其他",
+   "chars": 4,
+   "charList": "月前就位",
+   "lines": [
+    170
+   ],
+   "arrayElement": false,
+   "excerpt": "'en': 'Custom Lai See Red Packets · 100 MOQ Foil 11月前就位 + CNY Wedding · USA Chinese Communities',",
+   "valueSpan": [
+    6161,
+    6249
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/app/[locale]/category/[slug]/page.tsx",
+   "field": "en",
+   "path": "en",
+   "bucket": "其他",
+   "chars": 6,
+   "charList": "月最後黃金窗",
+   "lines": [
+    206
+   ],
+   "arrayElement": false,
+   "excerpt": "'en': 'Custom Calendars 2027 9月最後黃金窗 · 1000 MOQ 2027 Desk Wall Hardcover Foil · USA Corporate Gifts',",
+   "valueSpan": [
+    7938,
+    8030
+   ],
+   "isJsonLdInnerContent": false
+  },
+  {
+   "file": "src/data/blog-posts.ts",
+   "field": "en",
+   "path": "en",
+   "bucket": "其他",
+   "chars": 4,
+   "charList": "认证体系",
+   "lines": [
+    1834
+   ],
+   "arrayElement": false,
+   "excerpt": "en: 'School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes ZprintPro global clients, ISO 认证体系 + FSC + FDA + EU REACH certified, DHL 2-4 day cross-border, 30s WhatsApp quot",
+   "valueSpan": [
+    93924,
+    94121
+   ],
+   "isJsonLdInnerContent": false
+  }
+ ]
+}

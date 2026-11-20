@@ -1,0 +1,2253 @@
+/**
+ * 5 大核心 SKU 的 FAQ 库
+ * 每个 SKU 8 个 FAQ，答案中自然包含 2-3 个长尾关键词
+ */
+
+import { FAQItem } from '@/lib/faq-schema';
+
+export const stickersFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '貼紙印刷 香港 最低訂量是多少？',
+      'en': 'What is the minimum order for custom stickers?',
+      'ja': 'シール印刷の最小ロットは何枚からですか？',
+    },
+    answer: {
+      // 2026-09-19 全站起訂量修正: 貼紙 100 → 10 張 (紙品線, 與 price-table 小批量檔同源)
+      'zh-hk': '智印港提供少批量貼紙印刷服務，最低10張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定製，適合初創品牌與產品包裝測試。10 張屬打樣性質，單張單價較高；量產檔位（100 張以上）單張明顯較平。詳情請參閱《貼紙印刷完全指南》。',
+      'en': 'ZprintPro offers small-batch custom sticker printing with a minimum order of 10 pieces. Whether you need waterproof stickers, clear vinyl, or PVC labels, we support low-volume orders perfect for startups and product packaging tests. A 10-piece run is a proofing quantity with a higher unit price; from 100 pieces the unit price drops clearly. See our Complete Sticker Printing Guide for details.',
+      'ja': 'ZprintProでは少ロットのシール印刷に対応しており、最小ロットは10枚からです。防水シール、透明シール、PVCシールなど、スタートアップやパッケージングテストに最適です。10枚はサンプル的な数量のため1枚単価は高め、100枚以上で単価が明確に下がります。詳しくは「シール印刷完全ガイド」をご覧ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '防水貼紙 和 PVC貼紙 有什麼分別？',
+      'en': 'What is the difference between waterproof stickers and PVC stickers?',
+      'ja': '防水シールとPVCシールの違いは何ですか？',
+    },
+    answer: {
+      'zh-hk': '防水貼紙泛指具防水塗層的紙質貼紙，適合短期戶外使用；PVC貼紙則為塑膠材質，防水、防曬、耐磨，適合長期戶外或冷藏環境。兩者均可加做燙金工藝。如需產品包裝貼紙建議，歡迎聯絡我們。',
+      'en': 'Waterproof stickers generally refer to paper-based stickers with a water-resistant coating, suitable for short-term outdoor use. PVC stickers are plastic-based, offering full waterproofing, UV resistance, and durability for long-term outdoor or refrigerated environments. Both support foil stamping. Contact us for product packaging sticker recommendations.',
+      'ja': '防水シールは一般的に耐水コーティングされた紙素材で、短期間の屋外使用に適しています。PVCシールはプラスチック素材で、完全防水・UV耐性・耐久性に優れ、長期間の屋外や冷蔵環境に最適です。両方とも箔押し加工が可能です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '少批量貼紙印刷 可以即日取貨嗎？',
+      'en': 'Can I get rush sticker printing for small orders?',
+      'ja': '少ロットのシール印刷は即日対応可能ですか？',
+    },
+    answer: {
+      'zh-hk': '可以。針對九龍、港島及新界客戶，少批量貼紙印刷（10-500張）最快即日可取。建議上午12時前確認稿件，即可安排當日生產，港鐵站交收或上門送貨均可。',
+      'en': 'Yes. Small-batch sticker printing (10-500 pcs) is available with rush production. Confirm your artwork before 12 PM (HKT) for same-day production at our Asia facility, then 2-4 business day delivery to US addresses via DHL / FedEx.',
+      'ja': 'はい。少ロットシール印刷（10〜500枚）は即日生産対応可能です。正午までにデータを確定いただければ、当日生産を手配し、DHL・FedExで日本全国へ2〜4日でお届けします。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '透明貼紙 適合用於什麼產品包裝？',
+      'en': 'Are clear stickers suitable for product packaging?',
+      'ja': '透明シールはどんな商品包装に適していますか？',
+    },
+    answer: {
+      'zh-hk': '透明貼紙（Clear Stickers）適合玻璃樽、塑膠盒、化妝品瓶等透明或半透明包裝，可營造「無標籤」的高級感。智印港提供防水透明貼紙，適合食品、護膚品及精品包裝。',
+      'en': 'Clear stickers are ideal for glass bottles, plastic containers, cosmetic jars, and other transparent or semi-transparent packaging, creating a "no-label" premium look. ZprintPro offers waterproof clear stickers perfect for food, skincare, and boutique packaging.',
+      'ja': '透明シールは、ガラス瓶、プラスチック容器、化粧品瓶などの透明または半透明の包装に最適で、「ラベルなし」の高級感を演出します。ZprintProでは食品、スキンケア、ブティック向けの防水透明シールを提供しています。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '貼紙 燙金工藝 會增加多少成本？',
+      'en': 'How much does foil stamping add to custom sticker costs?',
+      'ja': '箔押しシールの追加料金はどのくらいですか？',
+    },
+    answer: {
+      'zh-hk': '燙金貼紙的工藝附加費約為總價的15%。燙金能大幅提升產品包裝的奢華感，特別適合禮品盒封條、高級食品標籤及品牌 Logo 貼紙。量大可享階梯折扣。',
+      'en': 'Foil stamping adds approximately 15% to the total sticker cost. It significantly elevates the luxury feel of product packaging, making it ideal for gift box seals, premium food labels, and brand logo stickers. Volume discounts apply.',
+      'ja': '箔押し加工は総額の約15%の追加料金です。ギフトボックスのシール、高級食品ラベル、ブランドロゴシールなど、商品包装の高級感を大幅に向上させます。大量注文には段階的な割引が適用されます。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '九龍 貼紙印刷 有送貨服務嗎？',
+      'en': 'Do you deliver sticker orders to the US and internationally?',
+      'ja': '日本へのシール配送はありますか？',
+    },
+    answer: {
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿HK$500免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等站點 — 香港服務點，非生產地）。',
+      'en': 'Yes. ZprintPro delivers sticker orders worldwide from our Asia facility. US orders ship via DHL / FedEx in 2-4 business days, with free shipping on orders over $99.',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。小口注文から大量注文まで対応可能です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '如何選擇 貼紙材質？',
+      'en': 'How do I choose the right sticker material for my project?',
+      'ja': 'シール素材の選び方を教えてください。',
+    },
+    answer: {
+      'zh-hk': '選擇貼紙材質需考慮使用場景：室內靜態展示選銅版紙貼紙；需防水防曬選PVC貼紙或合成紙；追求高級透明感選透明PET貼紙；食品接觸需選防水防油材質。詳情可參閱我們的《貼紙印刷完全指南》。',
+      'en': 'Choose based on usage: art paper stickers for indoor displays, PVC or synthetic paper for waterproof and UV-resistant outdoor use, clear PET for a premium transparent look, and oil-resistant waterproof materials for food contact applications. See our Complete Sticker Printing Guide for details.',
+      'ja': '使用場面に応じて選びます：屋内展示にはアート紙シール、防水・UV耐性が必要な屋外にはPVCまたは合成紙シール、高級な透明感を求める場合は透明PETシール、食品接触には耐油防水素材が適しています。詳しくは「シール印刷完全ガイド」をご覧ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '貼紙印刷 檔案規格要求是什麼？',
+      'en': 'What file specs do you need for sticker printing?',
+      'ja': 'シール印刷のデータ入稿規格は何ですか？',
+    },
+    answer: {
+      'zh-hk': '建議提供AI、PDF或EPS格式，解析度300dpi以上，並預留3mm出血位。彩色貼紙請使用CMYK色彩模式。如需要燙金或局部UV，請另外提供獨立的黑稿（K100）標示加工位置。',
+      'en': 'Please provide AI, PDF, or EPS files at 300dpi or higher with 3mm bleed. Use CMYK color mode for full-color stickers. For foil stamping or spot UV, please supply a separate black plate (K100) indicating the processing areas.',
+      'ja': 'AI、PDF、EPS形式、300dpi以上、3mmの塗り足しを推奨します。フルカラーシールはCMYKカラーモードで作成してください。箔押しや局部UVが必要な場合は、加工位置を示す別の黒版（K100）をご提供ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部貼紙訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-ST 歸檔，可追溯到機台同班次。',
+      en: 'Every sticker order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-ST, traceable to press and shift.',
+      ja: 'すべてのステッカー注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-ST として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
+];
+
+export const flyersFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '傳單印刷 香港 最低訂量是多少？',
+      'en': 'What is the minimum order for flyer printing?',
+      'ja': 'チラシ印刷の最小ロットは何枚からですか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供A5傳單印刷服務，最低10張起訂。無論是傳單印刷派發、開業傳單或活動傳單，均可少批量定製，適合初創企業與社區宣傳。詳情請參閱《傳單印刷印刷攻略》。',
+      'en': 'ZprintPro offers A5 flyer printing with a minimum order of 10 copies. Whether for leaflet distribution, grand opening flyers, or event promotions, we support small orders perfect for startups and community outreach. See our Flyer Printing Masterclass for details.',
+      'ja': 'ZprintProではA5チラシ印刷に対応しており、最小ロットは10枚からです。チラシ配布、開業チラシ、イベントプロモーションなど、スタートアップや地域宣伝に最適です。詳しくは「チラシ印刷マスターガイド」をご覧ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': 'A5傳單 和 A4傳單 應該怎樣選擇？',
+      'en': 'Should I choose A5 or A4 flyers for my campaign?',
+      'ja': 'A5チラシとA4チラシ、どちらを選べばいいですか？',
+    },
+    answer: {
+      'zh-hk': 'A5傳單尺寸較小，適合街頭派發及信箱投遞，成本較低；A4傳單則適合展示詳細產品資訊，如餐牌、課程表等。燙金傳單無論A5或A4均可提升奢華感。如需傳單派發策略建議，歡迎聯絡我們。',
+      'en': 'A5 flyers are compact and ideal for street handouts and mailbox drops at lower cost. A4 flyers suit detailed product information like menus and course schedules. Foil flyers in either size add a luxurious feel. Contact us for flyer distribution strategy advice.',
+      'ja': 'A5チラシはコンパクトで、街頭配布やポスト投函に適しコストも低いです。A4チラシはメニューや時間割など詳細な情報に適しています。どちらのサイズでも箔押しチラシで高級感を演出できます。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '傳單印刷 可以即日取貨嗎？',
+      'en': 'Is same-day flyer printing available?',
+      'ja': 'チラシ印刷の即日対応はありますか？',
+    },
+    answer: {
+      'zh-hk': '可以。針對港島、九龍及新界客戶，A5傳單印刷（10-1000張）最快即日可取。建議上午11時前確認稿件，即可安排當日生產，適合緊急活動及選舉宣傳。',
+      'en': 'Yes. A5 flyer printing (10-1000 copies) is available with same-day production. Confirm artwork before 11 AM (HKT) for same-day printing at our Asia facility, then 2-4 business day DHL / FedEx delivery — ideal for urgent events and campaigns.',
+      'ja': 'はい。A5チラシ印刷（10〜1000枚）は即日生産対応可能です。午前11時までにデータを確定いただければ当日生産を手配し、DHL・FedExで日本全国へお届けします。緊急のイベントやキャンペーンに最適です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '燙金傳單 適合什麼行業？',
+      'en': 'Which industries benefit most from foil-stamped flyers?',
+      'ja': '箔押しチラシが最適な業種は何ですか？',
+    },
+    answer: {
+      'zh-hk': '燙金傳單特別適合奢侈品、美容護膚、高端餐飲及金融服務行業。燙金工藝能瞬間提升品牌檔次，適合開業典禮、VIP活動邀請及年度報告派發。與普通傳單相比，回收率可提升30%以上。',
+      'en': 'Foil-stamped flyers are especially suited for luxury, beauty, fine dining, and financial services. Foil stamping instantly elevates brand perception, perfect for grand openings, VIP event invitations, and annual report distribution. Response rates can be 30% higher than standard flyers.',
+      'ja': '箔押しチラシは、ラグジュアリー、ビューティー、高級飲食、金融サービスに特に適しています。開業式、VIPイベントの招待状、年度報告書の配布に最適です。通常のチラシと比較して反応率が30%向上する可能性があります。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '傳單印刷派發 有什麼策略建議？',
+      'en': 'What are the best strategies for flyer distribution?',
+      'ja': 'チラシ配布のベスト戦略は何ですか？',
+    },
+    answer: {
+      'zh-hk': '有效的傳單印刷派發策略包括：1) 目標區域選擇（如九龍商業區、港島住宅區）；2) 時段配合（上下班高峰期、周末市集）；3) 傳單設計配合行動號召（QR Code、限時優惠）。詳情請參閱《傳單印刷印刷攻略》。',
+      'en': 'Effective flyer distribution strategies include: 1) Target area selection (e.g., downtown business districts, residential neighborhoods); 2) Timing alignment (rush hours, weekend markets); 3) Design with clear CTAs (QR codes, limited-time offers). See our Flyer Printing Masterclass for details.',
+      'ja': '効果的なチラシ配布戦略には、1）ターゲットエリアの選定、2）タイミングの調整、3）QRコードや期間限定オファーなど明確なCTAを含むデザインが含まれます。詳しくは「チラシ印刷マスターガイド」をご覧ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '傳單印刷 檔案規格要求是什麼？',
+      'en': 'What file specs do you need for flyer printing?',
+      'ja': 'チラシ印刷のデータ入稿規格は何ですか？',
+    },
+    answer: {
+      'zh-hk': '建議提供AI、PDF或EPS格式，解析度300dpi以上，並預留3mm出血位。彩色傳單請使用CMYK色彩模式，文字請轉曲線。雙面傳單請提供正反面獨立檔案。',
+      'en': 'Please provide AI, PDF, or EPS files at 300dpi or higher with 3mm bleed. Use CMYK color mode for full-color flyers and convert fonts to outlines. For double-sided flyers, supply separate files for front and back.',
+      'ja': 'AI、PDF、EPS形式、300dpi以上、3mmの塗り足しを推奨します。フルカラーチラシはCMYKカラーモードで、フォントはアウトライン化してください。両面チラシは表裏別のデータをご提供ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '摺頁傳單 有什麼款式？',
+      'en': 'What folded leaflet styles do you offer?',
+      'ja': '折りパンフレットにはどんな種類がありますか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供多款摺頁傳單：對摺（2頁）、三摺（Z摺/門摺）、四摺地圖式等。適合產品目錄、活動流程表及餐牌設計。不同摺法影響閱讀動線，建議根據內容層次選擇。',
+      'en': 'ZprintPro offers various folded leaflets: half-fold (2 panels), tri-fold (Z-fold/gate-fold), and four-fold map styles. Suitable for product catalogs, event programs, and menu design. Different folds affect reading flow; choose based on content hierarchy.',
+      'ja': 'ZprintProでは、二つ折り、三つ折り（Z折り/観音開き）、四つ折りマップ式などの折りパンフレットを提供しています。商品カタログ、イベントプログラム、メニュー設計に適しています。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '九龍 傳單印刷 有送貨服務嗎？',
+      'en': 'Do you deliver flyer orders internationally?',
+      'ja': '日本へのチラシ配送はありますか？',
+    },
+    answer: {
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。傳單印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量傳單派發訂單可安排貨車直送。',
+      'en': 'Yes. ZprintPro delivers flyer orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx (2-4 business days). For bulk leaflet distribution orders, delivery can be arranged directly to your distribution team.',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。大量のチラシ注文にも対応可能です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部單張訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-FL 歸檔，可追溯到機台同班次。',
+      en: 'Every flyer order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-FL, traceable to press and shift.',
+      ja: 'すべてのチラシ注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-FL として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
+];
+
+export const packagingBoxesFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '包裝盒印刷 香港 最低訂量是多少？',
+      'en': 'What is the minimum order for custom packaging boxes?',
+      'ja': '箱包装オーダーメイドの最小ロットはいくつからですか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供磁吸禮盒、環保包裝盒等定制服務，最低100個起訂。無論是化妝品盒、食品盒或禮品盒，均可小量定製，適合初創品牌與節日禮品測試。詳情請參閱《品牌包裝完全指南》。',
+      'en': 'ZprintPro offers custom packaging box printing from 100 units minimum. Whether cosmetic boxes, food packaging, or gift boxes, we support small orders perfect for startups and seasonal gift testing. See our Brand Packaging Guide for details.',
+      'ja': 'ZprintProでは100個からの箱包装オーダーメイドに対応しています。化粧品箱、食品箱、ギフト箱など、スタートアップや季節のギフトテストに最適です。詳しくは「ブランド包装完全ガイド」をご覧ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '磁吸禮盒 和 摺疊盒 有什麼分別？',
+      'en': 'What is the difference between rigid boxes and folding cartons?',
+      'ja': '箱包装の種類、それぞれの違いは何ですか？',
+    },
+    answer: {
+      'zh-hk': '磁吸禮盒（Rigid Box）由厚紙板裱糊而成，結構堅固，適合高端禮品及奢侈品包裝；摺疊盒（Folding Carton）則可攤平運輸，成本較低，適合零售產品及電商包裝。兩者均可加做燙金及局部UV工藝。',
+      'en': 'Rigid boxes are made from thick paperboard, offering sturdy construction ideal for luxury gifts. Folding cartons ship flat and cost less, suitable for retail products and e-commerce packaging. Both support foil stamping and spot UV.',
+      'ja': '化粧箱は厚紙板で作られており、高級ギフトに適しています。組み立て箱は平積み配送できコストも低く、小売商品やEC包装に適しています。両方とも箔押しや局部UVが可能です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '環保包裝盒 可以使用什麼材質？',
+      'en': 'What eco-friendly materials are available for packaging boxes?',
+      'ja': 'エコ包装箱にはどんな素材が使えますか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供FSC認證環保包裝盒，材質包括再生紙、牛皮紙及大豆油墨印刷。適合注重ESG的品牌及有機產品包裝。新界及九龍客戶可安排即日打樣。',
+      'en': 'ZprintPro offers FSC-certified eco-friendly packaging boxes using recycled paper, kraft paper, and soy-based inks. Ideal for ESG-focused brands and organic product packaging. Same-day digital sampling available on request.',
+      'ja': 'ZprintProではFSC認証のエコ包装箱を提供しており、再生紙、クラフト紙、大豆インクを使用しています。ESGに配慮したブランドやオーガニック商品の包装に最適です。即日サンプルにも対応可能です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '包裝盒 燙金工藝 會增加多少成本？',
+      'en': 'How much does foil stamping add to packaging box costs?',
+      'ja': '箱包装の箔押し加工の追加料金はどのくらいですか？',
+    },
+    answer: {
+      'zh-hk': '燙金包裝盒的工藝附加費約為總價的15%。燙金能大幅提升品牌包裝的奢華感，特別適合化妝品盒、月餅盒及高端禮品盒。量大可享階梯折扣。',
+      'en': 'Foil stamping adds approximately 15% to total packaging box cost. It significantly elevates brand packaging luxury, ideal for cosmetic boxes, mooncake boxes, and premium gift packaging. Volume discounts apply.',
+      'ja': '箔押し加工は総額の約15%の追加料金です。化粧品箱、月餅箱、高級ギフト箱など、ブランド包装の高級感を大幅に向上させます。大量注文には段階的な割引が適用されます。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '化妝品盒 定制有什麼尺寸選擇？',
+      'en': 'What sizes are available for custom cosmetic packaging boxes?',
+      'ja': '化粧品箱のオーダーメイドにはどんなサイズがありますか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供多款化妝品盒尺寸，常見包括：小號（80×80×30mm，適合唇膏/眼影）、中號（120×120×50mm，適合護膚套裝）、大號（200×150×80mm，適合禮品套裝）。亦可按產品尺寸完全定制刀模。',
+      'en': 'ZprintPro offers various cosmetic box sizes: small (80×80×30mm for lipsticks/eyeshadow), medium (120×120×50mm for skincare sets), and large (200×150×80mm for gift sets). Fully custom die-cut sizes are also available based on your product dimensions.',
+      'ja': 'ZprintProでは様々な化粧品箱サイズを提供しています。小（80×80×30mm）、中（120×120×50mm）、大（200×150×80mm）のほか、商品サイズに応じた完全オーダーメイドも可能です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '包裝盒印刷 可以即日打樣嗎？',
+      'en': 'Can I get same-day packaging box sampling?',
+      'ja': '箱包装の即日サンプルは可能ですか？',
+    },
+    answer: {
+      'zh-hk': '可以。針對九龍、港島及新界客戶，包裝盒印刷最快即日可打樣。建議提前提供設計稿及尺寸規格，即可安排當日白樣或數碼樣。確認樣板後3-5個工作天可批量生產。',
+      'en': 'Yes. Packaging box sampling is available same-day at our Asia facility. Provide design files and dimensions in advance for same-day white or digital samples. Bulk production takes 3-5 working days after sample approval, with 2-4 day DHL / FedEx delivery to the US.',
+      'ja': 'はい。日本全国のお客様向けに、箱包装の即日サンプルが可能です。デザインデータと寸法を事前にご提供いただければ、当日に白サンプルまたはデジタルサンプルを手配できます。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '如何選擇 包裝盒材質？',
+      'en': 'How do I choose the right packaging box material?',
+      'ja': '包装箱の素材の選び方を教えてください。',
+    },
+    answer: {
+      'zh-hk': '選擇包裝盒材質需考慮產品特性及預算：白卡紙適合彩色印刷及高端形象；牛皮紙適合環保品牌及簡約風格；瓦楞紙適合電商運輸及重型產品。詳情可參閱《品牌包裝完全指南》。',
+      'en': 'Choose packaging box material based on product characteristics and budget: white card paper suits full-color printing and premium branding; kraft paper fits eco brands and minimalist aesthetics; corrugated cardboard is ideal for e-commerce shipping and heavy products. See our Brand Packaging Guide for details.',
+      'ja': '商品の特性と予算に応じて選びます。白卡紙はフルカラー印刷と高級ブランドに、クラフト紙はエコブランドとミニマルデザインに、段ボールはEC配送と重い商品に適しています。詳しくは「ブランド包装完全ガイド」をご覧ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '新界 包裝盒印刷 有送貨服務嗎？',
+      'en': 'Do you deliver packaging box orders internationally?',
+      'ja': '日本への包装箱配送はありますか？',
+    },
+    answer: {
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送倉庫。',
+      'en': 'Yes. ZprintPro delivers packaging box orders worldwide from our Asia facility. Orders over $99 qualify for free US shipping via DHL / FedEx. For bulk orders, pallet delivery to your warehouse can be arranged.',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。大量注文にも対応可能です。',
+    },
+  },
+  // 2026-09-12 v9.3 任务 K: 食品包装意图澄清 — 真实回答「做唔做膠袋」(找胶袋的人不点, 找纸质的人必点)
+  {
+    question: {
+      'zh-hk': '你哋做唔做膠袋／真空袋？',
+      'en': 'Do you make plastic bags or vacuum bags for food packaging?',
+      'ja': '食品用のビニール袋・真空パックは作れますか？',
+    },
+    answer: {
+      'zh-hk': '唔做。智印港專注紙質食品包裝——食品紙盒、食品紙袋、防油紙卡（FDA 食品級 + FSC 認證紙）。膠袋同真空袋唔喺我哋服務範圍；如你需要紙質食品包裝方案，起印量按盒型而定、免費 2 小時打稿、WhatsApp 即時報價。',
+      'en': 'No — we specialise in paper food packaging: food-safe paper boxes, paper bags and greaseproof paper cards (FDA food-grade + FSC-certified paper). Plastic and vacuum bags are outside our scope. If you need a paper food packaging solution, the MOQ is 100 with a free 2-hour proof and an instant WhatsApp quote.',
+      'ja': 'いいえ。当社は紙製の食品パッケージ（食品用紙箱・紙袋・耐油紙カード、FDA 適合 + FSC 認証紙）に特化しています。ビニール袋・真空パックは対応範囲外です。紙製の食品パッケージをご希望でしたら、100 個から、無料 2 時間校正、WhatsApp で即時お見積もり。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部包裝盒訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-PBX 歸檔，可追溯到機台同班次。',
+      en: 'Every packaging box order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-PBX, traceable to press and shift.',
+      ja: 'すべてのパッケージ注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-PBX として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
+];
+
+export const postersFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '海報印刷 香港 最低訂量是多少？',
+      'en': 'What is the minimum order for poster printing?',
+      'ja': 'ポスター印刷の最小ロットは何枚からですか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供A2海報印刷服務，最低10張起訂。無論是戶外防水海報、展覽海報或燙金海報，均可少批量定製，適合活動宣傳及零售推廣。詳情請參閱《海報印刷完全指南》。',
+      'en': 'ZprintPro offers A2 poster printing with a minimum order of 10 copies. Whether outdoor waterproof posters, exhibition posters, or foil-stamped posters, we support small orders perfect for event promotion and retail advertising. See our Poster Printing Guide for details.',
+      'ja': 'ZprintProではA2ポスター印刷に対応しており、最小ロットは10枚からです。屋外防水ポスター、展示会用ポスター、箔押しポスターなど、イベント宣伝や小売広告に最適です。詳しくは「ポスター印刷ガイド」をご覧ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': 'A2海報 和 A1海報 應該怎樣選擇？',
+      'en': 'Should I choose A2 or A1 posters for my event?',
+      'ja': 'A2ポスターとA1ポスター、どちらを選べばいいですか？',
+    },
+    answer: {
+      'zh-hk': 'A2海報（420×594mm）適合店內展示及中小型活動；A1海報（594×841mm）則適合展覽會、演唱會及大型戶外廣告。戶外防水海報建議選用A1尺寸以確保遠距離可見度。如需Backdrop背景板，可定制更大尺寸。',
+      'en': 'A2 posters (420×594mm) suit in-store displays and small-to-medium events. A1 posters (594×841mm) are ideal for exhibitions, concerts, and large outdoor advertising. Outdoor waterproof posters are recommended in A1 for long-distance visibility. Custom larger sizes available for backdrops.',
+      'ja': 'A2ポスター（420×594mm）は店内展示や中小規模イベントに適しています。A1ポスター（594×841mm）は展示会やコンサート、大型屋外広告に最適です。屋外防水ポスターは遠距離からの視認性を確保するためA1サイズが推奨されます。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '戶外防水海報 可以即日取貨嗎？',
+      'en': 'Is same-day outdoor waterproof poster printing available?',
+      'ja': '屋外防水ポスターの即日対応はありますか？',
+    },
+    answer: {
+      'zh-hk': '可以。針對九龍、港島及新界客戶，A2海報印刷（10-100張）最快即日可取。戶外防水海報採用防水PP紙或帆布材質，適合長期戶外展示。建議上午11時前確認稿件。',
+      'en': 'Yes. A2 poster printing (10-100 copies) is available with same-day production. Outdoor waterproof posters use waterproof PP paper or canvas, suitable for long-term outdoor display. Confirm artwork before 11 AM (HKT).',
+      'ja': 'はい。A2ポスター印刷（10〜100枚）は即日生産対応可能です。屋外防水ポスターは防水PP紙またはキャンバスを使用し、長期間の屋外展示に適しています。DHL・FedExで日本全国へお届けします。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '展覽海報 燙金工藝 效果如何？',
+      'en': 'How effective is foil stamping for exhibition posters?',
+      'ja': '展示会用ポスターの箔押し加工の効果はどうですか？',
+    },
+    answer: {
+      'zh-hk': '燙金海報能在展覽會場中迅速吸引目光，特別適合品牌主視覺牆及頒獎典禮Backdrop。燙金工藝附加費約為總價的15%，但能提升品牌專業形象，增加參觀者駐足率。',
+      'en': 'Foil-stamped posters quickly capture attention at exhibition venues, ideal for brand feature walls and award ceremony backdrops. Foil stamping adds approximately 15% to cost but enhances professional brand image and increases visitor dwell time.',
+      'ja': '箔押しポスターは展示会場で素早く注目を集め、ブランドのフィーチャーウォールや授賞式のバックドロップに最適です。総額の約15%の追加料金ですが、ブランドのプロフェッショナルなイメージを向上させ、来場者の滞在時間を増やします。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '海報材質 有什麼選擇？',
+      'en': 'What poster material options do you offer?',
+      'ja': 'ポスター素材にはどんな種類がありますか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供多款海報材質：光粉紙（室內展示，色彩鮮豔）、啞粉紙（減少反光，適合攝影）、防水PP紙（戶外短期）、帆布（戶外長期）、相紙（高解析度輸出）。展覽海報建議選用啞粉紙或相紙。',
+      'en': 'ZprintPro offers various poster materials: glossy art paper (indoor, vibrant colors), matte art paper (reduced glare, photography-friendly), waterproof PP paper (short-term outdoor), canvas (long-term outdoor), and photo paper (high-resolution output). Exhibition posters are recommended in matte art paper or photo paper.',
+      'ja': 'ZprintProでは光沢紙、マット紙、防水PP紙、キャンバス、写真用紙などのポスター素材を提供しています。展示会用ポスターにはマット紙または写真用紙が推奨されます。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': 'Backdrop背景板 可以定制什麼尺寸？',
+      'en': 'What sizes are available for custom backdrop printing?',
+      'ja': 'バックドロップのオーダーメイドサイズはどこまで対応していますか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供Backdrop背景板定制服務，常見尺寸包括：2×2.5m、3×3m、4×2.5m。採用防水帆布或遮光布，適合展覽會、發布會及婚禮佈置。亦可按場地尺寸完全定製。',
+      'en': 'ZprintPro offers custom backdrop printing in common sizes: 2×2.5m, 3×3m, and 4×2.5m. Using waterproof canvas or blackout fabric, suitable for exhibitions, product launches, and wedding setups. Fully custom sizes based on venue dimensions are also available.',
+      'ja': 'ZprintProでは2×2.5m、3×3m、4×2.5mなどのバックドロップを提供しています。防水キャンバスまたは遮光布を使用し、展示会や発表会、結婚式の演出に適しています。会場サイズに応じた完全オーダーメイドも可能です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '海報印刷 檔案規格要求是什麼？',
+      'en': 'What file specs do you need for poster printing?',
+      'ja': 'ポスター印刷のデータ入稿規格は何ですか？',
+    },
+    answer: {
+      'zh-hk': '建議提供AI、PDF或EPS格式，解析度150-300dpi（視尺寸而定），並預留3mm出血位。彩色海報請使用CMYK色彩模式。大尺寸海報（A1以上）建議使用150dpi即可，以控制檔案大小。',
+      'en': 'Please provide AI, PDF, or EPS files at 150-300dpi depending on size, with 3mm bleed. Use CMYK color mode for full-color posters. For large posters (A1 and above), 150dpi is sufficient to manage file size.',
+      'ja': 'AI、PDF、EPS形式、サイズに応じて150〜300dpi、3mmの塗り足しを推奨します。フルカラーポスターはCMYKカラーモードで作成してください。大判ポスター（A1以上）はファイルサイズ管理のため150dpiで十分です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '港島 海報印刷 有送貨服務嗎？',
+      'en': 'Do you deliver poster orders to the US?',
+      'ja': '日本へのポスター配送はありますか？',
+    },
+    answer: {
+      'zh-hk': '有。智印港提供全港送貨服務，包括港島、九龍、新界及離島。海報印刷訂單滿HK$500免運費，Backdrop背景板等大件可安排貨車直送會場。未滿額可選擇港鐵站交收。',
+      'en': 'Yes. ZprintPro delivers poster orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx (2-4 business days). Large items like backdrop boards ship rolled in protective tubes directly to your venue.',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。バックドロップなどの大きな商品にも対応可能です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部海報訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-PO 歸檔，可追溯到機台同班次。',
+      en: 'Every poster order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-PO, traceable to press and shift.',
+      ja: 'すべてのポスター注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-PO として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
+];
+
+export const paperBagsFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '紙袋印刷 香港 最低訂量是多少？',
+      'en': 'What is the minimum order for custom paper bags?',
+      'ja': '紙袋印刷の最小ロットはいくつからですか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供環保紙袋、牛皮紙袋等定制服務，最低100個起訂。無論是禮品紙袋、品牌紙袋或餐飲外賣紙袋，均可小量定製。詳情請參閱《品牌包裝完全指南》。',
+      'en': 'ZprintPro offers custom paper bag printing from 100 units minimum. Whether gift bags, branded shopping bags, or F&B takeaway bags, we support small orders. See our Brand Packaging Guide for details.',
+      'ja': 'ZprintProでは100個からの紙袋印刷に対応しています。ギフト袋、ブランド紙袋、飲食テイクアウト袋など、小ロットから承ります。詳しくは「ブランド包装完全ガイド」をご覧ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '牛皮紙袋 和 白卡紙袋 有什麼分別？',
+      'en': 'What is the difference between kraft and white card paper bags?',
+      'ja': 'クラフト紙袋と白卡紙袋の違いは何ですか？',
+    },
+    answer: {
+      'zh-hk': '牛皮紙袋（Kraft）呈天然啡色，質感樸實，適合環保品牌及有機產品；白卡紙袋則表面光滑，適合彩色印刷及高端品牌形象。兩者均可加做燙金及棉繩手挽。',
+      'en': 'Kraft paper bags have a natural brown tone with an earthy texture, ideal for eco brands and organic products. White card paper bags have a smooth surface suited for full-color printing and premium branding. Both support foil stamping and cotton rope handles.',
+      'ja': 'クラフト紙袋は天然の茶色で素朴な質感があり、エコブランドやオーガニック商品に適しています。白卡紙袋は表面が滑らかでフルカラー印刷と高級ブランドに適しています。両方とも箔押しや綿紐持ち手が可能です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '環保紙袋 可以使用什麼認證材質？',
+      'en': 'What certified eco-friendly materials are available for paper bags?',
+      'ja': 'エコ紙袋にはどんな認証素材が使えますか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供FSC認證環保紙袋，材質包括再生牛皮紙、未漂白原木漿紙及大豆油墨印刷。適合注重可持續發展的品牌，可於袋身印製FSC標誌及環保標語。新界及九龍客戶可安排即日打樣。',
+      'en': 'ZprintPro offers FSC-certified eco-friendly paper bags using recycled kraft paper, unbleached wood pulp, and soy-based inks. Ideal for sustainability-focused brands, with FSC logos and eco slogans printable on the bag. Same-day digital sampling available on request.',
+      'ja': 'ZprintProではFSC認証のエコ紙袋を提供しており、再生クラフト紙、無漂白木材パルプ、大豆インクを使用しています。サステナビリティに注力したブランドに最適で、袋身にFSCロゴや環保スローガンを印刷できます。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '紙袋 燙金工藝 會增加多少成本？',
+      'en': 'How much does foil stamping add to paper bag costs?',
+      'ja': '紙袋の箔押し加工の追加料金はどのくらいですか？',
+    },
+    answer: {
+      'zh-hk': '燙金紙袋的工藝附加費約為總價的15%。燙金能大幅提升禮品紙袋及品牌紙袋的奢華感，特別適合節日禮品、VIP客戶回饋及周年慶活動。量大可享階梯折扣。',
+      'en': 'Foil stamping adds approximately 15% to total paper bag cost. It significantly elevates the luxury feel of gift bags and branded shopping bags, ideal for holiday gifts, VIP client rewards, and anniversary events. Volume discounts apply.',
+      'ja': '箔押し加工は総額の約15%の追加料金です。ギフト袋やブランド紙袋の高級感を大幅に向上させ、ホリデーギフト、VIP顧客向け、周年イベントに最適です。大量注文には段階的な割引が適用されます。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '禮品紙袋 定制有什麼尺寸選擇？',
+      'en': 'What sizes are available for custom gift paper bags?',
+      'ja': 'ギフト袋のオーダーメイドにはどんなサイズがありますか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供多款禮品紙袋尺寸：小號（180×230×80mm，適合飾品/化妝品）、中號（250×300×100mm，適合服裝/鞋履）、大號（320×400×120mm，適合禮品套裝）。亦可按產品尺寸完全定製。',
+      'en': 'ZprintPro offers various gift bag sizes: small (180×230×80mm for accessories/cosmetics), medium (250×300×100mm for apparel/footwear), and large (320×400×120mm for gift sets). Fully custom sizes based on your products are also available.',
+      'ja': 'ZprintProでは小（180×230×80mm）、中（250×300×100mm）、大（320×400×120mm）などのギフト袋サイズを提供しています。商品サイズに応じた完全オーダーメイドも可能です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '紙袋定製 可以即日打樣嗎？',
+      'en': 'Can I get same-day paper bag sampling?',
+      'ja': '紙袋の即日サンプルは可能ですか？',
+    },
+    answer: {
+      'zh-hk': '可以。針對九龍、港島及新界客戶，紙袋定制最快即日可打樣。建議提前提供設計稿及尺寸規格，即可安排當日白樣。確認樣板後5-7個工作天可批量生產。',
+      'en': 'Yes. Paper bag sampling is available same-day at our Asia facility. Provide design files and dimensions in advance for same-day white samples. Bulk production takes 5-7 working days after sample approval, with 2-4 day DHL / FedEx delivery to the US.',
+      'ja': 'はい。日本全国のお客様向けに、紙袋の即日サンプルが可能です。デザインデータと寸法を事前にご提供いただければ、当日に白サンプルを手配できます。サンプル確認後、量産は5〜7営業日です。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '如何選擇 紙袋手挽材質？',
+      'en': 'How do I choose the right handle material for paper bags?',
+      'ja': '紙袋の持ち手素材の選び方を教えてください。',
+    },
+    answer: {
+      'zh-hk': '智印港提供多款紙袋手挽：棉繩手挽（堅固耐用，適合重載）、扁紙手挽（經濟實惠，適合輕量商品）、緞帶手挽（高級感強，適合禮品袋）。選擇時需考慮載重量及品牌形象。',
+      'en': 'ZprintPro offers various paper bag handles: cotton rope (durable, heavy loads), flat paper (economical, light items), and satin ribbon (luxury feel, gift bags). Consider load weight and brand image when choosing.',
+      'ja': 'ZprintProでは綿紐持ち手（頑丈で重い荷物向け）、平紐（経済的で軽い商品向け）、サテンリボン（高級感がありギフト向け）などの紙袋持ち手を提供しています。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '九龍 紙袋印刷 有送貨服務嗎？',
+      'en': 'Do you deliver paper bag orders to the US?',
+      'ja': '日本への紙袋配送はありますか？',
+    },
+    answer: {
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。紙袋印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送店舖或倉庫。',
+      'en': 'Yes. ZprintPro delivers paper bag orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx. For bulk orders, pallet delivery to your store or warehouse can be arranged.',
+      'ja': 'はい。ZprintProは日本全国へDHL・FedExで配送しています（通常2〜4日でお届け）。大量注文にも対応可能です。送料は数量と配送先に応じてお見積もりいたします。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部紙袋訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-PB 歸檔，可追溯到機台同班次。',
+      en: 'Every paper bag order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-PB, traceable to press and shift.',
+      ja: 'すべての紙袋注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-PB として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
+];
+
+// 2026-09-08 K3 v4.0 指令 A6/SKU-2: envelopes 品类专属 FAQ（替代通用兜底）
+// 数据锚: products.ts envelopes 4 SKU 实价 HK$0.22-5.20/個・MOQ 100・basePrice 0.60(large-envelopes)
+// 服务目标: 词图 v4.1 G1 大信封(28d pos 3.1/48 imp/0 click)摘果 + FAQ schema 富摘要
+export const envelopesFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '大信封印刷幾多錢？最低訂量是多少？',
+      'en': 'How much does large envelope printing cost? What is the MOQ?',
+      'ja': '大判封筒の印刷価格と最小ロットは？',
+    },
+    answer: {
+      'zh-hk': '大信封及公司信封 100 個起訂，價格 HK$0.22-5.20/個（2026-09 報價，視尺寸與數量），常規 C4/DL 大號信封 HK$0.60 起。即日急件檔期請 WhatsApp 查詢。',
+      'en': 'Large and business envelopes start from 100 pieces, priced HK$0.22-5.20 each depending on size and quantity (updated 2026-09); standard C4/DL large envelopes from HK$0.60. Same-day rush slots - WhatsApp us.',
+      'ja': '大判封筒・会社封筒は100枚から。価格はサイズと数量により HK$0.22-5.20/枚（2026-09 更新）、標準 C4/DL 判は1枚 HK$0.60 から。当日出荷の枠は WhatsApp でご確認ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '信封可以印 LOGO 同公司地址嗎？支持哪些工藝？',
+      'en': 'Can envelopes be printed with our logo and return address? What finishing options exist?',
+      'ja': '封筒にロゴと宛名印刷は可能ですか？',
+    },
+    answer: {
+      'zh-hk': '支持單色至四色 CMYK 印刷 LOGO 及地址，可選開窗、自黏封口、燙金 LOGO、特種紙，並可諮詢保密內印——適合律師行、會計樓等專業文件。',
+      'en': 'Yes - single-colour to full CMYK printing of logos and return addresses. Options include window cut-outs, self-seal flaps, foil-stamped logos, specialty papers, and confidential inner printing for law and accounting firms.',
+      'ja': '可能です。単色〜4色 CMYK でロゴ・宛名に対応。窓付き、糊付きフラップ、箔押しロゴ、特殊紙のほか、機密性の高い文書向けの内面印刷もご相談ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '信封印刷交貨時間幾耐？可以即日取嗎？',
+      'en': 'What is the delivery time for envelope printing? Is same-day pickup possible?',
+      'ja': '封筒印刷の納期は？当日受け取りは可能ですか？',
+    },
+    answer: {
+      'zh-hk': '標準 3-5 個工作天交貨，港九新界免費速遞（HK$500 以上訂單）；部份常規款可安排急件即日，以 WhatsApp 確認當日檔期為準。',
+      'en': 'Standard turnaround is 3-5 business days with free local courier on orders over HK$500. Selected standard styles support same-day rush - confirm today\'s slot via WhatsApp.',
+      'ja': '標準 3-5 営業日で納品。HK$500 以上のご注文は香港内無料配送。一部規格は当日出荷に対応 — WhatsApp で当日の枠をご確認ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '信封可以寄去海外客戶嗎？',
+      'en': 'Do you ship printed envelopes internationally?',
+      'ja': '封筒の海外配送は可能ですか？',
+    },
+    answer: {
+      'zh-hk': '支持 DHL 全球配送 2-4 天送達，海外企業與跨境辦公常用；大量訂單可諮詢分批出貨安排。',
+      'en': 'Yes - DHL worldwide delivery in 2-4 business days, popular with overseas offices and cross-border teams. Bulk and staggered shipments available on request.',
+      'ja': '対応しています。DHL の国際配送で 2-4 営業日でお届け。海外拠点や越境チームに人気です。大量注文は分割出貨もご相談ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部信封訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-ENV 歸檔，可追溯到機台同班次。',
+      en: 'Every envelope order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-ENV, traceable to press and shift.',
+      ja: 'すべての封筒注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-ENV として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
+];
+
+// 2026-09-08 K3 v4.0 指令 A7: calendars 品类专属 FAQ（替代通用兜底，9/15 季节死线）
+// 数据锚: products.ts calendars 6 SKU 实价 HK$3-8/本・13 页设计・柯式 500 本起・Q4 高峰建议 10 月底前确认
+export const calendarsFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '月曆印刷幾多錢一本？',
+      'en': 'How much does custom calendar printing cost per copy?',
+      'ja': 'カレンダー印刷は1部いくらですか？',
+    },
+    answer: {
+      'zh-hk': '2027 掛牆/座檯年曆 HK$3-8/本（2026-09 報價，視乎 A3/A4 尺寸、250-300g 銅版紙或啞粉紙及數量），免費排版含每月版面與節慶標註，WhatsApp 即時報價。',
+      'en': '2027 wall and desk calendars run HK$3-8 per copy (updated 2026-09; depends on A3/A4 size, 250-300g stock, and quantity). Free layout design with monthly grids and holiday marking included - WhatsApp for an instant quote.',
+      'ja': '2027 年の壁掛け・卓上カレンダーは1部 HK$3-8（2026-09 更新、A3/A4 サイズ・250-300g 紙・数量により変動）。月面レイアウトと祝日マーク制作は無料。WhatsApp でスピード見積もり。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '月曆/桌曆起訂量是多少？',
+      'en': 'What is the minimum order quantity for calendars?',
+      'ja': 'カレンダーの最小ロットは？',
+    },
+    answer: {
+      'zh-hk': '起訂量視工藝而定：柯式大批量 500 本起，數碼印刷支持更小批量，以產品頁即時報價為準；梯級數量享批發價。',
+      'en': 'MOQ depends on the process: offset runs from 500 copies, while digital printing supports smaller batches. Final MOQ and tiered pricing are shown on each product page quote.',
+      'ja': 'ロットは製法により異なります：オフセットは500部から、デジタル印刷はより小ロットに対応。最終ロットと段階価格は製品ページの見積もりをご確認ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '9 月落單印月曆仲嚟得切嗎？交貨時間幾耐？',
+      'en': 'If we order calendars in September, is it still in time? What is the lead time?',
+      'ja': '9 月にカレンダーを発注して間に合いますか？',
+    },
+    answer: {
+      'zh-hk': 'Q4 為月曆高峰期，產能按落單先後排產，建議 10 月底前確認訂單；愈早落單愈穩陣，急件檔期請 WhatsApp 對時間表。',
+      'en': 'Q4 is peak season and production slots fill in order of confirmation - lock your order by end of October to be safe. Rush scheduling available via WhatsApp.',
+      'ja': 'Q4 はピークシーズンで、製造枠は発注確定順に埋まります。10 月末までのご発注を推奨。特急の日程は WhatsApp でご相談ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '年曆可以加印公司資訊同客戶名字嗎？',
+      'en': 'Can calendars include our company info and client names?',
+      'ja': 'カレンダーに会社情報や顧客名を入れられますか？',
+    },
+    answer: {
+      'zh-hk': '可以。每月一頁背面可印企業資訊（聯絡方式、服務清單、優惠券），封面加入 logo 與品牌色；13 頁設計（封面+12 個月）支持全定制。',
+      'en': 'Yes - the reverse of each monthly page can carry company info (contacts, services, coupons), with your logo and brand colours on the cover. The 13-page design (cover + 12 months) is fully customisable.',
+      'ja': '可能です。各月ページの裏面に会社情報（連絡先・サービス・クーポン）を印刷し、表紙にロゴとブランドカラーを反映。表紙＋12 ヶ月の 13 ページ構成をフルカスタムできます。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部月曆訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-CAL 歸檔，可追溯到機台同班次。',
+      en: 'Every calendar order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-CAL, traceable to press and shift.',
+      ja: 'すべてのカレンダー注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-CAL として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
+];
+
+// 通用 FAQ — 適用所有未自定義的 category（greeting-cards / books /
+// menus / banners / red-packets / educational）
+// 含 6 個最高頻問題：最低訂量 / 印刷工期 / 配送 / 設計稿要求 / 付款方式 / 環保認證
+export const generalProductFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '產品印刷 最低訂量是多少？',
+      'en': 'What is the minimum order quantity for printing?',
+      'ja': '印刷の最小注文数はいくつですか？',
+    },
+    answer: {
+      'zh-hk': '智印港大部分產品最低 50–100 個 / 本 / 張起訂，具體以產品頁報價為準。即日小批量急件可低至 10 張起。大量訂單享階梯折扣，請聯絡客服獲取專屬報價。',
+      'en': 'Most ZprintPro products start from 50–100 units/copies. Specific minimums are shown on each product page. Same-day small-batch rush orders are available from 10 copies. Bulk orders enjoy tiered discounts—contact us for a custom quote.',
+      'ja': 'ZprintPro のほとんどの商品は 50〜100 個/部/枚からの最小注文です。詳細は各商品ページをご覧ください。即日少量急ぎは10枚から対応。大量注文は段階割引あり、お気軽にお問い合わせください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '印刷工期 需要多長時間？',
+      'en': 'How long does printing and delivery take?',
+      'ja': '印刷と納品にはどのくらい時間がかかりますか？',
+    },
+    answer: {
+      'zh-hk': '標準工期為 3–5 個工作天，加急件最快 24–48 小時內完成。即日交貨適用於大部分標準 SKU，建議上午 11 時前確認稿件。深圳總部生產，港九新界 48 小時快遞直送 (順豐/DHL)。樣書可郵寄審核。',
+      'en': 'Standard turnaround is 3–5 business days. Rush orders are completed in 24–48 hours. Same-day production is available for most standard SKUs—confirm artwork before 11 AM (HKT). Sample proofs available by mail/courier, with 2-4 business day delivery to the US via DHL / FedEx.',
+      'ja': '標準納期は 3〜5 営業日、急ぎは 24〜48 時間以内。即日生産は多くの標準 SKU で対応可能、正午までのデータ確定推奨です。DHL・FedEx で日本全国へ 2〜4 日でお届けします。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '香港本地 有送貨服務嗎？',
+      'en': 'Do you offer international delivery?',
+      'ja': '日本への配送サービスはありますか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等 — 香港服務點，非生產地）。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。',
+      'en': 'ZprintPro delivers worldwide from our Asia production facility. US orders ship via DHL / FedEx in 2-4 business days, with free shipping on orders over $99. Japan orders arrive in 2-4 days.',
+      'ja': 'はい。ZprintPro は DHL / FedEx で日本全国に配送しています（通常 2〜4 日）。米国など海外市場へも 3〜5 日でお届け可能です。送料は数量と配送先に応じてお見積もりいたします。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '設計稿 有什麼規格要求？',
+      'en': 'What file specifications do you need?',
+      'ja': '入稿データの仕様を教えてください。',
+    },
+    answer: {
+      'zh-hk': '建議提供 AI / PDF / EPS 格式，解析度 300dpi 以上，並預留 3mm 出血位。彩色印刷請使用 CMYK 色彩模式，文字請轉曲線。如需燙金、局部 UV、壓凹等加值工藝，請另外提供獨立黑稿（K100）標示加工位置。',
+      'en': 'Please provide AI / PDF / EPS files at 300dpi or higher with 3mm bleed. Use CMYK color mode for full-color printing and convert fonts to outlines. For foil stamping, spot UV, or embossing, supply a separate K100 black plate marking the processing areas.',
+      'ja': 'AI / PDF / EPS 形式、300dpi 以上、3mm の塗り足しを推奨します。フルカラー印刷は CMYK カラーモード、フォントはアウトライン化。箔押し・スポット UV・エンボスなどのオプション加工には、加工位置を示す K100 黒版を別途ご支給ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '支援 哪些付款方式？',
+      'en': 'What payment methods do you accept?',
+      'ja': '支払い方法は何が利用できますか？',
+    },
+    answer: {
+      'zh-hk': '智印港支援多幣種結算（港幣 / 美元 / 日圓 / 人民幣），付款方式涵蓋銀行電匯、微信、支付寶、PayPal。企業客戶可申請 NET 30 月結賬期。',
+      'en': 'ZprintPro supports multi-currency settlement (HKD / USD / JPY / CNY) via bank wire, WeChat Pay, Alipay, and PayPal. Corporate accounts can apply for NET 30 monthly billing.',
+      'ja': 'ZprintPro はマルチ通貨決済対応（HKD / USD / JPY / CNY）、銀行振込・微信支付・支付宝・PayPal がご利用可能。法人顧客は NET 30 月締請求対応可。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '紙材 是環保認證的嗎？',
+      'en': 'Are your paper materials eco-certified?',
+      'ja': '紙素材に環境認証はありますか？',
+    },
+    answer: {
+      'zh-hk': '智印港所有紙張均通過 FSC 森林管理委員會認證，可持續採購。環保系列額外採用再生紙 / 大豆油墨（環保選項，落單時註明），可完全降解。適合注重 ESG 形象的企業、社會企業及 NGO。',
+      'en': 'All ZprintPro paper is FSC (Forest Stewardship Council) certified for sustainable sourcing. Our eco line additionally uses recycled paper and soy-based inks—fully biodegradable and non-toxic. Ideal for ESG-focused corporates, social enterprises, and NGOs.',
+      'ja': 'ZprintPro の紙材は全て FSC（森林管理協議会）認証を取得。エコシリーズは再生紙・大豆インクを採用、完全生分解性の環境配慮仕様。ESG 重視の企業・社会企業・NGO に最適。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '急件 / 加急 如何收費？',
+      'en': 'How much does rush delivery cost?',
+      'ja': '急ぎ/速納の追加料金は？',
+    },
+    answer: {
+      'zh-hk': '48 小時快遞免費（港九新界大部分地區）。即日 4 小時取件加收 HK$80–150（視產品類型）。加急件可聯絡客服走專屬急件通道，產能優先排程。',
+      'en': 'Rush 24–48 hour production carries no surcharge for most products — you only pay standard DHL / FedEx shipping (2-4 business days to the US). For urgent orders, contact our team for a dedicated rush channel with priority production scheduling.',
+      'ja': '日本への通常配送は 2〜4 日（DHL・FedEx）。即日生産後の速納にも対応可能です。急ぎの場合はカスタマーサポートまでご相談ください。優先生産スケジュールで対応します。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '不滿意 可以重印嗎？',
+      'en': 'Can you reprint if I am not satisfied?',
+      'ja': '仕上がりに不満があれば再印刷できますか？',
+    },
+    answer: {
+      'zh-hk': '智印港提供「不滿意免費重印」承諾。若成品顏色 / 裁切 / 裝訂與確認樣稿不符，我們承擔重印費用。請於收貨 7 個工作天內提交問題照片與訂單號碼，客服 2 小時內回覆處理方案。',
+      'en': 'ZprintPro offers a "Free Reprint If Unsatisfied" guarantee. If color, cutting, or binding does not match the approved proof, we cover reprinting costs. Please submit issue photos and order number within 7 business days of receipt—our team responds within 2 hours.',
+      'ja': 'ZprintPro は「ご不満なら無料再印刷」保証を提供。色・裁断・製本が承認サンプルと相違する場合、再印刷費用は当社負担。商品受領後 7 営業日以内に問題写真と注文番号をご提出ください、2 時間以内に対応。',
+    },
+  },
+];
+
+export const coreProductFAQMap: Record<string, FAQItem[]> = {
+  stickers: stickersFAQs,
+  flyers: flyersFAQs,
+  'packaging-boxes': packagingBoxesFAQs,
+  posters: postersFAQs,
+  'paper-bags': paperBagsFAQs,
+  // 通用 FAQ 兜底 — 適用所有未自定義的 category
+  'greeting-cards': generalProductFAQs,
+  books: generalProductFAQs,
+  calendars: calendarsFAQs,
+  menus: generalProductFAQs,
+  banners: generalProductFAQs,
+  'red-packets': generalProductFAQs,
+  envelopes: envelopesFAQs,
+  educational: generalProductFAQs,
+  // 2026-09-12 v9.3 任务 K 遗留修复: packaging 类 SKU (如 food-boxes, category_slug='packaging')
+  // 原回退到通用 FAQ → PDP 取错类目; 改指专属集 (含任务 K 新增「做唔做膠袋」真实回答)
+  packaging: packagingBoxesFAQs,
+};
+
+/**
+ * skuMoneyFAQs — SKU 级带钱问答 (kw-flywheel W1, 2026-09-22)
+ *
+ * 数据源: DELIVERY/kw-flywheel/page_action_plan.csv faq_inject 列 + aeo_question_bank.csv (571 问句)
+ * 数字真值: products.ts minQuantity / basePrice(_en/_ja) + 页面价格锚点; 交期沿用各 SKU body 现行口径
+ * 挂载: src/app/[locale]/product/[slug]/page.tsx — SKU 级优先, 类目 coreProductFAQMap 随后;
+ *       可见 FAQ 手风琴与 FAQPage JSON-LD 同源 (Google FAQPage 指南: schema 内容须页面可见)
+ * AEO 口径: 首句直答 (价格+MOQ+交期), 次句补规格/工艺, 不堆砌
+ */
+export const skuMoneyFAQs: Record<string, FAQItem[]> = {
+  'a2-posters': [
+    {
+      question: {
+        'zh-hk': 'A2 海報幾多錢一張？',
+        en: 'How much does an A2 poster cost?',
+        ja: 'A2ポスターの印刷料金は？',
+      },
+      answer: {
+        'zh-hk': 'A2 海報 10 張起印，HK$9 起/張（157g 銅版紙）。200g 或 PP 合成紙另計，1-2 個工作天交貨，即日特急可選。',
+        en: 'A2 posters start from $2.30/pc at 10 MOQ (157gsm gloss paper). 200gsm and PP synthetic upgrades available, 1-2 business day production with same-day rush option.',
+        ja: 'A2ポスターは10枚〜¥300〜（157gコート紙）。200g・PP合成紙も対応、1-2営業日生産、特急当日仕上げ可。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': 'A2 海報幾大張？可以即日取貨嗎？',
+        en: 'What size is an A2 poster and can I get it same-day?',
+        ja: 'A2ポスターのサイズは？即日仕上げは可能？',
+      },
+      answer: {
+        'zh-hk': 'A2 尺寸為 420×594mm。上午確認稿件最快即日交收，常規 1-2 個工作天，全港送貨。',
+        en: 'A2 measures 420×594mm (16.5×23.4 in). Artwork confirmed in the morning can go into same-day production; standard turnaround is 1-2 business days.',
+        ja: 'A2は420×594mmです。午前中のデータ確定で即日生産可能、標準1-2営業日。',
+      },
+    },
+  ],
+  'same-day-flyers': [
+    {
+      question: {
+        'zh-hk': '即日印刷幾耐可以攞？',
+        en: 'How fast is same-day flyer printing?',
+        ja: '即日チラシ印刷はどのくらい早い？',
+      },
+      answer: {
+        'zh-hk': '即日傳單 10 張起印、HK$1.30 起/張。上午 12 時前確認稿件，最快即日交收或港九送貨；常規 1-2 個工作天。',
+        en: 'Same-day flyers from $0.16/pc at 10 MOQ. Confirm artwork before noon for same-day production; standard turnaround 1-2 business days, DHL 2-4 days to the US.',
+        ja: '即日チラシは10枚〜¥25〜。正午までにデータ確定で当日生産、標準1-2営業日、DHLで日本へ2-4日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '即日印刷有咩尺寸同紙質？',
+        en: 'What sizes and paper do same-day flyers support?',
+        ja: '即日チラシのサイズと用紙は？',
+      },
+      answer: {
+        'zh-hk': 'A4/A5/A6/DL 尺寸齊全，157g 銅版紙為主，可加覆膜（啞膜／光膜）。提交檔案後 1 小時內免費數碼打稿。',
+        en: 'A4/A5/A6/DL sizes on 157gsm gloss with optional matte or gloss lamination. Free digital proof within 1 hour of file submission.',
+        ja: 'A4/A5/A6/DL対応、157gコート紙、ラミネート加工可。入稿後1時間以内に無料デジタル校正。',
+      },
+    },
+  ],
+  'saddle-stitch-booklets': [
+    {
+      question: {
+        'zh-hk': '騎馬釘書刊幾多頁先裝到？',
+        en: 'How many pages can you saddle stitch?',
+        ja: '中綴じ冊子は何ページまで対応？',
+      },
+      answer: {
+        'zh-hk': '騎馬釘裝訂適合 8-64 頁小冊子（頁數需為 4 的倍數）。10 本起印、HK$6 起/本，5-10 個工作天交貨；超過 64 頁建議轉膠裝。',
+        en: 'Saddle stitch suits 8-64 page booklets (page count must be a multiple of 4). From $1.84/book at 10 MOQ, 5-10 business days; choose perfect binding beyond 64 pages.',
+        ja: '中綴じは8〜64ページ（4の倍数）に対応。10冊〜¥258〜、5-10営業日。64ページ超は無線綴じがおすすめ。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '騎馬釘小冊子印刷幾多錢一本？',
+        en: 'How much does a saddle stitch booklet cost?',
+        ja: '中綴じ冊子の印刷料金は？',
+      },
+      answer: {
+        'zh-hk': '騎馬釘小冊子 10 本起印，HK$6 起/本（A5、16 頁、157g 銅版紙計）。頁數越多單價越高，提交檔案後 1 小時內免費數碼打稿。',
+        en: 'From $1.84/book at 10 MOQ (A5, 16 pages, 157gsm). Price scales with page count; free digital proof within 1 hour of file submission.',
+        ja: '10冊〜¥258〜（A5・16ページ・157gコート紙）。ページ数で変動、入稿後1時間以内に無料デジタル校正。',
+      },
+    },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部騎馬釘書刊訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-SSB 歸檔，可追溯到機台同班次。',
+      en: 'Every booklet order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-SSB, traceable to press and shift.',
+      ja: 'すべての中綴じ冊子注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-SSB として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
+  ],
+  'pvc-menus': [
+    {
+      question: {
+        'zh-hk': '餐牌印刷幾錢一張？',
+        en: 'How much do PVC menus cost?',
+        ja: 'PVCメニューの料金は？',
+      },
+      answer: {
+        'zh-hk': 'PVC 餐牌 10 張起印、HK$8 起/張，防水防油覆膜，可直接抹洗。5-7 個工作天交貨，餐廳/酒吧/咖啡店適用。',
+        en: 'PVC menus from $2.76/pc at 10 MOQ, laminated waterproof and wipe-clean for restaurants, bars and cafes. 5-7 business days plus free US shipping over $99.',
+        ja: 'PVCメニューは10枚〜¥386〜、防水ラミネートで水洗い可。5-7営業日、飲食店・バー・カフェ向け。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': 'PVC 餐牌防水嗎？可以抹嗎？',
+        en: 'Are PVC menus waterproof?',
+        ja: 'PVCメニューは防水ですか？',
+      },
+      answer: {
+        'zh-hk': '可以。PVC 材質加啞/光覆膜，防水防油，濕布直接抹洗唔會爛，適合日日用的餐飲場景。',
+        en: 'Yes. PVC stock with matte or gloss lamination is fully waterproof and grease-resistant — wipe clean daily without damage, ideal for busy F&B service.',
+        ja: 'はい。PVC素材にマット/グロスラミネート、防水・防油で水拭き可能。毎日使う飲食店に最適。',
+      },
+    },
+  ],
+  'food-boxes': [
+    {
+      question: {
+        'zh-hk': '食品包裝印刷流程係點？',
+        en: 'What is the process for custom food packaging?',
+        ja: '食品パッケージ印刷の流れは？',
+      },
+      answer: {
+        'zh-hk': '食品包裝盒 100 個起印、HK$2.5 起/個。流程：提交檔案 → 1 小時免費數碼打稿 → 確認 → 10-15 個工作天生產交貨。FDA 認可食品級材質，免費刀模線模板。',
+        en: 'Food boxes from $0.74/pc at 100 MOQ. Process: submit files, free digital proof in 1 hour, approve, then 10-15 business day production. FDA-safe food-grade boards with free dieline templates.',
+        ja: '食品包装箱は100個〜¥101〜。入稿→1時間無料デジタル校正→確認→10-15営業日生産。FDA適合の食品グレード素材、型紙無料。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '食品包裝盒用咩紙？防油嗎？',
+        en: 'Are your food boxes grease-resistant and food-safe?',
+        ja: '食品包装箱の素材は食品に安全？',
+      },
+      answer: {
+        'zh-hk': '採用 FDA 認可食品級白卡/牛皮紙，可選防油淋膜，通過 SGS 遷移測試，間接接觸食品級別安全。',
+        en: 'FDA-compliant food-grade white card and kraft boards with optional grease-resistant coating, SGS migration tested for indirect food contact.',
+        ja: 'FDA適合の食品グレード白卡/クラフト紙、防油コーティング可、SGS移行テスト済み（間接接触級）。',
+      },
+    },
+  ],
+  'catalog-printing': [
+    {
+      question: {
+        'zh-hk': '畫冊印刷幾多本起？幾錢一本？',
+        en: 'How much does catalog printing cost?',
+        ja: 'カタログ印刷は何冊から？料金は？',
+      },
+      answer: {
+        'zh-hk': '畫冊 10 本起印、HK$24 起/本（A4、騎馬釘計）。膠裝/精裝另計，3-5 個工作天交貨，提交檔案後 1 小時免費打稿。',
+        en: 'Catalog printing from $4.60/book at 10 MOQ (A4 saddle stitch), factory-direct from our Shenzhen plant. Perfect bound and hardcover options, 3-5 business days plus DHL 2-4 day US delivery.',
+        ja: '10冊〜¥644〜（A4中綴じ）。無線綴じ・上製本も対応、3-5営業日＋DHLで日本へ2-4日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '中國印畫冊有咩著數？',
+        en: 'Why print catalogs in China?',
+        ja: '中国印刷のメリットは？',
+      },
+      answer: {
+        'zh-hk': '深圳自營工場直印，無中間商：同等 157g 銅版紙四色印刷，價格約為香港本地一半，10 本起印、DHL 全球 2-4 天直送。',
+        en: 'Factory-direct from our own Shenzhen plant — no middlemen. Same 157gsm 4-color specs at roughly half typical local prices, 10 MOQ, DHL worldwide in 2-4 days.',
+        ja: '深圳自社工場直結で中間マージンなし。157gコート紙4色印刷で相場の約半値、10冊から、DHLで2-4日。',
+      },
+    },
+  ],
+  'waterproof-stickers': [
+    {
+      question: {
+        'zh-hk': '防水貼紙邊間買？幾多張起印？',
+        en: 'Where can I print waterproof stickers in small batches?',
+        ja: '防水ステッカーは何枚から？料金は？',
+      },
+      answer: {
+        'zh-hk': '智印港防水貼紙 10 張起印、HK$0.22 起/張，PVC 防水材質，3-5 個工作天交貨，港九新界滿 HK$500 免費速遞。',
+        en: 'ZprintPro prints waterproof PVC stickers from $0.32/pc at 10 MOQ, 3-5 business days plus free US shipping over $99. UV-resistant outdoor ink rated 3-5 years.',
+        ja: '10枚〜¥41〜、PVC防水素材、3-5営業日で全国配送。UV耐性インクで屋外3-5年。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '防水貼紙可以貼戶外幾耐？',
+        en: 'How long do waterproof stickers last outdoors?',
+        ja: '防水ステッカーの屋外耐久年数は？',
+      },
+      answer: {
+        'zh-hk': 'PVC 防水貼紙配防 UV 油墨，戶外可用 3-5 年；室內 5-7 年。可加啞/光覆膜進一步防刮。',
+        en: 'PVC waterproof stickers with UV-resistant ink last 3-5 years outdoors and 5-7 years indoors; add matte or gloss lamination for extra scratch resistance.',
+        ja: 'PVC防水ステッカーはUV耐性インクで屋外3-5年、屋内5-7年。マット/グロスラミネートで耐擦性向上。',
+      },
+    },
+  ],
+  'small-batch-stickers': [
+    {
+      question: {
+        'zh-hk': '小批量貼紙最少印幾多張？',
+        en: 'What is the minimum order for custom stickers?',
+        ja: 'ステッカー印刷の最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '10 張起印（打樣性質，單價較高）；100 張以上進入量產檔位，單價明顯下降，HK$0.45 起/張，3-5 個工作天交貨。',
+        en: '10 pieces. A 10-pc run is proofing grade with a higher unit price; from 100 pcs the unit price drops clearly — from $0.55/pc on the small-batch line, 3-5 business days.',
+        ja: '10枚から。10枚はサンプル的な数量で単価高め、100枚以上で単価が明確に下がります（¥69〜）、3-5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '小批量貼紙幾錢一張？',
+        en: 'How much do small batch stickers cost?',
+        ja: '小ロットステッカーの料金は？',
+      },
+      answer: {
+        'zh-hk': '防水 PVC 小批量 HK$0.45 起/張（10-50 張檔位）；100/500/1000 張階梯遞減。1 小時免費打稿，滿 HK$500 免費速遞。',
+        en: 'From $0.55/pc at 10-50 pcs on waterproof PVC; volume tiers at 100/500/1000 pcs lower the unit price. Free digital proof in 1 hour, free US shipping over $99.',
+        ja: '防水PVCで10-50枚は¥69〜/枚、100/500/1000枚の段階割引あり。1時間無料校正、全国配送。',
+      },
+    },
+  ],
+  'die-cut-stickers': [
+    {
+      question: {
+        'zh-hk': '異形貼紙幾多錢？可以切咩形狀？',
+        en: 'How are die cut stickers made and priced?',
+        ja: '型抜きステッカーの料金と形状は？',
+      },
+      answer: {
+        'zh-hk': '異形模切貼紙 10 張起印、HK$0.58 起/張，任意形狀按刀線切割，免刀模費。3-5 個工作天交貨。',
+        en: 'Die-cut stickers from $0.46/pc at 10 MOQ — any custom shape cut to your vector dieline, no die fee. 3-5 business days plus free US shipping over $99.',
+        ja: '10枚〜¥60〜、ベクター型データで任意形状にカット、型代無料。3-5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '透明異形貼紙有冇？',
+        en: 'Do you offer clear die-cut stickers?',
+        ja: '透明の型抜きステッカーはありますか？',
+      },
+      answer: {
+        'zh-hk': '有。透明 BOPP 材質可異形切割，「無標籤」效果，適合玻璃瓶/化妝品包裝，同樣 10 張起印。',
+        en: 'Yes — transparent BOPP die-cut to any shape for a no-label look on glass bottles and cosmetic packaging, also from 10 MOQ.',
+        ja: 'はい。透明BOPP素材を任意形状にカット、「ラベルなし」仕上がり。玻璃瓶・化粧品包装に、10枚から。',
+      },
+    },
+  ],
+  certificates: [
+    {
+      question: {
+        'zh-hk': '證書印刷幾多錢？幾耐交貨？',
+        en: 'How much does certificate printing cost and how long?',
+        ja: '賞状印刷の料金と納期は？',
+      },
+      answer: {
+        'zh-hk': '證書 100 個起印、HK$8 起/個，3-5 個工作天交貨。燙金/壓紋/局部UV 工藝可選，可加序號印刷，提交檔案後 1 小時免費打稿。',
+        en: 'Certificates from $2.76/pc at 100 MOQ, 3-5 business days. Foil stamping, embossing, spot UV and serial numbering available, free digital proof in 1 hour.',
+        ja: '100枚〜¥386〜、3-5営業日。金箔押し・エンボス・部分UV・通し番号対応、1時間無料校正。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '證書可以燙金同加序號嗎？',
+        en: 'Can certificates be foil-stamped and serial-numbered?',
+        ja: '賞状に箔押しと通し番号はできますか？',
+      },
+      answer: {
+        'zh-hk': '可以。金/銀/玫瑰金燙金、壓紋、局部UV 都做得到，序號/姓名可變數據印刷，畢業證書/獎狀/會員證都接。',
+        en: 'Yes — gold/silver/rose-gold foil, embossing, spot UV, plus variable-data serial numbers and names for diplomas, award certificates and membership cards.',
+        ja: 'はい。金/銀/ローズゴールド箔押し、エンボス、部分UV、バリアブル通し番号・名前入れ対応。卒業証書・表彰状・会員証に。',
+      },
+    },
+  ],
+  'doujinshi-printing': [
+    {
+      question: {
+        'zh-hk': '同人誌印刷香港邊間好？',
+        en: 'Where can I print doujinshi for Comiket?',
+        ja: '同人誌印刷はどこがいい？コミケに間に合う？',
+      },
+      answer: {
+        'zh-hk': '智印港同人誌 10 本起印，A5/B5 標準尺寸，封面彩色、內頁單色，Comiket 會期前 24 小時特急對應，DHL 直送日本 2-4 個工作天，繁中/日文客服雙語支援。',
+        en: 'ZprintPro prints doujinshi from 10 copies — A5/B5, color cover with monochrome interior, 24-hour rush support before Comiket, DHL to Japan in 2-4 business days with Chinese/Japanese support.',
+        ja: 'ZprintProは10冊から、A5/B5、表紙カラー・本文モノクロ、コミケ前24時間特急対応、DHLで2-4日。日本語サポートあり。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '同人誌印刷幾多頁？裝訂有咩揀？',
+        en: 'What page counts and binding do doujinshi support?',
+        ja: '同人誌のページ数と製本は？',
+      },
+      answer: {
+        'zh-hk': '騎馬釘 8-64 頁、無線膠裝 64 頁以上，A5/B5/A4 尺寸。10 本起印，RGB 檔案可直收（免轉 CMYK），新手友善。',
+        en: 'Saddle stitch for 8-64 pages, perfect bound beyond 64, in A5/B5/A4. From 10 copies; RGB files accepted directly — no CMYK conversion needed, beginner-friendly.',
+        ja: '中綴じ8〜64ページ、64ページ超は無線綴じ、A5/B5/A4。10冊から、RGB入稿OK（CMYK変換不要）で初心者にも安心。',
+      },
+    },
+  ],
+  textbooks: [
+    {
+      question: {
+        'zh-hk': '教科書印刷幾多錢一本？',
+        en: 'How much does textbook printing cost?',
+        ja: '教科書印刷 いくら？',
+      },
+      answer: {
+        'zh-hk': '教科書 100 本起印、HK$24 起/本，5-7 個工作天交貨。覆膜騎馬釘/膠裝可選，內頁 157g 銅版紙、封面 250g，1 小時免費打稿。',
+        en: 'Textbooks from $9.20/book at 100 MOQ (157gsm interior, 250gsm cover), 5-7 business days plus DHL 2-4 day delivery. Free digital proof in 1 hour.',
+        ja: '教科書印刷は100冊〜¥1288〜（本文157gコート紙・表紙250g）。5-7営業日＋DHLで日本へ2-4日、1時間無料デジタル校正。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '教科書可以點樣裝訂？',
+        en: 'What binding options do textbooks have?',
+        ja: '教科書・教材の製本方法は？',
+      },
+      answer: {
+        'zh-hk': '騎馬釘（8-64 頁）或無線膠裝（64 頁以上），A4/A5/B5 尺寸，100 本起印，教材/練習冊小批量都接。',
+        en: 'Saddle stitch (8-64 pages) or perfect bound (64+ pages) in A4/A5/B5, 100 MOQ — short-run courseware and workbooks welcome.',
+        ja: '中綴じ（8〜64ページ）・無線綴じ（64ページ超）対応、A4/A5/B5。100冊から、教材・テキスト・問題集の小ロットも相談可。',
+      },
+    },
+  ],
+  'folding-boxes': [
+    {
+      question: {
+        'zh-hk': '折疊盒（彩盒）幾多錢？',
+        en: 'How much do custom folding cartons cost?',
+        ja: '折り畳み箱（カートン）の価格は？',
+      },
+      answer: {
+        'zh-hk': '折疊盒 100 個起印，HK$2.5-15/個（按尺寸與紙材），8 檔標準尺寸免刀模費。標準 3-5 個工作天（檔案確認後）。',
+        en: 'Folding cartons start at 100 MOQ, HK$2.5-15 per piece depending on size and stock. 8 standard sizes need no die-cut fee. Standard production 3-5 business days after artwork approval.',
+        ja: '折り畳み箱は100個から、HK$2.5-15/個（サイズ・用紙による）。8規格サイズは抜き型代無料。標準生産3〜5営業日（データ確定後）。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '折疊盒用咩紙材？可以加咩工藝？',
+        en: 'What paper stocks and finishes are available?',
+        ja: '用紙と加工の選択肢は？',
+      },
+      answer: {
+        'zh-hk': '白卡 250-350g、牛皮紙、瓦楞紙可選；可加過膠、燙金、局部 UV、擊凸。FSC 認證紙可選（落單時註明）。',
+        en: 'Options include white card 250-350gsm, kraft and corrugated; finishing covers lamination, foil stamping, spot UV and embossing. FSC-certified paper available on request.',
+        ja: '白カード250-350g・クラフト紙・段ボールから選択可。ラミネート・箔押し・スポットUV・エンボス対応。FSC認証紙はご注文時にご指定ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '折疊盒交期幾耐？點樣收貨？',
+        en: 'What is the turnaround and delivery?',
+        ja: '納期と配送は？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天（檔案確認後），急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
+        en: 'Standard lead time is 3-5 business days after artwork approval; rush scheduling available. Free SF Express in Hong Kong on orders over HK$500, DHL worldwide 2-4 days.',
+        ja: '標準納期はデータ確定後3〜5営業日、特急相談可。香港国内はHK$500以上でSF Express無料、海外はDHLで世界2〜4日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '折疊盒適合咩產品？可以印 LOGO 嗎？',
+        en: 'What products suit folding cartons and can I print my logo?',
+        ja: 'どんな製品に向いていますか？ロゴ印刷は可能？',
+      },
+      answer: {
+        'zh-hk': '適合食品、零售精品、電商發貨與禮品包裝；支援全彩 LOGO 印刷、開窗與易撕線客製。',
+        en: 'Ideal for food, retail, e-commerce shipping and gift packaging. Full-colour logo printing, window patching and tear strips available.',
+        ja: '食品・小売・EC発送・ギフト包装に最適。フルカラーロゴ印刷、窓あけ、ミシン目カスタム対応。',
+      },
+    },
+  ],
+  'mailer-boxes': [
+    {
+      question: {
+        'zh-hk': '快遞盒（飛機盒）幾多錢？',
+        en: 'How much do custom mailer boxes cost?',
+        ja: 'メーラーボックス（航空箱）の価格は？',
+      },
+      answer: {
+        'zh-hk': '快遞盒 100 個起印，HK$3.5-10/個（按尺寸與坑型）。標準 3-5 個工作天（檔案確認後）。',
+        en: 'Mailer boxes start at 100 MOQ, HK$3.5-10 per piece depending on size and flute. Standard production 3-5 business days after artwork approval.',
+        ja: 'メーラーボックスは100個から、HK$3.5-10/個（サイズ・段による）。標準生産3〜5営業日（データ確定後）。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '快遞盒結構係點？適合 FBA 嗎？',
+        en: 'What is the box structure and is it FBA-ready?',
+        ja: '構造とFBA対応は？',
+      },
+      answer: {
+        'zh-hk': '飛機盒自鎖底結構，免膠帶組裝；常用規格對應 Amazon FBA 發貨，跨境電商標配。',
+        en: 'Self-locking crash-bottom structure assembles without tape; common sizes fit Amazon FBA shipments and cross-border e-commerce.',
+        ja: 'クラッシュロック底の自立構造でテープ不要。主要サイズはAmazon FBA発送に対応し、越境ECの定番仕様です。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '快遞盒交期同運費點計？',
+        en: 'What is the lead time and shipping cost?',
+        ja: '納期と送料は？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express in Hong Kong over HK$500; DHL worldwide 2-4 days.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF Express無料、海外DHL世界2〜4日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '快遞盒可以印品牌 LOGO 嗎？',
+        en: 'Can mailer boxes be printed with my brand?',
+        ja: 'ブランドロゴの印刷は可能？',
+      },
+      answer: {
+        'zh-hk': '可以，支援外箱全彩印刷、內箱單色印刷，提升開箱體驗；可加貼紙封口。',
+        en: 'Yes — full-colour exterior printing and single-colour interior printing to lift the unboxing experience; sealing stickers optional.',
+        ja: '可能です。外側フルカラー・内側1色印刷で開封体験を向上。封緘シールの追加も可能。',
+      },
+    },
+  ],
+  'rigid-boxes': [
+    {
+      question: {
+        'zh-hk': '精裝盒幾多錢？',
+        en: 'How much do rigid gift boxes cost?',
+        ja: 'リジッド（化粧箱）の価格は？',
+      },
+      answer: {
+        'zh-hk': '精裝盒 100 個起印，HK$8-42/個（按尺寸、灰板厚度與工藝）。標準 3-5 個工作天（檔案確認後）。',
+        en: 'Rigid boxes start at 100 MOQ, HK$8-42 per piece depending on size, greyboard thickness and finishing. Standard production 3-5 business days after artwork approval.',
+        ja: 'リジッドボックスは100個から、HK$8-42/個（サイズ・ボール厚・加工による）。標準生産3〜5営業日（データ確定後）。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '精裝盒有咩盒型同工藝？',
+        en: 'Which structures and finishes are available?',
+        ja: '箱型と加工の種類は？',
+      },
+      answer: {
+        'zh-hk': '天地蓋、書型磁吸、抽屜式可選；可加燙金、擊凸、局部 UV、內襯（EVA / 絨布）。',
+        en: 'Lid-and-base, book-style magnetic and drawer structures; finishing includes foil stamping, embossing, spot UV and EVA or velvet inserts.',
+        ja: '天地方・ブック型マグネット・引き出し型から選択。箔押し・エンボス・スポットUV・EVA/ベルベット内装対応。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '精裝盒交期幾耐？',
+        en: 'What is the lead time for rigid boxes?',
+        ja: '納期はどのくらい？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天（檔案確認後），複雜工藝另議；急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 2-4 天。',
+        en: 'Standard 3-5 business days after artwork approval; complex finishing quoted separately. Rush scheduling available. Free SF Express over HK$500 in Hong Kong, DHL 2-4 days worldwide.',
+        ja: '標準3〜5営業日（データ確定後）、複雑な加工は別途相談。特急相談可。香港国内HK$500以上SF無料、海外DHL2〜4日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '精裝盒適合咩用途？',
+        en: 'What are rigid boxes best used for?',
+        ja: 'どんな用途に向いていますか？',
+      },
+      answer: {
+        'zh-hk': '適合化妝品、珠寶鐘錶、電子產品與高端禮品；可做客製尺寸與內襯貼合。',
+        en: 'Suited to cosmetics, jewellery and watches, electronics and premium gifting; custom sizes with fitted inserts available.',
+        ja: '化粧品・宝飾時計・電子機器・高級ギフトに最適。カスタムサイズと内装の型合わせも可能。',
+      },
+    },
+  ],
+  'cosmetic-boxes': [
+    {
+      question: {
+        'zh-hk': '化妝品盒幾多錢？',
+        en: 'How much do cosmetic packaging boxes cost?',
+        ja: '化粧品箱の価格は？',
+      },
+      answer: {
+        'zh-hk': '化妝品盒 100 個起印，HK$8-65/個（按盒型與工藝）。標準 3-5 個工作天（檔案確認後）。',
+        en: 'Cosmetic boxes start at 100 MOQ, HK$8-65 per piece depending on structure and finishing. Standard production 3-5 business days after artwork approval.',
+        ja: '化粧品箱は100個から、HK$8-65/個（箱型・加工による）。標準生産3〜5営業日（データ確定後）。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '化妝品盒常用咩工藝？',
+        en: 'Which finishes are typical for cosmetic packaging?',
+        ja: '化粧品箱で一般的な加工は？',
+      },
+      answer: {
+        'zh-hk': '燙金、局部 UV、擊凸、啞膜可組合；面膜、精華液、香水等不同產品線可配不同盒型。',
+        en: 'Foil stamping, spot UV, embossing and matte lamination combine freely; sheet masks, serums and perfumes each suit different structures.',
+        ja: '箔押し・スポットUV・エンボス・マットラミネートを組合せ可能。フェイスマスク・美容液・香水など製品別に箱型を選べます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '化妝品盒交期同送貨？',
+        en: 'Lead time and delivery for cosmetic boxes?',
+        ja: '納期と配送は？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide 2-4 days.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL世界2〜4日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '可以印品牌 LOGO 同成分表嗎？',
+        en: 'Can you print brand logos and ingredient lists?',
+        ja: 'ロゴや成分表示の印刷は可能？',
+      },
+      answer: {
+        'zh-hk': '可以，支援全彩印刷與細字成分表；檔案提供 AI/PDF，免費預檢出血與解析度。',
+        en: 'Yes — full-colour printing including fine-print ingredient lists. Send AI/PDF artwork for a free bleed and resolution preflight.',
+        ja: '可能です。フルカラー印刷と細かい成分表示に対応。AI/PDFデータは出血・解像度を無料チェックします。',
+      },
+    },
+  ],
+  'white-card-bags': [
+    {
+      question: {
+        'zh-hk': '白卡紙袋幾多錢？',
+        en: 'How much do white card paper bags cost?',
+        ja: '白カード紙袋の価格は？',
+      },
+      answer: {
+        'zh-hk': '白卡紙袋 100 個起印，HK$5-12/個（按尺寸與紙重）。標準 3-5 個工作天（檔案確認後）。',
+        en: 'White card bags start at 100 MOQ, HK$5-12 per piece depending on size and paper weight. Standard production 3-5 business days after artwork approval.',
+        ja: '白カード紙袋は100個から、HK$5-12/個（サイズ・紙厚による）。標準生産3〜5営業日（データ確定後）。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '白卡紙袋適合咩品牌？',
+        en: 'Which brands suit white card bags?',
+        ja: 'どんなブランドに向いていますか？',
+      },
+      answer: {
+        'zh-hk': '適合服裝、珠寶鐘錶、美妝與精品零售；挺度高、印刷還原度好，適合品牌形象袋。',
+        en: 'Suited to apparel, jewellery and watches, beauty and boutique retail; high stiffness and accurate colour reproduction for brand-image bags.',
+        ja: 'アパレル・宝飾時計・美容・セレクトショップに最適。腰が強く色再現性が高いため、ブランドイメージ袋に向きます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '可以加咩工藝？',
+        en: 'What finishing options are available?',
+        ja: '加工の選択肢は？',
+      },
+      answer: {
+        'zh-hk': '可加過膠（光/啞）、燙金、局部 UV、擊凸；手挽可選棉繩、緞帶或紙手挽。',
+        en: 'Gloss or matte lamination, foil stamping, spot UV and embossing; handles in cotton rope, ribbon or paper.',
+        ja: '光沢/マットラミネート・箔押し・スポットUV・エンボス対応。持ち手は綿ロープ・リボン・紙製から選択。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期同運費點計？',
+        en: 'Lead time and shipping?',
+        ja: '納期と送料は？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide 2-4 days.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL世界2〜4日。',
+      },
+    },
+  ],
+  'kraft-paper-bags': [
+    {
+      question: {
+        'zh-hk': '牛皮紙袋幾多錢？',
+        en: 'How much do kraft paper bags cost?',
+        ja: 'クラフト紙袋の価格は？',
+      },
+      answer: {
+        'zh-hk': '牛皮紙袋 100 個起印，HK$3-8/個（按尺寸與紙重），免費刀模。標準 3-5 個工作天（檔案確認後）。',
+        en: 'Kraft paper bags start at 100 MOQ, HK$3-8 per piece depending on size and paper weight, free die-cut. Standard production 3-5 business days after artwork approval.',
+        ja: 'クラフト紙袋は100個から、HK$3-8/個（サイズ・紙厚による）、抜き型無料。標準生産3〜5営業日（データ確定後）。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '牛皮紙袋用咩紙？環保嗎？',
+        en: 'What kraft stock is used and is it eco-friendly?',
+        ja: '用紙と環境対応は？',
+      },
+      answer: {
+        'zh-hk': '牛皮紙 120-200g 級，可選 FSC 認證紙（落單時註明）；大豆油墨印刷可選。',
+        en: 'Kraft 120-200gsm, with FSC-certified stock available on request; soy-ink printing optional.',
+        ja: 'クラフト120-200g級。FSC認証紙はご注文時にご指定ください。大豆インク印刷も選択可能。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '手挽有咩選擇？',
+        en: 'Which handle options are available?',
+        ja: '持ち手の種類は？',
+      },
+      answer: {
+        'zh-hk': '可選紙手挽、棉繩或緞帶手挽；袋底可加卡紙托底增強承重。',
+        en: 'Paper, cotton-rope or ribbon handles; a cardboard base insert can be added for extra load strength.',
+        ja: '紙製・綿ロープ・リボン持ち手から選択。底板を追加して耐荷重を強化できます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期同運費點計？',
+        en: 'Lead time and shipping?',
+        ja: '納期と送料は？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide 2-4 days.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL世界2〜4日。',
+      },
+    },
+  ],
+  'eco-paper-bags': [
+    {
+      question: {
+        'zh-hk': '環保紙袋幾多錢？',
+        en: 'How much do eco paper bags cost?',
+        ja: 'エコ紙袋の価格は？',
+      },
+      answer: {
+        'zh-hk': '環保紙袋 100 個起印，HK$3-8/個（按尺寸與紙材）。標準 3-5 個工作天（檔案確認後）。',
+        en: 'Eco paper bags start at 100 MOQ, HK$3-8 per piece depending on size and stock. Standard production 3-5 business days after artwork approval.',
+        ja: 'エコ紙袋は100個から、HK$3-8/個（サイズ・用紙による）。標準生産3〜5営業日（データ確定後）。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '環保紙袋用咩材料？',
+        en: 'What materials make the bags eco-friendly?',
+        ja: '環境配慮の素材は？',
+      },
+      answer: {
+        'zh-hk': 'FSC 認證牛皮紙或再生紙可選（落單時註明），大豆油墨印刷，適合 ESG 採購與減塑需求。',
+        en: 'FSC-certified kraft or recycled paper on request, printed with soy inks — suited to ESG procurement and plastic-reduction goals.',
+        ja: 'FSC認証クラフト紙または再生紙を選択可（ご注文時に指定）、大豆インク印刷。ESG調達や脱プラ要望に対応します。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期同運費點計？',
+        en: 'Lead time and shipping?',
+        ja: '納期と送料は？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide 2-4 days.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL世界2〜4日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '環保紙袋可以印 LOGO 嗎？',
+        en: 'Can eco bags carry a printed logo?',
+        ja: 'ロゴ印刷は可能？',
+      },
+      answer: {
+        'zh-hk': '可以，支援單色至全彩 LOGO 印刷；ESG 品牌可加印認證標示（落單時確認）。',
+        en: 'Yes — single-colour to full-colour logo printing; ESG brands can add certification marks on request.',
+        ja: '可能です。1色〜フルカラーのロゴ印刷に対応。ESGブランドは認証マークの追加もご相談ください。',
+      },
+    },
+  ],
+  'gift-bags': [
+    {
+      question: {
+        'zh-hk': '禮品紙袋幾多錢？',
+        en: 'How much do premium gift bags cost?',
+        ja: 'ギフト紙袋の価格は？',
+      },
+      answer: {
+        'zh-hk': '禮品紙袋 100 個起印，HK$10-20/個（按尺寸與工藝）。標準 3-5 個工作天（檔案確認後）。',
+        en: 'Gift bags start at 100 MOQ, HK$10-20 per piece depending on size and finishing. Standard production 3-5 business days after artwork approval.',
+        ja: 'ギフト紙袋は100個から、HK$10-20/個（サイズ・加工による）。標準生産3〜5営業日（データ確定後）。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '禮品袋可以加咩工藝？',
+        en: 'Which premium finishes are available?',
+        ja: '高級加工の選択肢は？',
+      },
+      answer: {
+        'zh-hk': '燙金、局部 UV、擊凸、壓紋可選；棉繩或緞帶手挽，適合品牌週年慶與婚慶贈品。',
+        en: 'Foil stamping, spot UV, embossing and texture pressing; cotton-rope or ribbon handles for anniversaries and wedding favours.',
+        ja: '箔押し・スポットUV・エンボス・型押し対応。綿ロープ/リボン持ち手で周年イベントやウェディングギフトに。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期同運費點計？',
+        en: 'Lead time and shipping?',
+        ja: '納期と送料は？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide 2-4 days.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL世界2〜4日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '可以印 LOGO 同客製尺寸嗎？',
+        en: 'Can I print a logo and choose custom sizes?',
+        ja: 'ロゴ印刷とカスタムサイズは？',
+      },
+      answer: {
+        'zh-hk': '可以，支援全彩 LOGO 印刷與客製尺寸；小批量 100 個起，適合活動與節慶檔期。',
+        en: 'Yes — full-colour logo printing and custom sizes from 100 pieces, suited to events and seasonal campaigns.',
+        ja: '可能です。フルカラーロゴ印刷とカスタムサイズに対応。100個からの小ロットでイベント・季節キャンペーンに。',
+      },
+    },
+  ],
+  'transparent-stickers': [
+    {
+      question: {
+        'zh-hk': '透明貼紙最少印幾多？價錢點計？',
+        en: 'What is the minimum order and price for transparent stickers?',
+        ja: '透明ステッカーの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$0.38-1.50/張（按尺寸與數量）。檔案確認後標準 3-5 個工作天。',
+        en: 'From 10 pieces at HK$0.38-1.50 each depending on size and quantity; 3-5 business days after artwork approval.',
+        ja: '10枚から、HK$0.38-1.50/枚（サイズ・数量による）。データ確定後、標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '透明貼紙用咩材質？貼上後會唔會擋住產品？',
+        en: 'What material is used, and will it hide the product underneath?',
+        ja: '素材は何ですか。貼っても下の商品は見えますか。',
+      },
+      answer: {
+        'zh-hk': '透明 PET 材質，貼合後近乎無感，LOGO 與圖案直接呈現，不會遮住瓶身或包裝本身的顏色。',
+        en: 'Clear PET film reads almost invisible once applied, so logos show without blocking the bottle or pack colour.',
+        ja: '透明PET素材で、貼った後はほぼ見えず、ロゴや図柄だけが浮かびます。ボトルやパッケージの色を隠しません。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '透明貼紙適合咩產品？',
+        en: 'Which products suit transparent stickers?',
+        ja: '透明ステッカーはどんな商品に向いていますか。',
+      },
+      answer: {
+        'zh-hk': '化妝品、食品與酒類、飲品瓶身、香水、玻璃容器，以及不想加標籤感的高端包裝。',
+        en: 'Cosmetics, food and beverage bottles, perfume, glass containers, and premium packs where a label edge would look wrong.',
+        ja: '化粧品、食品・酒類、飲料ボトル、香水、ガラス容器、ラベル感を出したくない高級パッケージ。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期幾耐？可以打稿先睇效果嗎？',
+        en: 'How long is production, and can I see a proof first?',
+        ja: '納期はどのくらいですか。校正はできますか。',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天；1 小時內免費數碼打稿，透明材質的實際透度以打稿為準。',
+        en: 'Standard 3-5 business days; a free digital proof within 1 hour shows how the clear film reads on your artwork.',
+        ja: '標準3〜5営業日。1時間以内に無料デジタル校正をお出しし、透明感は校正で確認できます。',
+      },
+    },
+  ],
+  'removable-stickers': [
+    {
+      question: {
+        'zh-hk': '可移貼紙最少印幾多？價錢點計？',
+        en: 'Minimum order and price for removable stickers?',
+        ja: '再剥離ステッカーの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$0.45-1.60/張（按尺寸與數量）。標準 3-5 個工作天。',
+        en: 'From 10 pieces at HK$0.45-1.60 each by size and quantity; 3-5 business days standard.',
+        ja: '10枚から、HK$0.45-1.60/枚（サイズ・数量による）。標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '移除之後會唔會留膠？',
+        en: 'Will it leave residue when removed?',
+        ja: '剥がした後に糊が残りませんか。',
+      },
+      answer: {
+        'zh-hk': '特殊背膠設計，正常貼附與移除後不留殘膠，適合玻璃、車窗等光滑表面。',
+        en: 'The adhesive is built to release cleanly from smooth surfaces such as glass and car windows.',
+        ja: '特殊粘着設計で、ガラスや車窓などの平滑面からは糊残りなく剥がせます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '可移貼紙適合咩場景？',
+        en: 'Where are removable stickers normally used?',
+        ja: '再剥離ステッカーの主な用途は？',
+      },
+      answer: {
+        'zh-hk': '季節性推廣、短期展覽、試用品包裝、櫥窗裝飾、學校活動、餐廳當日告示、零售促銷。',
+        en: 'Seasonal promotions, short exhibitions, sample packs, window dressing, school events, daily restaurant notices and retail promos.',
+        ja: '季節キャンペーン、短期展示、サンプル包装、ショーウィンドウ装飾、学校イベント、店頭の当日案内、小売プロモーション。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '大量採購交期會唔會更長？',
+        en: 'Does a large order take longer?',
+        ja: '大量発注だと納期は延びますか。',
+      },
+      answer: {
+        'zh-hk': '常規 3-5 個工作天；數量特別大或需要多款分袋時，落單前先確認檔期比較穩。',
+        en: 'Normally 3-5 business days; for very large runs or multi-design packing, confirm the slot before ordering.',
+        ja: '通常3〜5営業日。極端に多い部数や複数デザインの分封が必要な場合は、発注前に枠を確認してください。',
+      },
+    },
+  ],
+  'foil-stickers': [
+    {
+      question: {
+        'zh-hk': '燙金貼紙最少印幾多？價錢點計？',
+        en: 'Minimum order and price for foil stickers?',
+        ja: '箔押しステッカーの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$0.78-2.80/張（按尺寸、箔色與數量）。標準 3-5 個工作天。',
+        en: 'From 10 pieces at HK$0.78-2.80 each by size, foil colour and quantity; 3-5 business days.',
+        ja: '10枚から、HK$0.78-2.80/枚（サイズ・箔色・数量による）。標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '有咩箔色可以揀？',
+        en: 'Which foil colours are available?',
+        ja: '箔の色は選べますか。',
+      },
+      answer: {
+        'zh-hk': '金、銀為常規色；其他金屬色與特殊箔按批次查詢，落單時註明即可。',
+        en: 'Gold and silver are standard; other metallic and speciality foils are quoted per run — just note the colour on the order.',
+        ja: '金・銀が標準です。その他のメタリック箔・特殊箔はロットごとにご相談ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '燙金貼紙適合貼在邊度？',
+        en: 'Where do foil stickers work best?',
+        ja: '箔押しステッカーはどこに使えますか。',
+      },
+      answer: {
+        'zh-hk': '高端產品標籤、禮品包裝封口、VIP 標識、酒類與美妝瓶身，需要金屬光澤的位置。',
+        en: 'Premium product labels, gift-box seals, VIP marks, wine and beauty bottles — anywhere a metallic highlight helps.',
+        ja: '高級品ラベル、ギフト包装の封緘、VIP表示、酒類・化粧品ボトルなど、金属の輝きが効く場所。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '燙金效果同屏幕色一樣嗎？',
+        en: 'Will the foil match what I see on screen?',
+        ja: '箔の色は画面と同じですか。',
+      },
+      answer: {
+        'zh-hk': '不完全一樣——同一款箔壓在不同紙材上會有色差，所以以打稿實樣為準，不要只看屏幕。',
+        en: 'Not exactly: the same foil shifts on different stocks, so judge from the physical proof rather than the screen.',
+        ja: '画面と完全には一致しません。同じ箔でも紙によって色味が変わるため、校正の実物でご確認ください。',
+      },
+    },
+  ],
+  'security-stickers': [
+    {
+      question: {
+        'zh-hk': '防偽貼紙最少印幾多？價錢點解偏高？',
+        en: 'Minimum order and why is the unit price higher?',
+        ja: '偽造防止ステッカーの最小ロットと価格が高めな理由は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$1.15-4.00/張。單價較高是因為防偽工藝（雷射、易碎紙等）本身有材料與工序成本。',
+        en: 'From 10 pieces at HK$1.15-4.00 each — the higher unit price reflects the security material and process (laser, fragile paper).',
+        ja: '10枚から、HK$1.15-4.00/枚。価格が高めなのは、レーザーや脆弱紙など偽造防止の素材と工程にコストがかかるためです。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '有邊幾種防偽工藝？',
+        en: 'Which security features are available?',
+        ja: 'どんな偽造防止加工がありますか。',
+      },
+      answer: {
+        'zh-hk': '雷射標籤（光變圖案）、易碎紙（撕即破、無法完整轉移）等，可按品牌需要組合。',
+        en: 'Laser labels with optical patterns and fragile paper that tears instead of peeling cleanly — combined to suit the brand.',
+        ja: '光学的なパターンのレーザーラベル、剥がすと破れる脆弱紙などを組み合わせられます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '咩行業最常用防偽貼紙？',
+        en: 'Which industries use security stickers most?',
+        ja: 'どの業種で多く使われますか。',
+      },
+      answer: {
+        'zh-hk': '美妝護膚、食品酒類、電子配件、藥品與保健品，以及需要封口證明的跨境電商。',
+        en: 'Beauty, food and beverage, electronics accessories, health products, and cross-border sellers who need a tamper seal.',
+        ja: '化粧品、食品・酒類、電子アクセサリー、健康食品、封緘証明が必要な越境EC。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期同普通貼紙一樣嗎？',
+        en: 'Is lead time the same as standard stickers?',
+        ja: '納期は通常のステッカーと同じですか。',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天；特殊防偽材料需先確認庫存，落單前問一句最穩。',
+        en: '3-5 business days standard; speciality security stock should be confirmed before ordering.',
+        ja: '標準3〜5営業日。特殊な偽造防止素材は在庫確認を先に行うと確実です。',
+      },
+    },
+  ],
+  'a4-flyers': [
+    {
+      question: {
+        'zh-hk': 'A4 傳單最少印幾多？價錢點計？',
+        en: 'Minimum order and price for A4 flyers?',
+        ja: 'A4チラシの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$0.35-0.95/張（按紙材、數量與加工）。標準 3-5 個工作天。',
+        en: 'From 10 sheets at HK$0.35-0.95 each by stock, quantity and finishing; 3-5 business days.',
+        ja: '10枚から、HK$0.35-0.95/枚（用紙・数量・加工による）。標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '用咩紙？可唔可以雙面印？',
+        en: 'What paper, and can it print double-sided?',
+        ja: '用紙と両面印刷は？',
+      },
+      answer: {
+        'zh-hk': '157g 銅版紙雙面四色為標準配置，手感挺括、色彩還原好；需要更厚或啞面可另行查詢。',
+        en: '157g art paper with four-colour both sides is the standard build: firm in hand and colour-accurate. Thicker or matte stocks on request.',
+        ja: '157gコート紙の両面4色が標準。手触りがしっかりして発色も良好です。厚手やマット紙はご相談ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '設計稿要唔要自己準備？',
+        en: 'Do I need to supply finished artwork?',
+        ja: 'デザインデータは必要ですか。',
+      },
+      answer: {
+        'zh-hk': '可以自備 AI／PDF 稿；如果只有文字與圖片，也可以走免費設計排版，打稿確認後才開印。',
+        en: 'Supply AI or PDF if you have it; if not, free layout service is available and print starts only after you approve the proof.',
+        ja: 'AI／PDFがあればそのまま入稿できます。無い場合は無料レイアウトも可能で、校正承認後に印刷します。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '急件可以幾快？',
+        en: 'How fast can a rush job run?',
+        ja: '急ぎの場合はどれくらいで出来ますか。',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天；檔期許可下可安排急件，請先提供數量與交稿日，我們回覆實際可行時間。',
+        en: '3-5 business days standard; where the schedule allows we take rush jobs — send quantity and artwork date and we confirm the real turnaround.',
+        ja: '標準3〜5営業日。枠が空いていれば特急も可能です。部数と入稿日をお知らせいただければ実際の納期をお答えします。',
+      },
+    },
+  ],
+  'a5-flyers': [
+    {
+      question: {
+        'zh-hk': 'A5 傳單最少印幾多？價錢點計？',
+        en: 'Minimum order and price for A5 flyers?',
+        ja: 'A5チラシの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$0.25-0.65/張（按紙材、數量與加工）。標準 3-5 個工作天。',
+        en: 'From 10 sheets at HK$0.25-0.65 each by stock, quantity and finishing; 3-5 business days.',
+        ja: '10枚から、HK$0.25-0.65/枚（用紙・数量・加工による）。標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': 'A5 同 A4 有咩分別？點揀？',
+        en: 'A5 or A4 — how do I choose?',
+        ja: 'A5とA4はどう選びますか。',
+      },
+      answer: {
+        'zh-hk': 'A5 面積是 A4 一半，適合街頭派發與隨手翻閱；A4 版面大、資訊多，適合店內張貼或夾報。',
+        en: 'A5 is half the area of A4: better for hand-outs and quick reading. A4 carries more information, better for in-store posting or inserts.',
+        ja: 'A5はA4の半分の面積で、手渡しやさっと読む用途に向きます。A4は情報量が多く、店頭掲示や折込に向きます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '紙材同印刷規格係點？',
+        en: 'What are the paper and print specs?',
+        ja: '用紙と印刷仕様は？',
+      },
+      answer: {
+        'zh-hk': '157g 銅版紙、雙面四色為標準；需要單面、啞膜或摺頁加工可另議。',
+        en: '157g art paper with four-colour both sides as standard; single-sided, matte lamination or folding available on request.',
+        ja: '157gコート紙・両面4色が標準。片面、マット加工、折り加工もご相談ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期幾耐？可以打稿嗎？',
+        en: 'Lead time and proofing?',
+        ja: '納期と校正は？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天，1 小時內免費數碼打稿；確認後才開印，避免整批重做。',
+        en: '3-5 business days standard with a free digital proof within 1 hour, so the run starts only after you approve.',
+        ja: '標準3〜5営業日、1時間以内に無料デジタル校正。承認後に印刷を開始します。',
+      },
+    },
+  ],
+  'wall-calendars': [
+    {
+      question: {
+        'zh-hk': '掛曆最少印幾多？價錢點計？',
+        en: 'Minimum order and price for wall calendars?',
+        ja: '壁掛けカレンダーの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '1 本起印，HK$3-8/本（按尺寸、頁數、紙材與數量）。標準 3-5 個工作天。',
+        en: 'From 1 copy at HK$3-8 each by size, page count, stock and quantity; 3-5 business days.',
+        ja: '1部から、HK$3-8/部（サイズ・ページ数・用紙・数量による）。標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '有咩尺寸同頁數？',
+        en: 'Which sizes and page counts?',
+        ja: 'サイズとページ数は？',
+      },
+      answer: {
+        'zh-hk': '標準 A3 或 A2 掛牆，13 頁設計（封面＋12 個月）；需要 A4 或自訂尺寸可查詢。',
+        en: 'A3 or A2 wall format with 13 pages (cover plus 12 months); A4 and custom sizes on request.',
+        ja: 'A3またはA2の壁掛け、13ページ構成（表紙＋12か月）。A4や特殊サイズもご相談ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '適合咩用途？',
+        en: 'What are wall calendars used for?',
+        ja: 'どんな用途に向いていますか。',
+      },
+      answer: {
+        'zh-hk': '家庭與辦公室自用、企業年終送客戶、店舖全年品牌曝光；企業版可加 12 個月獨立宣傳版面。',
+        en: 'Home and office use, year-end client gifting and year-round brand presence in shops; corporate versions can carry a different message on each month.',
+        ja: '家庭・オフィス用途、年末の法人ギフト、店舖での通年ブランド露出。法人版は月ごとに訴求を変えられます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '旺季幾時要落單？',
+        en: 'When should I order for the peak season?',
+        ja: '繁忙期はいつ発注すべきですか。',
+      },
+      answer: {
+        'zh-hk': '年曆旺季集中在第四季，建議 11 月前定稿、11 月中前落單，避開 12 月排隊。',
+        en: 'Calendar demand peaks in Q4: approve artwork before November and order by mid-November to avoid the December queue.',
+        ja: 'カレンダー需要は第4四半期に集中します。11月前に校了、11月中までに発注すると12月の混雑を避けられます。',
+      },
+    },
+  ],
+  'foil-red-packets': [
+    {
+      question: {
+        'zh-hk': '燙金利是封最少印幾多？價錢點計？',
+        en: 'Minimum order and price for foil red packets?',
+        ja: '箔押しポチ袋の最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '100 個起印，HK$1.10-4.80/個（按尺寸、箔色與數量）。標準 5-7 個工作天。',
+        en: 'From 100 pcs at HK$1.10-4.80 each by size, foil colour and quantity; 5-7 business days standard.',
+        ja: '100個から、HK$1.10-4.80/個（サイズ・箔色・数量による）。標準5〜7営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '有咩圖案可以揀？可唔可以改用公司 Logo？',
+        en: 'Which designs are available — can we use our own logo?',
+        ja: '図柄は選べますか。自社ロゴに変更できますか。',
+      },
+      answer: {
+        'zh-hk': '吉祥圖案有多款現成可選；亦可以改成公司 Logo 或年度生肖設計，打稿確認後才開印。',
+        en: 'Ready-made auspicious patterns are available, or we replace them with your logo or a zodiac design; print starts after proof approval.',
+        ja: '既存の吉祥文様のほか、貴社ロゴや干支デザインへの差し替えも可能です。校正承認後に印刷します。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '適合咩場合派？',
+        en: 'Where are foil red packets usually given out?',
+        ja: 'どんな場面で使われますか。',
+      },
+      answer: {
+        'zh-hk': '企業年會、客戶禮贈、春節促銷、婚宴回禮、酒店迎賓，以及需要體面的商務拜年。',
+        en: 'Corporate year-end events, client gifting, CNY promotions, wedding favours, hotel greetings and business visits.',
+        ja: '企業の年末イベント、取引先への贈答、春節キャンペーン、結婚式の引き出物、ホテルの迎賓など。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '旺季幾時要落單？',
+        en: 'When should we order for the CNY peak?',
+        ja: '繁忙期はいつ発注すべきですか。',
+      },
+      answer: {
+        'zh-hk': '農曆新年前三週是最高峰，建議預留 3-4 週；標準 5-7 個工作天，急件請先查檔期。',
+        en: 'The three weeks before Lunar New Year are peak: allow 3-4 weeks. Standard production is 5-7 business days; ask about rush slots early.',
+        ja: '旧正月前3週間が最繁忙期です。3〜4週間の余裕を見てください。標準5〜7営業日、特急は枠を早めにご確認ください。',
+      },
+    },
+  ],
+  'custom-red-packets': [
+    {
+      question: {
+        'zh-hk': '訂製利是封最少印幾多？價錢點計？',
+        en: 'Minimum order and price for custom red packets?',
+        ja: 'オリジナルポチ袋の最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '100 個起印，HK$1.90-6.40/個（按尺寸、紙材、工藝與數量）。標準 5-7 個工作天。',
+        en: 'From 100 pcs at HK$1.90-6.40 each by size, stock, finishing and quantity; 5-7 business days.',
+        ja: '100個から、HK$1.90-6.40/個（サイズ・用紙・加工・数量による）。標準5〜7営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '可以印公司 Logo 同祝福語嗎？',
+        en: 'Can we print our logo and a greeting?',
+        ja: '会社ロゴやメッセージは入れられますか。',
+      },
+      answer: {
+        'zh-hk': '可以，Logo、祝福語、年份與生肖都可入版；需要燙金、局部 UV 或擊凸亦可一併安排。',
+        en: 'Yes — logo, greeting, year and zodiac all go on plate, with foil, spot UV or embossing added in the same run.',
+        ja: '可能です。ロゴ、メッセージ、年号、干支を入れられ、箔押し・スポットUV・エンボスも同時に手配できます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '設計稿要唔要自己出？',
+        en: 'Do we need to supply artwork?',
+        ja: 'デザインは必要ですか。',
+      },
+      answer: {
+        'zh-hk': '有 AI／PDF 稿可直接入稿；只有 Logo 與文字亦可走免費設計，打稿後再確認。',
+        en: 'Supply AI or PDF if available; with only a logo and text, free design is included and you approve the proof.',
+        ja: 'AI／PDFがあればそのまま入稿できます。ロゴとテキストのみでも無料デザインで対応し、校正後に確定します。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期同數量點安排最穩？',
+        en: 'How should we plan quantity and timing?',
+        ja: '部数と納期はどう計画しますか。',
+      },
+      answer: {
+        'zh-hk': '按實際派發人數加 5-10% 損耗；旺季（新年前三週）建議提早 3-4 週落單。',
+        en: 'Plan for the actual recipient count plus 5-10% spare; in the peak three weeks before CNY, order 3-4 weeks ahead.',
+        ja: '実際の配布数に5〜10%の予備を加えてください。旧正月前3週間は3〜4週間前の発注が安全です。',
+      },
+    },
+  ],
+  'embossed-red-packets': [
+    {
+      question: {
+        'zh-hk': '浮雕利是封最少印幾多？價錢點計？',
+        en: 'Minimum order and price for embossed red packets?',
+        ja: 'エンボス加工のポチ袋の最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '100 個起印，HK$3.00-9.50/個（按尺寸、紙材與浮雕面積）。標準 5-7 個工作天。',
+        en: 'From 100 pcs at HK$3.00-9.50 each by size, stock and embossed area; 5-7 business days.',
+        ja: '100個から、HK$3.00-9.50/個（サイズ・用紙・エンボス面積による）。標準5〜7営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '浮雕效果係點做出嚟？',
+        en: 'How is the embossed effect produced?',
+        ja: 'エンボスはどうやって付けますか。',
+      },
+      answer: {
+        'zh-hk': '用模具壓出立體紋理，手指摸得到凹凸；適合傳統花紋、剪紙圖案與品牌徽章。',
+        en: 'A die presses the relief into the sheet, so fingers feel the pattern — good for traditional motifs, paper-cut art and crests.',
+        ja: '型で凹凸を押し出すため、指で模様を感じられます。伝統文様や切り絵、紋章に向きます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '適合送咩客戶？',
+        en: 'Which recipients suit embossed packets?',
+        ja: 'どんな相手向けですか。',
+      },
+      answer: {
+        'zh-hk': 'VIP 客戶、銀行與金融公關、酒店迎賓、高端品牌送禮，需要「一摸就知分別」的場合。',
+        en: 'VIP clients, banking and finance PR, hotel greetings and premium gifting — where the hand-feel itself signals the tier.',
+        ja: 'VIP顧客、銀行・金融の広報、ホテル迎賓、高級ブランドの贈答など、手触りで格が伝わる場面に。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '浮雕會唔會影響燙金位置？',
+        en: 'Does embossing conflict with foil?',
+        ja: 'エンボスと箔押しは併用できますか。',
+      },
+      answer: {
+        'zh-hk': '可以併用，但要先定好層次：一般建議 Logo 燙金、底紋浮雕，兩者錯位才不會互相壓平。',
+        en: 'They combine, but set the layers first: foil the logo and emboss the background so the two do not flatten each other.',
+        ja: '併用できますが、順序設計が重要です。ロゴは箔、地紋はエンボスにするなど、重ならない配置にします。',
+      },
+    },
+  ],
+  'large-red-packets': [
+    {
+      question: {
+        'zh-hk': '加大利是封最少印幾多？價錢點計？',
+        en: 'Minimum order and price for large red packets?',
+        ja: '大判ポチ袋の最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '100 個起印，HK$2.20-7.50/個（按尺寸、紙材與工藝）。標準 5-7 個工作天。',
+        en: 'From 100 pcs at HK$2.20-7.50 each by size, stock and finishing; 5-7 business days.',
+        ja: '100個から、HK$2.20-7.50/個（サイズ・用紙・加工による）。標準5〜7営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '加大尺寸可以放幾多？',
+        en: 'What fits inside the larger size?',
+        ja: '大判サイズには何が入りますか。',
+      },
+      answer: {
+        'zh-hk': '可放多張鈔票、禮券或現金卡；紙材要夠挺，否則裝多張會變形，落單時可指定加厚。',
+        en: 'Multiple notes, vouchers or gift cards fit — specify a heavier stock so the packet keeps its shape when filled.',
+        ja: '複数枚の紙幣や商品券、ギフトカードが入ります。中身が多い場合は厚手の用紙をご指定ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '加大款適合咩用途？',
+        en: 'Where are large packets used?',
+        ja: '大判はどんな用途ですか。',
+      },
+      answer: {
+        'zh-hk': '婚宴回禮、企業年會抽獎、酒店與珠寶店送禮、需要放禮券的商務拜年。',
+        en: 'Wedding favours, corporate lucky draws, hotel and jewellery gifting, and business visits where vouchers are enclosed.',
+        ja: '結婚式の引き出物、企業の抽選会、ホテルやジュエリー店の贈答、商品券を入れる挨拶回り。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '同標準尺寸可以同一批落單嗎？',
+        en: 'Can large and standard sizes ship in one order?',
+        ja: '大判と標準サイズを同時発注できますか。',
+      },
+      answer: {
+        'zh-hk': '可以，同一設計語言下混款落單，共用一次打稿與一次出貨，減少色差。',
+        en: 'Yes — mixed sizes with one design language share a proof round and one shipment, which keeps colours consistent.',
+        ja: '可能です。同じデザイン言語で混在発注すれば、校正も出荷も一度で済み、色差も抑えられます。',
+      },
+    },
+  ],
+  'exercise-books': [
+    {
+      question: {
+        'zh-hk': '練習簿印刷幾多錢一本？',
+        en: 'How much do custom exercise books cost?',
+        ja: '練習帳の印刷料金は？',
+      },
+      answer: {
+        'zh-hk': '練習簿 10 本起印，HK$4 起/本（A5、32 頁、80g 上質紙、騎馬釘；數量同頁數浮動 HK$4-16/本）。標準 5-7 個工作天，開學前建議預早兩星期落單。',
+        en: 'Custom exercise books from $1/book at 10 MOQ (A5, 32 pages, 80gsm wove, saddle-stitched; HK$4-16 band by quantity and pages). Standard 5-7 business days; order two weeks ahead of term start.',
+        ja: '練習帳は10冊〜¥258〜（A5・32ページ・80g上質紙・中綴じ、数量とページ数でHK$4-16/本の帯）。標準5-7営業日、学期開始の2週間前のご注文をおすすめします。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '練習簿封面可以印校徽校名嗎？',
+        en: 'Can you print our school logo on the covers?',
+        ja: '表紙に校章や校名を入れられますか？',
+      },
+      answer: {
+        'zh-hk': '可以。封面 250g 銅版紙四色印刷，校徽、校名、科目欄免費排版；可選覆膜或局部 UV。打稿 1 小時內免費送出。',
+        en: 'Yes. Covers print 4-color on 250gsm art paper with free layout for crests, school names, and subject lines; matte or gloss lamination and spot UV optional. Free proof within 1 hour.',
+        ja: 'はい。表紙は250gコート紙4色印刷で、校章・校名・科目欄の排版は無料。ラミネートや局部UVも選択可。校正は1時間以内に無料でお送りします。',
+      },
+    },
+  ],
+  'perfect-bound-books': [
+    {
+      question: {
+        'zh-hk': '膠裝書刊印刷幾多錢一本？',
+        en: 'How much does perfect bound book printing cost?',
+        ja: '無線綴じ本の印刷料金は？',
+      },
+      answer: {
+        'zh-hk': '無線膠裝書 10 本起印，HK$16 起/本（A5、約 100 頁、封面 250g 銅版紙過膠；尺寸同頁數浮動 HK$16-80/本）。5-10 個工作天，免費數碼打稿。',
+        en: 'Perfect bound books from $4/book at 10 MOQ (A5, ~100 pages, 250gsm laminated cover; HK$16-80 band by size and page count). 5-10 business days with a free digital proof.',
+        ja: '無線綴じ本は10冊〜¥644〜（A5・約100ページ・表紙250gコート紙ラミネート、サイズとページ数でHK$16-80/本の帯）。5-10営業日、無料デジタル校正付き。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '幾多頁以上要轉膠裝？',
+        en: 'When should I switch from saddle stitch to perfect binding?',
+        ja: '何ページから無線綴じがおすすめ？',
+      },
+      answer: {
+        'zh-hk': '一般 64 頁以上建議膠裝：書脊可印書名，厚冊攤平度好過騎馬釘。騎馬釘適合 8-64 頁薄冊，成本較低。',
+        en: 'Move to perfect binding at 64+ pages: the spine takes a title and thick volumes lie flatter than saddle stitch. Saddle stitch suits 8-64 page booklets at lower cost.',
+        ja: '一般的に64ページ以上は無線綴じがおすすめ。書脊に書名が入り、厚い冊子でも中綴じより開きやすいです。中綴じは8-64ページの薄い冊子向きでコストも低いです。',
+      },
+    },
+  ],
+  'foil-greeting-cards': [
+    {
+      question: {
+        'zh-hk': '燙金賀卡幾多錢一張？',
+        en: 'How much do foil greeting cards cost?',
+        ja: '箔押しグリーティングカードの料金は？',
+      },
+      answer: {
+        'zh-hk': '燙金賀卡 10 張起印，HK$180-320/100 張（即 HK$1.8-3.2/張，300g 卡紙連燙金工藝）。聖誕卡、新年卡旺季建議 11 月前落單，5-7 個工作天交貨。',
+        en: 'Foil greeting cards start at 10 MOQ, HK$180-320 per 100 pcs (HK$1.8-3.2/pc, 300gsm card with foil). For Christmas and New Year cards, order before November; 5-7 business day production.',
+        ja: '箔押しカードは10枚〜、100枚でHK$180-320（1枚HK$1.8-3.2、300gカード紙＋箔押し）。クリスマス・年賀状は11月前のご注文をおすすめ、5-7営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '聖誕卡用自己設計得嗎？',
+        en: 'Can I supply my own Christmas card design?',
+        ja: '自分のデザインで印刷できますか？',
+      },
+      answer: {
+        'zh-hk': '可以，AI/PDF/JPG 均可，燙金位置請出獨立黑稿。免費排版檢查連 1 小時數碼打稿；無設計檔可由團隊免費代排。',
+        en: 'Yes — supply AI/PDF/JPG with the foil area as a separate black plate. Free preflight plus a 1-hour digital proof; our team can also create the layout at no charge.',
+        ja: 'はい。AI/PDF/JPG対応、箔押し部分は別ブラック版でご入稿ください。無料プリフライト＋1時間デジタル校正。デザインがなくても無料で排版作成します。',
+      },
+    },
+  ],
+  'roll-up-banners': [
+    {
+      question: {
+        'zh-hk': '易拉架幾多錢一個？',
+        en: 'How much does a roll-up banner cost?',
+        ja: 'ロールアップバナーの料金は？',
+      },
+      answer: {
+        'zh-hk': '易拉架 1 套起訂，HK$85 起/套（85×200cm、防水畫面連支架；尺寸同生地浮動 HK$85-300/套）。5-7 個工作天，入稿後 1 小時內免費數碼校正。',
+        en: 'Roll-up banners start from $46/set at 1 MOQ (85x200cm, waterproof graphic with stand; HK$85-300 band by size and material). 5-7 business days, free digital proof within 1 hour of artwork.',
+        ja: 'ロールアップバナーは1セット〜¥6,440〜（85×200cm・防水生地＋スタンド付、サイズと生地でHK$85-300/セットの帯）。5-7営業日、入稿後1時間以内に無料デジタル校正。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '易拉架畫面可以單換嗎？',
+        en: 'Can I replace just the banner graphic?',
+        ja: 'バナー面だけ交換できますか？',
+      },
+      answer: {
+        'zh-hk': '可以，支架重用，單換畫面按尺寸報價，適合季度推廣換畫。支架穩固重用，換畫成本遠低於全套新購。',
+        en: 'Yes — reuse the stand and replace the graphic only, quoted by size, which suits seasonal campaign swaps at well below the cost of a new set.',
+        ja: 'はい。スタンドは再利用でき、生地のみの交換はサイズでお見積もり。季節ごとの販促に最適で、新規購入より大幅にお安くなります。',
+      },
+    },
+  ],
+  'business-envelopes': [
+    {
+      question: {
+        'zh-hk': '信封印刷幾多錢一個？',
+        en: 'How much do custom business envelopes cost?',
+        ja: '封筒印刷の料金は？',
+      },
+      answer: {
+        'zh-hk': '企業信封 100 個起印，HK$0.22-1.80/個（C6/DL/C5 尺寸、80-120g 書紙或牛皮紙，LOGO 單色至四色）。5-7 個工作天，免費排版連打稿。',
+        en: 'Business envelopes start at 100 MOQ, HK$0.22-1.80/pc (C6/DL/C5 sizes, 80-120gsm wove or kraft, 1-4 color logo). 5-7 business days with free layout and proof.',
+        ja: '封筒は100枚〜、1枚HK$0.22-1.80（C6/DL/C5、80-120g書き紙またはクラフト、ロゴ1-4色）。5-7営業日、無料排版・校正付き。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '開窗信封訂製得嗎？',
+        en: 'Do you make window envelopes?',
+        ja: '窓付き封筒は作れますか？',
+      },
+      answer: {
+        'zh-hk': '可以，開窗位貼膜或模切，開窗版一次性開版、同版重用免再收；適合月結單同賬單郵寄。100 個起印同價。',
+        en: 'Yes — window envelopes with film or die-cut windows; the window plate is a one-time charge reusable across reorders, ideal for statement and billing mailers. Same 100 MOQ.',
+        ja: 'はい。窓部分はフィルム貼りまたは抜き加工で、窓版は一度きりの版代で再利用可能です。請求書や明細の郵送に最適。100枚〜同条件です。',
+      },
+    },
+  ],
+
+};

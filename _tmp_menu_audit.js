@@ -1,0 +1,14 @@
+const d = require('./src/data/blog-data/zh-hk.json');
+const t = d['restaurant-menu-printing-guide'];
+const c = t.content;
+console.log('total chars:', c.length);
+console.log('h2 count:', (c.match(/<h2/g) || []).length);
+console.log('h3 count:', (c.match(/<h3/g) || []).length);
+console.log('alert count:', (c.match(/bg-(amber|blue|red|green)-50/g) || []).length);
+console.log('nugget count:', (c.match(/nugget/g) || []).length);
+console.log('quick answer:', (c.match(/快速答案/g) || []).length);
+console.log('table count:', (c.match(/<table/g) || []).length);
+console.log('internal links /zh-hk/:', (c.match(/href="\/zh-hk\//g) || []).length);
+console.log('wa.me links:', (c.match(/wa\.me/g) || []).length);
+console.log('schema-org:', (c.match(/schema\.org/g) || []).length);
+console.log('firstH1 <p>:', c.indexOf('<p'));

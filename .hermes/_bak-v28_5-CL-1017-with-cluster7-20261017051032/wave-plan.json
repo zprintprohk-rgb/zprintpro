@@ -1,0 +1,182 @@
+{
+ "wave": "CL-1017-with-cluster7",
+ "patched": [
+  {
+   "slug": "wall-calendars",
+   "dir": "CL-001",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "desk-calendars",
+   "dir": "CL-002",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "custom-calendars",
+   "dir": "CL-003",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "mini-calendars",
+   "dir": "CL-004",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "photo-frame-calendars",
+   "dir": "CL-005",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "magnetic-calendars",
+   "dir": "CL-006",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-zh-hk-hero.webp']"
+  }
+ ],
+ "skipped": [],
+ "entries": [
+  {
+   "dir": "CL-001",
+   "slug": "wall-calendars",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-zh-hk-hero.webp",
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-zh-hk-detail.webp",
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-zh-hk-variety.webp",
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-en-hero.webp",
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-en-detail.webp",
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-en-variety.webp",
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-ja-hero.webp",
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-ja-detail.webp",
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-ja-variety.webp",
+     "/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "CL-002",
+   "slug": "desk-calendars",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-zh-hk-hero.webp",
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-zh-hk-detail.webp",
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-zh-hk-variety.webp",
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-en-hero.webp",
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-en-detail.webp",
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-en-variety.webp",
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-ja-hero.webp",
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-ja-detail.webp",
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-ja-variety.webp",
+     "/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "CL-003",
+   "slug": "custom-calendars",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-zh-hk-hero.webp",
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-zh-hk-detail.webp",
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-zh-hk-variety.webp",
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-en-hero.webp",
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-en-detail.webp",
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-en-variety.webp",
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-ja-hero.webp",
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-ja-detail.webp",
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-ja-variety.webp",
+     "/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "CL-004",
+   "slug": "mini-calendars",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-zh-hk-hero.webp",
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-zh-hk-detail.webp",
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-zh-hk-variety.webp",
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-en-hero.webp",
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-en-detail.webp",
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-en-variety.webp",
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-ja-hero.webp",
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-ja-detail.webp",
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-ja-variety.webp",
+     "/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "CL-005",
+   "slug": "photo-frame-calendars",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-zh-hk-hero.webp",
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-zh-hk-detail.webp",
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-zh-hk-variety.webp",
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-en-hero.webp",
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-en-detail.webp",
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-en-variety.webp",
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-ja-hero.webp",
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-ja-detail.webp",
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-ja-variety.webp",
+     "/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "CL-006",
+   "slug": "magnetic-calendars",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-zh-hk-hero.webp",
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-zh-hk-detail.webp",
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-zh-hk-variety.webp",
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-en-hero.webp",
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-en-detail.webp",
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-en-variety.webp",
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-ja-hero.webp",
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-ja-detail.webp",
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-ja-variety.webp",
+     "/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-ja-multi-angle.webp"
+    ]
+   }
+  }
+ ]
+}

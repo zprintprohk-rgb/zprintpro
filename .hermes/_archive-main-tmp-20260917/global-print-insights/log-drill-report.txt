@@ -1,0 +1,81 @@
+# 触达演练报告（本地 SMTP 接收，非真实发送）
+
+- 时间: 2026-09-15 23:58:23
+- 接收器: 127.0.0.1:2525（本地演练信箱，邮件保存在 logs/dev_smtp/）
+- 邮件: 测试 50 封 -> 送达接收器 49 封 / 黑名单拦截 1 封 / 校验失败 0 封
+- WhatsApp/社媒草稿: 测试 20 条 -> 渲染完成 19 条 / 黑名单拦截 1 条（未发送到任何平台）
+- 校验项: 模板 6 语种轮换 / 退订信息必含 / 黑名单拦截 / 重复收件人拦截 均已验证
+
+## 明细
+| # | 渠道 | 语言 | 状态 | 对象 |
+|---:|---|---|---|---|
+| 1 | email | es | sent_to_sink | drill001@example.com |
+| 2 | email | fr | sent_to_sink | drill002@example.com |
+| 3 | email | ar | suppressed_skipped | drill003@example.com |
+| 4 | email | ru | sent_to_sink | drill004@example.com |
+| 5 | email | pt | sent_to_sink | drill005@example.com |
+| 6 | email | en | sent_to_sink | drill006@example.com |
+| 7 | email | es | sent_to_sink | drill007@example.com |
+| 8 | email | fr | sent_to_sink | drill008@example.com |
+| 9 | email | ar | sent_to_sink | drill009@example.com |
+| 10 | email | ru | sent_to_sink | drill010@example.com |
+| 11 | email | pt | sent_to_sink | drill011@example.com |
+| 12 | email | en | sent_to_sink | drill012@example.com |
+| 13 | email | es | sent_to_sink | drill013@example.com |
+| 14 | email | fr | sent_to_sink | drill014@example.com |
+| 15 | email | ar | sent_to_sink | drill015@example.com |
+| 16 | email | ru | sent_to_sink | drill016@example.com |
+| 17 | email | pt | sent_to_sink | drill017@example.com |
+| 18 | email | en | sent_to_sink | drill018@example.com |
+| 19 | email | es | sent_to_sink | drill019@example.com |
+| 20 | email | fr | sent_to_sink | drill020@example.com |
+| 21 | email | ar | sent_to_sink | drill021@example.com |
+| 22 | email | ru | sent_to_sink | drill022@example.com |
+| 23 | email | pt | sent_to_sink | drill023@example.com |
+| 24 | email | en | sent_to_sink | drill024@example.com |
+| 25 | email | es | sent_to_sink | drill025@example.com |
+| 26 | email | fr | sent_to_sink | drill026@example.com |
+| 27 | email | ar | sent_to_sink | drill027@example.com |
+| 28 | email | ru | sent_to_sink | drill028@example.com |
+| 29 | email | pt | sent_to_sink | drill029@example.com |
+| 30 | email | en | sent_to_sink | drill030@example.com |
+| 31 | email | es | sent_to_sink | drill031@example.com |
+| 32 | email | fr | sent_to_sink | drill032@example.com |
+| 33 | email | ar | sent_to_sink | drill033@example.com |
+| 34 | email | ru | sent_to_sink | drill034@example.com |
+| 35 | email | pt | sent_to_sink | drill035@example.com |
+| 36 | email | en | sent_to_sink | drill036@example.com |
+| 37 | email | es | sent_to_sink | drill037@example.com |
+| 38 | email | fr | sent_to_sink | drill038@example.com |
+| 39 | email | ar | sent_to_sink | drill039@example.com |
+| 40 | email | ru | sent_to_sink | drill040@example.com |
+| 41 | email | pt | sent_to_sink | drill041@example.com |
+| 42 | email | en | sent_to_sink | drill042@example.com |
+| 43 | email | es | sent_to_sink | drill043@example.com |
+| 44 | email | fr | sent_to_sink | drill044@example.com |
+| 45 | email | ar | sent_to_sink | drill045@example.com |
+| 46 | email | ru | sent_to_sink | drill046@example.com |
+| 47 | email | pt | sent_to_sink | drill047@example.com |
+| 48 | email | en | sent_to_sink | drill048@example.com |
+| 49 | email | es | sent_to_sink | drill049@example.com |
+| 50 | email | fr | sent_to_sink | drill050@example.com |
+| 1 | whatsapp | es | rendered_ok | +100000000001 |
+| 2 | whatsapp | fr | rendered_ok | +100000000002 |
+| 3 | whatsapp | ar | suppressed_skipped | +10000000003 |
+| 4 | whatsapp | ru | rendered_ok | +100000000004 |
+| 5 | whatsapp | pt | rendered_ok | +100000000005 |
+| 6 | whatsapp | en | rendered_ok | +100000000006 |
+| 7 | whatsapp | es | rendered_ok | +100000000007 |
+| 8 | whatsapp | fr | rendered_ok | +100000000008 |
+| 9 | whatsapp | ar | rendered_ok | +100000000009 |
+| 10 | whatsapp | ru | rendered_ok | +100000000010 |
+| 11 | whatsapp | pt | rendered_ok | +100000000011 |
+| 12 | whatsapp | en | rendered_ok | +100000000012 |
+| 13 | whatsapp | es | rendered_ok | +100000000013 |
+| 14 | whatsapp | fr | rendered_ok | +100000000014 |
+| 15 | whatsapp | ar | rendered_ok | +100000000015 |
+| 16 | whatsapp | ru | rendered_ok | +100000000016 |
+| 17 | whatsapp | pt | rendered_ok | +100000000017 |
+| 18 | whatsapp | en | rendered_ok | +100000000018 |
+| 19 | whatsapp | es | rendered_ok | +100000000019 |
+| 20 | whatsapp | fr | rendered_ok | +100000000020 |

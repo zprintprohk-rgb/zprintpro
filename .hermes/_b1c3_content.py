@@ -1,0 +1,193 @@
+﻿# -*- coding: utf-8 -*-
+# B1c3 内容数据 — 全部经合规清洗 (编造量/3M/MBO-Stahl/简中/假价表 已清除)
+# 真值锚点: flyers 10張起 A5-128g HK$0.35起 3工作天(即日可選) | posters A2-128g HK$6-9/張 A1 HK$10-16 1-10張起 3-5天
+#          leaflets folded-leaflets 10份起 HK$0.70-1.95/張 | 全站 ISO 9001 + FSC + 30秒AI報價 + WhatsApp +86 198 8085 1334
+
+LAST = '2026-10-14'
+
+# ============ 1. FLYERS hub (category/flyers/) ============
+FLYERS = {
+ 'zh-hk': dict(
+  featuredSnippet='香港傳單印刷 10 張起印, A5 單面 128g 銅版紙 HK$0.35/張起, 標準 3 個工作天交貨, 即日特急可選。A6/A5/A4/DL 四種尺寸, 80-300gsm 紙張按派發場景配對: 街派選 128g 光面, 信箱投放選 157g 啞面, 櫃檯自取選 200g 以上。',
+  h2='香港傳單印刷 — 派發場景×尺寸紙張×數量成本完整指南',
+  adv_title='傳單印刷三大效率優勢',
+  adv_items=[
+    ('10 張起印，3 天交貨', ['數碼印刷小批量免版費，10 張即可起印', '標準 3 個工作天，即日特急班次可選', '補單靈活，賣完再印不囤貨']),
+    ('派發場景紙張配對建議', ['街派、信箱、櫃檯三大場景對應不同克重', '落單前告知派發地點，我們推薦最抵用紙', '避免「厚紙街派」的雙重浪費']),
+    ('ISO 9001 認證廠房', ['色彩管理標準化，批次之間偏差小', 'FSC 認證紙張可供選擇', '30 秒 AI 報價，價格透明']),
+  ],
+  mat_title='傳單紙張選型表', mat_sub='按派發場景而非「越厚越好」選紙',
+  mat_cols=['紙張', '特性', '適用場景'],
+  mat_rows=[
+    ('128g 銅版紙（光面）', '成本低、發色鮮豔、輕便', '街派、夾報、短期促銷'),
+    ('157g 銅版紙（啞面）', '挺度足、不反光、可書寫', '信箱投放、門縫塞紙'),
+    ('200g 啞粉紙', '手感紮實、品牌感強', '櫃檯自取、展會取閱'),
+    ('250-300g 特種紙', '高級觸感、值得保留', '高端邀請、形象宣傳'),
+    ('80g 書紙', '最經濟、輕薄', '大量夾報、內部通告'),
+  ],
+  opt_title='傳單增值加工',
+  opt_items=[
+    ('過膠（光/啞）', '防水防污，雨天街派可用；光膜亮麗、啞膜質感。'),
+    ('圓角模切', '觸感差異化，派發時不易卷角損手。'),
+    ('可變數據 QR', '每張不同二維碼或優惠碼，追蹤各派發點轉化率，需提供數據文件。'),
+    ('即日特急', '上午確認稿件，即日班次最快當晚取貨（視工序）。'),
+  ],
+  spec_title='技術規格',
+  spec_items=[
+    ('尺寸', 'A6 105×148 / A5 148×210 / A4 210×297 / DL 99×210 mm'),
+    ('紙張克重', '80 / 128 / 157 / 200 / 250 / 300 gsm'),
+    ('印刷', '單面或雙面 CMYK 四色，數碼或柯式'),
+    ('起印量', '10 張起'),
+    ('交期', '標準 3 個工作天；即日特急可選'),
+    ('參考價', 'A5 128g 單面 HK$0.35/張起，量大另議'),
+  ],
+  svc_title='服務流程',
+  svc_items=[
+    ('30 秒 AI 報價', '上傳尺寸數量即時獲價，或 WhatsApp +86 198 8085 1334 人工報價。'),
+    ('免費稿件檢查', '檢查出血、解像度、色彩模式，發現問題即時通知。'),
+    ('印刷及品檢', 'ISO 9001 流程，出貨前抽檢色彩與裁切。'),
+    ('香港本地及全球配送', '順豐本地速遞，海外 DHL 2-4 天。'),
+  ],
+  bg_title='香港傳單印刷完整指南',
+  bg_paras=[
+    '傳單印刷是將促銷信息、活動詳情或品牌介紹以單頁形式大量印製並派發的營銷物料生產。它的設計邏輯與海報、摺頁完全不同：海報是張貼展示、遠距離閱讀；摺頁是手持展開、多面承載；而傳單要過的是「3 秒法則」——行人在街頭接過傳單的幾秒內決定保留或丟棄，因此紙張手感、色彩衝擊力和尺寸比例直接影響留存。智印港把傳單按派發場景分為三類，每類對應不同的紙張和尺寸策略。',
+    '第一類是街派：派發員在街頭向行人遞出，接觸時間只有幾秒，大部分傳單會被即場丟棄。這個場景的核心是「成本×色彩」——推薦 128g 光面銅版紙，單張成本最低而發色最鮮豔，同時紙張要輕，1,000 張一疊的重量會直接影響派發員一整天的疲勞度。尺寸以 A6 或 A5 為主：A6 可單手接、放口袋，適合小促銷；A5 信息容量適中，是街派最通用的尺寸。',
+    '第二類是信箱和門縫投放：傳單要在信箱裡「獨自存活」一週以上，等收件人開信箱時仍有完整外觀。這時 128g 光面紙會因反光和軟塌被比下去——推薦 157g 啞面銅版紙，挺度足夠不彎折，啞面在室內燈光下閱讀舒適，甚至可被收件人順手記下電話。第三類是櫃檯和展會自取：傳單是讀者主動拿取的，留存率高，應該用 200g 以上的啞粉紙或特種紙，把傳單做成「值得帶走的小卡片」，這也是品牌傳單與促銷傳單的分水嶺。',
+    '尺寸選擇還有一個容易被忽略的維度：派發效率與成本的平衡。以 A5 為基準，A6 的紙張成本約為其六成而單手接取率更高，適合純引流；A4 信息容量翻倍但需雙手接取，只適合櫃檯和展會；DL 是標準信封尺寸，是郵寄投放的唯一正解。數量方面，幾百至兩千張用數碼印刷免版費起印；三千張以上轉柯式，單價隨數量階梯下降；五萬張以上的長期活動適合輪轉柯式。不確定印多少？先用 30 秒 AI 報價把幾個數量檔位試一遍，或直接 WhatsApp 我們按你的派發計劃反推最抵數量。',
+    '設計上，傳單的正面要當作「3 秒廣告位」來做：主視覺佔比要大、優惠信息要正面可見、品牌 Logo 清晰；背面放地圖、菜單、二維碼等次要信息。雙面印刷的成本增幅有限而信息容量翻倍，絕大多數場景都值得做雙面。雨天街派可選過膠加工，光膜防雨、啞膜防指紋。',
+  ],
+  bg_links=[
+    ('海報印刷（兄弟頁：大幅面張貼展示）', '/zh-hk/category/posters/'),
+    ('摺頁印刷（兄弟頁：多面摺疊傳單）', '/zh-hk/product/folded-leaflets/'),
+    ('貼紙印刷（跨簇：同為派發物料）', '/zh-hk/category/stickers/'),
+  ],
+  faqs=[
+    ('傳單印刷最少印幾多張？', '10 張起。幾百至兩千張用數碼印刷（免版費），三千張以上轉柯式（單價更低），數量越大單張成本越低。'),
+    ('街派傳單用咩紙最抵？', '128g 光面銅版紙：成本最低、發色最鮮豔、份量輕便派發。不建議街派用 250g 以上厚紙——更重更貴，而留存率不會因此提升。'),
+    ('傳單可以加 QR code 追蹤效果嗎？', '可以。統一二維碼免費（追總掃碼量）；可變數據每張不同碼，追蹤每個派發點的掃碼來源，需提供數據文件。'),
+    ('傳單同摺頁點揀？', '信息在五個要點以內、平鋪直敘——傳單；信息超過五個要點、需要展開閱讀的節奏感——摺頁。同尺寸摺頁因多一道摺疊工序而成本更高。'),
+    ('落雨街派，傳單會唔會爛？', '128g 銅版紙遇水會軟化但不會即爛。需要防水的話選過膠加工，可抵受短時間小雨；完全防水要用 PP 合成紙，成本約三倍，只建議高端場景。'),
+  ]),
+ 'en': dict(
+  featuredSnippet='Flyer printing in Hong Kong from 10 pcs — A5 single-side 128gsm gloss coated at HK$0.35/pc, standard 3-working-day turnaround with same-day rush available. Four sizes (A6/A5/A4/DL) and 80-300gsm stocks matched to your distribution scenario: street handout, letterbox drop, or counter pickup.',
+  h2='Flyer Printing — Distribution Scenario, Size, Stock & Cost Guide',
+  adv_title='Three Efficiency Advantages',
+  adv_items=[
+    ('10-piece MOQ, 3-day turnaround', ['Digital printing with no plate fee — start from 10 pcs', 'Standard 3 working days; same-day rush slot available', 'Reorder in small batches — no inventory risk']),
+    ('Scenario-Matched Stock Advice', ['Street, letterbox and counter scenarios need different weights', 'Tell us your distribution plan before ordering', 'Avoid the double waste of thick stock for street handout']),
+    ('ISO 9001 Certified Production', ['Standardized color management across batches', 'FSC-certified paper available', '30-second AI quote with transparent pricing']),
+  ],
+  mat_title='Flyer Stock Selection Table', mat_sub='Choose by distribution scenario, not "thicker is better"',
+  mat_cols=['Stock', 'Characteristics', 'Best For'],
+  mat_rows=[
+    ('128gsm coated (gloss)', 'Lowest cost, vivid color, lightweight', 'Street handout, newspaper inserts'),
+    ('157gsm coated (matte)', 'Rigid, non-reflective, writable', 'Letterbox drops, door slots'),
+    ('200gsm matte art', 'Substantial hand-feel, brand presence', 'Counter pickup, expo handouts'),
+    ('250-300gsm specialty', 'Premium touch, worth keeping', 'High-end invites, brand image'),
+    ('80gsm woodfree', 'Most economical, lightweight', 'Bulk inserts, internal notices'),
+  ],
+  opt_title='Flyer Add-On Finishing',
+  opt_items=[
+    ('Lamination (gloss/matte)', 'Water and dirt resistance for rainy street days; gloss shines, matte feels premium.'),
+    ('Rounded corner die-cut', 'Tactile differentiation; resists dog-earing during distribution.'),
+    ('Variable-data QR codes', 'A unique QR or promo code per flyer to track conversion per distribution point. Data file required.'),
+    ('Same-day rush', 'Confirm artwork in the morning; same-day slot pickup available (subject to workflow).'),
+  ],
+  spec_title='Technical Specifications',
+  spec_items=[
+    ('Sizes', 'A6 105×148 / A5 148×210 / A4 210×297 / DL 99×210 mm'),
+    ('Stock weight', '80 / 128 / 157 / 200 / 250 / 300 gsm'),
+    ('Printing', 'Single or double-sided CMYK, digital or offset'),
+    ('MOQ', '10 pcs'),
+    ('Turnaround', '3 working days standard; same-day rush available'),
+    ('Reference price', 'A5 128gsm single-side from HK$0.35/pc; volume pricing on request'),
+  ],
+  svc_title='Service Workflow',
+  svc_items=[
+    ('30-second AI quote', 'Instant pricing by size and quantity, or WhatsApp +86 198 8085 1334 for human support.'),
+    ('Free artwork check', 'Bleed, resolution and color-mode inspection with instant issue alerts.'),
+    ('Printing & QC', 'ISO 9001 process with color and trimming spot checks before dispatch.'),
+    ('Local & global delivery', 'SF Express local courier; DHL 2-4 days worldwide.'),
+  ],
+  bg_title='The Complete Flyer Printing Guide',
+  bg_paras=[
+    'Flyer printing is the mass production of single-page promotional material for physical distribution. Its design logic differs fundamentally from posters and leaflets: posters are wall-mounted for distance reading; leaflets are hand-held and unfold across multiple panels; a flyer must survive the "3-second rule" — the few seconds in which a pedestrian on the street decides to keep it or bin it. Paper hand-feel, color impact and size proportion directly drive retention. At ZprintPro we classify flyers by distribution scenario, and each scenario maps to a different stock and size strategy.',
+    'Scenario one is street handout, where a distributor hands flyers to pedestrians and most are discarded on the spot. Here the equation is cost × color: 128gsm gloss coated offers the lowest unit cost with the most vivid color, and the paper must be light — the weight of a 1,000-sheet stack directly affects a distributor\'s fatigue over a full day. Sizes run A6 or A5: A6 fits one hand and a pocket for micro-promotions; A5 is the universal street size with balanced information density.',
+    'Scenario two is letterbox and door-slot drops, where the flyer must survive alone in a mailbox for a week and still look intact when the recipient opens it. Here 128gsm gloss loses out — go with 157gsm matte coated: rigid enough not to curl, comfortable to read under indoor lighting, and writable if the recipient jots down a phone number. Scenario three is counter and expo self-pickup, where readers take the flyer actively and retention is high; use 200gsm+ matte art or specialty stock and turn the flyer into "a card worth taking away" — this is also the dividing line between brand flyers and pure promo flyers.',
+    'Size choice has an often-missed dimension: the balance of distribution efficiency and cost. Against an A5 baseline, A6 costs roughly 60% of the paper with a higher one-hand acceptance rate, ideal for pure traffic-driving; A4 doubles information capacity but needs two hands, so it suits counters and expos only; DL is the standard envelope size and the only correct answer for mail insertion. On quantity: a few hundred to 2,000 sheets runs digital with no plate fee; from 3,000 up, offset takes over with unit cost stepping down as volume grows; 50,000+ long campaigns suit web offset. Not sure how many to print? Run a 30-second AI quote across several quantity tiers, or WhatsApp us and we will reverse-engineer the most economical quantity from your distribution plan.',
+    'On design, treat the front of a flyer as a 3-second ad slot: a dominant hero visual, the offer visible on the front, a clear logo; put maps, menus and QR codes on the back. Double-sided printing adds limited cost while doubling information capacity — worth it in nearly every scenario. For rainy-day street work, lamination resists light rain; full waterproofing needs PP synthetic paper at roughly 3× cost, recommended only for premium use cases.',
+  ],
+  bg_links=[
+    ('Poster Printing (sibling: large-format display)', '/en/category/posters/'),
+    ('Folded Leaflet Printing (sibling: multi-panel folds)', '/en/product/folded-leaflets/'),
+    ('Sticker Printing (cross-cluster: distribution collateral)', '/en/category/stickers/'),
+  ],
+  faqs=[
+    ('What is the minimum flyer order?', '10 pcs. A few hundred to 2,000 runs digital (no plate fee); from 3,000, offset takes over at lower unit cost — the more you print, the cheaper per sheet.'),
+    ('What is the most cost-effective stock for street handout?', '128gsm gloss coated: lowest cost, most vivid color, and light enough for all-day distribution. Avoid 250gsm+ for street work — heavier, pricier, and retention does not improve.'),
+    ('Can flyers carry trackable QR codes?', 'Yes. A uniform QR is free (tracks total scans); variable-data printing gives each flyer a unique code to trace scans per distribution point. A data file is required.'),
+    ('Flyer or leaflet — how do I choose?', 'Five key messages or fewer, laid flat: flyer. More than five messages, or you want the unfolding reading rhythm: leaflet. Same size, leaflets cost more due to the extra folding operation.'),
+    ('Will flyers disintegrate in the rain?', '128gsm coated softens when wet but does not fall apart immediately. Lamination resists light rain; full waterproofing requires PP synthetic paper at about 3× cost — premium scenarios only.'),
+  ]),
+ 'ja': dict(
+  featuredSnippet='香港のチラシ印刷は10枚から。A5片面128gコート紙がHK$0.35/枚〜、標準3営業日、即日特急便あり。A6/A5/A4/DLの4サイズ、80-300gsmの用紙を配布シーン（街頭配布・ポスティング・店頭設置）に合わせて選定します。',
+  h2='チラシ印刷 — 配布シーン×サイズ×用紙×コスト完全ガイド',
+  adv_title='チラシ印刷3つの効率性',
+  adv_items=[
+    ('10枚から、3営業日', ['デジタル印刷なので版代なし・10枚から起印可能', '標準3営業日、即日特急便も選択可', '必要に応じて小ロット追加発注、在庫リスクなし']),
+    ('配布シーン別の用紙選定提案', ['街頭配布・ポスティング・店頭設置で最適克重が異なる', '注文前に配布計画をお聞きし最適用紙を提案', '「厚い紙を街頭配布」の二重ムダを防止']),
+    ('ISO 9001認証工場', ['色彩管理の標準化でロット間差を抑制', 'FSC認証紙のご用意あり', '30秒AI見積で価格透明']),
+  ],
+  mat_title='チラシ用紙選定表', mat_sub='「厚ければ良い」ではなく配布シーンで選ぶ',
+  mat_cols=['用紙', '特性', '適用シーン'],
+  mat_rows=[
+    ('128g コート紙（グロス）', 'コスト最低、発色鮮やか、軽量', '街頭配布、新聞折込'),
+    ('157g コート紙（マット）', 'ハリがあり、反射しにくい、書き込み可', 'ポスティング、郵便受け投函'),
+    ('200g マットコート紙', '手触りが堅実、ブランド感', '店頭設置、展示会配布'),
+    ('250-300g 特殊紙', '上質な触感、保持価値あり', '高級招待状、イメージ訴求'),
+    ('80g 上質紙', '最も経済的、薄軽', '大量折込、社内周知'),
+  ],
+  opt_title='チラシ追加加工',
+  opt_items=[
+    ('ラミネート（光沢/マット）', '雨の日の配布でも水や汚れに強い。光沢は艶やか、マットは高級感。'),
+    ('角丸トムソン抜き', '触感の差別化と、配布中の角の丸み・ケガ防止。'),
+    ('可変データQR', '各チラシに異なるQR/クーポンコードで配布地点別の転化を追跡。データファイルが必要。'),
+    ('即日特急', '午前中に原稿確定で即日便の引取が可能（工程による）。'),
+  ],
+  spec_title='技術仕様',
+  spec_items=[
+    ('サイズ', 'A6 105×148 / A5 148×210 / A4 210×297 / DL 99×210 mm'),
+    ('用紙克重', '80 / 128 / 157 / 200 / 250 / 300 gsm'),
+    ('印刷', '片面または両面CMYK、デジタルまたはオフセット'),
+    ('最低ロット', '10枚から'),
+    ('納期', '標準3営業日、即日特急可'),
+    ('参考価格', 'A5 128g片面 HK$0.35/枚〜、量販は別途お見積り'),
+  ],
+  svc_title='サービスフロー',
+  svc_items=[
+    ('30秒AI見積', 'サイズと数量で即時価格表示。WhatsApp +86 198 8085 1334 でも対応。'),
+    ('無料原稿チェック', '塗り足し・解像度・色彩モードを検査し、問題があれば即通知。'),
+    ('印刷と品質検査', 'ISO 9001プロセス。出荷前に色彩と断裁を抜き取り検査。'),
+    ('香港ローカル配送と国際発送', '順豊速運で香港配達、海外はDHL 2-4日。'),
+  ],
+  bg_title='チラシ印刷完全ガイド',
+  bg_paras=[
+    'チラシ印刷とは、プロモーション情報やイベント案内を単ページに大量印刷し配布するマーケティング物料の生産です。ポスター（掲示して遠くから読む）、リーフレット（手に取って広げて読む）とは設計論が根本的に異なり、チラシが越えなければならないのは「3秒の法則」——路上で受け取った通行人が保持するか捨てるかを決める数秒間です。用紙の手触り、発色の迫力、サイズの比率が保持率に直結します。ZprintProでは配布シーン別に3タイプに分類し、それぞれに最適な用紙とサイズを対応させています。',
+    '第一のシーンは街頭配布。配布員が通行人に手渡し、大多数はその場で捨てられます。このシーンの方程式はコスト×発色。128gグロスコート紙は単価が最も安く発色が最も鮮やかで、さらに軽量であることが重要——1,000枚の重さが配布員の一日の疲労に直結します。サイズはA6またはA5。A6は片手で受け取りポケットに入るミニプロモ向け、A5は情報量と受取しやすさのバランスが取れた街頭の標準サイズです。',
+    '第二のシーンはポスティングと郵便受け投函。チラシは郵便受けの中で1週間以上「ひとりで生き残り」、開けた瞬間にきれいである必要があります。ここで128gグロスは敗れます——157gマットコート紙が正解。ハリがあって折れず、室内照明での読みやすさが高く、電話番号を書き留めたくなる質感です。第三のシーンは店頭・展示会のセルフ取得。読者が能動的に手に取るので保持率が高く、200g以上のマットコート紙や特殊紙で「持ち帰りたくなる一枚」を仕上げます。ここがブランド訴求チラシとセールス訴求チラシの分岐点です。',
+    'サイズ選定には見落とされがちな次元があります：配布効率とコストの釣り合いです。A5を基準に、A6は用紙コスト約6割で受取率が高く、集客特化に最適。A4は情報容量が倍になりますが両手で受け取る必要があり、店頭・展示会専用です。DLは定型封筒サイズであり、郵送投函の唯一の正解です。数量について：数百〜2,000枚は版代なしのデジタル印刷、3,000枚以上はオフセットに切り替わり数量増に伴い単価が階段状に下がり、5万枚以上の長期キャンペーンは輪転オフセットが適します。枚数が決まらない場合は30秒AI見積で複数の数量帯を比較するか、配布計画をお知らせいただければ最適枚数を逆算します。',
+    '設計面では、チラシの表面を「3秒の広告枠」として設計してください。主ビジュアルは大きく、特典情報は表面に明記し、ロゴは鮮明に。地図・メニュー・QRコードは裏面にまとめます。両面印刷は費用増を抑えつつ情報容量が倍になるため、ほぼ全シーンで採用価値があります。雨天の配布にはラミネート加工で小雨に耐えられます。完全防水が必要な場合はPP合成紙（コスト約3倍）を選び、ハイエンドシーンに限定しましょう。',
+  ],
+  bg_links=[
+    ('ポスター印刷（兄弟ページ：大判掲示）', '/ja/category/posters/'),
+    ('リーフレット印刷（兄弟ページ：多面折り）', '/ja/product/folded-leaflets/'),
+    ('シール印刷（クラスター間：配布物料）', '/ja/category/stickers/'),
+  ],
+  faqs=[
+    ('チラシ印刷の最低ロットは？', '10枚から。数百〜2,000枚はデジタル印刷（版代なし）、3,000枚以上はオフセットに切り替わり単価が下がります。枚数が増えるほど1枚あたりのコストは低くなります。'),
+    ('街頭配布に最もコスパの良い用紙は？', '128gグロスコート紙。コストが最も低く発色が最も鮮やかで、終日配布でも軽量です。街頭配布に250g以上は非推奨——重く高く、保持率は上がりません。'),
+    ('チラシにQRコードで効果測定は可能？', 'はい。統一QRは無料（総スキャン数を追跡）、可変データで各チラシに異なるコードを入れ配布地点別のスキャンを追跡できます。データファイルが必要です。'),
+    ('チラシとリーフレット、どう選ぶ？', '情報ポイント5つ以内・平面的な訴求ならチラシ。ポイントが5つを超える、または広げて読むリズムが欲しいならリーフレット。同サイズでは折り工程分だけリーフレットのコストが高くなります。'),
+    ('雨の日の配布でチラシは駄目になりますか？', '128gコート紙は水に濡れると柔らかくなりますが即座には崩れません。ラミネート加工で小雨に耐えられます。完全防水にはPP合成紙（コスト約3倍）を選び、ハイエンドシーンに限定してください。'),
+  ]),
+}

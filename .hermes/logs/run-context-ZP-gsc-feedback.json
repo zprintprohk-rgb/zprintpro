@@ -1,11 +1,11 @@
 {
   "lane": "ZP-gsc-feedback",
-  "generated_at": "2026-10-27 20:13:01",
+  "generated_at": "2026-11-20 20:13:01",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "aabde12b39bb6f5c",
-    "day": "2026-10-27",
+    "this_run_key": "323b32262db4c17c",
+    "day": "2026-11-20",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -23,6 +23,21 @@
         "detail": "依赖树 OK (328 个包)"
       },
       {
+        "name": "dsh_executable",
+        "ok": true,
+        "detail": "dsh CLI found"
+      },
+      {
+        "name": "dsh_credential_environment",
+        "ok": true,
+        "detail": "DEEPSEEK_API_KEY present in process environment (value not inspected)"
+      },
+      {
+        "name": "dsh_effective_provider_model",
+        "ok": true,
+        "detail": "effective provider=deepseek-official model=deepseek-flash; allowed"
+      },
+      {
         "name": "lock_free",
         "ok": true,
         "detail": "无锁"
@@ -30,12 +45,17 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-24 20:13:43"
+        "detail": "总线最近记录 verdict=FAILED @ 2026-11-19 20:13:05"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=7"
+        "detail": "verdict=ATTENTION problems=7; refreshed_stale=False; refresh=not_needed"
+      },
+      {
+        "name": "coordination_board",
+        "ok": true,
+        "detail": "coordination board rebuilt"
       },
       {
         "name": "lock_acquired",
@@ -46,41 +66,40 @@
   },
   "lock": {
     "lane": "ZP-gsc-feedback",
-    "pid": 1712,
-    "acquired_at": "2026-10-27 20:13:01",
-    "acquired_ts": 1793103182.086886,
+    "pid": 26932,
+    "acquired_at": "2026-11-20 20:13:01",
+    "acquired_ts": 1795176782.3421297,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-gsc-feedback-20261024T201343",
+      "run_id": "ZP-gsc-feedback-20261119T201305-35628",
       "lane": "ZP-gsc-feedback",
       "trigger": "schtasks",
-      "fired_at": "2026-10-24 20:13:43",
-      "ended_at": "2026-10-24 20:13:43",
-      "idempotency_key": "3667b5fb919620d9",
-      "dsh_exit": null,
-      "wrapper_exit": 0,
-      "verdict": "OK",
-      "state": "completed",
-      "blocked_reason": "",
+      "fired_at": "2026-11-19 20:13:05",
+      "ended_at": "2026-11-19 20:13:05",
+      "idempotency_key": "e0e52600e993ad2a",
+      "key_consumed": false,
+      "dsh_exit": 1,
+      "wrapper_exit": 1,
+      "verdict": "FAILED",
+      "state": "failed",
+      "blocked_reason": "dsh exited 1; model execution failed before host finalize",
       "guard": {
         "ok": true
       },
-      "report": ".hermes/logs/2026-10-23-ZP-k3-review.md",
-      "report_auto_generated": false,
+      "report": ".hermes/logs/2026-11-19-ZP-gsc-feedback.failure.md",
+      "report_auto_generated": true,
       "files": [],
-      "pushed": true,
-      "head": "07d53b90",
+      "pushed": false,
+      "head": "35909643",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-10-26-ZP-gsc-feedback.md",
+    "latest_report": ".hermes/logs/2026-11-18-ZP-gsc-feedback.md",
     "delivered_files_from_report": [
-      "scripts/__pycache__/fetch_gsc_data.cpython-312.pyc",
-      "docs/2026-10-26-dual-engine-seo-aeo-geo-deep-strategy.md",
-      "docs/2026-10-26-packaging-seo-aeo-geo-competitor-strategy.md",
-      "docs/2026-10-26-seven-clusters-seo-aeo-geo-global-strategy.md",
-      "docs/evidence/2026-10-26/"
+      "`.hermes/logs/2026-11-18-ZP-gsc-feedback.md`",
+      "`.hermes/logs/gsc-daily-anomaly-2026-11-18.json`",
+      "`.hermes/logs/flywheel-learning-ledger.json`（**只加 `retest_gate_2026_11_18` 块**，未改任何既有条目 verdict）"
     ]
   },
   "sibling_lanes": [
@@ -91,24 +110,552 @@
       "start": "21:17"
     },
     {
+      "lane": "ZP-weekly-meta",
+      "status": "PENDING",
+      "report": null,
+      "start": "20:52"
+    },
+    {
       "lane": "ZP-k3-review",
-      "status": "STALE",
+      "status": "PENDING",
       "report": null,
       "start": "07:10"
     }
   ],
   "retry_queue": [
     {
+      "kind": "RETRY_OF",
+      "run_id": "ZP-gsc-feedback-20261119T201305-35628",
+      "reason": "dsh exited 1; model execution failed before host finalize",
+      "candidate_files": []
+    },
+    {
       "kind": "UNRESOLVED_DAY",
-      "day": "2026-10-26",
+      "day": "2026-11-18",
       "status": "FAILED",
-      "notes": []
+      "notes": [
+        "pre-commit guard rejected 1 production files; no report commit/push",
+        "guard blocked src commit",
+        "guard-blocked message seen in console log (suspected: log may also carry human-session output)"
+      ]
+    },
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-11-19",
+      "status": "FAILED",
+      "notes": [
+        "dsh exited 1; model execution failed before host finalize",
+        "report is AUTO-FILLED or lacks a complete OK/PARTIAL/NO_OP contract (2026-11-19-ZP-gsc-feedback.failure.md)"
+      ]
     }
   ],
+  "suppressed_retry_queue": [],
+  "coordination": {
+    "board_path": ".hermes/logs/coordination-board.json",
+    "available": true,
+    "run_date": "2026-11-20",
+    "ready_task_ids": [
+      "GSC-MEASURE-2026-11-20-f2bc40ee31",
+      "GSC-MEASURE-2026-11-20-7dfc8ccac4",
+      "GSC-MEASURE-2026-11-20-8ba60bd637",
+      "GSC-MEASURE-2026-11-20-4c5ebffbea",
+      "GSC-MEASURE-2026-11-20-ffa9859a1b",
+      "GSC-MEASURE-2026-11-20-2d5ea01d64",
+      "GSC-MEASURE-2026-11-20-549df6a371",
+      "GSC-MEASURE-2026-11-20-c3807750ae",
+      "GSC-MEASURE-2026-11-20-cdc0931dc4"
+    ],
+    "ready_tasks": [
+      {
+        "task_id": "GSC-MEASURE-2026-11-20-f2bc40ee31",
+        "source": "latest_gsc_delta",
+        "cluster": "posters-zh-hk",
+        "query": [
+          "海報印刷"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "海報印刷": {
+              "impressions": 186,
+              "clicks": 1,
+              "ctr_pct": 0.5376,
+              "position": 20.37,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-gsc-feedback",
+        "status": "READY",
+        "priority": 80.186,
+        "upstream_inputs": [
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          ".hermes/cron-prompts/blog-money-keyword-queue.json"
+        ],
+        "approval_gate": "Measurement only; diagnose index, intent, query-by-page attribution, page changes and truth before content. No automatic article/canonical/redirect.",
+        "write_scope": [
+          ".hermes/logs/",
+          "docs/"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-20",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-20",
+        "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+        "idempotency": "2026-11-19|海報印刷|MEASURE"
+      },
+      {
+        "task_id": "GSC-MEASURE-2026-11-20-7dfc8ccac4",
+        "source": "latest_gsc_delta",
+        "cluster": "flyers-zh-hk",
+        "query": [
+          "宣傳單張"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "宣傳單張": {
+              "impressions": 134,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 39.39,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-gsc-feedback",
+        "status": "READY",
+        "priority": 80.134,
+        "upstream_inputs": [
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          ".hermes/cron-prompts/blog-money-keyword-queue.json"
+        ],
+        "approval_gate": "Measurement only; diagnose index, intent, query-by-page attribution, page changes and truth before content. No automatic article/canonical/redirect.",
+        "write_scope": [
+          ".hermes/logs/",
+          "docs/"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-20",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-20",
+        "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+        "idempotency": "2026-11-19|宣傳單張|MEASURE"
+      },
+      {
+        "task_id": "GSC-MEASURE-2026-11-20-8ba60bd637",
+        "source": "latest_gsc_delta",
+        "cluster": "印刷",
+        "query": [
+          "印刷"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "印刷": {
+              "impressions": 127,
+              "clicks": 1,
+              "ctr_pct": 0.7874,
+              "position": 22.91,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-gsc-feedback",
+        "status": "READY",
+        "priority": 80.127,
+        "upstream_inputs": [
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          ".hermes/cron-prompts/blog-money-keyword-queue.json"
+        ],
+        "approval_gate": "Measurement only; diagnose index, intent, query-by-page attribution, page changes and truth before content. No automatic article/canonical/redirect.",
+        "write_scope": [
+          ".hermes/logs/",
+          "docs/"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-20",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-20",
+        "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+        "idempotency": "2026-11-19|印刷|MEASURE"
+      },
+      {
+        "task_id": "GSC-MEASURE-2026-11-20-4c5ebffbea",
+        "source": "latest_gsc_delta",
+        "cluster": "comiket-ja",
+        "query": [
+          "コミケ 印刷"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "コミケ 印刷": {
+              "impressions": 110,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 30.49,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-gsc-feedback",
+        "status": "READY",
+        "priority": 80.11,
+        "upstream_inputs": [
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          ".hermes/cron-prompts/blog-money-keyword-queue.json"
+        ],
+        "approval_gate": "Measurement only; diagnose index, intent, query-by-page attribution, page changes and truth before content. No automatic article/canonical/redirect.",
+        "write_scope": [
+          ".hermes/logs/",
+          "docs/"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-20",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-20",
+        "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+        "idempotency": "2026-11-19|コミケ 印刷|MEASURE"
+      },
+      {
+        "task_id": "GSC-MEASURE-2026-11-20-ffa9859a1b",
+        "source": "latest_gsc_delta",
+        "cluster": "教材 印刷製本",
+        "query": [
+          "教材 印刷製本"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "教材 印刷製本": {
+              "impressions": 57,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 43.95,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-gsc-feedback",
+        "status": "READY",
+        "priority": 80.057,
+        "upstream_inputs": [
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          ".hermes/cron-prompts/blog-money-keyword-queue.json"
+        ],
+        "approval_gate": "Measurement only; diagnose index, intent, query-by-page attribution, page changes and truth before content. No automatic article/canonical/redirect.",
+        "write_scope": [
+          ".hermes/logs/",
+          "docs/"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-20",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-20",
+        "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+        "idempotency": "2026-11-19|教材 印刷製本|MEASURE"
+      },
+      {
+        "task_id": "GSC-MEASURE-2026-11-20-2d5ea01d64",
+        "source": "latest_gsc_delta",
+        "cluster": "易拉架印刷",
+        "query": [
+          "易拉架印刷"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "易拉架印刷": {
+              "impressions": 43,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 41.63,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-gsc-feedback",
+        "status": "READY",
+        "priority": 80.043,
+        "upstream_inputs": [
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          ".hermes/cron-prompts/blog-money-keyword-queue.json"
+        ],
+        "approval_gate": "Measurement only; diagnose index, intent, query-by-page attribution, page changes and truth before content. No automatic article/canonical/redirect.",
+        "write_scope": [
+          ".hermes/logs/",
+          "docs/"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-20",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-20",
+        "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+        "idempotency": "2026-11-19|易拉架印刷|MEASURE"
+      },
+      {
+        "task_id": "GSC-MEASURE-2026-11-20-549df6a371",
+        "source": "latest_gsc_delta",
+        "cluster": "喜帖印刷",
+        "query": [
+          "喜帖印刷"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "喜帖印刷": {
+              "impressions": 36,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 44.78,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-gsc-feedback",
+        "status": "READY",
+        "priority": 80.036,
+        "upstream_inputs": [
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          ".hermes/cron-prompts/blog-money-keyword-queue.json"
+        ],
+        "approval_gate": "Measurement only; diagnose index, intent, query-by-page attribution, page changes and truth before content. No automatic article/canonical/redirect.",
+        "write_scope": [
+          ".hermes/logs/",
+          "docs/"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-20",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-20",
+        "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+        "idempotency": "2026-11-19|喜帖印刷|MEASURE"
+      },
+      {
+        "task_id": "GSC-MEASURE-2026-11-20-c3807750ae",
+        "source": "latest_gsc_delta",
+        "cluster": "小冊子印刷",
+        "query": [
+          "小冊子印刷"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "小冊子印刷": {
+              "impressions": 14,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 17.93,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-gsc-feedback",
+        "status": "READY",
+        "priority": 80.014,
+        "upstream_inputs": [
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          ".hermes/cron-prompts/blog-money-keyword-queue.json"
+        ],
+        "approval_gate": "Measurement only; diagnose index, intent, query-by-page attribution, page changes and truth before content. No automatic article/canonical/redirect.",
+        "write_scope": [
+          ".hermes/logs/",
+          "docs/"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-20",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-20",
+        "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+        "idempotency": "2026-11-19|小冊子印刷|MEASURE"
+      },
+      {
+        "task_id": "GSC-MEASURE-2026-11-20-cdc0931dc4",
+        "source": "latest_gsc_delta",
+        "cluster": "證書印刷",
+        "query": [
+          "證書印刷"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "證書印刷": {
+              "impressions": 9,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 12.22,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-gsc-feedback",
+        "status": "READY",
+        "priority": 80.009,
+        "upstream_inputs": [
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          ".hermes/cron-prompts/blog-money-keyword-queue.json"
+        ],
+        "approval_gate": "Measurement only; diagnose index, intent, query-by-page attribution, page changes and truth before content. No automatic article/canonical/redirect.",
+        "write_scope": [
+          ".hermes/logs/",
+          "docs/"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-20",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-20",
+        "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+        "idempotency": "2026-11-19|證書印刷|MEASURE"
+      }
+    ],
+    "input_availability": {
+      "strategy_queue": {
+        "available": true,
+        "path": ".hermes/logs/strategy-task-queue.json"
+      },
+      "blog_queue": {
+        "available": true,
+        "path": ".hermes/cron-prompts/blog-money-keyword-queue.json"
+      },
+      "lane_status": {
+        "available": true,
+        "path": ".hermes/logs/lane-status.json"
+      },
+      "gsc_delta": {
+        "available": true,
+        "path": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "analysis_date": "2026-11-19"
+      },
+      "weekly_review": {
+        "available": true,
+        "path": ".hermes/logs/periodic-review-weekly-2026-11-13.json",
+        "review_date": "2026-11-13"
+      },
+      "monthly_review": {
+        "available": true,
+        "path": ".hermes/logs/periodic-review-monthly-2026-10-28.json",
+        "review_date": "2026-10-28"
+      }
+    },
+    "scheduler_recovery": "NOT_PROVEN"
+  },
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
-    "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",
+    "必须先消费 coordination.ready_tasks 与共享板的上游证据; 只有 status=READY 且 owner_lane=本车道的任务可执行",
+    "WAITING_K3/BLOCKED_INFRA/SCHEDULED/MEASURE_HOLD 不得被本车道改写为 READY; 复测未到不得叠加新变量",
+    "缺 GSC/周报等可选输入时保留 available=false 与 NO_CURRENT_BASELINE; 不得造数, 也不得退回独立选词/独立写文",
+    "FOLLOW_UP_PARTIAL 只处理报告 NEXT, 不重做 DELIVERED; 其他 retry_queue 项才按 RETRY_OF(<run_id>) 恢复",
+    "NO_OP 是证据完整的合法退出, 不自动重试; suppressed_retry_queue 已闭合, 不得重新派发",
     "sibling_lanes 里今日已改过的文件, 本轮不得再次改写 (跨车道避让, 防撞车)",
-    "报告名 <YYYY-MM-DD>-<lane>.md, 首段必含 VERDICT/CONSUMED/DELIVERED/NEXT 四行"
+    "报告名 <YYYY-MM-DD>-<lane>.md, 首段必含 VERDICT/CONSUMED/DELIVERED/NEXT 四行; PARTIAL 不得写成 OK"
   ]
 }

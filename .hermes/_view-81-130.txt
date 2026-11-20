@@ -1,0 +1,250 @@
+#1 small-bags|zh-hk minQ=null bp=null/null/null
+ T: 小號紙袋 | 100%環保 多尺寸 | DHL 2-4天到貨 | 智印港
+ H: 小巧尺寸，適合首飾、化妝品等小件商品。智印港提供專業小號紙袋服務，香港本地印刷，品質保證，價格透明。
+ D: 小號紙袋/小號紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: title:no_moq_hook ; title:no_price_hook ; title:no_turnaround_hook ; h1:fluff_words=小巧尺寸，適合首飾、化妝品等小件商品。智印港提供專業小號紙袋服務，香港本地印刷，品質保證，價格透明。
+#2 small-bags|en minQ=null bp=null/null/null
+ T: Custom Small Paper Bags | Free Shipping $99+ | ZprintPro
+ H: Small Bags 100+ | Premium Custom | ZprintPro
+ D: Custom small bags from ZprintPro the US. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_moq_hook ; title:no_turnaround_hook ; desc:no_turnaround ; keywords:main_kw_not_first
+#3 small-bags|ja minQ=null bp=null/null/null
+ T: 小型紙袋 | エコ素材 多サイズ | 1時間無料校正 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: 小型紙袋の小型紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_moq_hook ; title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=小型紙袋の小型紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 ; keywords:main_kw_not_first
+#4 large-bags|en minQ=100 bp=15/3.45/450
+ T: Custom Large Paper Bags | Free Shipping $99+ | ZprintPro
+ H: Large Paper Bags 100+ | Heavy-Duty | ZprintPro
+ D: Large reinforced paper bags for apparel and gifts. 200-300g kraft, 12-20kg load. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_moq_hook ; title:no_turnaround_hook ; h1:main_kw_missing=Large Paper Bags 100+ | Heavy-Duty | ZprintPro ; desc:main_kw_missing=Large reinforced paper bags for apparel and gifts. 200-300g  ; desc:no_turnaround ; keywords:main_kw_not_first
+#5 large-bags|ja minQ=100 bp=15/3.45/450
+ T: 大型紙袋 | エコ素材 多サイズ | 100枚〜 ¥450〜 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: 大型紙袋の大型紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=大型紙袋の大型紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色
+#6 a4-flyers|ja minQ=10 bp=0.35/0.55/70
+ T: A4 チラシ | 両面フルカラー | 10枚〜 ¥70〜 | ZprintPro
+ H: Standard A4 size
+ D: A4 チラシのA4 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_turnaround_hook ; h1:main_kw_missing=Standard A4 size ; desc:main_kw_missing=A4 チラシのA4 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/ ; keywords:main_kw_not_first
+#7 a5-flyers|ja minQ=10 bp=0.25/0.4/50
+ T: A5 チラシ | 両面フルカラー 10枚〜 ¥50〜 | ZprintPro
+ H: A5 size
+ D: A5 チラシのA5 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_turnaround_hook ; h1:main_kw_missing=A5 size ; h1:too_thin=A5 size ; desc:main_kw_missing=A5 チラシのA5 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/ ; keywords:main_kw_not_first
+#8 double-sided-flyers|zh-hk minQ=10 bp=0.4/0.65/85
+ T: 雙面傳單印刷 圓角・覆膜・10起印・HK$0.40起 | 智印港
+ H: 雙面傳單印刷
+ D: 雙面傳單印刷/傳單印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: title:no_turnaround_hook ; desc:moq_conflict_title=title=10 desc=100 truth=10
+#9 folded-leaflets|ja minQ=10 bp=0.7/0.8/110
+ T: 折りパンフレット | 両面フルカラー 100枚〜 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: 折りパンフレットの折りパンフレットは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=折りパンフレットの折りパンフレットは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5 ; keywords:main_kw_not_first
+#10 thick-paper-flyers|ja minQ=10 bp=0.45/0.7/95
+ T: 厚口チラシ | 両面フルカラー 10枚〜 ¥95〜 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: 厚口チラシの厚口チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=厚口チラシの厚口チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL ; keywords:main_kw_not_first
+#11 eco-flyers|ja minQ=10 bp=0.38/0.6/75
+ T: エコチラシ | 両面フルカラー 10枚〜 ¥75〜 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: エコチラシのエコチラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+#12 display-posters|zh-hk minQ=1 bp=32/7.36/960
+ T: 展架海報 | 防水材質 即日速遞 | 1個起 HK$32起 | 智印港
+ H: 配合X展架或易拉寶使用，便攜易裝。展會、路演必備。智印港提供專業展架海報服務，香港本地印刷，品質保證，價格透明。
+ D: 展架海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: h1:fluff_words=配合X展架或易拉寶使用，便攜易裝。展會、路演必備。智印港提供專業展架海報服務，香港本地印刷，品質保證，價格透明。 ; desc:moq_conflict_title=title=32 desc=10 truth=1
+#13 display-posters|ja minQ=1 bp=32/7.36/960
+ T: ディスプレイポスター印刷 1枚〜・最安 短納期 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: ディスプレイポスターのディスプレイポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。1枚〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=ディスプレイポスターのディスプレイポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 ; keywords:main_kw_not_first
+#14 art-posters|ja minQ=1 bp=26/5.98/780
+ T: アートポスター 1枚〜・最安値・無料校正 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: アートポスターのアートポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。1枚〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+#15 adhesive-posters|zh-hk minQ=1 bp=13/2.99/390
+ T: 背膠海報 | 防水材質 即日速遞 | 1個起 HK$13起 | 智印港
+ H: 自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。智印港提供專業背膠海報服務，香港本地印刷，品質保證，價格透明。
+ D: 背膠海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: h1:fluff_words=自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。智印港提供專業背膠海報服務，香港本地印刷，品質保證，價格透明。 ; desc:moq_conflict_title=title=13 desc=10 truth=1
+#16 mailer-boxes|en minQ=100 bp=3.5/0.8/105
+ T: Custom Mailer Boxes | Free Shipping $99+ | ZprintPro
+ H: Mailer Boxes 100+ | Self-Lock | ZprintPro
+ D: Mailer boxes for e-commerce. Self-locking, 70% storage save, kraft or white. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_moq_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#17 mailer-boxes|ja minQ=100 bp=3.5/0.8/105
+ T: メーラーボックス | 特注 高級パッケージ | ZprintPro
+ H: Sturdy and durable
+ D: メーラーボックスのメーラーボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_moq_hook ; title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=Sturdy and durable ; desc:main_kw_missing=メーラーボックスのメーラーボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタム ; keywords:main_kw_not_first
+#18 folding-boxes|zh-hk minQ=100 bp=2.5/0.51/69
+ T: 折疊禮盒 | 燙金 UV 100%訂製 | 100個起 HK$2.5起 | 智印港
+ H: 可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。智印港提供專業折疊盒服務，香港本地印刷，品質保證，價格透明。
+ D: 折疊禮盒/折疊盒 100 個起。採用 白卡/牛皮紙/灰板 高品質材質，支援 訂製尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: title:no_turnaround_hook ; h1:fluff_words=可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。智印港提供專業折疊盒服務，香港本地印刷，品質保證，價格透明。
+#19 folding-boxes|ja minQ=100 bp=2.5/0.51/69
+ T: 折り畳み箱 箔押し・ラミネート・100枚〜 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: 折り畳み箱の折り畳み箱は ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=折り畳み箱の折り畳み箱は ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種 ; keywords:main_kw_not_first
+#20 rigid-boxes|en minQ=100 bp=8/1.84/240
+ T: Custom Rigid Boxes | Free Shipping $99+ | ZprintPro
+ H: Rigid Boxes 250+ | Magnetic Closure | ZprintPro
+ D: Luxury rigid setup boxes. 800-1500gsm greyboard, magnetic closure, leatherette. 250-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_moq_hook ; title:no_turnaround_hook ; desc:main_kw_missing=Luxury rigid setup boxes. 800-1500gsm greyboard, magnetic cl ; desc:no_turnaround
+#21 rigid-boxes|ja minQ=100 bp=8/1.84/240
+ T: リジッドボックス | 特注 高級パッケージ | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: リジッドボックスのリジッドボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_moq_hook ; title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=リジッドボックスのリジッドボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタム ; keywords:main_kw_not_first
+#22 foil-red-packets|zh-hk minQ=100 bp=1.1/0.46/64
+ T: 燙金利是封 燙金・局部UV・100起印・HK$1.10起 | 智印港
+ H: 燙金利是封
+ D: 燙金利是封/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: title:no_turnaround_hook ; h1:too_thin=燙金利是封
+#23 foil-red-packets|en minQ=100 bp=1.1/0.46/64
+ T: Foil Red Packets Foil + Spot UV + 100 MOQ | ZprintPro
+ H: Foil Red Packets 100+ | ZprintPro
+ D: Custom foil red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_price_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#24 foil-red-packets|ja minQ=100 bp=1.1/0.46/64
+ T: 箔押し年賀状 | UV エンボス | 100枚〜 ¥64〜 | ZprintPro
+ H: Traditional foil stamping
+ D: 箔押し年賀状の箔押し年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_turnaround_hook ; h1:main_kw_missing=Traditional foil stamping ; desc:main_kw_missing=箔押し年賀状の箔押し年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対 ; keywords:main_kw_not_first
+#25 embossed-red-packets|zh-hk minQ=100 bp=3/0.92/129
+ T: 浮雕利是封 | 燙金 UV 壓紋 | 100個起 HK$3起 | 智印港
+ H: 浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。智印港提供專業浮雕利是封服務，香港本地印刷，品質保證，價格透明。
+ D: 浮雕利是封/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: title:no_turnaround_hook ; h1:fluff_words=浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。智印港提供專業浮雕利是封服務，香港本地印刷，品質保
+#26 embossed-red-packets|en minQ=100 bp=3/0.92/129
+ T: Embossed Red Packets | Free Shipping $99+ | ZprintPro
+ H: Embossed Red Packets 100+ | ZprintPro
+ D: Custom embossed red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_moq_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#27 embossed-red-packets|ja minQ=100 bp=3/0.92/129
+ T: エンボス年賀状 箔押し・100枚〜・最安値 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: エンボス年賀状のエンボス年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=エンボス年賀状のエンボス年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各 ; keywords:main_kw_not_first
+#28 custom-red-packets|zh-hk minQ=100 bp=1.9/0.74/103
+ T: 定制利是封 | 燙金 UV 壓紋 | 100個起 HK$1.9起 | 智印港
+ H: 定制利是封
+ D: custom red packets/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: title:no_turnaround_hook ; h1:too_thin=定制利是封 ; desc:main_kw_missing=custom red packets/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 ; keywords:main_kw_not_first
+#29 custom-red-packets|en minQ=100 bp=1.9/0.74/103
+ T: Custom Red Packets | Free Shipping $99+ | ZprintPro
+ H: Custom Red Packets 100+ | ZprintPro
+ D: Custom custom red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_moq_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#30 cartoon-red-packets|zh-hk minQ=100 bp=1.1/0.46/64
+ T: 卡通利是封 燙金・局部UV・100起印・HK$1.10起 | 智印港
+ H: 可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。智印港提供專業卡通利是封服務，香港本地印刷，品質保證，價格透明。
+ D: 卡通利是封/卡通利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: title:no_turnaround_hook ; h1:fluff_words=可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。智印港提供專業卡通利是封服務，香港本地印刷，品質保證，價
+#31 cartoon-red-packets|en minQ=100 bp=1.1/0.46/64
+ T: Cartoon Red Packets | Free Shipping $99+ | ZprintPro
+ H: Cartoon Red Packets 100+ | ZprintPro
+ D: Custom cartoon red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_moq_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#32 cartoon-red-packets|ja minQ=100 bp=1.1/0.46/64
+ T: イラスト年賀状 箔押し・局部UV・100枚〜 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: イラスト年賀状のイラスト年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=イラスト年賀状のイラスト年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各 ; keywords:main_kw_not_first
+#33 eco-red-packets|zh-hk minQ=100 bp=1.9/0.74/103
+ T: 環保利是封 燙金・覆膜・100起印・HK$1.90起 | 智印港
+ H: 採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。智印港提供專業環保利是封服務，香港本地印刷，品質保證，價格透明。
+ D: 環保利是封/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: title:no_turnaround_hook ; h1:fluff_words=採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。智印港提供專業環保利是封服務，香港本地印刷，品質保證，價格透明。
+#34 eco-red-packets|en minQ=100 bp=1.9/0.74/103
+ T: Eco Red Packets | Gold Foil Print | 100 MOQ | ZprintPro
+ H: Eco Red Packets 100+ | Gold Foil Print | ZprintPro
+ D: Custom eco red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_price_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#35 eco-red-packets|ja minQ=100 bp=1.9/0.74/103
+ T: エコ年賀状 箔押し・ラミネート・100枚〜 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: エコ年賀状のエコ年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=エコ年賀状のエコ年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。 ; keywords:main_kw_not_first
+#36 large-red-packets|zh-hk minQ=100 bp=2.2/0.92/129
+ T: 大利是封 燙金・局部UV・100起印・HK$2.20起 | 智印港
+ H: 加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。智印港提供專業大號利是封服務，香港本地印刷，品質保證，價格透明。
+ D: 大利是封/大利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: title:no_turnaround_hook ; h1:fluff_words=加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。智印港提供專業大號利是封服務，香港本地印刷，品質保證，價格透明 ; desc:main_kw_missing=大利是封/大利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色  ; keywords:main_kw_not_first
+#37 large-red-packets|en minQ=100 bp=2.2/0.92/129
+ T: Large Red Packets | Gold Foil | 100 MOQ | ZprintPro
+ H: Large Red Packets 100+ | ZprintPro
+ D: Custom large red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_price_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#38 large-red-packets|ja minQ=100 bp=2.2/0.92/129
+ T: 大型年賀状 | 箔押し UV エンボス | 100枚〜 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: 大型年賀状の大型年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。 ; desc:main_kw_missing=大型年賀状の大型年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。 ; keywords:main_kw_not_first
+#39 wall-calendars|ja minQ=1 bp=3/0.4/50
+ T: 壁掛けカレンダー | ノベルティ 各種サイズ | ZprintPro
+ H: Standard A3 or A2 wall calendars
+ D: 壁掛けカレンダーの壁掛けカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。1冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_moq_hook ; title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=Standard A3 or A2 wall calendars
+#40 desk-calendars|en minQ=1 bp=3/0.4/50
+ T: Desk Calendars | Wire-Bound | 1 MOQ Bulk 300+ | ZprintPro
+ H: Desk Calendars 1+ | ZprintPro
+ D: Custom desk calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 1 MOQ
+ I: title:no_price_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#41 photo-frame-calendars|en minQ=1 bp=3/0.4/50
+ T: Photo Frame Calendars | Free Shipping $99+ | ZprintPro
+ H: Photo Frame Calendars 1+ | ZprintPro
+ D: Custom photo frame calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 1 MOQ
+ I: title:no_moq_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#42 photo-frame-calendars|ja minQ=1 bp=3/0.4/50
+ T: フォトフレームカレンダー | 1部〜 ¥50〜 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: フォトフレームカレンダーのフォトフレームカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。1冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_moq_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+#43 magnetic-calendars|ja minQ=1 bp=3/0.4/50
+ T: マグネットカレンダー | ノベルティ 各種サイズ | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: マグネットカレンダーのマグネットカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。1冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_moq_hook ; title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+#44 hardcover-menus|ja minQ=10 bp=28/9.2/1288
+ T: ハードカバーメニュー | 上製本 箔押し 10冊〜 | ZprintPro
+ H: Hardcover binding
+ D: ハードカバー menuのハードカバー menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。10冊〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_moq_hook ; title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=Hardcover binding ; desc:main_kw_missing=ハードカバー menuのハードカバー menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質
+#45 drink-menus|zh-hk minQ=10 bp=12/3.68/515
+ T: 餐廳酒水牌 | 防水 覆膜 圓角 | 10份起 HK$12起 | 智印港
+ H: 專為酒水設計，可立式或手持。酒吧、餐廳必備。智印港提供專業酒水牌服務，香港本地印刷，品質保證，價格透明。
+ D: 酒水牌印刷 10 份起印。採用 200g–250g 銅版紙或合成紙/啞膠覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。
+ I: title:no_turnaround_hook ; h1:fluff_words=專為酒水設計，可立式或手持。酒吧、餐廳必備。智印港提供專業酒水牌服務，香港本地印刷，品質保證，價格透明。
+#46 drink-menus|en minQ=10 bp=12/3.68/515
+ T: Drink Menus | Waterproof | Free US Ship | ZprintPro
+ H: Drink Menus 10+ | ZprintPro
+ D: Custom drink menus from ZprintPro the US. Laminated Durable, 4-color CMYK. 10-MOQ. Free US shipping over $100, DHL Express | Free Design | 10 MOQ
+ I: title:no_moq_hook ; title:no_price_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#47 drink-menus|ja minQ=10 bp=12/3.68/515
+ T: ドリンクメニュー 印刷 | 防水 マット 10枚〜 | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: ドリンクメニューのドリンクメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+#48 disposable-menus|en minQ=100 bp=0.22/0.14/20
+ T: Disposable Menus | Free Shipping $100+ | ZprintPro
+ H: Disposable Menus 100+ | ZprintPro
+ D: Custom disposable menus from ZprintPro the US. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ
+ I: title:no_moq_hook ; title:no_turnaround_hook ; desc:no_turnaround
+#49 disposable-menus|ja minQ=100 bp=0.22/0.14/20
+ T: 使い捨てメニュー 印刷 | 防水 ラミネート | ZprintPro
+ H: 高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+ D: 使い捨てメニューの使い捨てメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_moq_hook ; title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。
+#50 outdoor-vinyl-banners|ja minQ=1 bp=12/2.76/360
+ T: 屋外ビニールバナー | アルミスタンド 高画質 | ZprintPro
+ H: Large outdoor vinyl banners
+ D: 屋外ビニールバナーの屋外ビニールバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。
+ I: title:no_moq_hook ; title:no_price_hook ; title:no_turnaround_hook ; h1:main_kw_missing=Large outdoor vinyl banners ; desc:main_kw_missing=屋外ビニールバナーの屋外ビニールバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200c

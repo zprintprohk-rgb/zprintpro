@@ -1,0 +1,36 @@
+﻿=========== zh-hk ===========
+name="description" tag: !! ABSENT
+  -> content: (none)
+  og:description: (none)
+qa-answer occurrences: 6
+promise-pattern on live HTML: 59
+  [1] type":"HowTo","name":"智印港印刷工藝流程","description":"了解智印港從設計到交付的完整印刷流程。ISO 9001 認證深圳工廠，專業設備，品質保證。","inLanguage":"zh-Hant-HK","totalTime":"P3D","step":[{"@type":"HowToStep","position":1,"
+  [2] printpro-flyers-a4-flyers-zh-hk-1.webp" alt="A4傳單印刷 100張起印 HK$0.3/張 雙麵彩印 | 智印港 · 即日交貨 · 品質保證 · 智印港" class="w-full h-full object-cover group-hover:scale-105 transition-transform" load
+  [3] roup-hover:text-[#2873F5] transition-colors">A4傳單印刷 100張起印 HK$0.3/張 雙麵彩印 | 智印港 · 即日交貨 · 品質保證 · 智印港</h4></div></a><a href="/zh-hk/product/same-day-flyers/" class="group bg-gray-50 rou
+  [4] ducts/seedream-webp/zprintpro-flyers-same-day-flyers-zh-hk-1.webp" alt="即日傳單印刷 · A4單張 · 品質保證 · 智印港" class="w-full h-full object-cover group-hover:scale-105 transition-transform" load
+  [5] xt-[#333333] line-clamp-2 group-hover:text-[#2873F5] transition-colors">即日傳單印刷 · A4單張 · 品質保證 · 智印港</h4></div></a><a href="/zh-hk/product/a5-flyers/" class="group bg-gray-50 rounded-x
+  [6] ntpro-flyers-a5-flyers-zh-hk-1.webp" alt="A5傳單印刷 100張起印 雙麵四色 免費設計 | 智印港 · A4單張 · 雙麵彩色 · 品質保證 · 智印港" class="w-full h-full object-cover group-hover:scale-105 transition-transform" load
+  [7] p-hover:text-[#2873F5] transition-colors">A5傳單印刷 100張起印 雙麵四色 免費設計 | 智印港 · A4單張 · 雙麵彩色 · 品質保證 · 智印港</h4></div></a><a href="/zh-hk/product/double-sided-flyers/" class="group bg-gray-50
+  [8] eam-webp/zprintpro-flyers-double-sided-flyers-zh-hk-1.webp" alt="雙麵傳單印刷 · A4單張 · 即日交貨 · 品質保證 · 智印港" class="w-full h-full object-cover group-hover:scale-105 transition-transform" load
+  [9] 3333] line-clamp-2 group-hover:text-[#2873F5] transition-colors">雙麵傳單印刷 · A4單張 · 即日交貨 · 品質保證 · 智印港</h4></div></a></div></div></div></article><div class="hidden lg:block w-80 flex-shr
+  [10] ect-[4/3] rounded-lg overflow-hidden bg-gray-50 mb-3"><img alt="磁吸翻蓋禮盒印刷 · 禮品盒 · 免費打樣 · 品質保證 · 智印港" loading="lazy" width="300" height="225" decoding="async" data-nimg="1" class="w-fu
+<img> count: 0
+
+=========== en ===========
+name="description" tag: !! ABSENT
+  -> content: (none)
+  og:description: (none)
+qa-answer occurrences: 0
+promise-pattern on live HTML: 0
+<img> count: 1
+  img[1] <img alt="ZprintPro" loading="lazy" width="240" height="240" decoding="async" data-nimg="1" class="h-9 w-auto" style="color:transparent" src="/images/
+
+=========== ja ===========
+name="description" tag: !! ABSENT
+  -> content: (none)
+  og:description: (none)
+qa-answer occurrences: 0
+promise-pattern on live HTML: 0
+<img> count: 1
+  img[1] <img alt="ZprintPro" loading="lazy" width="240" height="240" decoding="async" data-nimg="1" class="h-9 w-auto" style="color:transparent" src="/images/
+

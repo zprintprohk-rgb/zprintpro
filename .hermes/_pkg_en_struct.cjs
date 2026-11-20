@@ -1,0 +1,17 @@
+const fs = require('fs');
+const t = fs.readFileSync('src/data/category-seo-content.ts', 'utf8');
+const i = t.indexOf('const packagingContent');
+const blk = t.slice(i, t.indexOf('const ', i + 20));
+const enS = blk.indexOf('en: {');
+const jaS = blk.indexOf('ja: {');
+const en = blk.slice(enS, jaS);
+console.log('en block len', en.length);
+console.log('keys:', [...new Set([...en.matchAll(/^\s{4}([a-zA-Z]+):/gm)].map(m => m[1]))].join(','));
+console.log('faq count:', (en.match(/\{ q: '/g) || []).length);
+console.log('buyingGuide paragraphs:', (en.match(/^\s{8}'/gm) || []).length);
+const bg = en.indexOf('buyingGuide');
+console.log('\n--- buyingGuide head ---');
+console.log(JSON.stringify(en.slice(bg, bg + 500)));
+const fq = en.indexOf('faq: [');
+console.log('\n--- faq head ---');
+console.log(JSON.stringify(en.slice(fq, fq + 420)));

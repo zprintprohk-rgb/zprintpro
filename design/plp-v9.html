@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>貼紙印刷｜香港最快 2 日起貨｜小批量 100 張起印｜ZprintPro</title>
+<style>
+/* ============ 设计令牌: 三色调 (品牌蓝/行动橙/皇室藏青) ============ */
+:root{
+  --paper:#FAFAF8; --white:#FFFFFF;
+  --ink:#1F2937; --gray:#6B7280; --line:#E5E7EB;
+  --blue:#2873F5; --blue-dark:#1E5FD1;
+  --orange:#F87314; --orange-dark:#EA580C; --orange-light:#FEF1E6;
+  --navy-1:#244780; --navy-2:#1B3163; --navy-3:#152649;
+  --wa:#25D366;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,monospace;
+  --sans:-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans TC","Noto Sans HK",sans-serif;
+  --r:14px; --shadow:0 1px 3px rgba(16,24,40,.07);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--white);color:var(--ink);font-size:17.5px;line-height:1.75;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:var(--blue);text-decoration:none}
+.wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* ============ 页眉 (冻结区: 设计稿仅示意, 生产沿用现有) ============ */
+.hd{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.hd-in{max-width:1320px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;gap:32px}
+.logo{font-size:20px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+.logo em{font-style:normal;color:var(--blue)}
+.hd nav{display:flex;gap:24px;font-size:14px;color:var(--ink);flex:1}
+.hd nav a{color:var(--ink)}
+.hd nav a.on{color:var(--blue);font-weight:600}
+.hd .btn-quote{background:var(--orange);color:#fff;font-weight:700;font-size:14px;padding:9px 20px;border-radius:9px;box-shadow:0 6px 18px rgba(248,115,20,.28)}
+.bc{max-width:1320px;margin:0 auto;padding:14px 24px;font-size:13px;color:var(--gray)}
+.bc a{color:var(--gray)}
+
+/* ============ Banner (冻结区内容: H1 逐字保留) — 左文右图, 分类 hero 图与 H1 同区不冲突 ============ */
+.bn{position:relative;background:linear-gradient(165deg,var(--navy-1) 0%,var(--navy-2) 52%,var(--navy-3) 100%);color:#fff;overflow:hidden}
+.bn-in{position:relative;z-index:1;max-width:1320px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:44px;align-items:center}
+.bn h1{font-size:clamp(26px,2.8vw,38px);font-weight:800;letter-spacing:-.01em;line-height:1.35}
+.bn .sub{margin-top:12px;font-size:17.5px;color:rgba(255,255,255,.85)}
+.bn .caps{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px}
+.bn .cap{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(2px);padding:8px 15px;border-radius:99px;font-size:14px;font-weight:600}
+.bn .cap svg{width:14px;height:14px;stroke:#FFD9BC}
+.bn-hero{position:relative;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.25);box-shadow:0 20px 50px rgba(10,20,45,.45);aspect-ratio:4/3}
+.bn-hero img{width:100%;height:100%;object-fit:cover}
+.bn-hero .tg{position:absolute;left:14px;bottom:14px;background:rgba(21,38,73,.82);color:#fff;font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;padding:6px 12px;border-radius:7px;backdrop-filter:blur(3px)}
+
+/* ============ 主区: 冻结左栏 + 右栏 ============ */
+.main{max-width:1320px;margin:0 auto;padding:36px 24px 80px;display:grid;grid-template-columns:248px minmax(0,1fr);gap:36px;align-items:start}
+
+/* 左侧分类栏 (冻结区: 生产沿用现有, 此处按现状复刻) */
+.side{position:sticky;top:88px}
+.side-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:16px;box-shadow:var(--shadow)}
+.side-card .hd2{background:var(--blue);color:#fff;font-weight:700;font-size:16px;padding:13px 18px}
+.side-card ul{list-style:none}
+.side-card li a{display:flex;justify-content:space-between;align-items:center;padding:11px 18px;font-size:15.5px;color:var(--ink);border-bottom:1px solid #F3F4F6;transition:.15s}
+.side-card li a:hover{background:#F5F8FF;color:var(--blue)}
+.side-card li a.on{color:var(--blue);font-weight:700;background:#F5F8FF;border-left:3px solid var(--blue);padding-left:15px}
+.side-card li a .n{font-family:var(--mono);font-size:13px;color:var(--gray)}
+.side-quick{padding:18px}
+.side-quick .q{display:block;text-align:center;font-weight:700;font-size:15.5px;padding:12px;border-radius:9px;border:2px solid var(--blue);color:var(--blue);margin-bottom:10px}
+.side-quick .w{display:block;text-align:center;font-weight:700;font-size:15.5px;padding:12px;border-radius:9px;background:var(--wa);color:#fff}
+.side-biz{background:linear-gradient(150deg,var(--navy-1),var(--navy-3));color:#fff;padding:20px 18px;border-radius:var(--r);text-align:center}
+.side-biz b{display:block;font-size:16.5px;margin-bottom:6px}
+.side-biz p{font-size:14px;color:rgba(255,255,255,.75);margin-bottom:12px}
+.side-biz a{display:block;background:var(--orange);color:#fff;font-weight:700;font-size:15px;padding:11px;border-radius:9px}
+.side-qr{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:18px;text-align:center;font-size:14.5px;color:var(--gray)}
+.side-qr .qr{width:96px;height:96px;margin:0 auto 10px;border:1px dashed var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#B6BDC7}
+.side-trust{margin-top:14px;text-align:center;font-size:14px;color:var(--gray)}
+.side-trust b{color:var(--orange-dark);font-family:var(--mono)}
+
+/* ============ 右栏通用 ============ */
+.sec{margin-bottom:64px}
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;letter-spacing:.14em;color:var(--blue);text-transform:uppercase;margin-bottom:10px}
+.eyebrow::before{content:"";width:22px;height:3px;background:var(--orange);border-radius:2px}
+h2.st{font-size:clamp(23px,2.6vw,30px);font-weight:800;letter-spacing:-.01em;line-height:1.3}
+h2.st em{font-style:normal;color:var(--orange)}
+.sec-sub{color:var(--gray);font-size:16px;margin-top:8px;max-width:680px}
+
+/* 满版色交替带 (K3 9/9 #3: 白底 + 浅蓝底交替, 参照即日页节奏) */
+.sec.tint{background:#F2F6FF;border-radius:22px;padding:36px 32px}
+.sec.tint-warm{background:var(--orange-light);border-radius:22px;padding:36px 32px}
+@media (max-width:640px){.sec.tint,.sec.tint-warm{padding:28px 20px}}
+
+/* 1. 3 個直接答案 (AEO) */
+.answers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ans{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px;box-shadow:var(--shadow);position:relative}
+.ans .q{font-weight:700;font-size:16px;margin-bottom:8px;display:flex;gap:8px;align-items:baseline}
+.ans .q::before{content:"Q";font-family:var(--mono);font-size:12px;font-weight:700;color:#fff;background:var(--blue);border-radius:5px;padding:2px 6px;flex-shrink:0;transform:translateY(-1px)}
+.ans .a{font-size:15px;color:var(--gray);line-height:1.7}
+.ans .a b{color:var(--orange-dark);font-family:var(--mono)}
+
+/* 2. 产品卡网格 (固行对齐) */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pcard{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:box-shadow .2s,border-color .2s}
+.pcard:hover{border-color:#C9D6F2;box-shadow:0 8px 24px rgba(40,115,245,.09)}
+.pimg{position:relative;aspect-ratio:1/1;background:#F3F3F3;overflow:hidden}
+.pimg img{width:100%;height:100%;object-fit:cover}
+/* 印刷裁切标记 (印刷标本母题) */
+.pimg::before,.pimg::after{content:"";position:absolute;width:12px;height:12px;z-index:2;pointer-events:none}
+.pimg::before{top:8px;left:8px;border-top:1.5px solid rgba(31,41,55,.55);border-left:1.5px solid rgba(31,41,55,.55)}
+.pimg::after{bottom:8px;right:8px;border-bottom:1.5px solid rgba(31,41,55,.55);border-right:1.5px solid rgba(31,41,55,.55)}
+.ptag{position:absolute;top:10px;left:10px;z-index:3;background:var(--navy-2);color:#fff;font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:5px;letter-spacing:.05em}
+.pbody{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.ptitle{font-size:16.5px;font-weight:700;line-height:1.5;height:3em;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;margin-bottom:10px}
+.pmeta{font-family:var(--mono);font-size:13px;color:var(--gray);letter-spacing:.02em;height:2.6em;overflow:hidden;line-height:1.5;margin-bottom:12px}
+.pmeta span{white-space:nowrap;margin-right:10px}
+.pprice{display:flex;align-items:baseline;gap:6px;height:32px;white-space:nowrap}
+.pprice .cur{font-size:14px;font-weight:700;color:var(--orange-dark)}
+.pprice .num{font-family:var(--mono);font-size:27px;font-weight:700;color:var(--orange);letter-spacing:-.02em}
+.pprice .per{font-size:14px;color:var(--gray)}
+.pmoq{font-size:13.5px;color:var(--gray);height:1.6em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:14px}
+.pbtn{margin-top:auto;display:block;text-align:center;background:var(--blue);color:#fff;font-weight:700;font-size:15.5px;padding:13px;border-radius:9px;transition:.15s}
+.pbtn:hover{background:var(--blue-dark)}
+
+/* 3. SpecFinder 紧凑版 */
+.finder{margin-top:28px;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;box-shadow:var(--shadow)}
+.finder .lab{font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px}
+.finder .lab svg{width:17px;height:17px;stroke:var(--blue)}
+.finder select{border:1px solid var(--line);border-radius:8px;padding:10px 13px;font-size:15px;font-family:var(--sans);color:var(--ink);background:#fff;min-width:150px}
+.finder .go{background:var(--orange);color:#fff;font-weight:700;font-size:15px;padding:11px 20px;border-radius:9px;border:0;cursor:pointer}
+.finder .hint{font-size:13.5px;color:var(--gray)}
+
+/* 4. 核心競爭優勢 (编辑式编号, 非图标卡) */
+.adv{border-top:1px solid var(--line)}
+.adv-row{display:grid;grid-template-columns:88px 1fr;gap:24px;padding:30px 0;border-bottom:1px solid var(--line)}
+.adv-row .no{font-family:var(--mono);font-size:36px;font-weight:700;color:var(--orange);letter-spacing:-.03em;line-height:1.1}
+.adv-row h3{font-size:19px;font-weight:800;margin-bottom:9px}
+.adv-row ul{list-style:none}
+.adv-row li{font-size:16px;color:#444;position:relative;padding-left:18px;margin-bottom:6px}
+.adv-row li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--blue)}
+
+/* 5. 表格 (斑马纹 + 藏青表头) */
+table.tb{width:100%;border-collapse:collapse;font-size:15.5px;background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.tb thead th{background:var(--navy-2);color:#fff;text-align:left;padding:14px 18px;font-size:15px;font-weight:700}
+.tb td{padding:13px 18px;border-bottom:1px solid #F0F1F3;vertical-align:top}
+.tb tbody tr:nth-child(even){background:#F8FAFD}
+.tb td:first-child{font-weight:700;white-space:nowrap}
+.tb td .mono{color:var(--gray)}
+
+/* 6. 特殊加工 chip 阵 */
+.crafts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.craft{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:18px;position:relative;box-shadow:var(--shadow)}
+.craft.best{border-color:var(--orange);box-shadow:0 6px 20px rgba(248,115,20,.12)}
+.craft .ctag{position:absolute;top:-9px;right:14px;background:var(--orange);color:#fff;font-size:11px;font-weight:700;padding:2px 10px;border-radius:99px}
+.craft h4{font-size:17px;font-weight:800;margin-bottom:7px}
+.craft p{font-size:15px;color:var(--gray);line-height:1.65}
+.craft .stat{margin-top:10px;font-family:var(--mono);font-size:13.5px;color:var(--blue);font-weight:700}
+
+/* 7. 技術參數 (键值对) */
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:8px 26px;box-shadow:var(--shadow)}
+.spec{display:grid;grid-template-columns:118px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid #F0F1F3;font-size:15.5px}
+.spec:last-child,.spec:nth-last-child(2):nth-child(odd){border-bottom:0}
+.spec dt{font-weight:700;color:var(--ink)}
+.spec dd{color:var(--gray)}
+.spec dd .mono{color:var(--ink)}
+
+/* 8. 本地化服务节点 */
+.locals{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.local{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--shadow)}
+.local .ic{width:44px;height:44px;border-radius:12px;background:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.local .ic svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:1.8}
+.local h4{font-size:17px;font-weight:800;margin-bottom:7px}
+.local p{font-size:15px;color:var(--gray);line-height:1.65}
+
+/* 9. 行業場景 */
+.indus{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.indu{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow);display:flex;gap:18px}
+.indu .idx{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--blue);border:1.5px solid var(--blue);border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.indu h4{font-size:17.5px;font-weight:800;margin-bottom:9px}
+.indu h4 .tg{font-size:12.5px;font-weight:700;color:var(--orange-dark);background:var(--orange-light);border-radius:5px;padding:2px 8px;margin-left:8px;vertical-align:2px}
+.indu ul{list-style:none;margin-bottom:10px}
+.indu li{font-size:15px;color:#444;padding-left:16px;position:relative;margin-bottom:5px}
+.indu li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--blue)}
+.indu a{font-size:15px;font-weight:700}
+
+/* 10. 數據徽章帶 (藏青权威区) */
+.band{background:linear-gradient(165deg,var(--navy-1) 0%,var(--navy-2) 52%,var(--navy-3) 100%);border-radius:20px;color:#fff;padding:44px 40px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.stat{text-align:center;position:relative}
+.stat+.stat::before{content:"";position:absolute;left:-12px;top:15%;bottom:15%;width:1px;background:rgba(255,255,255,.18)}
+.stat .n{font-family:var(--mono);font-size:clamp(28px,3vw,40px);font-weight:700;letter-spacing:-.03em;color:#fff}
+.stat .n em{font-style:normal;color:var(--orange)}
+.stat .l{font-size:13px;color:rgba(255,255,255,.72);margin-top:6px}
+
+/* 11. 選購指南 (杂志编辑排版: 首字下沉 + 分栏导读 + 左侧金句条) */
+.guide{max-width:80ch}
+.guide p{margin-bottom:20px;font-size:17px;color:#3A4250;line-height:1.9;text-align:justify}
+.guide p.lead{font-size:19px;color:var(--ink);font-weight:600;line-height:1.85;padding-bottom:20px;border-bottom:2px solid var(--ink);margin-bottom:24px}
+.guide p.lead::first-letter{font-size:3.2em;font-weight:800;color:var(--blue);float:left;line-height:.9;margin:6px 12px 0 0}
+.guide p.key{background:var(--orange-light);border-left:4px solid var(--orange);border-radius:0 12px 12px 0;padding:16px 20px;color:var(--ink);font-weight:600}
+.guide p.key b{color:var(--orange-dark)}
+
+/* 12. FAQ */
+details.fq{background:var(--white);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;box-shadow:var(--shadow)}
+details.fq summary{cursor:pointer;list-style:none;padding:19px 22px;font-weight:700;font-size:16.5px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+details.fq summary::-webkit-details-marker{display:none}
+details.fq summary .pl{font-family:var(--mono);font-size:22px;color:var(--blue);transition:.2s;flex-shrink:0}
+details.fq[open] summary .pl{transform:rotate(45deg)}
+details.fq .fa{padding:0 22px 20px;font-size:15.5px;color:#444;line-height:1.85}
+details.fq .fa b{color:var(--orange-dark)}
+
+/* 13. 6 步流程 */
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:0;counter-reset:st}
+.step{padding:0 14px;text-align:center;position:relative}
+.step .dot{width:48px;height:48px;border-radius:50%;background:var(--white);border:2px solid var(--blue);color:var(--blue);font-family:var(--mono);font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;position:relative;z-index:1}
+.step:not(:last-child)::after{content:"";position:absolute;top:24px;left:calc(50% + 30px);right:calc(-50% + 30px);border-top:2px dashed #C9D6F2}
+.step b{display:block;font-size:15.5px;margin-bottom:6px}
+.step p{font-size:14px;color:var(--gray);line-height:1.6}
+
+/* 14. 渠道比較表 */
+.cmp{width:100%;border-collapse:separate;border-spacing:0;font-size:15.5px;background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.cmp th,.cmp td{padding:14px 18px;text-align:left;border-bottom:1px solid #F0F1F3}
+.cmp thead th{background:#F3F4F6;font-size:15px}
+.cmp thead th.us, .cmp .us{background:var(--orange-light)}
+.cmp thead th.us{background:var(--orange);color:#fff;font-weight:800}
+.cmp td:first-child{font-weight:700;color:var(--ink);white-space:nowrap}
+.cmp .us{font-weight:600;color:var(--ink)}
+.cmp-note{font-size:12.5px;color:var(--gray);margin-top:10px}
+
+/* 15. 页底 CTA */
+.cta{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:48px 44px;text-align:center;box-shadow:var(--shadow)}
+.cta h3{font-size:clamp(22px,2.6vw,29px);font-weight:800;margin-bottom:10px}
+.cta p{color:var(--gray);font-size:16px;margin-bottom:24px}
+.cta .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-o{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;font-weight:700;font-size:16.5px;padding:15px 34px;border-radius:11px;box-shadow:0 8px 22px rgba(248,115,20,.3)}
+.btn-w{display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;font-weight:700;font-size:16.5px;padding:15px 34px;border-radius:11px}
+.btn-o:hover,.btn-w:hover{filter:brightness(.94)}
+
+/* 页脚 (冻结区示意) */
+.ft{background:linear-gradient(165deg,var(--navy-1),var(--navy-3));color:#fff;margin-top:80px}
+.ft-in{max-width:1320px;margin:0 auto;padding:52px 24px 32px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+.ft h5{font-size:14px;font-weight:700;margin-bottom:14px;color:#fff}
+.ft p,.ft a{font-size:13px;color:rgba(255,255,255,.7);line-height:2}
+.ft a{display:block}
+.ft .brand{font-size:18px;font-weight:800;margin-bottom:10px}
+.ft-bot{border-top:1px solid rgba(255,255,255,.14);text-align:center;padding:18px;font-size:12.5px;color:rgba(255,255,255,.5)}
+
+/* 移动端底部报价轨 */
+.mrail{display:none}
+
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+  .main{grid-template-columns:1fr}
+  .side{position:static;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .side-card{margin-bottom:0}
+  .bn-in{grid-template-columns:1fr;gap:28px;padding:40px 24px}
+  .bn-hero{max-width:560px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr);row-gap:28px}
+  .step:nth-child(3)::after{display:none}
+  .band{grid-template-columns:repeat(2,1fr);row-gap:28px}
+  .stat:nth-child(3)::before{display:none}
+}
+@media (max-width:640px){
+  .hd nav{display:none}
+  .answers,.crafts,.locals,.indus,.specs{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr 1fr;gap:12px}
+  .adv-row{grid-template-columns:52px 1fr;gap:14px}
+  .adv-row .no{font-size:24px}
+  .band{grid-template-columns:1fr 1fr;padding:32px 20px}
+  .steps{grid-template-columns:1fr 1fr}
+  .ft-in{grid-template-columns:1fr 1fr}
+  .cta{padding:32px 20px}
+  /* 移动端吸底报价轨 */
+  .mrail{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--white);border-top:1px solid var(--line);padding:10px 14px;gap:10px;align-items:center;box-shadow:0 -4px 20px rgba(0,0,0,.08)}
+  .mrail .p{font-family:var(--mono);font-weight:700;color:var(--orange);font-size:16px;white-space:nowrap}
+  .mrail .b1{flex:1;text-align:center;background:var(--orange);color:#fff;font-weight:700;font-size:13.5px;padding:11px;border-radius:9px}
+  .mrail .b2{flex:1;text-align:center;background:var(--wa);color:#fff;font-weight:700;font-size:13.5px;padding:11px;border-radius:9px}
+  body{padding-bottom:64px}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ 页眉 (冻结区, 设计稿仅示意) ═══ -->
+<header class="hd">
+  <div class="hd-in">
+    <div class="logo">智印港 <em>ZprintPro</em></div>
+    <nav>
+      <a href="#">首頁</a><a href="#">即日急件</a><a href="#">傳單印刷</a>
+      <a href="#" class="on">貼紙印刷</a><a href="#">包裝盒印刷</a><a href="#">海報印刷</a>
+      <a href="#">紙袋印刷</a><a href="#">印刷知識</a><a href="#">聯絡我們</a>
+    </nav>
+    <a class="btn-quote" href="#">免費報價</a>
+  </div>
+</header>
+
+<div class="bc"><a href="#">首頁</a> / <a href="#">貼紙印刷</a> / <span>貼紙印刷 / 透明貼 / 防水貼</span></div>
+
+<!-- ═══ Banner (冻结区: H1 逐字) — 左 H1 + 右分类主图 ═══ -->
+<section class="bn">
+  <div class="bn-in">
+    <div>
+      <h1>香港小批量貼紙印刷定製 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙</h1>
+      <p class="sub">專業品質，價格透明，快速交貨</p>
+      <div class="caps">
+        <span class="cap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 7L9 18l-5-5"/></svg>免費打樣</span>
+        <span class="cap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg>即日交貨</span>
+        <span class="cap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>ISO9001 認證</span>
+        <span class="cap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/></svg>全港順豐速遞</span>
+      </div>
+    </div>
+    <div class="bn-hero">
+      <img src="https://zprintpro.com/images/hero/hero-sticker-zh-hk.webp" alt="香港貼紙印刷全品類實拍">
+      <div class="tg">STICKER PRINTING · HK</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 主区 ═══ -->
+<div class="main">
+
+  <!-- 左侧分类栏 (冻结区, 按现状复刻) -->
+  <aside class="side">
+    <div class="side-card">
+      <div class="hd2">產品分類</div>
+      <ul>
+        <li><a href="#" class="on">貼紙印刷 / 透明貼 / 防水貼 <span class="n">9</span></a></li>
+        <li><a href="#">傳單印刷 <span class="n">7</span></a></li>
+        <li><a href="#">包裝盒定製 <span class="n">12</span></a></li>
+        <li><a href="#">海報印刷 <span class="n">6</span></a></li>
+        <li><a href="#">紙袋印刷 / 訂做紙袋 <span class="n">6</span></a></li>
+        <li><a href="#">賀卡印刷 <span class="n">6</span></a></li>
+        <li><a href="#">噴繪廣告 <span class="n">5</span></a></li>
+        <li><a href="#">書籍印刷 <span class="n">5</span></a></li>
+        <li><a href="#">餐牌印刷 <span class="n">5</span></a></li>
+        <li><a href="#">信封印刷 <span class="n">4</span></a></li>
+        <li><a href="#">月曆印刷 <span class="n">6</span></a></li>
+        <li><a href="#">利是封印刷 <span class="n">6</span></a></li>
+        <li><a href="#">校園教育印刷 <span class="n">5</span></a></li>
+        <li><a href="#">同人周邊印刷 <span class="n">5</span></a></li>
+        <li><a href="#">喜帖印刷 <span class="n">6</span></a></li>
+      </ul>
+    </div>
+    <div class="side-card side-quick">
+      <a class="q" href="#">找不到想要的產品？快速詢價</a>
+      <a class="w" href="#">WhatsApp 查詢</a>
+    </div>
+    <div class="side-biz">
+      <b>企業批量訂單</b>
+      <p>專屬客戶經理，專享優惠價格</p>
+      <a href="#">聯繫我們 →</a>
+    </div>
+    <div class="side-qr"><div class="qr">WhatsApp QR</div>掃碼即時查詢</div>
+    <div class="side-trust">已有 <b>15,000+</b> 客戶選擇智印港</div>
+  </aside>
+
+  <!-- ═══ 右栏 ═══ -->
+  <div>
+
+    <!-- 1. 3 個直接答案 (AEO 精选摘要候选) -->
+    <section class="sec">
+      <div class="answers">
+        <div class="ans">
+          <div class="q">香港貼紙印刷 1000 張幾錢？</div>
+          <p class="a">50×50mm 光粉貼紙 1000 張約 <b>HK$200-350</b>，MOQ 低至 100 張，2-3 日出貨，WhatsApp 即時報價。</p>
+        </div>
+        <div class="ans">
+          <div class="q">貼紙印刷最快幾日有貨？</div>
+          <p class="a">常規 <b>2-3 天</b>交貨，平均出貨 <b>2.3 天</b>，加急可聯絡 WhatsApp 安排，累計 4820+ 訂單實證。</p>
+        </div>
+        <div class="ans">
+          <div class="q">香港最受歡迎貼紙尺寸係邊啲？</div>
+          <p class="a">Top5 熱門尺寸：<b>50×50mm、40×60mm、30×30mm、圓形 38mm、70×25mm</b>，全部 100 張起可印。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 产品网格 (K3 拍板: SKU 优先) -->
+    <section class="sec">
+      <div class="eyebrow">Sticker Printing · 9 款規格</div>
+      <h2 class="st">貼紙印刷 — <em>9 款規格任選</em></h2>
+      <p class="sec-sub">共 9 款產品 · 全部 50-100 張起印 · 香港 2-3 日出貨 · DHL 全球 2-4 天</p>
+      <div class="grid" style="margin-top:24px">
+
+        <article class="pcard">
+          <div class="pimg"><span class="ptag">熱賣</span><img src="https://zprintpro.com/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk.webp" alt="防水貼紙 / 戶外貼紙 訂製" loading="lazy"></div>
+          <div class="pbody">
+            <h3 class="ptitle">防水貼紙 / 戶外貼紙 訂製 · 100個起印 · 5-7天交期</h3>
+            <div class="pmeta"><span>[材質] PVC 防水</span><span>[起訂] 100 個</span><span>[交期] 5-7 天</span></div>
+            <div class="pprice"><span class="cur">HK$</span><span class="num">0.42</span><span class="per">每個起</span></div>
+            <div class="pmoq">1,000個起批 · 整批 HK$419</div>
+            <a class="pbtn" href="#">立即訂購</a>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pimg"><span class="ptag">熱賣</span><img src="https://zprintpro.com/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-1.webp" alt="透明貼 / 透明貼紙 訂製" loading="lazy"></div>
+          <div class="pbody">
+            <h3 class="ptitle">透明貼 / 透明貼紙 訂製 · 100張起印 · 不干膠</h3>
+            <div class="pmeta"><span>[材質] 透明 PVC</span><span>[起訂] 100 張</span><span>[交期] 2-3 天</span></div>
+            <div class="pprice"><span class="cur">HK$</span><span class="num">0.38</span><span class="per">/張起</span></div>
+            <div class="pmoq">100張起訂 · 量大更優</div>
+            <a class="pbtn" href="#">立即訂購</a>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pimg"><span class="ptag">熱賣</span><img src="https://zprintpro.com/images/products/seedream-webp/zprintpro-stickers-removable-stickers-zh-hk-1.webp" alt="可移貼紙訂製 玻璃不留膠" loading="lazy"></div>
+          <div class="pbody">
+            <h3 class="ptitle">可移貼紙訂製 玻璃不留膠 50張起印 · 不干膠</h3>
+            <div class="pmeta"><span>[材質] 可移除膠</span><span>[起訂] 50 張</span><span>[交期] 2-3 天</span></div>
+            <div class="pprice"><span class="cur">HK$</span><span class="num">0.45</span><span class="per">/張起</span></div>
+            <div class="pmoq">100張起訂 · 量大更優</div>
+            <a class="pbtn" href="#">立即訂購</a>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pimg"><span class="ptag">熱賣</span><img src="https://zprintpro.com/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-zh-hk-1.webp" alt="小批量貼紙 label printing 訂製" loading="lazy"></div>
+          <div class="pbody">
+            <h3 class="ptitle">小批量貼紙 / label printing · 訂製 · 100張起印</h3>
+            <div class="pmeta"><span>[材質] 銅版紙</span><span>[起訂] 100 A4</span><span>[交期] 即日</span></div>
+            <div class="pprice"><span class="cur">HK$</span><span class="num">38</span><span class="per">/A4起</span></div>
+            <div class="pmoq">100A4起訂 · 量大更優</div>
+            <a class="pbtn" href="#">立即訂購</a>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pimg"><img src="https://zprintpro.com/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-1.webp" alt="異形模切貼紙 文創IP角色造型模切定製" loading="lazy"></div>
+          <div class="pbody">
+            <h3 class="ptitle">異形模切貼紙 · 文創IP角色造型模切定製</h3>
+            <div class="pmeta"><span>[材質] PVC/銅版</span><span>[起訂] 100 張</span><span>[交期] 2-3 天</span></div>
+            <div class="pprice"><span class="cur">HK$</span><span class="num">0.58</span><span class="per">/張起</span></div>
+            <div class="pmoq">100張起訂 · 量大更優</div>
+            <a class="pbtn" href="#">立即訂購</a>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pimg"><img src="https://zprintpro.com/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-1.webp" alt="燙金貼紙 訂製" loading="lazy"></div>
+          <div class="pbody">
+            <h3 class="ptitle">燙金貼紙 · 訂製 · 不干膠 · 100張起印</h3>
+            <div class="pmeta"><span>[工藝] 燙金/燙銀</span><span>[起訂] 100 張</span><span>[交期] 3-5 天</span></div>
+            <div class="pprice"><span class="cur">HK$</span><span class="num">0.78</span><span class="per">/張起</span></div>
+            <div class="pmoq">100張起訂 · 量大更優</div>
+            <a class="pbtn" href="#">立即訂購</a>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pimg"><img src="https://zprintpro.com/images/products/seedream-webp/zprintpro-stickers-security-stickers-zh-hk-1.webp" alt="防偽貼紙 訂製" loading="lazy"></div>
+          <div class="pbody">
+            <h3 class="ptitle">防偽貼紙 · 不干膠 · 100張起印</h3>
+            <div class="pmeta"><span>[材質] 易碎/VOID</span><span>[起訂] 100 張</span><span>[交期] 3-5 天</span></div>
+            <div class="pprice"><span class="cur">HK$</span><span class="num">1.15</span><span class="per">/張起</span></div>
+            <div class="pmoq">100張起訂 · 量大更優</div>
+            <a class="pbtn" href="#">立即訂購</a>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pimg"><img src="https://zprintpro.com/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-zh-hk-1.webp" alt="螢光貼紙 訂製" loading="lazy"></div>
+          <div class="pbody">
+            <h3 class="ptitle">螢光貼紙 · 不干膠 · 100張起印</h3>
+            <div class="pmeta"><span>[工藝] 螢光色</span><span>[起訂] 100 張</span><span>[交期] 3-5 天</span></div>
+            <div class="pprice"><span class="cur">HK$</span><span class="num">0.52</span><span class="per">/張起</span></div>
+            <div class="pmoq">100張起訂 · 量大更優</div>
+            <a class="pbtn" href="#">立即訂購</a>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pimg"><span class="ptag">熱賣</span><img src="https://zprintpro.com/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp" alt="水果貼紙食品標籤印刷 FDA 食品級" loading="lazy"></div>
+          <div class="pbody">
+            <h3 class="ptitle">水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼</h3>
+            <div class="pmeta"><span>[材質] 食品級</span><span>[起訂] 500 張</span><span>[交期] 2-3 天</span></div>
+            <div class="pprice"><span class="cur">HK$</span><span class="num">0.22</span><span class="per">/張起</span></div>
+            <div class="pmoq">500張起訂 · 量大更優</div>
+            <a class="pbtn" href="#">立即訂購</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- 3. SpecFinder 紧凑版 (K3 拍板: 网格之后的挽回工具) -->
+      <div class="finder">
+        <span class="lab"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>30 秒找到你的規格</span>
+        <select><option>用途：產品標籤</option><option>用途：戶外使用</option><option>用途：包裝封口</option><option>用途：促銷活動</option></select>
+        <select><option>材質：防水 PVC</option><option>材質：透明 PVC</option><option>材質：銅版紙</option><option>材質：可移除膠</option></select>
+        <select><option>數量：100 張</option><option>數量：500 張</option><option>數量：1,000 張以上</option></select>
+        <button class="go">跳轉對應產品 →</button>
+        <span class="hint">全部指向真實 SKU · 不確定可直接 WhatsApp 問</span>
+      </div>
+    </section>
+
+    <!-- 4. 核心競爭優勢 (编辑式编号排版) -->
+    <section class="sec">
+      <div class="eyebrow">Why ZprintPro</div>
+      <h2 class="st">貼紙印刷 — <em>核心競爭優勢</em></h2>
+      <div class="adv" style="margin-top:20px">
+        <div class="adv-row">
+          <div class="no">01</div>
+          <div>
+            <h3>全材質覆蓋：銅版紙到透明 PVC，滿足所有貼紙需求</h3>
+            <ul>
+              <li>提供銅版紙貼紙、透明貼紙、防水 PVC 貼紙、易碎貼紙、燙金貼紙、螢光貼紙、反光貼紙等 15+ 材質選擇</li>
+              <li>滿足「貼紙印刷 香港」、「防水貼紙」、「透明貼紙」、「燙金貼紙」等高搜索量關鍵詞</li>
+              <li>適用於產品標籤、包裝貼紙、品牌貼紙、活動貼紙、安全標示等多元場景</li>
+            </ul>
+          </div>
+        </div>
+        <div class="adv-row">
+          <div class="no">02</div>
+          <div>
+            <h3>小批量極致靈活，50 張起訂</h3>
+            <ul>
+              <li>50 張起訂（數碼印刷），適合初創品牌試產和限量活動</li>
+              <li>支持可變數據印刷，每張貼紙可以印不同序號、不同條碼或不同姓名（個性化標籤）</li>
+              <li>模切工藝精準，形狀可完全訂製（圓形、異形、鏤空）</li>
+            </ul>
+          </div>
+        </div>
+        <div class="adv-row">
+          <div class="no">03</div>
+          <div>
+            <h3>專業色彩管理，戶外耐久</h3>
+            <ul>
+              <li>ICC 色彩管理系統確保品牌色彩準確還原，Pantone 專色匹配可達 95% 以上</li>
+              <li>防水 PVC 和覆膜貼紙戶外耐久 2–3 年，不褪色不剝落</li>
+              <li>3M 背膠選項，強力粘附於金屬、玻璃、塑膠等多種表面</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 材質工藝詳解 -->
+    <section class="sec tint">
+      <div class="eyebrow">Materials</div>
+      <h2 class="st">材質工藝詳解</h2>
+      <p class="sec-sub">貼紙常用材質與應用</p>
+      <table class="tb" style="margin-top:20px">
+        <thead><tr><th>材質類型</th><th>關鍵特性</th><th>適用場景</th></tr></thead>
+        <tbody>
+          <tr><td>銅版紙貼紙</td><td>色彩鮮豔｜經濟｜室內使用｜可書寫</td><td class="mono">產品標籤｜包裝貼紙｜辦公標籤｜臨時標示</td></tr>
+          <tr><td>透明 PVC 貼紙</td><td>透明背景｜防水｜耐撕｜高級感</td><td class="mono">玻璃瓶貼｜化妝品標籤｜透明包裝｜品牌貼紙</td></tr>
+          <tr><td>防水 PVC 貼紙</td><td>完全防水｜戶外耐久｜抗 UV｜耐磨</td><td class="mono">戶外標示｜電器標籤｜食品包裝｜工業標籤</td></tr>
+          <tr><td>易碎貼紙</td><td>撕毀即碎｜防偽｜一次性｜不可復原</td><td class="mono">保修標籤｜防偽封條｜資產標籤｜安全封條</td></tr>
+          <tr><td>燙金貼紙</td><td>金屬光澤｜高級感｜品牌提升｜吸睛</td><td class="mono">高端產品｜禮品包裝｜VIP 標籤｜節慶裝飾</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 6. 特殊加工選項 -->
+    <section class="sec">
+      <div class="eyebrow">Finishing</div>
+      <h2 class="st">特殊加工選項</h2>
+      <p class="sec-sub">以下為本類目最常用的特殊加工選項，前兩項為最推薦工藝。</p>
+      <div class="crafts" style="margin-top:20px">
+        <div class="craft best"><span class="ctag">最推薦</span><h4>模切異形</h4><p>任意形狀精準模切，圓形、星形、卡通形狀皆可，提升品牌辨識度</p><div class="stat">85% 客戶選擇此工藝</div></div>
+        <div class="craft best"><span class="ctag">推薦</span><h4>燙金／燙銀</h4><p>LOGO 或圖案局部金屬光澤，增添高級感和節日氣氛</p><div class="stat">62% 高階訂單採用</div></div>
+        <div class="craft"><h4>局部 UV</h4><p>重點圖案高光凸顯，觸感立體，視覺層次豐富</p></div>
+        <div class="craft"><h4>螢光色</h4><p>高可見度螢光色印刷，適合安全標示和促銷標籤</p></div>
+        <div class="craft"><h4>反光材質</h4><p>夜間反光效果，適合交通標示和安全標籤</p></div>
+        <div class="craft"><h4>可移除背膠</h4><p>可重複撕貼不留殘膠，適合臨時促銷和活動標籤</p></div>
+      </div>
+    </section>
+
+    <!-- 7. 技術參數詳解 -->
+    <section class="sec tint">
+      <div class="eyebrow">Specifications</div>
+      <h2 class="st">技術參數詳解</h2>
+      <dl class="specs" style="margin-top:20px">
+        <div class="spec"><dt>尺寸範圍</dt><dd>最小 <span class="mono">10×10mm</span>，最大 <span class="mono">300×400mm</span>，支持完全訂製形狀</dd></div>
+        <div class="spec"><dt>起訂量</dt><dd><span class="mono">50 張</span>起訂（數碼印刷），<span class="mono">1,000 張</span>以上柯式印刷更經濟</dd></div>
+        <div class="spec"><dt>交期</dt><dd>即日交貨（數碼，<span class="mono">50–500 張</span>）；標準 <span class="mono">2–3 天</span>（柯式）；打樣當日</dd></div>
+        <div class="spec"><dt>檔案要求</dt><dd>AI / PDF / PNG，<span class="mono">300dpi · CMYK</span>，預留 <span class="mono">2mm</span> 出血位（模切用）</dd></div>
+        <div class="spec"><dt>背膠選項</dt><dd>永久膠、可移除膠、3M 強力膠、低溫膠（冷凍環境）</dd></div>
+      </dl>
+    </section>
+
+    <!-- 8. 本地化服務節點 (GEO 本地信号) -->
+    <section class="sec">
+      <div class="eyebrow">Local Service · 香港</div>
+      <h2 class="st">本地化服務節點</h2>
+      <div class="locals" style="margin-top:20px">
+        <div class="local">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <h4>免費模切刀模</h4>
+          <p>提供標準形狀刀模免費使用，異形刀模首次製作僅收工本費</p>
+        </div>
+        <div class="local">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg></div>
+          <h4>可變數據印刷</h4>
+          <p>每張貼紙印不同序號、條碼、QR Code，適合產品追溯和個性化標籤</p>
+        </div>
+        <div class="local">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h4>戶外耐久測試</h4>
+          <p>提供防水、抗 UV、耐磨測試報告，確保貼紙符合使用環境要求</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 服務行業與應用場景 -->
+    <section class="sec tint">
+      <div class="eyebrow">Industries</div>
+      <h2 class="st">服務行業與應用場景</h2>
+      <p class="sec-sub">針對每個品類，我們整理了最常見的行業場景與對應方案。點擊了解詳情。</p>
+      <div class="indus" style="margin-top:20px">
+        <div class="indu">
+          <div class="idx">01</div>
+          <div>
+            <h4>寵物食品<span class="tg">主力行業</span></h4>
+            <ul><li>防水防油 FDA 食品級標籤</li><li>異形模切吸引貨架目光</li><li>100 張起印 · 即日打樣</li></ul>
+            <a href="#">查看完整方案 →</a>
+          </div>
+        </div>
+        <div class="indu">
+          <div class="idx">02</div>
+          <div>
+            <h4>藥品標籤<span class="tg">主力行業</span></h4>
+            <ul><li>燙金 LOGO · 啞光質感</li><li>透明貼紙展示玻璃瓶身</li><li>小批量試產 50 張起</li></ul>
+            <a href="#">查看完整方案 →</a>
+          </div>
+        </div>
+        <div class="indu">
+          <div class="idx">03</div>
+          <div>
+            <h4>美妝護膚<span class="tg">主力行業</span></h4>
+            <ul><li>SKU 條碼標籤 + GS1 合規</li><li>跨境物流防水耐磨</li><li>可移除背膠 · 不留殘膠</li></ul>
+            <a href="#">查看完整方案 →</a>
+          </div>
+        </div>
+        <div class="indu">
+          <div class="idx">04</div>
+          <div>
+            <h4>汽車 4S 店 + 酒店房卡套<span class="tg">主力行業</span></h4>
+            <ul><li>啤酒/飲料瓶防水標籤</li><li>冰桶浸泡不脫落</li><li>螢光色 + 反光可選</li></ul>
+            <a href="#">查看完整方案 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. 數據徽章帶 (藏青权威区) -->
+    <section class="sec">
+      <div class="band">
+        <div class="stat"><div class="n">4820<em>+</em></div><div class="l">累計訂單 · 真實客戶信賴</div></div>
+        <div class="stat"><div class="n">2.3<em> 天</em></div><div class="l">貼紙平均出貨速度</div></div>
+        <div class="stat"><div class="n">100<em> 張起</em></div><div class="l">MOQ 低 · 小批量無壓力</div></div>
+        <div class="stat"><div class="n">9<em> 種</em></div><div class="l">材質 PVC/透明/啞銀/燙金等任揀</div></div>
+      </div>
+    </section>
+
+    <!-- 11. 選購指南 (编辑排版长文, 逐字保留) -->
+    <section class="sec">
+      <div class="eyebrow">Buying Guide</div>
+      <h2 class="st">貼紙選購指南</h2>
+      <div class="guide" style="margin-top:20px">
+        <p class="lead">貼紙印刷揀款一句講晒：室內用銅版紙、戶外用 PVC 防水、要撕得甩用可移貼紙、要通透感用透明貼。50 張起印、即日可交，最細 25×25mm 都印到；落單前答埋「貼喺邊、貼幾耐」兩條問題，就唔會揀錯料。</p>
+        <p>銅版紙貼紙最經濟，色彩鮮豔，適合包裝標籤、封口貼同贈品貼；PVC 防水貼紙耐曬耐雨，係戶外貼紙首選，過膠後戶外可用 2–3 年唔褪色；透明貼（透明 PVC/PP）貼玻璃、杯身、樽裝產品通透無白邊，質感即時升級。</p>
+        <p>可移貼紙用可移除背膠，撕落嚟唔留殘膠，最啱促銷價錢牌、期間限定活動同櫥窗佈置；相反永久膠貼實咗就難撕，適合長期產品標籤；粗糙面或金屬曲面就要用 3M 強力膠。背膠揀錯，貼紙唔係甩就係留膠漬。</p>
+        <p>形狀方面，標準圓形、方形免刀模費最抵印；異形模切（吉祥物輪廓、品牌 LOGO 外形）辨識度最高，首次只需收刀模工本費，之後翻印唔使再收。貼紙訂製仲可以做半穿（kiss-cut），一張紙撕起每個獨立圖案。</p>
+        <p>工藝加乘：過啞膠高級防刮、過光膠鮮豔防水、燙金燙銀提升奢華感、擊凸做立體觸感。1,000 張以上柯式印刷單價可低至 HK$0.1/張；可變數據印刷仲可以每張印唔同序號、QR Code 或會員名。</p>
+        <p class="key">行業場景速配：餐飲外賣用防水封口貼，美妝護膚用透明貼做樽身標籤，零售精品用燙金貼做禮盒封口，寵物食品用耐油標籤，文創 IP 用異形模切貼紙做周邊。我哋有各行業現成規格表，照住揀就得。</p>
+        <p>搜「貼紙訂製」嘅客戶最常問色差同起訂量：數碼印刷 50 張起免製版，打樣當日完成；柯式 1,000 張起更抵。戶外貼紙記得指明要 UV 油墨加過膠，先頂得住香港夏天嘅日曬雨淋。</p>
+        <p>落單流程：提交尺寸、數量、材質 → 30 秒 AI 報價 → 免費檢查檔案（CMYK、300dpi、出血 3mm）→ 數碼即日、柯式 2–3 天交貨。急單順豐即日派件，港九新界全覆蓋；長期合作客戶可分批出貨，大量訂單仲可以分袋分包，方便門市派發。</p>
+      </div>
+    </section>
+
+    <!-- 12. FAQ (手风琴, 问句即标题) -->
+    <section class="sec">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="st">常見問題</h2>
+      <div style="margin-top:20px">
+        <details class="fq" open><summary>貼紙印刷 MOQ 係幾多？小批量都接嗎？<span class="pl">+</span></summary><div class="fa">MOQ 低至 <b>100 張</b>，部分款式 50 張起都可印，適合新品牌測試市場或細活動使用。</div></details>
+        <details class="fq"><summary>你哋有邊啲貼紙材質同工藝？<span class="pl">+</span></summary><div class="fa">提供 PVC、透明貼、啞銀、光粉、啞粉、防水、可移、燙金、局部 UV 等 <b>9 款以上</b>選擇，可混搭。</div></details>
+        <details class="fq"><summary>香港本地交貨要幾耐？可以加急嗎？<span class="pl">+</span></summary><div class="fa">常規 <b>2-3 天</b>出貨，平均 2.3 天完成。趕單可 WhatsApp 溝通，視乎工廠排單安排加急。</div></details>
+        <details class="fq"><summary>付款方式有邊啲？接受轉數快嗎？<span class="pl">+</span></summary><div class="fa">接受銀行轉賬、轉數快 FPS、支付寶香港等方式，確認報價後安排收款，WhatsApp 全程跟進。</div></details>
+        <details class="fq"><summary>貼紙印刷最低多少張起？<span class="pl">+</span></summary><div class="fa"><b>50 張起訂</b>（數碼印刷）。1,000 張以上柯式印刷更經濟。</div></details>
+        <details class="fq"><summary>貼紙可以印什麼形狀？<span class="pl">+</span></summary><div class="fa">任意形狀皆可。標準形狀免費，異形需製作刀模（首次僅收工本費）。</div></details>
+        <details class="fq"><summary>防水貼紙真的防水嗎？<span class="pl">+</span></summary><div class="fa">PVC 防水貼紙完全防水，可承受浸泡和戶外雨淋。銅版紙貼紙不防水。</div></details>
+        <details class="fq"><summary>可以每張貼紙印不同內容嗎？<span class="pl">+</span></summary><div class="fa">可以。支持可變數據印刷，每張可印不同序號、條碼、QR Code 或姓名。</div></details>
+        <details class="fq"><summary>貼紙的背膠會留殘膠嗎？<span class="pl">+</span></summary><div class="fa">可移除背膠不會留殘膠；永久背膠長期粘附後可能有微量殘膠，可用酒精清除。</div></details>
+        <details class="fq"><summary>戶外貼紙能維持多久？<span class="pl">+</span></summary><div class="fa">覆膜 PVC 貼紙戶外可維持 <b>2–3 年</b>不褪色；無覆膜約 6–12 個月。</div></details>
+        <details class="fq"><summary>透明貼紙是什麼效果？<span class="pl">+</span></summary><div class="fa">透明 PVC 貼紙背景完全透明，僅圖案和文字顯示，適合玻璃瓶和透明包裝。</div></details>
+        <details class="fq"><summary>貼紙最快多久可以取？<span class="pl">+</span></summary><div class="fa">數碼印刷<b>即日交貨</b>（50–500 張）；柯式印刷標準 2–3 天。</div></details>
+        <details class="fq"><summary>香港港島、九龍、新界都可以送貨嗎？<span class="pl">+</span></summary><div class="fa">可以。支援順豐到付或月結；門市與工作室可取貨或速遞到指定地址。急件請一早確認稿件以便排單。</div></details>
+        <details class="fq"><summary>可以先報價再上傳設計檔嗎？<span class="pl">+</span></summary><div class="fa">可以。請提供尺寸、材質（銅版／PVC／透明等）、數量、是否需要模切異形與覆膜；可先取得數碼／柯式單價，檔案齊備後印前會檢查模切線與最小線寬。</div></details>
+      </div>
+    </section>
+
+    <!-- 13. 6 步落單流程 -->
+    <section class="sec tint">
+      <div class="eyebrow">How to Order</div>
+      <h2 class="st">6 步落單流程</h2>
+      <div class="steps" style="margin-top:28px">
+        <div class="step"><div class="dot">1</div><b>WhatsApp 查詢</b><p>講清楚尺寸、數量、材質同用途</p></div>
+        <div class="step"><div class="dot">2</div><b>報價確認</b><p>24 小時內回覆價錢同交期</p></div>
+        <div class="step"><div class="dot">3</div><b>提供設計檔</b><p>AI/PNG/PDF 都得，可代簡單調整</p></div>
+        <div class="step"><div class="dot">4</div><b>打樣確認</b><p>印前提供數碼樣，滿意先開印</p></div>
+        <div class="step"><div class="dot">5</div><b>生產製作</b><p>廠房直接印刷，平均 2.3 日出貨</p></div>
+        <div class="step"><div class="dot">6</div><b>收貨驗收</b><p>香港本地派送或自取，跟進到滿意</p></div>
+      </div>
+    </section>
+
+    <!-- 14. 渠道比較表 -->
+    <section class="sec">
+      <div class="eyebrow">Compare</div>
+      <h2 class="st">香港貼紙印刷渠道比較</h2>
+      <table class="cmp" style="margin-top:20px">
+        <thead><tr><th>比較項目</th><th>網上自助平台</th><th>實體印刷店</th><th class="us">智印港 香港</th></tr></thead>
+        <tbody>
+          <tr><td>最少起印量</td><td>500-1000 張起</td><td>1000 張以上</td><td class="us">100 張起（部分 50 張）</td></tr>
+          <tr><td>交貨時間</td><td>5-7 個工作天</td><td>3-5 個工作天</td><td class="us">常規 2-3 天出貨</td></tr>
+          <tr><td>報價方式</td><td>系統自助，難調整</td><td>到店或電話查詢</td><td class="us">WhatsApp 一對一即時報價</td></tr>
+          <tr><td>材質選擇</td><td>基本 2-3 款</td><td>款式有限</td><td class="us">9 款以上（PVC/透明/啞銀/燙金/UV 等）</td></tr>
+          <tr><td>適合場景</td><td>大量標準單</td><td>本地熟客</td><td class="us">小批量、趕單、定制化</td></tr>
+        </tbody>
+      </table>
+      <p class="cmp-note">以上為市場常見情況參考，實際視乎個別商戶而定；智印港 專注小批量快閃定制。</p>
+    </section>
+
+    <!-- 15. 页底 CTA -->
+    <section class="sec">
+      <div class="cta">
+        <h3>WhatsApp 直接詢價 · 30 秒發需求</h3>
+        <p>5 分鐘內回覆 · 無在線支付，WhatsApp 詢價後銀行轉賬 / 轉數快 / 拍碼付款</p>
+        <div class="row">
+          <a class="btn-o" href="#">立即獲取報價</a>
+          <a class="btn-w" href="#">WhatsApp 查詢</a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /右栏 -->
+</div><!-- /main -->
+
+<!-- ═══ 页脚 (冻结区, 设计稿仅示意) ═══ -->
+<footer class="ft">
+  <div class="ft-in">
+    <div>
+      <div class="brand">智印港 ZprintPro</div>
+      <p>全球智能印刷訂製平台，提供AI智能報價、在線文件上傳、安全結算。從貼紙到包裝，30秒報價，72小時全球交付。</p>
+      <p style="margin-top:10px">+86 198 8085 1334<br>週一至週六 09:00 - 18:00 (GMT+8)</p>
+    </div>
+    <div><h5>產品中心</h5><a href="#">紙袋印刷</a><a href="#">傳單印刷</a><a href="#">貼紙印刷</a><a href="#">包裝盒印刷</a><a href="#">海報印刷</a></div>
+    <div><h5>關於我們</h5><a href="#">關於我們</a><a href="#">品牌故事</a><a href="#">客戶案例</a><a href="#">印刷知識</a></div>
+    <div><h5>幫助中心</h5><a href="#">落單須知</a><a href="#">付款方式</a><a href="#">送貨安排</a><a href="#">退換政策</a></div>
+  </div>
+  <div class="ft-bot">© 2026 智印港 ZprintPro. 保留所有權利。</div>
+</footer>
+
+<!-- 移动端吸底报价轨 -->
+<div class="mrail">
+  <span class="p">HK$0.22 起</span>
+  <a class="b1" href="#">30 秒報價</a>
+  <a class="b2" href="#">WhatsApp</a>
+</div>
+
+</body>
+</html>

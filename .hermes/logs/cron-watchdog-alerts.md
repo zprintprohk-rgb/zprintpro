@@ -69,3 +69,43 @@
 - **车道结果异常**: ZP-blog-deepfix 2026-10-24 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
 - **车道结果异常**: ZP-blog-deepfix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
 - **车道结果异常**: ZP-monthly-matrix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-10-30 06:43:11 车道对账告警
+
+- **车道结果异常**: ZP-weekly-meta scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-blog-deepfix 2026-10-24 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-blog-deepfix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-monthly-matrix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-11-02 06:46:53 车道对账告警
+
+- **车道结果异常**: ZP-monthly-matrix 2026-11-01 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-monthly-matrix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-k3-review scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-11-03 06:43:30 车道对账告警
+
+- **车道结果异常**: ZP-gsc-feedback scheduler LastTaskResult=1 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-monthly-matrix 2026-11-01 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-monthly-matrix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-k3-review scheduler LastTaskResult=1 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-11-04 06:43:25 车道对账告警
+
+- **车道结果异常**: ZP-monthly-matrix 2026-11-01 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-monthly-matrix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-11-09 06:43:20 车道对账告警
+
+- **车道结果异常**: ZP-daily-content scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-gsc-feedback scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-weekly-meta 2026-11-06 -> BLOCKED -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-weekly-meta scheduler LastTaskResult=1 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-monthly-matrix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-k3-review scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-11-13 06:43:07 车道对账告警
+
+- **车道结果异常**: ZP-weekly-meta scheduler LastTaskResult=1 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-monthly-matrix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-k3-review scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细

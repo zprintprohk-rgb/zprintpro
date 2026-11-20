@@ -1,0 +1,44 @@
+docs(handover): 活书追加 20:14 段 + §2 状态快照校准 (HEAD / 积压 / 双 remote 同读)
+
+范围:
+  docs/2026-09-20-handover-living-book.md 单文件
+
+一、§9 变更日志追加一段 (append-only, 不改写前文, per §0.34.2)
+  记录本会话 (`43945538`) 的 4 处 menus 残留收口 + 起点三条旧结论的证伪:
+   - 「3 条 commit 待推」❌ → 已由并发方推进
+   - 「src/ 被 8 个 MM 阻塞」❌ → 收尾信号已满足
+   - 「_menus-evidence.cjs 被并发清理删掉」❌ → 从未被跟踪, 文件始终在盘
+
+二、★ 新增避坑 23: 自报指标与复算不一致 ⇒ 先查输入通道, 勿先怀疑工具
+  手打字符串经 PowerShell 双引号传 node -e, `$99` 被变量展开 → equiv 得 46,
+  文件实测同行得 49, **三个 title 稳定差 3**。稳定偏移最像工具 bug, 真因是输入被改写。
+  判据: 稳定偏移 ≠ 必然工具 bug; 复算文件里的值必须从文件读; 不一致时先 dump 输入。
+  补 DOUBLE_METHOD_RECOUNT 的隐含前提: 双方法必须在**同定义域**。
+
+三、★ 新增避坑 24: PowerShell 落盘证据 = UTF-16LE + CRLF 双陷阱
+  Tee-Object 默认 UTF-16LE (FF FE BOM) → git 判 Bin; Out-String 再引入 \r\n → encoding 拦。
+  修法: 禁 PowerShell 重定向落盘文本, 改 fs.writeFileSync(p,c,'utf8') + 正规化换行 + 三步自检。
+
+四、并发协议实测结论 (锁首次运行)
+  - 已建 SESSION_LOCK.md 并在活书 §0 登记全部同族产物 + 与对方 handoff 双向指针
+  - 实测: 并发会话**全程未读活书**、且**会 git reset 自己的 HEAD**、
+    且**在 20:13 仍持续写入** ⇒ 「收尾信号满足」≠「可以写 src/」,
+    判据须叠加「对方 N 分钟无写入」
+
+五、§2 状态快照校准 (机器可验值)
+  - HEAD: a2f636e6 → **43945538**
+  - 积压: **3 条待推** (deda45f9 / a7c13edc / 43945538)
+  - 双 remote (`origin` + `origin_ssh`) **均已 fetch, 读数一致 a=3 / b=0**
+    (本次未触发避坑 20 的 stale ref 假象)
+
+本批未做 (不得声称已修):
+  - **未 push**: 距远端上次 push (20:09:17) 不足 30 min 硬下限, 窗口 20:39:17 开
+    (§0.25.8: commit 留本地, 禁止 Start-Sleep 阻塞)
+  - menus 数据层 description/body 措辞未逐条复核 (避坑 18 风险仍在)
+
+数据来源:
+- git rev-list --left-right --count origin/main...HEAD 与 origin_ssh/main...HEAD (双 remote 同读)
+- scripts/verify-menus-equiv.cjs / verify-menus.cjs / audit-sku-locale.cjs 复算
+- npx tsc --noEmit (54 = 基线 54) / node scripts/check-encoding.js (0)
+- git reflog (并发 reset 取证) / 文件 mtime 活动取证
+校准日期: 2026-09-20

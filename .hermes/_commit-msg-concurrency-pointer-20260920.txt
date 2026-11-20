@@ -1,0 +1,65 @@
+docs(handover)+chore(tools): 并发产物指针互认 + menus/locale 只读取证 + 入档 COMMIT_MSG_OVERCLAIMS_TREE
+
+背景 (K3 2026-09-20 裁定):
+  ① 方案1 只读准备 + 看门狗锁协议
+  ② 阶段一「只加指针」(正文合并留待安全窗口)
+  ③ 入档 COMMIT_MSG_OVERCLAIMS_TREE + menus-evidence 去 _ 前缀正式入库
+
+一、并发会话发现机制修复 (活书 §0 新增)
+  docs/2026-09-20-handover-living-book.md
+  - 新增 §0「关联产物（唯一发现入口）」: 登记全部 5 项同族产物
+  - 确立活书 = 唯一入口; 点名「活书自称第一份要读的文件, 对方却未读到 → 另建 handoff」
+    这一发现机制失效, 是第三/第四套产物衍生的根因
+  - 阶段 2（正文合并）标注留待并发静默后的安全窗口
+  docs/2026-09-20-handoff-12seg-and-b2b3.md
+  - 顶部追加双向指针块: 指明「两者互为指针, 均为有效产物, 非二选一」
+
+二、写锁看门狗 (K3 方案1 的协调动作)
+  SESSION_LOCK.md (仓库根, 新增)
+  - 声明持有者 / 意图 / 写入范围 / 30min TTL / 释放条件 + 接管声明追加区
+  - 明确区分既有 .hermes/locks/lane.lock (机器强制, 定时车道) 与本文件 (人工声明, 人手会话)
+  - ⚠️ 本文件不替代 lane.lock; 改 blog-data/*.json 前仍必须看锁 (§0.35.5)
+
+三、只读取证 (未写任何 src/)
+  .hermes/reports/menus-drift-and-locale-mismatch-2026-09-20.md
+  - 事项#1 menus DRIFT: 实测确认活书所列 7 处, 并新增 4 处同族 →
+    批次实为 11 处 (7 长度类 + 4 真值类)
+  - 新增发现 drink-menus/zh-hk 写「100本起」而真值 = 10 份 (不在活书 7 处清单内)
+  - 新增发现 ja 侧 3 处「100枚〜」数值错 (pvc/hardcover/drink), 当量均达标 →
+    证明 BAND 只验长度不验真值 (避坑 17「已施加≠已生效」活样本)
+  - 事项#2 品牌-语种错配: 结构解析复算确认 13 处 (8 ja description 挂「智印港」
+    + 3 ja imageAlt 繁体专用字 + 2 en imageAlt 日文), 反向 zh-hk 混入 ZprintPro = 0
+  - 数据来源: verify-menus.cjs / audit-sku-locale.cjs 实测 + products.ts 真值 SSoT
+  .hermes/reports/menus-drift-evidence-2026-09-20.txt   (verify-menus 原始输出)
+  .hermes/reports/sku-locale-audit-2026-09-20.txt       (audit-sku-locale 原始输出)
+
+四、入档 COMMIT_MSG_OVERCLAIMS_TREE (error-patterns, 追加 42 行, 0 删除)
+  .hermes/regression-guard/error-patterns.md
+  - 事故: 885d03d9 提交信息 §四 声称附带 scripts/menus-evidence.cjs, 但树中只有 2 文件
+  - 关键: 原始归因「并发清理扫掉 _*」被实测推翻 —— git log --all 为空 = 从未被跟踪,
+    且文件至今仍在磁盘 (2539 bytes)。真因 = git add 遇不存在 pathspec 整体失败
+  - 补充实测: .gitignore 无 `_*` 通配 (仅逐条下划线规则), 「被 ignore」亦不成立
+  - 修法: add 后必跑 git diff --cached --name-status; 信息声称的文件必能在
+    git show --stat HEAD 找到; 过载时不改写历史, 补追加提交 (§0.34.2)
+  - 同族: SAFECOMMIT_ATOMIC / METRIC_INTEGRITY_FIVE_TRAPS / DOUBLE_METHOD_RECOUNT
+
+五、工具去 _ 前缀正式入库 (per K3 ③: 正式脚本不应带下划线)
+  scripts/menus-evidence.cjs  (原 scripts/_menus-evidence.cjs, 只读, 供候选取词)
+  scripts/verify-menus.cjs    (原 scripts/_verify-menus.cjs, 只读, 真值 vs 现状 DRIFT 核实)
+  - 活书 §4 工具清单同步: _menus-evidence「⏳未入库」→「✅已入库」
+  - 澄清: 原「有用工具不得用 _ 前缀」教训成立, 但归因需修正 ——
+    _ 前缀的真实风险不是被清理, 而是交付物游离在版本控制之外
+
+范围声明:
+  - 全部为文档 / 只读工具 / 取证报告; **无任何 src/ 改动**
+  - 未触碰门禁脚本逻辑 (blog-quality-12-rules-guard.js / rule-translation-ledger.json 未动)
+  - 未 push (按 §0.25.9 攒批; 且距上次 push 17:11:34 < 30min 硬下限)
+
+数据来源:
+- scripts/verify-menus.cjs 实测输出 (2026-09-20)
+- scripts/audit-sku-locale.cjs 结构解析输出 (732938 字符 / 100 SKU / 花括号配平 ok)
+- src/data/products.ts minQuantity/unitLabel (真值 SSoT)
+- scripts/guards/title-equiv.js (当量口径 SSoT)
+- git reflog / git log --all / .gitignore 实测 (归因证伪)
+- K3 2026-09-20 选项裁定 (①方案1 ②阶段一指针 ③入档+入库)
+校准日期: 2026-09-20

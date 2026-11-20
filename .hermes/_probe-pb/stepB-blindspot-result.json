@@ -1,0 +1,15 @@
+{
+  "real": 0,
+  "title": 0,
+  "ghost": 0,
+  "contentSingle": 0,
+  "contentArray": 3,
+  "excerpt": 0,
+  "contentNoQuote": 0,
+  "direct": [
+    "GSC 数据",
+    "gsc-fresh-2026-09-03.json",
+    "K3"
+  ],
+  "leak": "数据来源：GSC 数据 / gsc-fresh-2026-09-03.json · candle labels · imps 数据 · pos 数据 (per K3 v10 §九 + §0.23 数据诚信红线, 校准 2026-09-17 K3 v10 拍板日)"
+}

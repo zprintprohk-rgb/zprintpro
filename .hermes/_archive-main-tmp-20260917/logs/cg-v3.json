@@ -1,0 +1,2773 @@
+{
+  "timestamp": "2026-08-24T20:22:19.113Z",
+  "scope": "src/",
+  "elapsed_ms": 73,
+  "total_files_scanned": 241,
+  "total_matches": 276,
+  "red": 0,
+  "orange": 236,
+  "yellow": 18,
+  "white": 22,
+  "hits": [
+    {
+      "file": "route.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\api\\merchant-feed\\[locale]\\route.ts",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 80,
+      "match": "placeholder",
+      "context": "const imageUrl = localeImg || generalImg || '/images/placeholder.jpg';"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 855,
+      "match": "占位",
+      "context": "{/* 2026-07-30 K4 拍板 2: Production Process 5 步 + SVG 占位 (K3 拍图后替换 SVG 为 <img>) */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 891,
+      "match": "占位",
+      "context": "{/* 2026-07-31 K3 拍板 A: 12 Tier A 行业 icon 卡片 (删 MOCK 占位, 不走网上搜真实 logo) */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 928,
+      "match": "占位",
+      "context": "{/* 2026-08-24 F1-batch-6 通用结构 (K3 4.2 方案 B): filter 空值/'—'/占位符 */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 869,
+      "match": "placeholder",
+      "context": "{/* 2026-08-16 K3 拍板: 工厂图已在上方「廠房與設備」section 正式嵌入, placeholder 删除 */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 34,
+      "match": "ISO 9001",
+      "context": "metaDesc: '智印港 ZprintPro 扎根香港超過15年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 43,
+      "match": "ISO 9001",
+      "context": "{ title: '品質保證', desc: 'ISO 9001 + FSC 認證 · 海德堡四色柯式 + HP Indigo 數碼 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 1,000+ 企業客戶信賴。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 55,
+      "match": "ISO 9001",
+      "context": "{ name: 'ISO 9001', desc: '質量管理體系認證，確保每個生產環節標準化' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 65,
+      "match": "ISO 9001",
+      "context": "// 2026-08-24 F1 紧急修复: 撤下 ISO 9001 + FSC 假证书号 (K3 8/24 18:11 拍板)"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 66,
+      "match": "ISO 9001",
+      "context": "// 2026-08-24 F1-batch-3 修正 (K3 8/24 18:35 拍板): 保留 \"通過 ISO 9001 品質管理體系認證\" + \"FSC 森林認證\" 文字 + 撤 certNo + validUntil 字段"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 68,
+      "match": "ISO 9001",
+      "context": "// 2026-08-24 F1-batch-4 立即执行 (K3 8/24 19:03 拍板): certNo + validUntil 字段全清空 (不留联系方式, 不展示认证细节), 只保留认证描述 (ISO 9001 / FSC / SGS)"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 70,
+      "match": "ISO 9001",
+      "context": "credSubtitle: '第三方認證 · 通過 ISO 9001 品質管理體系認證 · 可選 FSC 森林認證紙張 · 定期續審',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 77,
+      "match": "ISO 9001",
+      "context": "name: 'ISO 9001 品質管理體系',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 190,
+      "match": "ISO 9001",
+      "context": "metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. ISO 9001 + FSC certified, 15+ years experience, 1000+ global clients. 72-hour worldwide delivery from our Hong Kong factory.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 194,
+      "match": "ISO 9001",
+      "context": "story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by 1,000+ businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from scho"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 199,
+      "match": "ISO 9001",
+      "context": "{ title: 'Quality Assurance', desc: 'ISO 9001 + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trus"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 211,
+      "match": "ISO 9001",
+      "context": "{ name: 'ISO 9001', desc: 'Quality management system certification ensuring standardized production' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 223,
+      "match": "ISO 9001",
+      "context": "credSubtitle: 'Third-party certification · ISO 9001 quality management certified · FSC forest certified paper available · Periodic renewal',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 228,
+      "match": "ISO 9001",
+      "context": "name: 'ISO 9001 Quality Management',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 341,
+      "match": "ISO 9001",
+      "context": "metaDesc: '智印港 ZprintProは香港で15年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、FSC認証、1000社以上のお客様にサービスを提供。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 350,
+      "match": "ISO 9001",
+      "context": "{ title: '品質保証', desc: 'ISO 9001 + FSC 認証 · ハイデルベルク 4 色オフセット + HP Indigo デジタル + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 362,
+      "match": "ISO 9001",
+      "context": "{ name: 'ISO 9001', desc: '品質管理システム認証。各生産工程の標準化を保証。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 374,
+      "match": "ISO 9001",
+      "context": "credSubtitle: '第三者認証 · ISO 9001 品質マネジメントシステム認証 · FSC 森林認証紙対応 · 定期更新',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 379,
+      "match": "ISO 9001",
+      "context": "name: 'ISO 9001 品質マネジメント',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 669,
+      "match": "ISO 9001",
+      "context": "<span className=\"px-2.5 py-0.5 rounded-full bg-white/5 border border-white/15 text-white/60 text-[10px] font-semibold\">ISO 9001</span>"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 43,
+      "match": "1,000+",
+      "context": "{ title: '品質保證', desc: 'ISO 9001 + FSC 認證 · 海德堡四色柯式 + HP Indigo 數碼 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 1,000+ 企業客戶信賴。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 44,
+      "match": "1,000+",
+      "context": "{ title: '快速交付', desc: '數碼印刷 24h · 柯式印刷 3–5 天 · 順豐本地當日 + DHL/FedEx 全球 2-4 天 · 緊急訂單專人跟進 · 1,000+ 訂單累計 · [WhatsApp 即時查詢 📲](https://wa.me/8619880851334) · [聯絡我們](/contact/)' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 114,
+      "match": "1,000+",
+      "context": "testimonialSubtitle: '我們服務的 12 大行業 · 累計 1,000+ 企業客戶信賴',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 194,
+      "match": "1,000+",
+      "context": "story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by 1,000+ businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from scho"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 199,
+      "match": "1,000+",
+      "context": "{ title: 'Quality Assurance', desc: 'ISO 9001 + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trus"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 200,
+      "match": "1,000+",
+      "context": "{ title: 'Fast Global Delivery', desc: 'Digital ships in 24h, offset 3–5 business days. DHL/FedEx worldwide in 2–4 days to 50+ countries. Free shipping to US / UK / AU / CA. 1,000+ orders shipped. [Wh"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 265,
+      "match": "1,000+",
+      "context": "testimonialSubtitle: '12 industry segments served · 1,000+ business clients trusted us',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 350,
+      "match": "1,000+",
+      "context": "{ title: '品質保証', desc: 'ISO 9001 + FSC 認証 · ハイデルベルク 4 色オフセット + HP Indigo デジタル + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 351,
+      "match": "1,000+",
+      "context": "{ title: '迅速な納品', desc: 'デジタル 24h · オフセット 3-5 日 · DHL/FedEx 世界 2-4 日直送 · 50+ ヶ国対応 · 1,000+ 注文実績 · [WhatsApp で即時お問合せ 📲](https://wa.me/8619880851334) · ' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 909,
+      "match": "1,000+",
+      "context": "<p className=\"text-center text-gray-400 text-xs mt-8\">累計 1,000+ 企業客戶 · 50+ 國家 · 15+ 年印刷經驗</p>"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 33,
+      "match": "1000+",
+      "context": "metaTitle: '關於智印港 | 香港專業印刷服務 | 15年經驗服務1000+企業',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 34,
+      "match": "1000+",
+      "context": "metaDesc: '智印港 ZprintPro 扎根香港超過15年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 59,
+      "match": "1000+",
+      "context": "stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 190,
+      "match": "1000+",
+      "context": "metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. ISO 9001 + FSC certified, 15+ years experience, 1000+ global clients. 72-hour worldwide delivery from our Hong Kong factory.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 215,
+      "match": "1000+",
+      "context": "stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 366,
+      "match": "1000+",
+      "context": "stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 33,
+      "match": "15年",
+      "context": "metaTitle: '關於智印港 | 香港專業印刷服務 | 15年經驗服務1000+企業',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 34,
+      "match": "15年",
+      "context": "metaDesc: '智印港 ZprintPro 扎根香港超過15年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 36,
+      "match": "15年",
+      "context": "subtitle: '扎根香港超過15年，專注高品質印刷服務',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 49,
+      "match": "15年",
+      "context": "{ title: '創始人', desc: '擁有15年印刷行業經驗，曾服務於國際頂級印刷集團，精通色彩管理與印前工藝。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 340,
+      "match": "15年",
+      "context": "metaTitle: 'ZprintProについて | 香港プロ印刷サービス | 15年の実績',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 341,
+      "match": "15年",
+      "context": "metaDesc: '智印港 ZprintProは香港で15年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、FSC認証、1000社以上のお客様にサービスを提供。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 343,
+      "match": "15年",
+      "context": "subtitle: '香港で15年以上、高品質印刷に専念',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 347,
+      "match": "15年",
+      "context": "「智印未来」（より聪明な印刷、より明るい未来）をビジョンに、智能化された生産プロセス、フルオーダーメイド、エコ素材を通じて、他にない高品質な印刷物でブランドイメージと市場競争力を高めます。創立から15年、1000社以上のお客様にサービスを提供し、東京・大阪・名古屋など日本全国、ならびにアジア・米国・欧州・オーストラリアへの迅速配送で、グローバル規模の印刷パートナーとして信頼を集めてまいりました。`"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 356,
+      "match": "15年",
+      "context": "{ title: '創業者', desc: '印刷業界15年の経験。国際トップ印刷グループでの勤務経験があり、色彩管理と印前工程に精通。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 40,
+      "match": "十五年",
+      "context": "以「智印未來」為願景，我們通過智能化生產流程、個性化定制與環保材質，為客戶打造差異化、高質感的印刷品，全面提升品牌形象與市場競爭力。十五年來，從商務印品到創意包裝，從校園刊物到企業年報，我們已累計服務超過1000家本地及全球客戶，成為香港企業及機構可信賴的印刷合作夥伴。`,"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 59,
+      "match": "98%",
+      "context": "stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 215,
+      "match": "98%",
+      "context": "stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 366,
+      "match": "98%",
+      "context": "stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 137,
+      "match": "自設廠房",
+      "context": "factorySectionSubtitle: '自設廠房 · 海德堡柯式 + HP Indigo 數碼 · 6 大工序實拍 (色彩管理 → 柯式 → 數碼 → 後道裝訂 → 禮盒工藝 → 成品) · [查看 22 figure 工序流 ↓](#factory)',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 786,
+      "match": "cluster",
+      "context": "keywords: cluster.keywords[locale].join(','),"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 117,
+      "match": "ISO 9001",
+      "context": "'hong-kong-printing-guide': { title: 'Custom Sticker & Packaging Printing Guide for US Small Business | MOQ, Materials, FedEx Ground 5-7 Day', description: 'Complete guide to custom stickers, packagin"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 77,
+      "match": "15年",
+      "context": "description: '智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務，服務香港及大灣區客戶超過15年。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\case-studies\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 378,
+      "match": "1000+",
+      "context": "<div className=\"text-3xl font-bold\">1000+</div>"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\case-studies\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 386,
+      "match": "98%",
+      "context": "<div className=\"text-3xl font-bold\">98%</div>"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\company-news\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 55,
+      "match": "Heidelberg",
+      "context": "excerpt: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\contact\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 127,
+      "match": "15年",
+      "context": "trustYears: \"15年以上の印刷経験\","
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\faq\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 72,
+      "match": "Heidelberg",
+      "context": "{ q: 'How do you ensure print quality?', a: 'We use Heidelberg printing presses with professional color management. Every batch is QC inspected before shipping. For strict color requirements, request "
+    },
+    {
+      "file": "HelpCenterClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\help-center\\HelpCenterClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 751,
+      "match": "placeholder",
+      "context": "{/* QR code placeholder */}"
+    },
+    {
+      "file": "OrderConfirmationClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\order-confirmation\\OrderConfirmationClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 356,
+      "match": "placeholder",
+      "context": "<Image src={item.image || '/images/placeholder.webp'} alt={item.name || ''} width={64} height={64} className=\"w-full h-full object-cover\" unoptimized loading=\"lazy\" decoding=\"async\" />"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 148,
+      "match": "ISO 9001:2015",
+      "context": "{ title: 'ISO 9001 認證', desc: '深圳工廠通過 ISO 9001:2015 質量管理體系認證, 16 年印刷經驗' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 165,
+      "match": "ISO 9001:2015",
+      "context": "{ q: '深圳工廠品質點樣保證？', a: '深圳工廠 16 年印刷經驗, ISO 9001:2015 認證, FSC 紙張認證, FDA 食品級油墨. 每批出貨前 100% QC 抽樣, 損壞率 < 0.5%. 出貨影片可即時提供.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 229,
+      "match": "ISO 9001:2015",
+      "context": "{ title: 'ISO 9001 Certified', desc: 'Shenzhen factory certified ISO 9001:2015, 16 years of printing experience, 100% QC sampling before shipment.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 246,
+      "match": "ISO 9001:2015",
+      "context": "{ q: 'How is Shenzhen factory quality guaranteed?', a: 'Shenzhen factory has 16 years of printing experience, ISO 9001:2015 certified, FSC paper certified, FDA food-grade ink. 100% QC sampling before "
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 310,
+      "match": "ISO 9001:2015",
+      "context": "{ title: 'ISO 9001認証', desc: '深セン工場は ISO 9001:2015 認証, 16年の印刷経験, 出荷前 100% QC サンプリング.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 327,
+      "match": "ISO 9001:2015",
+      "context": "{ q: '深セン工場の品質はどのように保証されていますか？', a: '深セン工場は16年の印刷経験, ISO 9001:2015認証, FSC紙認証, FDA食品グレードインク. 出荷前100% QCサンプリング, 破損率 < 0.5%. 出荷動画も即時提供可能.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 24,
+      "match": "ISO 9001",
+      "context": "desc: 'China catalog printing from Shenzhen factory, 50 MOQ, free file check, 24h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote."
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 29,
+      "match": "ISO 9001",
+      "context": "desc: 'China catalog printing from Shenzhen factory, 50 MOQ, free file check, 24h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote."
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 34,
+      "match": "ISO 9001",
+      "context": "desc: '中国深セン工場からのカタログ印刷、50部から対応、無料ファイルチェック、24時間見積もり、DHL国際配送2-4日。カタログ・パンフレット・雑誌・ルックブック・大量卸価格。30秒AI無料見積もり。ISO 9001 + FSC認証。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 115,
+      "match": "ISO 9001",
+      "context": "heroSubtitle: '從深圳工廠直送全球嘅 catalog / brochure / magazine / lookbook 印刷, 50 本起印, 30 秒 AI 即時報價, ISO 9001 + FSC 認證. 對比歐美印刷廠慳 30-40%.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 148,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001 認證', desc: '深圳工廠通過 ISO 9001:2015 質量管理體系認證, 16 年印刷經驗' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 148,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001 認證', desc: '深圳工廠通過 ISO 9001:2015 質量管理體系認證, 16 年印刷經驗' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 165,
+      "match": "ISO 9001",
+      "context": "{ q: '深圳工廠品質點樣保證？', a: '深圳工廠 16 年印刷經驗, ISO 9001:2015 認證, FSC 紙張認證, FDA 食品級油墨. 每批出貨前 100% QC 抽樣, 損壞率 < 0.5%. 出貨影片可即時提供.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 175,
+      "match": "ISO 9001",
+      "context": "altFactory: 'Shenzhen Printing Factory 16 Year ISO 9001 Workshop | ZprintPro',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 179,
+      "match": "ISO 9001",
+      "context": "trustBadge1: 'ISO 9001 認證',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 196,
+      "match": "ISO 9001",
+      "context": "heroSubtitle: 'Catalog / brochure / magazine / lookbook printing from our Shenzhen factory, 50 MOQ, 30-second AI quote, ISO 9001 + FSC certified. Save 30-40% vs Western printers.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 229,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001 Certified', desc: 'Shenzhen factory certified ISO 9001:2015, 16 years of printing experience, 100% QC sampling before shipment.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 229,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001 Certified', desc: 'Shenzhen factory certified ISO 9001:2015, 16 years of printing experience, 100% QC sampling before shipment.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 246,
+      "match": "ISO 9001",
+      "context": "{ q: 'How is Shenzhen factory quality guaranteed?', a: 'Shenzhen factory has 16 years of printing experience, ISO 9001:2015 certified, FSC paper certified, FDA food-grade ink. 100% QC sampling before "
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 256,
+      "match": "ISO 9001",
+      "context": "altFactory: 'Shenzhen Printing Factory 16 Year ISO 9001 Workshop | ZprintPro',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 260,
+      "match": "ISO 9001",
+      "context": "trustBadge1: 'ISO 9001',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 277,
+      "match": "ISO 9001",
+      "context": "heroSubtitle: '深セン工場から直接お届けするカタログ・パンフレット・雑誌・ルックブック印刷, 50部から対応, 30秒AI無料見積もり, ISO 9001 + FSC認証. 欧米印刷工場より30-40%安い.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 310,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001認証', desc: '深セン工場は ISO 9001:2015 認証, 16年の印刷経験, 出荷前 100% QC サンプリング.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 310,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001認証', desc: '深セン工場は ISO 9001:2015 認証, 16年の印刷経験, 出荷前 100% QC サンプリング.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 327,
+      "match": "ISO 9001",
+      "context": "{ q: '深セン工場の品質はどのように保証されていますか？', a: '深セン工場は16年の印刷経験, ISO 9001:2015認証, FSC紙認証, FDA食品グレードインク. 出荷前100% QCサンプリング, 破損率 < 0.5%. 出荷動画も即時提供可能.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 337,
+      "match": "ISO 9001",
+      "context": "altFactory: '深セン印刷工場16年ISO 9001ワークショップ | ZprintPro',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 341,
+      "match": "ISO 9001",
+      "context": "trustBadge1: 'ISO 9001',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 247,
+      "match": "1000+",
+      "context": "{ q: 'Is the MOQ really 50 pcs?', a: 'Yes, 50 pcs MOQ with offset + digital hybrid printing. 1000+ pcs uses pure offset printing for lower unit cost. Sample proofing as low as 1 pc (at cost).' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 93,
+      "match": "占位",
+      "context": "{/* Hero Banner 占位区 - 方角 + 固定 440px (P0 雙 CTA 加高) */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 95,
+      "match": "占位",
+      "context": "{/* 渐变背景（占位，后续替换为真实图片） */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 28,
+      "match": "ISO 9001",
+      "context": "desc: '即日印刷 CMYK 全彩服務 100 張起印, 18:00 截單, 順豐本地滿 HK$500 免費, DHL 全球 2-4 天配送. 傳單、海報、貼紙、紙袋、畫冊、易拉寶通用, 防水抗 UV. WhatsApp 30 秒即時報價, ISO 9001 + FSC 認證.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 33,
+      "match": "ISO 9001",
+      "context": "desc: 'Same-day CMYK printing from 100 sheets, 6PM HKT cut-off, free local delivery over $200, DHL 2-4 day global. Flyers, posters, stickers, paper bags, booklets, roll-up banners, waterproof UV. 30-s"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 38,
+      "match": "ISO 9001",
+      "context": "desc: '当日 CMYK 印刷サービス 100 枚から対応, 平日 18 時までのご注文で徹夜印刷, 激安短納期. DHL 国際配送 2-4 日. チラシ・ポスター・ステッカー・紙袋・冊子・ロールアップバナー, 防水 UV. 30 秒 AI 無料見積もり. ISO 9001 + FSC 認証.',"
+    },
+    {
+      "file": "CategoryIndustries.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\category\\CategoryIndustries.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 728,
+      "match": "Placeholder",
+      "context": "{/* Placeholder row for upcoming industries */}"
+    },
+    {
+      "file": "CategorySharpHooks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\category\\CategorySharpHooks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 279,
+      "match": "ISO 9001",
+      "context": "fallbackHook: '專業印刷服務, 100 個起印, ISO 9001 認證, 30 秒 AI 即時報價',"
+    },
+    {
+      "file": "CategorySharpHooks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\category\\CategorySharpHooks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 285,
+      "match": "ISO 9001",
+      "context": "fallbackHook: 'Professional printing service, 100 MOQ, ISO 9001 certified, 30-second AI instant quote',"
+    },
+    {
+      "file": "CategorySharpHooks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\category\\CategorySharpHooks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 291,
+      "match": "ISO 9001",
+      "context": "fallbackHook: 'プロ印刷サービス、100個から対応、ISO 9001認証、30秒AI即時見積',"
+    },
+    {
+      "file": "CategoryFilter.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\CategoryFilter.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 90,
+      "match": "1000+",
+      "context": "<span>{locale === 'zh-hk' ? 'HK$1000+' : locale === 'ja' ? '¥15000+' : '$130+'}</span>"
+    },
+    {
+      "file": "CompareTable.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\geo\\CompareTable.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 65,
+      "match": "15年",
+      "context": "p1: '根據 ZPrintPro 15年印刷經驗，選擇材質需要考慮使用環境、預算和環保需求。',"
+    },
+    {
+      "file": "CompareTable.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\geo\\CompareTable.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 95,
+      "match": "15年",
+      "context": "p1: 'ZPrintPro の15年の印刷経験に基づき、素材は使用環境、予算、環境要件で選びます。',"
+    },
+    {
+      "file": "FactoryTrust.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\FactoryTrust.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 12,
+      "match": "ISO 9001",
+      "context": "subtitle: '柯式印刷機 × 商標輪轉機 · ISO 9001 品質管理 · 15+ 年印刷經驗',"
+    },
+    {
+      "file": "FactoryTrust.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\FactoryTrust.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 18,
+      "match": "ISO 9001",
+      "context": "subtitle: 'Offset press line × Label rotary press · ISO 9001 quality management · 15+ years in printing',"
+    },
+    {
+      "file": "FactoryTrust.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\FactoryTrust.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 24,
+      "match": "ISO 9001",
+      "context": "subtitle: 'オフセット印刷機 × ラベル輪転機 · ISO 9001 品質管理 · 15年以上の印刷実績',"
+    },
+    {
+      "file": "FactoryTrust.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\FactoryTrust.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 24,
+      "match": "15年",
+      "context": "subtitle: 'オフセット印刷機 × ラベル輪転機 · ISO 9001 品質管理 · 15年以上の印刷実績',"
+    },
+    {
+      "file": "FactoryTrust.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\FactoryTrust.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 6,
+      "match": "自設廠房",
+      "context": "* §13.10: supplier origin 允许在正文层佐证品质 (亚洲工厂/深圳自設廠房)"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 162,
+      "match": "占位",
+      "context": "{/* === 上半区：空白占位，将内容推下（增加两个描述文字高度） === */}"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 68,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001 認證 · 專業牛皮紙袋', subtitle: '深圳實體工廠 · FSC 認證紙 · 200 個起印 · 港九新界送貨上門', price: 'HK$1.2 起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 79,
+      "match": "ISO 9001",
+      "context": "// en 定位: Asia's Premium Printing — ISO 9001 · FSC Certified · Free US Shipping · 72h Global Delivery"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 81,
+      "match": "ISO 9001",
+      "context": "{ title: '⚡ Same-Day Printing · Free US Shipping $99+', subtitle: 'Order by 10AM, ship same day. ISO 9001 · FSC paper · Free design mockup in 4h · No setup fees', price: 'Same Day Ship', image: '/imag"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 72,
+      "match": "Heidelberg",
+      "context": "{ title: 'A2 大圖海報 · 即日輸出', subtitle: 'Heidelberg 4 色印刷 · 200-300g 銅版紙 · 大圖輸出色彩鮮豔', price: 'HK$15 起', image: '/images/hero/hero-poster-zh-hk.webp', href: '/product/a2-posters/' },"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 86,
+      "match": "Heidelberg",
+      "context": "{ title: 'A2 Posters · Free Design Proof', subtitle: 'Heidelberg 4-color offset · 200-300gsm art paper · Vivid colors · Free design mockup · 3-5 day global delivery', price: 'From US$1.95', image: '/i"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 100,
+      "match": "Heidelberg",
+      "context": "{ title: '大判ポスター印刷 · 高品質', subtitle: 'Heidelberg 4 色オフセット · 200-300g アート紙 · 鮮やかな発色 · 日本品質基準対応', price: '¥285〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/' }"
+    },
+    {
+      "file": "HowItWorks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HowItWorks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 212,
+      "match": "ISO 9001",
+      "context": "? '15+ 年印刷經驗 · ISO 9001 認證 · 15,000+ 全球客戶 · 100+ 國家發貨'"
+    },
+    {
+      "file": "HowItWorks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HowItWorks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 214,
+      "match": "ISO 9001",
+      "context": "? '15+ 年の印刷実績 · ISO 9001 認証 · 15,000+ グローバル顧客 · 100+ 国へ発送'"
+    },
+    {
+      "file": "HowItWorks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HowItWorks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 215,
+      "match": "ISO 9001",
+      "context": ": '15+ years in business · ISO 9001 certified · 15,000+ global customers · Ships to 100+ countries'}"
+    },
+    {
+      "file": "TrustWaterfall.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\TrustWaterfall.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 3,
+      "match": "15年",
+      "context": "* 4 个小条：15年本地经验 / 30秒报价 / 不满意免费重印 / 24/7 客服"
+    },
+    {
+      "file": "TrustWaterfall.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\TrustWaterfall.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 16,
+      "match": "15年",
+      "context": "'15年本地經驗',"
+    },
+    {
+      "file": "TrustWaterfall.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\TrustWaterfall.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 28,
+      "match": "15年",
+      "context": "'15年の実績',"
+    },
+    {
+      "file": "FloatingQuoteCTA.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\FloatingQuoteCTA.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 39,
+      "match": "ISO 9001",
+      "context": "trustLine: 'ISO 9001 · FSC Certified · DHL 2-4 days to US/UK/AU',"
+    },
+    {
+      "file": "FloatingQuoteCTA.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\FloatingQuoteCTA.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 53,
+      "match": "ISO 9001",
+      "context": "trustLine: 'ISO 9001 · FSC認証 · DHL 2-4日で日本全国',"
+    },
+    {
+      "file": "FloatingQuoteCTA.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\FloatingQuoteCTA.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 59,
+      "match": "ISO 9001",
+      "context": "trustLine: 'ISO 9001 · FSC 認證 · 順豐本地倉 1 日到貨',"
+    },
+    {
+      "file": "SearchDropdown.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\SearchDropdown.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 92,
+      "match": "placeholder",
+      "context": "placeholder,"
+    },
+    {
+      "file": "ProductGallery.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\ProductGallery.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 18,
+      "match": "placeholder",
+      "context": "const displayImages = images.length > 0 ? images : ['/images/placeholder.jpg'];"
+    },
+    {
+      "file": "ProductTabs.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\ProductTabs.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 174,
+      "match": "FSC認證",
+      "context": "'packaging': ['zh-hk,白卡/牛皮紙/瓦楞,結構設計免費,燙金UV可選,FSC認證紙'.split(','), 'en,White card/Kraft/Corrugated,Free structural design,Foil/UV options,FSC certified'.split(','), 'ja,白カード/クラフト/段ボール,構造設計無料,箔/UV選択可,FSC"
+    },
+    {
+      "file": "ProductTabs.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\ProductTabs.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 181,
+      "match": "FSC認證",
+      "context": "'exercise-books': ['zh-hk,FSC認證環保紙,封面免費印Logo,橫線/方格/田字格可選,學校補習社適用'.split(','), 'en,FSC certified eco paper,Free cover logo,Ruled/grid/blank inner,For schools & tutors'.split(','), 'ja,FSC認証エコ紙,表紙ロゴ無料,横"
+    },
+    {
+      "file": "ProductWhyChooseUs.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\ProductWhyChooseUs.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 18,
+      "match": "15年",
+      "context": "subtitle: '15年跨境經驗',"
+    },
+    {
+      "file": "ProductWhyChooseUs.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\ProductWhyChooseUs.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 136,
+      "match": "15年",
+      "context": "subtitle: '15年以上の実績',"
+    },
+    {
+      "file": "QuantityTierInteractive.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuantityTierInteractive.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 142,
+      "match": "占位",
+      "context": "{/* BEST VALUE 标签 / 占位 */}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 495,
+      "match": "Placeholder",
+      "context": "<option value=\"\">{t.categoryPlaceholder}</option>"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 208,
+      "match": "15年",
+      "context": "{ icon: '🏭', label: '自社工場・15年以上の実績' },"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 126,
+      "match": "自設廠房",
+      "context": "{ icon: '🏭', label: '深圳自設廠房・15+ 年印刷經驗' },"
+    },
+    {
+      "file": "RushDeliveryGrid.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\sections\\RushDeliveryGrid.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 152,
+      "match": "placeholder",
+      "context": "if (!img.src.includes('placeholder')) {"
+    },
+    {
+      "file": "RushDeliveryGrid.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\sections\\RushDeliveryGrid.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 153,
+      "match": "placeholder",
+      "context": "img.src = '/images/placeholder.svg';"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 7,
+      "match": "ISO 9001:2015",
+      "context": "*   1. ISO 9001:2015 Certified (real - global quality standard)"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 70,
+      "match": "ISO 9001:2015",
+      "context": "{ icon: 'award', color: 'blue', title: 'ISO 9001:2015 Certified', subtitle: 'Global quality standard' },"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 80,
+      "match": "ISO 9001:2015",
+      "context": "{ icon: 'award', color: 'blue', title: 'ISO 9001:2015 認證', subtitle: '國際品質管理標準' },"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 90,
+      "match": "ISO 9001:2015",
+      "context": "{ icon: 'award', color: 'blue', title: 'ISO 9001:2015 認証', subtitle: '国際品質マネジメント規格' },"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 108,
+      "match": "ISO 9001:2015",
+      "context": "en: '15+ years serving global SMBs. ISO 9001:2015 certified. Real-time tracking. 100% satisfaction.',"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 109,
+      "match": "ISO 9001:2015",
+      "context": "'zh-hk': '15+ 年服務全球中小企 · ISO 9001:2015 認證 · 即時物流追蹤 · 100% 滿意保證',"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 110,
+      "match": "ISO 9001:2015",
+      "context": "ja: '15+ 年グローバル SMB 支援 · ISO 9001:2015 認証 · リアルタイム追跡 · 100% 満足保証',"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 7,
+      "match": "ISO 9001",
+      "context": "*   1. ISO 9001:2015 Certified (real - global quality standard)"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 70,
+      "match": "ISO 9001",
+      "context": "{ icon: 'award', color: 'blue', title: 'ISO 9001:2015 Certified', subtitle: 'Global quality standard' },"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 80,
+      "match": "ISO 9001",
+      "context": "{ icon: 'award', color: 'blue', title: 'ISO 9001:2015 認證', subtitle: '國際品質管理標準' },"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 90,
+      "match": "ISO 9001",
+      "context": "{ icon: 'award', color: 'blue', title: 'ISO 9001:2015 認証', subtitle: '国際品質マネジメント規格' },"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 108,
+      "match": "ISO 9001",
+      "context": "en: '15+ years serving global SMBs. ISO 9001:2015 certified. Real-time tracking. 100% satisfaction.',"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 109,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '15+ 年服務全球中小企 · ISO 9001:2015 認證 · 即時物流追蹤 · 100% 滿意保證',"
+    },
+    {
+      "file": "TrustBadges.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\TrustBadges.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 110,
+      "match": "ISO 9001",
+      "context": "ja: '15+ 年グローバル SMB 支援 · ISO 9001:2015 認証 · リアルタイム追跡 · 100% 満足保証',"
+    },
+    {
+      "file": "blog-posts.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\blog-posts.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1516,
+      "match": "cluster",
+      "context": "'zh-hk': '中國目錄印刷供應商怎麼揀？4 種裝訂 (騎馬釘/膠裝/線裝/精裝) + 4 種紙質 (157g 銅版/128g 書紙/200g 啞粉/250g 咭紙) + bulk/wholesale 100/500/1000/5000 階梯 15-30% 折扣, 4 詞 cluster 9/4 期望進首頁: 畫冊印刷 / 產品型錄印刷 / 中國印刷供應商 / 大量印刷.',"
+    },
+    {
+      "file": "blog-posts.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\blog-posts.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1517,
+      "match": "cluster",
+      "context": "en: 'How to choose a catalog printing China supplier? 4 binding types (saddle-stitch / perfect / spiral / case-bound) + 4 paper stocks (157gsm coated / 128gsm offset / 200gsm matte / 250gsm artboard) "
+    },
+    {
+      "file": "blog-posts.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\blog-posts.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1518,
+      "match": "cluster",
+      "context": "ja: 'カタログ印刷中国サプライヤーの選び方? 4 製本タイプ (中綴じ/無線綴じ/糸かがり/上製本) + 4 紙質 (157g コート/128g 書籍/200g マット/250g カード) + 大量卸売 100/500/1000/5000 段階 15-30% 割引. 4 語 cluster 9/4 順位目標: カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送.',"
+    },
+    {
+      "file": "blog-posts.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\blog-posts.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1516,
+      "match": "9/4",
+      "context": "'zh-hk': '中國目錄印刷供應商怎麼揀？4 種裝訂 (騎馬釘/膠裝/線裝/精裝) + 4 種紙質 (157g 銅版/128g 書紙/200g 啞粉/250g 咭紙) + bulk/wholesale 100/500/1000/5000 階梯 15-30% 折扣, 4 詞 cluster 9/4 期望進首頁: 畫冊印刷 / 產品型錄印刷 / 中國印刷供應商 / 大量印刷.',"
+    },
+    {
+      "file": "blog-posts.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\blog-posts.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1517,
+      "match": "9/4",
+      "context": "en: 'How to choose a catalog printing China supplier? 4 binding types (saddle-stitch / perfect / spiral / case-bound) + 4 paper stocks (157gsm coated / 128gsm offset / 200gsm matte / 250gsm artboard) "
+    },
+    {
+      "file": "blog-posts.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\blog-posts.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1518,
+      "match": "9/4",
+      "context": "ja: 'カタログ印刷中国サプライヤーの選び方? 4 製本タイプ (中綴じ/無線綴じ/糸かがり/上製本) + 4 紙質 (157g コート/128g 書籍/200g マット/250g カード) + 大量卸売 100/500/1000/5000 段階 15-30% 割引. 4 語 cluster 9/4 順位目標: カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送.',"
+    },
+    {
+      "file": "blog-posts.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\blog-posts.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 375,
+      "match": "ISO 9001",
+      "context": "en: 'Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day or DHL Exp"
+    },
+    {
+      "file": "blog-posts.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\blog-posts.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 252,
+      "match": "Heidelberg",
+      "context": "en: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing solutions.',"
+    },
+    {
+      "file": "blog-posts.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\blog-posts.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 362,
+      "match": "Heidelberg",
+      "context": "// 替换后: 3 locale 都用海德堡图 (factory floor + Heidelberg logo), 强化 \"印刷实力\" 主题"
+    },
+    {
+      "file": "buying-guides.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\buying-guides.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 118,
+      "match": "1000+",
+      "context": "<ul class=\"list-disc pl-5 my-3 space-y-1\"><li><strong>數碼印刷</strong>：100-500 張，多色、快速、個性化</li><li><strong>柔版印刷（Flexo）</strong>：1000+ 張，單色到 4 色，經濟實惠</li><li><strong>UV 印刷</strong>：高飽和度，支持特殊材質</li><li><st"
+    },
+    {
+      "file": "buying-guides.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\buying-guides.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 118,
+      "match": "1000+",
+      "context": "<ul class=\"list-disc pl-5 my-3 space-y-1\"><li><strong>數碼印刷</strong>：100-500 張，多色、快速、個性化</li><li><strong>柔版印刷（Flexo）</strong>：1000+ 張，單色到 4 色，經濟實惠</li><li><strong>UV 印刷</strong>：高飽和度，支持特殊材質</li><li><st"
+    },
+    {
+      "file": "buying-guides.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\buying-guides.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 132,
+      "match": "1000+",
+      "context": "<ul class=\"list-disc pl-5 my-3 space-y-1\"><li><strong>Digital Print</strong>: 100-500 pieces, multi-color, fast, personalized</li><li><strong>Flexo Print</strong>: 1000+ pieces, 1-4 color, economical<"
+    },
+    {
+      "file": "buying-guides.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\buying-guides.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 132,
+      "match": "1000+",
+      "context": "<ul class=\"list-disc pl-5 my-3 space-y-1\"><li><strong>Digital Print</strong>: 100-500 pieces, multi-color, fast, personalized</li><li><strong>Flexo Print</strong>: 1000+ pieces, 1-4 color, economical<"
+    },
+    {
+      "file": "buying-guides.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\buying-guides.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 146,
+      "match": "1000+",
+      "context": "<ul class=\"list-disc pl-5 my-3 space-y-1\"><li><strong>デジタル印刷</strong>：100-500 枚、多色、高速、個別性</li><li><strong>フレキソ印刷</strong>：1000+ 枚、1-4 色、経済的</li><li><strong>UV 印刷</strong>：高彩度、特殊素材対応</li><li><strong>シル"
+    },
+    {
+      "file": "buying-guides.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\buying-guides.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 146,
+      "match": "1000+",
+      "context": "<ul class=\"list-disc pl-5 my-3 space-y-1\"><li><strong>デジタル印刷</strong>：100-500 枚、多色、高速、個別性</li><li><strong>フレキソ印刷</strong>：1000+ 枚、1-4 色、経済的</li><li><strong>UV 印刷</strong>：高彩度、特殊素材対応</li><li><strong>シル"
+    },
+    {
+      "file": "buying-guides.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\buying-guides.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 252,
+      "match": "1000+",
+      "context": "<ul class=\"list-disc pl-5 my-3 space-y-1\"><li><strong>四色印刷（CMYK）</strong>：照片類設計、複雜漸變</li><li><strong>專色印刷（Pantone）</strong>：品牌標準色、金屬色、螢光色</li><li><strong>數碼印刷</strong>：小批量（100-500 個）、個性化</li><li><stro"
+    },
+    {
+      "file": "buying-guides.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\buying-guides.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 266,
+      "match": "1000+",
+      "context": "<ul class=\"list-disc pl-5 my-3 space-y-1\"><li><strong>4-color (CMYK)</strong>: Photo designs, complex gradients</li><li><strong>Spot Color (Pantone)</strong>: Brand standard, metallic, fluorescent</li"
+    },
+    {
+      "file": "buying-guides.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\buying-guides.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 280,
+      "match": "1000+",
+      "context": "<ul class=\"list-disc pl-5 my-3 space-y-1\"><li><strong>4 色印刷（CMYK）</strong>：写真系デザイン、複雑なグラデーション</li><li><strong>特色印刷（Pantone）</strong>：ブランド標準色、メタリック、蛍光</li><li><strong>デジタル印刷</strong>：小ロット（100-500 個）、個別"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 989,
+      "match": "cluster",
+      "context": "featuredSnippet: '騎馬釘小冊子印刷 50 本起, 8-64 頁 (4 的倍數, 超過 64 頁轉膠裝), HK$14-57/本 (500 本), 30 秒 AI 即時報價, DHL 全球 2-4 天, 免製版費. 自封面 (成本低) vs 加厚封面 250g (+HK$0.15-0.30/本, 品牌 catalog 首選). 對比 Alibaba 黃頁 500+ MOQ + 2 "
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1089,
+      "match": "cluster",
+      "context": "featuredSnippet: 'Saddle stitch booklets from 50 copies, 8-64 pages (multiples of 4, switch to perfect binding beyond 64), US$1.84-7.36/pc at 500 copies, 30-second instant AI quote, DHL global 2-4 day"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1189,
+      "match": "cluster",
+      "context": "featuredSnippet: '中綴じ冊子印刷 50冊から, 8-64ページ (4の倍数, 64超は無線綴じ), ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日, 製版費不要. 自表紙 (低コスト) vs 別表紙 250g (+¥8-25/個, ブランドカタログ向). Alibaba 黄頁 3つの差別化: 50冊 MOQ vs 500+, 3"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 3138,
+      "match": "cluster",
+      "context": "featuredSnippet: 'ステッカー印刷 50枚から, 防水マット ¥7／枚, オリジナルステッカー100枚から, キャラクター/防水/屋外/剥がせる 4 種対応, 両面印刷+正方形+はがきサイズ, 5-7日納期, DHL 2-4日. ジープリント ZprintPro 工場直送価格. 9/4 ja CTR ≥2% 目標: ステッカー印刷/オリジナル/作成/キャラクター/防水/屋外/両面 "
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 989,
+      "match": "9/4",
+      "context": "featuredSnippet: '騎馬釘小冊子印刷 50 本起, 8-64 頁 (4 的倍數, 超過 64 頁轉膠裝), HK$14-57/本 (500 本), 30 秒 AI 即時報價, DHL 全球 2-4 天, 免製版費. 自封面 (成本低) vs 加厚封面 250g (+HK$0.15-0.30/本, 品牌 catalog 首選). 對比 Alibaba 黃頁 500+ MOQ + 2 "
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1089,
+      "match": "9/4",
+      "context": "featuredSnippet: 'Saddle stitch booklets from 50 copies, 8-64 pages (multiples of 4, switch to perfect binding beyond 64), US$1.84-7.36/pc at 500 copies, 30-second instant AI quote, DHL global 2-4 day"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1189,
+      "match": "9/4",
+      "context": "featuredSnippet: '中綴じ冊子印刷 50冊から, 8-64ページ (4の倍数, 64超は無線綴じ), ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日, 製版費不要. 自表紙 (低コスト) vs 別表紙 250g (+¥8-25/個, ブランドカタログ向). Alibaba 黄頁 3つの差別化: 50冊 MOQ vs 500+, 3"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4481,
+      "match": "ISO 9001",
+      "context": "'順豐本地滿 HK$500 免費 + DHL 全球 2-4 天配送 + FSC 認證紙材 + ISO 9001 品質。',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4517,
+      "match": "ISO 9001",
+      "context": "{ label: '環保認證', value: 'FSC 認證紙 + 大豆油墨 + ISO 9001 + 可回收' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4570,
+      "match": "ISO 9001",
+      "context": "'Free shipping over $99 to USA + DHL Express 2-4 day global + FSC certified + ISO 9001 quality.',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4606,
+      "match": "ISO 9001",
+      "context": "{ label: 'Eco Certifications', value: 'FSC certified + soy ink + ISO 9001 + recyclable' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4659,
+      "match": "ISO 9001",
+      "context": "'米国 $99 以上送料無料 + DHL 国際 2-4 日 + FSC 認証 + ISO 9001 品質。',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4695,
+      "match": "ISO 9001",
+      "context": "{ label: 'エコ認証', value: 'FSC 認証 + 大豆インク + ISO 9001 + リサイクル可能' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 2870,
+      "match": "FSC認證",
+      "context": "{ material: isZh ? '環保紙材' : isEn ? 'Eco Paper' : 'エコ紙材', features: isZh ? 'FSC認證｜可降解｜綠色形象' : isEn ? 'FSC certified | Biodegradable | Green image' : 'FSC認証｜生分解性｜グリーンイメージ', scenarios: isZh ? '環保企業｜有機品牌｜"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 589,
+      "match": "1,000+",
+      "context": "{ q: 'Are there discounts for bulk orders?', a: 'Yes. Volume discounts on 1,000+ cards. Corporate clients enjoy monthly billing with dedicated account managers.' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 3092,
+      "match": "1,000+",
+      "context": "{ label: 'Minimum Order', value: '50 pcs (digital printing). 1,000+ recommended for offset (more economical).' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 3113,
+      "match": "1,000+",
+      "context": "'Finishes multiply impact: matte lamination for a premium scratch-resistant feel, gloss for waterproof vibrancy, gold or silver foil for luxury, embossing for texture. Offset runs of 1,000+ bring unit"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 3124,
+      "match": "1,000+",
+      "context": "{ q: 'What is the minimum order for stickers?', a: '50 pcs (digital printing). 1,000+ pcs recommended for offset printing.' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 3365,
+      "match": "1,000+",
+      "context": "'1,000+ pcs offset printing, unit price as low as US$0.03/pc for large-scale distribution.',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 3406,
+      "match": "1,000+",
+      "context": "{ label: 'Minimum Order', value: '100 pcs (digital printing). 1,000+ recommended for offset (more economical).' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 3430,
+      "match": "1,000+",
+      "context": "{ q: 'What is the minimum order for flyers?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, as low as US$0.03/pc.' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 3647,
+      "match": "1,000+",
+      "context": "featuredSnippet: 'Poster printing from 10 pcs: A2 US$0.80-1.20 each, A1 US$1.30-2.10 each at 100 pcs, 500+ saves 30%, 1,000+ offset drops 40% more. 3-5 business day turnaround, DHL global 2-4 days.',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 3975,
+      "match": "1,000+",
+      "context": "'1,000+ pcs offset printing, unit price as low as US$0.19/pc for retail chains and large events.',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4016,
+      "match": "1,000+",
+      "context": "{ label: 'Minimum Order', value: '100 pcs (digital printing). 1,000+ recommended for offset (more economical).' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4038,
+      "match": "1,000+",
+      "context": "'Pricing is volume-friendly: digital printing from 100 bags with no plate fees is ideal for testing designs, while offset runs of 1,000+ drop unit costs dramatically — think cents per bag at scale. Ad"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4049,
+      "match": "1,000+",
+      "context": "{ q: 'What is the minimum order for paper bags?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, as low as US$0.19/pc.' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4060,
+      "match": "1,000+",
+      "context": "{ q: 'How much do custom paper bags cost per piece for 100 pcs?', a: 'Digital printing from 100 pcs starts at US$0.23/pc. Offset runs of 1,000+ drop to US$0.19/pc. 5,000+ volumes unlock 15-25% tier di"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4063,
+      "match": "1,000+",
+      "context": "{ q: 'Which paper material is most cost-effective for kraft paper bags?', a: '200gsm kraft paper is the most economical at US$0.19/pc for 1,000+ — perfect for coffee shops, eco brands, and handmade go"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 5053,
+      "match": "98%",
+      "context": "'全球婚宴台卡 $123M (6.98% of Wedding Stationery $1.76B 2025, CAGR 4.5%),跨婚慶 + 餐飲 + 商務全場景。',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 5144,
+      "match": "98%",
+      "context": "'Global wedding place cards $123M (6.98% of Wedding Stationery $1.76B 2025, CAGR 4.5%) — covers wedding + catering + commercial full-scenario.',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 5235,
+      "match": "98%",
+      "context": "'世界披露宴席札 $123M (Wedding Stationery $1.76B の 6.98% 2025, CAGR 4.5%) — 結婚 + 飲食 + 商用フル場面カバー。',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4205,
+      "match": "海德堡柯式",
+      "context": "'海德堡柯式印刷機 + 專業分色 + ICC profile 色彩管理',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4265,
+      "match": "海德堡柯式",
+      "context": "{ q: '插畫色彩會不會偏色？', a: '採用 ICC profile 色彩管理（GRACoL / Fogra39）+ 海德堡柯式機，原畫 RGB 自動轉 CMYK 校色，色彩還原度達 95%+。可先打樣確認。' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 510,
+      "match": "Heidelberg",
+      "context": "'Premium 300–400gsm art paper, Conqueror, Dutch white card, and cotton paper. Heidelberg 4-color presses ensure accurate color reproduction.',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 569,
+      "match": "Heidelberg",
+      "context": "{ title: 'Modern Production Facility', description: 'Modern production base at our Asia factory with Heidelberg presses and ISO 12647 color management.' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 2895,
+      "match": "Heidelberg",
+      "context": "{ title: isZh ? '深圳自有工廠' : isEn ? 'Modern Production Facility' : '自社工場 (アジア)', description: isZh ? '現代化生產基地，配備海德堡印刷設備' : isEn ? 'Modern production base at our Asia factory with Heidelberg presses' : '"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4297,
+      "match": "Heidelberg",
+      "context": "'Heidelberg offset printing + professional color separation + ICC profile color management.',"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4333,
+      "match": "Heidelberg",
+      "context": "{ label: 'Color Management', value: 'ICC profile (GRACoL / Fogra) + Heidelberg color separation, 95%+ color accuracy.' },"
+    },
+    {
+      "file": "category-seo-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\category-seo-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 4357,
+      "match": "Heidelberg",
+      "context": "{ q: 'Will my illustration colors shift?', a: 'ICC profile color management (GRACoL / Fogra39) + Heidelberg offset press. Original RGB auto-converted to CMYK with 95%+ color accuracy. Sample proofing "
+    },
+    {
+      "file": "cluster-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\cluster-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 278,
+      "match": "FSC認證",
+      "context": "'zh-hk': '環保紙袋已成為品牌ESG策略的重要一環。從FSC認證到克重選擇（120gsm-350gsm），一文搞懂如何打造既環保又耐用的品牌紙袋。',"
+    },
+    {
+      "file": "pillar-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\pillar-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 97,
+      "match": "1,000+",
+      "context": "'en': '<p class=\"lead\"><strong>Flyer printing starts at 10 pieces for US$0.02 each (A5). Foil flyers in 2-3 working days, with DHL delivery to the US in 2-4 business days.</strong></p><p>In a fast-pac"
+    },
+    {
+      "file": "pillar-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\pillar-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 58,
+      "match": "HP Indigo",
+      "context": "'zh-hk': '<p class=\"lead\"><strong>香港貼紙印刷最低 100 張起訂，防水貼紙 HK$0.22/張起，支援九龍/港島/新界即日取貨，燙金與透明材質 3-5 個工作日交付。</strong></p><p>貼紙印刷是香港品牌包裝與宣傳中最具性價比的選擇。無論是防水貼紙、透明貼紙，還是燙金貼紙，智印港提供少批量起訂與即日取貨服務，覆蓋九龍、港島及新界。本指南將從材質選擇、"
+    },
+    {
+      "file": "pillar-content.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\pillar-content.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 59,
+      "match": "HP Indigo",
+      "context": "'en': '<p class=\"lead\"><strong>Custom sticker printing starts at 100 pieces from US$0.03 each. Waterproof and foil stickers delivered to the US in 3-5 working days via DHL from our Asia facility.</str"
+    },
+    {
+      "file": "product-faqs.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\product-faqs.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 238,
+      "match": "FSC認證",
+      "context": "'zh-hk': '智印港提供FSC認證環保包裝盒，材質包括再生紙、牛皮紙及大豆油墨印刷。適合注重ESG的品牌及有機產品包裝。新界及九龍客戶可安排即日打樣。',"
+    },
+    {
+      "file": "product-faqs.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\product-faqs.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 436,
+      "match": "FSC認證",
+      "context": "'zh-hk': '智印港提供FSC認證環保紙袋，材質包括再生牛皮紙、未漂白原木漿紙及大豆油墨印刷。適合注重可持續發展的品牌，可於袋身印製FSC標誌及環保標語。新界及九龍客戶可安排即日打樣。',"
+    },
+    {
+      "file": "product-seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\product-seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 70,
+      "match": "FSC認證",
+      "context": "description: '香港專業包裝盒印刷服務，磁吸禮盒、環保包裝盒、化妝品盒燙金工藝。新界/九龍/港島即日打樣，FSC認證紙張，品牌包裝一站式解決。',"
+    },
+    {
+      "file": "product-seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\data\\product-seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 128,
+      "match": "FSC認證",
+      "context": "description: '香港專業紙袋印刷服務，環保紙袋、牛皮紙袋、禮品紙袋燙金工藝。九龍/港島/新界即日可取，FSC認證環保紙張，品牌紙袋一站式定製。',"
+    },
+    {
+      "file": "index-vol1.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\insights\\index-vol1.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 136,
+      "match": "cluster",
+      "context": "bodyEn: 'Of 30 WhatsApp inquiries, the top-3 landing pages were packaging (6), paper-bags (5), and posters (4) — matching the GSC impression ranking for Aug 14–20 (packaging PDP cluster, paper-bags pi"
+    },
+    {
+      "file": "index-vol1.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\insights\\index-vol1.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 136,
+      "match": "cluster",
+      "context": "bodyEn: 'Of 30 WhatsApp inquiries, the top-3 landing pages were packaging (6), paper-bags (5), and posters (4) — matching the GSC impression ranking for Aug 14–20 (packaging PDP cluster, paper-bags pi"
+    },
+    {
+      "file": "index-vol1.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\insights\\index-vol1.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 57,
+      "match": "8/28",
+      "context": "label: '总询盘量 (8/1-8/28 baseline)',"
+    },
+    {
+      "file": "index-vol1.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\insights\\index-vol1.ts",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 143,
+      "match": "8/28",
+      "context": "a: 'Vol.1 baseline n=31 (8/1-8/28), 包括 30 条 WhatsApp 询盘 + 1 条 quote 表测试. 诚实边界: 计数透明发布, 百分比仅 n>=30 时按 1 位小数发布. Vol.2 (11 月) 将提供 3 个月真实数据.',"
+    },
+    {
+      "file": "product-image.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\product-image.ts",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 30,
+      "match": "placeholder",
+      "context": "return '/images/placeholder.jpg';"
+    },
+    {
+      "file": "product-image.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\product-image.ts",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 43,
+      "match": "placeholder",
+      "context": "return ['/images/placeholder.jpg'];"
+    },
+    {
+      "file": "core.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\quote-engine\\core.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 226,
+      "match": "Heidelberg",
+      "context": "offset_4color: { setupPerSheet: 300, label: '4-Color Offset (Heidelberg SM74)' },"
+    },
+    {
+      "file": "core.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\quote-engine\\core.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 223,
+      "match": "HP Indigo",
+      "context": "/** 数码印刷 (HP Indigo / Xerox) - 0 开机费但慢 */"
+    },
+    {
+      "file": "core.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\quote-engine\\core.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 224,
+      "match": "HP Indigo",
+      "context": "digital: { setupPerSheet: 0, label: 'Digital (HP Indigo / Xerox)' },"
+    },
+    {
+      "file": "desk.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\quote-engine\\desk.ts",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 557,
+      "match": "placeholder",
+      "context": "export const QUOTE_DESK_KEY_HASH = 'f6c4e9b1a2d3c5e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2'; // 预留 env 覆盖 placeholder"
+    },
+    {
+      "file": "business-cards.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\quote-engine\\formulas\\business-cards.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 197,
+      "match": "Heidelberg",
+      "context": "description: 'Premium 400gsm business cards. Heidelberg 4-color offset + HP Indigo. Printed in 24 hours, shipped to 50+ countries.',"
+    },
+    {
+      "file": "business-cards.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\quote-engine\\formulas\\business-cards.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 197,
+      "match": "HP Indigo",
+      "context": "description: 'Premium 400gsm business cards. Heidelberg 4-color offset + HP Indigo. Printed in 24 hours, shipped to 50+ countries.',"
+    },
+    {
+      "file": "fx.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\quote-engine\\fx.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 328,
+      "match": "1000+",
+      "context": "// 1.0% (中等订单 1000+ 张)"
+    },
+    {
+      "file": "schema-extensions.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo\\schema-extensions.ts",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 494,
+      "match": "placeholder",
+      "context": "const imageUrl = localeImg || generalImg || '/images/placeholder.jpg';"
+    },
+    {
+      "file": "schema-extensions.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo\\schema-extensions.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 86,
+      "match": "ISO 9001",
+      "context": "description: '了解' + brand + '從設計到交付的完整印刷流程。ISO 9001 認證深圳工廠，專業設備，品質保證。',"
+    },
+    {
+      "file": "schema-extensions.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo\\schema-extensions.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 90,
+      "match": "ISO 9001",
+      "context": "{ name: '印刷生產', text: '使用 Heidelberg 四色印刷機在 ISO 9001 認證的深圳工廠進行專業印刷。' },"
+    },
+    {
+      "file": "schema-extensions.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo\\schema-extensions.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 98,
+      "match": "ISO 9001",
+      "context": "description: 'Complete printing workflow from design to delivery. ISO 9001 certified Asia factory, professional equipment, quality guaranteed.',"
+    },
+    {
+      "file": "schema-extensions.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo\\schema-extensions.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 102,
+      "match": "ISO 9001",
+      "context": "{ name: 'Printing Production', text: 'Heidelberg 4-color presses at our ISO 9001 certified Asia factory.' },"
+    },
+    {
+      "file": "schema-extensions.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo\\schema-extensions.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 110,
+      "match": "ISO 9001",
+      "context": "description: 'デザインから納品までの完全な印刷ワークフロー。ISO 9001認証アジア自社工場、専門設備、品質保証。',"
+    },
+    {
+      "file": "schema-extensions.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo\\schema-extensions.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 114,
+      "match": "ISO 9001",
+      "context": "{ name: '印刷生産', text: 'ISO 9001認証アジア自社工場でHeidelberg 4色印刷機によるプロ印刷。' },"
+    },
+    {
+      "file": "schema-extensions.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo\\schema-extensions.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 90,
+      "match": "Heidelberg",
+      "context": "{ name: '印刷生產', text: '使用 Heidelberg 四色印刷機在 ISO 9001 認證的深圳工廠進行專業印刷。' },"
+    },
+    {
+      "file": "schema-extensions.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo\\schema-extensions.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 102,
+      "match": "Heidelberg",
+      "context": "{ name: 'Printing Production', text: 'Heidelberg 4-color presses at our ISO 9001 certified Asia factory.' },"
+    },
+    {
+      "file": "schema-extensions.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo\\schema-extensions.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 114,
+      "match": "Heidelberg",
+      "context": "{ name: '印刷生産', text: 'ISO 9001認証アジア自社工場でHeidelberg 4色印刷機によるプロ印刷。' },"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 1308,
+      "match": "placeholder",
+      "context": "if (urls.length === 0) urls.push('/images/placeholder.jpg');"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 64,
+      "match": "ISO 9001",
+      "context": "'ZprintPro is a global printing partner for businesses, schools, and creative teams — premium custom printing with ISO 9001 + FSC certification, 30-second AI quotes, free design mockups, no minimums, "
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 271,
+      "match": "ISO 9001",
+      "context": "// - Added 5 sharp hooks: USA-targeted, Free Shipping $99+, Free Proof, 5-7 day DHL, ISO 9001"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 274,
+      "match": "ISO 9001",
+      "context": "description: 'Custom printing service for USA businesses. Stickers, packaging boxes, paper bags, flyers, posters. 30-second AI quote. Free US shipping on $99+. Free design proof in 4h. 5-7 day DHL del"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 365,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '貼紙印刷 1 張起印，HK$0.22 起/張。防水抗 UV / 透明 / 燙金 / 異形裁切 / 啞膠亮膜，餐廳、品牌、電商跨境通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 366,
+      "match": "ISO 9001",
+      "context": "'en': 'Custom sticker printing from $0.05, 1 MOQ. Waterproof, clear, gold foil, die-cut, matte & glossy for retail, restaurants, e-commerce brands. Free design proof in 4 hours, DHL 2-4 day USA delive"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 388,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '傳單印刷 100 張起印，HK$0.18 起/張。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 390,
+      "match": "ISO 9001",
+      "context": "'en': 'Custom flyer printing from $0.06, 100 MOQ. A4 / A5 / A3 / double-sided / folded for retail, restaurants, real estate, events. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shippi"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 408,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '包裝盒訂製 100 個起印，HK$1.5 起/個。結構設計 / 燙金 / UV / 啞膠亮膜 / 內襯 / 開窗，電商、美妝、食品、茶葉、電子產品通用。免費 3D 打稿 6 小時，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 409,
+      "match": "ISO 9001",
+      "context": "'en': 'Custom packaging boxes from $0.85, 100 MOQ. Structural design + foil + UV + matte/glossy + inserts + windows for e-commerce, cosmetics, food, tea, electronics. Free 3D proof in 6 hours, DHL 2-4"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 426,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '海報印刷 1 張起印，HK$10 起/張。A0/A1/A2 + 防水 + 啞膠亮膜 + 鑲裱，展覽、活動、店舖、餐廳、電影、演唱會通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 認證。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 427,
+      "match": "ISO 9001",
+      "context": "'en': 'Custom poster printing from $3.50, 1 MOQ. A0 / A1 / A2 + waterproof + matte/glossy + mounting for exhibitions, events, retail, restaurants, movies, concerts. Free design proof in 4 hours, DHL 2"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 446,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '紙袋印刷 100 個起印，HK$8 起/個。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋，免費設計打稿、即日打樣。服飾、婚慶、烘焙、珠寶品牌適用，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證品質。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 448,
+      "match": "ISO 9001",
+      "context": "ja: '紙袋印刷 100 個から、¥240〜。FSC 認証クラフト・白カード・ギフト袋。無料デザイン校正・型設計、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 464,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '月曆印刷 100 本起印. 座檯/掛牆/2027 + 燙金精裝 + 企業 LOGO. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送. Q4 旺季建議提前 60 天下單.',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 465,
+      "match": "ISO 9001",
+      "context": "en: 'Custom calendar printing 100 MOQ. Desk/wall/monthly + foil hardcover + corporate branding. Free shipping over $99 to USA. DHL Express 2-4 day. 30-second AI quote, ISO 9001. Order 60 days before Q"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 466,
+      "match": "ISO 9001",
+      "context": "ja: 'カレンダー印刷 100 部から対応. デスク・壁掛け・月別 + 箔押し上製本 + 企業 LOGO. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日. 繁忙期の 60 日前までのご注文を推奨.',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 481,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '同人誌及日系ACG周邊印刷專家。A5/B5 同人誌 10 本起印、亞克力鑰匙扣 / 立牌 / 罐型襟章 / 明信片套裝 / 環保托特袋。Comiket 前 24 小時特急対応,深圳工廠 DHL Express 2-4 日直送日本。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。繁體中文客服,日本在地支援。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 482,
+      "match": "ISO 9001",
+      "context": "en: 'Professional doujinshi & Japanese ACG merchandise printing. A5/B5 doujinshi from 10 MOQ, acrylic keychains/stands, can badges, postcard sets, eco tote bags. 24-hour rush before Comiket. Free ship"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 483,
+      "match": "ISO 9001",
+      "context": "ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、アクリルキーホルダー・スタンド・缶バッジ・ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。アジア自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理、ISO 9001 取得。日本語サポート完備。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 499,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '大信封印刷 100 個起印, HK$0.45/個. A4 公文信封 / 牛皮 / 開窗 / 彩色 / 企業 LOGO 定制. ISO 9001 認證紙材 + 30 秒 AI 即時報價 + DHL 全球 2-4 天速遞, 滿 HK$500 順豐香港免運費.',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 500,
+      "match": "ISO 9001",
+      "context": "en: 'Custom envelope printing 100 MOQ. Kraft / window / colored / DL / C5 + corporate branding. Free shipping over $99 to USA. ISO 9001 certified + 30-second AI quote + DHL 2-4 day global. Free proof "
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 501,
+      "match": "ISO 9001",
+      "context": "ja: '封筒印刷 100 個から対応. クラフト・窓付き・カラー・長 3・洋形 + 企業ロゴ. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 517,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '餐牌印刷 100 本起印，HK$0.22 起/份。防水 PVC / 紙質菜單 / 精裝 / 一次性，餐廳、茶餐廳、酒吧、咖啡店適用。免費設計打稿，最快即日交貨，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 535,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '利是封印刷 100 個起印，HK$1.1 起/個。燙金 / 局部 UV / 婚慶 / 賀年 / 企業 LOGO 定製，免費設計打稿。銀行、地產、零售品牌賀年禮品首選，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 537,
+      "match": "ISO 9001",
+      "context": "ja: 'ポチ袋印刷 100 個から、¥64〜。箔押し・スポット UV・婚礼・お正月・企業 LOGO。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 552,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '戶外橫額印刷 1 個起印，HK$30 起/個。易拉寶 / X 架 / 展覽 / 車身廣告 + 防水防 UV + 多種尺寸，展覽、活動、店舖、工地通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 認證。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 553,
+      "match": "ISO 9001",
+      "context": "'en': 'Custom outdoor banner printing from $12, 1 MOQ. Roll-up / X-stand / exhibition / vehicle wrap, waterproof & UV-resistant for events, exhibitions, retail, construction. Free design proof in 4 ho"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 569,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '書刊印刷 50 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 570,
+      "match": "ISO 9001",
+      "context": "'en': 'Custom booklet printing from $1.20, 50 MOQ. Saddle stitch / perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free "
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 586,
+      "match": "ISO 9001",
+      "context": "'zh-hk': '校園教育印刷 100 本起印. 證書/作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 587,
+      "match": "ISO 9001",
+      "context": "en: 'Custom education printing 100 MOQ. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC certified + ISO 9001 + 30-second AI quote + D"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 588,
+      "match": "ISO 9001",
+      "context": "ja: '教育印刷 100 部から対応. 証明書・ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 661,
+      "match": "ISO 9001",
+      "context": "en: `Custom ${categoryNameEn.toLowerCase()} printing with free shipping over $99 to USA. Quality guaranteed, transparent pricing. Made for US small businesses & global brands. DHL Express 2-4 day or F"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 576,
+      "match": "FSC認證",
+      "context": "'zh-hk': '校園教育印刷 100本起 · 證書/作業簿/教材 學校批量優惠 FSC認證 | 智印港',"
+    },
+    {
+      "file": "seo.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\lib\\seo.ts",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 631,
+      "match": "98%",
+      "context": "// 婚宴台卡 $123M (6.98% of Wedding Stationery $1.76B 2025), 跨 婚庆 + 餐饮 + 商务 场景"
+    }
+  ]
+}

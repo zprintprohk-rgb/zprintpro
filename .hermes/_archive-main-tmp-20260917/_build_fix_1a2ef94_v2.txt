@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/app/[locale]/product/[slug]/page.tsx:93:7
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 91 |[39m       [32m'posters'[39m[33m:[39m [32m'A2/A1/A3海報印刷，防水材質，10張起訂。滿$500包郵，標準交期 1-2 工作天。'[39m[33m,[39m[0m
+[0m [90m 92 |[39m       [32m'stickers'[39m[33m:[39m [32m'貼紙印刷，防水/PVC/透明材質，100張起訂，支持異形切割。滿$500包郵，標準交期。'[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 93 |[39m       [32m'stickers'[39m[33m:[39m [32m'贴纸印刷，燙金、棉紙、局部UV工藝，100張起訂。滿$500包郵，標準交期。'[39m[33m,[39m[0m
+[0m [90m    |[39m       [31m[1m^[22m[39m[0m
+[0m [90m 94 |[39m       [32m'books'[39m[33m:[39m [32m'畫冊印刷，騎馬釘/膠裝、封面覆膜，50本起訂。滿$500包郵，標準交期。'[39m[33m,[39m[0m
+[0m [90m 95 |[39m       [32m'banners'[39m[33m:[39m [32m'易拉寶噴繪，鋁合金支架、高清噴繪，1個起訂。滿$500包郵，標準交期。'[39m[33m,[39m[0m
+[0m [90m 96 |[39m     }[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

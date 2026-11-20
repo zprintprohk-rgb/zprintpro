@@ -1,0 +1,27 @@
+fix(gate): 收紧 src/data 豁免 — 整树豁免改为「locale 作用域判定 + 合法混用 token 白名单」(K3 转述千问复核)
+
+背景 (千问 3.8max 复核): 「src/data/** 整树豁免」不认可 —— src/data 恰是用户可见字符串最密集处,
+整树豁免 = 把守卫从暴露最高的面上摘掉; 下次有人往 data JSON 塞混用字符串, 门禁静默放行。
+
+修法 (三件):
+1. 撤销整树豁免 (common.js 删 LOCALE_MIX_RULES/MULTILOCALE_DATA)
+2. 新增 **locale 作用域判定** `resolveLocale(content, index, file)`:
+   - blog-data/<loc>.json 等以文件名定 locale
+   - 其余取命中位置最近左侧 locale 键 ('zh-hk': / "ja": / en: …)
+   - 判定不出 -> 保守照扫 (不豁免)
+   并接进两支守卫做**真同源检查**:
+   - i18n-guard: I18N_POLLUTION 仅报 zh-hk 字段内简体字 (ja 文本用「会」等汉字合法); I18N_CURRENCY 仅 zh-hk 字段查币种统一
+   - brand-guard: BRAND_LOCALE_MISMATCH 改为矩阵判定 (zh-hk 字段禁 ZprintPro/ジープリント; en 禁 智印港/ジープリント; ja 禁 智印港)
+3. 新增 **合法混用 token 白名单** (LEGIT_MIX_TOKENS, 枚举制): 币种 (USD/HKD/JPY/US$/¥)、
+   标准与认证码 (ISO 9001/FSC/FDA/REACH/GHS/CMYK/DPI/PDF/X/Pantone/CIP/ISBN/QR)、
+   自有品牌 token、设备型号 (Heidelberg/HP Indigo)、纸张尺寸码 (A4/B5/DL/C4) —— 只豁免枚举 token, 其余照扫
+
+附带修复: common.collectFiles 支持 scope 传单个文件 (原只接受目录, 传文件 ENOTDIR 崩)
+
+双向验证 (.hermes/selftest-locale-scope.cjs):
+  A) src/data/blog-posts.ts 真实多语言文件: I18N_POLLUTION 34 → **0**; I18N_CURRENCY → 0;
+     BRAND_LOCALE_MISMATCH 16 → **8** (剩下 8 条是真阳性: zh-hk 字段里出现 ZprintPro, 属 T 批范围)
+  B) 注入真违规: zh-hk 字段简体字 + zh-hk title 双品牌 + ja 字段 ジープリント+ZprintPro
+     -> 分别抓到 I18N_POLLUTION(3) / BRAND_DOUBLE(1) / BRAND_LOCALE_MISMATCH(1) / BRAND_JA_ALTERNATE(1) ✓
+
+sunset: 本豁免口径在 T 批结束后复审一次 (见 docs/2026-09-13-guard-exemption-policy.md)

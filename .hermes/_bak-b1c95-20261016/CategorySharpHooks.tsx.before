@@ -1,0 +1,423 @@
+/**
+ * Category Sharp Hooks — 类目页首屏 sharp hook 视觉锚点 (2026-07-09 PM+UX+SEO 复盘)
+ *
+ * 设计动机:
+ * - GSC 真实数据：类目页 (e.g. paper-bags 749 imps / 0.13% CTR) vs 产品页
+ *   (e.g. die-cut-stickers 11.11% CTR) 差距是 1-2 数量级
+ * - 根因：类目页在 banner 后直接进产品列表, 缺 "为什么这个类目适合你" 的 sharp hook 锚点
+ * - 教科书模板 (textbooks.html) 的学习场景配置证明: 用户需要"具体场景+MOQ+材质"
+ *   才愿意点击; 类目页需要把这种 sharp hook 提前到首屏
+ *
+ * 位置: banner 之后、product list 之前 (page.tsx)
+ * 数据: 复用 CategoryIndustries 的 categoryIndustryScenarios 前 3 个 Tier A
+ * 视觉: 紧凑 3-column 卡片, Tier A 蓝色 accent
+ *
+ * @see CategoryIndustries.tsx 同源数据
+ */
+
+import { CATEGORY_INDUSTRIES, Locale } from '@/lib/seo';
+import { withSceneMoq } from '@/data/print-method-policy';
+
+// 与 CategoryIndustries.tsx 保持一致 — 复用同一份 scenario 数据
+// (简化版: 只取每类目前 3 个 Tier A 行业, 不重复维护数据)
+const categoryIndustryScenarios: Record<string, {
+  key: string;
+  scenarios: Record<'zh-hk' | 'en' | 'ja', string[]>;
+}[]> = {
+  stickers: [
+    // 2026-07-09 v5 美国市场: en 场景加 Free Shipping + Made for USA small business
+    { key: 'pet_food', scenarios: {
+      'zh-hk': ['防水防油 FDA 食品級標籤', '異形模切吸引貨架目光', '10 張起印 · 即日打樣'],
+      en: ['Waterproof FDA-grade food labels', 'Die-cut shapes for shelf appeal', 'From 50 · USA artisan brands'],
+      ja: ['防水・耐油 FDA 食品グレードラベル', 'ダイカットで棚の注目度アップ', '10枚から・即日サンプル'],
+    }},
+    { key: 'beauty', scenarios: {
+      'zh-hk': ['燙金 LOGO · 啞光質感', '透明貼紙展示玻璃瓶身', '小批量試產 50 張起'],
+      en: ['Foil logo · matte finish', 'Transparent stickers for glass bottles', 'From 50 · free shipping over $99'],
+      ja: ['箔押しロゴ・マット仕上げ', '透明ステッカーでガラス瓶を見せる', '50枚からの小ロット試作'],
+    }},
+    { key: 'ecommerce', scenarios: {
+      'zh-hk': ['SKU 條碼標籤 + GS1 合規', '跨境物流防水耐磨', '可移除背膠 · 不留殘膠'],
+      en: ['SKU barcode labels + GS1 compliance', 'Waterproof & durable for shipping', 'Removable adhesive · no residue'],
+      ja: ['SKUバーコード + GS1準拠', '越境物流・防水耐久', '再剥離タイプ・跡残りなし'],
+    }},
+  ],
+  flyers: [
+    // 2026-07-09 SEO 复盘 v3: 第一场景「數碼快印 + 即日 24 小時」吸收原本 nav 「即日服務」权重
+    // 竞品 sharp hook 实证: 即日贴纸印刷 CTR 6.56%, A2 贴纸 即日 CTR 7.02%, 24小時急件 CTR 4-7%
+    // 2026-07-09 v5 美国市场优化: en 加 Free Shipping + FedEx/DHL + Made for USA
+    { key: 'digital_sameday', scenarios: {
+      'zh-hk': ['數碼快印 · 即日 24 小時可取', 'A4/A5 單張 · 10 張起印', '小批量無版費 · 1 本起'],
+      en: ['Free shipping over $99 · same-day rush', 'Digital print + offset available', '10 MOQ · no plate fee · USA small business'],
+      ja: ['デジタル印刷 · 即日 24 時間受取', 'A4/A5 チラシ · 10枚から', '小ロット・版代不要・1枚から'],
+    }},
+    { key: 'restaurant', scenarios: {
+      'zh-hk': ['餐廳開業 / 餐牌傳單', 'A5 防水塗層 · 油漬一抹即淨', '500 張起 · 即日打樣'],
+      en: ['Restaurant opening / menu flyers', 'Waterproof A5 · wipe-clean surface', 'From 500 · USA restaurant marketing'],
+      ja: ['飲食店開業 / メニューチラシ', 'A5防水コート・油汚れも拭き取り', '500枚から・即日校正'],
+    }},
+    { key: 'event', scenarios: {
+      'zh-hk': ['展會/活動單張 · 摺頁可選', 'A3 大尺寸 · 雙面滿版', '3 天急件可接'],
+      en: ['Trade show / event flyers · folded', 'A3 large format · full-bleed duplex', 'DHL Express 2-4 day to USA'],
+      ja: ['展示会/イベントチラシ・折込可', 'A3大判・両面フルブリード', '3日特急対応可'],
+    }},
+  ],
+  packaging: [
+    // 2026-07-09 v5 美国市场: en 场景加 Free Shipping + Free 3D Mockup + USA DTC brands
+    { key: 'beauty', scenarios: {
+      'zh-hk': ['化妝品盒 4 種盒型 · 天地蓋/磁吸', '燙金 LOGO · 啞面 PP 覆膜', '100 個起 · FDA 級安全'],
+      en: ['4 cosmetic box styles · lift-off/magnetic', 'Foil logo · matte PP lamination', 'From 100 · USA DTC beauty brands'],
+      ja: ['化粧品箱4種・天地蓋/マグネット', '箔押しロゴ・マットPPラミ', '100個から・FDA対応'],
+    }},
+    { key: 'ecommerce', scenarios: {
+      'zh-hk': ['跨境電商快遞盒 · 雙層瓦楞', 'SKU 條碼 + GS1 合規印刷', '500 個起 · 全球 DHL 配送'],
+      en: ['Mailer boxes · 2-ply corrugated', 'SKU barcode + GS1 compliant', 'From 500 · free shipping over $99 USA'],
+      ja: ['越境ECメール便箱・複層段ボール', 'SKUバーコード+GS1準拠', '500個から・国際DHL配送'],
+    }},
+    { key: 'tea_beverage', scenarios: {
+      'zh-hk': ['茶飲品牌禮盒 · 天地蓋', '燙金 + 局部 UV · 高檔質感', '200 個起 · 月餅盒適用'],
+      en: ['Tea/coffee gift boxes · lift-off lid', 'Foil + spot UV · premium finish', 'From 200 · free 3D mockup'],
+      ja: ['茶ブランドギフト箱・天地蓋', '箔押し+スポットUV・高級感', '200個から・月餅箱対応'],
+    }},
+  ],
+  'paper-bags': [
+    // 2026-07-09 v5 美国市场: en 场景加 Free Shipping + USA boutique brands
+    { key: 'fashion', scenarios: {
+      'zh-hk': ['服飾品牌紙袋 · 牛皮/白卡', '棉繩/絲帶手挽 · 燙金可選', '100 個起 · HK$1.8 起/個'],
+      en: ['Fashion brand bags · kraft/white card', 'Cotton/satin handles · foil option', 'From 100 · free shipping over $99'],
+      ja: ['アパレルブランド紙袋・クラフト/白カード', '綿/サテンリボン・箔押し選択可', '100個から・HK$1.8〜'],
+    }},
+    { key: 'wedding', scenarios: {
+      'zh-hk': ['婚慶禮品紙袋 · 燙金婚禮 logo', '白卡紙/黑卡紙高檔質感', '50 個起 · 婚禮主題配色'],
+      en: ['Wedding favor bags · foil logo', 'White card / black card premium', 'From 50 · USA wedding planners'],
+      ja: ['ウェディングギフト紙袋・箔押しロゴ', '白カード/黒カード高級感', '50個から・結婚式配色'],
+    }},
+    { key: 'bakery', scenarios: {
+      'zh-hk': ['烘焙店外賣紙袋 · 防油塗層', '牛皮紙 · 透氣孔設計', '100 個起 · 麵包/蛋糕店適用'],
+      en: ['Bakery takeaway bags · oil-resistant', 'Kraft paper · vented design', 'From 100 · USA artisan bakeries'],
+      ja: ['ベーカリー持ち帰り紙袋・耐油加工', 'クラフト紙・通気孔設計', '100個から・パン/ケーキ店対応'],
+    }},
+  ],
+  posters: [
+    { key: 'retail', scenarios: {
+      'zh-hk': ['零售店面海報 · A1/A2', '高清 1440dpi · 防水 PP 裱貼', '1 張起打 · 翌日交貨'],
+      en: ['Retail store posters · A1/A2', 'HD 1440dpi · waterproof PP laminate', 'From 1 · next-day delivery'],
+      ja: ['小売店ポスター・A1/A2', '高精細1440dpi・防水PPラミ', '1枚から・翌日納品'],
+    }},
+    { key: 'exhibition', scenarios: {
+      'zh-hk': ['展會背板海報 · 易拉寶可選', '寬幅 1.5m+ · 高清輸出', '3 天急件可接'],
+      en: ['Exhibition backdrops · roll-up option', 'Wide-format 1.5m+ · HD output', '3-day rush available'],
+      ja: ['展示会バックドロップ・ロールアップ可', '大判1.5m+・高精細出力', '3日特急対応可'],
+    }},
+    { key: 'restaurant', scenarios: {
+      'zh-hk': ['餐廳推廣海報 · 防水材質', 'PP 裱貼 · 撕不破', '1 張起 · 7 天交付'],
+      en: ['Restaurant promo posters · waterproof', 'PP laminated · tear-resistant', 'From 1 · 7-day delivery'],
+      ja: ['飲食店プロモポスター・防水素材', 'PPラミ・引裂防止', '1枚から・7日納期'],
+    }},
+  ],
+  calendars: [
+    // 2026-07-09 v5 美国市场: en 场景加 USA corporate gifts + free shipping
+    { key: 'corporate', scenarios: {
+      'zh-hk': ['企業 LOGO 年曆 · 燙金精裝', '座檯/掛牆 · 12 頁雙面', '100 本起 · Q4 旺季建議 60 天前下單'],
+      en: ['Corporate logo calendars · foil hardcover', 'Desk/wall · 12-page duplex', 'From 100 · USA corporate gifts'],
+      ja: ['企業ロゴカレンダー・箔押し上製本', 'デスク/壁掛け・12ページ両面', '100部から・繁忙期60日前発注推奨'],
+    }},
+    { key: 'school', scenarios: {
+      'zh-hk': ['學校定制年曆 · 批量折扣', '校徽 LOGO + 校園照片', '500 本起 · 教師節禮品'],
+      en: ['School custom calendars · bulk discount', 'Crest logo + campus photos', 'From 500 · USA school districts'],
+      ja: ['学校カスタムカレンダー・大量割引', '校章ロゴ+キャンパス写真', '500部から・教師の日ギフト'],
+    }},
+    { key: 'real_estate', scenarios: {
+      'zh-hk': ['房地產客戶禮品年曆', '高端燙金 + 項目 LOGO', '200 本起 · 客戶維繫'],
+      en: ['Real estate client gift calendars', 'Premium foil + project logo', 'From 200 · USA real estate agent gifts'],
+      ja: ['不動産クライアントギフトカレンダー', '高級箔押し+プロジェクトロゴ', '200部から・顧客維持'],
+    }},
+  ],
+  menus: [
+    { key: 'restaurant', scenarios: {
+      'zh-hk': ['餐廳餐牌 · 防水 PVC', 'A4/A5 · 雙面 4 色', '100 本起 · 油漬一抹即淨'],
+      en: ['Restaurant menus · waterproof PVC', 'A4/A5 · duplex 4C', 'From 100 · wipe-clean surface'],
+      ja: ['レストランメニュー・防水PVC', 'A4/A5・両面4色', '100部から・油汚れ拭き取り'],
+    }},
+    { key: 'cafe', scenarios: {
+      'zh-hk': ['咖啡店餐牌 · 紙質精裝', 'B5 尺寸 · 封面燙金', '50 本起 · 菜單季度更新'],
+      en: ['Cafe menus · paper hardcover', 'B5 size · foil cover', 'From 50 · seasonal menu updates'],
+      ja: ['カフェメニュー・紙ハードカバー', 'B5サイズ・表紙箔押し', '50部から・季節メニュー更新'],
+    }},
+    { key: 'bar', scenarios: {
+      'zh-hk': ['酒吧酒水牌 · 黑色卡紙', '燙金/銀 LOGO · 防水覆膜', '50 本起 · 夜場適用'],
+      en: ['Bar drink menus · black card stock', 'Foil silver/gold logo · waterproof', 'From 50 · nightlife-ready'],
+      ja: ['バードリンクメニュー・黒カード紙', '箔押し銀/金ロゴ・防水', '50部から・夜営業対応'],
+    }},
+  ],
+  'red-packets': [
+    { key: 'wedding', scenarios: {
+      'zh-hk': ['婚慶紅包 · 燙金婚禮 logo', '中式傳統紅 · 雙面 4 色', '100 個起 · 婚禮主題定制'],
+      en: ['Wedding red packets · foil logo', 'Traditional red · duplex 4C', 'From 100 · wedding-themed'],
+      ja: ['結婚式ポチ袋・箔押しロゴ', '中式伝統赤・両面4色', '100個から・結婚式テーマ'],
+    }},
+    { key: 'corporate', scenarios: {
+      'zh-hk': ['企業年會紅包 · LOGO 定制', '燙金 + 局部 UV · 高檔', '500 個起 · 批量折扣'],
+      en: ['Corporate CNY red packets · logo custom', 'Foil + spot UV · premium', 'From 500 · bulk discount'],
+      ja: ['企業旧正月ポチ袋・ロゴカスタム', '箔押し+スポットUV・高級', '500個から・大量割引'],
+    }},
+    { key: 'cartoon_ip', scenarios: {
+      'zh-hk': ['卡通 IP 授權紅包', '正版授權 · 全彩印刷', '300 個起 · IP 主題定制'],
+      en: ['Cartoon IP licensed red packets', 'Licensed · full-color print', 'From 300 · IP-themed'],
+      ja: ['キャラクターIPライセンス', '正規ライセンス・フルカラー印刷', '300個から・IPテーマ'],
+    }},
+  ],
+  banners: [
+    // K3 2026-09-20 裁決 2.2：key 對齊 industry-scenario-links.ts 的命名
+    //   exhibition → trade_show ／ outdoor → outdoor_ad ／ mall → mall_promo
+    // ★ 這同時修復一個實際 bug：
+    //   `industry-scenario-links.ts` 的 href 表（L107-111）與 industryName 表（L238-241）
+    //   早已使用 trade_show / outdoor_ad / mall_promo —— 舊 key 在兩張表中**都查不到**，
+    //   導致這三張卡取不到連結與行業名；且 `exhibition` 已被 `posters` 類別佔用（L76/L215），
+    //   屬命名衝突。
+    { key: 'trade_show', scenarios: {
+      'zh-hk': ['展會易拉寶 · X 架', '80×200cm · 高清輸出', '1 個起 · 標準尺寸齊全'],
+      en: ['Exhibition roll-ups · X-stand', '80×200cm · HD output', 'From 1 · standard sizes'],
+      ja: ['展示会ロールアップ・Xスタンド', '80×200cm・高精細出力', '1個から・標準サイズ完備'],
+    }},
+    { key: 'outdoor_ad', scenarios: {
+      'zh-hk': ['戶外橫幅 · 防水防 UV', '寬幅 5m+ · 韓國進口墨水', '1 個起 · 抗候 1 年+'],
+      en: ['Outdoor banners · waterproof UV-resistant', 'Wide 5m+ · Korea-imported ink', 'From 1 · 1yr+ durability'],
+      ja: ['屋外バナー・防水UV耐性', '大判5m+・韓国輸入インク', '1個から・1年+耐久'],
+    }},
+    { key: 'mall_promo', scenarios: {
+      'zh-hk': ['商場促銷橫幅 · 燈箱片', '高亮 PP · 雙面可選', '1 個起 · 商場檔期對接'],
+      en: ['Mall promo banners · lightbox film', 'High-brightness PP · duplex option', 'From 1 · mall schedule sync'],
+      ja: ['モール販促バナー・灯箱フィルム', '高輝度PP・両面選択可', '1個から・モール時期同期'],
+    }},
+  ],
+  books: [
+    { key: 'tutoring', scenarios: {
+      'zh-hk': ['補習社皇牌教材 · 膠裝', 'B5 尺寸 · 封面 4 色 + 燙金', '200 本起 · 學校批量折扣'],
+      en: ['Tutoring flagship textbooks · perfect bound', 'B5 size · 4C cover + foil', 'From 200 · school bulk pricing'],
+      ja: ['塾主力教材・無線綴じ', 'B5サイズ・表紙4色+箔押し', '200部から・学校一括割引'],
+    }},
+    { key: 'children_book', scenarios: {
+      'zh-hk': ['兒童繪本 · 騎馬釘/精裝', '正方形/橫版 · 圓角安全', '100 本起 · 環保大豆油墨'],
+      en: ['Children picture books · saddle/hardcover', 'Square/landscape · rounded corners', 'From 100 · eco soy ink'],
+      ja: ['絵本・中綴じ/上製本', '正方形/横版・角丸安全', '100部から・エコ大豆インク'],
+    }},
+    { key: 'corporate', scenarios: {
+      'zh-hk': ['企業畫冊 · 精裝書', '公司簡介/產品型錄', '50 本起 · 高檔紙張'],
+      en: ['Corporate brochures · hardcover', 'Company profiles / catalogs', 'From 50 · premium stock'],
+      ja: ['企業パンフレット・上製本', '会社案内/製品カタログ', '50部から・高級紙'],
+    }},
+  ],
+  envelopes: [
+    { key: 'corporate', scenarios: {
+      'zh-hk': ['企業信封 · LOGO 印刷', '中式 DL/C5 · 牛皮/白色可選', '100 個起 · 商務郵件適用'],
+      en: ['Corporate envelopes · LOGO print', 'DL/C5 · kraft/white available', 'From 100 · business mail'],
+      ja: ['企業封筒・ロゴ印刷', '長3/C5・クラフト/白選択可', '100個から・ビジネスメール対応'],
+    }},
+    { key: 'finance', scenarios: {
+      'zh-hk': ['金融信封 · 防偽印刷', '中式傳統紅/牛皮 · 機密標識', '500 個起 · 銀行對賬單適用'],
+      en: ['Finance envelopes · anti-counterfeit', 'Traditional red/kraft · confidential', 'From 500 · bank statements'],
+      ja: ['金融封筒・偽造防止印刷', '中式伝統赤/クラフト・機密表示', '500個から・銀行明細書対応'],
+    }},
+    { key: 'school', scenarios: {
+      'zh-hk': ['補習社通告信封 · 開窗可選', 'B5/C5 · 批量折扣', '300 個起 · 學期通告適用'],
+      en: ['School notice envelopes · window option', 'B5/C5 · bulk discount', 'From 300 · term notices'],
+      ja: ['塾通知封筒・窓付き選択可', 'B5/C5・大量割引', '300個から・学期通知対応'],
+    }},
+  ],
+  educational: [
+    { key: 'graduation', scenarios: {
+      'zh-hk': ['中學/大學畢業紀念冊', '精裝書 · 封面燙金 · 200 頁', '100 本起 · 校徽 LOGO 定制'],
+      en: ['Secondary/university graduation yearbooks', 'Hardcover · foil cover · 200 pages', 'From 100 · school crest custom'],
+      ja: ['中学/大学卒業記念アルバム', '上製本・表紙箔押し・200頁', '100部から・校章ロゴカスタム'],
+    }},
+    { key: 'textbook', scenarios: {
+      'zh-hk': ['補習社皇牌教材 · 無線膠裝', 'B5 80g 道林紙 · ISBN 對位', '200 本起 · 教育機構專屬折扣'],
+      en: ['Tutoring flagship textbooks · perfect bound', 'B5 80g woodfree · ISBN alignment', 'From 200 · educator discount'],
+      ja: ['塾主力教材・無線綴じ', 'B5 80g上質紙・ISBN対応', '200部から・教育機関割引'],
+    }},
+    { key: 'certificate', scenarios: {
+      'zh-hk': ['獎狀證書印刷 · A4/A5', '銅版紙/啞粉紙 · 局部 UV 可選', '50 本起 · 學校/機構適用'],
+      en: ['Award certificates · A4/A5', 'Glossy/matte art paper · spot UV', 'From 50 · schools/institutions'],
+      ja: ['賞状/証明書印刷・A4/A5', 'コート紙/マット紙・スポットUV', '50部から・学校/機関対応'],
+    }},
+  ],
+  /**
+   * `business-cards` ＝ **指向賀卡的別名 key**（K3 2026-09-20 方案 B 明文化）。
+   *
+   * ══ 為什麼 key 叫名片但內容是賀卡 ══
+   *   v22 (7347c503) 已將 6 個名片 SKU 1:1 改名為賀卡，但此 key 因**全站 8 處 UI 映射**
+   *   （CategoryProductCard / CategorySidebar / ProductTabs / HotProducts / ProductCard ×2 …）
+   *   與 `category-seo-content.ts` 的 `'business-cards': '賀卡印刷'` 別名而**保留未改**。
+   *   改名需動 36 處 / 15+ 檔案，且牽涉 `middleware.ts` 的 301 映射與名片落地頁
+   *   （兩者皆在 AGENTS.md §0.0 禁區）→ K3 裁定**不改名，改以註解明文化**。
+   *   匯總見 docs/2026-09-20-business-cards-key-reference-audit.md。
+   *
+   * ══ 三場景的 MOQ 為何**不是漂移**（K3 2026-09-20 逐條判斷）══
+   *   賀卡 SKU 真值 = 10 屬**個人化定位**；本區三場景屬**企業套組定位**，
+   *   兩者定位不同 → MOQ 不同為合理。逐條語境判定：
+   *     · birthday  「50 張起 · 自訂內頁祝福」   → 個人化（50 張為 MOQ 宣稱）
+   *     · holiday   「100 張起 · 企業批量折扣」  → **企業批量**（數量門檻，非個人 MOQ）
+   *     · thankyou  「100 張起 · DTC 品牌適用」  → **品牌套組**（同上）
+   *   ⇒ 三者與各自定位一致，**無需修改**。此判定已明文化，避免未來掃描器再次誤判為漂移
+   *     （本輪 MOQ 掃描器即曾把這三條列為候選漂移）。
+   */
+  'business-cards': [
+    // 2026-07-19 user 拍板: 推荐位撤名片 → 贺卡 (greeting cards, 美国站情绪价值品类)
+    // 定位：個人化（自訂內頁祝福）→ 50 張起為 MOQ 宣稱，與個人化定位一致
+    { key: 'birthday', scenarios: {
+      'zh-hk': ['生日賀卡 · 燙金祝福語', '300g 厚卡 · 信封配套', '50 張起 · 自訂內頁祝福'],
+      en: ['Birthday cards · foil greetings', '300gsm thick stock · envelopes included', 'From 50 · custom inside message'],
+      ja: ['バースデーカード・箔押しメッセージ', '300g厚紙・封筒セット', '50枚から・内側メッセージ自由'],
+    }},
+    // 定位：企業批量（節日檔期派發）→ 100 張起為**數量門檻**，非個人 MOQ
+    { key: 'holiday', scenarios: {
+      'zh-hk': ['節日賀卡 · 聖誕/新年/感恩節', '珠光紙 · 局部 UV', '100 張起 · 企業批量折扣'],
+      en: ['Holiday cards · Christmas/New Year/Thanksgiving', 'Pearlescent stock · spot UV', 'From 100 · corporate bulk discount'],
+      ja: ['季節グリーティングカード・クリスマス/新年/感謝祭', 'パール紙・スポットUV', '100枚から・法人割引'],
+    }},
+    // 定位：品牌套組（DTC 隨盒卡）→ 100 張起為**數量門檻**
+    { key: 'thankyou', scenarios: {
+      'zh-hk': ['感謝卡 · 婚禮/品牌隨盒卡', '棉紙質感 · 燙金 LOGO', '100 張起 · DTC 品牌適用'],
+      en: ['Thank-you cards · weddings/brand inserts', 'Cotton texture · foil logo', 'From 100 · made for DTC brands'],
+      ja: ['サンキューカード・ウェディング/同梱カード', 'コットン紙・箔押しロゴ', '100枚から・D2Cブランド向け'],
+    }},
+  ],
+  'japan-doujin': [
+    { key: 'doujinshi', scenarios: {
+      'zh-hk': ['同人誌 · 騎馬釘/無線膠裝', 'B5/A5 · 封面 4C', '10 本起 · 日本直送可'],
+      en: ['Doujinshi · saddle/perfect bound', 'B5/A5 · 4C cover', 'From 10 · Japan direct ship'],
+      ja: ['同人誌・中綴じ/無線綴じ', 'B5/A5・表紙4C', '10冊から・日本直送可'],
+    }},
+    { key: 'anime_goods', scenarios: {
+      'zh-hk': ['動漫周邊 · 貼紙/吊飾/立牌', '模切異形 · 燙金可選', '100 張起 · 快速打樣'],
+      en: ['Anime merch · stickers/charms/standees', 'Die-cut shapes · foil option', 'From 100 · fast proofs'],
+      ja: ['アニメグッズ・ステッカー/チャーム/スタンド', 'ダイカット・箔押し選択可', '100枚から・迅速校正'],
+    }},
+    { key: 'vtuber', scenarios: {
+      'zh-hk': ['VTuber 應援周邊印刷', '螢光色/透明貼紙 · 應援扇', '50 張起 · 活動急單可接'],
+      en: ['VTuber fan goods printing', 'Fluorescent/transparent stickers · fans', 'From 50 · event rush OK'],
+      ja: ['VTuber応援グッズ印刷', '蛍光/透明ステッカー・応援うちわ', '50枚から・イベント特急対応'],
+    }},
+  ],
+};
+
+const labels: Record<string, Record<string, string>> = {
+  'zh-hk': {
+    title: '快速選擇您的場景',
+    subtitle: '從 3 個最常見的行業開始，了解這個品類適合印什麼。',
+    moreLink: '查看完整行業方案 →',
+    fallbackHook: '專業印刷服務, 100 個起印, ISO 9001 認證, 30 秒 AI 即時報價',
+  },
+  en: {
+    title: 'Quickly Find Your Use Case',
+    subtitle: 'Start with 3 of the most common industries to see what you can print in this category.',
+    moreLink: 'View All Industry Solutions →',
+    fallbackHook: 'Professional printing service, 100 MOQ, ISO 9001 certified, 30-second AI instant quote',
+  },
+  ja: {
+    title: 'あなたの用途を素早く見つける',
+    subtitle: '3つの主要業界から、このカテゴリーで印刷可能なものを確認できます。',
+    moreLink: 'すべての業界ソリューションを見る →',
+    fallbackHook: 'プロ印刷サービス、100個から対応、ISO 9001認証、30秒AI即時見積',
+  },
+};
+
+export function CategorySharpHooks({
+  locale,
+  categorySlug,
+}: {
+  locale: Locale;
+  categorySlug: string;
+}) {
+  const industries = CATEGORY_INDUSTRIES[categorySlug]?.[locale] || [];
+  const scenarios = categoryIndustryScenarios[categorySlug] || [];
+  const t = labels[locale] || labels['zh-hk'];
+
+  // Fallback when no scenario data
+  if (scenarios.length === 0) {
+    return (
+      <section className="bg-gradient-to-b from-white to-[#F9FAFB] border-y border-[#E5E7EB]">
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+          <p className="text-center text-sm md:text-base text-gray-600">
+            {t.fallbackHook}
+          </p>
+        </div>
+      </section>
+    );
+  }
+
+  // Take first 3 scenarios — the "top 3 use cases" pattern proven in textbooks.html
+  const top3 = scenarios.slice(0, 3);
+
+  return (
+    <section className="bg-white border-b border-[#E5E7EB]">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        {/* Section header — h3 + view-all 同行 (2026-07-11 PM+UX 复盘: 删"快速开始"小字, view-all 移至 h3 行最右) */}
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6 sm:mb-7">
+          <div>
+            <span className="inline-flex items-center gap-2.5 mb-2">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314]" aria-hidden="true" />
+              <span className="text-[13px] font-semibold tracking-[.12em] uppercase text-[#2873F5]">Sharp Hooks</span>
+            </span>
+            <h3 className="text-xl sm:text-2xl md:text-[28px] font-extrabold tracking-tight text-[#111827] mb-1.5">
+              {t.title}
+            </h3>
+            <p className="text-sm md:text-[15px] text-[#6B7280]">{t.subtitle}</p>
+          </div>
+          <a
+            href="#industries"
+            className="inline-flex items-center text-sm font-medium text-[#2873F5] hover:text-[#1E5FD1] transition-colors whitespace-nowrap sm:pb-0.5"
+          >
+            {t.moreLink}
+          </a>
+        </div>
+
+        {/* 3-column sharp hook cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+          {top3.map((scenario, idx) => {
+            const industryName = industries[idx] || '';
+            // 起印量一律由 SSoT（products.ts minQuantity）渲染，卡片不再硬編碼
+            // （per print-method-policy §D；修正本檔與 CategoryIndustries 兩份文案漂移）
+            const scenarioLines = withSceneMoq(
+              scenario.key,
+              locale,
+              scenario.scenarios[locale] || scenario.scenarios['zh-hk']
+            );
+            return (
+              <div
+                key={scenario.key}
+                className="bg-white rounded-2xl border border-[#E5E7EB] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.08)] hover:-translate-y-1 transition-all duration-300 p-6 sm:p-7 group flex flex-col"
+              >
+                {/* Industry name with large index tile */}
+                <div className="flex items-center gap-3 mb-4 pb-4 border-b border-[#E5E7EB]">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[linear-gradient(165deg,#244780_0%,#1B3163_52%,#152649_100%)] text-white text-base font-extrabold flex items-center justify-center shadow-[0_4px_12px_rgba(15,31,61,0.22)]">
+                    {String(idx + 1).padStart(2, '0')}
+                  </span>
+                  <span className="font-extrabold tracking-tight text-[#111827] text-base sm:text-lg">
+                    {industryName}
+                  </span>
+                </div>
+
+                {/* 3 sharp hook bullets */}
+                <ul className="space-y-2.5 flex-1">
+                  {scenarioLines.map((line, lineIdx) => (
+                    <li
+                      key={lineIdx}
+                      className="flex items-start gap-2.5 text-sm text-[#4B5563] leading-relaxed"
+                    >
+                      <span className="text-[#F87314] mt-0.5 flex-shrink-0 font-bold" aria-hidden="true">●</span>
+                      <span>{line}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* "View more" link 已移至 Section header 行最右 (2026-07-11 PM+UX 复盘) */}
+      </div>
+    </section>
+  );
+}

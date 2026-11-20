@@ -1,0 +1,226 @@
+[
+  {
+    "bucket": "category",
+    "file": "src/data/blog-data/en.json",
+    "line": 125,
+    "field": "category",
+    "chars": "餐飲外賣",
+    "excerpt": "\"category\": \"餐飲外賣\","
+  },
+  {
+    "bucket": "category",
+    "file": "src/data/blog-data/en.json",
+    "line": 143,
+    "field": "category",
+    "chars": "寵物",
+    "excerpt": "\"category\": \"寵物\","
+  },
+  {
+    "bucket": "category",
+    "file": "src/data/blog-data/en.json",
+    "line": 180,
+    "field": "category",
+    "chars": "美妝護膚",
+    "excerpt": "\"category\": \"美妝護膚\","
+  },
+  {
+    "bucket": "category",
+    "file": "src/data/blog-data/en.json",
+    "line": 376,
+    "field": "category",
+    "chars": "母嬰食品",
+    "excerpt": "\"category\": \"母嬰食品\","
+  },
+  {
+    "bucket": "category",
+    "file": "src/data/blog-data/en.json",
+    "line": 384,
+    "field": "category",
+    "chars": "房地產",
+    "excerpt": "\"category\": \"房地產\","
+  },
+  {
+    "bucket": "category",
+    "file": "src/data/blog-data/en.json",
+    "line": 392,
+    "field": "category",
+    "chars": "醫藥保健",
+    "excerpt": "\"category\": \"醫藥保健\","
+  },
+  {
+    "bucket": "category",
+    "file": "src/data/blog-data/en.json",
+    "line": 400,
+    "field": "category",
+    "chars": "汽車汽配",
+    "excerpt": "\"category\": \"汽車汽配\","
+  },
+  {
+    "bucket": "category",
+    "file": "src/data/blog-data/en.json",
+    "line": 408,
+    "field": "category",
+    "chars": "體育賽事",
+    "excerpt": "\"category\": \"體育賽事\","
+  },
+  {
+    "bucket": "category",
+    "file": "src/data/blog-data/en.json",
+    "line": 702,
+    "field": "category",
+    "chars": "書籍印刷",
+    "excerpt": "\"category\": \"書籍印刷\","
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/blog-data/en.json",
+    "line": 5,
+    "field": "description",
+    "chars": "國際認證體系",
+    "excerpt": "\"description\": \"Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day"
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/blog-data/en.json",
+    "line": 131,
+    "field": "description",
+    "chars": "進口印刷設備",
+    "excerpt": "\"description\": \"ZprintPro features 進口印刷設備 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing solutions.\","
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/blog-data/en.json",
+    "line": 577,
+    "field": "description",
+    "chars": "急件截單國際認證體系",
+    "excerpt": "\"description\": \"Rush printing delivery 2026 US: FedEx Express 2-day, DHL 2-4 day, USPS Priority 1-3 day, ZprintPro 急件 18:00 截單, 4 cut-off tiers, 4 cost tiers, 4 use cases, 4 FAQs, factory-direct prici"
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/blog-data/en.json",
+    "line": 593,
+    "field": "description",
+    "chars": "國際認證體系",
+    "excerpt": "\"description\": \"Which waterproof sticker material? 4 stocks compared (PVC vinyl 3-yr outdoor / clear vinyl 90% transparency / removable no residue / hot foil finishing)，100 MOQ from $0.045 USD/pc，5 us"
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/blog-data/en.json",
+    "line": 609,
+    "field": "description",
+    "chars": "進口印刷設備國際認證體系",
+    "excerpt": "\"description\": \"2026 Certificate Printing 8000 word guide: 7 scenarios (academic/corporate/institutional/event/training/wedding/medical)，4 materials (200-300gsm C2S/parchment/cotton/specialty)，4 finis"
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/blog-data/en.json",
+    "line": 617,
+    "field": "description",
+    "chars": "國際認證體系認證紙",
+    "excerpt": "\"description\": \"Rush order FAQ answered: where is fastest, exact price, cutoff time. ZprintPro 30-second AI quote, 18:00 cutoff, next-day 12:00 SF Express, DHL 2-4 day international, 100 MOQ from HK$0"
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/blog-data/en.json",
+    "line": 709,
+    "field": "description",
+    "chars": "认证体系",
+    "excerpt": "\"description\": \"School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes ZprintPro global clients, ISO 认证体系 + FSC + FDA + EU REACH, DHL 2-4 day, 30s WhatsApp quote.\","
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/category-seo-content.ts",
+    "line": 2108,
+    "field": "description",
+    "chars": "立体",
+    "excerpt": "{ name: '3D Craft', description: 'Three-dimensional effects transform flat packets into立体 artworks with extremely high collectible value.' },"
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/category-seo-content.ts",
+    "line": 2109,
+    "field": "description",
+    "chars": "镂空",
+    "excerpt": "{ name: 'Laser Cutting', description: 'Fine pattern镂空 cutting with dreamy light-through effects — ideal for premium customization.' },"
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/category-seo-content.ts",
+    "line": 4655,
+    "field": "description",
+    "chars": "離島",
+    "excerpt": "{ title: 'SF Express Local 24h', description: 'HK 24h delivery,離島 1-2 days, free pickup over HKD 500' },"
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/sku-seo-data.ts",
+    "line": 3482,
+    "field": "description",
+    "chars": "壓紋名片",
+    "excerpt": "\"description\": \"壓紋名片\","
+  },
+  {
+    "bucket": "description",
+    "file": "src/data/sku-seo-data.ts",
+    "line": 3537,
+    "field": "description",
+    "chars": "婚禮名片",
+    "excerpt": "\"description\": \"婚禮名片\","
+  },
+  {
+    "bucket": "JSON-LD",
+    "file": "src/data/blog-data/en.json",
+    "line": 468,
+    "field": "content",
+    "chars": "麥思印刷整合",
+    "excerpt": "\"content\": \"<script type=\\\"application/ld+json\\\">\\n{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"A1 A2 A3 Poster Size Guide: Dimensions Chart, Uses, Material Selection | Zp"
+  },
+  {
+    "bucket": "JSON-LD",
+    "file": "src/data/blog-data/en.json",
+    "line": 644,
+    "field": "content",
+    "chars": "细分證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索證書編號備索答案答案答案答案答案答案答案答案答案答案答案答案",
+    "excerpt": "\"content\": \"<script type=\\\"application/ld+json\\\">\\n{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Campus education printing Sept back-to-school complete guide: 5 Products x "
+  },
+  {
+    "bucket": "JSON-LD",
+    "file": "src/data/blog-data/en.json",
+    "line": 677,
+    "field": "content",
+    "chars": "並製本上製本",
+    "excerpt": "\"content\": \"<script type=\\\"application/ld+json\\\">\\n{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"2026 Hong Kong Printing Cost Baseline Report: 99-SKU Price Data for Sticker"
+  },
+  {
+    "bucket": "JSON-LD",
+    "file": "src/data/blog-data/en.json",
+    "line": 691,
+    "field": "content",
+    "chars": "證書編號備索證書編號備索證書編號備索",
+    "excerpt": "\"content\": \"<script type=\\\"application/ld+json\\\">\\n{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Print Specifications Complete Guide 2026: A1-A6 Sizes, CMYK Colors & 6 Prin"
+  },
+  {
+    "bucket": "JSON-LD",
+    "file": "src/data/blog-data/en.json",
+    "line": 712,
+    "field": "content",
+    "chars": "认证体系月月认证体系认证认证体系",
+    "excerpt": "\"content\": \"<script type=\\\"application/ld+json\\\">\\n{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"School Exercise Book Printing Guide 2026: 4 Stocks 3 Bindings 100 MOQ\\\",\\\"d"
+  },
+  {
+    "bucket": "title",
+    "file": "src/data/sku-seo-data.ts",
+    "line": 3483,
+    "field": "h1",
+    "chars": "婚禮名片",
+    "excerpt": "\"h1\": \"婚禮名片\","
+  },
+  {
+    "bucket": "title",
+    "file": "src/data/sku-seo-data.ts",
+    "line": 3538,
+    "field": "h1",
+    "chars": "金屬光澤名片",
+    "excerpt": "\"h1\": \"金屬光澤名片\","
+  }
+]

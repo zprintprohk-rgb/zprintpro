@@ -1,0 +1,67 @@
+feat(rush): rush 页重设计 8 Section + 工厂实拍 webp + 双必填表单 + 埋点 (K3 8/26 brief 定稿)
+
+改动范围 (6 文件, 1 修改 + 5 新增):
+- M src/app/[locale]/services/rush-printing-delivery/page.tsx (24KB)
+- A src/components/services/RushCapacity.tsx (S4 产能信任区 + 2 工厂图)
+- A src/components/services/RushPriceTable.tsx (S5 8 行价目表)
+- A src/components/services/RushCtaForm.tsx (S7 双必填表单, 接 /api/quote)
+- A src/components/services/RushFloating.tsx (S8 桌面右下 + 移动底部)
+- A src/components/services/zpTrack.ts (window.zpTrack wrapper util)
+
+F0 红线 8/19 5 件套全部保留 (不删 SKU/文案/长文本字段):
+- Hero Banner (加工厂图 factory-hero.webp 替代渐变占位, brightness .42 暗色遮罩)
+- GEO 答案块 (h1 + Featured Snippet 40-60 字)
+- 4 节点时间轴 (18:00 → 22:00 → 06:00 → 翌日 12:00)
+- 6 SKU 网格 (RushDeliveryGrid)
+- FAQ (RushDeliveryFAQ)
+- 内部链接 (5 相关类目, Last Updated 2026-08-26)
+
+新增 4 段 (autoclaw deliverable-A 直接落地):
+- S4 RushCapacity: 海德堡 + HP Indigo 2 设备图 + 4 数据浮层 (15年/1200+/24h/12 行业)
+- S5 RushPriceTable: 8 行价目 (傳單/海報/貼紙/畫冊/易拉寶/紙袋 + 包裝盒/信封不適用)
+- S7 RushCtaForm: 8 字段表单 (電郵*/電話*/產品*/數量* 雙必填) → POST /api/quote
+- S8 RushFloating: 桌面右下 WhatsApp 绿圆 + 移动底部双按钮栏
+
+JSON-LD 3 块 (Service + FAQPage + BreadcrumbList, 地址=深圳):
+- 现有 Service 保留
+- 新增 FAQPage (6 条, 3 locale 完整, 与 RushDeliveryFAQ 同源)
+- 新增 BreadcrumbList (首页 → 服务 → 即日印刷)
+
+埋点 (data-event/data-source/data-locale 三件套 + window.zpTrack):
+- whatsapp_click × N (Hero / PriceTable / Floating / Mobile bar)
+- tel_click × 1 (Mobile bar)
+- form_open × 1 (Hero 查价按钮)
+- form_submit × 1 (RushCtaForm 提交 → POST /api/quote)
+
+SOP-10 5 问门禁 (K3 8/25 拍板 B 强制级):
+1. 架构差异: 已查 8/19 R3 commit, 现有 6 段保留
+2. 约束适用范围: K3 brief 8/26 06:23 拍板, 现 user 拍板 autoclaw 成品直接部署
+3. 原数据/拍板来源: autoclaw .cluster/rush-page-20260826/ 全套交付 (deliverable-A 34KB + jsonld 3KB + 设计规格 6.7KB + 组件映射 4.7KB + 工厂图 webp 3 张 <180KB)
+4. 字段值策略: 全部 SKU/文案保留, 只新增 4 段
+5. Markdown 渲染: 不涉及 user-facing Markdown 链接, 改用纯 JSX
+
+预检:
+- tsc --noEmit: 54 baseline 不新增 (4 新组件 + page.tsx 0 错, 全部 baseline 来自 __tests__/debug-*)
+- encoding check: 6 文件全部 UTF-8 LF
+- 工厂图已就位: public/images/factory/factory-hero.webp (169KB) + factory-heidelberg.webp (145KB) + factory-hpindigo.webp (26KB)
+
+§0.25 撞车兜底报告 (必含 K3 拍板豁免):
+- 上次 push: b56edb1 8/26 10:18
+- 当前 push: 8/26 10:37
+- 间隔: 19 min (< 30 min 严格间隔, 撞车)
+- 撞车豁免来源: K3 当前 turn 拍板"直接调用 autoclaw 页面成品部署上线就可以了" = 1 次回复 = §0.25.2 撞车兜底豁免条件达成
+- 后续撞车仍需 K3 必拍 1 次回复, M3 不可自主豁免
+
+verify-deploy 5 步 (K3 拍板口径):
+1. git push origin_ssh main → CF Pages 自动 build
+2. 桌面 + 移动全页截图 (Edge headless)
+3. WhatsApp 预填真机点 1 次
+4. Google 富媒体测试工具跑 FAQPage + Service Schema
+5. curl zh-hk/en/ja 3 locale 禁词 0 (名片/4小時/當日達)
+
+数据来源:
+- autoclaw .cluster/rush-page-20260826/rush-m3-deploy-path.md (7KB SSoT)
+- autoclaw .cluster/rush-page-20260826/deliverable-A-rush-page.html (34KB 8 Section)
+- autoclaw .cluster/rush-page-20260826/rush-jsonld.json (3KB 3 块 JSON-LD)
+- K3 8/26 06:23 brief 拍板 (设计规格源)
+- K3 8/26 10:37 撞车豁免拍板 (本次 push)

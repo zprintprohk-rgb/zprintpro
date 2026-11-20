@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-24T17:47:10.755617",
+  "script": "scripts/indexnow-auto-submit.py",
+  "version": "v3.17 B5",
+  "key_prefix": "zprintpr...",
+  "all_urls_count": 660,
+  "new_urls_count": 660,
+  "history_count": 0,
+  "error": "HTTPError",
+  "error_detail": "HTTP Error 403: Forbidden"
+}

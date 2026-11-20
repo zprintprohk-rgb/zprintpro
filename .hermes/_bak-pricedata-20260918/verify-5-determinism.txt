@@ -1,0 +1,8 @@
+﻿  gen#2: ✓ 寫盤前斷言全過: slugs=18, productName=18, label=114, en 殘留 CJK=0, ja 零假名=0, 簡體專用字=0, 未收錄零件=0
+  gen#2: Generated: F:\zprintpro-nextjs\src\lib\price-data.generated.ts with 18 slugs
+sha256 #1 : 016a4b24fa45c833e59496cb34b2d6b4ad2608a89719c295fd6ea4f80ca892be
+sha256 #2 : 016a4b24fa45c833e59496cb34b2d6b4ad2608a89719c295fd6ea4f80ca892be
+bytes  #1 : 169948 | #2 : 169948
+byte diff : 0
+
+結果: PASS — 二次生成 diff = 0 (決定性)

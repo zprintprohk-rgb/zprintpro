@@ -1,0 +1,23 @@
+docs(gate): 门童 #23 头注更正 — 豁免申请脚本从不存在 (声称已施加 ≠ 已生效)
+
+背景: 提交 cfa4ea44 时被 `check-regression-guard.js --commit` 硬拦, 根因是
+`SOP10_CERT_NO` 在 5 条 live 车道 prompt 上命中既有字面 `FSC-C123456`
+(SOP-10 第 4 款反例原文)。该目录此前只在 `EXEMPT_PATHS` (仅豁免 QUOTE_RULES),
+未入 `FULL_EXEMPT_PATHS`。
+
+门童 #23 头注原写「`FULL_EXEMPT_PATHS` 已加入 `.hermes/cron-prompts/`
+(由 `scripts/guards/apply-cron-prompts-exemption.mjs` 施加, 幂等)」——
+**该脚本实测不存在**, 豁免实际从未生效。后果: 本门童自身对账 exit 0 (台账正常),
+而主门童仍硬拦 ⇒ 两条结论互相矛盾, 且 5 条 live prompt **无法提交**。
+
+本 commit 只更正头注, 指向真实落地方式 (commit cfa4ea44 直改 `common.js`),
+并写入教训: 「机制已申请」≠「机制已生效」; 声称已施加者必须给出落地 commit 或
+文件路径, 否则视为未做 (§0.24 笼统批准 ≠ 动作完成 的同族错误)。
+
+数据来源:
+- commit cfa4ea44 (common.js FULL_EXEMPT_PATHS 落地)
+- 实测 `Test-Path scripts/guards/apply-cron-prompts-exemption.mjs` = False
+- 门童 #23 复跑 exit 0 (5 文件声明集合 = 实际集合)
+校准日期: 2026-09-19
+
+范围: 仅 1 处注释块, 无逻辑改动 (node --check PASS, 门童 #23 复跑 exit 0)。

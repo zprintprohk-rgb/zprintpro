@@ -1,0 +1,71 @@
+fix(sso+cron): K3 21:27 拍板后 SSoT + cron daemon 同步
+
+【触发】K3 user 2026-07-22 21:27 拍板「按 K3 指令执行」+ 2026-07-23 00:30 拍板「定时任务也需同步按最新的结果和指令进行更新」
+
+【SSoT 改动 · 3 文件】
+
+1. .hermes/context.md (40 行新增, §14.1 段):
+   - 加 NS 改动 (阿里云 → Cloudflare NS, amalia/kevin.ns.cloudflare.com) 完成事实
+   - 加 GSC API 全链路验证 (commit 7924767, 852 行 / 90 天 / 22 点击 / 9,625 展示) 落地
+   - 加 K3 21:27 拍板 5 条清单内样本段 (包装盒/防水贴纸/A5骑马钉/婚帖红包/急件 banner)
+   - 清单外 3/5 走 catch-all 是设计, 2/5 FAIL: #8 business-card 200 + #9 about-us 404 是真异常
+
+2. .hermes/cron-prompts/mavis/gsc-feedback-loop.md (SSoT, +3 关键段):
+   - 项 2 sitemap URL 修: sitemap.xml 不是 sitemap-0.xml (K3 21:27 实测 sitemap-0.xml 返 500, robots.txt 只列 sitemap.xml)
+   - 项 5 抽样: 旧 3 条 (海报/论文, 不在 149 条 CSV) → K3 21:27 官方 5 条 (包装盒/防水贴纸/A5骑马钉/婚帖红包/急件 banner), 完整列具体 URL
+   - 清单外抽样: 旧 5 条 → K3 21:27 官方 5 条 (stickers/en-flyers/business-card/about-us/random), 完整列具体 URL
+   - 「首轮 P0-2 baseline 锚点 (2026-07-22 21:27, K3 拍板)」段: 8/10 PASS + 2 真异常 #8 #9 + K3 user 3 选项 (A 加 Bulk Redirect 规则 / B 改 catch-all 兜底 / C 接受 8/10 作为基线)
+   - 后续每周对比锚点: 7/29 cron 跑时跟 7/22 baseline 对比; 第 4 周 (8/12) 决策点: 索引转移率 ≥ 50%
+
+3. AGENTS.md (M3 v6 红线, 13 行新增, §13.17):
+   - 3-perspective 复盘模板 (PM × UX × SEO)
+   - 5 大美国 sharp hook 覆盖率 (Free Shipping / Free Design / No Minimum / Fast Turnaround / Made for USA)
+   - 14/14 en 类目页 sharp hook 覆盖率补完规则
+   - 反向规则 (zh-hk/ja 不写 "Free US Shipping" / "FedEx Ground" / "米国 $99+")
+
+【cron daemon 同步 · 验证】
+
+C31 lesson 3 步曲严格执行:
+- 改 SSoT (本 commit)
+- mavis cron update 6f9a93af-45cd-4ccd-afa3-17ccd82536e9 (zprintpro-gsc-feedback-loop) — 18.7K chars 完整传完
+- mavis cron get 验证 daemon 跟 SSoT 1:1 一致 (✓ K3 21:27 抽样规则 10 样本 + sitemap URL 修 + 7/22 baseline 锚点 全部到位)
+
+SSoT ≠ daemon 教训 (2026-07-22 20:37 实战过) 不再重演。
+
+【5 项监控首轮 baseline (K3 21:27 拍板后, 7/22 16:32 实测)】
+
+| 项 | 状态 | 数据 |
+|---|---|---|
+| 1. GSC 抓取错误 | ⚠️ pending (API 暂未接入) | 0 条 5xx / 5 抽样 ✅ |
+| 2. sitemap 残留 | ✅ | 576 URLs / 0 残留 (sitemap.xml 修后) |
+| 3. 索引转移率 ≥ 50% | ⚠️ pending | 无 7 天 baseline, 7/29 cron 跑 |
+| 4. 权重交接 < 5 | ⚠️ pending | 无 7 天 baseline, 7/29 cron 跑 |
+| 5a. 清单内 5/5 PASS (K3 21:27 拍板) | ✅ | 149 条规则精准承接 |
+| 5b. 清单外 3/5 catch-all 设计 (K3 21:27 拍板) | ❌ | 2 FAIL = 2 真异常升级 user |
+
+总计 8/10 PASS, 2 真异常 (K3 v5.1 抽样规则强制升级 user):
+- #8 /products/business-card-printing/ 200 直出 (AGENTS.md §11 名片禁区, catch-all 兜底失效)
+- #9 /about-us/ 404 (catch-all 兜底失效)
+
+【K3 user 拍板 5 项监控脚本项 5 抽样 = K3 官方 10 样本】
+- 5 清单内 (K3 21:27 拍板权威): packaging-box-printing → /zh-hk/category/packaging/, label-sticker-printing → /zh-hk/product/waterproof-stickers/, enterprise-brochure-printing → /zh-hk/product/saddle-stitch-booklets/, red-packet-wedding-invitation-printing → /zh-hk/category/red-packets/, large-format-printing → /zh-hk/category/banners/
+- 5 清单外 (K3 21:27 拍板): /zh-hk/product/stickers/, /en/product/flyers/, /products/business-card-printing/, /about-us/, /some-random-page-12345 (走 catch-all 跳 /zh-hk/)
+
+【改后回归】5 项监控脚本 (.hermes/tmp/cf-301-monitor-2026-07-22.cjs) 改 4 处:
+- 项 2 URL 修 (sitemap-0.xml → sitemap.xml)
+- 项 5 清单内旧 3 条 → K3 21:27 官方 5 条
+- 项 5 清单外旧 5 条 → K3 21:27 官方 5 条
+- 删「清单内缺 2 条 user 待补」段 (K3 21:27 纠错没有"文具 → 急件"映射)
+
+【C9 攒批】1 commit 1 push 1 build quota, 3 M 文件攒一起不 -A
+【C37】严用 origin_ssh, 严禁 --force, 严禁 git add -A
+【K3 v5.1 红线】不改 CF Bulk Redirect 规则 (149 条路径级精准承接 OK, 通配破坏承接)
+
+【升级 user 待拍板】(K3 v5.1 抽样规则强制):
+- #8 business-card: (A) 加 Bulk Redirect 规则 → zh-hk/ (B) 改 CF catch-all 兜底 (C) 接受 8/10 基线
+- #9 about-us: 同 #8
+- 8/12 决策点 (P0-2 DEPLOYED 第 4 周): 索引转移率 ≥ 50% 必跑, 否则升级 user
+
+【不 commit】logs/ 不在 git tracked, 5 项监控日志 + 10 样本验证日志 单独落盘 F:\zprintpro-nextjs\logs\2026-07-22-cf-301-monitor.md + 2026-07-22-cf-301-verify-k3-sample.md (M3 后续引用, 不需 commit)
+
+【对照】K3 21:05 v5.1 拍板 (commit 7a606ef) + K3 21:27 官方 10 样本拍板 (本 commit) + C31 lesson 3 步曲严格执行

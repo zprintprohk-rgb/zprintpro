@@ -1,0 +1,965 @@
+{
+ "wave": "W2-1018",
+ "patched": [
+  {
+   "slug": "catalog-printing",
+   "dir": "BK-001",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "saddle-stitch-booklets",
+   "dir": "BK-002",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "perfect-bound-books",
+   "dir": "BK-003",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "hardcover-books",
+   "dir": "BK-004",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "outdoor-vinyl-banners",
+   "dir": "BN-001",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "roll-up-banners",
+   "dir": "BN-002",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "adhesive-banners",
+   "dir": "BN-003",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "vehicle-wraps",
+   "dir": "BN-004",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "exercise-books",
+   "dir": "ED-001",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "certificates",
+   "dir": "ED-002",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "school-flyers",
+   "dir": "ED-003",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "textbooks",
+   "dir": "ED-004",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "graduation-yearbook",
+   "dir": "ED-005",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "business-envelopes",
+   "dir": "EV-001",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "colored-envelopes",
+   "dir": "EV-002",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "large-envelopes",
+   "dir": "EV-003",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "pearl-envelopes",
+   "dir": "EV-004",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "a4-flyers",
+   "dir": "FL-001",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "a5-flyers",
+   "dir": "FL-002",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "double-sided-flyers",
+   "dir": "FL-003",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "eco-flyers",
+   "dir": "FL-007",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "same-day-flyers",
+   "dir": "FL-008",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "cosmetic-boxes",
+   "dir": "PK-002",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "mailer-boxes",
+   "dir": "PK-004",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "rigid-boxes",
+   "dir": "PK-006",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "electronics-packaging-box",
+   "dir": "PKG-008",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "kraft-paper-packaging-box",
+   "dir": "PKG-009",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "white-card-boxes",
+   "dir": "PKG-013",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "corrugated-boxes",
+   "dir": "PKG-014",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "removable-stickers",
+   "dir": "ST-003",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "small-batch-stickers",
+   "dir": "ST-004",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "die-cut-stickers",
+   "dir": "ST-005",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "fruit-food-label-stickers",
+   "dir": "ST-009",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-zh-hk-hero.webp']"
+  }
+ ],
+ "skipped": [],
+ "entries": [
+  {
+   "dir": "BK-001",
+   "slug": "catalog-printing",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-zh-hk-hero.webp",
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-zh-hk-detail.webp",
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-zh-hk-variety.webp",
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-en-hero.webp",
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-en-detail.webp",
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-en-variety.webp",
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-ja-hero.webp",
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-ja-detail.webp",
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-ja-variety.webp",
+     "/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "BK-002",
+   "slug": "saddle-stitch-booklets",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-zh-hk-hero.webp",
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-zh-hk-detail.webp",
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-zh-hk-variety.webp",
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-en-hero.webp",
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-en-detail.webp",
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-en-variety.webp",
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-ja-hero.webp",
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-ja-detail.webp",
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-ja-variety.webp",
+     "/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "BK-003",
+   "slug": "perfect-bound-books",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-zh-hk-hero.webp",
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-zh-hk-detail.webp",
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-zh-hk-variety.webp",
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-en-hero.webp",
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-en-detail.webp",
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-en-variety.webp",
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-ja-hero.webp",
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-ja-detail.webp",
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-ja-variety.webp",
+     "/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "BK-004",
+   "slug": "hardcover-books",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-zh-hk-hero.webp",
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-zh-hk-detail.webp",
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-zh-hk-variety.webp",
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-en-hero.webp",
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-en-detail.webp",
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-en-variety.webp",
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-ja-hero.webp",
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-ja-detail.webp",
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-ja-variety.webp",
+     "/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "BN-001",
+   "slug": "outdoor-vinyl-banners",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-zh-hk-hero.webp",
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-zh-hk-detail.webp",
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-zh-hk-variety.webp",
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-en-hero.webp",
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-en-detail.webp",
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-en-variety.webp",
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-ja-hero.webp",
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-ja-detail.webp",
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-ja-variety.webp",
+     "/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "BN-002",
+   "slug": "roll-up-banners",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-zh-hk-hero.webp",
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-zh-hk-detail.webp",
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-zh-hk-variety.webp",
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-en-hero.webp",
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-en-detail.webp",
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-en-variety.webp",
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-ja-hero.webp",
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-ja-detail.webp",
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-ja-variety.webp",
+     "/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "BN-003",
+   "slug": "adhesive-banners",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-zh-hk-hero.webp",
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-zh-hk-detail.webp",
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-zh-hk-variety.webp",
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-en-hero.webp",
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-en-detail.webp",
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-en-variety.webp",
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-ja-hero.webp",
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-ja-detail.webp",
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-ja-variety.webp",
+     "/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "BN-004",
+   "slug": "vehicle-wraps",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-zh-hk-hero.webp",
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-zh-hk-detail.webp",
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-zh-hk-variety.webp",
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-en-hero.webp",
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-en-detail.webp",
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-en-variety.webp",
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-ja-hero.webp",
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-ja-detail.webp",
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-ja-variety.webp",
+     "/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ED-001",
+   "slug": "exercise-books",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-zh-hk-hero.webp",
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-zh-hk-detail.webp",
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-zh-hk-variety.webp",
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-en-hero.webp",
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-en-detail.webp",
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-en-variety.webp",
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-ja-hero.webp",
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-ja-detail.webp",
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-ja-variety.webp",
+     "/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ED-002",
+   "slug": "certificates",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-hero.webp",
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-detail.webp",
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-variety.webp",
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-en-hero.webp",
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-en-detail.webp",
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-en-variety.webp",
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-ja-hero.webp",
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-ja-detail.webp",
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-ja-variety.webp",
+     "/images/products/v28_5/certificates/zprintpro-educational-certificates-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ED-003",
+   "slug": "school-flyers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-zh-hk-hero.webp",
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-zh-hk-detail.webp",
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-zh-hk-variety.webp",
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-en-hero.webp",
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-en-detail.webp",
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-en-variety.webp",
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-ja-hero.webp",
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-ja-detail.webp",
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-ja-variety.webp",
+     "/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ED-004",
+   "slug": "textbooks",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-hero.webp",
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-detail.webp",
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-variety.webp",
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-en-hero.webp",
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-en-detail.webp",
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-en-variety.webp",
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-ja-hero.webp",
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-ja-detail.webp",
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-ja-variety.webp",
+     "/images/products/v28_5/textbooks/zprintpro-educational-textbooks-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ED-005",
+   "slug": "graduation-yearbook",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-zh-hk-hero.webp",
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-zh-hk-detail.webp",
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-zh-hk-variety.webp",
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-en-hero.webp",
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-en-detail.webp",
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-en-variety.webp",
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-ja-hero.webp",
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-ja-detail.webp",
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-ja-variety.webp",
+     "/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "EV-001",
+   "slug": "business-envelopes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-zh-hk-hero.webp",
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-zh-hk-detail.webp",
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-zh-hk-variety.webp",
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-en-hero.webp",
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-en-detail.webp",
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-en-variety.webp",
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-ja-hero.webp",
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-ja-detail.webp",
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-ja-variety.webp",
+     "/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "EV-002",
+   "slug": "colored-envelopes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-zh-hk-hero.webp",
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-zh-hk-detail.webp",
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-zh-hk-variety.webp",
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-en-hero.webp",
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-en-detail.webp",
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-en-variety.webp",
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-ja-hero.webp",
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-ja-detail.webp",
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-ja-variety.webp",
+     "/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "EV-003",
+   "slug": "large-envelopes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-zh-hk-hero.webp",
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-zh-hk-detail.webp",
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-zh-hk-variety.webp",
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-en-hero.webp",
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-en-detail.webp",
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-en-variety.webp",
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-ja-hero.webp",
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-ja-detail.webp",
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-ja-variety.webp",
+     "/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "EV-004",
+   "slug": "pearl-envelopes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-zh-hk-hero.webp",
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-zh-hk-detail.webp",
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-zh-hk-variety.webp",
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-en-hero.webp",
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-en-detail.webp",
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-en-variety.webp",
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-ja-hero.webp",
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-ja-detail.webp",
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-ja-variety.webp",
+     "/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "FL-001",
+   "slug": "a4-flyers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-zh-hk-hero.webp",
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-zh-hk-detail.webp",
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-zh-hk-variety.webp",
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-en-hero.webp",
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-en-detail.webp",
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-en-variety.webp",
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-ja-hero.webp",
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-ja-detail.webp",
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-ja-variety.webp",
+     "/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "FL-002",
+   "slug": "a5-flyers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-zh-hk-hero.webp",
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-zh-hk-detail.webp",
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-zh-hk-variety.webp",
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-en-hero.webp",
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-en-detail.webp",
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-en-variety.webp",
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-ja-hero.webp",
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-ja-detail.webp",
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-ja-variety.webp",
+     "/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "FL-003",
+   "slug": "double-sided-flyers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-zh-hk-hero.webp",
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-zh-hk-detail.webp",
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-zh-hk-variety.webp",
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-en-hero.webp",
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-en-detail.webp",
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-en-variety.webp",
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-ja-hero.webp",
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-ja-detail.webp",
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-ja-variety.webp",
+     "/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "FL-007",
+   "slug": "eco-flyers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-zh-hk-hero.webp",
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-zh-hk-detail.webp",
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-zh-hk-variety.webp",
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-en-hero.webp",
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-en-detail.webp",
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-en-variety.webp",
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-ja-hero.webp",
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-ja-detail.webp",
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-ja-variety.webp",
+     "/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "FL-008",
+   "slug": "same-day-flyers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-zh-hk-hero.webp",
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-zh-hk-detail.webp",
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-zh-hk-variety.webp",
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-en-hero.webp",
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-en-detail.webp",
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-en-variety.webp",
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-ja-hero.webp",
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-ja-detail.webp",
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-ja-variety.webp",
+     "/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PK-002",
+   "slug": "cosmetic-boxes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-hero.webp",
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-detail.webp",
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-variety.webp",
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-hero.webp",
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-detail.webp",
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-variety.webp",
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-hero.webp",
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-detail.webp",
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-variety.webp",
+     "/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PK-004",
+   "slug": "mailer-boxes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-hero.webp",
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-detail.webp",
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-variety.webp",
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-hero.webp",
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-detail.webp",
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-variety.webp",
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-hero.webp",
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-detail.webp",
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-variety.webp",
+     "/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PK-006",
+   "slug": "rigid-boxes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-hero.webp",
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-detail.webp",
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-variety.webp",
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-hero.webp",
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-detail.webp",
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-variety.webp",
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-hero.webp",
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-detail.webp",
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-variety.webp",
+     "/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PKG-008",
+   "slug": "electronics-packaging-box",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-hero.webp",
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-detail.webp",
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-variety.webp",
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-hero.webp",
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-detail.webp",
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-variety.webp",
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-hero.webp",
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-detail.webp",
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-variety.webp",
+     "/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PKG-009",
+   "slug": "kraft-paper-packaging-box",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-hero.webp",
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-detail.webp",
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-variety.webp",
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-hero.webp",
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-detail.webp",
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-variety.webp",
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-hero.webp",
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-detail.webp",
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-variety.webp",
+     "/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PKG-013",
+   "slug": "white-card-boxes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-hero.webp",
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-detail.webp",
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-variety.webp",
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-hero.webp",
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-detail.webp",
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-variety.webp",
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-hero.webp",
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-detail.webp",
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-variety.webp",
+     "/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PKG-014",
+   "slug": "corrugated-boxes",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-hero.webp",
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-detail.webp",
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-variety.webp",
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-hero.webp",
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-detail.webp",
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-variety.webp",
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-hero.webp",
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-detail.webp",
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-variety.webp",
+     "/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ST-003",
+   "slug": "removable-stickers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-zh-hk-hero.webp",
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-zh-hk-detail.webp",
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-zh-hk-variety.webp",
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-en-hero.webp",
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-en-detail.webp",
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-en-variety.webp",
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-ja-hero.webp",
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-ja-detail.webp",
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-ja-variety.webp",
+     "/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ST-004",
+   "slug": "small-batch-stickers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-zh-hk-hero.webp",
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-zh-hk-detail.webp",
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-zh-hk-variety.webp",
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-en-hero.webp",
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-en-detail.webp",
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-en-variety.webp",
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-ja-hero.webp",
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-ja-detail.webp",
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-ja-variety.webp",
+     "/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ST-005",
+   "slug": "die-cut-stickers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-zh-hk-hero.webp",
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-zh-hk-detail.webp",
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-zh-hk-variety.webp",
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-en-hero.webp",
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-en-detail.webp",
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-en-variety.webp",
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-ja-hero.webp",
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-ja-detail.webp",
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-ja-variety.webp",
+     "/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "ST-009",
+   "slug": "fruit-food-label-stickers",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-zh-hk-hero.webp",
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-zh-hk-detail.webp",
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-zh-hk-variety.webp",
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-en-hero.webp",
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-en-detail.webp",
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-en-variety.webp",
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-ja-hero.webp",
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-ja-detail.webp",
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-ja-variety.webp",
+     "/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-ja-multi-angle.webp"
+    ]
+   }
+  }
+ ]
+}

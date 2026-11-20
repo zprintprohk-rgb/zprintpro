@@ -1,0 +1,24 @@
+fix(brand): 单品牌补漏 B2 + B2c — 非 title 面再清 67 处 (150 → 83) + 门禁基线重录
+
+承 2e8a8be8 (B+C 批)。B 批清单由「行内字段名」启发式生成, 实测漏三类非 title 面, 本轮补齐。
+
+B2 (scripts/fix-dual-brand-nontitle-b2.mjs, 15 处 / 3 文件, 按「所属键」判定):
+  - seo-keywords.ts intro/outro 正文 (6)
+  - products.ts seoImages.alt (3)
+  - category-seo-content.ts featuredSnippet 答案块 (6)
+
+B2c (scripts/fix-dual-brand-jsonld-names.mjs, 52 处 / 2 文件, pattern 级精确替换):
+  - blog-data/zh-hk.json: \"name\":\"智印港 ZprintPro\" x26 -> 智印港;
+    "智印港 ZprintPro 首頁" x12 / "跨境印刷 SaaS" x5 / "印刷規格指南" x1
+  - blog-data/ja.json: \"name\":\"ZprintPro 智印港\" x5 -> ZprintPro; "ZprintPro ジープリント" x3 -> ZprintPro
+  - 关键: content 是「整篇一行」, 同行内既有 \"name\"(非 title 面) 也有 \"headline\"/<h1>(title 面),
+    故不能整行替换; 断言 = JSON.parse 合法 + 键数不变 + 长度差==预期 + headline 含双品牌数前后不变(1->1)
+
+门禁基线: .hermes/brand-baseline.json 150 -> 83 (存量白名单, 只许递减)
+剩余 83 处 = 纯 title 面(product/blog title_zh/meta title/og:title/首页 title 等) +
+  OrganizationSchema alternateName 别名 2 处(语义上是别名表, 待 K3 单独确认, 本批未动)
+
+门禁: tsc 54=54(改动文件 0 错) / build exit 0 / check-encoding UTF-8 LF /
+check-brand-mentions --strict A 类 0 / check-brand-baseline PASS(83) /
+regen-guard 105 entries 700 keys 300 titles 不掉
+数据来源: .hermes/measure-residual-forms.cjs / measure-jsonld-names.cjs / measure-b2c.cjs

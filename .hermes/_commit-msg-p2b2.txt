@@ -1,0 +1,51 @@
+feat(seo): P2 修剪/替代第 2 批落盘 — 11 槽 (TRIM 32→21, 含跨市场污染修复)
+
+来源: K3 2026-09-19 决策「替代池扩充后落盘 17 条候选」
+
+## 一、★ 残留 artifact 已定位并排除: **是陈旧 JSON, 不是代码 bug**
+诊断 (删 JSON → 重新生成 → 重读 ja 槽): ja 候选干净 ——
+`両面カラー印刷 両面チラシ | 100枚〜 | ¥85〜 | ZprintPro` (55 当量, replPool=2 无采集钩子)。
+⇒ 前一轮看到的 `… | Free US Ship | …` 系**读取了修复前写入的 JSON**。
+(纪律留档: 报告"未解释残迹"是对的 —— 未确认前不落盘, 确认后按证据放行。)
+
+## 二、落盘内容 (11 槽实测变更; 另 6 槽经复核判定为 **no-op**)
+| 模式 | 变更 |
+|---|---|
+| 替代 (subst) | 8 槽 (en / ja) |
+| 纯删除 (trim) | 3 槽 |
+样例:
+- `waterproof-stickers/en` 59→**53** `Custom Waterproof Stickers | Free US Ship | ZprintPro`
+- `transparent-stickers/en` 60→**54** `Custom Transparent Stickers | Free US Ship | ZprintPro`
+- `double-sided-flyers/ja` 71→**55** `両面カラー印刷 両面チラシ | 100枚〜 | ¥85〜 | ZprintPro`
+- `gang-run-card-boxes/en` 90→**54** `Gang-Run White Card Boxes (No Die-Cut Fee) | ZprintPro`
+
+落盘: 11 行 (期望 11) ✅ **断言 11/11 逐字命中** ✅
+census: OK 209→**220** / TRIM 32→**21** / FILL 59 (不变)
+
+## 三、复核器三处修正 (本轮踩坑留痕, 均已实测)
+1. **subst 不变量错套 fill** ⇒ 误报: fill 要求「必须补上 MOQ 钩子」, 但 **替代是替换钩子** ——
+   原标题无 MOQ 的槽位 (en `… | Free Shipping $99+ | …`) 替换后自然也无 MOQ, 不是缺陷。
+   ⇒ subst 改为「允许**来源可溯**的新数字 (products.ts minQuantity/basePrice), 其余禁止」。
+2. **no-op 未排除** ⇒ 落盘断言失败 (17 vs 11): 候选与现标题逐字相同时无改动, 不应计为目标。
+3. **对照源用错** (最隐蔽): no-op 比较原用 bank 的 `current_title`, 而 **bank 生成于 P0-A1/P2-1 落盘之前**
+   ⇒ 过期值把 6 个「其实已是 no-op」的槽位误计为目标。改为**读 sku-seo-data.ts 文件真值**后,
+   `变化行数 11 == 期望 11` ✅。
+   > 普遍教训: **校验必须对照"当前事实来源", 不能对照快照** —— 快照会随前序批次过期。
+
+## 四、遗留 (诚实登记)
+- **17 → 11**: 6 槽经文件真值复核判定为 no-op (前序批次已使其达标), 非失败。
+- **仍需人工改写 21 槽** (FILL 59 中的 en/ja 低展示 + 部分 TRIM): 替代池与删除均无解者。
+- **G3 语义语言检查尚未集成**: 本轮在**采集阶段**做了同语言校验
+  (en 段无 CJK / CJK 段无 ≥3 字母拉丁词), 但 `gates()` 的 G3 仍只查**字符集污染**,
+  挡不住「纯拉丁串进 CJK 标题」的语义错配。**建议下轮把同语言校验提升进 G3**(K3 决策 3)。
+- `pvc-menus/zh-hk` 等 menus 簇槽位仍待 K3 裁决 (50 vs 100)。
+
+## 数据来源
+- .hermes/reports/title-proposals-P2-修剪-2026-09-19.json (重新生成, 非陈旧)
+- src/data/sku-seo-data.ts (文件真值对照) · src/data/products.ts (数字源头)
+校准日期: 2026-09-20 01:10
+
+## 验收
+node scripts/apply-title-batch.mjs --from-proposals=... --apply → 11 槽, 断言 11/11 ✅
+node scripts/sku-title-census.mjs → OK 220 / TRIM 21 / FILL 59 ✅
+验证窗: **本批 11 槽进入 7-10 天只读**

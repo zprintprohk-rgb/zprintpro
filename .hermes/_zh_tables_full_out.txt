@@ -1,0 +1,160 @@
+﻿tables: 4
+===== TABLE 1 FULL =====
+<table class="w-full text-sm border-collapse my-4">
+<thead>
+<tr class="bg-gray-100">
+<th class="border p-2 text-left">紙質</th>
+<th class="border p-2 text-left">厚度</th>
+<th class="border p-2 text-left">防水</th>
+<th class="border p-2 text-left">戶外壽命</th>
+<th class="border p-2 text-left">最平單價</th>
+<th class="border p-2 text-left">適用場景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border p-2"><strong>157g 銅版紙</strong></td>
+<td class="border p-2">157gsm</td>
+<td class="border p-2">否 (加過膠 OK)</td>
+<td class="border p-2">室內 1-3 個月</td>
+<td class="border p-2">HK$0.30/張</td>
+<td class="border p-2">活動 / 促銷 / 短期展示</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>200g 銅版紙</strong></td>
+<td class="border p-2">200gsm</td>
+<td class="border p-2">否 (加過膠 OK)</td>
+<td class="border p-2">室內 3-6 個月</td>
+<td class="border p-2">HK$0.50/張</td>
+<td class="border p-2">中長期店內展示</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>250g 銅版紙</strong></td>
+<td class="border p-2">250gsm</td>
+<td class="border p-2">否 (加過膠 OK)</td>
+<td class="border p-2">室內 6-12 個月</td>
+<td class="border p-2">HK$0.80/張</td>
+<td class="border p-2">品牌形象牆 / 高檔展示</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>PP 膠片 (啞面/光面)</strong></td>
+<td class="border p-2">200μm</td>
+<td class="border p-2">是 (IPX7)</td>
+<td class="border p-2">戶外 3 年 (QUV 1000 小時)</td>
+<td class="border p-2">HK$1.20/張</td>
+<td class="border p-2">戶外 / 長期 / 防水</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>油畫布</strong></td>
+<td class="border p-2">380gsm</td>
+<td class="border p-2">是</td>
+<td class="border p-2">藝術展 5+ 年</td>
+<td class="border p-2">HK$3.50/張</td>
+<td class="border p-2">藝術展 / 畫廊 / 高端複製</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>防水相紙</strong></td>
+<td class="border p-2">260gsm</td>
+<td class="border p-2">是</td>
+<td class="border p-2">寫真 2-3 年</td>
+<td class="border p-2">HK$2.00/張</td>
+<td class="border p-2">寫真 / 攝影展 / 高光澤</td>
+</tr>
+</tbody>
+</table>
+
+===== TABLE 2 FULL =====
+<table class="w-full text-sm border-collapse my-4">
+<thead>
+<tr class="bg-gray-100">
+<th class="border p-2 text-left">工藝</th>
+<th class="border p-2 text-left">視覺效果</th>
+<th class="border p-2 text-left">成本加幅</th>
+<th class="border p-2 text-left">QUV 1000 小時褪色率</th>
+<th class="border p-2 text-left">適用場景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border p-2"><strong>啞膠過膠</strong></td>
+<td class="border p-2">低反光高檔</td>
+<td class="border p-2">+15%</td>
+<td class="border p-2">&lt; 5% (優異)</td>
+<td class="border p-2">品牌海報 / 高檔店內</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>光膠過膠</strong></td>
+<td class="border p-2">反光亮麗</td>
+<td class="border p-2">+15%</td>
+<td class="border p-2">&lt; 5% (優異)</td>
+<td class="border p-2">鮮艷設計 / 活動海報</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>UV 局部光油</strong></td>
+<td class="border p-2">局部高光</td>
+<td class="border p-2">+25%</td>
+<td class="border p-2">&lt; 5% (優異)</td>
+<td class="border p-2">logo 強調 / 主視覺凸顯</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>燙金 / 燙銀</strong></td>
+<td class="border p-2">金屬光澤</td>
+<td class="border p-2">+50%</td>
+<td class="border p-2">&lt; 3% (極優異)</td>
+<td class="border p-2">高端品牌 / 奢侈品牌</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>擊凸 / 壓凹</strong></td>
+<td class="border p-2">立體觸感</td>
+<td class="border p-2">+30%</td>
+<td class="border p-2">無影響</td>
+<td class="border p-2">質感提升 / 高檔邀請</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>打孔 + 掛繩</strong></td>
+<td class="border p-2">實用配件</td>
+<td class="border p-2">+8%</td>
+<td class="border p-2">無影響</td>
+<td class="border p-2">展覽掛牆 / 活動背板</td>
+</tr>
+</tbody>
+</table>
+
+===== TABLE 3 FULL =====
+<table class="w-full text-sm border-collapse my-4">
+<thead>
+<tr class="bg-gray-100">
+<th class="border p-2 text-left">急件級別</th>
+<th class="border p-2 text-left">交期</th>
+<th class="border p-2 text-left">附加費</th>
+<th class="border p-2 text-left">截單時間</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border p-2"><strong>標準</strong></td>
+<td class="border p-2">3-5 個工作天</td>
+<td class="border p-2">0%</td>
+<td class="border p-2">18:00</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>特快</strong></td>
+<td class="border p-2">1-2 個工作天</td>
+<td class="border p-2">+30%</td>
+<td class="border p-2">11:00</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>急件 24 小時</strong></td>
+<td class="border p-2">24 小時</td>
+<td class="border p-2">+50%</td>
+<td class="border p-2">11:00</td>
+</tr>
+<tr>
+<td class="border p-2"><strong>特急 12 小時</strong></td>
+<td class="border p-2">12 小時</td>
+<td class="border p-2">+80%</td>
+<td class="border p-2">09:00</td>
+</tr>
+</tbody>
+</table>
+

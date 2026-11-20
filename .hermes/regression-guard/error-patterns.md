@@ -1878,3 +1878,41 @@ node scripts/check-encoding.js → ⚠️ CRLF: ...txt (57 lines with \r\n)   ex
 - 现象：克隆 analyze_gsc_20261116.py 时，引号级 token 替换（\"2026-11-12\"→\"2026-11-16\"）命不中输出文件名（日期在长字符串内），导致新分析**覆盖**旧批 JSON（gsc-2026-11-12-*.json 被 11-16 数据覆写）。
 - 修复：git checkout 恢复 11-12 JSON（ce09a937）+ 输出名正则替换后重跑。
 - 规则：克隆生成器必须 ① 显式断言输出文件名含新日期 ② 跑完后 git status 检查是否意外修改旧批产物；**A53 族补充：日期锚点审计 = 引号 token + 长字符串内嵌日期两类都要扫**。
+
+### 规则 SIMPLIFIED_SCAN_NAME_ONLY_BLIND_SPOT — 简体守卫只扫名称字段，description 全域盲区 (K3 2026-11-19 入档，autoclaw 会话发现)
+
+**事故实录**:
+1. `node scripts/scan-simplified.mjs` 报 0 命中/EXIT 0，但 `rg -c "适配行业" src/data/products.ts` = **17 处**；其中 removable-stickers PDP 描述 live 实锤（zh-hk 客户可见简体，违反 §13.16.1 最高原则）。
+2. 简体还泄漏进 en/ja 字段：products.ts L957 descriptionEn/descriptionJa、L1039 descriptionEn/descriptionJa 含「适配行业」——跨语言污染（§13.13/§0.29.2.2 第 3 行）。
+3. 同字段行业列表简繁重复两遍（「适配行业:…」+「適配行業：…」同段并存，L876/L1039 实录）。
+
+**判决（机器可检）**:
+- 判定「无简体」前必须确认扫描范围覆盖全部 zh-hk 客户可见字段（description/description_zh/sku-seo body/blog JSON 正文/meta），「只扫 title/name」的 PASS 是假 PASS。
+- 跨语言污染检查必须覆盖 en/ja 字段内的 CJK 简体（不是只查 zh 字段）。
+
+**修法**:
+1. scan-simplified.mjs 扫描域扩至 description 族 + blog-data JSON 客户可见字段（防重复报双计）。
+2. 清 17 处 适配行业→適配行業 + 去重双列表（属既有真值清理批，须门童全量）。
+3. 新增内容生成器（V18 族）出字段后必须过扩展版扫描。
+
+**同族规则**: GATE_COVERAGE_BLIND_SPOT（#14 slug 清单盲区）· PORTABILITY_ASSUMPTION_IN_HOOK
+
+**配套**: scripts/scan-simplified.mjs · src/data/products.ts · .hermes/logs/verify-2026-11-19-smallbatch-truth-residual.md（live 证据）
+
+### 规则 PHONE_GUARD_LITERAL_WITHOUT_PLUS_BLIND_SPOT — 裸号无 + 前缀绕过电话守卫 (K3 2026-11-19 入档，autoclaw 会话发现)
+
+**事故实录**:
+1. phone-guard 规则族拦截 `\+852…` / `wa\.me/852…`，但 `85290616204`（无 + 无 wa.me 前缀的字面量）在源码 6 处存活：CategorySidebar.tsx L225 / WhatsAppFloat.tsx L45,L50 / HotProducts.tsx L203 / QuoteCalculator.tsx L232 / whatsapp.ts L14（注释自称「香港号覆盖」）。
+2. 运行时 getWhatsAppLinkProps 拼 wa.me/85290616204 → 线上真实 CTA 用旧港号，违反 §13.10 phase-out（唯一白名单 +86 198 8085 1334）与门童 #2。學校印刷审计（category sidebar live）+ 源码双方法互证。
+
+**判决（机器可检）**:
+- 电话判定不得依赖「+ 前缀/wa.me 前缀」形态；源码内任何 12 位数字字面量以 852 开头即判命中（或反向：非白名单数字一律命中）。
+- 守卫扫描源码字面量，运行时拼接形态（getWhatsAppLinkProps phone 参数）必须被同一规则覆盖。
+
+**修法**:
+1. phone-guard 增补规则：裸号正则 `(?<!\d)852\d{8}(?!\d)` 硬拦（豁免路径不豁免）。
+2. 6 处硬编码改回默认 PHONE 白名单（属 src 行为修复，走 K3 确认 + 攒批）。
+
+**同族规则**: PHONE_HK_BLACKLIST · GATE_COVERAGE_BLIND_SPOT
+
+**配套**: src/lib/whatsapp.ts · src/components/{category/CategorySidebar,WhatsAppFloat,home/HotProducts,quote/QuoteCalculator}.tsx · scripts/guards/phone-guard.js

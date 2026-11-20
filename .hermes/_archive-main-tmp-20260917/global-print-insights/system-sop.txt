@@ -1,0 +1,76 @@
+# 运营手册（SOP.md）· 印刷需求雷达
+
+## 1. 系统做什么
+
+每天 01:00 自动从公开渠道（政府招标 API、多语言新闻 RSS、公开社媒）采集印刷需求线索 → 分类评分去重 → 入台账 → 生成触达草稿、日报与看板。人工只需：复核草稿 → 触达 → 回填进展。
+
+## 2. 每日自动流程（01:00）
+
+1. 定时任务「印刷需求雷达·每日采集 01:00」唤醒运行环境
+2. 执行 `scripts/run_daily.py --trigger cron`：采集 → 处理 → 触达草稿 → 日报 → 看板
+3. 结果：`logs/latest_run.json`（简报）、`reports/daily/当日.md`、`dashboard/index.html`
+4. 异常：状态非正常时写 `logs/ALERT.md`，定时面板简报带「⚠️ 失败告警」
+
+## 3. 定时任务管理
+
+| 操作 | 方式 |
+|---|---|
+| 查看/暂停/修改频率 | App「定时」面板中的「印刷需求雷达·每日采集 01:00」 |
+| 调整单次时限 | 在该任务的设置中修改（默认最长 5 分钟） |
+| 瞬间验证 | 让助手「立即运行一次印刷需求雷达任务」（或管理员在面板里手动运行） |
+
+## 4. 手动操作速查
+
+| 操作 | 命令/方式 |
+|---|---|
+| 手动补跑（推荐） | 双击 `scripts/run_now.bat` |
+| 命令行补跑 | `python scripts/run_daily.py --trigger manual` |
+| 指定日期重算 | `python scripts/run_daily.py --skip-collect --date 2026-09-15` |
+| 导出 CSV | `python scripts/export.py` |
+| 重建看板 | `python scripts/dashboard.py` |
+| 触达演练（本地收发全链路） | `python scripts/dev_smtp_sink.py`（另开窗口）→ `python scripts/drill_outreach.py` |
+| 查看运行日志 | `logs/run_*.log`、`logs/latest_run.json` |
+
+## 5. 触达操作流程
+
+1. **草稿复核**：打开 `outreach/outbox/`，每封草稿含目标、原文、主题与正文。
+2. **启用真实发送**（首次）：
+ - 填写 `config/settings.json → outreach.smtp`（host/port/user/from）
+ - 设置环境变量 `PRINT_RADAR_SMTP_PASS=`
+ - 将 `outreach.auto_send` 改为 `true`（或由助手手动执行 `python scripts/outreach.py queue` + `send`）
+3. **WhatsApp**：打开草稿中的 `wa.me` 链接，人工点击发送（平台规则限制）。
+4. **社媒**：按 `templates/social_*.md` 模板人工评论/私信。
+5. **退订/拉黑**：邮件退订链接指向 zprintpro.com/unsubscribe（退订页上线后自动邮件通知 zprintpro@outlook.com）；收到退订后，将邮箱/电话写入黑名单（可让助手执行："把 xxx@yyy.com 加入印刷雷达黑名单"）。
+
+## 6. 故障排查
+
+| 症状 | 处理 |
+|---|---|
+| 个别源连续失败 | 检查该源官网是否改版；在 `config/sources.json` 置 `enabled:false` 并记录；找替代源 |
+| 采集超时 | 调大 `settings.json → collect.budget_seconds`（默认 150 秒）或 `per_request_timeout` |
+| 日报/看板未更新 | 看 `logs/run_*.log` 首个报错；多为网络波动，重跑一次 |
+| 数据库锁定 | 确认同一时间只有一个 `run_daily` 在运行 |
+| 看板打不开 | 直接用 Edge/Chrome 打开 `dashboard/index.html`（离线文件） |
+
+## 7. 平台规则变化应对
+
+- 招标门户改版/加验证码 → 将该源标记为 manual（人工查看），保留链接在渠道清单；不要绕过反爬。
+- 社媒限制自动交互 → 保持人工模式（本系统默认人工）；仅使用公开搜索与 RSS 监测。
+- 邮件合规风险（投诉/退信升高）→ 立即降至每日 5 封排查内容与名单质量；见 `docs/COMPLIANCE.md`。
+
+## 8. 账号与密钥清单（脱敏模板）
+
+| 项目 | 当前状态 | 配置位置 |
+|---|---|---|
+| 发件邮箱（SMTP） | 待唐总提供 | `settings.json → outreach.smtp` + 环境变量 |
+| 公司信息（ZprintPro） | 已接入：官网 / 邮箱 / WhatsApp 已写入系统 | `settings.json → user_company` |
+| WhatsApp | 人工模式（无需密钥） | — |
+| Facebook/TikTok | 人工模式（建议企业号） | — |
+| 第三方数据密钥 | 无需（全部公开源） | — |
+
+## 9. 上线检查清单
+
+- [x] 公司信息已替换（ZprintPro：zprintpro.com / zprintpro@outlook.com / WhatsApp +86 198 8085 1334；地址可选补充）
+- [ ] 复核首轮触达名单（50 封邮件 + 20 条 WhatsApp/社媒）后再开启发送
+- [ ] 每周查看 `logs/ALERT.md` 与失败源清单，维护 `sources.json`
+- [ ] 每月导出一次台账 CSV 做备份（`python scripts/export.py`）

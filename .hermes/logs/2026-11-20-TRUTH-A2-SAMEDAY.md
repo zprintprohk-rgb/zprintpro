@@ -302,3 +302,50 @@ EXTRA_SLUGS=NONE
 - pricing.ts 兩 SKU 單價口徑修復入 commit：same-day en 0.16–2.4 / ja 25–368；a2 en 0.28–2.3 / ja 44–300（基準單面 config，全部由價表導出）。
 - **commit `99902084`（9 files, +339/-671）已 push（fb62b52b..99902084），Cloudflare build 觸發。**
 - 本報告 VERDICT 維持 FAILED 不篡改（當輪 strict gate 確被既有 debt 攔下）；完成事實以此補記與 commit 為準。後續線上驗證按任務單 §7 執行（T+部署後）。
+
+## 10. 部署停滯證據鏈（2026-11-20 21:40 補記）
+
+**狀態：commit 99902084 已 push，但 Cloudflare 線上 55+ 分鐘未生效。四方時間線證據：**
+
+| 時間 | 事件 | 線上證據 |
+|---|---|---|
+| 11-19 18:01 | push 15248366（contact 垃圾郵件警示） | ✅ 線上 contact 頁已顯示該警示 → 當時構建正常 |
+| 11-20 18:18 / 20:21×2 | push（.hermes/docs only，無 public 變更） | 無 public 可驗證 |
+| 11-20 20:36 | push 5d78f8ae（§0.39 品牌統一，manifest 清智印云） | ❌ 線上 manifest.json 仍顯示「智印云 ZPrintPro」→ 未部署 |
+| 11-20 21:02 | push 99902084（本批 9 檔真值） | ❌ 線上 same-day 頁仍顯示 HK$0.55 起／舊階梯（含已刪 500 張檔）→ 未部署 |
+
+- 20:36 與 21:02 兩個獨立 push 均未生效 → 排除「單一提交構建失敗」；嫌疑轉向 CF 側（配額／webhook／構建環境／項目暫停）。
+- 本地 `npm run build` 正在驗證 99902084 可構建性（排除我方代碼導致構建失敗的最後嫌疑）。
+- 憑證限制：`.env` 的 CF token 為上傳型（cfut_），無 Pages 管理權限，無法讀 build log；wrangler 版本無 pages 子命令。
+- **下一步（需 K3 管理員）**：dash.cloudflare.com → Pages → zprintpro → Builds 查看 20:36 後構建狀態；明早 06:43 watchdog / 07:10 k3-review 自然輪將複核。
+
+## 11. 訂正（2026-11-20 22:00）：部署停滯根因 = 本次提交破壞構建，非 CF 側故障
+
+**訂正 §10 的錯誤判斷**。新證據鏈：
+
+1. 5d78f8ae（品牌統一）20:36 只在本地 commit，**直到 21:02 才隨本批一併首次 push**（git push 輸出 `fb62b52b..99902084` 含兩個 commit）→ 根本不存在「20:36 的獨立構建」。
+2. 本地 `npm run build` 復現失敗：`/quote-desk` 與 `/quote-desk/all` 預渲染崩潰 `TypeError: Cannot read properties of undefined (reading 'map')`。
+3. 根因：Harness 把 same-day-flyers 從 `tiers` 升級為 `configs[]`（A4/A5 拆分，拍板單 §四-3 技術必改項），但兩個遺留消費方不認新結構：
+   - `src/lib/quote-engine/desk.ts` `registerEprint`（`p.tiers.map` 崩潰）→ 已修為雙 schema 兼容；
+   - `src/lib/price-tables.ts` `SKU_INDEX`（`[...p.tiers]` spread undefined 崩潰）→ 已修為跳過無 tiers 產品（回退展示價邏輯）。
+4. 訂正聲明：§10 中「CF 側嫌疑（配額/webhook/環境）」**撤回**；「最後成功部署 ≤11-19 18:01」維持不變。
+5. 附帶證明：contact 頁 11-19 警示已上線 → CF 構建管道本身健康。
+6. llms.txt 舊價格 = 24h 緩存（_headers max-age=86400），非未部署證據；manifest 1h 緩存同理。
+
+## 12. 線上部署驗證（2026-11-20 22:3x，commit `42223814` 部署後）
+
+| URL | 驗證項 | 結果 |
+|---|---|---|
+| /zh-hk/product/same-day-flyers/ | title「10張起 HK$18.4/張」／價格卡 HK$18.40×10=HK$184／階梯無 500 檔且 100 張=HK$570／FAQ 新口徑 | ✅ |
+| /zh-hk/product/a2-posters/ | HK$16/張起、HK$160/10張、無「1 張起印」無 HK$2.20、FAQ「10 張起印」 | ✅ |
+| /en/product/same-day-flyers/ | $2.40/pc、batch $24、From 10 pcs、100+ same-day 口徑 | ✅ |
+| /quote-desk/ | 頁面正常渲染（修復的消費方） | ✅ |
+| /manifest.json | name = ZprintPro智印港（§0.39 生效） | ✅ |
+
+已知殘留（非本批範圍，僅記錄）：
+- 站級頂部橫幅仍是「明天 12 點前到」舊承諾（組件級，需 K3 拍板）。
+- 頁腳地址仍「香港九龍新蒲崗大有街3號」（P0 獨立實體核查項，兩週報告已標）。
+- A2 頁殘留句「一張起印，靈活承接」等少量舊文案；個別 FAQ 檔位表仍顯示 per-sheet 美元階梯（a2 10pc US$2.36 等，屬 GUARD-DEBT 範圍的其他 SKU）。
+- 相關產品卡（a4-flyers 等）仍顯舊價 —— 其他 SKU，歸 GUARD-DEBT/FACTORY 任務。
+
+**教訓（寫入後續任務紀律）**：凡改 `src/data/products.ts` 的 `tiers`→`configs[]` 結構性升級，**推送前必跑 `npm run build`**（本地第三次 PASS：`bash-uxad407d`），因 `desk.ts` / `price-tables.ts` 等消費方可能不認新結構，空跑 guards 不會發現預渲染崩潰。

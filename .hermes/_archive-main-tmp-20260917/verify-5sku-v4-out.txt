@@ -1,0 +1,25 @@
+﻿== removable-stickers ==
+  zh-hk: True (tail 100): 短期展覽。 **适配行业**:季節性推廣、活動短期宣傳、試用品包裝、玻璃櫥窗裝飾、學校活動、餐廳當日貼紙、零售促銷 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。
+  en: True (tail 100): etail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.
+  ja: True (tail 100): 包装、ガラス窓装飾、学校行事、レストラン日替わり、小売プロモーション **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。
+
+== folded-leaflets ==
+  zh-hk: True (tail 100): 送貨。 **适配行业**:餐廳菜單地產樓書、活動宣傳單張、學校院院校刊、培訓機構課程表、旅遊景點導覽、零售品牌推廣 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。
+  en: True (tail 100): etail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.
+  ja: True (tail 100): シ、学校・大学・機関紙、研修コースカタログ、観光ガイド、小売ブランド **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。
+
+== same-day-flyers ==
+  zh-hk: True (tail 100): 緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。
+  en: True (tail 100): etail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.
+  ja: True (tail 100): 緊急イベントの第一選択、最短当日印刷・宅配便発送。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。
+
+== electronics-packaging-box ==
+  zh-hk: True (tail 100): 手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。
+  en: True (tail 100): etail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.
+  ja: True (tail 100): ージ箱。EVAフォーム、ブリスター、紙トレイ内裝。環境配慮素材対応。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。
+
+== a4-flyers ==
+  zh-hk: True (tail 100): 傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。
+  en: True (tail 100): etail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.
+  ja: True (tail 100):  飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。
+

@@ -1,0 +1,37 @@
+{
+ "wave": "W4-1020",
+ "patched": [
+  {
+   "slug": "folded-leaflets",
+   "dir": "FL-004",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-hero.webp']"
+  }
+ ],
+ "skipped": [],
+ "entries": [
+  {
+   "dir": "FL-004",
+   "slug": "folded-leaflets",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-hero.webp",
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-detail.webp",
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-variety.webp",
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-hero.webp",
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-detail.webp",
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-variety.webp",
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-hero.webp",
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-detail.webp",
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-variety.webp",
+     "/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-multi-angle.webp"
+    ]
+   }
+  }
+ ]
+}

@@ -1,11 +1,11 @@
 {
   "lane": "ZP-k3-review",
-  "generated_at": "2026-10-27 07:10:02",
+  "generated_at": "2026-11-13 07:10:01",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "27c93f65b8b82b43",
-    "day": "2026-10-27",
+    "this_run_key": "4c5c4142808d8cc4",
+    "day": "2026-11-13",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -23,6 +23,21 @@
         "detail": "依赖树 OK (328 个包)"
       },
       {
+        "name": "dsh_executable",
+        "ok": true,
+        "detail": "dsh CLI found"
+      },
+      {
+        "name": "dsh_credential_environment",
+        "ok": true,
+        "detail": "DEEPSEEK_API_KEY present in process environment (value not inspected)"
+      },
+      {
+        "name": "dsh_effective_provider_model",
+        "ok": true,
+        "detail": "effective provider=deepseek-official model=deepseek-flash; allowed"
+      },
+      {
         "name": "lock_free",
         "ok": true,
         "detail": "无锁"
@@ -30,12 +45,12 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-26 07:10:31"
+        "detail": "总线最近记录 verdict=OK @ 2026-11-05 07:17:45"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=8"
+        "detail": "verdict=ATTENTION problems=3; refreshed_stale=False; refresh=not_needed"
       },
       {
         "name": "lock_acquired",
@@ -46,20 +61,21 @@
   },
   "lock": {
     "lane": "ZP-k3-review",
-    "pid": 17204,
-    "acquired_at": "2026-10-27 07:10:02",
-    "acquired_ts": 1793056202.4291081,
+    "pid": 27096,
+    "acquired_at": "2026-11-13 07:10:01",
+    "acquired_ts": 1794525002.1232905,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-k3-review-20261026T071031",
+      "run_id": "ZP-k3-review-20261105T071745-38252",
       "lane": "ZP-k3-review",
       "trigger": "schtasks",
-      "fired_at": "2026-10-26 07:10:31",
-      "ended_at": "2026-10-26 07:10:31",
-      "idempotency_key": "a81f935853c1be6f",
-      "dsh_exit": null,
+      "fired_at": "2026-11-05 07:17:45",
+      "ended_at": "2026-11-05 07:17:45",
+      "idempotency_key": "803c1f5cca812b48",
+      "key_consumed": true,
+      "dsh_exit": 0,
       "wrapper_exit": 0,
       "verdict": "OK",
       "state": "completed",
@@ -67,17 +83,19 @@
       "guard": {
         "ok": true
       },
-      "report": "NONE",
-      "report_auto_generated": true,
-      "files": [],
+      "report": ".hermes/logs/2026-11-05-ZP-k3-review.md",
+      "report_auto_generated": false,
+      "files": [
+        "docs/evidence/2026-10-16-hkprint58/logs/spn-log-round2.txt",
+        "docs/evidence/2026-10-16-hkprint58/logs/spn-log-round3.txt"
+      ],
       "pushed": true,
-      "head": "b0e30769",
+      "head": "3c3251b1",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-10-26-ZP-k3-review.md",
+    "latest_report": ".hermes/logs/2026-11-09-ZP-k3-review.md",
     "delivered_files_from_report": [
-      "(无 src 产物",
-      "仅报告/数据)"
+      "`.hermes/logs/2026-11-09-ZP-k3-review.md`（本报告；唯一写盘；零 `src/` 改动）"
     ]
   },
   "sibling_lanes": [
@@ -92,13 +110,21 @@
       "status": "PENDING",
       "report": null,
       "start": "20:13"
+    },
+    {
+      "lane": "ZP-weekly-meta",
+      "status": "PENDING",
+      "report": null,
+      "start": "20:52"
     }
   ],
   "retry_queue": [],
+  "suppressed_retry_queue": [],
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
-    "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",
+    "FOLLOW_UP_PARTIAL 只处理报告 NEXT, 不重做 DELIVERED; 其他 retry_queue 项才按 RETRY_OF(<run_id>) 恢复",
+    "NO_OP 是证据完整的合法退出, 不自动重试; suppressed_retry_queue 已闭合, 不得重新派发",
     "sibling_lanes 里今日已改过的文件, 本轮不得再次改写 (跨车道避让, 防撞车)",
-    "报告名 <YYYY-MM-DD>-<lane>.md, 首段必含 VERDICT/CONSUMED/DELIVERED/NEXT 四行"
+    "报告名 <YYYY-MM-DD>-<lane>.md, 首段必含 VERDICT/CONSUMED/DELIVERED/NEXT 四行; PARTIAL 不得写成 OK"
   ]
 }

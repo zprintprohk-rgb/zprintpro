@@ -1,0 +1,10 @@
+{
+  "urls": [
+    { "name": "edu-zh-title", "url": "https://zprintpro.com/zh-hk/category/educational/", "must": ["學校印刷", "證書印刷", "智印港"], "not": ["校園教育印刷"] },
+    { "name": "edu-zh-h1", "url": "https://zprintpro.com/zh-hk/category/educational/", "must": ["香港學校印刷"], "not": ["校園教育"] },
+    { "name": "edu-en-title", "url": "https://zprintpro.com/en/category/educational/", "must": ["School Exercise Book", "Textbook Printing", "ZprintPro"], "not": ["Certificate Printing |"] },
+    { "name": "edu-ja-title", "url": "https://zprintpro.com/ja/category/educational/", "must": ["教科書印刷", "ZprintPro"], "not": ["教育印刷 学校"] },
+    { "name": "edu-zh-crumb", "url": "https://zprintpro.com/zh-hk/category/educational/", "must": ["學校印刷"], "not": ["校園教育印刷"] },
+    { "name": "blog-zh-title", "url": "https://zprintpro.com/zh-hk/blog/campus-education-printing-pillar-guide/", "must": ["學校印刷指南"], "not": ["校園教育印刷指南"] }
+  ]
+}

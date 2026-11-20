@@ -1,0 +1,32 @@
+﻿fix(guard+P0): Step B — GSC 泄漏修复 + 门童 #16 补扫描面 (五类静默失效) + 内部定价口径脱敏
+
+① 泄漏修复 (三语, K3 裁决 2「整句重写」)
+  buying-guides.ts L929/930/931 — candle&soap 指南 content 尾部三语尾巴
+  (數據來源：GSC 數據 / gsc-fresh-2026-09-03.json … 校準 … 拍板日) 整句重写为
+  客户可读的「以 2026 年最新市場資料整理」; 三语同构, 非仅 en (原派活书误判为仅 en)
+  六道断言: 计数/备份/形状/净变化/结构/残留
+
+② 门童 #16 补面 (原假设「存量基线豁免」已证伪 — GSC_LEAK 不在 QUOTE_RULES)
+  五类静默失效: ①字段盲区(content 不在扫描面) ②引号截断 ③双引号看空
+                ④文件级漏覆盖 ⑤词汇级漏覆盖
+  - scanTs 重构为解析式提取器 ('…'/"…"/模板串; 键 + 花括号栈判字段所有权; 无法判定保守照扫)
+  - 覆盖名单补 products-content.ts / sku-seo-data.ts (src/data 最大两档, 原缺席)
+  - 正则 +8 条 (日文片假名 / imps·pos 纯词 / 數據誠信紅線 / 校準報價·來源 / 真實校準 / 拍板日 / §0.xx)
+  - JSON 路径补行号定位 (原恒报 line:0) + 同处命中去重
+  - 注入回放 12 例 PASS/0 FAIL, 含阴性对照 (干净文案 / class 属性 / 色彩校準 / 注释行)
+
+③ 补面暴露的存量真值 7 处, 全部修复 (K3 裁决 A + 三语统一脱敏)
+  - category-seo-content.ts L4552/4653: 客户可见 description 内部代号「K3 真實身份 / K3 ≤」
+  - products-content.ts L51/52/3203/6566: 定价表内部口径
+    (校準報價/校準來源/真實校準/1.3 倍合理利潤/RMB→HKD 1.087/en 1.3x fair margin+CNY→USD 7.25/ja 校正価格)
+    脱敏为参考价格口径; 守恒断言证明 HK\$ 数值与百分比序列逐位未变
+
+验收: 门禁汇总 🔴 0 (门童 #16 ✅ 0 命中) | tsc 54=54 基线 | 编码无 BOM/乱码 | 渲染 FAIL 0
+      (7 URL: 三语尾巴 0 残留 + 价格与三语新文案全在)
+
+数据来源:
+- 判决实验 .hermes/_probe-pb/stepB-guard-blindspot.cjs + _diag-blindspot3.cjs (含对照组)
+- 注入回放 .hermes/_probe-pb/stepB-guard-injection-replay.cjs (12 PASS)
+- 真值清单 .hermes/_probe-pb/stepB-new-hits-detail.json (7 处)
+- 渲染验收 .hermes/_probe-pb/stepB-render-verify.cjs (FAIL 0)
+- 回滚备份 .hermes/_probe-pb/_buying-guides.ts.bak-stepB1 / _products-content.ts.bak-stepB7

@@ -1,0 +1,8 @@
+food-boxes: {'minQuantity': '100', 'basePrice': '2.5'}
+folding-boxes: {'minQuantity': '100', 'basePrice': '2.5'}
+mailer-boxes: {'minQuantity': '100', 'basePrice': '3.5'}
+rigid-boxes: {'minQuantity': '100', 'basePrice': '8'}
+cosmetic-boxes: {'minQuantity': '100', 'basePrice': '8'}
+gift-boxes: NOT FOUND
+white-card-boxes: {'minQuantity': '500', 'basePrice': '129', 'turnaround': "'5-7 working days'"}
+wedding-boxes: NOT FOUND

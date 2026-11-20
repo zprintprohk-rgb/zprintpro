@@ -1,0 +1,89 @@
+fix(menus)+docs(gate): menus 残留 4 处标题口径收口 + 入档自报指标不一致根因
+
+背景:
+  并发会话已完成 11 处 DRIFT 与 13 处品牌-语种错配主体清账
+  (a2f636e6 / b7da6fe5, 已 push)。本批只收口**复算后仍残留**的 4 处,
+  并把他们暴露出的方法论盲区入档。**不重复做已完成的事** (幂等铁律)。
+
+一、src 修复 (4 处, 全部为 title 字符串单点替换, 无结构性改动)
+  src/data/sku-seo-data.ts
+
+  ① drink-menus / zh-hk — **单位字残留 (记录内自相矛盾)**
+     before: 餐廳酒水牌 | 防水 覆膜 圓角 | 10本起 HK$12起 | 智印港
+     after : 餐廳酒水牌 | 防水 覆膜 圓角 | 10份起 HK$12起 | 智印港
+     依据: products.ts unitLabel=份 (真值) 且**同记录的 description / body / FAQ
+           三方全部写「10 份」** —— 仅 title 用「本」→ 单条记录内自相矛盾。
+           数字(10)已被并发批对齐, **单位字被漏掉** (避坑 18 数据层/文案层只落一半的变体)。
+
+  ② drink-menus / ja — 同上单位字残留
+     before: ドリンクメニュー 印刷 | 防水 マット 10枚〜 | ZprintPro
+     after : ドリンクメニュー 印刷 | 防水 マット 10份〜 | ZprintPro
+     依据: 同记录 body 写「最小注文は10枚からです」但 PDF/份 口径与 zh-hk 真值一致;
+           本批统一按 unitLabel=份 收口 (与 ① 同源)。
+
+  ③ disposable-menus / en — 当量不足 50 (e=49)
+     before: Disposable Menus | Free Shipping $99+ | ZprintPro            (e=49)
+     after : Disposable Menus | Free Shipping $100+ | ZprintPro           (e=50)
+     依据: $99+ → $100+ ; 与**同记录 description「over $100」及 body
+           「free US shipping over $100」一致** → 同时修掉长度不足与数值矛盾。
+
+  ④ disposable-menus / ja — 当量不足 50 (e=46)
+     before: 使い捨てメニュー | 防水 ラミネート | ZprintPro                 (e=46)
+     after : 使い捨てメニュー 印刷 | 防水 ラミネート | ZprintPro            (e=51)
+     依据: 补「印刷」(该 SKU 的 ja keywords 首项即「使い捨てメニュー 印刷」);
+           沿用同簇姊妹 SKU (drink-menus/ja) 的「ドリンクメニュー 印刷 | …」句式。
+
+  复算结果 (scripts/verify-menus-equiv.cjs, 从文件读取, 非手打):
+    menus 簇 6 SKU × 3 locale = **18/18 全部落在 50-57 带内**, 0 超格 0 不足。
+
+二、新增工具 (从文件读取的复算器)
+  scripts/verify-menus-equiv.cjs
+  - 按 readFileSync + 逐 SKU 切片取 title, **不手打目标字符串**
+  - 输出 equiv / len / 带内判定 / 非 ASCII 字符及码位 (便于一眼看出输入是否同源)
+
+三、error-patterns 入档 (追加, 0 删除)
+  .hermes/regression-guard/error-patterns.md
+
+  1. 规则 POWERSHELL_OUTPUT_ENCODING (K3 指定)
+     - 事故: Tee-Object 落盘证据为 UTF-16LE(+FF FE BOM), git 判为 Bin,
+             check-encoding 再报 CRLF 57 行 → 不可 diff/grep/review
+     - 修法: 禁 PowerShell 重定向落盘文本; 用 fs.writeFileSync(p,c,'utf8') 并正规化 \r\n;
+             落盘后自检三件 (无 BOM / 不出现 Bin / encoding exit 0)
+     - 定位: METRIC_INTEGRITY_FIVE_TRAPS 第 7 种 (取证通道自身的编码陷阱)
+
+  2. 观察记录 COMMIT_TIMESTAMP_ANOMALY (K3 指定, 🟡观察级, 未升级为规则)
+     - 现象: 9330f96b 的 %ad=18:02:28 与首次读取时刻不一致
+     - 排查: 无 amend / 无 reset / 无外来作者 / parent 正确 / 内容正确 → **未解释**
+     - 判定: 最可能为取证时序 (commit 完成略晚于该次取证), 但未复现亦未证伪
+     - 升级条件: 再现 1 次同类 → 升级为规则
+     - 价值: 时间戳与直觉冲突时**先怀疑取证时序**, 不要直接怀疑仓库被篡改
+
+  3. 规则 SELF_REPORT_METRIC_DISAGREEMENT (本轮新增, 根因定案)
+     - 事故: 手打字符串经 node -e 传给 equiv() 得 46, 文件实测同行得 49, **稳定差 3**
+     - 初判: 极易误判为「当量函数对 $ / + 处理有 bug」
+     - 真相: **PowerShell 双引号内 $99 被变量展开**, 传入的根本不是文件里的字符串;
+             改用从文件读取后, 与 verify-menus.cjs 逐字一致
+     - 判据: **稳定偏移 ≠ 必然工具 bug**; 更常见的是**输入通道确定性改写**
+     - 修法: 凡复算文件里的值必须从文件读; 两法不一致时**先 dump 输入**(len + 码位)
+             而非怀疑量具; 双方法复算必须**同定义域**
+
+范围声明:
+  - src 仅改 4 条 title 字符串; 无结构 / 无 schema / 无路由 / 无 SEO 字段族改动
+  - 未触碰门禁脚本逻辑
+  - 未重复做并发会话已完成的事 (幂等铁律 K3 9/9 06:18)
+
+验收:
+  - check-encoding.js: ✅ 3/3 UTF-8 LF (exit 0)
+  - tsc --noEmit: **54 errors = 基线 54 持平**, 且 sku-seo-data.ts **0 error**
+    (54 全部落在 quote-engine/__tests__/ 既有欠债, 与本批无关)
+  - menus 簇 18/18 title 落带 (从文件复算)
+  - 品牌-语种审计 (audit-sku-locale.cjs): ja「智印港」0 / zh-hk「ZprintPro」0 /
+    ja 繁体专用字 0 / en CJK 0 —— **13 处错配全部清零** (并发会话已清, 本轮复算确认)
+
+数据来源:
+- scripts/verify-menus-equiv.cjs 文件实测 (2026-09-20)
+- scripts/verify-menus.cjs / scripts/audit-sku-locale.cjs 复算输出
+- src/data/products.ts minQuantity / unitLabel (真值 SSoT)
+- scripts/guards/title-equiv.js (当量口径 SSoT, TITLE_MIN=50 / TITLE_MAX=57)
+- 同记录 description / body / FAQ 自证 (① ③ 的数值与单位依据)
+校准日期: 2026-09-20

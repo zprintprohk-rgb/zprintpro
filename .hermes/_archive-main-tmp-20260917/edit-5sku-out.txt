@@ -1,0 +1,7 @@
+﻿OK: removable-stickers (R1 new, optAt=2026-08-05)
+OK: folded-leaflets (R1 new, optAt=2026-08-05)
+OK: same-day-flyers (R1 new, optAt=2026-08-05)
+OK: electronics-packaging-box (R1 new, optAt=2026-08-05)
+OK: a4-flyers (R2 upgrade, optAt=2026-08-05)
+
+Saved. Total file size: 1237072 chars

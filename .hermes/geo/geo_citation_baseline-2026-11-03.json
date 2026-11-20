@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "task": "W4 AI citation baseline probe S1 (per 2026-10-30 three-strategy doc, deadline 2026-11-03)",
+    "project": "zprintpro (F:\\zprintpro-nextjs)",
+    "report_date": "2026-11-03",
+    "tool": "web_search (AutoClaw, provider=autoglm, retrieval-style citation list, top-5 returned)",
+    "tool_break_note": "口径断点: 09-30/10-15/10-23 三期基线用 source_check(provider=auto)，该工具在 2026-11-02 环境不可用 (tool_search 无此工具)。本文件改用 web_search —— 与历史序列不可直接比大小，仅确立新口径基线；未来复测必须沿用本工具与同一问题集。",
+    "probe_set": {
+      "P1-P8": "逐字沿用 geo_citation_baseline-2026-09-30.json 的 8 条固定问题 (系列连续性)",
+      "P9-P11": "按 10-30 接续指令新增三簇: 同人誌(ja) / 食品パッケージ(ja) / 年賀状(ja)"
+    },
+    "double_method_rule": "§0.23.2 — 全部 11 探针跑两遍; 两遍结果逐条完全一致 (检索确定性成立), 双方法一致",
+    "session_window": { "pass1": "2026-11-02 23:50~23:56 +08:00", "pass2": "2026-11-02 23:57~2026-11-03 00:05 +08:00" },
+    "visibility": "internal only (.hermes/geo/) — never enters customer-visible content per §0.23.1"
+  },
+  "summary": {
+    "hit_rate": "0/11",
+    "hit_rate_pct": 0,
+    "by_locale": { "en": "0/3", "zh-hk": "0/3", "ja": "0/5" },
+    "zprintpro_citation_slots_total": 0,
+    "both_domains_zero": "zprintpro.com 与 z-printpro.com(旧域) 均未出现",
+    "pass1_pass2_consistency": "11/11 探针两遍 top-5 完全一致"
+  },
+  "probes": [
+    { "id": 1, "locale": "en", "text": "best custom packaging boxes supplier for small business 2026", "zprintpro_cited": false,
+      "top5": ["customboxmakers.com", "f6s.com", "twopackaging.com", "wecustomizeboxes.com", "packola.com"] },
+    { "id": 2, "locale": "en", "text": "custom stickers printing low MOQ free shipping", "zprintpro_cited": false,
+      "top5": ["makestickers.com", "customstickers.com", "stickermule.com", "moo.com", "printrunner.com"] },
+    { "id": 3, "locale": "en", "text": "booklet printing services for small business", "zprintpro_cited": false,
+      "top5": ["printingcenterusa.com", "vistaprint.com", "greenerprinter.com", "officedepot.com", "printsafari.com"] },
+    { "id": 4, "locale": "zh-hk", "text": "包裝盒訂製 香港邊間好", "zprintpro_cited": false,
+      "top5": ["yaukee.com", "pro360.com.hk", "bmpack.com", "ezbox.com.hk", "sunecobox.com"] },
+    { "id": 5, "locale": "zh-hk", "text": "貼紙印刷 小批量 快交貨", "zprintpro_cited": false,
+      "top5": ["taobao.com", "world.taobao.com(攻略)", "print88king.com", "world.taobao.com(实测)", "world.taobao.com(标签)"] },
+    { "id": 6, "locale": "zh-hk", "text": "月曆印刷 訂製 2027", "zprintpro_cited": false,
+      "top5": ["taicheong.com.hk", "teammate.com.hk", "taiwancalendar.net", "print100.com", "e-print.com.hk"] },
+    { "id": 7, "locale": "ja", "text": "ステッカー印刷 小ロット おすすめ", "zprintpro_cited": false,
+      "top5": ["digitaprint.jp", "note.com", "raksul.com", "original-goods.orilab.jp", "graphic.jp"] },
+    { "id": 8, "locale": "ja", "text": "カレンダー印刷 ノベルティ 注文", "zprintpro_cited": false,
+      "top5": ["gappri.jp", "k-daiwa.com", "originalprint.jp", "designphil.co.jp", "mbe.co.jp"] },
+    { "id": 9, "locale": "ja", "text": "同人誌印刷 オンデマンド 小部数", "zprintpro_cited": false,
+      "top5": ["otaclub.jp", "shimeken.com", "biz.ne.jp", "book-hon.com", "komugiblog.net"] },
+    { "id": 10, "locale": "ja", "text": "食品パッケージ 印刷 少ロット", "zprintpro_cited": false,
+      "top5": ["digitaprint.jp", "littlepackage.jp", "artpacks.co.jp", "1st-print.co.jp", "spriq.jp"] },
+    { "id": 11, "locale": "ja", "text": "年賀状印刷 注文 2027", "zprintpro_cited": false,
+      "top5": ["nenga.kitamura.jp", "print.shop.post.japanpost.jp", "webpo.jp", "happy-card.jp", "nenga.print-netsquare.com"] }
+  ],
+  "competitor_leaderboard_top10": [
+    { "domain": "digitaprint.jp", "count": 2, "probes": [7, 10] },
+    { "domain": "e-print.com.hk", "count": 1, "probes": [6], "note": "09-30 序列中曾以 11 次居首的 HK 头部, 本口径下仍强势" },
+    { "domain": "bmpack.com", "count": 1, "probes": [4], "note": "与 09-30 序列重叠" },
+    { "domain": "stickermule.com", "count": 1, "probes": [2] },
+    { "domain": "raksul.com", "count": 1, "probes": [7], "note": "与 10-23 序列重叠" },
+    { "domain": "nenga.kitamura.jp", "count": 1, "probes": [11] },
+    { "domain": "print.shop.post.japanpost.jp", "count": 1, "probes": [11], "note": "年賀状 = 官方渠道主导" },
+    { "domain": "taicheong.com.hk", "count": 1, "probes": [6] },
+    { "domain": "vistaprint.com", "count": 1, "probes": [3] },
+    { "domain": "makestickers.com", "count": 1, "probes": [2], "note": "与 09-30 序列重叠" }
+  ],
+  "insights": [
+    "zh-hk 贴纸簇 (P5) 被 taobao 系内容占据 — 检索面被电商聚合页污染, zprintpro 内容资产在此簇无引用入口",
+    "ja 三新簇 (P9/P10/P11) 领导者 = 专业印刷所/官方渠道; 年賀状簇被日本郵便官方 + キタムラ等大平台锁死, 长尾切入需内容差异化 (C109 活动页 + PDP 分工口径已有)",
+    "P4/P6 的 HK 头部 (e-print/bmpack/print100) 与历史序列一致 — 这些是 AEO 内容应攻的引用位",
+    "en 三簇均为 US 印刷平台 — zprintpro 的 USA sharp hook 内容 (free shipping $99+/free proof) 是潜在引用面, 但当前零出现"
+  ],
+  "next_actions": [
+    "复测节奏: 11-10 / 11-17 / 11-24 (每周同口径一次, 与 blog-money-keyword remeasure 11-07 窗相邻但不混算)",
+    "若 source_check 未来恢复可用, 需双工具并行一轮以重建与旧序列的桥接",
+    "引用面优先攻坚: P4/P6 (zh-hk 已有内容资产) 与 P2 (en small batch CTR 缺口已在测量审计立案)"
+  ]
+}

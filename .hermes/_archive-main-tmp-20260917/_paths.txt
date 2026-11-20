@@ -1,0 +1,3 @@
+﻿src/app/[locale]/layout.tsx True
+src/lib/whatsapp.ts True
+src/lib/seo.ts True

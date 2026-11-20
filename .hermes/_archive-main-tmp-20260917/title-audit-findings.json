@@ -1,0 +1,1933 @@
+{
+ "FILL": {
+  "zh-hk": [
+   {
+    "slug": "premium-greeting-cards",
+    "frozen": true,
+    "hw": 45,
+    "title": "高級賀卡印刷 | 燙金・局部UV・啞膜 | ZprintPro",
+    "problems": [
+     "缺品牌",
+     "混ZprintPro",
+     "混英文:UV",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "thick-greeting-cards-400g",
+    "frozen": true,
+    "hw": 48,
+    "title": "400g 超厚賀卡印刷 | 厚卡・燙金・壓紋 | ZprintPro",
+    "problems": [
+     "缺品牌",
+     "混ZprintPro",
+     "混英文:ZprintPro"
+    ]
+   },
+   {
+    "slug": "foil-greeting-cards",
+    "frozen": true,
+    "hw": 41,
+    "title": "燙金賀卡印刷 | 金・銀・玫瑰金 | ZprintPro",
+    "problems": [
+     "缺品牌",
+     "混ZprintPro",
+     "混英文:ZprintPro",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "spot-uv-greeting-cards",
+    "frozen": true,
+    "hw": 45,
+    "title": "局部UV賀卡印刷 | 啞面底・高光對比 | ZprintPro",
+    "problems": [
+     "缺品牌",
+     "混ZprintPro",
+     "混英文:UV",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "matte-greeting-cards",
+    "frozen": true,
+    "hw": 43,
+    "title": "啞膜賀卡印刷 | 防指紋・細膩手感 | ZprintPro",
+    "problems": [
+     "缺品牌",
+     "混ZprintPro",
+     "混英文:ZprintPro",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "rounded-corner-greeting-cards",
+    "frozen": true,
+    "hw": 46,
+    "title": "圓角賀卡印刷 | R3mm 模切・柔和觸感 | ZprintPro",
+    "problems": [
+     "缺品牌",
+     "混ZprintPro",
+     "混英文:mm"
+    ]
+   },
+   {
+    "slug": "foil-wedding-invitations",
+    "frozen": false,
+    "hw": 8,
+    "title": "燙金喜帖",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "save-the-date-cards",
+    "frozen": false,
+    "hw": 18,
+    "title": "Save the Date 卡片",
+    "problems": [
+     "缺品牌",
+     "混英文:Save",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-thank-you-cards",
+    "frozen": false,
+    "hw": 10,
+    "title": "婚禮感謝卡",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-program-cards",
+    "frozen": false,
+    "hw": 10,
+    "title": "婚禮節目單",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-menu-cards",
+    "frozen": false,
+    "hw": 17,
+    "title": "婚禮菜單卡 · 訂製",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-suite-bundle",
+    "frozen": false,
+    "hw": 12,
+    "title": "婚慶整套配套",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-place-cards",
+    "frozen": false,
+    "hw": 8,
+    "title": "婚宴枱卡",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "drink-tokens",
+    "frozen": false,
+    "hw": 17,
+    "title": "酒水牌 / 飲品標記",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "escort-cards",
+    "frozen": false,
+    "hw": 17,
+    "title": "座位卡 / 賓客標記",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "name-tags-badges",
+    "frozen": false,
+    "hw": 17,
+    "title": "名牌卡 / 會議名牌",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "cafe-table-cards",
+    "frozen": false,
+    "hw": 17,
+    "title": "餐廳 / 咖啡廳枱卡",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-seating-charts",
+    "frozen": false,
+    "hw": 10,
+    "title": "婚宴席位圖",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   }
+  ],
+  "en": [
+   {
+    "slug": "white-card-boxes",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "corrugated-boxes",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "tuck-end-boxes",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "foil-wedding-invitations",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "save-the-date-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-thank-you-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-program-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-menu-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-suite-bundle",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-place-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "drink-tokens",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "escort-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "name-tags-badges",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "cafe-table-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-seating-charts",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   }
+  ],
+  "ja": [
+   {
+    "slug": "white-card-boxes",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "corrugated-boxes",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "tuck-end-boxes",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "foil-wedding-invitations",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "save-the-date-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-thank-you-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-program-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-menu-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-suite-bundle",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-place-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "drink-tokens",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "escort-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "name-tags-badges",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "cafe-table-cards",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wedding-seating-charts",
+    "frozen": false,
+    "hw": 0,
+    "title": "",
+    "problems": [
+     "缺品牌",
+     "无数字钩"
+    ]
+   }
+  ]
+ },
+ "LEGACY": {
+  "en": [
+   {
+    "slug": "premium-greeting-cards",
+    "frozen": true,
+    "hw": 58,
+    "title": "Premium Greeting Cards | Foil & UV | Free Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "foil-greeting-cards",
+    "frozen": true,
+    "hw": 55,
+    "title": "Foil-Stamped Greeting Cards | Gold & Silver | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "rounded-corner-greeting-cards",
+    "frozen": true,
+    "hw": 56,
+    "title": "Rounded Corner Greeting Cards | R3mm Die-Cut | ZprintPro",
+    "problems": []
+   },
+   {
+    "slug": "folded-leaflets",
+    "frozen": false,
+    "hw": 60,
+    "title": "Folded Leaflets | Tri-Fold Design | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "eco-flyers",
+    "frozen": false,
+    "hw": 57,
+    "title": "Eco Flyers | Same-Day Printing | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "eco-red-packets",
+    "frozen": false,
+    "hw": 60,
+    "title": "Eco Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "pvc-menus",
+    "frozen": false,
+    "hw": 56,
+    "title": "PVC Menus | Laminated Durable | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "drink-menus",
+    "frozen": false,
+    "hw": 58,
+    "title": "Drink Menus | Laminated Durable | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "roll-up-banners",
+    "frozen": false,
+    "hw": 59,
+    "title": "Roll-up Banners | Wind-Resistant | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "adhesive-banners",
+    "frozen": false,
+    "hw": 60,
+    "title": "Adhesive Banners | Wind-Resistant | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "vehicle-wraps",
+    "frozen": false,
+    "hw": 56,
+    "title": "Vehicle Wraps | 3M Vinyl Wrap | Free US Ship | ZprintPro",
+    "problems": []
+   },
+   {
+    "slug": "mesh-banners",
+    "frozen": false,
+    "hw": 56,
+    "title": "Mesh Banners | Wind-Resistant | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "hardcover-books",
+    "frozen": false,
+    "hw": 58,
+    "title": "Hardcover Books | Perfect Bound | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "spiral-notebooks",
+    "frozen": false,
+    "hw": 59,
+    "title": "Spiral Notebooks | Perfect Bound | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "exercise-books",
+    "frozen": false,
+    "hw": 57,
+    "title": "Exercise Books | Perfect Bound | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "certificates",
+    "frozen": false,
+    "hw": 55,
+    "title": "Certificates | Embossed Seal | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "school-flyers",
+    "frozen": false,
+    "hw": 60,
+    "title": "School Flyers | Same-Day Printing | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "graduation-yearbook",
+    "frozen": false,
+    "hw": 55,
+    "title": "Graduation Yearbook | 50 MOQ | Free US Ship | ZprintPro",
+    "problems": []
+   },
+   {
+    "slug": "fruit-food-label-stickers",
+    "frozen": false,
+    "hw": 59,
+    "title": "Custom Food Label Stickers | Free Shipping $99+ | ZprintPro",
+    "problems": []
+   }
+  ],
+  "ja": [
+   {
+    "slug": "premium-greeting-cards",
+    "frozen": true,
+    "hw": 59,
+    "title": "プレミアムグリーティングカード印刷 | 箔押し・UV | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "spot-uv-greeting-cards",
+    "frozen": true,
+    "hw": 56,
+    "title": "部分UVグリーティングカード印刷 | マット+光沢 | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "security-stickers",
+    "frozen": false,
+    "hw": 56,
+    "title": "セキュリティステッカー | 防水 PVC ダイカット | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   }
+  ],
+  "zh-hk": [
+   {
+    "slug": "tuck-end-boxes",
+    "frozen": false,
+    "hw": 58,
+    "title": "卡盒/插口盒印刷訂製 免刀模 · 餐飲外賣零售快消首選 · 智印港",
+    "problems": [
+     "无数字钩"
+    ]
+   }
+  ]
+ },
+ "RED": {
+  "ja": [
+   {
+    "slug": "thick-greeting-cards-400g",
+    "frozen": true,
+    "hw": 63,
+    "title": "厚口400gグリーティングカード印刷 | 箔押し・エンボス | ZprintPro",
+    "problems": []
+   },
+   {
+    "slug": "foil-greeting-cards",
+    "frozen": true,
+    "hw": 67,
+    "title": "箔押しグリーティングカード印刷 | 金・銀・ローズゴールド | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "matte-greeting-cards",
+    "frozen": true,
+    "hw": 63,
+    "title": "マットグリーティングカード印刷 | さらさら・指紋防止 | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "gang-run-card-boxes",
+    "frozen": false,
+    "hw": 73,
+    "title": "合版ホワイトカードボックス (型代不要) | 8-15日納期 | ¥3,800〜 | ZprintPro",
+    "problems": []
+   }
+  ],
+  "en": [
+   {
+    "slug": "matte-greeting-cards",
+    "frozen": true,
+    "hw": 63,
+    "title": "Matte Greeting Cards | Soft-Touch, Fingerprint-Free | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "same-day-flyers",
+    "frozen": false,
+    "hw": 67,
+    "title": "Same-Day Flyer Printing from $0.95 | Free Shipping $99+ | ZprintPro",
+    "problems": []
+   },
+   {
+    "slug": "a2-posters",
+    "frozen": false,
+    "hw": 62,
+    "title": "A2 Poster Printing from $2.30 | Free Shipping $99+ | ZprintPro",
+    "problems": []
+   },
+   {
+    "slug": "large-red-packets",
+    "frozen": false,
+    "hw": 62,
+    "title": "Large Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "wall-calendars",
+    "frozen": false,
+    "hw": 61,
+    "title": "Wall Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "desk-calendars",
+    "frozen": false,
+    "hw": 61,
+    "title": "Desk Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "mini-calendars",
+    "frozen": false,
+    "hw": 61,
+    "title": "Mini Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "laminated-menus",
+    "frozen": false,
+    "hw": 62,
+    "title": "Laminated Menus | Laminated Durable | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "hardcover-menus",
+    "frozen": false,
+    "hw": 62,
+    "title": "Hardcover Menus | Laminated Durable | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "catalog-printing",
+    "frozen": false,
+    "hw": 61,
+    "title": "Catalog Printing | Saddle-Stitched | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   },
+   {
+    "slug": "perfect-bound-books",
+    "frozen": false,
+    "hw": 62,
+    "title": "Perfect Bound Books | Perfect Bound | Free US Ship | ZprintPro",
+    "problems": [
+     "无数字钩"
+    ]
+   }
+  ],
+  "zh-hk": [
+   {
+    "slug": "gang-run-card-boxes",
+    "frozen": false,
+    "hw": 64,
+    "title": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 香港無對手價 | 智印港",
+    "problems": []
+   },
+   {
+    "slug": "white-card-boxes",
+    "frozen": false,
+    "hw": 61,
+    "title": "白卡彩盒印刷訂製 卡盒/紙盒訂製 · 100個起印 5-7天交期 · 智印港",
+    "problems": []
+   },
+   {
+    "slug": "corrugated-boxes",
+    "frozen": false,
+    "hw": 62,
+    "title": "瓦楞彩盒印刷訂製 坑盒/紙盒印刷 · 跨境電商物流抗壓首選 · 智印港",
+    "problems": [
+     "无数字钩"
+    ]
+   }
+  ]
+ },
+ "brandPoll": [
+  {
+   "slug": "spot-uv-greeting-cards",
+   "loc": "en",
+   "frozen": true,
+   "hw": 50,
+   "title": "Spot UV Greeting Cards | Matte + Gloss | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "waterproof-stickers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "防水貼紙印刷 異形切割 100張起 HK$0.22起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "waterproof-stickers",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "防水ステッカー | 防水 PVC ダイカット・注文 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "transparent-stickers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "透明貼紙印刷 防水 PVC 100張起 HK$0.38起 | 智印港・訂製",
+   "problems": [
+    "混英文:PVC"
+   ]
+  },
+  {
+   "slug": "transparent-stickers",
+   "loc": "en",
+   "frozen": false,
+   "hw": 54,
+   "title": "Custom Transparent Stickers + Custom Sizes | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "transparent-stickers",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "透明ステッカー | 防水 PVC ダイカット・注文 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "removable-stickers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "可移貼紙印刷 不殘膠 100張起 HK$0.45起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "removable-stickers",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 50,
+   "title": "再剥離ステッカー | 防水 PVC ダイカット | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "small-batch-stickers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "小批量貼紙 50 張起 HK$0.45・免費送貨・2h 打稿 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "die-cut-stickers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "異形模切貼紙 透明・模切・100起印・HK$0.58起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "die-cut-stickers",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "ダイカットステッカー | 防水 PVC ダイカット | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "foil-stickers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "燙金貼紙印刷 金銀質感 100張起 HK$0.78起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "foil-stickers",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 50,
+   "title": "箔押しステッカー | 防水 PVC ダイカット | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "security-stickers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "防偽貼紙印刷 易碎材質 100張起 HK$0.66起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "fluorescent-stickers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "螢光貼紙印刷 螢光材質 100張起 HK$0.66起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "fluorescent-stickers",
+   "loc": "en",
+   "frozen": false,
+   "hw": 54,
+   "title": "Custom Fluorescent Stickers + Custom Sizes | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "fluorescent-stickers",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "蛍光ステッカー | 防水 PVC ダイカット・注文 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "white-card-bags",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "白カード紙袋 | エコ素材 多サイズ・無料校正 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "eco-paper-bags",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "エコ紙袋 | エコ素材 多サイズ・無料デザイン | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "handle-bags",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "環保手挽袋印刷 加固手挽袋 100個起 HK$4.5起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "handle-bags",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 53,
+   "title": "ハンドルバッグ 箔押し・ラミネート・最安値 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "large-bags",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "大型紙袋 | エコ素材 多サイズ・無料デザイン | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "a4-flyers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "A4 傳單印刷 圓角・覆膜・100起印・HK$0.35起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "a5-flyers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "A5 傳單印刷 圓角・覆膜・100起印・HK$0.25起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "double-sided-flyers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "雙面傳單印刷 圓角・覆膜・100起印・HK$0.40起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "double-sided-flyers",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 51,
+   "title": "両面カラー印刷 両面チラシ・無料デザイン | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "folded-leaflets",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "摺頁單張印刷 雙面四色 100張起 HK$0.55起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "thick-paper-flyers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "厚身單張印刷 157g/200g 厚紙 100張起 HK$0.45起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "eco-flyers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "環保傳單印刷 圓角・覆膜・100起印・HK$0.38起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "same-day-flyers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "即日印刷 傳單 100張起 HK$0.55起 圓角・覆膜 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "same-day-flyers",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 50,
+   "title": "即日チラシ印刷・無料デザイン・無料校正 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "a2-posters",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "A2 海報印刷 1張起印 HK$9起 即日交貨 印海報一 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "a1-posters",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "A1 大幅海報 厚紙・100起印・HK$20起・4小時打稿 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "art-posters",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "藝術海報印刷 高精度輸出 10張起 HK$16起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "adhesive-posters",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "背膠海報印刷 即貼防水 10張起 HK$11起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "adhesive-posters",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "粘着ポスター | 防水 翌日配送・無料デザイン | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "food-boxes",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "食品包裝印刷 禮盒訂製 100個起 HK$4起 100起印 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "food-boxes",
+   "loc": "en",
+   "frozen": false,
+   "hw": 52,
+   "title": "Custom Food Packaging Boxes Clear + Foil | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "mailer-boxes",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 50,
+   "title": "訂製郵寄盒 | 燙金 UV 100%訂製・多尺寸可選 | 智印港",
+   "problems": [
+    "混英文:UV"
+   ]
+  },
+  {
+   "slug": "mailer-boxes",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 50,
+   "title": "メーラーボックス | 特注 高級パッケージ | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "folding-boxes",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "折疊禮盒印刷 燙金UV 100個起 即日報價 | 智印港・訂製",
+   "problems": [
+    "混英文:UV"
+   ]
+  },
+  {
+   "slug": "rigid-boxes",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "精裝禮盒印刷 燙金UV 100個起 即日報價 | 智印港・訂製",
+   "problems": [
+    "混英文:UV"
+   ]
+  },
+  {
+   "slug": "rigid-boxes",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 50,
+   "title": "リジッドボックス | 特注 高級パッケージ | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "foil-red-packets",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "燙金利是封 燙金・局部UV・100起印・HK$1.10起 | 智印港",
+   "problems": [
+    "混英文:UV"
+   ]
+  },
+  {
+   "slug": "foil-red-packets",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 53,
+   "title": "箔押し年賀状 | 箔押し UV エンボス・最安値 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "embossed-red-packets",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "浮雕利是封 | 燙金 UV 壓紋・免費送貨・即日速遞 | 智印港",
+   "problems": [
+    "混英文:UV",
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "custom-red-packets",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "custom red packets | 燙金 UV 壓紋・免費送貨 | 智印港",
+   "problems": [
+    "混英文:custom",
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "custom-red-packets",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 51,
+   "title": "custom red packets | 箔押し UV エンボス | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "cartoon-red-packets",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "卡通利是封 燙金・局部UV・100起印・HK$1.10起 | 智印港",
+   "problems": [
+    "混英文:UV"
+   ]
+  },
+  {
+   "slug": "eco-red-packets",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 50,
+   "title": "環保利是封 燙金・覆膜・100起印・HK$1.90起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "large-red-packets",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 50,
+   "title": "大利是封 燙金・局部UV・100起印・HK$2.20起 | 智印港",
+   "problems": [
+    "混英文:UV"
+   ]
+  },
+  {
+   "slug": "large-red-packets",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 53,
+   "title": "大型年賀状 | 箔押し UV エンボス・無料校正 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "wall-calendars",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "掛牆年曆 騎馬釘・1000起印・HK$3起・4小時打稿 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "wall-calendars",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 52,
+   "title": "壁掛けカレンダー | ノベルティ 各種サイズ | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "desk-calendars",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 52,
+   "title": "デスクカレンダー | ノベルティ 各種サイズ | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "custom-calendars",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "カスタムカレンダー | ノベルティ 各種サイズ | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "mini-calendars",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "迷你年曆 騎馬釘・1000起印・HK$3起・4小時打稿 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "mini-calendars",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 50,
+   "title": "ミニカレンダー | ノベルティ 各種サイズ | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "photo-frame-calendars",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "相框年曆 騎馬釘・1000起印・HK$3起・4小時打稿 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "photo-frame-calendars",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 50,
+   "title": "フォトフレームカレンダー・無料デザイン | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "magnetic-calendars",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "マグネットカレンダー・無料デザイン・最安値 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "pvc-menus",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "PVC 餐牌印刷 · 防水防油覆膜 50本起・免費送貨 | 智印港",
+   "problems": [
+    "混英文:PVC"
+   ]
+  },
+  {
+   "slug": "pvc-menus",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 52,
+   "title": "PVC menu | 防水 ラミネート・無料デザイン | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "laminated-menus",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "過膠餐牌印刷 防水覆膜 50本起 HK$12起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "laminated-menus",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 53,
+   "title": "ラミネート menu | 防水 ラミネート・最安値 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "hardcover-menus",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "精裝餐牌印刷 防水覆膜 50本起 HK$18起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "disposable-menus",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 50,
+   "title": "一次性餐牌 防水・圓角・100起印・HK$0.22起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "disposable-menus",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "使い捨てメニュー | 防水 ラミネート・最安値 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "outdoor-vinyl-banners",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "屋外ビニールバナー | アルミスタンド 高画質 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "roll-up-banners",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "展示易拉寶 防水・100起印・HK$85起・4小時打稿 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "roll-up-banners",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "ロールアップバナー | アルミスタンド 高画質 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "adhesive-banners",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "背膠噴繪 透明・100起印・HK$10起・4小時打稿 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "vehicle-wraps",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "汽車車身貼 | 車身廣告 全車包覆・多尺寸可選 | 智印港",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "vehicle-wraps",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 52,
+   "title": "車両ラッピング | 車両フルラップ カスタム | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "mesh-banners",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "網孔布易拉寶 | 鋁合金支架 高清・多尺寸可選 | 智印港",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "mesh-banners",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 50,
+   "title": "メッシュバナー | アルミスタンド 高画質 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "catalog-printing",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "畫冊印刷 騎馬釘/膠裝 100本起 HK$9.5起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "saddle-stitch-booklets",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "騎馬釘小冊子 覆膜・騎馬釘・100起印・HK$6起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "perfect-bound-books",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 50,
+   "title": "公司膠裝書 覆膜・騎馬釘・100起印・HK$16起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "hardcover-books",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 50,
+   "title": "公司精裝書 燙金・局部UV・100起印・HK$40起 | 智印港",
+   "problems": [
+    "混英文:UV"
+   ]
+  },
+  {
+   "slug": "business-envelopes",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "会社封筒 | 両面印刷 マルチサイズ・無料校正 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "colored-envelopes",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "カラー封筒 | 両面印刷 マルチサイズ・最安値 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "large-envelopes",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "大號信封印刷 C4/DL 尺寸 100 個起 HK$0.60 起 | 智印港",
+   "problems": [
+    "混英文:DL"
+   ]
+  },
+  {
+   "slug": "large-envelopes",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "大型封筒 | 両面印刷 マルチサイズ・無料校正 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "pearl-envelopes",
+   "loc": "en",
+   "frozen": false,
+   "hw": 53,
+   "title": "Pearl Envelopes Iridescent | Free US Ship | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "pearl-envelopes",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "パール封筒 | 両面印刷 マルチサイズ・最安値 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "exercise-books",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 53,
+   "title": "練習帳 | 中綴じ/無線綴じ 50冊〜・無料校正 | ZprintPro",
+   "problems": [
+    "假名"
+   ]
+  },
+  {
+   "slug": "certificates",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 52,
+   "title": "賞状印刷 箔押し・中綴じ・100枚〜・最安値 | ZprintPro",
+   "problems": [
+    "假名"
+   ]
+  },
+  {
+   "slug": "school-flyers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "學校單張印刷 雙面四色 100張起 HK$0.35起 | 智印港・訂製",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "textbooks",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 50,
+   "title": "公司教科書 覆膜・騎馬釘・100起印・HK$24起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "textbooks",
+   "loc": "en",
+   "frozen": false,
+   "hw": 52,
+   "title": "Textbooks | Perfect Bound | Free US Ship | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "textbooks",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 53,
+   "title": "教科書 | 中綴じ/無線綴じ 50冊〜・無料校正 | ZprintPro",
+   "problems": [
+    "假名"
+   ]
+  },
+  {
+   "slug": "magnetic-closure-gift-box",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 53,
+   "title": "マグネット式ギフトボックス | カスタム印刷 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "electronics-packaging-box",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "電子產品包裝盒印刷 | 3C 數碼 EVA 內襯・訂製 | 智印港",
+   "problems": [
+    "混英文:EVA"
+   ]
+  },
+  {
+   "slug": "electronics-packaging-box",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 53,
+   "title": "電子製品包装箱 箔押し・マグネット・最安値 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "kraft-paper-packaging-box",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "牛皮紙包裝印刷盒 | 環保材質 多尺寸・免費送貨 | 智印港",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "gang-run-card-boxes",
+   "loc": "en",
+   "frozen": false,
+   "hw": 54,
+   "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "fruit-food-label-stickers",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "水果及食品標籤印刷 | 防水防油 SGS 認證・訂製 | 智印港",
+   "problems": [
+    "混英文:SGS",
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "fruit-food-label-stickers",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 51,
+   "title": "フルーツ・食品ラベル印刷 | カスタム印刷 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "doujinshi-printing",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 54,
+   "title": "同人誌印刷 10本起印 | Comiket前24小時特急対応 | 智印港",
+   "problems": [
+    "混英文:Comiket"
+   ]
+  },
+  {
+   "slug": "acrylic-keychain",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 52,
+   "title": "亞克力鑰匙扣 角色造型訂製 10起印・HK$2275起 | 智印港",
+   "problems": [
+    "混英文:HK"
+   ]
+  },
+  {
+   "slug": "acrylic-keychain",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 54,
+   "title": "アクリルキーホルダー キャラクター形 推し活 | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "can-badge",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 53,
+   "title": "罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備 | 智印港",
+   "problems": [
+    "日文",
+    "混英文:mm"
+   ]
+  },
+  {
+   "slug": "eco-tote-bag",
+   "loc": "zh-hk",
+   "frozen": false,
+   "hw": 51,
+   "title": "環保托特袋 有機棉布 100% 推し活場售 10個起 | 智印港",
+   "problems": [
+    "日文"
+   ]
+  },
+  {
+   "slug": "eco-tote-bag",
+   "loc": "en",
+   "frozen": false,
+   "hw": 54,
+   "title": "Organic Cotton Eco Tote Bag + Custom Sizes | ZprintPro",
+   "problems": [
+    "无数字钩"
+   ]
+  },
+  {
+   "slug": "eco-tote-bag",
+   "loc": "ja",
+   "frozen": false,
+   "hw": 53,
+   "title": "エコトートバッグ オーガニックコットン | 推し活 コミケ",
+   "problems": [
+    "缺品牌",
+    "无数字钩"
+   ]
+  }
+ ]
+}

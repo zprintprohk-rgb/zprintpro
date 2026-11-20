@@ -1,0 +1,14 @@
+[
+  { "url": "https://zprintpro.com/zh-hk/category/menus/", "expect": "/zh-hk/category/posters/", "note": "menus new poster link" },
+  { "url": "https://zprintpro.com/zh-hk/category/menus/", "expect": "/zh-hk/category/flyers/", "note": "menus flyers anchor" },
+  { "url": "https://zprintpro.com/zh-hk/category/calendars/", "expect": "/zh-hk/category/red-packets/", "note": "calendars redpacket link" },
+  { "url": "https://zprintpro.com/zh-hk/category/posters/", "expect": "/zh-hk/category/flyers/", "note": "posters flyers link" },
+  { "url": "https://zprintpro.com/zh-hk/category/greeting-cards/", "expect": "/zh-hk/category/packaging/", "note": "cards packaging link" },
+  { "url": "https://zprintpro.com/zh-hk/category/flyers/", "expect": "宣傳單張印刷", "note": "breadcrumb display name" },
+  { "url": "https://zprintpro.com/zh-hk/category/books/", "expect": "騎馬釘書刊印刷", "note": "breadcrumb display name" },
+  { "url": "https://zprintpro.com/en/category/packaging/", "expect": "Packaging Boxes", "note": "breadcrumb en" },
+  { "url": "https://zprintpro.com/zh-hk/category/stickers/", "expect": "可移貼紙", "note": "new quick answer" },
+  { "url": "https://zprintpro.com/zh-hk/category/packaging/", "expect": "食品包裝印刷有咩認證要求", "note": "new quick answer" },
+  { "url": "https://zprintpro.com/ja/category/japan-doujin/", "expect": "コミケ向けの印刷はどのくらい前に", "note": "new quick answer ja" },
+  { "url": "https://zprintpro.com/zh-hk/category/stickers/", "expect": "小批量 10 張起印", "note": "title truth fix" }
+]

@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/components/quotation-widget.tsx:31:5
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 29 |[39m   [32m'zh-hk'[39m[33m:[39m {[0m
+[0m [90m 30 |[39m     [32m'sticker'[39m[33m:[39m [32m'卡片'[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 31 |[39m     [32m'sticker'[39m[33m:[39m [32m'貼紙'[39m[33m,[39m[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 32 |[39m     [32m'flyer'[39m[33m:[39m [32m'傳單印刷'[39m[33m,[39m[0m
+[0m [90m 33 |[39m     [32m'paper-bag'[39m[33m:[39m [32m'紙袋'[39m[33m,[39m[0m
+[0m [90m 34 |[39m     [32m'box'[39m[33m:[39m [32m'包裝盒'[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

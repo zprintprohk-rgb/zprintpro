@@ -1,0 +1,3013 @@
+{
+  "timestamp": "2026-08-24T10:09:31.356Z",
+  "scope": "src/",
+  "elapsed_ms": 85,
+  "total_files_scanned": 240,
+  "total_matches": 517,
+  "red": 0,
+  "orange": 236,
+  "yellow": 104,
+  "white": 177,
+  "hits": [
+    {
+      "file": "route.ts",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\api\\merchant-feed\\[locale]\\route.ts",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 80,
+      "match": "placeholder",
+      "context": "const imageUrl = localeImg || generalImg || '/images/placeholder.jpg';"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\quote-desk\\all\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 34,
+      "match": "Placeholder",
+      "context": "keyPlaceholder: '請輸入密鑰',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\quote-desk\\all\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 90,
+      "match": "placeholder",
+      "context": "placeholder={t.keyPlaceholder}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\quote-desk\\all\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 90,
+      "match": "Placeholder",
+      "context": "placeholder={t.keyPlaceholder}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\quote-desk\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 37,
+      "match": "Placeholder",
+      "context": "keyPlaceholder: string;"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\quote-desk\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 57,
+      "match": "Placeholder",
+      "context": "keyPlaceholder: '請輸入密鑰',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\quote-desk\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 77,
+      "match": "Placeholder",
+      "context": "keyPlaceholder: 'Enter access key',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\quote-desk\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 97,
+      "match": "Placeholder",
+      "context": "keyPlaceholder: 'キーを入力',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\quote-desk\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 230,
+      "match": "placeholder",
+      "context": "placeholder={t.keyPlaceholder}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\quote-desk\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 230,
+      "match": "Placeholder",
+      "context": "placeholder={t.keyPlaceholder}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 68,
+      "match": "C123456",
+      "context": "{ name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: '紙張溯源管理 (CoC Chain-of-Custody)' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 68,
+      "match": "C123456",
+      "context": "{ name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: '紙張溯源管理 (CoC Chain-of-Custody)' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 202,
+      "match": "C123456",
+      "context": "{ name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: 'Paper chain-of-custody certification (CoC)' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 202,
+      "match": "C123456",
+      "context": "{ name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: 'Paper chain-of-custody certification (CoC)' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 336,
+      "match": "C123456",
+      "context": "{ name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: '紙 CoC (Chain-of-Custody) 認証' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 336,
+      "match": "C123456",
+      "context": "{ name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: '紙 CoC (Chain-of-Custody) 認証' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 67,
+      "match": "01 100 150 1234",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質管理體系認證' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 201,
+      "match": "01 100 150 1234",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: 'Printing quality management system' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 335,
+      "match": "01 100 150 1234",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質マネジメントシステム' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 67,
+      "match": "1234",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質管理體系認證' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 201,
+      "match": "1234",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: 'Printing quality management system' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 335,
+      "match": "1234",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質マネジメントシステム' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 797,
+      "match": "占位",
+      "context": "{/* 2026-07-30 K4 拍板 2: Production Process 5 步 + SVG 占位 (K3 拍图后替换 SVG 为 <img>) */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 833,
+      "match": "占位",
+      "context": "{/* 2026-07-31 K3 拍板 A: 12 Tier A 行业 icon 卡片 (删 MOCK 占位, 不走网上搜真实 logo) */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 811,
+      "match": "placeholder",
+      "context": "{/* 2026-08-16 K3 拍板: 工厂图已在上方「廠房與設備」section 正式嵌入, placeholder 删除 */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 67,
+      "match": "ISO 9001:2015",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質管理體系認證' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 201,
+      "match": "ISO 9001:2015",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: 'Printing quality management system' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 335,
+      "match": "ISO 9001:2015",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質マネジメントシステム' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 33,
+      "match": "ISO 9001",
+      "context": "metaDesc: '智印港 ZprintPro 扎根香港超過15年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 42,
+      "match": "ISO 9001",
+      "context": "{ title: '品質保證', desc: 'ISO 9001 + FSC 認證 · 海德堡四色柯式 + HP Indigo 數碼 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 1,000+ 企業客戶信賴。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 54,
+      "match": "ISO 9001",
+      "context": "{ name: 'ISO 9001', desc: '質量管理體系認證，確保每個生產環節標準化' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 67,
+      "match": "ISO 9001",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質管理體系認證' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 166,
+      "match": "ISO 9001",
+      "context": "metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. ISO 9001 + FSC certified, 15+ years experience, 1000+ global clients. 72-hour worldwide delivery from our Hong Kong factory.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 170,
+      "match": "ISO 9001",
+      "context": "story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by 1,000+ businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from scho"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 175,
+      "match": "ISO 9001",
+      "context": "{ title: 'Quality Assurance', desc: 'ISO 9001 + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trus"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 187,
+      "match": "ISO 9001",
+      "context": "{ name: 'ISO 9001', desc: 'Quality management system certification ensuring standardized production' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 201,
+      "match": "ISO 9001",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: 'Printing quality management system' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 300,
+      "match": "ISO 9001",
+      "context": "metaDesc: '智印港 ZprintProは香港で15年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、FSC認証、1000社以上のお客様にサービスを提供。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 309,
+      "match": "ISO 9001",
+      "context": "{ title: '品質保証', desc: 'ISO 9001 + FSC 認証 · ハイデルベルク 4 色オフセット + HP Indigo デジタル + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 321,
+      "match": "ISO 9001",
+      "context": "{ name: 'ISO 9001', desc: '品質管理システム認証。各生産工程の標準化を保証。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 335,
+      "match": "ISO 9001",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質マネジメントシステム' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 611,
+      "match": "ISO 9001",
+      "context": "<span className=\"px-2.5 py-0.5 rounded-full bg-white/5 border border-white/15 text-white/60 text-[10px] font-semibold\">ISO 9001</span>"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 68,
+      "match": "FSC® C123456",
+      "context": "{ name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: '紙張溯源管理 (CoC Chain-of-Custody)' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 202,
+      "match": "FSC® C123456",
+      "context": "{ name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: 'Paper chain-of-custody certification (CoC)' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 336,
+      "match": "FSC® C123456",
+      "context": "{ name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: '紙 CoC (Chain-of-Custody) 認証' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 67,
+      "match": "TÜV Rheinland",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質管理體系認證' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 201,
+      "match": "TÜV Rheinland",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: 'Printing quality management system' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 335,
+      "match": "TÜV Rheinland",
+      "context": "{ name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質マネジメントシステム' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 42,
+      "match": "1,000+",
+      "context": "{ title: '品質保證', desc: 'ISO 9001 + FSC 認證 · 海德堡四色柯式 + HP Indigo 數碼 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 1,000+ 企業客戶信賴。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 43,
+      "match": "1,000+",
+      "context": "{ title: '快速交付', desc: '數碼印刷 24h · 柯式印刷 3–5 天 · 順豐本地當日 + DHL/FedEx 全球 2-4 天 · 緊急訂單專人跟進 · 1,000+ 訂單累計 · [WhatsApp 即時查詢 📲](https://wa.me/8619880851334) · [聯絡我們](/contact/)' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 90,
+      "match": "1,000+",
+      "context": "testimonialSubtitle: '我們服務的 12 大行業 · 累計 1,000+ 企業客戶信賴',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 170,
+      "match": "1,000+",
+      "context": "story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by 1,000+ businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from scho"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 175,
+      "match": "1,000+",
+      "context": "{ title: 'Quality Assurance', desc: 'ISO 9001 + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trus"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 176,
+      "match": "1,000+",
+      "context": "{ title: 'Fast Global Delivery', desc: 'Digital ships in 24h, offset 3–5 business days. DHL/FedEx worldwide in 2–4 days to 50+ countries. Free shipping to US / UK / AU / CA. 1,000+ orders shipped. [Wh"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 224,
+      "match": "1,000+",
+      "context": "testimonialSubtitle: '12 industry segments served · 1,000+ business clients trusted us',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 309,
+      "match": "1,000+",
+      "context": "{ title: '品質保証', desc: 'ISO 9001 + FSC 認証 · ハイデルベルク 4 色オフセット + HP Indigo デジタル + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 310,
+      "match": "1,000+",
+      "context": "{ title: '迅速な納品', desc: 'デジタル 24h · オフセット 3-5 日 · DHL/FedEx 世界 2-4 日直送 · 50+ ヶ国対応 · 1,000+ 注文実績 · [WhatsApp で即時お問合せ 📲](https://wa.me/8619880851334) · ' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 851,
+      "match": "1,000+",
+      "context": "<p className=\"text-center text-gray-400 text-xs mt-8\">累計 1,000+ 企業客戶 · 50+ 國家 · 15+ 年印刷經驗</p>"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 32,
+      "match": "1000+",
+      "context": "metaTitle: '關於智印港 | 香港專業印刷服務 | 15年經驗服務1000+企業',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 33,
+      "match": "1000+",
+      "context": "metaDesc: '智印港 ZprintPro 扎根香港超過15年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 58,
+      "match": "1000+",
+      "context": "stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 166,
+      "match": "1000+",
+      "context": "metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. ISO 9001 + FSC certified, 15+ years experience, 1000+ global clients. 72-hour worldwide delivery from our Hong Kong factory.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 191,
+      "match": "1000+",
+      "context": "stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 325,
+      "match": "1000+",
+      "context": "stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 32,
+      "match": "15年",
+      "context": "metaTitle: '關於智印港 | 香港專業印刷服務 | 15年經驗服務1000+企業',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 33,
+      "match": "15年",
+      "context": "metaDesc: '智印港 ZprintPro 扎根香港超過15年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 35,
+      "match": "15年",
+      "context": "subtitle: '扎根香港超過15年，專注高品質印刷服務',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 48,
+      "match": "15年",
+      "context": "{ title: '創始人', desc: '擁有15年印刷行業經驗，曾服務於國際頂級印刷集團，精通色彩管理與印前工藝。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 299,
+      "match": "15年",
+      "context": "metaTitle: 'ZprintProについて | 香港プロ印刷サービス | 15年の実績',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 300,
+      "match": "15年",
+      "context": "metaDesc: '智印港 ZprintProは香港で15年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、FSC認証、1000社以上のお客様にサービスを提供。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 302,
+      "match": "15年",
+      "context": "subtitle: '香港で15年以上、高品質印刷に専念',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 306,
+      "match": "15年",
+      "context": "「智印未来」（より聪明な印刷、より明るい未来）をビジョンに、智能化された生産プロセス、フルオーダーメイド、エコ素材を通じて、他にない高品質な印刷物でブランドイメージと市場競争力を高めます。創立から15年、1000社以上のお客様にサービスを提供し、東京・大阪・名古屋など日本全国、ならびにアジア・米国・欧州・オーストラリアへの迅速配送で、グローバル規模の印刷パートナーとして信頼を集めてまいりました。`"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 315,
+      "match": "15年",
+      "context": "{ title: '創業者', desc: '印刷業界15年の経験。国際トップ印刷グループでの勤務経験があり、色彩管理と印前工程に精通。' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 39,
+      "match": "十五年",
+      "context": "以「智印未來」為願景，我們通過智能化生產流程、個性化定制與環保材質，為客戶打造差異化、高質感的印刷品，全面提升品牌形象與市場競爭力。十五年來，從商務印品到創意包裝，從校園刊物到企業年報，我們已累計服務超過1000家本地及全球客戶，成為香港企業及機構可信賴的印刷合作夥伴。`,"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\about\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 58,
+      "match": "98%",
+      "context": "stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 777,
+      "match": "cluster",
+      "context": "const cluster = getClusterBySlug(slug);"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 778,
+      "match": "cluster",
+      "context": "if (cluster) {"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 779,
+      "match": "cluster",
+      "context": "const content = cluster.content[locale].replace(/\\/{locale}\\//g, `/${locale}/`);"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 781,
+      "match": "cluster",
+      "context": "title: cluster.title[locale],"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 782,
+      "match": "cluster",
+      "context": "description: cluster.description[locale],"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 783,
+      "match": "cluster",
+      "context": "date: cluster.date,"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 784,
+      "match": "cluster",
+      "context": "category: cluster.pillarSlug,"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 786,
+      "match": "cluster",
+      "context": "keywords: cluster.keywords[locale].join(','),"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 788,
+      "match": "cluster",
+      "context": "linkedProducts: cluster.linkedProducts || [],"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 117,
+      "match": "ISO 9001",
+      "context": "'hong-kong-printing-guide': { title: 'Custom Sticker & Packaging Printing Guide for US Small Business | MOQ, Materials, FedEx Ground 5-7 Day', description: 'Complete guide to custom stickers, packagin"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 77,
+      "match": "15年",
+      "context": "description: '智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務，服務香港及大灣區客戶超過15年。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\case-studies\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 378,
+      "match": "1000+",
+      "context": "<div className=\"text-3xl font-bold\">1000+</div>"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\case-studies\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 386,
+      "match": "98%",
+      "context": "<div className=\"text-3xl font-bold\">98%</div>"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 24,
+      "match": "Placeholder",
+      "context": "namePlaceholder: '請輸入您的姓名',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 26,
+      "match": "Placeholder",
+      "context": "phonePlaceholder: '請輸入聯絡電話',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 28,
+      "match": "Placeholder",
+      "context": "emailPlaceholder: '請輸入電郵地址',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 30,
+      "match": "Placeholder",
+      "context": "addressPlaceholder: '請輸入詳細送貨地址',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 32,
+      "match": "Placeholder",
+      "context": "notesPlaceholder: '如有特殊要求請在此說明',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 63,
+      "match": "Placeholder",
+      "context": "namePlaceholder: 'Enter your name',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 65,
+      "match": "Placeholder",
+      "context": "phonePlaceholder: 'Enter contact number',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 67,
+      "match": "Placeholder",
+      "context": "emailPlaceholder: 'Enter email address',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 69,
+      "match": "Placeholder",
+      "context": "addressPlaceholder: 'Enter detailed delivery address',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 71,
+      "match": "Placeholder",
+      "context": "notesPlaceholder: 'Any special requirements',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 101,
+      "match": "Placeholder",
+      "context": "namePlaceholder: 'お名前を入力',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 103,
+      "match": "Placeholder",
+      "context": "phonePlaceholder: '連絡先電話番号',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 105,
+      "match": "Placeholder",
+      "context": "emailPlaceholder: 'メールアドレス',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 107,
+      "match": "Placeholder",
+      "context": "addressPlaceholder: '詳細な配送先住所',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 109,
+      "match": "Placeholder",
+      "context": "notesPlaceholder: '特別なご要望があれば',"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 370,
+      "match": "placeholder",
+      "context": "<input type=\"text\" required autoComplete=\"name\" value={form.name} onChange={(e) => handleChange('name', e.target.value)} placeholder={t.namePlaceholder} className={inputClass} />"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 370,
+      "match": "Placeholder",
+      "context": "<input type=\"text\" required autoComplete=\"name\" value={form.name} onChange={(e) => handleChange('name', e.target.value)} placeholder={t.namePlaceholder} className={inputClass} />"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 376,
+      "match": "placeholder",
+      "context": "<input type=\"tel\" required autoComplete=\"tel\" value={form.phone} onChange={(e) => handleChange('phone', e.target.value)} placeholder={t.phonePlaceholder} className={inputClass} />"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 376,
+      "match": "Placeholder",
+      "context": "<input type=\"tel\" required autoComplete=\"tel\" value={form.phone} onChange={(e) => handleChange('phone', e.target.value)} placeholder={t.phonePlaceholder} className={inputClass} />"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 382,
+      "match": "placeholder",
+      "context": "<input type=\"email\" required autoComplete=\"email\" value={form.email} onChange={(e) => handleChange('email', e.target.value)} placeholder={t.emailPlaceholder} className={inputClass} />"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 382,
+      "match": "Placeholder",
+      "context": "<input type=\"email\" required autoComplete=\"email\" value={form.email} onChange={(e) => handleChange('email', e.target.value)} placeholder={t.emailPlaceholder} className={inputClass} />"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 388,
+      "match": "placeholder",
+      "context": "<input type=\"text\" required autoComplete=\"street-address\" value={form.address} onChange={(e) => handleChange('address', e.target.value)} placeholder={t.addressPlaceholder} className={inputClass} />"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 388,
+      "match": "Placeholder",
+      "context": "<input type=\"text\" required autoComplete=\"street-address\" value={form.address} onChange={(e) => handleChange('address', e.target.value)} placeholder={t.addressPlaceholder} className={inputClass} />"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 392,
+      "match": "placeholder",
+      "context": "<textarea rows={3} value={form.notes} onChange={(e) => handleChange('notes', e.target.value)} placeholder={t.notesPlaceholder} className={inputClass} />"
+    },
+    {
+      "file": "CheckoutClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\checkout\\CheckoutClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 392,
+      "match": "Placeholder",
+      "context": "<textarea rows={3} value={form.notes} onChange={(e) => handleChange('notes', e.target.value)} placeholder={t.notesPlaceholder} className={inputClass} />"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\company-news\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 55,
+      "match": "Heidelberg",
+      "context": "excerpt: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\contact\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 127,
+      "match": "15年",
+      "context": "trustYears: \"15年以上の印刷経験\","
+    },
+    {
+      "file": "FaqClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\faq\\FaqClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 16,
+      "match": "Placeholder",
+      "context": "searchPlaceholder: string;"
+    },
+    {
+      "file": "FaqClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\faq\\FaqClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 81,
+      "match": "placeholder",
+      "context": "placeholder={t.searchPlaceholder}"
+    },
+    {
+      "file": "FaqClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\faq\\FaqClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 81,
+      "match": "Placeholder",
+      "context": "placeholder={t.searchPlaceholder}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\faq\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 17,
+      "match": "Placeholder",
+      "context": "searchPlaceholder: '輸入關鍵詞搜尋問題...',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\faq\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 29,
+      "match": "Placeholder",
+      "context": "searchPlaceholder: 'Search questions...',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\faq\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 41,
+      "match": "Placeholder",
+      "context": "searchPlaceholder: 'キーワードで検索...',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\faq\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 72,
+      "match": "Heidelberg",
+      "context": "{ q: 'How do you ensure print quality?', a: 'We use Heidelberg printing presses with professional color management. Every batch is QC inspected before shipping. For strict color requirements, request "
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\guide\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 246,
+      "match": "cluster",
+      "context": "{relatedClusters.map((cluster) => ("
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\guide\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 248,
+      "match": "cluster",
+      "context": "key={cluster.slug}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\guide\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 252,
+      "match": "cluster",
+      "context": "{cluster.image ? ("
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\guide\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 254,
+      "match": "cluster",
+      "context": "src={cluster.image}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\guide\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 255,
+      "match": "cluster",
+      "context": "alt={cluster.title[safeLocale]}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\guide\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 268,
+      "match": "cluster",
+      "context": "{cluster.title[safeLocale]}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\guide\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 271,
+      "match": "cluster",
+      "context": "{cluster.description[safeLocale]}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\guide\\[slug]\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 274,
+      "match": "cluster",
+      "context": "href={`/${safeLocale}/blog/${cluster.slug}`}"
+    },
+    {
+      "file": "HelpCenterClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\help-center\\HelpCenterClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 751,
+      "match": "placeholder",
+      "context": "{/* QR code placeholder */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\insights\\hk-print-inquiry-index\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1,
+      "match": "v3.15",
+      "context": "// K3 v3.15 ① G1 《HK Print Inquiry Index》Vol.1 页面"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\insights\\hk-print-inquiry-index\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 3,
+      "match": "v3.17",
+      "context": "// en 首发 (AI 引擎引用 en 概率最高), zh-hk 中文版同步, ja 走 jaSummary (K3 v3.17 B4 schema 增量 8/24 17:20 拍板)"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\insights\\hk-print-inquiry-index\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 8,
+      "match": "v3.17",
+      "context": "// 2026-08-24 v3.17 B4 增量: OrganizationSchema 集成 (sameAs + knowsAbout) + 区域 hreflang (en-US/GB/AU) + ja 摘要"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\insights\\hk-print-inquiry-index\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 208,
+      "match": "v3.17",
+      "context": "{/* K3 v3.17 B4 schema 增量: Organization sameAs + knowsAbout + areaServed (per K3 §13.16.1 8/8 02:52 + 8/24 daily §2.2 实测缺失项) */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\insights\\hk-print-inquiry-index\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 54,
+      "match": "T00",
+      "context": "const publishISO = `${idx.publishedAt}T00:00:00+08:00`;"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\insights\\hk-print-inquiry-index\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 7,
+      "match": "占位",
+      "context": "//   3) 移除直接回答块 [Stat] 占位符, 全量英文化 (en 首发定位)"
+    },
+    {
+      "file": "OrderConfirmationClient.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\order-confirmation\\OrderConfirmationClient.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 356,
+      "match": "placeholder",
+      "context": "<Image src={item.image || '/images/placeholder.webp'} alt={item.name || ''} width={64} height={64} className=\"w-full h-full object-cover\" unoptimized loading=\"lazy\" decoding=\"async\" />"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\product\\[slug]\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 176,
+      "match": "placeholder",
+      "context": "// 2026-06-08 修复: og:image fallback chain — 优先用 locale 专属图, 再用通用图, 最后才 placeholder"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\product\\[slug]\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 177,
+      "match": "placeholder",
+      "context": "// 之前: 直接 fallback 到 placeholder.jpg (0 字节, GSC 显示通用图标)"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\search\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 17,
+      "match": "placeholder",
+      "context": "placeholder: '輸入關鍵字搜尋...',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\search\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 29,
+      "match": "placeholder",
+      "context": "placeholder: 'Enter keywords to search...',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\search\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 41,
+      "match": "placeholder",
+      "context": "placeholder: 'キーワードを入力...',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\search\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 115,
+      "match": "placeholder",
+      "context": "placeholder={t.placeholder}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\search\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 115,
+      "match": "placeholder",
+      "context": "placeholder={t.placeholder}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 148,
+      "match": "ISO 9001:2015",
+      "context": "{ title: 'ISO 9001 認證', desc: '深圳工廠通過 ISO 9001:2015 質量管理體系認證, 16 年印刷經驗' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 165,
+      "match": "ISO 9001:2015",
+      "context": "{ q: '深圳工廠品質點樣保證？', a: '深圳工廠 16 年印刷經驗, ISO 9001:2015 認證, FSC 紙張認證, FDA 食品級油墨. 每批出貨前 100% QC 抽樣, 損壞率 < 0.5%. 出貨影片可即時提供.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 229,
+      "match": "ISO 9001:2015",
+      "context": "{ title: 'ISO 9001 Certified', desc: 'Shenzhen factory certified ISO 9001:2015, 16 years of printing experience, 100% QC sampling before shipment.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 246,
+      "match": "ISO 9001:2015",
+      "context": "{ q: 'How is Shenzhen factory quality guaranteed?', a: 'Shenzhen factory has 16 years of printing experience, ISO 9001:2015 certified, FSC paper certified, FDA food-grade ink. 100% QC sampling before "
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 310,
+      "match": "ISO 9001:2015",
+      "context": "{ title: 'ISO 9001認証', desc: '深セン工場は ISO 9001:2015 認証, 16年の印刷経験, 出荷前 100% QC サンプリング.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 327,
+      "match": "ISO 9001:2015",
+      "context": "{ q: '深セン工場の品質はどのように保証されていますか？', a: '深セン工場は16年の印刷経験, ISO 9001:2015認証, FSC紙認証, FDA食品グレードインク. 出荷前100% QCサンプリング, 破損率 < 0.5%. 出荷動画も即時提供可能.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 24,
+      "match": "ISO 9001",
+      "context": "desc: 'China catalog printing from Shenzhen factory, 50 MOQ, free file check, 24h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote."
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 29,
+      "match": "ISO 9001",
+      "context": "desc: 'China catalog printing from Shenzhen factory, 50 MOQ, free file check, 24h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote."
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 34,
+      "match": "ISO 9001",
+      "context": "desc: '中国深セン工場からのカタログ印刷、50部から対応、無料ファイルチェック、24時間見積もり、DHL国際配送2-4日。カタログ・パンフレット・雑誌・ルックブック・大量卸価格。30秒AI無料見積もり。ISO 9001 + FSC認証。',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 115,
+      "match": "ISO 9001",
+      "context": "heroSubtitle: '從深圳工廠直送全球嘅 catalog / brochure / magazine / lookbook 印刷, 50 本起印, 30 秒 AI 即時報價, ISO 9001 + FSC 認證. 對比歐美印刷廠慳 30-40%.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 148,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001 認證', desc: '深圳工廠通過 ISO 9001:2015 質量管理體系認證, 16 年印刷經驗' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 148,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001 認證', desc: '深圳工廠通過 ISO 9001:2015 質量管理體系認證, 16 年印刷經驗' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 165,
+      "match": "ISO 9001",
+      "context": "{ q: '深圳工廠品質點樣保證？', a: '深圳工廠 16 年印刷經驗, ISO 9001:2015 認證, FSC 紙張認證, FDA 食品級油墨. 每批出貨前 100% QC 抽樣, 損壞率 < 0.5%. 出貨影片可即時提供.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 175,
+      "match": "ISO 9001",
+      "context": "altFactory: 'Shenzhen Printing Factory 16 Year ISO 9001 Workshop | ZprintPro',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 179,
+      "match": "ISO 9001",
+      "context": "trustBadge1: 'ISO 9001 認證',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 196,
+      "match": "ISO 9001",
+      "context": "heroSubtitle: 'Catalog / brochure / magazine / lookbook printing from our Shenzhen factory, 50 MOQ, 30-second AI quote, ISO 9001 + FSC certified. Save 30-40% vs Western printers.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 229,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001 Certified', desc: 'Shenzhen factory certified ISO 9001:2015, 16 years of printing experience, 100% QC sampling before shipment.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 229,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001 Certified', desc: 'Shenzhen factory certified ISO 9001:2015, 16 years of printing experience, 100% QC sampling before shipment.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 246,
+      "match": "ISO 9001",
+      "context": "{ q: 'How is Shenzhen factory quality guaranteed?', a: 'Shenzhen factory has 16 years of printing experience, ISO 9001:2015 certified, FSC paper certified, FDA food-grade ink. 100% QC sampling before "
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 256,
+      "match": "ISO 9001",
+      "context": "altFactory: 'Shenzhen Printing Factory 16 Year ISO 9001 Workshop | ZprintPro',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 260,
+      "match": "ISO 9001",
+      "context": "trustBadge1: 'ISO 9001',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 277,
+      "match": "ISO 9001",
+      "context": "heroSubtitle: '深セン工場から直接お届けするカタログ・パンフレット・雑誌・ルックブック印刷, 50部から対応, 30秒AI無料見積もり, ISO 9001 + FSC認証. 欧米印刷工場より30-40%安い.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 310,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001認証', desc: '深セン工場は ISO 9001:2015 認証, 16年の印刷経験, 出荷前 100% QC サンプリング.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 310,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001認証', desc: '深セン工場は ISO 9001:2015 認証, 16年の印刷経験, 出荷前 100% QC サンプリング.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 327,
+      "match": "ISO 9001",
+      "context": "{ q: '深セン工場の品質はどのように保証されていますか？', a: '深セン工場は16年の印刷経験, ISO 9001:2015認証, FSC紙認証, FDA食品グレードインク. 出荷前100% QCサンプリング, 破損率 < 0.5%. 出荷動画も即時提供可能.' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 337,
+      "match": "ISO 9001",
+      "context": "altFactory: '深セン印刷工場16年ISO 9001ワークショップ | ZprintPro',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 341,
+      "match": "ISO 9001",
+      "context": "trustBadge1: 'ISO 9001',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\catalog-printing-china\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 247,
+      "match": "1000+",
+      "context": "{ q: 'Is the MOQ really 50 pcs?', a: 'Yes, 50 pcs MOQ with offset + digital hybrid printing. 1000+ pcs uses pure offset printing for lower unit cost. Sample proofing as low as 1 pc (at cost).' },"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 25,
+      "match": "v3.2",
+      "context": "// 2026-08-18 节奏 A 变体: 即日印刷 + 印刷 cmyk + 印刷 cmyk 模式 (K3 v3.2 §二, B 22 词清单 8/18 续)"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 93,
+      "match": "占位",
+      "context": "{/* Hero Banner 占位区 - 方角 + 固定 440px (P0 雙 CTA 加高) */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 95,
+      "match": "占位",
+      "context": "{/* 渐变背景（占位，后续替换为真实图片） */}"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 28,
+      "match": "ISO 9001",
+      "context": "desc: '即日印刷 CMYK 全彩服務 100 張起印, 18:00 截單, 順豐本地滿 HK$500 免費, DHL 全球 2-4 天配送. 傳單、海報、貼紙、紙袋、畫冊、易拉寶通用, 防水抗 UV. WhatsApp 30 秒即時報價, ISO 9001 + FSC 認證.',"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 33,
+      "match": "ISO 9001",
+      "context": "desc: 'Same-day CMYK printing from 100 sheets, 6PM HKT cut-off, free local delivery over $200, DHL 2-4 day global. Flyers, posters, stickers, paper bags, booklets, roll-up banners, waterproof UV. 30-s"
+    },
+    {
+      "file": "page.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\services\\rush-printing-delivery\\page.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 38,
+      "match": "ISO 9001",
+      "context": "desc: '当日 CMYK 印刷サービス 100 枚から対応, 平日 18 時までのご注文で徹夜印刷, 激安短納期. DHL 国際配送 2-4 日. チラシ・ポスター・ステッカー・紙袋・冊子・ロールアップバナー, 防水 UV. 30 秒 AI 無料見積もり. ISO 9001 + FSC 認証.',"
+    },
+    {
+      "file": "TradeProgramForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\trade-program\\TradeProgramForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 35,
+      "match": "placeholder",
+      "context": "// user 注册 formspree.io → 拿 form ID → 替换 placeholder"
+    },
+    {
+      "file": "TradeProgramForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\app\\[locale]\\trade-program\\TradeProgramForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 161,
+      "match": "placeholder",
+      "context": "placeholder=\"https://\""
+    },
+    {
+      "file": "CategoryIndustries.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\category\\CategoryIndustries.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 9,
+      "match": "placeholder",
+      "context": "*    - Tier 标记 + CTA（有博客=真链接，无=placeholder badge）"
+    },
+    {
+      "file": "CategoryIndustries.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\category\\CategoryIndustries.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 728,
+      "match": "Placeholder",
+      "context": "{/* Placeholder row for upcoming industries */}"
+    },
+    {
+      "file": "CategorySharpHooks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\category\\CategorySharpHooks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 279,
+      "match": "ISO 9001",
+      "context": "fallbackHook: '專業印刷服務, 100 個起印, ISO 9001 認證, 30 秒 AI 即時報價',"
+    },
+    {
+      "file": "CategorySharpHooks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\category\\CategorySharpHooks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 285,
+      "match": "ISO 9001",
+      "context": "fallbackHook: 'Professional printing service, 100 MOQ, ISO 9001 certified, 30-second AI instant quote',"
+    },
+    {
+      "file": "CategorySharpHooks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\category\\CategorySharpHooks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 291,
+      "match": "ISO 9001",
+      "context": "fallbackHook: 'プロ印刷サービス、100個から対応、ISO 9001認証、30秒AI即時見積',"
+    },
+    {
+      "file": "CategoryFilter.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\CategoryFilter.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 90,
+      "match": "1000+",
+      "context": "<span>{locale === 'zh-hk' ? 'HK$1000+' : locale === 'ja' ? '¥15000+' : '$130+'}</span>"
+    },
+    {
+      "file": "EmailSubscribePopup.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\EmailSubscribePopup.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 27,
+      "match": "placeholder",
+      "context": "// user 注册 formspree.io → 拿 form ID → 替换这里的 placeholder"
+    },
+    {
+      "file": "EmailSubscribePopup.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\EmailSubscribePopup.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 33,
+      "match": "placeholder",
+      "context": "placeholder: string;"
+    },
+    {
+      "file": "EmailSubscribePopup.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\EmailSubscribePopup.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 43,
+      "match": "placeholder",
+      "context": "placeholder: 'your@email.com',"
+    },
+    {
+      "file": "EmailSubscribePopup.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\EmailSubscribePopup.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 57,
+      "match": "placeholder",
+      "context": "placeholder: 'your@email.com',"
+    },
+    {
+      "file": "EmailSubscribePopup.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\EmailSubscribePopup.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 71,
+      "match": "placeholder",
+      "context": "placeholder: 'your@email.com',"
+    },
+    {
+      "file": "EmailSubscribePopup.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\EmailSubscribePopup.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 219,
+      "match": "placeholder",
+      "context": "placeholder={copy.placeholder}"
+    },
+    {
+      "file": "EmailSubscribePopup.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\EmailSubscribePopup.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 219,
+      "match": "placeholder",
+      "context": "placeholder={copy.placeholder}"
+    },
+    {
+      "file": "CompareTable.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\geo\\CompareTable.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 65,
+      "match": "15年",
+      "context": "p1: '根據 ZPrintPro 15年印刷經驗，選擇材質需要考慮使用環境、預算和環保需求。',"
+    },
+    {
+      "file": "CompareTable.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\geo\\CompareTable.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 95,
+      "match": "15年",
+      "context": "p1: 'ZPrintPro の15年の印刷経験に基づき、素材は使用環境、予算、環境要件で選びます。',"
+    },
+    {
+      "file": "FactoryTrust.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\FactoryTrust.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 12,
+      "match": "ISO 9001",
+      "context": "subtitle: '柯式印刷機 × 商標輪轉機 · ISO 9001 品質管理 · 15+ 年印刷經驗',"
+    },
+    {
+      "file": "FactoryTrust.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\FactoryTrust.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 18,
+      "match": "ISO 9001",
+      "context": "subtitle: 'Offset press line × Label rotary press · ISO 9001 quality management · 15+ years in printing',"
+    },
+    {
+      "file": "FactoryTrust.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\FactoryTrust.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 24,
+      "match": "ISO 9001",
+      "context": "subtitle: 'オフセット印刷機 × ラベル輪転機 · ISO 9001 品質管理 · 15年以上の印刷実績',"
+    },
+    {
+      "file": "FactoryTrust.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\FactoryTrust.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 24,
+      "match": "15年",
+      "context": "subtitle: 'オフセット印刷機 × ラベル輪転機 · ISO 9001 品質管理 · 15年以上の印刷実績',"
+    },
+    {
+      "file": "FactoryTrust.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\FactoryTrust.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 6,
+      "match": "自設廠房",
+      "context": "* §13.10: supplier origin 允许在正文层佐证品质 (亚洲工厂/深圳自設廠房)"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 162,
+      "match": "占位",
+      "context": "{/* === 上半区：空白占位，将内容推下（增加两个描述文字高度） === */}"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 68,
+      "match": "ISO 9001",
+      "context": "{ title: 'ISO 9001 認證 · 專業牛皮紙袋', subtitle: '深圳實體工廠 · FSC 認證紙 · 200 個起印 · 港九新界送貨上門', price: 'HK$1.2 起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 79,
+      "match": "ISO 9001",
+      "context": "// en 定位: Asia's Premium Printing — ISO 9001 · FSC Certified · Free US Shipping · 72h Global Delivery"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 81,
+      "match": "ISO 9001",
+      "context": "{ title: '⚡ Same-Day Printing · Free US Shipping $99+', subtitle: 'Order by 10AM, ship same day. ISO 9001 · FSC paper · Free design mockup in 4h · No setup fees', price: 'Same Day Ship', image: '/imag"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 72,
+      "match": "Heidelberg",
+      "context": "{ title: 'A2 大圖海報 · 即日輸出', subtitle: 'Heidelberg 4 色印刷 · 200-300g 銅版紙 · 大圖輸出色彩鮮豔', price: 'HK$15 起', image: '/images/hero/hero-poster-zh-hk.webp', href: '/product/a2-posters/' },"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 86,
+      "match": "Heidelberg",
+      "context": "{ title: 'A2 Posters · Free Design Proof', subtitle: 'Heidelberg 4-color offset · 200-300gsm art paper · Vivid colors · Free design mockup · 3-5 day global delivery', price: 'From US$1.95', image: '/i"
+    },
+    {
+      "file": "HeroBanner.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HeroBanner.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 100,
+      "match": "Heidelberg",
+      "context": "{ title: '大判ポスター印刷 · 高品質', subtitle: 'Heidelberg 4 色オフセット · 200-300g アート紙 · 鮮やかな発色 · 日本品質基準対応', price: '¥285〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/' }"
+    },
+    {
+      "file": "HowItWorks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HowItWorks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 212,
+      "match": "ISO 9001",
+      "context": "? '15+ 年印刷經驗 · ISO 9001 認證 · 15,000+ 全球客戶 · 100+ 國家發貨'"
+    },
+    {
+      "file": "HowItWorks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HowItWorks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 214,
+      "match": "ISO 9001",
+      "context": "? '15+ 年の印刷実績 · ISO 9001 認証 · 15,000+ グローバル顧客 · 100+ 国へ発送'"
+    },
+    {
+      "file": "HowItWorks.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\HowItWorks.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 215,
+      "match": "ISO 9001",
+      "context": ": '15+ years in business · ISO 9001 certified · 15,000+ global customers · Ships to 100+ countries'}"
+    },
+    {
+      "file": "TrustWaterfall.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\TrustWaterfall.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 3,
+      "match": "15年",
+      "context": "* 4 个小条：15年本地经验 / 30秒报价 / 不满意免费重印 / 24/7 客服"
+    },
+    {
+      "file": "TrustWaterfall.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\TrustWaterfall.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 16,
+      "match": "15年",
+      "context": "'15年本地經驗',"
+    },
+    {
+      "file": "TrustWaterfall.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\home\\TrustWaterfall.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 28,
+      "match": "15年",
+      "context": "'15年の実績',"
+    },
+    {
+      "file": "OrganizationSchema.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\insights\\HKPrintInquiryIndex\\OrganizationSchema.tsx",
+      "rule": "STRATEGY_JARGON",
+      "severity": "yellow",
+      "label": "🟡 策略黑话泄漏",
+      "line": 1,
+      "match": "v3.17",
+      "context": "// K3 v3.17 B4 schema 增量 (8/24 17:20 派工, K3 14:25 拍板 C 排期 17:20-18:20)"
+    },
+    {
+      "file": "FloatingQuoteCTA.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\FloatingQuoteCTA.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 39,
+      "match": "ISO 9001",
+      "context": "trustLine: 'ISO 9001 · FSC Certified · DHL 2-4 days to US/UK/AU',"
+    },
+    {
+      "file": "FloatingQuoteCTA.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\FloatingQuoteCTA.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 53,
+      "match": "ISO 9001",
+      "context": "trustLine: 'ISO 9001 · FSC認証 · DHL 2-4日で日本全国',"
+    },
+    {
+      "file": "FloatingQuoteCTA.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\FloatingQuoteCTA.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 59,
+      "match": "ISO 9001",
+      "context": "trustLine: 'ISO 9001 · FSC 認證 · 順豐本地倉 1 日到貨',"
+    },
+    {
+      "file": "Header.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\Header.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 23,
+      "match": "Placeholder",
+      "context": "searchPlaceholder: '搜尋印刷產品 (傳單/貼紙/包裝盒/海報...)',"
+    },
+    {
+      "file": "Header.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\Header.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 46,
+      "match": "Placeholder",
+      "context": "searchPlaceholder: 'Search printing products (Flyers/Cards/Stickers...)',"
+    },
+    {
+      "file": "Header.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\Header.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 69,
+      "match": "Placeholder",
+      "context": "searchPlaceholder: '印刷製品を検索 (チラシ/紙袋/ステッカー...)',"
+    },
+    {
+      "file": "Header.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\Header.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 334,
+      "match": "placeholder",
+      "context": "placeholder={t.searchPlaceholder}"
+    },
+    {
+      "file": "Header.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\Header.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 334,
+      "match": "Placeholder",
+      "context": "placeholder={t.searchPlaceholder}"
+    },
+    {
+      "file": "Header.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\Header.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 508,
+      "match": "placeholder",
+      "context": "placeholder={t.searchPlaceholder}"
+    },
+    {
+      "file": "Header.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\Header.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 508,
+      "match": "Placeholder",
+      "context": "placeholder={t.searchPlaceholder}"
+    },
+    {
+      "file": "SearchDropdown.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\SearchDropdown.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 51,
+      "match": "placeholder",
+      "context": "placeholder: string;"
+    },
+    {
+      "file": "SearchDropdown.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\SearchDropdown.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 92,
+      "match": "placeholder",
+      "context": "placeholder,"
+    },
+    {
+      "file": "SearchDropdown.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\SearchDropdown.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 281,
+      "match": "placeholder",
+      "context": "placeholder={placeholder}"
+    },
+    {
+      "file": "SearchDropdown.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\layout\\SearchDropdown.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 281,
+      "match": "placeholder",
+      "context": "placeholder={placeholder}"
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 17,
+      "match": "XXXX",
+      "context": "phone: \"電話 / WhatsApp\", phonePlaceholder: \"+852 XXXX XXXX\", email: \"電郵\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 17,
+      "match": "XXXX",
+      "context": "phone: \"電話 / WhatsApp\", phonePlaceholder: \"+852 XXXX XXXX\", email: \"電郵\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 28,
+      "match": "XXXX",
+      "context": "phone: \"Phone / WhatsApp\", phonePlaceholder: \"+1 555 XXXX\", email: \"Email\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 41,
+      "match": "XXXX",
+      "context": "phone: \"電話 / WhatsApp\", phonePlaceholder: \"+81 90 XXXX XXXX\", email: \"メール\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 41,
+      "match": "XXXX",
+      "context": "phone: \"電話 / WhatsApp\", phonePlaceholder: \"+81 90 XXXX XXXX\", email: \"メール\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 16,
+      "match": "Placeholder",
+      "context": "title: \"立即下單\", configLabel: \"配置快照\", name: \"姓名\", namePlaceholder: \"請輸入姓名\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 17,
+      "match": "Placeholder",
+      "context": "phone: \"電話 / WhatsApp\", phonePlaceholder: \"+852 XXXX XXXX\", email: \"電郵\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 17,
+      "match": "Placeholder",
+      "context": "phone: \"電話 / WhatsApp\", phonePlaceholder: \"+852 XXXX XXXX\", email: \"電郵\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 18,
+      "match": "Placeholder",
+      "context": "address: \"收貨地址\", addressPlaceholder: \"請輸入收貨地址\", note: \"備註（可選）\", notePlaceholder: \"特殊需求、文件說明…\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 18,
+      "match": "Placeholder",
+      "context": "address: \"收貨地址\", addressPlaceholder: \"請輸入收貨地址\", note: \"備註（可選）\", notePlaceholder: \"特殊需求、文件說明…\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 27,
+      "match": "Placeholder",
+      "context": "title: \"Place Order\", configLabel: \"Config Snapshot\", name: \"Name\", namePlaceholder: \"Your name\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 28,
+      "match": "Placeholder",
+      "context": "phone: \"Phone / WhatsApp\", phonePlaceholder: \"+1 555 XXXX\", email: \"Email\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 28,
+      "match": "Placeholder",
+      "context": "phone: \"Phone / WhatsApp\", phonePlaceholder: \"+1 555 XXXX\", email: \"Email\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 29,
+      "match": "Placeholder",
+      "context": "address: \"Shipping Address\", addressPlaceholder: \"Enter shipping address\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 30,
+      "match": "Placeholder",
+      "context": "note: \"Notes (optional)\", notePlaceholder: \"Special requests, file notes…\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 40,
+      "match": "Placeholder",
+      "context": "title: \"ご注文\", configLabel: \"構成スナップショット\", name: \"お名前\", namePlaceholder: \"名前を入力\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 41,
+      "match": "Placeholder",
+      "context": "phone: \"電話 / WhatsApp\", phonePlaceholder: \"+81 90 XXXX XXXX\", email: \"メール\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 41,
+      "match": "Placeholder",
+      "context": "phone: \"電話 / WhatsApp\", phonePlaceholder: \"+81 90 XXXX XXXX\", email: \"メール\", emailPlaceholder: \"your@email.com\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 42,
+      "match": "Placeholder",
+      "context": "address: \"配送先住所\", addressPlaceholder: \"配送先住所を入力\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 43,
+      "match": "Placeholder",
+      "context": "note: \"備考（任意）\", notePlaceholder: \"特別なご要望、ファイル説明…\","
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 167,
+      "match": "placeholder",
+      "context": "<input required value={name} onChange={e => setName(e.target.value)} className=\"w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500\" place"
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 167,
+      "match": "Placeholder",
+      "context": "<input required value={name} onChange={e => setName(e.target.value)} className=\"w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500\" place"
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 171,
+      "match": "placeholder",
+      "context": "<input required value={phone} onChange={e => setPhone(e.target.value)} className=\"w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500\" pla"
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 171,
+      "match": "Placeholder",
+      "context": "<input required value={phone} onChange={e => setPhone(e.target.value)} className=\"w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500\" pla"
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 175,
+      "match": "placeholder",
+      "context": "<input required type=\"email\" value={email} onChange={e => setEmail(e.target.value)} className=\"w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-"
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 175,
+      "match": "Placeholder",
+      "context": "<input required type=\"email\" value={email} onChange={e => setEmail(e.target.value)} className=\"w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-"
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 179,
+      "match": "placeholder",
+      "context": "<input required value={address} onChange={e => setAddress(e.target.value)} className=\"w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500\""
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 179,
+      "match": "Placeholder",
+      "context": "<input required value={address} onChange={e => setAddress(e.target.value)} className=\"w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500\""
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 183,
+      "match": "placeholder",
+      "context": "<textarea value={note} onChange={e => setNote(e.target.value)} rows={2} className=\"w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500\" pl"
+    },
+    {
+      "file": "orderform.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\pdp\\orderform.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 183,
+      "match": "Placeholder",
+      "context": "<textarea value={note} onChange={e => setNote(e.target.value)} rows={2} className=\"w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500\" pl"
+    },
+    {
+      "file": "ProductGallery.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\ProductGallery.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 18,
+      "match": "placeholder",
+      "context": "const displayImages = images.length > 0 ? images : ['/images/placeholder.jpg'];"
+    },
+    {
+      "file": "ProductTabs.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\ProductTabs.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 174,
+      "match": "FSC認證",
+      "context": "'packaging': ['zh-hk,白卡/牛皮紙/瓦楞,結構設計免費,燙金UV可選,FSC認證紙'.split(','), 'en,White card/Kraft/Corrugated,Free structural design,Foil/UV options,FSC certified'.split(','), 'ja,白カード/クラフト/段ボール,構造設計無料,箔/UV選択可,FSC"
+    },
+    {
+      "file": "ProductTabs.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\ProductTabs.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 181,
+      "match": "FSC認證",
+      "context": "'exercise-books': ['zh-hk,FSC認證環保紙,封面免費印Logo,橫線/方格/田字格可選,學校補習社適用'.split(','), 'en,FSC certified eco paper,Free cover logo,Ruled/grid/blank inner,For schools & tutors'.split(','), 'ja,FSC認証エコ紙,表紙ロゴ無料,横"
+    },
+    {
+      "file": "ProductWhyChooseUs.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\ProductWhyChooseUs.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 18,
+      "match": "15年",
+      "context": "subtitle: '15年跨境經驗',"
+    },
+    {
+      "file": "ProductWhyChooseUs.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\ProductWhyChooseUs.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 136,
+      "match": "15年",
+      "context": "subtitle: '15年以上の実績',"
+    },
+    {
+      "file": "QuantityTierInteractive.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuantityTierInteractive.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 142,
+      "match": "占位",
+      "context": "{/* BEST VALUE 标签 / 占位 */}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 94,
+      "match": "Placeholder",
+      "context": "namePlaceholder: '請輸入您的姓名（選填）',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 96,
+      "match": "Placeholder",
+      "context": "phonePlaceholder: '請輸入手提電話（例如：5123 4567）',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 98,
+      "match": "Placeholder",
+      "context": "emailPlaceholder: '請輸入常用電郵地址（報價以郵件回覆）',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 101,
+      "match": "Placeholder",
+      "context": "categoryPlaceholder: '請選擇產品類型',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 103,
+      "match": "Placeholder",
+      "context": "quantityPlaceholder: '例如：500張、1000個',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 105,
+      "match": "Placeholder",
+      "context": "sizePlaceholder: '例如：A4、90×54mm',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 107,
+      "match": "Placeholder",
+      "context": "messagePlaceholder: '請詳細說明印刷需求：例如品類、紙質、工藝要求、交貨時間等...',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 135,
+      "match": "Placeholder",
+      "context": "namePlaceholder: 'Your name (optional)',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 137,
+      "match": "Placeholder",
+      "context": "phonePlaceholder: 'Enter your phone number',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 139,
+      "match": "Placeholder",
+      "context": "emailPlaceholder: 'Your email (quote will be sent here)',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 142,
+      "match": "Placeholder",
+      "context": "categoryPlaceholder: 'Select product type',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 144,
+      "match": "Placeholder",
+      "context": "quantityPlaceholder: 'e.g. 500 pcs, 1000 pcs',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 146,
+      "match": "Placeholder",
+      "context": "sizePlaceholder: 'e.g. A4, 90×54mm',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 148,
+      "match": "Placeholder",
+      "context": "messagePlaceholder: 'Please describe your printing needs: product type, paper, finishing, delivery time...',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 176,
+      "match": "Placeholder",
+      "context": "namePlaceholder: 'お名前（任意）',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 178,
+      "match": "Placeholder",
+      "context": "phonePlaceholder: '電話番号を入力',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 180,
+      "match": "Placeholder",
+      "context": "emailPlaceholder: 'メールアドレス（見積もりをこちらに送信）',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 183,
+      "match": "Placeholder",
+      "context": "categoryPlaceholder: '製品タイプを選択',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 185,
+      "match": "Placeholder",
+      "context": "quantityPlaceholder: '例：500枚、1000個',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 187,
+      "match": "Placeholder",
+      "context": "sizePlaceholder: '例：A4、90×54mm',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 189,
+      "match": "Placeholder",
+      "context": "messagePlaceholder: '印刷のご要望を詳しくご記入ください：製品、紙質、加工、納期など...',"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 434,
+      "match": "placeholder",
+      "context": "placeholder={t.namePlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 434,
+      "match": "Placeholder",
+      "context": "placeholder={t.namePlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 447,
+      "match": "placeholder",
+      "context": "placeholder={t.phonePlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 447,
+      "match": "Placeholder",
+      "context": "placeholder={t.phonePlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 465,
+      "match": "placeholder",
+      "context": "placeholder={t.emailPlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 465,
+      "match": "Placeholder",
+      "context": "placeholder={t.emailPlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 495,
+      "match": "Placeholder",
+      "context": "<option value=\"\">{t.categoryPlaceholder}</option>"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 510,
+      "match": "placeholder",
+      "context": "placeholder={t.quantityPlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 510,
+      "match": "Placeholder",
+      "context": "placeholder={t.quantityPlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 521,
+      "match": "placeholder",
+      "context": "placeholder={t.sizePlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 521,
+      "match": "Placeholder",
+      "context": "placeholder={t.sizePlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 546,
+      "match": "placeholder",
+      "context": "placeholder={t.messagePlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "PLACEHOLDER",
+      "severity": "white",
+      "label": "⚪ 占位符残留",
+      "line": 546,
+      "match": "Placeholder",
+      "context": "placeholder={t.messagePlaceholder}"
+    },
+    {
+      "file": "QuoteForm.tsx",
+      "filePath": "F:\\zprintpro-nextjs\\src\\components\\quote\\QuoteForm.tsx",
+      "rule": "UNVERIFIED_CLAIM",
+      "severity": "orange",
+      "label": "🟠 未证实声明",
+      "line": 208,
+      "match": "15年",
+      "context": "{ icon: '🏭', label: '自社工場・15年以上の実績' },"
+    }
+  ]
+}

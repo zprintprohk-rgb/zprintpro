@@ -1,0 +1,93 @@
+{
+  "audit_at": "2026-08-09T09:30:00+08:00",
+  "trigger": "v8.3 retrofit 8/9 baby-product-label-sticker-printing-guide auto-completion",
+  "slug": "baby-product-label-sticker-printing-guide",
+  "retrofit_date": "2026-08-09",
+  "overall_status": "verified",
+  "by_locale": {
+    "zh-hk": {
+      "slug": "baby-product-label-sticker-printing-guide",
+      "chars": 6928,
+      "step1_cta": {
+        "total_hrefs": 5,
+        "valid_hrefs": 5,
+        "issues": [],
+        "status": "verified"
+      },
+      "step2_form": {
+        "has_quote_link": true,
+        "has_contact_link": false,
+        "status": "verified"
+      },
+      "step3_ga4": {
+        "content_has_gtag": false,
+        "content_has_track": false,
+        "has_placeholder_button": false,
+        "status": "verified"
+      },
+      "step4_backup": {
+        "content_has_wa": false,
+        "content_has_mailto": false,
+        "status": "verified"
+      },
+      "conversion_status": "verified",
+      "last_conversion_test": "2026-08-09T09:30:00+08:00"
+    },
+    "en": {
+      "slug": "baby-product-label-sticker-printing-guide",
+      "chars": 11755,
+      "step1_cta": {
+        "total_hrefs": 5,
+        "valid_hrefs": 5,
+        "issues": [],
+        "status": "verified"
+      },
+      "step2_form": {
+        "has_quote_link": true,
+        "has_contact_link": false,
+        "status": "verified"
+      },
+      "step3_ga4": {
+        "content_has_gtag": false,
+        "content_has_track": false,
+        "has_placeholder_button": false,
+        "status": "verified"
+      },
+      "step4_backup": {
+        "content_has_wa": false,
+        "content_has_mailto": false,
+        "status": "verified"
+      },
+      "conversion_status": "verified",
+      "last_conversion_test": "2026-08-09T09:30:00+08:00"
+    },
+    "ja": {
+      "slug": "baby-product-label-sticker-printing-guide",
+      "chars": 7198,
+      "step1_cta": {
+        "total_hrefs": 5,
+        "valid_hrefs": 5,
+        "issues": [],
+        "status": "verified"
+      },
+      "step2_form": {
+        "has_quote_link": true,
+        "has_contact_link": false,
+        "status": "verified"
+      },
+      "step3_ga4": {
+        "content_has_gtag": false,
+        "content_has_track": false,
+        "has_placeholder_button": false,
+        "status": "verified"
+      },
+      "step4_backup": {
+        "content_has_wa": false,
+        "content_has_mailto": false,
+        "status": "verified"
+      },
+      "conversion_status": "verified",
+      "last_conversion_test": "2026-08-09T09:30:00+08:00"
+    }
+  }
+}

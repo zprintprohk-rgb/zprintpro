@@ -1,0 +1,50 @@
+docs(blog)+chore(gate): B3 FAQ 五要件三处同步 + sticker 段锚分布盘点 (改写建议: 先核对口径) (K3 2026-09-19)
+
+【1. B3 FAQ 写做五要件 (K3 2026-09-19 收敛) —— 三处同步】
+① 格式 `<p><strong>Qn: 问?</strong><br/>A: 答</p>`（写入前必跑 precheck-faq-format.mjs, 8 用例含 3 反例）
+② 答案 **40-80 词**
+③ **answer-first: 首句 8-12 词内给出直接答案**（不铺垫）
+④ **自包含**: 每段答案可独立引用, 不依赖上下文
+⑤ **数量 5-8 组**聚焦问题（>15 组稀释特异性; <4 组不达段 9 硬线）
+依据 (外部实测): Q&A 结构化引用率 34% vs 长文叙事 15%（约 2.3 倍）; 明确标注 FAQ 区域 + 约 65% 对话式查询引用;
+  叠加 FAQPage schema 再 +20-25%。
+同步: SSoT §3.1 + cron prompt v11 两文件 (新增第 ⑤ 条) ⇒ #21 sha256 已重绑定 ✅（3 绑定一致）
+
+【2. ★ sticker × 3 段锚分布盘点 —— 建议**不改写**, 与「授权建议」的前提不符 (请核对口径)】
+K3 授权建议的前提是「sticker 三语问句覆盖率不齐 (zh-hk 6/15 / ja 6/14)」。实测 dump 后前提**不成立**:
+  zh-hk: H2/H3 共 15, **问句 6 = 40%**
+  en   : 共 15, 问句 6 = **40%**
+  ja   : 共 14, 问句 6 = **43%**
+  ⇒ 上一轮报告的「6/15」是**绝对数**, 容易被读成「1/3 达标」; 真实占比 **40-43%, 三语一致 (差 ≤3pt)**。
+  且 gate 判据 (段 3 通过线为本仓实现的) **当前已 PASS** (按 §3.1「(H2+H3) 中问句式 >50%」的字面口径，
+  sticker 三语均未达 50%; 但门禁现行实现为「总数 ≥6 且非问句 ≤ 问句」⇒ PASS)。
+  ⚠️ **此处存在真实的口径分叉，必须先澄清再决定是否改写**:
+    · SSoT §3.1 字面 = 问句式 **>50%**
+    · 门禁实现 = 总数 ≥6 且 **非问句 ≤ 问句**（等价于问句 ≥50%，边界含 50%）
+    ⇐ 这是我在段 3 修订时留下的不一致，**属我的口径缺陷**，本条如实登记，等 K3 裁一次口径：
+      (i) 统一按字面 >50% ⇒ sticker 三语 (40-43%) 与 campus en (67%) 之外的多数页需改写，范围会显著扩大；
+      (ii) 统一按现行实现 (≥50% 含边界) ⇒ sticker 已达标，无需改写；
+      (iii) 折中：门禁保留 ≥50%，SSoT 字面同步改为「≥50%」（消除分叉，零内容改动）。
+
+同时盘点出两个**真实的三语不一致点**（与覆盖率无关，是逐条结构差异）：
+  · `PVC 防水貼紙 6 大實測優勢` / `PVC Waterproof Sticker 6 Field-Tested Advantages` / `PVC 防水ステッカー 6 大実測優位性`：
+    **zh-hk 与 ja 是 H3 陈述式, en 是 H2 问句式** ⇒ 同一小节三语标签层级与句式都不一致（**这一条值得改**）
+  · ja 缺 `延伸閱讀 / Further Reading` 整节 (zh-hk 与 en 均有) ⇒ 结构缺项（**这一条值得补**）
+⇒ 建议：**不做全量改写**（前提不成立，且会新增 6+ 处未经授权的文案改动）；
+  只处理上面两个**有实证的三语不一致点**（1 处段锚层级/句式对齐 + 1 处缺节补建），等 K3 点头即执行。
+
+【3. 其他状态】
+· B2: poster-size-guide × 3 已 strip (deda0e3b)；累计 7 篇。print-specs × 3 = SINGLE_INLINE_ONLY ⇒ **禁 strip**, 归入 B3 补 FAQ
+· 段 12 (4 条 ja FAIL): 已判定**部署滞后**（本地内嵌=0，线上 DUPLICATE，生成区 FAQPage 已在）⇒ push 后自愈；
+  按 K3 补充要求, push 后除 `--baseline --online` 外**追加 Schema.org Validator** 验证清理页 FAQPage 的 @type/mainEntity 结构完整
+· 段 8 路径 (a): 等 K3 提交 Perplexity/ChatGPT 两版引用对比
+· Person jobTitle/knowsAbout · C 二期 run-context 注入: 待做
+
+【数据来源】
+- sticker 分布: dump-sticker-headings.mjs（三语 H2/H3 全量 + 问句计数）
+- 门禁: blog-quality-12-rules-guard（段 3 PASS 现状 + 判据）
+- 口径分叉: SSoT §3.1 字面 vs guards 实现（逐行比对）
+- B3 五要件来源: K3 2026-09-19 收敛 + 外部实测汇总
+- push 后验证补充: K3 2026-09-19 要求 (Schema.org Validator)
+
+Bypass-rationale: 本批 = SSoT/cron prompt 口径同步 + 盘点工具; pre-commit 红规则对 .hermes 历史字面硬拦; 无客户可见文本改动

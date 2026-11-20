@@ -1,0 +1,55 @@
+feat(seo): 「替代」模式 (subst) — P2 可解锁槽位 6→14; 暴露替换池过薄的真限制
+
+来源: K3 2026-09-19 决策「构建替代模式, 解锁 31 条 needsRewrite」
+
+## 一、实现 (generate-title-batch.mjs 新增 buildSubstCandidates)
+纯删除对 82% 超限标题无解 (冗余在**短语内部**) ⇒ 新增三层枚举「替代」模式:
+① 识别**超长钩子段** (>10 当量且含钩子特征) 为替换对象 (例 en `Free Shipping $99+` = 18 当量)
+② 替换池 = **来源可溯的短钩子**: MOQ (products.ts minQuantity / K3 裁决真值) + 价格 (basePrice);
+   `NO_MOQ_HOOK` 槽位从池中剔除 MOQ 钩子; **绝不编造**
+③ 枚举「丢 k 个最长钩子 + 取 j 个短钩子」, 保留全部非钩子修饰段与主词;
+   无解 ⇒ needsRewrite 照旧 (不硬凑)
+流水线: TRIM 槽位**先试纯删除, 无解自动升级为替代** (K3: 替代是解锁 needsRewrite 的路径)。
+
+## 二、结果 (38 槽)
+| 模式 | 槽数 |
+|---|---|
+| 纯删除 (trim) | 6 |
+| **替代 (subst)** | **8** |
+| 仍需人工改写 | 24 |
+⇒ 可自动解锁 **6 → 14 槽** (37%)。
+
+替代样本:
+- `waterproof-stickers/en` 59→55 `Custom Waterproof Stickers | 10 MOQ | $0.32 | ZprintPro`
+- `same-day-flyers/en` 67→55 `Same-Day Flyer Printing from $0.95 | 10 MOQ | ZprintPro`
+- `double-sided-flyers/ja` 71→55 `両面カラー印刷 両面チラシ | 100枚〜 | ¥85〜 | ZprintPro`
+- `fruit-food-label-stickers/en` 59→56 `Custom Food Label Stickers | 500 MOQ | $0.23 | ZprintPro`
+
+## 三、⚠️ 质量保留意见 (本批**未落盘**, 须 K3 决定)
+### ① 裸价格钩子: 机械合规但 copy 质量存疑
+多条替代候选产出**裸价格** (`| $0.32 |`)。根因**不是选择逻辑**, 而是**替换池太薄**:
+实测 `waterproof-stickers/en` 若只取 MOQ ⇒ `Custom Waterproof Stickers | 10 MOQ | ZprintPro` = **46 当量 (<50)**
+⇒ 必须再加价格段才够 50。但 `$0.32` **无单位语境** (每张? 每件?),
+用它替换强势钩子 `Free Shipping $99+` 属**hook 质量倒退**, 与「数字钩子优先保」的初衷相反。
+**建议修法 (下轮)**: 替换池扩入**线上已在用的短钩子** (来源 = 既有标题, 可溯且一致),
+例 `Free US Ship` (现见于 folded-leaflets/eco-red-packets 等) / `2h Proof` / `4-day USA`。
+有了短钩子池, `MOQ + 短钩子` 组合即可落带内而**无需裸价格**。
+### ② 冻结主词无法修正既有错误文案
+`a4-flyers/en` / `a5-flyers/en` 替代后仍保留 **`A4/A5 Flyers for Holiday Cards`** ——
+该文案本身是**内容错误** (A4 传单 ≠ 贺卡), 早前已登记。因主词冻结 (churn 红线) 本模式无从修正,
+须走**独立批次**处理 (单变量), 不可与长度批次混做。
+
+## 四、纪律遵守
+- 替代池**全部可溯源** (products.ts minQuantity / basePrice / K3 裁决真值); 无来源不入池
+- `NO_MOQ_HOOK` 槽位不引入 MOQ 钩子
+- `MANUAL_REVIEW` 槽位直接跳过
+- 主词冻结 (逐字保留), 四道闸门全覆盖
+
+## 数据来源
+- .hermes/reports/title-input-bank-2026-09-19.json · moq-precision-classification-2026-09-19.json
+- src/data/products.ts (minQuantity / basePrice) · scripts/guards/title-equiv.js
+校准日期: 2026-09-20 00:20
+
+## 验收
+node scripts/generate-title-batch.mjs --batch=P2-修剪 --emit → 纯删除 6 / 替代 8 / 需改写 24 ✅
+⚠️ 本批**未改 src** (替代候选含裸价格, 质量待 K3 决定后再落盘)

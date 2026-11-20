@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>名片→贺卡违规审计报告 | K3 8/17 拍板违规</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased}
+body{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f0;color:#111;line-height:1.5;padding:40px 20px;max-width:1100px;margin:0 auto}
+h1{font-size:2rem;font-weight:700;letter-spacing:-0.02em;border-bottom:3px solid #111;padding-bottom:12px;margin-bottom:8px}
+h2{font-size:1.25rem;font-weight:700;margin-top:32px;margin-bottom:12px;border-left:6px solid #111;padding-left:12px}
+h3{font-size:1rem;font-weight:700;margin-top:20px;margin-bottom:8px}
+.meta{font-size:0.85rem;color:#666;margin-bottom:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+.meta span{border:1px solid #ccc;padding:6px 10px}
+.verdict{background:#111;color:#fff;padding:20px 24px;margin:24px 0;font-size:1.1rem;font-weight:600}
+.verdict .tag{display:inline-block;background:#e63946;color:#fff;font-size:0.75rem;font-weight:700;padding:3px 8px;margin-right:10px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.9rem}
+th,td{border:1px solid #111;padding:10px 12px;text-align:left;vertical-align:top}
+th{background:#111;color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f0f0e8}
+.status-ok{color:#2d6a4f;font-weight:600}
+.status-warn{color:#e63946;font-weight:600}
+.status-done{color:#2d6a4f;font-weight:600}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:16px 0}
+@media(max-width:700px){.grid-2{grid-template-columns:1fr}}
+.card{border:1px solid #111;padding:16px;background:#fff}
+.card h4{font-size:0.95rem;margin-bottom:8px;padding-bottom:6px;border-bottom:2px solid #111}
+.card ul{padding-left:18px;font-size:0.9rem}
+.card li{margin-bottom:4px}
+.timeline{margin:20px 0;padding-left:24px;border-left:2px solid #111}
+.timeline .step{margin-bottom:20px;position:relative}
+.timeline .step::before{content:"";position:absolute;left:-31px;top:6px;width:12px;height:12px;background:#111}
+.timeline .step.bad::before{background:#e63946}
+.timeline .step.good::before{background:#2d6a4f}
+.timeline .step-title{font-weight:700;font-size:0.95rem}
+.timeline .step-desc{font-size:0.85rem;color:#555;margin-top:4px}
+.code{font-family:"SF Mono",Consolas,monospace;font-size:0.8rem;background:#f0f0e8;padding:2px 6px;border:1px solid #ccc}
+.section-rule{background:#fffbe6;border:1px solid #e6cc70;padding:14px 18px;margin:12px 0;font-size:0.9rem}
+.section-rule strong{color:#8a6d00}
+</style>
+</head>
+<body>
+
+<h1>名片品类改名贺卡 · 违规审计报告</h1>
+
+<div class="meta">
+<span>报告编号：M3-VIOL-001</span>
+<span>违规级别：<strong>最高规则违反</strong></span>
+<span>涉事 commit：<span class="code">7347c503</span></span>
+<span>日期：2026-09-06</span>
+<span>审计：zprintpro</span>
+</div>
+
+<div class="verdict">
+<span class="tag">VERDICT</span>
+v22 commit 将 6 个名片 SKU 改名为贺卡 SKU 凑数，内容未做实质调整，严重违反 K3 8/17 05:32 拍板：「名片 = 独立品类，不做该品类」。
+</div>
+
+<h2>一、最高规则原文</h2>
+
+<div class="section-rule">
+<strong>K3 8/17 拍板（docs/k3-greeting-cards-strategy-2026-08-17.md L40）：</strong><br>
+名片排除：咭片/名片/business cards/名刺 = 独立品类，不做该品类。<br><br>
+<strong>贺卡 11 个 SKU 范围（L37）：</strong>贺卡 / 咭片 / 邀请卡 / 感谢卡 / 胸牌 / 席位卡 / 酒牌 —— 不含名片。<br><br>
+<strong>导流方向（L48）：</strong>business cards (en) → sticker / name badges / sample card / label
+</div>
+
+<h2>二、违规事实</h2>
+
+<div class="timeline">
+<div class="step good">
+<div class="step-title">v21 及之前</div>
+<div class="step-desc">business-cards 是独立分类，6 个 SKU。greeting-cards 分类 = 0 SKU。</div>
+</div>
+<div class="step bad">
+<div class="step-title">v22 commit <span class="code">7347c503</span></div>
+<div class="step-desc">将 6 个名片 SKU 1:1 改名为贺卡 SKU，category 从 business-cards 改 greeting-cards。描述仅做名词替换（business card → greeting card），实质内容还是名片（尺寸 85×54mm、professional branding 等）。</div>
+</div>
+<div class="step bad">
+<div class="step-title">v3.2 middleware 合并</div>
+<div class="step-desc">middleware.ts 新增 8 条名片→贺卡 301 重定向，标注「v3.2 品类整合 2026-08-18」。</div>
+</div>
+<div class="step bad">
+<div class="step-title">next.config.js V22_REDIRECTS</div>
+<div class="step-desc">8 条名片 SKU + buying guide → 贺卡的服务器端 301。GSC_404_REDIRECTS 另有 3 条同方向。</div>
+</div>
+<div class="step good">
+<div class="step-title">2026-09-06 01:00 修复</div>
+<div class="step-desc">导流方向修正：19 条名片→贺卡 301 全部改名为名片→贴纸（stickers），符合 K3 拍板导流方向。</div>
+</div>
+</div>
+
+<h2>三、影响面清单</h2>
+
+<table>
+<thead><tr><th>文件</th><th>违规内容</th><th>数量</th><th>状态</th></tr></thead>
+<tbody>
+<tr><td><span class="code">src/middleware.ts</span></td><td>名片 SKU → 贺卡 301</td><td>8 条</td><td><span class="status-done">✅ 已改→stickers</span></td></tr>
+<tr><td><span class="code">next.config.js</span> V22_REDIRECTS</td><td>6 SKU + 分类 + buying guide → 贺卡</td><td>8 条</td><td><span class="status-done">✅ 已改→stickers</span></td></tr>
+<tr><td><span class="code">next.config.js</span> GSC_404</td><td>same-day/eco 名片 → 贺卡</td><td>3 条</td><td><span class="status-done">✅ 已改→stickers</span></td></tr>
+<tr><td><span class="code">src/data/products.ts</span></td><td>6 个「贺卡」SKU 实际是名片内容</td><td>6 SKU × 3 语言</td><td><span class="status-warn">⚠️ 待决策</span></td></tr>
+</tbody>
+</table>
+
+<h2>四、6 个换皮 SKU 对照</h2>
+
+<table>
+<thead><tr><th>#</th><th>当前贺卡 slug</th><th>原名片 slug</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><span class="code">premium-greeting-cards</span></td><td><span class="code">premium-business-cards</span></td><td>高端名片→高端贺卡</td></tr><tr><td>2</td><td><span class="code">thick-greeting-cards-400g</span></td><td><span class="code">thick-business-cards-400g</span></td><td>厚纸名片(400g)→厚纸贺卡(400g)</td></tr><tr><td>3</td><td><span class="code">foil-greeting-cards</span></td><td><span class="code">foil-business-cards</span></td><td>烫金银名片→烫金银贺卡</td></tr><tr><td>4</td><td><span class="code">spot-uv-greeting-cards</span></td><td><span class="code">spot-uv-business-cards</span></td><td>UV局部浮雕名片→UV局部浮雕贺卡</td></tr><tr><td>5</td><td><span class="code">matte-greeting-cards</span></td><td><span class="code">matte-business-cards</span></td><td>哑膜名片→哑膜贺卡</td></tr><tr><td>6</td><td><span class="code">rounded-corner-greeting-cards</span></td><td><span class="code">rounded-corner-cards</span></td><td>圆角名片→圆角贺卡</td></tr>
+</tbody>
+</table>
+
+<p style="font-size:0.85rem;color:#666;margin-top:8px">改名前 greeting-cards 分类 SKU 数 = 0。即整个贺卡品类是用名片换皮凑出来的。</p>
+
+<h2>五、修复方案（待拍板）</h2>
+
+<div class="grid-2">
+<div class="card">
+<h4>方案 A：下架换皮 SKU + 贺卡从零做</h4>
+<ul>
+<li>删除 6 个假贺卡 SKU</li>
+<li>贺卡分类页短期为空壳</li>
+<li>后续按 K3 拍板重做真贺卡</li>
+<li><strong>优点：</strong>最干净，不留假内容</li>
+<li><strong>缺点：</strong>丢失已有 URL 权重</li>
+</ul>
+</div>
+<div class="card">
+<h4>方案 B：保留 URL + 内容全替换 ⭐</h4>
+<ul>
+<li>6 个 SKU URL 保留</li>
+<li>描述/图片/规格全部改写为真贺卡内容</li>
+<li>工艺维度（premium/thick/foil 等）映射成立</li>
+<li><strong>优点：</strong>保留 SEO 权重，方向正确</li>
+<li><strong>缺点：</strong>工作量大≈重写 6×3 语言</li>
+</ul>
+</div>
+</div>
+
+<div class="grid-2">
+<div class="card">
+<h4>方案 C：恢复名片品类 + 标「暂不提供」</h4>
+<ul>
+<li>改回 business-cards 分类和原名</li>
+<li>分类页说明不提供，导流贴纸/胸牌</li>
+<li><strong>优点：</strong>最诚实，搜索名片的人有承接</li>
+<li><strong>缺点：</strong>可能违反"不做"=连页面都不留</li>
+</ul>
+</div>
+<div class="card" style="background:#f0f0e8">
+<h4>推荐：方案 B</h4>
+<ul>
+<li>K3 拍板方向是「做贺卡」</li>
+<li>6 个 URL 已有收录，删了可惜</li>
+<li>工艺维度同样适用于贺卡</li>
+<li>只需改写文案和用途描述</li>
+</ul>
+</div>
+</div>
+
+<h2>六、已执行的最小修复</h2>
+
+<ul style="padding-left:20px;font-size:0.9rem;line-height:1.8">
+<li>middleware.ts：8 条名片→贺卡 301 → 名片→贴纸</li>
+<li>next.config.js V22_REDIRECTS：8 条 → 贴纸</li>
+<li>next.config.js GSC_404_REDIRECTS：3 条 → 贴纸</li>
+<li>合计 19 处导流修正，符合 K3 8/17 拍板</li>
+<li>备份：<span class="code">next.config.js.bak_bc_redirect</span> / <span class="code">middleware.ts.bak_bc_redirect</span></li>
+</ul>
+
+<p style="margin-top:40px;padding-top:16px;border-top:1px solid #ccc;font-size:0.8rem;color:#666;text-align:right">
+Müller-Brockmann 网格功能主义 · zprintpro 审计 · 2026-09-06
+</p>
+
+</body>
+</html>

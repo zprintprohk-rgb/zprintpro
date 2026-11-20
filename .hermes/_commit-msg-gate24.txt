@@ -1,0 +1,59 @@
+fix(gate): 门童 #24 判定域扩展至 title 字段 — 修掉 menus 类「半修复残留」的假零盲区
+
+来源: K3 2026-09-19 决策「先扩展门禁 #24 判定域至 title 字段（扩展判定域比修 24 条 DRIFT 更优先）」
+
+## 一、根因 (精确到行, 非猜测)
+`sku-seo-data.ts` **本来就在扫描范围内**, 但它有一个「跨品类行排除」过滤器
+(脚本 L348-356, 为压掉 body/description 散文的假阳性而设):
+  ① 数字前 18 字内出现品类名 → 跳过
+  ② 整行出现 ≥2 个品类名 → 跳过
+
+而本站标题格式**恒为** `主词(含品类名) | 修饰 MOQ钩子 | 品牌`
+⇒ 品类名**必然**落在数字前 18 字内 ⇒ **规则 ① 对 title 行必然命中** ⇒
+   **所有 title 行被系统性静默跳过** = 假零 (报「🆕 0 漂移」)。
+
+这解释了 menus 簇的「半修复」: c18107a0 按 K3 裁决移除了 **features 版**【50本起訂】,
+**title 版**「50本起」残留至今, 而门童看不到 ⇒ 无告警。
+
+## 二、修法 (最小改动, 判据可辩护)
+title 是 SKU 区块内的**单行标量字段**, 结构上**不可能**是跨品类综合段落
+(该过滤器的设计目标是 `sku-seo-data.ts` 的 body/description 散文)。
+⇒ title 行豁免规则 ①②, 但 **inNested() 嵌套归属** 与 **slugForLine() SKU 归属** 检查不变。
+
+```ts
+const isTitleLine = (l: string): boolean =>
+  /^\s*"title"\s*:\s*"/.test(l) || /^\s*title\s*:\s*['"]/.test(l);
+if (file !== SELF && !isTitleLine(line)) { /* ①② 过滤 */ }
+```
+
+## 三、效果 (实测)
+- 修复前: 待裁決 6 / 已核准 4, 「🆕 新漂移 0」
+- 修复后: **待裁決 286** / 已核准分層 4, 「🆕 新漂移 0」
+- 抽样验证 (genuine, 非误报):
+  `摺頁單張 | 雙面四色 100張起 | 智印港`(真值 10) · `A4 チラシ | ... 100枚〜`(ja) ·
+  `小批量貼紙 50 張起 ...`(small-batch 线) ⇒ 与独立 title-scope 检查**同类命中**。
+
+⚠️ **尚未完成的部分 (诚实登记, 不夸大)**: 286 条现落在「待裁決」(不阻断) 桶内,
+   「新漂移」仍报 0 ⇒ 门禁**看得见但还不会拦**。要变成真闸门还需一次**精度分级**:
+   - ja flyers 7/7 → `LOCALE_SPECIFIC_KEEP` (已在我方裁决表标记, 需同步进门禁的已核准桶)
+   - small-batch-stickers → `NO_MOQ_HOOK` (产品线口径待 K3)
+   - 余下才是应阻断的 DRIFT
+   286 vs 我方 title-scope 的 43 条 ⇒ 差集须逐条判精度, 不可直接当缺陷数上报 (§0.23.2)。
+
+## 四、配套: MOQ 裁决表加 moqStatus 字段 (K3 决策 3)
+scripts/resolve-moq-conflicts.mjs 为每条冲突加 `moqStatus`, 供阶段三生成器直接消费:
+- `USE_RULING_TRUTH` (24 条 DRIFT) — 用 K3 裁决真值
+- `LOCALE_SPECIFIC_KEEP` (ja flyers 7 条) — **保留 locale 值, 不许统一为全局值**
+- `NO_MOQ_HOOK` (small-batch-stickers 3 条) — 该槽位**不生成 MOQ 钩子** (不猜数字)
+- `USE_PRODUCTS_TRUTH` (9 条 ALIGNED) — 用 products.ts 真值
+
+## 数据来源
+- scripts/moq10-books-context-scan.ts (L348-356 过滤器 · L279 scanFile) 实测
+- K3 裁决: c18107a0 (menus/【50本起訂】点名) · 4593937c (紙品 100→10) · cc1d5293
+- .hermes/reports/moq-conflict-resolution-2026-09-19.json (24/10/9)
+校准日期: 2026-09-19 20:40
+
+## 验收
+npx tsx scripts/moq10-books-context-scan.ts --gate → exit 0, PASS (不阻断) ✅
+node scripts/resolve-moq-conflicts.mjs → DRIFT 24 / PENDING_K3 10 / ALIGNED 9 ✅
+moqStatus 四态标记齐备 ✅

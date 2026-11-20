@@ -1,0 +1,29 @@
+fix(brand): T 批 T1/T1c/T1d 落地 + 守卫 500KB 静默盲区修复 + 品牌基线扩至单品跨 locale
+
+K3 拍板: T1 先落, T2 按文件分批(≤5 文件/批, 每批带回滚映射与探针)。
+
+【守卫修复 — 先于内容, 价值最高】
+- common.js MAX_FILE_SIZE 500KB → 4MB: blog-data 三语 JSON 单文件 650KB-1MB 原被 size 过滤**静默跳过**,
+  `check-regression-guard.js src/data/blog-data` 报「扫描文件数: 0」= **假通过**(教训 7「假零」同族)。
+  即内容最密集的文件此前从未被门禁扫过。修后同 scope 扫 3 文件、命中 605 条。
+- i18n-guard: I18N_FOOD_BOXES_CROSS 收窄为仅 sku-seo-data (原模式在 blog-data 上必误报)
+
+【T1】scripts/fix-title-batch-T1.mjs — blog-data 品牌口 24 行
+  zh-hk 13 / ja 10 / en 1; T1b 保留(待 K3 语义裁决): 一次性英文括注「智印港（ZprintPro）」等 8 处
+
+【T1c】scripts/fix-title-batch-T1c.mjs — 真扫后暴露的三处真红线 39 处
+  (a) 我 T1 引入的畸形 `ZprintPro (ZprintPro)` ×8 → ZprintPro
+  (b) 伪造 FSC 证号 `FSC C123456`/`FSC-C123456`/`FSC-C123456-ZP2024` ×27 → `FSC` (SOP-10 #4)
+  (c) zh-hk 简体字「行业」×4 → 「行業」
+
+【T1d】scripts/fix-entity-zhhk-blogdata.mjs — §0.32 实体禁词 ×2
+  zh-hk blog「事實卡」内法人全称「深圳市彩龍印刷包裝有限公司」→「智印港（彩龍印刷旗下）」
+  (K3 9/1 18:50 §0.32 硬规则: zh-hk 不得出现法人全称; 9/1 18:58 批准的替代表述)
+
+【基线扩口径】check-brand-baseline.mjs 由「仅双品牌」扩为「双品牌 + 单品牌跨 locale」
+  否则任何触碰含这类存量的文件都无法提交; 基线 77 → **377 处 / 51 文件** (只许递减, 数字即进度)
+
+复扫: src/data/blog-data 🔴51 → **0**(29 条为语义待裁决项, 进基线计数) / 其他 red 类已修
+配套: docs/2026-09-13-title-batch-T-freeze.md (冻结声明 + 三条件 + 批次表) /
+      scripts/rollback-title-batch.mjs (单批回滚) / .hermes/rollback-*.json / .hermes/probe-T1-*.json (22 URL)
+门禁: tsc 54=54(改动文件 0 错) / check-brand-mentions A 类 0 / 守卫对改动面 0 新增

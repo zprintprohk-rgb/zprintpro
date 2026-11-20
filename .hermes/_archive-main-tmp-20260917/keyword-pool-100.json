@@ -1,0 +1,610 @@
+{
+ "version": "v1-2026-08-21",
+ "source": "GSC API 8/14-8/20 实测 + 战略锁定",
+ "core": [
+  {
+   "q": "貼紙印刷",
+   "pos": 40.7,
+   "imps": 26,
+   "clicks": 0
+  },
+  {
+   "q": "宣傳單張印刷",
+   "pos": 27.9,
+   "imps": 18,
+   "clicks": 0
+  },
+  {
+   "q": "包裝盒訂製",
+   "pos": 31.5,
+   "imps": 13,
+   "clicks": 0
+  },
+  {
+   "q": "紙袋印刷",
+   "pos": 12,
+   "imps": 12,
+   "clicks": 0
+  },
+  {
+   "q": "月曆印刷",
+   "pos": 18.4,
+   "imps": 24,
+   "clicks": 1
+  },
+  {
+   "q": "喜帖印刷",
+   "pos": null,
+   "imps": 0,
+   "clicks": 0
+  },
+  {
+   "q": "sticker printing",
+   "pos": null,
+   "imps": 0,
+   "clicks": 0
+  },
+  {
+   "q": "flyer printing",
+   "pos": 4,
+   "imps": 2,
+   "clicks": 1
+  },
+  {
+   "q": "packaging box printing",
+   "pos": null,
+   "imps": 0,
+   "clicks": 0
+  },
+  {
+   "q": "ステッカー印刷",
+   "pos": null,
+   "imps": 0,
+   "clicks": 0
+  }
+ ],
+ "semi": [
+  {
+   "q": "食品包裝印刷",
+   "pos": 29.2,
+   "imps": 26,
+   "clicks": 0
+  },
+  {
+   "q": "印海報",
+   "pos": 23.6,
+   "imps": 25,
+   "clicks": 0
+  },
+  {
+   "q": "宣傳單張",
+   "pos": 36.6,
+   "imps": 25,
+   "clicks": 0
+  },
+  {
+   "q": "paper bag print file requirements",
+   "pos": 16.6,
+   "imps": 21,
+   "clicks": 0
+  },
+  {
+   "q": "海報印刷",
+   "pos": 31.6,
+   "imps": 20,
+   "clicks": 0
+  },
+  {
+   "q": "school exercise book print",
+   "pos": 26.2,
+   "imps": 16,
+   "clicks": 0
+  },
+  {
+   "q": "school exercise book printing",
+   "pos": 23.8,
+   "imps": 16,
+   "clicks": 0
+  },
+  {
+   "q": "印刷紙袋",
+   "pos": 12.7,
+   "imps": 13,
+   "clicks": 0
+  },
+  {
+   "q": "餐牌印刷",
+   "pos": 17.8,
+   "imps": 13,
+   "clicks": 0
+  },
+  {
+   "q": "poster 印刷",
+   "pos": 28.3,
+   "imps": 12,
+   "clicks": 0
+  },
+  {
+   "q": "利是封印刷",
+   "pos": 33.5,
+   "imps": 12,
+   "clicks": 0
+  },
+  {
+   "q": "包裝盒印刷",
+   "pos": 35.2,
+   "imps": 12,
+   "clicks": 0
+  },
+  {
+   "q": "戶外貼紙",
+   "pos": 18,
+   "imps": 12,
+   "clicks": 0
+  },
+  {
+   "q": "食品包裝訂製",
+   "pos": 19.5,
+   "imps": 12,
+   "clicks": 0
+  },
+  {
+   "q": "騎馬釘印刷",
+   "pos": 33.1,
+   "imps": 12,
+   "clicks": 0
+  },
+  {
+   "q": "騎馬釘書刊",
+   "pos": 38,
+   "imps": 12,
+   "clicks": 0
+  },
+  {
+   "q": "china catalog printing",
+   "pos": 16.2,
+   "imps": 11,
+   "clicks": 0
+  },
+  {
+   "q": "月歷印刷",
+   "pos": 17.2,
+   "imps": 11,
+   "clicks": 0
+  },
+  {
+   "q": "禮盒訂製",
+   "pos": 37.9,
+   "imps": 11,
+   "clicks": 0
+  },
+  {
+   "q": "紙袋訂製",
+   "pos": 16.6,
+   "imps": 11,
+   "clicks": 0
+  },
+  {
+   "q": "訂做紙袋",
+   "pos": 19.1,
+   "imps": 11,
+   "clicks": 0
+  },
+  {
+   "q": "貼紙訂製",
+   "pos": 28.3,
+   "imps": 11,
+   "clicks": 0
+  },
+  {
+   "q": "透明貼",
+   "pos": 29.5,
+   "imps": 11,
+   "clicks": 0
+  },
+  {
+   "q": "利是封訂製",
+   "pos": 33.6,
+   "imps": 10,
+   "clicks": 1
+  },
+  {
+   "q": "月曆訂製",
+   "pos": 33.2,
+   "imps": 10,
+   "clicks": 0
+  },
+  {
+   "q": "紙盒印刷",
+   "pos": 39.1,
+   "imps": 10,
+   "clicks": 0
+  },
+  {
+   "q": "訂制月曆",
+   "pos": 30.9,
+   "imps": 10,
+   "clicks": 0
+  },
+  {
+   "q": "catalog printing china",
+   "pos": 17.4,
+   "imps": 9,
+   "clicks": 0
+  },
+  {
+   "q": "pôster a2",
+   "pos": 39.1,
+   "imps": 9,
+   "clicks": 0
+  },
+  {
+   "q": "印書",
+   "pos": 31.9,
+   "imps": 9,
+   "clicks": 0
+  }
+ ],
+ "tail": [
+  {
+   "q": "智印港",
+   "pos": 1,
+   "imps": 3,
+   "clicks": 1
+  },
+  {
+   "q": "環保紙袋",
+   "pos": 2,
+   "imps": 1,
+   "clicks": 1
+  },
+  {
+   "q": "畢業紀念冊香港",
+   "pos": 8.3,
+   "imps": 3,
+   "clicks": 1
+  },
+  {
+   "q": "\"易拉宝\" 香港 名称",
+   "pos": 8,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "a0海報價格",
+   "pos": 10,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "a1 vs a2 poster size",
+   "pos": 5,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "a1 印刷 即日",
+   "pos": 10,
+   "imps": 3,
+   "clicks": 0
+  },
+  {
+   "q": "a1 海報",
+   "pos": 1,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "a2 印刷",
+   "pos": 6,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "a2ポスター",
+   "pos": 1,
+   "imps": 3,
+   "clicks": 0
+  },
+  {
+   "q": "a2印刷",
+   "pos": 8,
+   "imps": 3,
+   "clicks": 0
+  },
+  {
+   "q": "a2海報",
+   "pos": 1,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "a2海報印刷價格",
+   "pos": 2,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "a5 a6 尺寸",
+   "pos": 8.5,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "a5 a6尺寸",
+   "pos": 9,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "a5 vs a6 flyer",
+   "pos": 6.3,
+   "imps": 6,
+   "clicks": 0
+  },
+  {
+   "q": "a5 印刷",
+   "pos": 10,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "a6 a5尺寸",
+   "pos": 7,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "a6 尺寸",
+   "pos": 9,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "a6尺寸",
+   "pos": 8.7,
+   "imps": 3,
+   "clicks": 0
+  },
+  {
+   "q": "can badge size",
+   "pos": 7.7,
+   "imps": 3,
+   "clicks": 0
+  },
+  {
+   "q": "catalog book printing in tajik",
+   "pos": 6,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "custom stickers small batch",
+   "pos": 7,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "doujin goods",
+   "pos": 6,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "doujin printing",
+   "pos": 10,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "flash collect alipay",
+   "pos": 10,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "fluorescent stickers",
+   "pos": 8,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "mtr 12 sheet size",
+   "pos": 8.7,
+   "imps": 3,
+   "clicks": 0
+  },
+  {
+   "q": "mtr 4 sheet size",
+   "pos": 9.7,
+   "imps": 3,
+   "clicks": 0
+  },
+  {
+   "q": "poster 尺寸",
+   "pos": 6,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "pvc menus",
+   "pos": 9.5,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "pvc 貼紙",
+   "pos": 6.5,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "pvc 防水 貼紙",
+   "pos": 1,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "pvc貼紙",
+   "pos": 7,
+   "imps": 4,
+   "clicks": 0
+  },
+  {
+   "q": "small batch stickers",
+   "pos": 3.7,
+   "imps": 6,
+   "clicks": 0
+  },
+  {
+   "q": "standard can badge size",
+   "pos": 9.7,
+   "imps": 3,
+   "clicks": 0
+  },
+  {
+   "q": "xinf",
+   "pos": 10,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "公司信封",
+   "pos": 1,
+   "imps": 3,
+   "clicks": 0
+  },
+  {
+   "q": "半透明貼紙",
+   "pos": 1,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "印poster",
+   "pos": 7.5,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "印傳單 價格",
+   "pos": 1,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "同人印刷",
+   "pos": 5,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "同人本 印刷",
+   "pos": 10,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "同人本印刷",
+   "pos": 9,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "同人紙",
+   "pos": 4,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "大信封",
+   "pos": 2.6,
+   "imps": 11,
+   "clicks": 0
+  },
+  {
+   "q": "大型海報尺寸",
+   "pos": 6,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "彩色信封",
+   "pos": 1,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "戶外防水貼紙",
+   "pos": 9,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "新蒲崗 影印",
+   "pos": 10,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "新蒲崗影印",
+   "pos": 10,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "易拉寶",
+   "pos": 4,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "海報尺寸",
+   "pos": 1,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "海報紙質",
+   "pos": 8,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "燙金貼紙",
+   "pos": 2.5,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "畫冊印刷",
+   "pos": 4,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "證書紙材質",
+   "pos": 8.5,
+   "imps": 2,
+   "clicks": 0
+  },
+  {
+   "q": "防偽貼紙",
+   "pos": 2,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "防水贴纸",
+   "pos": 4,
+   "imps": 1,
+   "clicks": 0
+  },
+  {
+   "q": "證書印刷",
+   "pos": 11,
+   "imps": 9,
+   "clicks": 0
+  }
+ ]
+}

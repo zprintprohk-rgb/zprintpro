@@ -1,0 +1,44 @@
+<p class="text-base text-[#1A56DB] font-medium mb-4"><strong>要点：</strong>パッケージボックスカスタムは 100 個から対応、化粧箱（リジッド）¥240/個〜、折り箱 ¥69/個〜、白カード箱 ¥10-60/個〜、3-7 日納品。本記事は 6 つの箱型、材質×加工の組み合わせ、2026 実価格ステップ、選定時の失敗回避チェックリストを解説。パッケージ印刷全般は<a href="/ja/category/packaging/" class="text-[#1A56DB] underline">パッケージカテゴリ</a>へ。</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp でZprintProに連絡</strong></a> — 30 秒 AI リアルタイム見積もり。化粧箱は<a href="/ja/product/rigid-boxes/" class="text-[#1A56DB] underline">化粧箱製品ページ</a>から。</p>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>価格：</strong>化粧箱（灰板ラミネート）¥240-3100/個、折り箱 ¥69-450/個、白カード箱 ¥10-60/個、マグネット箱 ¥450-2400/個、全て 100 個から（白カード箱は 500 個から）。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>注文単位：</strong>標準ボックスは 100 個から。共同版白カード箱は型代・レイアウト費用無料で、コスト 40-60% 削減。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>納期：</strong>生産 3-7 営業日、DHL 国際 2-4 日配送。急ぎは<a href="/ja/blog/rush-printing-hk-guide/" class="text-[#1A56DB] underline">特急印刷サービス</a>をご確認ください。</p></div>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">1. パッケージボックスのカスタム料金はいくら？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">パッケージ価格は箱型・材質・サイズ・数量・加工で決まります。以下は ZprintPro 2026 実価格（products.ts 2026-09 価格に基づく）：</p>
+<table class="w-full text-sm border-collapse my-6"><thead><tr class="bg-gray-100"><th class="border p-3 text-left">箱型</th><th class="border p-3 text-left">価格（円/個）</th><th class="border p-3 text-left">最小ロット</th></tr></thead><tbody>
+<tr><td class="border p-3">化粧箱 / リジッド箱</td><td class="border p-3">¥240-3100/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">マグネット箱</td><td class="border p-3">¥450-2400/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">折り箱 / カートン</td><td class="border p-3">¥69-450/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">メーラー箱</td><td class="border p-3">¥105-300/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">白カード箱</td><td class="border p-3">¥10-60/個</td><td class="border p-3">500 個</td></tr>
+<tr><td class="border p-3">食品パッケージ箱</td><td class="border p-3">¥101-540/個</td><td class="border p-3">100 個</td></tr>
+</tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【カスタムボックス 100 個から、3-7 日納品、化粧箱 ¥240-3100/個・白カード箱 ¥10-60/個、数量が多ければ単価は下がる】</p></div>
+<p class="text-base text-[#444444] leading-relaxed mb-4">他の印刷コスト比較は<a href="/ja/blog/hong-kong-printing-cost-baseline-2026/" class="text-[#1A56DB] underline">印刷コスト基準 2026</a>と<a href="/ja/blog/packaging-box-pricing-2026/" class="text-[#1A56DB] underline">パッケージ箱価格ガイド 2026</a>をご覧ください。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">2. 箱型の選び方：天地箱 vs ブック型 vs 引き出し箱？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">6 つの箱型それぞれに特性があります。コストと高級感のバランスで選びましょう：</p>
+<table class="w-full text-sm border-collapse my-6"><thead><tr class="bg-gray-100"><th class="border p-3 text-left">箱型</th><th class="border p-3 text-left">特徴</th><th class="border p-3 text-left">典型用途</th></tr></thead><tbody>
+<tr><td class="border p-3">天地箱</td><td class="border p-3">上下分離、高級感</td><td class="border p-3">高級ギフト、宝石</td></tr>
+<tr><td class="border p-3">ブック型箱</td><td class="border p-3">本のように開く</td><td class="border p-3">高級ブランド、コレクション</td></tr>
+<tr><td class="border p-3">引き出し箱</td><td class="border p-3">引き出し式、演出感</td><td class="border p-3">宝石、リミテッド</td></tr>
+<tr><td class="border p-3">マグネット箱</td><td class="border p-3">磁石で閉じる、滑らか</td><td class="border p-3">ラグジュアリー、化粧品、電子機器</td></tr>
+<tr><td class="border p-3">窓付き箱</td><td class="border p-3">透明窓で商品展示</td><td class="border p-3">食品、化粧品陳列</td></tr>
+<tr><td class="border p-3">標準組立箱</td><td class="border p-3">段ボール組立、低コスト</td><td class="border p-3">EC 配送、テイクアウト</td></tr>
+</tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【小売り量産は折り箱・白カード箱でコスト優先、ブランドギフトは化粧箱・マグネット箱で高級感——箱型が単価と開封体験を決める】</p></div>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">3. 材質と加工の組み合わせは？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">主要材質：白カード（250-400g、腰が強い）、灰板ラミネート（構造しっかり）、段ボール（緩衝性、越境輸送向き）、特殊紙（パール・コットン、高級ギフト）、クラフト紙（エコ）、PET/PP フィルム（窓付き箱）。加工組合せ：光沢/マットラミネートで基本保護、スポット UV でロゴ強調、箔押しで高級感、エンボス/デボスでミニマル高級。材質の詳細は<a href="/ja/blog/kraft-paper-box-types-comparison-2026/" class="text-[#1A56DB] underline">クラフト紙箱比較</a>をご覧ください。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">4. パッケージ発注時の失敗を避けるには？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">5 つの失敗ポイント：(1) 最小ロットを過小評価——化粧箱 100 個、白カード箱 500 個から；(2) 型代を無視——共同版白カード箱は型代無料；(3) 色ズレ——RGB デザインは CMYK 変換で色が変わるため、ブランドカラーは Pantone 特色で；(4) 内装を忘れる——宝石・電子機器は EVA 内装で別途費用；(5) 納期が厳しい——標準 3-7 日、急ぎは前もって計画。選定フレームワークは<a href="/ja/blog/packaging-box-custom-guide/" class="text-[#1A56DB] underline">パッケージカスタムガイド</a>をご覧ください。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">5. パッケージボックスよくある質問は？</h2>
+<p><strong>Q：パッケージボックスの最小注文数量は？</strong><br/>A：標準の化粧箱・折り箱・マグネット箱は 100 個から、白カード箱は 500 個から。共同版白カード箱も 500 個からですが型代が無料です。</p>
+<p><strong>Q：カスタムパッケージの単価は？</strong><br/>A：箱型によります：化粧箱 ¥240-3100/個、折り箱 ¥69-450/個、白カード箱 ¥10-60/個、マグネット箱 ¥450-2400/個。数量が多ければ単価が下がります。</p>
+<p><strong>Q：デザインサービスはありますか？</strong><br/>A：あります。3D モックアップ付きデザイン対応、お客様の AI/PDF データも無料プリチェックで受け付けます。</p>
+<p><strong>Q：エコ対応の素材は？</strong><br/>A：FSC 認証ボード、大豆インキ、クラフト紙、FDA 食品接触安全の白カードが選べます。ESG ブランド向けです。</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp でZprintProに連絡</strong></a> — 30 秒 AI 見積もり、全国送料込み、DHL 国際 2-4 日配送。</p>
+<div class="mt-12 p-6 bg-[#F5F8FF] rounded-lg border border-[#2873F5]/20">
+<p class="text-base text-[#333333] font-semibold mb-2">ZprintPro について</p>
+<p class="text-sm text-[#444444] leading-relaxed">ZprintPro は米国・英国・豪州・グローバル顧客に 30 秒 AI リアルタイム印刷見積もり、DHL 国際 2-4 日配送を提供。ISO 9001 品質マネジメント、FSC 認証用紙供給。パッケージカスタム 100 個から、化粧品・宝石・食品・電子機器の全シーンをカバー。</p>
+<p class="mb-0"><strong>出典：</strong>ZprintPro 2026 内部見積もりデータベース（products.ts 2026-09 価格）；ISO 12647-2:2013 カラー管理標準；FSC 2025 持続可能印刷レポート。</p>
+</div>
+<p class="text-sm text-[#444444] mt-4"><strong>本文執筆：</strong>ZprintPro 印刷エンジニアリングチーム — 15 年のオフセット印刷エンジニアがパッケージ・カートン・化粧箱の工程を担当。<strong>最終更新：2026-09-16。</strong></p>

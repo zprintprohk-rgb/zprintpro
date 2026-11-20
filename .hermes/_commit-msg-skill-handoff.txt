@@ -1,0 +1,37 @@
+feat(gate)+docs: 自进化技能沉淀 + 交接活书 + 探针自检 (K3 2026-09-20 要求)
+
+【1. 自进化技能 (新)】
+路径: C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-self-evolution-hardening\SKILL.md (12,173 bytes)
+内容 = 本会期沉淀的**避坑八条 + 能力五件 + 探针自检**:
+  避坑: LOCATE_BEFORE_PATCH (未 dump 就定位=盲修, 实测 4 轮补丁打错条目) /
+        DOUBLE_METHOD_RECOUNT (CJK 度量口径错致 10 处假越界) /
+        DELETE_SCOPE_MUST_BE_MEASURED (strip 只删开头 => 漏删 2 处) /
+        SAFECOMMIT_ATOMIC (stage 污染 2 次事故) / BYPASS_UNATTRIBUTED (旁路必须留痕) /
+        EXEMPTION_NEEDS_LEDGER (豁免逐条登记 + 季度 review) /
+        TIME_READING_UNVERIFIED (6.5h 误读实为 18.3h, 双源复算) /
+        BASELINE_MUST_DECREASE (静态基线=永久豁免; BOM 静默降级坑; 已接受偏差须独立台账)
+  能力: 12 段骨架显式 checklist / 线上 curl 断言 (blog-content 切分口径) / 规则翻译层三处绑定 /
+        FAQ 五要件补写 (含三语独立与逐字一致约束) / strip 内嵌去重 (顺序铁律 + 三断言)
+
+【2. 交接活书 (新)】
+docs/2026-09-20-handoff-12seg-and-b2b3.md —— 当前真实状态 (机器可验) + 三件必先处理项 + 可复跑命令 + 纪律承继 + 遗留清单 + 交接确认 6 步。
+关键待办 (活书 §二): ① dateModified 陈旧且与可见日期不一致 (元数据 9/3 vs 可见 9/4, 均未反映 9/20 实质变更) ② hk-cost-baseline x3 补定价 FAQ (已授权) ③ 段 8 路径 (a) Perplexity 基线快照 + 3-4 周复跑。
+
+【3. ★ 探针实测抓到并修复一个真 bug】
+探针首跑 28/29: `blog-quality-12-rules-guard.js` **加载失败**。
+根因: 该门童为**顶层 IIFE** ⇒ 被 require 时会执行 main 并 process.exit ⇒ 使 require 式冒烟测试/其他脚本引用本门童时**被静默终止** (其他门童均有 require.main 守卫, 本文件漏了)。
+修法: 加 `if (require.main === module) { ... }` 包裹; 导出不变; CLI 行为不变 (实测 段级汇总 PASS=113 FAIL=33 正常输出)。
+=> 这正是「探针必须自己先被探过」的实例 (技能 §三)。
+
+【4. 探针自检工具 (新)】
+.hermes/_probe-pb/probe-self-evolution-skill.sh —— 4 组断言 (技能文件+关键词 / 5 个台账可解析 / 4 个门童可加载 / 8 个探针齐备)。
+**实测 ALL PASS 29/29**。
+
+【数据来源】
+- 探针输出: probe-self-evolution-skill.sh (PASS=29 FAIL=0)
+- 门禁: blog-quality-12-rules-guard (段级汇总 PASS=113 FAIL=33 SKIP=15) / rule-translation-guard (3 绑定一致)
+- 线上: measure-live-faqpage / assert-faqpage-structure (ALL PASS 6/6) / verify-datemodified-layers (三层实测)
+- 台账: bypass-audit.jsonl (16 行) / blog-12seg-baseline.json (33 条) / accepted-deviations (3 条+monitor)
+- K3 2026-09-20 要求 (技能沉淀 + 交接活书 + 探针确认)
+
+Bypass-rationale: 本批 = 技能/文档 + 门禁 require 守卫修复 + 探针脚本 + 台账; pre-commit 红规则对 .hermes 历史字面会硬拦; 无客户可见内容改动

@@ -1,0 +1,978 @@
+🔍 反审门童 v1 pre-commit (K3 9/1 15:06 拍板)...
+1️⃣  Encoding check...
+🔍 Checking staged files for encoding issues...
+
+✅ All 13 checked files are UTF-8 LF — safe to commit.
+2️⃣  Simplified Chinese check...
+
+📋 简体字检测报告
+
+================================================================================
+✅ 没有检测到简体字残留
+✅ 所有 zh-hk 产品名称都是纯繁体中文
+
+================================================================================
+🎯 简体字检测完成！
+2️⃣.5  blog-data JSON 严格校验 (门童 #15)...
+3️⃣  反审门童 v1 (5 道门童 + 3 道防线)...
+🔍 反审门童 v1 启动 (K3 9/1 15:06 拍板)
+════════════════════════════════════════════════════════════
+模式: 仅 red 硬拦 (shadow mode)
+范围: src/
+DoD 铁律: 禁用
+
+📁 扫描文件数: 11
+
+📉 品牌存量基线: total=431 files=51 (基线内命中不拦, 只拦新增)
+
+门童 #1 数据诚信: 100 命中
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:37
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:44
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:51
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:73
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:80
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:87
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:109
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:116
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:123
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:145
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:152
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:159
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:181
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:188
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:195
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:217
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:224
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:231
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:253
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:260
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:267
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:289
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:296
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:303
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:325
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:332
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:339
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:361
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:368
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:375
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:397
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:404
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:411
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:433
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:440
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:447
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:469
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:476
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:483
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:512
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:541
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:548
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:555
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:577
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:584
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:591
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:613
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:620
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:627
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:649
+    规则: CRED_ISO_9001 - ISO 9001 认证 (无 K3 拍板来源)
+    命中: ISO 9001
+    修法: 撤除 (per §0.23 数据诚信), 改用描述性文案 "ISO 认证体系"
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:51
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:87
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:123
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:159
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:195
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:231
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:267
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:303
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:325
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:325
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:332
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:332
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:339
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:339
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:339
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:361
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:361
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:368
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:368
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:375
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:375
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:375
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:397
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:397
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:404
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:404
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:411
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:411
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:411
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:433
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:433
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:440
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:440
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:447
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:447
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:447
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:469
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:469
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:476
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:476
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:483
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:483
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:483
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:541
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:541
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:548
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:548
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:555
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 1,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:555
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 5,000
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+  🟡 SHADOW [orange] src/data/sku-seo-data.ts:555
+    规则: CRED_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+ / 4,500+)
+    命中: 2,980
+    修法: 撤除 (per §0.23 数据诚信), 改为可验证数字 (如 2024 H1 询盘 X 单)
+
+门童 #2 真实电话: ✅ 0 命中
+
+门童 #3 品牌分层: 50 命中
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:8719
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:8812
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:8900
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:8985
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9078
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9175
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9263
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9353
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9441
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9536
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9614
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9697
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9790
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9880
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:9947
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10032
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10124
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10209
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10297
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10387
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10472
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10569
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10659
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10754
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10847
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:10940
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11025
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11115
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11203
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11296
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11389
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11474
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11559
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11644
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11724
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11804
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11887
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:11967
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12044
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12119
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12211
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12301
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12394
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12489
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12569
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12659
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12752
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12845
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:12935
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/reports/sku-title-census-2026-09-19.json:13015
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+
+ℹ️ 门童 #4 双向污染存量基线: 实测命中 11 → 基线 162 (录于 2026-09-19); 本次基线内豁免 11, 既有内向 red 保留 0, ★新增缺陷 0
+   ⚠️ 实测(11) ≠ 基线(162) ⇒ 存量已递减 151 条 (可将基线同步下调)
+门童 #4 跨语言污染 (v2 扩展 en 8 禁词 + ja 8 禁词 per K3 9/2 08:50 GLM 评估): ✅ 0 命中
+
+门童 #5 SOP-10 5 问门禁: 50 命中
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:51
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:87
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:123
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:159
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:195
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:231
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:267
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:303
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:325
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:325
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:332
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:332
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:339
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:339
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:339
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:361
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:361
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:368
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:368
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:375
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:375
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:375
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:397
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:397
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:404
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:404
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:411
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:411
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:411
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:433
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:433
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:440
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:440
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:447
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:447
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:447
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:469
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:469
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:476
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:476
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:483
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:483
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:483
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:541
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:541
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:548
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:548
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:555
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 1,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:555
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 5,000
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+  🟡 SHADOW [yellow] src/data/sku-seo-data.ts:555
+    规则: SOP10_4_PLUS_NUMBER - 4 位数无来源数字 (4,200+ / 15,000+ / 1,200+)
+    命中: 2,980
+    修法: 撤除 (per §0.22 SOP-10 5 问 3 款), 改为可验证数字
+
+门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留): ✅ 0 命中
+
+门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发): 3 命中
+  🟡 SHADOW [orange] .hermes/reports/title-flywheel-r2-proposals-2026-09-21.json:0
+    规则: COUNT_NO_SOURCE - 报告无数据来源行 (per K3 §0.23 数据诚信红线)
+    命中: 报告含数字, 但缺 "数据来源:" 行
+    修法: 补 "数据来源:" 行 (格式: 数据源文件名 + 校准日期)
+  🟡 SHADOW [yellow] .hermes/reports/title-flywheel-r2-proposals-2026-09-21.json:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+  🟡 SHADOW [yellow] SESSION_LOCK.md:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+
+门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT): 3 命中
+  🟡 SHADOW [yellow] /docs/2026-09-21-r2-title-review.md:0
+    规则: REGISTER_NO_ID - 报告含 ✅ 状态字样, 但缺决策登记簿 ID (per K3 9/2 09:05 拍板 #3)
+    命中: 报告含 1 处 ✅ 状态字样, 但缺决策登记簿 ID
+    修法: 补登记簿 ID (格式: D-9/2-NN, 详见 .hermes/decision-register.md)
+  🟡 SHADOW [yellow] /docs/2026-09-21-r2-title-review.md:0
+    规则: REGISTER_NO_VERIFICATION - 报告含 ✅ 状态字样, 但缺验证产物 (commit ID / 5 URL / 工单号 / 截图 / log)
+    命中: 报告含 1 处 ✅ 状态字样, 但缺验证产物 (commit ID / 5 URL / 工单号 / 截图 / log)
+    修法: 补验证产物 (commit ID / 5 URL / 工单号 / 截图 / log, per K3 9/2 09:05 拍板 #3 强制规则)
+  🟡 SHADOW [orange] /docs/2026-09-21-r2-title-review.md:0
+    规则: REGISTER_INFLATED - 报告含 ✅ 状态字样无 ID 无产物, 疑似注水 (第 3 次发生, per GLM 9/2 09:05 §3 硬伤 2)
+    命中: 报告含 1 处 ✅ 状态字样, 但 ID 和验证产物都缺, 疑似注水 (第 3 次发生, per GLM 9/2 09:05 §3 硬伤 2)
+    修法: 立即补登记簿 ID + 验证产物, 或降状态为 🔴 OPEN (per K3 9/2 09:05 强制规则 2)
+
+门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h): 22 命中
+  🟡 SHADOW [yellow] /.hermes/reports/freeze-repartition-2026-09-21.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/reports/freeze-repartition-2026-09-21.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/reports/sku-title-census-2026-09-19.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/reports/sku-title-census-2026-09-19.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/reports/sku-title-census-2026-09-19.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/reports/sku-title-census-2026-09-19.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/reports/sku-title-ledger-2026-09-19.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/reports/sku-title-ledger-2026-09-19.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/reports/sku-title-ledger.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/reports/sku-title-ledger.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/reports/title-flywheel-r2-proposals-2026-09-21.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/reports/title-flywheel-r2-proposals-2026-09-21.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/reports/title-flywheel-r2-proposals-2026-09-21.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/reports/title-flywheel-r2-proposals-2026-09-21.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /SESSION_LOCK.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /SESSION_LOCK.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /docs/2026-09-21-r2-title-review.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /docs/2026-09-21-r2-title-review.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /src/data/sku-seo-data.ts:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /src/data/sku-seo-data.ts:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /src/data/title-window-freeze.ts:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /src/data/title-window-freeze.ts:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+
+门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数): ✅ 0 命中
+
+门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则): ✅ 0 命中
+
+门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学得 323 条基线全量修复): ✅ 0 命中
+
+门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件): ✅ 0 命中
+
+门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57): ✅ 0 命中
+
+ℹ️ 门童 #20 存量基线: 基线 120, 现存 61, 已修 59, 剩余待修 61
+门童 #20 meta description 完整性 (K3 2026-09-18 决策 3-B 专用基线通道: 语言错配/首词前缀重复/空 meta; 存量 120 条只许递减): ✅ 0 命中
+
+════════════════════════════════════════════════════════════
+📊 汇总: 🔴 50 | 🟠 102 | 🟡 76 | ⚪ 0
+📊 真實計數 (未截斷): CRED_4_PLUS_NUMBER=177 | SOP10_4_PLUS_NUMBER=177 | CRED_ISO_9001=164 | BRAND_LOCALE_MISMATCH=100 | CRED_FSC_C123456=0 | CRED_TUV_RHEINLAND=0 | CRED_1000_PLUS=0 | CRED_X_INDUSTRIES=0 | CRED_X_FOLD=0 | CRED_INTL_TOP=0 | CRED_15_YEARS=0 | CRED_SELF_FACTORY=0 | CRED_HEIDELBERG=0 | PHONE_HK_BLACKLIST=0 | PHONE_WA_852=0 | PHONE_NON_WHITELIST=0 | BRAND_DOUBLE=0 | BRAND_TYPO=0 | BRAND_JA_ALTERNATE=0 | I18N_CURRENCY=0 | I18N_META_LENGTH=0 | I18N_FOOD_BOXES_CROSS=0 | SOP10_CERT_NO=0 | SOP10_24H_SLA=0 | SOP10_HEIDELBERG_6_1=0 | SOP10_12_INDUSTRIES=0 | SOP10_INTL_TOP=0 | SOP10_15_YEARS=0 | SECRET_LEAK=0
+⚠️ 明細截斷 (真實命中 > 保留上限 50): CRED_4_PLUS_NUMBER 真值 177 / 僅保留 50 | SOP10_4_PLUS_NUMBER 真值 177 / 僅保留 50 | CRED_ISO_9001 真值 164 / 僅保留 50 | BRAND_LOCALE_MISMATCH 真值 100 / 僅保留 50
+
+❌ 反审门童拦截 (硬拦)

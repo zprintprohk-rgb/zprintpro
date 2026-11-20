@@ -1,0 +1,95 @@
+{
+ "at": "2026-09-13T10-34-12-619Z",
+ "items": [
+  {
+   "file": "src/data/products.ts",
+   "line": 1089,
+   "beforeSnippet": "異形模切貼紙 · 文創IP角色造型模切定製 | 智印港 ZprintPro",
+   "afterSnippet": "異形模切貼紙 · 文創IP角色造型模切定製 | 智印港"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1453,
+   "beforeSnippet": "牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 · 服裝品牌跨境電商適配 | 智印港 ZprintPro",
+   "afterSnippet": "牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 · 服裝品牌跨境電商適配 | 智印港"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 1741,
+   "beforeSnippet": "環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印港 ZprintPro",
+   "afterSnippet": "環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印港"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2011,
+   "beforeSnippet": "A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港 ZprintPro",
+   "afterSnippet": "A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2102,
+   "beforeSnippet": "A5傳單印刷 100張起印 雙面四色 免費設計 | 智印港 ZprintPro",
+   "afterSnippet": "A5傳單印刷 100張起印 雙面四色 免費設計 | 智印港"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 2288,
+   "beforeSnippet": "折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印港 ZprintPro",
+   "afterSnippet": "折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印港"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3277,
+   "beforeSnippet": "化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚面膜精華液品牌適配 | 智印港 ZprintPro",
+   "afterSnippet": "化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚面膜精華液品牌適配 | 智印港"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 3675,
+   "beforeSnippet": "燙金利是封 · 婚慶/年會/品牌活動定製 | 智印港 ZprintPro",
+   "afterSnippet": "燙金利是封 · 婚慶/年會/品牌活動定製 | 智印港"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 4745,
+   "beforeSnippet": "PVC 餐牌印刷 · 防水防油可水洗 | 餐廳/咖啡店/酒吧菜單 | 智印港 ZprintPro · 訂製",
+   "afterSnippet": "PVC 餐牌印刷 · 防水防油可水洗 | 餐廳/咖啡店/酒吧菜單 | 智印港 · 訂製"
+  },
+  {
+   "file": "src/data/products.ts",
+   "line": 7437,
+   "beforeSnippet": "水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印港 ZprintPro",
+   "afterSnippet": "水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印港"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "beforeSnippet": "title: '智印港 ZprintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒印刷'",
+   "afterSnippet": "title: '智印港 | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒'"
+  },
+  {
+   "file": "src/lib/seo.ts",
+   "beforeSnippet": "'zh-hk': '即時報價 | 智印港 ZprintPro'",
+   "afterSnippet": "'zh-hk': '即時報價 | 智印港'"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "beforeSnippet": "ogTitle: '智印港 ZprintPro | 香港印刷服務 — 全球 72 小時交貨'",
+   "afterSnippet": "ogTitle: '智印港 | 香港印刷服務 — 全球 72 小時交貨'"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "beforeSnippet": "twitterTitle: '智印港 ZprintPro | 香港印刷服務'",
+   "afterSnippet": "twitterTitle: '智印港 | 香港印刷服務'"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "beforeSnippet": "ogTitle: 'ジープリント ZprintPro | 印刷サービス — グローバル 72 時間配送'",
+   "afterSnippet": "ogTitle: 'ZprintPro | 印刷サービス — グローバル 72 時間配送'"
+  },
+  {
+   "file": "src/app/[locale]/layout.tsx",
+   "beforeSnippet": "twitterTitle: 'ジープリント ZprintPro | 印刷サービス'",
+   "afterSnippet": "twitterTitle: 'ZprintPro | 印刷サービス'"
+  }
+ ]
+}

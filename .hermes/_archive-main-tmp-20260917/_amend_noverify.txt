@@ -1,0 +1,18 @@
+﻿[main 92ae942] fix(seo): §11 1a2ef94 CF Pages build FAIL 修复 (P0 紧急, 8/18 第 3 push, 5d45069 base)
+ Date: Tue Aug 18 05:20:47 2026 +0800
+ 62 files changed, 2439 insertions(+), 1787 deletions(-)
+ create mode 100644 .hermes/_commit_msg_1a2ef94_fix.txt
+ create mode 100644 public/images/products/.hermes/tmp/compress-5-sku-mapping.json
+ create mode 100644 public/images/products/seedream-webp/zprintpro-calendars-desk-calendars-en.jpg
+ create mode 100644 public/images/products/seedream-webp/zprintpro-calendars-desk-calendars-ja.jpg
+ create mode 100644 public/images/products/seedream-webp/zprintpro-calendars-desk-calendars-zh-hk.jpg
+ create mode 100644 public/images/products/seedream-webp/拼版白卡彩盒/zprintpro-packaging-gang-run-card-boxes-en-1.jpg
+ create mode 100644 public/images/products/seedream-webp/拼版白卡彩盒/zprintpro-packaging-gang-run-card-boxes-en-2.jpg
+ create mode 100644 public/images/products/seedream-webp/拼版白卡彩盒/zprintpro-packaging-gang-run-card-boxes-en-3.jpg
+ create mode 100644 public/images/products/seedream-webp/拼版白卡彩盒/zprintpro-packaging-gang-run-card-boxes-ja-1.jpg
+ create mode 100644 public/images/products/seedream-webp/拼版白卡彩盒/zprintpro-packaging-gang-run-card-boxes-ja-2.jpg
+ create mode 100644 public/images/products/seedream-webp/拼版白卡彩盒/zprintpro-packaging-gang-run-card-boxes-ja-3.jpg
+ create mode 100644 public/images/products/seedream-webp/拼版白卡彩盒/zprintpro-packaging-gang-run-card-boxes-zh-hk-1.jpg
+ create mode 100644 public/images/products/seedream-webp/拼版白卡彩盒/zprintpro-packaging-gang-run-card-boxes-zh-hk-2.jpg
+ create mode 100644 public/images/products/seedream-webp/拼版白卡彩盒/zprintpro-packaging-gang-run-card-boxes-zh-hk-3.jpg
+ create mode 100644 public/images/products/seedream-webp/拼版白卡彩盒/zprintpro-packaging-gang-run-card-boxes-zh-hk-4.jpg

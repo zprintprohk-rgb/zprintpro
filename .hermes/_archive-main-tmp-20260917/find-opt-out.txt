@@ -1,0 +1,8 @@
+﻿optimizedAt occurrences (excluding interface): 10
+  L7452: slug=posters, category=posters
+  L8735: slug=packaging, category=packaging
+  L10055: slug=red-packets, category=red-packets
+  L12511: slug=menus, category=menus
+  L17494: slug=educational, category=educational
+  L18262: slug=packaging, category=packaging
+  L18452: slug=stickers, category=stickers

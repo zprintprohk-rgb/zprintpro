@@ -1,0 +1,141 @@
+{
+  "zh-hk:food-packaging-printing-guide": {
+    "locale": "zh-hk",
+    "slug": "food-packaging-printing-guide",
+    "found": true,
+    "h2count": 9,
+    "h2s": [
+      "食品包裝印刷點樣揀材質？6 大食品類型對照一覽",
+      "FDA／EU／GB 三地認證有咩分別？出口邊個市場要邊份證？",
+      "食品包裝印刷幾多錢一個？MOQ、價格同交期點計？",
+      "淋膜同油墨點樣影響食品安全？",
+      "跨境食品包裝物流同清關要點安排？",
+      "邊啲行業最常訂食品包裝？12 大行業實證",
+      "食品包裝印刷是什麼？30 秒速讀定義",
+      "落單流程係點？檔案要咩規格？",
+      "食品包裝印刷仲有咩常見問題？（FAQ）"
+    ],
+    "tables": 3,
+    "linkCount": 17,
+    "links": [
+      "/zh-hk/category/packaging/",
+      "https://wa.me/8619880851334",
+      "/zh-hk/quote/",
+      "/zh-hk/blog/baby-food-packaging-box-printing-guide/",
+      "/zh-hk/blog/kraft-paper-box-types-comparison-2026/",
+      "/zh-hk/product/food-boxes/",
+      "/zh-hk/blog/hong-kong-printing-cost-baseline-2026/",
+      "/zh-hk/blog/packaging-box-pricing-2026/",
+      "/zh-hk/product/waterproof-stickers/",
+      "/zh-hk/category/paper-bags/",
+      "/zh-hk/product/kraft-paper-bags/",
+      "/zh-hk/product/rigid-boxes/",
+      "/zh-hk/product/fruit-food-label-stickers/",
+      "/zh-hk/blog/restaurant-menu-printing-guide/",
+      "/zh-hk/blog/print-specifications-reference-guide-2026/",
+      "/zh-hk/about/",
+      "https://www. .com/company/zprintpro"
+    ],
+    "cjk": 2642,
+    "qaBlock": true,
+    "title": "食品包裝印刷完全指南：材質、安全認證與設計實務",
+    "excerpt": ""
+  },
+  "en:food-packaging-printing-guide": {
+    "locale": "en",
+    "slug": "food-packaging-printing-guide",
+    "found": true,
+    "h2count": 7,
+    "h2s": [
+      "1. Material Selection by Food Type",
+      "2. FDA / EU / GB Certification Requirements (2026 Latest)",
+      "3. Key Production Processes: Lamination &amp; Ink Migration Control",
+      "4. Cross-Border Food Packaging Logistics &amp; Customs (2026 Field-Tested)",
+      "5. PLA Eco Trends &amp; 12-Industry Track Record",
+      "6. ZprintPro Food Packaging Services",
+      "7. Cross-Border Food Packaging Printing FAQ"
+    ],
+    "tables": 2,
+    "linkCount": 6,
+    "links": [
+      "/en/category/packaging/",
+      "/en/product/food-boxes/",
+      "/en/product/folding-boxes/",
+      "/en/product/kraft-paper-bags/",
+      "/en/product/waterproof-stickers/",
+      "https://wa.me/8619880851334"
+    ],
+    "cjk": 0,
+    "qaBlock": false,
+    "title": "Food Packaging Printing Guide: Materials, Safety & Compliance",
+    "excerpt": ""
+  },
+  "ja:food-packaging-printing-guide": {
+    "locale": "ja",
+    "slug": "food-packaging-printing-guide",
+    "found": true,
+    "h2count": 7,
+    "h2s": [
+      "1. 食品タイプ別の包装材質選定",
+      "2. FDA / EU / GB 三地認証要件（2026 年最新版）",
+      "3. 重要生産工程：ラミネートとインキ溶出制御",
+      "4. 越境食品包装物流と通関（2026 年実戦）",
+      "5. PLA 環境トレンドと 12 業界実積",
+      "6. ZprintPro食品包装印刷サービス",
+      "7. 越境食品包装印刷 FAQ"
+    ],
+    "tables": 2,
+    "linkCount": 6,
+    "links": [
+      "/ja/category/packaging/",
+      "/ja/product/food-boxes/",
+      "/ja/product/folding-boxes/",
+      "/ja/product/kraft-paper-bags/",
+      "/ja/product/waterproof-stickers/",
+      "https://wa.me/8619880851334"
+    ],
+    "cjk": 1687,
+    "qaBlock": false,
+    "title": "食品パッケージ印刷完全ガイド：素材、安全認証、設計",
+    "excerpt": ""
+  },
+  "zh-hk:sticker-ish": [
+    "sticker-guide",
+    "sticker-design",
+    "pet-food-sticker-printing-guide",
+    "ip-character-sticker-printing-guide",
+    "hotel-amenity-sticker-printing-guide",
+    "car-dealership-amenity-sticker-printing-guide",
+    "baby-product-label-sticker-printing-guide",
+    "custom-card-boxes-small-batch-usa"
+  ],
+  "zh-hk:doujin-ish": [
+    "doujin-circle-printing-guide"
+  ],
+  "en:sticker-ish": [
+    "sticker-guide",
+    "sticker-design",
+    "pet-food-sticker-printing-guide",
+    "ip-character-sticker-printing-guide",
+    "hotel-amenity-sticker-printing-guide",
+    "car-dealership-amenity-sticker-printing-guide",
+    "baby-product-label-sticker-printing-guide",
+    "custom-card-boxes-small-batch-usa"
+  ],
+  "en:doujin-ish": [
+    "doujin-circle-printing-guide"
+  ],
+  "ja:sticker-ish": [
+    "sticker-guide",
+    "sticker-design",
+    "pet-food-sticker-printing-guide",
+    "ip-character-sticker-printing-guide",
+    "hotel-amenity-sticker-printing-guide",
+    "car-dealership-amenity-sticker-printing-guide",
+    "baby-product-label-sticker-printing-guide",
+    "custom-card-boxes-small-batch-usa"
+  ],
+  "ja:doujin-ish": [
+    "doujin-circle-printing-guide"
+  ]
+}

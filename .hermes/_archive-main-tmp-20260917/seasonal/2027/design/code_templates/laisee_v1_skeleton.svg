@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="105mm" height="148mm" viewBox="0 0 297 419" version="1.1">
+  <title>F4 红包兜底模板 v1 - 6 款共用骨架</title>
+  <desc>zprintpro 2027 红包兜底模板, 含 3mm 出血 + 5mm 安全区 + 工艺标注层</desc>
+
+  <!-- ============ 印刷规格标注 (不输出到印刷) ============ -->
+  <!-- 出血: 3mm = 8.5px @ 300DPI; 安全区: 5mm = 14.2px @ 300DPI -->
+  <!-- 成品: 105×148mm; 设计稿: 111×154mm (含出血) = 314×436px @ 300DPI -->
+
+  <!-- 背景: 6 款主色变量, 默认 #C8102E 港红 -->
+  <rect x="0" y="0" width="314" height="436" fill="#C8102E" />
+
+  <!-- 底色装饰带 (兜底极简, 设计师可替换) -->
+  <rect x="20" y="40" width="274" height="356" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="4 2" />
+
+  <!-- 视觉元素占位区 (30% 上部) -->
+  <g id="visual-placeholder" transform="translate(157, 140)">
+    <text text-anchor="middle" font-family="sans-serif" font-size="14" fill="#D4AF37" opacity="0.6">
+      [视觉元素占位]
+    </text>
+    <text text-anchor="middle" font-family="sans-serif" font-size="9" fill="#D4AF37" opacity="0.4" y="20">
+      {visual}
+    </text>
+  </g>
+
+  <!-- 文字区 (30% 底部, 留白供客户后期加字) -->
+  <g id="text-zone" transform="translate(157, 340)">
+    <line x1="-100" y1="0" x2="100" y2="0" stroke="#D4AF37" stroke-width="0.3" stroke-dasharray="2 2" />
+    <text text-anchor="middle" font-family="sans-serif" font-size="8" fill="#D4AF37" opacity="0.5" y="20">
+      [底部 30% 文字位] 客户后期加字
+    </text>
+  </g>
+
+  <!-- Logo 占位 (右下 8mm) -->
+  <g id="logo-zone" transform="translate(265, 395)">
+    <rect x="-8" y="-8" width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="0.3" stroke-dasharray="1 1" />
+    <text text-anchor="middle" font-family="sans-serif" font-size="3" fill="#D4AF37" opacity="0.4" y="2">
+      LOGO
+    </text>
+  </g>
+
+  <!-- 工艺标注层 (单独图层, 设计师可细化) -->
+  <g id="craft-overlay" opacity="0.3">
+    <!-- 烫金区 (示例: 中央装饰框) -->
+    <rect x="60" y="100" width="194" height="120" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-dasharray="6 2" />
+    <text x="65" y="105" font-family="sans-serif" font-size="5" fill="#D4AF37">[烫金区]</text>
+
+    <!-- 压纹区 (示例: 边框内 5mm) -->
+    <rect x="28" y="48" width="258" height="340" fill="none" stroke="#A0937D" stroke-width="0.5" stroke-dasharray="3 3" />
+    <text x="33" y="53" font-family="sans-serif" font-size="5" fill="#A0937D">[压纹区]</text>
+
+    <!-- 模切线 (示例: 圆角, 半径 5mm = 14px) -->
+    <rect x="14" y="14" width="286" height="408" rx="14" ry="14" fill="none" stroke="#000" stroke-width="0.3" stroke-dasharray="8 4" />
+    <text x="18" y="18" font-family="sans-serif" font-size="4" fill="#000">[模切线 - 圆角 5mm]</text>
+  </g>
+
+  <!-- 出血线 (印刷必, 设计师保留) -->
+  <rect x="0" y="0" width="314" height="436" fill="none" stroke="#FF00FF" stroke-width="0.5" />
+  <!-- 安全线 (印刷必, 设计师保留) -->
+  <rect x="14" y="14" width="286" height="408" fill="none" stroke="#00FFFF" stroke-width="0.3" stroke-dasharray="2 2" />
+
+</svg>

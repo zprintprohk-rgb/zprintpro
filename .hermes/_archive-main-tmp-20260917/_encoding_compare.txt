@@ -1,0 +1,11 @@
+﻿GBK decode FAILED: 'gbk' codec can't decode byte 0xaf in position 74: illegal multibyte sequence
+
+UTF-8 decode SUCCESS:
+  Title: ����錚��lƷ�Ƽ���ӡˢָ�� �� �ڿ��C�� + �z�����춨�u | ��ӡ�� ZprintPro
+  Content length: 3248 chars
+  First 200 chars: <p>��ۼ�ɳ�ס��Эh����犡��~茞��Ĵ��錚��l������Ȧ,논����H피�Ʒ���c��������̖�����錚��l�����̡��I�ֵꡢƷ�ƽ��N�̶���,һ���C��ڿ��������z�����졢��ʯ��Ӳ����,��ֻ��ُ����b,���ǿ����x�_���m��� 1 С�r�ع⡢IG �򿨷�����罻ý�w�زġ����ď���Ȧ�������������|�����칤ˇ�����⹤ˇ��FAQ ���S��,�����������錚��lƷ�Ƽ������x���c�ܿ�ָ�ϡ�</p>
+
+<h3>һ������錚��l
+  Has Author (����): False
+  Has Sources (�Y�ρ�Դ): False
+  Has Disclaimer (��؟��): False

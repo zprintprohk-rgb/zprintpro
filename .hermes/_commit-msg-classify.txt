@@ -1,0 +1,53 @@
+feat(gate): 门童 #24 命中精度分类器 (四类) — 290 命中收窄至 title 作用域
+
+来源: K3 2026-09-19 决策「最高优先级: 完成 286 条精度分类, 使门禁真正可信」
+
+## 一、分类器
+scripts/classify-moq-precision.mjs — 输入 `.hermes/logs/moq-scan-latest.json` (门童 --json 落盘)
+输出 `.hermes/reports/moq-precision-classification-2026-09-19.{json,md}`
+四类: LOCALE_SPECIFIC_KEEP / NO_MOQ_HOOK / TRUE_DRIFT / MANUAL_REVIEW (不猜, §0.23.2)
+
+## 二、★ 作用域收窄 (本次最关键的一步, 避免洪水式假阳性)
+首版分类 290 条全裁 → TRUE_DRIFT 283 条。**抽验即发现是错的**:
+门童 findings 混合了 **title 行**命中与 **body/description/品类级散文**命中;
+后者合法地出现各种数量表述 (例「100 張以上柯式更經濟」) ⇒ 对它们套 minQuantity 判 DRIFT = 洪水。
+修法: 只裁 **title 字段命中** (file 含 `sku-seo-data` 且 text 含 `"title":`) ——
+该档 title 保证是「单 SKU 标量」, 归属可判定; 散文类不在本表裁决范围 (已登记 skippedNonTitleHits)。
+
+## 三、结果 (title 作用域)
+| 类别 | 条数 |
+|---|---|
+| TRUE_DRIFT | 29 |
+| LOCALE_SPECIFIC_KEEP | 7 (ja flyers) |
+| NO_MOQ_HOOK | 0 ⚠️ |
+| MANUAL_REVIEW | 0 ⚠️ |
+
+## 四、⚠️ 已知缺陷 (未修, 诚实登记, 勿据此动手)
+1. **NO_MOQ_HOOK = 0 是错的**: `small-batch-stickers` 应落此类 (products.ts 自载
+   「We support 50-sticker MOQ for the small-batch line」), 本脚本的产品线自证正则
+   (`/support[s]?\s*N[\s-]*(?:sticker|pcs|piece)/`) 未命中该句 ⇒ 误落 TRUE_DRIFT。
+   **旁证**: 另一独立脚本 `scripts/resolve-moq-conflicts.mjs` 用 ATTESTED 表把它正确标为
+   `NO_MOQ_HOOK`。两脚本对同一条给出不同类 ⇒ 以 resolve-moq-conflicts 为准 (有人工核定证据)。
+2. **MANUAL_REVIEW = 0**: 「不猜」桶未被真正启用 —— 我的规则把每个 case 都归了类,
+   而 menus 4/5 簇一致 (zh-hk) 这类**本应落 MANUAL_REVIEW** (可能是本 SKU 群真值口径)。
+   未行使该桶 = 隐性猜测风险, 须补规则。
+
+## 五、两法对账 (§0.23.2 —— 两法不一致, 结论均为暂定)
+| 方法 | DRIFT | 挂起 | 备注 |
+|---|---|---|---|
+| `classify-moq-precision.mjs` (title 作用域, 消费门童 findings) | 29 | 7 | NO_MOQ_HOOK/MANUAL_REVIEW 桶未启用 |
+| `resolve-moq-conflicts.mjs` (全 300 槽直读, 簇+自证判据) | 24 | 10 | 含 ATTESTED 人工证据 |
+**两法的 SKU 集合一致** (menus×4 / flyers / art-posters / small-batch) ⇒ 可动信号是**集合**,
+不是条数。条数差 (29 vs 24) 源于分桶规则差异与 small-batch 误落。
+⇒ 落地前须先统一分桶规则 (跑第三轮), **不可直接拿 29 或 24 当缺陷数上报**。
+
+## 数据来源
+- .hermes/logs/moq-scan-latest.json (npx tsx scripts/moq10-books-context-scan.ts --json)
+  payload: hits=number / drift=number / findings=array[290] / recount=array[7]
+- src/data/products.ts (minQuantity, 4 空格缩进) · src/data/sku-seo-data.ts (title)
+- K3 裁决: 4593937c / bb2a1f71 / c18107a0 / cc1d5293
+校准日期: 2026-09-19 21:00
+
+## 验收
+node scripts/classify-moq-precision.mjs → TRUE_DRIFT 29 / LOCALE_SPECIFIC_KEEP 7 ✅
+作用域收窄生效 (283 → 29) ✅ · skippedNonTitleHits 已登记 ✅

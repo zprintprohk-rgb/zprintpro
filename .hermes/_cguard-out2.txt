@@ -1,0 +1,42 @@
+﻿[check-content-guard v2] 扫描完成 (111ms)
+  范围: src/  文件: 289  命中: 345
+  🔴 red=0  🟠 orange=324  🟡 yellow=1  ⚪ white=20
+  🟡 yellow accepted (K3 拍板真实数据, F0 红线不删): 0 of 1
+  🟡 yellow NEW (需要 K3 拍板): 1
+
+🟠 信任风险 (324):
+  page.tsx:37  ISO 9001
+  page.tsx:46  ISO 9001
+  page.tsx:58  ISO 9001
+  page.tsx:68  ISO 9001
+  page.tsx:69  ISO 9001
+  page.tsx:71  ISO 9001
+  page.tsx:73  ISO 9001
+  page.tsx:80  ISO 9001
+  page.tsx:193  ISO 9001
+  page.tsx:197  ISO 9001
+  page.tsx:202  ISO 9001
+  page.tsx:214  ISO 9001
+  page.tsx:226  ISO 9001
+  page.tsx:231  ISO 9001
+  page.tsx:344  ISO 9001
+
+🟡 策略黑话 (1):
+  ja.json:92  会
+
+⚪ 占位符 (20):
+  route.ts:155  placeholder
+  page.tsx:887  占位
+  page.tsx:923  占位
+  page.tsx:960  占位
+  page.tsx:901  placeholder
+  page.tsx:259  占位
+  HelpCenterClient.tsx:753  placeholder
+  OrderConfirmationClient.tsx:356  placeholder
+  CategoryIndustries.tsx:764  占位
+  SearchDropdown.tsx:92  placeholder
+  ProductGallery.tsx:18  placeholder
+  QuantityTierInteractive.tsx:142  占位
+  QuoteForm.tsx:510  Placeholder
+  RushDeliveryGrid.tsx:152  placeholder
+  RushDeliveryGrid.tsx:153  placeholder

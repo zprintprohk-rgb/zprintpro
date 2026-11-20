@@ -1,0 +1,4 @@
+﻿[verify-deploy] checking 92ae942 (repo: F:\zprintpro-nextjs)...
+[verify-deploy] CF Pages: in_progress
+[verify-deploy] details: https://github.com/zprintprohk-rgb/zprintpro/runs/95526584811
+[verify-deploy] in progress (in_progress/null) — re-run later

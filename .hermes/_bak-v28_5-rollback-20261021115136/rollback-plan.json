@@ -1,0 +1,275 @@
+{
+ "fromCommit": "62c9b070",
+ "slugs": [
+  "corrugated-boxes",
+  "cosmetic-boxes",
+  "electronics-packaging-box",
+  "gang-run-card-boxes",
+  "kraft-paper-packaging-box",
+  "magnetic-closure-gift-box",
+  "mailer-boxes",
+  "rigid-boxes",
+  "tuck-end-boxes",
+  "white-card-boxes"
+ ],
+ "plan": [
+  {
+   "slug": "corrugated-boxes",
+   "oldIbl": {
+    "zh-hk": [
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-5.webp"
+    ],
+    "en": [
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-4.webp"
+    ],
+    "ja": [
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-5.webp"
+    ]
+   },
+   "oldLegacy": 97
+  },
+  {
+   "slug": "cosmetic-boxes",
+   "oldIbl": {
+    "zh-hk": [
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-5.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-6.webp"
+    ],
+    "en": [
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-5.webp"
+    ],
+    "ja": [
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-5.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-6.webp"
+    ]
+   },
+   "oldLegacy": 52
+  },
+  {
+   "slug": "electronics-packaging-box",
+   "oldIbl": {
+    "zh-hk": [
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-5.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-6.webp"
+    ],
+    "en": [
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-5.webp"
+    ],
+    "ja": [
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-5.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-6.webp"
+    ]
+   },
+   "oldLegacy": 52
+  },
+  {
+   "slug": "gang-run-card-boxes",
+   "oldIbl": {
+    "zh-hk": [
+     "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-4.webp"
+    ],
+    "en": [
+     "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-3.webp"
+    ],
+    "ja": [
+     "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-3.webp"
+    ]
+   },
+   "oldLegacy": 98
+  },
+  {
+   "slug": "kraft-paper-packaging-box",
+   "oldIbl": {
+    "zh-hk": [
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-4.webp"
+    ],
+    "en": [
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-5.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-6.webp"
+    ],
+    "ja": [
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-5.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-6.webp"
+    ]
+   },
+   "oldLegacy": 106
+  },
+  {
+   "slug": "magnetic-closure-gift-box",
+   "oldIbl": {
+    "zh-hk": [
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-5.webp"
+    ],
+    "en": [
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-4.webp"
+    ],
+    "ja": [
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-5.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-6.webp"
+    ]
+   },
+   "oldLegacy": 106
+  },
+  {
+   "slug": "mailer-boxes",
+   "oldIbl": {
+    "zh-hk": [
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-5.webp"
+    ],
+    "en": [
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-5.webp"
+    ],
+    "ja": [
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-5.webp"
+    ]
+   },
+   "oldLegacy": 50
+  },
+  {
+   "slug": "rigid-boxes",
+   "oldIbl": {
+    "zh-hk": [
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-5.webp"
+    ],
+    "en": [
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-en.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-en-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-en-3.webp"
+    ],
+    "ja": [
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja-3.webp"
+    ]
+   },
+   "oldLegacy": 49
+  },
+  {
+   "slug": "tuck-end-boxes",
+   "oldIbl": {
+    "zh-hk": [
+     "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-5.webp"
+    ],
+    "en": [
+     "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-3.webp"
+    ],
+    "ja": [
+     "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-3.webp"
+    ]
+   },
+   "oldLegacy": 95
+  },
+  {
+   "slug": "white-card-boxes",
+   "oldIbl": {
+    "zh-hk": [
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-4.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-5.webp"
+    ],
+    "en": [
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-4.webp"
+    ],
+    "ja": [
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-1.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-2.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-3.webp",
+     "/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-4.webp"
+    ]
+   },
+   "oldLegacy": 97
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+docs(gate)+feat(probe): SSoT 字数口径对齐 + FAQPage 观众变更口径 + safecommit 规则 (K3 2026-09-19 评估落地)
+
+【1. SSoT Pillar 字数口径对齐 — 消除 SSoT ↔ 门禁分叉 (K3 评估第五点)】
+· 原状: SSoT §3.1 末句写「Pillar ≥12,000 字 (门童 #12 MIN_PILLAR_CHARS)」= 硬线表述,
+  而门禁已按季度 floor (2026Q3 = 6,000) 执行 ⇒ 两者口径分叉。
+· 修法: §3.1 末句改为「按季度递减目标制执行」并指向 .hermes/regression-guard/pillar-wordcount-targets.json;
+  §0.3 表补全季度表 (2026Q3 6,000/8,000 → Q4 6,000/12,000 → 2027Q1 8,000 → Q2 10,000 → Q3+ 12,000)
+  + 行业对标 (B2B pillar 典型 2,500-4,000 词; 6,000 字≈3,000-4,000 词 = 交付底线;
+  8,000 字 = 中间目标; 12,000 字 = 高于行业标准的差异化长期目标)。
+· 现状态: 已拍板 APPROVED (K3 决策一), 门禁实测 0 条字数 FAIL + 4 条 WARN。
+
+【2. FAQPage「观众已换」口径 (K3 评估第一点)】
+· §3.1 增加段 12 验收口径: Google 2026-05 起分阶段退役 FAQ 富媒体结果 (2023-08 起已限定政府/健康类),
+  商业站可见收益三年前消失; 但 FAQPage 仍是合法类型, 观众换成 Bing / PerplexityBot / RAG 爬虫。
+· 验收措辞固定为: 「FAQPage 生成 = AI 答案引擎可读层就绪, 不再关联 Google 富摘要」。
+· 补充答案长度口径: 实测 80-150 词答案比 30 词级短答案更易被 AI 引用 ⇒ 新写 FAQ 按 80-150 词;
+  存量短文不动 (churn 红线), 仅在字数升级批顺带扩写。
+
+【3. B1 线上验收已完成 (K3 评估第七点 B1)】
+工具: .hermes/_probe-pb/verify-b1-campus-live.mjs
+结果: campus × 3 locale 线上**生成区均已含 FAQPage** (各 Question=5, 即 5 组 FAQ 全部进入机器可读层)
+  zh-hk / en / ja = PASS_WITH_DUPLICATE (生成区 1 + 内嵌 1)
+注: 生成区 FAQPage 依赖 page.tsx 的 extractor 修复部署 ⇒ 该修复已随车道 push 上线 (本会话本地修复已生效于线上)。
+证据: .hermes/reports/b1-campus-live-faqpage-2026-09-19.json
+
+【4. B2 前置测量: 线上 FAQPage 重复计数 (K3 评估第三点)】
+工具: .hermes/_probe-pb/measure-live-faqpage.mjs (按 blog-content 容器切分生成区/注入区分别计数)
+结果 (15 个 Pillar-locale 组合, 有效样本 15/15): DUPLICATE 12 / SINGLE_INLINE_ONLY 3 (foil × 3) / NONE 0 / INVALID 0
+判读:
+ · **重复标记问题在线上已存在** (生成区与内嵌区各 1 个 FAQPage ⇒ Duplicate field FAQPage);
+   因 FAQ 报告 2026-06 已结束, GSC 可能不再报此错 ⇒ 只能自测 (本工具即此用途)。
+ · 该 12 组合生成区已齐套 (Article/Person/Organization/BreadcrumbList/FAQPage/HowTo 全在) ⇒ **strip 内嵌优先级提高**。
+ · foil × 3 = SINGLE_INLINE_ONLY ⇒ strip 会归零, **必须等生成侧就绪 (B3 补正文 FAQ 段) 再 strip**。
+证据: .hermes/reports/live-faqpage-duplicate-count-2026-09-19.json
+
+【5. 两条新规则入 error-patterns.md (K3 评估第六点「立即生效」)】
+· SAFECOMMIT_ATOMIC: 非原子提交 = stage 污染 (本会话实测 2 次事故: gen-p0-title-batch.mjs / guard-manifest.json 被当删除提交)
+  修法 = 原子形式 `git commit -F <msg> -- <paths...>` (add+commit 一条命令, 无窗口);
+  自检三问 (pathspec 逐列 / --cached 只剩本批 / 用 --no-verify 必设 ZP_BYPASS_REASON);
+  并记录旁路配对规则 (ZP_BYPASS_REASON 为唯一入口)。
+· FAQPAGE_AUDIENCE_SHIFT: 观众已换 + 验收措辞 + 80-150 词答案长度 + 每页只应有一个 FAQPage (含实测基线)。
+
+【数据来源】
+- 线上探针: 15 URL (5 Pillar × 3 locale) 串行 + 350ms 间隔, 2026-09-19, 有效样本 15/15
+- B1 探针: campus × 3 locale, 生成区 FAQPage=1 / Question=5
+- SSoT 口径变更依据: K3 2026-09-19 评估第一/五/七点
+- 门禁实测: blog-standard-guard (字数 0 FAIL) / blog-quality-12-rules-guard --baseline (基线 46 / 新增 0)
+
+【未做 / 待授权 (更新版 B/C 批)】
+· B2 strip 内嵌: 12 组合已可执行 (生成区齐套), 仍按铁律分批 ≤3 篇 + strip 前 curl 快照 + strip 后 diff 验收
+· B3 foil × 3 补正文 FAQ 段: 新写内容, 需指令包授权 (答案按 80-150 词; 写入后 --online 验证 0→≥1)
+· 段 8 <section> 可提取性测试: 待做 (决定 WARN 转「已接受偏差」还是修复; 不留悬置 WARN)
+· 段 9 作者实体锚点 (K3 评估第四点): 随批次 D 升级 (作者页链接 + Person.sameAs + 从业年限; 禁 AI 头像/虚构 persona)
+· C 二期 run-context 消费追踪注入 + 段 8 测试 → 下一步
+
+Bypass-rationale: 本批为 docs/SSoT + error-patterns + 探测脚本 + 证据 JSON;
+ pre-commit 红规则 (SOP10_CERT_NO 对 .hermes 历史字面) 会硬拦; 无 src/ 行为改动, 无价格/文案口径变更

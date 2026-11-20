@@ -1,0 +1,465 @@
+﻿🔍 反审门童 v1 启动 (K3 9/1 15:06 拍板)
+════════════════════════════════════════════════════════════
+模式: 仅 red 硬拦 (shadow mode)
+范围: src/
+DoD 铁律: 禁用
+
+📁 扫描文件数: 6
+
+📉 品牌存量基线: total=431 files=51 (基线内命中不拦, 只拦新增)
+
+门童 #1 数据诚信: ✅ 0 命中
+
+门童 #2 真实电话: ✅ 0 命中
+
+门童 #3 品牌分层: 57 命中
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:385
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:1724
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:1737
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:1945
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:1997
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:2205
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:2870
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:2870
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4274
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4274
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4313
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4313
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4326
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4326
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4339
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4339
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4352
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4352
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4378
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4378
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4391
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4391
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4417
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4417
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4430
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4430
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4456
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4456
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4469
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4469
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4508
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4508
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4521
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4521
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4547
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4547
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4560
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4560
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4586
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4586
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4599
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4599
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4651
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4651
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4664
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4664
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4677
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4677
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4690
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.json:4690
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:109
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:212
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:213
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:229
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:249
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=en)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:303
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:303
+    规则: BRAND_LOCALE_MISMATCH - 跨语言品牌混用
+    命中: 智印港 (locale=ja)
+    修法: 按 locale 单品牌分层 (per K3 9/1 02:54 §13.16 v2)
+
+ℹ️ 门童 #4 双向污染存量基线: 实测命中 10 → 基线 162 (录于 2026-09-19); 本次基线内豁免 0, 既有内向 red 保留 0, ★新增缺陷 10
+   ⚠️ 实测(10) ≠ 基线(162) ⇒ 存量已递减 152 条 (可将基线同步下调)
+门童 #4 跨语言污染 (v2 扩展 en 8 禁词 + ja 8 禁词 per K3 9/2 08:50 GLM 评估): 38 命中
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:567
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:567
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:567
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:567
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:580
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:580
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:606
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:606
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:619
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:619
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:645
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:645
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:645
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:658
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:295
+    规则: I18N_POLLUTION - zh-hk 值含简体专用字形 (双向化 v2 扩集)
+    命中: 数 (locale=zh-hk)
+    修法: 改繁体 (per §0.29 v3.1 跨语言污染零容忍); 繁简同形字(出/算/用/件/格)已排除, 不会误报
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:295
+    规则: I18N_POLLUTION - zh-hk 值含简体专用字形 (双向化 v2 扩集)
+    命中: 数 (locale=zh-hk)
+    修法: 改繁体 (per §0.29 v3.1 跨语言污染零容忍); 繁简同形字(出/算/用/件/格)已排除, 不会误报
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:296
+    规则: I18N_POLLUTION - zh-hk 值含简体专用字形 (双向化 v2 扩集)
+    命中: 数 (locale=zh-hk)
+    修法: 改繁体 (per §0.29 v3.1 跨语言污染零容忍); 繁简同形字(出/算/用/件/格)已排除, 不会误报
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:298
+    规则: I18N_POLLUTION - zh-hk 值含简体专用字形 (双向化 v2 扩集)
+    命中: 数 (locale=zh-hk)
+    修法: 改繁体 (per §0.29 v3.1 跨语言污染零容忍); 繁简同形字(出/算/用/件/格)已排除, 不会误报
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:298
+    规则: I18N_POLLUTION - zh-hk 值含简体专用字形 (双向化 v2 扩集)
+    命中: 点 (locale=zh-hk)
+    修法: 改繁体 (per §0.29 v3.1 跨语言污染零容忍); 繁简同形字(出/算/用/件/格)已排除, 不会误报
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:299
+    规则: I18N_POLLUTION - zh-hk 值含简体专用字形 (双向化 v2 扩集)
+    命中: 数 (locale=zh-hk)
+    修法: 改繁体 (per §0.29 v3.1 跨语言污染零容忍); 繁简同形字(出/算/用/件/格)已排除, 不会误报
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:299
+    规则: I18N_POLLUTION - zh-hk 值含简体专用字形 (双向化 v2 扩集)
+    命中: 点 (locale=zh-hk)
+    修法: 改繁体 (per §0.29 v3.1 跨语言污染零容忍); 繁简同形字(出/算/用/件/格)已排除, 不会误报
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:249
+    规则: I18N_POLLUTION_EN - en 值含 CJK 汉字 (英文不需要中文)
+    命中: 智 (locale=en)
+    修法: 改英文; 若为品牌词「智印港」⇒ 走门童 #3 品牌分层 (en 站台品牌 = ZprintPro)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:249
+    规则: I18N_POLLUTION_EN - en 值含 CJK 汉字 (英文不需要中文)
+    命中: 印 (locale=en)
+    修法: 改英文; 若为品牌词「智印港」⇒ 走门童 #3 品牌分层 (en 站台品牌 = ZprintPro)
+  🔴 HARD [red] .hermes/logs/moq-price-sync-classification.md:249
+    规则: I18N_POLLUTION_EN - en 值含 CJK 汉字 (英文不需要中文)
+    命中: 港 (locale=en)
+    修法: 改英文; 若为品牌词「智印港」⇒ 走门童 #3 品牌分层 (en 站台品牌 = ZprintPro)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:123
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:123
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:123
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:123
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:124
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:124
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:126
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:126
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:127
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:127
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:129
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:129
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:129
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.md:130
+    规则: I18N_CURRENCY - 币种格式不统一
+    命中: ￥ (locale=zh-hk)
+    修法: 改 HK$ (跨境统一币种 per zprintpro §5 多币种 + K3 §13.10 真实主体)
+
+门童 #5 SOP-10 5 问门禁: ✅ 0 命中
+
+门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留): ✅ 0 命中
+
+门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发): 1 命中
+  🟡 SHADOW [yellow] .hermes/logs/moq-price-sync-classification.json:0
+    规则: COUNT_NO_CALIBRATION - 报告无校准日期 (per K3 §0.33.2 必含)
+    命中: 报告含数字, 但缺 "校准日期" 字段
+    修法: 补 "校准日期: YYYY-MM-DD HH:MM"
+
+门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT): ✅ 0 命中
+
+门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h): 8 命中
+  🟡 SHADOW [yellow] /.hermes/logs/moq-price-sync-classification.json:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/logs/moq-price-sync-classification.json:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /.hermes/logs/moq-price-sync-classification.md:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /.hermes/logs/moq-price-sync-classification.md:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /scripts/moq10-price-sync-report-v2.ts:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /scripts/moq10-price-sync-report-v2.ts:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+  🟡 SHADOW [yellow] /scripts/moq10-price-sync-report.ts:0
+    规则: GSC_NO_SOURCE - 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    命中: 报告含内容决策或数字, 但缺 GSC 来源行 (per K3 9/2 09:29 §K.1.4 词级证据链)
+    修法: 补 GSC 来源行: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks
+  🟡 SHADOW [yellow] /scripts/moq10-price-sync-report.ts:0
+    规则: GSC_NO_WORD_LEVEL_EVIDENCE - 选题/词决策缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    命中: 报告含选题/词决策, 但缺词级证据三元组 (query+imps+pos, per K3 9/2 09:29 §K.1.4)
+    修法: 补词级证据: GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x]
+
+门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数): ✅ 0 命中
+
+门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则): ✅ 0 命中
+
+门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学得 323 条基线全量修复): ✅ 0 命中
+
+门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件): ✅ 0 命中
+
+门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57): ✅ 0 命中
+
+ℹ️ 门童 #20 存量基线: 基线 120, 现存 76, 已修 44, 剩余待修 76
+门童 #20 meta description 完整性 (K3 2026-09-18 决策 3-B 专用基线通道: 语言错配/首词前缀重复/空 meta; 存量 120 条只许递减): ✅ 0 命中
+
+════════════════════════════════════════════════════════════
+📊 汇总: 🔴 67 | 🟠 0 | 🟡 37 | ⚪ 0
+📊 真實計數 (未截斷): BRAND_LOCALE_MISMATCH=89 | I18N_CURRENCY=28 | CRED_ISO_9001=0 | CRED_FSC_C123456=0 | CRED_TUV_RHEINLAND=0 | CRED_1000_PLUS=0 | CRED_4_PLUS_NUMBER=0 | CRED_X_INDUSTRIES=0 | CRED_X_FOLD=0 | CRED_INTL_TOP=0 | CRED_15_YEARS=0 | CRED_SELF_FACTORY=0 | CRED_HEIDELBERG=0 | PHONE_HK_BLACKLIST=0 | PHONE_WA_852=0 | PHONE_NON_WHITELIST=0 | BRAND_DOUBLE=0 | BRAND_TYPO=0 | BRAND_JA_ALTERNATE=0 | I18N_META_LENGTH=0 | SOP10_CERT_NO=0 | SOP10_24H_SLA=0 | SOP10_HEIDELBERG_6_1=0 | SOP10_12_INDUSTRIES=0 | SOP10_INTL_TOP=0 | SOP10_4_PLUS_NUMBER=0 | SOP10_15_YEARS=0 | SECRET_LEAK=0
+⚠️ 明細截斷 (真實命中 > 保留上限 50): BRAND_LOCALE_MISMATCH 真值 89 / 僅保留 57
+
+❌ 反审门童拦截 (硬拦)

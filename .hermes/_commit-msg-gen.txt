@@ -1,0 +1,52 @@
+feat(seo): 阶段三 标题生成器 + P0-A1 候选 (18/19 槽四闸门全过)
+
+来源: K3 2026-09-19 两天冲刺方案 阶段三 (硬门已开: 两法 43=43 统一, commit c4bce232)
+
+## 一、生成器 scripts/generate-title-batch.mjs
+输入: `title-input-bank` (数字真值/specs/GSC 同簇词) + `moq-precision-classification` (统一后 moqStatus)
+**前置硬门**: 读 `moq-precision-unified.json`, 非 UNIFIED 直接拒绝生成 (K3 约束可执行化)。
+四类 moqStatus → 生成行为: USE_RULING_TRUTH(用裁决真值) / USE_PRODUCTS_TRUTH(用 products.ts)
+/ LOCALE_SPECIFIC_KEEP(保留 locale 值) / NO_MOQ_HOOK(不发钩子) / MANUAL_REVIEW(**直接跳过**)。
+四道闸门: G1 当量 50-57(≥58 硬拦) · G2 数字来源(逐元素附 trace) · G3 语言纯净 · G4 品牌末尾一次。
+
+## 二、★ 两次设计失败与修正 (留痕)
+### ① 首版「整段替换」→ 当量反降
+首版把现标题替换成「主词+尺寸+MOQ+价格」⇒ ① 丢掉既有 spec-true 修饰 (如 `防水 PVC 異形切割`)
+② 当量掉到 36-48 (目标 50-57) ③ 尺寸取 `specs.size` 的**最小值**(如 `10×10mm`), 当卖点会误导。
+⇒ 改**最小增量**: `[主词] + [既有修饰段(保留)] + [合并钩子] + [品牌]`。
+关键技术点: 两个钩子**并进同一段**(空格分隔) 比各占一段省 **3 当量** —— 这正是把 37 抬到 56 的关键。
+
+### ② ★ 同标题两个互斥 MOQ (严重, 输出实测发现)
+`laminated-menus` 原声明 50 (真值 100, 判 TRUE_DRIFT): 「保留既有段」把**嵌着错值的段**
+`防水 覆膜 50本起` 一起留下, 又补上 `100個起` ⇒ 产出
+`過膠餐牌 | 防水 覆膜 50本起 | 100個起 HK$5起 | 智印港` = **同标题两个互斥起订量**。
+⇒ 修正: 当 status = USE_RULING_TRUTH (原值已判错) 时, **剥掉既有段中的 MOQ 声明**
+(整段含起印量即剔除), 再由裁决真值重建。复验: 候选内已无互斥 MOQ ✅。
+
+### ③ G3 假阳性: `・` 被当假名
+原 KANA `/[\u3040-\u30FF]/` 把 **`・`(U+30FB 片假名中点)** 判为「日文假名」,
+而它是 zh-hk 标题**常用分隔符** (既有标题大量使用, 例 `金・銀・玫瑰金`) ⇒ 误报。
+修正: 排除 U+30FB (标点, 非假名)。
+
+## 三、P0-A1 结果 (19 槽)
+**18 槽四闸门全过 / 38 条候选 / 0 槽跳过**。样例 (37→56 当量):
+- `防水貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.22起 | 智印港` (304 展示 / pos 9.44)
+- `珍珠光信封 | 雙面印刷 多規格 | 100個起 HK$1.15起 | 智印港` (57 当量 / pos 5.27)
+- `訂製郵寄盒 | 燙金 UV 100%訂製 | 100個起 HK$3.5起 | 智印港` (57 当量)
+**1 槽未过**: `過膠餐牌` — 剥掉错值段后仅 34 当量 (<50), 且 menus 簇无 GSC 同簇长尾可补
+⇒ 留给人工 (该槽同属 menus 争议簇, 与 MANUAL_REVIEW 一并处置)。
+
+## 四、纪律遵守
+- **不发明数字**: 每个数字元素附 trace (products.ts minQuantity / basePrice / K3 裁决真值 / GSC 同簇词)
+- **主词不改**: 全部候选保留原主词 (churn 最小)
+- **MANUAL_REVIEW 不生成**: 该分支直接 return skipped
+
+## 数据来源
+- .hermes/reports/title-input-bank-2026-09-19.json · moq-precision-classification-2026-09-19.json
+- moq-precision-unified-2026-09-19.json (硬门) · src/data/products.ts · scripts/guards/title-equiv.js
+校准日期: 2026-09-19 22:30
+
+## 验收
+node scripts/generate-title-batch.mjs --emit → 生成 19 槽 / 38 候选 / **18 条四闸门全过** ✅
+互斥 MOQ 复验: 候选内 0 处 ✅ · G3 `・` 假阳性已消 ✅
+⚠️ 本批**仅产出提案**, 未改 src —— P0-A1 需 100% 逐条人工过目后再由 apply-title-batch 落盘 (K3 审核纪律)。

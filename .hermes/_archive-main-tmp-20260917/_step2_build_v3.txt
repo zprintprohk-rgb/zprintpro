@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/data/category-seo-content.ts:4327:9
+Type error: Type 'string' is not assignable to type 'CoreAdvantage'.
+
+[0m [90m 4325 |[39m       title[33m:[39m [32m'為何選擇智印港的賀卡印刷?'[39m[33m,[39m[0m
+[0m [90m 4326 |[39m       items[33m:[39m [[0m
+[0m[31m[1m>[22m[39m[90m 4327 |[39m         [32m'全場景覆蓋:節日 / 生日 / 感謝 / 邀請 / 商業 / 立體 3D 賀卡六大類目,200+ SKU 即選即印。'[39m[33m,[39m[0m
+[0m [90m      |[39m         [31m[1m^[22m[39m[0m
+[0m [90m 4328 |[39m         [32m'6 大核心材質:300g 銅版紙、350g 剛古紙、300g 棉紙、特種金 / 銀卡紙、種子紙 (可種植)、立體鐳射紙。'[39m[33m,[39m[0m
+[0m [90m 4329 |[39m         [32m'4 大核心工藝:燙金 / 燙銀、UV 局部、模切異形、3D 立體彈起,適配跨境爆款需求。'[39m[33m,[39m[0m
+[0m [90m 4330 |[39m         [32m'順豐本地滿 HK$500 免費 + DHL 全球 2-4 天配送 + 30 秒 AI 即時報價 + 4 小時免費打樣。'[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

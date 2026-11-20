@@ -1,0 +1,3 @@
+﻿[main 6e28663] feat(seo): Step 2 §11 业务子类目豁免 + 3 新类目 + 12 新 SKU (8/18 第 4 push, K3 8/17 05:32 拍板)
+ 9 files changed, 2368 insertions(+)
+ create mode 100644 .hermes/_step2_commit_msg.txt

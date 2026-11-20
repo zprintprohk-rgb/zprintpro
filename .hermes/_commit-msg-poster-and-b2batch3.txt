@@ -1,0 +1,64 @@
+fix(blog): poster 段锚改写 (方案a 授权) + B2 批3 strip (sticker/campus/poster) + 全站内嵌 LD 普查 (K3 2026-09-19)
+
+【1. poster en/ja 段锚改写 —— 方案 (a) 已授权执行】
+范围 = **仅 4 个内容承载段锚** (FAQ / Related Services / 日本市場対応 等工具段保持原样, 不强行问句化):
+  en: 1. Common Poster Sizes → 「What are the most common poster sizes?」
+      2. Paper Stock Guide → 「Which paper stock should you choose for posters?」
+      3. Surface Finishing Options → 「How much do poster surface finishing options cost?」
+      4. Design Tips → 「What design specs do posters need (DPI, bleed, safe zone)?」
+  ja: 1. ポスターの主なサイズ → 「ポスターの主なサイズはどれですか?」
+      2. 用紙選定ガイド → 「ポスターの用紙はどう選べばいいですか?」
+      3. 表面加工オプション → 「ポスターの表面加工オプションはどれですか?」
+      4. デザインポイント → 「ポスター入稿のデザイン規定（解像度・塗り足し・セーフゾーン）は?」
+同时 `<h3>` → `<h2>` (对齐 zh-hk 层级) + 去序号前缀 (渲染层 CSS counter 统一生成编号)。
+铁律: **答案文字逐字保留** —— 脚本做字节级断言「除该标题行外 content 其余字节不变」, 通过后才写盘。
+  en 12,659 → 12,769 (+110) | ja 9,200 → 9,243 (+43) —— 增量即标题替换差, 零其他改动。
+**未做 (K3 明确属文案改动, 需单独授权)**: 答案首句 answer-first 调整; en/ja 字数扩充 (排批次 D)。
+
+段 3 复验 (改写后): en 「H2 4 + H3 2 = 6 个, 问句 4 个 (67%)」PASS / ja 「H2 4 + H3 3 = 7 个, 问句 4 个 (57%)」PASS / zh-hk 「H2 9 + H3 3 = 12, 问句 9 (75%)」PASS
+⇒ **三语段 3 全部 PASS, 门禁新增 3 条 FAIL 已消除** (基线将自然回落)。
+
+【2. B2 批3 strip (3 篇 × 3 locale, 每篇前置均已确认)】
+前置 (measure-live-faqpage 线上三态):
+  sticker × 3 locale = DUPLICATE 3 / SINGLE_INLINE_ONLY 0  ⇒ 生成区齐套 ✅
+  campus  × 3 locale = DUPLICATE 3 / SINGLE_INLINE_ONLY 0  ⇒ 生成区齐套 ✅
+  poster  × 3 locale = DUPLICATE 3 (批2 尾已确认)         ⇒ 生成区齐套 ✅
+Question 一致性 (strip 前): sticker 3/3 CONSISTENT · campus 3/3 CONSISTENT · MISMATCH 0
+执行结果:
+  sticker: zh-hk 16,199→12,385 / en 24,728→19,369 / ja 15,574→11,569 (各删 1 序列 14 类型含 FAQPage)
+  campus : zh-hk 21,347→17,729 / en 33,104→28,217 / ja 22,856→19,078 (同上)
+  poster : zh-hk 20,043→16,062 (批2 尾) / en 12,769→8,405 / ja 9,243→5,816
+
+【3. ★ strip 工具缺陷修复 (实测踩到, 重要)】
+原实现只处理 **content 开头**的 LD 序列。实测 **poster en/ja 的 5 个块不在开头**
+ (ja 位置 5,816 / en 8,405, 位于 Related Services 列表之后) ⇒ 只删开头会**漏删** (假通过)。
+修法: 改为**全位置**扫描连续 LD 序列, 三条断言保持并强化:
+  ① 每个被删片段必须恰好是连续 LD 序列 (trim 后正则全匹配, 段落级验证);
+  ② strip 后全篇残留内嵌 LD 必须 = 0;
+  ③ 长度守恒校验 (out.length === before.length − removedBytes)。
+⇒ 教训入档口径: 「删除类工具的范围必须按**内容分布实测**确定, 不能假定位置」(与 HREFLANG 假警报同族)。
+
+【4. 全站内嵌 LD 普查 (B2 剩余范围 SSoT)】
+工具 = census-inline-ld.mjs, 结果 (跨 locale 并集 **8 篇**):
+  campus-education-printing-pillar-guide (5/5/5) ← 本批已 strip
+  sticker-material-pvc-vinyl-removable (5/5/5) ← 本批已 strip
+  poster-size-guide (5/5/5) · print-specifications-reference-guide-2026 (5/5/5)
+  restaurant-menu-printing-guide (5/0/0) · school-exercise-book-printing-guide (4/1/1)
+  hong-kong-printing-cost-baseline-2026 (1/1/1)
+  foil-stamping-3-applications-2026 (5/5/5) ← **必须最后做**: 其 FAQPage 仅来自内嵌 (SINGLE_INLINE_ONLY), 需先补正文 FAQ (B3)
+证据: .hermes/reports/inline-ld-census-2026-09-19.json
+
+【B2 进度】12 个 DUPLICATE 组合中已 strip **5 篇 × 3 locale = 15 个组合** (packaging / kraft / poster / sticker / campus)
+ + 2 篇 en/ja 附带清理 (poster en/ja 原为 SINGLE_GENERATED)。安全约束遵守: 每批 ≤3 篇, 24h 观察期。
+
+【数据来源】
+- 线上探针: measure-live-faqpage.mjs (sticker/campus/poster × 3 locale) / verify-question-consistency.mjs (9/9 CONSISTENT)
+- strip 前后字节数与断言输出 (见上)
+- 段 3 复验: blog-quality-12-rules-guard --slug=poster-printing-guide (三语 PASS)
+- 普查: census-inline-ld.mjs → inline-ld-census-2026-09-19.json
+- K3 2026-09-19 授权 (方案 a) + P0 清单
+
+【待办】B2 批4 (poster-size-guide / print-specifications-reference-guide-2026 前置确认后) · B3 foil 补 FAQ (格式预检已过, 答案 40-120 词) · 段 8 路径 (a) 等 K3 提交 AI 引用对比 · Person jobTitle/knowsAbout · C 二期 run-context 注入
+
+Bypass-rationale: 本批 = 3 locale blog-data (段锚改写 + strip, 字节级断言全过) + 工具修复/普查;
+ pre-commit 红规则对 .hermes 历史字面会硬拦; **标题为授权改写, 答案文字零改动** (字节级断言保证)

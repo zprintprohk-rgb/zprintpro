@@ -1,0 +1,37 @@
+=== SGS (K3 #7 pending) : 7 hits ===
+  L163: '食品包裝訂製有硬規矩：必須用食品級紙材同無毒大豆油墨，通過 SGS 檢測；烘焙、茶葉、保健品盒建議加防潮處理，需要時可印 QR 碼做溯源。食品包裝印刷我哋可以一次過搞掂合規文件，慳返自己搵檢測嘅時間。',
+  L184: { q: '紙盒訂製材質點揀：白卡 vs 坑紙 vs 銅版紙？', a: '白卡 300-350g 挺度極佳、色彩鮮豔，係彩盒主流（美妝、輕奢飾品、文創IP周邊首選）；坑盒（瓦楞）抗壓 80-200kg，跨境電商 + 重物首選；銅版紙 25
+  L190: { q: '食品包裝盒安全嗎？', a: '安全。我們採用食品級紙張和無毒大豆油墨，通過 SGS 檢測認證，符合 HK 衛生署食品安全要求。' },
+  L278: 'Food packaging has hard rules. Food-grade paper and non-toxic soy inks are non-negotiable, SGS-tested as standard; bake
+  L294: { q: 'Are food packaging boxes safe?', a: 'Yes. We use food-grade paper and non-toxic soy-based inks, certified by SGS a
+  L382: '食品パッケージには厳格なルールがあります。食品グレード紙と無毒の大豆インクは必須で、SGS検査済み。ベーカリーや茶葉、サプリには防湿コーティングを推奨。QRコードでロット追跡も可能。コンプライアンス書類もサポートします。',
+  L399: { q: '食品パッケージは安全ですか？', a: 'はい。食品グレード紙と無毒大豆油インクを使用。SGS認証取得済み、日本の食品衛生基準に準拠。' },
+=== soy ink (unverifiable claim) : 38 hits ===
+  L163: '食品包裝訂製有硬規矩：必須用食品級紙材同無毒大豆油墨，通過 SGS 檢測；烘焙、茶葉、保健品盒建議加防潮處理，需要時可印 QR 碼做溯源。食品包裝印刷我哋可以一次過搞掂合規文件，慳返自己搵檢測嘅時間。',
+  L190: { q: '食品包裝盒安全嗎？', a: '安全。我們採用食品級紙張和無毒大豆油墨，通過 SGS 檢測認證，符合 HK 衛生署食品安全要求。' },
+  L278: 'Food packaging has hard rules. Food-grade paper and non-toxic soy inks are non-negotiable, SGS-tested as standard; bake
+  L382: '食品パッケージには厳格なルールがあります。食品グレード紙と無毒の大豆インクは必須で、SGS検査済み。ベーカリーや茶葉、サプリには防湿コーティングを推奨。QRコードでロット追跡も可能。コンプライアンス書類もサポートします。',
+  L399: { q: '食品パッケージは安全ですか？', a: 'はい。食品グレード紙と無毒大豆油インクを使用。SGS認証取得済み、日本の食品衛生基準に準拠。' },
+  L809: { q: '2026 H1 書刊市場有哪些變化？', a: '上半年服務 47 個非洲/中東教育局批量採購 (平均 5,000 本/單, 跨境 DHL 2-4 天到港), 跨境電商品牌 catalog 200-1,000 本批量化, 學校練
+  L910: { q: 'What changed in the book market in 2026 H1?', a: 'In H1 2026, ZprintPro served 47 Africa/Middle East education min
+  L1010: { q: '2026年上半期の書籍印刷市場の主な変化は?', a: '2026 H1、ZprintPro はアフリカ・中東の 47 教育機関 (平均 5,000 冊/単, 越境 DHL 2-4日) にサービス提供、越境 EC ブランドカタロ
+  L1440: { q: '信封 2026 場景 5 大類？', a: '① 婚禮邀請 (A7/C6 + 燙金 + 100-500 個) ② 商務信封 (DL + 牛皮 + 500-5,000 個) ③ 節日利是封套 (C5 + 紅金 + 100-1,00
+  L1542: { q: 'What are the 5 envelope use-cases in 2026?', a: 'Five major envelope scenarios in 2026: wedding invitations (A7/C6
+  L1642: { q: '2026 年の封筒 5 大利用シーンは?', a: '2026 年の封筒 5 大利用シーン: ① 結婚式招待状 (A7/C6 + 箔押し + 100-500 枚) ② ビジネス封筒 (DL + クラフト + 500-5,000 
+  L1756: { q: '2027 月曆市場 8-10 月旺季前夜的關鍵節點？', a: '2027 年曆採購黃金窗口 8-10 月落單 → 9-12 月交貨. 企業禮品 (銀行/保險/地產) 500-5,000 本/批, 學校+教會+NGO 100-5
+  ... +26 more
+=== 3-Day Delivery (vs 3-5d truth) : 2 hits ===
+  L201: h2: 'Custom Packaging Box Printing — From 100 Units, Free Die-Cut Design, 3-Day Delivery',
+  L305: h2: 'パッケージ印刷・箱製作 — 100個から、無料型設計、3日納品',
+=== N-series count (source?) : 2 hits ===
+  L208: 'We offer 10 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, FSC eco-frie
+  L312: 'カスタムカラーボックス、段ボール箱、磁石式化粧品箱、FSC認証エコ箱、ギフト箱、ウエディングボックスなど10大シリーズを提供。',
+=== ISO 9001 : 0 hits ===
+=== wedding 30 / color 50 MOQ : 4 hits ===
+  L320: '最小30–50個から（ウエディング／カラーボックス）、通常100個から — スタートアップブランドの試作に最適。',
+  L362: { label: '最小発注数', value: '30個から（ウエディングボックス）、50個から（カラーボックス）、100–200個から（標準／工業用）。' },
+  L379: 'オリジナルパッケージ・箱の印刷は「輸送保護か、開封体験か」を最初に決めることが全て。カラーボックスは50個から、標準タイプは100個からの小ロット対応。無料の抜き型設計付き、3日生産の短納期です。',
+  L396: { q: 'パッケージの最小発注数は？', a: 'ウエディングボックス30個から、カラーボックス50個から、標準工業用100–200個から。従来の工場基準500–1,000個を大きく下回ります。' },
+=== moisture-proof absolute : 2 hits ===
+  L313: '食品グレード紙材、日本の食品衛生基準対応、輸出規格、QR追跡コード、防湿加工 — 法規制と越境要件を満たします。',
+  L343: { material: '食品グレード／防湿紙材', features: '食品安全対応｜防湿加工｜QRコード対応', scenarios: 'ベーカリー｜健康食品｜漢方包装' },

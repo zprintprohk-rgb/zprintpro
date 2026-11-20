@@ -1,0 +1,7 @@
+﻿docs(lane): 2026-11-20 daily-content — NO_OP + 11-21 复测窗预备 + bus
+
+- 报告 .hermes/logs/2026-11-20-ZP-daily-content.md (VERDICT OK / 11-21 复测窗预备清单 / 貼紙第七窗 gate / src 零写入)
+- lane-runs.jsonl ZP-daily-content-20261120T181730-harness
+
+本次提交使用 --no-verify（旁路提交）：.hermes 内部文档通道豁免 — 同 lane-git-commit.py 通道 b) 行为。
+Bypass-rationale: .hermes internal lane docs (report/bus) — exempt class per lane-git-commit.py (b); no src content

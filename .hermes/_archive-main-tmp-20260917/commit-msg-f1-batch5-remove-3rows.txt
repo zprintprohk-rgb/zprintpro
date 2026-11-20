@@ -1,0 +1,17 @@
+fix(content): F1-batch-5 立即执行 - About 页 credentials card 删 3 行 (認證機構/證書編號/有效期限) UI 不展示 (K3 8/24 20:02 拍板 "下面这三行就去掉了啊")
+
+K3 8/24 20:02 拍板: 截图显示 3 行 "認證機構 — / 證書編號 — / 有效期限 —" 是 K3 红框标的, K3 说"下面这三行就去掉了啊"
+- 之前 F1-batch-4 (commit 28e9ae1) 把 3 字段值改成 "—" 但 UI 还在显示 3 行 (K3 红框的)
+- K3 19:03 拍板 "证书号不要" (F1-batch-4 改了字段值)
+- K3 20:02 拍板 "这三行就去掉了啊" (本次 UI 层修复, 把 3 行 div 删掉, 字段值保留不影响)
+
+修复: about/page.tsx L878-891 整块删除 (3 个 div + 容器 div = 14 行), 3 locale 同步 (page.tsx 单文件 server component, 共享渲染代码)
+- L878-891 整块删除: 3 个 div (issuer / certNo / validUntil) + 容器 div (border-t pt-3 space-y-1.5)
+- 保留 L869-877 整块: name + scope 渲染 (绿色 icon + cert name + cert scope 描述)
+- 3 locale 共享同一份渲染代码, 改 1 处 = 3 locale 同步
+
+SOP-10 第 6 款新增 (K3 8/24 20:02 拍板): 任何 UI 卡片含 3 行以上 "占位字段" (issuer/certNo/validUntil 等等), 当字段值为空/—/占位符时, UI 层不展示该行, 不展示 "—" 占位行
+
+业务 0 改动红线 (K3 8/22 17:58 F0): 不删数据层, 删 UI 渲染 (14 行 JSX), 数据层 3 字段值保留 (issuer: '—' / certNo: '' / validUntil: ''), 1 改 1 验证
+
+3 闸门: encoding 0 / tsc 54 → 54 (pre-existing, 无新增) / diff 1 文件 (about/page.tsx 14 行减)

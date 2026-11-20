@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-15",
+  "generator": "AutoClaw (zwork) — 转引主会话 openpyxl 提取, 本会话无 exec 工具, 未直接解析 xlsx",
+  "delivery_status": {
+    "query_level": {
+      "hk28": "OK (553 rows fully read)",
+      "jp28": "OK for top30+cluster (tail ~30 rows imps=1 truncated in read)",
+      "us28": "MISSING (source JSON read-truncated before us28 section; no fabricated values)",
+      "us24": "OK (26 rows, 24h window supplement)"
+    },
+    "page_level": "BLOCKED — no 2026-10-15 网页-sheet extraction exists in .hermes; xlsx binary unreadable without exec; verified by repo-wide grep (网页数/网页/Pages, Performance-on-Search-2026-10-15, gsc-2026-1*)"
+  },
+  "data_sources": [
+    "GSC数据/香港站点28天数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx (28d window ~2026-09-15~2026-10-12, data ends 10-12)",
+    "GSC数据/日本站点28天数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx (same window)",
+    "GSC数据/美国站点28天数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx (query rows unread; site totals from cliff json)",
+    "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx (not read this session)",
+    ".hermes/_gsc1015_queries.json (extracted by .hermes/_gsc1015_extract.py, openpyxl, sheet 查询数, calibrated 2026-10-15)",
+    ".hermes/logs/gsc-cliff-2026-10-15.json (site 28d totals + window anchor)",
+    ".hermes/analysis/gsc-product-page-imps-28d.json (appendix only, 2026-10-09 window)"
+  ],
+  "window": {
+    "days_28": {"start": "2026-09-15", "end": "2026-10-12", "note": "end date verified via gsc-cliff latest_date + days=28"},
+    "hours_24": "2026-10-14T01:00:00 ~ 2026-10-15T00:00:00"
+  },
+  "site_totals_28d": {
+    "hk": {"impressions": 10753, "clicks": 310, "query_rows": 553},
+    "jp": {"impressions": 2004, "clicks": 28, "query_rows": 166},
+    "us": {"impressions": 3531, "clicks": 35, "query_rows": null}
+  },
+  "query_top30_by_impressions": {
+    "zh-hk": [
+      {"q": "海報印刷", "imps": 217, "clicks": 2, "pos": 13.8, "ctr": 0.0092},
+      {"q": "貼紙印刷", "imps": 139, "clicks": 0, "pos": 28.74, "ctr": 0.0},
+      {"q": "食品包裝印刷", "imps": 118, "clicks": 0, "pos": 9.81, "ctr": 0.0},
+      {"q": "印海報", "imps": 117, "clicks": 1, "pos": 12.5, "ctr": 0.0085},
+      {"q": "月曆印刷", "imps": 102, "clicks": 0, "pos": 16.09, "ctr": 0.0},
+      {"q": "宣傳單張印刷", "imps": 95, "clicks": 0, "pos": 21.77, "ctr": 0.0},
+      {"q": "宣傳單張", "imps": 85, "clicks": 1, "pos": 27.71, "ctr": 0.0118},
+      {"q": "書刊印刷", "imps": 78, "clicks": 0, "pos": 31.19, "ctr": 0.0},
+      {"q": "紙袋印刷", "imps": 76, "clicks": 0, "pos": 7.33, "ctr": 0.0},
+      {"q": "印刷紙袋", "imps": 73, "clicks": 0, "pos": 7.34, "ctr": 0.0},
+      {"q": "戶外貼紙", "imps": 64, "clicks": 0, "pos": 12.66, "ctr": 0.0},
+      {"q": "食品印刷", "imps": 62, "clicks": 0, "pos": 11.0, "ctr": 0.0},
+      {"q": "利是封印刷", "imps": 61, "clicks": 0, "pos": 17.64, "ctr": 0.0},
+      {"q": "poster 印刷", "imps": 60, "clicks": 0, "pos": 13.55, "ctr": 0.0},
+      {"q": "印刷公司", "imps": 59, "clicks": 0, "pos": 32.25, "ctr": 0.0},
+      {"q": "小冊子印刷", "imps": 57, "clicks": 0, "pos": 10.42, "ctr": 0.0},
+      {"q": "即日印刷", "imps": 56, "clicks": 1, "pos": 7.86, "ctr": 0.0179},
+      {"q": "海報與印刷", "imps": 50, "clicks": 0, "pos": 13.58, "ctr": 0.0},
+      {"q": "訂做紙袋", "imps": 49, "clicks": 0, "pos": 13.63, "ctr": 0.0},
+      {"q": "餐牌印刷", "imps": 48, "clicks": 0, "pos": 9.75, "ctr": 0.0},
+      {"q": "包裝盒印刷", "imps": 46, "clicks": 0, "pos": 31.28, "ctr": 0.0},
+      {"q": "大信封", "imps": 44, "clicks": 0, "pos": 3.86, "ctr": 0.0},
+      {"q": "紙袋訂製", "imps": 44, "clicks": 0, "pos": 11.57, "ctr": 0.0},
+      {"q": "騎馬釘印刷", "imps": 44, "clicks": 0, "pos": 11.98, "ctr": 0.0},
+      {"q": "車身廣告", "imps": 44, "clicks": 0, "pos": 34.8, "ctr": 0.0},
+      {"q": "膠裝書印刷", "imps": 43, "clicks": 0, "pos": 25.72, "ctr": 0.0},
+      {"q": "貼紙設計", "imps": 42, "clicks": 0, "pos": 18.86, "ctr": 0.0},
+      {"q": "可移貼紙", "imps": 41, "clicks": 0, "pos": 17.51, "ctr": 0.0},
+      {"q": "紙盒印刷", "imps": 41, "clicks": 0, "pos": 30.34, "ctr": 0.0},
+      {"q": "月歷印刷", "imps": 40, "clicks": 0, "pos": 14.9, "ctr": 0.0}
+    ],
+    "zh-hk_ties_at_40": [
+      {"q": "香港印刷公司", "imps": 40, "clicks": 0, "pos": 24.18},
+      {"q": "騎馬釘書刊", "imps": 40, "clicks": 0, "pos": 25.38}
+    ],
+    "ja": [
+      {"q": "コミケ 印刷", "imps": 185, "clicks": 0, "pos": 19.61, "ctr": 0.0},
+      {"q": "クラフト紙 パッケージ 印刷", "imps": 56, "clicks": 0, "pos": 26.09, "ctr": 0.0},
+      {"q": "クラフト紙 パッケージ印刷", "imps": 52, "clicks": 0, "pos": 25.33, "ctr": 0.0},
+      {"q": "燙金利是封", "imps": 23, "clicks": 0, "pos": 1.0, "ctr": 0.0},
+      {"q": "教科書 印刷", "imps": 22, "clicks": 0, "pos": 37.59, "ctr": 0.0},
+      {"q": "両面カラー印刷", "imps": 19, "clicks": 0, "pos": 35.05, "ctr": 0.0},
+      {"q": "a2 ポスター 印刷", "imps": 19, "clicks": 0, "pos": 52.26, "ctr": 0.0},
+      {"q": "食品 パッケージ印刷", "imps": 17, "clicks": 0, "pos": 52.24, "ctr": 0.0},
+      {"q": "pvc シール", "imps": 16, "clicks": 0, "pos": 19.5, "ctr": 0.0},
+      {"q": "教材 印刷製本", "imps": 16, "clicks": 0, "pos": 20.12, "ctr": 0.0},
+      {"q": "a2 クリアポスター 印刷", "imps": 15, "clicks": 0, "pos": 37.8, "ctr": 0.0},
+      {"q": "チラシ印刷 早い", "imps": 14, "clicks": 0, "pos": 29.57, "ctr": 0.0},
+      {"q": "特急印刷 激安", "imps": 13, "clicks": 0, "pos": 16.15, "ctr": 0.0},
+      {"q": "a2 ポスター", "imps": 13, "clicks": 0, "pos": 35.85, "ctr": 0.0},
+      {"q": "中 綴じ 冊子 印刷 激安", "imps": 9, "clicks": 0, "pos": 1.0, "ctr": 0.0},
+      {"q": "四六判 中綴じ", "imps": 9, "clicks": 0, "pos": 5.22, "ctr": 0.0},
+      {"q": "社名入りカレンダー 少量注文", "imps": 9, "clicks": 0, "pos": 8.56, "ctr": 0.0},
+      {"q": "短納期 紙箱 印刷", "imps": 9, "clicks": 0, "pos": 17.33, "ctr": 0.0},
+      {"q": "防水加工 パッケージ印刷", "imps": 9, "clicks": 0, "pos": 45.78, "ctr": 0.0},
+      {"q": "ポチ袋 オリジナル 小ロット", "imps": 8, "clicks": 0, "pos": 11.12, "ctr": 0.0},
+      {"q": "缶バッジ 印刷", "imps": 8, "clicks": 0, "pos": 35.75, "ctr": 0.0},
+      {"q": "防水加工 パッケージ 印刷", "imps": 8, "clicks": 0, "pos": 43.62, "ctr": 0.0},
+      {"q": "印刷 a2", "imps": 8, "clicks": 0, "pos": 46.12, "ctr": 0.0},
+      {"q": "カレンダー印刷 少 部数", "imps": 8, "clicks": 0, "pos": 53.75, "ctr": 0.0},
+      {"q": "卒業アルバム 印刷", "imps": 8, "clicks": 0, "pos": 73.62, "ctr": 0.0},
+      {"q": "a1 ポスター 格安", "imps": 7, "clicks": 0, "pos": 4.29, "ctr": 0.0},
+      {"q": "シール pvcとは", "imps": 7, "clicks": 0, "pos": 8.29, "ctr": 0.0},
+      {"q": "教材 印刷 製本", "imps": 7, "clicks": 0, "pos": 11.43, "ctr": 0.0},
+      {"q": "カレンダー オフセット", "imps": 7, "clicks": 0, "pos": 43.43, "ctr": 0.0},
+      {"q": "型抜きステッカー", "imps": 6, "clicks": 0, "pos": 5.83, "ctr": 0.0}
+    ],
+    "ja_ties_at_6": [{"q": "カタログ 印刷", "imps": 6, "clicks": 0, "pos": 37.17}],
+    "en_28d": null,
+    "en_28d_missing_reason": "us28 section of _gsc1015_queries.json not reachable (single-line JSON read-truncated); no exec tool to re-extract"
+  },
+  "cluster_queries": {
+    "zh-hk_lai_si_feng_red_packet": {
+      "queries": [
+        {"q": "利是封印刷", "imps": 61, "clicks": 0, "pos": 17.64},
+        {"q": "訂製利是封", "imps": 26, "clicks": 0, "pos": 15.77},
+        {"q": "利是封訂製", "imps": 24, "clicks": 1, "pos": 13.33},
+        {"q": "利 是 封 印刷", "imps": 8, "clicks": 0, "pos": 19.5},
+        {"q": "利 是 封 訂 製", "imps": 8, "clicks": 0, "pos": 21.88},
+        {"q": "訂 做 利 是 封", "imps": 8, "clicks": 0, "pos": 26.25},
+        {"q": "利 是 封 尺寸", "imps": 5, "clicks": 0, "pos": 27.8},
+        {"q": "印 利 是 封", "imps": 4, "clicks": 0, "pos": 22.25},
+        {"q": "利是封設計", "imps": 3, "clicks": 0, "pos": 9.0},
+        {"q": "利是封", "imps": 2, "clicks": 0, "pos": 23.0},
+        {"q": "訂 制 利 是 封", "imps": 2, "clicks": 0, "pos": 26.0},
+        {"q": "red packet cartoon", "imps": 2, "clicks": 0, "pos": 1.0},
+        {"q": "利 是 封 设计", "imps": 1, "clicks": 0, "pos": 41.0},
+        {"q": "燙金利是封", "imps": 1, "clicks": 1, "pos": 1.0}
+      ],
+      "total_imps": 155, "total_clicks": 2, "weighted_pos": 17.7
+    },
+    "zh-hk_calendar": {
+      "queries": [
+        {"q": "月曆印刷", "imps": 102, "clicks": 0, "pos": 16.09},
+        {"q": "月歷印刷", "imps": 40, "clicks": 0, "pos": 14.9},
+        {"q": "月曆訂製", "imps": 39, "clicks": 0, "pos": 25.21},
+        {"q": "訂制月曆", "imps": 28, "clicks": 0, "pos": 23.79},
+        {"q": "座檯月曆", "imps": 24, "clicks": 0, "pos": 37.67},
+        {"q": "印月曆", "imps": 22, "clicks": 0, "pos": 9.36},
+        {"q": "年曆印刷", "imps": 10, "clicks": 0, "pos": 5.3},
+        {"q": "訂製月曆", "imps": 9, "clicks": 0, "pos": 18.44},
+        {"q": "年曆", "imps": 8, "clicks": 0, "pos": 6.62},
+        {"q": "座枱月曆", "imps": 4, "clicks": 0, "pos": 43.0},
+        {"q": "自己印月曆", "imps": 4, "clicks": 0, "pos": 28.75},
+        {"q": "日曆價錢", "imps": 3, "clicks": 0, "pos": 12.0},
+        {"q": "月曆價格", "imps": 2, "clicks": 0, "pos": 7.5},
+        {"q": "月曆價錢", "imps": 1, "clicks": 0, "pos": 3.0},
+        {"q": "迷你月曆", "imps": 1, "clicks": 0, "pos": 14.0},
+        {"q": "月曆印製", "imps": 1, "clicks": 0, "pos": 17.0},
+        {"q": "日曆訂製", "imps": 1, "clicks": 0, "pos": 25.0},
+        {"q": "免費座枱月曆2027", "imps": 1, "clicks": 0, "pos": 33.0}
+      ],
+      "total_imps": 300, "total_clicks": 0
+    },
+    "zh-hk_greeting": {"queries": [], "note": "0 hits in 553 hk28 rows"},
+    "ja_pochibukuro_lai_si_feng": {
+      "queries": [
+        {"q": "燙金利是封", "imps": 23, "clicks": 0, "pos": 1.0},
+        {"q": "ポチ袋 オリジナル 小ロット", "imps": 8, "clicks": 0, "pos": 11.12},
+        {"q": "ポチ袋 オリジナル", "imps": 1, "clicks": 0, "pos": 4.0},
+        {"q": "ポチ袋 印刷 小ロット", "imps": 1, "clicks": 0, "pos": 15.0}
+      ],
+      "total_imps": 33, "total_clicks": 0
+    },
+    "ja_calendar_greeting": {
+      "queries": [
+        {"q": "社名入りカレンダー 少量注文", "imps": 9, "clicks": 0, "pos": 8.56},
+        {"q": "カレンダー印刷 少 部数", "imps": 8, "clicks": 0, "pos": 53.75},
+        {"q": "カレンダー オフセット", "imps": 7, "clicks": 0, "pos": 43.43},
+        {"q": "カレンダー オフセット印刷", "imps": 2, "clicks": 0, "pos": 22.0},
+        {"q": "カレンダー 印刷会社", "imps": 2, "clicks": 0, "pos": 83.5},
+        {"q": "グリーティングカード 印刷", "imps": 3, "clicks": 0, "pos": 19.67},
+        {"q": "カスタムカレンダー", "imps": 1, "clicks": 0, "pos": 10.0},
+        {"q": "壁に穴開けずにカレンダー 100均", "imps": 1, "clicks": 0, "pos": 4.0},
+        {"q": "オフセット印刷 カレンダー", "imps": 1, "clicks": 0, "pos": 38.0}
+      ],
+      "total_imps": 34, "total_clicks": 0,
+      "note": "jp28 tail (~30 imps=1 rows) truncated; possible missing imps=1 tail entries; 年賀状 0 展示"
+    },
+    "en_28d": null
+  },
+  "brand_queries": {
+    "zh-hk": [
+      {"q": "智印港", "imps": 21, "clicks": 15, "pos": 1.62, "ctr": 0.714},
+      {"q": "zprintpro", "imps": 6, "clicks": 2, "pos": 2.67}
+    ],
+    "us24": [{"q": "智印港", "imps": 1, "clicks": 0, "pos": 1.0}]
+  },
+  "page_level": null,
+  "page_level_blocked": {
+    "reason": "No 2026-10-15 网页-sheet extraction exists in .hermes (repo-wide grep verified); this session has no exec tool; xlsx read returns filesystem_binary_file",
+    "completion_path": "Rerun .hermes/_gsc_page_imps.py pattern against 10-15 28d files, filter /blog/ and red-packet|calendar|greeting-card|banner, write to .hermes/analysis/"
+  },
+  "appendix_2026_10_09_window_product_pages": {
+    "caveat": "上一档 10-09 窗口数据, 非本档, 勿与 10-15 混用",
+    "calendar": {"custom-calendars": [257, 0], "desk-calendars": [38, 0], "mini-calendars": [17, 0], "photo-frame-calendars": [13, 0], "magnetic-calendars": [12, 0], "wall-calendars": [6, 0]},
+    "banner": {"roll-up-banners": [58, 0], "outdoor-vinyl-banners": [47, 0], "mesh-banners": [36, 0], "adhesive-banners": [27, 0]},
+    "greeting-card": {"premium-greeting-cards": [3, 0], "foil-greeting-cards": [2, 0]},
+    "red-packet": {"custom-red-packets": [2, 0], "eco-red-packets": [1, 0], "large-red-packets": [1, 0]}
+  }
+}

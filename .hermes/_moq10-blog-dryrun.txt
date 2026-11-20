@@ -1,0 +1,110 @@
+﻿zh-hk: 40 處 (dry-run)
+en: 22 處 (dry-run)
+ja: 39 處 (dry-run)
+
+=== 改動明細 (44 個欄位) ===
+  zh-hk/sticker-guide/content: 7 處
+  zh-hk/sticker-design/content: 1 處
+  zh-hk/flyer-printing-guide/content: 5 處
+  zh-hk/pet-food-sticker-printing-guide/content: 1 處
+  zh-hk/car-dealership-amenity-sticker-printing-guide/description: 1 處
+  zh-hk/car-dealership-amenity-sticker-printing-guide/content: 2 處
+  zh-hk/hotel-keycard-sleeve-printing-guide/content: 1 處
+  zh-hk/thick-paper-flyer-printing-restaurant-takeout-guide/description: 1 處
+  zh-hk/thick-paper-flyer-printing-restaurant-takeout-guide/content: 1 處
+  zh-hk/real-estate-flyer-printing-guide/description: 1 處
+  zh-hk/real-estate-flyer-printing-guide/content: 2 處
+  zh-hk/same-day-flyers-printing-hong-kong-guide/content: 8 處
+  zh-hk/a5-vs-a6-flyer-size/content: 4 處
+  zh-hk/wedding-table-card-printing-guide/content: 1 處
+  zh-hk/sticker-material-pvc-vinyl-removable/content: 4 處
+  en/sticker-guide/content: 1 處
+  en/hotel-amenity-sticker-printing-guide/description: 1 處
+  en/hotel-amenity-sticker-printing-guide/content: 2 處
+  en/car-dealership-amenity-sticker-printing-guide/description: 1 處
+  en/car-dealership-amenity-sticker-printing-guide/content: 2 處
+  en/hotel-keycard-sleeve-printing-guide/description: 1 處
+  en/hotel-keycard-sleeve-printing-guide/content: 1 處
+  en/baby-product-label-sticker-printing-guide/content: 3 處
+  en/real-estate-flyer-printing-guide/description: 1 處
+  en/real-estate-flyer-printing-guide/content: 1 處
+  en/same-day-flyers-printing-hong-kong-guide/title: 1 處
+  en/same-day-flyers-printing-hong-kong-guide/description: 1 處
+  en/same-day-flyers-printing-hong-kong-guide/content: 3 處
+  en/sticker-material-pvc-vinyl-removable/description: 1 處
+  en/sticker-material-pvc-vinyl-removable/content: 2 處
+  ja/sticker-guide/content: 5 處
+  ja/flyer-printing-guide/content: 6 處
+  ja/car-dealership-amenity-sticker-printing-guide/description: 1 處
+  ja/car-dealership-amenity-sticker-printing-guide/content: 2 處
+  ja/hotel-keycard-sleeve-printing-guide/description: 1 處
+  ja/hotel-keycard-sleeve-printing-guide/content: 2 處
+  ja/baby-product-label-sticker-printing-guide/content: 3 處
+  ja/real-estate-flyer-printing-guide/content: 1 處
+  ja/same-day-flyers-printing-hong-kong-guide/title: 1 處
+  ja/same-day-flyers-printing-hong-kong-guide/description: 1 處
+  ja/same-day-flyers-printing-hong-kong-guide/content: 10 處
+  ja/a5-vs-a6-flyer-size/content: 4 處
+  ja/wedding-table-card-printing-guide/content: 1 處
+  ja/sticker-material-pvc-vinyl-removable/description: 1 處
+
+統計: 改 101 | 因上下文含他品類而保留 28 | 非本批主題文章略過 67 篇
+
+=== 略過的文章樣本 (主題非紙品線) ===
+  zh-hk/company-intro
+  zh-hk/paper-bag-printing-guide
+  zh-hk/restaurant-menu-printing-guide
+  zh-hk/marathon-event-poster-printing-guide
+  zh-hk/industrial-nameplate-printing-guide
+  zh-hk/poster-size-guide
+  zh-hk/poster-printing-price-guide
+  zh-hk/apparel-clothing-tag-printing-guide
+  zh-hk/rush-printing-hk-guide
+  zh-hk/hong-kong-printing-cost-baseline-2026
+  zh-hk/print-specifications-reference-guide-2026
+  zh-hk/rush-printing-delivery-guide
+  en/design-file-specs
+  en/brand-materials-checklist
+  en/packaging-trends
+  en/cmyk-guide
+  en/eco-printing
+  en/paper-bag-printing-guide
+  en/cross-border-ecommerce-shipping-box-guide
+  en/restaurant-menu-printing-guide
+  en/wedding-red-packet-printing-guide
+  en/trade-show-banner-printing-guide
+  en/wedding-invitation-envelope-printing-guide
+  en/finance-summit-gift-bag-printing-guide
+  en/marathon-event-poster-printing-guide
+
+=== 因上下文保留樣本 ===
+  [保留:上下文含「紙材」] zh-hk/car-dealership-amenity-sticker-printing-guide/content: …<h3>六、生產與配送</h3> <p>智印港為香港汽車業提供 PVC 防水，透明 BOPP，耐油 PVC 全套定制,100 張起印,免費刀模設計，免費打稿,3-5 個工作天交付。順豐本地港九新界免運費 (HK$500+…
+  [保留:上下文含「房卡」] zh-hk/hotel-keycard-sleeve-printing-guide/description: ……
+  [保留:上下文含「房卡」] zh-hk/hotel-keycard-sleeve-printing-guide/content: … 3 秒第一印象同 30% 重訪率。智印港為香港及亞太酒店客戶提供 PVC 防水房卡套，行李牌，客用品包裝貼紙全套定制,100 張起印,免費刀模設計,3-5 個工作天完成,順豐本地港九新界免運費,燙金 logo 對應五星…
+  [保留:上下文含「房卡」] zh-hk/hotel-keycard-sleeve-printing-guide/content: …案。</p> <h3>六、生產與配送</h3> <p>智印港為香港酒店業提供 PVC 防水，軟觸啞面，燙金箔全套定制,100 張起印,免費刀模設計，免費打稿,3-5 個工作天交付。順豐本地港九新界免運費 (HK$500+…
+  [保留:上下文含「menu」] zh-hk/thick-paper-flyer-printing-restaurant-takeout-guide/content: …$0.55/張,5,000 張 HK$0.42/張,10,000 張 HK$0.30/張。CP 值最高 5,000 張。100 張起印都可以但單價較高,適合試版 / menu sample。</p> <p><strong…
+  [保留:上下文含「紙材」] zh-hk/same-day-flyers-printing-hong-kong-guide/description: …印, 順豐本地，DHL 全球 2-4 天。…
+  [保留:上下文含「紙材」] zh-hk/same-day-flyers-printing-hong-kong-guide/description: …印, 順豐本地，DHL 全球 2-4 天。…
+  [保留:上下文含「紙材」] zh-hk/same-day-flyers-printing-hong-kong-guide/content: …大尺寸／紙材／工藝結構、6 款現貨紙材價目、5 大行業場景與 MOQ 階梯（50 至 10,000 張），附 4 大 FAQ 解答截稿時間、取貨時段與加急附加費；香港餐廳開幕、活動速遞與地產快銷旺季均可應付，順豐本地同日…
+  [保留:上下文含「紙材」] zh-hk/same-day-flyers-printing-hong-kong-guide/content: …eading-relaxed mb-4">即日傳單點印？中午 12 點前確認稿件並完成過稿，最快同日 4-6 小時可取，100 張起印。2025-2026 年香港餐廳開幕、活動 late-call 與地產快銷旺季，Q1-…
+  [保留:上下文含「餐牌」] zh-hk/same-day-flyers-printing-hong-kong-guide/content: …xt-base text-[#444444] leading-relaxed mb-4">即日單以數碼四色為主，免製版、100 張起印；大批量（1,000 張以上）轉柯式更平，但要 1-3 個工作天；燙金、UV 局部上光…
+  [保留:上下文含「餐牌」] zh-hk/a5-vs-a6-flyer-size/content: …duct/a5-flyers/" class="text-[#1A56DB] underline">A5 傳單</a> 100 張起印、HK$0.18 起/張（產品頁 2026 價目），常規 3-5 個工作天、48 小時…
+  [保留:上下文含「紙張」] zh-hk/a5-vs-a6-flyer-size/content: …配送、DHL 全球 2-4 天送達。FSC 認證紙張供應，色彩管理符合 ISO 12647-2 標準。A5／A6 傳單 100 張起印，餐飲、零售、地產、展會全場景覆蓋，免費設計同數碼打樣。</p> <p class="…
+  [保留:上下文含「紙材」] zh-hk/sticker-material-pvc-vinyl-removable/description: …條內部連結，30 秒 WhatsApp 報價，訂單實證，FDA，EU REACH，FSC，國際認證體系 4 證齊.…
+  [保留:上下文含「packaging」] en/sticker-guide/content: …</tr></tbody></table> <p>Foil stickers start at HK$0.78/pc (100 pcs MOQ); perceived brand value lifts 50%+, id…
+  [保留:上下文含「menu」] en/hotel-amenity-sticker-printing-guide/content: ….</p> <h3>6. Ordering &amp; Delivery for US Hotels</h3> <p>100 MOQ with no setup fees. Standard production 5-7…
+  [保留:上下文含「packaging」] en/hotel-keycard-sleeve-printing-guide/content: …ey sleeves, luggage tags, and amenity packaging stickers at 100 MOQ, Free Shipping on orders over $99 within t…
+  [保留:上下文含「packaging」] en/baby-product-label-sticker-printing-guide/content: …arison, cute die-cut cost premiums, cross-border e-commerce 100 MOQ policy, and 2026 baby packaging trends (ec…
+  [保留:上下文含「packaging」] en/baby-product-label-sticker-printing-guide/content: …s="text-[#1A56DB] underline">poster printing</a></strong> — 100 MOQ test batch，FDA documentation package</li><…
+  [保留:上下文含「packaging」] en/sticker-material-pvc-vinyl-removable/content: …+ transparent packaging. 1-2 year lifespan, FDA food-grade, 100 pcs MOQ HK$0.30/pc.</p> </div> <p>Clear waterp…
+  [保留:上下文含「packaging」] en/sticker-material-pvc-vinyl-removable/content: …+ cosmetics bottle + wedding invitation + luxury packaging. 100 pcs MOQ HK$0.45-0.80/pc, 3-5 year outdoor life…
+  [保留:上下文含「校」] ja/sticker-guide/content: …der p-2">偽造防止ラベル、証明書</td></tr></tbody></table> <p>箔押しステッカーは 100 枚から 1 枚 HK$0.78 から。ブランド価値の知覚が 50% 以上向上し、高単価商品の…
+  [保留:上下文含「校」] ja/sticker-guide/content: …trong>Q：ステッカー印刷の最小ロットは？</strong><br/>A：ZprintPro のステッカーはすべて 100 枚から。PVC 防水ステッカーは 1 枚 HK$0.22 から、小ロットラベルは A4 1 …
+  [保留:上下文含「校」] ja/sticker-design/content: …ば、無料校正で印刷仕様に整えます。</p><p><strong>Q：最小ロットは？</strong><br/>A：50〜100枚から。小ロットのテスト印刷も気軽にどうぞ。</p><p><strong>Q：ダイカットは追加…
+  [保留:上下文含「封筒」] ja/car-dealership-amenity-sticker-printing-guide/content: …/ul> <h3>6. 生産と配送</h3> <p>ZprintProは防水 PVC，透明 BOPP，耐油ビニールを 100 枚から対応、3-5 営業日で生産、全国送料無料、沖縄・北海道も同料金、DHL 国際配送 2-4…
+  [保留:上下文含「封筒」] ja/hotel-keycard-sleeve-printing-guide/content: …>6. 生産と配送</h3> <p>ZprintProは防水 PVC，ソフトタッチマット，箔押し，スポット UV を 100 枚から対応、3-5 営業日で生産、全国送料無料、沖縄・北海道も同料金、DHL 国際配送 2-4…
+  [保留:上下文含「校」] ja/same-day-flyers-printing-hong-kong-guide/content: …1-2 営業日です。</p> <p><strong>Q2：即日印刷の料金はいくらから？</strong><br/>A2：100 枚から対応。A5 片面 128g 上質紙は HK$0.35/枚から（2026 年価格）。A4…
+  [保留:上下文含「メニュー」] ja/a5-vs-a6-flyer-size/content: …ct/a5-flyers/" class="text-[#1A56DB] underline">A5 チラシ</a>は 100 枚から発注可能、US$0.25/枚〜（サイト 2026 価格表）、標準納期 3〜5 営業日、…
+  [保留:上下文含「校」] ja/a5-vs-a6-flyer-size/content: …L 国際 2〜4 日配送を提供。FSC 認証用紙の供給、ISO 12647-2 準拠のカラー管理。A5/A6 チラシは 100 枚から対応し、飲食・小売・不動産・展示会の全シーンをカバー。無料デザインとデジタル校正に対応…
+
+(dry-run — 加 --apply 才寫盤)

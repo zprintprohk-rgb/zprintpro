@@ -1,0 +1,34 @@
+docs(skill): 交生活书 + 技能自进化追加 + 探针确认 (本轮避坑 11 条 / 能力 4 条)
+
+一、自进化技能追加 (托管技能目录, 不在本仓库)
+  C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-self-evolution-hardening\SKILL.md
+  - frontmatter: 八类避坑→十九类, 五类能力→九类, 补标题当量 SSoT 索引
+  - 新增 §五 避坑 9–19:
+      行级计数掩盖同行第二匹配 / 豁免粒度按行太粗 / 区间写法变体(en-dash) /
+      NESTED_STRUCT 禁正则猜归属 (4 次同族实录) / 手工字表含共用汉字(132 假命中) /
+      STALE_REMOTE_REF 假积压 / 子串命中≠改过 / 规则声明与实现分叉 /
+      「已施加」≠「已生效」/ 数据层与文案层只落一半 / 跨 SKU 共享模板句残留
+  - 新增 §六 能力 6–9: 单一 SSoT 常量消费 / 行为不变验证 / 取代式标注 / 结构解析审计
+  - 新增 §七 并发会话安全协议 (收尾信号 = src/ 无 MM 且 staged 删除归零)
+
+二、交生活书 (本仓库, 稳定路径, 追加式)
+  docs/2026-09-20-handover-living-book.md
+  §1 现状 / §2 状态快照 / §3 规则 SSoT 索引 / §4 工具清单 / §5 未完成事项 /
+  §6 再开工清单 / §7 并发会话安全协议 / §8 Push 纪律 / §9 变更日志
+  关键澄清: 积压一律以 fetch 后的 origin/main...HEAD 为准, 禁用未 fetch 的 @{u}
+
+三、探针确认 (可复跑)
+  node scripts/probe-skill-handover.mjs  ->  38 PASS / 0 FAIL (exit 0)
+  五组断言: A 技能收录 11 项 / B 活书结构 12 项 / C SSoT 常量 4 项 /
+            D 规则五处同源 7 项 / E 门禁缺口与入档 4 项
+  C 组实测: TITLE_MIN=50, TITLE_MAX=57, band(57)=OK, band(58)=TRIM
+
+四、附带: scripts/menus-evidence.cjs (menus 实证片段清单, 供下批候选取词)
+
+数据来源:
+- 本会话实测 (census byBand / title-equiv 常量 / git fetch 后计数)
+- K3 2026-09-19 裁决 (50-57, 58 阻断)
+- K3 2026-09-20 指定 (error-patterns 入档 / 活书 / 技能沉淀)
+校准日期: 2026-09-20
+
+范围: 全部为文档与只读工具; 无 src/ 改动。

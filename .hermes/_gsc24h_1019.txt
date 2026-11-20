@@ -1,0 +1,73 @@
+=== 24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 图表 | hdr=['时间 (UTC+08:00)', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 24 rows)
+=== 24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 查询数 | hdr=['热门查询', '点击次数', '展示', '点击率', '排名']
+  食品包裝印刷 | 0.0 | 4.0 | 0.0 | 7.5
+  食品包裝訂製 | 0.0 | 2.0 | 0.0 | 6.5
+  紙盒訂製 | 0.0 | 2.0 | 0.0 | 26.0
+  包裝盒訂製 | 0.0 | 2.0 | 0.0 | 28.0
+  包裝盒 | 0.0 | 2.0 | 0.0 | 29.0
+  紙盒印刷 | 0.0 | 2.0 | 0.0 | 29.0
+  クラフト紙 パッケージ印刷 | 0.0 | 2.0 | 0.0 | 34.5
+  包裝盒印刷 | 0.0 | 2.0 | 0.0 | 36.5
+  クラフト紙 パッケージ 印刷 | 0.0 | 2.0 | 0.0 | 40.5
+  食品 パッケージ印刷 | 0.0 | 1.0 | 0.0 | 49.0
+=== 24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 网页 | hdr=['排名靠前的网页', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 153 rows)
+=== 24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 国家_地区 | hdr=['国家/地区', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 33 rows)
+=== 24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 设备 | hdr=['设备', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 3 rows)
+=== 24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 搜索结果呈现 | hdr=['搜索结果呈现', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 1 rows)
+=== 24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 过滤器 | hdr=['过滤器', '值']
+  (no cluster keyword in 2 rows)
+=== 日本站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 图表 | hdr=['时间 (UTC+08:00)', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 24 rows)
+=== 日本站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 查询数 | hdr=['热门查询', '点击次数', '展示', '点击率', '排名']
+  クラフト紙 パッケージ印刷 | 0.0 | 2.0 | 0.0 | 34.5
+  クラフト紙 パッケージ 印刷 | 0.0 | 2.0 | 0.0 | 40.5
+  食品 パッケージ印刷 | 0.0 | 1.0 | 0.0 | 49.0
+=== 日本站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 网页 | hdr=['排名靠前的网页', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 13 rows)
+=== 日本站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 国家_地区 | hdr=['国家/地区', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 1 rows)
+=== 日本站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 设备 | hdr=['设备', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 2 rows)
+=== 日本站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 搜索结果呈现 | hdr=['搜索结果呈现', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 1 rows)
+=== 日本站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 过滤器 | hdr=['过滤器', '值']
+  (no cluster keyword in 3 rows)
+=== 美国站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 图表 | hdr=['时间 (UTC+08:00)', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 24 rows)
+=== 美国站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 查询数 | hdr=['热门查询', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 16 rows)
+=== 美国站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 网页 | hdr=['排名靠前的网页', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 8 rows)
+=== 美国站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 国家_地区 | hdr=['国家/地区', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 1 rows)
+=== 美国站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 设备 | hdr=['设备', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 2 rows)
+=== 美国站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 搜索结果呈现 | hdr=['搜索结果呈现', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 1 rows)
+=== 美国站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 过滤器 | hdr=['过滤器', '值']
+  (no cluster keyword in 3 rows)
+=== 香港站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 图表 | hdr=['时间 (UTC+08:00)', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 24 rows)
+=== 香港站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 查询数 | hdr=['热门查询', '点击次数', '展示', '点击率', '排名']
+  食品包裝印刷 | 0.0 | 4.0 | 0.0 | 7.5
+  食品包裝訂製 | 0.0 | 2.0 | 0.0 | 6.5
+  紙盒訂製 | 0.0 | 2.0 | 0.0 | 26.0
+  包裝盒訂製 | 0.0 | 2.0 | 0.0 | 28.0
+  包裝盒 | 0.0 | 2.0 | 0.0 | 29.0
+  紙盒印刷 | 0.0 | 2.0 | 0.0 | 29.0
+  包裝盒印刷 | 0.0 | 2.0 | 0.0 | 36.5
+=== 香港站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 网页 | hdr=['排名靠前的网页', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 45 rows)
+=== 香港站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 国家_地区 | hdr=['国家/地区', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 1 rows)
+=== 香港站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 设备 | hdr=['设备', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 3 rows)
+=== 香港站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 搜索结果呈现 | hdr=['搜索结果呈现', '点击次数', '展示', '点击率', '排名']
+  (no cluster keyword in 1 rows)
+=== 香港站点24小时数据zprintpro.com-Performance-on-Search-2026-10-19.xlsx | sheet 过滤器 | hdr=['过滤器', '值']
+  (no cluster keyword in 3 rows)

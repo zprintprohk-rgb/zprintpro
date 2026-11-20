@@ -1,0 +1,55 @@
+﻿原始字串 (unique zh-hk) : 114
+未收錄零件 (unresolved)  : 0
+語系乾淨度問題           : 0
+
+ja 零假名殘餘 (C 類): 0
+
+--- 抽樣 12 條三語輸出 ---
+RAW  : 拼版白卡彩盒
+  hk : 拼版白卡彩盒
+  en : Gang-run white card colour box
+  ja : 合版白カードボックス
+RAW  : 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒
+  hk : 拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-普通扣底盒-90X60X30-單面-模切[異形],覆膜[覆光膜],黏吊口,黏盒
+  en : Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Standard lock-bottom box-90X60X30-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab,Box gluing
+  ja : 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-標準ロック底箱-90X60X30-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口,のり付け
+RAW  : 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒
+  hk : 拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-雙插盒-100X80X120-單面-模切[異形],覆膜[覆光膜],燙金[亮黃金][10x10],UV[10x10],貼膠片[0.15][50x30],黏吊口,黏盒
+  en : Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Double tuck-end box-100X80X120-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Foil stamping [Bright gold][10x10],UV[10x10],Film patch [0.15][50x30],Hang tab,Box gluing
+  ja : 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-差し込み式ボックス-100X80X120-片面-型抜き[異形],ラミネート[光沢ラミネート],箔押し[ブライトゴールド][10x10],UV[10x10],フィルム貼り[0.15][50x30],吊り下げ口,のり付け
+RAW  : 拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒
+  hk : 拼版卡盒-400g單粉卡(345g超高鬆)[400克]-雙插盒-100X80X120-單面-模切[異形],覆膜[覆光膜],燙金[亮黃金][10x10],UV[10x10],貼膠片[0.15][50x30],黏吊口,黏盒
+  en : Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Double tuck-end box-100X80X120-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Foil stamping [Bright gold][10x10],UV[10x10],Film patch [0.15][50x30],Hang tab,Box gluing
+  ja : 合版カードボックス-400gコートボール(345g超高嵩)[400g]-差し込み式ボックス-100X80X120-片面-型抜き[異形],ラミネート[光沢ラミネート],箔押し[ブライトゴールド][10x10],UV[10x10],フィルム貼り[0.15][50x30],吊り下げ口,のり付け
+RAW  : 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口
+  hk : 拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-60X40X20-單面-模切[異形],覆膜[覆光膜],黏吊口
+  en : Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab
+  ja : 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-60X40X20-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口
+RAW  : 拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口
+  hk : 拼版卡盒-400g單粉卡(345g超高鬆)[400克]-飛機盒-60X40X20-單面-模切[異形],覆膜[覆光膜],黏吊口
+  en : Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab
+  ja : 合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-60X40X20-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口
+RAW  : 拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口
+  hk : 拼版卡盒-銀卡紙（375g）[375克]-飛機盒-60X40X20-單面-模切[異形],黏吊口
+  en : Gang-run card box-Silver card（375g）[375g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Hang tab
+  ja : 合版カードボックス-銀カード（375g）[375g]-飛行機箱-60X40X20-片面-型抜き[異形],吊り下げ口
+RAW  : 拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口
+  hk : 拼版卡盒-鐳射銀卡（375g）[375克]-飛機盒-60X40X20-單面-模切[異形],黏吊口
+  en : Gang-run card box-Holographic silver card（375g）[375g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Hang tab
+  ja : 合版カードボックス-ホログラム銀カード（375g）[375g]-飛行機箱-60X40X20-片面-型抜き[異形],吊り下げ口
+RAW  : 拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口
+  hk : 拼版卡盒-鐳射銀卡（375g）[375克]-飛機盒-120X80X40-單面-[印白墨][逆向UV]-模切[異形],黏吊口
+  en : Gang-run card box-Holographic silver card（375g）[375g]-Airplane box-120X80X40-Single-sided-[Back-print white ink][Reverse UV]-Die-cut [custom shape],Hang tab
+  ja : 合版カードボックス-ホログラム銀カード（375g）[375g]-飛行機箱-120X80X40-片面-[白インク印刷][リバースUV]-型抜き[異形],吊り下げ口
+RAW  : 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口
+  hk : 拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-120X80X40-單面-模切[異形],覆膜[覆光膜],黏吊口
+  en : Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-120X80X40-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab
+  ja : 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-120X80X40-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口
+RAW  : 拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口
+  hk : 拼版卡盒-400g單粉卡(345g超高鬆)[400克]-飛機盒-120X80X40-單面-模切[異形],覆膜[覆光膜],黏吊口
+  en : Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Airplane box-120X80X40-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab
+  ja : 合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-120X80X40-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口
+RAW  : 拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口
+  hk : 拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-150X100X60-單面-模切[異形],覆膜[覆光膜],黏吊口
+  en : Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-150X100X60-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab
+  ja : 合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-150X100X60-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口

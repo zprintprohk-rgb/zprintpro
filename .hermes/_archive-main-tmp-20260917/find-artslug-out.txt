@@ -1,0 +1,10 @@
+﻿ja block: L307 - L438
+
+articleSlugs block:
+articleSlugs: L442 - L458
+
+7-16 zh-hk block markers:
+  L286: 'folding-box-cosmetics-brand-eco-friendly-guide': { title: "Folding Box Printing
+  L417: 'folding-box-cosmetics-brand-eco-friendly-guide': { title: "�ۤꮒ���� �������� ������ - ����Ʒ
+  L450: // 2026-07-16 v4 daily-content-evolve add 3 (Q-001/002/003)
+  L457: 'folding-box-cosmetics-brand-eco-friendly-guide',

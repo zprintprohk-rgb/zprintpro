@@ -1,0 +1,14 @@
+working tree length: 23853
+f374d0d commit length: 0
+diff size: 23853
+working tree processTitle: 4
+commit processTitle: 0
+working tree testimonialTitle: 4
+commit testimonialTitle: 0
+working tree 印刷流程: 1
+commit 印刷流程: 0
+working tree 5步流程: 2
+commit 5步流程: 0
+---
+commit about last 500 chars:
+

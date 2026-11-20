@@ -1,0 +1,304 @@
+﻿
+=== 12 段骨架显式 checklist (SSoT docs/2026-09-08-title-rules-and-deep-blog-standard.md §3.1) ===
+
+--- en/packaging-box-pricing-2026  [2 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 14 字 | "⚡ Quick Answer…"
+  段02 PASS    快速答案块  | 证据: 11 个块，长度 393/194/293/242/…
+  段03 PASS    H2 问句段群  | 证据: H2 9 个，问句 7 个（78%）
+  段04 PASS    比较表格  | 证据: 4 个 <table>
+  段05 WARN    原创数据段  | 证据: 210 个数字，但未检出「资料来源」标记
+  段06 PASS    客户案例  | 证据: 检出客户案例段标记
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 PASS    FAQ 段  | 证据: 4 组可解析 Q&A | 首组 Q="How much does packaging box printing cos"
+  段10 PASS    CTA  | 证据: CTA 2 处
+  段11 PASS    语义锚点内链  | 证据: 10 条达标内链
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=213408
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- en/sticker-material-pvc-vinyl-removable  [2 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 31 字 | "⚡ Quick Answer (40-second read)…"
+  段02 PASS    快速答案块  | 证据: 13 个块，长度 418/402/257/214/…
+  段03 PASS    H2 问句段群  | 证据: H2 11 个，问句 6 个（55%）
+  段04 PASS    比较表格  | 证据: 4 个 <table>
+  段05 WARN    原创数据段  | 证据: 225 个数字，但未检出「资料来源」标记
+  段06 PASS    客户案例  | 证据: 检出客户案例段标记
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 PASS    FAQ 段  | 证据: 4 组可解析 Q&A | 首组 Q="Which waterproof sticker material lasts "
+  段10 PASS    CTA  | 证据: CTA 2 处
+  段11 PASS    语义锚点内链  | 证据: 11 条达标内链
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=213678
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- en/poster-printing-guide  [6 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 153 字 | "US poster sizes at a glance: A3 (11x17) tabletop, A2 window/…"
+  段02 PASS    快速答案块  | 证据: 3 个块，长度 230/227/214
+  段03 FAIL    H2 问句段群  | 证据: H2 = 0（全篇无 H2，段群结构不存在）
+        └─ 修法: 把 poster-printing-guide 的 H3 段群提升为 H2 问句（12 段骨架以 H2 为段锚）
+  段04 PASS    比较表格  | 证据: 2 个 <table>
+  段05 WARN    原创数据段  | 证据: 93 个数字，但未检出「资料来源」标记
+  段06 FAIL    客户案例  | 证据: 无客户案例段，也无「待校准」标注
+        └─ 修法: 补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 PASS    FAQ 段  | 证据: 7 组可解析 Q&A | 首组 Q="What is the minimum order quantity?"
+  段10 FAIL    CTA  | 证据: CTA = 0
+        └─ 修法: 补顶部 1 + 底部 1 WhatsApp CTA
+  段11 FAIL    语义锚点内链  | 证据: 达标内链（锚>=5字）7 < 10（Pillar 硬指标）
+        └─ 修法: 补内链到 >=10（1 回首页 + 4 品类 + 3 SKU PDP + 2 主题）
+  段12 FAIL    Schema 块  | 证据: 重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[HowTo,Organization,Article,FAQPage,BreadcrumbList] blocks=6+5 len=189
+        └─ 修法: strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）
+
+--- en/campus-education-printing-pillar-guide  [3 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 122 字 | "Campus education printing MOQ 100 HK$8-300/copy, 5-7 working…"
+  段02 PASS    快速答案块  | 证据: 3 个块，长度 74/70/65
+  段03 PASS    H2 问句段群  | 证据: H2 11 个，问句 11 个（100%）
+  段04 PASS    比较表格  | 证据: 2 个 <table>
+  段05 WARN    原创数据段  | 证据: 561 个数字，但未检出「资料来源」标记
+  段06 FAIL    客户案例  | 证据: 无客户案例段，也无「待校准」标注
+        └─ 修法: 补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 WARN    GEO 知识原子段  | 证据: 12 个【】原子但无独立 <section>
+  段09 FAIL    FAQ 段  | 证据: 正文有 FAQ 语义（heading=true, 疑问句式 10 处）但 0 组可被 extractFaqFromHtml 解析 → FAQPage 静默丢失
+        └─ 修法: 只改包装标签: 把 <li><strong>问?</strong>答</li> / 带 class 的 <p> 改为 <p><strong>Q1: 问?</strong><br/>A: 答</p>（答案文字逐字保留）
+  段10 PASS    CTA  | 证据: CTA 3 处
+  段11 PASS    语义锚点内链  | 证据: 11 条达标内链
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=228085
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- en/foil-stamping-3-applications-2026  [3 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 31 字 | "⚡ Quick Answer (40-second read)…"
+  段02 PASS    快速答案块  | 证据: 19 个块，长度 497/229/270/275/…
+  段03 PASS    H2 问句段群  | 证据: H2 15 个，问句 13 个（87%）
+  段04 PASS    比较表格  | 证据: 8 个 <table>
+  段05 WARN    原创数据段  | 证据: 519 个数字，但未检出「资料来源」标记
+  段06 PASS    客户案例  | 证据: 检出客户案例段标记
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 FAIL    FAQ 段  | 证据: 正文有 FAQ 语义（heading=false, 疑问句式 2 处）但 0 组可被 extractFaqFromHtml 解析 → FAQPage 静默丢失
+        └─ 修法: 只改包装标签: 把 <li><strong>问?</strong>答</li> / 带 class 的 <p> 改为 <p><strong>Q1: 问?</strong><br/>A: 答</p>（答案文字逐字保留）
+  段10 PASS    CTA  | 证据: CTA 2 处
+  段11 PASS    语义锚点内链  | 证据: 10 条达标内链
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=250588
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- ja/packaging-box-pricing-2026  [3 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 8 字 | "⚡ クイックアンサー…"
+  段02 PASS    快速答案块  | 证据: 9 个块，长度 213/392/94/126/…
+  段03 PASS    H2 问句段群  | 证据: H2 9 个，问句 7 个（78%）
+  段04 PASS    比较表格  | 证据: 4 个 <table>
+  段05 WARN    原创数据段  | 证据: 193 个数字，但未检出「资料来源」标记
+  段06 FAIL    客户案例  | 证据: 无客户案例段，也无「待校准」标注
+        └─ 修法: 补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 PASS    FAQ 段  | 证据: 4 组可解析 Q&A | 首组 Q="パッケージボックス印刷 500 個と 5000 個の単価差は?"
+  段10 PASS    CTA  | 证据: CTA 2 处
+  段11 PASS    语义锚点内链  | 证据: 10 条达标内链
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=187337
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- ja/sticker-material-pvc-vinyl-removable  [4 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 14 字 | "⚡ クイックアンサー (40 秒で読める)…"
+  段02 PASS    快速答案块  | 证据: 16 个块，长度 244/358/178/128/…
+  段03 PASS    H2 问句段群  | 证据: H2 10 个，问句 6 个（60%）
+  段04 PASS    比较表格  | 证据: 4 个 <table>
+  段05 WARN    原创数据段  | 证据: 231 个数字，但未检出「资料来源」标记
+  段06 FAIL    客户案例  | 证据: 无客户案例段，也无「待校准」标注
+        └─ 修法: 补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 PASS    FAQ 段  | 证据: 4 组可解析 Q&A | 首组 Q="防水ステッカーはどの素材が一番長持ち?"
+  段10 WARN    CTA  | 证据: CTA 仅 1 处（标准 = 顶 1 + 底 1）
+  段11 FAIL    语义锚点内链  | 证据: 达标内链（锚>=5字）7 < 10（Pillar 硬指标）
+        └─ 修法: 补内链到 >=10（1 回首页 + 4 品类 + 3 SKU PDP + 2 主题）
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=180131
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- ja/poster-printing-guide  [6 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 49 字 | "ポスターサイズ早わかり： A3（11x17）卓上、A2 窓・イベント、A1 店内メイン壁、A0 大型・屋外。1枚〜 HK…"
+  段02 PASS    快速答案块  | 证据: 3 个块，长度 116/97/106
+  段03 FAIL    H2 问句段群  | 证据: H2 = 0（全篇无 H2，段群结构不存在）
+        └─ 修法: 把 poster-printing-guide 的 H3 段群提升为 H2 问句（12 段骨架以 H2 为段锚）
+  段04 PASS    比较表格  | 证据: 2 个 <table>
+  段05 WARN    原创数据段  | 证据: 112 个数字，但未检出「资料来源」标记
+  段06 FAIL    客户案例  | 证据: 无客户案例段，也无「待校准」标注
+        └─ 修法: 补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 PASS    FAQ 段  | 证据: 7 组可解析 Q&A | 首组 Q="最小注文数は？"
+  段10 FAIL    CTA  | 证据: CTA = 0
+        └─ 修法: 补顶部 1 + 底部 1 WhatsApp CTA
+  段11 FAIL    语义锚点内链  | 证据: 达标内链（锚>=5字）8 < 10（Pillar 硬指标）
+        └─ 修法: 补内链到 >=10（1 回首页 + 4 品类 + 3 SKU PDP + 2 主题）
+  段12 FAIL    Schema 块  | 证据: 重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[HowTo,Organization,Article,FAQPage,BreadcrumbList] blocks=6+5 len=166
+        └─ 修法: strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）
+
+--- ja/campus-education-printing-pillar-guide  [3 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 36 字 | "キャンパス教育印刷 100 部〜 HK$8-300/部, 5-7 営業日, ZprintPro 4 大市場 5 大印刷品…"
+  段02 PASS    快速答案块  | 证据: 3 个块，长度 61/59/46
+  段03 PASS    H2 问句段群  | 证据: H2 11 个，问句 11 个（100%）
+  段04 PASS    比较表格  | 证据: 2 个 <table>
+  段05 WARN    原创数据段  | 证据: 571 个数字，但未检出「资料来源」标记
+  段06 FAIL    客户案例  | 证据: 无客户案例段，也无「待校准」标注
+        └─ 修法: 补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 WARN    GEO 知识原子段  | 证据: 8 个【】原子但无独立 <section>
+  段09 FAIL    FAQ 段  | 证据: 正文有 FAQ 语义（heading=true, 疑问句式 10 处）但 0 组可被 extractFaqFromHtml 解析 → FAQPage 静默丢失
+        └─ 修法: 只改包装标签: 把 <li><strong>问?</strong>答</li> / 带 class 的 <p> 改为 <p><strong>Q1: 问?</strong><br/>A: 答</p>（答案文字逐字保留）
+  段10 PASS    CTA  | 证据: CTA 3 处
+  段11 PASS    语义锚点内链  | 证据: 11 条达标内链
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=193706
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- ja/foil-stamping-3-applications-2026  [3 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 11 字 | "⚡ クイック答え (40 秒で読了)…"
+  段02 PASS    快速答案块  | 证据: 17 个块，长度 328/162/164/189/…
+  段03 PASS    H2 问句段群  | 证据: H2 14 个，问句 12 个（86%）
+  段04 PASS    比较表格  | 证据: 7 个 <table>
+  段05 WARN    原创数据段  | 证据: 516 个数字，但未检出「资料来源」标记
+  段06 PASS    客户案例  | 证据: 检出客户案例段标记
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 FAIL    FAQ 段  | 证据: 正文无 FAQ 段（heading 与 Q&A 均缺失）
+        └─ 修法: 为 foil-stamping-3-applications-2026 新增 4-8 组 FAQ（段 9）
+  段10 PASS    CTA  | 证据: CTA 2 处
+  段11 PASS    语义锚点内链  | 证据: 10 条达标内链
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=213985
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- zh-hk/packaging-box-pricing-2026  [3 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 8 字 | "⚡ 快速答案 (40 秒讀完)…"
+  段02 PASS    快速答案块  | 证据: 13 个块，长度 205/339/121/109/…
+  段03 PASS    H2 问句段群  | 证据: H2 10 个，问句 8 个（80%）
+  段04 PASS    比较表格  | 证据: 4 个 <table>
+  段05 WARN    原创数据段  | 证据: 252 个数字，但未检出「资料来源」标记
+  段06 PASS    客户案例  | 证据: 检出客户案例段标记 + 结果数字
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 PASS    FAQ 段  | 证据: 4 组可解析 Q&A | 首组 Q="包裝盒印刷 500 個同 5000 個,單價差幾多?"
+  段10 PASS    CTA  | 证据: CTA 2 处
+  段11 FAIL    语义锚点内链  | 证据: 达标内链（锚>=5字）9 < 10（Pillar 硬指标）
+        └─ 修法: 补内链到 >=10（1 回首页 + 4 品类 + 3 SKU PDP + 2 主题）
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=192580
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- zh-hk/sticker-material-pvc-vinyl-removable  [2 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 8 字 | "⚡ 快速答案 (40 秒讀完)…"
+  段02 PASS    快速答案块  | 证据: 14 个块，长度 211/295/148/108/…
+  段03 PASS    H2 问句段群  | 证据: H2 11 个，问句 6 个（55%）
+  段04 PASS    比较表格  | 证据: 4 个 <table>
+  段05 WARN    原创数据段  | 证据: 238 个数字，但未检出「资料来源」标记
+  段06 PASS    客户案例  | 证据: 检出客户案例段标记 + 结果数字
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 PASS    FAQ 段  | 证据: 4 组可解析 Q&A | 首组 Q="防水貼紙用咩材質最襟？"
+  段10 PASS    CTA  | 证据: CTA 2 处
+  段11 PASS    语义锚点内链  | 证据: 11 条达标内链
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=182809
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- zh-hk/poster-printing-guide  [3 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 79 字 | "香港海報印刷 A1 / A2 / A3 點揀?記住 3 個數: A1 = 594×841mm (店內主牆) , A2 =…"
+  段02 PASS    快速答案块  | 证据: 10 个块，长度 144/143/157/156/…
+  段03 PASS    H2 问句段群  | 证据: H2 9 个，问句 9 个（100%）
+  段04 PASS    比较表格  | 证据: 4 个 <table>
+  段05 WARN    原创数据段  | 证据: 351 个数字，但未检出「资料来源」标记
+  段06 FAIL    客户案例  | 证据: 无客户案例段，也无「待校准」标注
+        └─ 修法: 补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 PASS    FAQ 段  | 证据: 5 组可解析 Q&A | 首组 Q="海報印刷用咩紙最抵?"
+  段10 PASS    CTA  | 证据: CTA 2 处
+  段11 PASS    语义锚点内链  | 证据: 12 条达标内链
+  段12 FAIL    Schema 块  | 证据: 重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=194
+        └─ 修法: strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）
+
+--- zh-hk/campus-education-printing-pillar-guide  [3 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 37 字 | "校園教育印刷 100 份起印 HK$8-300/份, 5-7 個工作天, 智印港 4 大市場 5 大印刷品 × 5 大材…"
+  段02 PASS    快速答案块  | 证据: 3 个块，长度 58/59/52
+  段03 PASS    H2 问句段群  | 证据: H2 11 个，问句 11 个（100%）
+  段04 PASS    比较表格  | 证据: 2 个 <table>
+  段05 WARN    原创数据段  | 证据: 577 个数字，但未检出「资料来源」标记
+  段06 FAIL    客户案例  | 证据: 无客户案例段，也无「待校准」标注
+        └─ 修法: 补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 WARN    GEO 知识原子段  | 证据: 6 个【】原子但无独立 <section>
+  段09 FAIL    FAQ 段  | 证据: 正文有 FAQ 语义（heading=true, 疑问句式 10 处）但 0 组可被 extractFaqFromHtml 解析 → FAQPage 静默丢失
+        └─ 修法: 只改包装标签: 把 <li><strong>问?</strong>答</li> / 带 class 的 <p> 改为 <p><strong>Q1: 问?</strong><br/>A: 答</p>（答案文字逐字保留）
+  段10 PASS    CTA  | 证据: CTA 3 处
+  段11 PASS    语义锚点内链  | 证据: 11 条达标内链
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=191238
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+--- zh-hk/foil-stamping-3-applications-2026  [3 段 FAIL] ---
+  段01 PASS    倒金字塔首段  | 证据: 首段 8 字 | "⚡ 快速答案 (40 秒讀完)…"
+  段02 PASS    快速答案块  | 证据: 19 个块，长度 302/105/110/151/…
+  段03 PASS    H2 问句段群  | 证据: H2 15 个，问句 13 个（87%）
+  段04 PASS    比较表格  | 证据: 8 个 <table>
+  段05 WARN    原创数据段  | 证据: 534 个数字，但未检出「资料来源」标记
+  段06 PASS    客户案例  | 证据: 检出客户案例段标记 + 结果数字
+  段07 PASS    E-E-A-T 署名段  | 证据: Person + LinkedIn + FDA + EU REACH 4 信号齐
+  段08 FAIL    GEO 知识原子段  | 证据: 无【】知识原子
+        └─ 修法: 补 GEO 知识原子段（独立 <section> + 【】金句）
+  段09 FAIL    FAQ 段  | 证据: 正文有 FAQ 语义（heading=false, 疑问句式 2 处）但 0 组可被 extractFaqFromHtml 解析 → FAQPage 静默丢失
+        └─ 修法: 只改包装标签: 把 <li><strong>问?</strong>答</li> / 带 class 的 <p> 改为 <p><strong>Q1: 问?</strong><br/>A: 答</p>（答案文字逐字保留）
+  段10 PASS    CTA  | 证据: CTA 2 处
+  段11 PASS    语义锚点内链  | 证据: 10 条达标内链
+  段12 FAIL    Schema 块  | 证据: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=216759
+        └─ 修法: 补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）
+
+[12段骨架汇总] PASS=112 FAIL=49 WARN=19 SKIP=0 INVALID=0
+[口径] FAIL = 段级不合格; WARN = 需人工判定; SKIP = 本模式未测（不算通过）; INVALID = 测量无效（绝不算通过）
+
+[BLOG-QUALITY-12-RULES-GUARD] 37 条 FAIL 明细 (兼容旧 ruleId 口径):
+  src/data/blog-data/en.json [SEG8_GEO_ATOM] packaging-box-pricing-2026 [en] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/en.json [SEG8_GEO_ATOM] sticker-material-pvc-vinyl-removable [en] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/en.json [SEG3_H2_QUESTION] poster-printing-guide [en] 段3 H2 问句段群: H2 = 0（全篇无 H2，段群结构不存在）
+  src/data/blog-data/en.json [SEG6_CUSTOMER_CASE] poster-printing-guide [en] 段6 客户案例: 无客户案例段，也无「待校准」标注
+  src/data/blog-data/en.json [SEG8_GEO_ATOM] poster-printing-guide [en] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/en.json [SEG10_CTA] poster-printing-guide [en] 段10 CTA: CTA = 0
+  src/data/blog-data/en.json [SEG11_INTERNAL_LINK] poster-printing-guide [en] 段11 语义锚点内链: 达标内链（锚>=5字）7 < 10（Pillar 硬指标）
+  src/data/blog-data/en.json [SEG6_CUSTOMER_CASE] campus-education-printing-pillar-guide [en] 段6 客户案例: 无客户案例段，也无「待校准」标注
+  src/data/blog-data/en.json [SEG9_FAQ] campus-education-printing-pillar-guide [en] 段9 FAQ 段: 正文有 FAQ 语义（heading=true, 疑问句式 10 处）但 0 组可被 extractFaqFromHtml 解析 → FAQPage 静默丢失
+  src/data/blog-data/en.json [SEG8_GEO_ATOM] foil-stamping-3-applications-2026 [en] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/en.json [SEG9_FAQ] foil-stamping-3-applications-2026 [en] 段9 FAQ 段: 正文有 FAQ 语义（heading=false, 疑问句式 2 处）但 0 组可被 extractFaqFromHtml 解析 → FAQPage 静默丢失
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] packaging-box-pricing-2026 [ja] 段6 客户案例: 无客户案例段，也无「待校准」标注
+  src/data/blog-data/ja.json [SEG8_GEO_ATOM] packaging-box-pricing-2026 [ja] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] sticker-material-pvc-vinyl-removable [ja] 段6 客户案例: 无客户案例段，也无「待校准」标注
+  src/data/blog-data/ja.json [SEG8_GEO_ATOM] sticker-material-pvc-vinyl-removable [ja] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/ja.json [SEG11_INTERNAL_LINK] sticker-material-pvc-vinyl-removable [ja] 段11 语义锚点内链: 达标内链（锚>=5字）7 < 10（Pillar 硬指标）
+  src/data/blog-data/ja.json [SEG3_H2_QUESTION] poster-printing-guide [ja] 段3 H2 问句段群: H2 = 0（全篇无 H2，段群结构不存在）
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] poster-printing-guide [ja] 段6 客户案例: 无客户案例段，也无「待校准」标注
+  src/data/blog-data/ja.json [SEG8_GEO_ATOM] poster-printing-guide [ja] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/ja.json [SEG10_CTA] poster-printing-guide [ja] 段10 CTA: CTA = 0
+  src/data/blog-data/ja.json [SEG11_INTERNAL_LINK] poster-printing-guide [ja] 段11 语义锚点内链: 达标内链（锚>=5字）8 < 10（Pillar 硬指标）
+  src/data/blog-data/ja.json [SEG6_CUSTOMER_CASE] campus-education-printing-pillar-guide [ja] 段6 客户案例: 无客户案例段，也无「待校准」标注
+  src/data/blog-data/ja.json [SEG9_FAQ] campus-education-printing-pillar-guide [ja] 段9 FAQ 段: 正文有 FAQ 语义（heading=true, 疑问句式 10 处）但 0 组可被 extractFaqFromHtml 解析 → FAQPage 静默丢失
+  src/data/blog-data/ja.json [SEG8_GEO_ATOM] foil-stamping-3-applications-2026 [ja] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/ja.json [SEG9_FAQ] foil-stamping-3-applications-2026 [ja] 段9 FAQ 段: 正文无 FAQ 段（heading 与 Q&A 均缺失）
+  src/data/blog-data/zh-hk.json [SEG8_GEO_ATOM] packaging-box-pricing-2026 [zh-hk] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/zh-hk.json [SEG11_INTERNAL_LINK] packaging-box-pricing-2026 [zh-hk] 段11 语义锚点内链: 达标内链（锚>=5字）9 < 10（Pillar 硬指标）
+  src/data/blog-data/zh-hk.json [SEG8_GEO_ATOM] sticker-material-pvc-vinyl-removable [zh-hk] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/zh-hk.json [SEG6_CUSTOMER_CASE] poster-printing-guide [zh-hk] 段6 客户案例: 无客户案例段，也无「待校准」标注
+  src/data/blog-data/zh-hk.json [SEG8_GEO_ATOM] poster-printing-guide [zh-hk] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/zh-hk.json [SEG6_CUSTOMER_CASE] campus-education-printing-pillar-guide [zh-hk] 段6 客户案例: 无客户案例段，也无「待校准」标注
+  src/data/blog-data/zh-hk.json [SEG9_FAQ] campus-education-printing-pillar-guide [zh-hk] 段9 FAQ 段: 正文有 FAQ 语义（heading=true, 疑问句式 10 处）但 0 组可被 extractFaqFromHtml 解析 → FAQPage 静默丢失
+  src/data/blog-data/zh-hk.json [SEG8_GEO_ATOM] foil-stamping-3-applications-2026 [zh-hk] 段8 GEO 知识原子段: 无【】知识原子
+  src/data/blog-data/zh-hk.json [SEG9_FAQ] foil-stamping-3-applications-2026 [zh-hk] 段9 FAQ 段: 正文有 FAQ 语义（heading=false, 疑问句式 2 处）但 0 组可被 extractFaqFromHtml 解析 → FAQPage 静默丢失
+  src/data/blog-data/zh-hk.json [SEG12_SCHEMA] foil-stamping-3-applications-2026 [zh-hk] 段12 Schema 块: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,How
+  src/data/blog-data/en.json [SEG12_SCHEMA] foil-stamping-3-applications-2026 [en] 段12 Schema 块: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,
+  src/data/blog-data/ja.json [SEG12_SCHEMA] foil-stamping-3-applications-2026 [ja] 段12 Schema 块: page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,
+[证据留档] .hermes/reports/blog-12seg-checklist-2026-09-19-online.json

@@ -1,65 +1,60 @@
 # -*- coding: utf-8 -*-
-"""
-GSC 数据分析: 找 大信封 pos 2 + 批 1 十五词
-- 解 GBK 编码 (PS 5.1 默认 ANSI)
-- 优先用 all_queries.csv (UTF-8)
-- 输出 Top 20 zh-hk queries by impressions
-"""
-import os
-import csv
-import glob
-from pathlib import Path
+"""分析：拐点定位 / 恢复系数 / 分站点趋势 / CTR-排名关系"""
+import json, datetime as dt
+from statistics import mean
 
-ROOT = Path(r"F:\zprintpro-nextjs\GSC数据")
+S = json.load(open('.hermes/logs/gsc-series-20261024.json', encoding='utf-8'))
+BASE = 585.2  # 固定基线（日均展示，历史断崖前）
 
-# 1. 优先 all_queries.csv (UTF-8)
-af = ROOT / "all_queries.csv"
-if af.exists():
-    print(f"=== {af.name} (UTF-8) ===")
-    rows = []
-    with open(af, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        for r in reader:
-            try:
-                rows.append({
-                    'query': r.get('Top queries', r.get('query', '')),
-                    'clicks': int(r.get('Clicks', r.get('clicks', 0))),
-                    'impressions': int(r.get('Impressions', r.get('impressions', 0))),
-                    'ctr': float(r.get('CTR', r.get('ctr', 0)).rstrip('%') if isinstance(r.get('CTR', r.get('ctr', 0)), str) else r.get('CTR', 0)),
-                    'position': float(r.get('Position', r.get('position', 0))),
-                })
-            except (ValueError, KeyError) as e:
-                continue
-    # Top 20 by impressions
-    rows.sort(key=lambda r: -r['impressions'])
-    print(f"Total rows: {len(rows)}")
-    print(f"Top 20 by impressions:")
-    for i, r in enumerate(rows[:20], 1):
-        print(f"  {i:2}. {r['query'][:40]:40} imp={r['impressions']:5} clk={r['clicks']:3} ctr={r['ctr']:5.2f}% pos={r['position']:5.1f}")
-    # 大信封 pos 2 找
-    print()
-    print(f"=== 大信封 (信封 / envelope) 相关查询 ===")
-    for r in rows:
-        if '信封' in r['query'].lower() or 'envelope' in r['query'].lower() or '封筒' in r['query'].lower():
-            print(f"  {r['query']:40} imp={r['impressions']:5} clk={r['clicks']:3} ctr={r['ctr']:5.2f}% pos={r['position']:5.1f}")
-    print()
-    # pos 1-10 零点击词
-    print(f"=== pos 1-10 零点击词 (撞车根因 = 机会词) ===")
-    no_click_top = [r for r in rows if r['position'] <= 10 and r['clicks'] == 0 and r['impressions'] >= 5]
-    no_click_top.sort(key=lambda r: r['position'])
-    for r in no_click_top[:20]:
-        print(f"  pos={r['position']:5.1f} imp={r['impressions']:5} {r['query'][:50]}")
-    print()
-    # pos 1-20 展示占比 ≥30% 的词
-    print(f"=== pos 1-20 有点击词 (验收口径 §4 v9.4) ===")
-    with_click = [r for r in rows if r['position'] <= 20 and r['clicks'] > 0 and r['impressions'] >= 3]
-    with_click.sort(key=lambda r: -r['clicks'])
-    for r in with_click[:20]:
-        print(f"  pos={r['position']:5.1f} clk={r['clicks']:3} imp={r['impressions']:5} ctr={r['ctr']:5.2f}% {r['query'][:50]}")
-    print()
-    # striking 候选 (pos 11-30 高 imps 0 click)
-    print(f"=== striking 候选 (pos 11-30 高 imps 0 click, K3 §6 轨 2) ===")
-    striking = [r for r in rows if 11 <= r['position'] <= 30 and r['clicks'] == 0 and r['impressions'] >= 10]
-    striking.sort(key=lambda r: -r['impressions'])
-    for r in striking[:20]:
-        print(f"  pos={r['position']:5.1f} imp={r['impressions']:5} {r['query'][:50]}")
+def daily(site):
+    return S[site]['daily']
+
+def window(site, a, b):
+    d = daily(site)
+    ds = sorted(x for x in d if a <= x <= b)
+    if not ds:
+        return None
+    i = sum(d[x]['imps'] for x in ds)
+    c = sum(d[x]['clicks'] for x in ds)
+    p = sum(d[x]['pos'] * d[x]['imps'] for x in ds) / i if i else 0
+    return {'n': len(ds), 'imps': i, 'clicks': c, 'ctr': c / i * 100 if i else 0, 'pos': p, 'per_day': i / len(ds)}
+
+print('=== 1) 30 天日序列（all，含 WoW）===')
+d = daily('all')
+ds = sorted(d)[-45:]
+prev_w = None
+for x in ds:
+    r = d[x]
+    print(f"{x}  imps={r['imps']:6.0f} clicks={r['clicks']:3.0f} pos={r['pos']:5.1f} coef={r['imps']/BASE*100:5.1f}%")
+
+print('\n=== 2) 关键窗口对比（all）===')
+W = [
+    ('pre-cliff 9/01-9/14', '2026-09-01', '2026-09-14'),
+    ('cliff 9/15-9/24', '2026-09-15', '2026-09-24'),
+    ('recov-1 9/25-10/04', '2026-09-25', '2026-10-04'),
+    ('recov-2 10/05-10/14', '2026-10-05', '2026-10-14'),
+    ('last-7 10/14-10/20', '2026-10-14', '2026-10-20'),
+]
+for name, a, b in W:
+    r = window('all', a, b)
+    if r:
+        print(f"{name:22s} n={r['n']:2d} imps/day={r['per_day']:6.1f} coef={r['per_day']/BASE*100:5.1f}% clicks={r['clicks']:4.0f} ctr={r['ctr']:4.2f}% pos={r['pos']:5.1f}")
+
+print('\n=== 3) 分站点（近 28 天 vs 前 28 天）===')
+for s in ['hk', 'jp', 'us']:
+    a = window(s, '2026-09-23', '2026-10-20')
+    b = window(s, '2026-08-26', '2026-09-22')
+    if a and b:
+        print(f"{s}: 近28 日均 {a['per_day']:6.1f} / 前28 {b['per_day']:6.1f} = {a['per_day']/b['per_day']*100:6.1f}% | CTR {a['ctr']:.2f}% vs {b['ctr']:.2f}% | pos {a['pos']:.1f} vs {b['pos']:.1f}")
+
+print('\n=== 4) 10-16/17 拐点检查（CF 限速规则上线窗口）===')
+for a, b, tag in [('2026-10-10', '2026-10-15', 'before'), ('2026-10-16', '2026-10-20', 'after')]:
+    r = window('all', a, b)
+    print(f"{tag}: {a}~{b} imps/day={r['per_day']:6.1f} ctr={r['ctr']:.2f}% pos={r['pos']:.1f}")
+
+print('\n=== 5) 全期峰值/谷值 ===')
+d2 = daily('all')
+top = sorted(d2.items(), key=lambda kv: -kv[1]['imps'])[:5]
+low = sorted(d2.items(), key=lambda kv: kv[1]['imps'])[:5]
+print('peak:', [(x, int(v['imps'])) for x, v in top])
+print('trough:', [(x, int(v['imps'])) for x, v in low])

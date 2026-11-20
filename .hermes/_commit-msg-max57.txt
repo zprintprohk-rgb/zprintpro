@@ -1,0 +1,45 @@
+fix(seo): K3 裁决落地 — 58 为阻断线, TITLE_MAX 58→57 (代码 + 书面同源)
+
+来源: K3 2026-09-19 裁决「58 为阻断线, title-equiv.js 的 TITLE_MAX 应从 58 改为 57」
+
+## 一、口径分歧的根本解决
+| 项 | 改前 | 改后 |
+|---|---|---|
+| `scripts/guards/title-equiv.js` `TITLE_MAX` | 58 (源 9/13 §6-3「目标区 50-58」) | **57** |
+| 58 的定性 | 达标上限 | **阻断线 (硬拦)** |
+
+**分歧代价 (实况)**: 2026-09-19 人工批 3 条初稿恰好落在 58 (`exercise-books/zh-hk` /
+`waterproof-stickers/ja` / `fluorescent-stickers/ja`), 执行层被迫在 58 边界上临场判断并自行收到 ≤57。
+每次都要临场判断 = 不必要的认知负担, 且书面口径与门禁长期不同源。
+
+## 二、★ 改前先测影响面 (改共享门禁前必做)
+实测当量 == **58** 的槽位共 **8 条**, 全部由 OK 转 TRIM:
+- 5 条为 en 站级模板 `Free Shipping $99+` (removable-stickers 60imp / adhesive-posters 79imp /
+  magnetic-closure-gift-box 34imp / electronics-packaging-box 41imp / kraft-paper-packaging-box 50imp)
+- `same-day-flyers/ja` **91imp** · `drink-menus/en` 13imp · `hardcover-books/en` 13imp
+**改后实测与预测一致**: census `OK 250→242` / `TRIM 20→28` ⇒ 违规 50 → **58** (增 8, 等于预测)
+
+## 三、代码 + 书面同源 (防再造同类分叉)
+- **代码**: `title-equiv.js` `TITLE_MAX = 57` (附裁决理由 + 影响面注释)
+- **书面**: `docs/2026-09-13-title-batch-T-freeze.md` 新增「§6-3 取代说明」(历史正文保留不改写,
+  per §0.34.2), 明列 50-58 → 50-57 的收窄、58 定性变更、影响面与同步落点
+- **单源生效**: census / generate / apply / input-bank / analyze-separators 等 10 个脚本均 `require`
+  本档 ⇒ 一处改动全链生效, 无分叉
+- 门禁可加载复验: `i18n-guard.js` / `blog-standard-guard.js` 均正常 require ✅
+- 断言复验: `band('字'×29)` = **TRIM** (58 当量) ⇒ 58 确已阻断 ✅
+
+## 四、⚠️ 遗留: 三处文案仍写 50-58, 需后续同步
+- `AGENTS.md` §5 / `.hermes/cron-prompts/` 5 条 prompt (2026-09-19 早前由本会话同步为「50-58 目标区」)
+- `scripts/sync-title-rule-50-58.mjs` (脚本名与替换串仍含 50-58)
+⇒ 均需改为 **50-57**; **未在本 commit 动** (避免与并发会话在同一批 prompt 上撞车),
+  列为下一轮第一件事 (否则又形成「代码 57 / 文案 58」的新分叉)。
+
+## 数据来源
+- scripts/guards/title-equiv.js (口径单源) · .hermes/reports/sku-title-census-2026-09-19.json (影响面实测)
+- K3 裁决: 2026-09-19 本轮指令「58 为阻断线」
+校准日期: 2026-09-20 02:30
+
+## 验收
+TITLE_MAX=57 ✅ · band(58)=TRIM ✅ · 门禁 require 正常 ✅
+census 新口径: OK 242 / FILL 30 / TRIM 28 (违规 58, 与预测的 +8 一致) ✅
+⚠️ 本批**未改 src title** (纯口径修正)。

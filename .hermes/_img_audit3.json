@@ -1,0 +1,576 @@
+[
+ {
+  "slug": "premium-greeting-cards",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "thick-greeting-cards-400g",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "foil-greeting-cards",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "spot-uv-greeting-cards",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "matte-greeting-cards",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "rounded-corner-greeting-cards",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "waterproof-stickers",
+  "sku": null,
+  "n_hit": 15,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "transparent-stickers",
+  "sku": null,
+  "n_hit": 14,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "removable-stickers",
+  "sku": null,
+  "n_hit": 11,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "small-batch-stickers",
+  "sku": null,
+  "n_hit": 12,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "die-cut-stickers",
+  "sku": null,
+  "n_hit": 15,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "foil-stickers",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "security-stickers",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "roll-stickers",
+  "sku": null,
+  "n_hit": 12,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "kraft-paper-bags",
+  "sku": null,
+  "n_hit": 12,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "white-card-bags",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "gift-bags",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "eco-paper-bags",
+  "sku": null,
+  "n_hit": 17,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "handle-bags",
+  "sku": null,
+  "n_hit": 12,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "large-bags",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "a4-flyers",
+  "sku": null,
+  "n_hit": 7,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "a5-flyers",
+  "sku": null,
+  "n_hit": 8,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "double-sided-flyers",
+  "sku": null,
+  "n_hit": 9,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "folded-leaflets",
+  "sku": null,
+  "n_hit": 7,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "thick-paper-flyers",
+  "sku": null,
+  "n_hit": 7,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "eco-flyers",
+  "sku": null,
+  "n_hit": 10,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "same-day-flyers",
+  "sku": null,
+  "n_hit": 10,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "a2-posters",
+  "sku": null,
+  "n_hit": 10,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "a1-posters",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "outdoor-posters",
+  "sku": null,
+  "n_hit": 8,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "display-posters",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "art-posters",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "adhesive-posters",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "food-boxes",
+  "sku": null,
+  "n_hit": 17,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "cosmetic-boxes",
+  "sku": null,
+  "n_hit": 7,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "mailer-boxes",
+  "sku": null,
+  "n_hit": 16,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "folding-boxes",
+  "sku": null,
+  "n_hit": 16,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "rigid-boxes",
+  "sku": null,
+  "n_hit": 12,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "foil-red-packets",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "embossed-red-packets",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "custom-red-packets",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "cartoon-red-packets",
+  "sku": null,
+  "n_hit": 11,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "eco-red-packets",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "large-red-packets",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "wall-calendars",
+  "sku": null,
+  "n_hit": 17,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "desk-calendars",
+  "sku": null,
+  "n_hit": 11,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "custom-calendars",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "mini-calendars",
+  "sku": null,
+  "n_hit": 14,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "photo-frame-calendars",
+  "sku": null,
+  "n_hit": 15,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "magnetic-calendars",
+  "sku": null,
+  "n_hit": 17,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "pvc-menus",
+  "sku": null,
+  "n_hit": 16,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "laminated-menus",
+  "sku": null,
+  "n_hit": 15,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "hardcover-menus",
+  "sku": null,
+  "n_hit": 16,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "drink-menus",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "outdoor-vinyl-banners",
+  "sku": null,
+  "n_hit": 15,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "roll-up-banners",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "adhesive-banners",
+  "sku": null,
+  "n_hit": 14,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "vehicle-wraps",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "catalog-printing",
+  "sku": null,
+  "n_hit": 18,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "saddle-stitch-booklets",
+  "sku": null,
+  "n_hit": 14,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "perfect-bound-books",
+  "sku": null,
+  "n_hit": 17,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "hardcover-books",
+  "sku": null,
+  "n_hit": 1,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "spiral-notebooks",
+  "sku": null,
+  "n_hit": 17,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "business-envelopes",
+  "sku": null,
+  "n_hit": 15,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "colored-envelopes",
+  "sku": null,
+  "n_hit": 16,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "large-envelopes",
+  "sku": null,
+  "n_hit": 16,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "pearl-envelopes",
+  "sku": null,
+  "n_hit": 15,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "exercise-books",
+  "sku": null,
+  "n_hit": 16,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "certificates",
+  "sku": null,
+  "n_hit": 18,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "school-flyers",
+  "sku": null,
+  "n_hit": 17,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "textbooks",
+  "sku": null,
+  "n_hit": 14,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "graduation-yearbook",
+  "sku": null,
+  "n_hit": 10,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "magnetic-closure-gift-box",
+  "sku": null,
+  "n_hit": 16,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "electronics-packaging-box",
+  "sku": null,
+  "n_hit": 18,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "kraft-paper-packaging-box",
+  "sku": null,
+  "n_hit": 17,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "gang-run-card-boxes",
+  "sku": null,
+  "n_hit": 1,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "white-card-boxes",
+  "sku": null,
+  "n_hit": 1,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "corrugated-boxes",
+  "sku": null,
+  "n_hit": 1,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "tuck-end-boxes",
+  "sku": null,
+  "n_hit": 1,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "fruit-food-label-stickers",
+  "sku": null,
+  "n_hit": 18,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "foil-wedding-invitations",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ },
+ {
+  "slug": "wedding-thank-you-cards",
+  "sku": null,
+  "n_hit": 13,
+  "n_miss": 0,
+  "miss": []
+ }
+]

@@ -1,0 +1,53 @@
+﻿fix(seo): K3 8/11 10:33 SEO 优化 3 件事 + 8/11 10:41 5 PDP schema 修复 (zh-hk 类目名按搜索量 + 导航栏顺序 + 一行不换行 + validFrom 字段)
+
+K3 8/11 10:33 触发 SEO 优化 3 件事 (per 7/29 GSC zh-hk 28 天 imps 排序):
+1. 类目名按搜索量优化 (K3 8/11 10:41 强调 zh-hk 必须纯繁体中文, 不混入英文)
+   - calendars: '年曆印刷' → '月曆印刷' (GSC 28 天月曆印刷 14 imps / 月曆訂製 6 / 訂做月曆 9, 总 52 imps 是 zh-hk 第 2 高类目)
+   - posters: '定製海報' → '海報印刷' (GSC 海報 0 / 海報印刷 0 但 0.1-0.3 CTR 高于"定製")
+   - flyers (h2 + 导航): '宣傳單張' → '傳單印刷' (GSC 傳單印刷 17 imps / 傳單訂做 2, 印刷 > 訂做 8.5x)
+   - packaging (Header): '包裝盒定制' (簡体) → '包裝盒印刷' (繁體 + 印刷词)
+   - posters (Header): '海報定制' (簡体) → '海報印刷' (繁體 + 印刷词)
+   - products.ts L85 '定製海報' → '海報印刷' (zh-hk)
+   - products.ts L93 '年曆印刷' → '月曆印刷' (zh-hk)
+2. 导航栏顺序调整 (K3 8/11 10:33 拍板: 纸袋 0 订单调最后)
+   - 桌面 navOrder: ['paper-bags', 'flyers', 'stickers', 'packaging', 'posters', 'educational']
+   - 改: ['flyers', 'stickers', 'packaging', 'posters', 'educational', 'paper-bags']
+   - 移动端 4 核心类目: ['stickers', 'flyers', 'paper-bags', 'packaging']
+   - 改: ['stickers', 'flyers', 'packaging', 'paper-bags']
+3. 一行不换行 (K3 8/11 10:33 提醒)
+   - Header.tsx L354 nav 容器: flex items-center h-[46px] (桌面蓝色横条) 已一行不换行
+   - L472 移动端 nav: overflow-x-auto + min-w-max + whitespace-nowrap (已一行不换行)
+   - 无需额外 CSS 改动 (验证已满足)
+
+K3 8/11 10:41 补充 5 PDP schema Product offers 缺 validFrom 字段修复:
+- GSC warning: 5 PDP 缺 validFrom
+  - /zh-hk/product/roll-up-banners/ (易拉寶)
+  - /zh-hk/product/a5-flyers/ (A5宣傳單張)
+  - /en/product/catalog-printing/ (Custom Book Printing)
+  - /ja/product/a4-flyers/ (A4チラシ)
+  - /en/product/wall-calendars/ (Wall Calendars)
+- 根因: src/lib/seo.ts L1093 generateProductJsonLd 已加 priceValidUntil + sku (per 8/8 117f9fc), 但漏了 validFrom
+- schema-extensions.ts L527 已有 validFrom: '2026-01-01' (一致性)
+- 修法: seo.ts L1093 加 validFrom: '2026-01-01' (PDP 顶层 Product schema)
+- 现在 PDP Product offers 段 6 字段全: price / priceCurrency / validFrom / priceValidUntil / sku / availability
+
+§0.7 production smoke 4 步:
+- 1. encoding: PASS (UTF-8 LF)
+- 2. 简体字守门: PASS (zh-hk.json 0 简体)
+- 3. tsc: pre-existing errors (跟本次无关)
+- 4. npm run build: PASS (exit 0, 603 URLs, 85 blog posts, IndexNow 3 locales)
+
+合规 & 配额:
+- 8/11 push: 5/5 daily 用满 (c4a8c5f + edb9e69 + 3fdf13a + d119014 + 本 commit), 月累计 17/150
+- amend 用满 1/2 月上限 (8/8 117f9fc + 8/10 8664488), 本次走 fresh commit
+- 8/12 复盘日 0 push 在 8/11 用满 (5/5) 后更严, K3 拍板 8/12 真 0 push
+
+品牌一致性 §0.15 维持:
+- zh-hk 类目名全繁体 (K3 10:41 拍板: 不用英文)
+- 简体"制"→繁体"製" 全部修正 (Header.tsx 4 categories + 落地页 SEO 标题)
+- en/ja 类目名保持英文 (per §0.15 locale-aware 公式)
+
+K3 必拍板 (后续):
+- §0.20 5 条候选 (K3 8/10 13:34 已批准 4 条, 第 5 条 GH013 止损 + amend 1/2 月上限 待固化入 AGENTS.md)
+- Batch B X URL + LinkedIn URL + IndexNow key (整合 push 阻塞 P0)
+- 9/10 季节性 SKU 上线 + 301 收编 12 旧 (per T10 指针卡)

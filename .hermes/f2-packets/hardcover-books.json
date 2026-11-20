@@ -1,0 +1,106 @@
+{
+ "slug": "hardcover-books",
+ "name_en": "Hardcover Books",
+ "category_slug": "books",
+ "category_name_en": "Books",
+ "current_body_en": "ZprintPro Hardcover Books for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT.",
+ "current_body_words": 38,
+ "product": {
+  "descriptionEn": "Hardcover book printing for wedding albums, family histories, graduation yearbooks, school anniversary publications. 2.5mm gray board cover with foil-stamped titles and ribbon bookmarks.",
+  "price_range": "HK$40-240/本",
+  "minQuantity": 100,
+  "specs": {
+   "material": "硬紙板封面裱糊銅版紙；內頁157g–200g銅版紙",
+   "size": "A4（210×297mm）或A5（148×210mm）",
+   "printMethod": "四色柯式印刷",
+   "finishing": "膠裝、燙金、壓凹、局部UV、封面覆膜"
+  },
+  "materials": "",
+  "features": [
+   "【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰",
+   "【四色柯式印刷】色彩飽和，適合照片與插畫",
+   "【多種裝訂】騎馬釘、膠裝、線裝或硬皮",
+   "【硬紙板封面】高檔精裝，畫冊年鑑首選",
+   "【免費排版】目錄、頁碼與章節標註",
+   "【50本起訂】小批量數碼，大量柯式",
+   "【節慶檔期】Q4為高峰期，建議提早確認"
+  ]
+ },
+ "category_conversion_en": {
+  "title": "How to Order Custom Booklets & Books in 6 Steps",
+  "steps": [
+   {
+    "title": "Pick Your Binding",
+    "desc": "Choose saddle stitch (8-64 pages), perfect bound, spiral or hardcover — we match the binding to your page count and budget."
+   },
+   {
+    "title": "Send Your Artwork",
+    "desc": "Upload your PDF or AI files on WhatsApp; free layout support for catalogs, page numbers and chapter markers."
+   },
+   {
+    "title": "Approve Your Proof",
+    "desc": "Free digital proof within 4 hours — nothing goes to press until you say go."
+   },
+   {
+    "title": "We Print",
+    "desc": "Four-color printing with 95%+ color accuracy; small runs print digitally, large runs on offset."
+   },
+   {
+    "title": "Bind & Finish",
+    "desc": "Saddle stitch, PUR perfect binding, spiral rings or 2.5mm grayboard hardcover — optional foil stamping, spot UV and lamination."
+   },
+   {
+    "title": "Delivery to Your Door",
+    "desc": "DHL worldwide in 2-4 days and free US shipping over $99. Reorders are one WhatsApp message away."
+   }
+  ]
+ },
+ "category_gsc_words_en": [
+  "china catalog printing (imp 69, pos 17.2)",
+  "saddle stitch booklet (imp 47, pos 81.1)",
+  "catalog printing china (imp 39, pos 19.2)",
+  "saddle stitch booklets (imp 39, pos 87.3)",
+  "catalogue printing china (imp 26, pos 19.5)",
+  "catalogs printing china (imp 14, pos 17.7)",
+  "exercise book printing business (imp 13, pos 13.2)",
+  "low cost catalog printing (imp 13, pos 68.4)",
+  "exercise book printing (imp 11, pos 11.6)",
+  "saddle stitched booklets (imp 11, pos 74.7)",
+  "wholesale catalog printing (imp 10, pos 42.4)",
+  "custom exercise book (imp 9, pos 12.8)",
+  "saddle stitch books (imp 9, pos 80.3)",
+  "perfect+bound+books+sunset+park+ny (imp 8, pos 95.9)",
+  "saddlestitch booklets (imp 7, pos 84.1)",
+  "saddle stitched book (imp 7, pos 91.9)",
+  "school exercise book printing (imp 6, pos 8)",
+  "cheap catalog printing china (imp 6, pos 34.3)",
+  "book printing hong kong (imp 6, pos 34.8)",
+  "catalog book printing (imp 6, pos 47.7)",
+  "saddle stitched booklet (imp 6, pos 87.5)",
+  "perfect+bound+books+industry+city (imp 6, pos 94.7)",
+  "custom exercise book printing (imp 5, pos 8.8)",
+  "catalog printing in china (imp 5, pos 20.6)",
+  "wholesale saddle stitch booklet printing (imp 5, pos 51.6)",
+  "saddle-stitch booklets (imp 5, pos 84.6)",
+  "china saddle stitch booklet printing manufacturer (imp 4, pos 72)",
+  "catalog ii poster print (imp 4, pos 83.2)",
+  "saddle stitch catalog (imp 4, pos 92.8)",
+  "chinese catalog printers (imp 3, pos 27.7)",
+  "educational workbook printing (imp 3, pos 58.3)"
+ ],
+ "regional_en": {
+  "trust": "ISO 9001 certified production · 30-second AI quote · free digital proof · no setup fees · free design mockup",
+  "shipping": "DHL Express / FedEx 3-5 days to the USA, 2-4 days to Japan · free shipping on US orders over $99 · worldwide delivery to 50+ countries",
+  "cta": "Ready to order? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
+ },
+ "rules": [
+  "只许从 4 个真实数据源组装: ① 本包 product 的 descriptionEn/specs/features/price_range/minQuantity ② 本包 category 的 conversion orderFlow 场景 (若有) ③ 现有 en body 的事实 (数字只能用它已含的) ④ 本包 GSC 词自然织入 1-2 次",
+  "禁止编造: 数字/认证/交期/客户名/行业事实 (价格只能用 price_range, 交期只能用 body/conversion 已有口径 3-5 天/2-4 天等)",
+  "禁止跨 SKU 复制同一段文字 — 每个 SKU 组装结果必须唯一 (同品类相邻 SKU 也禁整段雷同)",
+  "字数: 新 body ≥ 180 词 (英文词数, 含 FAQ 段); 结构 = 引言段 + 场景段 2-3 段 (含品类 GSC 词自然出现 1-2 次) + 材質/規格段 (从 specs/features 事实转英文散文) + 收費/交期段 (用 price_range/minQuantity + 已有交期口径) + **FAQ** 段 (2-3 问, 从现有 FAQ/事实改写, 禁新数字) + 結尾 CTA 段",
+  "段落用 \\n\\n 分隔; FAQ 段用 **FAQ** 开头, 问题用 **Q1: ...** 加答案",
+  "en 内容红线: 不出现 名片/business card (§0.0); 不出现「深圳」/「Shenzhen」作供应商前缀 (可用 \"Asia factory\"); 不出现简体中文; 不写 \"Hong Kong\" 作目标市场词",
+  "不要修改 title/description/h1/keywords — 只产出 body",
+  "输出 JSON: {\"slug\": \"<slug>\", \"body\": \"<完整 en body>\"}"
+ ]
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>最终交付与交接报告 — ZprintPro</title>
+<style>
+:root{--ink:%s;--paper:%s;--accent:%s;--hair:%s;--hair2:%s;--muted:%s}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--paper)}
+body{color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.topband{height:10px;background:var(--ink)}
+header.doc{padding:56px 0 40px;border-bottom:3px solid var(--ink)}
+.kicker{font-family:ui-monospace,"SF Mono",Consolas,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1.display{font-size:clamp(40px,6vw,76px);line-height:1.02;letter-spacing:-.02em;font-weight:600;margin:18px 0 0;max-width:20ch}
+.subtitle{font-size:19px;line-height:1.5;color:var(--muted);margin-top:20px;max-width:62ch}
+.metarow{display:flex;flex-wrap:wrap;gap:36px;margin-top:44px}
+.meta{display:flex;flex-direction:column;gap:4px}
+.mk{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mv{font-size:14px;font-weight:550}
+nav.toc{padding:28px 0;border-bottom:1px solid var(--hair);display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px 48px}
+nav.toc a{color:var(--ink);text-decoration:none;font-size:14px;display:flex;gap:12px;padding:6px 0;border-bottom:1px solid var(--hair2)}
+nav.toc a:hover{color:var(--accent)}
+nav.toc .n{font-family:ui-monospace,Consolas,monospace;color:var(--accent);font-size:12px;min-width:24px}
+main{padding:16px 0 80px}
+.sec{display:flex;align-items:baseline;gap:20px;margin:64px 0 4px;border-bottom:1px solid var(--ink);padding-bottom:10px}
+.secnum{font-family:ui-monospace,Consolas,monospace;font-size:13px;color:var(--accent);letter-spacing:.1em}
+h2{font-size:27px;font-weight:600;letter-spacing:-.01em;line-height:1.15}
+h3{font-size:19px;font-weight:600;margin:36px 0 10px}
+h4{font-size:16px;font-weight:600;margin:24px 0 8px}
+p{max-width:72ch;margin:14px 0}
+ul,ol{max-width:72ch;margin:14px 0 14px 22px}
+li{margin:6px 0}
+blockquote{border-left:3px solid var(--accent);padding:4px 0 4px 18px;margin:18px 0;color:var(--muted);max-width:68ch}
+code{font-family:ui-monospace,"SF Mono",Consolas,monospace;font-size:.88em;background:rgba(20,20,20,.06);padding:1px 5px}
+pre{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;background:var(--ink);color:#f2f2ee;padding:18px 20px;overflow-x:auto;margin:18px 0}
+a{color:var(--accent)}
+.rule{border-top:1px solid var(--hair);margin:28px 0}
+.tbl{overflow-x:auto;margin:18px 0 26px}
+table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.45}
+th{font-family:ui-monospace,Consolas,monospace;font-size:11px;letter-spacing:.07em;text-transform:uppercase;text-align:left;color:var(--ink);border-bottom:2px solid var(--ink);padding:9px 12px 9px 0;white-space:nowrap}
+td{border-bottom:1px solid var(--hair2);padding:9px 24px 9px 0;vertical-align:top;min-width:96px}
+tbody tr:hover td{background:rgba(40,115,245,.045)}
+tbody tr td:first-child{min-width:32px;color:var(--muted)}
+footer.colo{border-top:3px solid var(--ink);margin-top:40px;padding:26px 0 60px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer.colo .c{font-family:ui-monospace,Consolas,monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+@media(max-width:720px){.wrap{padding:0 18px}p,ul,ol{max-width:100%}.metarow{gap:20px}}
+</style>
+</head>
+<body>
+<div class="topband"></div>
+<div class="wrap">
+<header class="doc">
+  <div class="kicker">Final Delivery &amp; Handover Report</div>
+  <h1 class="display">最终交付与交接报告</h1>
+  <div class="subtitle">逐条对照完成标准的验证证据 · 3 个生产 commit 台账 · KPI 基线 · 遗留风险 · 本周起步清单</div>
+  <div class="metarow"><div class="meta"><span class="mk">验收</span><span class="mv">10 项标准逐条自检（9 ✅ + 1 🔶 待权限）</span></div><div class="meta"><span class="mk">生产变更</span><span class="mv">3 commits / 271 处内容修复 / 258 条 301</span></div><div class="meta"><span class="mk">验证</span><span class="mv">探针 37/37 PASS · 581 规则冒烟</span></div><div class="meta"><span class="mk">交接对象</span><span class="mv">运营团队可直接执行</span></div></div>
+</header>
+<h1>最终交付与交接报告 — Zprintpro.com 404 清零 + SEO/AEO/GEO 战略包</h1>
+<blockquote>交付日期：2026-09-05/06（Asia/Shanghai）· 执行：zprintpro agent 集群（主线 + 4 路子代理，其中 2 路超时由主线接管，D 路扫描数据已抢救入库）</blockquote>
+<blockquote>本报告逐条对照目标契约的完成标准给出验证证据，可直接交接给运营团队。</blockquote>
+<section class="sec" id="s1"><div class="secnum">01</div><h2>1. 逐条验收自检</h2></section>
+<div class="secbody" data-open="s1">
+<div class="tbl"><table><thead><tr><th>#</th><th>完成标准</th><th>状态</th><th>证据</th></tr></thead><tbody><tr><td>1</td><td>全站链接体检完成</td><td>✅</td><td>1614 条内链逐条扫描（audit_raw.json），300 条断链 6 类模式全部分类；251 篇博客数据 ×3 locale 全覆盖</td></tr><tr><td>2</td><td>即日印刷 CTA 可用</td><td>✅</td><td>三语言 rush-printing-hk-guide 渲染 HTML 已无 /servis/；/zh-hk/servis/rush-printing-delivery/ 等旧址 301 → 服务页 200</td></tr><tr><td>3</td><td>404 清零或重定向</td><td>✅</td><td>内容层残留可疑 URL = 0；581 条重定向规则加载通过；线上探针第一批 27/27 + 深层抽查 10/10 全部 200 到位</td></tr><tr><td>4</td><td>三语言带钱词地图</td><td>✅</td><td>107 词（zh-hk 47 / en 30 / ja 30），含意图/漏斗/落地 URL/优先级/追踪基线；rank-baseline.csv 协议已定义，基线日 2026-09-05</td></tr><tr><td>5</td><td>重点页面 SEO 落地</td><td>✅(首批)</td><td>P0 服务页三语 title 元数据核验通过；en 站 47 处拼写错误修复（含 H2 标题）；233 处内链修复；12 篇答案化改造清单已排期 M1-M3</td></tr><tr><td>6</td><td>AEO/GEO 答案化就绪</td><td>✅(包)</td><td>答案金块模板 + FAQ/HowTo/Product schema 组合策略 + 实体一致性核查表（含 9 项发现与拍板项）；Rich Results Test 人工跑批待执行（见遗留）</td></tr><tr><td>7</td><td>询盘全程可追踪</td><td>🔶(方案就绪)</td><td>GA4 事件表 + 台账字段 + 30 天接入路径已交付（cro-funnel-plan.html）；激活需 GA4 权限（用户侧）</td></tr><tr><td>8</td><td>转化漏斗优化方案</td><td>✅</td><td>B2B/B2C 分层诊断 + P0/P1/P2 行动表 + 基线与 30/60/90 天目标区间</td></tr><tr><td>9</td><td>12 个月增长路线图</td><td>✅</td><td>M1-M6 逐月动作与里程碑 + M7-M12 前瞻布局（内容矩阵/外链/壁垒/ROI 预判逻辑）</td></tr><tr><td>10</td><td>最终交付与交接</td><td>✅</td><td>本报告</td></tr></tbody></table></div>
+<section class="sec" id="s2"><div class="secnum">02</div><h2>2. 修复工作台账（3 个生产 commit）</h2></section>
+<div class="secbody" data-open="s2">
+<div class="tbl"><table><thead><tr><th>commit</th><th>内容</th><th>规模</th></tr></thead><tbody><tr><td>dfed6f6e</td><td>/servis/ 拼写修复（38 URL + 13 正文拼写）+ 18 条 301</td><td>用户报告的原始断链</td></tr><tr><td>5f0387d7</td><td>en 正文机器拼写清理 47 处（pharmautical/remony/conferens/exed/pri 等，含 H2 标题）</td><td>E-E-A-T/AEO 信任度修复</td></tr><tr><td>2a64d178</td><td>深层断链 233 处内容重写 + 240 条 301 收拢（截断 slug/旧版双层路径/单数类目/幻影 SKU/缺 locale 前缀/blog 桩）</td><td>D-Agent 审计发现</td></tr></tbody></table></div>
+<p>发布闸门全程遵守：暂存集逐次核对（每次精确 4 文件）、30 分钟 push 间隔、tsc 基线核验（57 错全部位于 quote-engine 既有测试，触碰文件 0 错）、581 条重定向规则冒烟。</p>
+<section class="sec" id="s3"><div class="secnum">03</div><h2>3. 验证证据汇总</h2></section>
+<div class="secbody" data-open="s3">
+<ul><li>线上探针：第一批 9 坏模式 × 3 locale = 27/27 PASS（GET 到达 200 且落到正确目标页）</li><li>深层 301 抽查：10/10 PASS（/products/ 双层路径、截断 blog slug、blog/category 桩、单数类目、幻影 SKU 各模式全覆盖）</li><li>博客页 HTML 抽查：三语言渲染 HTML 中 /servis/ = 0 次</li><li>wa.me/8619880851334 → 200；sitemap 无 /servis/ 残留</li><li>配置冒烟：redirects() 581 条规则解析成功（修前 251）</li><li>JSON 完整性：blog-data ×3 每次修改后均通过 json.load 校验</li><li>复扫口径：blog slug 白名单 88、product slug 214、category slug 16、静态路由 25，内容层残留可疑 URL = 0</li></ul>
+<section class="sec" id="s4"><div class="secnum">04</div><h2>4. KPI 基线</h2></section>
+<div class="secbody" data-open="s4">
+<ul><li>排名基线：2026-09-05 首录，方法与节奏见钱词地图附录 D（P0 词前 8 周每周一录；CSV 唯一事实源 rank-baseline.csv）</li><li>SERP 已见收录位（钱词地图实测）：/zh-hk/blog/same-day-flyers-printing-hong-kong-guide、/zh-hk/category/red-packets、/zh-hk/category/calendars、/en/services/rush-printing-delivery 等 7 处——这些是已验证现金流入口，优先加码</li><li>CVR 基线：待 GA4 事件接入后 30 天内取得（当前诚实标注为不可测）</li></ul>
+<section class="sec" id="s5"><div class="secnum">05</div><h2>5. 遗留风险与后续建议</h2></section>
+<div class="secbody" data-open="s5">
+<ol><li><strong>GSC 旧 404 消退期 7-28 天</strong>：301 已生效，但 GSC 报告的存量抓取错误需时间消退；建议部署稳定后对核心 URL 手动「验证修复」加速。</li><li><strong>GA4/GSC 权限</strong>：询盘追踪激活与排名校准闭环需要账号访问权限，请提供给执行方（目标契约假设项）。</li><li><strong>Rich Results Test 人工跑批</strong>：对改造样例页（博客/服务页/PDP 各 1）跑一次并截图存档，属 10 分钟人工动作。</li><li><strong>实体一致性 3 个拍板项</strong>（C 报告 §1.3）：ja schema 主名二选一、可见层「彩龙印刷旗下」口径、成立年份统一「15+ 年」——需要唐总拍板后 M1 执行。</li><li><strong>llms-full.txt 缺失</strong>：M1 动作清单已含（逐节展开 llms.txt）。</li><li><strong>build quota</strong>：今日用 3 次 push（均在紧急修复例外条款内），本月配额充足但后续仍按批量 push 纪律执行。</li><li><strong>防回归</strong>：建议将白名单内链校验固化为 scripts/check-internal-links.mjs 并纳入 push 前 3 步预检（M1 落地）。</li></ol>
+<section class="sec" id="s6"><div class="secnum">06</div><h2>6. 本周即可执行（M1 起步清单）</h2></section>
+<div class="secbody" data-open="s6">
+<ol><li>补录 2027-calendar-printing-complete-guide 进 blog-posts.ts 元数据（内容已在、入口缺失）</li><li>GA4 事件接入（P0，cro-funnel-plan.html §3）</li><li>rank-baseline.csv 首录 107 词</li><li>Rich Results Test 跑批 + 截图</li><li>12 篇答案化改造从 #1 rush-printing-hk-guide 开工（C 报告 §1.2）</li></ol></div>
+<footer class="colo">
+  <div class="c">ZprintPro · 智印港 — SEO+AEO+GEO 程序包</div>
+  <div class="c">Source: full task evidence chain · commits dfed6f6e / 5f0387d7 / 2a64d178 · verified live 2026-09-05/06</div>
+</footer>
+</div>
+</body>
+</html>

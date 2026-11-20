@@ -1,0 +1,19 @@
+fix(gate): locale 判定支持行内三元 + 暴露集审计脚本 (千问复核第 3 项落地)
+
+承 0c4bb3f6 (收紧 src/data 豁免)。本轮补两项:
+
+1. common.resolveLocale 增加**行内三元感知**:
+   `locale === 'zh-hk' ? A : B` -> A 判为该 locale, B 判为 'other' (明确「非该 locale」)
+   解决 `seo.ts` / `schema-extensions.ts` / `products.ts` 这类写法被误判为 ja 字段的问题;
+   brand-guard 的品牌矩阵相应支持 'other' (智印港 在 other 分支 = 违规; ZprintPro/ジープリント 不判)
+
+2. 新增 scripts/audit-exposure-set.mjs (千问「暴露集全扫」):
+   - 暴露集定义: 最后一次改动落在**门禁失效窗口**(2026-08-26 起)内、之后未被改过、当前仍存在的文件
+     (已删除=暴露零; 窗口后改过的已被守卫看过), 并排除 .hermes/ docs/ scripts/ GSC数据/ 生成物
+   - 对暴露集做**当前态**全扫 (直接调 10 支守卫模块) + 输出按规则/严重度分布 + red 抽样
+   - 实测: 552 文件 → (排除非上线面后) **145 文件**; 扫描 3444 命中 (red 457 / orange 1487 / yellow 1500)
+   - red 抽样精度复核 (20 条人工判读): 真阳性约 12-14 条 (≈60-70%) —— 远高于千问给的 20% 门槛,
+     即「守卫本身可用, 可以先扫再修」; 剩余误报三类: GSC 原始数据 / generated 文件 / 模板串内注释
+
+用途: 千问要求把「按类抽查」升级为「暴露集全扫」——本脚本给出可复现的口径与清单
+     (.hermes/exposure-audit.json), T 批 (title/schema) 即按此清单推进。

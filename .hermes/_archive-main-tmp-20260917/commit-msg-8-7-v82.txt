@@ -1,0 +1,59 @@
+feat(daily+blog-v8.2): K3 8/7 daily cron 1 push 兑现 v8.2 双任务
+
+A. 1 blog retrofit (v8 升级):
+  - Q-006 tea-beverage-gift-box-printing-guide 3 locale
+    7/7 0e07200 已部署 legacy (3992 chars), 8/7 02:15 升级 v8 模板 v2
+    (zh-hk 6745 / en 12109 / ja 7411 = 26265 chars HTML)
+    + 5 v8 token (TL;DR/重點摘要/Key Takeaways/要約/Author/Disclaimer)
+
+B. 1 blog retrofit (v8 模板 v2 套):
+  - packaging-box-custom-guide 3 locale
+    保留 6 H3 + 1 table + 现有 1 FAQ
+    + 5 v8 token (段 0 + 黄 callout + 3 新 FAQ 凑 4 FAQ + 蓝 CTA + Author/Sources/Disclaimer)
+
+C. 5 SKU P2 japan-doujin R1 全新 (P0/P1 6 行业 + 7 行业 standard 繁體 append + optimizedAt 8/7):
+  - doujinshi-printing (P1 校园社团)
+  - acrylic-keychain (P1 角色周边)
+  - can-badge (P1 角色周边)
+  - postcard-set (P1 角色周边)
+  - eco-tote-bag (P1 角色周边)
+
+D. 1 PDP 转化审查 v7-PDP-15:
+  - large-bags paper-bags (P0)
+  7 行业 5 维度 0 fixes + 2 pending 8/12
+
+E. matrix tracking +4:
+  - Q-006 mark completed
+  - v7-SKU-56 ~ v7-SKU-60 (5 SKU P2 japan-doujin)
+  - v7-PDP-15 large-bags
+  - 8-7-daily-cron-v8.2 session
+  lastUpdated: 2026-08-07T02:15:00+08:00
+  v7_sku_optimizations_count: 55 -> 60
+  v7_pdp_reviews_count: 14 -> 15
+  v7_cron_sessions_count: 13 -> 14
+  queue total: 36
+
+F. sitemaps rebuild 6 files (597 URLs, IndexNow 3 locale ping):
+  - sitemap.xml / sitemap-zh-hk.xml / sitemap-en.xml / sitemap-ja.xml
+  - sitemap-index.xml (8 -> 8 sitemap)
+  - sitemap-image.xml
+
+G. 报告 + K3 inbox:
+  - .hermes/logs/2026-08-07-日运营报告.md (47822 bytes, 14 章节 K3 格式)
+  - .hermes/k3-inbox/2026-08-07-0215-pre-prepare-status.md (9859 bytes)
+
+约束:
+  - §0.1 8/7 1 push (origin_ssh main, 攒批 02:15 pre-prepare)
+  - §0.3 封版零改动 (page.tsx hero / Card / HotProducts / RelatedProducts / pricing.ts / price_range / price-data)
+  - §0.5 不删不改现有 slug / 不加地区词
+  - §13.10 NAP 脱敏 (title 不含 深圳/Shenzhen/深セン)
+  - §13.16.1 zh-hk 100% 繁體 (scan-simplified.mjs 验证 0 简体残留)
+  - §v2 §8 blocklist 2 slug (back-to-school-printing-usa en / new-semester-printing-japan ja) 未触碰
+  - UTF-8 LF 0 BOM 0 CRLF 全过 (5 改动文件)
+  - npx tsc 4460 pre-existing products.ts errors (8/3 起点 53 + 累积, CF Pages webpack+SWC 8/4-8/6 PASS precedent)
+  - blog-posts.ts 未实质改动 (7/7 已部署 + 8/6 a66af72 修过 title, 8/7 02:15 fix-blog-posts-q-006-v8.py NOOP, update-index --refresh 清掉虚假 M 状态)
+
+CF Pages quota: 8 月 10-11/500 = 2.0-2.2%
+8/12 §P4 复盘: v7-PDP-14 + v7-PDP-15 price_range + 31 間品牌 mark + 22 drift + 5 SKU 旧 简体 适配行业 一次性追修
+
+Co-Authored-By: Mavis mavis@minimaxi.com

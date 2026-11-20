@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/components/home/HotProducts.tsx:85:3
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 83 |[39m   [32m'posters'[39m[33m:[39m [33m<[39m[33mImageIcon[39m className[33m=[39m[32m"w-4 h-4"[39m [33m/[39m[33m>[39m[33m,[39m[0m
+[0m [90m 84 |[39m   [32m'books'[39m[33m:[39m [33m<[39m[33mBookOpen[39m className[33m=[39m[32m"w-4 h-4"[39m [33m/[39m[33m>[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 85 |[39m   [32m'stickers'[39m[33m:[39m [33m<[39m[33mCreditCard[39m className[33m=[39m[32m"w-4 h-4"[39m [33m/[39m[33m>[39m[33m,[39m[0m
+[0m [90m    |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 86 |[39m   [32m'envelopes'[39m[33m:[39m [33m<[39m[33mMail[39m className[33m=[39m[32m"w-4 h-4"[39m [33m/[39m[33m>[39m[33m,[39m[0m
+[0m [90m 87 |[39m   [32m'menus'[39m[33m:[39m [33m<[39m[33mStickyNote[39m className[33m=[39m[32m"w-4 h-4"[39m [33m/[39m[33m>[39m[33m,[39m[0m
+[0m [90m 88 |[39m   [32m'calendars'[39m[33m:[39m [33m<[39m[33mCalendar[39m className[33m=[39m[32m"w-4 h-4"[39m [33m/[39m[33m>[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

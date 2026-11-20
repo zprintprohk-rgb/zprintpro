@@ -1,0 +1,66 @@
+{
+ "wave": "W5-1021",
+ "patched": [
+  {
+   "slug": "a2-posters",
+   "dir": "PO-001",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-hero.webp']"
+  },
+  {
+   "slug": "a1-posters",
+   "dir": "PO-002",
+   "legacyNote": "legacy images <- ['/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-hero.webp']"
+  }
+ ],
+ "skipped": [],
+ "entries": [
+  {
+   "dir": "PO-001",
+   "slug": "a2-posters",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-hero.webp",
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-detail.webp",
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-variety.webp",
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-hero.webp",
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-detail.webp",
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-variety.webp",
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-hero.webp",
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-detail.webp",
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-variety.webp",
+     "/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-multi-angle.webp"
+    ]
+   }
+  },
+  {
+   "dir": "PO-002",
+   "slug": "a1-posters",
+   "paths": {
+    "zh-hk": [
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-hero.webp",
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-detail.webp",
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-variety.webp",
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-multi-angle.webp"
+    ],
+    "en": [
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-hero.webp",
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-detail.webp",
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-variety.webp",
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-multi-angle.webp"
+    ],
+    "ja": [
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-hero.webp",
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-detail.webp",
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-variety.webp",
+     "/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-multi-angle.webp"
+    ]
+   }
+  }
+ ]
+}

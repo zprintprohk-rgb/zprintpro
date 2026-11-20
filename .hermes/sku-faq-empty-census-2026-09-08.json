@@ -1,0 +1,1449 @@
+{
+  "meta": {
+    "task": "K3 v4.0 A4 - SKU FAQ 空数组普查 + PK-003 价格口径取证",
+    "generated_at": "2026-09-08T06:52:09",
+    "files_censused": [
+      "F:\\zprintpro-nextjs\\src\\data\\products.ts",
+      "F:\\zprintpro-nextjs\\src\\data\\sku-seo-data.ts"
+    ],
+    "read_only": true,
+    "field_notes": "products.ts 产品对象字段名为 faqSchema (interface 定义 line 78); sku-seo-data.ts 字段名为 faqs (SkuSeoEntry, line 10)。两处均普查。"
+  },
+  "summary": {
+    "total_skus_products_ts": 100,
+    "products_ts_faqSchema": {
+      "empty": 0,
+      "missing": 13,
+      "has_content": 87,
+      "note": "products.ts 使用 faqSchema 字段 (无 faqs 字段)"
+    },
+    "sku_seo_data_faqs_mapped": {
+      "empty": 21,
+      "missing_or_no_entry": 17,
+      "has_content": 62
+    },
+    "pending_fill_faqSchema": 13
+  },
+  "details": [
+    {
+      "sku_code": null,
+      "slug": "string;",
+      "category": "string;",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "BC-001",
+      "slug": "premium-greeting-cards",
+      "category": "greeting-cards",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 227
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "BC-002",
+      "slug": "thick-greeting-cards-400g",
+      "category": "greeting-cards",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 325
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "BC-003",
+      "slug": "foil-greeting-cards",
+      "category": "greeting-cards",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 422
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "BC-004",
+      "slug": "spot-uv-greeting-cards",
+      "category": "greeting-cards",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 517
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "BC-005",
+      "slug": "matte-greeting-cards",
+      "category": "greeting-cards",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 614
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "BC-006",
+      "slug": "rounded-corner-greeting-cards",
+      "category": "greeting-cards",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 689
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "ST-001",
+      "slug": "waterproof-stickers",
+      "category": "stickers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 788
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "ST-002",
+      "slug": "transparent-stickers",
+      "category": "stickers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 886
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ST-003",
+      "slug": "removable-stickers",
+      "category": "stickers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 980
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ST-004",
+      "slug": "small-batch-stickers",
+      "category": "stickers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1075
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ST-005",
+      "slug": "die-cut-stickers",
+      "category": "stickers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1174
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ST-006",
+      "slug": "foil-stickers",
+      "category": "stickers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1270
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ST-007",
+      "slug": "security-stickers",
+      "category": "stickers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1366
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ST-008",
+      "slug": "fluorescent-stickers",
+      "category": "stickers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1439
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "PB-001",
+      "slug": "kraft-paper-bags",
+      "category": null,
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1536
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 2
+      }
+    },
+    {
+      "sku_code": "PB-002",
+      "slug": "white-card-bags",
+      "category": "paper-bags",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1632
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 2
+      }
+    },
+    {
+      "sku_code": "PB-003",
+      "slug": "gift-bags",
+      "category": "paper-bags",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1728
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "PB-004",
+      "slug": "eco-paper-bags",
+      "category": "paper-bags",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1828
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "PB-005",
+      "slug": "handle-bags",
+      "category": "paper-bags",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1923
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "PB-007",
+      "slug": "large-bags",
+      "category": "paper-bags",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 1997
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "FL-001",
+      "slug": "a4-flyers",
+      "category": "flyers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2089
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 2
+      }
+    },
+    {
+      "sku_code": "FL-002",
+      "slug": "a5-flyers",
+      "category": "flyers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2181
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 2
+      }
+    },
+    {
+      "sku_code": "FL-003",
+      "slug": "double-sided-flyers",
+      "category": "flyers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2275
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "FL-004",
+      "slug": "folded-leaflets",
+      "category": "flyers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2366
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "FL-005",
+      "slug": "thick-paper-flyers",
+      "category": "flyers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2457
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "FL-007",
+      "slug": "eco-flyers",
+      "category": "flyers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2551
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "FL-008",
+      "slug": "same-day-flyers",
+      "category": "flyers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2622
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "PO-001",
+      "slug": "a2-posters",
+      "category": "posters",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2719
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 2
+      }
+    },
+    {
+      "sku_code": "PO-002",
+      "slug": "a1-posters",
+      "category": "posters",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2815
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "PO-003",
+      "slug": "outdoor-posters",
+      "category": "posters",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2902
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "PO-004",
+      "slug": "display-posters",
+      "category": "posters",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 2996
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "PO-005",
+      "slug": "art-posters",
+      "category": "posters",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 3090
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "PO-006",
+      "slug": "adhesive-posters",
+      "category": "posters",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 3162
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "PK-003",
+      "slug": "food-boxes",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 3264
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 8
+      }
+    },
+    {
+      "sku_code": "PK-002",
+      "slug": "cosmetic-boxes",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 3366
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 4
+      }
+    },
+    {
+      "sku_code": "PK-004",
+      "slug": "mailer-boxes",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 3467
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "PK-005",
+      "slug": "folding-boxes",
+      "category": null,
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 3567
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "PK-006",
+      "slug": "rigid-boxes",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 3663
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "RP-001",
+      "slug": "foil-red-packets",
+      "category": "red-packets",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 3738
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "RP-002",
+      "slug": "embossed-red-packets",
+      "category": "red-packets",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 3834
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "RP-003",
+      "slug": "custom-red-packets",
+      "category": "red-packets",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 3928
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "RP-004",
+      "slug": "cartoon-red-packets",
+      "category": "red-packets",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4020
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "RP-005",
+      "slug": "eco-red-packets",
+      "category": "red-packets",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4114
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "RP-006",
+      "slug": "large-red-packets",
+      "category": "red-packets",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4208
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "CL-001",
+      "slug": "wall-calendars",
+      "category": "calendars",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4285
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "CL-002",
+      "slug": "desk-calendars",
+      "category": "calendars",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4370
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "CL-003",
+      "slug": "custom-calendars",
+      "category": "calendars",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4459
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "CL-004",
+      "slug": "mini-calendars",
+      "category": "calendars",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4549
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "CL-005",
+      "slug": "photo-frame-calendars",
+      "category": "calendars",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4640
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "CL-006",
+      "slug": "magnetic-calendars",
+      "category": "calendars",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4733
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "MN-001",
+      "slug": "pvc-menus",
+      "category": "menus",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4811
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "MN-002",
+      "slug": "laminated-menus",
+      "category": "menus",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 4907
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "MN-003",
+      "slug": "hardcover-menus",
+      "category": "menus",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 5004
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "MN-004",
+      "slug": "drink-menus",
+      "category": "menus",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 5098
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "MN-005",
+      "slug": "disposable-menus",
+      "category": "menus",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 5192
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "BN-001",
+      "slug": "outdoor-vinyl-banners",
+      "category": "banners",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 5267
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "BN-002",
+      "slug": "roll-up-banners",
+      "category": "banners",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 5361
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "BN-003",
+      "slug": "adhesive-banners",
+      "category": "banners",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 5456
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "BN-004",
+      "slug": "vehicle-wraps",
+      "category": "banners",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 5550
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "BN-005",
+      "slug": "mesh-banners",
+      "category": "banners",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 5644
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "BK-001",
+      "slug": "catalog-printing",
+      "category": "books",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 8,
+        "line": 5723
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "BK-002",
+      "slug": "saddle-stitch-booklets",
+      "category": "books",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 5818
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "BK-003",
+      "slug": "perfect-bound-books",
+      "category": "books",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 5916
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "BK-004",
+      "slug": "hardcover-books",
+      "category": "books",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6007
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "BK-005",
+      "slug": "spiral-notebooks",
+      "category": "books",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6105
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "EV-001",
+      "slug": "business-envelopes",
+      "category": "envelopes",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6180
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "EV-002",
+      "slug": "colored-envelopes",
+      "category": "envelopes",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6277
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "EV-003",
+      "slug": "large-envelopes",
+      "category": "envelopes",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6374
+      },
+      "sku_seo_data_faqs": {
+        "status": "empty",
+        "len": 0
+      }
+    },
+    {
+      "sku_code": "EV-004",
+      "slug": "pearl-envelopes",
+      "category": "envelopes",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6470
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ED-001",
+      "slug": "exercise-books",
+      "category": "educational",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6546
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ED-002",
+      "slug": "certificates",
+      "category": "educational",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6645
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ED-003",
+      "slug": "school-flyers",
+      "category": "educational",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6743
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ED-004",
+      "slug": "textbooks",
+      "category": "educational",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6838
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 1
+      }
+    },
+    {
+      "sku_code": "ED-005",
+      "slug": "graduation-yearbook",
+      "category": "educational",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6895
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 4
+      }
+    },
+    {
+      "sku_code": "PKG-007",
+      "slug": "magnetic-closure-gift-box",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 6973
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "PKG-008",
+      "slug": "electronics-packaging-box",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7075
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "PKG-009",
+      "slug": "kraft-paper-packaging-box",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7176
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "PKG-016",
+      "slug": "gang-run-card-boxes",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7246
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "PKG-013",
+      "slug": "white-card-boxes",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7307
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "PKG-014",
+      "slug": "corrugated-boxes",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7367
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "PKG-015",
+      "slug": "tuck-end-boxes",
+      "category": "packaging",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7423
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "ST-009",
+      "slug": "fruit-food-label-stickers",
+      "category": "stickers",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7502
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "DJ-001",
+      "slug": "doujinshi-printing",
+      "category": "japan-doujin",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7604
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "DJ-002",
+      "slug": "acrylic-keychain",
+      "category": "japan-doujin",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7710
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "DJ-003",
+      "slug": "can-badge",
+      "category": "japan-doujin",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7814
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "DJ-004",
+      "slug": "postcard-set",
+      "category": "japan-doujin",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 7944
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "DJ-005",
+      "slug": "eco-tote-bag",
+      "category": "japan-doujin",
+      "products_ts_faqSchema": {
+        "status": "has_content",
+        "len": 4,
+        "line": 8048
+      },
+      "sku_seo_data_faqs": {
+        "status": "has_content",
+        "len": 3
+      }
+    },
+    {
+      "sku_code": "WI-001",
+      "slug": "foil-wedding-invitations",
+      "category": "wedding-invitations",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "WI-002",
+      "slug": "save-the-date-cards",
+      "category": "wedding-invitations",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "WI-003",
+      "slug": "wedding-thank-you-cards",
+      "category": "wedding-invitations",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "WI-004",
+      "slug": "wedding-program-cards",
+      "category": "wedding-invitations",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "WI-005",
+      "slug": "wedding-menu-cards",
+      "category": "wedding-invitations",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "WI-006",
+      "slug": "wedding-suite-bundle",
+      "category": "wedding-invitations",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "PC-001",
+      "slug": "wedding-place-cards",
+      "category": "place-cards",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "PC-002",
+      "slug": "drink-tokens",
+      "category": "place-cards",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "PC-003",
+      "slug": "escort-cards",
+      "category": "place-cards",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "PC-004",
+      "slug": "name-tags-badges",
+      "category": "place-cards",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "PC-005",
+      "slug": "cafe-table-cards",
+      "category": "place-cards",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    },
+    {
+      "sku_code": "PC-006",
+      "slug": "wedding-seating-charts",
+      "category": "place-cards",
+      "products_ts_faqSchema": {
+        "status": "missing",
+        "len": 0,
+        "line": null
+      },
+      "sku_seo_data_faqs": {
+        "status": "no_seo_entry",
+        "len": null
+      }
+    }
+  ],
+  "unmatched_seo_keys": [
+    "small-bags"
+  ],
+  "pk003_evidence": {
+    "products_ts": {
+      "sku_code": "PK-003",
+      "sku_line": 3170,
+      "basePrice_value": "2.5,",
+      "basePrice_line": 3194,
+      "basePrice_exact_line": "    basePrice: 2.5,",
+      "slug": "food-boxes"
+    },
+    "sku_seo_data_ts": {
+      "seo_key": "food-boxes",
+      "zh_title_line": 1305,
+      "zh_title_exact_value": "食品包裝印刷 禮盒訂製 100個起 HK$4起 | 智印港",
+      "contains_HK$": true
+    },
+    "sku_seo_data_ts_pk003_text_hits": []
+  }
+}

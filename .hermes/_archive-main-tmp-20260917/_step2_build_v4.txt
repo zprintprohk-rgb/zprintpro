@@ -1,0 +1,35 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./src/data/category-seo-content.ts
+Error: 
+  [31mx[0m Expected ',', got 's'
+      ,-[[36;1;4mF:\zprintpro-nextjs\src\data\category-seo-content.ts[0m:4480:1]
+ [2m4480[0m |         'Holiday card key is design consistency: Christmas / New Year / Valentine cards use unified visual language, customer repurchase rate +30%. Recommend 3-5 templates per season to reduce design cost.',
+ [2m4481[0m |         'Cross-border hero 3D pop-up cards: 7-day 780K RMB GMV (TikTok Paper Love case), $14.99 retail, ¥7-12 wholesale = 15x margin. 3D pop-up is the cross-border core moat.',
+ [2m4482[0m |         'FSC certified + soy ink + seed paper (plantable) — three eco selling points. EU / US customers willing to pay 20% premium, matching ESG procurement trends.',
+ [2m4483[0m |         'Production sweet spot: 100-500 sheets digital (no plate), 500-5000 sheets offset (unit price can drop to $0.07). Peak season (Christmas / Valentine / Mother's Day) order 4 weeks ahead.',
+      : [31;1m                                                                                                                                                                      ^[0m
+ [2m4484[0m |       ],
+ [2m4485[0m |       links: [
+ [2m4485[0m |         { label: '3D Pop-Up Card Cross-Border Guide', href: '/en/blog/3d-pop-up-card-guide/' },
+      `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/data/category-seo-content.ts
+./src/components/CategoryPillarContent.tsx
+./src/app/[locale]/category/[slug]/page.tsx
+./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2F%5Blocale%5D%2Fcategory%2F%5Bslug%5D%2Fpage&page=%2F%5Blocale%5D%2Fcategory%2F%5Bslug%5D%2Fpage&pagePath=private-next-app-dir%2F%5Blocale%5D%2Fcategory%2F%5Bslug%5D%2Fpage.tsx&appDir=F%3A%5Czprintpro-nextjs%5Csrc%5Capp&appPaths=%2F%5Blocale%5D%2Fcategory%2F%5Bslug%5D%2Fpage&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!./src/app/[locale]/category/[slug]/page.tsx?__next_edge_ssr_entry__
+
+
+> Build failed because of webpack errors

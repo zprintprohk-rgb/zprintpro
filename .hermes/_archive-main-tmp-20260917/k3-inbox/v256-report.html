@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V25.6 提示词体系验证报告</title>
+<style>
+:root { --ink:#1a1a1a; --mut:#667; --line:#e5e7eb; --bg:#f8f9fa; --acc:#7c3aed; --ok:#1a7f37; --warn:#9a6700; }
+* { box-sizing:border-box; }
+body { font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; margin:0; background:var(--bg); color:var(--ink); line-height:1.65; }
+.wrap { max-width:1080px; margin:0 auto; padding:32px 20px 64px; }
+h1 { font-size:28px; margin:0 0 6px; }
+h2 { font-size:20px; margin:36px 0 12px; border-left:4px solid var(--acc); padding-left:10px; }
+.sub { color:var(--mut); margin-bottom:20px; }
+.metrics { display:flex; gap:14px; flex-wrap:wrap; margin:20px 0 8px; }
+.metric { flex:1; min-width:150px; background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+.metric .num { font-size:26px; font-weight:800; }
+.metric .lab { font-size:12px; color:var(--mut); }
+table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:14px; }
+th,td { padding:9px 10px; border-bottom:1px solid var(--line); text-align:center; }
+th { background:#f3f4f6; font-weight:600; }
+.muted { color:var(--mut); font-size:12px; }
+.card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px; margin:12px 0; }
+.card-title { font-weight:700; margin-bottom:8px; }
+.prompt { font-family:Consolas,monospace; font-size:12.5px; white-space:pre-wrap; word-break:break-word; background:#f6f7f9; border:1px solid var(--line); border-radius:8px; padding:12px; max-height:260px; overflow:auto; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; margin:16px 0; }
+figure { margin:0; background:#fff; border:1px solid var(--line); border-radius:10px; padding:10px; }
+figure img { width:100%; border-radius:6px; }
+figcaption { font-size:12px; color:var(--mut); text-align:center; padding-top:8px; }
+ul { margin:8px 0; }
+li { margin:4px 0; }
+.tag { display:inline-block; background:#f1ebff; color:#5b21b6; border-radius:6px; padding:2px 8px; font-size:12px; margin-right:6px; }
+.note { background:#fff8e6; border:1px solid #f0d98c; border-radius:10px; padding:12px 16px; margin:12px 0; font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>V25.6 提示词体系 · 验证报告</h1>
+<div class="sub">吸收上传提示词优点 + V25.5「使用中」场景逻辑 + V22 九段骨架 + 反方审查修复 · 2026-08-24 · 5 SKU × 4 视图 = 20 张验证图</div>
+
+<div class="metrics">
+<div class="metric"><div class="num">20/20</div><div class="lab">全部评分 ≥9.2 达标</div></div>
+<div class="metric"><div class="num">9.584</div><div class="lab">20 张均分（目标 ≥9.5 ✓）</div></div>
+<div class="metric"><div class="num">9.30</div><div class="lab">单图最低分（BC VARIETY）</div></div>
+<div class="metric"><div class="num">9.80</div><div class="lab">单图最高分（PB DETAIL）</div></div>
+</div>
+
+<h2>一、体系构成：四层吸收 + 审查修复</h2>
+<div class="grid">
+<div class="card"><div class="card-title">V22 九段骨架（回归）</div><ul>
+<li>HEAD 生产级声明（Seedream 5.0 Pro / 8K / IN-USE）</li>
+<li>WHERE USED 视图用途</li><li>AUDIENCE 受众驱动</li>
+<li>PRODUCT 六字段注入</li><li>IN-USE SCENE 使用中场景</li>
+<li>SHORT COPY 短文案</li><li>COLOR PALETTE 品类色板</li>
+<li>VIEW 规格 + CRAFT&TRUST</li><li>NEGATIVE 负面清单</li></ul></div>
+<div class="card"><div class="card-title">P0 六视觉字段（新增）</div><ul>
+<li>name(20-40) / description(150-200)</li>
+<li>features 选最视觉化 1-2 条</li>
+<li>material / size(仅构图) / printMethod / finishing</li>
+<li>description→AUDIENCE、material/工艺→CRAFT</li>
+<li>16 类目差异化场景：不再共用同款静物场景</li></ul></div>
+<div class="card"><div class="card-title">V25.5「使用中」场景（继承）</div><ul>
+<li>前景=人手动作+产品（主体 80-85%）</li>
+<li>背景虚化=客户实际应用场景</li>
+<li>BC 写贺卡 / PB 提袋出花店 / PK 梳妆台开盒</li>
+<li>RP 递红包（V25.5 最高分模式）/ DJ 漫展摊位</li></ul></div>
+<div class="card"><div class="card-title">反方审查修复（7 项）</div><ul>
+<li>RP-001 双手→单手递出（防 4 手畸形）</li>
+<li>PK-002 金银混用→统一银色</li>
+<li>DETAIL 去人手场景→两种形态均接受：纯产品微距 或 动作手部微距（手部自然即达标）</li>
+<li>PB/DJ DETAIL 材质焦点各自化</li>
+<li>RP 吉祥符号→金箔纹样、禁伪中文</li>
+<li>PB/DJ HERO 构图强化产品主位</li>
+<li>NEGATIVE 增至 27 项（含手部/伪中文/背景专项）</li></ul></div>
+</div>
+
+<h2>二、评分台账（20 张验证图）</h2>
+<table>
+<tr><th style="text-align:left">SKU（产品）</th><th>HERO</th><th>DETAIL</th><th>VARIETY</th><th>MULTI-ANGLE</th><th>SKU 均分</th></tr>
+<tr><td style="text-align:left"><b>BC-001</b><br><span class="muted">贺卡 · premium-greeting-cards</span></td><td style="text-align:center;color:#1a7f37;font-weight:600">9.75</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.78</td><td style="text-align:center;color:#9a6700;font-weight:600">9.30</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.56</td><td style="text-align:center;font-weight:700">9.60</td></tr>
+<tr><td style="text-align:left"><b>PB-001</b><br><span class="muted">纸袋 · kraft-paper-bags</span></td><td style="text-align:center;color:#1a7f37;font-weight:600">9.65</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.80</td><td style="text-align:center;color:#9a6700;font-weight:600">9.40</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.60</td><td style="text-align:center;font-weight:700">9.61</td></tr>
+<tr><td style="text-align:left"><b>PK-002</b><br><span class="muted">化妆品盒 · cosmetic-boxes</span></td><td style="text-align:center;color:#1a7f37;font-weight:600">9.63</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.70</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.50</td><td style="text-align:center;color:#9a6700;font-weight:600">9.40</td><td style="text-align:center;font-weight:700">9.56</td></tr>
+<tr><td style="text-align:left"><b>RP-001</b><br><span class="muted">红包 · foil-red-packets</span></td><td style="text-align:center;color:#1a7f37;font-weight:600">9.73</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.60</td><td style="text-align:center;color:#9a6700;font-weight:600">9.40</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.60</td><td style="text-align:center;font-weight:700">9.58</td></tr>
+<tr><td style="text-align:left"><b>DJ-001</b><br><span class="muted">同人志 · doujinshi-printing</span></td><td style="text-align:center;color:#1a7f37;font-weight:600">9.68</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.70</td><td style="text-align:center;color:#9a6700;font-weight:600">9.40</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.50</td><td style="text-align:center;font-weight:700">9.57</td></tr>
+
+<tr style="background:#f8f6ff"><td style="text-align:left"><b>全 20 张</b></td><td colspan="4" style="text-align:center">均分 <b>9.584</b> · 最低 9.30 · 最高 9.80</td><td style="text-align:center"><b>9.58</b></td></tr>
+</table>
+<div class="note"><b>验证结论：</b>首版 DETAIL 残留人手场景句，模型渲染书写手部入镜——旧评分指令按「无人物」硬性扣分仅 7.7；<b>评分指令已更新（2026-08-24）：DETAIL 允许动作手部，手部自然无畸形、动作到位即达标</b>——同一张图新指令重评 <b>9.5 达标</b>；修复版（纯产品微距）5 张 DETAIL 也全部 ≥9.6。HERO 五张使用中场景全部 ≥9.63（均分 9.688），RP-001 递红包 9.73 复现 V25.5 最高分模式。</div>
+
+<h2>三、V25.5 → V25.6 对比论证</h2>
+<table>
+<tr><th style="text-align:left">维度</th><th>V25.5（已验证基线）</th><th>V25.6（本次）</th></tr>
+<tr><td style="text-align:left">验证规模</td><td>5 SKU × 1 视图（仅 HERO）</td><td><b>5 SKU × 4 视图 = 20 张</b></td></tr>
+<tr><td style="text-align:left">均分</td><td>9.26（5 张）</td><td><b>9.584（20 张）</b> ↑0.32</td></tr>
+<tr><td style="text-align:left">视图最低分</td><td>9.0（DJ HERO 封面偏素）</td><td><b>9.3</b>（BC VARIETY）</td></tr>
+<tr><td style="text-align:left">结构</td><td>使用中场景 + 静物混合</td><td>九段骨架 + 六字段注入 + 全视图使用中/微距分化</td></tr>
+<tr><td style="text-align:left">DETAIL</td><td>人手场景残留（实测 7.7 风险）</td><td><b>纯产品微距 + 每 SKU 材质焦点</b>（全 ≥9.6）</td></tr>
+<tr><td style="text-align:left">构图风险</td><td>RP 双人双手（4 手畸形风险）</td><td><b>单手递出构图</b>（9.73）</td></tr>
+<tr><td style="text-align:left">色板一致性</td><td>PK 金银混用冲突</td><td><b>统一银箔</b>（9.7）</td></tr>
+<tr><td style="text-align:left">负向防护</td><td>15 项基线</td><td><b>27 项</b>（+手部畸形/伪中文/烫金失真/结构变形/背景）</td></tr>
+<tr><td style="text-align:left">API 适配</td><td>—</td><td>文档版 1800-2400 字符 + <b>调用版 ≤950 字符</b>（实测 autoglm 上限 ~950）</td></tr>
+</table>
+
+<h2>四、代表成图（5 SKU HERO）</h2>
+<div class="grid">
+<figure><img src="assets/BC-001-HERO-1200x1146.webp" alt="BC-001 HERO"><figcaption>BC-001 贺卡 · 金笔书写 · 9.75</figcaption></figure>
+<figure><img src="assets/PB-001-HERO-1200x1146.webp" alt="PB-001 HERO"><figcaption>PB-001 纸袋 · 提袋出花店 · 9.65</figcaption></figure>
+<figure><img src="assets/PK-002-HERO-1200x1146.webp" alt="PK-002 HERO"><figcaption>PK-002 化妆品盒 · 梳妆台开盒 · 9.63</figcaption></figure>
+<figure><img src="assets/RP-001-HERO-1200x1146.webp" alt="RP-001 HERO"><figcaption>RP-001 红包 · 递红包 · 9.73</figcaption></figure>
+<figure><img src="assets/DJ-001-HERO-1200x1146.webp" alt="DJ-001 HERO"><figcaption>DJ-001 同人志 · 漫展摊位 · 9.68</figcaption></figure>
+</div>
+
+<h2>五、提示词定稿（文档版 HERO 示例）</h2>
+<div class="card">
+<div class="card-title">BC-001 · 贺卡 — HERO（2345 字符）</div>
+<pre class="prompt">PRODUCTION-READY FINAL IMAGE ONLY. V25.6 e-commerce photography, Seedream 5.0 Pro, photorealistic 8K UHD micro-detail, IN-USE lifestyle scene. WHERE USED: HERO image on the US product page (zprintpro.com) - the first visual a buyer sees; shown in-use so they see themselves using it, earning the click. AUDIENCE: US shoppers send premium foil-stamped greeting cards for birthdays and celebrations; they want a card that feels luxurious, personal and worth keeping. PRODUCT: Maplewood Studio WARM WISHES foil greeting card. Key visual features: gold foil corners, embossed floral border. Size context: A5 folded card held in hand. IN-USE SCENE: Elegant female hands write a heartfelt message with a gold pen inside an open foil-stamped greeting card on a warm wooden desk; blurred background: cozy home celebration with fairy lights, cake and wrapped gifts - the real scene where this card is sent. SHORT COPY: print the words "WARM WISHES" on the product, letters 100% correctly spelled, elegant serif typography. COLOR PALETTE: warm gold foil, ivory white, cream, blush pink accent, soft sage green. HERO composition: product centered at 80-85% of frame, hand(s) partially visible in natural action, slight angle for depth, strong depth of field, product stays the sharp hero. Craft & trust: 400gsm premium card stock, 4-color offset printing with gold foil stamping; finishing: matte lamination, rounded corners. Photorealistic commercial photography, sharp focus, natural soft lighting, subtle depth of field, true-to-life paper/ink/material texture, premium studio quality that feels honest and professional - the kind of image that makes a US buyer trust an overseas print supplier. SEO/GEO CONTEXT: premium greeting cards, foil stamped cards, gold foil greeting cards, 400gsm card stock. no watermark, no AI generator names, no real luxury brand logos (no Tiffany/Gucci/LV/Chanel), no celebrity faces, no gibberish, no placeholder letters, no misspelled words, no price lists, no body copy, no barcodes, no torn edges, no plastic toy look, no floating objects, no oversaturation, no harsh flash, no JPEG artifacts, no deformed hands, no extra fingers, no merged fingers, no glowing gold, no plastic foil look, no warped panels, no tilted cards, no Chinese characters, no pseudo-Chinese glyphs, no cluttered background, no unrelated objects</pre>
+</div>
+<div class="card">
+<div class="card-title">PB-001 · 纸袋 — HERO（2341 字符）</div>
+<pre class="prompt">PRODUCTION-READY FINAL IMAGE ONLY. V25.6 e-commerce photography, Seedream 5.0 Pro, photorealistic 8K UHD micro-detail, IN-USE lifestyle scene. WHERE USED: HERO image on the US product page (zprintpro.com) - the first visual a buyer sees; shown in-use so they see themselves using it, earning the click. AUDIENCE: US florists, boutiques and eco-conscious shoppers carry branded kraft bags; they want sturdy, beautiful bags that elevate every purchase and gift. PRODUCT: Bloom & Twine CARRY JOY kraft paper gift bag. Key visual features: peony print, twisted rope handles, gusseted base. Size context: medium bag with rope handles. IN-USE SCENE: A woman's hand grips the twisted rope handle of a kraft paper bag with peony pattern, the bag filling most of the frame as she steps out of a bright flower shop; blurred background: florist interior with peonies, roses and greenery in soft daylight - the real scene where customers carry this bag. SHORT COPY: print the words "CARRY JOY" on the product, letters 100% correctly spelled, elegant serif typography. COLOR PALETTE: kraft brown, natural white, peony blush pink accent, soft leaf green. HERO composition: product centered at 80-85% of frame, hand(s) partially visible in natural action, slight angle for depth, strong depth of field, product stays the sharp hero. Craft & trust: sturdy kraft paper with twisted rope handles, flexo printing; finishing: natural matte finish. Photorealistic commercial photography, sharp focus, natural soft lighting, subtle depth of field, true-to-life paper/ink/material texture, premium studio quality that feels honest and professional - the kind of image that makes a US buyer trust an overseas print supplier. SEO/GEO CONTEXT: kraft paper bags, paper bag printing, custom gift bags, eco paper bags. no watermark, no AI generator names, no real luxury brand logos (no Tiffany/Gucci/LV/Chanel), no celebrity faces, no gibberish, no placeholder letters, no misspelled words, no price lists, no body copy, no barcodes, no torn edges, no plastic toy look, no floating objects, no oversaturation, no harsh flash, no JPEG artifacts, no deformed hands, no extra fingers, no merged fingers, no glowing gold, no plastic foil look, no warped panels, no tilted cards, no Chinese characters, no pseudo-Chinese glyphs, no cluttered background, no unrelated objects</pre>
+</div>
+<div class="card">
+<div class="card-title">PK-002 · 化妆品盒 — HERO（2345 字符）</div>
+<pre class="prompt">PRODUCTION-READY FINAL IMAGE ONLY. V25.6 e-commerce photography, Seedream 5.0 Pro, photorealistic 8K UHD micro-detail, IN-USE lifestyle scene. WHERE USED: HERO image on the US product page (zprintpro.com) - the first visual a buyer sees; shown in-use so they see themselves using it, earning the click. AUDIENCE: US beauty lovers unbox luxury cosmetics at their vanity; they want packaging that feels premium and makes the unboxing ritual special. PRODUCT: Aurelia Beauty PURE GLOW magnetic-lid cosmetics gift box. Key visual features: magnetic lid, silver-accented rigid box, silk insert. Size context: box sized for a 50ml jar. IN-USE SCENE: A woman's hand at a luxury vanity lifts the magnetic lid of a silver-accented rigid cosmetics box revealing a pearl-white jar; blurred background: elegant bedroom dressing table with mirror lights and perfume bottles - the real scene where customers unbox this box. SHORT COPY: print the words "PURE GLOW" on the product, letters 100% correctly spelled, elegant serif typography. COLOR PALETTE: blush pink, silver foil, pearl white, champagne, soft rose-gold accent. HERO composition: product centered at 80-85% of frame, hand(s) partially visible in natural action, slight angle for depth, strong depth of field, product stays the sharp hero. Craft & trust: rigid paperboard with silver-foil edges, offset printing with silver foil accents; finishing: soft-touch matte lamination. Photorealistic commercial photography, sharp focus, natural soft lighting, subtle depth of field, true-to-life paper/ink/material texture, premium studio quality that feels honest and professional - the kind of image that makes a US buyer trust an overseas print supplier. SEO/GEO CONTEXT: cosmetic packaging boxes, rigid boxes, magnetic gift boxes, luxury packaging. no watermark, no AI generator names, no real luxury brand logos (no Tiffany/Gucci/LV/Chanel), no celebrity faces, no gibberish, no placeholder letters, no misspelled words, no price lists, no body copy, no barcodes, no torn edges, no plastic toy look, no floating objects, no oversaturation, no harsh flash, no JPEG artifacts, no deformed hands, no extra fingers, no merged fingers, no glowing gold, no plastic foil look, no warped panels, no tilted cards, no Chinese characters, no pseudo-Chinese glyphs, no cluttered background, no unrelated objects</pre>
+</div>
+<div class="card">
+<div class="card-title">RP-001 · 红包 — HERO（2384 字符）</div>
+<pre class="prompt">PRODUCTION-READY FINAL IMAGE ONLY. V25.6 e-commerce photography, Seedream 5.0 Pro, photorealistic 8K UHD micro-detail, IN-USE lifestyle scene. WHERE USED: HERO image on the US product page (zprintpro.com) - the first visual a buyer sees; shown in-use so they see themselves using it, earning the click. AUDIENCE: US Asian-American families give lucky red packets at Lunar New Year; they want elegant foil red packets that honor tradition and delight recipients. PRODUCT: Golden Fortune GOOD LUCK foil red packet. Key visual features: gold dragon motif, embossed texture, foil ornaments only (no text characters). Size context: pocket-size envelope. IN-USE SCENE: An elder's hand offers a red foil-stamped lucky red packet in a natural open-palm gesture across a festive dinner table; only the giver's hand is in frame; blurred background: Lunar New Year family gathering with lanterns, oranges and warm light - the real scene where customers give this red packet. SHORT COPY: print the words "GOOD LUCK" on the product, letters 100% correctly spelled, elegant serif typography. COLOR PALETTE: festive Chinese red, deep crimson, gold foil, warm amber light. HERO composition: product centered at 80-85% of frame, hand(s) partially visible in natural action, slight angle for depth, strong depth of field, product stays the sharp hero. Craft & trust: premium red cardstock, gold foil stamping with offset printing; finishing: embossed patterns, matte finish. Photorealistic commercial photography, sharp focus, natural soft lighting, subtle depth of field, true-to-life paper/ink/material texture, premium studio quality that feels honest and professional - the kind of image that makes a US buyer trust an overseas print supplier. SEO/GEO CONTEXT: red packets, custom red envelope printing, foil red envelopes, lucky money envelopes. no watermark, no AI generator names, no real luxury brand logos (no Tiffany/Gucci/LV/Chanel), no celebrity faces, no gibberish, no placeholder letters, no misspelled words, no price lists, no body copy, no barcodes, no torn edges, no plastic toy look, no floating objects, no oversaturation, no harsh flash, no JPEG artifacts, no deformed hands, no extra fingers, no merged fingers, no glowing gold, no plastic foil look, no warped panels, no tilted cards, no Chinese characters, no pseudo-Chinese glyphs, no cluttered background, no unrelated objects</pre>
+</div>
+<div class="card">
+<div class="card-title">DJ-001 · 同人志 — HERO（2393 字符）</div>
+<pre class="prompt">PRODUCTION-READY FINAL IMAGE ONLY. V25.6 e-commerce photography, Seedream 5.0 Pro, photorealistic 8K UHD micro-detail, IN-USE lifestyle scene. WHERE USED: HERO image on the US product page (zprintpro.com) - the first visual a buyer sees; shown in-use so they see themselves using it, earning the click. AUDIENCE: US anime fans and indie artists buy doujinshi at conventions; they want vibrant covers and clean art reproduction that stand out on the artist alley table. PRODUCT: Prism Studio ART BOOK vibrant doujinshi. Key visual features: vivid saturated cover art, acrylic standee, color interior pages. Size context: A5 paperback displayed at a booth. IN-USE SCENE: A fan's hand flips through the pages of a vibrant doujinshi held at a convention booth counter, the book large in frame beside its acrylic standee; blurred background: anime convention artist alley with cosplayers and crowd - the real scene where customers buy this doujinshi. SHORT COPY: print the words "ART BOOK" on the product, letters 100% correctly spelled, elegant serif typography. COLOR PALETTE: vivid saturated cover colors, high-contrast art tones, clean white paper, studio neon accents. HERO composition: product centered at 80-85% of frame, hand(s) partially visible in natural action, slight angle for depth, strong depth of field, product stays the sharp hero. Craft & trust: matte art paper cover, crisp white interior, full-color offset printing; finishing: matte lamination, perfect bound. Photorealistic commercial photography, sharp focus, natural soft lighting, subtle depth of field, true-to-life paper/ink/material texture, premium studio quality that feels honest and professional - the kind of image that makes a US buyer trust an overseas print supplier. SEO/GEO CONTEXT: doujinshi printing, art book printing, comic printing, convention prints. no watermark, no AI generator names, no real luxury brand logos (no Tiffany/Gucci/LV/Chanel), no celebrity faces, no gibberish, no placeholder letters, no misspelled words, no price lists, no body copy, no barcodes, no torn edges, no plastic toy look, no floating objects, no oversaturation, no harsh flash, no JPEG artifacts, no deformed hands, no extra fingers, no merged fingers, no glowing gold, no plastic foil look, no warped panels, no tilted cards, no Chinese characters, no pseudo-Chinese glyphs, no cluttered background, no unrelated objects</pre>
+</div>
+
+
+<div class="note"><b>交付说明：</b>① 文档版 20 条（1800-2400 字符，九段完整）见 <code>v256-prompts.txt</code> / <code>v256-prompts.json</code>；② API 调用版 20 条（≤950 字符，实测 autoglm seedream 通道 prompt 上限约 950 字符，超限返回 code 500）见 <code>v256-call-prompts.json</code>；③ 全部 20 张成图（1200×1146 WebP，底边 4.5% 裁水印后缩放）在 <code>final/</code> 目录，评分明细见 <code>ledger_final.json</code>。</div>
+</div>
+</body>
+</html>

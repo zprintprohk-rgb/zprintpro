@@ -1,3 +1,46 @@
+<!-- COORDINATED-FLYWHEEL-2026-11-14 BEGIN -->
+# 2026-11-14 协同飞轮：共享证据、单篇补缺、生产验收、复测学习
+
+1. **先消费同一协同板**：依次读 `run-context-ZP-blog-deepfix.json` 的 `coordination`、`.hermes/logs/coordination-board.json`、本任务 `upstream_inputs` 与 Blog 队列。只执行本车道 `ready_tasks` 中 `status=READY`、`owner_lane=ZP-blog-deepfix` 的一个 bounded task；其他状态不得越权转 READY。
+2. **本轮唯一优先项**：若 `FIX-20261113-POSTER-BLOG-TRUTH` 仍为 READY，只修既有 `poster-printing-guide`，不得夹带 `FIX-20261113-JA-EDUCATION-C109-TRUTH`、贴纸或认证批；若已被其他会话完成，按最新证据幂等跳过，再决定是否有另一项真实信息增益，没有就 NO_OP。
+3. **本车道职责**：只补可验证的采购信息缺口和旧真值，不为“每周长文”硬写新文，不把深位词统一解释成缺文章。交易主 URL、canonical、301、title 冻结与 D1–D6 门禁不变。
+4. **交接与学习**：记录 baseline／change／approval／production_deploy／online_verify／retest／retry_at／exit_criteria，交 k3-review 独立验收、GSC 复测和 weekly/monthly 学习。缺部署或线上核验不得进入学习；协同板构建失败必须 BLOCKED，可选数据缺失不得造数。
+<!-- COORDINATED-FLYWHEEL-2026-11-14 END -->
+
+<!-- COMMERCIAL-TRUTH-2026-11-13 BEGIN -->
+# 2026-11-13 当前最高执行块：D1–D6 已裁决，按边界消费
+
+> 本块取代下方旧块中 packaging／catalog／C109 等陈旧 `WAITING_K3` 列表，以及 small-batch／catalog“实验窗内不得修任何真值”的旧表述；不取代 K3 最新拍板、AGENTS.md、结果总线、并发锁和既有门禁。配置更新不等于生产部署或自然调度恢复。
+
+1. **先对账再执行**：读 `docs/2026-11-13-commercial-truth-optimal-value-decisions.md`、`.hermes/logs/commercial-truth-decisions-2026-11-13.json` 与 `strategy-task-queue.json`。只消费 `status=READY`、`decision_record` 指向本包且 `write_scope` 完整的一项；DONE 不重做，PARTIAL 只做 remaining_scope，无裁决字段不得自行推导商业值。
+2. **统一口径**：普通匹配贴纸 SKU 10 张、食品标签 500 张；flyers 10 张；A2 10 张 HK$16 起；A1 柯式 20／喷绘成品 290 起／喷绘基材 45–56；en small-batch 10 stickers、from US$0.55 带条件；catalog 10 copies。未核实 proof／生产／运输／交付均报价或订单确认，无源认证／退款／统计／满意度删除，默认 3mm 出血但模板优先。
+3. **真值优先于实验完整**：small-batch／catalog 的 snippet 实验继续 HOLD，但已知错误不得为保护旧窗口而保留。残留真值修正是独立批次；实际部署后标 `RESET_BY_TRUTH_FIX` 并重置 baseline，未部署则保留原复测计划。
+4. **写入与验收**：每轮一个 bounded task；同一文件不得跨车道同日写。SKU SEO 必须回 `zprintpro-sku-seo-data.csv` 再跑生成器，禁手改派生 TS。输出 baseline／approval／production_deploy／online_verify／D1-D2／7-14-28d retest／exit；裁决文档、wrapper=0、报告完成均不是部署证明。
+5. **学习边界**：只追加 measurement_history，不覆盖旧 baseline；缺部署或线上核验不进入学习，未获 scale_evidence 不 SCALE；同因只累加 recurrence，不新建 cron／Automation，不自动改共享 prompt。
+<!-- COMMERCIAL-TRUTH-2026-11-13 END -->
+
+**Blog 车道补充**：首轮海报只修 `poster-printing-guide`；贴纸价格只修 `sticker-buying-guide` 价格表；认证命中逐段区分自有声明与公共法规，禁止 528 处无上下文全局替换。真值维护不伪装成新增长文，没有信息增益仍 NO_OP。
+
+<!-- TRUTH-INFORMATION-GAP-2026-11-13 BEGIN -->
+# 2026-11-13 当前执行块：商业真值先于深层 Blog
+
+1. **先读新基线**：消费 `docs/2026-11-13-three-market-seo-aeo-geo-two-week-flywheel.md`、最新 focus delta 与 run-context。海报、教材、C109 及现有 Blog 若仍有未拍板价格／认证／交期／退款／订单数，先登记风险并等待裁决，禁止为长文补齐或沿用这些数字。
+2. **不是深位就写文**：宣傳單張／貼紙／書刊当前先做索引、意图、承接与页面真值诊断；query×page 缺失写 `NOT_MEASURABLE`。不得新建泛词文、同义文或把 Blog 改成交易主 URL。
+3. **单篇信息缺口门**：只有现有交易页与文章都缺少可验证的采购决策信息，且能写出尺寸／数量／材质／工艺或装订／文件要求／打样报价／交付边界中的真实新增值，才最多复写或新建 1 篇；没有信息增量必须 NO_OP。
+4. **实验与复测**：保留原 baseline，单篇单变量，记录 approval_gate／production_deploy／online_verify／7/14/28 天 retest／exit_criteria。11-14 只能判方向和真值一致性，不能判部署胜负；en catalog 复测窗与 small-batch HOLD 不得叠加改动。
+5. **合法退出**：OK／PARTIAL／NO_OP 必须保留真实语义；PARTIAL 下轮只处理 NEXT，NO_OP 不自动重试。周／月学习只接受完整部署与复测证据，文章数量和字数不是 SCALE 证据。
+<!-- TRUTH-INFORMATION-GAP-2026-11-13 END -->
+
+<!-- FLYWHEEL-BLOG-REMEASURE-2026-11-07 BEGIN -->
+# 2026-11-07 当前执行块：先复测，再决定是否写深层 Blog
+
+1. **本轮先复测 flyers／stickers／books**：读取队列原始冻结 baseline 与最新 `measurement_history`，再读最新同窗口 focus delta。宣傳單張连续转弱、貼紙印刷仍深位、書刊印刷仍深位是三类不同诊断起点，不得统一解释为“缺长文”。
+2. **分流后才能生产**：首页零点击先转 weekly 做 SERP／snippet；深位或承接分散先查索引、意图、query×page、页面变更与商业真值；只有确认现有文章仍缺采购决策价值，才从三个 remeasure 项中最多复写一篇。无信息增益必须 NO_OP。
+3. **复测不是胜负**：保留原 baseline，追加当前 observation；写明窗口重叠、production_deploy、online_verify 和 retest。不得把 11-03→11-07 的移动窗口变化直接归因于 10-31 复写，也不得因此批量新建同义文。
+4. **缺失与阻断**：`教科書印刷` 继续 `NO_CURRENT_BASELINE`；packaging／posters／en stickers／catalog／comiket 的 `blocked_waiting_k3` 保持不变。不得自动 canonical、301、noindex、砍页或把 Blog 升为交易主词主 URL。
+5. **回写退出条件**：本轮输出 MEASURE／FIX／NO_OP 之一，含 owner、证据、retry_at 和 exit_criteria；若复写则只能单篇、单变量、可追溯事实，完成线上部署核验后才可进入后续学习。
+<!-- FLYWHEEL-BLOG-REMEASURE-2026-11-07 END -->
+
 <!-- EVIDENCE-LEARNING-CLOSED-LOOP-2026-11-03 BEGIN -->
 # 2026-11-03 最新执行块：证据分流与学习闭环
 

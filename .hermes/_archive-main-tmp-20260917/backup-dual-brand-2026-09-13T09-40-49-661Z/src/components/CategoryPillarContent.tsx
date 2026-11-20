@@ -1,0 +1,419 @@
+/**
+ * Category Pillar Content — SEO支柱内容组件 v2
+ * 极致 SEO + GEO 优化：核心优势、材质表格、工艺选项、技术参数、服务节点、FAQ
+ * 支持 FAQPage Schema 结构化数据
+ */
+
+import Link from 'next/link';
+import { categorySeoContent, getDefaultCategoryContent } from '@/data/category-seo-content';
+import { categories as allCategoryDefs } from '@/data/products';
+import { getAllBlogPostSlugs } from '@/data/blog-posts';
+
+// 2026-09-11 G2.3/§13.6: 指南内链存在性过滤 — 数据 links 含已下线 blog slug (6 处死链),
+// 渲染前剔除, 保证线上 0 个 404 内链。
+const validBlogSlugs = new Set(getAllBlogPostSlugs());
+const validCategorySlugs = new Set(allCategoryDefs.map((c) => c.slug));
+function guideLinkExists(href: string): boolean {
+  const m = href.match(/\/(blog|category)\/([^/?#]+)\/?$/);
+  if (!m) return true;
+  return m[1] === 'blog' ? validBlogSlugs.has(m[2]) : validCategorySlugs.has(m[2]);
+}
+
+interface CategoryPillarContentProps {
+  locale: string;
+  categorySlug: string;
+}
+
+// 生成 FAQPage JSON-LD Schema
+export function generateFaqSchema(locale: string, categorySlug: string) {
+  const data = categorySeoContent[categorySlug]?.[locale as 'zh-hk' | 'en' | 'ja'] 
+    || getDefaultCategoryContent(categorySlug, locale);
+  
+  if (!data.faq || data.faq.length === 0) return null;
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: data.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    })),
+  };
+}
+
+// 设计组件：把「A・B」式事实句拆成 主/副 双层级渲染（内容零改动，仅呈现层）
+function DecisionCard({ text }: { text: string }) {
+  const sep = text.includes('・') ? '・' : text.includes(' · ') ? ' · ' : null;
+  if (!sep) {
+    return <span className="text-sm text-gray-800 font-medium">{text}</span>;
+  }
+  const i = text.indexOf(sep);
+  const lead = text.slice(0, i);
+  const rest = text.slice(i + sep.length);
+  return (
+    <>
+      <span className="text-[15px] font-extrabold tracking-tight text-[#111827] leading-snug">{lead}</span>
+      <span className="text-[12.5px] text-[#6B7280] font-medium leading-snug">{rest}</span>
+    </>
+  );
+}
+
+export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarContentProps) {
+  const data = categorySeoContent[categorySlug]?.[locale as 'zh-hk' | 'en' | 'ja'] 
+    || getDefaultCategoryContent(categorySlug, locale);
+  
+  const isZh = locale === 'zh-hk';
+  const isJa = locale === 'ja';
+  
+  // Section label translations
+  const t = {
+    coreAdvantages: isZh ? '核心競爭優勢' : isJa ? '核心競争優位' : 'Why Choose ZprintPro',
+    materialTable: isZh ? '材質工藝詳解' : isJa ? '材質・工法ガイド' : 'Materials & Craftsmanship',
+    specialOptions: isZh ? '特殊加工選項' : isJa ? '特殊加工オプション' : 'Special Finishing Options',
+    techSpecs: isZh ? '技術參數詳解' : isJa ? '技術仕様' : 'Technical Specifications',
+    serviceNodes: isZh ? '本地化服務節點' : isJa ? 'ローカルサービス拠点' : 'Local Service Points',
+    buyingGuide: isZh ? '選購指南' : isJa ? '選び方ガイド' : 'Buying Guide',
+    faqTitle: isZh ? '常見問題' : isJa ? 'よくある質問' : 'Frequently Asked Questions',
+  };
+
+  // 设计：锚点导航（标签复用各小节现有标题，零新增文案）
+  const anchors: { href: string; label: string }[] = [];
+  if (data.coreAdvantages) anchors.push({ href: '#sec-advantages', label: data.coreAdvantages.title || t.coreAdvantages });
+  if (data.materialTable) anchors.push({ href: '#sec-materials', label: data.materialTable.title || t.materialTable });
+  if (data.specialOptions) anchors.push({ href: '#sec-options', label: data.specialOptions.title || t.specialOptions });
+  if (data.techSpecs) anchors.push({ href: '#sec-specs', label: data.techSpecs.title || t.techSpecs });
+  if (data.serviceNodes) anchors.push({ href: '#sec-nodes', label: data.serviceNodes.title || t.serviceNodes });
+  if (data.faq && data.faq.length > 0) anchors.push({ href: '#sec-faq', label: t.faqTitle });
+
+  return (
+    <section className="bg-white border-t">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16">
+
+        {/* 2026-08-19 R3 5 件套: 40-60 字 Featured Snippet 块 (争 Position 0) */}
+        {data.featuredSnippet && (
+          <p className="text-base md:text-lg text-[#1B3163] font-medium bg-white border border-[#E5E7EB] border-l-4 border-l-[#F87314] px-4 py-3 mb-6 rounded-r-xl">
+            <strong>{data.featuredSnippet}</strong>
+          </p>
+        )}
+
+        {/* H2 主标题 */}
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-[#111827] mb-6 sm:mb-8 leading-snug sm:leading-tight break-words text-balance max-w-full">
+          {data.h2}
+        </h2>
+
+        {anchors.length > 0 && (
+          <nav aria-label="Section navigation" className="mb-8 flex flex-wrap gap-2">
+            {anchors.map((a) => (
+              <a
+                key={a.href}
+                href={a.href}
+                className="inline-flex items-center rounded-full border border-[#E5E7EB] bg-white px-3.5 py-1.5 text-[13px] font-semibold text-[#1B3163] transition-colors hover:border-[#2873F5] hover:text-[#2873F5]"
+              >
+                {a.label}
+              </a>
+            ))}
+          </nav>
+        )}
+
+        {/* W1 K3 8/29 12:50 派活包 §1.3 拍板: 采购决策 4 要素卡 (P0 返工, 替换 V3.4 SEO 自检块 + 96295a4 4 边框块)
+            设计: 容器样式沿用 V3.4 (蓝渐变 + 左蓝边) + 内部 2×2 网格 (grid-cols-1 sm:grid-cols-2 gap-2) + 内联 SVG 图标 (禁 emoji) + 标题行 + CTA 行
+            数据驱动: stickers 专属值 (示范) + 全站 fallback (其余 12 品类) - 后续 W2-W3 补 decisionCard 字段, 本 turn 硬编码 */}
+        <div className="mb-8 bg-white border border-[#E5E7EB] rounded-2xl p-6 shadow-[0_10px_30px_rgba(17,24,39,0.04)]">
+          <p className="text-[13px] font-bold uppercase tracking-[.12em] text-[#2873F5] mb-4">
+            {isZh ? '快速決策・採購 4 要素' : isJa ? 'クイック決断・購買4要素' : 'Quick Decision · 4 Buying Facts'}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {/* MOQ 起印量 */}
+            <div className="group bg-white border border-[#E5E7EB] rounded-2xl p-4 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-[3px] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+              <span className="w-9 h-9 rounded-[10px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <rect x="2" y="2" width="12" height="12" rx="2" stroke="#fff" strokeWidth="1.5" fill="none"/>
+                  <path d="M5 6h6M5 9h4" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
+              </span>
+              <DecisionCard text={categorySlug === 'stickers' ? (isZh ? '50 個起印・HK$0.45/張起' : isJa ? '50 個起印・HK$0.45/張起' : 'From 50 pcs · HK$0.45/pc') : (isZh ? '100 張起印・無開版費' : isJa ? '100枚から・版代ゼロ' : 'From 100 pcs · No setup fees')} />
+            </div>
+            {/* Price 價格 */}
+            <div className="group bg-white border border-[#E5E7EB] rounded-2xl p-4 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-[3px] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+              <span className="w-9 h-9 rounded-[10px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 2L10 6H14L11 9L12 14L8 11L4 14L5 9L2 6H6L8 2Z" stroke="#fff" strokeWidth="1.5" strokeLinejoin="round" fill="none"/>
+                </svg>
+              </span>
+              <DecisionCard text={categorySlug === 'stickers' ? (isZh ? '防水啞光 PVC・15+ 材質' : isJa ? '防水啞光 PVC・15+ 材質' : 'Waterproof Matte PVC · 15+ Materials') : (isZh ? '30 秒 AI 報價・價格透明' : isJa ? '30秒 AI 見積・透明価格' : '30-sec AI quote · Transparent pricing')} />
+            </div>
+            {/* Lead 交期 */}
+            <div className="group bg-white border border-[#E5E7EB] rounded-2xl p-4 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-[3px] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+              <span className="w-9 h-9 rounded-[10px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <circle cx="8" cy="8" r="6" stroke="#fff" strokeWidth="1.5" fill="none"/>
+                  <path d="M8 4v4l3 2" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
+              </span>
+              <DecisionCard text={categorySlug === 'stickers' ? (isZh ? '5-7 天交期・DHL 全球 2-4 天' : isJa ? '5-7 天交期・DHL 全球 2-4 天' : '5-7 day lead · DHL 2-4 days global') : (isZh ? '標準 3-5 天交貨・加急即日' : isJa ? '標準3-5営業日・特急即日' : 'Standard 3-5 days · Rush same-day')} />
+            </div>
+            {/* Quality 認證 */}
+            <div className="group bg-white border border-[#E5E7EB] rounded-2xl p-4 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-[3px] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+              <span className="w-9 h-9 rounded-[10px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8L6 11L13 4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="8" cy="8" r="6.5" stroke="#fff" strokeWidth="1.5" fill="none"/>
+                </svg>
+              </span>
+              <DecisionCard text={categorySlug === 'stickers' ? (isZh ? 'ISO 9001 工廠・FSC 認證紙' : isJa ? 'ISO 9001 工廠・FSC 認證紙' : 'ISO 9001 factory · FSC-certified paper') : (isZh ? 'ISO 9001 工廠・FSC 認證紙' : isJa ? 'ISO 9001 工場・FSC認証紙' : 'ISO 9001 factory · FSC-certified paper')} />
+            </div>
+          </div>
+
+          {/* CTA 行 - WhatsApp 链接 */}
+          <a
+            href="https://wa.me/8619880851334?text=Hi%20ZprintPro%2C%20I%20need%20a%20quote"
+            className="mt-3 inline-flex items-center text-sm font-semibold text-[#2873F5] hover:text-[#1E5FD1] hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="mr-1">
+              <path d="M8 1C4.1 1 1 4.1 1 8c0 1.3 0.3 2.5 0.9 3.6L1 15l3.5-0.9C5.6 14.6 6.8 15 8 15c3.9 0 7-3.1 7-7s-3.1-7-7-7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            </svg>
+            {isZh ? 'WhatsApp 2 小時內報價回覆 →' : isJa ? 'WhatsApp 2時間以内見積返信 →' : 'WhatsApp quote reply within 2 hours →'}
+          </a>
+        </div>
+
+        {/* ===== 核心竞争优势 ===== */}
+        {data.coreAdvantages && (
+          <div className="mb-12 scroll-mt-24" id="sec-advantages">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
+              {data.coreAdvantages.title || t.coreAdvantages}
+            </h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {data.coreAdvantages.items.map((item, idx) => (
+                <div key={idx} className="bg-white border border-[#E5E7EB] rounded-2xl p-5 md:p-6 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+                  <h4 className="text-base md:text-lg font-extrabold tracking-tight text-[#111827] mb-3">
+                    {item.heading}
+                  </h4>
+                  <ul className="space-y-2">
+                    {item.points.map((point, pidx) => (
+                      <li key={pidx} className="flex items-start gap-2 text-gray-600 text-sm md:text-base leading-relaxed">
+                        <span className="text-[#F87314] mt-1 flex-shrink-0">●</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        
+        {/* ===== 材质工艺详解表格 ===== */}
+        {data.materialTable && (
+          <div className="mb-12 scroll-mt-24" id="sec-materials">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
+              {data.materialTable.title || t.materialTable}
+            </h3>
+            </div>
+            {data.materialTable.subtitle && (
+              <p className="text-gray-500 mb-4 text-sm md:text-base pl-5">{data.materialTable.subtitle}</p>
+            )}
+            <div className="overflow-x-auto rounded-xl border border-gray-200 -mx-1 sm:mx-0">
+              <table className="w-full min-w-[520px] sm:min-w-0 text-xs sm:text-sm md:text-base">
+                <thead>
+                  <tr className="text-white" style={{ background: 'linear-gradient(165deg, #244780 0%, #1B3163 52%, #152649 100%)' }}>
+                    {data.materialTable.columns.map((col, idx) => (
+                      <th key={idx} className="text-left px-3 sm:px-4 py-2.5 sm:py-3 font-semibold whitespace-normal md:whitespace-nowrap align-top">
+                        {col}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.materialTable.rows.map((row, idx) => (
+                    <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                      <td className="px-3 sm:px-4 py-2.5 sm:py-3 font-medium text-gray-900 align-top break-words max-w-[9rem] sm:max-w-none">{row.material}</td>
+                      <td className="px-3 sm:px-4 py-2.5 sm:py-3 text-gray-600 align-top break-words">{row.features}</td>
+                      <td className="px-3 sm:px-4 py-2.5 sm:py-3 text-gray-600 align-top break-words">{row.scenarios}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+        
+        {/* ===== 特殊加工选项 ===== */}
+        {data.specialOptions && (
+          <div className="mb-12 scroll-mt-24" id="sec-options">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
+              {data.specialOptions.title || t.specialOptions}
+            </h3>
+            </div>
+            <p className="text-gray-500 text-sm pl-5 mb-6">
+              {isZh
+                ? '以下為本類目最常用的特殊加工選項，前兩項為最推薦工藝。'
+                : isJa
+                ? '以下は本カテゴリで最も使用される特殊加工オプションです。最初の2つが最もおすすめです。'
+                : 'Below are the most popular finishing options for this category. The first two are most recommended.'}
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {data.specialOptions.items.map((item, idx) => (
+                <div key={idx} className={`bg-white rounded-xl border p-5 hover:shadow-md transition-shadow relative ${
+                  idx === 0 ? 'border-[#2873F5] ring-1 ring-[#2873F5]/20' :
+                  idx === 1 ? 'border-[#2873F5]/50' :
+                  'border-gray-200'
+                }`}>
+                  {idx === 0 && (
+                    <span className="absolute -top-2.5 left-4 inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#2873F5] text-white shadow-sm">
+                      {isZh ? '最推薦' : isJa ? 'おすすめ' : 'Top Pick'}
+                    </span>
+                  )}
+                  {idx === 1 && (
+                    <span className="absolute -top-2.5 left-4 inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#F87314] text-white shadow-sm">
+                      {isZh ? '推薦' : isJa ? '推奨' : 'Recommended'}
+                    </span>
+                  )}
+                  <h4 className={`font-semibold mb-2 ${idx === 0 ? 'text-[#2873F5]' : 'text-gray-900'} ${idx < 2 ? 'mt-1' : ''}`}>
+                    {item.name}
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                  {/* Scene relevance hint for top 2 */}
+                  {idx < 2 && (
+                    <p className="mt-3 text-[11px] text-gray-400 italic">
+                      {isZh
+                        ? idx === 0 ? '85% 客戶選擇此工藝' : '62% 高階訂單採用'
+                        : isJa
+                        ? idx === 0 ? '85%のお客様が選択' : '62%の高級注文で採用'
+                        : idx === 0 ? 'Chosen by 85% of customers' : 'Used in 62% of premium orders'}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        
+        {/* ===== 技术参数 ===== */}
+        {data.techSpecs && (
+          <div className="mb-12 scroll-mt-24" id="sec-specs">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
+              {data.techSpecs.title || t.techSpecs}
+            </h3>
+            </div>
+            <div className="bg-white border border-[#E5E7EB] rounded-2xl p-5 md:p-6 space-y-3">
+              {data.techSpecs.items.map((spec, idx) => (
+                <div key={idx} className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
+                  <span className="font-semibold text-gray-900 sm:w-28 flex-shrink-0">{spec.label}</span>
+                  <span className="text-gray-600 text-sm md:text-base">{spec.value}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        
+        {/* ===== 本地化服务节点 ===== */}
+        {data.serviceNodes && (
+          <div className="mb-12 scroll-mt-24" id="sec-nodes">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
+              {data.serviceNodes.title || t.serviceNodes}
+            </h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {data.serviceNodes.items.map((node, idx) => (
+                <div key={idx} className="bg-white rounded-2xl border border-[#E5E7EB] border-t-[3px] border-t-[#F87314] p-5 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+                  <h4 className="font-semibold text-[#2873F5] mb-2">{node.title}</h4>
+                  <p className="text-gray-600 text-sm leading-relaxed">{node.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        
+        {/* ===== 选购指南 ===== */}
+        {data.buyingGuide && (
+          <div className="mb-12">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
+              {data.buyingGuide.title || t.buyingGuide}
+            </h3>
+            </div>
+            <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none text-gray-600 space-y-3 sm:space-y-4">
+              {data.buyingGuide.paragraphs.map((p, idx) => (
+                <p key={idx} className="leading-relaxed text-sm sm:text-base break-words">{p}</p>
+              ))}
+            </div>
+            {data.buyingGuide.links && data.buyingGuide.links.filter((l) => guideLinkExists(l.href)).length > 0 && (
+              <div className="mt-5 flex flex-wrap gap-2 sm:gap-3">
+                {data.buyingGuide.links.filter((l) => guideLinkExists(l.href)).map((link, idx) => (
+                  <Link
+                    key={idx}
+                    href={link.href}
+                    className="inline-flex items-center rounded-full border border-[#2873F5]/40 px-3 py-1 text-sm text-[#2873F5] hover:bg-[#2873F5] hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+        
+        {/* ===== FAQ 区域 ===== */}
+        {data.faq && data.faq.length > 0 && (
+          <div className="mb-2 scroll-mt-24" id="sec-faq">
+          <div className="bg-white rounded-2xl border border-[#E5E7EB] p-4 sm:p-6 md:p-8">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-6">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
+              {t.faqTitle}
+              </h3>
+            </div>
+            <div className="space-y-3 sm:space-y-4">
+              {data.faq.map((item, index) => (
+                <details
+                  key={index}
+                  className="group bg-white rounded-xl border border-[#E5E7EB] overflow-hidden transition-colors open:border-[#2873F5]/40"
+                >
+                  <summary className="flex items-start gap-3 p-3.5 sm:p-4 cursor-pointer hover:bg-gray-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
+                    <span className="min-w-0 flex-1 text-left font-medium text-gray-900 text-sm sm:text-base leading-snug break-words">
+                      {item.q}
+                    </span>
+                    <span className="text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 mt-0.5">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-600 text-sm md:text-base leading-relaxed">
+                    {item.a}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+          </div>
+        )}
+
+        {/* 2026-08-19 R3 5 件套: Last Updated 时间戳 (Freshness signal for GSC) */}
+        {data.lastUpdated && (
+          <p className="mt-10 pt-4 border-t border-gray-200 text-xs text-gray-500">
+            最後更新 / Last updated / 最終更新: <time dateTime={data.lastUpdated}>{data.lastUpdated}</time> · 智印港 ZprintPro
+          </p>
+        )}
+      </div>
+    </section>
+  );
+}

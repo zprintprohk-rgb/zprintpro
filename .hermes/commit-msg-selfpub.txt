@@ -1,0 +1,44 @@
+feat(blog): 队列 P0 第 2 篇 Self-Publishing 三语上线 (承接 books 类目 5 SKU) — 按 K3 (B) 方案交付
+
+队列依据: v10 §四.2「P0 三篇 en blog」第 2 篇 (Candle/Soap 标签 → Self-Publishing → Etsy 小批量包装)
+          docs/2026-09-17-k3-directive-v10-outbound-masterplan-v2.md §四.2
+          v10 强制四要素已齐: v5.1 快速答案块 (AEO) + FAQPage (渲染层自动) + 低 MOQ/快样品/透明工厂段 + PLP/SKU 内链
+
+承接 SKU: perfect-bound-books / hardcover-books / saddle-stitch-booklets / spiral-notebooks / catalog-printing
+slug: self-publishing-printing-guide | 3 locale native | categoryKey: printing
+
+★ 为何三语一次交付 (K3 2026-09-18 拍板 (B)):
+  侦察确认架构不允许「只上 en」—— ① BlogPostMeta.title/excerpt 型别是 Record<Locale,string> 强制三语齐备;
+  ② generate-sitemap.js:106 对每个已注册 slug 无条件发射三语 URL + 三语 hreflang;
+  ③ 实测全站 100 条 meta 中 0 例外 (无任何 slug 存在某语系无 content 的状态)。
+  ⇒ 只注册 en 会同时产出 zh-hk/ja 两个空 body 页并被 sitemap 收录 + hreflang 谎报。
+  K3 裁决: en 先写、三语齐备后一次性交付 (不为早几天上线去改强类型或 sitemap 机制)。
+
+独立复算 (交付层自写量测, 不采信写手自检):
+  zh-hk  title 54 / desc 157 / QA 3-3 / FAQ 4 / 表 2 / CTA 3 / 内链 11
+  en     title 55 / desc 156 / QA 3-3 / FAQ 4 / 表 2 / CTA 3 / 内链 11
+  ja     title 57 / desc 156 / QA 3-3 / FAQ 4 / 表 2 / CTA 3 / 内链 11
+  快速答案块引语逐字正确 (zh-hk「快速答案：」/ en「Quick Answer: 」/ ja「クイック回答：」) — 即渲染层 qa-answer 样式识别字面
+  FAQ 全匹配可解析正则 | <img>/<figure>/<script>/JSON-LD 三语均 0 | 竞品对比 0 | 承诺语气 0 | GSC 黑话 0
+  品牌分层: zh-hk 仅 智印港 / en·ja 仅 ZprintPro; 智印印港 0; 双品牌 0
+  数字对等: 两语稿所有数字都在 en 稿内, en 无数字被丢, 新造数字 0
+
+事实纪律 (§0.23):
+  products.ts books 类目 5 SKU 真实字段 (minQuantity 100 / HK$16-80 / 40-240 / 6-32 / 8-40 / 2.8-1000) 照引
+  线上 PDP Price Ladder 实测核对: US$2.08/pc @100 · batch US$207.94 · 0.66(500) · 0.36(1,000) · 0.20(2,000) · 0.18(3,000) · 0.14(5,000) · 0.11(10,000)
+  MOQ 双口径按 K3 2026-09-18 业务口径处置: 「1 copy / 无最低起订」与「产品页 100」分别标源、**不调和**, 并保留「请确认哪个口径适用于你的规格」
+  写手主动弃用 7 个冲突/不可证实数字 (硬壳 $0.64-1.28 与 products.ts 冲突 / 2.3-day dispatch / 95%+ color accuracy / ISO 12647 等)
+  争议的骑马钉 50 vs 100 MOQ → 两个数字都不写
+
+机器验收:
+  门童汇总 red 51 = 基线 (未新增) | 门童 #20 存量基线 120 不变 | #15 blog-data 3 JSON 严格校验全过
+  tsc 54 = 54 (blog-posts.ts 无 @ts-nocheck, 本次注册受类型闸门真实覆盖, 0 blog-posts 错误)
+  scan-simplified 无残留 | encoding 通过
+  sitemap: blog 110 → 111, 总 732 URL, 三语各 +10 行 (1 loc + 4 hreflang), IndexNow 已 ping 三语
+
+交付工序 (§12 危险写入三件套: 备份 + 计数断言 + 形状断言, 断言未过不写盘):
+  注入 (91 → 92 键 × 3 locale, 写后复验) → 注册 (数组 109 → 110, 幂等 + 前后计数断言)
+  → 门童 → tsc → sitemap → commit → push → 线上探针
+
+★ 本轮不含 (另单处理): daily-content cron 遗留的 3 个未提交 src 文件
+  (print-method-policy.ts + product/[slug]/page.tsx + CategoryProductCard.tsx) —— 非本任务产物, 按要求精确路径 stage, 未扫入

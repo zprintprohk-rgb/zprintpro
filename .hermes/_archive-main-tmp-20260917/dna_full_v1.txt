@@ -1,0 +1,80 @@
+V20.9 DNA Verify Report (2026-08-17 01:59)
+Threshold: avg >= 7.0, any dim < 6.0 = REJECT
+================================================================================
+
+## BC-001 / angle
+  zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle_cand3.jpg: avg=7.12 → REJECT
+    v1_phash=3.85 v2_palette=8.07 v3_craft=6.68 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [3.85]
+  zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle_cand1.jpg: avg=7.08 → REJECT
+    v1_phash=4.0 v2_palette=9.06 v3_craft=5.36 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [4.0, 5.36]
+  zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle_cand2.jpg: avg=6.46 → REJECT
+    v1_phash=4.6 v2_palette=7.03 v3_craft=6.68 v4_ratio=4.0 v5_scene=10
+    ! hard threshold: [4.6, 4.0]
+
+## BC-001 / hero
+  zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand1.jpg: avg=8.41 → PASS ★ BEST
+    v1_phash=7.15 v2_palette=8.87 v3_craft=6.04 v4_ratio=10.0 v5_scene=10
+  zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand3.jpg: avg=8.12 → REJECT
+    v1_phash=5.7 v2_palette=8.29 v3_craft=6.63 v4_ratio=10.0 v5_scene=10
+    ! hard threshold: [5.7]
+  zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand2.jpg: avg=7.87 → REJECT
+    v1_phash=5.35 v2_palette=7.99 v3_craft=6.0 v4_ratio=10.0 v5_scene=10
+    ! hard threshold: [5.35]
+
+## BC-001 / spread
+  zprintpro-greeting-cards-premium-greeting-cards-en-spread_cand3.jpg: avg=7.26 → REJECT
+    v1_phash=4.3 v2_palette=8.63 v3_craft=6.37 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [4.3]
+  zprintpro-greeting-cards-premium-greeting-cards-en-spread_cand2.jpg: avg=6.81 → REJECT
+    v1_phash=3.15 v2_palette=9.11 v3_craft=4.77 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [3.15, 4.77]
+  zprintpro-greeting-cards-premium-greeting-cards-en-spread_cand1.jpg: avg=5.67 → REJECT
+    v1_phash=3.65 v2_palette=8.87 v3_craft=3.84 v4_ratio=2.0 v5_scene=10
+    ! avg 5.672 < 6.0
+
+## BC-001 / variety
+  zprintpro-greeting-cards-premium-greeting-cards-en-variety_cand1.jpg: avg=7.17 → REJECT
+    v1_phash=4.0 v2_palette=8.1 v3_craft=6.73 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [4.0]
+  zprintpro-greeting-cards-premium-greeting-cards-en-variety_cand3.jpg: avg=6.72 → REJECT
+    v1_phash=4.2 v2_palette=5.69 v3_craft=6.69 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [4.2, 5.69]
+  zprintpro-greeting-cards-premium-greeting-cards-en-variety_cand2.jpg: avg=5.47 → REJECT
+    v1_phash=3.55 v2_palette=0 v3_craft=6.81 v4_ratio=7.0 v5_scene=10
+    ! avg 5.4719999999999995 < 6.0
+
+## ST-001 / angle
+  zprintpro-stickers-waterproof-stickers-en-multi-angle_cand3.jpg: avg=7.78 → REJECT
+    v1_phash=3.85 v2_palette=8.27 v3_craft=6.78 v4_ratio=10.0 v5_scene=10
+    ! hard threshold: [3.85]
+  zprintpro-stickers-waterproof-stickers-en-multi-angle_cand1.jpg: avg=7.38 → REJECT
+    v1_phash=3.6 v2_palette=9.5 v3_craft=6.81 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [3.6]
+  zprintpro-stickers-waterproof-stickers-en-multi-angle_cand2.jpg: avg=7.09 → REJECT
+    v1_phash=2.95 v2_palette=5.71 v3_craft=6.79 v4_ratio=10.0 v5_scene=10
+    ! hard threshold: [2.95, 5.71]
+
+## ST-001 / hero
+  zprintpro-stickers-waterproof-stickers-en-hero_cand3.jpg: avg=7.58 → REJECT
+    v1_phash=4.2 v2_palette=6.8 v3_craft=6.9 v4_ratio=10.0 v5_scene=10
+    ! hard threshold: [4.2]
+  zprintpro-stickers-waterproof-stickers-en-hero_cand1.jpg: avg=7.24 → REJECT
+    v1_phash=4.35 v2_palette=7.94 v3_craft=6.92 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [4.35]
+  zprintpro-stickers-waterproof-stickers-en-hero_cand2.jpg: avg=7.12 → REJECT
+    v1_phash=5.55 v2_palette=6.28 v3_craft=6.77 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [5.55]
+
+## ST-001 / variety
+  zprintpro-stickers-waterproof-stickers-en-variety_cand2.jpg: avg=7.93 → REJECT
+    v1_phash=5.2 v2_palette=7.94 v3_craft=6.5 v4_ratio=10.0 v5_scene=10
+    ! hard threshold: [5.2]
+  zprintpro-stickers-waterproof-stickers-en-variety_cand3.jpg: avg=7.9 → REJECT
+    v1_phash=4.65 v2_palette=8.12 v3_craft=6.75 v4_ratio=10.0 v5_scene=10
+    ! hard threshold: [4.65]
+  zprintpro-stickers-waterproof-stickers-en-variety_cand1.jpg: avg=6.6 → REJECT
+    v1_phash=4.35 v2_palette=4.98 v3_craft=6.68 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [4.35, 4.98]
+
