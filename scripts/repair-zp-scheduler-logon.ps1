@@ -94,7 +94,8 @@ foreach ($name in $targets) {
   $settings = $task.Settings
   $settings.StartWhenAvailable = $true
   $settings.RestartCount = 2
-  $settings.RestartInterval = [TimeSpan]::FromMinutes(5)
+  # Keep XSD duration text. A TimeSpan serializes as 00:10:00 and triggers 0x80041318.
+  $settings.RestartInterval = 'PT10M'
   $settings.MultipleInstances = [Microsoft.PowerShell.Cmdletization.GeneratedTypes.ScheduledTask.MultipleInstancesEnum]::IgnoreNew
   Set-ScheduledTask -TaskName $name -Principal $principal -Settings $settings | Out-Null
   Write-Output "UPDATED $name : LogonType=S4U StartWhenAvailable=True"

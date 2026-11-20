@@ -1,0 +1,371 @@
+{
+  "metadata": {
+    "2026-09-29": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-09-29.xlsx",
+      "sheet": "查询数",
+      "rows": 1000,
+      "columns": [
+        "热门查询",
+        "点击次数",
+        "展示",
+        "点击率",
+        "排名"
+      ]
+    },
+    "2026-11-19": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-19.xlsx",
+      "sheet": "查询数",
+      "rows": 1000,
+      "columns": [
+        "热门查询",
+        "点击次数",
+        "展示",
+        "点击率",
+        "排名"
+      ]
+    }
+  },
+  "terms": [
+    {
+      "term": "海報印刷",
+      "2026-09-29": {
+        "query": "海報印刷",
+        "clicks": 2.0,
+        "impressions": 161.0,
+        "ctr": 0.0124,
+        "position": 19.42,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "海報印刷",
+        "clicks": 1.0,
+        "impressions": 186.0,
+        "ctr": 0.0054,
+        "position": 20.37,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "海報印刷即日",
+      "2026-09-29": {
+        "query": "海報印刷即日",
+        "clicks": 1.0,
+        "impressions": 2.0,
+        "ctr": 0.5,
+        "position": 14.5,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "海報印刷即日",
+        "clicks": 1.0,
+        "impressions": 32.0,
+        "ctr": 0.031200000000000002,
+        "position": 9.53,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "海報印刷一張",
+      "2026-09-29": {
+        "query": "海報印刷一張",
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position": 10.29,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "海報印刷一張",
+        "clicks": 0.0,
+        "impressions": 24.0,
+        "ctr": 0.0,
+        "position": 3.71,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "a1 印刷 即日",
+      "2026-09-29": {
+        "query": "a1 印刷 即日",
+        "clicks": 0.0,
+        "impressions": 22.0,
+        "ctr": 0.0,
+        "position": 7.05,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "a1 印刷 即日",
+        "clicks": 0.0,
+        "impressions": 27.0,
+        "ctr": 0.0,
+        "position": 5.19,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "a2 印刷 即日",
+      "2026-09-29": {
+        "query": "a2 印刷 即日",
+        "clicks": 3.0,
+        "impressions": 10.0,
+        "ctr": 0.3,
+        "position": 2.9,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "a2 印刷 即日",
+        "clicks": 0.0,
+        "impressions": 26.0,
+        "ctr": 0.0,
+        "position": 5.92,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "a2 poster",
+      "2026-09-29": {
+        "query": "a2 poster",
+        "clicks": 0.0,
+        "impressions": 33.0,
+        "ctr": 0.0,
+        "position": 21.24,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "a2 poster",
+        "clicks": 1.0,
+        "impressions": 44.0,
+        "ctr": 0.0227,
+        "position": 43.39,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "poster printing",
+      "2026-09-29": {
+        "query": "poster printing",
+        "clicks": 0.0,
+        "impressions": 6.0,
+        "ctr": 0.0,
+        "position": 45.67,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "poster printing",
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position": 20.5,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "即日印刷",
+      "2026-09-29": {
+        "query": "即日印刷",
+        "clicks": 2.0,
+        "impressions": 55.0,
+        "ctr": 0.0364,
+        "position": 8.73,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "即日印刷",
+        "clicks": 2.0,
+        "impressions": 55.0,
+        "ctr": 0.0364,
+        "position": 8.58,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "貼紙印刷",
+      "2026-09-29": {
+        "query": "貼紙印刷",
+        "clicks": 0.0,
+        "impressions": 190.0,
+        "ctr": 0.0,
+        "position": 24.72,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "貼紙印刷",
+        "clicks": 0.0,
+        "impressions": 179.0,
+        "ctr": 0.0,
+        "position": 29.94,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "透明貼紙印刷",
+      "2026-09-29": {
+        "status": "NO_CURRENT_BASELINE"
+      },
+      "2026-11-19": {
+        "query": "透明貼紙印刷",
+        "clicks": 0.0,
+        "impressions": 18.0,
+        "ctr": 0.0,
+        "position": 6.78,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "可移貼紙",
+      "2026-09-29": {
+        "query": "可移貼紙",
+        "clicks": 0.0,
+        "impressions": 42.0,
+        "ctr": 0.0,
+        "position": 15.21,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "可移貼紙",
+        "clicks": 0.0,
+        "impressions": 71.0,
+        "ctr": 0.0,
+        "position": 12.62,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "戶外可移貼紙",
+      "2026-09-29": {
+        "status": "NO_CURRENT_BASELINE"
+      },
+      "2026-11-19": {
+        "query": "戶外可移貼紙",
+        "clicks": 0.0,
+        "impressions": 23.0,
+        "ctr": 0.0,
+        "position": 10.04,
+        "status": "OBSERVED"
+      }
+    },
+    {
+      "term": "small batch sticker printing",
+      "2026-09-29": {
+        "query": "small batch sticker printing",
+        "clicks": 0.0,
+        "impressions": 66.0,
+        "ctr": 0.0,
+        "position": 6.41,
+        "status": "OBSERVED"
+      },
+      "2026-11-19": {
+        "query": "small batch sticker printing",
+        "clicks": 0.0,
+        "impressions": 13.0,
+        "ctr": 0.0,
+        "position": 8.92,
+        "status": "OBSERVED"
+      }
+    }
+  ],
+  "clusters": [
+    {
+      "cluster": "poster",
+      "2026-09-29": {
+        "queries_observed": 110,
+        "clicks": 7.0,
+        "impressions": 906.0
+      },
+      "2026-11-19": {
+        "queries_observed": 102,
+        "clicks": 5.0,
+        "impressions": 1080.0
+      }
+    },
+    {
+      "cluster": "sticker",
+      "2026-09-29": {
+        "queries_observed": 99,
+        "clicks": 2.0,
+        "impressions": 979.0
+      },
+      "2026-11-19": {
+        "queries_observed": 82,
+        "clicks": 4.0,
+        "impressions": 1071.0
+      }
+    },
+    {
+      "cluster": "rush_same_day",
+      "2026-09-29": {
+        "queries_observed": 27,
+        "clicks": 7.0,
+        "impressions": 251.0
+      },
+      "2026-11-19": {
+        "queries_observed": 23,
+        "clicks": 4.0,
+        "impressions": 259.0
+      }
+    },
+    {
+      "cluster": "catalog_book",
+      "2026-09-29": {
+        "queries_observed": 44,
+        "clicks": 1.0,
+        "impressions": 766.0
+      },
+      "2026-11-19": {
+        "queries_observed": 43,
+        "clicks": 0.0,
+        "impressions": 883.0
+      }
+    },
+    {
+      "cluster": "packaging",
+      "2026-09-29": {
+        "queries_observed": 43,
+        "clicks": 0.0,
+        "impressions": 587.0
+      },
+      "2026-11-19": {
+        "queries_observed": 31,
+        "clicks": 1.0,
+        "impressions": 623.0
+      }
+    },
+    {
+      "cluster": "flyer_leaflet",
+      "2026-09-29": {
+        "queries_observed": 51,
+        "clicks": 2.0,
+        "impressions": 457.0
+      },
+      "2026-11-19": {
+        "queries_observed": 45,
+        "clicks": 1.0,
+        "impressions": 558.0
+      }
+    }
+  ],
+  "workbook_sheets": {
+    "2026-09-29": {
+      "sheets": [
+        "图表",
+        "查询数",
+        "网页",
+        "国家_地区",
+        "设备",
+        "搜索结果呈现",
+        "过滤器"
+      ]
+    },
+    "2026-11-19": {
+      "sheets": [
+        "图表",
+        "查询数",
+        "网页",
+        "国家_地区",
+        "设备",
+        "搜索结果呈现",
+        "过滤器"
+      ]
+    }
+  }
+}
