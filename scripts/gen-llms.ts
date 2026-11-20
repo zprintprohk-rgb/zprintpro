@@ -96,7 +96,7 @@ const LOCALES: LocaleCfg[] = [
     name: p => clean(p.nameEn),
     catName: c => (c.name_en || c.nameEn).split('/')[0].trim(),
     price: p => (p.basePrice_en != null ? `US$ ${p.basePrice_en}` : `HK$ ${p.basePrice}`),
-    header: `# ZprintPro (English) — AI Search Optimization Page
+    header: `# ZprintPro智印港 (English) — AI Search Optimization Page
 # Last updated: ${DATE} (auto-generated from src/data/products.ts — do not hand-edit)
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services`,
     companyInfo: `## Company Information
@@ -152,7 +152,7 @@ A: Bank transfer, WeChat Pay, Alipay, PayPal (coming soon).`,
     name: p => clean(p.nameJa),
     catName: c => (c.name_ja || c.nameJa).split('/')[0].trim(),
     price: p => (p.basePrice_ja != null ? `¥ ${p.basePrice_ja}` : `HK$ ${p.basePrice}`),
-    header: `# ZprintPro (ジープリント) 日本向け — AI検索最適化ページ
+    header: `# ZprintPro智印港 (ジープリント) 日本向け — AI検索最適化ページ
 # Last updated: ${DATE} (auto-generated from src/data/products.ts — do not hand-edit)
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services`,
     companyInfo: `## 会社情報
@@ -208,7 +208,7 @@ A: 銀行振込、WeChat Pay、Alipay、PayPal (近日対応予定)。`,
     name: p => clean(p.name_zh || p.name),
     catName: c => (c.name_zh || c.name).split('/')[0].trim(),
     price: p => `HK$ ${p.basePrice}`,
-    header: `# 智印港 (香港) — AI 搜尋優化頁面
+    header: `# ZprintPro智印港 (香港) — AI 搜尋優化頁面
 # Last updated: ${DATE} (auto-generated from src/data/products.ts — do not hand-edit)
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services`,
     companyInfo: `## 公司資訊

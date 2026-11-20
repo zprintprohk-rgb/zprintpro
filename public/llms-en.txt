@@ -1,4 +1,4 @@
-# ZprintPro (English) — AI Search Optimization Page
+# ZprintPro智印港 (English) — AI Search Optimization Page
 # Last updated: 2026-09-21 (auto-generated from src/data/products.ts — do not hand-edit)
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services
 

@@ -117,7 +117,11 @@ async function scan(files) {
     // 2026-09-13 K3 拍板: 一次性英文括注「智印港（ZprintPro）」**保留**(实体消歧别名用法, 与 6/17 alternateName 同源)
     //   -> 扫描前先剔除该形态, 不再计入品牌违规 (T1b 8 处的正式豁免)
     const GLOSS = /智印港\s*[（(]\s*ZprintPro\s*[）)]|ZprintPro\s*[（(]\s*智印港\s*[）)]|ジープリント\s*[（(]\s*ZprintPro\s*[）)]/g;
-    const scanContent = content.replace(GLOSS, (m) => '　'.repeat(m.length));
+    // 2026-11-20 K3 拍板: 实体对外统一名「ZprintPro智印港」为正式实体写法 (AI 实体文件/目录/商家档案/llms 一致使用),
+    //   与 2026-09-13「智印港（ZprintPro）」括注同理: 扫描前剔除, 不计双品牌违规;
+    //   旧双品牌形态 (带空格/其它组合) 仍由 BRAND_DOUBLE / BRAND_LOCALE_MISMATCH 拦截。
+    const ENTITY_NAME = /ZprintPro智印港/g;
+    const scanContent = content.replace(GLOSS, (m) => '　'.repeat(m.length)).replace(ENTITY_NAME, (m) => '　'.repeat(m.length));
 
     for (const rule of RULES) {
       // BRAND_LOCALE_MISMATCH 走 locale 作用域自定义检查 (逐字面扫描在多语言文件上必然误报)

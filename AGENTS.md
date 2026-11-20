@@ -810,6 +810,19 @@ hermes --global-memory -q "对比 zprintpro 和 stock-lab 的术语习惯"
 
 **配套**: §0.23.1 (GSC 数据只进内部文档) · §0.23.2 (双方法复算) · 双引擎策略 §2.1 (聚合范围纪律)。
 
+## §0.38 抄站战争（hkprint58 鑫印吧）防御姿态 + AI Bots 权衡 (K3 2026-10-16 启动, 2026-11-04 R1 收口, 跨会话强制级)
+
+> **SSoT**: `docs/2026-11-04-scraper-war-r1-cpu-causality-dmca-package.md`（R1 决策包）· 前置 = `docs/2026-10-16-anti-scrape-hardening.md` + `docs/2026-10-16-hkprint58-vs-zprintpro-forensics-checklist.md` + `docs/evidence/2026-10-16-hkprint58/`（证据原件库）
+
+**已固化的执行口径（任何执行层适用）**:
+1. **指纹体系**: 页脚 `ZP-OC-2610` + 8 档号 `ZPQC-2610-*`（SSoT = `src/data/copy-fingerprints.ts`）；**每月轮换** `node scripts/rotate-copy-fingerprint.mjs --apply`（待接入 monthly-matrix 车道，拍板件）；周检 SOP = `docs/2026-10-16-hkprint58-vs-zprintpro-forensics-checklist.md` §5，结果追加 `.hermes/logs/hkprint58-monitor.jsonl`（首检 2026-11-04：指纹 0 命中对方、逐字句仍在对方索引）。
+2. **CF 三防线（10-16 17:06 上线，7f1a283e）**: BFM on + AI Bots Protection=block + WAF scraper UA 拦截 + 限速 v2（/category/+/product/ 20/10s）。11-04 复测：UA 拦截/AI block 在位；**限速规则在位性存疑（/en 25 连发零拦截）→ 待 K3 Dashboard 复核**。
+3. **CPU 超限因果终判（11-04）**: 10-15 ≥1,000/日 = 结构性 SSR × 全体爬虫（含鑫印吧 8-28~10-13 周期抓取）；**10-29 / 11-03 各 ≥100/日 ≠ 鑫印吧**（其 sitemap lastmod 封顶 10-13、指纹 0 命中 = 防线后未再抓）；剩余 = Googlebot/合法爬虫 + 真人 + 结构性 SSR → **根治仍 = Workers Paid + HTML Cache Rules（§0.25 攒批外 K3 付款件，持续未决）**。
+4. **AI Bots Protection=block 的 AEO 权衡（K3 已记录）**: verified AI bots 走 IP 验证不可仿冒 → 拦截对反爬零增益、对 §0.36 W4（Perplexity/ChatGPT 引用线）为净损失；Google AI Overviews（Googlebot）与 Bing Copilot（Bingbot）不受影响。**复原触发器 = DMCA 提交落定或 K3 一句话**，恢复 allow verified AI bots；恢复前 W4 探针把 Perplexity 通道记「平台侧不可达」，不误判为内容问题。robots.txt 的 AI 放行声明与边缘 403 的矛盾以此条为准。
+5. **品牌词事实（11-04 翻转）**: 对方 live 渲染「智印港」+ ZprintPro（每页导航 ×4）+ /en/brand 整段我方品牌叙事 + logo-zhiyingang.png —— **商标位 = 现行证据**（非备用）；对外表述仍只写「抄袭 + 品牌字样使用」，禁身份推断（§0.23）。
+6. **DMCA 阶梯**: 摊牌 → Google 版权移除（表单文本见 R1 决策包 §6.2，提交 = K3 真人动作）→ 注册商/主机 abuse（DomainAbuse@service.aliyun.com + 西部数码）→ 商标线（已具备现行证据）。周检命中处置 = 截图→SPN 固定→jsonl→当日报 K3。
+7. **红线**: 反爬取证只做被动抓取（公开页面/公开索引），禁止任何主动攻击；竞站 URL/文案引用只进内部文档（.hermes/ docs/ evidence/），禁入客户可见内容（§0.23.1 同族）。
+
 <!-- autoclaw:skill-path-guidance -->
 ## Installing Skills
 
@@ -2887,3 +2900,15 @@ When the user asks about Feishu/Lark/飞书 matters, route through Feishu/Lark s
 3. If you find a matching skill that is not installed or enabled, ask the user whether to install/enable and use it before proceeding.
 4. If no matching skill exists, say so briefly and continue with the safest available fallback.
 <!-- /autoclaw:feishu-lark-skill-guidance -->
+
+---
+
+## §0.39 实体对外统一名 ZprintPro智印港 (K3 2026-11-20 拍板，跨会话强制级)
+
+> **K3 原话**: 「这些要全部变成 ZprintPro智印港」（针对 2026-11-20 实体面盘点：AI 概覽品牌标签 / Kompass 目录 / GBP 檔案 / llms 实体文件）。
+
+**1. 统一名（实体标识面必用）**: `ZprintPro智印港` —— 适用：`public/llms*.txt` AI 实体文件 / PWA `manifest.json` / Organization schema 实体名 / 商家檔案 (GBP) / B2B 目录 (Kompass 等) / logo 字标组合。
+**2. 旧名废止**: `智印云` / `智印雲` 全面废止，不得再现于客户可见或 AI 可见面（含 public/ 静态资产）；站内不写旧名对照声明（避免重新引入）。
+**3. 范围边界**: 站内 locale 营销文案（title/desc/正文）维持 §13.16 v2 单品牌分层不变（zh-hk=智印港 / en,ja=ZprintPro）；若 K3 后续要求全站统一，另行拍板。
+**4. 门童 #3 配套**: 扫描前剔除实体统一名（与 2026-09-13「智印港（ZprintPro）」括注豁免同机制，`brand-guard.js` ENTITY_NAME 掩码）；旧双品牌形态仍拦。
+**5. 落地记录 (2026-11-20)**: public 旧名清零 7 文件（manifest name/short_name/desc、logo.svg + logo-dark.svg 字标、blog-company-intro 图 alt/title ×4）+ llms 四份头部 + 生成器源头（llms-root-header.md / gen-llms.ts）；Kompass 两处条目与 GBP 檔案为 K3 对外手动项。

@@ -1,4 +1,4 @@
-# 智印港 (香港) — AI 搜尋優化頁面
+# ZprintPro智印港 (香港) — AI 搜尋優化頁面
 # Last updated: 2026-09-21 (auto-generated from src/data/products.ts — do not hand-edit)
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services
 

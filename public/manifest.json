@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "智印云 ZPrintPro",
-  "short_name": "ZPrintPro",
-  "description": "智印云 ZPrintPro - 全球智能印刷定制平台。AI報價、在線上傳、Airwallex支付，30秒報價72小時全球交付。",
+  "name": "ZprintPro智印港",
+  "short_name": "ZprintPro智印港",
+  "description": "ZprintPro智印港 - 全球智能印刷定制平台。AI報價、在線上傳、Airwallex支付，30秒報價72小時全球交付。",
   "start_url": "/?source=pwa",
   "display": "standalone",
   "background_color": "#ffffff",
