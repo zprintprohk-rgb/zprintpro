@@ -3424,9 +3424,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   "configs": [
     {
       "label": {
-        "zh-hk": "A4 / A5 雙面 128g 光/啞粉紙 (急件標準) 彩色 雙面",
-        "en": "A4 / A5 Double-sided 128g Gloss/Matte art paper (Rush standard) Colour Double-sided",
-        "ja": "A4 / A5 両面 128g 光沢/マットコート紙 (急ぎ標準) カラー 両面"
+        "zh-hk": "A4 · 128g 光/啞粉紙 · 雙面",
+        "en": "A4 · 128g Gloss/Matte art paper · Double-sided",
+        "ja": "A4 · 128g 光沢/マットコート紙 · 両面"
       },
       "tiers": [
         {
@@ -3477,6 +3477,50 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
           "priceUSD": 91,
           "priceJPY": 14240,
           "weightKg": null
+        }
+      ]
+    },
+    {
+      "label": {
+        "zh-hk": "A5 · 128g 光/啞粉紙 · 雙面",
+        "en": "A5 · 128g Gloss/Matte art paper · Double-sided",
+        "ja": "A5 · 128g 光沢/マットコート紙 · 両面"
+      },
+      "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 184,
+          "priceUSD": 24,
+          "priceJPY": 3680,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 267,
+          "priceUSD": 34,
+          "priceJPY": 5340,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 358,
+          "priceUSD": 46,
+          "priceJPY": 7160,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 482,
+          "priceUSD": 62,
+          "priceJPY": 9640,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 558,
+          "priceUSD": 71,
+          "priceJPY": 11160,
+          "weightKg": null
         },
         {
           "qty": 100,
@@ -3504,13 +3548,6 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
           "priceHKD": 584,
           "priceUSD": 75,
           "priceJPY": 11680,
-          "weightKg": null
-        },
-        {
-          "qty": 500,
-          "priceHKD": 800,
-          "priceUSD": 102,
-          "priceJPY": 16000,
           "weightKg": null
         }
       ]
@@ -6583,8 +6620,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         {
           "qty": 10,
           "priceHKD": 160,
-          "priceUSD": 20,
-          "priceJPY": 3200,
+          "priceUSD": 23,
+          "priceJPY": 3000,
           "weightKg": null
         },
         {
@@ -6650,108 +6687,6 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
           "priceHKD": 667,
           "priceUSD": 85,
           "priceJPY": 13340,
-          "weightKg": null
-        },
-        {
-          "qty": 100,
-          "priceHKD": 846,
-          "priceUSD": 108,
-          "priceJPY": 16920,
-          "weightKg": null
-        },
-        {
-          "qty": 200,
-          "priceHKD": 893,
-          "priceUSD": 114,
-          "priceJPY": 17860,
-          "weightKg": null
-        },
-        {
-          "qty": 300,
-          "priceHKD": 1017,
-          "priceUSD": 130,
-          "priceJPY": 20340,
-          "weightKg": null
-        }
-      ]
-    },
-    {
-      "label": {
-        "zh-hk": "A3 · 銅版紙 · 157g · 單面",
-        "en": "A3 · Art paper · 157g · Single-sided",
-        "ja": "A3 · アート紙 · 157g · 片面"
-      },
-      "tiers": [
-        {
-          "qty": 10,
-          "priceHKD": 118,
-          "priceUSD": 15,
-          "priceJPY": 2360,
-          "weightKg": null
-        },
-        {
-          "qty": 20,
-          "priceHKD": 150,
-          "priceUSD": 19,
-          "priceJPY": 3000,
-          "weightKg": null
-        },
-        {
-          "qty": 50,
-          "priceHKD": 259,
-          "priceUSD": 33,
-          "priceJPY": 5180,
-          "weightKg": null
-        },
-        {
-          "qty": 100,
-          "priceHKD": 561,
-          "priceUSD": 72,
-          "priceJPY": 11220,
-          "weightKg": null
-        },
-        {
-          "qty": 200,
-          "priceHKD": 608,
-          "priceUSD": 78,
-          "priceJPY": 12160,
-          "weightKg": null
-        },
-        {
-          "qty": 300,
-          "priceHKD": 656,
-          "priceUSD": 84,
-          "priceJPY": 13120,
-          "weightKg": null
-        }
-      ]
-    },
-    {
-      "label": {
-        "zh-hk": "A3 · 銅版紙 · 157g · 雙面",
-        "en": "A3 · Art paper · 157g · Double-sided",
-        "ja": "A3 · アート紙 · 157g · 両面"
-      },
-      "tiers": [
-        {
-          "qty": 10,
-          "priceHKD": 141,
-          "priceUSD": 18,
-          "priceJPY": 2820,
-          "weightKg": null
-        },
-        {
-          "qty": 20,
-          "priceHKD": 195,
-          "priceUSD": 25,
-          "priceJPY": 3900,
-          "weightKg": null
-        },
-        {
-          "qty": 50,
-          "priceHKD": 367,
-          "priceUSD": 47,
-          "priceJPY": 7340,
           "weightKg": null
         },
         {
@@ -6881,108 +6816,6 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A3 · 啞粉紙 · 157g · 單面",
-        "en": "A3 · Matte art paper · 157g · Single-sided",
-        "ja": "A3 · マットコート紙 · 157g · 片面"
-      },
-      "tiers": [
-        {
-          "qty": 10,
-          "priceHKD": 118,
-          "priceUSD": 15,
-          "priceJPY": 2360,
-          "weightKg": null
-        },
-        {
-          "qty": 20,
-          "priceHKD": 150,
-          "priceUSD": 19,
-          "priceJPY": 3000,
-          "weightKg": null
-        },
-        {
-          "qty": 50,
-          "priceHKD": 259,
-          "priceUSD": 33,
-          "priceJPY": 5180,
-          "weightKg": null
-        },
-        {
-          "qty": 100,
-          "priceHKD": 561,
-          "priceUSD": 72,
-          "priceJPY": 11220,
-          "weightKg": null
-        },
-        {
-          "qty": 200,
-          "priceHKD": 608,
-          "priceUSD": 78,
-          "priceJPY": 12160,
-          "weightKg": null
-        },
-        {
-          "qty": 300,
-          "priceHKD": 656,
-          "priceUSD": 84,
-          "priceJPY": 13120,
-          "weightKg": null
-        }
-      ]
-    },
-    {
-      "label": {
-        "zh-hk": "A3 · 啞粉紙 · 157g · 雙面",
-        "en": "A3 · Matte art paper · 157g · Double-sided",
-        "ja": "A3 · マットコート紙 · 157g · 両面"
-      },
-      "tiers": [
-        {
-          "qty": 10,
-          "priceHKD": 141,
-          "priceUSD": 18,
-          "priceJPY": 2820,
-          "weightKg": null
-        },
-        {
-          "qty": 20,
-          "priceHKD": 195,
-          "priceUSD": 25,
-          "priceJPY": 3900,
-          "weightKg": null
-        },
-        {
-          "qty": 50,
-          "priceHKD": 367,
-          "priceUSD": 47,
-          "priceJPY": 7340,
-          "weightKg": null
-        },
-        {
-          "qty": 100,
-          "priceHKD": 846,
-          "priceUSD": 108,
-          "priceJPY": 16920,
-          "weightKg": null
-        },
-        {
-          "qty": 200,
-          "priceHKD": 893,
-          "priceUSD": 114,
-          "priceJPY": 17860,
-          "weightKg": null
-        },
-        {
-          "qty": 300,
-          "priceHKD": 1017,
-          "priceUSD": 130,
-          "priceJPY": 20340,
-          "weightKg": null
-        }
-      ]
-    },
-    {
-      "label": {
         "zh-hk": "A2 · 銅版紙 · 250g · 單面",
         "en": "A2 · Art paper · 250g · Single-sided",
         "ja": "A2 · アート紙 · 250g · 片面"
@@ -7079,252 +6912,6 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
           "priceHKD": 1017,
           "priceUSD": 130,
           "priceJPY": 20340,
-          "weightKg": null
-        }
-      ]
-    },
-    {
-      "label": {
-        "zh-hk": "A3 · 銅版紙 · 250g · 單面",
-        "en": "A3 · Art paper · 250g · Single-sided",
-        "ja": "A3 · アート紙 · 250g · 片面"
-      },
-      "tiers": [
-        {
-          "qty": 10,
-          "priceHKD": 122,
-          "priceUSD": 16,
-          "priceJPY": 2440,
-          "weightKg": null
-        },
-        {
-          "qty": 20,
-          "priceHKD": 157,
-          "priceUSD": 20,
-          "priceJPY": 3140,
-          "weightKg": null
-        },
-        {
-          "qty": 50,
-          "priceHKD": 276,
-          "priceUSD": 35,
-          "priceJPY": 5520,
-          "weightKg": null
-        },
-        {
-          "qty": 100,
-          "priceHKD": 561,
-          "priceUSD": 72,
-          "priceJPY": 11220,
-          "weightKg": null
-        },
-        {
-          "qty": 200,
-          "priceHKD": 608,
-          "priceUSD": 78,
-          "priceJPY": 12160,
-          "weightKg": null
-        },
-        {
-          "qty": 300,
-          "priceHKD": 656,
-          "priceUSD": 84,
-          "priceJPY": 13120,
-          "weightKg": null
-        }
-      ]
-    },
-    {
-      "label": {
-        "zh-hk": "A3 · 銅版紙 · 250g · 雙面",
-        "en": "A3 · Art paper · 250g · Double-sided",
-        "ja": "A3 · アート紙 · 250g · 両面"
-      },
-      "tiers": [
-        {
-          "qty": 10,
-          "priceHKD": 149,
-          "priceUSD": 19,
-          "priceJPY": 2980,
-          "weightKg": null
-        },
-        {
-          "qty": 20,
-          "priceHKD": 209,
-          "priceUSD": 27,
-          "priceJPY": 4180,
-          "weightKg": null
-        },
-        {
-          "qty": 50,
-          "priceHKD": 400,
-          "priceUSD": 51,
-          "priceJPY": 8000,
-          "weightKg": null
-        },
-        {
-          "qty": 100,
-          "priceHKD": 846,
-          "priceUSD": 108,
-          "priceJPY": 16920,
-          "weightKg": null
-        },
-        {
-          "qty": 200,
-          "priceHKD": 893,
-          "priceUSD": 114,
-          "priceJPY": 17860,
-          "weightKg": null
-        },
-        {
-          "qty": 300,
-          "priceHKD": 1017,
-          "priceUSD": 130,
-          "priceJPY": 20340,
-          "weightKg": null
-        }
-      ]
-    },
-    {
-      "label": {
-        "zh-hk": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼",
-        "en": "A1 · PP/Eco poster (Yupo) · Single-sided · Large-format inkjet print · Excluding installation and mounting",
-        "ja": "A1 · PP/エコポスター (Yupo) · 片面 · インクジェット出力 · 設置・貼り込みなし"
-      },
-      "tiers": [
-        {
-          "qty": 1,
-          "priceHKD": 45,
-          "priceUSD": 6,
-          "priceJPY": 900,
-          "weightKg": null
-        },
-        {
-          "qty": 3,
-          "priceHKD": 116,
-          "priceUSD": 15,
-          "priceJPY": 2320,
-          "weightKg": null
-        },
-        {
-          "qty": 5,
-          "priceHKD": 167,
-          "priceUSD": 21,
-          "priceJPY": 3340,
-          "weightKg": null
-        },
-        {
-          "qty": 7,
-          "priceHKD": 213,
-          "priceUSD": 27,
-          "priceJPY": 4260,
-          "weightKg": null
-        },
-        {
-          "qty": 10,
-          "priceHKD": 290,
-          "priceUSD": 37,
-          "priceJPY": 5800,
-          "weightKg": null
-        },
-        {
-          "qty": 20,
-          "priceHKD": 580,
-          "priceUSD": 74,
-          "priceJPY": 11600,
-          "weightKg": null
-        },
-        {
-          "qty": 50,
-          "priceHKD": 1450,
-          "priceUSD": 186,
-          "priceJPY": 29000,
-          "weightKg": null
-        },
-        {
-          "qty": 100,
-          "priceHKD": 2900,
-          "priceUSD": 371,
-          "priceJPY": 58000,
-          "weightKg": null
-        },
-        {
-          "qty": 200,
-          "priceHKD": 5800,
-          "priceUSD": 743,
-          "priceJPY": 116000,
-          "weightKg": null
-        }
-      ]
-    },
-    {
-      "label": {
-        "zh-hk": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼",
-        "en": "A1 · Photo paper poster · Single-sided · Large-format inkjet print · Excluding installation and mounting",
-        "ja": "A1 · フォトペーパーポスター · 片面 · インクジェット出力 · 設置・貼り込みなし"
-      },
-      "tiers": [
-        {
-          "qty": 1,
-          "priceHKD": 56,
-          "priceUSD": 7,
-          "priceJPY": 1120,
-          "weightKg": null
-        },
-        {
-          "qty": 3,
-          "priceHKD": 144,
-          "priceUSD": 18,
-          "priceJPY": 2880,
-          "weightKg": null
-        },
-        {
-          "qty": 5,
-          "priceHKD": 207,
-          "priceUSD": 27,
-          "priceJPY": 4140,
-          "weightKg": null
-        },
-        {
-          "qty": 7,
-          "priceHKD": 265,
-          "priceUSD": 34,
-          "priceJPY": 5300,
-          "weightKg": null
-        },
-        {
-          "qty": 10,
-          "priceHKD": 360,
-          "priceUSD": 46,
-          "priceJPY": 7200,
-          "weightKg": null
-        },
-        {
-          "qty": 20,
-          "priceHKD": 720,
-          "priceUSD": 92,
-          "priceJPY": 14400,
-          "weightKg": null
-        },
-        {
-          "qty": 50,
-          "priceHKD": 1800,
-          "priceUSD": 230,
-          "priceJPY": 36000,
-          "weightKg": null
-        },
-        {
-          "qty": 100,
-          "priceHKD": 3600,
-          "priceUSD": 461,
-          "priceJPY": 72000,
-          "weightKg": null
-        },
-        {
-          "qty": 200,
-          "priceHKD": 7200,
-          "priceUSD": 922,
-          "priceJPY": 144000,
           "weightKg": null
         }
       ]
@@ -7545,9 +7132,9 @@ export const UNIT_PRICE_ANCHORS: Record<string, Record<string, { priceDisplay: s
     ja: { priceDisplay: '6.3', qty: 10, batchPrice: 2800, unitLabel: '1枚' },
   },
   'same-day-flyers': {
-    'zh-hk': { priceDisplay: '1.3', qty: 10, batchPrice: 184, unitLabel: '每張' },
-    en: { priceDisplay: '0.16', qty: 10, batchPrice: 24, unitLabel: 'per sheet' },
-    ja: { priceDisplay: '25', qty: 10, batchPrice: 3680, unitLabel: '1枚' },
+    'zh-hk': { priceDisplay: '18.4', qty: 10, batchPrice: 184, unitLabel: '每張' },
+    en: { priceDisplay: '2.4', qty: 10, batchPrice: 24, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '368', qty: 10, batchPrice: 3680, unitLabel: '1枚' },
   },
   'eco-flyers': {
     'zh-hk': { priceDisplay: '0.72', qty: 10, batchPrice: 80, unitLabel: '每張' },
@@ -7585,9 +7172,9 @@ export const UNIT_PRICE_ANCHORS: Record<string, Record<string, { priceDisplay: s
     ja: { priceDisplay: '1.6', qty: 10, batchPrice: 1380, unitLabel: '1個' },
   },
   'a2-posters': {
-    'zh-hk': { priceDisplay: '2.2', qty: 10, batchPrice: 160, unitLabel: '每張' },
-    en: { priceDisplay: '0.28', qty: 10, batchPrice: 20, unitLabel: 'per sheet' },
-    ja: { priceDisplay: '44', qty: 10, batchPrice: 3200, unitLabel: '1枚' },
+    'zh-hk': { priceDisplay: '16', qty: 10, batchPrice: 160, unitLabel: '每張' },
+    en: { priceDisplay: '2.3', qty: 10, batchPrice: 23, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '300', qty: 10, batchPrice: 3000, unitLabel: '1枚' },
   },
   'a1-posters': {
     'zh-hk': { priceDisplay: '29', qty: 1, batchPrice: 45, unitLabel: '每張' },

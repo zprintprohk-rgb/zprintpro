@@ -332,8 +332,8 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
     'ja': { min: 75, max: 125, unit: '枚' },
   },
   'same-day-flyers': {
-    'en': { min: 0.95, max: 1.80, unit: 'pc' },
-    'ja': { min: 125, max: 210, unit: '枚' },
+    'en': { min: 0.16, max: 2.4, unit: 'pc' },
+    'ja': { min: 25, max: 368, unit: '枚' },
   },
   // ========== Stickers ==========
   'waterproof-stickers': {
@@ -374,8 +374,8 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
   },
   // ========== Posters ==========
   'a2-posters': {
-    'en': { min: 2.3, max: 4.6, unit: 'pc' },
-    'ja': { min: 300, max: 525, unit: '枚' },
+    'en': { min: 0.28, max: 2.3, unit: 'pc' },
+    'ja': { min: 44, max: 300, unit: '枚' },
   },
   'a1-posters': {
     'en': { min: 4.6, max: 8.28, unit: 'pc' },

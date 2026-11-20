@@ -5057,9 +5057,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>印刷工藝說明</h3>
 <ul>
-  <li>A4（210×297mm）是香港最通用規格，雙面印刷時正反對位精度 ±0.5mm</li>
+  <li>A4（210×297mm）與 A5（148×210mm）雙面，128g 光／啞粉紙為急件基準</li>
   <li>彩色印刷請使用 CMYK 色彩模式，預留 3mm 出血位</li>
-  <li>即日急件支援 4 小時取件，建議上午 11 時前確認稿件</li>
+  <li>10–99 張為數碼小批量、常規 3–5 個工作天；100 張起才入即日急件檔，須 HKT 11:00 前確認稿件（A4 上限 200 張／A5 上限 400 張）</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
@@ -5068,16 +5068,16 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
 
-<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球配送（運費與時效以報價確認）。DHL Express 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單的生產與交期以報價確認；急件按稿件、數量、工藝與截單時間報價確認。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、書紙、牛皮紙等。傳單常用工藝包括四色柯式／數碼印刷、對摺／三摺摺頁、局部 UV 與標準刀模裁切等多種選擇，免費數碼打樣確認。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球配送（運費與時效以報價確認），日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>即日傳單 10 張起印；10–99 張屬數碼小批量、常規 3–5 個工作天；100 張起才入即日急件檔（HKT 11:00 前確認稿件，A4 上限 200 張／A5 上限 400 張）。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>10–99 張常規 3–5 個工作天；100 張起可即日急件，須 HKT 11:00 前確認稿件（A4 上限 200 張／A5 上限 400 張），取件／送達時段以報價確認。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>急件基準為 128g 光面／啞面粉紙、A4／A5 雙面四色；157g／250g 可升級。傳單常用工藝包括四色柯式／數碼印刷、對摺／三摺摺頁、局部 UV 與標準刀模裁切，免費數碼打樣確認。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>港九新界滿 HK$500 免費順豐（1–2 個工作天）；未達門檻或即日配送以報價確認。海外訂單透過 DHL Express / FedEx，主要市場約 2–4 個工作天（運費與時效以報價確認）。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Same-day Flyers for Urgent Marketing Needs</h3>
-<p>ZprintPro Same-day Flyers are designed for businesses that need to meet urgent deadlines. Using 157g glossy paper and high-speed 4-color digital printing, these flyers can be printed and shipped in as fast as 4 hours from the time the file is received. This makes them ideal for emergency events, flash sales, press releases, and last-minute meeting materials. Our dedicated rush handling ensures priority processing and same-day courier or personal delivery. Despite the rush, we maintain color calibration and bleed checks for uncompromised quality.</p>
+<p>ZprintPro Same-day Flyers are built for businesses facing urgent deadlines. 10–99 pcs run 3–5 business days on 128gsm gloss or matte stock with high-speed 4-color digital printing; from 100 pcs, artwork confirmed by 11am HKT can go into same-day production (A4 max 200, A5 max 400). Ideal for emergency events, flash sales, press releases, and last-minute meeting materials. Rush handling keeps priority processing, while color calibration and bleed checks still apply.</p>
 
 <h3>Material & GSM Specifications</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -5090,8 +5090,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">157g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★</td><td class="p-2">Emergency events, flash sales</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">120g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★</td><td class="p-2">Press releases, last-minute meeting materials</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">128g Gloss</td><td class="p-2 text-center">Gloss</td><td class="p-2 text-center">★★★</td><td class="p-2">Emergency events, flash sales (rush standard)</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">128g Matte</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★</td><td class="p-2">Premium handouts, last-minute meeting materials</td></tr>
   </tbody>
 </table>
 
@@ -5109,8 +5109,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">10</td><td class="p-2 text-center">4 hours</td><td class="p-2 text-center">from $0.16</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">10</td><td class="p-2 text-center">4 hours</td><td class="p-2 text-center">from $0.16</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">10</td><td class="p-2 text-center">3–5 business days (10–99); same-day from 100 by 11am HKT</td><td class="p-2 text-center">from $2.40</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">10</td><td class="p-2 text-center">3–5 business days (10–99); same-day from 100 by 11am HKT</td><td class="p-2 text-center">from $2.40</td></tr>
   </tbody>
 </table>
 
@@ -5121,24 +5121,24 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>ZprintPro ensures top-notch quality with FSC-certified paper and quality-managed manufacturing standards. Our ISO 12647 color management guarantees accurate color reproduction. With DHL Express global shipping, your flyers will reach international destinations within 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 stickers/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro operates from our Asia production facility with 2-4 business day worldwide delivery via DHL Express / FedEx. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>10 flyers. 10–99 pcs run 3–5 business days; from 100 pcs same-day rush applies when artwork is confirmed by 11am HKT (A4 max 200, A5 max 400). Get an instant AI quote in 30 seconds with no signup required.</p></details>
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>10–99 pcs take 3–5 business days. From 100 pcs, same-day production is available when artwork is confirmed by 11am HKT (A4 max 200, A5 max 400); pickup/courier timing is confirmed at quote. Worldwide delivery via DHL Express / FedEx takes about 2–4 business days.</p></details>
 <details class="my-5"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, uncoated paper, kraft paper, and more. Finishes: 4-color CMYK or digital printing, folding (half-fold / tri-fold), spot UV, and standard die-cutting.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, quality-managed manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
-    longDescriptionJa: `短納期チラシをZprintProでご注文。157gコート紙+高速4色デジタル印刷でデータ受付から発送まで最短4時間。緊急イベント・フラッシュセール・プレスリリース・直前会議資料様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `短納期チラシをZprintProでご注文。128gグロス/マットコート紙+高速4色デジタル印刷。10〜99枚は3〜5営業日、100枚からは11時（HKT）までにデータ確定で当日生産（A4上限200枚・A5上限400枚）。緊急イベント・フラッシュセール・プレスリリース・直前会議資料様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、品質管理。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
-<details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
+<details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>即日チラシは10枚から。10〜99枚は3〜5営業日、100枚からは11時（HKT）までにデータ確定で当日生産（A4上限200枚・A5上限400枚）。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>10〜99枚は3〜5営業日で完成。100枚からは11時（HKT）までにデータ確定で当日生産（A4上限200枚・A5上限400枚）、校正 PDF 承認後に出荷。DHL / FedEx 国際速達便で日本全国 2-4 日配送。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、上質紙、クラフト紙など。チラシの加工は4色オフセット・デジタル印刷、二つ折り／三つ折り、スポット UV、標準型抜き裁断等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>香港本地は港九新界で HK$500 以上なら SF Express 無料（1〜2営業日）。海外は DHL Express / FedEx で主要市場へ約 2〜4 営業日（送料・時効は見積りで確認）。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
   'a2-posters': {
-    longDescription: `<div class="bg-amber-50 border-l-4 border-amber-500 p-4 my-4"><p class="font-semibold mb-1">⚡ 快速答案 (40 秒讀完)</p><p class="text-sm">A2 海報 = 420 × 594 mm（16.5 × 23.4 吋），10 張起印 HK$16 起/張。157g 銅版紙為基準，200g 厚紙／相紙可升級，PP 合成紙防水可選，雙面四色印刷；常規 1-2 個工作天，即日急件可選；順豐香港本地配送，DHL 全球 2-4 天。A1（594×841mm）面積是 A2 的兩倍，單價以美元計亦約兩倍（A1 US$4.60 起）。延伸閱讀：<a href="/zh-hk/blog/poster-size-guide/" class="text-blue-600 underline">A1 A2 海報尺寸對照表</a> · <a href="/zh-hk/blog/poster-printing-price-guide/" class="text-blue-600 underline">A1 A2 海報印刷價格指南</a></p></div>
+    longDescription: `<div class="bg-amber-50 border-l-4 border-amber-500 p-4 my-4"><p class="font-semibold mb-1">⚡ 快速答案 (40 秒讀完)</p><p class="text-sm">A2 海報 = 420 × 594 mm（16.5 × 23.4 吋），10 張起印 HK$16 起/張（10 張 HK$160）。157g 銅版紙為基準、單面四色（雙面按價表），200g 厚紙／相紙可升級，PP 合成紙防水可選；常規 1-2 個工作天；200 張或以下、HKT 11:00 前確認稿件可即日投產（取件／送達以報價確認為準）；港九新界滿 HK$500 免費順豐，DHL 全球 2-4 天。A1（594×841mm）面積是 A2 的兩倍，單價以美元計亦約兩倍（A1 US$4.60 起）。延伸閱讀：<a href="/zh-hk/blog/poster-size-guide/" class="text-blue-600 underline">A1 A2 海報尺寸對照表</a> · <a href="/zh-hk/blog/poster-printing-price-guide/" class="text-blue-600 underline">A1 A2 海報印刷價格指南</a></p></div>
 <h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -5170,21 +5170,21 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，常規 1–2 個工作天（即日急件按 HKT 11:00 截稿），深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、PP 護膜、裱泡沫板、邊緣封邊。建議急件可拆數碼快印與後工裱貼分段排程。</p>
 
 <p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球配送（運費與時效以報價確認）。DHL Express 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單的生產與交期以報價確認；急件按稿件、數量、工藝與截單時間報價確認。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>A2 海報 10 張起印（420×594mm、157g 銅版紙、單面四色）。200 張或以下、HKT 11:00 前確認稿件可即日投產；常規 1–2 個工作天。30 秒 AI 報價，無需註冊。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>A2 海報常規 1–2 個工作天；200 張或以下、HKT 11:00 前確認稿件可即日投產，取件／送達時段以報價確認。</p></details>
 <details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費數碼打樣確認。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球配送（運費與時效以報價確認），日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>港九新界滿 HK$500 免費順豐；未達門檻或即日配送以報價確認。海外訂單透過 DHL Express / FedEx，主要市場約 2–4 個工作天（運費與時效以報價確認）。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>A2 Posters for Global Brands</h3>
-<p>ZprintPro A2 posters (420×594mm) are the mid-format workhorse for retail, event, and campaign signage. Choose from 150-300g gloss or matte art paper with full 4-color CMYK printing. Heidelberg offset presses deliver sharp text and saturated color, with optional matte or gloss lamination for durability. Indoor wall mounting, window display, or framed art. 10-poster MOQ, 2-3 day production, free design service.</p>
+<p>ZprintPro A2 posters (420×594mm) are the mid-format workhorse for retail, event, and campaign signage. The standard spec is 157g gloss art paper, single-sided 4-color CMYK; 200gsm or photo paper upgrades are available, with optional matte or gloss lamination for durability. Ideal for indoor wall mounting, window display, or framed art. 10-poster MOQ, 1-2 business day production, free design service.</p>
 
 <h3>Paper & Weight Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -5237,7 +5237,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>quality-managed</strong> lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and 4-color offset presses. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
-<p>A2 posters are the most versatile mid-format signage. ZprintPro serves retail stores (sale and seasonal signage), event companies (concert, festival, conference posters), real estate agents (open house and listing), restaurants (menu boards and promo posters), gyms and fitness studios (class schedules and trainer promotions), educational institutions (event and program posters), and small businesses (campaign announcements). For US-based small businesses, our 10-poster MOQ with 2-3 day production supports fast event prep. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>A2 posters are the most versatile mid-format signage. ZprintPro serves retail stores (sale and seasonal signage), event companies (concert, festival, conference posters), real estate agents (open house and listing), restaurants (menu boards and promo posters), gyms and fitness studios (class schedules and trainer promotions), educational institutions (event and program posters), and small businesses (campaign announcements). For US-based small businesses, our 10-poster MOQ with 1-2 business day production supports fast event prep. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 posters. Volume discounts start at 250 (15% off), 500 (25% off), and 2,500+ (35% off).</p></details>
@@ -5322,7 +5322,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>業界別活用事例と導入効果</h3>
-<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<p>本サービスの A2 ポスターは、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
 <ul>
   <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
   <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
@@ -5389,10 +5389,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、品質管理。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
-<details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
+<details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>A2ポスターは10枚から（420×594mm・157gコート紙・片面4色）。200枚以下かつ11時（HKT）までにデータ確定で当日生産、通常1〜2営業日。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>常規は1〜2営業日で完成。200枚以下かつ11時（HKT）までにデータ確定で当日生産、校正 PDF 承認後に出荷。DHL / FedEx 国際速達便で日本全国 2-4 日配送。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>香港本地は港九新界で HK$500 以上なら SF Express 無料。海外は DHL Express / FedEx で主要市場へ約 2〜4 営業日（送料・時効は見積りで確認）。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },

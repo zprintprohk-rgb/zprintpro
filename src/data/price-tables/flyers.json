@@ -12,14 +12,14 @@
       "modeled-small-batch": "數碼小批量模擬檔 (10-99 張, 開機費/調機攤分), 待校準"
     },
     "updatedAt": "2026-07-21",
-    "note": "2026-07-18 校准: a5-flyers 重叠档 (1000/2000/3000/5000) + 新增 500 档用 intuan 专版宣传单实询价; 100/300 数码甜点档与 600 e-print anchor 档保留。a4-flyers / same-day-flyers / eco-flyers 未动。 | 2026-07-20 校准: a5/a4 主档 e-print 柯式单张实抓 ×0.95 → anchor; 100-300 数码档保持 modeled(不硬拼). | 2026-07-20 v2: 数码档 (a5/a4 100/300 + same-day 100/300) e-print 数码价 ×0.95 → anchor-digital; 50-300張数码主车道按 user 拍板放开校准. | 2026-07-21 v4: same-day-flyers 急件 A4 (100/200) + A5 (100/200/300/400) 全档 anchor ×0.95, 500 档保留 modeled (e-print 1小時急件上限 200/400 張不提供 500); eco-flyers 维持 pending (e-print 无公开再生纸 flyers 页, 仅有 FSC 纸卡/環保袋品类). | 2026-09-19 全站起訂量修正: 加入小批量 modeled 檔 (10/25/50/75/99, 區間上限 = 既有最低檔價), 待工廠實詢校準。 | 2026-09-19 全站起訂量修正: 加入小批量 modeled 檔 (10/25/50/75/99, 區間上限 = 既有最低檔價), 待工廠實詢校準。",
+    "note": "2026-07-18 校准: a5-flyers 重叠档 (1000/2000/3000/5000) + 新增 500 档用 intuan 专版宣传单实询价; 100/300 数码甜点档与 600 e-print anchor 档保留。a4-flyers / same-day-flyers / eco-flyers 未动。 | 2026-07-20 校准: a5/a4 主档 e-print 柯式单张实抓 ×0.95 → anchor; 100-300 数码档保持 modeled(不硬拼). | 2026-07-20 v2: 数码档 (a5/a4 100/300 + same-day 100/300) e-print 数码价 ×0.95 → anchor-digital; 50-300張数码主车道按 user 拍板放开校准. | 2026-07-21 v4: same-day-flyers 急件 A4 (100/200) + A5 (100/200/300/400) 全档 anchor ×0.95, 500 档保留 modeled (e-print 1小時急件上限 200/400 張不提供 500); eco-flyers 维持 pending (e-print 无公开再生纸 flyers 页, 仅有 FSC 纸卡/環保袋品类). | 2026-09-19 全站起訂量修正: 加入小批量 modeled 檔 (10/25/50/75/99, 區間上限 = 既有最低檔價), 待工廠實詢校準。 | 2026-11-20 A2/即日傳單真值修復: same-day-flyers 拆回 A4/A5 兩個 config、消除重複 100/200 檔、刪除 500 modeled 檔; 10 張 HK$184、128g 光/啞粉紙雙面為急件基準, 10–99 張常規 3–5 工作天, 100 張起才入即日急件檔。",
     "references": {
       "eprint_a5": "HK$315/600张 (柯式拼版, 1工作天) — e-print.com.hk 首页锚点",
       "copycat_a5_157g": "500张 $630单面/$830双面; 1000张 $750/$950; 5000张 $1750/$1950 (cpct-copycat.com 专版价)",
       "intuan_zbsingle": "专版宣传单实询 2026-07-18: ¥196/500, ¥220/1000, ¥265/2000, ¥344/3000, ¥469/5000 → ×1.3×1.087 HKD",
       "eprint_flyer": "https://www.e-print.com.hk/products_brochure_booklet_leaflet_printing (2026-07-20 实抓: A5 157g 600張$315/1000張$365/2000張$415; A4 157g 4C+4C 300張$500/500張$550/1000張$650/2000張$940/5000張$1650)",
       "eprint_digital_flyer": "https://www.e-print.com.hk/products_digital_brochure_booklet_leaflet_printing (2026-07-20 实抓: A4 雙面 100張$400/300張$750; A5 雙面 100張$132/300張$248)",
-      "eprint_urgent_leaflet": "https://www.e-print.com.hk/products_Leaflet_Express_Service (2026-07-21 实抓 1小時即取價目: A4 100張$600/200張$750 (上限200); A5 100張$173/200張$263/300張$503/400張$615 (上限400) — 雙面彩色)",
+      "eprint_urgent_leaflet": "https://www.e-print.com.hk/products_Leaflet_Express_Service (2026-07-21 实抓 1小時特急價目: A4 100張$600/200張$750 (上限200); A5 100張$173/200張$263/300張$503/400張$615 (上限400) — 雙面彩色)",
       "eprint_eco_flyers": "N/A — e-print 公开页无 100% recycled/再生纸 宣传单张配置, 仅有 FSC 纸卡 (products_fsc_eco_business_name_cards_printing) 和 環保袋 (non_woven_bag_printing) — eco-flyers 维持 pending, 待 intuan 询价"
     }
   },
@@ -258,121 +258,163 @@
         "size": "A4 / A5 雙面",
         "paper": "128g 光/啞粉紙 (急件标准)",
         "print": "彩色 雙面",
-        "rush": "1小時即取 (e-print 觀塘門市/工場取貨)",
-        "note": "e-print 急件 1小時上限: A4 max 200 張 / A5 max 400 張; 500 張 急件 e-print 不提供"
+        "rush": "HKT 11:00 前確認稿件可即日投產 (A4 上限 200 張 / A5 上限 400 張)",
+        "note": "10 張起印; 10–99 張為數碼小批量、常規 3–5 工作天; 100 張起才入即日急件檔"
       },
-      "tiers": [
+      "configs": [
         {
-          "qty": 10,
-          "price": 184,
-          "unit": 18.4,
-          "src": "modeled-small-batch",
-          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
-          "calibratedAt": "待校準",
-          "setupFeeHKD": 50
+          "config": "A4 · 128g 光/啞粉紙 · 雙面",
+          "tiers": [
+            {
+              "qty": 10,
+              "price": 184,
+              "unit": 18.4,
+              "src": "modeled-small-batch",
+              "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+              "calibratedAt": "待校準",
+              "setupFeeHKD": 50
+            },
+            {
+              "qty": 25,
+              "price": 266.5,
+              "unit": 10.66,
+              "src": "modeled-small-batch",
+              "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+              "calibratedAt": "待校準",
+              "setupFeeHKD": 50
+            },
+            {
+              "qty": 50,
+              "price": 358,
+              "unit": 7.16,
+              "src": "modeled-small-batch",
+              "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+              "calibratedAt": "待校準",
+              "setupFeeHKD": 50
+            },
+            {
+              "qty": 75,
+              "price": 482,
+              "unit": 6.43,
+              "src": "modeled-small-batch",
+              "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+              "calibratedAt": "待校準",
+              "setupFeeHKD": 50
+            },
+            {
+              "qty": 99,
+              "price": 558,
+              "unit": 5.64,
+              "src": "modeled-small-batch",
+              "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+              "calibratedAt": "待校準",
+              "setupFeeHKD": 50
+            },
+            {
+              "qty": 100,
+              "price": 570,
+              "unit": 5.7,
+              "src": "anchor",
+              "calibratedAt": "2026-07-21",
+              "sourceRef": "e-print.com.hk 單張特急快印 A4 雙面 ×0.95",
+              "note": "A4 急件 (e-print 急件上限 200 張)"
+            },
+            {
+              "qty": 200,
+              "price": 712,
+              "unit": 3.56,
+              "src": "anchor",
+              "calibratedAt": "2026-07-21",
+              "sourceRef": "e-print.com.hk 單張特急快印 A4 雙面 ×0.95",
+              "note": "A4 急件 (e-print 急件上限 200 張)"
+            }
+          ]
         },
         {
-          "qty": 25,
-          "price": 266.5,
-          "unit": 10.66,
-          "src": "modeled-small-batch",
-          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
-          "calibratedAt": "待校準",
-          "setupFeeHKD": 50
-        },
-        {
-          "qty": 50,
-          "price": 358,
-          "unit": 7.16,
-          "src": "modeled-small-batch",
-          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
-          "calibratedAt": "待校準",
-          "setupFeeHKD": 50
-        },
-        {
-          "qty": 75,
-          "price": 482,
-          "unit": 6.43,
-          "src": "modeled-small-batch",
-          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
-          "calibratedAt": "待校準",
-          "setupFeeHKD": 50
-        },
-        {
-          "qty": 99,
-          "price": 558,
-          "unit": 5.64,
-          "src": "modeled-small-batch",
-          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
-          "calibratedAt": "待校準",
-          "setupFeeHKD": 50
-        },
-        {
-          "qty": 100,
-          "price": 570,
-          "unit": 5.7,
-          "src": "anchor",
-          "calibratedAt": "2026-07-21",
-          "size": "A4",
-          "sourceRef": "e-print.com.hk 單張特急快印 A4 雙面 1小時即取 ×0.95",
-          "note": "A4 急件 (e-print 急件 1小時上限 200 張)"
-        },
-        {
-          "qty": 200,
-          "price": 712,
-          "unit": 3.56,
-          "src": "anchor",
-          "calibratedAt": "2026-07-21",
-          "size": "A4",
-          "sourceRef": "e-print.com.hk 單張特急快印 A4 雙面 1小時即取 ×0.95",
-          "note": "A4 急件 (e-print 急件 1小時上限 200 張)"
-        },
-        {
-          "qty": 100,
-          "price": 164,
-          "unit": 1.64,
-          "src": "anchor",
-          "calibratedAt": "2026-07-21",
-          "size": "A5",
-          "sourceRef": "e-print.com.hk 單張特急快印 A5 雙面 1小時即取 ×0.95",
-          "note": "A5 急件 (e-print 急件 1小時上限 400 張)"
-        },
-        {
-          "qty": 200,
-          "price": 250,
-          "unit": 1.25,
-          "src": "anchor",
-          "calibratedAt": "2026-07-21",
-          "size": "A5",
-          "sourceRef": "e-print.com.hk 單張特急快印 A5 雙面 1小時即取 ×0.95",
-          "note": "A5 急件 (e-print 急件 1小時上限 400 張)"
-        },
-        {
-          "qty": 300,
-          "price": 478,
-          "unit": 1.59,
-          "src": "anchor",
-          "calibratedAt": "2026-07-21",
-          "size": "A5",
-          "sourceRef": "e-print.com.hk 單張特急快印 A5 雙面 1小時即取 ×0.95",
-          "note": "A5 急件 (e-print 急件 1小時上限 400 張)"
-        },
-        {
-          "qty": 400,
-          "price": 584,
-          "unit": 1.46,
-          "src": "anchor",
-          "calibratedAt": "2026-07-21",
-          "size": "A5",
-          "sourceRef": "e-print.com.hk 單張特急快印 A5 雙面 1小時即取 ×0.95",
-          "note": "A5 急件 (e-print 急件 1小時上限 400 張)"
-        },
-        {
-          "qty": 500,
-          "price": 800,
-          "unit": 1.6,
-          "src": "modeled",
-          "note": "500 張急件 e-print 1小時急件不提供 (A4 max 200, A5 max 400); 800HK$ 按 400 張 A5 雙面急件 $615×0.95=$584 + 同日 4小時複印溢價 35% 估算, 待 intuan 急件實詢校準"
+          "config": "A5 · 128g 光/啞粉紙 · 雙面",
+          "tiers": [
+            {
+              "qty": 10,
+              "price": 184,
+              "unit": 18.4,
+              "src": "modeled-small-batch",
+              "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+              "calibratedAt": "待校準",
+              "setupFeeHKD": 50
+            },
+            {
+              "qty": 25,
+              "price": 266.5,
+              "unit": 10.66,
+              "src": "modeled-small-batch",
+              "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+              "calibratedAt": "待校準",
+              "setupFeeHKD": 50
+            },
+            {
+              "qty": 50,
+              "price": 358,
+              "unit": 7.16,
+              "src": "modeled-small-batch",
+              "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+              "calibratedAt": "待校準",
+              "setupFeeHKD": 50
+            },
+            {
+              "qty": 75,
+              "price": 482,
+              "unit": 6.43,
+              "src": "modeled-small-batch",
+              "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+              "calibratedAt": "待校準",
+              "setupFeeHKD": 50
+            },
+            {
+              "qty": 99,
+              "price": 558,
+              "unit": 5.64,
+              "src": "modeled-small-batch",
+              "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+              "calibratedAt": "待校準",
+              "setupFeeHKD": 50
+            },
+            {
+              "qty": 100,
+              "price": 164,
+              "unit": 1.64,
+              "src": "anchor",
+              "calibratedAt": "2026-07-21",
+              "sourceRef": "e-print.com.hk 單張特急快印 A5 雙面 ×0.95",
+              "note": "A5 急件 (e-print 急件上限 400 張)"
+            },
+            {
+              "qty": 200,
+              "price": 250,
+              "unit": 1.25,
+              "src": "anchor",
+              "calibratedAt": "2026-07-21",
+              "sourceRef": "e-print.com.hk 單張特急快印 A5 雙面 ×0.95",
+              "note": "A5 急件 (e-print 急件上限 400 張)"
+            },
+            {
+              "qty": 300,
+              "price": 478,
+              "unit": 1.59,
+              "src": "anchor",
+              "calibratedAt": "2026-07-21",
+              "sourceRef": "e-print.com.hk 單張特急快印 A5 雙面 ×0.95",
+              "note": "A5 急件 (e-print 急件上限 400 張)"
+            },
+            {
+              "qty": 400,
+              "price": 584,
+              "unit": 1.46,
+              "src": "anchor",
+              "calibratedAt": "2026-07-21",
+              "sourceRef": "e-print.com.hk 單張特急快印 A5 雙面 ×0.95",
+              "note": "A5 急件 (e-print 急件上限 400 張)"
+            }
+          ]
         }
       ]
     },

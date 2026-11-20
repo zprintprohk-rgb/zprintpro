@@ -852,9 +852,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: 'A2ポスターの印刷料金は？',
       },
       answer: {
-        'zh-hk': 'A2 海報 10 張起印，HK$16 起/張（157g 銅版紙）。200g 或 PP 合成紙另計，1-2 個工作天交貨，即日特急可選。',
-        en: 'A2 posters start from $2.30/pc at 10 MOQ (157gsm gloss paper). 200gsm and PP synthetic upgrades available, 1-2 business day production with same-day rush option.',
-        ja: 'A2ポスターは10枚〜¥300〜（157gコート紙）。200g・PP合成紙も対応、1-2営業日生産、特急当日仕上げ可。',
+        'zh-hk': 'A2 海報 10 張起印，HK$16 起/張（157g 銅版紙、420×594mm、單面四色）。200g 或 PP 合成紙另計，常規 1-2 個工作天；200 張或以下、HKT 11:00 前確認稿件可即日投產（取件／送達以報價確認為準）。',
+        en: 'A2 posters start from $2.30/pc at 10 MOQ (157gsm gloss paper, 420×594mm, single-sided CMYK). 200gsm and PP synthetic upgrades available; standard production 1-2 business days, with same-day rush for up to 200 pcs when artwork is confirmed by 11am HKT (pickup/delivery confirmed at quote).',
+        ja: 'A2ポスターは10枚〜¥300〜（157gコート紙・420×594mm・片面4色）。200g・PP合成紙も対応、通常1〜2営業日、200枚以下かつ11時（HKT）までにデータ確定で当日生産可（受取・配送は見積りで確認）。',
       },
     },
     {
@@ -864,9 +864,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: 'A2ポスターのサイズは？即日仕上げは可能？',
       },
       answer: {
-        'zh-hk': 'A2 尺寸為 420×594mm。上午確認稿件最快即日交收，常規 1-2 個工作天，全港送貨。',
-        en: 'A2 measures 420×594mm (16.5×23.4 in). Artwork confirmed in the morning can go into same-day production; standard turnaround is 1-2 business days.',
-        ja: 'A2は420×594mmです。午前中のデータ確定で即日生産可能、標準1-2営業日。',
+        'zh-hk': 'A2 尺寸為 420×594mm。200 張或以下、HKT 11:00 前確認稿件可即日投產；常規 1-2 個工作天，取件／送達時段以報價確認。',
+        en: 'A2 measures 420×594mm (16.5×23.4 in). Up to 200 pcs with artwork confirmed by 11am HKT can go into same-day production; standard turnaround is 1-2 business days, and pickup/delivery timing is confirmed at quote.',
+        ja: 'A2は420×594mmです。200枚以下かつ11時（HKT）までにデータ確定で当日生産可能、標準1〜2営業日。受取・配送は見積りで確認します。',
       },
     },
     {
@@ -903,9 +903,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '即日チラシ印刷はどのくらい早い？',
       },
       answer: {
-        'zh-hk': '即日傳單 10 張起印、HK$1.30 起/張。上午 12 時前確認稿件，最快即日交收或港九送貨；常規 1-2 個工作天。',
-        en: 'Same-day flyers from $0.16/pc at 10 MOQ. Confirm artwork before noon for same-day production; standard turnaround 1-2 business days, DHL 2-4 days to the US.',
-        ja: '即日チラシは10枚〜¥25〜。正午までにデータ確定で当日生産、標準1-2営業日、DHLで日本へ2-4日。',
+        'zh-hk': '即日傳單 10 張起印、HK$18.4/張（10 張 HK$184）。10–99 張常規 3–5 個工作天；100 張起才入即日急件檔，須 HKT 11:00 前確認稿件（A4 上限 200 張／A5 上限 400 張）。',
+        en: 'Same-day flyers from $2.40/pc at 10 MOQ (HK$184/10). 10–99 pcs run 3–5 business days; from 100 pcs same-day production applies when artwork is confirmed by 11am HKT (A4 max 200, A5 max 400).',
+        ja: '即日チラシは10枚〜¥368〜（HK$184/10枚）。10〜99枚は3〜5営業日、100枚からは11時（HKT）までにデータ確定で当日生産（A4上限200枚・A5上限400枚）。',
       },
     },
     {
@@ -915,9 +915,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '即日チラシのサイズと用紙は？',
       },
       answer: {
-        'zh-hk': 'A4/A5/A6/DL 尺寸齊全，157g 銅版紙為主，可加覆膜（啞膜／光膜）。提交檔案後 1 小時內免費數碼打稿。',
-        en: 'A4/A5/A6/DL sizes on 157gsm gloss with optional matte or gloss lamination. Free digital proof within 1 hour of file submission.',
-        ja: 'A4/A5/A6/DL対応、157gコート紙、ラミネート加工可。入稿後1時間以内に無料デジタル校正。',
+        'zh-hk': '只承諾 A4／A5 雙面，急件基準為 128g 光面／啞面粉紙；157g／250g 可升級。提交檔案後提供免費數碼打稿。',
+        en: 'A4/A5 only, double-sided, on 128gsm gloss or matte stock (rush standard); 157gsm/250gsm upgrades available. Free digital proof before production.',
+        ja: 'A4/A5のみ・両面、急件基準は128gグロス/マットコート紙（157g/250gへアップグレード可）。入稿後に無料デジタル校正。',
       },
     },
   ],

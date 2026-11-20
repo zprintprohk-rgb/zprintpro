@@ -16,6 +16,7 @@
   "configs": [
     {
       "config": "A2 · 铜版纸 · 157g · 單面",
+      "currencyOverrides": { "USD_unit": 2.3, "JPY_unit": 300 },
       "tiers": [
         {
           "qty": 10,

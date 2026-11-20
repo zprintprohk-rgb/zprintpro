@@ -22,14 +22,27 @@ function hkdToJPY(hkd) { return Math.round(hkd * HKD_TO_JPY); }
 
 function loadJSON(fn) { return JSON.parse(fs.readFileSync(path.join(PRICE_TABLE_DIR, fn), 'utf-8')); }
 
-function normTiers(tiers, multiplier = 1) {
-  return tiers.map(t => ({
-    qty: t.qty,
-    priceHKD: Math.round((t.sell_hkd || t.price || 0) * multiplier),
-    priceUSD: hkdToUSD(Math.round((t.sell_hkd || t.price || 0) * multiplier)),
-    priceJPY: hkdToJPY(Math.round((t.sell_hkd || t.price || 0) * multiplier)),
-    weightKg: t.weight_kg !== null && t.weight_kg !== undefined ? t.weight_kg : null,
-  }));
+function normTiers(tiers, multiplier = 1, currencyOverrides = null) {
+  // currencyOverrides 只鎖 MOQ/起價檔 (拍板單 A4/A5 的「USD/JPY 起價」);
+  // 其餘檔位照固定匯率換算, 保持批量單價遞減與 HKD 同源, 避免大檔 USD 反而貴過 HKD。
+  const moq = tiers.length ? Math.min(...tiers.map(t => t.qty)) : null;
+  return tiers.map(t => {
+    const hkd = Math.round((t.sell_hkd || t.price || 0) * multiplier);
+    const usdOverride = currencyOverrides?.USD_unit;
+    const jpyOverride = currencyOverrides?.JPY_unit;
+    const atMoq = t.qty === moq;
+    return {
+      qty: t.qty,
+      priceHKD: hkd,
+      priceUSD: usdOverride !== null && usdOverride !== undefined && atMoq
+        ? Math.round(usdOverride * t.qty)
+        : hkdToUSD(hkd),
+      priceJPY: jpyOverride !== null && jpyOverride !== undefined && atMoq
+        ? Math.round(jpyOverride * t.qty)
+        : hkdToJPY(hkd),
+      weightKg: t.weight_kg !== null && t.weight_kg !== undefined ? t.weight_kg : null,
+    };
+  });
 }
 
 // Helper: localize the supplier's raw (simplified Chinese) config label into all 3 locales
@@ -104,14 +117,23 @@ map['digital-stickers'] = { source: 'digital-stickers-cost.json', productName: d
 map['roll-stickers'] = { source: 'digital-stickers-cost.json', productName: dsName, defaultConfigIndex: 4, configs: dsConfigs }; // 2026-10-12 K3 拍板: 卷裝貼紙新建 (卷裝檔=cfg[4])
 
 // 5. flyers.json (eprint)
+// 2026-11-20: same-day-flyers 拆回 A4/A5 兩個 config (p.configs)，其餘 flyer 仍為單 config。
 const f = loadJSON('flyers.json');
 f.products.forEach(p => {
-  const label = `${p.config?.size || p.sku} ${p.config?.paper || ''} ${p.config?.print || ''}`.trim();
+  const rawConfigs = Array.isArray(p.configs) && p.configs.length
+    ? p.configs
+    : [{ config: p.config, tiers: p.tiers }];
+  const nameLabel = `${p.config?.size || p.sku} ${p.config?.paper || ''} ${p.config?.print || ''}`.trim();
   map[p.sku] = {
     source: 'flyers.json (eprint ×0.95)',
-    productName: L(label),
+    productName: L(nameLabel),
     defaultConfigIndex: 0,
-    configs: [{ label: L(label), tiers: normTiers(p.tiers) }],
+    configs: rawConfigs.map(c => {
+      const label = typeof c.config === 'string'
+        ? c.config
+        : `${c.config?.size || p.config?.size || p.sku} ${c.config?.paper || p.config?.paper || ''} ${c.config?.print || p.config?.print || ''}`.trim();
+      return { label: L(label), tiers: normTiers(c.tiers, 1, c.currencyOverrides) };
+    }),
   };
 });
 
@@ -146,8 +168,12 @@ map['custom-flyers'] = {
 };
 
 // 9. posters.json — v14 K3 7/25 B2 digital anchor
+// 2026-11-20 K3 拍板 A: a2-posters 只映射 A2 config (剔除 A3 / A1 / eco)，避免 A3/A1 檔混入 A2 價卡。
 const posters = loadJSON('posters.json');
-const posterConfigs = posters.configs.map(c => ({ label: L(c.config), tiers: normTiers(c.tiers) }));
+const posterConfigs = posters.configs
+  .filter(c => String(c.config).startsWith('A2'))
+  .map(c => ({ label: L(c.config), tiers: normTiers(c.tiers, 1, c.currencyOverrides) }));
+if (!posterConfigs.length) throw new Error('posters.json 找不到 A2 config — A2 映射失敗');
 map['a2-posters'] = { source: 'posters.json (B2 digital ×3-stage formula)', productName: { 'zh-hk': 'A2海報', en: 'A2 Poster', ja: 'A2ポスター' }, defaultConfigIndex: 0, configs: posterConfigs };
 
 /*
@@ -179,6 +205,14 @@ function serUnitAnchors(map) {
   const lines = [];
   const sheets = ['a2-posters','a1-posters','a4-flyers','a5-flyers','folded-leaflets','same-day-flyers','eco-flyers','roll-stickers'];
   const books = ['saddle-stitch-booklets','perfect-bound-books','hardcover-books','exercise-books','catalog-printing','spiral-notebooks'];
+  /*
+   * 2026-11-20 K3 拍板 A (A2 海報 / 即日傳單真值修復):
+   *   這兩個 slug 的 headline 價 = MOQ 檔單價 (A2 10 張 HK$160 ⇒ HK$16/張;
+   *   即日傳單 10 張 HK$184 ⇒ HK$18.4/張)，而不是全檔最低 ppu。
+   *   其餘 slug 仍走原本「全檔最低 ppu」口徑，輸出逐字不變。
+   */
+  const HEADLINE_AT_MOQ = new Set(['a2-posters','same-day-flyers']);
+  const fmtHeadline = v => Number(v).toFixed(2).replace(/\.?0+$/, '');
   for (const [slug, data] of Object.entries(map)) {
     if (!data.configs?.length) continue;
     // Take first config's tiers as default
@@ -214,13 +248,16 @@ function serUnitAnchors(map) {
     const minBatchUSD = atMin('priceUSD');
     const minBatchJPY = atMin('priceJPY');
     const fmt = v => v < 1 ? v.toFixed(2) : v < 10 ? v.toFixed(1) : Math.round(v).toString();
+    const headline = (minBatch, best) => HEADLINE_AT_MOQ.has(slug)
+      ? fmtHeadline(minQty ? minBatch / minQty : 0)
+      : fmt(best.ppu);
     const uw = sheets.includes(slug) ? { 'zh-hk': '每張', en: 'per sheet', ja: '1枚' }
       : books.includes(slug) ? { 'zh-hk': '每本', en: 'per book', ja: '1冊' }
       : { 'zh-hk': '每個', en: 'per pc', ja: '1個' };
     lines.push(`  '${slug}': {`);
-    lines.push(`    'zh-hk': { priceDisplay: '${fmt(bestHKD.ppu)}', qty: ${minQty}, batchPrice: ${minBatchHKD}, unitLabel: '${uw['zh-hk']}' },`);
-    lines.push(`    en: { priceDisplay: '${fmt(bestUSD.ppu)}', qty: ${minQty}, batchPrice: ${minBatchUSD}, unitLabel: '${uw.en}' },`);
-    lines.push(`    ja: { priceDisplay: '${fmt(bestJPY.ppu)}', qty: ${minQty}, batchPrice: ${minBatchJPY}, unitLabel: '${uw.ja}' },`);
+    lines.push(`    'zh-hk': { priceDisplay: '${headline(minBatchHKD, bestHKD)}', qty: ${minQty}, batchPrice: ${minBatchHKD}, unitLabel: '${uw['zh-hk']}' },`);
+    lines.push(`    en: { priceDisplay: '${headline(minBatchUSD, bestUSD)}', qty: ${minQty}, batchPrice: ${minBatchUSD}, unitLabel: '${uw.en}' },`);
+    lines.push(`    ja: { priceDisplay: '${headline(minBatchJPY, bestJPY)}', qty: ${minQty}, batchPrice: ${minBatchJPY}, unitLabel: '${uw.ja}' },`);
     lines.push('  },');
   }
   return lines.join('\n');
@@ -271,8 +308,9 @@ const KANA_RE = /[\u3040-\u30ff]/;
  * 計數斷言 (改動時必須同步, 否則寫盤前即攔下 — 2026-09-19 已實測攔截 A1 新增)
  *   2026-09-19: slug 18 → 19 (+a1-posters, K3 路線圖 P0-2)、label 114 → 116 (+2 個 A1 config)
  *   2026-10-12: slug 19 → 20、label 116 → 121 (+roll-stickers 复用 digital-stickers-cost 5 配置, K3 拍板荧光→卷裝)
+ *   2026-11-20: label 121 → 114 (a2-posters 剔除 A3/A1 共 8 個 config; same-day-flyers 拆 A4/A5 多 1 個 config)
  */
-const EXPECT = { slugs: 20, nameBlocks: 20, labelBlocks: 121 };
+const EXPECT = { slugs: 20, nameBlocks: 20, labelBlocks: 114 };
 
 function assertLocalized() {
   const bad = [];
