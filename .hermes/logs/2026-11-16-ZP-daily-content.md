@@ -5,6 +5,9 @@
 - **RECOVERY: available:false**（detector 连续第 13 日无档；最后官方值 **123.7%**（11-03，977÷789.8））
 - **CONSUMED**: run-context-ZP-daily-content.json（18:17:32，preflight EXIT=0 持锁）· lane-status.json（problems=9）· `strategy-task-queue.json`（STICKER-ZH-TRUTH-CONFLICT=READY）· `commercial-truth-decisions-2026-11-13.json`（**CT-D2**）· `2026-10-30-sticker-ranking-regression-diagnosis.md`（任务证据）· `GSC数据/28天…2026-11-16.xlsx`（K3 11-16 00:58 导出，只读解析）· 对端 e55d0302 库存（貼紙 32.58 6-window streak / 證書印刷掉出页1 / wedding fix 未咬合）+ 338e330c（證書 snippet 修复）
 
+- **DELIVERED**: `src/data/category-seo-content.ts`（commit `7425d28d`，1 文件 5+/5-）；`FIX-20261030-STICKER-ZH-TRUTH-CONFLICT` READY→DONE；貼紙第五窗 32.58@148imp 双方法（契约字段补录 2026-11-20：值取自本报告 §1/§2 与 lane-runs 总线记录，VERDICT/正文未改）
+- **NEXT**: 貼紙第六窗需数据日 ≥11-16（11-19 前后）；daily 名下 READY 已清零，后续按 k3 指派；SMALLBATCH 7d=11-21。
+
 ## 1. 交付：STICKER-ZH-TRUTH-CONFLICT 执行（CT-D2，5 处）
 
 **裁决（CT-20261113-D2）**：普通匹配 SKU 10 张 / 食品标签 500 张；proof / 生产 / 运输 = 报价确认；无源统计删除。

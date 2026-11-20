@@ -5,6 +5,9 @@
 - **RECOVERY: available:false**（detector 连续第 12 日无档；最后官方值 **123.7%**（11-03，977÷789.8））
 - **CONSUMED**: run-context-ZP-daily-content.json（18:19:40，preflight EXIT=0 持锁）· lane-status.json（problems=7）· `strategy-task-queue.json`（FIX-20261031-FIVE-CATEGORY-TRUTH=READY / STICKER-ZH-TRUTH-CONFLICT=READY 0.76）· `2026-10-31-five-category-truth-audit.md`（13 处冲突明细 + 真值基线 + b4b0c0f2 执行记录）· `commercial-truth-decisions-2026-11-13.json`（CT-D1/D2）+ K3 2026-10-31 (1) 排批 · 对端 gsc 11-14 PARTIAL（b0a1f15f）
 
+- **DELIVERED**: `src/data/category-seo-content.ts`, `src/data/category-conversion-blocks.ts`, `src/data/products.ts`（commit `74581d7f`，3 文件 6+/6-）；`FIX-20261031-FIVE-CATEGORY-TRUTH` READY→DONE（契约字段补录 2026-11-20：值取自本报告 §1 与 lane-runs 总线记录，VERDICT/正文未改）
+- **NEXT**: `FIX-20261030-STICKER-ZH-TRUTH-CONFLICT`（0.76）下一轮；7 处 100 张批量价待复核；各批部署日 +7/14/28d 复测。
+
 ## 1. 交付：FIVE-CATEGORY-TRUTH 执行（CT-D1/D2 + K3 10-31 排批，6 处）
 
 **裁决**：只处理 b4b0c0f2 之后剩余字段；价格须绑定 SKU/规格/数量，否则删除价格钩；交期与 proof 按报价/订单确认。

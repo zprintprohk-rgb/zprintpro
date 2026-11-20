@@ -5,6 +5,9 @@
 - **RECOVERY: available:false**（detector 连续第 14 日无档；最后官方值 **123.7%**（11-03，977÷789.8））
 - **CONSUMED**: run-context-ZP-daily-content.json（18:17:27，preflight EXIT=0 持锁）· lane-status.json（problems=9）· lane-runs.jsonl（11-16 21:17 daily / k3 11-17 07:10（第 9 缺口）/ gsc 11-16 20:13 缺跑）· 对端五份（**81a0e8f5 价格量级审计** / 98161d62 11-18 决策窗简报 / aa34f018 执行预备包 / 1525dee3 W4 引用探针 R3 / 3f295f51 zero-click 证据集）· `strategy-task-queue.json`（daily READY=0）· 复测挂账（11-16 档为最新）
 
+- **DELIVERED**: `.hermes/logs/2026-11-17-ZP-daily-content.md`（内容层 NO_OP；消费 81a0e8f5 / 98161d62 / aa34f018 / 1525dee3 / 3f295f51）；src 零写入（契约字段补录 2026-11-20：值取自本报告正文与 lane-runs 总线记录，VERDICT/正文未改）
+- **NEXT**: 11-18 K3 决策窗议程 1-4 待拍板；貼紙第六窗数据 gate（需数据日 ≥11-16）；SMALLBATCH 7d=11-21。
+
 ## 1. 对端 11-18 K3 决策窗消费（明日拍板，本车道立场）
 
 **核心发现（81a0e8f5 价格量级审计）**：**15/20 锚定 SKU 广告批量低价的量级差距 ≥5x**（custom-flyers 86.8x：展示 0.08 vs MOQ10 实价 6.9 HKD/張；a5 58.3x；a4 44.6x；folded 42x；perfect-bound 35.4x；sticker 族 ~17x）—— **系统性结论：需 K3 单一全站裁决**（schema = MOQ 档价格 + title 加批量语境标签）而非逐 SKU 补丁；优先 money SKU a4/a5/custom-flyers。

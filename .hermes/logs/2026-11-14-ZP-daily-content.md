@@ -5,6 +5,9 @@
 - **RECOVERY: available:false**（detector 连续第 11 日无档；最后官方值 **123.7%**（11-03，977÷789.8）；11-11 派生 105.3% 标 DERIVED_NOT_DETECTOR 不替代）
 - **CONSUMED**: run-context-ZP-daily-content.json（18:17:23，preflight EXIT=0 持锁，coordination board 重建）· lane-status.json（problems=7）· k3-review 11-13 报告（NEXT：daily 逐日 1 个 READY）· `strategy-task-queue.json`（**FIX-20261113-CATALOG-TRUTH-RESIDUAL=READY**）· `commercial-truth-decisions-2026-11-13.json`（**CT-D4**）· `docs/2026-11-13-catalog-stickers-residual-anchors.md`（§二 catalog 锚点）· 对端 merchant 批（978df830 生产验收 12/12 + 13c4beaf 待办）· 线上扫描（3 文件 catalog 域残留）
 
+- **DELIVERED**: `src/data/products.ts`, `src/data/sku-seo-data.ts`（commit `c172b3d2`，2 文件 8+/8-）；`FIX-20261113-CATALOG-TRUTH-RESIDUAL` READY→DONE（契约字段补录 2026-11-20：值取自本报告 §1 与 lane-runs 总线记录，VERDICT/正文未改）
+- **NEXT**: SMALLBATCH 7 天复测 2026-11-21（部署 11-13 +7d）；貼紙第五窗需数据日 ≥11-14；`US$99` 免运阈值仍待 K3。
+
 ## 1. 交付：CATALOG-TRUTH-RESIDUAL 执行（CT-D4，8 处）
 
 **裁决（CT-20261113-D4，K3 03:10）**：moq 10 copies **KEEP**；proof / 生产 / 运输 = **报价确认**（移除并行 1h/4h 与 3-5 天承诺）；色彩 90%+/95%+（无测量协议）→ **删或改 ICC/打样定性流程**；USD 4.6 仅匹配 SKU 条件（不发明换算）。

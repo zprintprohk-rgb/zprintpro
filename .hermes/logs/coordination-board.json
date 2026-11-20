@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T20:13:02+0800",
+  "generated_at": "2026-11-20T21:17:02+0800",
   "run_date": "2026-11-20",
   "board_path": ".hermes/logs/coordination-board.json",
   "policy": {
@@ -40,8 +40,8 @@
     },
     "weekly_review": {
       "available": true,
-      "path": ".hermes/logs/periodic-review-weekly-2026-11-13.json",
-      "review_date": "2026-11-13"
+      "path": ".hermes/logs/periodic-review-weekly-2026-11-20.json",
+      "review_date": "2026-11-20"
     },
     "monthly_review": {
       "available": true,
@@ -87,17 +87,17 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-10-31",
+        "next_check": "2026-11-21",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-10-31",
+      "retry_at": "2026-11-21",
       "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
       "learning_status": "HOLD_NO_LEARNING_CLAIM",
-      "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "result": "Recurred on 2026-11-20; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
       "execution_commit": null,
       "decision_record": null
     },
@@ -129,17 +129,17 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-05",
+        "next_check": "2026-11-21",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-05",
+      "retry_at": "2026-11-21",
       "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
       "learning_status": "HOLD_NO_LEARNING_CLAIM",
-      "result": "Recurred on 2026-11-04; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "result": "Recurred on 2026-11-20; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
       "execution_commit": null,
       "decision_record": null
     },
@@ -171,17 +171,17 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-10-31",
+        "next_check": "2026-11-21",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-10-31",
+      "retry_at": "2026-11-21",
       "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
       "learning_status": "HOLD_NO_LEARNING_CLAIM",
-      "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "result": "Recurred on 2026-11-20; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
       "execution_commit": null,
       "decision_record": null
     },
@@ -203,7 +203,8 @@
       "upstream_inputs": [
         ".hermes/logs/lane-status.json",
         ".hermes/logs/lane-runs.jsonl",
-        ".hermes/locks/lane.lock"
+        ".hermes/locks/lane.lock",
+        "Get-ScheduledTaskInfo -TaskName ZP-k3-review"
       ],
       "approval_gate": "Use recovery_plan; stop after repeated same-cause failure",
       "write_scope": [
@@ -213,17 +214,99 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-10-31",
+        "next_check": "2026-11-21",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-10-31",
+      "retry_at": "2026-11-21",
       "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
       "learning_status": "NOT_EVALUATED",
-      "result": "CLOSED 2026-11-14: the old 2026-10-30 lock-contention incident was followed by successful k3 review deliveries. Do not retry the historical lock event; current scheduler failures are tracked separately.",
+      "result": "Recurred on 2026-11-20; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-11-20-ZP-daily-content-6d5eeea1",
+      "source": "strategy_task_queue",
+      "cluster": "operations",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "K3-admin",
+      "status": "BLOCKED_INFRA",
+      "priority": 100.0,
+      "upstream_inputs": [
+        ".hermes/logs/lane-status.json",
+        ".hermes/logs/lane-runs.jsonl",
+        "Get-ScheduledTaskInfo -TaskName ZP-daily-content"
+      ],
+      "approval_gate": "K3 administrator action; no automatic retry",
+      "write_scope": [
+        "K3-admin runtime/configuration only"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "2026-11-21",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": "2026-11-21",
+      "exit_criteria": "Fresh scheduler/bus/report evidence agrees; repeated same-cause failure stops automatic retry",
+      "learning_status": "HOLD_NO_LEARNING_CLAIM",
+      "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-11-20-ZP-gsc-feedback-9e8ae4d4",
+      "source": "strategy_task_queue",
+      "cluster": "operations",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "K3-admin",
+      "status": "BLOCKED_INFRA",
+      "priority": 100.0,
+      "upstream_inputs": [
+        ".hermes/logs/lane-status.json",
+        ".hermes/logs/lane-runs.jsonl",
+        "Get-ScheduledTaskInfo -TaskName ZP-gsc-feedback"
+      ],
+      "approval_gate": "K3 administrator action; no automatic retry",
+      "write_scope": [
+        "K3-admin runtime/configuration only"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "2026-11-21",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": "2026-11-21",
+      "exit_criteria": "Fresh scheduler/bus/report evidence agrees; repeated same-cause failure stops automatic retry",
+      "learning_status": "HOLD_NO_LEARNING_CLAIM",
+      "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix",
       "execution_commit": null,
       "decision_record": null
     },
@@ -444,6 +527,57 @@
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "NOT_CONSECUTIVE",
       "idempotency": "2026-11-19|食品包裝印刷|FIX"
+    },
+    {
+      "task_id": "TRUTH-A2-SAMEDAY-20261120-01",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk + en + ja",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "ZP-daily-content",
+      "status": "DONE",
+      "priority": 95.0,
+      "upstream_inputs": [
+        "重要文件/2026-11-20-a2-posters-and-same-day-flyers-truth-decision-sheet.md",
+        ".hermes/cron-prompts/harness-task-a2-sameday-truth-fix-20261120.md",
+        "src/data/products.ts (PO-001, FL-008)",
+        "src/data/products-content.ts (same-day 5034-5138, a2 5140-5330)",
+        "src/data/sku-seo-data.ts (a2 818-853, same-day 746-781)"
+      ],
+      "approval_gate": "K3 於 2026-11-20 20:30 回覆確認「按建議 A 執行」並指示登記 READY；任務單 harness-task-a2-sameday-truth-fix-20261120.md 生效",
+      "write_scope": [
+        "src/data/price-tables/posters.json (僅A2 config + currencyOverrides)",
+        "src/data/price-tables/flyers.json (same-day 拆回 A4/A5)",
+        "scripts/gen-price-data.mjs (currencyOverrides + 兩slug anchor白名單)",
+        "src/data/products.ts (PO-001, FL-008)",
+        "src/data/pricing.ts (a2-posters, same-day-flyers 兩條)",
+        "src/data/products-content.ts (兩SKU塊)",
+        "src/data/product-faqs.ts (skuMoneyFAQs 兩SKU)",
+        "src/data/sku-seo-data.ts (兩SKU塊)",
+        "src/lib/price-data.generated.ts (只准再生成)"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "2026-11-21",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": "2026-11-21",
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "DONE on 2026-11-20 21:05: commit 99902084 (9 files) pushed fb62b52b..99902084; 17/17 truth items live; K3 scoped waiver (拍板a) 繞過其他SKU既有 guard debt; pricing.ts 單價口徑修復 (K3 20:55 覆核 §四-3) 與 MOQ 閘門文案改寫 (張起→或以上/pieces) 一併入 commit; Cloudflare 部署後按任務單 §7 六 URL 線上驗證。",
+      "execution_commit": null,
+      "decision_record": null
     },
     {
       "task_id": "ZH-PACKAGING-20261028-BATCH1",
@@ -1600,6 +1734,49 @@
       "idempotency": "2026-11-19|證書印刷|MEASURE"
     },
     {
+      "task_id": "FACTORY-FLYERS-TIER-QUERY-20261120",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "K3-admin → ZP-daily-content",
+      "status": "WAITING_K3",
+      "priority": 80.0,
+      "upstream_inputs": [
+        "重要文件/2026-11-20-a2-posters-and-same-day-flyers-truth-decision-sheet.md §四-2",
+        ".hermes/logs/2026-11-20-TRUTH-A2-SAMEDAY.md §5"
+      ],
+      "approval_gate": "K3 向工廠取得實價後拍板；校準前數字不動",
+      "write_scope": [
+        "src/data/price-tables/flyers.json",
+        "src/lib/price-data.generated.ts (再生成)",
+        "src/data/products.ts (FL-008)",
+        "src/lib/pricing.ts"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "2026-11-27",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": "2026-11-27",
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "HOLD_NO_LEARNING_CLAIM",
+      "result": "PENDING：待工廠實詢。校準後一併評估是否加頁面斷崖說明文案。",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
       "task_id": "GEO-20261103-AI-PROBE-S1",
       "source": "strategy_task_queue",
       "cluster": "all",
@@ -1675,6 +1852,47 @@
       "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
       "result": "EXECUTED 3046c03a: sku-seo-data.ts US 运输/打稿承诺 169 处 -> 0。SOP-5 回源 CSV 24 行(SEO描述/H1/等列, en 为主) + 生成器 --apply(断言 A-E PASS) + ts-only body 34 行手改 + small-bags(CSV 无此行, ts-only) 直接改 TS。残留复核 8 类全 0: Free Shipping on US orders over $99 / Free US shipping $99 / 4-day delivery / 4-day USA / Rush 2-day / $9.95 flat / 24-hour proof / 1-hour digital proof。门禁: 生成器 PASS / encoding / brand A=0 / gsc-leak / title-v5 HARD=0 / tsc 54=54。",
       "execution_commit": "3046c03a",
+      "decision_record": null
+    },
+    {
+      "task_id": "GUARD-DEBT-3HARD-2WARN-20261120",
+      "source": "strategy_task_queue",
+      "cluster": "multi",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "ZP-daily-content",
+      "status": "WAITING_K3",
+      "priority": 70.0,
+      "upstream_inputs": [
+        ".hermes/logs/2026-11-20-TRUTH-A2-SAMEDAY.md §3.3"
+      ],
+      "approval_gate": "每個 SKU 的 MOQ 真值須 K3 拍板（聲稱 vs 真值取哪個）",
+      "write_scope": [
+        "src/data/products.ts (三 SKU 段)",
+        "src/data/sku-seo-data.ts (對應塊)",
+        "src/lib/pricing.ts"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "2026-11-27",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": "2026-11-27",
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "HOLD_NO_LEARNING_CLAIM",
+      "result": "PENDING：2026-11-20 TRUTH-A2-SAMEDAY 以 scoped waiver 繞過（K3 20:55 拍板 a）；不修則所有 strict 提交繼續被攔。",
+      "execution_commit": null,
       "decision_record": null
     },
     {
@@ -3338,8 +3556,8 @@
   "reviews": {
     "weekly": {
       "available": true,
-      "path": ".hermes/logs/periodic-review-weekly-2026-11-13.json",
-      "review_date": "2026-11-13"
+      "path": ".hermes/logs/periodic-review-weekly-2026-11-20.json",
+      "review_date": "2026-11-20"
     },
     "monthly": {
       "available": true,

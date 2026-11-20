@@ -5,6 +5,9 @@
 - **RECOVERY: available:false**（detector 连续第 15 日无档；最后官方值 **123.7%**（11-03，977÷789.8））
 - **CONSUMED**: run-context-ZP-daily-content.json（18:17:30，preflight EXIT=0 持锁）· lane-status.json（problems=9）· lane-runs.jsonl（11-17 晚 / 11-18 各 lane 缺跑——k3 第 10 缺口）· 对端 11-17 决策窗包（98161d62 议程 1-4 / aa34f018 执行预备 / 81a0e8f5 价格量级审计）· `strategy-task-queue.json`（daily READY=0；READY 全归 blog-deepfix/manual）· verify-deploy 复核（**CF build 无 check_run**）
 
+- **DELIVERED**: `.hermes/logs/2026-11-18-ZP-daily-content.md`（内容层 NO_OP；决策窗状态 + CF build 红灯取证）；src 零写入（契约字段补录 2026-11-20：值取自本报告正文与 lane-runs 总线记录，VERDICT/正文未改）
+- **NEXT**: 11-19 档补导后貼紙第六窗；CF build/部署核验待 admin；同日 21:19 定时轮 dsh 失败另见 `.hermes/logs/2026-11-18-ZP-daily-content.failure.md`，不在本报告重跑。
+
 ## 1. K3 决策窗状态（11-18，议程 1-4 仍悬）
 
 | 议程 | 内容 | 状态 | 本车道承接 |

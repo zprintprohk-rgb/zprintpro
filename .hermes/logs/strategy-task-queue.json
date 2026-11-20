@@ -255,8 +255,8 @@
    "approval_gate": "K3 administrator action; no automatic retry",
    "owner_lane": "K3-admin",
    "status": "BLOCKED_INFRA",
-   "next_check": "2026-10-31",
-   "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+   "next_check": "2026-11-21",
+   "result": "Recurred on 2026-11-20; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
    "recurrence_observations": [
     {
      "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-weekly-meta-a9b34876",
@@ -269,10 +269,22 @@
       "Get-ScheduledTaskInfo -TaskName ZP-weekly-meta"
      ],
      "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+    },
+    {
+     "observation_key": "weekly|2026-11-20|FIX-WEEKLY-2026-11-20-ZP-weekly-meta-fab2d82c",
+     "observed_at": "2026-11-20",
+     "period": "weekly",
+     "proposed_task_id": "FIX-WEEKLY-2026-11-20-ZP-weekly-meta-fab2d82c",
+     "evidence": [
+      ".hermes/logs/lane-status.json",
+      ".hermes/logs/lane-runs.jsonl",
+      "Get-ScheduledTaskInfo -TaskName ZP-weekly-meta"
+     ],
+     "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
     }
    ],
-   "recurrence_count": 1,
-   "last_seen": "2026-10-30"
+   "recurrence_count": 2,
+   "last_seen": "2026-11-20"
   },
   {
    "task_id": "FIX-WEEKLY-2026-10-28-ZP-blog-deepfix-4231b4bd",
@@ -293,8 +305,8 @@
    "approval_gate": "K3 administrator action; no automatic retry",
    "owner_lane": "K3-admin",
    "status": "BLOCKED_INFRA",
-   "next_check": "2026-10-31",
-   "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+   "next_check": "2026-11-21",
+   "result": "Recurred on 2026-11-20; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
    "recurrence_observations": [
     {
      "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-73a3f1eb",
@@ -319,10 +331,22 @@
       "Get-ScheduledTaskInfo -TaskName ZP-blog-deepfix"
      ],
      "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+    },
+    {
+     "observation_key": "weekly|2026-11-20|FIX-WEEKLY-2026-11-20-ZP-blog-deepfix-15390e09",
+     "observed_at": "2026-11-20",
+     "period": "weekly",
+     "proposed_task_id": "FIX-WEEKLY-2026-11-20-ZP-blog-deepfix-15390e09",
+     "evidence": [
+      ".hermes/logs/lane-status.json",
+      ".hermes/logs/lane-runs.jsonl",
+      "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo"
+     ],
+     "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
     }
    ],
-   "recurrence_count": 2,
-   "last_seen": "2026-10-30"
+   "recurrence_count": 3,
+   "last_seen": "2026-11-20"
   },
   {
    "task_id": "FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3",
@@ -343,8 +367,8 @@
    "approval_gate": "K3 administrator action; no automatic retry",
    "owner_lane": "K3-admin",
    "status": "BLOCKED_INFRA",
-   "next_check": "2026-11-05",
-   "result": "Recurred on 2026-11-04; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+   "next_check": "2026-11-21",
+   "result": "Recurred on 2026-11-20; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
    "recurrence_observations": [
     {
      "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-monthly-matrix-769033ac",
@@ -381,10 +405,22 @@
       "Get-ScheduledTask -TaskName ZP-monthly-matrix | Get-ScheduledTaskInfo"
      ],
      "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
+    },
+    {
+     "observation_key": "weekly|2026-11-20|FIX-WEEKLY-2026-11-20-ZP-monthly-matrix-abf1f0b1",
+     "observed_at": "2026-11-20",
+     "period": "weekly",
+     "proposed_task_id": "FIX-WEEKLY-2026-11-20-ZP-monthly-matrix-abf1f0b1",
+     "evidence": [
+      ".hermes/logs/lane-status.json",
+      ".hermes/logs/lane-runs.jsonl",
+      "Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix"
+     ],
+     "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
     }
    ],
-   "recurrence_count": 3,
-   "last_seen": "2026-11-04"
+   "recurrence_count": 4,
+   "last_seen": "2026-11-20"
   },
   {
    "task_id": "TRUTH-T1-20261029-CALENDARS-50PCS",
@@ -467,7 +503,8 @@
    "evidence": [
     ".hermes/logs/lane-status.json",
     ".hermes/logs/lane-runs.jsonl",
-    ".hermes/locks/lane.lock"
+    ".hermes/locks/lane.lock",
+    "Get-ScheduledTaskInfo -TaskName ZP-k3-review"
    ],
    "score": 100,
    "score_model": "execution-health-blocker",
@@ -478,15 +515,31 @@
    "approval_gate": "Use recovery_plan; stop after repeated same-cause failure",
    "owner_lane": "ZP-k3-review",
    "status": "CLOSED_RESOLVED",
-   "next_check": "2026-10-31",
-   "result": "CLOSED 2026-11-14: the old 2026-10-30 lock-contention incident was followed by successful k3 review deliveries. Do not retry the historical lock event; current scheduler failures are tracked separately.",
+   "next_check": "2026-11-21",
+   "result": "Recurred on 2026-11-20; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
    "closed_at": "2026-11-14",
    "retry_allowed": false,
    "closure_evidence": [
     ".hermes/logs/2026-11-13-ZP-k3-review.md",
     ".hermes/logs/lane-runs.jsonl"
    ],
-   "reconciled_at": "2026-11-14T10:23:20+08:00"
+   "reconciled_at": "2026-11-14T10:23:20+08:00",
+   "recurrence_observations": [
+    {
+     "observation_key": "weekly|2026-11-20|FIX-WEEKLY-2026-11-20-ZP-k3-review-349b9b6f",
+     "observed_at": "2026-11-20",
+     "period": "weekly",
+     "proposed_task_id": "FIX-WEEKLY-2026-11-20-ZP-k3-review-349b9b6f",
+     "evidence": [
+      ".hermes/logs/lane-status.json",
+      ".hermes/logs/lane-runs.jsonl",
+      "Get-ScheduledTaskInfo -TaskName ZP-k3-review"
+     ],
+     "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+    }
+   ],
+   "recurrence_count": 1,
+   "last_seen": "2026-11-20"
   },
   {
    "task_id": "FIX-20261030-AEO-ANSWER-BLOCK-PROOF-CLAIM",
@@ -951,13 +1004,134 @@
    "measurement_reset": true,
    "reset_marker": "RESET_BY_TRUTH_FIX",
    "idempotency": "Do not reopen completed C109 order-price or /注文 decisions. No new safe submission date, venue/hotel delivery or currency conversion."
+  },
+  {
+   "task_id": "TRUTH-A2-SAMEDAY-20261120-01",
+   "source_strategy": "2026-11-20-a2-posters-and-same-day-flyers-truth-decision-sheet",
+   "market": "zh-hk + en + ja",
+   "target": "A2海報(PO-001) + 即日傳單(FL-008) 價格/工期真值修復（17項拍板，全部推薦A）",
+   "evidence": [
+    "重要文件/2026-11-20-a2-posters-and-same-day-flyers-truth-decision-sheet.md",
+    ".hermes/cron-prompts/harness-task-a2-sameday-truth-fix-20261120.md",
+    "src/data/products.ts (PO-001, FL-008)",
+    "src/data/products-content.ts (same-day 5034-5138, a2 5140-5330)",
+    "src/data/sku-seo-data.ts (a2 818-853, same-day 746-781)"
+   ],
+   "score": 95,
+   "score_model": "commercial-truth-conflict（報價與頁面價格雙軌矛盾，直接影響詢盤轉化與信任）",
+   "write_scope": [
+    "src/data/price-tables/posters.json (僅A2 config + currencyOverrides)",
+    "src/data/price-tables/flyers.json (same-day 拆回 A4/A5)",
+    "scripts/gen-price-data.mjs (currencyOverrides + 兩slug anchor白名單)",
+    "src/data/products.ts (PO-001, FL-008)",
+    "src/data/pricing.ts (a2-posters, same-day-flyers 兩條)",
+    "src/data/products-content.ts (兩SKU塊)",
+    "src/data/product-faqs.ts (skuMoneyFAQs 兩SKU)",
+    "src/data/sku-seo-data.ts (兩SKU塊)",
+    "src/lib/price-data.generated.ts (只准再生成)"
+   ],
+   "approval_gate": "K3 於 2026-11-20 20:30 回覆確認「按建議 A 執行」並指示登記 READY；任務單 harness-task-a2-sameday-truth-fix-20261120.md 生效",
+   "owner_lane": "ZP-daily-content",
+   "status": "DONE",
+   "next_check": "2026-11-21",
+   "result": "DONE on 2026-11-20 21:05: commit 99902084 (9 files) pushed fb62b52b..99902084; 17/17 truth items live; K3 scoped waiver (拍板a) 繞過其他SKU既有 guard debt; pricing.ts 單價口徑修復 (K3 20:55 覆核 §四-3) 與 MOQ 閘門文案改寫 (張起→或以上/pieces) 一併入 commit; Cloudflare 部署後按任務單 §7 六 URL 線上驗證。"
+  },
+  {
+   "task_id": "FIX-WEEKLY-2026-11-20-ZP-daily-content-6d5eeea1",
+   "source_strategy": "periodic-review-weekly-2026-11-20",
+   "market": "operations",
+   "lane_task": "ZP-daily-content",
+   "target": "Resolve ZP-daily-content SCHEDULER_FAILED with bounded recovery: Windows Task Scheduler LastTaskResult=2147946720; manual/other-trigger OK does not prove natural schedule recovery",
+   "evidence": [
+    ".hermes/logs/lane-status.json",
+    ".hermes/logs/lane-runs.jsonl",
+    "Get-ScheduledTaskInfo -TaskName ZP-daily-content"
+   ],
+   "score": 100,
+   "score_model": "execution-health-blocker",
+   "write_scope": [
+    "K3-admin runtime/configuration only"
+   ],
+   "approval_gate": "K3 administrator action; no automatic retry",
+   "owner_lane": "K3-admin",
+   "status": "BLOCKED_INFRA",
+   "next_check": "2026-11-21",
+   "retry_at": "2026-11-21",
+   "cooldown_days": 1,
+   "exit_criteria": "Fresh scheduler/bus/report evidence agrees; repeated same-cause failure stops automatic retry",
+   "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+  },
+  {
+   "task_id": "FIX-WEEKLY-2026-11-20-ZP-gsc-feedback-9e8ae4d4",
+   "source_strategy": "periodic-review-weekly-2026-11-20",
+   "market": "operations",
+   "lane_task": "ZP-gsc-feedback",
+   "target": "Resolve ZP-gsc-feedback SCHEDULER_FAILED with bounded recovery: Windows Task Scheduler LastTaskResult=1; manual/other-trigger OK does not prove natural schedule recovery",
+   "evidence": [
+    ".hermes/logs/lane-status.json",
+    ".hermes/logs/lane-runs.jsonl",
+    "Get-ScheduledTaskInfo -TaskName ZP-gsc-feedback"
+   ],
+   "score": 100,
+   "score_model": "execution-health-blocker",
+   "write_scope": [
+    "K3-admin runtime/configuration only"
+   ],
+   "approval_gate": "K3 administrator action; no automatic retry",
+   "owner_lane": "K3-admin",
+   "status": "BLOCKED_INFRA",
+   "next_check": "2026-11-21",
+   "retry_at": "2026-11-21",
+   "cooldown_days": 1,
+   "exit_criteria": "Fresh scheduler/bus/report evidence agrees; repeated same-cause failure stops automatic retry",
+   "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+  },
+  {
+   "task_id": "FACTORY-FLYERS-TIER-QUERY-20261120",
+   "source_strategy": "2026-11-20-a2-posters-and-same-day-flyers-truth-decision-sheet",
+   "market": "zh-hk",
+   "target": "即日傳單 A4/A5 全部數量檔（10–400 張）與 A5 斷崖點（99→100、200→300 非單調）工廠實價校準",
+   "evidence": [
+    "重要文件/2026-11-20-a2-posters-and-same-day-flyers-truth-decision-sheet.md §四-2",
+    ".hermes/logs/2026-11-20-TRUTH-A2-SAMEDAY.md §5"
+   ],
+   "score": 80,
+   "score_model": "commercial-truth-calibration（modeled 價掛線上，斷崖損害報價可信度）",
+   "write_scope": [
+    "src/data/price-tables/flyers.json",
+    "src/lib/price-data.generated.ts (再生成)",
+    "src/data/products.ts (FL-008)",
+    "src/lib/pricing.ts"
+   ],
+   "approval_gate": "K3 向工廠取得實價後拍板；校準前數字不動",
+   "owner_lane": "K3-admin → ZP-daily-content",
+   "status": "WAITING_K3",
+   "next_check": "2026-11-27",
+   "result": "PENDING：待工廠實詢。校準後一併評估是否加頁面斷崖說明文案。"
+  },
+  {
+   "task_id": "GUARD-DEBT-3HARD-2WARN-20261120",
+   "source_strategy": "2026-11-20-TRUTH-A2-SAMEDAY report §3.3",
+   "market": "multi",
+   "target": "price-truth-guard 既有 3 HARD（certificates MOQ 50 vs 100 / textbooks 10 vs 100 / electronics-packaging-box 100 vs 200）+ 2 WARN（kraft/white-card bags USD 越界）",
+   "evidence": [
+    ".hermes/logs/2026-11-20-TRUTH-A2-SAMEDAY.md §3.3"
+   ],
+   "score": 70,
+   "score_model": "guard-debt（阻塞 strict commit gate，本次靠 scoped waiver 放行）",
+   "write_scope": [
+    "src/data/products.ts (三 SKU 段)",
+    "src/data/sku-seo-data.ts (對應塊)",
+    "src/lib/pricing.ts"
+   ],
+   "approval_gate": "每個 SKU 的 MOQ 真值須 K3 拍板（聲稱 vs 真值取哪個）",
+   "owner_lane": "ZP-daily-content",
+   "status": "WAITING_K3",
+   "next_check": "2026-11-27",
+   "result": "PENDING：2026-11-20 TRUTH-A2-SAMEDAY 以 scoped waiver 繞過（K3 20:55 拍板 a）；不修則所有 strict 提交繼續被攔。"
   }
  ],
- "last_review": {
-  "period": "weekly",
-  "date": "2026-11-04",
-  "report": ".hermes/logs/periodic-review-weekly-2026-11-04.json"
- },
+ "last_review": "2026-11-20 20:5x 登記 FACTORY-FLYERS-TIER-QUERY + GUARD-DEBT-3HARD-2WARN = WAITING_K3；K3 覆核三裁決寫入拍板單 §四",
  "commercial_truth_decision": {
   "decision_id": "CT-20261113-D1-D6",
   "record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",

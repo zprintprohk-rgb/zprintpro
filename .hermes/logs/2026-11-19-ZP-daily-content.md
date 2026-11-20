@@ -5,6 +5,9 @@
 - **RECOVERY: available:false**（detector 连续第 16 日无档；最后官方值 **123.7%**（11-03，977÷789.8））
 - **CONSUMED**: run-context-ZP-daily-content.json（18:17:30，preflight EXIT=0 持锁）· lane-status.json（problems=7，refreshed）· lane-runs.jsonl（daily 11-18 21:17 FAILED（dsh 模型错误）/ gsc 11-18 20:20 FAILED（pre-commit 拦 1 文件））· **对端 a0921854 决策窗执行报告（VERDICT EXECUTED）+ d5c0d36f/a9f218f0 + K3 11-19 contact 指令（6745d798/15248366）** · `strategy-task-queue.json`（daily READY=0）· `GSC数据/28天…2026-11-19.xlsx`（K3 11-19 01:06 导出，只读解析）
 
+- **DELIVERED**: `.hermes/logs/2026-11-19-ZP-daily-content.md`（貼紙第六窗 29.94@179imp 双方法 + 11-18 决策窗执行消费）；src 零写入（契约字段补录 2026-11-20：值取自本报告 §1/§2 与 lane-runs 总线记录，VERDICT/正文未改）
+- **NEXT**: 2026-11-21 SMALLBATCH 7d 复测 + 貼紙第七窗（需数据日 ≥11-18）+ title 评估讨论；3mo 缺第 8 批待 K3。
+
 ## 1. 貼紙第六窗复测（11-19 28d xlsx，数据日 11-16）—— **破 30 线里程碑**
 
 | 窗 | 档 | 貼紙印刷 pos | imp |
