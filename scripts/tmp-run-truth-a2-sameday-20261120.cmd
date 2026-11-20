@@ -1,0 +1,15 @@
+@echo off
+rem one-shot manual dispatch 2026-11-20: TRUTH-A2-SAMEDAY-20261120-01 first run
+set PYTHONIOENCODING=utf-8
+set PYTHONUTF8=1
+if not defined DEEPSEEK_API_KEY for /f "usebackq delims=" %%K in (`powershell.exe -NoProfile -Command "[Environment]::GetEnvironmentVariable('DEEPSEEK_API_KEY','Machine')"` ) do set "DEEPSEEK_API_KEY=%%K"
+if not defined DEEPSEEK_API_KEY for /f "usebackq delims=" %%K in (`powershell.exe -NoProfile -Command "[Environment]::GetEnvironmentVariable('DEEPSEEK_API_KEY','User')"` ) do set "DEEPSEEK_API_KEY=%%K"
+cd /d "F:\zprintpro-nextjs"
+echo ===== run start %DATE% %TIME% ===== >> "F:\zprintpro-nextjs\.hermes\logs\cron-TRUTH-A2-SAMEDAY.log"
+call "C:\Users\Administrator\AppData\Roaming\DSH Desktop\host-commands\desktop\bin\dsh.cmd" --profile headless "PRIORITY -1 results-bus contract: FIRST read F:\zprintpro-nextjs\.hermes\logs\run-context-TRUTH-A2-SAMEDAY.json and F:\zprintpro-nextjs\.hermes\logs\lane-status.json and F:\zprintpro-nextjs\.hermes\cron-prompts\lane-results-bus-contract.md and use them as data basis. TASK: K3 approved decision-sheet option A on 2026-11-20. Read F:\zprintpro-nextjs\.hermes\cron-prompts\harness-task-a2-sameday-truth-fix-20261120.md and execute it fully and exactly: touch only WRITE_SCOPE files, never DO_NOT_TOUCH items. STEP 0 idempotency: before each edit verify whether that truth is already applied on disk; skip items already done and say so. STEP 1 edit the 8 source files in section 4 order (price-tables first, then generator, then data layer). STEP 2 regenerate with node scripts/gen-price-data.mjs. STEP 3 run every guard in section 6 and paste each result line into the report; if any guard fails, stop and report FAIL with the failing line. STEP 4 verify git diff shows the generated file changes only for a2-posters and same-day-flyers slugs. STEP 5 write the report to F:\zprintpro-nextjs\.hermes\logs\2026-11-20-TRUTH-A2-SAMEDAY.md with machine-readable first block: VERDICT / CONSUMED / DELIVERED / NEXT. Environment: the pwsh tool is blocked in this sandbox, do NOT retry it, use file tools and web tools only. Git commit and push is handled host-side after you exit, do NOT run git yourself." >> "F:\zprintpro-nextjs\.hermes\logs\cron-TRUTH-A2-SAMEDAY.log" 2>&1
+set RC=%ERRORLEVEL%
+echo ===== dsh exit=%RC% host-side git commit/push ===== >> "F:\zprintpro-nextjs\.hermes\logs\cron-TRUTH-A2-SAMEDAY.log"
+"C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe" "F:\zprintpro-nextjs\scripts\lane-git-commit.py" --lane "TRUTH-A2-SAMEDAY" --repo "F:\zprintpro-nextjs" --dsh-exit %RC% >> "F:\zprintpro-nextjs\.hermes\logs\cron-TRUTH-A2-SAMEDAY.log" 2>&1
+"C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe" "F:\zprintpro-nextjs\scripts\lane-preflight.py" --lane "TRUTH-A2-SAMEDAY" --repo "F:\zprintpro-nextjs" --release >> "F:\zprintpro-nextjs\.hermes\logs\cron-TRUTH-A2-SAMEDAY.log" 2>&1
+echo ===== run end %DATE% %TIME% exit=%RC% ===== >> "F:\zprintpro-nextjs\.hermes\logs\cron-TRUTH-A2-SAMEDAY.log"
+exit /b %RC%
