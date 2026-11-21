@@ -869,7 +869,7 @@
       "status": "DONE",
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
       "created_at": "2026-11-13T03:10:02+08:00",
-      "result": "DONE+DEPLOYED 2026-11-21: commit 6a9294d7 — poster-printing-guide zh-hk 45 处清理(HK→16/急件24h→11:00即日投產條件化/SGS+100%聲明+無源統計刪/title常青過當量門禁)+blog-posts.ts 三語同步",
+      "result": "DONE+DEPLOYED 2026-11-21: commit 6a9294d7 — poster-printing-guide zh-hk 45 处清理(HK→16/急件24h→11:00即日投產條件化/SGS+100%聲明+無源統計刪/title常青過當量門禁)+blog-posts.ts 三語同步 || SECOND RUN DONE+DEPLOYED 2026-11-21 17:54: commit 2521140 — 剩餘面 (首輪限 poster-printing-guide): poster-printing-price-guide title HK$9起→常青55當量+desc/摘要/數據洞察對齊A2真值(HK$16·10張HK$160·100張HK$561·1-2工作天·即日條件化)+市場詢價表加第三方口徑歸屬; poster-size-guide 三處HK$9→HK$16+5-7天→1-2天; blog-posts.ts 鏡像同步。guards encoding/gsc-leak/title-v5/brand 全綠。retest 2026-11-28",
       "production_deploy": null,
       "online_verify": null,
       "next_check": "D1/D2 + 7/14/28d after actual deployment",
@@ -979,7 +979,7 @@
       "status": "DONE",
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
       "created_at": "2026-11-13T03:10:02+08:00",
-      "result": "DONE+DEPLOYED 2026-11-21: commit 6a9294d7 — comiket ¥7,500訂單起價/特急+直送+2-4日條件化; textbook products.ts內部名清除/價格SKU化/配送條件化; campus 11規則高危清理。campus 殘留統計%/USD價格屬 FIX-20261030-BLOG-CERT-PHRASES A/B/C 範圍,已由該任務後續處理",
+      "result": "DONE+DEPLOYED 2026-11-21: commit 6a9294d7 — comiket ¥7,500訂單起價/特急+直送+2-4日條件化; textbook products.ts內部名清除/價格SKU化/配送條件化; campus 11規則高危清理 || SECOND RUN DONE+DEPLOYED 2026-11-21 19:47: commit c93cb09d — 首輪明確留給 CERT 任務但尚未執行的殘留面: campus 全額返金x4/USD 1-40/部x2/24hSLA+7×24/「100% FSC」絕對化/「4認証書類パッケージ提供」無源承諾/未源納期別表 → 全部「注文時に確認」口徑; doujin-circle 「1冊¥7,500起」單價口徑x2 →「ご注文¥7,500〜指定仕様數量訂單金額目安」(對齊 K3 #5); exercise-book description 認證清單刪+30日保証x3條件化; blog-posts.ts ja 鏡像同步。guards 全綠。retest 2026-11-28",
       "production_deploy": null,
       "online_verify": null,
       "next_check": "D1/D2 + 7/14/28d after actual deployment",
@@ -1006,6 +1006,33 @@
       "reset_marker": "RESET_BY_TRUTH_FIX",
       "idempotency": "Do not reopen completed C109 order-price or /注文 decisions. No new safe submission date, venue/hotel delivery or currency conversion.",
       "last_review": "2026-11-21T00:48:19.486Z"
+    },
+    {
+      "task_id": "FIX-20261121-DOUJIN-RUSH-RESIDUAL",
+      "source_strategy": "online-probe-2026-11-21-p1-batch",
+      "score_model": "commercial-truth-residual-priority",
+      "status": "READY",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "created_at": "2026-11-21T20:05:00+08:00",
+      "result": "NOT_EXECUTED",
+      "production_deploy": null,
+      "online_verify": null,
+      "next_check": "2026-11-28",
+      "market": "zh-hk + en",
+      "target": "src/data/products.ts doujinshi-printing zh desc 「Comiket 前 24 小時特急対応」 + a4-flyers zh title/alt 「最快24小時」片段 (blog 側邊欄熱門產品卡實錘 2026-11-21 19:57)",
+      "evidence": [
+        "K3 2026-10-30 裁决单#5: rush 条件化不承诺24h",
+        "线上实锤: /zh-hk/blog/poster-printing-price-guide/ 侧栏 doujinshi 卡 desc 含 「Comiket 前 24 小時特急対応」; a4-flyers 卡 alt 含 「最快24小時」"
+      ],
+      "score": 78,
+      "approval_gate": "继承 K3 #5 已批口径 — rush/特急一律条件化(數據完成前提+以報價確認), 不新增承诺",
+      "owner_lane": "ZP-daily-content",
+      "write_scope": [
+        "src/data/products.ts (doujinshi-printing + a4-flyers zh/en matching fields only)"
+      ],
+      "measurement_reset": true,
+      "reset_marker": "RESET_BY_TRUTH_FIX",
+      "idempotency": "Only condition the rush claims; do not touch ¥7,500 /注文 framing or MOQ fields."
     },
     {
       "task_id": "TRUTH-A2-SAMEDAY-20261120-01",
@@ -1238,9 +1265,11 @@
       ],
       "approval_gate": "低風險；可隨下一批 harness 處理",
       "owner_lane": "Harness 下一批",
-      "status": "READY",
+      "status": "DONE",
       "next_check": "2026-11-22",
-      "result": ""
+      "result": "",
+      "resolved_in": "e392b120 (PRICE-DEBT-BIGBATCH P0)",
+      "note": "tsc --noEmit 0 錯誤（基線54歸零）"
     },
     {
       "task_id": "PRICE-DEBT-BIGBATCH-20261121",
@@ -1264,9 +1293,12 @@
       ],
       "approval_gate": "K3 2026-11-21 09:15 已批：D1 證書10張接 / D2 書籍10本接 / D3 電子盒100接 / D4 准 / D5 准（『全部按這個統一』）",
       "owner_lane": "Harness（deepseek headless，派發由 Kimi 執行）",
-      "status": "EXECUTING",
+      "status": "DONE_DEPLOYED",
       "next_check": "2026-11-21",
-      "result": "2026-11-21 09:2x Harness 已派（deepseek headless）。方向=真值下調+補低檔+聲稱統一。任務單已更新為正式版。報告 .hermes/logs/2026-11-21-PRICE-DEBT-BIGBATCH.md。"
+      "result": "2026-11-21 09:2x Harness 已派（deepseek headless）。方向=真值下調+補低檔+聲稱統一。任務單已更新為正式版。報告 .hermes/logs/2026-11-21-PRICE-DEBT-BIGBATCH.md。",
+      "deployed_at": "2026-11-21 10:20",
+      "deploy_commit": "e392b120",
+      "host_verify": "encoding✅ content-guard✅ tsc 0 err✅ build✅ price-truth-guard HARD=0 WARN=0✅; 線上抽驗 rush頁價格表6行+FAQ三檔 / certificates MOQ10 / textbooks MOQ10 / electronics-box MOQ100 全對"
     }
   ],
   "last_review": {
