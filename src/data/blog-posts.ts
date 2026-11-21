@@ -1519,7 +1519,7 @@ const lpPosterPrintingPrice: BlogPostMeta = {
   source: 'daily',
   date: '2026-08-07',
   title: {
-    'zh-hk': 'A1 A2 海報印刷價格 HK$9起 單價紙材批量折扣 | 智印港',
+    'zh-hk': 'A1 A2 海報印刷價格：單價・紙材・批量折扣全解析 | 智印港',
     en: 'A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk',
     ja: 'A1 A2 ポスター印刷料金ガイド：単価・用紙・加工 | ZprintPro',
   },
