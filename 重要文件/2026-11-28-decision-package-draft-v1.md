@@ -58,3 +58,14 @@
 - 7 天主要验技术与早期方向, 14 天看方向, **28 天才允许经营判断**; 不承诺任何词必进首页。
 - 低展示词不作单日因果断言; 三口径不混算; AI 面引用 ≠ 排名/CTR（不互算）。
 - 现有部署资产的处置以「继续/停止/回滚」三分: 无负面证据 → 继续（默认）; 需 K3 点名的只有 B1（对外动作）与 B2（资源分配）。
+
+## F. 11-24 数据批首读执行单（机械化, 编排层照单执行）
+
+前置: K3/管理员已把 11-24 新三档导出放入 `GSC数据/`（若仍缺 → 全表记 NO_CURRENT_BATCH, 不用旧窗充当）。
+
+1. `Get-ChildItem GSC数据 -Filter "*2026-11-24*"` → 记录实际文件名（注意 (1)/(2) 后缀变体）。
+2. 克隆分析器: `.hermes/tmp/analyze_gsc_20261119.py` → `analyze_gsc_20261124.py`; 只改四处: ① docstring 窗口注记 ② FILES 字典加 `"2026-11-24"` 条目（含 24h/7d/28d 实际文件名, 保留既有 8 批） ③ `ASSETS = docs/assets/2026-11-24` ④ 若有日期锚点常量同步。沿 B 车双方法口径（openpyxl×pandas 全批 match 才算过）。
+3. 运行 → 输出名断言（four-window / money-keyword-delta / 9月基线对比三 JSON + assets 图表）。
+4. 首读四问（读数回填本包 §A 表）: ① certificates meta 咬合（證書印刷 pos 是否回页一, 12.22 现值） ② a2 直答块咬合（a2 poster 43.02 是否减速/反转） ③ 食品包裝 meta 咬合（125 imp/0 clk 是否破零） ④ 稀释形态（曝光/点击/CTR 三线是否收敛）。
+5. 附查: SMALLBATCH 窗口读数（stickers-en 条目, 仅累计不改判）+ en/ja 三词回撤排查（教材印刷製本 +32.95 / a2 poster +22.15 / small batch stickers 跌出页一）。
+6. 读数回填本包 §A → §D 相应阻塞项若已解（导出恢复）即注销; 全部改动照实 commit（docs-only 攒 carry 或达标推送）。
