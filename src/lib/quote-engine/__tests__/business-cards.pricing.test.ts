@@ -11,15 +11,28 @@ import { businessCardsFormulaV2 } from '../formulas/business-cards';
 import { MARKETS } from '../markets';
 import { calculateFX } from '../fx';
 
+// 2026-11-21 P0 fix: 公式宣告回傳 FormulaResult，額外成本明細只在 inline 交集型別；
+// 測試端以交集型別取回，並補齊 FormulaContext 必填的 size/material（原 baseCtx 缺這兩欄）。
+type BusinessCardsTestResult = ReturnType<typeof businessCardsFormulaV2> & {
+  setupCostHKD: number;
+  paperCostHKD: number;
+  finishingCostHKD: number;
+  shippingHKD: number;
+  totalCostHKD: number;
+  tax: { taxRate: number; preTaxAmount: number; totalWithTax: number };
+};
+
 const baseCtx = {
   quantity: 1000,
+  size: { w: 89, h: 51, unit: 'mm' as const },
+  material: '400g_gloss_art',
   finishes: [],
   deadline: 'standard' as const,
 };
 
-function getQuote(marketCode: keyof typeof MARKETS) {
+function getQuote(marketCode: keyof typeof MARKETS): BusinessCardsTestResult {
   const m = MARKETS[marketCode];
-  return businessCardsFormulaV2({ ...baseCtx, market: m });
+  return businessCardsFormulaV2({ ...baseCtx, market: m }) as BusinessCardsTestResult;
 }
 
 test('HK 1000 张: HKD 单价 0.5-0.8 之间, 总价 > 起步 80', () => {
@@ -60,7 +73,7 @@ test('FX 不被双重换汇抵消 (修复 #1)', () => {
   // 旧 bug: 净 FX ≈ 0, 净利率虚高
   // 修复后: 净 FX 4.4%, 净利率应该 30-40%
   const r = getQuote('US');
-  const customerPaysUSD = r.baseUnitPrice * r.quantity;
+  const customerPaysUSD = r.baseUnitPrice * baseCtx.quantity;
   const factoryHKD = r.setupCostHKD + r.paperCostHKD + r.finishingCostHKD;
   const fx = calculateFX({
     fromAmount: customerPaysUSD,

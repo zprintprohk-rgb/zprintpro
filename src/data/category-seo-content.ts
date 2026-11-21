@@ -2301,7 +2301,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '3. 小批量彈性起訂，學校預算友好',
           points: [
-            '練習簿 10 本起訂（數碼印刷），適合小型補習社和專題教材；教科書 100 本起',
+            '練習簿 10 本起訂（數碼印刷），適合小型補習社和專題教材；教科書 10 本起',
             '500 本以上柯式印刷更經濟，適合全校統一教材和大型教育機構',
             '教育機構專屬折扣，長期合作客戶享受額外優惠和優先排期',
           ],
@@ -2453,7 +2453,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: 'What is the minimum order for educational printing?', a: 'Exercise books from 10 pcs; certificates from 100 pcs (digital printing). 500+ pcs recommended for offset. Educational institutions enjoy exclusive discounts.' },
+      { q: 'What is the minimum order for educational printing?', a: 'Exercise books from 10 pcs; certificates from 10 pcs (digital printing). 500+ pcs recommended for offset. Educational institutions enjoy exclusive discounts.' },
       { q: 'Can you print exercise books and textbooks?', a: 'Yes. Full range: exercise books, workbooks, textbooks, teacher manuals, and more.' },
       { q: 'Do you use eco-friendly materials?', a: 'Yes. FSC-certified eco paper and soy-based inks — non-toxic, meeting children\'s product safety standards.' },
       { q: 'Can you print certificates and awards?', a: 'Yes. Foil-stamped certificates, anti-fraud watermark certificates, and awards available.' },
@@ -2467,8 +2467,8 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-24 v3.17 T44 B2 完整 3 词: 教科書/教材 注入 educational ja 块, ジープリント 埋点 2-3 次
-    h2: '教科書 印刷 / 練習冊 / 教材 | 100本起 3-5営業日 | ZprintPro',
-    featuredSnippet: '教科書 印刷 100本から HK$24／本 | 練習冊/教材/学校/塾 4 種対応 | 標準 3-5 営業日 DHL 2-4日 | ジープリント. 教科書/練習冊/教材三合一, 5 紙質 (上質紙/再生紙/コート紙/クラフト紙/色上質), 両面カラー, ミシン目, ジープリント 工場直送価格.',
+    h2: '教科書 印刷 / 練習冊 / 教材 | 10本起 3-5営業日 | ZprintPro',
+    featuredSnippet: '教科書 印刷 10本から HK$24／本 | 練習冊/教材/学校/塾 4 種対応 | 標準 3-5 営業日 DHL 2-4日 | ジープリント. 教科書/練習冊/教材三合一, 5 紙質 (上質紙/再生紙/コート紙/クラフト紙/色上質), 両面カラー, ミシン目, ジープリント 工場直送価格.',
     lastUpdated: '2026-08-24',
     coreAdvantages: {
       title: 'ZprintPro 教育印刷の強み',

@@ -1,5 +1,9 @@
 // Search regression test (2026-06-08: 增加 typeahead 业务别名 + 简繁互通 验证)
-import { searchAll, categories, products } from '../../data/products';
+// 2026-11-21 P0 fix: searchAll 實際住在 data/search-helpers（products.ts 從未 export 它）,
+// 且原 '../../data/products' 由 __tests__ 只解析到 src/lib/data/products（不存在）→ 54 tsc error 之一。
+// 改用 tsconfig paths alias '@/data/*'（= src/data/*），避免相對層數再算錯。
+import { searchAll } from '@/data/search-helpers';
+import { products } from '@/data/products';
 
 // === 1. 业务搜索: 关键 query 命中数 ===
 // 验证:

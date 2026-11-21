@@ -8,6 +8,15 @@ import { strict as assert } from 'node:assert';
 import { booksFormula } from '../formulas/books';
 import { MARKETS } from '../markets';
 
+// 2026-11-21 P0 fix: booksFormula 的宣告回傳型別是 FormulaResult，額外成本明細
+// （paperCostHKD / setupCostHKD / tax / market…）只存在於回傳值的 inline 交集型別。
+// 測試端以交集型別取回欄位，不改公式邏輯、不改斷言內容。
+type BooksTestResult = ReturnType<typeof booksFormula> & {
+  paperCostHKD: number;
+  setupCostHKD: number;
+  tax: { taxRate: number; preTaxAmount: number; totalWithTax: number };
+};
+
 test('books 50 本 × 24 页: 内页 sheetsNeeded = 150, paperCost 含封面 860.5 (旧公式 3 张 → 15 HKD 破产风险)', () => {
   const r = booksFormula({
     quantity: 50,
@@ -17,7 +26,7 @@ test('books 50 本 × 24 页: 内页 sheetsNeeded = 150, paperCost 含封面 860
     deadline: 'standard' as const,
     pages: 24,
     market: MARKETS.HK,
-  });
+  }) as BooksTestResult;
   // paperCost = innerPaperCost + coverPaperCost
   // innerPaperCost = 150 sheets × 5 = 750
   // coverPaperCost = ceil(50/4) × 8.5 = 13 × 8.5 = 110.5
@@ -35,7 +44,7 @@ test('books 100 本 × 32 页: inner 400 sheets × 5 = 2000 + cover 425 = 2425',
     deadline: 'standard' as const,
     pages: 32,
     market: MARKETS.HK,
-  });
+  }) as BooksTestResult;
   // innerPaperCost = 100 × ceil(32/8) × 5 = 100 × 4 × 5 = 2000
   // coverPaperCost = ceil(100/4) × 8.5 = 25 × 8.5 = 212.5
   // total = 2212.5
@@ -51,6 +60,6 @@ test('books 50 本 × 24 页: paperCost 应该 >= 700 (H2 修复后内页+封面
     deadline: 'standard' as const,
     pages: 24,
     market: MARKETS.HK,
-  });
+  }) as BooksTestResult;
   assert.ok(r.paperCostHKD >= 700, `paperCost ${r.paperCostHKD} should be >= 700 (H2 修复后正确反映 150 张大版 + 封面)`);
 });

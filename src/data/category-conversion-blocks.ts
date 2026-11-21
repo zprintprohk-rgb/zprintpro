@@ -2645,7 +2645,7 @@ categoryConversionBlocks['educational:zh-hk'] = {
   "category": "educational",
   "locale": "zh-hk",
   "title": "香港學校印刷：證書・校簿・教科書・畢業紀念冊 訂製｜智印港",
-  "metaDescription": "香港證書印刷 HK$8-40/張，200g-250g 水印紙或棉質紙，燙金壓凹防偽底紋都做到；校簿印刷 HK$4-16/本，A4/A5 內頁橫線方格空白任揀；畢業紀念冊 HK$45-180/本，騎馬釘膠裝精裝三種裝訂，1 本起訂。證書 100 張起，WhatsApp 想訂幾多張都傾得掂，即刻報價。",
+  "metaDescription": "香港證書印刷 HK$8-40/張，200g-250g 水印紙或棉質紙，燙金壓凹防偽底紋都做到；校簿印刷 HK$4-16/本，A4/A5 內頁橫線方格空白任揀；畢業紀念冊 HK$45-180/本，騎馬釘膠裝精裝三種裝訂，1 本起訂。證書 10 張起，WhatsApp 想訂幾多張都傾得掂，即刻報價。",
   "quickAnswers": [
     {
       "q": "證書印刷幾多錢一張？",
@@ -2758,7 +2758,7 @@ categoryConversionBlocks['educational:zh-hk'] = {
     }
   ],
   "newFaqs": [
-    { "q": "證書印刷幾多錢一張？", "a": "證書 HK$8-40 一張，視乎紙材、尺寸（A4 或 A3）同工藝：燙金、壓凹、防偽底紋、浮水印都可以加。常用 200g-250g 水印紙或棉質紙，100 張起訂，確實價錢 WhatsApp 報價。" },
+    { "q": "證書印刷幾多錢一張？", "a": "證書 HK$8-40 一張，視乎紙材、尺寸（A4 或 A3）同工藝：燙金、壓凹、防偽底紋、浮水印都可以加。常用 200g-250g 水印紙或棉質紙，10 張起訂，確實價錢 WhatsApp 報價。" },
     { "q": "證書紙有咩材質？點揀先啱？", "a": "常見係 200g-250g 水印紙同棉質紙。水印紙本身帶浮水印，加埋防偽底紋就穩陣，機構認證、畢業證書都用得；棉質紙手感厚實，寫獎狀、榮譽證書企理啲。唔知點揀就話我哋知用途，幫你配。" },
     { "q": "校簿印刷起訂量要幾多本？", "a": "練習簿 100 本起訂，小批量數碼、大量柯式，補習社同學校細單都接得。A4/A5 內頁可揀橫線、方格或空白，封面 200g 銅版紙四色，HK$4-16/本，開學前兩個星期係高峰期，記得早啲落單。" },
     {
@@ -2775,7 +2775,7 @@ categoryConversionBlocks['educational:zh-hk'] = {
     },
     {
       "q": "證書印刷起訂量係幾多？工藝有咩揀？",
-      "a": "證書 100 張起訂，小批量數碼、大量柯式。工藝方面燙金、壓凹、防偽底紋、浮水印都做到，畢業證書、獎狀、校友會證書、培訓證書都啱用，確實價錢按規格報價。"
+      "a": "證書 10 張起訂，小批量數碼、大量柯式。工藝方面燙金、壓凹、防偽底紋、浮水印都做到，畢業證書、獎狀、校友會證書、培訓證書都啱用，確實價錢按規格報價。"
     }
   ]
 };
@@ -2784,7 +2784,7 @@ categoryConversionBlocks['educational:en'] = {
   "category": "educational",
   "locale": "en",
   "title": "Exercise Book Printing & Custom School Workbooks｜ZprintPro",
-  "metaDescription": "Custom printed exercise books & school workbook printing from US$1.84. 10-book MOQ for exercise books; certificates from 100 pcs. Free typesetting, DHL 2-4 day delivery. 30-second quote for schools.",
+  "metaDescription": "Custom printed exercise books & school workbook printing from US$1.84. 10-book MOQ for exercise books; certificates from 10 pcs. Free typesetting, DHL 2-4 day delivery. 30-second quote for schools.",
   "quickAnswers": [
     {
       "q": "How much does school exercise book printing cost?",
@@ -2792,7 +2792,7 @@ categoryConversionBlocks['educational:en'] = {
     },
     {
       "q": "What is the MOQ for custom printed exercise books?",
-      "a": "Exercise books and textbooks from 10 books; yearbooks from 1 copy; certificates from 100 pcs. Small runs print digitally, while offset presses handle larger volume orders."
+      "a": "Exercise books and textbooks from 10 books; yearbooks from 1 copy; certificates from 10 pcs. Small runs print digitally, while offset presses handle larger volume orders."
     },
     {
       "q": "How long does a school printing order take from quote to delivery?",

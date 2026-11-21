@@ -389,6 +389,17 @@ export function sceneMoqLabel(sceneKey: string, locale: Locale): string | null {
   const product = products.find((p) => p.slug === slug);
   if (!product || typeof product.minQuantity !== 'number') return null;
   const n = product.minQuantity;
+  // 2026-11-21 D1: 證書真值改 10 張, 量詞用「張」而非本冊類的「本」。
+  if (slug === 'certificates') {
+    switch (locale) {
+      case 'en':
+        return `From ${n} sheets`;
+      case 'ja':
+        return `${n}枚から`;
+      default:
+        return `${n} 張起`;
+    }
+  }
   switch (locale) {
     case 'en':
       return `From ${n} copies`;

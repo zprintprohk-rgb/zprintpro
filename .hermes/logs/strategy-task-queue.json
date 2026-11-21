@@ -1128,9 +1128,9 @@
       ],
       "approval_gate": "每個 SKU 的 MOQ 真值須 K3 拍板（聲稱 vs 真值取哪個）",
       "owner_lane": "ZP-daily-content",
-      "status": "WAITING_K3",
+      "status": "MERGED_INTO_BIGBATCH",
       "next_check": "2026-11-27",
-      "result": "PENDING：2026-11-20 TRUTH-A2-SAMEDAY 以 scoped waiver 繞過（K3 20:55 拍板 a）；不修則所有 strict 提交繼續被攔。"
+      "result": "已併入 PRICE-DEBT-BIGBATCH-20261121 的 P2/P3（K3 09:15 拍板方向：證書10/書籍10/電子盒100 + bags USD 重算），原任務關閉。"
     },
     {
       "task_id": "CF-DEPLOY-STALL-20261120",
@@ -1197,9 +1197,9 @@
       ],
       "approval_gate": "K3 2026-11-21 08:48 三問已答：通道仍運作/付費急件(傳單50-1000・小冊子10-500・摺頁50-500，等)/截稿18:00；Harness 任務單 harness-task-rush-page-truth-20261121.md 已下發",
       "owner_lane": "K3-admin（事實確認）→ Harness（執行）",
-      "status": "READY_TO_PUSH",
+      "status": "DONE_DEPLOYED",
       "next_check": "2026-11-21",
-      "result": "Harness 首輪交付 4/4 檔（2026-11-21 09:0x，3 分鐘）；誠實記 FAILED（其 sandbox 無 shell，四項檢查 NOT EXECUTED）。host 複驗：encoding PASS / content-guard PASS / tsc 54 錯全在既有 quote-engine __tests__ 死測試檔（非本次 4 檔，登 TSC-DEBT）/ build 驗證中。Bonus 修正：C 檔 zh Q5 原文『不加收加急費』與附加費真值正面衝突，已改。殘留：① rush-data.ts 凍結檔可見 FAQ 未同步三檔（需 K3 另批解凍）② Grid/FAQ 組件現未掛載（死代碼但文案正確）③ en FAQ JSON-LD 未補檔位（任務只列 zh/ja）④ 頁面『最後更新 8/26』未改。 BUILD PASS（exit 0, 76s， Compiled successfully + 723 URLs + IndexNow 3 locales）。四項複驗全綠（tsc 既有死測試欠債除外），推送待 K3 一詞。"
+      "result": "Harness 首輪交付 4/4 檔（2026-11-21 09:0x，3 分鐘）；誠實記 FAILED（其 sandbox 無 shell，四項檢查 NOT EXECUTED）。host 複驗：encoding PASS / content-guard PASS / tsc 54 錯全在既有 quote-engine __tests__ 死測試檔（非本次 4 檔，登 TSC-DEBT）/ build 驗證中。Bonus 修正：C 檔 zh Q5 原文『不加收加急費』與附加費真值正面衝突，已改。殘留：① rush-data.ts 凍結檔可見 FAQ 未同步三檔（需 K3 另批解凍）② Grid/FAQ 組件現未掛載（死代碼但文案正確）③ en FAQ JSON-LD 未補檔位（任務只列 zh/ja）④ 頁面『最後更新 8/26』未改。 BUILD PASS（exit 0, 76s， Compiled successfully + 723 URLs + IndexNow 3 locales）。四項複驗全綠（tsc 既有死測試欠債除外），推送待 K3 一詞。 PUSHED 4183ee5a：線上驗譇 zh rush 頁 AEO 答案塊已含三檔+附加費+不適用品類 ✅；meta/FAQ JSON-LD 同批上線。可見 FAQ（rush-data.ts 凍結檔）仍舊口徑=已知殘留，待 K3 解凍批。"
     },
     {
       "task_id": "FOOTER-ZHHK-HK-ADDRESS-FACT-20261121",
@@ -1241,6 +1241,32 @@
       "status": "READY",
       "next_check": "2026-11-22",
       "result": ""
+    },
+    {
+      "task_id": "PRICE-DEBT-BIGBATCH-20261121",
+      "source_strategy": "K3 2026-11-21 09:08 拍板 + 昨晚 GUARD-DEBT/TSC-DEBT/rush-data 殘留合批",
+      "market": "zh-hk + en + ja",
+      "target": "P0 TSC 死測試 54 錯 → P1 rush-data.ts 可見 FAQ/價格表真值（K3 解凍） → P2 guard 3 HARD MOQ → P3 guard 2 WARN bags USD；price-truth-guard 歸零",
+      "evidence": [
+        ".hermes/cron-prompts/harness-task-price-debt-bigbatch-20261121.md",
+        "price-truth-guard 復跑 2026-11-21：HARD=3 (certificates/textbooks/electronics-box) WARN=2 (kraft/white-card bags)",
+        ".hermes/tmp-tsc-rush.log（54 errors, quote-engine __tests__）",
+        "AGENTS.md §0.25.9.3（rush-data.ts 不在凍結 glob，K3 09:08 明示授權）"
+      ],
+      "score": 92,
+      "score_model": "guard-debt + visible-truth-conflict（strict gate 持續被攔 + rush 頁可見層與已上線 JSON-LD 口徑不一致）",
+      "write_scope": [
+        "src/lib/quote-engine/__tests__/（6 檔 import 修復）",
+        "src/components/services/rush-data.ts（K3 解凍授權）",
+        "src/app/[locale]/services/rush-printing-delivery/page.tsx（僅『最後更新』日期）",
+        "products-content.ts / sku-seo-data.ts / product-faqs.ts / products.ts+price-tables（僅 D1-D3 拍板側）",
+        "src/lib/pricing.ts（僅 D4）"
+      ],
+      "approval_gate": "K3 2026-11-21 09:15 已批：D1 證書10張接 / D2 書籍10本接 / D3 電子盒100接 / D4 准 / D5 准（『全部按這個統一』）",
+      "owner_lane": "Harness（deepseek headless，派發由 Kimi 執行）",
+      "status": "EXECUTING",
+      "next_check": "2026-11-21",
+      "result": "2026-11-21 09:2x Harness 已派（deepseek headless）。方向=真值下調+補低檔+聲稱統一。任務單已更新為正式版。報告 .hermes/logs/2026-11-21-PRICE-DEBT-BIGBATCH.md。"
     }
   ],
   "last_review": {

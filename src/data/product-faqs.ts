@@ -1124,9 +1124,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '賞状印刷の料金と納期は？',
       },
       answer: {
-        'zh-hk': '證書 100 個起印、HK$8 起/個，3-5 個工作天交貨。燙金/壓紋/局部UV 工藝可選，可加序號印刷，提交檔案後 1 小時免費打稿。',
-        en: 'Certificates from $2.76/pc at 100 MOQ, 3-5 business days. Foil stamping, embossing, spot UV and serial numbering available, free digital proof in 1 hour.',
-        ja: '100枚〜¥386〜、3-5営業日。金箔押し・エンボス・部分UV・通し番号対応、1時間無料校正。',
+        'zh-hk': '證書 10 張起印、HK$8 起/張，3-5 個工作天交貨。燙金/壓紋/局部UV 工藝可選，可加序號印刷，提交檔案後 1 小時免費打稿。',
+        en: 'Certificates from $2.76/pc at 10 MOQ, 3-5 business days. Foil stamping, embossing, spot UV and serial numbering available, free digital proof in 1 hour.',
+        ja: '10枚〜¥386〜、3-5営業日。金箔押し・エンボス・部分UV・通し番号対応、1時間無料校正。',
       },
     },
     {
@@ -1176,9 +1176,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '教科書印刷 いくら？',
       },
       answer: {
-        'zh-hk': '教科書 100 本起印、HK$24 起/本，5-7 個工作天交貨。覆膜騎馬釘/膠裝可選，內頁 157g 銅版紙、封面 250g，1 小時免費打稿。',
-        en: 'Textbooks from $9.20/book at 100 MOQ (157gsm interior, 250gsm cover), 5-7 business days plus DHL 2-4 day delivery. Free digital proof in 1 hour.',
-        ja: '教科書印刷は100冊〜¥1288〜（本文157gコート紙・表紙250g）。5-7営業日＋DHLで日本へ2-4日、1時間無料デジタル校正。',
+        'zh-hk': '教科書 10 本起印、HK$24 起/本，5-7 個工作天交貨。覆膜騎馬釘/膠裝可選，內頁 157g 銅版紙、封面 250g，1 小時免費打稿。',
+        en: 'Textbooks from $9.20/book at 10 MOQ (157gsm interior, 250gsm cover), 5-7 business days plus DHL 2-4 day delivery. Free digital proof in 1 hour.',
+        ja: '教科書印刷は10冊〜¥1288〜（本文157gコート紙・表紙250g）。5-7営業日＋DHLで日本へ2-4日、1時間無料デジタル校正。',
       },
     },
     {
@@ -1188,9 +1188,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '教科書・教材の製本方法は？',
       },
       answer: {
-        'zh-hk': '騎馬釘（8-64 頁）或無線膠裝（64 頁以上），A4/A5/B5 尺寸，100 本起印，教材/練習冊小批量都接。',
-        en: 'Saddle stitch (8-64 pages) or perfect bound (64+ pages) in A4/A5/B5, 100 MOQ — short-run courseware and workbooks welcome.',
-        ja: '中綴じ（8〜64ページ）・無線綴じ（64ページ超）対応、A4/A5/B5。100冊から、教材・テキスト・問題集の小ロットも相談可。',
+        'zh-hk': '騎馬釘（8-64 頁）或無線膠裝（64 頁以上），A4/A5/B5 尺寸，10 本起印，教材/練習冊小批量都接。',
+        en: 'Saddle stitch (8-64 pages) or perfect bound (64+ pages) in A4/A5/B5, 10 MOQ — short-run courseware and workbooks welcome.',
+        ja: '中綴じ（8〜64ページ）・無線綴じ（64ページ超）対応、A4/A5/B5。10冊から、教材・テキスト・問題集の小ロットも相談可。',
       },
     },
   ],

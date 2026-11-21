@@ -193,9 +193,9 @@ const categoryIndustryScenarios: Record<string, {
   ],
   books: [
     { key: 'tutoring', scenarios: {
-      'zh-hk': ['補習社皇牌教材 · 膠裝', 'B5 尺寸 · 封面 4 色 + 燙金', '200 本起 · 學校批量折扣'],
-      en: ['Tutoring flagship textbooks · perfect bound', 'B5 size · 4C cover + foil', 'From 200 · school bulk pricing'],
-      ja: ['塾主力教材・無線綴じ', 'B5サイズ・表紙4色+箔押し', '200部から・学校一括割引'],
+      'zh-hk': ['補習社皇牌教材 · 膠裝', 'B5 尺寸 · 封面 4 色 + 燙金', '10 本起 · 學校批量折扣'],
+      en: ['Tutoring flagship textbooks · perfect bound', 'B5 size · 4C cover + foil', 'From 10 · school bulk pricing'],
+      ja: ['塾主力教材・無線綴じ', 'B5サイズ・表紙4色+箔押し', '10部から・学校一括割引'],
     }},
     { key: 'children_book', scenarios: {
       'zh-hk': ['兒童繪本 · 騎馬釘/精裝', '正方形/橫版 · 圓角安全', '100 本起 · 環保大豆油墨'],
@@ -232,14 +232,14 @@ const categoryIndustryScenarios: Record<string, {
       ja: ['中学/大学卒業記念アルバム', '上製本・表紙箔押し・200頁', '100部から・校章ロゴカスタム'],
     }},
     { key: 'textbook', scenarios: {
-      'zh-hk': ['補習社皇牌教材 · 無線膠裝', 'B5 80g 道林紙 · ISBN 對位', '200 本起 · 教育機構專屬折扣'],
-      en: ['Tutoring flagship textbooks · perfect bound', 'B5 80g woodfree · ISBN alignment', 'From 200 · educator discount'],
-      ja: ['塾主力教材・無線綴じ', 'B5 80g上質紙・ISBN対応', '200部から・教育機関割引'],
+      'zh-hk': ['補習社皇牌教材 · 無線膠裝', 'B5 80g 道林紙 · ISBN 對位', '10 本起 · 教育機構專屬折扣'],
+      en: ['Tutoring flagship textbooks · perfect bound', 'B5 80g woodfree · ISBN alignment', 'From 10 · educator discount'],
+      ja: ['塾主力教材・無線綴じ', 'B5 80g上質紙・ISBN対応', '10部から・教育機関割引'],
     }},
     { key: 'certificate', scenarios: {
-      'zh-hk': ['獎狀證書印刷 · A4/A5', '銅版紙/啞粉紙 · 局部 UV 可選', '50 本起 · 學校/機構適用'],
-      en: ['Award certificates · A4/A5', 'Glossy/matte art paper · spot UV', 'From 50 · schools/institutions'],
-      ja: ['賞状/証明書印刷・A4/A5', 'コート紙/マット紙・スポットUV', '50部から・学校/機関対応'],
+      'zh-hk': ['獎狀證書印刷 · A4/A5', '銅版紙/啞粉紙 · 局部 UV 可選', '10 張起 · 學校/機構適用'],
+      en: ['Award certificates · A4/A5', 'Glossy/matte art paper · spot UV', 'From 10 · schools/institutions'],
+      ja: ['賞状/証明書印刷・A4/A5', 'コート紙/マット紙・スポットUV', '10枚から・学校/機関対応'],
     }},
   ],
   /**

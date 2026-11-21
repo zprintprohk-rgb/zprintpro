@@ -441,11 +441,14 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
   },
   // ========== Paper Bags ==========
   'kraft-paper-bags': {
-    'en': { min: 1.84, max: 4.62, unit: 'pc' },
+    // 2026-11-21 D4: USD 由 HKD price_range HK$3-8/個 按 1 HKD=0.128 USD 帶出
+    // (原 1.84-4.62 由 basePrice_en=1.84 反推, 超出 HKD 真值帶 → price-truth-guard WARN)。
+    'en': { min: 0.38, max: 1.02, unit: 'pc' },
     'ja': { min: 240, max: 538, unit: '個' },
   },
   'white-card-bags': {
-    'en': { min: 2.76, max: 6.06, unit: 'pc' },
+    // 2026-11-21 D4: HK$5-12/個 → US$0.64-1.54 (原 2.76-6.06 越界)。
+    'en': { min: 0.64, max: 1.54, unit: 'pc' },
     'ja': { min: 360, max: 690, unit: '個' },
   },
   'gift-bags': {

@@ -10368,7 +10368,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
+<p>智印港已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。10 件起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 ISBN 國際標準書號條碼、版權頁、版權聲明、學校 Logo、班級名稱、科目、學年。</p>
@@ -10511,7 +10511,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
+<p>智印港已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。10 件起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 ISBN 國際標準書號條碼、版權頁、版權聲明、學校 Logo、班級名稱、科目、學年。</p>
@@ -10569,8 +10569,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.00</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A3</td><td class="p-2 text-center">50</td><td class="p-3 text-center">3-5 days</td><td class="p-2 text-center">$5.00</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">10</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.00</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A3</td><td class="p-2 text-center">10</td><td class="p-3 text-center">3-5 days</td><td class="p-2 text-center">$5.00</td></tr>
   </tbody>
 </table>
 
@@ -10654,7 +10654,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
+<p>智印港已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。10 件起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 ISBN 國際標準書號條碼、版權頁、版權聲明、學校 Logo、班級名稱、科目、學年。</p>
@@ -10855,7 +10855,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>課堂主教科書</strong>：A4 尺寸、道林紙 100g、無線膠裝或 PUR 製本、4 色封面，500–2,000 冊批量</li>
   <li><strong>補習社皇牌教材</strong>：B5 尺寸、道林紙 80g、無線膠裝、封面加燙金工藝，200–500 冊批量</li>
   <li><strong>練習簿 / 補充練習</strong>：A4 尺寸、書紙 80g、騎馬釘、單色印刷，1,000+ 冊批量</li>
-  <li><strong>個人出版 / ISBN 出版</strong>：自訂尺寸、PUR 製本、CIP 排版、ISBN 條碼 + 版權頁，100 冊起</li>
+  <li><strong>個人出版 / ISBN 出版</strong>：自訂尺寸、PUR 製本、CIP 排版、ISBN 條碼 + 版權頁，10 冊起</li>
 </ul>
 
 <h3>開學檔期建議</h3>
@@ -10994,7 +10994,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Main classroom textbook</strong>: A4, 100 gsm wood-free, perfect or PUR binding, 4-color cover, 500–2,000 copies</li>
   <li><strong>Tutorial flagship material</strong>: B5, 80 gsm wood-free, perfect binding, foil-stamped cover, 200–500 copies</li>
   <li><strong>Workbook / supplementary</strong>: A4, 80 gsm book paper, saddle stitch, mono print, 1,000+ copies</li>
-  <li><strong>Self-publishing / ISBN</strong>: custom size, PUR binding, CIP layout, ISBN barcode + copyright page, 100+ copies</li>
+  <li><strong>Self-publishing / ISBN</strong>: custom size, PUR binding, CIP layout, ISBN barcode + copyright page, 10+ copies</li>
 </ul>
 
 <h3>School Opening Schedule Recommendation</h3>
@@ -11134,7 +11134,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>授業主教科書</strong>：A4 サイズ、道林紙 100g、無線綴じまたは PUR 製本、4 色表紙、500〜2,000 冊</li>
   <li><strong>塾の主力教材</strong>：B5 サイズ、道林紙 80g、無線綴じ、表紙箔押し、200〜500 冊</li>
   <li><strong>練習帳 / 補充演習</strong>：A4 サイズ、書籍紙 80g、中綴じ、単色印刷、1,000 冊以上</li>
-  <li><strong>自費出版 / ISBN 出版</strong>：カスタムサイズ、PUR 製本、CIP レイアウト、ISBN バーコード + 奥付、100 冊から</li>
+  <li><strong>自費出版 / ISBN 出版</strong>：カスタムサイズ、PUR 製本、CIP レイアウト、ISBN バーコード + 奥付、10 冊から</li>
 </ul>
 
 <h3>新學期スケジュールのご案内</h3>
@@ -11481,7 +11481,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   </thead>
   <tbody>
     <tr class="border-b"><td class="p-2 font-medium">8 x 6 x 2</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$2.50</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">10 x 8 x 3</td><td class="p-2 text-center">200</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.50</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">10 x 8 x 3</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.50</td></tr>
   </tbody>
 </table>
 

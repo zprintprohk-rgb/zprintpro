@@ -1380,7 +1380,8 @@ export const products: Product[] = [
     },
     price_range: 'HK$3-8/個',
     basePrice: 8,
-    basePrice_en: 1.84,
+    // 2026-11-21 D4: en 由 HK$8 × 0.128 帶出 (原 1.84 與 HKD 真值帶不符)
+    basePrice_en: 1.02,
     basePrice_ja: 240,
     weight_score: 98,
     isHot: true,
@@ -1475,7 +1476,8 @@ export const products: Product[] = [
     },
     price_range: 'HK$5-12/個',
     basePrice: 12,
-    basePrice_en: 2.76,
+    // 2026-11-21 D4: en 由 HK$12 × 0.128 帶出 (原 2.76 與 HKD 真值帶不符)
+    basePrice_en: 1.54,
     basePrice_ja: 360,
     weight_score: 95,
     isHot: true,
@@ -5831,7 +5833,7 @@ export const products: Product[] = [
       '【騎馬釘或膠裝】牢固耐用，翻頁順暢',
       '【浮水印紙】防偽性強，官方認證適用',
       '【免費排版】頁碼、章節與習題欄位',
-      '【100本起訂】小批量數碼，大量柯式',
+      '【10張起訂】小批量數碼，大量柯式',
       '【學期檔期】開學前2週為高峰期'
     ],
     specs: {
@@ -5847,7 +5849,8 @@ export const products: Product[] = [
     weight_score: 92,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    // 2026-11-21 D1 (K3 09:15「10 張接」): 100 → 10。證書屬單張類, 10 張可數碼起印。
+    minQuantity: 10,
     images: ['/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-hero.webp'],
   imagesByLocale: {
     'zh-hk': ['/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-hero.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-detail.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-variety.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-multi-angle.webp'],
@@ -5878,10 +5881,12 @@ export const products: Product[] = [
         { value: 'staple', label: '釘裝', surcharge: 5 },
         { value: 'perfect', label: '膠裝', surcharge: 15 },
       ],
+      // 2026-11-21 D1: 起訂 10 張 → 數量檔補 10 (原最低 50, 與 minQuantity=10 矛盾)
       quantities: [
-        { value: 50, label: '50本', discount: 1 },
-        { value: 100, label: '100本', discount: 0.85 },
-        { value: 500, label: '500本', discount: 0.7 },
+        { value: 10, label: '10張', discount: 1 },
+        { value: 50, label: '50張', discount: 1 },
+        { value: 100, label: '100張', discount: 0.85 },
+        { value: 500, label: '500張', discount: 0.7 },
       ],
     },
     
@@ -5988,7 +5993,7 @@ export const products: Product[] = [
       '【騎馬釘或膠裝】牢固耐用，翻頁順暢',
       '【輕薄紙張】80g–100g，便於學生攜帶',
       '【免費排版】頁碼、章節與習題欄位',
-      '【100本起訂】小批量數碼，大量柯式',
+      '【10本起訂】小批量數碼，大量柯式',
       '【學期檔期】開學前2週為高峰期'
     ],
     specs: {
@@ -6004,7 +6009,8 @@ export const products: Product[] = [
     weight_score: 88,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    // 2026-11-21 D2 (K3 09:15「10 本接」): 100 → 10。books.json 已有 qty=10 modeled 小批量檔。
+    minQuantity: 10,
     optimizedAt: '2026-09-16',
     optimizationRound: 1,
     images: ['/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-hero.webp'],
@@ -6037,7 +6043,9 @@ export const products: Product[] = [
         { value: 'staple', label: '釘裝', surcharge: 5 },
         { value: 'perfect', label: '膠裝', surcharge: 15 },
       ],
+      // 2026-11-21 D2: 起訂 10 本 → 數量檔補 10 (原最低 50, 與 minQuantity=10 矛盾)
       quantities: [
+        { value: 10, label: '10本', discount: 1 },
         { value: 50, label: '50本', discount: 1 },
         { value: 100, label: '100本', discount: 0.85 },
         { value: 500, label: '500本', discount: 0.7 },
@@ -6207,7 +6215,8 @@ export const products: Product[] = [
     weight_score: 96,
     isHot: true,
     isNew: true,
-    minQuantity: 200,
+    // 2026-11-21 D3 (K3 09:15「100 接」): 200 → 100。
+    minQuantity: 100,
     images: ['/images/products/cosmetic-boxes.jpg'],
   imagesByLocale: {
     'zh-hk': [
