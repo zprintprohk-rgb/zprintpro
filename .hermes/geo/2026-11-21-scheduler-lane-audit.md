@@ -152,3 +152,15 @@
 ## 本次审计写入留痕（全部在授权范围内）
 
 `.hermes/geo/2026-11-21-scheduler-lane-audit.md`（本文件）；`.hermes/tmp/audit-sched.ps1`、`audit-lane.cjs`、`audit-lane2.cjs`、`audit-lane3.cjs`（未使用）、`audit-extra.ps1`、`audit-git.cjs`、`audit-lane-extract.md`、`audit-lane-extract2.md`、`git-ro-check.txt`；`node scripts/lane-status.mjs --days=4` 按 task 授权重跑刷新了 `.hermes/logs/lane-status.json` / `lane-status.md`。src/ 零写入；未执行任何 git 写命令、任何调度器写操作。
+
+---
+
+## R14 · 开放项收口：weekly-meta 被拦 9 文件 ≡ K3 拍板批 等价性核验（2026-11-21 11:4x, 双方法关闭）
+
+**结论：无工作丢失；guard 拒绝 = 防双写撞车的正确行为；等价性关闭。**
+
+双方法（§0.23.2）:
+1. **谱系+树差法**: lane head `5d78f8ae`（11-20 20:36 品牌统一名批）**已是 origin/main 祖先**（merge-base --is-ancestor PASS）——lane 20:58 运行时它只是当时 HEAD, 不是 lane 产物; `git diff 5d78f8ae origin/main` 在 11 个价格管道/资产文件上 = 436+/746-, 与 K3 批 `99902084`（9 文件 339+/671-）+ `42223814`（2 文件 19+/9-）统计吻合, 两 commit 均 merge-base PASS 在 main。树中无 K3 批之外的孤儿改动。
+2. **lane 报告自述法**: `.hermes/logs/2026-11-20-ZP-weekly-meta.md` VERDICT=OK（内容层）, 本轮唯一 meta 任务 = 食品包裝 HOLD **零字段改动**——被拦 9 文件非 lane 意图产物, 系并发 K3 晚场真值批（TRUTH-A2-SAMEDAY-20261120-01）的进行中工作树, lane 的 finalize 试图一并 add 被 guard 硬拦（互斥协议按设计生效）; lane 报告+2 个 docs/assets 均已入库（git status 零残留）。
+
+残余登记: lane-runs.jsonl 该轮 verdict=FAILED 属**机械事实**（commit 未成）, 但工作内容经 K3 批全量落地——ledger 语义与业务语义分层, 本节即为分层说明; 12-04 轮食品包裝 title 单变量候选（须 K3 解冻+仍零点击）按 lane 报告 NEXT 原样挂账。

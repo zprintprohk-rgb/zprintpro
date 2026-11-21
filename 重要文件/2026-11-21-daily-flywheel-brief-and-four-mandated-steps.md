@@ -45,7 +45,7 @@
 
 - **半活**：触发层在（7 任务在册 State=Ready）但全部 `LogonType=Interactive` → 夜间/清晨 0x800710E0；今晨 06:43/07:10 再拒。
 - **11-20「手动调度器重建」未发生**（Windows 层零变更）；实际只有 11-19 14:39 管理员应用了 Harness 2 任务（推翻 11-19 文档「未应用」声明）；11-20 18:56 修复脚本被 watchdog-canary 守卫拦下中止（零变更）。
-- **已好转**：DeepSeek 额度恢复（11-20 起 dsh_exit=0）；11-20 晚 gsc-feedback（PARTIAL, push fb62b52b）+ daily（PARTIAL）成纱；weekly-meta 触发但 finalize exit 4（guard 拦 9 src 文件——同期该批内容已经 K3 拍板以 99902084/42223814 落地，等价性待核）。
+- **已好转**：DeepSeek 额度恢复（11-20 起 dsh_exit=0）；11-20 晚 gsc-feedback（PARTIAL, push fb62b52b）+ daily（PARTIAL）成纱；weekly-meta 触发但 finalize exit 4（guard 拦 9 src 文件——**11-21 等价性已核验关闭**：被拦文件系并发 K3 真值批的进行中工作树, lane 自身任务 HOLD 零改动；该批经 99902084/42223814 全量落地在 main（双方法：谱系+树差 436+/746- 吻合 + lane 报告自述）；无工作丢失, guard 防双写按设计生效。终判见 `.hermes/geo/2026-11-21-scheduler-lane-audit.md` §R14）。
 - **待 K3/管理员**：S4U canary→四方验收→-All 流程、watchdog 重建（06:43/S4U/无 RestartOnFailure）、Harness 4 入口粘贴+停用 GSC/monthly 重复入口、cron-lanes.json/lane-status 同步、query×page 每日三档恢复、k3-review 连 4 天缺的积压。
 
 ## §5 关键词矩阵结论（D 车）
