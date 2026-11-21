@@ -47,3 +47,11 @@
 3. 數據來源：所有新值 = K3 2026-10-30 裁決單#1/#5 + 11-20 拍板單 A2-A8/B1-B9 + 11-13 CT-D1-D6；市場詢價表保留但加第三方歸屬
 4. 字段值策略：無自填衝突商業值；modeled 價維持「待工廠實詢」
 5. Markdown 渲染：blog content 為 HTML 字串，無 parseInlineLinks 影響
+
+## §8 追加批 P1-1b（19:48 提交 902d685f，本地待推送）
+- 線上實錘：`<title>` 已新但 meta description 仍供舊值（HK$6-9/張·3-5天）→ **blog 頁 meta 實際取自 blog-posts.ts（title 與 description 皆然），blog-data json 的 description 欄位不進 meta**（本批重要架構學習，寫入技能缺口）
+- poster-printing-price-guide excerpt 三語同步新真值（zh HK$16/HK$160/HK$561/A1 柯式20起/1-2天；en US$2.30/pc·10pc US$23/1-2 business days；ja ¥3,000/10枚·¥300每枚/1-2営業日——USD/JPY 錨 = K3 20:55 覆核 currencyOverrides qty10）
+- poster-size-guide title 三語 3-5 天→1-2 天（A6 拍板對齊，1:1 字符替換寬度不變）+ excerpt 三語同步
+- guards：encoding PASS / gsc-leak 0
+- 部署：隨下一 push 窗口（20:14 後）或晚車道；30min 窗口 19:44 push 後未滿不搶推
+- 複驗責任：下一窗口線上斷言 price-guide meta description 新值 + size-guide title「1-2 天」
