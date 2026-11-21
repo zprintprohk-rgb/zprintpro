@@ -55,6 +55,11 @@
 - **竞品格局**：港站头部 snippet 标配 = 每品明价 + MOQ 枚举 + 即日钩子（我们 zero-click 主因 = SERP 无明价无 MOQ——11-18 schema=MOQ 价阶 + meta 单变量正对向）；日本头部靠「单价可算 + 起订直给」（raksul 1 枚起/graphic 100 部 1,690 円/megaprint 950 円）；名刺/年賀状受 §0.0 展示裁决与真值门约束，裁决前只内部承接。
 - **承接缺口**（NO_CURRENT_BASELINE）：ja 行业 5 词 + 教科書印刷 + holiday cards 无精确基线——按 11-19 §1「缺行写 NO_CURRENT_BASELINE，不是零需求」。
 
+## §7 委派覆盖核对（reconciliation）
+
+- 4 车侦察全部 settled：4 usable / 0 failed / 0 stopped / 0 empty。B、C 两车自行落盘其产物；**A（指令解读）与 D（关键词矩阵）两车为只读权限无法写盘**（各自如实申报），其全文由编排层代为落盘为本文件所链的 digest 与 matrix——内容未失，仅有转手。
+- **未覆盖/降级项（如实声明）**：① A 车提及 11-20 文件 §8 两周日程表 14 行未逐行转录进 digest——SSoT 仍是源文件（重要文件/2026-11-20-...md §8），digest 仅保留行级要点（11-21 行已全文引用）；② C 车审计中一项明示「未逐文件核」：weekly-meta 被 guard 拦的 9 个 src 文件与后续 K3 拍板落地的 99902084/42223814 是否等价——留作开放项；③ query×page 复测 = NO_DATA（导出供给缺失，非侦察缺口，§1 已记录）。
+
 ## §6 明日/本周
 
 - 11-22：SMALLBATCH 窗口判定维持至 11-28 决策级窗；blog 单篇若 19:08 Harness 未跑 → NO_OP 如实记。
