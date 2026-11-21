@@ -15,7 +15,7 @@
 | # | 指令 | 执行结果 |
 |---|---|---|
 | 1 | SMALLBATCH 7d 复测（追加 measurement_history） | ✅ `重要文件/blog-money-keyword-queue.json` stickers-en 条目追加首条 history：`small batch sticker printing` 21 imp / 0 clk / **pos 7.52**（7d 窗 11-10..11-16）。**判读：窗口未满**（数据日上限 11-16 = 部署后仅 ~3 天曝光）→ 按「不用移动窗口判胜」不作胜负判断；imps 46→21 低展示词高方差无因果；28d 决策窗维持 11-28。部署锚 ff97d235 + 11-19 线上断言 PDP PASS/residual 0 已链入台账 |
-| 2 | 周六 Blog 恢复单篇补缺（海报既有文复写或 NO_OP） | 生产职责 = Harness 19:08（prompt `harness-blog-single-fix-20261120.md` 已在库）→ **编排层不代写**（新架构 Blog=车道职责 + 本批纪律）。信息增益判定输入已备：§3 海报簇诊断显示 poster-printing-guide 承接池最大且贴页一线——若 Harness 今晚跑，海报文是最优单篇候选；若车道未跑则 NO_OP 合规 |
+| 2 | 周六 Blog 恢复单篇补缺（海报既有文复写或 NO_OP） | 生产职责 = Harness 19:08（prompt `harness-blog-single-fix-20261120.md` 已在库）→ **编排层不代写**（新架构 Blog=车道职责 + 本批纪律）。**11-21 晚复核：18:17/19:08 两入口零活动（.hermes/logs 无 ZP/harness 新产物）→ 本周六 Blog = NO_OP 落锤（无信息增益对象在车道缺位下不代写）**；海报文候选建议留给下周六 19:08 新职责执行 |
 | 3 | 海报/教材/C109 承接诊断（只诊断不改 title） | ✅ 见 §3 |
 | 4 | query×page 承接复测（三议程首个 7d 可读窗） | **NO_DATA 如实记录**：最新 query×page 导出仍 = `money-kw-query-page-end1031.csv`（STALE）；每日三档 11-17/18/20 三批缺。三议程效果判定顺延至导出恢复（需 K3） |
 

@@ -43,3 +43,15 @@
 ## 6. 剩余 S2 待跑
 
 C2 en doujin / C3 zh 月曆 / C4 zh 紙袋 / C5 ja 同人誌 / C6 ja 食品 / C7 ja 年賀状（监控专用）× r1(+r2)，窗内（≤11-24）补齐；Google AIO 面优先，Perplexity 面按 kit §二 记录固定条件（若不可达记 SKIPPED 原因，不得 web_search 顶替）。
+
+---
+
+## 7. 第 2 跑日补记（2026-11-21, S2 AIO 面 7 簇 × 2 跑完成）
+
+- **C1-r2**: 引用升级（内容级+来源 chip「ZPrintPro 智印雲」）——内容被引两跑一致, 品牌旧名两跑一致（非偶发）。
+- **C2（en doujin）双跑均列 AIO 第 1 位**, r2 加 Key Details 二次点名 + organic #1（comiket-c109）+ JP¥7,500 价格可见 = **en 同人誌簇「搜索面+AI 面」双高地**。
+- **C3-r2 引用带出现「智印港」chip（AMBIGUOUS）**——r1 零/r2 chip → 该簇「不稳定」; 品牌名正确（非旧名）。
+- **C4/C5/C6/C7 两跑均零**（稳定）; **ja 三簇全零 vs C1-zh 被引 = 跨语言命中落差**（结构性发现）。
+- Perplexity 面 SKIPPED（登录墙, 本窗格无凭据; 按 kit §二不 web_search 顶替）。
+- 完整矩阵: `.hermes/geo/geo-ai-probe-2026-11/summary-s2.md`（14 条单跑记录同目录）。
+- 红线遵守: 未改任何 src 页面; 本补记只进 .hermes/geo/。

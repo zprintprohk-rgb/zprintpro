@@ -40,6 +40,15 @@ const EXEMPT_PATHS = [
 const FULL_EXEMPT_PATHS = [
   /(^|[\/\\])AGENTS\.md$/,
   /\.hermes[\/\\](logs|reports|memory)[\/\\]/,
+  // 2026-11-21 补齐 (口径源: §0.23.1「GSC/探针后台数据只进内部文档 (.hermes/ docs/)」
+  // + K3 9/1 15:06 豁免拍板注释「docs/ + .hermes/」的意图实现):
+  //   `.hermes/geo/` = GEO AI 面探针 (AIO/Perplexity) 单跑记录与场级总结的家, 记录模板
+  //   (kit §四) 要求「答案原文完整粘贴不摘要」→ 必然逐字含外部 SERP/AIO 的实价
+  //   (1,386 円/1,650 円/HK$4,500 → 触发 SOP10_4_PLUS_NUMBER/CRED_4_PLUS_NUMBER)
+  //   与 organic 标题品牌相邻字样 (智印港 ZprintPro → 触发 BRAND_DOUBLE)。
+  //   这些文件不上线、不渲染, 对其做字面扫描 = 必然误报 (与 logs 同族逻辑)。
+  //   上线面 (src/ public/) 强制扫描不变。
+  /\.hermes[\/\\]geo[\/\\]/,
   // 2026-09-19 补齐 (K3 2026-09-19 决策一(a), 台账 = 门童 #23
   // `.hermes/regression-guard/cron-prompts-exemption-manifest.json`):
   //   `.hermes/cron-prompts/` 与 AGENTS.md / .hermes/logs **同族** —— 指令书/规则书必然

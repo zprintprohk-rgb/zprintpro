@@ -83,7 +83,7 @@
 | 场次 | 状态 | 产物 |
 |---|---|---|
 | S1 11-03~11-07 | 🟡 **PARTIAL（11-03 首跑：C1-r1 完成，ZP 引用 #2/9 实锤；C1-r2/C2-C7 SKIPPED=扩展连接故障，窗口内补跑）** | `.hermes/geo/geo-ai-probe-2026-11/`（s1-c1-perplexity-r1.md + raw、summary-s1.md） |
-| S2 11-20~11-24 | ⏳ 未执行 | — |
+| S2 11-20~11-24 | 🟢 **AIO 面完成（11-21 主跑日：7 簇 × 2 跑 = 14/14）+ Perplexity SKIPPED（登录墙）**；三大发现：C1/C2 稳定被引（C2 居首+organic #1）、C3 不稳定（chip 波动）、C4-C7 稳定零（ja 全簇零）；zh 面品牌旧名两跑一致 | `.hermes/geo/geo-ai-probe-2026-11/`（s2-c*-aio-r1/r2 ×14 + summary-s2.md） |
 
 ## 八、数据来源
 
