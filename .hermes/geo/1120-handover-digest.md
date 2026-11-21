@@ -106,3 +106,12 @@
 5. 待 K3 清桌：packaging-zh-hk 商业真值 · catalog-en blog 内容门 · service 页超带/比较表述 · 海报旧价格 · ja H1 locale 错配 · 真实评价收集（EXP-16）。
 
 （本 digest 落 `.hermes/geo/`，不冒充车道报告命名；内部文档，GSC 数据未入客户可见内容。）
+
+---
+
+## 11-21 追加（编排层跨会话交接指针）
+
+- **S2 AI 面探针全量完成**（7 簇 × 2 跑 = 14/14 AIO 面; Perplexity SKIPPED 登录墙）: `geo-ai-probe-2026-11/summary-s2.md`。C1 食品 zh 稳定被引（品牌旧名两跑一致=实体归一议题）、C2 en doujinshi 稳定列首+organic #1（双高地防守）、C3 月曆不稳定、C4-C7 稳定零（ja 全簇零=跨语言引用落差）。
+- **11-28 K3 终审决策包草案 v1**: `重要文件/2026-11-28-decision-package-draft-v1.md`（A 两周 KPI 输入表 / B 三项拍板 B1 实体归一·B2 ja 深度·B3 双高地防守 / C 12 月关键词分配 / D K3 真人动作五件 / E 判读纪律）。11-24 数据批到达后刷新 §A。
+- **weekly-meta 被拦 9 文件等价性关闭**: `2026-11-21-scheduler-lane-audit.md` §R14（无工作丢失, guard 防双写正确）。
+- 门童豁免补齐: `.hermes/geo/` 已入 FULL_EXEMPT_PATHS（scripts/guards/common.js, 口径源 §0.23.1 探针数据只进内部文档）。
