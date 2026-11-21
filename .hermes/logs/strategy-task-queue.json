@@ -866,10 +866,10 @@
       "task_id": "FIX-20261113-POSTER-BLOG-TRUTH",
       "source_strategy": "CT-20261113-D1-D6",
       "score_model": "commercial-truth-residual-priority",
-      "status": "READY",
+      "status": "DONE",
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
       "created_at": "2026-11-13T03:10:02+08:00",
-      "result": "NOT_EXECUTED",
+      "result": "DONE+DEPLOYED 2026-11-21: commit 6a9294d7 — poster-printing-guide zh-hk 45 处清理(HK→16/急件24h→11:00即日投產條件化/SGS+100%聲明+無源統計刪/title常青過當量門禁)+blog-posts.ts 三語同步",
       "production_deploy": null,
       "online_verify": null,
       "next_check": "D1/D2 + 7/14/28d after actual deployment",
@@ -888,7 +888,8 @@
         "src/data/blog-posts.ts (poster-printing-guide metadata only if title/excerpt contains the same false claim)"
       ],
       "measurement_reset": true,
-      "idempotency": "One existing article only; no new poster article, slug, canonical, redirect or primary-URL change."
+      "idempotency": "One existing article only; no new poster article, slug, canonical, redirect or primary-URL change.",
+      "last_review": "2026-11-21T00:48:19.486Z"
     },
     {
       "task_id": "FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
@@ -975,10 +976,10 @@
       "task_id": "FIX-20261113-JA-EDUCATION-C109-TRUTH",
       "source_strategy": "CT-20261113-D1-D6",
       "score_model": "commercial-truth-residual-priority",
-      "status": "READY",
+      "status": "DONE",
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
       "created_at": "2026-11-13T03:10:02+08:00",
-      "result": "NOT_EXECUTED",
+      "result": "DONE+DEPLOYED 2026-11-21: commit 6a9294d7 — comiket ¥7,500訂單起價/特急+直送+2-4日條件化; textbook products.ts內部名清除/價格SKU化/配送條件化; campus 11規則高危清理。campus 殘留統計%/USD價格屬 FIX-20261030-BLOG-CERT-PHRASES A/B/C 範圍,已由該任務後續處理",
       "production_deploy": null,
       "online_verify": null,
       "next_check": "D1/D2 + 7/14/28d after actual deployment",
@@ -1003,7 +1004,8 @@
       "required_generator": "node scripts/csv-to-sku-seo.mjs --apply (only if CSV rows change)",
       "measurement_reset": true,
       "reset_marker": "RESET_BY_TRUTH_FIX",
-      "idempotency": "Do not reopen completed C109 order-price or /注文 decisions. No new safe submission date, venue/hotel delivery or currency conversion."
+      "idempotency": "Do not reopen completed C109 order-price or /注文 decisions. No new safe submission date, venue/hotel delivery or currency conversion.",
+      "last_review": "2026-11-21T00:48:19.486Z"
     },
     {
       "task_id": "TRUTH-A2-SAMEDAY-20261120-01",
@@ -1197,7 +1199,7 @@
       "owner_lane": "K3-admin（事實確認）→ Harness（執行）",
       "status": "WAITING_K3",
       "next_check": "2026-11-21",
-      "result": "已定位全部 4 檔衝突點；等 K3 事實答案後一次性真值化（避免二次 push 浪費 build）。"
+      "result": "待 K3 三問：① 18:00截單・通宵印刷・順豐次午達急件通道今日是否仍實際運作 ② 若運作：是否付費急件通道/適用品類/數量檔/附加費率 ③ 11:00 HKT(11-20口徑)與18:00(8-26口徑)兩截稿時間如何統一（同通道兩環節 or 舊口徑待更新）。衝突實例：17:00 下單50張傳單——rush頁承諾次午達 vs PDP 10-99張=3-5工作天。若通道在→rush頁補條件並與PDP互相接引；若不在→承諾降級為以報價確認。"
     },
     {
       "task_id": "FOOTER-ZHHK-HK-ADDRESS-FACT-20261121",
@@ -1216,12 +1218,16 @@
       ],
       "approval_gate": "WAITING_K3：地址真實性只有 K3 能確認（10/10 曾拍板保留）；確認屬實→關閉，不實→給 A/B 文案再拍板",
       "owner_lane": "K3-admin（事實確認）→ Harness（執行）",
-      "status": "WAITING_K3",
+      "status": "CLOSED_BY_K3",
       "next_check": "2026-11-21",
-      "result": "已定位；兩分支文案已備（A 保留 / B 雙段式），等 K3 一詞確認。"
+      "result": "K3 2026-11-21 08:38 拍板：香港地址不要動（保留『香港九龍新蒲崗大有街3號萬廣大廈15樓C室』，維持 2026-10-10 原拍板）。關閉，無需執行。"
     }
   ],
-  "last_review": "2026-11-20 20:5x 登記 FACTORY-FLYERS-TIER-QUERY + GUARD-DEBT-3HARD-2WARN = WAITING_K3；K3 覆核三裁決寫入拍板單 §四",
+  "last_review": {
+    "at": "2026-11-21T00:48:19.486Z",
+    "by": "manual-executor",
+    "note": "CT-20261113 D1/D5/D6 兩個 blog 真值任務落地 6a9294d7"
+  },
   "commercial_truth_decision": {
     "decision_id": "CT-20261113-D1-D6",
     "record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
