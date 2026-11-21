@@ -14,7 +14,7 @@ const faqData: Record<string, { q: string; a: string }[]> = {
   'zh-hk': [
     {
       q: '今天幾點前下單才能明天中午12點前收到？',
-      a: '每日18:00（週一至週五）前完成付款並確認稿件，即可安排通宵印刷。宣傳單張、海報、貼紙、畫冊與易拉寶均於翌日中午12點前送達。支持港鐵站交收及辦公室地址配送。',
+      a: '每日18:00（週一至週五）前完成付款並確認稿件，即可安排通宵印刷。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計；海報、貼紙、易拉寶等其他品類以 WhatsApp 報價確認。支持港鐵站交收及辦公室地址配送。',
     },
     {
       q: '週五晚上下單，週一中午能收到嗎？',
@@ -30,7 +30,7 @@ const faqData: Record<string, { q: string; a: string }[]> = {
     },
     {
       q: '隔夜達的價格會更貴嗎？',
-      a: '印刷單價與常規訂單一致，不加收「加急費」。僅收取正常速遞費用：港鐵站交收免費，上門速遞九龍/港島HK$50起、新界HK$80起。',
+      a: '即日急件優先排產會有附加費，實際差價視乎品類與數量；WhatsApp 30 秒報價最準。速遞費用另計：港鐵站交收免費，上門速遞九龍/港島HK$50起、新界HK$80起。',
     },
     {
       q: '哪些產品不支持明天中午前收貨？',
@@ -40,7 +40,7 @@ const faqData: Record<string, { q: string; a: string }[]> = {
   'en': [
     {
       q: 'What is the order cutoff time for next-day delivery by 12PM?',
-      a: 'Complete payment and artwork confirmation by 6PM (Mon-Fri) for overnight printing. All 6 rush SKUs arrive by 12PM next day.',
+      a: 'Complete payment and artwork confirmation by 6PM (Mon-Fri) for overnight printing. Rush-eligible items (flyers 50–1000 pcs, booklets 10–500, folded leaflets 50–500) arrive by 12PM next day; other items by WhatsApp quote.',
     },
     {
       q: 'Do you deliver on weekends?',
@@ -56,7 +56,7 @@ const faqData: Record<string, { q: string; a: string }[]> = {
     },
     {
       q: 'Is next-day delivery more expensive?',
-      a: 'Print pricing is the same as standard orders. Only normal courier fees apply.',
+      a: 'Rush priority production carries a surcharge, depending on item and quantity; a 30-second WhatsApp quote confirms it. Courier fees are separate.',
     },
     {
       q: 'Which products are NOT available for next-day delivery?',
@@ -66,7 +66,7 @@ const faqData: Record<string, { q: string; a: string }[]> = {
   'ja': [
     {
       q: '翌日12時までの配送の受付締切は何時ですか？',
-      a: '平日18時までに入金・データ確認が完了したご注文を対象とします。全6商品とも翌日12時までに配達いたします。',
+      a: '平日18時までに入金・データ確認が完了したご注文を対象とします。対象品類（チラシ 50–1000 枚・冊子 10–500 部・折りたたみリーフレット 50–500 部など）は翌日12時までにお届けします（割増料金）。',
     },
     {
       q: '土日も配送されますか？',
@@ -82,7 +82,7 @@ const faqData: Record<string, { q: string; a: string }[]> = {
     },
     {
       q: '翌日配送は追加料金がかかりますか？',
-      a: '印刷単価は通常注文と同額です。配送料のみ別途発生いたします。',
+      a: '特急は優先生産のため割増料金がかかります。差額は品目・数量により異なります。WhatsApp 30秒見積もりでご確認ください。配送料は別途です。',
     },
     {
       q: '翌日配送対象外の商品は？',

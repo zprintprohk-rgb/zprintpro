@@ -40,17 +40,17 @@ type Props = {
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
     title: '即日印刷・即日急件｜18:00 截單・翌日 12:00 送到 | 智印港',
-    desc: '即日印刷・即日急件服務：每日 18:00 前落單並確認稿件，通宵印刷、順豐翌日中午前送達，宣傳單張／貼紙 10 張起印。免費 2 小時打稿，港九新界滿 HK$500 免費順豐。30 秒 AI 報價，WhatsApp 即日回覆。',
+    desc: '即日印刷・即日急件服務：每日 18:00 前落單並確認稿件，通宵印刷、順豐翌日中午前送達。急件適用：傳單 50–1000 張・小冊子 10–500 本・摺頁 50–500 份等（附加費）。宣傳單張／貼紙 10 張起印，免費 2 小時打稿。30 秒 AI 報價，WhatsApp 即日回覆。',
     keywords: '即日印刷,即日急件,急件印刷,特急快印,同日印刷,18:00截單,順豐翌日中午,免費 2 小時打稿,港九新界,免費順豐,宣傳單張,海報,貼紙,紙袋,畫冊,易拉寶,30 秒 AI 報價,WhatsApp 即日回覆,跨境電商,本地零售,品牌活動,演唱會,展覽籌備,深圳實體',
   },
   en: {
     title: 'Same-Day & Rush Printing | Order by 6pm, Next-Day 12pm | ZprintPro',
-    desc: 'Same-day & rush printing with 6PM cut-off, flyers & stickers from 10 pcs, delivered next-day 12pm. Flyers, posters, stickers, paper bags, booklets, roll-up banners in CMYK full color. WhatsApp 30-sec quote, 15-min email reply.',
+    desc: 'Same-day & rush printing with 6PM cut-off, delivered next-day 12pm. Rush eligible: flyers 50–1000 pcs, booklets 10–500, folded leaflets 50–500 (surcharge). WhatsApp 30-sec quote, 15-min email reply.',
     keywords: 'same-day printing,rush printing,overnight flyer printing,24 hour printing,next day leaflets,6pm cut-off,overnight print,next-day delivery,CMYK full color,flyers 10 moq,stickers 10 moq,posters,paper bags,booklets,roll-up banner,urgent print,in-house factory',
   },
   ja: {
     title: '即日印刷・特急印刷 激安・DHL全国・翌日届 10枚〜 | ZprintPro',
-    desc: '即日印刷・特急印刷 18:00 締切、チラシ・ステッカーは 10 枚〜、翌日 12 時前配送。ポスター・紙袋・冊子・ロールアップバナー、CMYK フルカラー防水。WhatsApp 30 秒見積もり、2 時間以内にメール返信。',
+    desc: '即日印刷・特急印刷 18:00 締切、翌日 12 時前配送。特急対象：チラシ 50–1000 枚・冊子 10–500 部・折りたたみリーフレット 50–500 部など（割増料金）。WhatsApp 30 秒見積もり、2 時間以内にメール返信。',
     keywords: '即日印刷,特急印刷,当日特急,チラシ印刷 即日,18:00締切,徹夜印刷,翌日12時,CMYK フルカラー,チラシ 10 枚,ステッカー 10 枚,ポスター,紙袋,冊子,ロールアップバナー,緊急印刷,自社工場',
   },
 };
@@ -105,7 +105,7 @@ export default function RushDeliveryPage({ params }: Props) {
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: locale === 'zh-hk' ? [
-            { '@type': 'Question', name: '即日印刷最快幾耐到？', acceptedAnswer: { '@type': 'Answer', text: '每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，亦支持順豐速遞上門。' } },
+            { '@type': 'Question', name: '即日印刷最快幾耐到？', acceptedAnswer: { '@type': 'Answer', text: '每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，亦支持順豐速遞上門。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計。' } },
             { '@type': 'Question', name: '即日同普通件價錢差幾多？', acceptedAnswer: { '@type': 'Answer', text: '即日急件優先排產會有附加費，實際差價視乎品類同數量，WhatsApp 30 秒攞精準報價最準。' } },
             { '@type': 'Question', name: '過咗 18:00 仲得唔得？', acceptedAnswer: { '@type': 'Answer', text: '過咗截單時間可以 WhatsApp 我哋盡力協調，視乎排產情況安排，唔一定保證翌日中午前到。' } },
             { '@type': 'Question', name: '點樣收貨？', acceptedAnswer: { '@type': 'Answer', text: '順豐送貨上門或順豐速遞上門都得，我哋冇門市自取，落單時揀啱收貨方式即可。' } },
@@ -119,7 +119,7 @@ export default function RushDeliveryPage({ params }: Props) {
             { '@type': 'Question', name: 'What files do I need?', acceptedAnswer: { '@type': 'Answer', text: 'PDF or AI, 300dpi, 3mm bleed. Not sure about layout? WhatsApp us for free file check.' } },
             { '@type': 'Question', name: 'Can I change artwork after ordering?', acceptedAnswer: { '@type': 'Answer', text: 'Free revisions before printing. Once on press, no changes. Please confirm final version promptly.' } },
           ] : [
-            { '@type': 'Question', name: '当日印刷の最速納期は？', acceptedAnswer: { '@type': 'Answer', text: '毎日18時までのご注文で徹夜印刷、SF翌朝12時前配送、提携先受取も対応。' } },
+            { '@type': 'Question', name: '当日印刷の最速納期は？', acceptedAnswer: { '@type': 'Answer', text: '毎日18時までのご注文で徹夜印刷、SF翌朝12時前配送、提携先受取も対応。特急対象：チラシ 50–1000 枚・冊子 10–500 部・折りたたみリーフレット 50–500 部など（割増料金）。' } },
             { '@type': 'Question', name: '通常印刷との価格差は？', acceptedAnswer: { '@type': 'Answer', text: '特急割増料金あり。差額は商品と数量により異なります。WhatsApp 30秒見積もりで確定。' } },
             { '@type': 'Question', name: '18時過ぎでも対応できますか？', acceptedAnswer: { '@type': 'Answer', text: '締切後は WhatsApp でご相談ください。状況により対応、翌日午前中配送は保証できません。' } },
             { '@type': 'Question', name: '配送方法は？', acceptedAnswer: { '@type': 'Answer', text: 'SF配送または提携先受取。店舗受取はございません、ご注文時にお選びください。' } },
@@ -151,10 +151,10 @@ export default function RushDeliveryPage({ params }: Props) {
           <svg className="w-5 h-5 text-[#2873F5] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
           <p className="text-[15px] md:text-base leading-relaxed text-[#1D3465]">
             {locale === 'zh-hk'
-              ? '即日印刷：每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，傳單／貼紙 10 張起印。'
+              ? '即日印刷：每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，傳單／貼紙 10 張起印。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計；包裝盒、紙袋等需後加工品類不適用。'
               : locale === 'ja'
-                ? '即日印刷：18:00 までにご注文・データ確認で徹夜印刷、SFで翌日12時前にお届け。チラシ・ステッカーは10枚〜。'
-                : 'Same-day printing: order before 6PM and confirm artwork, we print overnight and SF Express delivers before noon the next day. Flyers & stickers from 10 pcs.'}
+                ? '即日印刷：18:00 までにご注文・データ確認で徹夜印刷、SFで翌日12時前にお届け。チラシ・ステッカーは10枚〜。特急対象：チラシ 50–1000 枚・冊子 10–500 部・折りたたみリーフレット 50–500 部など（割増料金）。化粧箱・紙袋など後加工が必要な商品は対象外です。その他はお見積もりにてご確認ください。'
+                : 'Same-day printing: order before 6PM and confirm artwork, we print overnight and SF Express delivers before noon the next day. Flyers & stickers from 10 pcs. Rush eligible: flyers 50–1000 pcs, booklets 10–500, folded leaflets 50–500 (surcharge). Packaging boxes and paper bags requiring post-press finishing are not eligible; confirm other items by quote.'}
           </p>
         </div>
       </div>

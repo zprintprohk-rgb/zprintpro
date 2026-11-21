@@ -125,13 +125,20 @@ export default function RushDeliveryGrid({ locale }: { locale: string }) {
 
   return (
     <section className="mb-16">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">
         {locale === 'zh-hk'
           ? '今天下單，明天中午12點前收貨'
           : locale === 'en'
           ? 'Order Today, Receive by 12PM Tomorrow'
           : '本日注文・翌日12時までにお届け'}
       </h2>
+      <p className="text-sm text-gray-500 mb-6 md:mb-8">
+        {locale === 'zh-hk'
+          ? '急件適用：宣傳單張 50–1000 張・畫冊 10–500 本・摺頁 50–500 份等｜18:00 截單・附加費・其餘品類以報價確認'
+          : locale === 'en'
+          ? 'Rush eligible: flyers 50–1000 pcs · booklets 10–500 · folded leaflets 50–500 · 18:00 cut-off · surcharge · other items by quote'
+          : '特急対象：チラシ 50–1000 枚・冊子 10–500 部・折りたたみリーフレット 50–500 部など｜18:00 締切・割増料金・その他はお見積もり'}
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
         {skus.map((sku) => (
           <div
@@ -198,10 +205,10 @@ export default function RushDeliveryGrid({ locale }: { locale: string }) {
         <span className="text-lg">⚠️</span>
         <span>
           {locale === 'zh-hk'
-            ? '包裝盒、紙袋、信封等需後工產品不適用隔夜達服務，常規交期2-5天。'
+            ? '包裝盒、紙袋、信封等需後工產品不適用隔夜達服務，常規交期2-5天。未列品類與數量檔以 WhatsApp 報價確認。'
             : locale === 'en'
-            ? 'Packaging boxes, paper bags, and envelopes require post-press finishing. Standard lead time: 2-5 days.'
-            : '包装盒・紙袋・封筒などは後加工が必要なため、翌日配送対象外。標準納期：2-5日。'}
+            ? 'Packaging boxes, paper bags, and envelopes require post-press finishing. Standard lead time: 2-5 days. Items or quantities not listed: confirm by WhatsApp quote.'
+            : '包装盒・紙袋・封筒などは後加工が必要なため、翌日配送対象外。標準納期：2-5日。記載のない品目・数量は WhatsApp にてお見積もり確認をお願いいたします。'}
         </span>
       </div>
     </section>

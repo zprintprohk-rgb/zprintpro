@@ -1195,11 +1195,11 @@
         "src/components/sections/RushDeliveryFAQ.tsx",
         "src/components/home/WhyChooseUs.tsx"
       ],
-      "approval_gate": "WAITING_K3：需 K3 向工廠確認 18:00 急件通道真實條款（品類/數量/附加費/截稿），確認前不動該集群",
+      "approval_gate": "K3 2026-11-21 08:48 三問已答：通道仍運作/付費急件(傳單50-1000・小冊子10-500・摺頁50-500，等)/截稿18:00；Harness 任務單 harness-task-rush-page-truth-20261121.md 已下發",
       "owner_lane": "K3-admin（事實確認）→ Harness（執行）",
-      "status": "WAITING_K3",
+      "status": "READY_TO_PUSH",
       "next_check": "2026-11-21",
-      "result": "待 K3 三問：① 18:00截單・通宵印刷・順豐次午達急件通道今日是否仍實際運作 ② 若運作：是否付費急件通道/適用品類/數量檔/附加費率 ③ 11:00 HKT(11-20口徑)與18:00(8-26口徑)兩截稿時間如何統一（同通道兩環節 or 舊口徑待更新）。衝突實例：17:00 下單50張傳單——rush頁承諾次午達 vs PDP 10-99張=3-5工作天。若通道在→rush頁補條件並與PDP互相接引；若不在→承諾降級為以報價確認。"
+      "result": "Harness 首輪交付 4/4 檔（2026-11-21 09:0x，3 分鐘）；誠實記 FAILED（其 sandbox 無 shell，四項檢查 NOT EXECUTED）。host 複驗：encoding PASS / content-guard PASS / tsc 54 錯全在既有 quote-engine __tests__ 死測試檔（非本次 4 檔，登 TSC-DEBT）/ build 驗證中。Bonus 修正：C 檔 zh Q5 原文『不加收加急費』與附加費真值正面衝突，已改。殘留：① rush-data.ts 凍結檔可見 FAQ 未同步三檔（需 K3 另批解凍）② Grid/FAQ 組件現未掛載（死代碼但文案正確）③ en FAQ JSON-LD 未補檔位（任務只列 zh/ja）④ 頁面『最後更新 8/26』未改。 BUILD PASS（exit 0, 76s， Compiled successfully + 723 URLs + IndexNow 3 locales）。四項複驗全綠（tsc 既有死測試欠債除外），推送待 K3 一詞。"
     },
     {
       "task_id": "FOOTER-ZHHK-HK-ADDRESS-FACT-20261121",
@@ -1221,6 +1221,26 @@
       "status": "CLOSED_BY_K3",
       "next_check": "2026-11-21",
       "result": "K3 2026-11-21 08:38 拍板：香港地址不要動（保留『香港九龍新蒲崗大有街3號萬廣大廈15樓C室』，維持 2026-10-10 原拍板）。關閉，無需執行。"
+    },
+    {
+      "task_id": "TSC-DEBT-QUOTE-ENGINE-TESTS-20261121",
+      "source_strategy": "RUSH-PAGE host 複驗發現",
+      "market": "operations",
+      "target": "src/lib/quote-engine/__tests__/ 下 6 個死測試檔 import 路徑懸空（'../../data/products' 等），npx tsc --noEmit 54 錯；Next build 不編譯故不擋部署",
+      "evidence": [
+        ".hermes/tmp-tsc-rush.log（54 errors）",
+        "src/lib/quote-engine/__tests__/search.regression.test.ts L2"
+      ],
+      "score": 40,
+      "score_model": "hygiene-debt（不擋部署不擋 push，但污染 tsc 信號，真錯誤被淹沒）",
+      "write_scope": [
+        "src/lib/quote-engine/__tests__/（修 import 或移出 tsconfig include）"
+      ],
+      "approval_gate": "低風險；可隨下一批 harness 處理",
+      "owner_lane": "Harness 下一批",
+      "status": "READY",
+      "next_check": "2026-11-22",
+      "result": ""
     }
   ],
   "last_review": {
