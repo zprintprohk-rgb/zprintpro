@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-01T03:45:00+08:00",
+  "updated_at": "2026-11-21T00:00:00+08:00",
   "source_window": "2026-09-30..2026-10-27",
   "source_file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
   "measurement_scope": "all countries; query, page and country tables are not joined",
@@ -800,7 +800,27 @@
         "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
         "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
         "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
-      }
+      },
+      "measurement_history": [
+        {
+          "date": "2026-11-21",
+          "window": "2026-11-10..2026-11-16 (7d, 数据日 11-16, 11-19 批导出)",
+          "reading": {
+            "small batch sticker printing": {
+              "impressions": 21,
+              "clicks": 0,
+              "position": 7.52
+            },
+            "small batch stickers": {
+              "note": "7d 跌出页一（B 车四窗判读）；28d 见 .hermes/logs/gsc-2026-11-19-four-window-analysis.json"
+            }
+          },
+          "deploy_anchor": "ff97d235 (2026-11-13 small-batch 真值修复); 线上断言见 .hermes/logs/verify-2026-11-19-smallbatch-truth-residual.md (PDP PASS, residual 0)",
+          "judgement": "窗口未满：数据日上限 11-16, 仅含部署后约 3 天曝光；按「不用移动窗口判胜」纪律不作胜负判断。imps 46→21 属低展示词高方差（§2.1），不作单窗因果断言；pos 5.5(baseline)→7.52 仍在页一。完整 7d 窗需数据日 ≥2026-11-20 批（当前 11-17/18/20 导出缺）。28d 决策级窗口 recheck_after 维持 2026-11-28。",
+          "source": ".hermes/logs/gsc-2026-11-19-four-window-analysis.json + gsc-2026-11-19-money-keyword-delta.json; 双方法=openpyxl×pandas 8 批 match (B 车 2026-11-21)",
+          "executor": "编排层（k3 主会话授权的 11-21 指令 §8 行）"
+        }
+      ]
     },
     {
       "cluster": "catalog-en",
