@@ -511,14 +511,14 @@ const lpPosterPrintingGuide: BlogPostMeta = {
   source: 'legacy',
   date: '2026-07-02',
   title: {
-    'zh-hk': '香港海報印刷 HK$9起：尺寸・紙質・工藝・設計要點 | 智印港',
+    'zh-hk': '香港海報印刷指南：A3/A2/A1 尺寸・紙質・工藝・設計要點 | 智印港',
     en: 'Poster Printing Size Guide: Paper & Finishes | ZprintPro',
     ja: 'ポスター印刷ガイド：サイズ・用紙・加工 | ZprintPro',
   },
   excerpt: {
     'zh-hk': '從A3到A0，從銅版紙到PP膠片，從海報筒包裝到批量交貨，智印港為您拆解香港海報印刷的尺寸選擇、紙質對比、工藝選項與設計要點。',
-    en: 'Custom poster printing guide for US event organizers and retail. Standard sizes (A3/A2/A1/A0/18x24"/24x36"), paper (gloss/matte/PP film/canvas), finishing (UV/lamination/edge tape), 25-1000 MOQ, Free shipping over $99 USA, 3-5 day turnaround from Asia factory.',
-    ja: 'オリジナルポスター印刷完全ガイド。標準サイズ（A3・A2・A1・A0・B1・B2）・用紙（光沢紙・マット紙・合成紙・耐水PP・キャンバス）・加工（UVラミネート・PP加工・周囲テープ）・短納期（3日〜7日出荷）。イベント主催・展示会・小売店・不動産向け。',
+    en: 'Custom poster printing guide for US event organizers and retail. Standard sizes (A3/A2/A1/A0), paper (gloss/matte/PP film/canvas), finishing (UV/lamination/edge tape). A2 157g from HK$16/pc (10 pcs HK$160); production, shipping and delivery times confirmed at quote.',
+    ja: 'オリジナルポスター印刷完全ガイド。標準サイズ（A3・A2・A1・A0・B1・B2）・用紙（光沢紙・マット紙・合成紙・耐水PP・キャンバス）・加工（UVラミネート・PP加工・周囲テープ）。A2 157g は 10枚 HK$160 から。生産・出荷・配送は別途、見積り確認。イベント主催・展示会・小売店・不動産向け。',
   },
 };
 
