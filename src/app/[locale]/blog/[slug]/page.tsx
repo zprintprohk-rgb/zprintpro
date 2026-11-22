@@ -370,14 +370,14 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
     // 2026-08-05 v8 daily-content-evolve: A1/A2/A3 海報尺寸指南 (GSC 7d ~60 imps, posters × 尺寸長尾)
     'poster-size-guide': {
-      title: 'A1 A2 A3 海報尺寸指南：印刷尺寸對照表・應用場景・紙材選擇 | 智印港 ZprintPro',
-      description: 'A1 / A2 / A3 海報尺寸點樣揀？本文整理三種尺寸對照表（mm / cm / 英吋）、零售・展會・戶外場景應用建議、紙材與防水工藝選擇，附 4 條常見 FAQ，協助 10-1,000 張小至大批量落單，3-5 個工作天交付。',
+      title: 'A1 A2 海報印刷對照表 mm/cm/吋 + 12 場景 1-2 天 | 智印港',
+      description: 'A1 / A2 / A3 海報尺寸點樣揀？本文整理三種尺寸對照表（mm / cm / 英吋）、零售・展會・戶外場景應用建議、紙材與防水工藝選擇，附 4 條常見 FAQ，協助 10-1,000 張小至大批量落單，常規 1-2 個工作天交付（以報價確認）。',
       date: '2026-08-05', category: '海報印刷',
       content: '',
     },
         'poster-printing-price-guide': {
-      title: 'A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣全拆解 | 智印港 ZprintPro',
-      description: 'A1/A2 海報印刷幾錢？本文拆解 2026 香港真實單價——A2 銅版紙 100 張約 HK$6-9/張、A1 貴 60-80%，批量 500 張再減 30%，附 4 大成本因素 + 4 條 FAQ，10-1,000 張落單，3-5 個工作天交付。',
+      title: 'A1 A2 海報印刷價格：單價・紙材・批量折扣全解析 | 智印港',
+      description: 'A1/A2 海報印刷幾錢？智印港 A2 10 張起印 HK$16/張（10 張 HK$160）、100 張 HK$561（約 HK$5.6/張），A1 柯式 HK$20/張起；另附 2026 香港市場詢價區間、4 大成本因素與 4 條 FAQ，常規 1-2 個工作天交付（以報價確認）。',
       date: '2026-08-07', category: '海報印刷',
       content: '',
     },
