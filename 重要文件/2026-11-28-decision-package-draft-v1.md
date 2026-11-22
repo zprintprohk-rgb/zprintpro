@@ -52,6 +52,7 @@
 | 3 | 调度器六件 | S4U canary→四方验收→-All 流程; watchdog 重建（06:43/S4U/无 RestartOnFailure）; Harness 4 入口粘贴+停用重复入口; cron-lanes.json 同步; `\ZprintPro-CronWatchdog-2125` 删除; DEEPSEEK_API_KEY preflight 缺口 | 夜间车道全部 0x800710E0（11-20 晚起连续两晚零自然运行; blog-deepfix 停摆 2 周） |
 | 4 | 商业真值拍板 | A2 单位·交期/即日传单/贴纸 三项 | 深层 blog 与 PDP 直答的价格口径扩展 |
 | 5 | B1 实体归一两项 | Kompass + GBP | zh 面 AI 品牌标签正确化 |
+| 6 | GSC 重爬加速（可选, 1 次点击） | 网址检查 → `/zh-hk/product/hardcover-menus/` → 请求编入索引（审计 = `.hermes/geo/2026-11-22-brand-dup-residual-audit.md`: live 三方法干净, 残余 1 项 = 修复后旧抓取滞后, sitemap lastmod 11-22 已新; 不做也随常规重爬翻绿; 12-13 未翻绿才重开调查） | 仅影响该 URL 富结果形态恢复速度, 不影响收录/排名 |
 
 ## E. 判读纪律（终审会适用, K3 11-19 §1 口径）
 

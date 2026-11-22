@@ -66,3 +66,10 @@
 - 11-24：W4 第 4 轮 + 11-24 数据批首读（certificates meta / a2 直答块 / 食品包裝 meta 三个咬合判定 + 證書印刷是否回页一）。
 - 11-28：SMALLBATCH 28d 决策窗 + 两周计划终审（继续/停止/回滚）。
 - 等待 K3：§4 清单六项。
+
+## §8 11-22 增补（首席分析师晚场：brand-dup 审计 + NO_OP 落锤 + 现场变化）
+
+- **GSC「brand 重复」残余 1 项判定完成**：live 三方法干净（原始文本扫描 / microdata 扫描 / flight payload 解剖——Product 副本无 @id、单 brand），残余 = 修复后旧抓取滞后；因果链 = `414549e5`(11-01)→`c4605923`(11-02 19:13, 76 项批清修复)→验证 11-15 通过；sitemap lastmod 11-22 已新；**零 src 改动**，K3 可选 1 次点击请求重爬加速；12-13 未翻绿才重开调查。审计 = `.hermes/geo/2026-11-22-brand-dup-residual-audit.md`；决策包 §D 增第 6 行。
+- **Blog NO_OP 落锤（11-21 两窗零活动，§0.35.4 四件证据）**：① lane-runs 无 blog 行 ② 无当日报告 ③ lane-status 机判 `ZP-blog-deepfix 11-21 MISSING`（最近一次 OK = 11-07，停摆 2 周）④ 调度器 LastTaskResult=2147946720(=0x800710E0) + preflight 17:49 双次 BLOCKED（DEEPSEEK_API_KEY 缺）。海报文候选继续挂账待车道恢复。
+- **现场变化（并发对端会话活跃）**：gsc-feedback 11-21 20:13 真实触发但 dsh 20h 僵尸（PARTIAL，11-22 16:28 host 手动收尾 commit/push）；对端会话 17:08-18:54 跑 P1-3a cert-truth Batch 4/5（src 修复 4 commit + ledger）+ 11-22 K3 一页行动单（fbec66da）；本方 ad7fb342 已随 11-21 19:4x 对端批上 origin（`ad7fb342..2521140a`，verify-deploy 6067a462 PASS run 124583726243）。本方本批 docs 三文件 commit 本地，上批 push 18:54 → 30min 硬下限未到，push 留下窗（§0.25.8 不阻塞）。
+- **KPI 观察点不变**：11-24 数据批首读四问（certificates/a2/食品包装/稀释收敛）+ en/ja 三词回撤排查；11-28 终审 + SMALLBATCH 28d。
