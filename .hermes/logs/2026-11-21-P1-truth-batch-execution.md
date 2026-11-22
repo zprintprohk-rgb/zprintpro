@@ -55,3 +55,12 @@
 - guards：encoding PASS / gsc-leak 0
 - 部署：隨下一 push 窗口（20:14 後）或晚車道；30min 窗口 19:44 push 後未滿不搶推
 - 複驗責任：下一窗口線上斷言 price-guide meta description 新值 + size-guide title「1-2 天」
+
+## §9 11-22 收尾（16:24–16:50，跨日最终推送）
+- 隔夜实况：20:13 gsc 车道 fired 但 dsh 会话僵尸 20h（管道死锁），wrapper cmd 21312 非提升会话不可 kill；其产物完整（报告 VERDICT:PARTIAL 全结构 + anomaly JSON + ledger append），16:28 wrapper finalize 因找 2026-11-22 报告未果生成 STALE AUTO-FILL（车道日实为 11-21）
+- host-side 收尾（授权依据 §0.35.5「失败也写报告」+ 报告产物完整）：剔除 wrapper STALE 重复 bus 记录 → 写 host-finalize PARTIAL 记录（dsh 20h 僵尸/管道死锁/产物完整/归并说明）→ lane-status 刷新（142 bus records）
+- 锁：删除 20:13 遗僵尸 lock（文件级删除成功；进程不可 kill 系权限限制，已记入 bus blocked_reason）
+- **P1-4 活探针 UA 修复完成（7a862aee）**：verify-deploy / cron-watchdog / moq10-live-probe / cf-regression-probe / blog-quality-guard 五脚本 → `Mozilla/5.0 (compatible; <id>)`；实测首页 200/221KB/无挑战。probe-live-titles 原本即合规不动
+- **rule-translation 门童（#21）拦截与准予放行**：UA 字面量修改触发 2 绑定漂移（blog-12-segment / schema-single-source 共用该 guard）→ 按门童官方口径 `--stamp` 重刷 ledger（rule SSoT/producer 未动，仅门禁 UA 行）→ 三处 sha256 一致放行
+- **最终推送**：origin main c93cb09d→**9092ad6c**（7 commit 一次 build：P1-1b 镜像 + 台账×2 + P1-4 + 车道收尾 + docs carry + stamp）
+- 遗留：P1-3（cert 全域 + 贴纸三层价）随 11-23/11-24 窗口；k3-review 积压（11-18 起 MISSING）随调度器修复；20:13 gsc 的 A72 confounder 已由车道登记（12-04 判决需单变量归属）
