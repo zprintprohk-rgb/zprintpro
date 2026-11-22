@@ -66,7 +66,7 @@ const MATRIX = [
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function fetchOnce(url) {
   const t0 = Date.now();
-  const res = await fetch(url, { redirect: 'manual', headers: { 'user-agent': 'zp-a2-probe/1.0' } });
+  const res = await fetch(url, { redirect: 'manual', headers: { 'user-agent': 'Mozilla/5.0 (compatible; zp-a2-probe/1.0)' } });
   const headers = {};
   res.headers.forEach((v, k) => { headers[k.toLowerCase()] = v; });
   const body = res.status < 300 || res.status === 404 ? await res.text() : '';

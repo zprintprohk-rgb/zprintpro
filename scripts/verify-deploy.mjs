@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env node
+#!/usr/bin/env node
 /**
  * Post-push deploy verification
  *
@@ -48,7 +48,7 @@ function get(path) {
       method: 'GET',
       family: 4,
       headers: {
-        'User-Agent': 'mavis-verify-deploy/1.0',
+        'User-Agent': 'Mozilla/5.0 (compatible; mavis-verify-deploy/1.0)',
         'Accept': 'application/vnd.github+json',
       },
       timeout: 30000,

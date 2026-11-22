@@ -298,7 +298,7 @@ async function probeOnline(slug, locale, timeoutMs) {
   const ac = new AbortController();
   const t = setTimeout(() => ac.abort(), timeoutMs);
   try {
-    const res = await fetch(url, { signal: ac.signal, headers: { 'user-agent': 'zprintpro-guard-14/3.0' } });
+    const res = await fetch(url, { signal: ac.signal, headers: { 'user-agent': 'Mozilla/5.0 (compatible; zprintpro-guard-14/3.0)' } });
     const html = await res.text();
     clearTimeout(t);
     // 响应有效性三闸门 (匹配口径/状态码/长度下限)

@@ -93,7 +93,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function fetchText(url) {
   try {
-    const res = await fetch(url, { redirect: 'follow', headers: { 'user-agent': 'zprintpro-moq-probe/1.0' } });
+    const res = await fetch(url, { redirect: 'follow', headers: { 'user-agent': 'Mozilla/5.0 (compatible; zprintpro-moq-probe/1.0)' } });
     const text = await res.text();
     return { status: res.status, text, len: text.length };
   } catch (e) {
