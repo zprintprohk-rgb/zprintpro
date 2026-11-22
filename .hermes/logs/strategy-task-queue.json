@@ -596,7 +596,9 @@
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
       "next_check": "D1/D2 + 7/14/28d after actual deployment",
       "strategy_update": "WAITING_K3 reconciled to READY by D6. Execute one bounded certification-truth batch; preserve neutral regulatory education and emit before/after evidence.",
-      "strategy_updated_at": "2026-11-13T03:10:02+08:00"
+      "strategy_updated_at": "2026-11-13T03:10:02+08:00",
+      "progress": "BATCH 1 DONE 2026-11-22: zh-hk A组 21 处已改（sticker-guide/flyer/food-packaging/pet-food/finance-summit×2/school-exercise/foil-stamping×2/baby-product×2/campus×2/kraft-box/pharmaceutical/product-label×2/medical-device/packaging-box-pricing）。Before/after 全表 + 1575 token 全域盘点 + 分批计划见 .hermes/logs/2026-11-22-cert-claims-inventory-and-batch1.md。剩余: en A组(~20) / ja A组(~20) / 三语 B/C 组边界复审；D6-C 中性法规解释（FSC/REACH/FDA-CFR 引用）明确保留不得全局删。",
+      "next_batch": "Batch 2 = en.json A组镜像；Batch 3 = ja.json A组镜像；Batch 4 = B/C 组边界复审"
     },
     {
       "task_id": "FIX-20261030-A1-POSTER-PRICE-TRIPLE",
@@ -678,9 +680,9 @@
       ],
       "approval_gate": "K3 2026-11-13 CT-20261113-D1-D6 D2/D6: 指南价格仅在SKU+材质+尺寸+数量+工艺一致时保留；否则撤下价格表数字，改成本构成与报价入口。",
       "owner_lane": "ZP-blog-deepfix",
-      "status": "READY",
-      "next_check": "D1/D2 + 7/14/28d after actual deployment",
-      "result": "Same material differs 3-14x across guide/category/PDP; guide price table lacks size/qty/process conditions",
+      "status": "DONE",
+      "next_check": "2026-12-01 (7d after deploy)",
+      "result": "DONE+DEPLOYED 2026-11-22: 复核实测 sticker-guide 已无 10-30 诊断所指「材質參考價表 HK$0.5-1.5/1.2-3/2-5」（git -S 无该字符串历史，系此前批次整体重写）；现行全文按 SKU 牌價口径（PVC HK$0.22 起/透明 0.38/可移 0.45/異形 0.58/燙金 0.78/防偽 1.15，均带 10 張起印 + SKU 引用），符合 D2/D6「SKU+材質+數量一致才保留，否则改成本构成+报价入口」。零新增改动（P1-3b 判定为已被前批完成，不重复劳动 per 幂等铁律）",
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
       "strategy_update": "Category write scope removed to prevent overlap with FIX-20261030-STICKER-ZH-TRUTH-CONFLICT. Do not force basePrice into unrelated quantity tiers.",
       "strategy_updated_at": "2026-11-13T03:10:02+08:00"
