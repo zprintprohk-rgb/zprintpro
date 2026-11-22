@@ -64,3 +64,10 @@
 - **rule-translation 门童（#21）拦截与准予放行**：UA 字面量修改触发 2 绑定漂移（blog-12-segment / schema-single-source 共用该 guard）→ 按门童官方口径 `--stamp` 重刷 ledger（rule SSoT/producer 未动，仅门禁 UA 行）→ 三处 sha256 一致放行
 - **最终推送**：origin main c93cb09d→**9092ad6c**（7 commit 一次 build：P1-1b 镜像 + 台账×2 + P1-4 + 车道收尾 + docs carry + stamp）
 - 遗留：P1-3（cert 全域 + 贴纸三层价）随 11-23/11-24 窗口；k3-review 积压（11-18 起 MISSING）随调度器修复；20:13 gsc 的 A72 confounder 已由车道登记（12-04 判决需单变量归属）
+
+## §10 P1-1c 第四源层修复（17:20 提交 f5170f85，已推送，线上已验证）
+- **根因链（§0.23.1「门童 0 命中 ≠ 线上干净」第三实例）**：blog 页 meta description 优先级 = `legacyPost.description`（page.tsx 内联 legacyPosts map）→ blog-data JSON description → blog-posts.ts excerpt → ''。前两批只修 JSON 与 posts.ts 两层，内联 map 优先命中 → 线上 desc 恒旧
+- 修复：price-guide/size-guide 内联 map 的 title+description 对齐拍板真值；ja doujin description「コミケ前 24 時間特急」→「特急は見積り確認」
+- **线上复验（build 后 17:31）**：meta desc = 「智印港 A2 10 張起印 HK$16/張（10 張 HK$160）、100 張 HK$561（約 HK$5.6/張），A1 柯式 HK$20/張起…」✅ title ✅ body HK$561 ✅；「HK$6-9」仅存于带第三方口径归属的市场询价表（预期保留）
+- 固化学习：**blog meta 四层源**（内联 map > JSON description > posts.ts excerpt > slug）+ **线上断言必须拉全页**而非只查源码/单层；已建议 k3-review 后续验收按全页 meta 断言
+- 今日 pushes：9092ad6c（7 commit）→ f5170f85（P1-1c）；CF build 均 success
