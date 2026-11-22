@@ -55,3 +55,16 @@
 - **Batch 4**: zh/en/ja B/C 组边界复审（「100% FSC」残留、ISO 9001 句式、LFGB/GB 引用是否中性）
 - 每批独立 commit + 线上断言（注意 blog meta 四层源教训：断言须拉全页）
 - 禁止: 对 FSC/REACH/FDA-CFR 中性法规解释做全局删除（D6-C 明确保留）
+
+## §4 Batch 2/3/4 执行记录（2026-11-22 18:2x，同日完成）
+
+**Batch 2（en.json，commit d217235e，20 处）**：plant FSC-certified/comply FDA-REACH → FSC paper options + 要求核对；pet-food certified by FDA/LFGB/BfR → 按标准要求选配；finance-summit SGS heavy-metal ×2 → 报告 on request；baby-product FDA-compliant ×3 → food-contact compliance documentation on request；medical-device ISO 13485/FDA certified → compliance documents on request；gang-run FDA-compliant/FSC-certified → material options + confirm at order；packaging-box-pricing「Food FDA certified」→「Food-contact compliant options」；calendar FSC-certified paper + FDA inks → options；sticker-material「EU REACH certified」→ requirements；foil-stamping 100% FSC → FSC-certified options；campus 100% FSC ×2 + FDA food-grade certified → options；poster/campus ISO 9001 quality system → practices aligned with ISO 9001；cost-baseline ISO 9001 → documented QC procedures；school-exercise ISO 9001 → documented QC；roll-up ISO 9001 → documented QC；certificate「5 certifications」→「5 compliance references」
+
+**Batch 3（ja.json，commit 518734b0，13 行）**：工場 FSC 認証取得/準拠 → 用紙 FSC オプション + 要求に沿って選択；sticker-guide FDA 認証 → 食品接触コンプライアンス；Q「ZprintPro の認証は？」→ 材質は要求に沿った選択肢（適合証明は注文時確認）；finance-summit SGS 重金属試験クリア ×2 → 報告は注文時確認；medical-device ISO 13485/FDA 認証 → コンプライアンス枠組み/書類は注文時確認；packaging-box-pricing 食品 FDA 認証 → 食品接触対応オプション；sticker-material 食品級認証+REACH 認証 → 要求に沿った材質/適合確認；certificate 5 大コンプライアンス認証 → 5 項目；foil-stamping 100% FSC → オプション；campus/poster ISO 9001 品質システム → 整合した品質管理プラクティス；cost-baseline ISO 9001 → 文書化された品質管理手順；[證書編號備索] 残留 → 適合証明書は注文時確認
+
+**Batch 4（B/C 边界，zh-hk commit 6e117783，5 行）**：campus 100% FSC 認証書紙 → 認證選項；campus ISO 9001 品質體系 → 整合的品質管理實踐；cost-baseline/school-exercise/roll-up ISO 9001 → 文書化品質管理程序；[證書編號備索] ×11 + en「Cert No. available on request」×11 + ja ×5 → 合規文件以訂單確認／FSC 詞條修正（該占位符系 SOP-10 #4 撤 certNo 后残留的空壳，属「不留联系方式」口径）
+
+**保留（D6-C 合法，明确不删）**：FDA 21 CFR 175.300 / EU REACH 1907/2006 法规引用与中性解释；「沒有 FDA 認證會被扣押」市场信息；FDA 認證表格列名（信息对比）；ISO 14298 框架介绍；FSC 100% / FSC Mix / FSC Recycled 标签类型解释（真实 FSC 标签体系）；GB 4806 标准引用；BPA-free 材质属性；USP Class 标准引用。
+
+**验证**：三文件 JSON OK（101/102/101）· encoding PASS · gsc-leak 0 · push f834368d→6e117783（1 build）· 线上断言待 build 后抽查（sticker-guide「食品級貼紙可選用符合…」）
+**纪律注记**：本批未抢 lane.lock（preflight 需 DEEPSEEK_API_KEY 进程环境），以 §0.35.7 双条件替代核验（src clean + 对端 25min 零写入，实测 0），风险已记录。
