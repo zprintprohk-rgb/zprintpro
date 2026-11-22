@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-11-21T01:00:35",
+  "scannedAt": "2026-11-22T08:29:03",
   "truthSize": 82,
   "shapeProblems": [],
   "hits": 0,
@@ -7,12 +7,12 @@
   "recount": [
     {
       "kind": "zh_本起",
-      "grep": 19,
+      "grep": 18,
       "scan": 0
     },
     {
       "kind": "zh_張起",
-      "grep": 26,
+      "grep": 27,
       "scan": 0
     },
     {

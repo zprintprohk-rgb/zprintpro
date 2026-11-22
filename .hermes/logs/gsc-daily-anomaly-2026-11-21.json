@@ -1,0 +1,282 @@
+{
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T20:13:00+08:00",
+  "report": ".hermes/logs/2026-11-21-ZP-gsc-feedback.md",
+  "idempotency_key": "b93ef5a6fc086a2d",
+  "retry_of": null,
+  "follow_up_of": "ZP-gsc-feedback-20261120T202201-39644",
+  "follow_up_kind": "FOLLOW_UP_PARTIAL",
+  "run_kind": "DATA-SUPPLY + DECISION-POINT GATE run. No new GSC export exists for 2026-11-20 or 2026-11-21, so the newest batch is still export 2026-11-19 (data day 2026-11-16). The 9 READY GSC-MEASURE tasks all carry the same export/query/route already measured on 2026-11-20 and are recorded ALREADY_DONE (no re-measurement). The two 2026-11-21 due decision points are recorded unsatisfiable with machine evidence. One new measurement-integrity fact is registered: the 2026-11-21 19:50 production push changed the poster blog arm and the ja doujin order-price wording, which is a post-window confounder for two experiments. Zero page writes, zero queue flips, zero src writes.",
+  "verdict": "PARTIAL",
+  "verdict_definition": "Real new delivery: three-method proof that no 2026-11-20/11-21 export exists, explicit closure of both 2026-11-21 decision points as not measurable, anomaly-state migration, and registration of a new post-window confounder (11-21 19:50 poster-blog title/price change) that affects the 12-04 business read of EXP-1108-POSTER-PRIMARY-URL. NOT OK: the data day is still 2026-11-16 and 116.2h old (>72h), KPI is unchanged, and both due decision points need inputs that do not exist. NOT NO_OP: a due retest gate is blocked and a new confounder had to be registered, which is more than an evidence-complete no-change exit.",
+  "host_note": "Contract 7.1.2 classifies any VERDICT != OK as STALE and may skip commit/push. This lane will not write OK while the data day is 116.2h old and the 11-21 decision points are unsatisfiable (AGENTS.md 0.23 / contract 8.4 / 8.8). The bus row is host-written after lane exit. Host must use path-level git add (there are self-reported uncommitted src batches from other 2026-11-21 sessions; see upstream_change_events_2026_11_21.pending_src_batches) and must respect the 30-min push window after the 19:50 push (earliest 20:20).",
+  "data_gate": {
+    "kpi_updated": false,
+    "kpi_updated_scope": "NONE - no new export; the last KPI delivery remains 2026-11-19 (data day 2026-11-16), delivered by the 2026-11-20 run",
+    "no_new_data_since_last_export": true,
+    "page_writes": 0,
+    "newest_batch": "2026-11-19",
+    "previous_batch": "2026-11-16",
+    "missing_exports": [
+      "2026-11-13",
+      "2026-11-14",
+      "2026-11-15",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-20",
+      "2026-11-21"
+    ],
+    "missing_export_note": "No 2026-11-20 or 2026-11-21 workbook and no 2026-11-20/21 analysis artifact. Missing consecutive calendar days now 7 (11-13/14/15/17/18/20/21; 5 working days, 11-14/15 are the weekend). 3mo has not been exported since 2026-11-03 (6 batches that did exist lacked 3mo).",
+    "windows_present_in_newest_batch": ["24h", "7d", "28d"],
+    "windows_missing_in_newest_batch": ["3mo"],
+    "data_days": {
+      "24h_window_end": "2026-11-18T20:00:00",
+      "7d": "2026-11-16",
+      "28d": "2026-11-16",
+      "3mo": "2026-10-31"
+    },
+    "windows": {
+      "24h": "2026-11-17T21:00:00..2026-11-18T20:00:00",
+      "7d": "2026-11-10..2026-11-16",
+      "28d": "2026-10-20..2026-11-16",
+      "3mo": "2026-08-01..2026-10-31"
+    },
+    "ages_hours_at_2013_on_11_21": {
+      "24h": 72.2,
+      "7d": 116.2,
+      "28d": 116.2,
+      "3mo": 500.2,
+      "api_query_country": 404.2
+    },
+    "age_base": "24h measured from the window end 2026-11-18T20:00; 7d/28d/3mo/api measured from 00:00 of the day AFTER the data day (11-17 / 11-17 / 11-01 / 11-05). Same base on 2026-11-20 gives 48.2 / 92.2 / 92.2 / 476.2 / 380.2, i.e. every plane aged exactly +24h. The previous report quoted 3mo 500.2h and api 404.2h using the data-day 00:00 base; this run uses one consistent base. No value is retracted; only the base is now stated.",
+    "freshness": "A1 DATA_STALE STILL OPEN and worse than yesterday: 7d/28d data day 2026-11-16 is 116.2h old at 20:13 on 11-21 (>72h). It was 92.2h on 11-20. 24h window ends 11-18T20 (72.2h). 3mo still carried from 11-03. index.json still lastBuild 2026-11-05 / latestFreshData 2026-11-03.",
+    "reason": "Three independent checks agree: (A) GSC数据/ filename glob for 2026-11-2* = 0 hits; full inventory (153 files) newest = 2026-11-19 24h/7d/28d; (B) .hermes/logs/gsc-2026-11-2* analysis artifacts = 0 hits, newest = gsc-2026-11-19-*; (C) peer evidence - 2026-11-20 ZP-daily-content records 'no new export', and the 2026-11-21 19:08 wrap-check records query-x-page NO_DATA and no new batch. Not 'not found' - the files do not exist.",
+    "late_arrival_note": "No late arrival this run. If an export lands after this lane exits, the next run must mark LATE_ARRIVAL_BACKFILL with export_date / window_end / content_hash and must not re-key it as an 11-21 reading."
+  },
+  "consumed": {
+    "run_context": ".hermes/logs/run-context-ZP-gsc-feedback.json @ 2026-11-21 20:13:02 (preflight verdict ok; 10/10 checks ok; lock pid 16108; retry_queue 1 item = FOLLOW_UP_PARTIAL; this_run_key b93ef5a6fc086a2d; previous bus record 2026-11-20 20:22:01 PARTIAL)",
+    "lane_status": ".hermes/logs/lane-status.json @ 2026-11-21 19:13 local (1.0h old; bus_records 141; verdict=ATTENTION; problems=2 = weekly-meta 11-20 FAILED + k3-review 11-21 MISSING; gsc 11-15/16/17 MISSING, 11-18 FAILED, 11-19 FAILED, 11-20 PARTIAL, 11-21 PENDING)",
+    "contract": ".hermes/cron-prompts/lane-results-bus-contract.md (sections 6.1 / 6.2 / 6.3 / 6.4 / 7.1 / 7.2 / 7.3 / 7.4 / 8.1-8.8)",
+    "prompts": [
+      ".hermes/cron-prompts/zprintpro-gsc-feedback-loop.md (2026-11-14 coordinated flywheel block + 2026-11-13 truth/CTR block + 2026-11-07 four-window block + 2026-11-03 evidence block + 2026-10-12 recovery-mode block)",
+      ".hermes/cron-prompts/sop-10-gate.md"
+    ],
+    "coordination": [
+      ".hermes/logs/coordination-board.json @ 2026-11-21T20:13:02+0800 (9 READY GSC-MEASURE tasks, owner_lane=ZP-gsc-feedback, baselines from the 11-19 delta; baseline.window label still 2026-10-14..2026-11-10 while rows come from 2026-10-20..2026-11-16 = A67 recurrence 3)",
+      ".hermes/logs/strategy-task-queue.json (read-only; GEO-20261103-AI-PROBE-S1 still SCHEDULED / next_check 2026-11-03 = overdue 18d; MEASURE-20261028-ATTRIBUTION CLOSED_BY_K3_S0.37)"
+    ],
+    "flywheel_ledger": ".hermes/logs/flywheel-learning-ledger.json @ updated_at 2026-11-19 23:25 (window_math + 21 experiments + data_supply + scheduler_truth + counters + update_log read; this run appends retest_gate_2026_11_21 and adds confounders to two gsc-owned experiments; no verdict rewritten)",
+    "gsc_artifacts": [
+      ".hermes/logs/gsc-2026-11-19-four-window-analysis.json (authoritative windows, KPI, country/page aggregates, 60-row page-1 zero-click pool, two_method_reconciliation all_match=true; query_page_join_available_in_workbook=false for 24h/7d/28d)",
+      ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json (28d series through 11-19; 7d block keyed previous_11_16/current_11_19)",
+      ".hermes/logs/gsc-2026-11-16-four-window-analysis.json + gsc-2026-11-16-money-keyword-delta.json (previous batch, comparison anchors)",
+      ".hermes/logs/gsc-cliff-2026-11-03.json (last official recovery point; no detector file since)",
+      "GSC数据/index.json (lastBuild 2026-11-05T07:38, latestFreshData 2026-11-03, self-reported FRESH/stalenessDays=2 contradicts latestFreshData)",
+      "GSC数据/ inventory: 153 files, newest = 2026-11-19 24h/7d/28d; 3mo = 2026-11-03; latest query x page table = GSC数据/money-kw-query-page-2026-10-31.csv (export 2026-10-31); API query x country = gsc-query-country-28d-end1105.csv (data day 2026-11-04, NOT a query x page join)"
+    ],
+    "peer_reports": [
+      ".hermes/logs/2026-11-20-ZP-gsc-feedback.md (previous real PARTIAL delivery; NEXT consumed, DELIVERED not redone)",
+      ".hermes/logs/2026-11-20-ZP-daily-content.md (sibling; sticker 29.94 sixth window; 11-21 retest prep)",
+      ".hermes/logs/2026-11-21-wrap-check-evening.md (human wrap-check 19:08; query-x-page NO_DATA open; 19:50 push c93cb09d; scheduler credential risk for tonight)",
+      ".hermes/logs/2026-11-21-P1-truth-batch-execution.md (human manual session; poster blog old-price cleanup 2521140 + ja education/C109 truth c93cb09d + 6e48429b; pushed 19:50)",
+      ".hermes/logs/2026-11-21-PRICE-DEBT-BIGBATCH.md (human manual session; 18 src files on disk, self-reported 0 commit/0 push, VERDICT FAILED because gates could not run)",
+      ".hermes/logs/2026-11-21-RUSH-PAGE-TRUTH.md (human manual session; 4 src files on disk, self-reported 0 commit/0 push, VERDICT FAILED because gates could not run)",
+      ".hermes/logs/2026-11-21-manual-p1-truth-batch.md (preflight BLOCKED AUTO-FILL at 17:49, DEEPSEEK_API_KEY absent)",
+      ".hermes/logs/money-kw-share-baseline-2026-10-31.md + .json (query x page share baseline dated 2026-10-31; reference only, NOT current)",
+      "docs/assets/2026-11-20/gsc-money-queries-and-pages.json (same 11-19 workbook; sibling page and query aggregates only, no join)"
+    ],
+    "repo_state": {
+      "head_note": "Not read via git this run (pwsh compute surface blocked in the v9.4 lane sandbox). Peer report records origin/main=c93cb09d after the 19:50 push; peer records two src batches still uncommitted (status unverified). This lane writes only .hermes/logs/.",
+      "today_peer_writes": [
+        ".hermes/logs/2026-11-21-RUSH-PAGE-TRUTH.md",
+        ".hermes/logs/2026-11-21-PRICE-DEBT-BIGBATCH.md",
+        ".hermes/logs/2026-11-21-manual-p1-truth-batch.md",
+        ".hermes/logs/2026-11-21-wrap-check-evening.md",
+        ".hermes/logs/2026-11-21-P1-truth-batch-execution.md"
+      ]
+    },
+    "session_lock": "SESSION_LOCK.md top entry is 2026-11-14 16:3x released. Older 'holding' lines (2026-10-23 13:5x / 12:3x) are each closed by a later release entry. No active human lock. This lane writes only .hermes/logs/, so the 0.35.7 src write gate is not triggered."
+  },
+  "status_gate": {
+    "verdict": "FRESH",
+    "lane_status_generated_local": "2026-11-21 19:13",
+    "age_hours": 1.0,
+    "note": "Fresh bus snapshot (<24h). problems=2 are scheduler residue (weekly-meta 11-20 exit 4 / k3-review 11-21 MISSING), not content failures of this lane and not a licence to dispatch content fixes."
+  },
+  "idempotency": {
+    "this_run_key": "b93ef5a6fc086a2d",
+    "previous_run_key": "323b32262db4c17c",
+    "same_key_as_previous": false,
+    "rule": "key = sha256(lane|intent|target|day)[:16]; new day + new target (gate audit, not a re-read of the 11-19 batch) => legal new work",
+    "duplicate_warning_check": "lane-status.warnings 4 DUPLICATE_IDEMPOTENCY_KEY entries are 2026-10-10 / 10-28 / 10-29 / 10-30 historical keys; b93ef5a6fc086a2d is not among them"
+  },
+  "retry_queue_resolution": {
+    "item_0": {
+      "kind": "FOLLOW_UP_PARTIAL",
+      "run_id": "ZP-gsc-feedback-20261120T202201-39644",
+      "instruction": "真实交付已完成; 仅处理 NEXT, 不得重做 DELIVERED",
+      "next_items_and_status": [
+        "貼紙第七窗 (needs data day >= 2026-11-18) -> WINDOW_NOT_AVAILABLE (latest data day 2026-11-16)",
+        "海報/喜帖主承接份额 (needs CURRENT query x page join) -> CANNIBALIZATION_NOT_MEASURABLE (workbook join flag false; latest query x page table export 2026-10-31)",
+        "SMALLBATCH 7d (peer ZP-daily-content) -> DELEGATED_PEER_PENDING (daily fires 21:17, after this lane)"
+      ],
+      "redone_delivered": false
+    },
+    "other_items": "none in retry_queue; suppressed_retry_queue (2026-11-18 / 2026-11-19) is closed by later real reports and is not re-dispatched",
+    "retry_of_line": "NONE - the only retry_queue item is FOLLOW_UP_PARTIAL, handled as NEXT per contract 2.1; no failed run is being retried today"
+  },
+  "decision_points_2026_11_21": {
+    "sticker_seventh_window": {
+      "status": "WINDOW_NOT_AVAILABLE",
+      "requires": "data day >= 2026-11-18",
+      "available_data_day": "2026-11-16",
+      "gap_days": 2,
+      "last_read": {"export_date": "2026-11-19", "window": "2026-10-20..2026-11-16", "impressions": 179, "clicks": 0, "position_28d": 29.94, "position_7d": 27.55, "previous_28d_position": 32.58, "readings": 8, "consecutive_improvements": 7},
+      "note": "The 29.94 milestone and the title discussion pack were delivered by peers on 11-20. No seventh reading is possible from an unchanged export; re-reading it would be a duplicate delivery."
+    },
+    "poster_wedding_primary_url_share": {
+      "status": "CANNIBALIZATION_NOT_MEASURABLE",
+      "evidence": [
+        "gsc-2026-11-19-four-window-analysis.json: query_page_join_available_in_workbook=false for 24h, 7d and 28d",
+        "latest query x page table = GSC数据/money-kw-query-page-2026-10-31.csv (export 2026-10-31; source of the 10-31 share baseline); gsc-query-country-28d-end1105.csv is query x country, not a join",
+        "peer 2026-11-21 19:08 wrap-check: query-x-page NO_DATA remains open; waiting on the 11-24 decision-pack data batch",
+        "peer docs/assets/2026-11-20/gsc-money-queries-and-pages.json (same 11-19 workbook) contains only sibling 'pages' and 'money_queries' aggregates, no query x page rows",
+        "reference baseline (NOT current): money-kw-share-baseline-2026-10-31 - 海報印刷 blog guide 37% / category 16%; 喜帖印刷 product 73% / category 27%"
+      ],
+      "no_guessing": "No share number is inferred for 2026-11-21 and no rollback is proposed."
+    },
+    "smallbatch_7d": {
+      "status": "DELEGATED_PEER_PENDING",
+      "owner": "ZP-daily-content (21:17)",
+      "note": "This lane does not duplicate the peer's 7d read; consume its report next run if present."
+    }
+  },
+  "ready_tasks_consumption": {
+    "board": "coordination-board.json @ 2026-11-21T20:13:02+0800",
+    "count": 9,
+    "export": "2026-11-19",
+    "data_day": "2026-11-16",
+    "consumption": "ALREADY_CONSUMED_2026_11_20_SAME_EXPORT",
+    "rule": "same GSC export + same query + same route => idempotent consumption; no second measurement for the same export",
+    "rows_carried_unchanged": [
+      {"query": "海報印刷", "impressions": 186, "clicks": 1, "position_28d": 20.37, "previous_position": 18.24},
+      {"query": "宣傳單張", "impressions": 134, "clicks": 0, "position_28d": 39.39, "previous_position": 38.09},
+      {"query": "印刷", "impressions": 127, "clicks": 1, "position_28d": 22.91, "previous_position": 21.97},
+      {"query": "コミケ 印刷", "impressions": 110, "clicks": 0, "position_28d": 30.49, "previous_position": 27.37},
+      {"query": "教材 印刷製本", "impressions": 57, "clicks": 0, "position_28d": 43.95, "previous_position": 40.00},
+      {"query": "易拉架印刷", "impressions": 43, "clicks": 0, "position_28d": 41.63, "previous_position": 40.66},
+      {"query": "喜帖印刷", "impressions": 36, "clicks": 0, "position_28d": 44.78, "previous_position": 43.84},
+      {"query": "小冊子印刷", "impressions": 14, "clicks": 0, "position_28d": 17.93, "previous_position": 11.92},
+      {"query": "證書印刷", "impressions": 9, "clicks": 0, "position_28d": 12.22, "previous_position": 10.78}
+    ],
+    "action": "MEASURE (unchanged); no FIX/SCALE/STOP, no queue status flip, no new content task"
+  },
+  "upstream_change_events_2026_11_21": {
+    "push_at": "2026-11-21 19:50",
+    "range": "13:32 -> c93cb09d",
+    "commits": [
+      {"commit": "6e48429b", "what": "comiket truth residual (per the 19:08 wrap-check summary)"},
+      {"commit": "2521140", "what": "poster cluster blog old-price cleanup: poster-printing-price-guide title changed from an HK$9 hook to an evergreen A1/A2 price title (title-equiv 55, inside 50-57), description/key points/insights/price table aligned to the approved A2 truth (HK$16/sheet start, 10 sheets HK$160, 100 sheets HK$561, 1-2 working days), poster-size-guide 3 price lines and CTA turnaround updated, blog-posts.ts zh-hk title mirror synced"},
+      {"commit": "c93cb09d", "what": "ja education/C109 truth batch: campus pillar refund/USD/SLA claims removed, doujin-circle-printing-guide order price re-worded from '1 冊 ¥7,500 起' to 'ご注文 ¥7,500〜', school-exercise-book description/SLA adjusted, comiket prep verified unchanged"}
+    ],
+    "post_window": "All commits landed after data day 2026-11-16, so they cannot explain the 2026-11-19 readings. They become a second variable in every window that includes data day >= 2026-11-22.",
+    "online_verify": "title HIT at 19:57 on the zh price-guide; meta description still the old value (Cloudflare edge propagation); body anchors and the ja doujin string pending the next window",
+    "pending_src_batches": [
+      {"report": ".hermes/logs/2026-11-21-PRICE-DEBT-BIGBATCH.md", "files": 18, "self_reported": "0 commit / 0 push; gates NOT EXECUTED because pwsh was blocked", "status": "UNVERIFIED_NOT_COUNTED_AS_DEPLOYED"},
+      {"report": ".hermes/logs/2026-11-21-RUSH-PAGE-TRUTH.md", "files": 4, "self_reported": "0 commit / 0 push; gates NOT EXECUTED because pwsh was blocked", "status": "UNVERIFIED_NOT_COUNTED_AS_DEPLOYED"}
+    ],
+    "measurement_consequence": "Do not treat these as deployed until an independent online probe confirms them. If they are later swept into a push, they add a third variable on pricing/rush pages."
+  },
+  "confounders_registered": [
+    {
+      "experiment_id": "EXP-1108-POSTER-PRIMARY-URL",
+      "confounder": "2026-11-21 19:50 commit 2521140 rewrote the poster blog arm (title + price truth + description). The 11-08 experiment moved primary status to /zh-hk/category/posters/ and demoted the guide. From data day >= 2026-11-22 the category-vs-blog share can no longer be attributed to the 11-08 URL decision alone.",
+      "impact": "The 2026-12-04 28d business verdict for this experiment would mix two variables and is not decision-grade without a current query x page join.",
+      "default_action": "HOLD at the 12-04 window if the join is still absent (contract 7.3.4: insufficient evidence => HOLD). No rollback. No verdict rewrite.",
+      "recorded_in": ".hermes/logs/flywheel-learning-ledger.json experiments[EXP-1108-POSTER-PRIMARY-URL].confounders"
+    },
+    {
+      "experiment_id": "EXP-1108-JA-DOUJINSHI-UNIT",
+      "confounder": "2026-11-21 19:50 commit c93cb09d re-worded the doujin-circle order price ('1 冊 ¥7,500 起' -> 'ご注文 ¥7,500〜'). This is the same variable family as the 11-08 '/部 -> /注文' change, now applied to an additional page.",
+      "impact": "Aggregate query reads remain usable as direction, but per-page attribution needs a join that the workbooks do not provide.",
+      "default_action": "MEASURE only; no business verdict before the C109 season window and the 28d gate.",
+      "recorded_in": ".hermes/logs/flywheel-learning-ledger.json experiments[EXP-1108-JA-DOUJINSHI-UNIT].confounders"
+    }
+  ],
+  "inherited_reads": {
+    "note": "Unchanged from the 2026-11-20 run (same export 2026-11-19, data day 2026-11-16). Listed for continuity only; they are not new measurements.",
+    "kpi": {
+      "24h": {"window": "2026-11-17T21:00:00..2026-11-18T20:00:00", "clicks": 21, "impressions": 1138, "ctr_pct": 1.8453, "avg_position": 14.1649},
+      "7d": {"window": "2026-11-10..2026-11-16", "clicks": 130, "impressions": 8283, "ctr_pct": 1.5695, "avg_position": 15.5229},
+      "28d": {"window": "2026-10-20..2026-11-16", "clicks": 554, "impressions": 27879, "ctr_pct": 1.9872, "avg_position": 14.9511},
+      "3mo": {"window": "2026-08-01..2026-10-31", "clicks": 1279, "impressions": 65252, "ctr_pct": 1.9601, "avg_position": 17.355, "carried_from": "2026-11-03"}
+    },
+    "recovery": {"value_pct": 114.29, "numerator": 1138, "denominator_mean28": 995.6786, "caliber": "full-country 24h / same-batch 28d daily mean", "status": "DERIVED_NOT_DETECTOR_UNCHANGED", "no_new_point": true},
+    "market_ctr_28d": {"中国香港": {"impressions": 15923, "clicks": 395, "ctr_pct": 2.4807, "position": 13.93}, "日本": {"impressions": 3707, "clicks": 54, "ctr_pct": 1.4567, "position": 23.03}, "美国": {"impressions": 3225, "clicks": 30, "ctr_pct": 0.9302, "position": 15.9}},
+    "two_method": "Hand recomputation 21/1138=1.8453%, 130/8283=1.5695%, 554/27879=1.9872% matches the four-window JSON; method 2 = the JSON's two_method_reconciliation for 2026-11-19 with reconciliation_all_match=true. No separate workbook-independent QA file for 11-19 (A68)."
+  },
+  "anomalies": [
+    {"id": "A1", "name": "DATA_STALE", "status": "STILL_OPEN_116_2H", "severity": "P0", "evidence": "7d/28d data day 2026-11-16, 116.2h at 20:13 on 11-21 (>72h); was 92.2h on 11-20", "recovery_plan": "request_human (export 11-20/11-21 + missing batches)"},
+    {"id": "A2", "name": "FROZEN_24H", "status": "REOPENED_DAY6", "severity": "P2", "evidence": "24h window ends 2026-11-18T20 (72.2h), not yesterday/today", "recovery_plan": "retry with a new export"},
+    {"id": "A36", "name": "XLSX_NOT_REFRESHED", "status": "RECURRENCE_5", "severity": "P1", "evidence": "no 2026-11-20 or 2026-11-21 workbook; missing 11-13/14/15/17/18/20/21", "recovery_plan": "request_human"},
+    {"id": "A44", "name": "DETECTOR_RUNTIME", "status": "OPEN_DAY18", "severity": "P1", "evidence": "gsc-cliff-* stops at 2026-11-03; no detector file for 18 days", "recovery_plan": "request_human (run detector after proxy restore)"},
+    {"id": "A47", "name": "GSC_INDEX_NOT_REBUILT", "status": "OPEN_6_BATCHES_DAY16", "severity": "P2", "evidence": "index.json lastBuild 2026-11-05, latestFreshData 2026-11-03; 11-07/10/11/12/16/19 not ingested", "recovery_plan": "request_human (rebuild-gsc-index.mjs --write)"},
+    {"id": "A54", "name": "GEO_PROBE_OWNER_CONFLICT", "status": "OPEN_OVERDUE_18D", "severity": "P2", "evidence": "strategy queue GEO-20261103-AI-PROBE-S1 SCHEDULED, next_check 2026-11-03; owner written by both gsc and weekly", "recovery_plan": "request_human (assign owner; no AI-citation claim until run)"},
+    {"id": "A58", "name": "LEDGER_DATA_SUPPLY_STALE", "status": "STALE_DAY11_AND_SELF_CONTRADICTORY", "severity": "P2", "evidence": "data_supply.status=BROKEN_DAY6 / latest_xlsx=2026-11-07 while note_1119 acknowledges the 11-19 export; machine fields still 14 days behind", "recovery_plan": "modify_payload (owner=ledger/manual session); this lane does not rewrite data_supply"},
+    {"id": "A63", "name": "SCHEDULER_REFUSED_GSC", "status": "IMPROVED_ONE_CLEAN_IGNITION_11_20_NOT_CLOSED", "severity": "P1", "evidence": "lane-status lastRunRecord 2026-11-20 20:22:01 dsh_exit=0 wrapper_exit=0 verdict=PARTIAL pushed=true head=fb62b52b = one clean natural ignition; 11-19 was dsh quota failure; today preflight ok and dsh is running; scheduler LastTaskResult not readable (pwsh blocked) and run-context.scheduler_recovery=NOT_PROVEN; peer wrap-check flags credential risk for 21:17/23:47 tonight", "recovery_plan": "request_human (confirm credential persistence via scripts/repair-dsh-scheduler-credential.ps1; four-party acceptance before closing)"},
+    {"id": "A65", "name": "DECISION_WINDOW_KEYED_ON_EXPORT_DATE", "status": "STILL_OPEN_NEW_PROOF", "severity": "P1", "evidence": "ledger dilution_table has an export_date 2026-11-21 row claiming 7d 100% / 28d 39.3%, but no 2026-11-21 export exists at 20:13; the row is unrealizable today. The first 100% 7d window was export 11-19 (data day 11-16), not export 11-18", "recovery_plan": "modify_payload (owner=ledger/runbook): key by data_day"},
+    {"id": "A66", "name": "MONEY_7D_BLOCK_KEYS_STALE", "status": "CLOSED_NO_NEW_BATCH_TO_TEST", "severity": "P1", "evidence": "the 11-19 delta 7d block uses previous_11_16/current_11_19 throughout (verified 11-20); no new delta exists today to re-assert", "recovery_plan": "none; re-assert on the next batch"},
+    {"id": "A67", "name": "BOARD_BASELINE_WINDOW_MISLABEL", "status": "RECURRENCE_3", "severity": "P2", "evidence": "board baseline.window 2026-10-14..2026-11-10 while rows come from 2026-10-20..2026-11-16", "recovery_plan": "modify_payload (owner=board builder)"},
+    {"id": "A68", "name": "NO_INDEPENDENT_QA", "status": "IMPROVED_NOT_CLOSED", "severity": "P2", "evidence": "11-19 four-window JSON two_method_reconciliation all_match=true, but no separate workbook-independent-qa file (11-12 had 54/54)", "recovery_plan": "modify_payload (owner=analysis generator): emit QA per batch"},
+    {"id": "A69", "name": "C109_EVENT_NAV_CLUSTER_IN_PAGE1_ZERO_CLICK_POOL", "status": "CARRY", "severity": "P3", "evidence": "c109 日期/時間/配置/doujin/comiket = 167 imp / 0 clk / positions 3.92-9.78; event-date navigational intent (11-19 batch)", "recovery_plan": "modify_payload (owner=monthly/AEO): structured date/venue answer; never title-fix this cluster"},
+    {"id": "A70", "name": "SEVEN_DAY_CLICK_DECLINE_SECOND_READ", "status": "CARRY_NEEDS_PAGE_JOIN", "severity": "P2", "evidence": "7d clicks 144 -> 130 (-14, -9.72%) while impressions +180 (+2.22%), CTR -0.2076pp (11-19 batch); the 11-21 production changes are outside that window and cannot explain it", "recovery_plan": "modify_payload (owner=weekly-meta): page-level join + SERP before any single-variable change; no site-wide title action"},
+    {"id": "A71", "name": "DECISION_POINTS_11_21_INPUTS_ABSENT", "status": "NEW", "severity": "P1", "evidence": "sticker seventh window needs data day >= 11-18 but the latest is 11-16; share check needs a current query x page join but query_page_join_available_in_workbook=false for all three windows and the latest query x page table is export 2026-10-31; peer wrap-check logs query-x-page NO_DATA", "recovery_plan": "modify_payload (owner=K3/host): export 11-20/21 + provide a current join; no inference in the meantime"},
+    {"id": "A72", "name": "POSTER_BLOG_POST_WINDOW_CONFOUNDER", "status": "NEW", "severity": "P1", "evidence": "2026-11-21 19:50 push c93cb09d included 2521140: poster blog title/price rewrite (title-equiv 55) and c93cb09d ja doujin order-price re-wording; both landed after data day 11-16, so the 11-19 reads are clean but every window from data day 11-22 mixes two variables for EXP-1108-POSTER-PRIMARY-URL / EXP-1108-JA-DOUJINSHI-UNIT", "recovery_plan": "request_human (K3/monthly): default HOLD on the 12-04 business verdict for the poster primary-URL experiment unless a current join exists; do not roll back"}
+  ],
+  "handoffs": {
+    "ZP-weekly-meta": [
+      "page-1 zero-click pool 60 rows remains valid (11-19 batch); SERP + truth gate required before any title/desc change",
+      "sticker 29.94 milestone is peer-delivered; seventh window not available until data day >= 11-18",
+      "A70 7d click decline: needs a page-level join; the 11-21 title change came later and cannot explain it"
+    ],
+    "ZP-daily-content": [
+      "poster/wedding share check remains CANNIBALIZATION_NOT_MEASURABLE; do not issue a share task from this lane",
+      "SMALLBATCH 7d is your 21:17 item; this lane only consumes it next run"
+    ],
+    "ZP-blog-deepfix": [
+      "コミケ 印刷 remains separate from the JA-C109 truth task; today's c93cb09d truth batch is registered as a confounder, not as a ranking rescue",
+      "no new article task issued; 28d is only 28.6% post-change"
+    ],
+    "ZP-k3-review": [
+      "one clean natural ignition on 11-20 (PARTIAL, pushed) but scheduler truth is not closed",
+      "11-21 decision points both blocked on inputs; 12-04 poster verdict at risk of confounding"
+    ],
+    "ZP-monthly-matrix": [
+      "A69 C109 event-navigation cluster",
+      "A72 poster blog post-window confounder: HOLD default for EXP-1108-POSTER-PRIMARY-URL on 12-04 without a join",
+      "market CTR unchanged: JP 1.4567% / US 0.9302%"
+    ]
+  },
+  "next_checks": {
+    "first_new_export": "mark LATE_ARRIVAL_BACKFILL (export_date / window_end / content_hash) and then read sticker seventh window if data day >= 2026-11-18",
+    "2026-11-22_or_later": "re-read the 9 READY tasks only on a NEW export; do not re-measure export 2026-11-19",
+    "first_data_day_ge_2026-11-22": "C1 14d clean window (direction); also first window that includes the 11-21 production changes",
+    "first_data_day_ge_2026-11-23": "C2 14d clean window (direction)",
+    "2026-11-28": "small batch sticker (US English SERP + same-caliber 28d)",
+    "2026-12-01": "monthly natural trigger",
+    "2026-12-04": "28d 82.1% post-change: first business-verdict window; EXP-1108-POSTER-PRIMARY-URL => HOLD unless a current join exists"
+  },
+  "write_scope": {
+    "files_written": [
+      ".hermes/logs/2026-11-21-ZP-gsc-feedback.md",
+      ".hermes/logs/gsc-daily-anomaly-2026-11-21.json",
+      ".hermes/logs/flywheel-learning-ledger.json (append retest_gate_2026_11_21 + confounders on two gsc-owned experiments + updated_at/update_log; no verdict rewrite)"
+    ],
+    "src_writes": 0,
+    "docs_writes": 0,
+    "queue_status_flips": 0,
+    "peer_files_rewritten": 0,
+    "historical_reports_rewritten": 0
+  }
+}

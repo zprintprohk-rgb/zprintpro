@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "analysis_date": "2026-11-19",
-  "previous_export": "2026-11-16",
+  "method": "Exact-match, same-window; positive position delta is worse.",
   "focus_query_deltas_28d": [
     {
       "query": "即日印刷",
@@ -74,13 +74,13 @@
         0.12,
         0.3
       ],
+      "latest_delta_11_16_to_11_19": 0.3,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": true,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.3
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "香港印刷",
@@ -153,13 +153,13 @@
         -0.26,
         0.81
       ],
+      "latest_delta_11_16_to_11_19": 0.81,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.81
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "海報印刷",
@@ -232,13 +232,13 @@
         1.01,
         2.13
       ],
+      "latest_delta_11_16_to_11_19": 2.13,
       "latest_direction": "WORSE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 2.13
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "印海報",
@@ -311,13 +311,13 @@
         0.47,
         0.43
       ],
+      "latest_delta_11_16_to_11_19": 0.43,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.43
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "利是封印刷",
@@ -390,13 +390,13 @@
         -0.08,
         0.7
       ],
+      "latest_delta_11_16_to_11_19": 0.7,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.7
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "月曆印刷",
@@ -469,13 +469,13 @@
         -0.74,
         -1.34
       ],
+      "latest_delta_11_16_to_11_19": -1.34,
       "latest_direction": "BETTER",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_IMPROVEMENT",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -1.34
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "貼紙印刷",
@@ -548,13 +548,13 @@
         -1.77,
         -2.64
       ],
+      "latest_delta_11_16_to_11_19": -2.64,
       "latest_direction": "BETTER",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_IMPROVEMENT",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -2.64
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "貼紙訂製",
@@ -627,13 +627,13 @@
         -0.14,
         0.22
       ],
+      "latest_delta_11_16_to_11_19": 0.22,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.22
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "貼紙订制",
@@ -706,13 +706,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "可移貼紙",
@@ -785,13 +785,13 @@
         -2.45,
         -0.57
       ],
+      "latest_delta_11_16_to_11_19": -0.57,
       "latest_direction": "STABLE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_IMPROVEMENT",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -0.57
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "宣傳單張",
@@ -864,13 +864,13 @@
         1.63,
         1.3
       ],
+      "latest_delta_11_16_to_11_19": 1.3,
       "latest_direction": "WORSE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 1.3
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "宣传单张",
@@ -943,13 +943,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "宣傳單張印刷",
@@ -1022,13 +1022,13 @@
         -0.25,
         0.34
       ],
+      "latest_delta_11_16_to_11_19": 0.34,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.34
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "摺頁印刷",
@@ -1101,13 +1101,13 @@
         -1.8,
         -2.26
       ],
+      "latest_delta_11_16_to_11_19": -2.26,
       "latest_direction": "BETTER",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_IMPROVEMENT",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -2.26
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "印書",
@@ -1180,13 +1180,13 @@
         0.79,
         0.32
       ],
+      "latest_delta_11_16_to_11_19": 0.32,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.32
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "書刊印刷",
@@ -1259,13 +1259,13 @@
         0.09,
         1.62
       ],
+      "latest_delta_11_16_to_11_19": 1.62,
       "latest_direction": "WORSE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 1.62
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "书籍印刷",
@@ -1338,13 +1338,13 @@
         0.0,
         0.0
       ],
+      "latest_delta_11_16_to_11_19": 0.0,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": true,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.0
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "教科書印刷",
@@ -1417,13 +1417,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "學校印刷",
@@ -1496,13 +1496,13 @@
         2.05,
         -3.18
       ],
+      "latest_delta_11_16_to_11_19": -3.18,
       "latest_direction": "BETTER",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -3.18
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "包裝盒訂製",
@@ -1575,13 +1575,13 @@
         0.1,
         -0.84
       ],
+      "latest_delta_11_16_to_11_19": -0.84,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -0.84
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "包裝盒印刷",
@@ -1654,13 +1654,13 @@
         -0.44,
         -1.35
       ],
+      "latest_delta_11_16_to_11_19": -1.35,
       "latest_direction": "BETTER",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -1.35
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "紙盒印刷",
@@ -1733,13 +1733,13 @@
         -0.62,
         -0.76
       ],
+      "latest_delta_11_16_to_11_19": -0.76,
       "latest_direction": "STABLE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_IMPROVEMENT",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -0.76
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "紙盒訂製",
@@ -1812,13 +1812,13 @@
         0.3,
         0.88
       ],
+      "latest_delta_11_16_to_11_19": 0.88,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.88
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "禮盒訂製",
@@ -1891,13 +1891,13 @@
         0.44,
         1.33
       ],
+      "latest_delta_11_16_to_11_19": 1.33,
       "latest_direction": "WORSE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 1.33
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "喜帖印刷",
@@ -1970,13 +1970,13 @@
         1.25,
         0.94
       ],
+      "latest_delta_11_16_to_11_19": 0.94,
       "latest_direction": "STABLE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.94
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "小冊子印刷",
@@ -2049,13 +2049,13 @@
         0.67,
         6.01
       ],
+      "latest_delta_11_16_to_11_19": 6.01,
       "latest_direction": "WORSE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 6.01
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "a2印刷",
@@ -2128,13 +2128,13 @@
         1.02,
         -1.0
       ],
+      "latest_delta_11_16_to_11_19": -1.0,
       "latest_direction": "BETTER",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -1.0
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "證書印刷",
@@ -2207,13 +2207,13 @@
         0.78,
         1.44
       ],
+      "latest_delta_11_16_to_11_19": 1.44,
       "latest_direction": "WORSE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 1.44
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "易拉架印刷",
@@ -2286,13 +2286,13 @@
         0.54,
         0.97
       ],
+      "latest_delta_11_16_to_11_19": 0.97,
       "latest_direction": "STABLE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.97
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "食品包裝印刷",
@@ -2365,13 +2365,13 @@
         -0.28,
         -0.32
       ],
+      "latest_delta_11_16_to_11_19": -0.32,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": true,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -0.32
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "catalog printing china",
@@ -2444,13 +2444,13 @@
         -0.33,
         0.95
       ],
+      "latest_delta_11_16_to_11_19": 0.95,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.95
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "catalogs printing china",
@@ -2523,13 +2523,13 @@
         0.0,
         1.93
       ],
+      "latest_delta_11_16_to_11_19": 1.93,
       "latest_direction": "WORSE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 1.93
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "china catalog printing",
@@ -2602,13 +2602,13 @@
         0.0,
         1.01
       ],
+      "latest_delta_11_16_to_11_19": 1.01,
       "latest_direction": "WORSE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 1.01
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "small batch sticker printing",
@@ -2681,13 +2681,13 @@
         0.23,
         1.4
       ],
+      "latest_delta_11_16_to_11_19": 1.4,
       "latest_direction": "WORSE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": true,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 1.4
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "small batch stickers",
@@ -2760,13 +2760,13 @@
         -0.37,
         -0.17
       ],
+      "latest_delta_11_16_to_11_19": -0.17,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -0.17
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "saddle stitch booklet printing",
@@ -2839,13 +2839,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "doujinshi printing",
@@ -2918,13 +2918,13 @@
         0.27,
         0.42
       ],
+      "latest_delta_11_16_to_11_19": 0.42,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.42
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "large envelopes",
@@ -2997,13 +2997,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "a2 poster",
@@ -3076,13 +3076,13 @@
         3.02,
         0.37
       ],
+      "latest_delta_11_16_to_11_19": 0.37,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.37
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "corporate holiday cards",
@@ -3155,13 +3155,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "business holiday cards",
@@ -3234,13 +3234,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "教材 印刷製本",
@@ -3313,13 +3313,13 @@
         3.05,
         3.95
       ],
+      "latest_delta_11_16_to_11_19": 3.95,
       "latest_direction": "WORSE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 3.95
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "コミケ 印刷",
@@ -3392,13 +3392,13 @@
         1.63,
         3.12
       ],
+      "latest_delta_11_16_to_11_19": 3.12,
       "latest_direction": "WORSE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 3.12
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "卒アル販売",
@@ -3471,13 +3471,13 @@
         0.0,
         -3.0
       ],
+      "latest_delta_11_16_to_11_19": -3.0,
       "latest_direction": "BETTER",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": true,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -3.0
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "pvc シール",
@@ -3550,13 +3550,13 @@
         -1.32,
         -0.01
       ],
+      "latest_delta_11_16_to_11_19": -0.01,
       "latest_direction": "STABLE",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -0.01
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "年賀状印刷",
@@ -3629,13 +3629,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "2027年賀状",
@@ -3708,13 +3708,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "印刷",
@@ -3787,13 +3787,13 @@
         1.65,
         0.94
       ],
+      "latest_delta_11_16_to_11_19": 0.94,
       "latest_direction": "STABLE",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": 0.94
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "印刷公司",
@@ -3866,13 +3866,13 @@
         0.16,
         -1.02
       ],
+      "latest_delta_11_16_to_11_19": -1.02,
       "latest_direction": "BETTER",
       "two_window_direction": "NOT_CONSECUTIVE",
       "page1_transition": "UNCHANGED",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": -1.02
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "印刷服務",
@@ -3945,13 +3945,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "印刷廠",
@@ -4024,13 +4024,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "UNCHANGED",
       "latest_page1": true,
       "latest_zero_click": true,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "網上印刷",
@@ -4103,13 +4103,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "printing company",
@@ -4182,13 +4182,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     },
     {
       "query": "printing services",
@@ -4261,13 +4261,13 @@
         null,
         null
       ],
+      "latest_delta_11_16_to_11_19": null,
       "latest_direction": "NO_COMPARABLE_BASELINE",
       "two_window_direction": null,
       "page1_transition": "NO_CURRENT_BASELINE",
       "latest_page1": false,
       "latest_zero_click": false,
-      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand.",
-      "latest_delta_11_16_to_11_19": null
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
     }
   ],
   "seven_day_focus_deltas": [
@@ -5090,11 +5090,12 @@
     }
   ],
   "limitations": [
-    "Overlapping moving windows are observations, not independent experiments.",
-    "Missing top-1000 exact query row = NO_CURRENT_BASELINE, not zero demand.",
-    "Country is searcher location, not locale-site performance.",
-    "MONEY is procurement intent, not observed orders or revenue.",
-    "11-18 production changes have at most one day in the current data window and cannot be judged for outcome.",
-    "No GEO growth claim without fixed-kit complete answers and citation URLs."
+    "24h is descriptive only; do not compare its position with 28d.",
+    "Overlapping windows are observations, not independent experiments or deployment attribution.",
+    "Missing top-1000 query row = NO_CURRENT_BASELINE, not zero demand.",
+    "Exact query and contains-group aggregations are separate; no independent-dimension joins.",
+    "Country is searcher location, not a locale-site filter.",
+    "MONEY/SEASONAL_MONEY are procurement-intent labels, not observed enquiries/orders/revenue.",
+    "No AI citation/GEO growth claim without actual fixed-kit probes and citation URLs."
   ]
 }

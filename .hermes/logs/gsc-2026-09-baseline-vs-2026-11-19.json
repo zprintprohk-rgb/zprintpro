@@ -1,0 +1,1604 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-21",
+  "question": "September first-two-weeks baseline vs 2026-11-19 batch net change",
+  "sources": {
+    "2026-09-29_3mo": {
+      "file": "3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-09-29.xlsx",
+      "window": "2026-06-27..2026-09-26",
+      "query_rows": 1000
+    },
+    "2026-09-29_28d": {
+      "file": "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-09-29.xlsx",
+      "window": "2026-08-29..2026-09-25",
+      "query_rows": 1000
+    },
+    "2026-09-18_28d": {
+      "file": "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-09-18.xlsx",
+      "window": "2026-08-19..2026-09-15",
+      "query_rows": 1000
+    },
+    "2026-09-18_7d": {
+      "file": "7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-09-18.xlsx",
+      "window": "2026-09-09..2026-09-15",
+      "query_rows": 556
+    },
+    "2026-09-10_28d": {
+      "file": "zprintpro.com-Performance-on-Search-28天三站点汇总数据2026-09-10.xlsx",
+      "window": "2026-08-11..2026-09-07",
+      "query_rows": 1000
+    },
+    "2026-09-10_7d": {
+      "file": "zprintpro.com-Performance-on-Search-7天三站点汇总数据2026-09-10.xlsx",
+      "window": "2026-09-01..2026-09-07",
+      "query_rows": 613
+    },
+    "2026-09-03_3mo": {
+      "file": "zprintpro.com-Performance-on-Search-3个月汇总2026-09-03.xlsx",
+      "window": "2026-06-01..2026-08-31",
+      "query_rows": 1000
+    },
+    "2026-11-19_28d": {
+      "file": "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-19.xlsx",
+      "window": "2026-10-20..2026-11-16",
+      "query_rows": 1000
+    },
+    "2026-11-19_7d": {
+      "file": "7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-19.xlsx",
+      "window": "2026-11-10..2026-11-16",
+      "query_rows": 761
+    }
+  },
+  "export_vs_data_lag": {
+    "2026-09-10 batch": "exported 09-10 18:33, 28d/7d data through 09-07 (lag 3d)",
+    "2026-09-18 batch": "exported 09-18 12:21, 28d/7d data through 09-15 (lag 3d)",
+    "2026-09-29 batch": "exported 09-29 00:03-19:57, 28d through 09-25, 3mo through 09-26 (lag 3-4d)",
+    "2026-11-19 batch": "exported 11-19 01:05, 28d/7d data through 11-16 (lag 3d)",
+    "2026-11-16 batch": "exported 11-16 00:56, 28d data through 11-13 (lag 3d)"
+  },
+  "sept_01_14_daily_kpi_from_0929_3mo": {
+    "aggregate": {
+      "days": 14,
+      "clicks": 188,
+      "impressions": 10841,
+      "ctr_pct": 1.7342,
+      "imp_weighted_pos": 16.1639
+    },
+    "daily": [
+      {
+        "name": "2026-09-01",
+        "clicks": 17,
+        "impressions": 915,
+        "ctr_pct": 1.8579,
+        "position": 13.8
+      },
+      {
+        "name": "2026-09-02",
+        "clicks": 22,
+        "impressions": 918,
+        "ctr_pct": 2.3965,
+        "position": 15.5
+      },
+      {
+        "name": "2026-09-03",
+        "clicks": 18,
+        "impressions": 804,
+        "ctr_pct": 2.2388,
+        "position": 16.5
+      },
+      {
+        "name": "2026-09-04",
+        "clicks": 8,
+        "impressions": 716,
+        "ctr_pct": 1.1173,
+        "position": 20.7
+      },
+      {
+        "name": "2026-09-05",
+        "clicks": 8,
+        "impressions": 626,
+        "ctr_pct": 1.278,
+        "position": 19.5
+      },
+      {
+        "name": "2026-09-06",
+        "clicks": 9,
+        "impressions": 799,
+        "ctr_pct": 1.1264,
+        "position": 18.7
+      },
+      {
+        "name": "2026-09-07",
+        "clicks": 17,
+        "impressions": 846,
+        "ctr_pct": 2.0095,
+        "position": 14.2
+      },
+      {
+        "name": "2026-09-08",
+        "clicks": 5,
+        "impressions": 848,
+        "ctr_pct": 0.5896,
+        "position": 15.6
+      },
+      {
+        "name": "2026-09-09",
+        "clicks": 19,
+        "impressions": 827,
+        "ctr_pct": 2.2975,
+        "position": 14.6
+      },
+      {
+        "name": "2026-09-10",
+        "clicks": 16,
+        "impressions": 725,
+        "ctr_pct": 2.2069,
+        "position": 12.6
+      },
+      {
+        "name": "2026-09-11",
+        "clicks": 12,
+        "impressions": 711,
+        "ctr_pct": 1.6878,
+        "position": 18.8
+      },
+      {
+        "name": "2026-09-12",
+        "clicks": 13,
+        "impressions": 574,
+        "ctr_pct": 2.2648,
+        "position": 15.8
+      },
+      {
+        "name": "2026-09-13",
+        "clicks": 12,
+        "impressions": 640,
+        "ctr_pct": 1.875,
+        "position": 14.9
+      },
+      {
+        "name": "2026-09-14",
+        "clicks": 12,
+        "impressions": 892,
+        "ctr_pct": 1.3453,
+        "position": 16.5
+      }
+    ]
+  },
+  "daily_two_method_crosscheck": {
+    "all_consistent": true,
+    "detail": [
+      {
+        "date": "2026-09-01",
+        "sources": 3,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-02",
+        "sources": 3,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-03",
+        "sources": 3,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-04",
+        "sources": 3,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-05",
+        "sources": 3,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-06",
+        "sources": 3,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-07",
+        "sources": 3,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-08",
+        "sources": 2,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-09",
+        "sources": 2,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-10",
+        "sources": 2,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-11",
+        "sources": 2,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-12",
+        "sources": 2,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-13",
+        "sources": 2,
+        "consistent": true,
+        "mismatch": []
+      },
+      {
+        "date": "2026-09-14",
+        "sources": 2,
+        "consistent": true,
+        "mismatch": []
+      }
+    ],
+    "note": "09-08..09-14 covered by 2 sources (0918-28d + 0929-3mo); 09-01..09-07 by 3 sources."
+  },
+  "like_for_like_window_pairs": {
+    "7d_sept_0901_0907_vs_1110_1116": {
+      "sept": {
+        "days": 7,
+        "clicks": 99,
+        "impressions": 5624,
+        "ctr_pct": 1.7603,
+        "imp_weighted_pos": 16.7327
+      },
+      "now": {
+        "days": 7,
+        "clicks": 130,
+        "impressions": 8283,
+        "ctr_pct": 1.5695,
+        "imp_weighted_pos": 15.5229
+      },
+      "sept_window": "2026-09-01..2026-09-07",
+      "now_window": "2026-11-10..2026-11-16"
+    },
+    "28d_sept_centered_0819_0915_vs_1020_1116": {
+      "sept": {
+        "days": 28,
+        "clicks": 356,
+        "impressions": 20833,
+        "ctr_pct": 1.7088,
+        "imp_weighted_pos": 18.7293
+      },
+      "now": {
+        "days": 28,
+        "clicks": 554,
+        "impressions": 27879,
+        "ctr_pct": 1.9872,
+        "imp_weighted_pos": 14.9511
+      },
+      "sept_window": "2026-08-19..2026-09-15",
+      "now_window": "2026-10-20..2026-11-16"
+    },
+    "28d_0829_0925_vs_1020_1116": {
+      "sept": {
+        "days": 28,
+        "clicks": 379,
+        "impressions": 20938,
+        "ctr_pct": 1.8101,
+        "imp_weighted_pos": 15.9107
+      },
+      "now": {
+        "days": 28,
+        "clicks": 554,
+        "impressions": 27879,
+        "ctr_pct": 1.9872,
+        "imp_weighted_pos": 14.9511
+      },
+      "sept_window": "2026-08-29..2026-09-25",
+      "now_window": "2026-10-20..2026-11-16"
+    }
+  },
+  "focus_query_baselines": {
+    "september": {
+      "2026-09-29_28d": {
+        "window": "2026-08-29..2026-09-25",
+        "query_rows": 1000,
+        "query_sheet_truncated_at_1000": true,
+        "focus_page1_count": 8,
+        "focus_page1_zero_click": [
+          "教科書印刷",
+          "a2印刷",
+          "食品包裝印刷",
+          "small batch sticker printing",
+          "small batch stickers",
+          "卒アル販売"
+        ],
+        "positions": {
+          "即日印刷": {
+            "impressions": 55,
+            "clicks": 2,
+            "position": 8.73
+          },
+          "香港印刷": {
+            "impressions": 30,
+            "clicks": 0,
+            "position": 11.53
+          },
+          "海報印刷": {
+            "impressions": 161,
+            "clicks": 2,
+            "position": 19.42
+          },
+          "印海報": {
+            "impressions": 135,
+            "clicks": 0,
+            "position": 20.39
+          },
+          "利是封印刷": {
+            "impressions": 62,
+            "clicks": 0,
+            "position": 25.58
+          },
+          "月曆印刷": {
+            "impressions": 113,
+            "clicks": 0,
+            "position": 19.35
+          },
+          "貼紙印刷": {
+            "impressions": 190,
+            "clicks": 0,
+            "position": 24.72
+          },
+          "貼紙訂製": {
+            "impressions": 41,
+            "clicks": 0,
+            "position": 25.95
+          },
+          "貼紙订制": null,
+          "可移貼紙": {
+            "impressions": 42,
+            "clicks": 0,
+            "position": 15.21
+          },
+          "宣傳單張": {
+            "impressions": 113,
+            "clicks": 1,
+            "position": 35.64
+          },
+          "宣传单张": null,
+          "宣傳單張印刷": {
+            "impressions": 116,
+            "clicks": 0,
+            "position": 29.72
+          },
+          "摺頁印刷": {
+            "impressions": 36,
+            "clicks": 0,
+            "position": 34.28
+          },
+          "印書": {
+            "impressions": 48,
+            "clicks": 0,
+            "position": 30.88
+          },
+          "書刊印刷": {
+            "impressions": 88,
+            "clicks": 0,
+            "position": 35.51
+          },
+          "书籍印刷": null,
+          "教科書印刷": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 2.0
+          },
+          "學校印刷": {
+            "impressions": 14,
+            "clicks": 0,
+            "position": 40.29
+          },
+          "包裝盒訂製": {
+            "impressions": 44,
+            "clicks": 0,
+            "position": 30.89
+          },
+          "包裝盒印刷": {
+            "impressions": 63,
+            "clicks": 0,
+            "position": 34.22
+          },
+          "紙盒印刷": {
+            "impressions": 56,
+            "clicks": 0,
+            "position": 32.12
+          },
+          "紙盒訂製": {
+            "impressions": 53,
+            "clicks": 0,
+            "position": 34.7
+          },
+          "禮盒訂製": {
+            "impressions": 15,
+            "clicks": 0,
+            "position": 39.53
+          },
+          "喜帖印刷": {
+            "impressions": 20,
+            "clicks": 0,
+            "position": 34.3
+          },
+          "小冊子印刷": {
+            "impressions": 57,
+            "clicks": 0,
+            "position": 10.07
+          },
+          "a2印刷": {
+            "impressions": 5,
+            "clicks": 0,
+            "position": 7.0
+          },
+          "證書印刷": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 16.33
+          },
+          "易拉架印刷": {
+            "impressions": 10,
+            "clicks": 0,
+            "position": 52.0
+          },
+          "食品包裝印刷": {
+            "impressions": 149,
+            "clicks": 0,
+            "position": 7.66
+          },
+          "catalog printing china": {
+            "impressions": 34,
+            "clicks": 0,
+            "position": 18.0
+          },
+          "catalogs printing china": {
+            "impressions": 14,
+            "clicks": 0,
+            "position": 17.36
+          },
+          "china catalog printing": {
+            "impressions": 102,
+            "clicks": 0,
+            "position": 16.75
+          },
+          "small batch sticker printing": {
+            "impressions": 66,
+            "clicks": 0,
+            "position": 6.41
+          },
+          "small batch stickers": {
+            "impressions": 38,
+            "clicks": 0,
+            "position": 5.05
+          },
+          "saddle stitch booklet printing": {
+            "impressions": 93,
+            "clicks": 2,
+            "position": 3.37
+          },
+          "doujinshi printing": {
+            "impressions": 49,
+            "clicks": 1,
+            "position": 13.53
+          },
+          "large envelopes": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 30.0
+          },
+          "a2 poster": {
+            "impressions": 33,
+            "clicks": 0,
+            "position": 21.24
+          },
+          "corporate holiday cards": null,
+          "business holiday cards": null,
+          "教材 印刷製本": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 11.0
+          },
+          "コミケ 印刷": {
+            "impressions": 163,
+            "clicks": 0,
+            "position": 26.16
+          },
+          "卒アル販売": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 2.0
+          },
+          "pvc シール": {
+            "impressions": 24,
+            "clicks": 0,
+            "position": 20.33
+          },
+          "年賀状印刷": null,
+          "2027年賀状": null,
+          "印刷": {
+            "impressions": 25,
+            "clicks": 0,
+            "position": 32.6
+          },
+          "印刷公司": {
+            "impressions": 32,
+            "clicks": 3,
+            "position": 35.16
+          },
+          "印刷服務": null,
+          "印刷廠": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 21.5
+          },
+          "網上印刷": null,
+          "printing company": null,
+          "printing services": null
+        }
+      },
+      "2026-09-18_28d": {
+        "window": "2026-08-19..2026-09-15",
+        "query_rows": 1000,
+        "query_sheet_truncated_at_1000": true,
+        "focus_page1_count": 5,
+        "focus_page1_zero_click": [
+          "a2印刷",
+          "食品包裝印刷",
+          "small batch sticker printing",
+          "small batch stickers"
+        ],
+        "positions": {
+          "即日印刷": {
+            "impressions": 51,
+            "clicks": 1,
+            "position": 8.57
+          },
+          "香港印刷": {
+            "impressions": 11,
+            "clicks": 0,
+            "position": 11.91
+          },
+          "海報印刷": {
+            "impressions": 174,
+            "clicks": 0,
+            "position": 22.57
+          },
+          "印海報": {
+            "impressions": 143,
+            "clicks": 0,
+            "position": 23.74
+          },
+          "利是封印刷": {
+            "impressions": 70,
+            "clicks": 0,
+            "position": 27.9
+          },
+          "月曆印刷": {
+            "impressions": 126,
+            "clicks": 0,
+            "position": 20.33
+          },
+          "貼紙印刷": {
+            "impressions": 165,
+            "clicks": 0,
+            "position": 27.28
+          },
+          "貼紙訂製": {
+            "impressions": 45,
+            "clicks": 0,
+            "position": 25.73
+          },
+          "貼紙订制": null,
+          "可移貼紙": {
+            "impressions": 45,
+            "clicks": 0,
+            "position": 15.47
+          },
+          "宣傳單張": {
+            "impressions": 129,
+            "clicks": 0,
+            "position": 36.33
+          },
+          "宣传单张": null,
+          "宣傳單張印刷": {
+            "impressions": 127,
+            "clicks": 0,
+            "position": 32.09
+          },
+          "摺頁印刷": {
+            "impressions": 51,
+            "clicks": 0,
+            "position": 36.2
+          },
+          "印書": {
+            "impressions": 62,
+            "clicks": 0,
+            "position": 31.18
+          },
+          "書刊印刷": {
+            "impressions": 61,
+            "clicks": 0,
+            "position": 40.9
+          },
+          "书籍印刷": null,
+          "教科書印刷": null,
+          "學校印刷": {
+            "impressions": 12,
+            "clicks": 0,
+            "position": 38.92
+          },
+          "包裝盒訂製": {
+            "impressions": 56,
+            "clicks": 0,
+            "position": 30.82
+          },
+          "包裝盒印刷": {
+            "impressions": 71,
+            "clicks": 0,
+            "position": 36.07
+          },
+          "紙盒印刷": {
+            "impressions": 63,
+            "clicks": 0,
+            "position": 35.02
+          },
+          "紙盒訂製": {
+            "impressions": 63,
+            "clicks": 0,
+            "position": 38.75
+          },
+          "禮盒訂製": {
+            "impressions": 27,
+            "clicks": 0,
+            "position": 39.26
+          },
+          "喜帖印刷": {
+            "impressions": 16,
+            "clicks": 0,
+            "position": 40.75
+          },
+          "小冊子印刷": {
+            "impressions": 48,
+            "clicks": 0,
+            "position": 10.04
+          },
+          "a2印刷": {
+            "impressions": 6,
+            "clicks": 0,
+            "position": 9.33
+          },
+          "證書印刷": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 11.5
+          },
+          "易拉架印刷": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 61.67
+          },
+          "食品包裝印刷": {
+            "impressions": 145,
+            "clicks": 0,
+            "position": 6.65
+          },
+          "catalog printing china": {
+            "impressions": 42,
+            "clicks": 0,
+            "position": 18.71
+          },
+          "catalogs printing china": {
+            "impressions": 15,
+            "clicks": 0,
+            "position": 17.07
+          },
+          "china catalog printing": {
+            "impressions": 110,
+            "clicks": 0,
+            "position": 16.7
+          },
+          "small batch sticker printing": {
+            "impressions": 69,
+            "clicks": 0,
+            "position": 6.61
+          },
+          "small batch stickers": {
+            "impressions": 40,
+            "clicks": 0,
+            "position": 5.53
+          },
+          "saddle stitch booklet printing": {
+            "impressions": 3,
+            "clicks": 0,
+            "position": 23.0
+          },
+          "doujinshi printing": {
+            "impressions": 42,
+            "clicks": 0,
+            "position": 15.31
+          },
+          "large envelopes": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 30.0
+          },
+          "a2 poster": {
+            "impressions": 19,
+            "clicks": 0,
+            "position": 25.11
+          },
+          "corporate holiday cards": null,
+          "business holiday cards": null,
+          "教材 印刷製本": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 56.5
+          },
+          "コミケ 印刷": {
+            "impressions": 94,
+            "clicks": 0,
+            "position": 29.61
+          },
+          "卒アル販売": null,
+          "pvc シール": {
+            "impressions": 31,
+            "clicks": 0,
+            "position": 19.58
+          },
+          "年賀状印刷": null,
+          "2027年賀状": null,
+          "印刷": {
+            "impressions": 24,
+            "clicks": 0,
+            "position": 33.92
+          },
+          "印刷公司": {
+            "impressions": 13,
+            "clicks": 3,
+            "position": 40.69
+          },
+          "印刷服務": null,
+          "印刷廠": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 32.0
+          },
+          "網上印刷": null,
+          "printing company": null,
+          "printing services": null
+        }
+      },
+      "2026-09-10_28d": {
+        "window": "2026-08-11..2026-09-07",
+        "query_rows": 1000,
+        "query_sheet_truncated_at_1000": true,
+        "focus_page1_count": 4,
+        "focus_page1_zero_click": [
+          "即日印刷",
+          "a2印刷",
+          "small batch sticker printing",
+          "small batch stickers"
+        ],
+        "positions": {
+          "即日印刷": {
+            "impressions": 43,
+            "clicks": 0,
+            "position": 8.98
+          },
+          "香港印刷": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 11.75
+          },
+          "海報印刷": {
+            "impressions": 161,
+            "clicks": 0,
+            "position": 25.15
+          },
+          "印海報": {
+            "impressions": 137,
+            "clicks": 0,
+            "position": 25.09
+          },
+          "利是封印刷": {
+            "impressions": 72,
+            "clicks": 0,
+            "position": 29.67
+          },
+          "月曆印刷": {
+            "impressions": 133,
+            "clicks": 1,
+            "position": 19.26
+          },
+          "貼紙印刷": {
+            "impressions": 153,
+            "clicks": 0,
+            "position": 31.18
+          },
+          "貼紙訂製": {
+            "impressions": 53,
+            "clicks": 0,
+            "position": 24.7
+          },
+          "貼紙订制": null,
+          "可移貼紙": {
+            "impressions": 44,
+            "clicks": 0,
+            "position": 15.93
+          },
+          "宣傳單張": {
+            "impressions": 130,
+            "clicks": 0,
+            "position": 36.35
+          },
+          "宣传单张": null,
+          "宣傳單張印刷": {
+            "impressions": 130,
+            "clicks": 0,
+            "position": 30.33
+          },
+          "摺頁印刷": {
+            "impressions": 45,
+            "clicks": 0,
+            "position": 36.42
+          },
+          "印書": {
+            "impressions": 63,
+            "clicks": 0,
+            "position": 30.95
+          },
+          "書刊印刷": {
+            "impressions": 16,
+            "clicks": 0,
+            "position": 39.69
+          },
+          "书籍印刷": null,
+          "教科書印刷": null,
+          "學校印刷": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 37.69
+          },
+          "包裝盒訂製": {
+            "impressions": 64,
+            "clicks": 0,
+            "position": 30.58
+          },
+          "包裝盒印刷": {
+            "impressions": 71,
+            "clicks": 0,
+            "position": 35.9
+          },
+          "紙盒印刷": {
+            "impressions": 63,
+            "clicks": 0,
+            "position": 37.46
+          },
+          "紙盒訂製": {
+            "impressions": 62,
+            "clicks": 0,
+            "position": 43.4
+          },
+          "禮盒訂製": {
+            "impressions": 45,
+            "clicks": 0,
+            "position": 38.73
+          },
+          "喜帖印刷": {
+            "impressions": 4,
+            "clicks": 0,
+            "position": 40.5
+          },
+          "小冊子印刷": {
+            "impressions": 36,
+            "clicks": 0,
+            "position": 10.14
+          },
+          "a2印刷": {
+            "impressions": 9,
+            "clicks": 0,
+            "position": 9.44
+          },
+          "證書印刷": {
+            "impressions": 13,
+            "clicks": 0,
+            "position": 11.08
+          },
+          "易拉架印刷": {
+            "impressions": 25,
+            "clicks": 0,
+            "position": 60.92
+          },
+          "食品包裝印刷": {
+            "impressions": 145,
+            "clicks": 0,
+            "position": 12.86
+          },
+          "catalog printing china": {
+            "impressions": 40,
+            "clicks": 0,
+            "position": 18.77
+          },
+          "catalogs printing china": {
+            "impressions": 14,
+            "clicks": 0,
+            "position": 17.71
+          },
+          "china catalog printing": {
+            "impressions": 99,
+            "clicks": 1,
+            "position": 17.79
+          },
+          "small batch sticker printing": {
+            "impressions": 61,
+            "clicks": 0,
+            "position": 9.2
+          },
+          "small batch stickers": {
+            "impressions": 36,
+            "clicks": 0,
+            "position": 4.33
+          },
+          "saddle stitch booklet printing": {
+            "impressions": 2,
+            "clicks": 0,
+            "position": 32.0
+          },
+          "doujinshi printing": {
+            "impressions": 33,
+            "clicks": 0,
+            "position": 17.64
+          },
+          "large envelopes": null,
+          "a2 poster": {
+            "impressions": 7,
+            "clicks": 0,
+            "position": 26.43
+          },
+          "corporate holiday cards": null,
+          "business holiday cards": null,
+          "教材 印刷製本": {
+            "impressions": 21,
+            "clicks": 0,
+            "position": 52.95
+          },
+          "コミケ 印刷": {
+            "impressions": 52,
+            "clicks": 0,
+            "position": 41.0
+          },
+          "卒アル販売": null,
+          "pvc シール": {
+            "impressions": 25,
+            "clicks": 0,
+            "position": 18.32
+          },
+          "年賀状印刷": null,
+          "2027年賀状": null,
+          "印刷": {
+            "impressions": 21,
+            "clicks": 0,
+            "position": 35.67
+          },
+          "印刷公司": {
+            "impressions": 9,
+            "clicks": 1,
+            "position": 36.89
+          },
+          "印刷服務": null,
+          "印刷廠": {
+            "impressions": 1,
+            "clicks": 0,
+            "position": 32.0
+          },
+          "網上印刷": null,
+          "printing company": null,
+          "printing services": null
+        }
+      }
+    },
+    "now_2026_11_19": {
+      "window": "2026-10-20..2026-11-16",
+      "query_rows": 1000,
+      "query_sheet_truncated_at_1000": true,
+      "focus_page1_count": 6,
+      "focus_page1_zero_click": [
+        "书籍印刷",
+        "食品包裝印刷",
+        "small batch sticker printing",
+        "卒アル販売",
+        "印刷廠"
+      ],
+      "positions": {
+        "即日印刷": {
+          "impressions": 55,
+          "clicks": 2,
+          "position": 8.58
+        },
+        "香港印刷": {
+          "impressions": 34,
+          "clicks": 2,
+          "position": 12.18
+        },
+        "海報印刷": {
+          "impressions": 186,
+          "clicks": 1,
+          "position": 20.37
+        },
+        "印海報": {
+          "impressions": 104,
+          "clicks": 0,
+          "position": 16.81
+        },
+        "利是封印刷": {
+          "impressions": 59,
+          "clicks": 1,
+          "position": 24.27
+        },
+        "月曆印刷": {
+          "impressions": 140,
+          "clicks": 0,
+          "position": 20.4
+        },
+        "貼紙印刷": {
+          "impressions": 179,
+          "clicks": 0,
+          "position": 29.94
+        },
+        "貼紙訂製": {
+          "impressions": 65,
+          "clicks": 0,
+          "position": 28.72
+        },
+        "貼紙订制": null,
+        "可移貼紙": {
+          "impressions": 71,
+          "clicks": 0,
+          "position": 12.62
+        },
+        "宣傳單張": {
+          "impressions": 134,
+          "clicks": 0,
+          "position": 39.39
+        },
+        "宣传单张": null,
+        "宣傳單張印刷": {
+          "impressions": 139,
+          "clicks": 0,
+          "position": 28.26
+        },
+        "摺頁印刷": {
+          "impressions": 65,
+          "clicks": 0,
+          "position": 18.66
+        },
+        "印書": {
+          "impressions": 61,
+          "clicks": 0,
+          "position": 32.16
+        },
+        "書刊印刷": {
+          "impressions": 140,
+          "clicks": 0,
+          "position": 35.45
+        },
+        "书籍印刷": {
+          "impressions": 5,
+          "clicks": 0,
+          "position": 7.6
+        },
+        "教科書印刷": null,
+        "學校印刷": {
+          "impressions": 71,
+          "clicks": 0,
+          "position": 16.89
+        },
+        "包裝盒訂製": {
+          "impressions": 56,
+          "clicks": 0,
+          "position": 33.71
+        },
+        "包裝盒印刷": {
+          "impressions": 51,
+          "clicks": 0,
+          "position": 30.29
+        },
+        "紙盒印刷": {
+          "impressions": 61,
+          "clicks": 0,
+          "position": 35.0
+        },
+        "紙盒訂製": {
+          "impressions": 57,
+          "clicks": 0,
+          "position": 33.37
+        },
+        "禮盒訂製": {
+          "impressions": 51,
+          "clicks": 0,
+          "position": 47.86
+        },
+        "喜帖印刷": {
+          "impressions": 36,
+          "clicks": 0,
+          "position": 44.78
+        },
+        "小冊子印刷": {
+          "impressions": 14,
+          "clicks": 0,
+          "position": 17.93
+        },
+        "a2印刷": {
+          "impressions": 10,
+          "clicks": 0,
+          "position": 11.2
+        },
+        "證書印刷": {
+          "impressions": 9,
+          "clicks": 0,
+          "position": 12.22
+        },
+        "易拉架印刷": {
+          "impressions": 43,
+          "clicks": 0,
+          "position": 41.63
+        },
+        "食品包裝印刷": {
+          "impressions": 125,
+          "clicks": 0,
+          "position": 7.93
+        },
+        "catalog printing china": {
+          "impressions": 37,
+          "clicks": 0,
+          "position": 15.57
+        },
+        "catalogs printing china": {
+          "impressions": 6,
+          "clicks": 0,
+          "position": 22.33
+        },
+        "china catalog printing": {
+          "impressions": 101,
+          "clicks": 0,
+          "position": 14.99
+        },
+        "small batch sticker printing": {
+          "impressions": 13,
+          "clicks": 0,
+          "position": 8.92
+        },
+        "small batch stickers": {
+          "impressions": 59,
+          "clicks": 0,
+          "position": 15.34
+        },
+        "saddle stitch booklet printing": null,
+        "doujinshi printing": {
+          "impressions": 59,
+          "clicks": 0,
+          "position": 11.22
+        },
+        "large envelopes": null,
+        "a2 poster": {
+          "impressions": 44,
+          "clicks": 1,
+          "position": 43.39
+        },
+        "corporate holiday cards": null,
+        "business holiday cards": null,
+        "教材 印刷製本": {
+          "impressions": 57,
+          "clicks": 0,
+          "position": 43.95
+        },
+        "コミケ 印刷": {
+          "impressions": 110,
+          "clicks": 0,
+          "position": 30.49
+        },
+        "卒アル販売": {
+          "impressions": 1,
+          "clicks": 0,
+          "position": 2.0
+        },
+        "pvc シール": {
+          "impressions": 26,
+          "clicks": 0,
+          "position": 14.38
+        },
+        "年賀状印刷": null,
+        "2027年賀状": null,
+        "印刷": {
+          "impressions": 127,
+          "clicks": 1,
+          "position": 22.91
+        },
+        "印刷公司": {
+          "impressions": 158,
+          "clicks": 2,
+          "position": 25.9
+        },
+        "印刷服務": null,
+        "印刷廠": {
+          "impressions": 1,
+          "clicks": 0,
+          "position": 3.0
+        },
+        "網上印刷": null,
+        "printing company": null,
+        "printing services": null
+      }
+    }
+  },
+  "focus_net_change_0929_28d_vs_1119_28d": [
+    {
+      "query": "學校印刷",
+      "sept_imp": 14,
+      "sept_pos": 40.29,
+      "now_imp": 71,
+      "now_pos": 16.89,
+      "pos_delta_positive_worse": -23.4
+    },
+    {
+      "query": "印刷廠",
+      "sept_imp": 2,
+      "sept_pos": 21.5,
+      "now_imp": 1,
+      "now_pos": 3.0,
+      "pos_delta_positive_worse": -18.5
+    },
+    {
+      "query": "摺頁印刷",
+      "sept_imp": 36,
+      "sept_pos": 34.28,
+      "now_imp": 65,
+      "now_pos": 18.66,
+      "pos_delta_positive_worse": -15.62
+    },
+    {
+      "query": "易拉架印刷",
+      "sept_imp": 10,
+      "sept_pos": 52.0,
+      "now_imp": 43,
+      "now_pos": 41.63,
+      "pos_delta_positive_worse": -10.37
+    },
+    {
+      "query": "印刷",
+      "sept_imp": 25,
+      "sept_pos": 32.6,
+      "now_imp": 127,
+      "now_pos": 22.91,
+      "pos_delta_positive_worse": -9.69
+    },
+    {
+      "query": "印刷公司",
+      "sept_imp": 32,
+      "sept_pos": 35.16,
+      "now_imp": 158,
+      "now_pos": 25.9,
+      "pos_delta_positive_worse": -9.26
+    },
+    {
+      "query": "pvc シール",
+      "sept_imp": 24,
+      "sept_pos": 20.33,
+      "now_imp": 26,
+      "now_pos": 14.38,
+      "pos_delta_positive_worse": -5.95
+    },
+    {
+      "query": "證書印刷",
+      "sept_imp": 3,
+      "sept_pos": 16.33,
+      "now_imp": 9,
+      "now_pos": 12.22,
+      "pos_delta_positive_worse": -4.11
+    },
+    {
+      "query": "包裝盒印刷",
+      "sept_imp": 63,
+      "sept_pos": 34.22,
+      "now_imp": 51,
+      "now_pos": 30.29,
+      "pos_delta_positive_worse": -3.93
+    },
+    {
+      "query": "印海報",
+      "sept_imp": 135,
+      "sept_pos": 20.39,
+      "now_imp": 104,
+      "now_pos": 16.81,
+      "pos_delta_positive_worse": -3.58
+    },
+    {
+      "query": "可移貼紙",
+      "sept_imp": 42,
+      "sept_pos": 15.21,
+      "now_imp": 71,
+      "now_pos": 12.62,
+      "pos_delta_positive_worse": -2.59
+    },
+    {
+      "query": "catalog printing china",
+      "sept_imp": 34,
+      "sept_pos": 18.0,
+      "now_imp": 37,
+      "now_pos": 15.57,
+      "pos_delta_positive_worse": -2.43
+    },
+    {
+      "query": "doujinshi printing",
+      "sept_imp": 49,
+      "sept_pos": 13.53,
+      "now_imp": 59,
+      "now_pos": 11.22,
+      "pos_delta_positive_worse": -2.31
+    },
+    {
+      "query": "china catalog printing",
+      "sept_imp": 102,
+      "sept_pos": 16.75,
+      "now_imp": 101,
+      "now_pos": 14.99,
+      "pos_delta_positive_worse": -1.76
+    },
+    {
+      "query": "宣傳單張印刷",
+      "sept_imp": 116,
+      "sept_pos": 29.72,
+      "now_imp": 139,
+      "now_pos": 28.26,
+      "pos_delta_positive_worse": -1.46
+    },
+    {
+      "query": "紙盒訂製",
+      "sept_imp": 53,
+      "sept_pos": 34.7,
+      "now_imp": 57,
+      "now_pos": 33.37,
+      "pos_delta_positive_worse": -1.33
+    },
+    {
+      "query": "利是封印刷",
+      "sept_imp": 62,
+      "sept_pos": 25.58,
+      "now_imp": 59,
+      "now_pos": 24.27,
+      "pos_delta_positive_worse": -1.31
+    },
+    {
+      "query": "即日印刷",
+      "sept_imp": 55,
+      "sept_pos": 8.73,
+      "now_imp": 55,
+      "now_pos": 8.58,
+      "pos_delta_positive_worse": -0.15
+    },
+    {
+      "query": "書刊印刷",
+      "sept_imp": 88,
+      "sept_pos": 35.51,
+      "now_imp": 140,
+      "now_pos": 35.45,
+      "pos_delta_positive_worse": -0.06
+    },
+    {
+      "query": "卒アル販売",
+      "sept_imp": 1,
+      "sept_pos": 2.0,
+      "now_imp": 1,
+      "now_pos": 2.0,
+      "pos_delta_positive_worse": 0.0
+    },
+    {
+      "query": "食品包裝印刷",
+      "sept_imp": 149,
+      "sept_pos": 7.66,
+      "now_imp": 125,
+      "now_pos": 7.93,
+      "pos_delta_positive_worse": 0.27
+    },
+    {
+      "query": "香港印刷",
+      "sept_imp": 30,
+      "sept_pos": 11.53,
+      "now_imp": 34,
+      "now_pos": 12.18,
+      "pos_delta_positive_worse": 0.65
+    },
+    {
+      "query": "海報印刷",
+      "sept_imp": 161,
+      "sept_pos": 19.42,
+      "now_imp": 186,
+      "now_pos": 20.37,
+      "pos_delta_positive_worse": 0.95
+    },
+    {
+      "query": "月曆印刷",
+      "sept_imp": 113,
+      "sept_pos": 19.35,
+      "now_imp": 140,
+      "now_pos": 20.4,
+      "pos_delta_positive_worse": 1.05
+    },
+    {
+      "query": "印書",
+      "sept_imp": 48,
+      "sept_pos": 30.88,
+      "now_imp": 61,
+      "now_pos": 32.16,
+      "pos_delta_positive_worse": 1.28
+    },
+    {
+      "query": "small batch sticker printing",
+      "sept_imp": 66,
+      "sept_pos": 6.41,
+      "now_imp": 13,
+      "now_pos": 8.92,
+      "pos_delta_positive_worse": 2.51
+    },
+    {
+      "query": "貼紙訂製",
+      "sept_imp": 41,
+      "sept_pos": 25.95,
+      "now_imp": 65,
+      "now_pos": 28.72,
+      "pos_delta_positive_worse": 2.77
+    },
+    {
+      "query": "包裝盒訂製",
+      "sept_imp": 44,
+      "sept_pos": 30.89,
+      "now_imp": 56,
+      "now_pos": 33.71,
+      "pos_delta_positive_worse": 2.82
+    },
+    {
+      "query": "紙盒印刷",
+      "sept_imp": 56,
+      "sept_pos": 32.12,
+      "now_imp": 61,
+      "now_pos": 35.0,
+      "pos_delta_positive_worse": 2.88
+    },
+    {
+      "query": "宣傳單張",
+      "sept_imp": 113,
+      "sept_pos": 35.64,
+      "now_imp": 134,
+      "now_pos": 39.39,
+      "pos_delta_positive_worse": 3.75
+    },
+    {
+      "query": "a2印刷",
+      "sept_imp": 5,
+      "sept_pos": 7.0,
+      "now_imp": 10,
+      "now_pos": 11.2,
+      "pos_delta_positive_worse": 4.2
+    },
+    {
+      "query": "コミケ 印刷",
+      "sept_imp": 163,
+      "sept_pos": 26.16,
+      "now_imp": 110,
+      "now_pos": 30.49,
+      "pos_delta_positive_worse": 4.33
+    },
+    {
+      "query": "catalogs printing china",
+      "sept_imp": 14,
+      "sept_pos": 17.36,
+      "now_imp": 6,
+      "now_pos": 22.33,
+      "pos_delta_positive_worse": 4.97
+    },
+    {
+      "query": "貼紙印刷",
+      "sept_imp": 190,
+      "sept_pos": 24.72,
+      "now_imp": 179,
+      "now_pos": 29.94,
+      "pos_delta_positive_worse": 5.22
+    },
+    {
+      "query": "小冊子印刷",
+      "sept_imp": 57,
+      "sept_pos": 10.07,
+      "now_imp": 14,
+      "now_pos": 17.93,
+      "pos_delta_positive_worse": 7.86
+    },
+    {
+      "query": "禮盒訂製",
+      "sept_imp": 15,
+      "sept_pos": 39.53,
+      "now_imp": 51,
+      "now_pos": 47.86,
+      "pos_delta_positive_worse": 8.33
+    },
+    {
+      "query": "small batch stickers",
+      "sept_imp": 38,
+      "sept_pos": 5.05,
+      "now_imp": 59,
+      "now_pos": 15.34,
+      "pos_delta_positive_worse": 10.29
+    },
+    {
+      "query": "喜帖印刷",
+      "sept_imp": 20,
+      "sept_pos": 34.3,
+      "now_imp": 36,
+      "now_pos": 44.78,
+      "pos_delta_positive_worse": 10.48
+    },
+    {
+      "query": "a2 poster",
+      "sept_imp": 33,
+      "sept_pos": 21.24,
+      "now_imp": 44,
+      "now_pos": 43.39,
+      "pos_delta_positive_worse": 22.15
+    },
+    {
+      "query": "教材 印刷製本",
+      "sept_imp": 6,
+      "sept_pos": 11.0,
+      "now_imp": 57,
+      "now_pos": 43.95,
+      "pos_delta_positive_worse": 32.95
+    }
+  ],
+  "homepage_root_row": {
+    "2026-09-29_28d": {
+      "impressions": 15,
+      "clicks": 0,
+      "position": 3.93
+    },
+    "2026-09-18_28d": {
+      "impressions": 25,
+      "clicks": 1,
+      "position": 2.52
+    },
+    "2026-09-10_28d": {
+      "impressions": 29,
+      "clicks": 1,
+      "position": 2.79
+    },
+    "2026-11-19_28d": {
+      "impressions": 16,
+      "clicks": 0,
+      "position": 3.69
+    }
+  },
+  "guardrails": [
+    "28d windows are moving windows; September-centered 28d (08-19..09-15) overlaps August.",
+    "Missing top-1000 exact query row = NO_CURRENT_BASELINE, not zero demand.",
+    "Query/page/country sheets are independent aggregates; never joined.",
+    "Positions are export-day snapshots over each window, not a daily time series per query.",
+    "MONEY labels are procurement-intent taxonomy, not enquiries/orders/revenue."
+  ]
+}
