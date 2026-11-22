@@ -1,0 +1,65 @@
+DMCA Takedown Notice – hkprint58.com wholesale copying of zprintpro.com
+(Ready to paste into https://abuse.cloudflare.com/dmca — fill only the [BRACKETED] fields)
+
+I am the authorized representative of Shenzhen Cailong Printing & Packaging Co., Ltd.
+(深圳市彩龙印刷包装有限公司), owner of the website https://zprintpro.com
+(brand: ZprintPro / 智印港).
+
+1. ORIGINAL WORKS
+The category structure, product descriptions, pricing data, service copy and blog
+articles originally published on zprintpro.com. First publication is evidenced by
+version-control timestamps (see attached E3):
+  - Product data & product content: first committed 2026-04-16 (commit 6ba38179)
+  - Trilingual SKU SEO content: first committed 2026-06-06 (commit 841dc455)
+  - Same-day rush printing service copy ("即日急件 18:00 截單，翌日中午 12:00 前送達"):
+    committed 2026-08-30 (commit 7d957ca7)
+All product pages carry our originality archive number "ZP-OC-2610" in the footer.
+
+2. INFRINGING MATERIAL
+https://hkprint58.com/ has reproduced the above content wholesale. Its own XML
+sitemap (retrieved 2026-11-21) shows URL slugs copied verbatim from our catalogue
+(certificates, textbooks, a2-posters, waterproof-stickers, a5-flyers,
+catalog-printing, rigid-boxes, removable-stickers, and our blog slugs
+"removable-vs-permanent" and "transparent-stickers-white-ink"), with lastmod dates
+clustered on/after 2026-08-28 — months after our first publication.
+Their pages replicate our exact prices (HK$0.25/張, HK$0.22/張, HK$3/個), our
+"適配行業" phrasing, and our same-day service terms. One product title on their
+homepage still contains our brand name verbatim:
+  "餐牌印刷 · 防水防油可水洗 | 餐廳/咖啡店/酒吧菜單 | 鑫印吧 ZprintPro · 訂製"
+— direct evidence of copy-paste from zprintpro.com (see attached screenshot
+E2-SMOKINGGUN).
+
+3. URL PAIRS (original -> infringing)
+https://zprintpro.com/zh-hk/ -> https://hkprint58.com/
+https://zprintpro.com/zh-hk/product/certificates/ -> https://hkprint58.com/xiaoyuanyinshua/certificates.html
+https://zprintpro.com/zh-hk/product/textbooks/ -> https://hkprint58.com/xiaoyuanyinshua/textbooks.html
+https://zprintpro.com/zh-hk/product/a2-posters/ -> https://hkprint58.com/zhidaiyinshua/a2-posters.html
+https://zprintpro.com/zh-hk/product/waterproof-stickers/ -> https://hkprint58.com/tiezhiyinshua/waterproof-stickers.html
+https://zprintpro.com/zh-hk/product/a5-flyers/ -> https://hkprint58.com/chuandanyinshua/a5-flyers.html
+https://zprintpro.com/zh-hk/product/catalog-printing/ -> https://hkprint58.com/shukanyinshua/catalog-printing.html
+https://zprintpro.com/zh-hk/product/rigid-boxes/ -> https://hkprint58.com/baozhuangheyinshua/rigid-boxes.html
+https://zprintpro.com/zh-hk/product/removable-stickers/ -> https://hkprint58.com/tiezhiyinshua/removable-stickers.html
+https://zprintpro.com/zh-hk/blog/ -> https://hkprint58.com/tiezhiyinshua-2/removable-vs-permanent.html
+https://zprintpro.com/zh-hk/blog/ -> https://hkprint58.com/tiezhiyinshua/transparent-stickers-white-ink.html
+
+4. REQUEST
+Please forward this DMCA notice to the origin hosting provider of hkprint58.com
+and take appropriate action under your abuse policies.
+
+5. GOOD FAITH & ACCURACY STATEMENTS
+I have a good-faith belief that the use of the material described above is not
+authorized by the copyright owner, its agent, or the law. The information in this
+notice is accurate, and under penalty of perjury, I am authorized to act on behalf
+of the owner of the exclusive right that is allegedly infringed.
+
+Contact: zprintpro@outlook.com · +86 198 8085 1334
+Company address: 廣東省深圳市龍崗区平湖街道嘉城路1号, 518111, China
+Signature: [K3 姓名，如 唐运提]    Title: [職務]
+Date: 2026-11-21
+
+Attachments checklist (upload with the form):
+  E1-url-pairs.md (this table)
+  E2 screenshots (paired full-page captures + E2-SMOKINGGUN)
+  E3-first-publish-timestamps.txt
+  E4-footer-originality.png
+  E5 company registration + domain ownership evidence

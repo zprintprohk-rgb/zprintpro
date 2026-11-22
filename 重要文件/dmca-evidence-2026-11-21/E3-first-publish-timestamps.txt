@@ -1,0 +1,19 @@
+E3 First-publish timestamps (git, Asia/Shanghai) - ZprintPro original content files
+Generated: 2026-11-21 by git log --follow
+
+== src/data/products.ts ==
+2026-04-19 06:11:57 +0800 30ca9525 SEO/GEO: Full 78-product SEO rollout + images + press kit + outreach
+2026-04-16 23:19:22 +0800 6ba38179 v1.1: Airwallex支付集成 + SEO/GEO优化 + Cloudflare Functions适配
+
+== src/data/sku-seo-data.ts ==
+2026-06-14 20:59:18 +0800 08ef0096 feat(i18n): Phase B P0-2 alt.ja + P0-3 SKU JA desc
+2026-06-06 02:37:46 +0800 841dc455 P2 SEO: 5个关键词专题页+78个SKU SEO增强
+
+== src/components/services/rush-data.ts ==
+2026-09-13 17:44:35 +0800 2e8a8be8 fix(brand): 单品牌分层 B+C 批 — 非 title 面 292 处清毒 + 数据层 ①②③ + 门童 #3 全量基线
+2026-08-30 13:23:48 +0800 7d957ca7 ﻿chore(rush-leak): K3 8/27 12:20 rush 改造 配对 兜底 commit (R6 protocol + K3 13:22 立即 push 拍板)
+
+== src/data/products-content.ts ==
+2026-04-19 06:11:57 +0800 30ca9525 SEO/GEO: Full 78-product SEO rollout + images + press kit + outreach
+2026-04-16 23:19:22 +0800 6ba38179 v1.1: Airwallex支付集成 + SEO/GEO优化 + Cloudflare Functions适配
+
