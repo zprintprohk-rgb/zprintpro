@@ -1245,8 +1245,8 @@ const lpMedicalDevicePackagingBox: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '醫療器械製造商 / 醫院供應商 / 牙科診所 / 體外診斷設備商必睇。1200g 灰板硬盒 + ISO 13485 + Tyvek 滅菌袋 + 100 個起印，7-10 個工作天交付，順豐本地 + DHL 全球 2-4 天配送。',
-    en: 'US medical device manufacturers, hospital suppliers, dental clinics, IVD equipment makers: ISO 13485 certified grayboard rigid boxes + sterile barrier pouches, 100 MOQ, 7-10 day production.',
-    ja: '日本の医療機器メーカー、病院サプライヤー、歯科医院、IVD 機器メーカー様へ。ISO 13485 認証グレー ボード硬質箱 + 滅菌バリア ポーチ、100 個小ロット、7-10 営業日生産、$99 以上で全米無料配送。',
+    en: 'US medical device manufacturers, hospital suppliers, dental clinics, IVD equipment makers: ISO 13485-compliance grayboard rigid boxes (documents on request) + sterile barrier pouches, 100 MOQ, 7-10 day production.',
+    ja: '日本の医療機器メーカー、病院サプライヤー、歯科医院、IVD 機器メーカー様へ。ISO 13485 コンプライアンス対応グレー ボード硬質箱（書類は注文時確認） + 滅菌バリア ポーチ、100 個小ロット、7-10 営業日生産、$99 以上で全米無料配送。',
   },
 };
 
