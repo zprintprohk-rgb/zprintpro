@@ -597,8 +597,8 @@
       "next_check": "D1/D2 + 7/14/28d after actual deployment",
       "strategy_update": "WAITING_K3 reconciled to READY by D6. Execute one bounded certification-truth batch; preserve neutral regulatory education and emit before/after evidence.",
       "strategy_updated_at": "2026-11-13T03:10:02+08:00",
-      "progress": "BATCH 1 DONE 2026-11-22: zh-hk A组 21 处已改（sticker-guide/flyer/food-packaging/pet-food/finance-summit×2/school-exercise/foil-stamping×2/baby-product×2/campus×2/kraft-box/pharmaceutical/product-label×2/medical-device/packaging-box-pricing）。Before/after 全表 + 1575 token 全域盘点 + 分批计划见 .hermes/logs/2026-11-22-cert-claims-inventory-and-batch1.md。剩余: en A组(~20) / ja A组(~20) / 三语 B/C 组边界复审；D6-C 中性法规解释（FSC/REACH/FDA-CFR 引用）明确保留不得全局删。",
-      "next_batch": "Batch 2 = en.json A组镜像；Batch 3 = ja.json A组镜像；Batch 4 = B/C 组边界复审"
+      "progress": "BATCH 1-4 DONE 2026-11-22（zh 21 + en 20 + ja 15 + B/C 边界 zh 5/ja 2，全部独立 commit 并推送 f834368d→6e117783→d1d4b940，线上抽样断言 PASS：zh sticker-guide 新口径已上线/en school-exercise ISO 9001 已消失）。Before/after 全表 + 1554 token 全域盘点见 .hermes/logs/2026-11-22-cert-claims-inventory-and-batch1.md。剩余 token（FSC 784/REACH 273/FDA-CFR 232/GB4806/BPA-free/USP/GRS/Oeko 等）经复核 = D6-C 中性法规解释与 B 组材质属性，按拍板明确保留。ISO9001 仅余「aligned with／整合」phrasing（非认证声明）。本任务可视为实质完成；后续如发现新 A 组声明再开新批次。",
+      "next_batch": "无（Batch 1-4 已清 A 组；B/C 边界按 D6-C 保留）。新增 A 组声明时另开 batch 5"
     },
     {
       "task_id": "FIX-20261030-A1-POSTER-PRICE-TRIPLE",
