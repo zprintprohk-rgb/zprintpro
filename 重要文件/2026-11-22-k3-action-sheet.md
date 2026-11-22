@@ -31,6 +31,7 @@
 - **72h AI 爬蟲對賬任務已註冊**：`\ZP-ai-crawler-recheck-20261124` 11-24 13:37（管理員已建）
 - GEO 第 4 輪（同上窗）：固定問題集 + 三向邊緣抽驗（瀏覽器 UA 已修）
 - 建議：11-24 當日 K3 先放 GSC 三檔，執行層即可同窗完成首讀+GEO
+- **首讀分析器已預置（本日）**：`.hermes/tmp/analyze_gsc_20261124.py`（自 11-19 版克隆，按 §F 改 4 處：docstring/FILES-11-24/ASSETS/date anchors；另加**容錯檔名解析**（(1)/(2) 後綴自動匹配）+ **缺檔守衛**（缺任一窗即印 `NO_CURRENT_BATCH` 並 exit 2，不拿舊窗充當））。matplotlib 已裝入 Python312（3.11.2），openpyxl 3.1.5 / pandas 3.0.3 就緒 → K3 一放檔即可機械跑
 
 ## F. B1 實體歸一（zh 面 AIO 品牌舊名「ZPrintPro 智印雲」）
 - 源：Kompass 兩處條目（hk./lu.kompass.com）+ GBP 檔案（舊地址/電話）
