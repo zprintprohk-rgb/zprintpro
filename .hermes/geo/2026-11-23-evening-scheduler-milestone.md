@@ -51,4 +51,14 @@
 | 11-22 行动单 | A 撞车（默认 A1）/ B GSC 供给未解 / **C 调度六件→ 1-4 今晚完成**, 剩 legacy-2125 删除与核验 / D 代核查完成 / E 分析器就绪 / F B1 未动 |
 | 11-23 诊断 | K3 两验证 ✓ / P0 ja 批 ✓ / H1 SEO 批 DRAFT ✓ / S4U+合并 ✓ |
 | 11-24 S4U 任务单 | **步骤 1-5 已执行**, 剩 11-25 自然轮验收 + DoD 勾选; 明晨前置核验全绿（Machine key 35 字符 + dsh.cmd 在位） |
-| 11-24 合并迁移 | **甲乙丙丁戊全部执行**（丙带备份偏差登记）; 剩 11-25/27/28 验收节奏 |
+## 六、21:17 首个 S4U 自然轮 + 错键收口（22:1x 追记）
+
+**S4U 自然轮首验提前 1.5 天达成**: ZP-daily-content 21:17:04 准点 schtasks 触发（trigger=schtasks, dsh=0, wrapper=0, 诚实判 PARTIAL + RETRY_OF 契约修复），`ec3c844e` 已推。**S4U 对 schtasks 触发链的接受性已在真实自然轮得到证明**（watchdog 06:43 四方对账仍按任务单流程走完最后一步）。
+
+**错键 P0 收口（`7a5072df`，21:59 push，verify PASS run 137746081146）**:
+- products-content.ts:11689 键名 `'foil-wedding-invitations'` → `'doujinshi-printing'`（同人誌富文本归位，婚庆页脱错挂）
+- 块内 24h/特急承诺 **10 处条件化**（zh x3 / en x4 / ja x3，按稿件與排期報價確認口径）+ product-faqs 同人誌答案 3 处
+- 断言护栏实录：首跑 SHAPE FAIL 拦下（块内实为 11 处，车道报 9 少计），修正断言后 11+3 全收口；备份 `.hermes/backups/foil-wedding-miskey-20261123/`
+- live 探针（部署后）：婚庆页 doujin=0 / 24h=0 / 标题正常；doujin 页富文本归位 20 命中
+- **残留登记**：doujin meta title「Comiket前24小時特急對應」= K3 11-23 title 冻结面（不擅改）；products-content.ts:194 另一 SKU ja 承诺 → **READY 任务 `FIX-20261123-DOUJIN-WIDE-SURFACE-CLOSURE` 已注册**（队列 49 条，owner=daily，宽表面清单 + 约束齐）
+- 本批同时入库：S4U+合并迁移配置工件（cron-lanes/wrappers/prompts）+ 今晚车道运行记录 + **3 份 K3 指令文件本体首次入库**（11-23 诊断 / 11-24 迁移单 / 11-24 S4U 任务单）
