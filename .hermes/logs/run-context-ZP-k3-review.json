@@ -1,11 +1,11 @@
 {
   "lane": "ZP-k3-review",
-  "generated_at": "2026-11-13 07:10:01",
+  "generated_at": "2026-11-24 07:10:01",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "4c5c4142808d8cc4",
-    "day": "2026-11-13",
+    "this_run_key": "2783e87fd773e454",
+    "day": "2026-11-24",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -45,12 +45,17 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-11-05 07:17:45"
+        "detail": "总线最近记录 verdict=OK @ 2026-11-13 07:16:54"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=3; refreshed_stale=False; refresh=not_needed"
+        "detail": "verdict=ATTENTION problems=5; refreshed_stale=True; refresh=exit=1"
+      },
+      {
+        "name": "coordination_board",
+        "ok": true,
+        "detail": "coordination board rebuilt"
       },
       {
         "name": "lock_acquired",
@@ -61,19 +66,19 @@
   },
   "lock": {
     "lane": "ZP-k3-review",
-    "pid": 27096,
-    "acquired_at": "2026-11-13 07:10:01",
-    "acquired_ts": 1794525002.1232905,
+    "pid": 32132,
+    "acquired_at": "2026-11-24 07:10:01",
+    "acquired_ts": 1795475415.4337213,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-k3-review-20261105T071745-38252",
+      "run_id": "ZP-k3-review-20261113T071654-23508",
       "lane": "ZP-k3-review",
       "trigger": "schtasks",
-      "fired_at": "2026-11-05 07:17:45",
-      "ended_at": "2026-11-05 07:17:45",
-      "idempotency_key": "803c1f5cca812b48",
+      "fired_at": "2026-11-13 07:16:54",
+      "ended_at": "2026-11-13 07:16:54",
+      "idempotency_key": "4c5c4142808d8cc4",
       "key_consumed": true,
       "dsh_exit": 0,
       "wrapper_exit": 0,
@@ -83,19 +88,18 @@
       "guard": {
         "ok": true
       },
-      "report": ".hermes/logs/2026-11-05-ZP-k3-review.md",
+      "report": ".hermes/logs/2026-11-13-ZP-k3-review.md",
       "report_auto_generated": false,
       "files": [
-        "docs/evidence/2026-10-16-hkprint58/logs/spn-log-round2.txt",
-        "docs/evidence/2026-10-16-hkprint58/logs/spn-log-round3.txt"
+        "docs/assets/2026-11-12/"
       ],
       "pushed": true,
-      "head": "3c3251b1",
+      "head": "ce09a937",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-11-09-ZP-k3-review.md",
+    "latest_report": ".hermes/logs/2026-11-13-ZP-k3-review.md",
     "delivered_files_from_report": [
-      "`.hermes/logs/2026-11-09-ZP-k3-review.md`（本报告；唯一写盘；零 `src/` 改动）"
+      "`.hermes/logs/2026-11-13-ZP-k3-review.md`（本报告；唯一写盘；零 `src/`、零共享账本、零队列、零历史报告改动）"
     ]
   },
   "sibling_lanes": [
@@ -104,24 +108,119 @@
       "status": "PENDING",
       "report": null,
       "start": "21:17"
-    },
-    {
-      "lane": "ZP-gsc-feedback",
-      "status": "PENDING",
-      "report": null,
-      "start": "20:13"
-    },
-    {
-      "lane": "ZP-weekly-meta",
-      "status": "PENDING",
-      "report": null,
-      "start": "20:52"
     }
   ],
-  "retry_queue": [],
+  "retry_queue": [
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-11-24",
+      "status": "STALE",
+      "notes": [
+        "ran but no report file dated 2026-11-24"
+      ]
+    }
+  ],
   "suppressed_retry_queue": [],
+  "coordination": {
+    "board_path": ".hermes/logs/coordination-board.json",
+    "available": true,
+    "run_date": "2026-11-24",
+    "ready_task_ids": [
+      "VERIFY-FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL"
+    ],
+    "ready_tasks": [
+      {
+        "task_id": "VERIFY-FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
+        "source": "deployment_verification_gap",
+        "cluster": "stickers-en",
+        "query": [
+          "small batch sticker printing"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "small batch sticker printing": {
+              "impressions": 13,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 8.92,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-k3-review",
+        "status": "READY",
+        "priority": 99.0,
+        "upstream_inputs": [
+          ".hermes/logs/strategy-task-queue.json",
+          ".hermes/logs/lane-runs.jsonl",
+          ".hermes/logs/lane-runs.jsonl run_id=ZP-daily-content-20261113T182529-harness"
+        ],
+        "approval_gate": "Read-only production/deployment verification; do not redo the source change or infer deployment from git push.",
+        "write_scope": [
+          ".hermes/logs/"
+        ],
+        "production_deploy": {
+          "status": "PUSHED_NOT_INDEPENDENTLY_ONLINE_VERIFIED",
+          "pushed": true,
+          "head": "ff97d235",
+          "evidence": ".hermes/logs/lane-runs.jsonl run_id=ZP-daily-content-20261113T182529-harness",
+          "note": "Bus evidence proves push/head only; it does not prove a Cloudflare deployment or live-page assertions."
+        },
+        "online_verify": "PENDING",
+        "retest": {
+          "next_check": "2026-11-18",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": null,
+        "exit_criteria": "Record Cloudflare deployment evidence and live URL assertions, or keep PENDING with the failed check; no ranking/CTR claim.",
+        "learning_status": "AWAITING_INDEPENDENT_ONLINE_VERIFY",
+        "parent_task_id": "FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL"
+      }
+    ],
+    "input_availability": {
+      "strategy_queue": {
+        "available": true,
+        "path": ".hermes/logs/strategy-task-queue.json"
+      },
+      "blog_queue": {
+        "available": true,
+        "path": ".hermes/cron-prompts/blog-money-keyword-queue.json"
+      },
+      "lane_status": {
+        "available": true,
+        "path": ".hermes/logs/lane-status.json"
+      },
+      "gsc_delta": {
+        "available": true,
+        "path": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "analysis_date": "2026-11-19"
+      },
+      "weekly_review": {
+        "available": true,
+        "path": ".hermes/logs/periodic-review-weekly-2026-11-20.json",
+        "review_date": "2026-11-20"
+      },
+      "monthly_review": {
+        "available": true,
+        "path": ".hermes/logs/periodic-review-monthly-2026-10-28.json",
+        "review_date": "2026-10-28"
+      }
+    },
+    "scheduler_recovery": "NOT_PROVEN"
+  },
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
+    "必须先消费 coordination.ready_tasks 与共享板的上游证据; 只有 status=READY 且 owner_lane=本车道的任务可执行",
+    "WAITING_K3/BLOCKED_INFRA/SCHEDULED/MEASURE_HOLD 不得被本车道改写为 READY; 复测未到不得叠加新变量",
+    "缺 GSC/周报等可选输入时保留 available=false 与 NO_CURRENT_BASELINE; 不得造数, 也不得退回独立选词/独立写文",
     "FOLLOW_UP_PARTIAL 只处理报告 NEXT, 不重做 DELIVERED; 其他 retry_queue 项才按 RETRY_OF(<run_id>) 恢复",
     "NO_OP 是证据完整的合法退出, 不自动重试; suppressed_retry_queue 已闭合, 不得重新派发",
     "sibling_lanes 里今日已改过的文件, 本轮不得再次改写 (跨车道避让, 防撞车)",

@@ -1,0 +1,23 @@
+== a2 ==
+  11-19档 : a2 poster imp=44 pos=43.39 clk=1 | a2 印刷 即日 imp=26 pos=5.92 clk=0 | a2 printing imp=22 pos=10.36 clk=2 | a2 poster printing imp=18 pos=27.11 clk=0
+  11-23档 : a2 poster imp=48 pos=43.04 clk=1 | a2 印刷 即日 imp=29 pos=6.55 clk=0 | a2 printing imp=23 pos=10.04 clk=2 | a2 poster printing imp=18 pos=27.94 clk=0
+== food-packaging ==
+  11-19档 : 食品包裝印刷 imp=125 pos=7.93 clk=0 | 食品印刷 imp=72 pos=5.01 clk=0 | 食品包裝訂製 imp=41 pos=13.44 clk=0 | 包裝食品 裡印 imp=31 pos=6.32 clk=0
+  11-23档 : 食品包裝印刷 imp=137 pos=8.43 clk=0 | 食品印刷 imp=94 pos=5.36 clk=0 | 食品包裝訂製 imp=51 pos=13.06 clk=0 | 包裝食品 裡印 imp=36 pos=5.08 clk=0
+== small-batch ==
+  11-19档 : small batch stickers imp=59 pos=15.34 clk=0 | custom labels small batch imp=21 pos=34.43 clk=0 | small batch sticker printing imp=13 pos=8.92 clk=0 | small batch label printing imp=12 pos=28.25 clk=0
+  11-23档 : small batch stickers imp=60 pos=15.22 clk=0 | custom labels small batch imp=21 pos=34.43 clk=0 | small batch sticker printing imp=14 pos=8.57 clk=0 | small batch label printing imp=14 pos=28.14 clk=0
+== stickers-streak ==
+  11-19档 : 貼紙印刷 imp=179 pos=29.94 clk=0 | 貼紙 imp=118 pos=37.22 clk=0 | 戶外貼紙 imp=84 pos=16.12 clk=0 | 可移貼紙 imp=71 pos=12.62 clk=0
+  11-23档 : 貼紙印刷 imp=205 pos=30.10 clk=0 | 貼紙 imp=129 pos=36.71 clk=0 | 可移貼紙 imp=84 pos=13.12 clk=0 | 貼紙訂製 imp=82 pos=30.65 clk=0
+== calendar-streak ==
+  11-19档 : 月曆印刷 imp=140 pos=20.40 clk=0 | 月曆訂製 imp=72 pos=25.97 clk=0 | 訂制月曆 imp=41 pos=22.15 clk=0 | 訂製月曆 imp=14 pos=24.00 clk=0
+  11-23档 : 月曆印刷 imp=157 pos=20.35 clk=0 | 月曆訂製 imp=83 pos=24.02 clk=0 | 訂制月曆 imp=40 pos=21.80 clk=0 | 訂製月曆 imp=15 pos=23.27 clk=0
+== redpacket-season ==
+  11-19档 : 利是封印刷 imp=59 pos=24.27 clk=1 | 利是封訂製 imp=28 pos=24.86 clk=0 | 訂製利是封 imp=25 pos=24.48 clk=0 | 2027利是封 imp=11 pos=7.09 clk=0
+  11-23档 : 利是封印刷 imp=59 pos=25.03 clk=0 | 利是封訂製 imp=32 pos=23.78 clk=0 | 訂製利是封 imp=30 pos=23.27 clk=0 | 2027利是封 imp=12 pos=7.33 clk=0
+== rollup-hk ==
+  11-19档 : 易拉架製作 imp=68 pos=62.63 clk=0 | 易拉架印刷 imp=43 pos=41.63 clk=0 | 澳門易拉架size imp=39 pos=5.49 clk=0 | 易拉架尺寸 imp=34 pos=29.88 clk=0
+  11-23档 : 易拉架製作 imp=69 pos=60.78 clk=0 | 澳門易拉架size imp=42 pos=5.29 clk=0 | 易拉架 imp=41 pos=27.05 clk=0 | 易拉架印刷 imp=41 pos=41.17 clk=0
+== _site_totals ==
+{"11-19档": {"clicks": 554, "imps": 27879, "ctr_pct": 2.01, "avg_pos": 14.99, "days": 28}, "11-23档": {"clicks": 541, "imps": 29809, "ctr_pct": 1.85, "avg_pos": 15.46, "days": 28}}

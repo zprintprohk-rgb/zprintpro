@@ -137,3 +137,6 @@
 | 2026-11-23 18:15:28 | ZP-cron-watchdog | ⚠️ 6 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | FAILED ZP-weekly-meta | MISSING ZP-blog-deepfix | MISSING ZP-k3-review | — |
 | 2026-11-23 18:53:18 | ZP-cron-watchdog | ⚠️ 7 条告警 | `cron-watchdog-alerts.md` (告警时才写) | STALE ZP-daily-content | FAILED ZP-weekly-meta | MISSING ZP-blog-deepfix | MISSING ZP-k3-review | — |
 | 2026-11-23 21:22:12 | ZP-daily-content | ✅ 完成 (exit=0) | `.hermes/logs/2026-11-23-ZP-daily-content.md` | src/data/products.ts, docs/assets/2026-11-23/ | ✅ push |
+| 2026-11-24 07:11:58 | ZP-cron-watchdog | ⚠️ 6 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | FAILED ZP-weekly-meta | MISSING ZP-blog-deepfix | STALE ZP-k3-review | — |
+| 2026-11-24 07:17:15 | ZP-k3-review | ✅ 完成 (exit=0) | `.hermes/logs/2026-11-24-ZP-k3-review.md` | NONE | ✅ push |
+| 2026-11-24 07:18:24 | ZP-cron-watchdog | ⚠️ 5 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | FAILED ZP-weekly-meta | MISSING ZP-blog-deepfix | PARTIAL ZP-k3-review | — |

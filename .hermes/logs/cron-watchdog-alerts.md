@@ -122,3 +122,17 @@
 ## 2026-11-23 18:53:18 车道对账告警
 
 - **车道结果异常**: ZP-daily-content 2026-11-23 -> STALE -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-11-24 07:11:58 车道对账告警
+
+- **车道结果异常**: ZP-weekly-meta 2026-11-20 -> FAILED -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-blog-deepfix 2026-11-21 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-blog-deepfix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-k3-review 2026-11-24 -> STALE -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-k3-review scheduler LastTaskResult=267009 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道任务卡死已处置**: `ZP-k3-review` 残留 Running 实例 (IgnoreNew 策略下后续触发全部被拒, 0x800710E0, 10-10~10-12 四条车道断跑根因) -> schtasks /end ✅ 成功; 根因排查: `.hermes/logs/cron-ZP-k3-review.log` 尾部 + 残留 node/dsh 进程树
+
+## 2026-11-24 07:18:24 车道对账告警
+
+- **车道结果异常**: ZP-k3-review 2026-11-24 -> PARTIAL -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-k3-review scheduler LastTaskResult=267014 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
