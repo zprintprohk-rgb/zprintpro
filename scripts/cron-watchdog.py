@@ -21,6 +21,7 @@ import os
 import subprocess
 import sys
 import time
+import datetime
 
 try:  # 根治 Windows 控制台 GBK 崩 (v9.4 §三-1)
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -157,14 +158,25 @@ def check_stuck_lane_tasks():
     ZP-* 任务 MultipleInstancesPolicy=IgnoreNew — 残留 Running 实例会让后续每次触发
     在调度层直接被拒 (LastTaskResult=0x800710E0, wrapper 连 run start 都不写)。
     2026-10-10~10-12 daily-content/gsc-feedback/weekly-meta/monthly-matrix 全中此形态。
-    本看门狗每天 06:43 以最高权限运行 -> 发现 Running 即 schtasks /end 处置 + 告警。
-    豁免自身 (ZP-cron-watchdog 运行时 State 必然是 Running)。"""
+    本看门狗每天 06:43 以最高权限运行 -> 发现 Running 即处置 + 告警。
+    豁免自身 (ZP-cron-watchdog 运行时 State 必然是 Running)。
+
+    2026-11-24 教训 (真实误杀事件): 正常 dsh 车道单轮合法运行 5-45 min;
+    对任何 Running 实例直接 /end 会杀掉活车道 (07:10 k3-review 启动 2 分钟
+    被重叠审计 /end, Result=267014)。故加最小年龄护栏:
+    - 实例年龄 (now - LastRunTime) >= 90 min -> 判卡死, schtasks /end
+      (wrapper 自带墙钟上限 ~45 min, 90 min 仍在跑必为真卡死);
+    - 年龄 < 90 min -> 仅写观察告警, 不动手。
+    """
     import subprocess
+    STUCK_MIN_AGE_MINUTES = 90
     try:
         out = subprocess.run(
             ["powershell", "-NoProfile", "-Command",
              "Get-ScheduledTask | Where-Object {$_.TaskName -like 'ZP-*'} | "
-             "Select-Object TaskName, State | ConvertTo-Json"],
+             "ForEach-Object { $i = $_ | Get-ScheduledTaskInfo; "
+             "[pscustomobject]@{TaskName=$_.TaskName; State=$_.State; LastRunTime=$i.LastRunTime} } | "
+             "ConvertTo-Json"],
             capture_output=True, text=True, timeout=90)
         tasks = json.loads(out.stdout) if out.stdout.strip() else []
         if isinstance(tasks, dict):
@@ -179,12 +191,31 @@ def check_stuck_lane_tasks():
         running = state == 4 or str(state).lower() == "running"
         if not running or name == "ZP-cron-watchdog":
             continue
+        # 实例年龄护栏: LastRunTime 即当前 Running 实例的启动时间
+        age_min = None
+        lrt = t.get("LastRunTime")
+        if lrt:
+            try:
+                started = datetime.datetime.fromisoformat(str(lrt))
+                if started.tzinfo is None:
+                    started = started.replace(tzinfo=datetime.datetime.now().astimezone().tzinfo)
+                age_min = (datetime.datetime.now(started.tzinfo) - started).total_seconds() / 60.0
+            except Exception:
+                age_min = None
+        if age_min is not None and age_min < STUCK_MIN_AGE_MINUTES:
+            alerts.append(
+                f"- **车道任务运行中 (观察, 不处置)**: `{name}` Running 实例年龄 "
+                f"{age_min:.0f} min < {STUCK_MIN_AGE_MINUTES} min 护栏 -> 合法运行窗口内, 不 /end; "
+                f"下次审计再入护栏才处置")
+            continue
         end = subprocess.run(["schtasks", "/end", "/tn", f"\\{name}"],
                              capture_output=True, text=True, timeout=60)
         ok = end.returncode == 0
+        age_txt = f"{age_min:.0f} min" if age_min is not None else "未知年龄"
         alerts.append(
-            f"- **车道任务卡死已处置**: `{name}` 残留 Running 实例 (IgnoreNew 策略下后续触发全部被拒, "
-            f"0x800710E0, 10-10~10-12 四条车道断跑根因) -> schtasks /end {'✅ 成功' if ok else '❌ 失败(需管理员)'}; "
+            f"- **车道任务卡死已处置**: `{name}` 残留 Running 实例 (年龄 {age_txt} >= {STUCK_MIN_AGE_MINUTES} min 护栏; "
+            f"IgnoreNew 策略下后续触发全部被拒, 0x800710E0, 10-10~10-12 四条车道断跑根因) -> "
+            f"schtasks /end {'✅ 成功' if ok else '❌ 失败(需管理员)'}; "
             f"根因排查: `.hermes/logs/cron-{name}.log` 尾部 + 残留 node/dsh 进程树")
     if not alerts:
         print("[watchdog] 车道任务实例状态: 全部 Ready (无卡死)")
