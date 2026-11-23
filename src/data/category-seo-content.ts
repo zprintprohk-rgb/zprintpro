@@ -4008,7 +4008,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
       items: [
         { title: '旺角打樣中心', description: '可預約查看實際紙質 + 色彩樣本（Comiket 前樣書特急対応）。' },
         { title: '深圳工廠直發日本', description: 'DHL Express 含稅到門（DDP）方案，收件人零稅務負擔。' },
-        { title: '小批量加急服務', description: '同人誌 5 本加急 3 天出貨，Comiket 前 24 小時特急対応。' },
+        { title: '小批量加急服務', description: '同人誌 5 本加急 3 天出貨，Comiket 前特急対応可議（按稿件與排期報價確認）。' },
       ],
     },
     buyingGuide: {
@@ -4136,7 +4136,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 同人シーン特化：A5/B5 同人誌 + 異形ステッカー + A3 ポスター',
           points: [
             '同人誌、ステッカー（異形／PVC防水／箔押し）、ポスター（A3／A2 PPラミネート）、アクリルスタンド、紙袋パッケージまで全カバー。',
-            'Comiket／即売会向けプリセットテンプレート：A5/B5標準サイズ＋24時間特急対応。',
+            'Comiket／即売会向けプリセットテンプレート：A5/B5標準サイズ＋特急対応（原稿・日程によりお見積り）。',
             '個人サークル・新人作家向けの少ロット対応（10部から）。',
           ],
         },
@@ -4196,7 +4196,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
       items: [
         { title: '旺角サンプルセンター', description: '実物サンプル（紙質＋カラー）をご覧いただけます（コミケ前特急サンプル対応）。' },
         { title: 'アジア自社工場 → 日本直送', description: 'DHL Express DDP（Delivered Duty Paid） — 受取人様の通関手続き不要。' },
-        { title: '少ロット急行サービス', description: '同人誌5部急行3日、10部急行2日出荷。コミケ前24時間特急対応。' },
+        { title: '少ロット急行サービス', description: '同人誌5部急行3日、10部急行2日出荷。コミケ前特急対応（原稿・日程によりお見積り）。' },
       ],
     },
     buyingGuide: {

@@ -1312,11 +1312,29 @@
       "owner_lane": "ZP-daily-content",
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
       "created_at": "2026-11-23T22:15:00+08:00",
-      "evidence": [
-        ".hermes/logs/2026-11-23-ZP-daily-content.md §错键/§宽表面 (双方法实证, 21:17 轮)",
-        "7a5072df (2026-11-23 21:59): 错键收口 = products-content.ts key→doujinshi-printing + 块内 10 处承诺条件化 + product-faqs 3 处; wedding PDP live 探针 doujin=0/24h=0, doujin PDP 富文本归位",
-        "live 残留: doujin meta title「Comiket前24小時特急對應」(sku-seo CSV 派生, K3 11-23 meta title 冻结面) + products-content.ts:194 另一 SKU ja 緊急再発注 24 時間特急"
-      ],
+      "evidence": {
+        "scope": "doujin-cluster unverified 24h/rush promises (K3 11-23 conditional template; meta title L538 + CSV c6 title family frozen as registered)",
+        "surfaces_closed": [
+          "category-seo-content.ts x3 (zh/en/ja doujin cluster blocks)",
+          "category-conversion-blocks.ts x10 (zh metaDesc/faq/stat/label x5 + ja metaDesc/faq/stat/answer x5)",
+          "products-content.ts:194 ja 緊急再発注 24h",
+          "seo.ts doujin desc zh/en/ja (546/547/548)",
+          "blog-posts.ts doujin excerpt zh/en/ja (936/937/938)",
+          "blog-data zh/en/ja doujin+comiket guides: 15 spots (desc/content/FAQ/table/title-adjacent)",
+          "sku-seo-data.ts doujin body zh x2 (ts-authoritative domain)",
+          "CSV r72: desc c12/13/14 + dormant c18/19/20 + FAQ c22/c24",
+          "regen csv-to-sku-seo.mjs --apply: assertions A-E PASS, byte-change only doujinshi-printing block"
+        ],
+        "out_of_scope_registered": [
+          "seo.ts:538 + CSV c6 + TS title lines = meta title frozen surface (K3)",
+          "seo.ts:332/426/452/512/584/1699 + blog ja flyer guide = whitelisted rush-service (other SKUs)",
+          "conversion-blocks:3297 WhatsApp prefilled customer question (not a promise)",
+          "products-content.ts:10862 textbooks 24h 急件通道 (future batch)"
+        ],
+        "verification": "final-verify.cjs: 10 touched files 0 promise-residual (frozen family intact); tsc 0=0; JSON parse x3 OK",
+        "backups": ".hermes/backups/doujin-wide-surface-20261124/ (pass1-4 + regen auto-backup)",
+        "scripts": ".hermes/tmp/wide-surface-20261124/ (dump/fix/fix2/fix3/fix4/verify-scoped/final-verify)"
+      },
       "score": 78,
       "write_scope": [
         "src/data/category-seo-content.ts (japan-doujin 块 4011/4139/4199 承诺条件化)",
@@ -1335,7 +1353,9 @@
       "market": "zh-hk + en + ja",
       "target": "doujin 24h/特急未验证承诺在宽表面 (类目块/转化块/seo desc/CSV 派生/blog) 全收口; title 面单列等 K3 解冻",
       "acceptance": "全 src/ doujin 域 24h 承诺 pattern 0 命中 (除 title 冻结面) + tsc 0=0 + live 探针 wedding/doujin/category 三页",
-      "next_check": "2026-11-28"
+      "next_check": "2026-11-28",
+      "result": "DONE",
+      "completedAt": "2026-11-23 18:40:59"
     }
   ],
   "last_review": "2026-11-23T22:15:00+08:00",

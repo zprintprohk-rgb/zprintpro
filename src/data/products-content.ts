@@ -191,7 +191,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
   <li><strong>営業チーム 100 名以上</strong>：個別データ可変印刷、部署別カラー分け対応</li>
   <li><strong>NET 30 月締請求書払い</strong>：法人掛売り対応、与信審査後サービス開始</li>
   <li><strong>継続発注割引</strong>：年間 1,000 枚以上のご注文は 25% オフ、5,000 枚以上は 35% オフ</li>
-  <li><strong>緊急再発注</strong>：営業メンバーの急な入社・異動にも 24 時間特急で対応</li>
+  <li><strong>緊急再発注</strong>：営業メンバーの急な入社・異動にも特急対応（原稿・日程によりお見積り）</li>
   <li><strong>日本語請求書・領収書</strong>：経費精算・会計処理に対応、インボイス製度対応</li>
 </ul>
 
