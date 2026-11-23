@@ -387,3 +387,9 @@ K3 截图可能是:
 - 根因: sleep 700s 与 commit+push 同调用, 被 15 min 调用上限截断后补跑未重算窗口
 - 修复: 撞车如实记录 (K3 22:2x「按优先级继续执行下一步」默认接受); 等窗改三步法; 下一窗口锚定 22:48:38
 - 证据: git log %ci · verify-deploy PASS run 137758230123
+
+## 2026-11-23 22:46:20 PUSH_WINDOW_TRUNCATION_RECALC (第二次, GUARD_FAIL_OPEN)
+- 命中: push f7fab906 @ 22:46:20 距 7b5e0686 @ 22:18:38 = 27.7 min (< 30 min)
+- 根因: 窗口 guard [datetime].AddMinutes(30) 对 String 调方法 → 非终止性错误 fail-open, guard 形同虚设
+- 修复: guard 一律 fail-closed (Continue='Stop' / 显式 exit); 窗口重算用 datetime-safe 写法; **push 全停等 K3 拍板** (§0.25.2 两连撞必拍)
+- 证据: git log origin/main -3 %ci

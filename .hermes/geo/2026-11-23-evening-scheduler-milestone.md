@@ -69,3 +69,10 @@
 - **根因与固化**: sleep 等窗被调用上限截断后补跑未重算窗口 → 已入错误库 `error-patterns.md` 规则 `PUSH_WINDOW_TRUNCATION_RECALC` + `error-log.md`；等窗改三步法（sleep → 重算 → 推）
 - **K3 承认（22:2x）**: 「按优先级继续执行下一步」= 撞车按默认如实记录接受；**doujin meta title 承诺解除时机 = 维持冻结，待核心更新完成后与 title 批同窗**（推荐未被否决，默认生效）
 - **下一窗口锚定**: 22:48:38 之后的 push 以 git log %ci 实时重算，禁沿用内存时刻
+
+## 八、第二次撞车（22:46:20, GUARD_FAIL_OPEN）
+
+- **事实**: f7fab906 @ 22:46:20 距 7b5e0686 @ 22:18:38 = 27.7 min < 30 min —— 窗口 guard `[datetime]$last.AddMinutes(30)` 对 String 调方法报**非终止性错误 → guard 失败开路**，脚本继续 push
+- **今晚两连撞**（19.3 / 27.7 min）同根因族：窗口管理脱离实时读数 + 守卫 fail-open
+- **已固化（本地待推）**: `PUSH_WINDOW_TRUNCATION_RECALC` 追加实例 + 新亚规则 `GUARD_FAIL_OPEN`（守卫报错必须 fail-closed；`$ErrorActionPreference='Stop'`）
+- **处置（§0.25.2）**: **push 全停，等 K3 拍板确认是否继续**；明晨自然轮验收（06:43/07:10/13:37）不受影响（无需 push）

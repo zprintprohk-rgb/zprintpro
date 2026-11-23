@@ -1934,3 +1934,8 @@ node scripts/check-encoding.js → ⚠️ CRLF: ...txt (57 lines with \r\n)   ex
 **同族规则**: §0.25.8 (30min 间隔 ≠ Start-Sleep 阻塞等待) · §0.25.9 (攒批优先)
 
 **配套**: .hermes/geo/2026-11-23-evening-scheduler-milestone.md §撞车记录 · git log %ci
+
+**追加实例 (同日 22:46:20, 第二次撞车)**:
+1. 窗口 guard $win = [datetime]$last.AddMinutes(30) 中 $last 为 String → String.AddMinutes 不存在 → **非终止性错误, guard 失败开路 (fail-open)**, 脚本继续执行 push f7fab906 @ 22:46:20 = 距上次仅 27.7 min。
+2. **新亚规则 GUARD_FAIL_OPEN**: 任何前置守卫的报错必须 fail-closed —— PS 脚本头部 $ErrorActionPreference='Stop', 或 guard 判断后 if ( -ne 0) { exit 0 }; 守卫抛错 = 不推, 不是守卫跳过 = 推。守卫失败开路比没有守卫更危险 (制造"已检查"假象)。
+3. 今晚两连撞 (19.3 min / 27.7 min) 根因同族: 窗口时刻管理脱离实时读数。三步法第 2 步 (重算窗口) 必须用 (Get-Date (git log ... %ci)).AddMinutes(30) 且 -ErrorAction Stop。
