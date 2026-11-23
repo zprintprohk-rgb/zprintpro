@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-22T17:08:41+0800",
-  "run_date": "2026-11-22",
+  "generated_at": "2026-11-23T21:17:04+0800",
+  "run_date": "2026-11-23",
   "board_path": ".hermes/logs/coordination-board.json",
   "policy": {
     "executable_status": "READY",
@@ -479,7 +479,7 @@
       "decision_record": null
     },
     {
-      "task_id": "GSC-FIX-2026-11-22-87656b1b2c",
+      "task_id": "GSC-FIX-2026-11-23-87656b1b2c",
       "source": "latest_gsc_delta",
       "cluster": "食品包裝印刷",
       "query": [
@@ -515,14 +515,14 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-22",
+        "next_check": "2026-11-23",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-22",
+      "retry_at": "2026-11-23",
       "exit_criteria": "Record SERP/snippet evidence and one bounded proposal, or HOLD with an explicit blocker; deployment is a separate task.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "NOT_CONSECUTIVE",
@@ -1459,7 +1459,7 @@
       "decision_record": null
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-22-f2bc40ee31",
+      "task_id": "GSC-MEASURE-2026-11-23-f2bc40ee31",
       "source": "latest_gsc_delta",
       "cluster": "posters-zh-hk",
       "query": [
@@ -1495,21 +1495,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-22",
+        "next_check": "2026-11-23",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-22",
+      "retry_at": "2026-11-23",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|海報印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-22-7dfc8ccac4",
+      "task_id": "GSC-MEASURE-2026-11-23-7dfc8ccac4",
       "source": "latest_gsc_delta",
       "cluster": "flyers-zh-hk",
       "query": [
@@ -1545,21 +1545,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-22",
+        "next_check": "2026-11-23",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-22",
+      "retry_at": "2026-11-23",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|宣傳單張|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-22-8ba60bd637",
+      "task_id": "GSC-MEASURE-2026-11-23-8ba60bd637",
       "source": "latest_gsc_delta",
       "cluster": "印刷",
       "query": [
@@ -1595,21 +1595,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-22",
+        "next_check": "2026-11-23",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-22",
+      "retry_at": "2026-11-23",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-22-4c5ebffbea",
+      "task_id": "GSC-MEASURE-2026-11-23-4c5ebffbea",
       "source": "latest_gsc_delta",
       "cluster": "comiket-ja",
       "query": [
@@ -1645,21 +1645,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-22",
+        "next_check": "2026-11-23",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-22",
+      "retry_at": "2026-11-23",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|コミケ 印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-22-ffa9859a1b",
+      "task_id": "GSC-MEASURE-2026-11-23-ffa9859a1b",
       "source": "latest_gsc_delta",
       "cluster": "教材 印刷製本",
       "query": [
@@ -1695,21 +1695,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-22",
+        "next_check": "2026-11-23",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-22",
+      "retry_at": "2026-11-23",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|教材 印刷製本|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-22-2d5ea01d64",
+      "task_id": "GSC-MEASURE-2026-11-23-2d5ea01d64",
       "source": "latest_gsc_delta",
       "cluster": "易拉架印刷",
       "query": [
@@ -1745,21 +1745,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-22",
+        "next_check": "2026-11-23",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-22",
+      "retry_at": "2026-11-23",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|易拉架印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-22-549df6a371",
+      "task_id": "GSC-MEASURE-2026-11-23-549df6a371",
       "source": "latest_gsc_delta",
       "cluster": "喜帖印刷",
       "query": [
@@ -1795,21 +1795,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-22",
+        "next_check": "2026-11-23",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-22",
+      "retry_at": "2026-11-23",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|喜帖印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-22-c3807750ae",
+      "task_id": "GSC-MEASURE-2026-11-23-c3807750ae",
       "source": "latest_gsc_delta",
       "cluster": "小冊子印刷",
       "query": [
@@ -1845,21 +1845,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-22",
+        "next_check": "2026-11-23",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-22",
+      "retry_at": "2026-11-23",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|小冊子印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-22-cdc0931dc4",
+      "task_id": "GSC-MEASURE-2026-11-23-cdc0931dc4",
       "source": "latest_gsc_delta",
       "cluster": "證書印刷",
       "query": [
@@ -1895,14 +1895,14 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-22",
+        "next_check": "2026-11-23",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-22",
+      "retry_at": "2026-11-23",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
@@ -2005,7 +2005,7 @@
         "rows": {}
       },
       "owner_lane": "ZP-daily-content",
-      "status": "READY",
+      "status": "DONE",
       "priority": 78.0,
       "upstream_inputs": [
         "K3 2026-10-30 裁决单#5: rush 条件化不承诺24h",
@@ -2027,10 +2027,10 @@
         ]
       },
       "retry_at": "2026-11-28",
-      "exit_criteria": "Consume only the bounded scope, record deployment and independent online verification, then retest; DONE history is immutable.",
-      "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
       "result": "NOT_EXECUTED",
-      "execution_commit": null,
+      "execution_commit": "7a400449",
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json"
     },
     {
@@ -2688,7 +2688,7 @@
         }
       },
       "owner_lane": "ZP-blog-deepfix",
-      "status": "READY",
+      "status": "DONE",
       "priority": 0.72,
       "upstream_inputs": [
         ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
@@ -2703,17 +2703,17 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "D1/D2 + 7/14/28d after actual deployment",
+        "next_check": "2026-12-01 (7d after deploy)",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": null,
-      "exit_criteria": "Consume only the bounded scope, record deployment and independent online verification, then retest; DONE history is immutable.",
-      "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
-      "result": "Same material differs 3-14x across guide/category/PDP; guide price table lacks size/qty/process conditions",
+      "retry_at": "2026-12-01",
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "DONE+DEPLOYED 2026-11-22: 复核实测 sticker-guide 已无 10-30 诊断所指「材質參考價表 HK$0.5-1.5/1.2-3/2-5」（git -S 无该字符串历史，系此前批次整体重写）；现行全文按 SKU 牌價口径（PVC HK$0.22 起/透明 0.38/可移 0.45/異形 0.58/燙金 0.78/防偽 1.15，均带 10 張起印 + SKU 引用），符合 D2/D6「SKU+材質+數量一致才保留，否则改成本构成+报价入口」。零新增改动（P1-3b 判定为已被前批完成，不重复劳动 per 幂等铁律）",
       "execution_commit": null,
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json"
     },
@@ -2956,23 +2956,22 @@
   ],
   "lane_assignments": {
     "ZP-gsc-feedback": [
-      "GSC-MEASURE-2026-11-22-f2bc40ee31",
-      "GSC-MEASURE-2026-11-22-7dfc8ccac4",
-      "GSC-MEASURE-2026-11-22-8ba60bd637",
-      "GSC-MEASURE-2026-11-22-4c5ebffbea",
-      "GSC-MEASURE-2026-11-22-ffa9859a1b",
-      "GSC-MEASURE-2026-11-22-2d5ea01d64",
-      "GSC-MEASURE-2026-11-22-549df6a371",
-      "GSC-MEASURE-2026-11-22-c3807750ae",
-      "GSC-MEASURE-2026-11-22-cdc0931dc4"
+      "GSC-MEASURE-2026-11-23-f2bc40ee31",
+      "GSC-MEASURE-2026-11-23-7dfc8ccac4",
+      "GSC-MEASURE-2026-11-23-8ba60bd637",
+      "GSC-MEASURE-2026-11-23-4c5ebffbea",
+      "GSC-MEASURE-2026-11-23-ffa9859a1b",
+      "GSC-MEASURE-2026-11-23-2d5ea01d64",
+      "GSC-MEASURE-2026-11-23-549df6a371",
+      "GSC-MEASURE-2026-11-23-c3807750ae",
+      "GSC-MEASURE-2026-11-23-cdc0931dc4"
     ],
     "ZP-weekly-meta": [
-      "GSC-FIX-2026-11-22-87656b1b2c"
+      "GSC-FIX-2026-11-23-87656b1b2c"
     ],
     "ZP-daily-content": [],
     "ZP-blog-deepfix": [
-      "FIX-20261030-BLOG-CERT-PHRASES",
-      "FIX-20261030-STICKER-PRICE-THREE-LAYER"
+      "FIX-20261030-BLOG-CERT-PHRASES"
     ],
     "ZP-k3-review": [
       "VERIFY-FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL"
@@ -2983,7 +2982,7 @@
   "lane_assignment_details": {
     "ZP-gsc-feedback": [
       {
-        "task_id": "GSC-MEASURE-2026-11-22-f2bc40ee31",
+        "task_id": "GSC-MEASURE-2026-11-23-f2bc40ee31",
         "source": "latest_gsc_delta",
         "cluster": "posters-zh-hk",
         "query": [
@@ -3019,21 +3018,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-22",
+          "next_check": "2026-11-23",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-22",
+        "retry_at": "2026-11-23",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|海報印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-22-7dfc8ccac4",
+        "task_id": "GSC-MEASURE-2026-11-23-7dfc8ccac4",
         "source": "latest_gsc_delta",
         "cluster": "flyers-zh-hk",
         "query": [
@@ -3069,21 +3068,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-22",
+          "next_check": "2026-11-23",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-22",
+        "retry_at": "2026-11-23",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|宣傳單張|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-22-8ba60bd637",
+        "task_id": "GSC-MEASURE-2026-11-23-8ba60bd637",
         "source": "latest_gsc_delta",
         "cluster": "印刷",
         "query": [
@@ -3119,21 +3118,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-22",
+          "next_check": "2026-11-23",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-22",
+        "retry_at": "2026-11-23",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-22-4c5ebffbea",
+        "task_id": "GSC-MEASURE-2026-11-23-4c5ebffbea",
         "source": "latest_gsc_delta",
         "cluster": "comiket-ja",
         "query": [
@@ -3169,21 +3168,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-22",
+          "next_check": "2026-11-23",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-22",
+        "retry_at": "2026-11-23",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|コミケ 印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-22-ffa9859a1b",
+        "task_id": "GSC-MEASURE-2026-11-23-ffa9859a1b",
         "source": "latest_gsc_delta",
         "cluster": "教材 印刷製本",
         "query": [
@@ -3219,21 +3218,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-22",
+          "next_check": "2026-11-23",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-22",
+        "retry_at": "2026-11-23",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|教材 印刷製本|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-22-2d5ea01d64",
+        "task_id": "GSC-MEASURE-2026-11-23-2d5ea01d64",
         "source": "latest_gsc_delta",
         "cluster": "易拉架印刷",
         "query": [
@@ -3269,21 +3268,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-22",
+          "next_check": "2026-11-23",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-22",
+        "retry_at": "2026-11-23",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|易拉架印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-22-549df6a371",
+        "task_id": "GSC-MEASURE-2026-11-23-549df6a371",
         "source": "latest_gsc_delta",
         "cluster": "喜帖印刷",
         "query": [
@@ -3319,21 +3318,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-22",
+          "next_check": "2026-11-23",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-22",
+        "retry_at": "2026-11-23",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|喜帖印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-22-c3807750ae",
+        "task_id": "GSC-MEASURE-2026-11-23-c3807750ae",
         "source": "latest_gsc_delta",
         "cluster": "小冊子印刷",
         "query": [
@@ -3369,21 +3368,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-22",
+          "next_check": "2026-11-23",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-22",
+        "retry_at": "2026-11-23",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|小冊子印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-22-cdc0931dc4",
+        "task_id": "GSC-MEASURE-2026-11-23-cdc0931dc4",
         "source": "latest_gsc_delta",
         "cluster": "證書印刷",
         "query": [
@@ -3419,14 +3418,14 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-22",
+          "next_check": "2026-11-23",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-22",
+        "retry_at": "2026-11-23",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
@@ -3435,7 +3434,7 @@
     ],
     "ZP-weekly-meta": [
       {
-        "task_id": "GSC-FIX-2026-11-22-87656b1b2c",
+        "task_id": "GSC-FIX-2026-11-23-87656b1b2c",
         "source": "latest_gsc_delta",
         "cluster": "食品包裝印刷",
         "query": [
@@ -3471,14 +3470,14 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-22",
+          "next_check": "2026-11-23",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-22",
+        "retry_at": "2026-11-23",
         "exit_criteria": "Record SERP/snippet evidence and one bounded proposal, or HOLD with an explicit blocker; deployment is a separate task.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "NOT_CONSECUTIVE",
@@ -3526,66 +3525,6 @@
         "exit_criteria": "Consume only the bounded scope, record deployment and independent online verification, then retest; DONE history is immutable.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "result": null,
-        "execution_commit": null,
-        "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json"
-      },
-      {
-        "task_id": "FIX-20261030-STICKER-PRICE-THREE-LAYER",
-        "source": "strategy_task_queue",
-        "cluster": "stickers-zh-hk",
-        "query": [
-          "貼紙印刷",
-          "貼紙訂製"
-        ],
-        "baseline": {
-          "status": "AVAILABLE",
-          "scope": "all-country GSC query rows; no query/page/country join inferred",
-          "window": "2026-10-14..2026-11-10",
-          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
-          "rows": {
-            "貼紙印刷": {
-              "impressions": 179,
-              "clicks": 0,
-              "ctr_pct": 0.0,
-              "position": 29.94,
-              "export_date": "2026-11-19"
-            },
-            "貼紙訂製": {
-              "impressions": 65,
-              "clicks": 0,
-              "ctr_pct": 0.0,
-              "position": 28.72,
-              "export_date": "2026-11-19"
-            }
-          }
-        },
-        "owner_lane": "ZP-blog-deepfix",
-        "status": "READY",
-        "priority": 0.72,
-        "upstream_inputs": [
-          ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
-          "線上探針 2026-10-30 21:45（三層價格集實抽）",
-          ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
-          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json"
-        ],
-        "approval_gate": "K3 2026-11-13 CT-20261113-D1-D6 D2/D6: 指南价格仅在SKU+材质+尺寸+数量+工艺一致时保留；否则撤下价格表数字，改成本构成与报价入口。",
-        "write_scope": [
-          "src/data/blog-data/zh-hk.json (sticker-buying-guide price table only; category writes removed)"
-        ],
-        "production_deploy": null,
-        "online_verify": null,
-        "retest": {
-          "next_check": "D1/D2 + 7/14/28d after actual deployment",
-          "required_windows": [
-            "7d",
-            "14d",
-            "28d"
-          ]
-        },
-        "retry_at": null,
-        "exit_criteria": "Consume only the bounded scope, record deployment and independent online verification, then retest; DONE history is immutable.",
-        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
-        "result": "Same material differs 3-14x across guide/category/PDP; guide price table lacks size/qty/process conditions",
         "execution_commit": null,
         "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json"
       }
@@ -3654,20 +3593,10 @@
     {
       "lane": "ZP-daily-content",
       "state": "Ready",
-      "last": "2026-11-20 21:17:01",
-      "next": "2026-11-22 21:17:00",
-      "last_task_result": 0,
-      "status": "OBSERVED",
-      "natural_recovery": "NOT_PROVEN",
-      "evidence": ".hermes/tmp/scheduler-inspection-20261114.json"
-    },
-    {
-      "lane": "ZP-gsc-feedback",
-      "state": "Ready",
-      "last": "2026-11-21 20:13:01",
-      "next": "2026-11-22 20:13:00",
-      "last_task_result": 0,
-      "status": "OBSERVED",
+      "last": "2026-11-23 09:24:24",
+      "next": "2026-11-23 21:17:00",
+      "last_task_result": 2147946720,
+      "status": "BLOCKED_INFRA",
       "natural_recovery": "NOT_PROVEN",
       "evidence": ".hermes/tmp/scheduler-inspection-20261114.json"
     },
@@ -3684,18 +3613,8 @@
     {
       "lane": "ZP-blog-deepfix",
       "state": "Ready",
-      "last": "2026-11-15 18:25:40",
+      "last": "2026-11-22 16:29:21",
       "next": "2026-11-28 23:47:00",
-      "last_task_result": 2147946720,
-      "status": "BLOCKED_INFRA",
-      "natural_recovery": "NOT_PROVEN",
-      "evidence": ".hermes/tmp/scheduler-inspection-20261114.json"
-    },
-    {
-      "lane": "ZP-monthly-matrix",
-      "state": "Ready",
-      "last": "2026-11-01 17:42:14",
-      "next": "2026-12-01 12:13:00",
       "last_task_result": 2147946720,
       "status": "BLOCKED_INFRA",
       "natural_recovery": "NOT_PROVEN",
@@ -3704,8 +3623,8 @@
     {
       "lane": "ZP-k3-review",
       "state": "Ready",
-      "last": "2026-11-21 08:03:15",
-      "next": "2026-11-23 07:10:00",
+      "last": "2026-11-23 09:24:24",
+      "next": "2026-11-24 07:10:00",
       "last_task_result": 2147946720,
       "status": "BLOCKED_INFRA",
       "natural_recovery": "NOT_PROVEN",

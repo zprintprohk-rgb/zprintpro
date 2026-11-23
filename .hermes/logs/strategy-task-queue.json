@@ -1016,7 +1016,7 @@
    "status": "DONE",
    "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
    "created_at": "2026-11-21T20:05:00+08:00",
-   "result": "NOT_EXECUTED",
+   "result": "EXECUTED 2026-11-23 (2 passes). Pass 1: 7a400449 conditioned doujin zh x2 + ja feature/longDescription (4 places). Pass 2 (this run, pending wrapper commit): closed 5 residual 24h rush claims in the same products.ts doujin block (descriptionEn, descriptionJa, turnaround, longDescriptionEn, longDescriptionJa); products.ts now 0 hits for 24時間 / 24-hour rush. Wide-surface residual (products-content.ts mis-keyed block, product-faqs.ts, category-seo-content.ts, category-conversion-blocks.ts, sku-seo-data.ts via CSV source, blog-posts.ts, blog-data zh/en/ja, seo.ts title/desc, category page ja H1, comiket-c109 page) is registered in .hermes/logs/2026-11-23-ZP-daily-content.md and needs its own READY task; titles remain frozen.",
    "production_deploy": null,
    "online_verify": null,
    "next_check": "2026-11-28",

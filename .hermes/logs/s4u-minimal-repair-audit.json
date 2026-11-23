@@ -1,0 +1,88 @@
+﻿{
+    "audited_at":  "2026-11-23 19:10:16 +08:00",
+    "mode":  "after_apply_all_unverified",
+    "administrator":  true,
+    "note":  "Full S4U rollout applied after explicit canary confirmation. Natural four-party verification is still required.",
+    "tasks":  [
+                  {
+                      "Name":  "ZP-daily-content",
+                      "State":  "Ready",
+                      "RunAs":  "Administrator",
+                      "RunLevel":  "Highest",
+                      "LogonType":  "S4U",
+                      "LastTaskResult":  2147946720,
+                      "LastRunTime":  "11/23/2026 09:24:24",
+                      "NextRunTime":  "11/23/2026 21:17:00"
+                  },
+                  {
+                      "Name":  "ZP-gsc-feedback",
+                      "State":  "Ready",
+                      "RunAs":  "Administrator",
+                      "RunLevel":  "Highest",
+                      "LogonType":  "S4U",
+                      "LastTaskResult":  2147946720,
+                      "LastRunTime":  "11/23/2026 09:24:24",
+                      "NextRunTime":  "11/23/2026 20:13:00"
+                  },
+                  {
+                      "Name":  "ZP-weekly-meta",
+                      "State":  "Ready",
+                      "RunAs":  "Administrator",
+                      "RunLevel":  "Highest",
+                      "LogonType":  "S4U",
+                      "LastTaskResult":  0,
+                      "LastRunTime":  "11/20/2026 20:52:00",
+                      "NextRunTime":  "11/27/2026 20:52:00"
+                  },
+                  {
+                      "Name":  "ZP-blog-deepfix",
+                      "State":  "Ready",
+                      "RunAs":  "Administrator",
+                      "RunLevel":  "Highest",
+                      "LogonType":  "S4U",
+                      "LastTaskResult":  2147946720,
+                      "LastRunTime":  "11/22/2026 16:29:21",
+                      "NextRunTime":  "11/28/2026 23:47:00"
+                  },
+                  {
+                      "Name":  "ZP-monthly-matrix",
+                      "State":  "Ready",
+                      "RunAs":  "Administrator",
+                      "RunLevel":  "Highest",
+                      "LogonType":  "S4U",
+                      "LastTaskResult":  2147946720,
+                      "LastRunTime":  "11/01/2026 17:42:14",
+                      "NextRunTime":  "12/01/2026 12:13:00"
+                  },
+                  {
+                      "Name":  "ZP-k3-review",
+                      "State":  "Ready",
+                      "RunAs":  "Administrator",
+                      "RunLevel":  "Highest",
+                      "LogonType":  "S4U",
+                      "LastTaskResult":  2147946720,
+                      "LastRunTime":  "11/23/2026 09:24:24",
+                      "NextRunTime":  "11/24/2026 07:10:00"
+                  },
+                  {
+                      "Name":  "ZP-cron-watchdog",
+                      "State":  "Ready",
+                      "RunAs":  "Administrator",
+                      "RunLevel":  "Highest",
+                      "LogonType":  "S4U",
+                      "LastTaskResult":  1,
+                      "LastRunTime":  "11/23/2026 18:53:10",
+                      "NextRunTime":  "11/24/2026 06:43:00"
+                  },
+                  {
+                      "Name":  "ZP-ai-crawler-recheck-20261124",
+                      "State":  "Ready",
+                      "RunAs":  "Administrator",
+                      "RunLevel":  "Highest",
+                      "LogonType":  "S4U",
+                      "LastTaskResult":  267011,
+                      "LastRunTime":  "11/30/1999 00:00:00",
+                      "NextRunTime":  "11/24/2026 13:37:00"
+                  }
+              ]
+}
