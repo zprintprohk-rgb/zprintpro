@@ -11686,9 +11686,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>白カードと特殊紙の違いは？</strong></summary><p>350g 白カードは表面が滑らかで色再現性が高く低コスト; 特殊紙 (レイド紙、ダイヤモンド紙) はテクスチャがあり単価 50-100% 高、限定版プレミアム商品に最適。</p></details>
 `,
   },
-  'foil-wedding-invitations': {
+  'doujinshi-printing': {
     longDescription: `<h3>同人誌印刷 — Comiket / 即售會 / 創作活動特化服務</h3>
-<p>專為 Comiket、即售會、創作活動優化的同人誌印刷服務。封面彩色 + 內頁單色標準配置起,另有封面內頁全彩色升級版可選。10 本起印的低起訂量,個人社團 / 新手作者也能輕鬆下單。Comiket 會期前 24 小時特急対応,完售補印 / 臨時追加都來得及。</p>
+<p>專為 Comiket、即售會、創作活動優化的同人誌印刷服務。封面彩色 + 內頁單色標準配置起,另有封面內頁全彩色升級版可選。10 本起印的低起訂量,個人社團 / 新手作者也能輕鬆下單。Comiket 前特急対応（按稿件與排期報價確認）,完售補印 / 臨時追加都來得及。</p>
 
 <h3>尺寸・規格</h3>
 <table>
@@ -11701,18 +11701,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>Comiket・即售會前特急対応</h3>
-<p>智印港 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
+<p>智印港 提供 Comiket 前特急対応（按稿件與排期報價確認）,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低可以印多少本？</strong></summary><p>10 本起印。個人社團及獨立作者都歡迎下單。</p></details>
-<details class="my-2"><summary><strong>Comiket 前特急対応可以嗎？</strong></summary><p>可以,會期前 24 小時特急対応(部分 SKU 適用,加收特急費用)。詳情請透過 WhatsApp 洽詢。</p></details>
+<details class="my-2"><summary><strong>Comiket 前特急対応可以嗎？</strong></summary><p>可以,Comiket 前特急対応(按稿件與排期報價確認,部分 SKU 適用,加收特急費用)。詳情請透過 WhatsApp 洽詢。</p></details>
 <details class="my-2"><summary><strong>DHL 直送日本需時多久？</strong></summary><p>深圳自營工廠 DHL Express 直送日本,2-4 個工作天到貨。Comiket 會場收貨及自宅收貨皆可。</p></details>
 <details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
 <p><em>智印港 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、品質管理。</em></p>`,
     longDescriptionEn: `<h3>Doujinshi Printing — Comiket & Doujin Event Specialized Service</h3>
-<p>Optimized for Comiket, doujin events, and creative exhibitions. Standard full-color cover + mono interior, with premium full-color cover-and-interior upgrades. Low MOQ of 10 books makes this accessible for individual circles and beginners. 24-hour rush production available before Comiket for last-minute reprints.</p>
+<p>Optimized for Comiket, doujin events, and creative exhibitions. Standard full-color cover + mono interior, with premium full-color cover-and-interior upgrades. Low MOQ of 10 books makes this accessible for individual circles and beginners. Rush production before Comiket is quoted per artwork and schedule for last-minute reprints.</p>
 
 <h3>Specifications</h3>
 <table>
@@ -11724,19 +11724,19 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   </tbody>
 </table>
 
-<h3>24-Hour Rush Production Before Comiket</h3>
-<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket doujinshi orders. Our Asia production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+<h3>Rush Production Before Comiket</h3>
+<p>ZprintPro offers rush production for last-minute reprints and Comiket doujinshi orders, quoted per artwork and schedule. Our Asia production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 books. Individual circles and independent artists are welcome to order.</p></details>
-<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for doujinshi (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, rush production is available for doujinshi (quoted per artwork and schedule; rush fee applies). Contact us via WhatsApp for details.</p></details>
 <details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Asia production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
 <details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
 <details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
 
 <p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Our Asia production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management.</em></p>`,
     longDescriptionJa: `<h3>同人誌・推し活特化印刷サービス</h3>
-<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p>
+<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は特急対応（原稿・日程によりお見積り）で、在庫切れの追加印刷も迅速対応。</p>
 
 <h3>サイズ・仕様</h3>
 <table>
@@ -11750,11 +11750,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>コミケ・即売会前 特急対応</h3>
-<p>ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+<p>ZprintPro はコミケ前特急対応（原稿・日程によりお見積り）で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
 
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
-<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は特急対応可能（原稿・日程によりお見積り、一部 SKU、追加料金適用）。詳細は WhatsApp でお問い合わせください。</p></details>
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>

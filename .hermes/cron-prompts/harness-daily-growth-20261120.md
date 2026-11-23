@@ -1,6 +1,6 @@
 # ZP-daily-content｜每日增长总控（GSC＋交易页）2026-11-20 精简版
 
-调度：每天 18:17，Asia/Shanghai。执行位置：DeepSeek Harness 模型入口，不调用 Windows 旧 wrapper。
+调度：每天 21:17，Asia/Shanghai（2026-11-23 对齐现行排程，原草稿 18:17 作废）。执行位置：DeepSeek Harness 模型入口，不调用 Windows 旧 wrapper。
 唯一角色：先更新搜索证据，再完成最多一个已批准的交易页小批；不是 Blog 生产者，也不是自我验收者。
 
 ## 0. 开工必读与停止条件

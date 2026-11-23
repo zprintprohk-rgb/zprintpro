@@ -1150,9 +1150,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '同人誌印刷はどこがいい？コミケに間に合う？',
       },
       answer: {
-        'zh-hk': '智印港同人誌 10 本起印，A5/B5 標準尺寸，封面彩色、內頁單色，Comiket 會期前 24 小時特急對應，DHL 直送日本 2-4 個工作天，繁中/日文客服雙語支援。',
-        en: 'ZprintPro prints doujinshi from 10 copies — A5/B5, color cover with monochrome interior, 24-hour rush support before Comiket, DHL to Japan in 2-4 business days with Chinese/Japanese support.',
-        ja: 'ZprintProは10冊から、A5/B5、表紙カラー・本文モノクロ、コミケ前24時間特急対応、DHLで2-4日。日本語サポートあり。',
+        'zh-hk': '智印港同人誌 10 本起印，A5/B5 標準尺寸，封面彩色、內頁單色，Comiket 前特急對應（按稿件與排期報價確認），DHL 直送日本 2-4 個工作天，繁中/日文客服雙語支援。',
+        en: 'ZprintPro prints doujinshi from 10 copies — A5/B5, color cover with monochrome interior, rush support before Comiket (quoted per artwork and schedule), DHL to Japan in 2-4 business days with Chinese/Japanese support.',
+        ja: 'ZprintProは10冊から、A5/B5、表紙カラー・本文モノクロ、コミケ前特急対応（原稿・日程によりお見積り）、DHLで2-4日。日本語サポートあり。',
       },
     },
     {

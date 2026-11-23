@@ -1,6 +1,6 @@
 # ZP-blog-deepfix｜Blog 单篇补缺（恢复生产）2026-11-20 精简版
 
-调度：每周六 19:08，Asia/Shanghai。执行位置：DeepSeek Harness 模型入口，不调用 Windows 旧 wrapper。
+调度：每周六 23:47，Asia/Shanghai（2026-11-23 对齐现行排程，原草稿 19:08 作废）。执行位置：DeepSeek Harness 模型入口，不调用 Windows 旧 wrapper。
 唯一角色：每轮最多复写或新写一篇确有信息增益的文章；不再把“只读验收”当本入口默认职责，也不为凑产量硬写。
 
 ## 0. 开工与生产门

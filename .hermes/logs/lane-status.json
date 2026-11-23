@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T08:28:50.347Z",
-  "generated_local": "2026-11-22 16:28",
+  "generated_at": "2026-11-23T11:13:34.137Z",
+  "generated_local": "2026-11-23 19:13",
   "repo": "F:\\zprintpro-nextjs",
   "source_of_truth": "docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md",
   "trigger_layer": "Windows Task Scheduler (\\ZP-*) -> .hermes/cron-run/*.cmd -> dsh --profile headless",
@@ -43,7 +43,11 @@
   },
   "need_human": [
     {
-      "problem": "ZP-gsc-feedback 2026-11-22 -> STALE",
+      "problem": "ZP-daily-content 2026-11-23 -> STALE",
+      "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
+    },
+    {
+      "problem": "ZP-daily-content scheduler LastTaskResult=2147946720",
       "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
     },
     {
@@ -59,11 +63,7 @@
       "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
     },
     {
-      "problem": "ZP-monthly-matrix scheduler LastTaskResult=2147946720",
-      "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
-    },
-    {
-      "problem": "ZP-k3-review 2026-11-22 -> MISSING",
+      "problem": "ZP-k3-review 2026-11-23 -> MISSING",
       "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
     },
     {
@@ -81,9 +81,9 @@
       "scheduler": {
         "Name": "ZP-daily-content",
         "State": "Ready",
-        "Last": "2026-11-20 21:17:01",
-        "Result": 0,
-        "Next": "2026-11-22 21:17:00"
+        "Last": "2026-11-23 09:24:24",
+        "Result": 2147946720,
+        "Next": "2026-11-23 21:17:00"
       },
       "lastReportFile": {
         "file": "2026-11-20-ZP-daily-content.md",
@@ -101,48 +101,32 @@
         "wrapperExit": 0
       },
       "lastRunRecord": {
-        "run_id": "ZP-daily-content-20261120T212048-10844",
+        "run_id": "ZP-daily-content-20261123T181708-harness",
         "lane": "ZP-daily-content",
-        "trigger": "schtasks",
-        "fired_at": "2026-11-20 21:20:48",
-        "ended_at": "2026-11-20 21:20:48",
-        "idempotency_key": "52979e34482394fe",
-        "key_consumed": true,
+        "trigger": "dsh-harness",
+        "fired_at": "2026-11-23 18:17:08",
+        "ended_at": "2026-11-23T19:0x:00+08:00",
+        "idempotency_key": "harness-20261123-doujin-rush-residual-exec",
         "dsh_exit": 0,
-        "wrapper_exit": 0,
-        "verdict": "PARTIAL",
+        "wrapper_exit": null,
+        "verdict": "OK",
         "state": "completed",
         "blocked_reason": "",
         "guard": {
           "ok": true
         },
-        "report": ".hermes/logs/2026-11-20-ZP-daily-content.md",
+        "report": ".hermes/logs/2026-11-23-ZP-daily-content.md",
         "report_auto_generated": false,
-        "files": [],
-        "pushed": false,
-        "head": "c851ec68",
-        "source": "lane-git-commit.py"
+        "files": [
+          "src/data/products.ts",
+          ".hermes/logs/2026-11-23-ZP-daily-content.md"
+        ],
+        "pushed": true,
+        "head": "7a400449",
+        "source": "harness-lane",
+        "note": "执行 FIX-20261121-DOUJIN-RUSH-RESIDUAL (K3 #5): doujin 4 处 24小時特急->条件化 (zh x2 + ja feature/longDesc 披露); a4-flyers 证据未复现登记; 貼紙第七窗 30.1 (streak 止步); tsc 基线 54->0 (真实 exit0); 11-21/11-22 两轮缺口登记"
       },
       "days": [
-        {
-          "day": "2026-11-16",
-          "expected": "21:17",
-          "status": "OK",
-          "state": "completed",
-          "recovery_plan": {
-            "action": "none",
-            "reason": "无异常",
-            "evidence": null,
-            "retry_after_days": null
-          },
-          "notes": [],
-          "exit": 0,
-          "report": "2026-11-16-ZP-daily-content.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "harness-20261116-sticker-zh-truth-exec"
-          ]
-        },
         {
           "day": "2026-11-17",
           "expected": "21:17",
@@ -245,96 +229,12 @@
         {
           "day": "2026-11-22",
           "expected": "21:17",
-          "status": "PENDING",
-          "state": "pending",
-          "recovery_plan": {
-            "action": "none",
-            "reason": "触发点未到或宽限期内",
-            "evidence": null,
-            "retry_after_days": null
-          },
-          "notes": [],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        }
-      ],
-      "verdict": "PENDING",
-      "state": "pending",
-      "recovery_plan": {
-        "action": "none",
-        "reason": "触发点未到或宽限期内",
-        "evidence": null,
-        "retry_after_days": null
-      }
-    },
-    {
-      "task": "ZP-gsc-feedback",
-      "schedule": {
-        "kind": "DAILY"
-      },
-      "start": "20:13",
-      "scheduler": {
-        "Name": "ZP-gsc-feedback",
-        "State": "Ready",
-        "Last": "2026-11-21 20:13:01",
-        "Result": 0,
-        "Next": "2026-11-22 20:13:00"
-      },
-      "lastReportFile": {
-        "file": "2026-11-21-ZP-gsc-feedback.md",
-        "dateToken": "2026-11-21",
-        "mtime": "2026-11-22T08:28:33.814Z"
-      },
-      "lastWrapperRun": {
-        "start": "2026-11-21 20:13:02",
-        "end": "0",
-        "dshExit": 0,
-        "guardBlocked": false,
-        "commitOnly": false,
-        "runsTotal": 42,
-        "logFile": ".hermes/logs/cron-ZP-gsc-feedback.log",
-        "wrapperExit": 0
-      },
-      "lastRunRecord": {
-        "run_id": "ZP-gsc-feedback-20261121T201302-host-finalize",
-        "lane": "ZP-gsc-feedback",
-        "trigger": "schtasks",
-        "phase": "host-finalize",
-        "fired_at": "2026-11-21 20:13:02",
-        "ended_at": "2026-11-22 16:28:43",
-        "idempotency_key": "b93ef5a6fc086a2d",
-        "key_consumed": true,
-        "dsh_exit": null,
-        "wrapper_exit": null,
-        "verdict": "PARTIAL",
-        "state": "completed",
-        "blocked_reason": "dsh 会话异常(20h 僵尸, 管道死锁), wrapper cmd 21312 非提升会话不可 kill; 报告产物完整(VERDICT/CONSUMED/DELIVERED/NEXT 齐), host-side 收尾 commit/push/bus",
-        "guard": {
-          "ok": true
-        },
-        "report": ".hermes/logs/2026-11-21-ZP-gsc-feedback.md",
-        "report_auto_generated": false,
-        "files": [
-          ".hermes/logs/2026-11-21-ZP-gsc-feedback.md",
-          ".hermes/logs/gsc-daily-anomaly-2026-11-21.json",
-          ".hermes/logs/flywheel-learning-ledger.json"
-        ],
-        "pushed": true,
-        "head": "pending",
-        "source": "host-finalize-manual"
-      },
-      "days": [
-        {
-          "day": "2026-11-16",
-          "expected": "20:13",
           "status": "MISSING",
           "state": "blocked",
           "recovery_plan": {
             "action": "request_human",
             "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-gsc-feedback | Get-ScheduledTaskInfo",
+            "evidence": "Get-ScheduledTask -TaskName ZP-daily-content | Get-ScheduledTaskInfo",
             "retry_after_days": null
           },
           "notes": [
@@ -346,129 +246,24 @@
           "idempotency_keys": []
         },
         {
-          "day": "2026-11-17",
-          "expected": "20:13",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-gsc-feedback | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-11-18",
-          "expected": "20:13",
-          "status": "FAILED",
-          "state": "failed",
-          "recovery_plan": {
-            "action": "retry",
-            "reason": "dsh/wrapper 退出码 0",
-            "evidence": ".hermes/logs/cron-ZP-gsc-feedback.log",
-            "retry_after_days": 0
-          },
-          "notes": [
-            "pre-commit guard rejected 1 production files; no report commit/push",
-            "guard blocked src commit",
-            "guard-blocked message seen in console log (suspected: log may also carry human-session output)"
-          ],
-          "exit": 0,
-          "report": "2026-11-18-ZP-gsc-feedback.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "5b809ee47c5e6b03"
-          ]
-        },
-        {
-          "day": "2026-11-19",
-          "expected": "20:13",
-          "status": "FAILED",
-          "state": "failed",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "dsh 凭据/模型/运行时失败; 需管理员修复后做一次受控 smoke test",
-            "evidence": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\repair-dsh-scheduler-credential.ps1",
-            "retry_after_days": null
-          },
-          "notes": [
-            "dsh exited 1; model execution failed before host finalize",
-            "report is AUTO-FILLED or lacks a complete OK/PARTIAL/NO_OP contract (2026-11-19-ZP-gsc-feedback.failure.md)"
-          ],
-          "exit": 1,
-          "report": "2026-11-19-ZP-gsc-feedback.failure.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "e0e52600e993ad2a"
-          ]
-        },
-        {
-          "day": "2026-11-20",
-          "expected": "20:13",
-          "status": "PARTIAL",
-          "state": "completed",
-          "recovery_plan": {
-            "action": "modify_payload",
-            "reason": "PARTIAL 已有真实交付, 不是空转; 下轮只处理报告 NEXT 与缺失外部输入, 禁止重做 DELIVERED",
-            "evidence": ".hermes/logs/run-context-ZP-gsc-feedback.json",
-            "retry_after_days": null
-          },
-          "notes": [],
-          "exit": 0,
-          "report": "2026-11-20-ZP-gsc-feedback.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "323b32262db4c17c"
-          ]
-        },
-        {
-          "day": "2026-11-21",
-          "expected": "20:13",
-          "status": "PARTIAL",
-          "state": "completed",
-          "recovery_plan": {
-            "action": "modify_payload",
-            "reason": "PARTIAL 已有真实交付, 不是空转; 下轮只处理报告 NEXT 与缺失外部输入, 禁止重做 DELIVERED",
-            "evidence": ".hermes/logs/run-context-ZP-gsc-feedback.json",
-            "retry_after_days": null
-          },
-          "notes": [
-            "dsh 会话异常(20h 僵尸, 管道死锁), wrapper cmd 21312 非提升会话不可 kill; 报告产物完整(VERDICT/CONSUMED/DELIVERED/NEXT 齐), host-side 收尾 commit/push/bus"
-          ],
-          "exit": 0,
-          "report": "2026-11-21-ZP-gsc-feedback.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "b93ef5a6fc086a2d"
-          ]
-        },
-        {
-          "day": "2026-11-22",
-          "expected": "20:13",
+          "day": "2026-11-23",
+          "expected": "21:17",
           "status": "STALE",
           "state": "quarantined",
           "recovery_plan": {
             "action": "retry",
             "reason": "跑过但无当日报告 (空转/零产出)",
-            "evidence": ".hermes/logs/cron-ZP-gsc-feedback.log",
+            "evidence": ".hermes/logs/cron-ZP-daily-content.log",
             "retry_after_days": 0
           },
           "notes": [
-            "missing exact same-day lane report: .hermes/logs/2026-11-22-ZP-gsc-feedback.md | .hermes/logs/2026-11-22-gsc-feedback.md",
-            "report is AUTO-FILLED or lacks a complete OK/PARTIAL/NO_OP contract (2026-11-22-ZP-gsc-feedback.failure.md)"
+            "report is AUTO-FILLED or lacks a complete OK/PARTIAL/NO_OP contract (2026-11-23-ZP-daily-content.md)"
           ],
           "exit": 0,
-          "report": "2026-11-22-ZP-gsc-feedback.failure.md",
+          "report": "2026-11-23-ZP-daily-content.md",
           "reportStrict": true,
           "idempotency_keys": [
-            "b93ef5a6fc086a2d"
+            "harness-20261123-doujin-rush-residual-exec"
           ]
         }
       ],
@@ -477,7 +272,7 @@
       "recovery_plan": {
         "action": "retry",
         "reason": "跑过但无当日报告 (空转/零产出)",
-        "evidence": ".hermes/logs/cron-ZP-gsc-feedback.log",
+        "evidence": ".hermes/logs/cron-ZP-daily-content.log",
         "retry_after_days": 0
       }
     },
@@ -584,7 +379,7 @@
       "scheduler": {
         "Name": "ZP-blog-deepfix",
         "State": "Ready",
-        "Last": "2026-11-15 18:25:40",
+        "Last": "2026-11-22 16:29:21",
         "Result": 2147946720,
         "Next": "2026-11-28 23:47:00"
       },
@@ -660,57 +455,6 @@
       }
     },
     {
-      "task": "ZP-monthly-matrix",
-      "schedule": {
-        "kind": "MONTHLY",
-        "day": 1
-      },
-      "start": "12:13",
-      "scheduler": {
-        "Name": "ZP-monthly-matrix",
-        "State": "Ready",
-        "Last": "2026-11-01 17:42:14",
-        "Result": 2147946720,
-        "Next": "2026-12-01 12:13:00"
-      },
-      "lastReportFile": {
-        "file": "2026-10-10-ZP-monthly-matrix.md",
-        "dateToken": "2026-10-10",
-        "mtime": "2026-10-09T16:21:24.558Z"
-      },
-      "lastWrapperRun": null,
-      "lastRunRecord": {
-        "run_id": "ZP-monthly-matrix-20261010T002133",
-        "lane": "ZP-monthly-matrix",
-        "trigger": "schtasks",
-        "fired_at": "2026-10-10 00:21:33",
-        "ended_at": "2026-10-10 00:21:33",
-        "idempotency_key": "ebb042e850de538a",
-        "dsh_exit": null,
-        "wrapper_exit": 0,
-        "verdict": "OK",
-        "state": "completed",
-        "blocked_reason": "",
-        "guard": {
-          "ok": true
-        },
-        "report": ".hermes/logs/2026-10-10-ZP-monthly-matrix.md",
-        "files": [],
-        "pushed": false,
-        "head": "f6d84c82",
-        "source": "lane-git-commit.py"
-      },
-      "days": [],
-      "verdict": "UNKNOWN",
-      "state": "pending",
-      "recovery_plan": {
-        "action": "request_human",
-        "reason": "窗口内无应触发日, 但调度器 LastTaskResult=2147946720 (从未成功跑过)",
-        "evidence": "Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix",
-        "retry_after_days": null
-      }
-    },
-    {
       "task": "ZP-k3-review",
       "schedule": {
         "kind": "DAILY"
@@ -719,9 +463,9 @@
       "scheduler": {
         "Name": "ZP-k3-review",
         "State": "Ready",
-        "Last": "2026-11-21 08:03:15",
+        "Last": "2026-11-23 09:24:24",
         "Result": 2147946720,
-        "Next": "2026-11-23 07:10:00"
+        "Next": "2026-11-24 07:10:00"
       },
       "lastReportFile": {
         "file": "2026-11-13-ZP-k3-review.md",
@@ -764,25 +508,6 @@
         "source": "lane-git-commit.py"
       },
       "days": [
-        {
-          "day": "2026-11-16",
-          "expected": "07:10",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
         {
           "day": "2026-11-17",
           "expected": "07:10",
@@ -896,6 +621,25 @@
           "report": null,
           "reportStrict": null,
           "idempotency_keys": []
+        },
+        {
+          "day": "2026-11-23",
+          "expected": "07:10",
+          "status": "MISSING",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo",
+            "retry_after_days": null
+          },
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
         }
       ],
       "verdict": "MISSING",
@@ -913,9 +657,9 @@
     "scheduler": {
       "Name": "ZP-cron-watchdog",
       "State": "Ready",
-      "Last": "2026-11-21 08:03:15",
-      "Result": 2147946720,
-      "Next": "2026-11-23 06:43:00"
+      "Last": "2026-11-23 18:53:10",
+      "Result": 1,
+      "Next": "2026-11-24 06:43:00"
     }
   },
   "legacy_tasks_pending_removal": [
@@ -923,15 +667,25 @@
       "task": "ZprintPro-CronWatchdog-2125",
       "start": "21:25",
       "reason": "reads autoclaw jobs.json indices 5..9 (historical one-shot jobs, not the ZP lanes) -> PASS/FAIL meaningless; superseded by ZP-cron-watchdog"
+    },
+    {
+      "task": "ZP-gsc-feedback",
+      "start": "20:13",
+      "reason": "2026-11-23 consolidation: GSC feedback merged into ZP-daily-content (harness-daily-growth-20261120.md step 1); delete after S4U rollout, XML backup first"
+    },
+    {
+      "task": "ZP-monthly-matrix",
+      "start": "12:13",
+      "reason": "2026-11-23 consolidation: monthly review merged into ZP-weekly-meta on the first Friday of each month; delete after S4U rollout, XML backup first"
     }
   ],
   "problems": [
-    "ZP-gsc-feedback 2026-11-22 -> STALE",
+    "ZP-daily-content 2026-11-23 -> STALE",
+    "ZP-daily-content scheduler LastTaskResult=2147946720",
     "ZP-weekly-meta 2026-11-20 -> FAILED",
     "ZP-blog-deepfix 2026-11-21 -> MISSING",
     "ZP-blog-deepfix scheduler LastTaskResult=2147946720",
-    "ZP-monthly-matrix scheduler LastTaskResult=2147946720",
-    "ZP-k3-review 2026-11-22 -> MISSING",
+    "ZP-k3-review 2026-11-23 -> MISSING",
     "ZP-k3-review scheduler LastTaskResult=2147946720"
   ],
   "warnings": [

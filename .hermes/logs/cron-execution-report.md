@@ -134,3 +134,6 @@
 | 2026-11-20 20:58:53 | ZP-weekly-meta | FAILED(guard 拦下 src commit) (exit=4) | `.hermes/logs/2026-11-20-ZP-weekly-meta.md` | docs/assets/2026-11-20/gsc-money-queries-and-pages.json, docs/assets/2026-11-20/gsc-small-order-term-comparison.json, src/data/products.ts, src/data/sku-seo-data.ts, src/lib/price-data.generated.ts, src/lib/pricing.ts | NO_PUSH |
 | 2026-11-20 21:20:48 | ZP-daily-content | ✅ 完成 (exit=0) | `.hermes/logs/2026-11-20-ZP-daily-content.md` | NONE | NO_PUSH |
 | 2026-11-22 16:28:41 | ZP-gsc-feedback | STALE(invalid or missing same-day report) (exit=6) | `.hermes/logs/2026-11-22-ZP-gsc-feedback.failure.md` | NONE | NO_PUSH |
+| 2026-11-23 18:15:28 | ZP-cron-watchdog | ⚠️ 6 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | FAILED ZP-weekly-meta | MISSING ZP-blog-deepfix | MISSING ZP-k3-review | — |
+| 2026-11-23 18:53:18 | ZP-cron-watchdog | ⚠️ 7 条告警 | `cron-watchdog-alerts.md` (告警时才写) | STALE ZP-daily-content | FAILED ZP-weekly-meta | MISSING ZP-blog-deepfix | MISSING ZP-k3-review | — |
+| 2026-11-23 21:22:12 | ZP-daily-content | ✅ 完成 (exit=0) | `.hermes/logs/2026-11-23-ZP-daily-content.md` | src/data/products.ts, docs/assets/2026-11-23/ | ✅ push |

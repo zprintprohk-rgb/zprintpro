@@ -11,54 +11,36 @@
       "schedule": { "kind": "DAILY" },
       "start": "21:17",
       "timeoutSeconds": 3600,
-      "prompt": "zprintpro-daily-content-1x7w.md",
-      "reportGlob": "*-daily-content.md"
-    },
-    {
-      "task": "ZP-gsc-feedback",
-      "schedule": { "kind": "DAILY" },
-      "start": "20:13",
-      "timeoutSeconds": 3600,
-      "prompt": "zprintpro-gsc-feedback-loop.md",
-      "includeMatrix": true,
-      "reportGlob": "*-gsc-feedback.md",
-      "_note": "2026-10-24 K3 reschedule 22:43 -> 20:13 (GUI directive; same prompt + same report name kept; fires before daily-content 21:17 so the content lane consumes same-day GSC backfill)"
+      "prompt": "harness-daily-growth-20261120.md",
+      "reportGlob": "*-daily-content.md",
+      "_note": "2026-11-23 consolidation: GSC feedback merged into this lane (step 1 of harness-daily-growth-20261120.md); ZP-gsc-feedback retired. Schedule 21:17 unchanged (off-peak)."
     },
     {
       "task": "ZP-weekly-meta",
       "schedule": { "kind": "WEEKLY", "day": "FRI" },
       "start": "20:52",
-      "timeoutSeconds": 1800,
-      "prompt": "zprintpro-weekly-meta-refresh.md",
+      "timeoutSeconds": 3600,
+      "prompt": "harness-weekly-monthly-review-20261120.md",
       "reportGlob": "*-weekly-meta.md",
-      "_note": "2026-10-24 K3 reschedule 23:07 -> 20:52 (GUI directive; Track B slot + meta refresh; same prompt + same report name kept). OVERLAP WATCH: ZP-gsc-feedback now fires 20:13 (cap 3600s) before this lane on Fridays; lane.lock serializes, so if gsc-feedback still runs at 20:52 this lane gets BLOCKED (preflight exit 11, dsh NOT called)."
+      "_note": "2026-11-23 consolidation: monthly matrix merged into this lane on the first Friday of each month; ZP-monthly-matrix retired. Timeout raised 1800->3600 to cover monthly add-on. gsc-feedback retired, so Friday overlap watch is obsolete."
     },
     {
       "task": "ZP-blog-deepfix",
       "schedule": { "kind": "WEEKLY", "day": "SAT" },
       "start": "23:47",
       "timeoutSeconds": 3600,
-      "prompt": "zprintpro-blog-deepfix.md",
+      "prompt": "harness-blog-single-fix-20261120.md",
       "reportGlob": "*-blog-deepfix.md",
-      "_note": "2026-10-24 K3 reschedule 05:37 -> 23:47 (GUI directive asked Sat 21:17; 23:47 approved in-session instead: 21:17 collides same-minute with ZP-daily-content, lane.lock has no queue and BLOCKS one lane). 23:47 = first Saturday slot clear of daily-content 21:17 (+3600s cap ends 22:17) and gsc-feedback daily 20:13 (+3600s cap ends 21:13). Lane fires tonight 2026-10-24 23:47."
-    },
-    {
-      "task": "ZP-monthly-matrix",
-      "schedule": { "kind": "MONTHLY", "day": 1 },
-      "start": "12:13",
-      "timeoutSeconds": 3600,
-      "prompt": "zprintpro-monthly-matrix-audit.md",
-      "reportGlob": "*-monthly-matrix-audit.md",
-      "_note": "2026-10-24 K3 reschedule 06:13 -> 12:13 (GUI directive: monthly review + keyword matrix audit at noon; same prompt + same report name kept). Applied surgically via schtasks /change on task ZP-monthly-matrix (settings preserved; two-method verified schtasks+Get-ScheduledTask; evidence .hermes/logs/cron-retime-monthly-matrix-20261024-035026.log)."
+      "_note": "2026-11-23 consolidation: prompt switched to single-article production (max 1 per run, NO_OP legal). Schedule 23:47 unchanged."
     },
     {
       "task": "ZP-k3-review",
       "schedule": { "kind": "DAILY" },
       "start": "07:10",
       "timeoutSeconds": 1800,
-      "prompt": "k3-ceo-daily-review.md",
+      "prompt": "harness-independent-review-20261120.md",
       "reportGlob": "*-k3-daily-review.md",
-      "_note": "2026-10-09 K3 brain directive Part F-6: 7th entity, registration method A per k3-ceo-daily-review.md; fires after watchdog 06:43; settings patched (RestartCount=2/5m, MultipleInstances=IgnoreNew) by register-cron-tasks.ps1 Step 3b"
+      "_note": "2026-11-23 consolidation: prompt switched to independent verification + next-day bounded directives. Schedule 07:10 unchanged (fires after watchdog 06:43)."
     }
   ],
   "watchdog": {
@@ -72,6 +54,16 @@
       "task": "ZprintPro-CronWatchdog-2125",
       "start": "21:25",
       "reason": "reads autoclaw jobs.json indices 5..9 (historical one-shot jobs, not the ZP lanes) -> PASS/FAIL meaningless; superseded by ZP-cron-watchdog"
+    },
+    {
+      "task": "ZP-gsc-feedback",
+      "start": "20:13",
+      "reason": "2026-11-23 consolidation: GSC feedback merged into ZP-daily-content (harness-daily-growth-20261120.md step 1); delete after S4U rollout, XML backup first"
+    },
+    {
+      "task": "ZP-monthly-matrix",
+      "start": "12:13",
+      "reason": "2026-11-23 consolidation: monthly review merged into ZP-weekly-meta on the first Friday of each month; delete after S4U rollout, XML backup first"
     }
   ]
 }
