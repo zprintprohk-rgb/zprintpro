@@ -6698,10 +6698,10 @@ export const products: Product[] = [
       nameEn: 'Doujinshi Printing',
       nameJa: '同人誌印刷',
       title_zh: '同人誌印刷 | Comiket 對應 | 智印港',
-      description: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前 24 小時特急対応。 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
+      description: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前特急対応（按稿件與排期報價確認）。 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
       descriptionEn: 'Doujinshi printing for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
       descriptionJa: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
-      description_zh: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前 24 小時特急対応。',
+      description_zh: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前特急対応（按稿件與排期報價確認）。',
             price_range: '¥7,500〜/注文〜',
       basePrice: 7500,
     basePrice_en: 1245.0,
@@ -6746,7 +6746,7 @@ export const products: Product[] = [
         },
       },
       features: [
-        'Comiket 前 24 小時特急対応可',
+        'Comiket 前特急対応可議（按稿件與排期報價確認）',
         '10 本起印,少量対応',
         '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天',
         'FSC 認證紙材 / ISO 12647 色彩管理',
@@ -6791,7 +6791,7 @@ export const products: Product[] = [
 <h3>出血同安全區（入稿前必讀）</h3>
 <p>跨頁插畫記得預留 3mm 出血，重要線稿、對白同簽名放喺安全區（裁切線內 5mm）以內。騎馬釘裝訂要留意釘位預留：跨頁位預留 5mm 裝訂邊，避免重要畫面被釘書釘遮擋。PDF 入稿前將所有字體轉外框（Outline），色彩模式用 CMYK。</p>
 <h3>交期點計</h3>
-<p>標準交期 5-7 個工作天，深圳自營工廠 + DHL Express 直送日本 2-4 個工作天。Comiket 前提供 24 小時特急對應，夏天（6-7 月）同冬天（12 月）落單高峰建議提早 10-15 個工作天落單。</p>
+<p>標準交期 5-7 個工作天，深圳自營工廠 + DHL Express 直送日本 2-4 個工作天。Comiket 前提供特急對應（按稿件與排期報價確認），夏天（6-7 月）同冬天（12 月）落單高峰建議提早 10-15 個工作天落單。</p>
 `,
     longDescriptionEn: `<h3>Binding Options: Perfect Binding vs Saddle Stitch</h3>
 <table>
