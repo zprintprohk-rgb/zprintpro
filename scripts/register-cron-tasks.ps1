@@ -101,14 +101,16 @@ Write-Host "repo   : $Repo`n"
 # name, schtasks schedule args, start time, prompt SSoT, wall-clock cap (seconds)
 # Caps mirror the v7 payload timeoutSeconds (1800 light lanes, 3600 heavy lanes).
 $Lanes = @(
-  @{ Name='ZP-daily-content';  Sch=@('/sc','DAILY');             St='21:17'; Timeout=3600; Prompt='zprintpro-daily-content-1x7w.md'   },
-  @{ Name='ZP-gsc-feedback';   Sch=@('/sc','DAILY');             St='20:13'; Timeout=3600; Prompt='zprintpro-gsc-feedback-loop.md'    },
-  @{ Name='ZP-weekly-meta';    Sch=@('/sc','WEEKLY','/d','FRI'); St='20:52'; Timeout=1800; Prompt='zprintpro-weekly-meta-refresh.md' },
-  @{ Name='ZP-blog-deepfix';   Sch=@('/sc','WEEKLY','/d','SAT'); St='23:47'; Timeout=3600; Prompt='zprintpro-blog-deepfix.md'       },
-  @{ Name='ZP-monthly-matrix'; Sch=@('/sc','MONTHLY','/d','1');  St='12:13'; Timeout=3600; Prompt='zprintpro-monthly-matrix-audit.md' },
-  # 2026-10-09: 7th entity = K3 daily review (SSoT .hermes/cron-prompts/k3-ceo-daily-review.md, registration
-  # method A). Report naming <YYYY-MM-DD>-k3-daily-review.md (reportGlob in .hermes/cron-lanes.json).
-  @{ Name='ZP-k3-review';      Sch=@('/sc','DAILY');             St='07:10'; Timeout=1800; Prompt='k3-ceo-daily-review.md'          }
+  # 2026-11-23 consolidation (K3 approved 8->5): GSC feedback merged into daily-content;
+  # monthly matrix merged into weekly-meta on the first Friday of each month.
+  # Retired lanes ZP-gsc-feedback / ZP-monthly-matrix removed from this array so a full
+  # register run cannot recreate them. Prompt SSoT = harness-*-20261120.md slim versions.
+  @{ Name='ZP-daily-content';  Sch=@('/sc','DAILY');             St='21:17'; Timeout=3600; Prompt='harness-daily-growth-20261120.md'        },
+  @{ Name='ZP-weekly-meta';    Sch=@('/sc','WEEKLY','/d','FRI'); St='20:52'; Timeout=3600; Prompt='harness-weekly-monthly-review-20261120.md' },
+  @{ Name='ZP-blog-deepfix';   Sch=@('/sc','WEEKLY','/d','SAT'); St='23:47'; Timeout=3600; Prompt='harness-blog-single-fix-20261120.md'       },
+  # 2026-10-09: 7th entity = K3 daily review. Report naming <YYYY-MM-DD>-k3-daily-review.md
+  # (reportGlob in .hermes/cron-lanes.json). 2026-11-23: prompt = independent review slim version.
+  @{ Name='ZP-k3-review';      Sch=@('/sc','DAILY');             St='07:10'; Timeout=1800; Prompt='harness-independent-review-20261120.md'  }
 )
 
 function Write-Wrapper {

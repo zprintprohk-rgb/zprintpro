@@ -6699,8 +6699,8 @@ export const products: Product[] = [
       nameJa: '同人誌印刷',
       title_zh: '同人誌印刷 | Comiket 對應 | 智印港',
       description: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前特急対応（按稿件與排期報價確認）。 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
-      descriptionEn: 'Doujinshi printing for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
-      descriptionJa: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
+      descriptionEn: 'Doujinshi printing for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. Rush before Comiket is available on confirmation of artwork and production schedule. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
+      descriptionJa: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前の特急対応は可能（入稿データと製造スケジュールにより見積確認）。 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
       description_zh: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前特急対応（按稿件與排期報價確認）。',
             price_range: '¥7,500〜/注文〜',
       basePrice: 7500,
@@ -6710,7 +6710,7 @@ export const products: Product[] = [
       isHot: true,
       isNew: true,
       minQuantity: 10,
-      turnaround: '5-7 営業日 (コミケ前 24時間特急対応)',
+      turnaround: '5-7 営業日 (コミケ前の特急は見積確認)',
       images: [
         '/images/japan/doujinshi-printing.webp',
       '/images/japan/zprintpro-doujinshi-doujinshi-printing-ja-1.jpg',
@@ -6806,7 +6806,7 @@ export const products: Product[] = [
 <h3>Bleed and Safe Zone (Read Before Uploading)</h3>
 <p>Keep 3mm bleed on all full-bleed artwork; place key linework, dialogue and signatures inside the 5mm safe zone from trim. For saddle stitch, reserve a 5mm binding margin at the spine side of spreads so staples never cover key art. Convert all fonts to outlines and submit in CMYK PDF.</p>
 <h3>Turnaround</h3>
-<p>Standard production is 5-7 business days, then DHL Express from our Shenzhen factory to Japan in 2-4 business days. A 24-hour rush is available <a href="/en/blog/comiket-printing-prep-guide/">before Comiket</a>; during peak seasons (June-July and December) plan 10-15 business days ahead.</p>
+<p>Standard production is 5-7 business days, then DHL Express from our Shenzhen factory to Japan in 2-4 business days. Rush production <a href="/en/blog/comiket-printing-prep-guide/">before Comiket</a> is available on confirmation of artwork and production schedule; during peak seasons (June-July and December) plan 10-15 business days ahead.</p>
 `,
     longDescriptionJa: `<h3>製本の選び方：無線綴じ vs 中綴じ</h3>
 <table>
@@ -6821,7 +6821,7 @@ export const products: Product[] = [
 <h3>塗り足しとセーフゾーン（入稿前の必読）</h3>
 <p>見開きイラストは 3mm の塗り足し（ドブ）を確保し、重要な線画・セリフ・サインは断裁線から 5mm 内側のセーフゾーンへ。中綴じはノド側に 5mm のマージンを取り、ホチキス針が重要な絵を隠さないように。フォントはアウトライン化、カラーモードは CMYK の PDF でご入稿ください。</p>
 <h3>納期の目安</h3>
-<p>標準納期 5-7 営業日、深圳自社工場から DHL Express で日本へ 2-4 営業日。コミケ前は 24 時間特急対応可。夏（6-7 月）・冬（12 月）の繁忙期は 10-15 営業日の余裕を持ってご発注ください。</p>
+<p>標準納期 5-7 営業日、深圳自社工場から DHL Express で日本へ 2-4 営業日。コミケ前の特急対応は可能です（入稿データと製造スケジュールにより見積確認）。夏（6-7 月）・冬（12 月）の繁忙期は 10-15 営業日の余裕を持ってご発注ください。</p>
 `,
     // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
     seoTitle: {"zh-hk": "", "en": "", "ja": ""},
