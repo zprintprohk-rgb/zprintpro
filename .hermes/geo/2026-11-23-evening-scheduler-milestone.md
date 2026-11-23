@@ -76,3 +76,11 @@
 - **今晚两连撞**（19.3 / 27.7 min）同根因族：窗口管理脱离实时读数 + 守卫 fail-open
 - **已固化（本地待推）**: `PUSH_WINDOW_TRUNCATION_RECALC` 追加实例 + 新亚规则 `GUARD_FAIL_OPEN`（守卫报错必须 fail-closed；`$ErrorActionPreference='Stop'`）
 - **处置（§0.25.2）**: **push 全停，等 K3 拍板确认是否继续**；明晨自然轮验收（06:43/07:10/13:37）不受影响（无需 push）
+
+## 九、11-24 凌晨（00:3x）：K3 放行后恢复 + 调度器层证据
+
+- **K3 23:5x「按优先级继续下一步执行」** = 两连撞默认如实记录接受 + push 恢复（守卫已改三步法：实时 git log 重算窗口 + 与 commit/push 分离）
+- **调度器层第 4 件证据**: `Get-ScheduledTaskInfo ZP-daily-content` LastRun=11/23 21:17:01, **LastTaskResult=0**（Interactive 时代恒 2147946720 → S4U 后首次翻转）—— 21:17 自然轮在任务计划层级干净收尾，四件套证据（scheduler/wrapper/bus/report）在 11-23 21:17 轮已全齐
+- **blog-deepfix NextRunTime=11/28 23:47**（合并后周六档确认）· watchdog Next=11-24 06:43 · k3-review Next=11-24 07:10
+- **H1 SEO 首批 DRAFT 提前完成**（`.hermes/geo/2026-11-24-h1-seo-batch1-draft.md`, 原 11-25~26 队列）: 6 SKU × zh/en 建议值 12 格 + ja 全不动（P0 批已达标）+ **en MOQ 冲突 ×3 登记**（100+/10+ 与已验证 10 張/10 枚/A4 口径冲突, 同 11-23 ja 冲突族）+ 易拉寶→易拉架港词修正；不上线，等核心更新完成+比较窗
+- **GEO 第 4 轮推迟至今日 11:00-11:30 窗**（r2 时点 11:14, 同时间可比原则；12 固定问题 + 三向边缘抽验）
