@@ -381,3 +381,9 @@ K3 截图可能是:
 - Vercel 部署日志 (K3 粘贴 5 次失败记录)
 - `node scripts/guards/blog-data-integrity-guard.js` 8 项负向测试 (9/4 全过)
 - 校准日期: 2026-09-04
+
+## 2026-11-23 22:18:38 PUSH_WINDOW_TRUNCATION_RECALC
+- 命中: push 7b5e0686 @ 22:18:38 距 7a5072df @ 21:59:20 仅 19.3 min (< 30 min 硬下限 §0.25.1)
+- 根因: sleep 700s 与 commit+push 同调用, 被 15 min 调用上限截断后补跑未重算窗口
+- 修复: 撞车如实记录 (K3 22:2x「按优先级继续执行下一步」默认接受); 等窗改三步法; 下一窗口锚定 22:48:38
+- 证据: git log %ci · verify-deploy PASS run 137758230123

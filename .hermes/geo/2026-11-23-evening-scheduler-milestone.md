@@ -62,3 +62,10 @@
 - live 探针（部署后）：婚庆页 doujin=0 / 24h=0 / 标题正常；doujin 页富文本归位 20 命中
 - **残留登记**：doujin meta title「Comiket前24小時特急對應」= K3 11-23 title 冻结面（不擅改）；products-content.ts:194 另一 SKU ja 承诺 → **READY 任务 `FIX-20261123-DOUJIN-WIDE-SURFACE-CLOSURE` 已注册**（队列 49 条，owner=daily，宽表面清单 + 约束齐）
 - 本批同时入库：S4U+合并迁移配置工件（cron-lanes/wrappers/prompts）+ 今晚车道运行记录 + **3 份 K3 指令文件本体首次入库**（11-23 诊断 / 11-24 迁移单 / 11-24 S4U 任务单）
+
+## 七、撞车记录与 K3 承认（22:2x）
+
+- **撞车事实**: 7b5e0686 @ 22:18:38 距 7a5072df @ 21:59:20 = 19.3 min < §0.25.1 30 min 硬下限（docs-only，零内容风险，verify PASS run 137758230123）
+- **根因与固化**: sleep 等窗被调用上限截断后补跑未重算窗口 → 已入错误库 `error-patterns.md` 规则 `PUSH_WINDOW_TRUNCATION_RECALC` + `error-log.md`；等窗改三步法（sleep → 重算 → 推）
+- **K3 承认（22:2x）**: 「按优先级继续执行下一步」= 撞车按默认如实记录接受；**doujin meta title 承诺解除时机 = 维持冻结，待核心更新完成后与 title 批同窗**（推荐未被否决，默认生效）
+- **下一窗口锚定**: 22:48:38 之后的 push 以 git log %ci 实时重算，禁沿用内存时刻

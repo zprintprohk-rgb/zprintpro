@@ -1916,3 +1916,21 @@ node scripts/check-encoding.js → ⚠️ CRLF: ...txt (57 lines with \r\n)   ex
 **同族规则**: PHONE_HK_BLACKLIST · GATE_COVERAGE_BLIND_SPOT
 
 **配套**: src/lib/whatsapp.ts · src/components/{category/CategorySidebar,WhatsAppFloat,home/HotProducts,quote/QuoteCalculator}.tsx · scripts/guards/phone-guard.js
+
+### 规则 PUSH_WINDOW_TRUNCATION_RECALC — 等窗 sleep 被截断后补跑未重算窗口 (K3 2026-11-23 22:2x 默认如实记录入档)
+
+**事故实录**:
+1. 2026-11-23 21:59:20 push (7a5072df) 后计划 Start-Sleep 700s 等窗至 22:29; 但工具调用 15 分钟上限把 sleep+commit+push 整体截断, sleep 700s 实际只执行到 ~22:03-22:18 区间即超时。
+2. 补跑时未重算「距上次 push」窗口, 直接 commit+push 7b5e0686 @ 22:18:38 = 间隔 19.3 分钟 < §0.25.1 30 分钟硬下限, 构成撞车 (docs-only, verify PASS, 零内容风险)。
+
+**判决（机器可检）**:
+- 任何含 Start-Sleep 等窗的调用超时/中断后, 补跑前必须重新取当前时刻重算「上次 push + 30min」窗口, 禁止沿用中断前算好的目标时刻。
+- push 时间以 git log origin/main -1 --format=%ci 实时读数为准, 不用内存记忆值。
+
+**修法**:
+1. 等窗一律拆成「先 sleep → 单独一步重算窗口 → 再 commit+push」三步, 不与 sleep 同调用。
+2. sleep 超过 10 分钟的等窗改为「结束本轮, 下轮开场重算窗口」, 不占调用上限。
+
+**同族规则**: §0.25.8 (30min 间隔 ≠ Start-Sleep 阻塞等待) · §0.25.9 (攒批优先)
+
+**配套**: .hermes/geo/2026-11-23-evening-scheduler-milestone.md §撞车记录 · git log %ci
