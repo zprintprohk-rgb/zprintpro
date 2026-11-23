@@ -1,0 +1,23 @@
+import io
+
+PAIRS = [
+    ("10 \u672c\u8d77\u5370,Comiket \u524d 24 \u5c0f\u6642\u7279\u6025\u5bfe\u5fdc\u3002",
+     "10 \u672c\u8d77\u5370,Comiket \u524d\u7279\u6025\u5bfe\u5fdc\uff08\u6309\u7a3f\u4ef6\u8207\u6392\u671f\u5831\u50f9\u78ba\u8a8d\uff09\u3002"),
+    ("'Comiket \u524d 24 \u5c0f\u6642\u7279\u6025\u5bfe\u5fdc\u53ef'",
+     "'Comiket \u524d\u7279\u6025\u5bfe\u5fdc\u53ef\u8b70\uff08\u6309\u7a3f\u4ef6\u8207\u6392\u671f\u5831\u50f9\u78ba\u8a8d\uff09'"),
+    ("Comiket \u524d\u63d0\u4f9b 24 \u5c0f\u6642\u7279\u6025\u5bfe\u5fdc\uff0c\u590f\u5929\uff086-7 \u6708\uff09\u540c\u51ac\u5929\uff0812 \u6708\uff09\u843d\u55ae\u9ad8\u5cf0\u5efa\u8b70\u63d0\u65e9 10-15 \u500b\u5de5\u4f5c\u5929\u843d\u55ae\u3002",
+     "Comiket \u524d\u63d0\u4f9b\u7279\u6025\u5bfe\u5fdc\uff08\u6309\u7a3f\u4ef6\u8207\u6392\u671f\u5831\u50f9\u78ba\u8a8d\uff09\uff0c\u590f\u5929\uff086-7 \u6708\uff09\u540c\u51ac\u5929\uff0812 \u6708\uff09\u843d\u55ae\u9ad8\u5cf0\u5efa\u8b70\u63d0\u65e9 10-15 \u500b\u5de5\u4f5c\u5929\u843d\u55ae\u3002"),
+]
+p = r"src\data\products.ts"
+s = io.open(p, encoding="utf-8", newline="").read()
+total = 0
+for old, new in PAIRS:
+    n = s.count(old)
+    if n == 0:
+        print("  MISS %r" % old[:50])
+        continue
+    s = s.replace(old, new)
+    total += n
+    print("  x%d %s" % (n, old[:52]))
+io.open(p, "w", encoding="utf-8", newline="\n").write(s)
+print("TOTAL:", total)
