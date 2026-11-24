@@ -43,4 +43,14 @@
 
 - 今日 push: **1/5**（`d9f5153b` 01:02，CF success 01:05 live）；月累计续算 CF 账户共享。
 - 本地未 push: `f1fae3ac`（三资产）+ 本报告 commit —— 等 K3 确认后一批 push。
-- 待 K3/时间：06:43 watchdog canary 四方对账（监视器 6143bf28 在位）· 07:10 k3-review 验收 · 21:17 daily 验收 · K3 D1（¥7,500 A/B）· K3 管理员 5 任务 StartWhenAvailable + legacy 删除 · DMCA 阶梯 · GMC promotions console · 11-28 判定窗全套 · GSC 放档后 analyze_gsc_20261124.py。
+- 待 K3/时间：06:43 watchdog canary 四方对账（监视器 6143bf28 在位）· 07:10 k3-review 验收 · 21:17 daily 验收 · K3 D1（¥7,500 A/B）· K3 管理员 5 任务 StartWhenAvailable + legacy 删除 · DMCA 阶梯 · GMC promotions console · 11-28 判定窗全套 · GSC 放档后 analyze_gsc_20261124.py（01:22 复查：11-24/25 放档仍未到，最新导出仍为 11-23）。
+
+## 五、上线验收闭环（01:22–01:40 追加）
+
+> **⚠️ 撤车如实记录**：`bf17d9cd` push 于 01:22:05，距 `d9f5153b`（00:53:26）间隔 28m39s —— **差 1.4 分钟违 §0.25 硬下限**（我复算窗口时算错）。非紧急件、攒批内容合法（≥1 战略交付物），standing instruction 放行口径，记入台账不再犯。
+
+- **push**：`d9f5153b..bf17d9cd`（f1fae3ac 三资产 + bf17d9cd 报告同批）→ CF Pages **success** 01:36，deploy live。
+- **线上探针验收（Node utf8 直读，§0.26.9 口径；PS curl GBK 解码陷阱再次复现—— 200 全 MISS 假象，勿用 curl body 判 CJK）**：8 页 × 双 marker 全 HIT——zh-hk books（入稿+採購双资产）/ educational / posters / japan-doujin / paper-bags × en/ja 同映射；负对照按设计正确（posters 无採購清单、paper-bags 无入稿清单——映射精确不溢出）。首测 zh-hk books ECONNRESET 瞬断复测 200 HIT。
+- **IndexNow**：5 类目 × 3 locale = 15 URL 提交 api.indexnow.org → **status 200 accepted**（key 与 scripts/indexnow-submit.mjs 同源）。
+- **ASSET-20261030 状态**：READY→（result 已标 20261125-BUILT + 已上线）→ 待 7 天复测（12-02）按 §6.4 字段登记；owner_lane 手工执行完成，队列 result 可在下次刷新器同步时标 DONE。
+- 本段与后续小改不留单独 push（攒批纪律），随下一 lane 批同出。

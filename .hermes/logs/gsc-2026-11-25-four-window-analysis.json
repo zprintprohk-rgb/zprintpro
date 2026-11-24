@@ -1,0 +1,9024 @@
+{
+ "generated": "2026-11-25",
+ "dual_method": "openpyxl × pandas",
+ "batches": {
+  "2026-11-23": {
+   "24h": {
+    "file": "24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-23.xlsx",
+    "window_first": "2026-11-22T06:00:00",
+    "window_last": "2026-11-23T05:00:00",
+    "chart_total": {
+     "clicks": 9,
+     "imps": 436
+    },
+    "queries_sheet": {
+     "clicks": 1,
+     "imps": 225,
+     "ctr": 0.4444,
+     "pos": 26.3555,
+     "rows": 109
+    },
+    "queries_pandas": {
+     "clicks": 1,
+     "imps": 225,
+     "rows": 109
+    },
+    "match": true,
+    "pages_sheet": {
+     "clicks": 9,
+     "imps": 523,
+     "ctr": 1.7208,
+     "pos": 17.6309,
+     "rows": 173
+    },
+    "countries_sheet": {
+     "clicks": 9,
+     "imps": 436,
+     "ctr": 2.0642,
+     "pos": 17.3076,
+     "rows": 36
+    },
+    "series": [
+     {
+      "t": "2026-11-22T06:00:00",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 4.2
+     },
+     {
+      "t": "2026-11-22T07:00:00",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 16.6
+     },
+     {
+      "t": "2026-11-22T08:00:00",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 18.2
+     },
+     {
+      "t": "2026-11-22T09:00:00",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 7.9
+     },
+     {
+      "t": "2026-11-22T10:00:00",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 23.2
+     },
+     {
+      "t": "2026-11-22T11:00:00",
+      "clicks": 3,
+      "imps": 20,
+      "pos": 5.3
+     },
+     {
+      "t": "2026-11-22T12:00:00",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 8.8
+     },
+     {
+      "t": "2026-11-22T13:00:00",
+      "clicks": 0,
+      "imps": 18,
+      "pos": 8.9
+     },
+     {
+      "t": "2026-11-22T14:00:00",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 7.0
+     },
+     {
+      "t": "2026-11-22T15:00:00",
+      "clicks": 0,
+      "imps": 16,
+      "pos": 6.8
+     },
+     {
+      "t": "2026-11-22T16:00:00",
+      "clicks": 1,
+      "imps": 37,
+      "pos": 13.0
+     },
+     {
+      "t": "2026-11-22T17:00:00",
+      "clicks": 1,
+      "imps": 30,
+      "pos": 21.5
+     },
+     {
+      "t": "2026-11-22T18:00:00",
+      "clicks": 1,
+      "imps": 31,
+      "pos": 20.8
+     },
+     {
+      "t": "2026-11-22T19:00:00",
+      "clicks": 1,
+      "imps": 12,
+      "pos": 11.0
+     },
+     {
+      "t": "2026-11-22T20:00:00",
+      "clicks": 1,
+      "imps": 13,
+      "pos": 8.8
+     },
+     {
+      "t": "2026-11-22T21:00:00",
+      "clicks": 0,
+      "imps": 74,
+      "pos": 29.7
+     },
+     {
+      "t": "2026-11-22T22:00:00",
+      "clicks": 1,
+      "imps": 20,
+      "pos": 9.6
+     },
+     {
+      "t": "2026-11-22T23:00:00",
+      "clicks": 0,
+      "imps": 18,
+      "pos": 19.2
+     },
+     {
+      "t": "2026-11-23T00:00:00",
+      "clicks": 0,
+      "imps": 31,
+      "pos": 21.4
+     },
+     {
+      "t": "2026-11-23T01:00:00",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 18.2
+     },
+     {
+      "t": "2026-11-23T02:00:00",
+      "clicks": 0,
+      "imps": 19,
+      "pos": 28.6
+     },
+     {
+      "t": "2026-11-23T03:00:00",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 7.6
+     },
+     {
+      "t": "2026-11-23T04:00:00",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 11.5
+     },
+     {
+      "t": "2026-11-23T05:00:00",
+      "clicks": 0,
+      "imps": 0,
+      "pos": 0.0
+     }
+    ],
+    "top_queries": [
+     {
+      "q": "印刷紙袋",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 41.17
+     },
+     {
+      "q": "c109",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 13.6
+     },
+     {
+      "q": "紙袋印刷",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 30.25
+     },
+     {
+      "q": "月曆印刷",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 31.5
+     },
+     {
+      "q": "calendar sizes",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 37.83
+     },
+     {
+      "q": "利是封訂製",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 17.2
+     },
+     {
+      "q": "月曆訂製",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 23.2
+     },
+     {
+      "q": "訂做紙袋",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 41.2
+     },
+     {
+      "q": "智印港",
+      "clicks": 1,
+      "imps": 4,
+      "pos": 1.0
+     },
+     {
+      "q": "カレンダー サイズ",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 26.75
+     },
+     {
+      "q": "騎馬釘",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 31.0
+     },
+     {
+      "q": "月歷印刷",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 32.0
+     },
+     {
+      "q": "禮盒訂做",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 35.0
+     },
+     {
+      "q": "包裝盒印刷",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 38.5
+     },
+     {
+      "q": "calendar size",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 39.5
+     },
+     {
+      "q": "紙袋訂製",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 43.5
+     },
+     {
+      "q": "exercise book printing",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 45.75
+     },
+     {
+      "q": "食品包裝印刷",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.33
+     },
+     {
+      "q": "doujinshi printing",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 9.67
+     },
+     {
+      "q": "small batch stickers",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 10.0
+     },
+     {
+      "q": "ステッカー 印刷 安い",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 10.0
+     },
+     {
+      "q": "paper bag print file requirements",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 14.33
+     },
+     {
+      "q": "貼紙印刷",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 16.0
+     },
+     {
+      "q": "paper bag thickness guide",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 18.0
+     },
+     {
+      "q": "paper bag manufacturer faq",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 18.33
+     },
+     {
+      "q": "訂製利是封",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 27.0
+     },
+     {
+      "q": "海報印刷",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 30.33
+     },
+     {
+      "q": "double sided flyers",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 48.33
+     },
+     {
+      "q": "roll sticker paper",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 59.67
+     },
+     {
+      "q": "alipay flash collect",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 3.0
+     },
+     {
+      "q": "型抜きステッカー",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 5.0
+     },
+     {
+      "q": "紙袋 強度",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 10.0
+     },
+     {
+      "q": "シール印刷 小ロット カットライン",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 18.5
+     },
+     {
+      "q": "貼紙訂製",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 21.5
+     },
+     {
+      "q": "可移貼紙",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 24.0
+     },
+     {
+      "q": "訂制月曆",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 25.0
+     },
+     {
+      "q": "透明貼紙",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 25.0
+     },
+     {
+      "q": "手抽袋",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 25.5
+     },
+     {
+      "q": "両面カラー印刷",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 27.0
+     },
+     {
+      "q": "typical calendar size",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 30.0
+     }
+    ],
+    "top_pages": [
+     {
+      "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+      "clicks": 0,
+      "imps": 21,
+      "pos": 22.71
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+      "clicks": 0,
+      "imps": 19,
+      "pos": 43.05
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/",
+      "clicks": 1,
+      "imps": 18,
+      "pos": 7.39
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+      "clicks": 1,
+      "imps": 14,
+      "pos": 22.36
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 5.62
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/calendar-sizes-print-reference/",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 47.23
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/paper-bag-buying-guide/",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 17.67
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/comiket-c109/",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 13.27
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 14.6
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/childrens-picture-book-printing-guide/",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 8.89
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 22.89
+     },
+     {
+      "page": "https://zprintpro.com/en/",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 5.25
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 8.75
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/calendar-printing-guide/",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 11.38
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/red-packets/",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 20.88
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/calendars/",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 34.62
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 10.29
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 14.14
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/kraft-paper-bags/",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 19.0
+     },
+     {
+      "page": "https://zprintpro.com/ja/blog/calendar-sizes-print-reference/",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 21.71
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/packaging/",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 45.14
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/doujin-circle-printing-guide/",
+      "clicks": 2,
+      "imps": 6,
+      "pos": 5.0
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/about/",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 2.33
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/mtr-advertising-specs/",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 5.5
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 19.83
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/photo-book-printing-guide/",
+      "clicks": 1,
+      "imps": 5,
+      "pos": 4.8
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 6.6
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 15.0
+     },
+     {
+      "page": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 17.4
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/large-bags/",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 29.4
+     }
+    ],
+    "money_kw": {
+     "海報印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 30.33
+     },
+     "貼紙印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 16.0
+     },
+     "宣傳單張": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 47.5
+     },
+     "包裝盒印刷": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 38.5
+     },
+     "紙盒訂製": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 55.0
+     },
+     "月曆印刷": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 31.5
+     },
+     "學校印刷": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 35.5
+     },
+     "食品包裝印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.33
+     },
+     "貼紙訂製": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 21.5
+     },
+     "海報印刷即日": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     "可移貼紙": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 24.0
+     },
+     "印喜帖價格": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     "small batch stickers": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 10.0
+     },
+     "doujinshi printing": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 9.67
+     },
+     "educational printing": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 37.0
+     }
+    },
+    "countries": [
+     {
+      "country": "中国香港",
+      "clicks": 8,
+      "imps": 238,
+      "pos": 17.53
+     },
+     {
+      "country": "韩国",
+      "clicks": 1,
+      "imps": 3,
+      "pos": 4.0
+     },
+     {
+      "country": "美国",
+      "clicks": 0,
+      "imps": 57,
+      "pos": 24.0
+     },
+     {
+      "country": "日本",
+      "clicks": 0,
+      "imps": 51,
+      "pos": 16.08
+     },
+     {
+      "country": "台湾",
+      "clicks": 0,
+      "imps": 18,
+      "pos": 11.22
+     },
+     {
+      "country": "巴西",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 13.36
+     },
+     {
+      "country": "英国",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 29.62
+     },
+     {
+      "country": "印度",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 11.17
+     },
+     {
+      "country": "印度尼西亚",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 3.4
+     },
+     {
+      "country": "孟加拉",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 7.0
+     },
+     {
+      "country": "澳大利亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 8.33
+     },
+     {
+      "country": "菲律宾",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 5.5
+     },
+     {
+      "country": "土耳其",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 6.5
+     },
+     {
+      "country": "中国",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 7.5
+     },
+     {
+      "country": "新加坡",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.0
+     },
+     {
+      "country": "加拿大",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 10.5
+     },
+     {
+      "country": "阿拉伯联合酋长国",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 30.0
+     },
+     {
+      "country": "俄罗斯",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 35.5
+     },
+     {
+      "country": "泰国",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 47.5
+     },
+     {
+      "country": "格鲁吉亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "伊拉克",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 3.0
+     },
+     {
+      "country": "以色列",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 3.0
+     },
+     {
+      "country": "葡萄牙",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 3.0
+     },
+     {
+      "country": "安哥拉",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "澳门",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "沙特阿拉伯",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "爱尔兰",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "哈萨克斯坦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "黎巴嫩",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "乌兹别克斯坦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "津巴布韦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "希腊",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "阿曼",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "法国",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 20.0
+     },
+     {
+      "country": "智利",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 24.0
+     },
+     {
+      "country": "奥地利",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 29.0
+     }
+    ]
+   },
+   "7d": {
+    "file": "7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-23.xlsx",
+    "window_first": "2026-11-14",
+    "window_last": "2026-11-20",
+    "chart_total": {
+     "clicks": 121,
+     "imps": 8504
+    },
+    "queries_sheet": {
+     "clicks": 7,
+     "imps": 4046,
+     "ctr": 0.173,
+     "pos": 26.2806,
+     "rows": 835
+    },
+    "queries_pandas": {
+     "clicks": 7,
+     "imps": 4046,
+     "rows": 835
+    },
+    "match": true,
+    "pages_sheet": {
+     "clicks": 123,
+     "imps": 9932,
+     "ctr": 1.2384,
+     "pos": 19.8712,
+     "rows": 446
+    },
+    "countries_sheet": {
+     "clicks": 121,
+     "imps": 8504,
+     "ctr": 1.4229,
+     "pos": 17.5759,
+     "rows": 116
+    },
+    "series": [
+     {
+      "t": "2026-11-14",
+      "clicks": 14,
+      "imps": 974,
+      "pos": 17.4
+     },
+     {
+      "t": "2026-11-15",
+      "clicks": 16,
+      "imps": 1191,
+      "pos": 17.0
+     },
+     {
+      "t": "2026-11-16",
+      "clicks": 25,
+      "imps": 1201,
+      "pos": 16.8
+     },
+     {
+      "t": "2026-11-17",
+      "clicks": 21,
+      "imps": 1227,
+      "pos": 13.8
+     },
+     {
+      "t": "2026-11-18",
+      "clicks": 24,
+      "imps": 1292,
+      "pos": 14.5
+     },
+     {
+      "t": "2026-11-19",
+      "clicks": 13,
+      "imps": 1086,
+      "pos": 15.5
+     },
+     {
+      "t": "2026-11-20",
+      "clicks": 8,
+      "imps": 1533,
+      "pos": 25.9
+     }
+    ],
+    "top_queries": [
+     {
+      "q": "貼紙印刷",
+      "clicks": 0,
+      "imps": 84,
+      "pos": 29.76
+     },
+     {
+      "q": "海報印刷",
+      "clicks": 0,
+      "imps": 62,
+      "pos": 31.44
+     },
+     {
+      "q": "c109",
+      "clicks": 0,
+      "imps": 58,
+      "pos": 11.69
+     },
+     {
+      "q": "食品包裝印刷",
+      "clicks": 0,
+      "imps": 51,
+      "pos": 8.73
+     },
+     {
+      "q": "月曆印刷",
+      "clicks": 0,
+      "imps": 47,
+      "pos": 21.85
+     },
+     {
+      "q": "書刊印刷",
+      "clicks": 0,
+      "imps": 47,
+      "pos": 39.45
+     },
+     {
+      "q": "學校印刷",
+      "clicks": 0,
+      "imps": 45,
+      "pos": 14.24
+     },
+     {
+      "q": "食品印刷",
+      "clicks": 0,
+      "imps": 42,
+      "pos": 6.45
+     },
+     {
+      "q": "コミケ 印刷",
+      "clicks": 0,
+      "imps": 41,
+      "pos": 27.15
+     },
+     {
+      "q": "印刷公司",
+      "clicks": 0,
+      "imps": 41,
+      "pos": 27.37
+     },
+     {
+      "q": "宣傳單張印刷",
+      "clicks": 0,
+      "imps": 39,
+      "pos": 30.05
+     },
+     {
+      "q": "印刷紙袋",
+      "clicks": 0,
+      "imps": 37,
+      "pos": 17.32
+     },
+     {
+      "q": "貼紙訂製",
+      "clicks": 0,
+      "imps": 37,
+      "pos": 34.51
+     },
+     {
+      "q": "可移貼紙",
+      "clicks": 0,
+      "imps": 34,
+      "pos": 14.91
+     },
+     {
+      "q": "china catalog printing",
+      "clicks": 0,
+      "imps": 34,
+      "pos": 19.32
+     },
+     {
+      "q": "印海報",
+      "clicks": 0,
+      "imps": 34,
+      "pos": 23.94
+     },
+     {
+      "q": "パッケージ印刷",
+      "clicks": 0,
+      "imps": 33,
+      "pos": 35.21
+     },
+     {
+      "q": "紙袋印刷",
+      "clicks": 0,
+      "imps": 32,
+      "pos": 19.19
+     },
+     {
+      "q": "宣傳單張",
+      "clicks": 0,
+      "imps": 31,
+      "pos": 51.35
+     },
+     {
+      "q": "貼紙",
+      "clicks": 0,
+      "imps": 30,
+      "pos": 39.1
+     },
+     {
+      "q": "月曆訂製",
+      "clicks": 0,
+      "imps": 29,
+      "pos": 19.79
+     },
+     {
+      "q": "騎馬釘",
+      "clicks": 0,
+      "imps": 29,
+      "pos": 34.52
+     },
+     {
+      "q": "how big is a standard wall calendar",
+      "clicks": 0,
+      "imps": 29,
+      "pos": 41.48
+     },
+     {
+      "q": "訂做紙袋",
+      "clicks": 0,
+      "imps": 28,
+      "pos": 20.36
+     },
+     {
+      "q": "食品包裝訂製",
+      "clicks": 0,
+      "imps": 27,
+      "pos": 10.63
+     },
+     {
+      "q": "包裝盒印刷",
+      "clicks": 0,
+      "imps": 25,
+      "pos": 21.64
+     },
+     {
+      "q": "包裝盒訂製",
+      "clicks": 0,
+      "imps": 24,
+      "pos": 24.5
+     },
+     {
+      "q": "印刷",
+      "clicks": 0,
+      "imps": 24,
+      "pos": 31.0
+     },
+     {
+      "q": "騎馬釘書刊",
+      "clicks": 0,
+      "imps": 23,
+      "pos": 36.83
+     },
+     {
+      "q": "教材 印刷製本",
+      "clicks": 0,
+      "imps": 23,
+      "pos": 44.65
+     },
+     {
+      "q": "poster 印刷",
+      "clicks": 0,
+      "imps": 22,
+      "pos": 24.0
+     },
+     {
+      "q": "紙盒訂製",
+      "clicks": 0,
+      "imps": 22,
+      "pos": 31.0
+     },
+     {
+      "q": "月歷印刷",
+      "clicks": 0,
+      "imps": 21,
+      "pos": 25.38
+     },
+     {
+      "q": "紙袋訂製",
+      "clicks": 0,
+      "imps": 21,
+      "pos": 28.86
+     },
+     {
+      "q": "印書",
+      "clicks": 0,
+      "imps": 20,
+      "pos": 29.95
+     },
+     {
+      "q": "教科書 印刷",
+      "clicks": 0,
+      "imps": 20,
+      "pos": 37.1
+     },
+     {
+      "q": "a1海報",
+      "clicks": 0,
+      "imps": 19,
+      "pos": 1.0
+     },
+     {
+      "q": "doujinshi printing",
+      "clicks": 0,
+      "imps": 19,
+      "pos": 10.58
+     },
+     {
+      "q": "騎馬釘印刷",
+      "clicks": 0,
+      "imps": 19,
+      "pos": 35.0
+     },
+     {
+      "q": "摺頁印刷",
+      "clicks": 0,
+      "imps": 18,
+      "pos": 16.33
+     }
+    ],
+    "top_pages": [
+     {
+      "page": "https://zprintpro.com/zh-hk/",
+      "clicks": 11,
+      "imps": 289,
+      "pos": 14.1
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+      "clicks": 0,
+      "imps": 281,
+      "pos": 6.43
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "clicks": 0,
+      "imps": 257,
+      "pos": 26.87
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "clicks": 1,
+      "imps": 238,
+      "pos": 15.88
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "clicks": 5,
+      "imps": 219,
+      "pos": 13.11
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+      "clicks": 0,
+      "imps": 207,
+      "pos": 47.12
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+      "clicks": 3,
+      "imps": 188,
+      "pos": 8.11
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "clicks": 3,
+      "imps": 184,
+      "pos": 16.33
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/books/",
+      "clicks": 0,
+      "imps": 158,
+      "pos": 46.07
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "clicks": 0,
+      "imps": 156,
+      "pos": 11.56
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+      "clicks": 1,
+      "imps": 142,
+      "pos": 18.85
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+      "clicks": 1,
+      "imps": 142,
+      "pos": 32.51
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "clicks": 1,
+      "imps": 139,
+      "pos": 8.48
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "clicks": 2,
+      "imps": 134,
+      "pos": 9.25
+     },
+     {
+      "page": "https://zprintpro.com/en/product/perfect-bound-books/",
+      "clicks": 0,
+      "imps": 132,
+      "pos": 36.04
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+      "clicks": 1,
+      "imps": 131,
+      "pos": 22.5
+     },
+     {
+      "page": "https://zprintpro.com/en/product/catalog-printing/",
+      "clicks": 0,
+      "imps": 131,
+      "pos": 32.68
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+      "clicks": 0,
+      "imps": 114,
+      "pos": 16.47
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/paper-bag-buying-guide/",
+      "clicks": 0,
+      "imps": 111,
+      "pos": 15.37
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/stickers/",
+      "clicks": 0,
+      "imps": 105,
+      "pos": 31.5
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/calendar-sizes-print-reference/",
+      "clicks": 0,
+      "imps": 103,
+      "pos": 27.35
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/posters/",
+      "clicks": 1,
+      "imps": 102,
+      "pos": 29.81
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/calendar-printing-guide/",
+      "clicks": 0,
+      "imps": 101,
+      "pos": 22.08
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+      "clicks": 0,
+      "imps": 101,
+      "pos": 25.87
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+      "clicks": 0,
+      "imps": 101,
+      "pos": 33.54
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+      "clicks": 0,
+      "imps": 101,
+      "pos": 42.61
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/comiket-c109/",
+      "clicks": 1,
+      "imps": 100,
+      "pos": 10.38
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+      "clicks": 0,
+      "imps": 100,
+      "pos": 18.53
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/mtr-advertising-specs/",
+      "clicks": 2,
+      "imps": 99,
+      "pos": 9.06
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/a1-posters/",
+      "clicks": 1,
+      "imps": 89,
+      "pos": 10.58
+     }
+    ],
+    "money_kw": {
+     "香港印刷": {
+      "clicks": 0,
+      "imps": 9,
+      "pos": 14.22
+     },
+     "海報印刷": {
+      "clicks": 0,
+      "imps": 62,
+      "pos": 31.44
+     },
+     "貼紙印刷": {
+      "clicks": 0,
+      "imps": 84,
+      "pos": 29.76
+     },
+     "宣傳單張": {
+      "clicks": 0,
+      "imps": 31,
+      "pos": 51.35
+     },
+     "宣傳單張印刷": {
+      "clicks": 0,
+      "imps": 39,
+      "pos": 30.05
+     },
+     "摺頁印刷": {
+      "clicks": 0,
+      "imps": 18,
+      "pos": 16.33
+     },
+     "印書": {
+      "clicks": 0,
+      "imps": 20,
+      "pos": 29.95
+     },
+     "包裝盒印刷": {
+      "clicks": 0,
+      "imps": 25,
+      "pos": 21.64
+     },
+     "包裝盒訂製": {
+      "clicks": 0,
+      "imps": 24,
+      "pos": 24.5
+     },
+     "紙盒印刷": {
+      "clicks": 0,
+      "imps": 15,
+      "pos": 30.53
+     },
+     "紙盒訂製": {
+      "clicks": 0,
+      "imps": 22,
+      "pos": 31.0
+     },
+     "禮盒訂製": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 48.33
+     },
+     "書刊印刷": {
+      "clicks": 0,
+      "imps": 47,
+      "pos": 39.45
+     },
+     "書籍印刷": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 26.0
+     },
+     "月曆印刷": {
+      "clicks": 0,
+      "imps": 47,
+      "pos": 21.85
+     },
+     "利是封印刷": {
+      "clicks": 0,
+      "imps": 11,
+      "pos": 33.64
+     },
+     "喜帖印刷": {
+      "clicks": 0,
+      "imps": 10,
+      "pos": 41.0
+     },
+     "證書印刷": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 9.0
+     },
+     "小冊子印刷": {
+      "clicks": 0,
+      "imps": 10,
+      "pos": 23.5
+     },
+     "學校印刷": {
+      "clicks": 0,
+      "imps": 45,
+      "pos": 14.24
+     },
+     "易拉架印刷": {
+      "clicks": 0,
+      "imps": 5,
+      "pos": 40.8
+     },
+     "食品包裝印刷": {
+      "clicks": 0,
+      "imps": 51,
+      "pos": 8.73
+     },
+     "貼紙訂製": {
+      "clicks": 0,
+      "imps": 37,
+      "pos": 34.51
+     },
+     "即日印刷": {
+      "clicks": 0,
+      "imps": 15,
+      "pos": 10.27
+     },
+     "即日急件": {
+      "clicks": 0,
+      "imps": 16,
+      "pos": 11.31
+     },
+     "a2印刷": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 1.0
+     },
+     "a1 印刷 即日": {
+      "clicks": 0,
+      "imps": 13,
+      "pos": 8.69
+     },
+     "a2 印刷 即日": {
+      "clicks": 0,
+      "imps": 10,
+      "pos": 7.8
+     },
+     "海報印刷一張": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 7.0
+     },
+     "海報印刷即日": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 10.0
+     },
+     "可移貼紙": {
+      "clicks": 0,
+      "imps": 34,
+      "pos": 14.91
+     },
+     "透明貼紙印刷": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 5.0
+     },
+     "戶外可移貼紙": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 8.0
+     },
+     "印喜帖價格": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 6.0
+     },
+     "2027利是封": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 11.0
+     },
+     "印刷公司報價": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     "膠裝書價格": {
+      "clicks": 0,
+      "imps": 17,
+      "pos": 33.71
+     },
+     "香港印刷公司": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 31.33
+     },
+     "catalog printing china": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 18.33
+     },
+     "catalogs printing china": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 37.0
+     },
+     "china catalog printing": {
+      "clicks": 0,
+      "imps": 34,
+      "pos": 19.32
+     },
+     "catalogue printing china": {
+      "clicks": 0,
+      "imps": 9,
+      "pos": 15.56
+     },
+     "small batch sticker printing": {
+      "clicks": 0,
+      "imps": 5,
+      "pos": 4.6
+     },
+     "small batch stickers": {
+      "clicks": 0,
+      "imps": 11,
+      "pos": 9.55
+     },
+     "doujinshi printing": {
+      "clicks": 0,
+      "imps": 19,
+      "pos": 10.58
+     },
+     "a2 poster printing": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 29.57
+     },
+     "school exercise book printing": {
+      "clicks": 0,
+      "imps": 5,
+      "pos": 14.0
+     },
+     "urgent printing": {
+      "clicks": 0,
+      "imps": 5,
+      "pos": 14.2
+     },
+     "educational printing": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 54.33
+     },
+     "ステッカー印刷 小ロット": {
+      "clicks": 0,
+      "imps": 5,
+      "pos": 15.6
+     },
+     "ステッカー 小ロット": {
+      "clicks": 0,
+      "imps": 16,
+      "pos": 8.25
+     },
+     "教材 印刷製本": {
+      "clicks": 0,
+      "imps": 23,
+      "pos": 44.65
+     },
+     "教材 印刷 製本": {
+      "clicks": 0,
+      "imps": 17,
+      "pos": 42.71
+     },
+     "コミケ 印刷": {
+      "clicks": 0,
+      "imps": 41,
+      "pos": 27.15
+     },
+     "カタログ 印刷": {
+      "clicks": 0,
+      "imps": 18,
+      "pos": 35.17
+     },
+     "パッケージ印刷": {
+      "clicks": 0,
+      "imps": 33,
+      "pos": 35.21
+     },
+     "防水ステッカー": {
+      "clicks": 0,
+      "imps": 12,
+      "pos": 13.75
+     },
+     "冊子印刷": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 43.5
+     },
+     "卒業アルバム 印刷": {
+      "clicks": 0,
+      "imps": 8,
+      "pos": 60.75
+     },
+     "同人本印刷": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 2.0
+     },
+     "中綴じ 印刷": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 49.0
+     }
+    },
+    "countries": [
+     {
+      "country": "中国香港",
+      "clicks": 89,
+      "imps": 4232,
+      "pos": 15.42
+     },
+     {
+      "country": "日本",
+      "clicks": 10,
+      "imps": 1286,
+      "pos": 23.8
+     },
+     {
+      "country": "美国",
+      "clicks": 7,
+      "imps": 1573,
+      "pos": 23.41
+     },
+     {
+      "country": "台湾",
+      "clicks": 4,
+      "imps": 251,
+      "pos": 10.32
+     },
+     {
+      "country": "澳大利亚",
+      "clicks": 3,
+      "imps": 49,
+      "pos": 13.96
+     },
+     {
+      "country": "英国",
+      "clicks": 2,
+      "imps": 103,
+      "pos": 15.6
+     },
+     {
+      "country": "加拿大",
+      "clicks": 1,
+      "imps": 91,
+      "pos": 14.84
+     },
+     {
+      "country": "新加坡",
+      "clicks": 1,
+      "imps": 50,
+      "pos": 7.32
+     },
+     {
+      "country": "中国",
+      "clicks": 1,
+      "imps": 43,
+      "pos": 16.47
+     },
+     {
+      "country": "德国",
+      "clicks": 1,
+      "imps": 30,
+      "pos": 9.13
+     },
+     {
+      "country": "瑞士",
+      "clicks": 1,
+      "imps": 5,
+      "pos": 10.2
+     },
+     {
+      "country": "文莱",
+      "clicks": 1,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "巴西",
+      "clicks": 0,
+      "imps": 90,
+      "pos": 16.94
+     },
+     {
+      "country": "印度",
+      "clicks": 0,
+      "imps": 80,
+      "pos": 15.38
+     },
+     {
+      "country": "沙特阿拉伯",
+      "clicks": 0,
+      "imps": 38,
+      "pos": 28.18
+     },
+     {
+      "country": "澳门",
+      "clicks": 0,
+      "imps": 36,
+      "pos": 7.81
+     },
+     {
+      "country": "马来西亚",
+      "clicks": 0,
+      "imps": 33,
+      "pos": 6.0
+     },
+     {
+      "country": "俄罗斯",
+      "clicks": 0,
+      "imps": 30,
+      "pos": 21.1
+     },
+     {
+      "country": "印度尼西亚",
+      "clicks": 0,
+      "imps": 27,
+      "pos": 8.96
+     },
+     {
+      "country": "菲律宾",
+      "clicks": 0,
+      "imps": 25,
+      "pos": 6.12
+     },
+     {
+      "country": "巴基斯坦",
+      "clicks": 0,
+      "imps": 23,
+      "pos": 11.09
+     },
+     {
+      "country": "孟加拉",
+      "clicks": 0,
+      "imps": 21,
+      "pos": 13.57
+     },
+     {
+      "country": "韩国",
+      "clicks": 0,
+      "imps": 20,
+      "pos": 4.95
+     },
+     {
+      "country": "泰国",
+      "clicks": 0,
+      "imps": 19,
+      "pos": 4.58
+     },
+     {
+      "country": "乌克兰",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 8.5
+     },
+     {
+      "country": "阿根廷",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 9.64
+     },
+     {
+      "country": "意大利",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 12.0
+     },
+     {
+      "country": "南非",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 7.15
+     },
+     {
+      "country": "法国",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 5.83
+     },
+     {
+      "country": "荷兰",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 9.25
+     },
+     {
+      "country": "尼泊尔",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 10.83
+     },
+     {
+      "country": "匈牙利",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 14.64
+     },
+     {
+      "country": "西班牙",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 20.64
+     },
+     {
+      "country": "比利时",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 5.2
+     },
+     {
+      "country": "墨西哥",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 5.8
+     },
+     {
+      "country": "爱尔兰",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 7.7
+     },
+     {
+      "country": "罗马尼亚",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 8.11
+     },
+     {
+      "country": "新西兰",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 15.38
+     },
+     {
+      "country": "阿拉伯联合酋长国",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 5.0
+     },
+     {
+      "country": "奥地利",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 6.43
+     },
+     {
+      "country": "越南",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 7.43
+     },
+     {
+      "country": "波兰",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 7.57
+     },
+     {
+      "country": "乌干达",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 7.57
+     },
+     {
+      "country": "蒙古",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 9.29
+     },
+     {
+      "country": "土耳其",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 7.17
+     },
+     {
+      "country": "尼日利亚",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 7.2
+     },
+     {
+      "country": "以色列",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 9.6
+     },
+     {
+      "country": "厄瓜多尔",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 10.0
+     },
+     {
+      "country": "马耳他",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 3.75
+     },
+     {
+      "country": "葡萄牙",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 7.0
+     },
+     {
+      "country": "芬兰",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 7.25
+     },
+     {
+      "country": "突尼斯",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 7.75
+     },
+     {
+      "country": "哈萨克斯坦",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 8.0
+     },
+     {
+      "country": "摩洛哥",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 9.25
+     },
+     {
+      "country": "保加利亚",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 10.75
+     },
+     {
+      "country": "格鲁吉亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 3.33
+     },
+     {
+      "country": "加纳",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 4.67
+     },
+     {
+      "country": "智利",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 5.0
+     },
+     {
+      "country": "肯尼亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 5.33
+     },
+     {
+      "country": "多米尼加共和国",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.33
+     },
+     {
+      "country": "斯里兰卡",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.67
+     },
+     {
+      "country": "黎巴嫩",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 8.0
+     },
+     {
+      "country": "秘鲁",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 9.33
+     },
+     {
+      "country": "哥伦比亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 9.67
+     },
+     {
+      "country": "委内瑞拉",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 13.0
+     },
+     {
+      "country": "伊拉克",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 1.0
+     },
+     {
+      "country": "乌兹别克斯坦",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 3.0
+     },
+     {
+      "country": "巴布亚新几内亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 4.0
+     },
+     {
+      "country": "卡塔尔",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 5.0
+     },
+     {
+      "country": "斯洛伐克",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 5.0
+     },
+     {
+      "country": "阿尔及利亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 5.5
+     },
+     {
+      "country": "加蓬",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 6.0
+     },
+     {
+      "country": "马其顿",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 7.0
+     },
+     {
+      "country": "立陶宛",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.0
+     },
+     {
+      "country": "波多黎各",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.0
+     },
+     {
+      "country": "危地马拉",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.5
+     },
+     {
+      "country": "巴拉圭",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.0
+     },
+     {
+      "country": "坦桑尼亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.5
+     },
+     {
+      "country": "赞比亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 11.0
+     },
+     {
+      "country": "伊朗",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 23.5
+     },
+     {
+      "country": "丹麦",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 32.5
+     },
+     {
+      "country": "捷克",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "埃塞俄比亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "巴勒斯坦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "塞尔维亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "南苏丹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "布隆迪",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "老挝",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 3.0
+     },
+     {
+      "country": "阿尔巴尼亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "安道尔",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "柬埔寨",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "哥斯达黎加",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     {
+      "country": "纳米比亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     {
+      "country": "特立尼达和多巴哥",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     {
+      "country": "波斯尼亚和黑塞哥维那",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "科威特",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "马达加斯加",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "科索沃",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "塞浦路斯",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "埃及",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "列支敦士登",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "缅甸",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "挪威",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "巴林",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "伯利兹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "不丹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "毛里求斯",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "关岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "瑞典",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "英属维尔京群岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "克罗地亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "阿曼",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "萨尔瓦多",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "乌拉圭",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "洪都拉斯",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 29.0
+     },
+     {
+      "country": "拉脱维亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 38.0
+     }
+    ]
+   },
+   "28d": {
+    "file": "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-23.xlsx",
+    "window_first": "2026-10-24",
+    "window_last": "2026-11-20",
+    "chart_total": {
+     "clicks": 541,
+     "imps": 29809
+    },
+    "queries_sheet": {
+     "clicks": 65,
+     "imps": 12071,
+     "ctr": 0.5385,
+     "pos": 25.9066,
+     "rows": 1000
+    },
+    "queries_pandas": {
+     "clicks": 65,
+     "imps": 12071,
+     "rows": 1000
+    },
+    "match": true,
+    "pages_sheet": {
+     "clicks": 551,
+     "imps": 35767,
+     "ctr": 1.5405,
+     "pos": 18.9285,
+     "rows": 593
+    },
+    "countries_sheet": {
+     "clicks": 541,
+     "imps": 29809,
+     "ctr": 1.8149,
+     "pos": 15.5548,
+     "rows": 169
+    },
+    "series": [
+     {
+      "t": "2026-10-24",
+      "clicks": 10,
+      "imps": 594,
+      "pos": 14.3
+     },
+     {
+      "t": "2026-10-25",
+      "clicks": 20,
+      "imps": 749,
+      "pos": 14.2
+     },
+     {
+      "t": "2026-10-26",
+      "clicks": 31,
+      "imps": 947,
+      "pos": 14.1
+     },
+     {
+      "t": "2026-10-27",
+      "clicks": 18,
+      "imps": 939,
+      "pos": 14.2
+     },
+     {
+      "t": "2026-10-28",
+      "clicks": 24,
+      "imps": 902,
+      "pos": 12.5
+     },
+     {
+      "t": "2026-10-29",
+      "clicks": 18,
+      "imps": 988,
+      "pos": 14.0
+     },
+     {
+      "t": "2026-10-30",
+      "clicks": 11,
+      "imps": 942,
+      "pos": 20.3
+     },
+     {
+      "t": "2026-10-31",
+      "clicks": 10,
+      "imps": 788,
+      "pos": 20.3
+     },
+     {
+      "t": "2026-11-01",
+      "clicks": 21,
+      "imps": 1018,
+      "pos": 17.7
+     },
+     {
+      "t": "2026-11-02",
+      "clicks": 24,
+      "imps": 993,
+      "pos": 14.0
+     },
+     {
+      "t": "2026-11-03",
+      "clicks": 29,
+      "imps": 1087,
+      "pos": 14.4
+     },
+     {
+      "t": "2026-11-04",
+      "clicks": 22,
+      "imps": 1096,
+      "pos": 12.6
+     },
+     {
+      "t": "2026-11-05",
+      "clicks": 27,
+      "imps": 1081,
+      "pos": 13.4
+     },
+     {
+      "t": "2026-11-06",
+      "clicks": 11,
+      "imps": 1078,
+      "pos": 14.9
+     },
+     {
+      "t": "2026-11-07",
+      "clicks": 14,
+      "imps": 849,
+      "pos": 15.5
+     },
+     {
+      "t": "2026-11-08",
+      "clicks": 27,
+      "imps": 1095,
+      "pos": 13.9
+     },
+     {
+      "t": "2026-11-09",
+      "clicks": 28,
+      "imps": 1242,
+      "pos": 13.4
+     },
+     {
+      "t": "2026-11-10",
+      "clicks": 20,
+      "imps": 1210,
+      "pos": 11.9
+     },
+     {
+      "t": "2026-11-11",
+      "clicks": 24,
+      "imps": 1349,
+      "pos": 13.2
+     },
+     {
+      "t": "2026-11-12",
+      "clicks": 17,
+      "imps": 1203,
+      "pos": 13.6
+     },
+     {
+      "t": "2026-11-13",
+      "clicks": 14,
+      "imps": 1155,
+      "pos": 19.6
+     },
+     {
+      "t": "2026-11-14",
+      "clicks": 14,
+      "imps": 974,
+      "pos": 17.4
+     },
+     {
+      "t": "2026-11-15",
+      "clicks": 16,
+      "imps": 1191,
+      "pos": 17.0
+     },
+     {
+      "t": "2026-11-16",
+      "clicks": 25,
+      "imps": 1201,
+      "pos": 16.8
+     },
+     {
+      "t": "2026-11-17",
+      "clicks": 21,
+      "imps": 1227,
+      "pos": 13.8
+     },
+     {
+      "t": "2026-11-18",
+      "clicks": 24,
+      "imps": 1292,
+      "pos": 14.5
+     },
+     {
+      "t": "2026-11-19",
+      "clicks": 13,
+      "imps": 1086,
+      "pos": 15.5
+     },
+     {
+      "t": "2026-11-20",
+      "clicks": 8,
+      "imps": 1533,
+      "pos": 25.9
+     }
+    ],
+    "top_queries": [
+     {
+      "q": "c109",
+      "clicks": 1,
+      "imps": 274,
+      "pos": 10.01
+     },
+     {
+      "q": "貼紙印刷",
+      "clicks": 0,
+      "imps": 205,
+      "pos": 30.1
+     },
+     {
+      "q": "海報印刷",
+      "clicks": 1,
+      "imps": 184,
+      "pos": 23.24
+     },
+     {
+      "q": "印刷公司",
+      "clicks": 2,
+      "imps": 157,
+      "pos": 26.09
+     },
+     {
+      "q": "月曆印刷",
+      "clicks": 0,
+      "imps": 157,
+      "pos": 20.35
+     },
+     {
+      "q": "書刊印刷",
+      "clicks": 0,
+      "imps": 150,
+      "pos": 36.35
+     },
+     {
+      "q": "印刷",
+      "clicks": 1,
+      "imps": 144,
+      "pos": 23.65
+     },
+     {
+      "q": "宣傳單張印刷",
+      "clicks": 0,
+      "imps": 141,
+      "pos": 28.45
+     },
+     {
+      "q": "c109 日期",
+      "clicks": 0,
+      "imps": 140,
+      "pos": 9.6
+     },
+     {
+      "q": "食品包裝印刷",
+      "clicks": 0,
+      "imps": 137,
+      "pos": 8.43
+     },
+     {
+      "q": "宣傳單張",
+      "clicks": 0,
+      "imps": 136,
+      "pos": 42.31
+     },
+     {
+      "q": "貼紙",
+      "clicks": 0,
+      "imps": 129,
+      "pos": 36.71
+     },
+     {
+      "q": "china catalog printing",
+      "clicks": 0,
+      "imps": 118,
+      "pos": 14.97
+     },
+     {
+      "q": "コミケ 印刷",
+      "clicks": 0,
+      "imps": 112,
+      "pos": 29.74
+     },
+     {
+      "q": "印海報",
+      "clicks": 0,
+      "imps": 107,
+      "pos": 19.62
+     },
+     {
+      "q": "騎馬釘",
+      "clicks": 0,
+      "imps": 98,
+      "pos": 26.05
+     },
+     {
+      "q": "食品印刷",
+      "clicks": 0,
+      "imps": 94,
+      "pos": 5.36
+     },
+     {
+      "q": "a1海報",
+      "clicks": 0,
+      "imps": 91,
+      "pos": 1.0
+     },
+     {
+      "q": "學校印刷",
+      "clicks": 0,
+      "imps": 87,
+      "pos": 17.76
+     },
+     {
+      "q": "紙袋印刷",
+      "clicks": 0,
+      "imps": 86,
+      "pos": 16.35
+     },
+     {
+      "q": "可移貼紙",
+      "clicks": 0,
+      "imps": 84,
+      "pos": 13.12
+     },
+     {
+      "q": "印刷紙袋",
+      "clicks": 0,
+      "imps": 84,
+      "pos": 17.12
+     },
+     {
+      "q": "月曆訂製",
+      "clicks": 0,
+      "imps": 83,
+      "pos": 24.02
+     },
+     {
+      "q": "貼紙訂製",
+      "clicks": 0,
+      "imps": 82,
+      "pos": 30.65
+     },
+     {
+      "q": "戶外貼紙",
+      "clicks": 0,
+      "imps": 80,
+      "pos": 17.6
+     },
+     {
+      "q": "膠裝書",
+      "clicks": 0,
+      "imps": 80,
+      "pos": 34.25
+     },
+     {
+      "q": "騎馬釘書刊",
+      "clicks": 0,
+      "imps": 78,
+      "pos": 24.59
+     },
+     {
+      "q": "騎馬釘印刷",
+      "clicks": 0,
+      "imps": 76,
+      "pos": 19.79
+     },
+     {
+      "q": "poster 印刷",
+      "clicks": 0,
+      "imps": 72,
+      "pos": 17.26
+     },
+     {
+      "q": "訂做紙袋",
+      "clicks": 0,
+      "imps": 71,
+      "pos": 18.04
+     },
+     {
+      "q": "パッケージ印刷",
+      "clicks": 0,
+      "imps": 71,
+      "pos": 36.46
+     },
+     {
+      "q": "教科書 印刷",
+      "clicks": 0,
+      "imps": 70,
+      "pos": 37.17
+     },
+     {
+      "q": "gold foil red packets",
+      "clicks": 0,
+      "imps": 69,
+      "pos": 19.62
+     },
+     {
+      "q": "膠裝書價格",
+      "clicks": 0,
+      "imps": 69,
+      "pos": 36.75
+     },
+     {
+      "q": "易拉架製作",
+      "clicks": 0,
+      "imps": 69,
+      "pos": 60.78
+     },
+     {
+      "q": "海報與印刷",
+      "clicks": 0,
+      "imps": 68,
+      "pos": 18.35
+     },
+     {
+      "q": "摺頁印刷",
+      "clicks": 0,
+      "imps": 67,
+      "pos": 16.69
+     },
+     {
+      "q": "印書",
+      "clicks": 0,
+      "imps": 67,
+      "pos": 31.39
+     },
+     {
+      "q": "膠裝書印刷",
+      "clicks": 0,
+      "imps": 67,
+      "pos": 38.16
+     },
+     {
+      "q": "教材 印刷製本",
+      "clicks": 0,
+      "imps": 66,
+      "pos": 47.2
+     }
+    ],
+    "top_pages": [
+     {
+      "page": "https://zprintpro.com/zh-hk/",
+      "clicks": 54,
+      "imps": 1497,
+      "pos": 12.97
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "clicks": 12,
+      "imps": 1078,
+      "pos": 12.09
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "clicks": 17,
+      "imps": 798,
+      "pos": 12.81
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+      "clicks": 18,
+      "imps": 788,
+      "pos": 7.69
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/books/",
+      "clicks": 2,
+      "imps": 681,
+      "pos": 51.32
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+      "clicks": 0,
+      "imps": 665,
+      "pos": 6.02
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+      "clicks": 1,
+      "imps": 601,
+      "pos": 19.78
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/comiket-c109/",
+      "clicks": 4,
+      "imps": 595,
+      "pos": 9.53
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "clicks": 2,
+      "imps": 584,
+      "pos": 20.37
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+      "clicks": 1,
+      "imps": 549,
+      "pos": 57.7
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "clicks": 8,
+      "imps": 496,
+      "pos": 8.62
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+      "clicks": 4,
+      "imps": 483,
+      "pos": 17.95
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+      "clicks": 0,
+      "imps": 481,
+      "pos": 37.45
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "clicks": 4,
+      "imps": 460,
+      "pos": 13.86
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+      "clicks": 1,
+      "imps": 447,
+      "pos": 16.96
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+      "clicks": 7,
+      "imps": 407,
+      "pos": 18.38
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "clicks": 1,
+      "imps": 394,
+      "pos": 23.85
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+      "clicks": 0,
+      "imps": 389,
+      "pos": 38.34
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/flyers/",
+      "clicks": 3,
+      "imps": 388,
+      "pos": 26.77
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "clicks": 2,
+      "imps": 383,
+      "pos": 7.73
+     },
+     {
+      "page": "https://zprintpro.com/en/product/catalog-printing/",
+      "clicks": 1,
+      "imps": 371,
+      "pos": 24.26
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+      "clicks": 10,
+      "imps": 356,
+      "pos": 5.52
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+      "clicks": 3,
+      "imps": 343,
+      "pos": 44.41
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/posters/",
+      "clicks": 1,
+      "imps": 342,
+      "pos": 35.53
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+      "clicks": 5,
+      "imps": 340,
+      "pos": 24.39
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/a1-posters/",
+      "clicks": 5,
+      "imps": 335,
+      "pos": 11.69
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/stickers/",
+      "clicks": 1,
+      "imps": 330,
+      "pos": 36.83
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+      "clicks": 3,
+      "imps": 320,
+      "pos": 37.15
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+      "clicks": 3,
+      "imps": 314,
+      "pos": 34.24
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+      "clicks": 2,
+      "imps": 313,
+      "pos": 14.39
+     }
+    ],
+    "money_kw": {
+     "香港印刷": {
+      "clicks": 2,
+      "imps": 37,
+      "pos": 11.92
+     },
+     "海報印刷": {
+      "clicks": 1,
+      "imps": 184,
+      "pos": 23.24
+     },
+     "貼紙印刷": {
+      "clicks": 0,
+      "imps": 205,
+      "pos": 30.1
+     },
+     "宣傳單張": {
+      "clicks": 0,
+      "imps": 136,
+      "pos": 42.31
+     },
+     "宣傳單張印刷": {
+      "clicks": 0,
+      "imps": 141,
+      "pos": 28.45
+     },
+     "摺頁印刷": {
+      "clicks": 0,
+      "imps": 67,
+      "pos": 16.69
+     },
+     "印書": {
+      "clicks": 0,
+      "imps": 67,
+      "pos": 31.39
+     },
+     "包裝盒印刷": {
+      "clicks": 0,
+      "imps": 59,
+      "pos": 27.14
+     },
+     "包裝盒訂製": {
+      "clicks": 0,
+      "imps": 65,
+      "pos": 30.75
+     },
+     "紙盒印刷": {
+      "clicks": 0,
+      "imps": 61,
+      "pos": 34.98
+     },
+     "紙盒訂製": {
+      "clicks": 0,
+      "imps": 62,
+      "pos": 32.29
+     },
+     "禮盒訂製": {
+      "clicks": 0,
+      "imps": 44,
+      "pos": 48.18
+     },
+     "書刊印刷": {
+      "clicks": 0,
+      "imps": 150,
+      "pos": 36.35
+     },
+     "月曆印刷": {
+      "clicks": 0,
+      "imps": 157,
+      "pos": 20.35
+     },
+     "利是封印刷": {
+      "clicks": 0,
+      "imps": 59,
+      "pos": 25.03
+     },
+     "喜帖印刷": {
+      "clicks": 0,
+      "imps": 42,
+      "pos": 43.17
+     },
+     "證書印刷": {
+      "clicks": 0,
+      "imps": 10,
+      "pos": 10.1
+     },
+     "小冊子印刷": {
+      "clicks": 0,
+      "imps": 14,
+      "pos": 21.29
+     },
+     "學校印刷": {
+      "clicks": 0,
+      "imps": 87,
+      "pos": 17.76
+     },
+     "易拉架印刷": {
+      "clicks": 0,
+      "imps": 41,
+      "pos": 41.17
+     },
+     "食品包裝印刷": {
+      "clicks": 0,
+      "imps": 137,
+      "pos": 8.43
+     },
+     "貼紙訂製": {
+      "clicks": 0,
+      "imps": 82,
+      "pos": 30.65
+     },
+     "即日印刷": {
+      "clicks": 1,
+      "imps": 56,
+      "pos": 9.34
+     },
+     "即日急件": {
+      "clicks": 0,
+      "imps": 46,
+      "pos": 8.78
+     },
+     "a2印刷": {
+      "clicks": 0,
+      "imps": 8,
+      "pos": 12.25
+     },
+     "a1 印刷 即日": {
+      "clicks": 0,
+      "imps": 31,
+      "pos": 6.19
+     },
+     "a2 印刷 即日": {
+      "clicks": 0,
+      "imps": 29,
+      "pos": 6.55
+     },
+     "海報印刷一張": {
+      "clicks": 0,
+      "imps": 17,
+      "pos": 5.18
+     },
+     "海報印刷即日": {
+      "clicks": 1,
+      "imps": 34,
+      "pos": 9.56
+     },
+     "可移貼紙": {
+      "clicks": 0,
+      "imps": 84,
+      "pos": 13.12
+     },
+     "透明貼紙印刷": {
+      "clicks": 0,
+      "imps": 22,
+      "pos": 5.27
+     },
+     "戶外可移貼紙": {
+      "clicks": 0,
+      "imps": 22,
+      "pos": 9.55
+     },
+     "印喜帖價格": {
+      "clicks": 1,
+      "imps": 15,
+      "pos": 4.87
+     },
+     "月曆印刷香港": {
+      "clicks": 1,
+      "imps": 3,
+      "pos": 12.67
+     },
+     "2027利是封": {
+      "clicks": 0,
+      "imps": 12,
+      "pos": 7.33
+     },
+     "印刷公司報價": {
+      "clicks": 0,
+      "imps": 15,
+      "pos": 7.33
+     },
+     "膠裝書價格": {
+      "clicks": 0,
+      "imps": 69,
+      "pos": 36.75
+     },
+     "貼紙印刷 急件": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.0
+     },
+     "香港印刷公司": {
+      "clicks": 0,
+      "imps": 13,
+      "pos": 27.08
+     },
+     "catalog printing china": {
+      "clicks": 0,
+      "imps": 37,
+      "pos": 15.57
+     },
+     "catalogs printing china": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 22.33
+     },
+     "china catalog printing": {
+      "clicks": 0,
+      "imps": 118,
+      "pos": 14.97
+     },
+     "catalogue printing china": {
+      "clicks": 0,
+      "imps": 57,
+      "pos": 14.23
+     },
+     "small batch sticker printing": {
+      "clicks": 0,
+      "imps": 14,
+      "pos": 8.57
+     },
+     "small batch stickers": {
+      "clicks": 0,
+      "imps": 60,
+      "pos": 15.22
+     },
+     "doujinshi printing": {
+      "clicks": 0,
+      "imps": 65,
+      "pos": 10.45
+     },
+     "a2 poster printing": {
+      "clicks": 0,
+      "imps": 18,
+      "pos": 27.94
+     },
+     "school exercise book printing": {
+      "clicks": 0,
+      "imps": 15,
+      "pos": 11.47
+     },
+     "custom catalog printing china": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 26.0
+     },
+     "urgent printing": {
+      "clicks": 0,
+      "imps": 13,
+      "pos": 17.08
+     },
+     "educational printing": {
+      "clicks": 0,
+      "imps": 19,
+      "pos": 32.37
+     },
+     "ステッカー印刷 小ロット": {
+      "clicks": 0,
+      "imps": 37,
+      "pos": 11.49
+     },
+     "ステッカー 小ロット": {
+      "clicks": 0,
+      "imps": 42,
+      "pos": 7.88
+     },
+     "教材 印刷製本": {
+      "clicks": 0,
+      "imps": 66,
+      "pos": 47.2
+     },
+     "教材 印刷 製本": {
+      "clicks": 0,
+      "imps": 41,
+      "pos": 46.76
+     },
+     "コミケ 印刷": {
+      "clicks": 0,
+      "imps": 112,
+      "pos": 29.74
+     },
+     "カタログ 印刷": {
+      "clicks": 0,
+      "imps": 18,
+      "pos": 35.17
+     },
+     "パッケージ印刷": {
+      "clicks": 0,
+      "imps": 71,
+      "pos": 36.46
+     },
+     "防水ステッカー": {
+      "clicks": 0,
+      "imps": 41,
+      "pos": 11.71
+     },
+     "冊子印刷": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 48.86
+     },
+     "卒業アルバム 印刷": {
+      "clicks": 0,
+      "imps": 30,
+      "pos": 64.53
+     },
+     "同人本印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 3.0
+     },
+     "中綴じ 印刷": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 83.43
+     }
+    },
+    "countries": [
+     {
+      "country": "中国香港",
+      "clicks": 394,
+      "imps": 16492,
+      "pos": 14.14
+     },
+     {
+      "country": "日本",
+      "clicks": 52,
+      "imps": 4106,
+      "pos": 23.65
+     },
+     {
+      "country": "美国",
+      "clicks": 28,
+      "imps": 3910,
+      "pos": 18.75
+     },
+     {
+      "country": "台湾",
+      "clicks": 11,
+      "imps": 1131,
+      "pos": 10.72
+     },
+     {
+      "country": "中国",
+      "clicks": 7,
+      "imps": 246,
+      "pos": 8.66
+     },
+     {
+      "country": "英国",
+      "clicks": 6,
+      "imps": 333,
+      "pos": 16.82
+     },
+     {
+      "country": "新加坡",
+      "clicks": 6,
+      "imps": 229,
+      "pos": 7.47
+     },
+     {
+      "country": "加拿大",
+      "clicks": 4,
+      "imps": 256,
+      "pos": 12.61
+     },
+     {
+      "country": "澳大利亚",
+      "clicks": 4,
+      "imps": 183,
+      "pos": 13.22
+     },
+     {
+      "country": "印度",
+      "clicks": 3,
+      "imps": 191,
+      "pos": 16.75
+     },
+     {
+      "country": "马来西亚",
+      "clicks": 3,
+      "imps": 137,
+      "pos": 5.97
+     },
+     {
+      "country": "澳门",
+      "clicks": 3,
+      "imps": 133,
+      "pos": 6.6
+     },
+     {
+      "country": "菲律宾",
+      "clicks": 3,
+      "imps": 98,
+      "pos": 7.36
+     },
+     {
+      "country": "泰国",
+      "clicks": 3,
+      "imps": 75,
+      "pos": 7.11
+     },
+     {
+      "country": "德国",
+      "clicks": 2,
+      "imps": 101,
+      "pos": 9.78
+     },
+     {
+      "country": "巴西",
+      "clicks": 1,
+      "imps": 255,
+      "pos": 20.22
+     },
+     {
+      "country": "印度尼西亚",
+      "clicks": 1,
+      "imps": 100,
+      "pos": 6.34
+     },
+     {
+      "country": "俄罗斯",
+      "clicks": 1,
+      "imps": 86,
+      "pos": 18.92
+     },
+     {
+      "country": "越南",
+      "clicks": 1,
+      "imps": 61,
+      "pos": 6.66
+     },
+     {
+      "country": "波兰",
+      "clicks": 1,
+      "imps": 36,
+      "pos": 9.69
+     },
+     {
+      "country": "奥地利",
+      "clicks": 1,
+      "imps": 30,
+      "pos": 6.97
+     },
+     {
+      "country": "新西兰",
+      "clicks": 1,
+      "imps": 23,
+      "pos": 12.09
+     },
+     {
+      "country": "瑞士",
+      "clicks": 1,
+      "imps": 22,
+      "pos": 11.27
+     },
+     {
+      "country": "秘鲁",
+      "clicks": 1,
+      "imps": 17,
+      "pos": 9.35
+     },
+     {
+      "country": "立陶宛",
+      "clicks": 1,
+      "imps": 13,
+      "pos": 5.62
+     },
+     {
+      "country": "斯洛文尼亚",
+      "clicks": 1,
+      "imps": 5,
+      "pos": 7.6
+     },
+     {
+      "country": "文莱",
+      "clicks": 1,
+      "imps": 5,
+      "pos": 20.0
+     },
+     {
+      "country": "沙特阿拉伯",
+      "clicks": 0,
+      "imps": 144,
+      "pos": 24.76
+     },
+     {
+      "country": "巴基斯坦",
+      "clicks": 0,
+      "imps": 92,
+      "pos": 10.11
+     },
+     {
+      "country": "阿拉伯联合酋长国",
+      "clicks": 0,
+      "imps": 73,
+      "pos": 6.81
+     },
+     {
+      "country": "荷兰",
+      "clicks": 0,
+      "imps": 69,
+      "pos": 9.62
+     },
+     {
+      "country": "韩国",
+      "clicks": 0,
+      "imps": 64,
+      "pos": 6.83
+     },
+     {
+      "country": "孟加拉",
+      "clicks": 0,
+      "imps": 52,
+      "pos": 12.85
+     },
+     {
+      "country": "西班牙",
+      "clicks": 0,
+      "imps": 50,
+      "pos": 10.84
+     },
+     {
+      "country": "乌克兰",
+      "clicks": 0,
+      "imps": 47,
+      "pos": 8.66
+     },
+     {
+      "country": "法国",
+      "clicks": 0,
+      "imps": 45,
+      "pos": 9.11
+     },
+     {
+      "country": "南非",
+      "clicks": 0,
+      "imps": 41,
+      "pos": 7.83
+     },
+     {
+      "country": "墨西哥",
+      "clicks": 0,
+      "imps": 41,
+      "pos": 9.0
+     },
+     {
+      "country": "意大利",
+      "clicks": 0,
+      "imps": 41,
+      "pos": 12.02
+     },
+     {
+      "country": "尼日利亚",
+      "clicks": 0,
+      "imps": 34,
+      "pos": 5.53
+     },
+     {
+      "country": "阿根廷",
+      "clicks": 0,
+      "imps": 31,
+      "pos": 9.32
+     },
+     {
+      "country": "比利时",
+      "clicks": 0,
+      "imps": 26,
+      "pos": 7.46
+     },
+     {
+      "country": "埃及",
+      "clicks": 0,
+      "imps": 25,
+      "pos": 5.88
+     },
+     {
+      "country": "罗马尼亚",
+      "clicks": 0,
+      "imps": 25,
+      "pos": 7.8
+     },
+     {
+      "country": "爱尔兰",
+      "clicks": 0,
+      "imps": 24,
+      "pos": 9.92
+     },
+     {
+      "country": "匈牙利",
+      "clicks": 0,
+      "imps": 23,
+      "pos": 12.09
+     },
+     {
+      "country": "肯尼亚",
+      "clicks": 0,
+      "imps": 21,
+      "pos": 6.1
+     },
+     {
+      "country": "以色列",
+      "clicks": 0,
+      "imps": 20,
+      "pos": 8.35
+     },
+     {
+      "country": "蒙古",
+      "clicks": 0,
+      "imps": 19,
+      "pos": 6.05
+     },
+     {
+      "country": "葡萄牙",
+      "clicks": 0,
+      "imps": 17,
+      "pos": 8.82
+     },
+     {
+      "country": "瑞典",
+      "clicks": 0,
+      "imps": 16,
+      "pos": 5.81
+     },
+     {
+      "country": "斯里兰卡",
+      "clicks": 0,
+      "imps": 16,
+      "pos": 6.44
+     },
+     {
+      "country": "埃塞俄比亚",
+      "clicks": 0,
+      "imps": 16,
+      "pos": 7.62
+     },
+     {
+      "country": "尼泊尔",
+      "clicks": 0,
+      "imps": 16,
+      "pos": 10.81
+     },
+     {
+      "country": "哥伦比亚",
+      "clicks": 0,
+      "imps": 16,
+      "pos": 27.19
+     },
+     {
+      "country": "摩洛哥",
+      "clicks": 0,
+      "imps": 15,
+      "pos": 6.6
+     },
+     {
+      "country": "乌干达",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 5.43
+     },
+     {
+      "country": "捷克",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 8.21
+     },
+     {
+      "country": "保加利亚",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 13.21
+     },
+     {
+      "country": "黎巴嫩",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 5.5
+     },
+     {
+      "country": "土耳其",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 12.25
+     },
+     {
+      "country": "卡塔尔",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 6.45
+     },
+     {
+      "country": "芬兰",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 7.36
+     },
+     {
+      "country": "希腊",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 8.09
+     },
+     {
+      "country": "丹麦",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 10.64
+     },
+     {
+      "country": "柬埔寨",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 10.5
+     },
+     {
+      "country": "坦桑尼亚",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 6.33
+     },
+     {
+      "country": "伊朗",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 43.0
+     },
+     {
+      "country": "突尼斯",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 6.12
+     },
+     {
+      "country": "加纳",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 6.5
+     },
+     {
+      "country": "挪威",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 13.88
+     },
+     {
+      "country": "委内瑞拉",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 18.62
+     },
+     {
+      "country": "津巴布韦",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 3.0
+     },
+     {
+      "country": "毛里求斯",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 6.0
+     },
+     {
+      "country": "阿尔巴尼亚",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 6.14
+     },
+     {
+      "country": "多米尼加共和国",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 6.29
+     },
+     {
+      "country": "厄瓜多尔",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 8.29
+     },
+     {
+      "country": "波多黎各",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 19.0
+     },
+     {
+      "country": "塞尔维亚",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 4.5
+     },
+     {
+      "country": "马耳他",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 5.0
+     },
+     {
+      "country": "科威特",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 5.17
+     },
+     {
+      "country": "马其顿",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 8.67
+     },
+     {
+      "country": "哈萨克斯坦",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 18.5
+     },
+     {
+      "country": "斯洛伐克",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 3.0
+     },
+     {
+      "country": "格鲁吉亚",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 3.8
+     },
+     {
+      "country": "伊拉克",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 4.6
+     },
+     {
+      "country": "阿尔及利亚",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 5.0
+     },
+     {
+      "country": "乌兹别克斯坦",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 8.6
+     },
+     {
+      "country": "克罗地亚",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 11.0
+     },
+     {
+      "country": "缅甸",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 24.4
+     },
+     {
+      "country": "冰岛",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 3.75
+     },
+     {
+      "country": "智利",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 4.0
+     },
+     {
+      "country": "约旦",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 6.75
+     },
+     {
+      "country": "波斯尼亚和黑塞哥维那",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 7.5
+     },
+     {
+      "country": "特立尼达和多巴哥",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 7.75
+     },
+     {
+      "country": "白俄罗斯",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 9.0
+     },
+     {
+      "country": "拉脱维亚",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 22.5
+     },
+     {
+      "country": "喀麦隆",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 3.0
+     },
+     {
+      "country": "亚美尼亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 3.67
+     },
+     {
+      "country": "巴布亚新几内亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 5.0
+     },
+     {
+      "country": "莱索托",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.33
+     },
+     {
+      "country": "巴拉圭",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 14.0
+     },
+     {
+      "country": "南极洲",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 15.33
+     },
+     {
+      "country": "安哥拉",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 15.67
+     },
+     {
+      "country": "塞拉利昂",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 25.0
+     },
+     {
+      "country": "斐济",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 1.0
+     },
+     {
+      "country": "阿塞拜疆",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 1.5
+     },
+     {
+      "country": "阿富汗",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 2.5
+     },
+     {
+      "country": "未知地区",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 3.5
+     },
+     {
+      "country": "老挝",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 4.0
+     },
+     {
+      "country": "纳米比亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 4.0
+     },
+     {
+      "country": "利比里亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 4.5
+     },
+     {
+      "country": "加蓬",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 6.0
+     },
+     {
+      "country": "巴拿马",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 6.0
+     },
+     {
+      "country": "巴林",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 7.0
+     },
+     {
+      "country": "塞浦路斯",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 7.0
+     },
+     {
+      "country": "卢森堡",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 7.5
+     },
+     {
+      "country": "科特迪瓦",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.0
+     },
+     {
+      "country": "斯威士兰",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.0
+     },
+     {
+      "country": "危地马拉",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.5
+     },
+     {
+      "country": "牙买加",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.0
+     },
+     {
+      "country": "萨尔瓦多",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.0
+     },
+     {
+      "country": "乌拉圭",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.0
+     },
+     {
+      "country": "塔吉克斯坦",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.5
+     },
+     {
+      "country": "赞比亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 11.0
+     },
+     {
+      "country": "哥斯达黎加",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 12.5
+     },
+     {
+      "country": "阿鲁巴",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 13.5
+     },
+     {
+      "country": "贝宁",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 37.0
+     },
+     {
+      "country": "马提尼克",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "巴勒斯坦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "南苏丹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "安提瓜和巴布达",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "布隆迪",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "卢旺达",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "博茨瓦纳",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 3.0
+     },
+     {
+      "country": "圣卢西亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 3.0
+     },
+     {
+      "country": "也门",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 3.0
+     },
+     {
+      "country": "瑙鲁",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 4.0
+     },
+     {
+      "country": "安道尔",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "西撒哈拉",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "赤道几内亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "毛里塔尼亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "索马里",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "多哥",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "玻利维亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     {
+      "country": "法罗群岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     {
+      "country": "马达加斯加",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "马尔代夫",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "尼加拉瓜",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "荷属圣马丁岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "科索沃",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "列支敦士登",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "所罗门群岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "伯利兹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "不丹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "冈比亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "格林纳达",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "黑山",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "厄立特里亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "关岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "东帝汶",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "英属维尔京群岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "法属圭亚那",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "圭亚那",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "海地",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "阿曼",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "洪都拉斯",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 29.0
+     },
+     {
+      "country": "叙利亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 42.0
+     },
+     {
+      "country": "巴哈马",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 58.0
+     }
+    ]
+   }
+  },
+  "2026-11-25": {
+   "24h": {
+    "file": "24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25.xlsx",
+    "window_first": "2026-11-23T22:00:00",
+    "window_last": "2026-11-24T21:00:00",
+    "chart_total": {
+     "clicks": 21,
+     "imps": 1160
+    },
+    "queries_sheet": {
+     "clicks": 4,
+     "imps": 592,
+     "ctr": 0.6757,
+     "pos": 27.2249,
+     "rows": 266
+    },
+    "queries_pandas": {
+     "clicks": 4,
+     "imps": 592,
+     "rows": 266
+    },
+    "match": true,
+    "pages_sheet": {
+     "clicks": 21,
+     "imps": 1295,
+     "ctr": 1.6216,
+     "pos": 17.9297,
+     "rows": 249
+    },
+    "countries_sheet": {
+     "clicks": 21,
+     "imps": 1160,
+     "ctr": 1.8103,
+     "pos": 17.2476,
+     "rows": 44
+    },
+    "series": [
+     {
+      "t": "2026-11-23T22:00:00",
+      "clicks": 3,
+      "imps": 47,
+      "pos": 10.5
+     },
+     {
+      "t": "2026-11-23T23:00:00",
+      "clicks": 1,
+      "imps": 45,
+      "pos": 11.8
+     },
+     {
+      "t": "2026-11-24T00:00:00",
+      "clicks": 0,
+      "imps": 40,
+      "pos": 12.1
+     },
+     {
+      "t": "2026-11-24T01:00:00",
+      "clicks": 1,
+      "imps": 35,
+      "pos": 14.3
+     },
+     {
+      "t": "2026-11-24T02:00:00",
+      "clicks": 3,
+      "imps": 31,
+      "pos": 9.6
+     },
+     {
+      "t": "2026-11-24T03:00:00",
+      "clicks": 0,
+      "imps": 31,
+      "pos": 27.5
+     },
+     {
+      "t": "2026-11-24T04:00:00",
+      "clicks": 0,
+      "imps": 33,
+      "pos": 29.2
+     },
+     {
+      "t": "2026-11-24T05:00:00",
+      "clicks": 0,
+      "imps": 28,
+      "pos": 25.8
+     },
+     {
+      "t": "2026-11-24T06:00:00",
+      "clicks": 0,
+      "imps": 15,
+      "pos": 9.0
+     },
+     {
+      "t": "2026-11-24T07:00:00",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 17.0
+     },
+     {
+      "t": "2026-11-24T08:00:00",
+      "clicks": 0,
+      "imps": 32,
+      "pos": 8.9
+     },
+     {
+      "t": "2026-11-24T09:00:00",
+      "clicks": 1,
+      "imps": 40,
+      "pos": 13.2
+     },
+     {
+      "t": "2026-11-24T10:00:00",
+      "clicks": 1,
+      "imps": 48,
+      "pos": 10.4
+     },
+     {
+      "t": "2026-11-24T11:00:00",
+      "clicks": 1,
+      "imps": 71,
+      "pos": 9.1
+     },
+     {
+      "t": "2026-11-24T12:00:00",
+      "clicks": 2,
+      "imps": 57,
+      "pos": 11.1
+     },
+     {
+      "t": "2026-11-24T13:00:00",
+      "clicks": 1,
+      "imps": 83,
+      "pos": 20.6
+     },
+     {
+      "t": "2026-11-24T14:00:00",
+      "clicks": 3,
+      "imps": 128,
+      "pos": 24.2
+     },
+     {
+      "t": "2026-11-24T15:00:00",
+      "clicks": 1,
+      "imps": 153,
+      "pos": 31.0
+     },
+     {
+      "t": "2026-11-24T16:00:00",
+      "clicks": 1,
+      "imps": 59,
+      "pos": 17.9
+     },
+     {
+      "t": "2026-11-24T17:00:00",
+      "clicks": 2,
+      "imps": 66,
+      "pos": 9.6
+     },
+     {
+      "t": "2026-11-24T18:00:00",
+      "clicks": 0,
+      "imps": 57,
+      "pos": 9.7
+     },
+     {
+      "t": "2026-11-24T19:00:00",
+      "clicks": 0,
+      "imps": 41,
+      "pos": 9.1
+     },
+     {
+      "t": "2026-11-24T20:00:00",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 11.3
+     },
+     {
+      "t": "2026-11-24T21:00:00",
+      "clicks": 0,
+      "imps": 0,
+      "pos": 0.0
+     }
+    ],
+    "top_queries": [
+     {
+      "q": "食品包裝印刷",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 10.85
+     },
+     {
+      "q": "貼紙印刷",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 34.91
+     },
+     {
+      "q": "海報印刷",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 39.82
+     },
+     {
+      "q": "書刊印刷",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 42.55
+     },
+     {
+      "q": "印刷",
+      "clicks": 1,
+      "imps": 10,
+      "pos": 28.2
+     },
+     {
+      "q": "c109",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 10.8
+     },
+     {
+      "q": "china printed and bound wholesaler",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 1.0
+     },
+     {
+      "q": "china catalog printing",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 27.11
+     },
+     {
+      "q": "importing paper bags faq",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 14.38
+     },
+     {
+      "q": "catalog printing china",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 19.43
+     },
+     {
+      "q": "catalog printing factory china",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 29.71
+     },
+     {
+      "q": "宣傳單張印刷",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 39.0
+     },
+     {
+      "q": "product catalog printing company china",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 48.29
+     },
+     {
+      "q": "カタログ 印刷",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 32.5
+     },
+     {
+      "q": "poster 印刷",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 34.83
+     },
+     {
+      "q": "印海報",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 46.17
+     },
+     {
+      "q": "印刷公司",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 47.5
+     },
+     {
+      "q": "食品印刷",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 13.6
+     },
+     {
+      "q": "型抜きステッカー",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 17.4
+     },
+     {
+      "q": "學校 印刷",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 18.0
+     },
+     {
+      "q": "標籤 印刷",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 37.8
+     },
+     {
+      "q": "宣傳單張",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 40.2
+     },
+     {
+      "q": "騎馬釘印刷",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 43.0
+     },
+     {
+      "q": "catalog printing company china",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 44.2
+     },
+     {
+      "q": "澳門易拉架size",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 5.0
+     },
+     {
+      "q": "ラベル 印刷 小ロット",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 8.75
+     },
+     {
+      "q": "シール 印刷 安い",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 12.75
+     },
+     {
+      "q": "貼紙訂製",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 17.0
+     },
+     {
+      "q": "art catalog printing company china",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 20.75
+     },
+     {
+      "q": "可移貼紙",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 23.75
+     },
+     {
+      "q": "月曆印刷",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 29.75
+     },
+     {
+      "q": "紙盒訂製",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 32.25
+     },
+     {
+      "q": "教材 印刷製本",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 33.5
+     },
+     {
+      "q": "包裝盒訂製",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 37.75
+     },
+     {
+      "q": "易拉架尺寸",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 37.75
+     },
+     {
+      "q": "騎馬釘書刊",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 38.75
+     },
+     {
+      "q": "包裝盒印刷",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 39.25
+     },
+     {
+      "q": "fsc certified paper bag supplier",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 40.25
+     },
+     {
+      "q": "教材 テキスト印刷",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 44.25
+     },
+     {
+      "q": "紙盒印刷",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 45.25
+     }
+    ],
+    "top_pages": [
+     {
+      "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "clicks": 0,
+      "imps": 60,
+      "pos": 22.08
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/",
+      "clicks": 3,
+      "imps": 47,
+      "pos": 15.45
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "clicks": 1,
+      "imps": 35,
+      "pos": 17.8
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+      "clicks": 0,
+      "imps": 30,
+      "pos": 9.37
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "clicks": 0,
+      "imps": 28,
+      "pos": 13.0
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/mtr-advertising-specs/",
+      "clicks": 1,
+      "imps": 23,
+      "pos": 5.48
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/paper-bag-buying-guide/",
+      "clicks": 0,
+      "imps": 23,
+      "pos": 15.57
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "clicks": 0,
+      "imps": 22,
+      "pos": 12.68
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/laminated-menus/",
+      "clicks": 0,
+      "imps": 21,
+      "pos": 16.95
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+      "clicks": 0,
+      "imps": 21,
+      "pos": 20.76
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "clicks": 0,
+      "imps": 21,
+      "pos": 21.38
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/poster-printing-price-guide/",
+      "clicks": 0,
+      "imps": 20,
+      "pos": 13.95
+     },
+     {
+      "page": "https://zprintpro.com/en/product/catalog-printing/",
+      "clicks": 0,
+      "imps": 20,
+      "pos": 30.05
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+      "clicks": 0,
+      "imps": 18,
+      "pos": 6.61
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "clicks": 0,
+      "imps": 17,
+      "pos": 6.82
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/comiket-c109/",
+      "clicks": 0,
+      "imps": 17,
+      "pos": 10.06
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+      "clicks": 0,
+      "imps": 17,
+      "pos": 22.76
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/books/",
+      "clicks": 0,
+      "imps": 17,
+      "pos": 47.29
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "clicks": 0,
+      "imps": 16,
+      "pos": 7.75
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/doujin-circle-printing-guide/",
+      "clicks": 1,
+      "imps": 15,
+      "pos": 6.6
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/retail-shop-poster-printing-guide/",
+      "clicks": 0,
+      "imps": 15,
+      "pos": 31.6
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/calendar-printing-guide/",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 9.36
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/flyers/",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 31.64
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 47.0
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 23.0
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 24.0
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/posters/",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 36.77
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/packaging/",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 45.15
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 46.5
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/large-bags/",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 4.18
+     }
+    ],
+    "money_kw": {
+     "香港印刷": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     "海報印刷": {
+      "clicks": 0,
+      "imps": 11,
+      "pos": 39.82
+     },
+     "貼紙印刷": {
+      "clicks": 0,
+      "imps": 11,
+      "pos": 34.91
+     },
+     "宣傳單張": {
+      "clicks": 0,
+      "imps": 5,
+      "pos": 40.2
+     },
+     "宣傳單張印刷": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 39.0
+     },
+     "摺頁印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 34.67
+     },
+     "印書": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 31.33
+     },
+     "包裝盒印刷": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 39.25
+     },
+     "包裝盒訂製": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 37.75
+     },
+     "紙盒印刷": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 45.25
+     },
+     "紙盒訂製": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 32.25
+     },
+     "書刊印刷": {
+      "clicks": 0,
+      "imps": 11,
+      "pos": 42.55
+     },
+     "月曆印刷": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 29.75
+     },
+     "利是封印刷": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 31.0
+     },
+     "喜帖印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 29.33
+     },
+     "小冊子印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 34.0
+     },
+     "學校印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 35.33
+     },
+     "易拉架印刷": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 21.5
+     },
+     "食品包裝印刷": {
+      "clicks": 0,
+      "imps": 13,
+      "pos": 10.85
+     },
+     "貼紙訂製": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 17.0
+     },
+     "即日印刷": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 10.5
+     },
+     "a1 印刷 即日": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     "a2 印刷 即日": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     "海報印刷一張": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 4.0
+     },
+     "可移貼紙": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 23.75
+     },
+     "透明貼紙印刷": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     "2027利是封": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 4.0
+     },
+     "膠裝書價格": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 35.33
+     },
+     "貼紙印刷急件": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     "貼紙印刷 急件": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     "香港印刷公司": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 24.0
+     },
+     "catalog printing china": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 19.43
+     },
+     "catalogs printing china": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 31.33
+     },
+     "china catalog printing": {
+      "clicks": 0,
+      "imps": 9,
+      "pos": 27.11
+     },
+     "small batch sticker printing": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 10.0
+     },
+     "a2 poster printing": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 42.0
+     },
+     "school exercise book printing": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 14.67
+     },
+     "custom flyer printing china": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 21.0
+     },
+     "wholesale catalog printing services china": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 30.0
+     },
+     "custom catalog printing china": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 34.0
+     },
+     "urgent printing": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 19.0
+     },
+     "educational printing": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 32.33
+     },
+     "ステッカー 小ロット": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 28.0
+     },
+     "教材 印刷製本": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 33.5
+     },
+     "教材 印刷 製本": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 31.0
+     },
+     "カタログ 印刷": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 32.5
+     },
+     "パッケージ印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 29.0
+     },
+     "防水ステッカー": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     "冊子印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 48.0
+     },
+     "卒業アルバム 印刷": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 56.5
+     },
+     "同人本印刷": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     "中綴じ 印刷": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 31.0
+     }
+    },
+    "countries": [
+     {
+      "country": "中国香港",
+      "clicks": 17,
+      "imps": 606,
+      "pos": 16.7
+     },
+     {
+      "country": "澳大利亚",
+      "clicks": 2,
+      "imps": 11,
+      "pos": 11.55
+     },
+     {
+      "country": "台湾",
+      "clicks": 1,
+      "imps": 37,
+      "pos": 6.54
+     },
+     {
+      "country": "加拿大",
+      "clicks": 1,
+      "imps": 11,
+      "pos": 11.27
+     },
+     {
+      "country": "美国",
+      "clicks": 0,
+      "imps": 204,
+      "pos": 21.42
+     },
+     {
+      "country": "日本",
+      "clicks": 0,
+      "imps": 185,
+      "pos": 20.31
+     },
+     {
+      "country": "印度",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 12.78
+     },
+     {
+      "country": "新加坡",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 19.62
+     },
+     {
+      "country": "俄罗斯",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 11.14
+     },
+     {
+      "country": "英国",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 20.14
+     },
+     {
+      "country": "巴西",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 21.43
+     },
+     {
+      "country": "中国",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 5.6
+     },
+     {
+      "country": "沙特阿拉伯",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 7.0
+     },
+     {
+      "country": "蒙古",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 2.75
+     },
+     {
+      "country": "马来西亚",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 5.0
+     },
+     {
+      "country": "孟加拉",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 8.0
+     },
+     {
+      "country": "荷兰",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 14.25
+     },
+     {
+      "country": "德国",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 5.67
+     },
+     {
+      "country": "阿拉伯联合酋长国",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 19.0
+     },
+     {
+      "country": "墨西哥",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 20.67
+     },
+     {
+      "country": "瑞士",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 1.0
+     },
+     {
+      "country": "爱尔兰",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 1.5
+     },
+     {
+      "country": "以色列",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 1.5
+     },
+     {
+      "country": "法国",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 3.5
+     },
+     {
+      "country": "菲律宾",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 3.5
+     },
+     {
+      "country": "格鲁吉亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.0
+     },
+     {
+      "country": "澳门",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 10.0
+     },
+     {
+      "country": "印度尼西亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 11.5
+     },
+     {
+      "country": "越南",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 22.5
+     },
+     {
+      "country": "特克斯和凯科斯群岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "危地马拉",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "缅甸",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "巴基斯坦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "伊拉克",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 4.0
+     },
+     {
+      "country": "摩洛哥",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "纳米比亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     {
+      "country": "亚美尼亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "泰国",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "委内瑞拉",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "土耳其",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "比利时",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "阿尔巴尼亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 12.0
+     },
+     {
+      "country": "科特迪瓦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 49.0
+     },
+     {
+      "country": "伊朗",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 57.0
+     }
+    ]
+   },
+   "7d": {
+    "file": "7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25.xlsx",
+    "window_first": "2026-11-16",
+    "window_last": "2026-11-22",
+    "chart_total": {
+     "clicks": 122,
+     "imps": 9911
+    },
+    "queries_sheet": {
+     "clicks": 9,
+     "imps": 5365,
+     "ctr": 0.1678,
+     "pos": 35.4164,
+     "rows": 1000
+    },
+    "queries_pandas": {
+     "clicks": 9,
+     "imps": 5365,
+     "rows": 1000
+    },
+    "match": true,
+    "pages_sheet": {
+     "clicks": 123,
+     "imps": 11158,
+     "ctr": 1.1023,
+     "pos": 25.2052,
+     "rows": 441
+    },
+    "countries_sheet": {
+     "clicks": 122,
+     "imps": 9911,
+     "ctr": 1.231,
+     "pos": 24.6712,
+     "rows": 120
+    },
+    "series": [
+     {
+      "t": "2026-11-16",
+      "clicks": 25,
+      "imps": 1201,
+      "pos": 16.8
+     },
+     {
+      "t": "2026-11-17",
+      "clicks": 21,
+      "imps": 1227,
+      "pos": 13.8
+     },
+     {
+      "t": "2026-11-18",
+      "clicks": 24,
+      "imps": 1292,
+      "pos": 14.5
+     },
+     {
+      "t": "2026-11-19",
+      "clicks": 13,
+      "imps": 1086,
+      "pos": 15.5
+     },
+     {
+      "t": "2026-11-20",
+      "clicks": 8,
+      "imps": 1533,
+      "pos": 25.9
+     },
+     {
+      "t": "2026-11-21",
+      "clicks": 6,
+      "imps": 1305,
+      "pos": 35.0
+     },
+     {
+      "t": "2026-11-22",
+      "clicks": 25,
+      "imps": 2267,
+      "pos": 38.2
+     }
+    ],
+    "top_queries": [
+     {
+      "q": "貼紙印刷",
+      "clicks": 0,
+      "imps": 78,
+      "pos": 35.6
+     },
+     {
+      "q": "c109",
+      "clicks": 0,
+      "imps": 58,
+      "pos": 11.74
+     },
+     {
+      "q": "月曆印刷",
+      "clicks": 0,
+      "imps": 57,
+      "pos": 25.42
+     },
+     {
+      "q": "海報印刷",
+      "clicks": 0,
+      "imps": 56,
+      "pos": 31.27
+     },
+     {
+      "q": "書刊印刷",
+      "clicks": 0,
+      "imps": 52,
+      "pos": 41.31
+     },
+     {
+      "q": "印刷紙袋",
+      "clicks": 0,
+      "imps": 51,
+      "pos": 26.75
+     },
+     {
+      "q": "export 70x105mm education books printing",
+      "clicks": 0,
+      "imps": 51,
+      "pos": 90.59
+     },
+     {
+      "q": "食品包裝印刷",
+      "clicks": 0,
+      "imps": 46,
+      "pos": 11.09
+     },
+     {
+      "q": "食品印刷",
+      "clicks": 0,
+      "imps": 44,
+      "pos": 8.91
+     },
+     {
+      "q": "印海報",
+      "clicks": 0,
+      "imps": 44,
+      "pos": 31.89
+     },
+     {
+      "q": "學校印刷",
+      "clicks": 0,
+      "imps": 42,
+      "pos": 15.6
+     },
+     {
+      "q": "export 190x260mm school textbook printing",
+      "clicks": 0,
+      "imps": 42,
+      "pos": 44.31
+     },
+     {
+      "q": "宣傳單張印刷",
+      "clicks": 0,
+      "imps": 41,
+      "pos": 31.61
+     },
+     {
+      "q": "紙袋印刷",
+      "clicks": 0,
+      "imps": 38,
+      "pos": 24.61
+     },
+     {
+      "q": "包裝盒印刷",
+      "clicks": 0,
+      "imps": 38,
+      "pos": 29.37
+     },
+     {
+      "q": "宣傳單張",
+      "clicks": 0,
+      "imps": 37,
+      "pos": 54.08
+     },
+     {
+      "q": "訂做紙袋",
+      "clicks": 0,
+      "imps": 35,
+      "pos": 26.91
+     },
+     {
+      "q": "印刷公司",
+      "clicks": 0,
+      "imps": 35,
+      "pos": 32.89
+     },
+     {
+      "q": "パッケージ印刷",
+      "clicks": 0,
+      "imps": 35,
+      "pos": 35.54
+     },
+     {
+      "q": "可移貼紙",
+      "clicks": 0,
+      "imps": 34,
+      "pos": 16.85
+     },
+     {
+      "q": "貼紙訂製",
+      "clicks": 0,
+      "imps": 33,
+      "pos": 33.24
+     },
+     {
+      "q": "export 170x240mm catalogue printing",
+      "clicks": 0,
+      "imps": 33,
+      "pos": 68.88
+     },
+     {
+      "q": "customized 190x260mm education books printing",
+      "clicks": 0,
+      "imps": 33,
+      "pos": 85.27
+     },
+     {
+      "q": "supply c1s education books printing",
+      "clicks": 0,
+      "imps": 33,
+      "pos": 98.7
+     },
+     {
+      "q": "月曆訂製",
+      "clicks": 0,
+      "imps": 32,
+      "pos": 20.62
+     },
+     {
+      "q": "china catalog printing",
+      "clicks": 0,
+      "imps": 31,
+      "pos": 19.68
+     },
+     {
+      "q": "poster 印刷",
+      "clicks": 0,
+      "imps": 30,
+      "pos": 27.93
+     },
+     {
+      "q": "印刷",
+      "clicks": 0,
+      "imps": 29,
+      "pos": 29.38
+     },
+     {
+      "q": "oem 70x105mm education books printing",
+      "clicks": 0,
+      "imps": 29,
+      "pos": 88.07
+     },
+     {
+      "q": "コミケ 印刷",
+      "clicks": 0,
+      "imps": 28,
+      "pos": 15.71
+     },
+     {
+      "q": "貼紙",
+      "clicks": 0,
+      "imps": 28,
+      "pos": 46.86
+     },
+     {
+      "q": "教材 印刷製本",
+      "clicks": 0,
+      "imps": 27,
+      "pos": 41.26
+     },
+     {
+      "q": "包裝盒訂製",
+      "clicks": 0,
+      "imps": 26,
+      "pos": 29.42
+     },
+     {
+      "q": "騎馬釘",
+      "clicks": 0,
+      "imps": 26,
+      "pos": 41.77
+     },
+     {
+      "q": "cheap 280x330mm school textbook printing",
+      "clicks": 0,
+      "imps": 26,
+      "pos": 69.81
+     },
+     {
+      "q": "月歷印刷",
+      "clicks": 0,
+      "imps": 25,
+      "pos": 27.24
+     },
+     {
+      "q": "紙袋訂製",
+      "clicks": 0,
+      "imps": 25,
+      "pos": 32.48
+     },
+     {
+      "q": "騎馬釘印刷",
+      "clicks": 0,
+      "imps": 25,
+      "pos": 40.72
+     },
+     {
+      "q": "competitive price c2s education books printing",
+      "clicks": 0,
+      "imps": 25,
+      "pos": 86.32
+     },
+     {
+      "q": "食品包裝訂製",
+      "clicks": 0,
+      "imps": 24,
+      "pos": 11.67
+     }
+    ],
+    "top_pages": [
+     {
+      "page": "https://zprintpro.com/en/product/textbooks/",
+      "clicks": 0,
+      "imps": 517,
+      "pos": 69.45
+     },
+     {
+      "page": "https://zprintpro.com/en/product/catalog-printing/",
+      "clicks": 0,
+      "imps": 493,
+      "pos": 45.73
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "clicks": 0,
+      "imps": 357,
+      "pos": 27.33
+     },
+     {
+      "page": "https://zprintpro.com/en/category/books/",
+      "clicks": 0,
+      "imps": 309,
+      "pos": 66.19
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/",
+      "clicks": 10,
+      "imps": 294,
+      "pos": 14.18
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "clicks": 1,
+      "imps": 232,
+      "pos": 16.51
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+      "clicks": 3,
+      "imps": 197,
+      "pos": 7.97
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+      "clicks": 0,
+      "imps": 193,
+      "pos": 6.26
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "clicks": 4,
+      "imps": 182,
+      "pos": 16.37
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "clicks": 1,
+      "imps": 182,
+      "pos": 14.37
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+      "clicks": 0,
+      "imps": 179,
+      "pos": 45.91
+     },
+     {
+      "page": "https://zprintpro.com/en/product/perfect-bound-books/",
+      "clicks": 0,
+      "imps": 168,
+      "pos": 38.77
+     },
+     {
+      "page": "https://zprintpro.com/en/category/educational/",
+      "clicks": 0,
+      "imps": 152,
+      "pos": 72.18
+     },
+     {
+      "page": "https://zprintpro.com/en/product/spiral-notebooks/",
+      "clicks": 0,
+      "imps": 146,
+      "pos": 39.66
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+      "clicks": 1,
+      "imps": 141,
+      "pos": 20.62
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+      "clicks": 1,
+      "imps": 140,
+      "pos": 16.96
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/books/",
+      "clicks": 1,
+      "imps": 136,
+      "pos": 43.51
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "clicks": 1,
+      "imps": 134,
+      "pos": 8.43
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/paper-bag-buying-guide/",
+      "clicks": 0,
+      "imps": 130,
+      "pos": 15.75
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+      "clicks": 0,
+      "imps": 125,
+      "pos": 17.87
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "clicks": 2,
+      "imps": 123,
+      "pos": 9.14
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "clicks": 0,
+      "imps": 120,
+      "pos": 10.68
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+      "clicks": 0,
+      "imps": 118,
+      "pos": 31.13
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+      "clicks": 1,
+      "imps": 116,
+      "pos": 31.69
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/comiket-c109/",
+      "clicks": 1,
+      "imps": 105,
+      "pos": 10.16
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+      "clicks": 0,
+      "imps": 102,
+      "pos": 19.76
+     },
+     {
+      "page": "https://zprintpro.com/en/product/saddle-stitch-booklets/",
+      "clicks": 1,
+      "imps": 98,
+      "pos": 40.15
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+      "clicks": 0,
+      "imps": 98,
+      "pos": 42.37
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/packaging/",
+      "clicks": 0,
+      "imps": 97,
+      "pos": 38.48
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/posters/",
+      "clicks": 1,
+      "imps": 95,
+      "pos": 29.09
+     }
+    ],
+    "money_kw": {
+     "香港印刷": {
+      "clicks": 0,
+      "imps": 8,
+      "pos": 12.88
+     },
+     "海報印刷": {
+      "clicks": 0,
+      "imps": 56,
+      "pos": 31.27
+     },
+     "貼紙印刷": {
+      "clicks": 0,
+      "imps": 78,
+      "pos": 35.6
+     },
+     "宣傳單張": {
+      "clicks": 0,
+      "imps": 37,
+      "pos": 54.08
+     },
+     "宣傳單張印刷": {
+      "clicks": 0,
+      "imps": 41,
+      "pos": 31.61
+     },
+     "摺頁印刷": {
+      "clicks": 0,
+      "imps": 20,
+      "pos": 20.4
+     },
+     "印書": {
+      "clicks": 0,
+      "imps": 22,
+      "pos": 30.41
+     },
+     "包裝盒印刷": {
+      "clicks": 0,
+      "imps": 38,
+      "pos": 29.37
+     },
+     "包裝盒訂製": {
+      "clicks": 0,
+      "imps": 26,
+      "pos": 29.42
+     },
+     "紙盒印刷": {
+      "clicks": 0,
+      "imps": 22,
+      "pos": 41.23
+     },
+     "紙盒訂製": {
+      "clicks": 0,
+      "imps": 23,
+      "pos": 31.43
+     },
+     "禮盒訂製": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 47.5
+     },
+     "書刊印刷": {
+      "clicks": 0,
+      "imps": 52,
+      "pos": 41.31
+     },
+     "月曆印刷": {
+      "clicks": 0,
+      "imps": 57,
+      "pos": 25.42
+     },
+     "利是封印刷": {
+      "clicks": 0,
+      "imps": 12,
+      "pos": 32.5
+     },
+     "喜帖印刷": {
+      "clicks": 0,
+      "imps": 15,
+      "pos": 32.87
+     },
+     "證書印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.0
+     },
+     "小冊子印刷": {
+      "clicks": 0,
+      "imps": 10,
+      "pos": 23.5
+     },
+     "學校印刷": {
+      "clicks": 0,
+      "imps": 42,
+      "pos": 15.6
+     },
+     "易拉架印刷": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 21.75
+     },
+     "食品包裝印刷": {
+      "clicks": 0,
+      "imps": 46,
+      "pos": 11.09
+     },
+     "貼紙訂製": {
+      "clicks": 0,
+      "imps": 33,
+      "pos": 33.24
+     },
+     "即日印刷": {
+      "clicks": 0,
+      "imps": 13,
+      "pos": 10.31
+     },
+     "即日急件": {
+      "clicks": 0,
+      "imps": 14,
+      "pos": 11.14
+     },
+     "a2印刷": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     "a1 印刷 即日": {
+      "clicks": 0,
+      "imps": 8,
+      "pos": 8.88
+     },
+     "a2 印刷 即日": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 7.71
+     },
+     "海報印刷一張": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 7.0
+     },
+     "海報印刷即日": {
+      "clicks": 0,
+      "imps": 8,
+      "pos": 9.25
+     },
+     "可移貼紙": {
+      "clicks": 0,
+      "imps": 34,
+      "pos": 16.85
+     },
+     "透明貼紙印刷": {
+      "clicks": 0,
+      "imps": 8,
+      "pos": 4.5
+     },
+     "戶外可移貼紙": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 14.0
+     },
+     "印喜帖價格": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     "2027利是封": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 5.5
+     },
+     "印刷公司報價": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     "膠裝書價格": {
+      "clicks": 0,
+      "imps": 15,
+      "pos": 37.47
+     },
+     "香港印刷公司": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 31.0
+     },
+     "catalog printing china": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 21.5
+     },
+     "catalogs printing china": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 37.0
+     },
+     "china catalog printing": {
+      "clicks": 0,
+      "imps": 31,
+      "pos": 19.68
+     },
+     "catalogue printing china": {
+      "clicks": 0,
+      "imps": 5,
+      "pos": 16.2
+     },
+     "small batch sticker printing": {
+      "clicks": 0,
+      "imps": 5,
+      "pos": 5.2
+     },
+     "small batch stickers": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 7.14
+     },
+     "doujinshi printing": {
+      "clicks": 0,
+      "imps": 19,
+      "pos": 9.42
+     },
+     "a2 poster printing": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 45.5
+     },
+     "urgent printing": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 13.25
+     },
+     "educational printing": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 47.67
+     },
+     "ステッカー印刷 小ロット": {
+      "clicks": 0,
+      "imps": 2,
+      "pos": 24.5
+     },
+     "ステッカー 小ロット": {
+      "clicks": 0,
+      "imps": 12,
+      "pos": 8.92
+     },
+     "教材 印刷製本": {
+      "clicks": 0,
+      "imps": 27,
+      "pos": 41.26
+     },
+     "教材 印刷 製本": {
+      "clicks": 0,
+      "imps": 17,
+      "pos": 39.53
+     },
+     "コミケ 印刷": {
+      "clicks": 0,
+      "imps": 28,
+      "pos": 15.71
+     },
+     "カタログ 印刷": {
+      "clicks": 0,
+      "imps": 19,
+      "pos": 31.68
+     },
+     "パッケージ印刷": {
+      "clicks": 0,
+      "imps": 35,
+      "pos": 35.54
+     },
+     "防水ステッカー": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 17.0
+     },
+     "冊子印刷": {
+      "clicks": 0,
+      "imps": 4,
+      "pos": 43.5
+     },
+     "卒業アルバム 印刷": {
+      "clicks": 0,
+      "imps": 10,
+      "pos": 56.4
+     },
+     "中綴じ 印刷": {
+      "clicks": 0,
+      "imps": 1,
+      "pos": 49.0
+     }
+    },
+    "countries": [
+     {
+      "country": "中国香港",
+      "clicks": 91,
+      "imps": 4238,
+      "pos": 16.31
+     },
+     {
+      "country": "日本",
+      "clicks": 8,
+      "imps": 1185,
+      "pos": 23.53
+     },
+     {
+      "country": "美国",
+      "clicks": 4,
+      "imps": 3042,
+      "pos": 43.11
+     },
+     {
+      "country": "台湾",
+      "clicks": 3,
+      "imps": 265,
+      "pos": 9.8
+     },
+     {
+      "country": "澳大利亚",
+      "clicks": 3,
+      "imps": 38,
+      "pos": 10.21
+     },
+     {
+      "country": "中国",
+      "clicks": 2,
+      "imps": 48,
+      "pos": 16.81
+     },
+     {
+      "country": "韩国",
+      "clicks": 2,
+      "imps": 24,
+      "pos": 4.67
+     },
+     {
+      "country": "蒙古",
+      "clicks": 2,
+      "imps": 6,
+      "pos": 11.33
+     },
+     {
+      "country": "加拿大",
+      "clicks": 1,
+      "imps": 105,
+      "pos": 13.76
+     },
+     {
+      "country": "英国",
+      "clicks": 1,
+      "imps": 105,
+      "pos": 17.11
+     },
+     {
+      "country": "新加坡",
+      "clicks": 1,
+      "imps": 50,
+      "pos": 7.98
+     },
+     {
+      "country": "德国",
+      "clicks": 1,
+      "imps": 28,
+      "pos": 7.46
+     },
+     {
+      "country": "阿拉伯联合酋长国",
+      "clicks": 1,
+      "imps": 10,
+      "pos": 8.7
+     },
+     {
+      "country": "文莱",
+      "clicks": 1,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "叙利亚",
+      "clicks": 1,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "巴西",
+      "clicks": 0,
+      "imps": 108,
+      "pos": 14.06
+     },
+     {
+      "country": "印度",
+      "clicks": 0,
+      "imps": 61,
+      "pos": 13.7
+     },
+     {
+      "country": "俄罗斯",
+      "clicks": 0,
+      "imps": 38,
+      "pos": 14.82
+     },
+     {
+      "country": "马来西亚",
+      "clicks": 0,
+      "imps": 37,
+      "pos": 5.89
+     },
+     {
+      "country": "澳门",
+      "clicks": 0,
+      "imps": 35,
+      "pos": 6.46
+     },
+     {
+      "country": "沙特阿拉伯",
+      "clicks": 0,
+      "imps": 34,
+      "pos": 29.65
+     },
+     {
+      "country": "印度尼西亚",
+      "clicks": 0,
+      "imps": 33,
+      "pos": 7.55
+     },
+     {
+      "country": "菲律宾",
+      "clicks": 0,
+      "imps": 27,
+      "pos": 6.11
+     },
+     {
+      "country": "巴基斯坦",
+      "clicks": 0,
+      "imps": 24,
+      "pos": 12.62
+     },
+     {
+      "country": "孟加拉",
+      "clicks": 0,
+      "imps": 20,
+      "pos": 12.25
+     },
+     {
+      "country": "泰国",
+      "clicks": 0,
+      "imps": 17,
+      "pos": 9.41
+     },
+     {
+      "country": "乌克兰",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 8.07
+     },
+     {
+      "country": "阿根廷",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 8.5
+     },
+     {
+      "country": "南非",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 12.57
+     },
+     {
+      "country": "意大利",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 13.0
+     },
+     {
+      "country": "尼泊尔",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 11.25
+     },
+     {
+      "country": "法国",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 6.0
+     },
+     {
+      "country": "匈牙利",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 14.64
+     },
+     {
+      "country": "墨西哥",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 6.0
+     },
+     {
+      "country": "荷兰",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 10.5
+     },
+     {
+      "country": "西班牙",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 22.1
+     },
+     {
+      "country": "爱尔兰",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 7.25
+     },
+     {
+      "country": "比利时",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 6.29
+     },
+     {
+      "country": "乌干达",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 7.57
+     },
+     {
+      "country": "罗马尼亚",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 9.14
+     },
+     {
+      "country": "土耳其",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 5.17
+     },
+     {
+      "country": "越南",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 6.33
+     },
+     {
+      "country": "芬兰",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 7.0
+     },
+     {
+      "country": "新西兰",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 11.83
+     },
+     {
+      "country": "波兰",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 6.0
+     },
+     {
+      "country": "尼日利亚",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 6.4
+     },
+     {
+      "country": "哈萨克斯坦",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 7.8
+     },
+     {
+      "country": "智利",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 8.4
+     },
+     {
+      "country": "奥地利",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 9.8
+     },
+     {
+      "country": "以色列",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 10.2
+     },
+     {
+      "country": "马耳他",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 3.75
+     },
+     {
+      "country": "加纳",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 4.0
+     },
+     {
+      "country": "伊拉克",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 4.25
+     },
+     {
+      "country": "肯尼亚",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 5.25
+     },
+     {
+      "country": "厄瓜多尔",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 5.75
+     },
+     {
+      "country": "摩洛哥",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 9.25
+     },
+     {
+      "country": "乌兹别克斯坦",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 4.67
+     },
+     {
+      "country": "黎巴嫩",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.33
+     },
+     {
+      "country": "秘鲁",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.33
+     },
+     {
+      "country": "斯里兰卡",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.67
+     },
+     {
+      "country": "葡萄牙",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.67
+     },
+     {
+      "country": "突尼斯",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 8.33
+     },
+     {
+      "country": "赞比亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 9.0
+     },
+     {
+      "country": "哥伦比亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 9.67
+     },
+     {
+      "country": "委内瑞拉",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 10.67
+     },
+     {
+      "country": "瑞士",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 15.33
+     },
+     {
+      "country": "格鲁吉亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 1.5
+     },
+     {
+      "country": "捷克",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 3.5
+     },
+     {
+      "country": "巴布亚新几内亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 4.0
+     },
+     {
+      "country": "斯洛伐克",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 5.0
+     },
+     {
+      "country": "多米尼加共和国",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 5.5
+     },
+     {
+      "country": "阿尔及利亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 5.5
+     },
+     {
+      "country": "缅甸",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 6.5
+     },
+     {
+      "country": "苏丹",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 6.5
+     },
+     {
+      "country": "马其顿",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 7.0
+     },
+     {
+      "country": "希腊",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 7.5
+     },
+     {
+      "country": "哥斯达黎加",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.0
+     },
+     {
+      "country": "立陶宛",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.0
+     },
+     {
+      "country": "危地马拉",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.5
+     },
+     {
+      "country": "巴拉圭",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.0
+     },
+     {
+      "country": "塞尔维亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.0
+     },
+     {
+      "country": "塞浦路斯",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.5
+     },
+     {
+      "country": "瑞典",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 10.0
+     },
+     {
+      "country": "阿曼",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 11.0
+     },
+     {
+      "country": "保加利亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 11.5
+     },
+     {
+      "country": "伊朗",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 23.5
+     },
+     {
+      "country": "丹麦",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 32.5
+     },
+     {
+      "country": "埃塞俄比亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "摩尔多瓦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "波多黎各",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "巴勒斯坦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "南苏丹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "坦桑尼亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "布隆迪",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "安哥拉",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "阿尔巴尼亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "安道尔",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "柬埔寨",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "纳米比亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     {
+      "country": "特立尼达和多巴哥",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     {
+      "country": "波斯尼亚和黑塞哥维那",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "科威特",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "马达加斯加",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "卡塔尔",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "科索沃",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "列支敦士登",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "挪威",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "津巴布韦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "巴林",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "伯利兹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "加蓬",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "毛里求斯",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "尼加拉瓜",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "索马里",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "埃及",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "关岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "英属维尔京群岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "克罗地亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "苏里南",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "洪都拉斯",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 29.0
+     }
+    ]
+   },
+   "28d": {
+    "file": "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25.xlsx",
+    "window_first": "2026-10-26",
+    "window_last": "2026-11-22",
+    "chart_total": {
+     "clicks": 542,
+     "imps": 32038
+    },
+    "queries_sheet": {
+     "clicks": 68,
+     "imps": 13645,
+     "ctr": 0.4984,
+     "pos": 29.3861,
+     "rows": 1000
+    },
+    "queries_pandas": {
+     "clicks": 68,
+     "imps": 13645,
+     "rows": 1000
+    },
+    "match": true,
+    "pages_sheet": {
+     "clicks": 553,
+     "imps": 38051,
+     "ctr": 1.4533,
+     "pos": 20.7108,
+     "rows": 586
+    },
+    "countries_sheet": {
+     "clicks": 542,
+     "imps": 32038,
+     "ctr": 1.6917,
+     "pos": 17.9982,
+     "rows": 169
+    },
+    "series": [
+     {
+      "t": "2026-10-26",
+      "clicks": 31,
+      "imps": 947,
+      "pos": 14.1
+     },
+     {
+      "t": "2026-10-27",
+      "clicks": 18,
+      "imps": 939,
+      "pos": 14.2
+     },
+     {
+      "t": "2026-10-28",
+      "clicks": 24,
+      "imps": 902,
+      "pos": 12.5
+     },
+     {
+      "t": "2026-10-29",
+      "clicks": 18,
+      "imps": 988,
+      "pos": 14.0
+     },
+     {
+      "t": "2026-10-30",
+      "clicks": 11,
+      "imps": 942,
+      "pos": 20.3
+     },
+     {
+      "t": "2026-10-31",
+      "clicks": 10,
+      "imps": 788,
+      "pos": 20.3
+     },
+     {
+      "t": "2026-11-01",
+      "clicks": 21,
+      "imps": 1018,
+      "pos": 17.7
+     },
+     {
+      "t": "2026-11-02",
+      "clicks": 24,
+      "imps": 993,
+      "pos": 14.0
+     },
+     {
+      "t": "2026-11-03",
+      "clicks": 29,
+      "imps": 1087,
+      "pos": 14.4
+     },
+     {
+      "t": "2026-11-04",
+      "clicks": 22,
+      "imps": 1096,
+      "pos": 12.6
+     },
+     {
+      "t": "2026-11-05",
+      "clicks": 27,
+      "imps": 1081,
+      "pos": 13.4
+     },
+     {
+      "t": "2026-11-06",
+      "clicks": 11,
+      "imps": 1078,
+      "pos": 14.9
+     },
+     {
+      "t": "2026-11-07",
+      "clicks": 14,
+      "imps": 849,
+      "pos": 15.5
+     },
+     {
+      "t": "2026-11-08",
+      "clicks": 27,
+      "imps": 1095,
+      "pos": 13.9
+     },
+     {
+      "t": "2026-11-09",
+      "clicks": 28,
+      "imps": 1242,
+      "pos": 13.4
+     },
+     {
+      "t": "2026-11-10",
+      "clicks": 20,
+      "imps": 1210,
+      "pos": 11.9
+     },
+     {
+      "t": "2026-11-11",
+      "clicks": 24,
+      "imps": 1349,
+      "pos": 13.2
+     },
+     {
+      "t": "2026-11-12",
+      "clicks": 17,
+      "imps": 1203,
+      "pos": 13.6
+     },
+     {
+      "t": "2026-11-13",
+      "clicks": 14,
+      "imps": 1155,
+      "pos": 19.6
+     },
+     {
+      "t": "2026-11-14",
+      "clicks": 14,
+      "imps": 974,
+      "pos": 17.4
+     },
+     {
+      "t": "2026-11-15",
+      "clicks": 16,
+      "imps": 1191,
+      "pos": 17.0
+     },
+     {
+      "t": "2026-11-16",
+      "clicks": 25,
+      "imps": 1201,
+      "pos": 16.8
+     },
+     {
+      "t": "2026-11-17",
+      "clicks": 21,
+      "imps": 1227,
+      "pos": 13.8
+     },
+     {
+      "t": "2026-11-18",
+      "clicks": 24,
+      "imps": 1292,
+      "pos": 14.5
+     },
+     {
+      "t": "2026-11-19",
+      "clicks": 13,
+      "imps": 1086,
+      "pos": 15.5
+     },
+     {
+      "t": "2026-11-20",
+      "clicks": 8,
+      "imps": 1533,
+      "pos": 25.9
+     },
+     {
+      "t": "2026-11-21",
+      "clicks": 6,
+      "imps": 1305,
+      "pos": 35.0
+     },
+     {
+      "t": "2026-11-22",
+      "clicks": 25,
+      "imps": 2267,
+      "pos": 38.2
+     }
+    ],
+    "top_queries": [
+     {
+      "q": "c109",
+      "clicks": 1,
+      "imps": 283,
+      "pos": 10.13
+     },
+     {
+      "q": "貼紙印刷",
+      "clicks": 0,
+      "imps": 218,
+      "pos": 30.56
+     },
+     {
+      "q": "海報印刷",
+      "clicks": 1,
+      "imps": 187,
+      "pos": 24.56
+     },
+     {
+      "q": "月曆印刷",
+      "clicks": 0,
+      "imps": 166,
+      "pos": 20.91
+     },
+     {
+      "q": "書刊印刷",
+      "clicks": 0,
+      "imps": 155,
+      "pos": 37.72
+     },
+     {
+      "q": "印刷公司",
+      "clicks": 2,
+      "imps": 152,
+      "pos": 26.95
+     },
+     {
+      "q": "c109 日期",
+      "clicks": 0,
+      "imps": 146,
+      "pos": 9.62
+     },
+     {
+      "q": "印刷",
+      "clicks": 1,
+      "imps": 145,
+      "pos": 23.66
+     },
+     {
+      "q": "宣傳單張印刷",
+      "clicks": 0,
+      "imps": 145,
+      "pos": 29.15
+     },
+     {
+      "q": "食品包裝印刷",
+      "clicks": 0,
+      "imps": 144,
+      "pos": 8.94
+     },
+     {
+      "q": "宣傳單張",
+      "clicks": 0,
+      "imps": 143,
+      "pos": 43.98
+     },
+     {
+      "q": "貼紙",
+      "clicks": 0,
+      "imps": 136,
+      "pos": 37.46
+     },
+     {
+      "q": "印海報",
+      "clicks": 0,
+      "imps": 122,
+      "pos": 23.69
+     },
+     {
+      "q": "china catalog printing",
+      "clicks": 0,
+      "imps": 112,
+      "pos": 14.86
+     },
+     {
+      "q": "コミケ 印刷",
+      "clicks": 0,
+      "imps": 109,
+      "pos": 30.07
+     },
+     {
+      "q": "騎馬釘",
+      "clicks": 0,
+      "imps": 102,
+      "pos": 27.96
+     },
+     {
+      "q": "印刷紙袋",
+      "clicks": 0,
+      "imps": 100,
+      "pos": 21.05
+     },
+     {
+      "q": "食品印刷",
+      "clicks": 0,
+      "imps": 97,
+      "pos": 6.31
+     },
+     {
+      "q": "紙袋印刷",
+      "clicks": 0,
+      "imps": 94,
+      "pos": 18.09
+     },
+     {
+      "q": "a1海報",
+      "clicks": 0,
+      "imps": 93,
+      "pos": 1.0
+     },
+     {
+      "q": "可移貼紙",
+      "clicks": 0,
+      "imps": 92,
+      "pos": 13.86
+     },
+     {
+      "q": "學校印刷",
+      "clicks": 0,
+      "imps": 88,
+      "pos": 18.24
+     },
+     {
+      "q": "月曆訂製",
+      "clicks": 0,
+      "imps": 86,
+      "pos": 23.62
+     },
+     {
+      "q": "貼紙訂製",
+      "clicks": 0,
+      "imps": 86,
+      "pos": 30.06
+     },
+     {
+      "q": "騎馬釘書刊",
+      "clicks": 0,
+      "imps": 83,
+      "pos": 26.17
+     },
+     {
+      "q": "騎馬釘印刷",
+      "clicks": 0,
+      "imps": 81,
+      "pos": 23.3
+     },
+     {
+      "q": "戶外貼紙",
+      "clicks": 0,
+      "imps": 80,
+      "pos": 17.64
+     },
+     {
+      "q": "膠裝書",
+      "clicks": 0,
+      "imps": 80,
+      "pos": 34.65
+     },
+     {
+      "q": "poster 印刷",
+      "clicks": 0,
+      "imps": 79,
+      "pos": 19.96
+     },
+     {
+      "q": "訂做紙袋",
+      "clicks": 0,
+      "imps": 78,
+      "pos": 20.71
+     },
+     {
+      "q": "パッケージ印刷",
+      "clicks": 0,
+      "imps": 76,
+      "pos": 36.24
+     },
+     {
+      "q": "包裝盒印刷",
+      "clicks": 0,
+      "imps": 75,
+      "pos": 29.0
+     },
+     {
+      "q": "教科書 印刷",
+      "clicks": 0,
+      "imps": 73,
+      "pos": 38.85
+     },
+     {
+      "q": "教材 印刷製本",
+      "clicks": 0,
+      "imps": 72,
+      "pos": 46.85
+     },
+     {
+      "q": "紙盒印刷",
+      "clicks": 0,
+      "imps": 71,
+      "pos": 36.94
+     },
+     {
+      "q": "膠裝書印刷",
+      "clicks": 0,
+      "imps": 71,
+      "pos": 39.96
+     },
+     {
+      "q": "包裝盒訂製",
+      "clicks": 0,
+      "imps": 70,
+      "pos": 30.86
+     },
+     {
+      "q": "易拉架製作",
+      "clicks": 0,
+      "imps": 70,
+      "pos": 60.89
+     },
+     {
+      "q": "摺頁印刷",
+      "clicks": 0,
+      "imps": 69,
+      "pos": 16.42
+     },
+     {
+      "q": "海報與印刷",
+      "clicks": 0,
+      "imps": 69,
+      "pos": 18.86
+     }
+    ],
+    "top_pages": [
+     {
+      "page": "https://zprintpro.com/zh-hk/",
+      "clicks": 55,
+      "imps": 1475,
+      "pos": 12.97
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "clicks": 13,
+      "imps": 1006,
+      "pos": 12.77
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "clicks": 15,
+      "imps": 811,
+      "pos": 12.54
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+      "clicks": 17,
+      "imps": 786,
+      "pos": 7.35
+     },
+     {
+      "page": "https://zprintpro.com/en/product/catalog-printing/",
+      "clicks": 1,
+      "imps": 724,
+      "pos": 37.56
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+      "clicks": 0,
+      "imps": 687,
+      "pos": 6.05
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/books/",
+      "clicks": 3,
+      "imps": 656,
+      "pos": 51.62
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "clicks": 2,
+      "imps": 640,
+      "pos": 19.83
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+      "clicks": 1,
+      "imps": 617,
+      "pos": 19.49
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/comiket-c109/",
+      "clicks": 4,
+      "imps": 616,
+      "pos": 9.58
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+      "clicks": 1,
+      "imps": 574,
+      "pos": 57.26
+     },
+     {
+      "page": "https://zprintpro.com/en/product/textbooks/",
+      "clicks": 0,
+      "imps": 527,
+      "pos": 68.84
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+      "clicks": 5,
+      "imps": 503,
+      "pos": 18.73
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "clicks": 8,
+      "imps": 501,
+      "pos": 8.65
+     },
+     {
+      "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "clicks": 1,
+      "imps": 492,
+      "pos": 24.73
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+      "clicks": 0,
+      "imps": 479,
+      "pos": 37.79
+     },
+     {
+      "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "clicks": 4,
+      "imps": 470,
+      "pos": 13.26
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+      "clicks": 0,
+      "imps": 461,
+      "pos": 16.64
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+      "clicks": 7,
+      "imps": 401,
+      "pos": 17.95
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "clicks": 2,
+      "imps": 397,
+      "pos": 7.57
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+      "clicks": 0,
+      "imps": 394,
+      "pos": 38.79
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/flyers/",
+      "clicks": 3,
+      "imps": 385,
+      "pos": 27.63
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+      "clicks": 10,
+      "imps": 364,
+      "pos": 5.64
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/stickers/",
+      "clicks": 1,
+      "imps": 349,
+      "pos": 37.28
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/posters/",
+      "clicks": 1,
+      "imps": 346,
+      "pos": 34.84
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/a1-posters/",
+      "clicks": 5,
+      "imps": 339,
+      "pos": 11.07
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+      "clicks": 3,
+      "imps": 339,
+      "pos": 43.96
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+      "clicks": 2,
+      "imps": 338,
+      "pos": 33.9
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+      "clicks": 5,
+      "imps": 336,
+      "pos": 24.81
+     },
+     {
+      "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+      "clicks": 3,
+      "imps": 335,
+      "pos": 37.12
+     }
+    ],
+    "money_kw": {
+     "香港印刷": {
+      "clicks": 2,
+      "imps": 37,
+      "pos": 12.0
+     },
+     "海報印刷": {
+      "clicks": 1,
+      "imps": 187,
+      "pos": 24.56
+     },
+     "貼紙印刷": {
+      "clicks": 0,
+      "imps": 218,
+      "pos": 30.56
+     },
+     "宣傳單張": {
+      "clicks": 0,
+      "imps": 143,
+      "pos": 43.98
+     },
+     "宣傳單張印刷": {
+      "clicks": 0,
+      "imps": 145,
+      "pos": 29.15
+     },
+     "摺頁印刷": {
+      "clicks": 0,
+      "imps": 69,
+      "pos": 16.42
+     },
+     "印書": {
+      "clicks": 0,
+      "imps": 67,
+      "pos": 31.73
+     },
+     "包裝盒印刷": {
+      "clicks": 0,
+      "imps": 75,
+      "pos": 29.0
+     },
+     "包裝盒訂製": {
+      "clicks": 0,
+      "imps": 70,
+      "pos": 30.86
+     },
+     "紙盒印刷": {
+      "clicks": 0,
+      "imps": 71,
+      "pos": 36.94
+     },
+     "紙盒訂製": {
+      "clicks": 0,
+      "imps": 66,
+      "pos": 32.48
+     },
+     "禮盒訂製": {
+      "clicks": 0,
+      "imps": 44,
+      "pos": 48.18
+     },
+     "書刊印刷": {
+      "clicks": 0,
+      "imps": 155,
+      "pos": 37.72
+     },
+     "月曆印刷": {
+      "clicks": 0,
+      "imps": 166,
+      "pos": 20.91
+     },
+     "利是封印刷": {
+      "clicks": 0,
+      "imps": 58,
+      "pos": 25.38
+     },
+     "喜帖印刷": {
+      "clicks": 0,
+      "imps": 50,
+      "pos": 40.86
+     },
+     "證書印刷": {
+      "clicks": 0,
+      "imps": 10,
+      "pos": 10.1
+     },
+     "小冊子印刷": {
+      "clicks": 0,
+      "imps": 14,
+      "pos": 21.29
+     },
+     "學校印刷": {
+      "clicks": 0,
+      "imps": 88,
+      "pos": 18.24
+     },
+     "易拉架印刷": {
+      "clicks": 0,
+      "imps": 43,
+      "pos": 40.28
+     },
+     "食品包裝印刷": {
+      "clicks": 0,
+      "imps": 144,
+      "pos": 8.94
+     },
+     "貼紙訂製": {
+      "clicks": 0,
+      "imps": 86,
+      "pos": 30.06
+     },
+     "即日印刷": {
+      "clicks": 1,
+      "imps": 53,
+      "pos": 9.26
+     },
+     "即日急件": {
+      "clicks": 0,
+      "imps": 46,
+      "pos": 8.91
+     },
+     "a2印刷": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 7.57
+     },
+     "a1 印刷 即日": {
+      "clicks": 0,
+      "imps": 30,
+      "pos": 6.27
+     },
+     "a2 印刷 即日": {
+      "clicks": 0,
+      "imps": 29,
+      "pos": 6.55
+     },
+     "海報印刷一張": {
+      "clicks": 0,
+      "imps": 14,
+      "pos": 5.43
+     },
+     "海報印刷即日": {
+      "clicks": 1,
+      "imps": 35,
+      "pos": 9.54
+     },
+     "可移貼紙": {
+      "clicks": 0,
+      "imps": 92,
+      "pos": 13.86
+     },
+     "透明貼紙印刷": {
+      "clicks": 0,
+      "imps": 24,
+      "pos": 5.17
+     },
+     "戶外可移貼紙": {
+      "clicks": 0,
+      "imps": 21,
+      "pos": 9.19
+     },
+     "印喜帖價格": {
+      "clicks": 1,
+      "imps": 15,
+      "pos": 5.2
+     },
+     "月曆印刷香港": {
+      "clicks": 1,
+      "imps": 3,
+      "pos": 12.67
+     },
+     "2027利是封": {
+      "clicks": 0,
+      "imps": 13,
+      "pos": 6.85
+     },
+     "印刷公司報價": {
+      "clicks": 0,
+      "imps": 15,
+      "pos": 7.33
+     },
+     "膠裝書價格": {
+      "clicks": 0,
+      "imps": 67,
+      "pos": 37.33
+     },
+     "貼紙印刷 急件": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.0
+     },
+     "香港印刷公司": {
+      "clicks": 0,
+      "imps": 13,
+      "pos": 27.08
+     },
+     "catalog printing china": {
+      "clicks": 0,
+      "imps": 31,
+      "pos": 15.45
+     },
+     "catalogs printing china": {
+      "clicks": 0,
+      "imps": 6,
+      "pos": 22.33
+     },
+     "china catalog printing": {
+      "clicks": 0,
+      "imps": 112,
+      "pos": 14.86
+     },
+     "catalogue printing china": {
+      "clicks": 0,
+      "imps": 51,
+      "pos": 13.59
+     },
+     "small batch sticker printing": {
+      "clicks": 0,
+      "imps": 15,
+      "pos": 8.27
+     },
+     "small batch stickers": {
+      "clicks": 0,
+      "imps": 63,
+      "pos": 14.97
+     },
+     "doujinshi printing": {
+      "clicks": 0,
+      "imps": 63,
+      "pos": 10.48
+     },
+     "a2 poster printing": {
+      "clicks": 0,
+      "imps": 21,
+      "pos": 30.1
+     },
+     "school exercise book printing": {
+      "clicks": 0,
+      "imps": 13,
+      "pos": 11.92
+     },
+     "custom catalog printing china": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 26.0
+     },
+     "urgent printing": {
+      "clicks": 0,
+      "imps": 13,
+      "pos": 17.08
+     },
+     "educational printing": {
+      "clicks": 0,
+      "imps": 21,
+      "pos": 33.1
+     },
+     "ステッカー印刷 小ロット": {
+      "clicks": 0,
+      "imps": 36,
+      "pos": 11.03
+     },
+     "ステッカー 小ロット": {
+      "clicks": 0,
+      "imps": 42,
+      "pos": 7.88
+     },
+     "教材 印刷製本": {
+      "clicks": 0,
+      "imps": 72,
+      "pos": 46.85
+     },
+     "教材 印刷 製本": {
+      "clicks": 0,
+      "imps": 43,
+      "pos": 47.21
+     },
+     "コミケ 印刷": {
+      "clicks": 0,
+      "imps": 109,
+      "pos": 30.07
+     },
+     "カタログ 印刷": {
+      "clicks": 0,
+      "imps": 21,
+      "pos": 34.05
+     },
+     "パッケージ印刷": {
+      "clicks": 0,
+      "imps": 76,
+      "pos": 36.24
+     },
+     "防水ステッカー": {
+      "clicks": 0,
+      "imps": 41,
+      "pos": 11.71
+     },
+     "冊子印刷": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 48.86
+     },
+     "卒業アルバム 印刷": {
+      "clicks": 0,
+      "imps": 31,
+      "pos": 61.52
+     },
+     "同人本印刷": {
+      "clicks": 0,
+      "imps": 3,
+      "pos": 3.0
+     },
+     "中綴じ 印刷": {
+      "clicks": 0,
+      "imps": 7,
+      "pos": 83.43
+     }
+    },
+    "countries": [
+     {
+      "country": "中国香港",
+      "clicks": 393,
+      "imps": 16777,
+      "pos": 14.48
+     },
+     {
+      "country": "日本",
+      "clicks": 51,
+      "imps": 4213,
+      "pos": 23.9
+     },
+     {
+      "country": "美国",
+      "clicks": 26,
+      "imps": 5615,
+      "pos": 30.57
+     },
+     {
+      "country": "台湾",
+      "clicks": 11,
+      "imps": 1189,
+      "pos": 10.27
+     },
+     {
+      "country": "中国",
+      "clicks": 8,
+      "imps": 248,
+      "pos": 8.77
+     },
+     {
+      "country": "新加坡",
+      "clicks": 7,
+      "imps": 225,
+      "pos": 6.91
+     },
+     {
+      "country": "英国",
+      "clicks": 6,
+      "imps": 343,
+      "pos": 17.25
+     },
+     {
+      "country": "加拿大",
+      "clicks": 4,
+      "imps": 273,
+      "pos": 12.81
+     },
+     {
+      "country": "印度",
+      "clicks": 3,
+      "imps": 201,
+      "pos": 17.47
+     },
+     {
+      "country": "澳大利亚",
+      "clicks": 3,
+      "imps": 177,
+      "pos": 13.34
+     },
+     {
+      "country": "马来西亚",
+      "clicks": 3,
+      "imps": 143,
+      "pos": 5.9
+     },
+     {
+      "country": "菲律宾",
+      "clicks": 3,
+      "imps": 102,
+      "pos": 7.2
+     },
+     {
+      "country": "澳门",
+      "clicks": 2,
+      "imps": 129,
+      "pos": 6.63
+     },
+     {
+      "country": "德国",
+      "clicks": 2,
+      "imps": 93,
+      "pos": 9.63
+     },
+     {
+      "country": "泰国",
+      "clicks": 2,
+      "imps": 72,
+      "pos": 7.9
+     },
+     {
+      "country": "韩国",
+      "clicks": 2,
+      "imps": 67,
+      "pos": 6.54
+     },
+     {
+      "country": "蒙古",
+      "clicks": 2,
+      "imps": 23,
+      "pos": 5.7
+     },
+     {
+      "country": "巴西",
+      "clicks": 1,
+      "imps": 282,
+      "pos": 19.28
+     },
+     {
+      "country": "印度尼西亚",
+      "clicks": 1,
+      "imps": 104,
+      "pos": 6.87
+     },
+     {
+      "country": "俄罗斯",
+      "clicks": 1,
+      "imps": 93,
+      "pos": 17.53
+     },
+     {
+      "country": "阿拉伯联合酋长国",
+      "clicks": 1,
+      "imps": 79,
+      "pos": 7.16
+     },
+     {
+      "country": "越南",
+      "clicks": 1,
+      "imps": 60,
+      "pos": 6.65
+     },
+     {
+      "country": "波兰",
+      "clicks": 1,
+      "imps": 36,
+      "pos": 9.44
+     },
+     {
+      "country": "奥地利",
+      "clicks": 1,
+      "imps": 33,
+      "pos": 7.42
+     },
+     {
+      "country": "新西兰",
+      "clicks": 1,
+      "imps": 21,
+      "pos": 12.24
+     },
+     {
+      "country": "秘鲁",
+      "clicks": 1,
+      "imps": 16,
+      "pos": 9.38
+     },
+     {
+      "country": "瑞士",
+      "clicks": 1,
+      "imps": 16,
+      "pos": 12.62
+     },
+     {
+      "country": "立陶宛",
+      "clicks": 1,
+      "imps": 13,
+      "pos": 5.62
+     },
+     {
+      "country": "文莱",
+      "clicks": 1,
+      "imps": 5,
+      "pos": 20.0
+     },
+     {
+      "country": "斯洛文尼亚",
+      "clicks": 1,
+      "imps": 4,
+      "pos": 8.5
+     },
+     {
+      "country": "叙利亚",
+      "clicks": 1,
+      "imps": 2,
+      "pos": 21.5
+     },
+     {
+      "country": "沙特阿拉伯",
+      "clicks": 0,
+      "imps": 145,
+      "pos": 25.68
+     },
+     {
+      "country": "巴基斯坦",
+      "clicks": 0,
+      "imps": 92,
+      "pos": 10.43
+     },
+     {
+      "country": "荷兰",
+      "clicks": 0,
+      "imps": 64,
+      "pos": 9.5
+     },
+     {
+      "country": "孟加拉",
+      "clicks": 0,
+      "imps": 56,
+      "pos": 12.59
+     },
+     {
+      "country": "法国",
+      "clicks": 0,
+      "imps": 48,
+      "pos": 9.0
+     },
+     {
+      "country": "乌克兰",
+      "clicks": 0,
+      "imps": 47,
+      "pos": 8.55
+     },
+     {
+      "country": "南非",
+      "clicks": 0,
+      "imps": 44,
+      "pos": 9.5
+     },
+     {
+      "country": "西班牙",
+      "clicks": 0,
+      "imps": 44,
+      "pos": 11.52
+     },
+     {
+      "country": "意大利",
+      "clicks": 0,
+      "imps": 40,
+      "pos": 11.0
+     },
+     {
+      "country": "墨西哥",
+      "clicks": 0,
+      "imps": 36,
+      "pos": 9.39
+     },
+     {
+      "country": "尼日利亚",
+      "clicks": 0,
+      "imps": 31,
+      "pos": 5.48
+     },
+     {
+      "country": "阿根廷",
+      "clicks": 0,
+      "imps": 31,
+      "pos": 9.1
+     },
+     {
+      "country": "比利时",
+      "clicks": 0,
+      "imps": 26,
+      "pos": 7.46
+     },
+     {
+      "country": "罗马尼亚",
+      "clicks": 0,
+      "imps": 25,
+      "pos": 7.8
+     },
+     {
+      "country": "爱尔兰",
+      "clicks": 0,
+      "imps": 25,
+      "pos": 9.8
+     },
+     {
+      "country": "埃及",
+      "clicks": 0,
+      "imps": 24,
+      "pos": 6.0
+     },
+     {
+      "country": "匈牙利",
+      "clicks": 0,
+      "imps": 23,
+      "pos": 12.09
+     },
+     {
+      "country": "肯尼亚",
+      "clicks": 0,
+      "imps": 22,
+      "pos": 6.05
+     },
+     {
+      "country": "以色列",
+      "clicks": 0,
+      "imps": 20,
+      "pos": 8.3
+     },
+     {
+      "country": "葡萄牙",
+      "clicks": 0,
+      "imps": 19,
+      "pos": 8.37
+     },
+     {
+      "country": "尼泊尔",
+      "clicks": 0,
+      "imps": 17,
+      "pos": 10.65
+     },
+     {
+      "country": "瑞典",
+      "clicks": 0,
+      "imps": 16,
+      "pos": 5.81
+     },
+     {
+      "country": "哥伦比亚",
+      "clicks": 0,
+      "imps": 16,
+      "pos": 27.19
+     },
+     {
+      "country": "斯里兰卡",
+      "clicks": 0,
+      "imps": 15,
+      "pos": 6.27
+     },
+     {
+      "country": "摩洛哥",
+      "clicks": 0,
+      "imps": 15,
+      "pos": 6.6
+     },
+     {
+      "country": "埃塞俄比亚",
+      "clicks": 0,
+      "imps": 15,
+      "pos": 8.0
+     },
+     {
+      "country": "捷克",
+      "clicks": 0,
+      "imps": 15,
+      "pos": 8.07
+     },
+     {
+      "country": "乌干达",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 5.43
+     },
+     {
+      "country": "土耳其",
+      "clicks": 0,
+      "imps": 14,
+      "pos": 11.43
+     },
+     {
+      "country": "黎巴嫩",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 5.69
+     },
+     {
+      "country": "保加利亚",
+      "clicks": 0,
+      "imps": 13,
+      "pos": 13.62
+     },
+     {
+      "country": "芬兰",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 7.17
+     },
+     {
+      "country": "希腊",
+      "clicks": 0,
+      "imps": 12,
+      "pos": 8.0
+     },
+     {
+      "country": "卡塔尔",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 6.45
+     },
+     {
+      "country": "丹麦",
+      "clicks": 0,
+      "imps": 11,
+      "pos": 10.64
+     },
+     {
+      "country": "坦桑尼亚",
+      "clicks": 0,
+      "imps": 10,
+      "pos": 5.8
+     },
+     {
+      "country": "加纳",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 6.0
+     },
+     {
+      "country": "伊朗",
+      "clicks": 0,
+      "imps": 9,
+      "pos": 43.0
+     },
+     {
+      "country": "伊拉克",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 4.88
+     },
+     {
+      "country": "塞尔维亚",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 5.62
+     },
+     {
+      "country": "突尼斯",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 6.12
+     },
+     {
+      "country": "厄瓜多尔",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 7.5
+     },
+     {
+      "country": "柬埔寨",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 8.38
+     },
+     {
+      "country": "挪威",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 13.88
+     },
+     {
+      "country": "委内瑞拉",
+      "clicks": 0,
+      "imps": 8,
+      "pos": 15.75
+     },
+     {
+      "country": "津巴布韦",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 3.86
+     },
+     {
+      "country": "多米尼加共和国",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 6.29
+     },
+     {
+      "country": "哈萨克斯坦",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 16.86
+     },
+     {
+      "country": "波多黎各",
+      "clicks": 0,
+      "imps": 7,
+      "pos": 18.14
+     },
+     {
+      "country": "格鲁吉亚",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 3.33
+     },
+     {
+      "country": "阿尔巴尼亚",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 5.5
+     },
+     {
+      "country": "智利",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 7.17
+     },
+     {
+      "country": "乌兹别克斯坦",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 8.5
+     },
+     {
+      "country": "马其顿",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 8.67
+     },
+     {
+      "country": "缅甸",
+      "clicks": 0,
+      "imps": 6,
+      "pos": 21.17
+     },
+     {
+      "country": "马耳他",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 4.0
+     },
+     {
+      "country": "科威特",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 4.6
+     },
+     {
+      "country": "毛里求斯",
+      "clicks": 0,
+      "imps": 5,
+      "pos": 6.8
+     },
+     {
+      "country": "斯洛伐克",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 3.25
+     },
+     {
+      "country": "冰岛",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 3.75
+     },
+     {
+      "country": "阿尔及利亚",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 5.5
+     },
+     {
+      "country": "波斯尼亚和黑塞哥维那",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 7.5
+     },
+     {
+      "country": "特立尼达和多巴哥",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 7.75
+     },
+     {
+      "country": "白俄罗斯",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 9.0
+     },
+     {
+      "country": "克罗地亚",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 12.25
+     },
+     {
+      "country": "安哥拉",
+      "clicks": 0,
+      "imps": 4,
+      "pos": 13.0
+     },
+     {
+      "country": "喀麦隆",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 3.0
+     },
+     {
+      "country": "亚美尼亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 3.67
+     },
+     {
+      "country": "巴布亚新几内亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 5.0
+     },
+     {
+      "country": "莱索托",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 6.33
+     },
+     {
+      "country": "塞浦路斯",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 8.33
+     },
+     {
+      "country": "约旦",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 8.67
+     },
+     {
+      "country": "赞比亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 9.0
+     },
+     {
+      "country": "哥斯达黎加",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 11.67
+     },
+     {
+      "country": "巴拉圭",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 14.0
+     },
+     {
+      "country": "南极洲",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 15.33
+     },
+     {
+      "country": "拉脱维亚",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 17.33
+     },
+     {
+      "country": "塞拉利昂",
+      "clicks": 0,
+      "imps": 3,
+      "pos": 25.0
+     },
+     {
+      "country": "斐济",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 1.0
+     },
+     {
+      "country": "阿富汗",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 2.5
+     },
+     {
+      "country": "未知地区",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 3.5
+     },
+     {
+      "country": "老挝",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 4.0
+     },
+     {
+      "country": "纳米比亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 4.0
+     },
+     {
+      "country": "利比里亚",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 4.5
+     },
+     {
+      "country": "加蓬",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 6.0
+     },
+     {
+      "country": "苏丹",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 6.5
+     },
+     {
+      "country": "巴林",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 7.0
+     },
+     {
+      "country": "索马里",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 7.0
+     },
+     {
+      "country": "卢森堡",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 7.5
+     },
+     {
+      "country": "科特迪瓦",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.0
+     },
+     {
+      "country": "尼加拉瓜",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.0
+     },
+     {
+      "country": "斯威士兰",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.0
+     },
+     {
+      "country": "危地马拉",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 8.5
+     },
+     {
+      "country": "牙买加",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.0
+     },
+     {
+      "country": "萨尔瓦多",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.0
+     },
+     {
+      "country": "乌拉圭",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.0
+     },
+     {
+      "country": "塔吉克斯坦",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 9.5
+     },
+     {
+      "country": "阿曼",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 11.0
+     },
+     {
+      "country": "阿鲁巴",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 13.5
+     },
+     {
+      "country": "贝宁",
+      "clicks": 0,
+      "imps": 2,
+      "pos": 37.0
+     },
+     {
+      "country": "摩尔多瓦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "马提尼克",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "巴勒斯坦",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "南苏丹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 1.0
+     },
+     {
+      "country": "安提瓜和巴布达",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "阿塞拜疆",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "布隆迪",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "卢旺达",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 2.0
+     },
+     {
+      "country": "博茨瓦纳",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 3.0
+     },
+     {
+      "country": "圣卢西亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 3.0
+     },
+     {
+      "country": "也门",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 3.0
+     },
+     {
+      "country": "安道尔",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "西撒哈拉",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "赤道几内亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "毛里塔尼亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "多哥",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 5.0
+     },
+     {
+      "country": "玻利维亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     {
+      "country": "法罗群岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 6.0
+     },
+     {
+      "country": "马达加斯加",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "马尔代夫",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "荷属圣马丁岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "科索沃",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 7.0
+     },
+     {
+      "country": "列支敦士登",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "所罗门群岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 8.0
+     },
+     {
+      "country": "伯利兹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "不丹",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "冈比亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "格林纳达",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "黑山",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "巴拿马",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 9.0
+     },
+     {
+      "country": "厄立特里亚",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "关岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "东帝汶",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "英属维尔京群岛",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 10.0
+     },
+     {
+      "country": "圭亚那",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "海地",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "苏里南",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 11.0
+     },
+     {
+      "country": "洪都拉斯",
+      "clicks": 0,
+      "imps": 1,
+      "pos": 29.0
+     }
+    ]
+   }
+  }
+ },
+ "backfill_check": {
+  "11-23_24h_window": [
+   "2026-11-22T06:00:00",
+   "2026-11-23T05:00:00"
+  ],
+  "11-23_24h_total": {
+   "clicks": 9,
+   "imps": 436
+  },
+  "day_11-22_in_7d_export": {
+   "t": "2026-11-22",
+   "clicks": 25,
+   "imps": 2267,
+   "pos": 38.2
+  },
+  "11-25_24h_window": [
+   "2026-11-23T22:00:00",
+   "2026-11-24T21:00:00"
+  ],
+  "11-25_24h_total": {
+   "clicks": 21,
+   "imps": 1160
+  },
+  "11-24_hours_in_24h_export": 1068
+ },
+ "reconciliation_all_match": true
+}
