@@ -210,3 +210,19 @@ NEXT: K3 補 E2 截圖→按 E1 §E2 五步→兩線提交並歸檔回執；K3 �
 - 全程只讀核查；**未寫 src/、未 commit、未 push、未改 Cloudflare、未改 robots.txt、未動 DMCA 檔案**。
 - 未執行項一律標 NOT EXECUTED，未以旁證冒充實測。
 - 本報告不含任何未經核實的估算數字；277 / 日期區間 / 12 類 UA 均為當次實取可復現值。
+
+---
+
+> ## 9. 補跑完成（2026-11-25 00:55 · shell 已恢復）
+
+> **§3 邊緣三向 UA 抽驗 — 已補跑，CLOSED**（§0.23.2 確定性：每向 ≥3 次串行間隔，全部一致）：
+
+| 向 | 方法 | 結果 | 期望 | 判定 |
+|---|---|---|---|---|
+| Chrome 真人 UA | curl.exe ×3 | 200 / 200 / 200 | 200 | ✅ 在位 |
+| 空 UA（無 User-Agent header） | node https（無 UA header）×4 | 403 ×4 | 403 / 挑戰 | ✅ 在位 |
+| python-requests/2.31.0 | curl.exe ×3 | 403 ×3 | 403 / 挑戰頁 | ✅ 在位 |
+
+- 空向首兩次跑 `.cjs` 靜默（exit 0 無輸出，原因未查明已登記），改用最小內聯探針復測 4 次全 403——**測量有效，非旁證**；對照 example.com 200 確認 node https 出站健康。
+- **§5 CF AI Crawl Control metrics — 維持 NOT EXECUTED（K3 Dashboard 真人動作）**，非執行層可補項。
+- **VERDICT 維持 PARTIAL**（6 查項已閉 + 1 K3 真人項待辦），UA 防線判定：**三向全部按 10-16 防線設計在位，無規則漂移**；WAF 維持不調整（無新證據）。

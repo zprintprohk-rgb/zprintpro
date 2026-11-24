@@ -1202,9 +1202,9 @@
    ],
    "approval_gate": "K3 2026-11-21 00:37 指示「登記為下一個 bounded task 並按最優方案執行」；推送前需 K3 對最終文案一詞確認（今晚 build 額度）",
    "owner_lane": "Kimi 戰略層（host 已落地修改，待 K3 確認後 commit+push）",
-   "status": "READY",
+   "status": "DONE",
    "next_check": "2026-11-21",
-   "result": "DONE+DEPLOYED 2026-11-21：commit 7a0087a0（2 檔 +14/−12）已 push 並上線，線上 A2 PDP 驗證：徽章『今天下單 · 急件截稿與送達以報價確認』✅、規格欄/服務卡新口徑 ✅、無『明天12點前到』✅。guards PASS、npm run build PASS（推送前）。zh-hk 簡繁錯字『速递』→『速遞』一併修復。"
+   "result": "CLOSED 2026-11-25 (manual-executor 复核): 目标短语「今天下單·明天12點前到」无条件形态已全站消失 — V9 模板已条件化「今天下單 · 急件截稿與送達以報價確認」（ProductPageV9.tsx 3 处）+ category-seo 易拉架 FAQ 带「視布料同後加工」条件 + rush blog 全部带 18:00 截單条件（rg 复核 2026-11-25 00:47, 0 命中无条件形态）；K3 11-23 条件化模板即最终文案并已随 f638c4b4/bf9e35b5 部署上线 — gate「K3 對最終文案一詞確認」由 K3 11-23 模板拍板满足。证据: src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx + src/data/category-seo-content.ts L512 + blog-data zh-hk rush 两篇。"
   },
   {
    "task_id": "RUSH-PAGE-18PM-CHANNEL-FACT-20261121",
