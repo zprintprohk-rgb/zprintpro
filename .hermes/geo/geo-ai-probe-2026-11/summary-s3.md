@@ -40,8 +40,8 @@
 ## 四、🚨 伴随发现（非探针目标，须入 K3 视野）
 
 1. **「¥7,500」公开可见于 en SERP 摘要**（doujinshi-printing PDP，两跑复现）——k3-review P0 的 doujin 价格/币种问题已从页面层烧到搜索摘要层；D1 拍板紧迫性升级
-2. **简体「满 HK$300免运费」出现在 en PDP SERP 摘要**（两跑复现）——en 页语言泄漏（promo/merchant annotation 层），§13.16.1 繁体铁律 + en 单品牌层双红线
-3. **en 页 SERP 标题品牌后缀=「智印港」**（doujin PDP「10 MOQ 智印港」+ catalog service「DHL 2-4 Days 智印港」两页复现）——假说 A: §0.39 实体统一名「ZprintPro智印港」（WebSite/Organization schema）被 Google 截断；假说 B: 页面 title 实值即智印港。**冻结面不动**，meta title 解冻窗核对 CSV c7 + WebSite schema 后判
+2. **「满 HK$300免运费」出现在 en PDP SERP 摘要**（两跑复现）——**已裁决（18:50 诊断）**: src/ + public/ 全量 0 命中 + GMC feed 路由无 promo 文本 → 非站内泄漏，为 GMC console 侧促销数据 + Google 简体机翻展示；处置 = K3 检查 GMC promotions（非 src 修复项）。详见 `.hermes/logs/2026-11-24-serp-suffix-and-doujin-price-diagnosis.md`
+3. **en 页 SERP 标题品牌后缀=「智印港」**（doujin PDP「10 MOQ 智印港」+ catalog service「DHL 2-4 Days 智印港」两页复现）——**已裁决（18:50 诊断，双方法复算）**: 线上 <title> 实值与 CSV/源码实值完全一致且均以 ZprintPro 结尾（假说 A/B 均不成立，页面层无 §13.16 违规）；尾缀 = Google 站点名组件取 §0.39 实体统一名「ZprintPro智印港」（11-20 落 schema）的 SERP 显现；新拍板项 = en/ja WebSite schema name 维持统一名 vs 回落 locale 单品牌（建议维持），11-28 解冻窗同场正式核对
 4. **Q09 ZP 摘要含「ISO 9001 + FSC 認證」「慳30-40%」**——门童 #1 CRED_ISO_9001 口径张力 + 无来源百分比；登记 k3-review 审计 lane 处置，不擅改
 5. **纸袋簇需求=現貨批发导向**（chips: 深水埗/灣仔現貨/Muji）；**年賀状=消费级垄断**（TOLOT 162円/郵便局官方）——均与既定不投资判断一致，无新动作
 
