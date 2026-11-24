@@ -84,6 +84,7 @@
 |---|---|---|
 | S1 11-03~11-07 | 🟡 **PARTIAL（11-03 首跑：C1-r1 完成，ZP 引用 #2/9 实锤；C1-r2/C2-C7 SKIPPED=扩展连接故障，窗口内补跑）** | `.hermes/geo/geo-ai-probe-2026-11/`（s1-c1-perplexity-r1.md + raw、summary-s1.md） |
 | S2 11-20~11-24 | 🟢 **AIO 面完成（11-21 主跑日：7 簇 × 2 跑 = 14/14）+ Perplexity SKIPPED（登录墙）**；三大发现：C1/C2 稳定被引（C2 居首+organic #1）、C3 不稳定（chip 波动）、C4-C7 稳定零（ja 全簇零）；zh 面品牌旧名两跑一致 | `.hermes/geo/geo-ai-probe-2026-11/`（s2-c*-aio-r1/r2 ×14 + summary-s2.md） |
+| S2-ext 11-24 | 🟡 **第 4 轮补跑完成（18:05-18:41，S2 窗口末日）：kit 7 簇 × 2 跑 + §7.3 五问首跑 = 19/19**；本日 AIO 0/19 全未触发（引用位次维度当日不可判）；organic 层: Q09 catalog #2 / Q11 教材 #3 / C1 食品 #5 稳定，C2 doujin #3（r2 曾 #1 滑位信号）、Q10 smallbatch 前 10 缺席（vs GSC 8.57 漂移待查）；🚨 伴随发现 4 件（¥7,500 SERP 摘要公开 / en 页简体泄漏 / en 标题智印港后缀假说 / ISO 9001 口径张力）见 summary-s3 §四；原 11:00 窗因 shell 0xC0000142 族故障错过，时间偏差已登记 | `.hermes/geo/geo-ai-probe-2026-11/`（s2-c*-aio-r3/r4 ×14 + s3-q08..q12 ×5 + summary-s3.md + R4-RUN-SHEET.md） |
 
 ## 八、数据来源
 
@@ -94,3 +95,4 @@
 ## 九、变更记录
 
 - 2026-10-27: v1 kit 备妥（7 簇 prompt 固化 + 模板 + SOP）。尚未执行任何探针——**在 S1 跑完前不得声称「AI 引用基线已建立」**。
+- 2026-11-24: 第 4 轮新增 12 固定问题（kit §三 7 条 + 11-19 §7.3 五问 verbatim，后者为首次使用、含简体/混排原样保留，本轮后冻结）；§7.3 五问文件命名 s3-q08..q12；11-28 场开场先单跑 C2 验证 AIO 触发回归再决定是否全套（见 summary-s3 §五）。

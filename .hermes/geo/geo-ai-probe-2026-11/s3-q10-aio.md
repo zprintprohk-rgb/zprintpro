@@ -1,0 +1,14 @@
+## run s3-q10-aio
+- 日期时间: 2026-11-24 18:37 (+08:00)
+- AI 面/版本: Google AI Overviews（桌面浏览器；UI=繁體中文）
+- 固定条件: 账号=未登录 地区=hl=zh-HK&gl=HK 出口=香港 IP/本机
+- prompt: small batch sticker printing 的 MOQ、打样与运输如何确认？（11-19 §7.3 verbatim 含简体；首次使用）
+- 答案原文: AIO_NOT_TRIGGERED（无 AI 概览块）
+- 引用 URL（按展示顺序）: 不适用
+- ZP 引用: 无
+- ZP 品牌提及: 无
+- 异常域命中: 无
+- 竞品 TOP3: 1) crown-printing.com（Sticker Printing FAQ: MOQ, Lead Time, Heat and Rolls）2) world.taobao.com（Small Batch Sticker Guide）3) printingbanana.com 印蕉（Custom Sticker Sheet Small-Batch Guide）；其後: 綠星火禮品 MOQ 指南 / labelprintingchina.com / Alibaba（42723 products 购物卡×2）/ 2B Printing SG / BestPackFactory（MOQ 500 PCS）
+- 截图: 无（文本快照完整存档）
+- 判读: **首跑基线：ZP web 前 10 缺席**。⚠️ 与 GSC 錨值张力: small batch sticker printing 28 天 pos 8.57（预读锚）vs 今日 live SERP 无踪——可能 = 查询变体差异 / 位置均值滞后 / 近期滑位。**不作单日因果断言（§0.37）**；登记 11-28 SMALLBATCH 28d 判定窗必查项：该词簇 live 位次 + GSC cur vs prev 复核
+- 执行偏差登记: 18:3x 补跑窗口（同前注）

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-24T07:11:49+0800",
+  "generated_at": "2026-11-24T07:18:19+0800",
   "run_date": "2026-11-24",
   "board_path": ".hermes/logs/coordination-board.json",
   "policy": {
@@ -3689,10 +3689,10 @@
     },
     {
       "lane": "ZP-k3-review",
-      "state": "Running",
+      "state": "Ready",
       "last": "2026-11-24 07:10:01",
       "next": "2026-11-25 07:10:00",
-      "last_task_result": 267009,
+      "last_task_result": 267014,
       "status": "BLOCKED_INFRA",
       "natural_recovery": "NOT_PROVEN",
       "evidence": ".hermes/tmp/scheduler-inspection-20261114.json"

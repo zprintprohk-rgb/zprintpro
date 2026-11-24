@@ -1,0 +1,17 @@
+## run s2-c2-aio-r4
+- 日期时间: 2026-11-24 18:21 (+08:00)
+- AI 面/版本: Google AI Overviews（桌面浏览器；UI=繁體中文）
+- 固定条件: 账号=未登录 地区=hl=zh-HK&gl=HK 出口=香港 IP/本机
+- prompt: Which printing companies offer Comiket doujinshi printing with international shipping?
+- 答案原文: AIO_NOT_TRIGGERED（与 r3 完全同构）
+- 引用 URL（按展示顺序）: 不适用（AIO 未触发）
+- ZP 引用: 无（AIO 未触发）
+- ZP 品牌提及: 无
+- 异常域命中: 无
+- 竞品 TOP3: 1) mceprinting.com 2) ecobookprinting.com 3) ryokuyou.co.jp（与 r3 同序）
+- 截图: 无（文本快照完整存档）
+- 与同簇另一跑差异: 与 r3 一致（结果页同构、竞品同序、ZP 同位 #3、同款摘要）
+- 判读: **C2 当日两跑稳定 no-AIO + ZP organic #3**；r2（11-21）双高地（AIO#1+organic#1）未复现。两场四跑取多数：AIO 列表层 = 不稳定（2/4）；organic 位次 = r2 #1 / r4 #3 → 防守位下降信号成立但需 11-28 GEO 复测窗确认方向。注意混淆变量：AIO 触发率当日整体走低（7/7 簇 no-AIO），organic 滑位与 AIO 缺席可能同源于当日 SERP 组装变化，不可归因于 bf9e35b5 内容修改（时间上因果不可分，如实记录不拟合）
+- 边缘观察 E2（防守位）: 本场两跑均失守（AIO 缺席 + organic #3）；ZP 条目 SERP 标题「Doujinshi Printing Comiket | 10 MOQ 智印港」品牌后缀=智印港（en 页应为 ZprintPro，§13.16 疑似违规——标题族冻结面，待解冻窗核对 CSV c7 实值后再处置）
+- 🚨 伴随发现（两跑一致复现）: SERP 摘要「ZprintPro prints doujinshi from 10 copies ¥7,500 满 HK$300免运费 For new customers」——¥7,500（D1 未拍板价格）+ 简体「满」（en 页语言泄漏）公开可见；D1 拍板紧迫性升级
+- 执行偏差登记: 18:2x 补跑（同前注）

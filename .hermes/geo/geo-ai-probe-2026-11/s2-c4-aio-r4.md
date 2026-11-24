@@ -1,0 +1,15 @@
+## run s2-c4-aio-r4
+- 日期时间: 2026-11-24 18:25 (+08:00)
+- AI 面/版本: Google AI Overviews（桌面浏览器；UI=繁體中文）
+- 固定条件: 账号=未登录 地区=hl=zh-HK&gl=HK 出口=香港 IP/本机
+- prompt: 香港 紙袋印刷 少量 訂製 邊間好？
+- 答案原文: AIO_NOT_TRIGGERED（与 r3 同构）
+- 引用 URL（按展示顺序）: 不适用
+- ZP 引用: 无
+- ZP 品牌提及: 无
+- 异常域命中: 无
+- 竞品 TOP3: 1) servicecorps.hk 印刷易 2) artpack.com.hk 3) flintideasltd.com（与 r3 同序）
+- 截图: 无（文本快照完整存档）
+- 与同簇另一跑差异: 与 r3 一致
+- 判读: C4 当日两跑稳定（no-AIO + ZP 前十无踪）；跨场方向与 r2 一致（稳定零）——纸袋簇 ZP 无 AI 面存在感，与 §11 L3 降级/不投资判断一致
+- 执行偏差登记: 18:2x 补跑（同前注）
