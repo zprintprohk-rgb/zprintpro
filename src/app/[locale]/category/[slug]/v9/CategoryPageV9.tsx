@@ -32,6 +32,7 @@ import { getProductMainImage } from '@/lib/product-image';
 // Step 4 (方案 (a)): 規格材質值三語化 (查不到 -> fallback 中文原文)
 import { localizeSpecValue } from '@/data/product-specs-i18n';
 import { SpecFinderV9, SpecFinderOptions } from './SpecFinderV9';
+import { CategoryProcurementAssets } from '@/components/category/CategoryProcurementAssets';
 import { TrustBadgeBlock } from './TrustBadgeBlock';
 import { parseInlineLinks } from '@/utils/parseInlineLinks';
 
@@ -709,6 +710,9 @@ export function CategoryPageV9({
               </div>
             </section>
           )}
+
+          {/* 11.5 獨特採購資產區 (2026-10-30 §十二 三項可做資產: PDF 入稿檢查清單 / 學校採購清單 / 紙袋報價尺寸模板; 僅 books/educational/japan-doujin/posters/paper-bags 顯示; 刀模下載維持 BLOCKED) — §0.25.10.5 新功能區, push 待 K3 預覽+確認 */}
+          <CategoryProcurementAssets locale={locale} categorySlug={slug} />
 
           {/* 12. FAQ（數據: conversion newFaqs + seo.faq = 藍本 14 條） */}
           {faqItems.length > 0 && (
