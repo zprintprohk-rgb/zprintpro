@@ -3948,7 +3948,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 同人場景特化：A5/B5 同人誌 + 異形周邊貼紙 + A3 海報，一條龍覆蓋',
           points: [
             '同人誌、貼紙（異形／PVC 防水／燙金）、海報（A3 / A2 PP 裱貼）、壓克力立牌、紙袋包裝等核心品類全覆蓋',
-            'Comiket / 即售會活動場景預設模板：A5/B5 標書尺寸 + 24h 特急対応',
+            'Comiket / 即售會活動場景預設模板：A5/B5 標書尺寸 + 特急対応（按稿件與排期報價確認）',
             '支援個人社團 / 新手作者的小批量起印（10 本起），無需湊 MOQ',
           ],
         },
@@ -4006,7 +4006,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: '同人創作者服務節點',
       items: [
-        { title: '旺角打樣中心', description: '可預約查看實際紙質 + 色彩樣本（Comiket 前樣書特急対応）。' },
+        { title: '旺角打樣中心', description: '可預約查看實際紙質 + 色彩樣本（Comiket 前樣書特急対応（按稿件與排期報價確認））。' },
         { title: '深圳工廠直發日本', description: 'DHL Express 含稅到門（DDP）方案，收件人零稅務負擔。' },
         { title: '小批量加急服務', description: '同人誌 5 本加急 3 天出貨，Comiket 前特急対応可議（按稿件與排期報價確認）。' },
       ],
@@ -4022,7 +4022,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
     },
     faq: [
       { q: '同人誌印刷最低多少本起訂？', a: '10 本起印，採用數碼印刷支持小批量。50 本以上建議柯式印刷，單價更低、色彩更穩定。' },
-      { q: 'Comiket 前特急対応可以嗎？', a: '可以。同人誌 5 本特急 3 天出貨，10 本特急 2 天出貨。建議 Comiket 前 2 週下單預留緩衝。' },
+      { q: 'Comiket 前特急対応可以嗎？', a: '可以。特急対応按稿件與排期報價確認。建議 Comiket 前 2 週下單預留緩衝。' },
       { q: '插畫色彩會不會偏色？', a: '採用 ICC profile 色彩管理（GRACoL / Fogra39）+ 海德堡柯式機，原畫 RGB 自動轉 CMYK 校色，色彩還原度達 95%+。可先打樣確認。' },
       { q: '異形貼紙可以切嗎？', a: '可以。任意形狀模切（含圓角、不規則、角色輪廓），我們提供免費刀模設計服務，起訂 50 張。' },
       { q: '跨境配送到日本要多久？', a: 'DHL Express 2-4 個工作天到日本主要城市（東京 / 大阪 / 京都 / 福岡）。支持 DDP 含稅到門方案，收件人零稅務負擔。' },
@@ -4040,7 +4040,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Doujin-Scene Specialization: A5/B5 Books + Die-Cut Stickers + A3 Posters',
           points: [
             'Complete coverage: doujinshi books, stickers (die-cut / PVC waterproof / foil), posters (A3/A2 PP laminated), acrylic stands, paper bag packaging.',
-            'Comiket / doujin event pre-set templates: A5/B5 standard sizes + 24h rush service.',
+            'Comiket / doujin event pre-set templates: A5/B5 standard sizes + rush service (quoted per artwork and schedule).',
             'Low MOQ (10 books) for individual circles / first-time creators.',
           ],
         },
@@ -4098,9 +4098,9 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: 'Doujin Creator Service Points',
       items: [
-        { title: 'Factory Sample Program', description: 'Book an appointment to view physical samples (paper + color). Pre-Comiket rush sample support.' },
+        { title: 'Factory Sample Program', description: 'Book an appointment to view physical samples (paper + color). Pre-Comiket rush sample support (quoted per schedule).' },
         { title: 'Asia Factory → Japan Direct', description: 'DHL Express DDP (Delivered Duty Paid) — recipient zero customs burden.' },
-        { title: 'Small-Batch Rush Service', description: '5-book rush in 3 days, 10-book rush in 2 days. Comiket 24h emergency support.' },
+        { title: 'Small-Batch Rush Service', description: 'Rush production quoted per artwork and schedule. Pre-Comiket emergency support available.' },
       ],
     },
     buyingGuide: {
@@ -4114,7 +4114,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
     },
     faq: [
       { q: 'What is the minimum doujinshi print order?', a: '10 books minimum using digital printing. 50+ books recommended for offset printing — lower unit price and more stable color.' },
-      { q: 'Can you handle pre-Comiket rush orders?', a: 'Yes. 5-book rush in 3 days, 10-book rush in 2 days. Place orders 2 weeks before Comiket for buffer.' },
+      { q: 'Can you handle pre-Comiket rush orders?', a: 'Yes. Rush production is quoted per artwork and schedule. Place orders 2 weeks before Comiket for buffer.' },
       { q: 'Will my illustration colors shift?', a: 'ICC profile color management (GRACoL / Fogra39) + Heidelberg offset press. Original RGB auto-converted to CMYK with 95%+ color accuracy. Sample proofing available.' },
       { q: 'Can I get custom die-cut stickers?', a: 'Yes. Any shape die-cut (rounded, irregular, character silhouette). Free die-cut design service, MOQ 50 stickers.' },
       { q: 'How long is cross-border shipping to Japan?', a: 'DHL Express 2-4 working days to major Japan cities (Tokyo / Osaka / Kyoto / Fukuoka). DDP option available.' },
@@ -4194,7 +4194,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: '同人クリエイターサービス拠点',
       items: [
-        { title: '旺角サンプルセンター', description: '実物サンプル（紙質＋カラー）をご覧いただけます（コミケ前特急サンプル対応）。' },
+        { title: '旺角サンプルセンター', description: '実物サンプル（紙質＋カラー）をご覧いただけます（コミケ前特急サンプル対応（原稿・日程によりお見積り））。' },
         { title: 'アジア自社工場 → 日本直送', description: 'DHL Express DDP（Delivered Duty Paid） — 受取人様の通関手続き不要。' },
         { title: '少ロット急行サービス', description: '同人誌5部急行3日、10部急行2日出荷。コミケ前特急対応（原稿・日程によりお見積り）。' },
       ],
@@ -4212,7 +4212,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
     faq: [
       { q: 'コミケの印刷品は何部から注文できますか？', a: '同人誌は10部から、ポスター・カード類は1部から注文可能。コミケ直前の特急対応も承ります（要相談）。新刊の本文は中綴じ・無線綴じ・上製本から選択、表紙は箔押しや局部UVで差別化できます。' },
       { q: '同人誌印刷の最小発注数は？', a: '10部から（デジタル印刷）。50部以上はオフセット印刷推奨 — 単価が安く、色彩も安定。' },
-      { q: 'コミケ前特急対応できますか？', a: 'はい。同人誌5部特急3日、10部特急2日出荷。コミケ前2週間発注でバッファ確保推奨。' },
+      { q: 'コミケ前特急対応できますか？', a: 'はい。特急対応は原稿・日程によりお見積りとなります。コミケ前2週間発注でバッファ確保推奨。' },
       { q: 'イラストの色彩は色褪せしますか？', a: 'ICCプロファイルカラーマネジメント（GRACoL／Fogra39）＋ハイデルベルグオフセット印刷機。原画RGBを自動CMYK変換、色再現度95%以上。事前サンプル校正可能。' },
       { q: '異形ステッカーはできますか？', a: 'はい。任意形状の型抜き（丸角、不規則、キャラクターシルエット）対応。無料型設計サービス、最小50枚。' },
       { q: '日本への越境配送はどのくらい？', a: 'DHL Express 2-4営業日で日本主要都市（東京／大阪／京都／福岡）。DDPオプション対応。' },
