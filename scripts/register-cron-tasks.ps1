@@ -1,10 +1,12 @@
 # scripts/register-cron-tasks.ps1  (ASCII-only on purpose: Windows PowerShell 5.1 reads
 # non-BOM UTF-8 as ANSI and mangles CJK -> parser errors. All human text here is English.)
 #
-# K3 v9.4 arm script (2026-09-13): register 5 lanes + 1 watchdog into Windows Task Scheduler.
+# K3 v9.4 arm script (2026-09-13): current set = 4 model lanes + 1 watchdog.
 # OS-level trigger: depends on NO agent session being alive (kills the 9/7-9/13 silence class).
-# Source of truth: docs/2026-09-13-k3-directive-v94-cron-rearm-deepseek.md
-#   - 5 lanes keep the v7-payload firing times (21:17 / 20:13 / Fri 20:52 / Sat 23:47 / 1st 12:13)
+# Current schedule SSoT: .hermes/cron-lanes.json
+#   - 2026-11-25 K3 active-hours schedule: k3-review 12:05; watchdog 18:07;
+#     daily 18:17; Friday weekly 19:23; Saturday blog 20:17. No task was added.
+#   - Historical schedule notes below are retained as change history, not current times.
 #   - 2026-10-24: ZP-blog-deepfix rescheduled Sat 05:37 -> 23:47 (K3 GUI directive asked Sat 21:17;
 #     23:47 approved in-session instead: 21:17 collides same-minute with ZP-daily-content, lane.lock
 #     has no queue and would BLOCK one lane every Saturday). 23:47 = first Saturday slot clear of
@@ -105,12 +107,14 @@ $Lanes = @(
   # monthly matrix merged into weekly-meta on the first Friday of each month.
   # Retired lanes ZP-gsc-feedback / ZP-monthly-matrix removed from this array so a full
   # register run cannot recreate them. Prompt SSoT = harness-*-20261120.md slim versions.
-  @{ Name='ZP-daily-content';  Sch=@('/sc','DAILY');             St='21:17'; Timeout=3600; Prompt='harness-daily-growth-20261120.md'        },
-  @{ Name='ZP-weekly-meta';    Sch=@('/sc','WEEKLY','/d','FRI'); St='20:52'; Timeout=3600; Prompt='harness-weekly-monthly-review-20261120.md' },
-  @{ Name='ZP-blog-deepfix';   Sch=@('/sc','WEEKLY','/d','SAT'); St='23:47'; Timeout=3600; Prompt='harness-blog-single-fix-20261120.md'       },
+  # 2026-11-25 K3 active-hours schedule: no new lanes; Friday weekly starts six minutes
+  # after daily's worst-case 19:17 cap; Saturday blog starts one hour after that cap.
+  @{ Name='ZP-daily-content';  Sch=@('/sc','DAILY');             St='18:17'; Timeout=3600; Prompt='harness-daily-growth-20261120.md'        },
+  @{ Name='ZP-weekly-meta';    Sch=@('/sc','WEEKLY','/d','FRI'); St='19:23'; Timeout=3600; Prompt='harness-weekly-monthly-review-20261120.md' },
+  @{ Name='ZP-blog-deepfix';   Sch=@('/sc','WEEKLY','/d','SAT'); St='20:17'; Timeout=3600; Prompt='harness-blog-single-fix-20261120.md'       },
   # 2026-10-09: 7th entity = K3 daily review. Report naming <YYYY-MM-DD>-k3-daily-review.md
-  # (reportGlob in .hermes/cron-lanes.json). 2026-11-23: prompt = independent review slim version.
-  @{ Name='ZP-k3-review';      Sch=@('/sc','DAILY');             St='07:10'; Timeout=1800; Prompt='harness-independent-review-20261120.md'  }
+  # (reportGlob in .hermes/cron-lanes.json). 2026-11-25: K3 explicitly selected 12:05.
+  @{ Name='ZP-k3-review';      Sch=@('/sc','DAILY');             St='12:05'; Timeout=1800; Prompt='harness-independent-review-20261120.md'  }
 )
 
 function Write-Wrapper {
@@ -264,8 +268,8 @@ foreach ($L in $Lanes) {
 }
 
 $tr = 'cmd.exe /c "' + $wdCmd + '"'
-$out = & schtasks.exe @('/create', '/tn', 'ZP-cron-watchdog', '/tr', $tr, '/sc', 'DAILY', '/st', '06:43', '/rl', 'HIGHEST', '/f') 2>&1
-Write-Host ("[{0,-18}] start=06:43 rl=HIGHEST -> {1} {2}" -f 'ZP-cron-watchdog', $(if ($LASTEXITCODE -eq 0) { 'OK' } else { 'FAIL' }), ($out -join ' '))
+$out = & schtasks.exe @('/create', '/tn', 'ZP-cron-watchdog', '/tr', $tr, '/sc', 'DAILY', '/st', '18:07', '/rl', 'HIGHEST', '/f') 2>&1
+Write-Host ("[{0,-18}] start=18:07 rl=HIGHEST -> {1} {2}" -f 'ZP-cron-watchdog', $(if ($LASTEXITCODE -eq 0) { 'OK' } else { 'FAIL' }), ($out -join ' '))
 $created += 'ZP-cron-watchdog'
 
 # -----------------------------------------------------------------------------------
