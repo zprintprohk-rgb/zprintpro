@@ -1029,6 +1029,39 @@
   "evidence": ".hermes/logs/2026-11-20-ZP-gsc-feedback.md; .hermes/logs/gsc-daily-anomaly-2026-11-20.json; .hermes/logs/gsc-2026-11-19-four-window-analysis.json; .hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
   "next_check": "2026-11-21 share check (requires current query x page join) and sticker seventh window (requires data day >= 2026-11-18); 14d clean windows at data day >= 2026-11-22 (C1) / 2026-11-23 (C2); 2026-12-04 28d business read"
   },
+ "retest_gate_2026_11_25": {
+  "attempted_at": "2026-11-25T18:17:04+08:00",
+  "owner_lane": "ZP-daily-content",
+  "status": "TECHNICAL_AND_DIRECTION_ONLY",
+  "reason_code": "DATA_DAY_2026_11_22_BELOW_28D_82PCT_GATE_AND_NO_QUERY_PAGE_JOIN",
+  "data_supply_note": "2026-11-25 24h/7d/28d exports exist (data day 2026-11-22). 3mo is still missing and the workbook still carries no query x page join. Per window_math the earliest 28D decision row is export 2026-12-04 (82.1%); the 14d direction read needs data day >= 2026-11-27. No export exists for 11-24, so this batch is the first after 11-23 and is NOT a relabel of that batch.",
+  "available_window": {
+   "7d": "2026-11-16..2026-11-22",
+   "28d": "2026-10-26..2026-11-22"
+  },
+  "direction_reads": [
+   {
+    "experiment_id": "EXP-STICKER-THIRD-WINDOW",
+    "query": "貼紙印刷",
+    "read_28d": "30.10 -> 30.56 pos, 205 -> 225 imp, 0 clk (eighth window; sixth 29.94@179, seventh 30.10@205)",
+    "direction": "PLATEAU",
+    "note": "pos gate <= 30 not met; impressions keep expanding while position stalls within 30 +/- 0.6 across three windows; title stays frozen and this lane proposed no title change"
+   },
+   {
+    "experiment_id": "EXP-1108-SMALLBATCH-SNIPPET",
+    "query": "small batch sticker printing",
+    "read_7d": "en 61 imp / pos 11.33 / 0 clk; ja 111 imp / pos 11.33 / 0 clk; zh 113 imp / pos 30.89 / 0 clk (clean 7d window 11-16..11-22)",
+    "read_28d": "11-23 export comparison: en 229@13.84 / ja 460@13.86 / zh 314@34.24",
+    "direction": "POSITION_BETTER_CLICKS_ZERO",
+    "note": "position improved by 2.5-3.4 against the mixed 28d window but 285 impressions produced 0 clicks; the 14d direction read needs data day >= 2026-11-27"
+   }
+  ],
+  "verdict_policy": "7d verifies technical/early direction only; 14d reads direction; 28d is required for SCALE/HOLD/FIX/STOP. The 28d window is still below the 82% decision gate, so no business verdict is issued. Entry-level verdicts (DEPLOYED / HOLD / MEASURE / PROPOSED) are intentionally NOT rewritten and no APPROVED gate was touched.",
+  "idempotency_note": "Export 2026-11-25 consumed once by this run (key cbede36b342efc29). The next measurement must use a newer export; re-reading this batch would be a duplicate delivery, not a retest.",
+  "k3_action": "Export the missing 3mo window and a current query x page join; restart proxy 7892 if API pulls are still down. Do not relabel the 2026-11-25 batch as a 2026-11-27 reading.",
+  "evidence": ".hermes/logs/2026-11-25-ZP-daily-content.md; GSC数据/24小时,7天,28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25 (2).xlsx; GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-23.xlsx",
+  "next_check": "2026-11-27 (14d direction, data day >= 11-27); 2026-12-04 (28d business read)"
+ },
  "retest_gate_2026_11_21": {
   "attempted_at": "2026-11-21T20:13:00+08:00",
   "owner_lane": "ZP-gsc-feedback",

@@ -1,0 +1,83 @@
+﻿{
+    "audited_at":  "2026-11-25 17:51:51 +08:00",
+    "mode":  "after_apply_triggers_only",
+    "administrator":  true,
+    "scope":  "Triggers only; no principal/settings/action changes requested; no task started.",
+    "tasks":  [
+                  {
+                      "Name":  "ZP-k3-review",
+                      "TargetAt":  "12:05",
+                      "State":  "Ready",
+                      "LogonType":  "S4U",
+                      "RunLevel":  "Highest",
+                      "StartWhenAvailable":  false,
+                      "WakeToRun":  false,
+                      "RestartInterval":  "PT5M",
+                      "MultipleInstances":  "IgnoreNew",
+                      "ActionSignature":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File F:\\zprintpro-nextjs\\.hermes\\cron-run\\ZP-k3-review.ps1",
+                      "StartBoundary":  "2026-11-25T12:05:00+08:00",
+                      "LastTaskResult":  0,
+                      "NextRunTime":  "11/26/2026 12:05:00"
+                  },
+                  {
+                      "Name":  "ZP-cron-watchdog",
+                      "TargetAt":  "18:07",
+                      "State":  "Ready",
+                      "LogonType":  "S4U",
+                      "RunLevel":  "Highest",
+                      "StartWhenAvailable":  false,
+                      "WakeToRun":  false,
+                      "RestartInterval":  "PT5M",
+                      "MultipleInstances":  "IgnoreNew",
+                      "ActionSignature":  "cmd.exe /c F:\\zprintpro-nextjs\\.hermes\\cron-run\\ZP-cron-watchdog.cmd",
+                      "StartBoundary":  "2026-11-25T18:07:00+08:00",
+                      "LastTaskResult":  1,
+                      "NextRunTime":  "11/25/2026 18:07:00"
+                  },
+                  {
+                      "Name":  "ZP-daily-content",
+                      "TargetAt":  "18:17",
+                      "State":  "Ready",
+                      "LogonType":  "S4U",
+                      "RunLevel":  "Highest",
+                      "StartWhenAvailable":  false,
+                      "WakeToRun":  false,
+                      "RestartInterval":  "PT5M",
+                      "MultipleInstances":  "IgnoreNew",
+                      "ActionSignature":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File F:\\zprintpro-nextjs\\.hermes\\cron-run\\ZP-daily-content.ps1",
+                      "StartBoundary":  "2026-11-25T18:17:00+08:00",
+                      "LastTaskResult":  2147946720,
+                      "NextRunTime":  "11/25/2026 18:17:00"
+                  },
+                  {
+                      "Name":  "ZP-weekly-meta",
+                      "TargetAt":  "19:23",
+                      "State":  "Ready",
+                      "LogonType":  "S4U",
+                      "RunLevel":  "Highest",
+                      "StartWhenAvailable":  false,
+                      "WakeToRun":  false,
+                      "RestartInterval":  "PT5M",
+                      "MultipleInstances":  "IgnoreNew",
+                      "ActionSignature":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File F:\\zprintpro-nextjs\\.hermes\\cron-run\\ZP-weekly-meta.ps1",
+                      "StartBoundary":  "2026-11-25T19:23:00+08:00",
+                      "LastTaskResult":  0,
+                      "NextRunTime":  "11/27/2026 19:23:00"
+                  },
+                  {
+                      "Name":  "ZP-blog-deepfix",
+                      "TargetAt":  "20:17",
+                      "State":  "Ready",
+                      "LogonType":  "S4U",
+                      "RunLevel":  "Highest",
+                      "StartWhenAvailable":  false,
+                      "WakeToRun":  false,
+                      "RestartInterval":  "PT5M",
+                      "MultipleInstances":  "IgnoreNew",
+                      "ActionSignature":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File F:\\zprintpro-nextjs\\.hermes\\cron-run\\ZP-blog-deepfix.ps1",
+                      "StartBoundary":  "2026-11-25T20:17:00+08:00",
+                      "LastTaskResult":  2147946720,
+                      "NextRunTime":  "11/28/2026 20:17:00"
+                  }
+              ]
+}

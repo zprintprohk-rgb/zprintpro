@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-25T07:10:11+0800",
+  "generated_at": "2026-11-25T18:17:05+0800",
   "run_date": "2026-11-25",
   "board_path": ".hermes/logs/coordination-board.json",
   "policy": {
@@ -3661,7 +3661,7 @@
       "lane": "ZP-daily-content",
       "state": "Ready",
       "last": "2026-11-25 00:01:16",
-      "next": "2026-11-25 21:17:00",
+      "next": "2026-11-25 18:17:00",
       "last_task_result": 2147946720,
       "status": "BLOCKED_INFRA",
       "natural_recovery": "NOT_PROVEN",
@@ -3671,7 +3671,7 @@
       "lane": "ZP-weekly-meta",
       "state": "Ready",
       "last": "2026-11-20 20:52:00",
-      "next": "2026-11-27 20:52:00",
+      "next": "2026-11-27 19:23:00",
       "last_task_result": 0,
       "status": "OBSERVED",
       "natural_recovery": "NOT_PROVEN",
@@ -3681,7 +3681,7 @@
       "lane": "ZP-blog-deepfix",
       "state": "Ready",
       "last": "2026-11-22 16:29:21",
-      "next": "2026-11-28 23:47:00",
+      "next": "2026-11-28 20:17:00",
       "last_task_result": 2147946720,
       "status": "BLOCKED_INFRA",
       "natural_recovery": "NOT_PROVEN",
@@ -3690,10 +3690,10 @@
     {
       "lane": "ZP-k3-review",
       "state": "Ready",
-      "last": "2026-11-24 07:10:01",
-      "next": "2026-11-25 07:10:00",
-      "last_task_result": 267014,
-      "status": "BLOCKED_INFRA",
+      "last": "2026-11-25 07:10:01",
+      "next": "2026-11-26 12:05:00",
+      "last_task_result": 0,
+      "status": "OBSERVED",
       "natural_recovery": "NOT_PROVEN",
       "evidence": ".hermes/tmp/scheduler-inspection-20261114.json"
     }

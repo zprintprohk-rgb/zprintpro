@@ -1,0 +1,2899 @@
+{
+ "source_files": {
+  "24h": "24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25 (2).xlsx",
+  "7d": "7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25 (2).xlsx",
+  "28d": "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25 (2).xlsx"
+ },
+ "windows": {
+  "24h": {
+   "first": "2026-11-24T14:00:00",
+   "last": "2026-11-25T13:00:00",
+   "chart_total": {
+    "clicks": 25,
+    "imps": 1138,
+    "ctr": 2.1968,
+    "pos": 17.6714
+   },
+   "queries_sheet": {
+    "clicks": 1,
+    "imps": 554,
+    "ctr": 0.1805,
+    "pos": 28.2077,
+    "rows": 252
+   },
+   "queries_pandas": {
+    "clicks": 1,
+    "imps": 554,
+    "rows": 252
+   },
+   "match": true,
+   "series": [
+    {
+     "t": "2026-11-24T14:00:00",
+     "clicks": 3,
+     "imps": 131,
+     "pos": 23.9
+    },
+    {
+     "t": "2026-11-24T15:00:00",
+     "clicks": 3,
+     "imps": 172,
+     "pos": 28.3
+    },
+    {
+     "t": "2026-11-24T16:00:00",
+     "clicks": 1,
+     "imps": 59,
+     "pos": 17.9
+    },
+    {
+     "t": "2026-11-24T17:00:00",
+     "clicks": 2,
+     "imps": 66,
+     "pos": 9.6
+    },
+    {
+     "t": "2026-11-24T18:00:00",
+     "clicks": 0,
+     "imps": 58,
+     "pos": 9.5
+    },
+    {
+     "t": "2026-11-24T19:00:00",
+     "clicks": 0,
+     "imps": 49,
+     "pos": 9.2
+    },
+    {
+     "t": "2026-11-24T20:00:00",
+     "clicks": 1,
+     "imps": 36,
+     "pos": 9.8
+    },
+    {
+     "t": "2026-11-24T21:00:00",
+     "clicks": 2,
+     "imps": 118,
+     "pos": 24.5
+    },
+    {
+     "t": "2026-11-24T22:00:00",
+     "clicks": 1,
+     "imps": 40,
+     "pos": 10.1
+    },
+    {
+     "t": "2026-11-24T23:00:00",
+     "clicks": 0,
+     "imps": 38,
+     "pos": 9.9
+    },
+    {
+     "t": "2026-11-25T00:00:00",
+     "clicks": 2,
+     "imps": 21,
+     "pos": 11.3
+    },
+    {
+     "t": "2026-11-25T01:00:00",
+     "clicks": 1,
+     "imps": 35,
+     "pos": 18.7
+    },
+    {
+     "t": "2026-11-25T02:00:00",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 15.9
+    },
+    {
+     "t": "2026-11-25T03:00:00",
+     "clicks": 0,
+     "imps": 13,
+     "pos": 15.2
+    },
+    {
+     "t": "2026-11-25T04:00:00",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 9.8
+    },
+    {
+     "t": "2026-11-25T05:00:00",
+     "clicks": 0,
+     "imps": 22,
+     "pos": 9.9
+    },
+    {
+     "t": "2026-11-25T06:00:00",
+     "clicks": 0,
+     "imps": 12,
+     "pos": 24.1
+    },
+    {
+     "t": "2026-11-25T07:00:00",
+     "clicks": 1,
+     "imps": 20,
+     "pos": 4.7
+    },
+    {
+     "t": "2026-11-25T08:00:00",
+     "clicks": 1,
+     "imps": 44,
+     "pos": 22.3
+    },
+    {
+     "t": "2026-11-25T09:00:00",
+     "clicks": 3,
+     "imps": 38,
+     "pos": 9.8
+    },
+    {
+     "t": "2026-11-25T10:00:00",
+     "clicks": 3,
+     "imps": 53,
+     "pos": 14.3
+    },
+    {
+     "t": "2026-11-25T11:00:00",
+     "clicks": 1,
+     "imps": 55,
+     "pos": 17.8
+    },
+    {
+     "t": "2026-11-25T12:00:00",
+     "clicks": 0,
+     "imps": 14,
+     "pos": 6.6
+    },
+    {
+     "t": "2026-11-25T13:00:00",
+     "clicks": 0,
+     "imps": 0,
+     "pos": 0.0
+    }
+   ],
+   "money_kw": {
+    "香港印刷": {
+     "q": "香港印刷",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 6.0
+    },
+    "海報印刷": {
+     "q": "海報印刷",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 37.4
+    },
+    "貼紙印刷": {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 11,
+     "pos": 34.82
+    },
+    "宣傳單張": {
+     "q": "宣傳單張",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 47.0
+    },
+    "宣傳單張印刷": {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 39.0
+    },
+    "摺頁印刷": {
+     "q": "摺頁印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 34.67
+    },
+    "印書": {
+     "q": "印書",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 32.75
+    },
+    "包裝盒印刷": {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 39.25
+    },
+    "包裝盒訂製": {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 37.75
+    },
+    "紙盒印刷": {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 45.25
+    },
+    "紙盒訂製": {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 32.25
+    },
+    "書刊印刷": {
+     "q": "書刊印刷",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 38.6
+    },
+    "月曆印刷": {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 12,
+     "pos": 28.92
+    },
+    "利是封印刷": {
+     "q": "利是封印刷",
+     "clicks": 0,
+     "imps": 2,
+     "pos": 31.0
+    },
+    "喜帖印刷": {
+     "q": "喜帖印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 29.33
+    },
+    "易拉架印刷": {
+     "q": "易拉架印刷",
+     "clicks": 0,
+     "imps": 2,
+     "pos": 21.5
+    },
+    "食品包裝印刷": {
+     "q": "食品包裝印刷",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 12.0
+    },
+    "貼紙訂製": {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 2,
+     "pos": 20.0
+    },
+    "即日印刷": {
+     "q": "即日印刷",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 9.0
+    },
+    "a1 印刷 即日": {
+     "q": "a1 印刷 即日",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 5.67
+    },
+    "2027利是封": {
+     "q": "2027利是封",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "膠裝書價格": {
+     "q": "膠裝書價格",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 34.0
+    },
+    "china catalog printing": {
+     "q": "china catalog printing",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 24.71
+    },
+    "small batch sticker printing": {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 2,
+     "pos": 10.0
+    },
+    "doujinshi printing": {
+     "q": "doujinshi printing",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 13.0
+    },
+    "a2 poster printing": {
+     "q": "a2 poster printing",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 49.5
+    },
+    "wholesale catalog printing services china": {
+     "q": "wholesale catalog printing services china",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 29.25
+    },
+    "custom catalog printing china": {
+     "q": "custom catalog printing china",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 24.4
+    },
+    "educational printing": {
+     "q": "educational printing",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 21.0
+    },
+    "ステッカー 小ロット": {
+     "q": "ステッカー 小ロット",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 7.0
+    },
+    "教材 印刷製本": {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 33.5
+    },
+    "教材 印刷 製本": {
+     "q": "教材 印刷 製本",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 31.0
+    },
+    "コミケ 印刷": {
+     "q": "コミケ 印刷",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 20.8
+    },
+    "カタログ 印刷": {
+     "q": "カタログ 印刷",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 34.83
+    },
+    "パッケージ印刷": {
+     "q": "パッケージ印刷",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 30.25
+    },
+    "卒業アルバム 印刷": {
+     "q": "卒業アルバム 印刷",
+     "clicks": 0,
+     "imps": 2,
+     "pos": 56.5
+    }
+   },
+   "top_queries": [
+    {
+     "q": "訂做紙袋",
+     "clicks": 0,
+     "imps": 13,
+     "pos": 31.46
+    },
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 12,
+     "pos": 28.92
+    },
+    {
+     "q": "紙袋印刷",
+     "clicks": 0,
+     "imps": 12,
+     "pos": 34.0
+    },
+    {
+     "q": "c109",
+     "clicks": 0,
+     "imps": 11,
+     "pos": 9.27
+    },
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 11,
+     "pos": 34.82
+    },
+    {
+     "q": "食品包裝印刷",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 12.0
+    },
+    {
+     "q": "海報印刷",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 37.4
+    },
+    {
+     "q": "importing paper bags faq",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 14.12
+    },
+    {
+     "q": "印刷紙袋",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 39.38
+    },
+    {
+     "q": "china catalog printing",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 24.71
+    },
+    {
+     "q": "月歷印刷",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 29.29
+    },
+    {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 39.0
+    },
+    {
+     "q": "catalog printing company china",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 43.0
+    },
+    {
+     "q": "product catalog printing company china",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 48.29
+    },
+    {
+     "q": "カタログ 印刷",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 34.83
+    },
+    {
+     "q": "fsc certified paper bag supplier",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 37.5
+    },
+    {
+     "q": "紙袋訂製",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 39.0
+    },
+    {
+     "q": "印海報",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 46.17
+    },
+    {
+     "q": "a2 poster printing",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 49.5
+    },
+    {
+     "q": "art catalog printing company china",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 20.2
+    },
+    {
+     "q": "コミケ 印刷",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 20.8
+    },
+    {
+     "q": "custom catalog printing china",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 24.4
+    },
+    {
+     "q": "paper bag manufacturer faq",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 30.0
+    },
+    {
+     "q": "印刷",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 30.6
+    },
+    {
+     "q": "書刊印刷",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 38.6
+    },
+    {
+     "q": "騎馬釘印刷",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 43.0
+    },
+    {
+     "q": "china printed and bound wholesaler",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 1.0
+    },
+    {
+     "q": "邊度有紙袋買",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 6.25
+    },
+    {
+     "q": "c109 日期",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 10.25
+    },
+    {
+     "q": "食品印刷",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 15.5
+    },
+    {
+     "q": "wholesale catalog printing services china",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 29.25
+    },
+    {
+     "q": "パッケージ印刷",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 30.25
+    },
+    {
+     "q": "catalog printing factory china",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 31.25
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 32.25
+    },
+    {
+     "q": "印書",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 32.75
+    },
+    {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 33.5
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 33.5
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 37.75
+    },
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 39.25
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 45.25
+    },
+    {
+     "q": "騎馬釘",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 47.25
+    },
+    {
+     "q": "a1 印刷 即日",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 5.67
+    },
+    {
+     "q": "證書用紙",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 8.33
+    },
+    {
+     "q": "食品包裝訂製",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 12.33
+    },
+    {
+     "q": "シール 印刷 安い",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 13.0
+    },
+    {
+     "q": "paper bag lead time",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 14.0
+    },
+    {
+     "q": "paper bag thickness guide",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 16.0
+    },
+    {
+     "q": "what gsm for paper bags",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 17.0
+    },
+    {
+     "q": "china cheap printing and binding wholesaler",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 19.33
+    },
+    {
+     "q": "海報與印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 20.33
+    }
+   ],
+   "top_pages": [
+    {
+     "page": "https://zprintpro.com/zh-hk/",
+     "clicks": 0,
+     "imps": 48,
+     "pos": 11.27
+    },
+    {
+     "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+     "clicks": 0,
+     "imps": 43,
+     "pos": 26.05
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+     "clicks": 0,
+     "imps": 34,
+     "pos": 29.68
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+     "clicks": 1,
+     "imps": 32,
+     "pos": 20.03
+    },
+    {
+     "page": "https://zprintpro.com/en/blog/paper-bag-buying-guide/",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 20.76
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 26.0
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+     "clicks": 0,
+     "imps": 26,
+     "pos": 9.62
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+     "clicks": 1,
+     "imps": 21,
+     "pos": 6.48
+    },
+    {
+     "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+     "clicks": 0,
+     "imps": 20,
+     "pos": 7.55
+    },
+    {
+     "page": "https://zprintpro.com/en/blog/calendar-sizes-print-reference/",
+     "clicks": 0,
+     "imps": 19,
+     "pos": 23.42
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/comiket-c109/",
+     "clicks": 0,
+     "imps": 18,
+     "pos": 9.61
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+     "clicks": 0,
+     "imps": 18,
+     "pos": 15.5
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+     "clicks": 0,
+     "imps": 18,
+     "pos": 19.72
+    },
+    {
+     "page": "https://zprintpro.com/en/product/catalog-printing/",
+     "clicks": 0,
+     "imps": 18,
+     "pos": 28.44
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+     "clicks": 1,
+     "imps": 17,
+     "pos": 6.65
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+     "clicks": 0,
+     "imps": 17,
+     "pos": 6.47
+    },
+    {
+     "page": "https://zprintpro.com/en/product/a2-posters/",
+     "clicks": 0,
+     "imps": 17,
+     "pos": 29.24
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 19.75
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 24.69
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/doujin-circle-printing-guide/",
+     "clicks": 2,
+     "imps": 15,
+     "pos": 5.53
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/flyers/",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 27.6
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 34.93
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/packaging/",
+     "clicks": 0,
+     "imps": 14,
+     "pos": 42.71
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/mtr-advertising-specs/",
+     "clicks": 0,
+     "imps": 13,
+     "pos": 6.15
+    },
+    {
+     "page": "https://zprintpro.com/ja/comiket-c109/",
+     "clicks": 0,
+     "imps": 13,
+     "pos": 7.38
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/poster-printing-price-guide/",
+     "clicks": 0,
+     "imps": 13,
+     "pos": 12.92
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+     "clicks": 0,
+     "imps": 13,
+     "pos": 16.31
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+     "clicks": 0,
+     "imps": 13,
+     "pos": 27.92
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/calendars/",
+     "clicks": 0,
+     "imps": 13,
+     "pos": 35.0
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/red-packets/",
+     "clicks": 0,
+     "imps": 12,
+     "pos": 22.0
+    }
+   ]
+  },
+  "7d": {
+   "first": "2026-11-17",
+   "last": "2026-11-23",
+   "chart_total": {
+    "clicks": 130,
+    "imps": 10102,
+    "ctr": 1.2869,
+    "pos": 24.7429
+   },
+   "queries_sheet": {
+    "clicks": 13,
+    "imps": 5508,
+    "ctr": 0.236,
+    "pos": 35.0559,
+    "rows": 1000
+   },
+   "queries_pandas": {
+    "clicks": 13,
+    "imps": 5508,
+    "rows": 1000
+   },
+   "match": true,
+   "series": [
+    {
+     "t": "2026-11-17",
+     "clicks": 21,
+     "imps": 1227,
+     "pos": 13.8
+    },
+    {
+     "t": "2026-11-18",
+     "clicks": 24,
+     "imps": 1292,
+     "pos": 14.5
+    },
+    {
+     "t": "2026-11-19",
+     "clicks": 13,
+     "imps": 1086,
+     "pos": 15.5
+    },
+    {
+     "t": "2026-11-20",
+     "clicks": 8,
+     "imps": 1533,
+     "pos": 25.9
+    },
+    {
+     "t": "2026-11-21",
+     "clicks": 6,
+     "imps": 1305,
+     "pos": 35.0
+    },
+    {
+     "t": "2026-11-22",
+     "clicks": 25,
+     "imps": 2267,
+     "pos": 38.2
+    },
+    {
+     "t": "2026-11-23",
+     "clicks": 33,
+     "imps": 1392,
+     "pos": 18.3
+    }
+   ],
+   "money_kw": {
+    "香港印刷": {
+     "q": "香港印刷",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 12.29
+    },
+    "海報印刷": {
+     "q": "海報印刷",
+     "clicks": 0,
+     "imps": 55,
+     "pos": 33.25
+    },
+    "貼紙印刷": {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 72,
+     "pos": 37.1
+    },
+    "宣傳單張": {
+     "q": "宣傳單張",
+     "clicks": 0,
+     "imps": 39,
+     "pos": 52.23
+    },
+    "宣傳單張印刷": {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 43,
+     "pos": 33.44
+    },
+    "摺頁印刷": {
+     "q": "摺頁印刷",
+     "clicks": 0,
+     "imps": 22,
+     "pos": 23.32
+    },
+    "印書": {
+     "q": "印書",
+     "clicks": 0,
+     "imps": 24,
+     "pos": 30.96
+    },
+    "包裝盒印刷": {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 40,
+     "pos": 30.57
+    },
+    "包裝盒訂製": {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 28,
+     "pos": 30.89
+    },
+    "紙盒印刷": {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 23,
+     "pos": 43.48
+    },
+    "紙盒訂製": {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 26,
+     "pos": 32.27
+    },
+    "書刊印刷": {
+     "q": "書刊印刷",
+     "clicks": 0,
+     "imps": 48,
+     "pos": 40.54
+    },
+    "月曆印刷": {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 65,
+     "pos": 27.29
+    },
+    "利是封印刷": {
+     "q": "利是封印刷",
+     "clicks": 0,
+     "imps": 13,
+     "pos": 32.15
+    },
+    "喜帖印刷": {
+     "q": "喜帖印刷",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 32.62
+    },
+    "證書印刷": {
+     "q": "證書印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 6.0
+    },
+    "小冊子印刷": {
+     "q": "小冊子印刷",
+     "clicks": 0,
+     "imps": 9,
+     "pos": 23.56
+    },
+    "學校印刷": {
+     "q": "學校印刷",
+     "clicks": 0,
+     "imps": 34,
+     "pos": 20.97
+    },
+    "易拉架印刷": {
+     "q": "易拉架印刷",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 20.25
+    },
+    "食品包裝印刷": {
+     "q": "食品包裝印刷",
+     "clicks": 0,
+     "imps": 58,
+     "pos": 11.59
+    },
+    "貼紙訂製": {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 32,
+     "pos": 30.75
+    },
+    "即日印刷": {
+     "q": "即日印刷",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 10.2
+    },
+    "即日急件": {
+     "q": "即日急件",
+     "clicks": 0,
+     "imps": 14,
+     "pos": 11.14
+    },
+    "a1 印刷 即日": {
+     "q": "a1 印刷 即日",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 9.38
+    },
+    "a2 印刷 即日": {
+     "q": "a2 印刷 即日",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 6.75
+    },
+    "海報印刷一張": {
+     "q": "海報印刷一張",
+     "clicks": 0,
+     "imps": 2,
+     "pos": 6.0
+    },
+    "海報印刷即日": {
+     "q": "海報印刷即日",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 9.25
+    },
+    "可移貼紙": {
+     "q": "可移貼紙",
+     "clicks": 0,
+     "imps": 31,
+     "pos": 19.1
+    },
+    "透明貼紙印刷": {
+     "q": "透明貼紙印刷",
+     "clicks": 0,
+     "imps": 9,
+     "pos": 4.44
+    },
+    "戶外可移貼紙": {
+     "q": "戶外可移貼紙",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 14.0
+    },
+    "印喜帖價格": {
+     "q": "印喜帖價格",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 6.0
+    },
+    "2027利是封": {
+     "q": "2027利是封",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 5.0
+    },
+    "膠裝書價格": {
+     "q": "膠裝書價格",
+     "clicks": 0,
+     "imps": 17,
+     "pos": 37.71
+    },
+    "貼紙印刷急件": {
+     "q": "貼紙印刷急件",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "貼紙印刷 急件": {
+     "q": "貼紙印刷 急件",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 6.0
+    },
+    "香港印刷公司": {
+     "q": "香港印刷公司",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 30.0
+    },
+    "catalog printing china": {
+     "q": "catalog printing china",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 19.25
+    },
+    "catalogs printing china": {
+     "q": "catalogs printing china",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 31.33
+    },
+    "china catalog printing": {
+     "q": "china catalog printing",
+     "clicks": 0,
+     "imps": 37,
+     "pos": 17.54
+    },
+    "catalogue printing china": {
+     "q": "catalogue printing china",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 17.4
+    },
+    "small batch sticker printing": {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 5.83
+    },
+    "small batch stickers": {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 7.14
+    },
+    "doujinshi printing": {
+     "q": "doujinshi printing",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 8.6
+    },
+    "a2 poster printing": {
+     "q": "a2 poster printing",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 43.47
+    },
+    "school exercise book printing": {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 14.67
+    },
+    "custom flyer printing china": {
+     "q": "custom flyer printing china",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 21.0
+    },
+    "wholesale catalog printing services china": {
+     "q": "wholesale catalog printing services china",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 30.0
+    },
+    "custom catalog printing china": {
+     "q": "custom catalog printing china",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 34.0
+    },
+    "urgent printing": {
+     "q": "urgent printing",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 14.4
+    },
+    "educational printing": {
+     "q": "educational printing",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 46.67
+    },
+    "ステッカー印刷 小ロット": {
+     "q": "ステッカー印刷 小ロット",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 38.0
+    },
+    "ステッカー 小ロット": {
+     "q": "ステッカー 小ロット",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 15.67
+    },
+    "教材 印刷製本": {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 40.52
+    },
+    "教材 印刷 製本": {
+     "q": "教材 印刷 製本",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 33.67
+    },
+    "コミケ 印刷": {
+     "q": "コミケ 印刷",
+     "clicks": 0,
+     "imps": 26,
+     "pos": 15.96
+    },
+    "カタログ 印刷": {
+     "q": "カタログ 印刷",
+     "clicks": 0,
+     "imps": 23,
+     "pos": 29.61
+    },
+    "パッケージ印刷": {
+     "q": "パッケージ印刷",
+     "clicks": 0,
+     "imps": 33,
+     "pos": 35.15
+    },
+    "防水ステッカー": {
+     "q": "防水ステッカー",
+     "clicks": 0,
+     "imps": 2,
+     "pos": 18.0
+    },
+    "冊子印刷": {
+     "q": "冊子印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 48.0
+    },
+    "卒業アルバム 印刷": {
+     "q": "卒業アルバム 印刷",
+     "clicks": 0,
+     "imps": 12,
+     "pos": 55.25
+    },
+    "同人本印刷": {
+     "q": "同人本印刷",
+     "clicks": 0,
+     "imps": 1,
+     "pos": 2.0
+    },
+    "中綴じ 印刷": {
+     "q": "中綴じ 印刷",
+     "clicks": 0,
+     "imps": 2,
+     "pos": 40.0
+    }
+   },
+   "top_queries": [
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 72,
+     "pos": 37.1
+    },
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 65,
+     "pos": 27.29
+    },
+    {
+     "q": "食品包裝印刷",
+     "clicks": 0,
+     "imps": 58,
+     "pos": 11.59
+    },
+    {
+     "q": "c109",
+     "clicks": 0,
+     "imps": 57,
+     "pos": 12.09
+    },
+    {
+     "q": "印刷紙袋",
+     "clicks": 0,
+     "imps": 55,
+     "pos": 29.76
+    },
+    {
+     "q": "海報印刷",
+     "clicks": 0,
+     "imps": 55,
+     "pos": 33.25
+    },
+    {
+     "q": "export 70x105mm education books printing",
+     "clicks": 0,
+     "imps": 51,
+     "pos": 90.59
+    },
+    {
+     "q": "印海報",
+     "clicks": 0,
+     "imps": 48,
+     "pos": 34.56
+    },
+    {
+     "q": "書刊印刷",
+     "clicks": 0,
+     "imps": 48,
+     "pos": 40.54
+    },
+    {
+     "q": "食品印刷",
+     "clicks": 0,
+     "imps": 46,
+     "pos": 9.78
+    },
+    {
+     "q": "紙袋印刷",
+     "clicks": 0,
+     "imps": 45,
+     "pos": 26.42
+    },
+    {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 43,
+     "pos": 33.44
+    },
+    {
+     "q": "export 190x260mm school textbook printing",
+     "clicks": 0,
+     "imps": 42,
+     "pos": 44.31
+    },
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 40,
+     "pos": 30.57
+    },
+    {
+     "q": "印刷",
+     "clicks": 1,
+     "imps": 39,
+     "pos": 27.87
+    },
+    {
+     "q": "訂做紙袋",
+     "clicks": 0,
+     "imps": 39,
+     "pos": 29.59
+    },
+    {
+     "q": "宣傳單張",
+     "clicks": 0,
+     "imps": 39,
+     "pos": 52.23
+    },
+    {
+     "q": "china catalog printing",
+     "clicks": 0,
+     "imps": 37,
+     "pos": 17.54
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 35,
+     "pos": 21.09
+    },
+    {
+     "q": "poster 印刷",
+     "clicks": 0,
+     "imps": 35,
+     "pos": 29.46
+    },
+    {
+     "q": "印刷公司",
+     "clicks": 0,
+     "imps": 35,
+     "pos": 38.66
+    },
+    {
+     "q": "學校印刷",
+     "clicks": 0,
+     "imps": 34,
+     "pos": 20.97
+    },
+    {
+     "q": "パッケージ印刷",
+     "clicks": 0,
+     "imps": 33,
+     "pos": 35.15
+    },
+    {
+     "q": "export 170x240mm catalogue printing",
+     "clicks": 0,
+     "imps": 33,
+     "pos": 68.88
+    },
+    {
+     "q": "customized 190x260mm education books printing",
+     "clicks": 0,
+     "imps": 33,
+     "pos": 85.27
+    },
+    {
+     "q": "supply c1s education books printing",
+     "clicks": 0,
+     "imps": 33,
+     "pos": 98.7
+    },
+    {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 32,
+     "pos": 30.75
+    },
+    {
+     "q": "可移貼紙",
+     "clicks": 0,
+     "imps": 31,
+     "pos": 19.1
+    },
+    {
+     "q": "貼紙",
+     "clicks": 0,
+     "imps": 31,
+     "pos": 47.39
+    },
+    {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 40.52
+    },
+    {
+     "q": "oem 70x105mm education books printing",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 88.07
+    },
+    {
+     "q": "月歷印刷",
+     "clicks": 0,
+     "imps": 28,
+     "pos": 28.68
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 28,
+     "pos": 30.89
+    },
+    {
+     "q": "紙袋訂製",
+     "clicks": 0,
+     "imps": 28,
+     "pos": 33.86
+    },
+    {
+     "q": "騎馬釘",
+     "clicks": 0,
+     "imps": 28,
+     "pos": 43.96
+    },
+    {
+     "q": "食品包裝訂製",
+     "clicks": 0,
+     "imps": 27,
+     "pos": 11.74
+    },
+    {
+     "q": "騎馬釘印刷",
+     "clicks": 0,
+     "imps": 27,
+     "pos": 42.19
+    },
+    {
+     "q": "教科書 印刷",
+     "clicks": 0,
+     "imps": 27,
+     "pos": 44.85
+    },
+    {
+     "q": "コミケ 印刷",
+     "clicks": 0,
+     "imps": 26,
+     "pos": 15.96
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 26,
+     "pos": 32.27
+    },
+    {
+     "q": "cheap 280x330mm school textbook printing",
+     "clicks": 0,
+     "imps": 26,
+     "pos": 69.81
+    },
+    {
+     "q": "paper bag thickness guide",
+     "clicks": 0,
+     "imps": 25,
+     "pos": 14.96
+    },
+    {
+     "q": "competitive price c2s education books printing",
+     "clicks": 0,
+     "imps": 25,
+     "pos": 86.32
+    },
+    {
+     "q": "印書",
+     "clicks": 0,
+     "imps": 24,
+     "pos": 30.96
+    },
+    {
+     "q": "cartridge softcover school textbook printing facto",
+     "clicks": 0,
+     "imps": 24,
+     "pos": 74.71
+    },
+    {
+     "q": "カタログ 印刷",
+     "clicks": 0,
+     "imps": 23,
+     "pos": 29.61
+    },
+    {
+     "q": "騎馬釘書刊",
+     "clicks": 0,
+     "imps": 23,
+     "pos": 40.13
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 23,
+     "pos": 43.48
+    },
+    {
+     "q": "paper bag print file requirements",
+     "clicks": 0,
+     "imps": 22,
+     "pos": 14.77
+    },
+    {
+     "q": "摺頁印刷",
+     "clicks": 0,
+     "imps": 22,
+     "pos": 23.32
+    }
+   ],
+   "top_pages": [
+    {
+     "page": "https://zprintpro.com/en/product/textbooks/",
+     "clicks": 0,
+     "imps": 516,
+     "pos": 69.41
+    },
+    {
+     "page": "https://zprintpro.com/en/product/catalog-printing/",
+     "clicks": 0,
+     "imps": 504,
+     "pos": 45.47
+    },
+    {
+     "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+     "clicks": 0,
+     "imps": 421,
+     "pos": 26.14
+    },
+    {
+     "page": "https://zprintpro.com/en/category/books/",
+     "clicks": 0,
+     "imps": 310,
+     "pos": 66.27
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/",
+     "clicks": 10,
+     "imps": 304,
+     "pos": 14.51
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+     "clicks": 1,
+     "imps": 240,
+     "pos": 16.86
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+     "clicks": 3,
+     "imps": 204,
+     "pos": 8.5
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+     "clicks": 2,
+     "imps": 186,
+     "pos": 14.42
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+     "clicks": 5,
+     "imps": 182,
+     "pos": 16.6
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+     "clicks": 0,
+     "imps": 178,
+     "pos": 6.38
+    },
+    {
+     "page": "https://zprintpro.com/en/product/perfect-bound-books/",
+     "clicks": 0,
+     "imps": 171,
+     "pos": 39.18
+    },
+    {
+     "page": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+     "clicks": 0,
+     "imps": 169,
+     "pos": 43.24
+    },
+    {
+     "page": "https://zprintpro.com/en/category/educational/",
+     "clicks": 0,
+     "imps": 155,
+     "pos": 72.06
+    },
+    {
+     "page": "https://zprintpro.com/en/product/spiral-notebooks/",
+     "clicks": 0,
+     "imps": 147,
+     "pos": 39.39
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+     "clicks": 2,
+     "imps": 141,
+     "pos": 8.81
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+     "clicks": 0,
+     "imps": 140,
+     "pos": 16.27
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+     "clicks": 0,
+     "imps": 138,
+     "pos": 17.65
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+     "clicks": 1,
+     "imps": 137,
+     "pos": 8.69
+    },
+    {
+     "page": "https://zprintpro.com/en/blog/paper-bag-buying-guide/",
+     "clicks": 0,
+     "imps": 134,
+     "pos": 15.9
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+     "clicks": 1,
+     "imps": 131,
+     "pos": 20.67
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+     "clicks": 0,
+     "imps": 129,
+     "pos": 32.32
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+     "clicks": 0,
+     "imps": 113,
+     "pos": 30.89
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/books/",
+     "clicks": 1,
+     "imps": 112,
+     "pos": 42.84
+    },
+    {
+     "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+     "clicks": 0,
+     "imps": 111,
+     "pos": 11.33
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+     "clicks": 0,
+     "imps": 110,
+     "pos": 19.57
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/packaging/",
+     "clicks": 1,
+     "imps": 108,
+     "pos": 38.11
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/comiket-c109/",
+     "clicks": 1,
+     "imps": 102,
+     "pos": 10.42
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+     "clicks": 0,
+     "imps": 100,
+     "pos": 26.67
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/posters/",
+     "clicks": 1,
+     "imps": 97,
+     "pos": 30.13
+    },
+    {
+     "page": "https://zprintpro.com/en/product/saddle-stitch-booklets/",
+     "clicks": 1,
+     "imps": 97,
+     "pos": 40.47
+    }
+   ]
+  },
+  "28d": {
+   "first": "2026-10-27",
+   "last": "2026-11-23",
+   "chart_total": {
+    "clicks": 544,
+    "imps": 32483,
+    "ctr": 1.6747,
+    "pos": 18.1338
+   },
+   "queries_sheet": {
+    "clicks": 69,
+    "imps": 13999,
+    "ctr": 0.4929,
+    "pos": 29.4041,
+    "rows": 1000
+   },
+   "queries_pandas": {
+    "clicks": 69,
+    "imps": 13999,
+    "rows": 1000
+   },
+   "match": true,
+   "series": [
+    {
+     "t": "2026-10-27",
+     "clicks": 18,
+     "imps": 939,
+     "pos": 14.2
+    },
+    {
+     "t": "2026-10-28",
+     "clicks": 24,
+     "imps": 902,
+     "pos": 12.5
+    },
+    {
+     "t": "2026-10-29",
+     "clicks": 18,
+     "imps": 988,
+     "pos": 14.0
+    },
+    {
+     "t": "2026-10-30",
+     "clicks": 11,
+     "imps": 942,
+     "pos": 20.3
+    },
+    {
+     "t": "2026-10-31",
+     "clicks": 10,
+     "imps": 788,
+     "pos": 20.3
+    },
+    {
+     "t": "2026-11-01",
+     "clicks": 21,
+     "imps": 1018,
+     "pos": 17.7
+    },
+    {
+     "t": "2026-11-02",
+     "clicks": 24,
+     "imps": 993,
+     "pos": 14.0
+    },
+    {
+     "t": "2026-11-03",
+     "clicks": 29,
+     "imps": 1087,
+     "pos": 14.4
+    },
+    {
+     "t": "2026-11-04",
+     "clicks": 22,
+     "imps": 1096,
+     "pos": 12.6
+    },
+    {
+     "t": "2026-11-05",
+     "clicks": 27,
+     "imps": 1081,
+     "pos": 13.4
+    },
+    {
+     "t": "2026-11-06",
+     "clicks": 11,
+     "imps": 1078,
+     "pos": 14.9
+    },
+    {
+     "t": "2026-11-07",
+     "clicks": 14,
+     "imps": 849,
+     "pos": 15.5
+    },
+    {
+     "t": "2026-11-08",
+     "clicks": 27,
+     "imps": 1095,
+     "pos": 13.9
+    },
+    {
+     "t": "2026-11-09",
+     "clicks": 28,
+     "imps": 1242,
+     "pos": 13.4
+    },
+    {
+     "t": "2026-11-10",
+     "clicks": 20,
+     "imps": 1210,
+     "pos": 11.9
+    },
+    {
+     "t": "2026-11-11",
+     "clicks": 24,
+     "imps": 1349,
+     "pos": 13.2
+    },
+    {
+     "t": "2026-11-12",
+     "clicks": 17,
+     "imps": 1203,
+     "pos": 13.6
+    },
+    {
+     "t": "2026-11-13",
+     "clicks": 14,
+     "imps": 1155,
+     "pos": 19.6
+    },
+    {
+     "t": "2026-11-14",
+     "clicks": 14,
+     "imps": 974,
+     "pos": 17.4
+    },
+    {
+     "t": "2026-11-15",
+     "clicks": 16,
+     "imps": 1191,
+     "pos": 17.0
+    },
+    {
+     "t": "2026-11-16",
+     "clicks": 25,
+     "imps": 1201,
+     "pos": 16.8
+    },
+    {
+     "t": "2026-11-17",
+     "clicks": 21,
+     "imps": 1227,
+     "pos": 13.8
+    },
+    {
+     "t": "2026-11-18",
+     "clicks": 24,
+     "imps": 1292,
+     "pos": 14.5
+    },
+    {
+     "t": "2026-11-19",
+     "clicks": 13,
+     "imps": 1086,
+     "pos": 15.5
+    },
+    {
+     "t": "2026-11-20",
+     "clicks": 8,
+     "imps": 1533,
+     "pos": 25.9
+    },
+    {
+     "t": "2026-11-21",
+     "clicks": 6,
+     "imps": 1305,
+     "pos": 35.0
+    },
+    {
+     "t": "2026-11-22",
+     "clicks": 25,
+     "imps": 2267,
+     "pos": 38.2
+    },
+    {
+     "t": "2026-11-23",
+     "clicks": 33,
+     "imps": 1392,
+     "pos": 18.3
+    }
+   ],
+   "money_kw": {
+    "香港印刷": {
+     "q": "香港印刷",
+     "clicks": 2,
+     "imps": 37,
+     "pos": 12.0
+    },
+    "海報印刷": {
+     "q": "海報印刷",
+     "clicks": 1,
+     "imps": 187,
+     "pos": 25.75
+    },
+    "貼紙印刷": {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 225,
+     "pos": 30.56
+    },
+    "宣傳單張": {
+     "q": "宣傳單張",
+     "clicks": 0,
+     "imps": 143,
+     "pos": 44.27
+    },
+    "宣傳單張印刷": {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 149,
+     "pos": 29.68
+    },
+    "摺頁印刷": {
+     "q": "摺頁印刷",
+     "clicks": 0,
+     "imps": 71,
+     "pos": 17.14
+    },
+    "印書": {
+     "q": "印書",
+     "clicks": 0,
+     "imps": 70,
+     "pos": 31.9
+    },
+    "包裝盒印刷": {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 77,
+     "pos": 29.21
+    },
+    "包裝盒訂製": {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 73,
+     "pos": 31.32
+    },
+    "紙盒印刷": {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "pos": 37.37
+    },
+    "紙盒訂製": {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 69,
+     "pos": 32.78
+    },
+    "禮盒訂製": {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 44,
+     "pos": 48.18
+    },
+    "書刊印刷": {
+     "q": "書刊印刷",
+     "clicks": 0,
+     "imps": 158,
+     "pos": 38.16
+    },
+    "月曆印刷": {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 175,
+     "pos": 21.63
+    },
+    "利是封印刷": {
+     "q": "利是封印刷",
+     "clicks": 0,
+     "imps": 60,
+     "pos": 25.57
+    },
+    "喜帖印刷": {
+     "q": "喜帖印刷",
+     "clicks": 0,
+     "imps": 50,
+     "pos": 41.2
+    },
+    "證書印刷": {
+     "q": "證書印刷",
+     "clicks": 0,
+     "imps": 9,
+     "pos": 10.11
+    },
+    "小冊子印刷": {
+     "q": "小冊子印刷",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 24.0
+    },
+    "學校印刷": {
+     "q": "學校印刷",
+     "clicks": 0,
+     "imps": 87,
+     "pos": 18.75
+    },
+    "易拉架印刷": {
+     "q": "易拉架印刷",
+     "clicks": 0,
+     "imps": 43,
+     "pos": 39.51
+    },
+    "食品包裝印刷": {
+     "q": "食品包裝印刷",
+     "clicks": 0,
+     "imps": 156,
+     "pos": 9.28
+    },
+    "貼紙訂製": {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 89,
+     "pos": 29.53
+    },
+    "即日印刷": {
+     "q": "即日印刷",
+     "clicks": 1,
+     "imps": 54,
+     "pos": 9.33
+    },
+    "即日急件": {
+     "q": "即日急件",
+     "clicks": 0,
+     "imps": 46,
+     "pos": 8.91
+    },
+    "a2印刷": {
+     "q": "a2印刷",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 7.57
+    },
+    "a1 印刷 即日": {
+     "q": "a1 印刷 即日",
+     "clicks": 0,
+     "imps": 31,
+     "pos": 6.35
+    },
+    "a2 印刷 即日": {
+     "q": "a2 印刷 即日",
+     "clicks": 0,
+     "imps": 31,
+     "pos": 6.23
+    },
+    "海報印刷一張": {
+     "q": "海報印刷一張",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 5.33
+    },
+    "海報印刷即日": {
+     "q": "海報印刷即日",
+     "clicks": 1,
+     "imps": 35,
+     "pos": 9.54
+    },
+    "可移貼紙": {
+     "q": "可移貼紙",
+     "clicks": 0,
+     "imps": 95,
+     "pos": 14.09
+    },
+    "透明貼紙印刷": {
+     "q": "透明貼紙印刷",
+     "clicks": 0,
+     "imps": 25,
+     "pos": 5.16
+    },
+    "戶外可移貼紙": {
+     "q": "戶外可移貼紙",
+     "clicks": 0,
+     "imps": 21,
+     "pos": 9.19
+    },
+    "印喜帖價格": {
+     "q": "印喜帖價格",
+     "clicks": 1,
+     "imps": 14,
+     "pos": 5.14
+    },
+    "月曆印刷香港": {
+     "q": "月曆印刷香港",
+     "clicks": 1,
+     "imps": 2,
+     "pos": 18.5
+    },
+    "2027利是封": {
+     "q": "2027利是封",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 6.53
+    },
+    "印刷公司報價": {
+     "q": "印刷公司報價",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 7.33
+    },
+    "膠裝書價格": {
+     "q": "膠裝書價格",
+     "clicks": 0,
+     "imps": 69,
+     "pos": 37.23
+    },
+    "貼紙印刷 急件": {
+     "q": "貼紙印刷 急件",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 6.0
+    },
+    "香港印刷公司": {
+     "q": "香港印刷公司",
+     "clicks": 0,
+     "imps": 14,
+     "pos": 26.86
+    },
+    "catalog printing china": {
+     "q": "catalog printing china",
+     "clicks": 0,
+     "imps": 36,
+     "pos": 15.67
+    },
+    "catalogs printing china": {
+     "q": "catalogs printing china",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 31.43
+    },
+    "china catalog printing": {
+     "q": "china catalog printing",
+     "clicks": 0,
+     "imps": 122,
+     "pos": 15.57
+    },
+    "catalogue printing china": {
+     "q": "catalogue printing china",
+     "clicks": 0,
+     "imps": 52,
+     "pos": 13.63
+    },
+    "small batch sticker printing": {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 6.07
+    },
+    "small batch stickers": {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 63,
+     "pos": 14.97
+    },
+    "doujinshi printing": {
+     "q": "doujinshi printing",
+     "clicks": 0,
+     "imps": 63,
+     "pos": 10.48
+    },
+    "a2 poster printing": {
+     "q": "a2 poster printing",
+     "clicks": 0,
+     "imps": 31,
+     "pos": 34.87
+    },
+    "school exercise book printing": {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 12.44
+    },
+    "wholesale catalog printing services china": {
+     "q": "wholesale catalog printing services china",
+     "clicks": 0,
+     "imps": 2,
+     "pos": 19.0
+    },
+    "custom catalog printing china": {
+     "q": "custom catalog printing china",
+     "clicks": 0,
+     "imps": 6,
+     "pos": 30.0
+    },
+    "urgent printing": {
+     "q": "urgent printing",
+     "clicks": 0,
+     "imps": 14,
+     "pos": 17.21
+    },
+    "educational printing": {
+     "q": "educational printing",
+     "clicks": 0,
+     "imps": 21,
+     "pos": 33.43
+    },
+    "ステッカー印刷 小ロット": {
+     "q": "ステッカー印刷 小ロット",
+     "clicks": 0,
+     "imps": 36,
+     "pos": 11.03
+    },
+    "ステッカー 小ロット": {
+     "q": "ステッカー 小ロット",
+     "clicks": 0,
+     "imps": 43,
+     "pos": 8.35
+    },
+    "教材 印刷製本": {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 74,
+     "pos": 47.04
+    },
+    "教材 印刷 製本": {
+     "q": "教材 印刷 製本",
+     "clicks": 0,
+     "imps": 44,
+     "pos": 46.84
+    },
+    "コミケ 印刷": {
+     "q": "コミケ 印刷",
+     "clicks": 0,
+     "imps": 105,
+     "pos": 30.73
+    },
+    "カタログ 印刷": {
+     "q": "カタログ 印刷",
+     "clicks": 0,
+     "imps": 27,
+     "pos": 33.7
+    },
+    "パッケージ印刷": {
+     "q": "パッケージ印刷",
+     "clicks": 0,
+     "imps": 79,
+     "pos": 35.96
+    },
+    "防水ステッカー": {
+     "q": "防水ステッカー",
+     "clicks": 0,
+     "imps": 43,
+     "pos": 12.0
+    },
+    "冊子印刷": {
+     "q": "冊子印刷",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 45.43
+    },
+    "卒業アルバム 印刷": {
+     "q": "卒業アルバム 印刷",
+     "clicks": 0,
+     "imps": 33,
+     "pos": 60.67
+    },
+    "同人本印刷": {
+     "q": "同人本印刷",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 2.75
+    },
+    "中綴じ 印刷": {
+     "q": "中綴じ 印刷",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 76.88
+    }
+   },
+   "top_queries": [
+    {
+     "q": "c109",
+     "clicks": 1,
+     "imps": 284,
+     "pos": 10.29
+    },
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 225,
+     "pos": 30.56
+    },
+    {
+     "q": "海報印刷",
+     "clicks": 1,
+     "imps": 187,
+     "pos": 25.75
+    },
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 175,
+     "pos": 21.63
+    },
+    {
+     "q": "書刊印刷",
+     "clicks": 0,
+     "imps": 158,
+     "pos": 38.16
+    },
+    {
+     "q": "食品包裝印刷",
+     "clicks": 0,
+     "imps": 156,
+     "pos": 9.28
+    },
+    {
+     "q": "印刷公司",
+     "clicks": 2,
+     "imps": 154,
+     "pos": 28.0
+    },
+    {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 149,
+     "pos": 29.68
+    },
+    {
+     "q": "c109 日期",
+     "clicks": 0,
+     "imps": 147,
+     "pos": 9.63
+    },
+    {
+     "q": "印刷",
+     "clicks": 2,
+     "imps": 145,
+     "pos": 24.35
+    },
+    {
+     "q": "宣傳單張",
+     "clicks": 0,
+     "imps": 143,
+     "pos": 44.27
+    },
+    {
+     "q": "貼紙",
+     "clicks": 0,
+     "imps": 142,
+     "pos": 38.02
+    },
+    {
+     "q": "china catalog printing",
+     "clicks": 0,
+     "imps": 122,
+     "pos": 15.57
+    },
+    {
+     "q": "印海報",
+     "clicks": 0,
+     "imps": 122,
+     "pos": 25.57
+    },
+    {
+     "q": "印刷紙袋",
+     "clicks": 0,
+     "imps": 106,
+     "pos": 22.42
+    },
+    {
+     "q": "コミケ 印刷",
+     "clicks": 0,
+     "imps": 105,
+     "pos": 30.73
+    },
+    {
+     "q": "騎馬釘",
+     "clicks": 0,
+     "imps": 103,
+     "pos": 29.23
+    },
+    {
+     "q": "紙袋印刷",
+     "clicks": 0,
+     "imps": 102,
+     "pos": 19.04
+    },
+    {
+     "q": "食品印刷",
+     "clicks": 0,
+     "imps": 101,
+     "pos": 6.6
+    },
+    {
+     "q": "可移貼紙",
+     "clicks": 0,
+     "imps": 95,
+     "pos": 14.09
+    },
+    {
+     "q": "a1海報",
+     "clicks": 0,
+     "imps": 93,
+     "pos": 1.0
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 89,
+     "pos": 23.37
+    },
+    {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 89,
+     "pos": 29.53
+    },
+    {
+     "q": "學校印刷",
+     "clicks": 0,
+     "imps": 87,
+     "pos": 18.75
+    },
+    {
+     "q": "騎馬釘書刊",
+     "clicks": 0,
+     "imps": 86,
+     "pos": 26.81
+    },
+    {
+     "q": "訂做紙袋",
+     "clicks": 0,
+     "imps": 85,
+     "pos": 21.81
+    },
+    {
+     "q": "膠裝書",
+     "clicks": 0,
+     "imps": 83,
+     "pos": 35.81
+    },
+    {
+     "q": "戶外貼紙",
+     "clicks": 0,
+     "imps": 82,
+     "pos": 17.8
+    },
+    {
+     "q": "poster 印刷",
+     "clicks": 0,
+     "imps": 82,
+     "pos": 21.43
+    },
+    {
+     "q": "騎馬釘印刷",
+     "clicks": 0,
+     "imps": 82,
+     "pos": 24.78
+    },
+    {
+     "q": "パッケージ印刷",
+     "clicks": 0,
+     "imps": 79,
+     "pos": 35.96
+    },
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 77,
+     "pos": 29.21
+    },
+    {
+     "q": "教科書 印刷",
+     "clicks": 0,
+     "imps": 76,
+     "pos": 40.18
+    },
+    {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 74,
+     "pos": 47.04
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 73,
+     "pos": 31.32
+    },
+    {
+     "q": "膠裝書印刷",
+     "clicks": 0,
+     "imps": 72,
+     "pos": 40.67
+    },
+    {
+     "q": "摺頁印刷",
+     "clicks": 0,
+     "imps": 71,
+     "pos": 17.14
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "pos": 37.37
+    },
+    {
+     "q": "紙袋訂製",
+     "clicks": 0,
+     "imps": 70,
+     "pos": 29.06
+    },
+    {
+     "q": "印書",
+     "clicks": 0,
+     "imps": 70,
+     "pos": 31.9
+    },
+    {
+     "q": "海報與印刷",
+     "clicks": 0,
+     "imps": 69,
+     "pos": 19.16
+    },
+    {
+     "q": "gold foil red packets",
+     "clicks": 0,
+     "imps": 69,
+     "pos": 19.62
+    },
+    {
+     "q": "月歷印刷",
+     "clicks": 0,
+     "imps": 69,
+     "pos": 25.59
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 69,
+     "pos": 32.78
+    },
+    {
+     "q": "膠裝書價格",
+     "clicks": 0,
+     "imps": 69,
+     "pos": 37.23
+    },
+    {
+     "q": "易拉架製作",
+     "clicks": 0,
+     "imps": 68,
+     "pos": 60.75
+    },
+    {
+     "q": "透明貼",
+     "clicks": 0,
+     "imps": 66,
+     "pos": 21.95
+    },
+    {
+     "q": "doujinshi printing",
+     "clicks": 0,
+     "imps": 63,
+     "pos": 10.48
+    },
+    {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 63,
+     "pos": 14.97
+    },
+    {
+     "q": "防水貼紙",
+     "clicks": 1,
+     "imps": 61,
+     "pos": 10.92
+    }
+   ],
+   "top_pages": [
+    {
+     "page": "https://zprintpro.com/zh-hk/",
+     "clicks": 59,
+     "imps": 1469,
+     "pos": 13.04
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+     "clicks": 11,
+     "imps": 954,
+     "pos": 13.33
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+     "clicks": 16,
+     "imps": 827,
+     "pos": 12.44
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+     "clicks": 13,
+     "imps": 788,
+     "pos": 7.47
+    },
+    {
+     "page": "https://zprintpro.com/en/product/catalog-printing/",
+     "clicks": 1,
+     "imps": 730,
+     "pos": 37.19
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+     "clicks": 0,
+     "imps": 691,
+     "pos": 6.06
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+     "clicks": 3,
+     "imps": 670,
+     "pos": 19.54
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/books/",
+     "clicks": 3,
+     "imps": 640,
+     "pos": 52.05
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/comiket-c109/",
+     "clicks": 4,
+     "imps": 627,
+     "pos": 9.63
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+     "clicks": 1,
+     "imps": 621,
+     "pos": 19.3
+    },
+    {
+     "page": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+     "clicks": 1,
+     "imps": 587,
+     "pos": 57.01
+    },
+    {
+     "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+     "clicks": 1,
+     "imps": 551,
+     "pos": 24.48
+    },
+    {
+     "page": "https://zprintpro.com/en/product/textbooks/",
+     "clicks": 0,
+     "imps": 527,
+     "pos": 68.84
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+     "clicks": 8,
+     "imps": 517,
+     "pos": 8.61
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+     "clicks": 5,
+     "imps": 502,
+     "pos": 19.13
+    },
+    {
+     "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+     "clicks": 4,
+     "imps": 487,
+     "pos": 12.92
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+     "clicks": 0,
+     "imps": 483,
+     "pos": 38.22
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+     "clicks": 0,
+     "imps": 472,
+     "pos": 16.51
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+     "clicks": 7,
+     "imps": 411,
+     "pos": 18.04
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+     "clicks": 2,
+     "imps": 403,
+     "pos": 7.64
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+     "clicks": 0,
+     "imps": 389,
+     "pos": 39.53
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/flyers/",
+     "clicks": 2,
+     "imps": 382,
+     "pos": 28.03
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+     "clicks": 10,
+     "imps": 377,
+     "pos": 5.66
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/stickers/",
+     "clicks": 0,
+     "imps": 353,
+     "pos": 37.69
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+     "clicks": 2,
+     "imps": 350,
+     "pos": 33.17
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/a1-posters/",
+     "clicks": 5,
+     "imps": 347,
+     "pos": 10.9
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+     "clicks": 2,
+     "imps": 346,
+     "pos": 36.76
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+     "clicks": 3,
+     "imps": 345,
+     "pos": 42.8
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/category/posters/",
+     "clicks": 1,
+     "imps": 344,
+     "pos": 35.36
+    },
+    {
+     "page": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+     "clicks": 1,
+     "imps": 340,
+     "pos": 33.25
+    }
+   ]
+  }
+ },
+ "dual_method": "openpyxl x pandas",
+ "segments": {
+  "A_pre_update_1103_1109": {
+   "clicks": 158,
+   "imps": 7528,
+   "ctr": 2.0988,
+   "pos": 13.9523,
+   "days": 7,
+   "clicks_per_day": 22.57,
+   "imps_per_day": 1075.43
+  },
+  "D_1113_1119": {
+   "clicks": 127,
+   "imps": 8126,
+   "ctr": 1.5629,
+   "pos": 16.3068,
+   "days": 7,
+   "clicks_per_day": 18.14,
+   "imps_per_day": 1160.86
+  },
+  "E_latest_1120_1123": {
+   "clicks": 72,
+   "imps": 6497,
+   "ctr": 1.1082,
+   "pos": 30.3914,
+   "days": 4,
+   "clicks_per_day": 18.0,
+   "imps_per_day": 1624.25
+  }
+ },
+ "reconciliation_all_match": true
+}
