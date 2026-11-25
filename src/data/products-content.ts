@@ -2210,18 +2210,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 
-<h3>小ロット単価表（A4 版基準・実報価エンジン準拠）</h3>
-<p>本ページの見積もりエンジン実パラメータから算出：A4 版基本価格 HK$38（約 700 円）〜、最小ロット 10 枚。PVC 防水が基準材質で、PP 合成紙 +HK$10、PET 透明 +HK$15、型抜き +HK$30。最終価格は見積もりでご確認ください。</p>
-<table>
-  <thead><tr><th>枚数</th><th>小サイズ (≤50mm)</th><th>中サイズ (51-100mm)</th><th>大サイズ (&gt;100mm)</th></tr></thead>
-  <tbody>
-    <tr class="border-b border-gray-200"><td>10 枚（最小ロット）</td><td>HK$89/枚</td><td>HK$134/枚</td><td>HK$196/枚</td></tr>
-    <tr class="border-b border-gray-200"><td>100 枚</td><td>HK$38/枚</td><td>HK$57/枚</td><td>HK$84/枚</td></tr>
-    <tr class="border-b border-gray-200"><td>500 枚</td><td>HK$29/枚</td><td>HK$43/枚</td><td>HK$63/枚</td></tr>
-    <tr><td>1000 枚</td><td>HK$29/枚以下</td><td>要見積もり</td><td>要見積もり</td></tr>
-  </tbody>
-</table>
-<p>読み方：10 枚帯は最小ロット係数（HK$38 × 2.35、小サイズ）適用。100 枚帯は基準価格 × サイズ倍率（×1 / ×1.5 / ×2.2）。500 枚帯は 15% の数量割引込み。10 枚から対応する小ロット対応は、テスト印刷やイベント限定グッズに最適です。</p>
+<p>価格は本ページの見積もりエンジン（JPY 円建て・実パラメータ連動）で即時算出されます。数量・サイズ・材質を選択すると 30 秒で総額を表示。10 枚の最小ロットから対応し、テスト印刷やイベント限定グッズに最適です。最終価格は見積もりでご確認ください。</p>
 `,
   },
   'die-cut-stickers': {

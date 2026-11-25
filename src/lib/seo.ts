@@ -410,7 +410,7 @@ const categorySeoData: Record<string, {
       // 2026-09-30 A1/A4/B4 批: zh 去英文前缀主词前置「貼紙印刷」; ja 日文主词前置「シール印刷」; en 补 Label
       'zh-hk': '貼紙印刷 10張起・防水透明異形貼紙・免費設計燙金 | 智印港',
       // 2026-11-13 weekly-meta 批: en 104→55 超带瘦身（Label/Free Proof/US Shipping 降层 keywords+desc）
-      en: 'Small Batch Sticker Printing $0.05 · 10 MOQ | ZprintPro',
+      en: 'Small Batch Sticker Printing US$0.32 · 10 MOQ | ZprintPro',
       // 2026-11-13 weekly-meta 批: ja 83→56 超带瘦身（ja 带钱词 ステッカー印刷 前置; 透明/ダイカット 留 keywords）
       ja: 'ステッカー印刷 10枚〜 オリジナル 防水 短納期 | ZprintPro',
     },
@@ -422,7 +422,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '貼紙印刷 10 張起印，HK$0.22 起/張（大量檔）。防水抗 UV / 透明 / 燙金 / 異形裁切 / 啞膠亮膜，餐廳、品牌、電商跨境通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，FSC 認證。',
-      'en': 'Small batch sticker printing from $0.05, 10 MOQ — custom waterproof, clear & die-cut stickers. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA delivery.',
+      'en': 'Small batch sticker printing from US$0.32, 10 MOQ — custom waterproof, clear & die-cut stickers. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA delivery.',
       'ja': 'small batch ステッカー印刷・PVC シール・ダイカット 10 枚から、¥8〜。防水・透明・金箔ステッカーを小ロット対応、小売・飲食・EC ブランド向け。無料デザイン校正 4 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証品質。',
     },
   },

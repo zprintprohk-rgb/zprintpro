@@ -2581,8 +2581,9 @@ export const products: Product[] = [
   },
     variables: {
       sizes: [
-        { value: 'a2', label: 'A2 (420×594mm)', multiplier: 1 },
+        // 2026-11-26 批1价格真值④: A1 提前为默认档（SKU 名「A1大幅海報」与引擎默认一致；A2 HK$20 仍可手选）
         { value: 'a1', label: 'A1 (594×841mm)', multiplier: 1.8 },
+        { value: 'a2', label: 'A2 (420×594mm)', multiplier: 1 },
         { value: 'a0', label: 'A0 (841×1189mm)', multiplier: 3.2 },
       ],
       materials: [
@@ -6843,7 +6844,7 @@ export const products: Product[] = [
 
     title_zh: '燙金喜帖',
     description_zh: '300g 棉紙燙金喜帖,玫瑰金 / 香檳金 / 銀色燙金工藝,50 套起印。順豐本地滿 HK$500 免費 + DHL 全球 2-4 天。適配行業: 婚...',
-    basePrice: 1.2,
+    basePrice: 25,
     weight_score: 50,
     images: ['/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-zh-hk-hero.webp'],
   imagesByLocale: {
@@ -6895,7 +6896,7 @@ export const products: Product[] = [
 
     title_zh: '婚禮感謝卡',
     description_zh: '婚禮感謝卡 100 套起印,300g 棉紙 / 銅版紙 / 剛古紙 + 燙金 / UV / 模切,配信封。順豐本地 + DHL 全球。適配行業: 婚慶答...',
-    basePrice: 0.65,
+    basePrice: 15,
     weight_score: 50,
     images: ['/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-zh-hk-hero.webp'],
   imagesByLocale: {
