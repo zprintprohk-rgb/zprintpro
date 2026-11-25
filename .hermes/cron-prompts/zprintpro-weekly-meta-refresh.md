@@ -89,6 +89,17 @@
 > **红线**: ① 报告名强制 `<YYYY-MM-DD>-<本车道名>.md` 落 `.hermes/logs/`; ② 失败也写报告, 空转必须显式写 `VERDICT: FAILED` + 原因; ③ `run-context` 的 `preflight` 段为 `blocked` 时立即停手写 `VERDICT: BLOCKED`, 不做任何写操作; ④ 两个文件都读不到时报告写一行 `BUS_UNAVAILABLE` 后按正常流程执行, 禁止编造"上次已做过"。
 <!-- RESULTS-BUS-CONTRACT v1-end (2026-09-19) -->
 
+<!-- FLYWHEEL-ENHANCE-W1 v1 (2026-11-26) -->
+> # 【季节守望块】(K3 2026-11-26 批准 · 增强包 W1 · 每周五固定读窗)
+>
+> 每周五 meta 刷新时固定评估三个季节窗, 写进周报独立小节「季节守望」:
+> 1. **C109 倒计时** (~5 周窗, 实测 431imp@pos10): 圣诞/新年贺卡与节庆印刷簇; 窗开启 -> 提案专题页直答块 (并入深层 blog 队列 1.5 位)。
+> 2. **利是封/月历 2027 窗**: red-packets / calendars 族的 GSC 展示量环比; 启动信号 = 2 周连升。
+> 3. **易拉架活动季** (7d 暴起簇): roll-up-banner 族 7d 窗突变检测; 启动信号 = 周环比 >50%。
+> **纪律**: 只读 GSC 既有三档 + API 新档, 不编造季节数字; 窗口日期一律标「以站内专题页为准」; 提案走队列 WAITING_K3, 不直接上 src。
+<!-- FLYWHEEL-ENHANCE-W1 v1-end (2026-11-26) -->
+
+
 <!-- K3-BRAIN-INJECT-2026-10-09 BEGIN -->
 > # 🧠 【第 -2 优先级 · 2026-10-09 大脑指令区】周执行清单 + 车道重定制（K3 大脑 2026-10-09 拍板 · SSoT: `docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md`）
 > 数据基座：GSC 2026-10-09 档 vs 10-05 vs 09-29（`docs/2026-10-09-gsc-deep-audit-and-strategy.md`）。本区与 v9.3 指令区（第 -3 优先级）叠加生效，冲突时报大脑裁决。

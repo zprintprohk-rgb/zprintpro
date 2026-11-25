@@ -67,6 +67,23 @@
 > **红线**: ① 报告名强制 `<YYYY-MM-DD>-<本车道名>.md` 落 `.hermes/logs/`; ② 失败也写报告, 空转必须显式写 `VERDICT: FAILED` + 原因; ③ `run-context` 的 `preflight` 段为 `blocked` 时立即停手写 `VERDICT: BLOCKED`, 不做任何写操作; ④ 两个文件都读不到时报告写一行 `BUS_UNAVAILABLE` 后按正常流程执行, 禁止编造"上次已做过"。
 <!-- RESULTS-BUS-CONTRACT v1-end (2026-09-19) -->
 
+<!-- FLYWHEEL-ENHANCE-D1 v1 (2026-11-26) -->
+> # 【STEP -1 · GSC API 自动拉取】(K3 2026-11-26 批准 · 增强包 D1)
+>
+> **时机**: 结果总线消费契约之后、任何内容任务之前。
+> **判定**: 若 `GSC数据/` 今日无新人工导出 (无 mtime=今天的 xlsx/csv), 自动拉取补齐; 有人工新批则跳过本步直接消费。
+> **命令** (逐档执行, 失败单档降级不影响其它档):
+> ```
+> GSC_PROXY=http://127.0.0.1:7890 python scripts/fetch_gsc_data.py --days 28 --dimensions query        --out GSC数据/gsc-query-28d-api-<YYYY-MM-DD>.csv
+> GSC_PROXY=http://127.0.0.1:7890 python scripts/fetch_gsc_data.py --days 28 --dimensions query,page    --out GSC数据/gsc-query-page-28d-api-<YYYY-MM-DD>.csv
+> GSC_PROXY=http://127.0.0.1:7890 python scripts/fetch_gsc_data.py --days 28 --dimensions query,country --out GSC数据/gsc-query-country-28d-api-<YYYY-MM-DD>.csv
+> ```
+> **代理命脈**: 127.0.0.1:7890 (FlClash 常驻服务, 已验证开机自启); 脚本默认 7892 未启用, 必须用环境变量覆盖, 禁止改脚本默认值。
+> **降级纪律**: 代理或 API 失败 -> 用最近一批 GSC 数据继续 (NO_CURRENT_BATCH 纪律不变), 报告 CONSUMED 行注明 `GSC_API=FAIL, fallback=<最近批文件名>`; 禁止因拉取失败空转或编造数据。
+> **承接**: 新鲜 query×page 档 = 承接层决策输入 (SSoT: 重要文件/2026-11-26-query-page-primary-url-decisions.md)。
+<!-- FLYWHEEL-ENHANCE-D1 v1-end (2026-11-26) -->
+
+
 <!-- K3-BRAIN-INJECT-2026-10-09 BEGIN -->
 > # 🧠 【第 -2 优先级 · 2026-10-09 大脑指令区】周执行清单 + 车道重定制（K3 大脑 2026-10-09 拍板 · SSoT: `docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md`）
 > 数据基座：GSC 2026-10-09 档 vs 10-05 vs 09-29（`docs/2026-10-09-gsc-deep-audit-and-strategy.md`）。本区与 v9.3 指令区（第 -3 优先级）叠加生效，冲突时报大脑裁决。

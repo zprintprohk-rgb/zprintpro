@@ -222,6 +222,26 @@ def check_stuck_lane_tasks():
     return alerts
 
 
+def check_external_deps():
+    """第五方对账: 外部依赖健康 (K3 2026-11-26 批准增强包 WD1)
+    GSC API 命脈 = 本机代理 127.0.0.1:7890 (FlClash 常驻服务, 开机自启已验证);
+    fetch_gsc_data.py 经 GSC_PROXY 走该端口, 断开 = daily 车道 D1 自动拉取必降级。
+    本地 socket 连接是确定性判据 (与线上探测的"网络异常不告警"原则不同):
+    连不上 = 代理进程死了, 直接告警 ATTENTION。"""
+    import socket
+    alerts = []
+    try:
+        with socket.create_connection(("127.0.0.1", 7890), timeout=3):
+            pass
+        print("[watchdog] 第五方对账: 代理 7890 存活 (GSC API 通路 OK)")
+    except OSError as e:
+        alerts.append(f"- **外部依赖失联 (ATTENTION)**: GSC API 代理 127.0.0.1:7890 不可连 ({e}) -> "
+                      f"daily 车道 D1 自动拉取将降级用旧批; 处置: 确认 FlClash 服务进程 "
+                      f"(数据目录 %APPDATA%\\\\com.flclash\\\\speclash) 是否存活, 重启后 "
+                      f"`GSC_PROXY=http://127.0.0.1:7890 python scripts/fetch_gsc_data.py --days 28 --dimensions query --dry-run` 复验")
+    return alerts
+
+
 def write_exec_line(status_txt, detail):
     rep = os.path.join(LOGS, "cron-execution-report.md")
     ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
@@ -294,6 +314,7 @@ def main():
 
     alerts.extend(check_live_seo_assertions())
     alerts.extend(check_stuck_lane_tasks())
+    alerts.extend(check_external_deps())
 
     status_txt = "✅ 通过" if not alerts else f"⚠️ {len(alerts)} 条告警"
     write_exec_line(status_txt, detail)
