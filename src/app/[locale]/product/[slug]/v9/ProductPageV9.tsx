@@ -135,8 +135,8 @@ const T: Record<'zh-hk' | 'en' | 'ja', Record<string, any>> = {
     freeShipHKVal: 'free shipping',
     svcStdTitle: 'Lead time confirmed at quote',
     svcStdDesc: 'HP Indigo 15K B2 digital line · free digital proof, timing and dispatch confirmed at quote',
-    svcDhlTitle: 'DHL worldwide 2-4 days',
-    svcDhlDesc: 'Free US shipping $99+ · DHL Express / FedEx 3-5 days to the USA, 2-4 days to Japan',
+    svcDhlTitle: 'DHL / FedEx worldwide shipping',
+    svcDhlDesc: 'Free US shipping $99+ · DHL Express / FedEx · delivery timing confirmed at quote',
     svcRushTitle: 'Rush Printing',
     svcRushDesc: 'order today · rush cutoff & delivery confirmed at quote · go to rush printing service →',
     productDetails: 'Product Details',
@@ -665,7 +665,7 @@ export function ProductPageV9({
               {product.features && (
                 <ul>
                   {product.features.map((f) => (
-                    <li key={f} className="list-disc ml-6 mb-1">{f}</li>
+                    <li key={f} className="list-disc ml-6 mb-1">{localizeSpecValue(f, locale)}</li>
                   ))}
                 </ul>
               )}

@@ -2063,7 +2063,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><td>1000 sheets</td><td>below HK$29/sheet</td><td>by quote</td><td>by quote</td></tr>
   </tbody>
 </table>
-<p>How to read it: the 10-sheet tier applies the MOQ factor (HK$38 × 2.35, small size); the 100-sheet tier is the base price × size multiplier (×1 / ×1.5 / ×2.2); the 500-sheet tier includes the 15% bulk discount. Add-ons price separately per the table above. MOQ is 10 sheets per A4 layout — the lowest barrier for a test run in Asia manufacturing.</p>
+<p>How to read it: the 10-sheet tier applies the MOQ factor (HK$38 × 2.35, small size); the 100-sheet tier is the base price × size multiplier (×1 / ×1.5 / ×2.2); the 500-sheet tier includes the 15% bulk discount. Add-ons price separately per the table above. MOQ is 10 stickers per design — the lowest barrier for a test run in Asia manufacturing.</p>
 `,
     longDescriptionJa: `
 <h3>素材材質対比</h3>
@@ -11013,7 +11013,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>ZprintPro is a global printing SaaS platform. Textbook printing is one specialized module. We support 30-second AI quoting, 72-hour global delivery, AI file pre-check, online print configuration, paper sample request, and school procurement accounts (NET 30). From inquiry to delivery, ZprintPro is designed around the actual needs of education institutions.</p>
 
 <h3>Our Production Facility</h3>
-<p>ZprintPro operates from a modern production facility in Shenzhen (Longgang District, Guangdong Province), equipped with Heidelberg offset presses, FSC-certified paper supply, and ISO 12647 color management. We provide textbook-quality printing for educational institutions, with sample proofs and material specifications available by request via email. US delivery is via DHL / FedEx in 2-4 business days, with school delivery windows arranged per order.</p>
+<p>ZprintPro operates from a modern production facility in Shenzhen (Longgang District, Guangdong Province), equipped with Heidelberg offset presses, FSC-certified paper supply, and ISO 12647 color management. We provide textbook-quality printing for educational institutions, with sample proofs and material specifications available by request via email. US delivery is via DHL / FedEx with delivery timing confirmed at quote, and school delivery windows arranged per order.</p>
 
 <h3>ZprintPro Multi-Currency Settlement</h3>
 <p>ZprintPro supports multi-currency settlement (HKD / USD / JPY / CNY) via bank wire, WeChat Pay, Alipay, and PayPal. Corporate customers can apply for NET 30 monthly billing. Education institutions and tutorial center chains enjoy exclusive school discounts. Contact customer support for a custom quote.</p>
@@ -11034,7 +11034,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro operates from our Asia production facility with 2-4 business day worldwide delivery via DHL Express / FedEx. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
+<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro provides free reprint for color mismatch; remediation for quality issues is arranged per your order confirmation. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
 
 
 <h3>Best For — Industries &amp; Use Cases</h3>
@@ -11732,7 +11732,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, rush production is available for doujinshi (quoted per artwork and schedule; rush fee applies). Contact us via WhatsApp for details.</p></details>
 <details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Asia production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
 <details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
-<details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
+<details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint; further remediation is arranged per your order confirmation.</p></details>
 
 <p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Our Asia production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management.</em></p>`,
     longDescriptionJa: `<h3>同人誌・推し活特化印刷サービス</h3>

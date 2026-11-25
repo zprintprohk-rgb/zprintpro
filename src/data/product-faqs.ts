@@ -39,8 +39,8 @@ export const stickersFAQs: FAQItem[] = [
     },
     answer: {
       'zh-hk': '可以。針對九龍、港島及新界客戶，少批量貼紙印刷（10-500張）最快即日可取。建議上午12時前確認稿件，即可安排當日生產，港鐵站交收或上門送貨均可。',
-      'en': 'Yes. Small-batch sticker printing (10-500 pcs) is available with rush production. Confirm your artwork before 12 PM (HKT) for same-day production at our Asia facility, then 2-4 business day delivery to US addresses via DHL / FedEx.',
-      'ja': 'はい。少ロットシール印刷（10〜500枚）は即日生産対応可能です。正午までにデータを確定いただければ、当日生産を手配し、DHL・FedExで日本全国へ2〜4日でお届けします。',
+      'en': 'Yes. Small-batch sticker printing (10-500 pcs) is available with rush production. Confirm your artwork before 12 PM (HKT) for same-day production at our Asia facility, then delivery to US addresses via DHL / FedEx with timing confirmed at quote.',
+      'ja': 'はい。少ロットシール印刷（10〜500枚）は即日生産対応可能です。正午までにデータを確定いただければ、当日生産を手配し、DHL・FedExによる配送日程はお見積り時に確定します。',
     },
   },
   {
@@ -75,8 +75,8 @@ export const stickersFAQs: FAQItem[] = [
     },
     answer: {
       'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿HK$500免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等站點 — 香港服務點，非生產地）。',
-      'en': 'Yes. ZprintPro delivers sticker orders worldwide from our Asia facility. US orders ship via DHL / FedEx in 2-4 business days, with free shipping on orders over $99.',
-      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。小口注文から大量注文まで対応可能です。',
+      'en': 'Yes. ZprintPro delivers sticker orders worldwide from our Asia facility. US orders ship via DHL / FedEx with delivery timing confirmed at quote, plus free shipping on orders over $99.',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（納期はお見積り時に確定）。小口注文から大量注文まで対応可能です。',
     },
   },
   {
@@ -212,7 +212,7 @@ export const flyersFAQs: FAQItem[] = [
     answer: {
       'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。傳單印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量傳單派發訂單可安排貨車直送。',
       'en': 'Yes. ZprintPro delivers flyer orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx (2-4 business days). For bulk leaflet distribution orders, delivery can be arranged directly to your distribution team.',
-      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。大量のチラシ注文にも対応可能です。',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（納期はお見積り時に確定）。大量のチラシ注文にも対応可能です。',
     },
   },
   {
@@ -324,7 +324,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
     answer: {
       'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送倉庫。',
       'en': 'Yes. ZprintPro delivers packaging box orders worldwide from our Asia facility. Orders over $99 qualify for free US shipping via DHL / FedEx. For bulk orders, pallet delivery to your warehouse can be arranged.',
-      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。大量注文にも対応可能です。',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（納期はお見積り時に確定）。大量注文にも対応可能です。',
     },
   },
   // 2026-09-12 v9.3 任务 K: 食品包装意图澄清 — 真实回答「做唔做膠袋」(找胶袋的人不点, 找纸质的人必点)
@@ -449,7 +449,7 @@ export const postersFAQs: FAQItem[] = [
     answer: {
       'zh-hk': '有。智印港提供全港送貨服務，包括港島、九龍、新界及離島。海報印刷訂單滿HK$500免運費，Backdrop背景板等大件可安排貨車直送會場。未滿額可選擇港鐵站交收。',
       'en': 'Yes. ZprintPro delivers poster orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx (2-4 business days). Large items like backdrop boards ship rolled in protective tubes directly to your venue.',
-      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。バックドロップなどの大きな商品にも対応可能です。',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（納期はお見積り時に確定）。バックドロップなどの大きな商品にも対応可能です。',
     },
   },
   {
@@ -748,8 +748,8 @@ export const generalProductFAQs: FAQItem[] = [
     },
     answer: {
       'zh-hk': '智印港提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等 — 香港服務點，非生產地）。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。',
-      'en': 'ZprintPro delivers worldwide from our Asia production facility. US orders ship via DHL / FedEx in 2-4 business days, with free shipping on orders over $99. Japan orders arrive in 2-4 days.',
-      'ja': 'はい。ZprintPro は DHL / FedEx で日本全国に配送しています（通常 2〜4 日）。米国など海外市場へも 3〜5 日でお届け可能です。送料は数量と配送先に応じてお見積もりいたします。',
+      'en': 'ZprintPro delivers worldwide from our Asia production facility. US orders ship via DHL / FedEx with delivery timing confirmed at quote, plus free shipping on orders over $99. Japan delivery timing is confirmed at quote.',
+      'ja': 'はい。ZprintPro は DHL / FedEx で日本全国に配送しています（通常 2〜4 日）。米国など海外市場への配送日程もお見積り時に確定します。送料は数量と配送先に応じてお見積もりいたします。',
     },
   },
   {
@@ -1085,8 +1085,8 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
       answer: {
         'zh-hk': '防水 PVC 小批量 HK$0.45 起/張（10-50 張檔位）；100/500/1000 張階梯遞減。1 小時免費打稿，滿 HK$500 免費速遞。',
-        en: 'From $0.55/pc at 10-50 pcs on waterproof PVC; volume tiers at 100/500/1000 pcs lower the unit price. Free digital proof in 1 hour, free US shipping over $99.',
-        ja: '防水PVCで10-50枚は¥69〜/枚、100/500/1000枚の段階割引あり。1時間無料校正、全国配送。',
+        en: 'From $0.55/pc at 10-50 pcs on waterproof PVC; volume tiers at 100/500/1000 pcs lower the unit price. Digital proof provided before production; free US shipping on orders over $99.',
+        ja: '防水PVCで10-50枚は¥69〜/枚、100/500/1000枚の段階割引あり。校正データは生産前にご提供、配送はお見積り時に確定。',
       },
     },
   ],
@@ -1177,8 +1177,8 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
       answer: {
         'zh-hk': '教科書 10 本起印、HK$24 起/本，5-7 個工作天交貨。覆膜騎馬釘/膠裝可選，內頁 157g 銅版紙、封面 250g，1 小時免費打稿。',
-        en: 'Textbooks from $9.20/book at 10 MOQ (157gsm interior, 250gsm cover), 5-7 business days plus DHL 2-4 day delivery. Free digital proof in 1 hour.',
-        ja: '教科書印刷は10冊〜¥1288〜（本文157gコート紙・表紙250g）。5-7営業日＋DHLで日本へ2-4日、1時間無料デジタル校正。',
+        en: 'Textbooks from $9.20/book at 10 MOQ (157gsm interior, 250gsm cover), 5-7 business days production plus DHL shipping confirmed at quote. Digital proof provided before production.',
+        ja: '教科書印刷は10冊〜¥1288〜（本文157gコート紙・表紙250g）。5-7営業日の生産、DHL配送日程はお見積り時に確定、校正データは生産前にご提供。',
       },
     },
     {
@@ -1227,8 +1227,8 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
       answer: {
         'zh-hk': '標準 3-5 個工作天（檔案確認後），急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
-        en: 'Standard lead time is 3-5 business days after artwork approval; rush scheduling available. Free SF Express in Hong Kong on orders over HK$500, DHL worldwide 2-4 days.',
-        ja: '標準納期はデータ確定後3〜5営業日、特急相談可。香港国内はHK$500以上でSF Express無料、海外はDHLで世界2〜4日。',
+        en: 'Standard lead time is 3-5 business days after artwork approval; rush scheduling available. Free SF Express in Hong Kong on orders over HK$500, DHL worldwide with delivery timing confirmed at quote.',
+        ja: '標準納期はデータ確定後3〜5営業日、特急相談可。香港国内はHK$500以上でSF Express無料、海外はDHL対応、納期はお見積り時に確定。',
       },
     },
     {
@@ -1277,8 +1277,8 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
       answer: {
         'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
-        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express in Hong Kong over HK$500; DHL worldwide 2-4 days.',
-        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF Express無料、海外DHL世界2〜4日。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express in Hong Kong over HK$500; DHL worldwide with delivery timing confirmed at quote.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF Express無料、海外DHL対応、納期はお見積り時に確定。',
       },
     },
     {
@@ -1377,8 +1377,8 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
       answer: {
         'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
-        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide 2-4 days.',
-        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL世界2〜4日。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide with delivery timing confirmed at quote.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL対応、納期はお見積り時に確定。',
       },
     },
     {
@@ -1439,8 +1439,8 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
       answer: {
         'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
-        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide 2-4 days.',
-        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL世界2〜4日。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide with delivery timing confirmed at quote.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL対応、納期はお見積り時に確定。',
       },
     },
   ],
@@ -1489,8 +1489,8 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
       answer: {
         'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
-        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide 2-4 days.',
-        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL世界2〜4日。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide with delivery timing confirmed at quote.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL対応、納期はお見積り時に確定。',
       },
     },
   ],
@@ -1527,8 +1527,8 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
       answer: {
         'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
-        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide 2-4 days.',
-        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL世界2〜4日。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide with delivery timing confirmed at quote.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL対応、納期はお見積り時に確定。',
       },
     },
     {
@@ -1577,8 +1577,8 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
       answer: {
         'zh-hk': '標準 3-5 個工作天，急單可加急排期。港九新界滿 HK$500 免費順豐，海外 DHL 全球 2-4 天。',
-        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide 2-4 days.',
-        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL世界2〜4日。',
+        en: 'Standard 3-5 business days, rush scheduling available. Free SF Express over HK$500 in Hong Kong; DHL worldwide with delivery timing confirmed at quote.',
+        ja: '標準3〜5営業日、特急相談可。香港国内HK$500以上SF無料、海外DHL対応、納期はお見積り時に確定。',
       },
     },
     {

@@ -334,11 +334,11 @@ categoryConversionBlocks['stickers:en'] = {
       },
       {
         "title": "We Print & Pack",
-        "desc": "Custom stickers printed in 2–3 days"
+        "desc": "Custom stickers — production schedule confirmed at quote"
       },
       {
         "title": "Ship to You",
-        "desc": "Local delivery or DHL worldwide 2–4 days"
+        "desc": "Local delivery or DHL worldwide — timing confirmed at quote"
       }
     ]
   },

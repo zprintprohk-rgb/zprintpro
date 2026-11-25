@@ -1963,7 +1963,7 @@ const lpChildrensPictureBookGuide: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '童書繪本印刷 10 本起印。精裝硬皮 2.5mm 灰紙板封面、32 頁標準開本、單價 HK$40-240/本、100 本 85 折 500 本 7 折。A5/A4/B5 開本，80g/100g 書紙或 128g 銅版紙，燙金/壓凹/局部 UV 可選，FSC 認證紙，5-7 個工作天，滿 HK$500 港九新界順豐免運，DHL 全球 2-4 天，30 秒 AI 即時報價。',
-    en: 'Picture book printing from 100 copies: hardcover with 2.5mm greyboard cover, 32pp standard trim, HK$40-240 per copy, 85% at 100 and 70% at 500, A5/A4/B5, 80-128gsm stocks, foil and deboss options, FSC-certified paper, 5-7 day turnaround, DHL worldwide 2-4 days.',
+    en: 'Picture book printing from 100 copies: hardcover with 2.5mm greyboard cover, 32pp standard trim, HK$40-240 per copy, 85% at 100 and 70% at 500, A5/A4/B5, 80-128gsm stocks, foil and deboss options, FSC-certified paper, 5-7 day turnaround, DHL / FedEx worldwide with delivery timing confirmed at quote.',
     ja: '絵本印刷は 100 部から。2.5mm 厚紙ボード表紙のハードカバー、32 ページ標準判、1 部 HK$40〜240、100 部 85 折・500 部 7 折、A5/A4/B5、80〜128g 用紙、箔押し・型押し対応、FSC 認証紙、標準納期 5〜7 営業日、日本全国送料無料、海外 DHL 2〜4 日。',
   },
   targetKeywords: {
