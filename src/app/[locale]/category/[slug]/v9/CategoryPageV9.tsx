@@ -49,6 +49,7 @@ interface V9Strings {
   materialTag: string;
   moqTag: string;
   fromSuffix: string;
+  fromPrefix: string;
   orderNow: string;
   moqLine: (q: number, u: string) => string;
   bannerCaps: string[];
@@ -84,6 +85,7 @@ const V9T: Record<'zh-hk' | 'en' | 'ja', V9Strings> = {
     materialTag: '[材質]',
     moqTag: '[起訂]',
     fromSuffix: '起',
+    fromPrefix: '',
     orderNow: '立即訂購',
     moqLine: (q, u) => `${q}${u || '件'}起訂 · 量大更優`,
     bannerCaps: ['AI即時報價', '即日交貨', 'ISO 12647 色彩', '全港順豐速遞'],
@@ -118,6 +120,7 @@ const V9T: Record<'zh-hk' | 'en' | 'ja', V9Strings> = {
     materialTag: '[Material]',
     moqTag: '[MOQ]',
     fromSuffix: '',
+    fromPrefix: 'From ',
     orderNow: 'Order Now',
     moqLine: (q) => `${q} MOQ`,
     bannerCaps: ['Instant AI Quote', 'Same-Day Delivery', 'Certified Factory', 'DHL Express Global'],
@@ -155,6 +158,7 @@ const V9T: Record<'zh-hk' | 'en' | 'ja', V9Strings> = {
     materialTag: '[材質]',
     moqTag: '[最小注文]',
     fromSuffix: '〜',
+    fromPrefix: '',
     orderNow: '今すぐ注文',
     moqLine: (q, u) => `${q}${u || '枚'}〜`,
     bannerCaps: ['AI見積もり30秒', '即日納品', '国際認証', 'DHL速達'],
@@ -247,7 +251,7 @@ function V9ProductCard({ product, locale }: { product: Product; locale: Locale }
           <span className="whitespace-nowrap mr-2.5">{t9.moqTag} {product.minQuantity} {unitWord ? unitWord.replace('/', '') : '件'}</span>
         </div>
         <div className="flex items-baseline gap-1.5 h-8 whitespace-nowrap">
-          <span className="font-mono text-[27px] font-bold text-[#F87314] tracking-[-0.02em]">{fromPrice}</span>
+          <span className="font-mono text-[27px] font-bold text-[#F87314] tracking-[-0.02em]">{t9.fromPrefix}{fromPrice}</span>
           <span className="text-[14px] text-[#6B7280]">{anchor ? anchor.unitLabel : ''}{t9.fromSuffix}</span>
         </div>
         <div className="text-[13.5px] text-[#6B7280] h-[1.6em] whitespace-nowrap overflow-hidden text-ellipsis mb-3.5">{moqLine}</div>

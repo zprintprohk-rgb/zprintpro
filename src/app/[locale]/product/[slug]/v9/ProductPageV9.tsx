@@ -573,7 +573,7 @@ export function ProductPageV9({
           </div>
           <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 self-stretch lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)] flex flex-col justify-between h-full">
             <div className="text-[14px] font-bold uppercase tracking-[0.12em] text-[#2873F5] mb-2">{t.railQuote}</div>
-            <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : fromPrice()}<span className="text-[15px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}${t.fromSuffix}` : ''}</span></div>
+            <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{isEn ? 'From ' : ''}{anchor ? anchor.big : fromPrice()}<span className="text-[15px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}${t.fromSuffix}` : ''}</span></div>
             <div className="text-[14.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? (isEn
               ? `${bestRow.qty.toLocaleString('en-US')} ${displayUnit}${t.batchLine}${lc(bestRow.total)}`
               : isJa
@@ -803,7 +803,7 @@ export function ProductPageV9({
                       <a href={`${localePrefix}/product/${p.slug}/`} className="hover:text-[#2873F5]">{normalizeTitle(getProductDisplayTitle(p, locale))}</a>
                     </h3>
                     <div className="font-mono text-[16px] font-bold text-[#F87314]">
-                      {a ? a.big : (locale === 'zh-hk' ? p.price_range : convertToFromPrice(p.price_range, locale, p.category_slug, p.slug))}
+                      {locale === 'en' ? 'From ' : ''}{a ? a.big : (locale === 'zh-hk' ? p.price_range : convertToFromPrice(p.price_range, locale, p.category_slug, p.slug))}
                       <span className="text-[13px] font-normal text-[#6B7280]">{a ? `${a.unitLabel}${t.fromSuffix}` : ''}</span>
                     </div>
                   </div>
