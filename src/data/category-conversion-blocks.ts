@@ -1634,7 +1634,7 @@ categoryConversionBlocks['posters:zh-hk'] = {
   "whatsappTemplates": [
     {
       "label": "報價查詢",
-      "message": "你好，我想印海報，尺寸【A2】，材質【128g 銅版紙】，數量【200】張，室內用，麻煩報價同交期，多謝！"
+      "message": "你好，我想印海報，尺寸【A1】，材質【128g 銅版紙】，數量【200】張，室內用，麻煩報價同交期，多謝！"
     },
     {
       "label": "戶外海報加急",
@@ -1774,7 +1774,7 @@ categoryConversionBlocks['posters:en'] = {
   "whatsappTemplates": [
     {
       "label": "Get a Quote",
-      "message": "Hi, I'd like to print posters, size [A2], material [128g art paper], quantity [100] pcs, for indoor use, please share pricing and lead time, thanks!"
+      "message": "Hi, I'd like to print posters, size [A1], material [128g art paper], quantity [100] pcs, for indoor use, please share pricing and lead time, thanks!"
     },
     {
       "label": "Outdoor Poster Rush",
@@ -1912,7 +1912,7 @@ categoryConversionBlocks['posters:ja'] = {
   "whatsappTemplates": [
     {
       "label": "見積もり依頼",
-      "message": "こんにちは、ポスター印刷をお願いしたいのですが、サイズ[A2]、素材[128gアートペーパー]、数量[100]枚、屋内用です。価格と納期を教えてください、よろしくお願いします！"
+      "message": "こんにちは、ポスター印刷をお願いしたいのですが、サイズ[A1]、素材[128gアートペーパー]、数量[100]枚、屋内用です。価格と納期を教えてください、よろしくお願いします！"
     },
     {
       "label": "屋外ポスター特急",

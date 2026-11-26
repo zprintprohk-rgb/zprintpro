@@ -451,6 +451,21 @@ export function ProductPageV9({
               : `${productTitle} ${product.minQuantity}${unitWord}起印，${anchor?.big || product.price_range} 起，交期與打稿時效以報價確認。`}
           </p>
 
+          {/* G1 批1 頁3 直答塊（2026-11-27 A1 D2 批回填；a1-posters × zh-hk 單變量, en/ja 待 7d 復測門後再翻；
+              文案 = 草案 Variant A, K3 2026-11-26 02:29 批准 + 02:48 裁決④(title 去價+產線標注);
+              真值源: products.ts L2568-2575 + rush 服務頁二輪復測, 見 重要文件/2026-11-26-g1-direct-answer-blocks-3pages-draft-v1.md §1/§3.3） */}
+          {product.slug === 'a1-posters' && locale === 'zh-hk' && (
+            <div className="mt-3 border border-[#BFDBFE] bg-[#EFF6FF] rounded-[10px] px-4 py-3.5 text-[15px] text-[#17284C] leading-[1.8]" data-direct-answer="a1-posters">
+              <p className="text-[13.5px] font-bold text-[#1D4ED8] mb-1.5">A1 海報 · 直接答案</p>
+              <p>
+                <strong>A1 海報（594×841mm）1 張都印</strong>。兩條產線：
+                <strong>數碼急件線</strong>——1-5 張最快即日，18:00 截單翌日中午前（海報 10 張急件參考價 HK$16/張起・大量檔，附加費以報價確認）；
+                <strong>噴繪大圖線</strong>——成品 HK$290-7,200（不含安裝裱貼，以報價確認），戶外 PVC 抗 UV 可選。
+                157-200g 銅版／相紙，PP 護膜、泡沫板裱貼、穿繩均可。
+              </p>
+            </div>
+          )}
+
           {/* 價格盒 */}
           <div className="mt-6 bg-[#FFF7ED] border border-[#FED7AA] rounded-[14px] p-5">
             <div className="text-[13px] font-semibold text-[#EA580C] uppercase tracking-[0.1em] mb-1">

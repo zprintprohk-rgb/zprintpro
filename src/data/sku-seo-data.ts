@@ -513,11 +513,11 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "ZprintPro Small Bags for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC-certified. Same-day file confirmation by 11am HKT."
       },
       "ja": {
-        "title": "小判紙袋｜100個〜 白カード 多サイズ｜ZprintPro",
+        "title": "小判紙袋｜100個〜 白カード 多サイズ｜DHL 2-4日｜ZprintPro",
         "description": "小判紙袋は ZprintPro の紙袋印刷。白カード/クラフト/コート紙、マルチサイズ対応。100個〜、4色 CMYK、1 時間無料デザイン校正。DHL で日本へ 2-4 日配送、30 秒 AI 見積もり。",
         "h1": "小判紙袋 | アクセサリー 小物包装",
         "keywords": ["小型紙袋","小型紙袋 印刷","small bags"],
-        "body": " fast delivery."
+        "body": "小判紙袋は 100 個から承ります。白カード/クラフト/コート紙、マルチサイズ対応、4色 CMYK 全彩印刷、ロゴ・デザイン自由。入稿後 1 時間以内に無料デザイン校正。DHL で日本へ 2-4 日配送、30 秒 AI 見積もり。"
       }
     },
     "faqs": [],
@@ -823,7 +823,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "A2 海報印刷 420×594mm 10張起印 HK$16起 | 智印港",
+        "title": "A2 海報印刷 420×594mm 10張起印 HK$16起 1-2天 | 智印港",
         "description": "智印港A2海報印刷：標準 420×594mm 零售推廣規格，10 張起印，157g 銅版紙可升 200g 或相紙，柯式或高品數碼輸出，色彩鮮明。門店推廣、商場快閃、教育培訓與藝廊展覽首選，免費數碼打稿，滿 HK$500 港九新界順豐免運，30 秒 AI 報價。",
         "h1": "海報印刷 · A2 大幅 · 印海報 即日",
         "keywords": ["A2 海報印刷","海報印刷","a2 海報 印刷","印海報","A1海報","A2海報","戶外海報","展覽海報","大圖輸出","防水海報"],
@@ -859,21 +859,21 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "A1 大幅海報 厚紙 | 1張起印 HK$20起 4小時打稿 | 智印港",
+        "title": "A1 大幅海報印刷 厚紙柯式 | 1張起印 4小時打稿 | 智印港",
         "description": "智印港A1大幅海報印刷：594×841mm 大尺寸視覺衝擊，1 張起印，157–200g 銅版紙或相紙，柯式為主、急件數碼，PP 護膜或泡沫板裱貼可選。展覽會場、零售櫥窗、演唱會與地產推廣首選，免費數碼打稿，港九新界免費速遞，30 秒 AI 報價。",
         "h1": "A1大幅海報印刷 — 594×841mm 展覽級視覺衝擊，1 張起印",
         "keywords": ["A1 大幅海報","海報印刷","a2 海報 印刷","印海報","A1海報","A2海報","戶外海報","展覽海報","大圖輸出","防水海報"],
         "body": "A1 大幅海報是展覽與櫥窗的衝擊力首選：594×841mm 的畫面在會場動線與街鋪玻璃前自帶氣場，1 張起印，157–200g 銅版紙或相紙輸出，柯式為主、急件走數碼，PP 護膜與泡沫板裱貼可選。免費數碼打稿確認色彩，30 秒 AI 報價即時試算。\n\n大幅面的決策要點：展覽會場與路演主背板選 200g 配 PP 護膜，耐反覆搬運；零售櫥窗與電影海報牆常用 157g 加裱貼，平整度優先；婚慶迎賓與學院招生用相紙出細節。泡沫板裱貼後可直接立架或掛牆，免框即展。\n\n場景錦囊：展覽開幕以 A1 打主視覺、A2 走量派發；演唱會與活動以 A1 陣列造勢；地產推廣在櫥窗以 A1 出樓盤主圖；文創與藝術複製以相紙保留層次。需要貼玻璃或短期促銷用 [自粘海報](/zh-hk/product/adhesive-posters/)，配展架常駐展示見 [展架海報](/zh-hk/product/display-posters/)，量販標準規格回落 [A2 海報](/zh-hk/product/a2-posters/)，總覽見 [海報印刷類目](/zh-hk/category/posters/)。\n\n交稿規範：300 DPI、CMYK、3mm 出血、字體外框化；免費數碼打稿確認後投產；1 張起印，港九新界免費速遞。\n\n**常見問題**\n\n**Q1: A1 真的 1 張起印？**\n是，單張起訂；批量自然有階梯價。\n\n**Q2: 需要裱板可以嗎？**\n可以，PP 護膜與泡沫板裱貼都是常規加配，裱好即可立架或掛牆。\n\n**Q3: 急件可以嗎？**\n可以，柯式為主、急件走數碼，先出免費數碼打稿確認再投產。\n\n**Q4: A1 同 A2 應該點分？**\n主視覺與路徑節點用 A1，派發與走廊用 A2，同稿雙尺寸最省設計費。\n\n準備好就落單——免費數碼打稿 + 30 秒 AI 報價，WhatsApp +86 198 8085 1334。"
       },
       "en": {
-        "title": "A1 Large Posters | 594×841mm | 1 MOQ $4.60 | ZprintPro",
+        "title": "A1 Large Posters | 594×841mm Offset | 1 MOQ | ZprintPro",
         "description": "A1 large-format posters at 594x841mm, single-piece MOQ on 157-200g coated or photo stock, offset as standard with digital for rush jobs. PP lamination or foam-board mounting optional. Built for exhibitions, storefronts, concerts and property campaigns. Free digital proof, free SF shipping across HK, 30-second AI quote.",
         "h1": "A1 Posters from 1 | Trade Show | ZprintPro",
         "keywords": ["A1 posters","A1 poster printing","594x841 posters","large posters","trade show posters","movie posters A1","window posters","A1 posters free shipping","bulk A1 posters","bespoke A1 signage"],
         "body": "A1 posters are the impact choice for exhibitions and windows: at 594x841mm the format carries its own presence in venue traffic and storefront glass. ZprintPro A1 posters run from a single piece on 157-200g coated or photo stock, offset as standard with digital handling rush jobs, and PP lamination or foam-board mounting is available. Free digital proof before production; the 30-second AI quote prices options instantly.\n\nLarge-format decisions: exhibition back panels and roadshow boards take 200g with PP lamination for repeated handling; storefront and movie-poster walls usually pair 157g with mounting for flatness; wedding welcomes and school admissions show fine detail on photo paper. Foam-board mounting stands or hangs without a frame.\n\nScene playbook: exhibitions lead with A1 visuals and hand out A2; concerts and events build momentum with A1 arrays; property campaigns run development hero shots in windows; art reproduction keeps its gradation on photo paper. Window or short-run promo belongs on [adhesive posters](/en/product/adhesive-posters/); stand-mounted shows live at [display posters](/en/product/display-posters/); volume sizes drop back to [A2 posters](/en/product/a2-posters/); the map is at [poster printing](/en/category/posters/).\n\nSpecs: 300 DPI, CMYK, 3mm bleed, outlined fonts; free digital proof; single-piece MOQ; free SF shipping across Hong Kong.\n\n**FAQ**\n\n**Q1: Is it really 1-piece MOQ?**\nYes — single posters welcome; volume tiers apply naturally.\n\n**Q2: Can I get it mounted?**\nYes — PP lamination and foam-board mounting are standard add-ons; mounted boards stand or hang frameless.\n\n**Q3: Rush jobs?**\nYes — offset is standard and digital handles rush; a free digital proof confirms colour before production.\n\n**Q4: A1 or A2 — how to split?**\nA1 on impact points and traffic nodes, A2 for distribution and corridors; same artwork in two sizes saves design cost.\n\nReady when you are — free digital proof and the 30-second AI quote, or WhatsApp +86 198 8085 1334."
       },
       "ja": {
-        "title": "A1 ポスター | 防水 DHL配送 | 1枚〜 ¥600〜 | ZprintPro",
+        "title": "A1 ポスター | 防水 DHL配送 オフセット | 1枚〜 | ZprintPro",
         "description": "A1ポスター印刷は594×841mmの大判サイズ、1枚から。157-200gコート紙または写真用紙、オフセット標準・納期急ぎはデジタル対応、PPラミネート・発泡ボード装着も選択可。展示会、店頭ウィンドウ、コンサート、不動産キャンペーンに最適。無料デジタル校正、30秒AI見積り。",
         "h1": "A1ポスター印刷 1枚〜：594×841mm 大判展示・157-200g",
         "keywords": ["A1ポスター","A1ポスター 印刷","ポスター印刷","大判ポスター","展示会ポスター","大型ポスター","A2ポスター","防水ポスター"],
@@ -967,7 +967,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "藝術海報 | 美術紙 Giclée | 1個起 HK$26起 | 智印港",
+        "title": "藝術海報 | 美術紙 Giclée | A1/A2 1個起 HK$26起 | 智印港",
         "description": "智印港藝術海報印刷：Giclée 級 12 色顏料微噴，1 張起印，260g 無酸美術紙，約百年保存性。畫廊展覽、攝影師作品集、限量編號複製首選，免費數碼打稿可另約實物校樣，港九新界免費速遞，30 秒 AI 報價。",
         "h1": "藝術海報印刷 — Giclée 12 色 260g 無酸紙，1 張起印",
         "keywords": ["藝術海報","海報印刷","印poster","A1海報","A2海報","戶外海報","展覽海報","大圖輸出","防水海報","門店海報"],
