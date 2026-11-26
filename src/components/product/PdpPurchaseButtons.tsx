@@ -22,6 +22,9 @@ const T: Record<Locale, Record<string, string>> = {
     added: '已加入購物車 ✓',
     total: '小計',
     cart: '購物車',
+    quoteOnlyTitle: '此產品按規格報價',
+    quoteOnlyDesc: '頁面價格僅供參考，實際價格以正式報價單為準',
+    quoteOnlyCta: 'WhatsApp 即時報價',
   },
   en: {
     quantity: 'Quantity',
@@ -30,6 +33,9 @@ const T: Record<Locale, Record<string, string>> = {
     added: 'Added to cart ✓',
     total: 'Subtotal',
     cart: 'cart',
+    quoteOnlyTitle: 'Priced per your specs',
+    quoteOnlyDesc: 'Page price is indicative only — final price confirmed at quote',
+    quoteOnlyCta: 'Get WhatsApp Quote',
   },
   ja: {
     quantity: '数量',
@@ -38,8 +44,13 @@ const T: Record<Locale, Record<string, string>> = {
     added: 'カートに追加しました ✓',
     total: '小計',
     cart: 'カート',
+    quoteOnlyTitle: '仕様見積り対応',
+    quoteOnlyDesc: '表示価格は参考値です。料金は正式見積もりで確定',
+    quoteOnlyCta: 'WhatsApp で見積もり',
   },
 };
+
+const WHATSAPP_URL = 'https://wa.me/8619880851334';
 
 const CURRENCY_BY_LOCALE: Record<Locale, string> = { 'zh-hk': 'HKD', en: 'USD', ja: 'JPY' };
 const SYMBOL: Record<string, string> = { HKD: 'HK$', USD: '$', JPY: '¥' };
@@ -70,6 +81,25 @@ export default function PdpPurchaseButtons({ product, locale }: { product: Produ
   const [added, setAdded] = useState(false);
 
   if (!product?.slug || !unitPrice || unitPrice <= 0) return null;
+
+  /* K3 2026-11-27 D2 方案C：quoteOnly 品不渲染 qty×total 即時總價（doujin ¥7,500×10 確定級缺陷），
+     改為「按規格報價」CTA 塊 */
+  if (product.quoteOnly) {
+    return (
+      <div className="mt-4 rounded-[12px] border border-[#E5E7EB] bg-white p-4" data-purchase-block data-quote-only>
+        <p className="text-sm font-bold text-[#1D3465]">{t.quoteOnlyTitle}</p>
+        <p className="mt-1 text-xs leading-relaxed text-[#6B7280]">{t.quoteOnlyDesc}</p>
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 block text-center bg-[#F87314] text-white font-bold text-[15px] py-[13px] rounded-[10px] shadow-[0_6px_18px_rgba(248,115,22,0.35)] hover:bg-[#e8660a] transition-colors"
+        >
+          {t.quoteOnlyCta} →
+        </a>
+      </div>
+    );
+  }
 
   function addItemToCart(): void {
     addItem({

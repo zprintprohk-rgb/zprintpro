@@ -45,6 +45,13 @@ export interface Product {
    * ★ 向後兼容：未設定時沿用既有「本」（現行展示層行為），不影響其他品類。
    */
   unitLabel?: string;
+  /**
+   * 純報價品（K3 2026-11-27 D2 方案C 拍板）：購物車塊不渲染 qty×total 即時總價，
+   * 改為「按規格報價」CTA；PDP 右欄 QuoteCalculator 同步隱藏。
+   * 為什麼：doujinshi-printing 等客製品 basePrice 為參考錨，乘量總價（¥7,500×10）
+   *   與實報價嚴重偏離，屬確定級價格真值缺陷（k3-review C5）。
+   */
+  quoteOnly?: boolean;
   turnaround?: string;
   images: string[];
   imagesByLocale?: {
@@ -6711,6 +6718,7 @@ export const products: Product[] = [
       isHot: true,
       isNew: true,
       minQuantity: 10,
+      quoteOnly: true,
       turnaround: '5-7 営業日 (コミケ前の特急は見積確認)',
       images: [
         '/images/japan/doujinshi-printing.webp',

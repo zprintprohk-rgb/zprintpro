@@ -762,7 +762,12 @@ export function convertPriceRangeString(priceRange: string, locale: Locale, cate
  */
 export function convertToFromPrice(priceRange: string, locale: Locale, categorySlug?: string, productSlug?: string): string {
   const converted = convertPriceRangeString(priceRange, locale, categorySlug, productSlug);
-  return converted.replace(/-[\d.,]+(?=\/|$)/, '');
+  const from = converted.replace(/-[\d.,]+(?=\/|$)/, '');
+  /* K3 2026-11-27 D1 方案B（只改標籤不改價）: small-batch-stickers en 地板價 $0.55 = 50pcs 檔
+     （10pcs 檔實價 $0.60，同頁 PDP 價格表可見），From 價帶檔期標注避免誤讀為 10pcs 價。
+     只影響 en；zh-hk 錨為 10張檔、ja 錨為 10枚檔（¥69〜），無此問題。 */
+  if (productSlug === 'small-batch-stickers' && locale === 'en') return `${from} (50+)`;
+  return from;
 }
 
 /** 从 price_range 提取单位词 (去掉 '/100張' 里的数字): '/100張'→'張', '/本'→'本', '/個'→'個' */

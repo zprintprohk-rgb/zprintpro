@@ -1384,8 +1384,8 @@
       "owner_lane": "ZP-daily-content",
       "status": "READY",
       "next_check": "push 后 CF Pages success + k3-review 独立在线复探（exit_criteria ①④）",
-      "result": "【2026-11-27 執行指引】k3-review 11-26 §5.3 = 當前唯一可執行面：en/ja SB 語言殘留（适配行业/結算/{PRODUCT_NAME}/ja 半角交期變體）+ products.ts 17 行適配行業模板 + seo.ts:861 zh-hk meta 後綴；不碰價格（D1 待 K3）、title、full refund（D3 共享組件待 K3）。11-26 18:17 輪 DEFER 之「同域在途」理由已消失。exit_criteria 收窄待 K3-D3。",
-      "exit_criteria": "① 上述 8 条字符串 + zh-Hant bullet 语义类在线复探 0 命中（含全角/半角破折号变体）② 不引入新硬承诺（两工具交叉复扫）③ 门童全量 0 red + tsc 基线不升 ④ online_verify 由独立验收（k3-review）翻转，lane 不得自翻 PASS",
+      "result": "【2026-11-27 執行指引】k3-review 11-26 §5.3 = 當前唯一可執行面：en/ja SB 語言殘留（适配行业/結算/{PRODUCT_NAME}/ja 半角交期變體）+ products.ts 17 行適配行業模板 + seo.ts:861 zh-hk meta 後綴；不碰價格（D1 待 K3）、title、full refund（D3 共享組件待 K3）。11-26 18:17 輪 DEFER 之「同域在途」理由已消失。exit_criteria 收窄待 K3-D3。 【2026-11-27 D3 執行】exit_criteria 已按 K3 拍板收窄（SB 本地串 only；full refund 共享組件剔出，歸新卡）。",
+      "exit_criteria": "【2026-11-27 K3 D3 拍板收窄】① SB 本地內容串（8 條字串 + zh-Hant bullet 語義類，僅 write_scope 7 文件範圍）在線復探 0 命中（含全角/半角破折號變體）；full refund 共享組件（FreeSampleBanner / category-seo-content.ts L4703 / RushDeliveryFAQ / TrustBadgeBlock / WhyChooseUs / ProductWhyChooseUs）【剔出本卡驗收】，歸 FIX-20261127-FULL-REFUND-SITEWIDE 卡（K3 三選一：保留/條件化/刪除）② 不引入新硬承諾（兩工具交叉復掃）③ 门童全量 0 red + tsc 基線不升 ④ online_verify 由獨立验收（k3-review）翻转，lane 不得自翻 PASS",
       "progress": "EXECUTED LOCALLY 2026-11-26 00:08 commit 5ea2477c（8 src 文件，59+/51-；未 push，per §0.25.8 30min 规则）。覆盖：B1 5 条已批残留清零（product-faqs proof/US-delivery/DHL-FedEx/MOQ sheets→stickers per design/products-content full refund×2 + en.json full refund×5 处）+ B2 widening 条件化（DHL worldwide 2-4 days ×7 faqs + ProductPageV9 svcDhlTitle/Desc + blog-posts.ts + category-conversion-blocks 2 条 + en.json doujin blog 2 处 + GEO atom 变体 9 处 + DHL cross-border 变体 7 处）+ B4 en 页 zh-Hant bullet 移除（7 条 feature 入 product-specs-i18n.ts 三语映射 + ProductPageV9 渲染层套 localizeSpecValue；zh-hk 输出逐字不变零 churn）。ja 兄弟同语义类同步条件化（faqs 内 11 处：2〜4日×4/世界2〜4日×7/1時間無料×2/3〜5日×1）。校验：check-encoding 0 / tsc --noEmit exit 0 / 门童全量 red 0 / pre-commit 0 red 0 orange / en.json parse OK / 31 组替换 old=0 new=expected 全成立（.hermes/tmp/smallbatch-verify-1126.py + 备份 smallbatch-backup-20261126）。残留登记（不在 8 串清单、下批处理）：① out-of-scope 文件 full refund：FreeSampleBanner.tsx L43-44 / category-seo-content.ts L4703 / RushDeliveryFAQ.tsx L55 / TrustBadgeBlock / WhyChooseUs / ProductWhyChooseUs；② ProductPageV9 trustGuarantee「100% satisfaction guarantee」（全部 PDP，同 100% 类，待 K3 口径）；③ legacy ProductTabs.tsx features 直出 = isV9Pdp 恒 true 下死代码，不修；④ en.json「100,000+」「30-day quality guarantee」「Next-day 12:00 SF」等邻句承诺未动（超清单）。验收边界：online_verify 由 k3-review 独立翻转（exit_criteria ④），板不翻 PASS；部署后按 exit_criteria ① 语义类在线复探（含全角/半角破折号变体）。"
     },
     {
@@ -1550,6 +1550,57 @@
       "next_check": "K3 批准后生成器注入 + watchdog 联调",
       "result": null,
       "exit_criteria": "daily 连续 2 轮自动拉取成功落 GSC数据/ + watchdog 检出代理失联演练一次"
+    },
+    {
+      "task_id": "FIX-20261127-D1D2D3-WI-TRUTH-BATCH",
+      "source_strategy": "K3 2026-11-27 03:32 拍板（D1 推薦B · D2 推薦C · D3 推薦收窄）+ 11-27 03:18 戰略批遺留 WI 正文 NT$ 項",
+      "market": "all-three-sites",
+      "target": "D1: small-batch-stickers 顯示層加 (50+) 檔期標注（不動價格數字）；D2: doujinshi-printing 購物車塊改 quoteOnly 按規格報價；D3: SMALLBATCH 卡 exit_criteria 收窄 + full refund 另立 WAITING_K3 卡；WI: 喜帖/感謝卡三語 body NT$→HK$（6 處）",
+      "evidence": [
+        "src/lib/pricing.ts L351 small-batch-stickers 錨 0.55-1.1",
+        "src/components/product/PdpPurchaseButtons.tsx L70-140 車價渲染",
+        "src/data/sku-seo-data.ts L2918/2925/2932/2990/2997/3004 NT$ 殘留",
+        "DOUJIN-SEMANTIC-FIX 卡 evidence：PdpPurchaseButtons 車價【排除】屬 D-2 案"
+      ],
+      "score": 90,
+      "score_model": "correctness-blocker-P0",
+      "write_scope": [
+        "src/lib/pricing.ts（D1 標注）",
+        "src/components/product/PdpPurchaseButtons.tsx（D2 quoteOnly）",
+        "src/data/products.ts（doujin quoteOnly 欄位）",
+        "src/data/sku-seo-data.ts（WI body 6 處，body 為 ts 權威域 per csv-to-sku-seo.mjs L215）",
+        ".hermes/logs/strategy-task-queue.json（本卡 + D3 卡變更）"
+      ],
+      "approval_gate": "K3 已拍板（2026-11-27 03:32）：D1 選 B 只改標籤不改價 · D2 選 C 按規格報價止血 · D3 收窄驗收",
+      "owner_lane": "manual-session",
+      "status": "IN_PROGRESS",
+      "next_check": "本批 push 後 live 探針 + k3-review 翻轉",
+      "result": null,
+      "exit_criteria": "① doujin PDP 購物車塊無 qty×total 顯示、顯示按規格報價 CTA（live 探針）；② WI 喜帖/感謝卡三語 body 全 HK$、live 0 NT$；③ SB en 顯示層見 50+ 檔期標注、PDP 表 10pcs $0.60 保留；④ SMALLBATCH 卡驗收收窄生效、full-refund 新卡 WAITING_K3；⑤ tsc 0 err + 6 guard + brand-mentions --strict + encoding 全綠"
+    },
+    {
+      "task_id": "FIX-20261127-FULL-REFUND-SITEWIDE",
+      "source_strategy": "K3 2026-11-27 03:32 D3 拍板（full refund 屬共享組件，另立全站卡）",
+      "market": "all-three-sites",
+      "target": "全站 shared-component 層「full refund / 全額退款 / 100% refund」類承諾口徑統一（保留 / 條件化 / 刪除 三選一，K3 拍板後執行）",
+      "evidence": [
+        "FIX-20261125-SMALLBATCH-WORDING-RESIDUAL progress 残留登记①：FreeSampleBanner.tsx L43-44 / category-seo-content.ts L4703 / RushDeliveryFAQ.tsx L55 / TrustBadgeBlock / WhyChooseUs / ProductWhyChooseUs",
+        "同卡残留登记②：ProductPageV9 trustGuarantee「100% satisfaction guarantee」（全部 PDP 100% 類，同口徑待裁）",
+        "K3 2026-10-30 裁决单#3：无证案例/100%退款 不发布（歷史口徑，共享組件殘留屬執行遺留）"
+      ],
+      "score": 82,
+      "score_model": "p0-correctness-shared-component",
+      "write_scope": [
+        "src/components/（FreeSampleBanner / RushDeliveryFAQ / TrustBadgeBlock / WhyChooseUs 系）",
+        "src/data/category-seo-content.ts",
+        "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx（trustGuarantee，若選②③）"
+      ],
+      "approval_gate": "WAITING_K3 — 一句話三選一：① 保留現狀 ② 條件化（quote 條件下出現） ③ 全站刪除",
+      "owner_lane": "manual-session（拍板後）",
+      "status": "WAITING_K3",
+      "next_check": "K3 拍板後排入下一正確性批；拍板前任何車道/人手不得動 shared-component 退款語",
+      "result": null,
+      "exit_criteria": "K3 拍板選項落地 + 全站 refund 語義類在線復探符合拍板口徑 + 门童全綠"
     }
   ],
   "last_review": "2026-11-26T03:05:00+08:00",

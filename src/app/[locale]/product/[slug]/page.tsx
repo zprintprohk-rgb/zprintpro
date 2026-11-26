@@ -618,6 +618,9 @@ export default function ProductPage({
                  *   getPriceTableForSlug()=null ⇒ 亦唔出 ReferencePriceBlock ⇒ PDP 完全無價!
                  * 改用 getPriceTableForSlug 作唯一判據 (同下面 render 條件完全一致)。
                  */
+                /* 2026-11-27 D2 方案C: quoteOnly 品（如 doujinshi-printing）同屬按規格報價，
+                   右欄 QuoteCalculator 亦不再渲染乘量總價，與購物車塊口徑一致 */
+                if (product.quoteOnly) return null;
                 const hasPriceTable = !!getPriceTableForSlug(product.slug);
                 if (!hasPriceTable) {
                   return (
