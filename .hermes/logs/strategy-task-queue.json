@@ -1586,7 +1586,8 @@
       "evidence": [
         "FIX-20261125-SMALLBATCH-WORDING-RESIDUAL progress 残留登记①：FreeSampleBanner.tsx L43-44 / category-seo-content.ts L4703 / RushDeliveryFAQ.tsx L55 / TrustBadgeBlock / WhyChooseUs / ProductWhyChooseUs",
         "同卡残留登记②：ProductPageV9 trustGuarantee「100% satisfaction guarantee」（全部 PDP 100% 類，同口徑待裁）",
-        "K3 2026-10-30 裁决单#3：无证案例/100%退款 不发布（歷史口徑，共享組件殘留屬執行遺留）"
+        "K3 2026-10-30 裁决单#3：无证案例/100%退款 不发布（歷史口徑，共享組件殘留屬執行遺留）",
+        "重要文件/2026-11-27-full-refund-three-option-ruling-material.md（一頁裁決材料：A級13處/B級6處/C級1分級 + 三選一分析 + ②-A/②-B 細案，推薦②-A）"
       ],
       "score": 82,
       "score_model": "p0-correctness-shared-component",
@@ -1598,7 +1599,7 @@
       "approval_gate": "WAITING_K3 — 一句話三選一：① 保留現狀 ② 條件化（quote 條件下出現） ③ 全站刪除",
       "owner_lane": "manual-session（拍板後）",
       "status": "WAITING_K3",
-      "next_check": "K3 拍板後排入下一正確性批；拍板前任何車道/人手不得動 shared-component 退款語",
+      "next_check": "K3 對材料拍板（①/②-A 推薦/②-B/③）後排入下一正確性批",
       "result": null,
       "exit_criteria": "K3 拍板選項落地 + 全站 refund 語義類在線復探符合拍板口徑 + 门童全綠"
     }
