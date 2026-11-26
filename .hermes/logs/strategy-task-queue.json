@@ -1602,6 +1602,26 @@
       "next_check": "k3-review 12:05 獨立複探；95%+ on-time 數字校準另案",
       "result": "EXECUTED 2026-11-27 04:5x commit 369cd3e6（K3 ②-A 拍板執行）。180 處條件化（13 文件），絕對詞全清；live 探針：三語首頁 100% satisfaction/滿意/満足=0、新口徑各=2；en PDP trustGuarantee=2、FAQ 14 天窗口=2；類目卡 Quality Defects Covered=2。RushDeliveryFAQ 我方原因條件保留（95% 數字屬 §0.23 另案已登記）。online_verify 由 k3-review 12:05 獨立翻轉。",
       "exit_criteria": "K3 拍板選項落地 + 全站 refund 語義類在線復探符合拍板口徑 + 门童全綠"
+    },
+    {
+      "task_id": "FIX-20261127-REFUND-WINDOW-ALIGN",
+      "source_strategy": "K3 2026-11-27 05:11 拍板（方案 A 全站統一 14 天）",
+      "market": "all-three-sites",
+      "target": "product-faqs.ts L810-812 兜底 FAQ「印刷品質有問題可以重印嗎？」退款時窗 7 工作天→14 天，與 legal/terms/help-center/merchant-policy 五真值源對齊",
+      "evidence": [
+        "重要文件/2026-11-27-refund-window-7-vs-14-ruling-material.md（一頁裁決材料：衝突現狀 5 真值源 vs 唯一 7 天點 + 競品基準 + 三選一分析，推薦 A）",
+        "K3 2026-11-27 05:11「按最優推薦方案繼續下一步」→ 執行層按推薦 A 落地"
+      ],
+      "score": 85,
+      "score_model": "p0-correctness-truth-source-conflict",
+      "write_scope": [
+        "src/data/product-faqs.ts"
+      ],
+      "approval_gate": "PASSED — K3 方案 A",
+      "owner_lane": "manual-session",
+      "status": "DONE",
+      "next_check": "11-28 D2 title 面解凍後正確性批合流複查",
+      "result": "commit 57cca2cf push；tsc 0 err；brand-mentions strict PASS；pre-commit 門童全綠；live 探針三語首頁/PDP 14 天口徑生效"
     }
   ],
   "last_review": "2026-11-26T03:05:00+08:00",

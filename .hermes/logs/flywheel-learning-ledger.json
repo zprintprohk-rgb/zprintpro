@@ -997,6 +997,14 @@
         "重要文件/2026-11-27-full-refund-three-option-ruling-material.md",
         ".hermes/logs/2026-11-27-manual-executor-full-refund-2a-batch.md"
       ]
+    },
+    {
+      "at": "2026-11-27T05:15:00+08:00",
+      "by": "manual-session-1127-refund-window-7to14",
+      "summary": "退款時窗對齊批閉合（K3 方案 A 拍板：回「思考理解問題和要求…按最優推薦方案繼續下一步」→ 採裁決材料推薦方案 A 全站統一 14 天）。product-faqs.ts generalProductFAQs 兜底集末條「印刷品質有問題可以重印嗎？」三語各 1 處 7 工作天→14 天（zh「收貨 7 個工作天內」→「收貨後 14 天內」/ en「within 7 business days of receipt」→「within 14 days of receipt」/ ja「受領後 7 営業日以内」→「受領後 14 日以内」），與 5 個 14 天真值源（legal/terms/help-center/merchant-policy/products-content en 詳情塊）全站一致。修前 13 文件全掃逐條核驗確認無第三種口徑、無退款處理時效聲明；競品基準 Vistaprint 30 天/15 天、Sticker Mule 無硬天數、行業帶 14-30 天。執行 15 分鐘零風險。裁決材料：重要文件/2026-11-27-refund-window-7-vs-14-ruling-material.md。",
+      "data_source": "src/ 靜態掃描 2026-11-27（grep 退/退款/refund/return × 7/14，逐條人工排除交貨/審批/付款語境）；live 探針（帶瀏覽器 UA）",
+      "calibration_date": "2026-11-27",
+      "commit": "57cca2cf"
     }
   ],
   "retest_gate_2026_11_20": {

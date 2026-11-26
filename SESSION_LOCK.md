@@ -1,5 +1,16 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## ✅ 已释放 — 2026-11-27 05:1x Kimi Work 人手会话（退款時窗對齊 7→14 天，方案 A，K3 11-27 05:11 拍板）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 2026-11-27 05:11「思考理解问题和要求，穷尽100%能力分析研究 和 可参考竞品对比后 按最优推荐方案继续下一步」→ 裁決材料推薦方案 A（全站統一 14 天） |
+| **写入范围** | `src/data/product-faqs.ts` L810-812 三語各 1 處（7 工作天 → 14 天）、`重要文件/2026-11-27-refund-window-7-vs-14-ruling-material.md`、`.hermes/logs/`（執行報告 + SESSION_LOCK）、`SESSION_LOCK.md` |
+| **禁止范围** | 不動 legal/terms/help-center/merchant-policy/products-content 五真值源（14 天已是真值）；不動 title 凍結面；不動賀卡資產 |
+| **双条件核验** | ① 开工 `src/` 无 MM、无 staged 删除、`lane.lock` 不存在、SESSION_LOCK 顶部全部已释放；② 最近 src 提交 = 11-27 04:3x（89423377 為 docs-only；src 最後改動 369cd3e6），至开工静默 >20 min |
+| **释放结果** | tsc 0 err · brand-mentions strict PASS · 門童全綠；commit 57cca2cf push；live 探針三語 PDP 14 天口徑全生效、7 天殘留=0（zh 4×收貨後 14 天內 / en 9×within 14 days / ja 6×受領後 14 日以内；RSC payload 跨語串 1 處屬機制形態已登記）；賬本 #17 + 隊列卡 DONE + 執行報告落盤。 |
+
 ## ✅ 已释放 — 2026-11-27 04:3x Kimi Work 人手会话（FULL-REFUND ②-A 全站條件化批，K3 11-27 04:31 拍板）
 
 | 项 | 值 |
