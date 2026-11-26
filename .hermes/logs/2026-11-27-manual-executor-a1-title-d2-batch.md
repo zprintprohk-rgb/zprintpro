@@ -1,9 +1,9 @@
 # 2026-11-27 人手執行報告 — A1 title 面 D2 批提前執行（42dd2e43）
 
-**VERDICT**: PASS（六 URL live 驗收全過）
-**CONSUMED**: 執行卡 `重要文件/2026-11-27-a1-title-face-d2-unfreeze-execution-card.md`（K3 11-27 05:34「三條併入」+ 05:41「調成現在就或下一個 push 窗口就上線」）
-**DELIVERED**: commit `42dd2e43`（4 files, +29/-14）→ origin main → CF Pages build success → live 探針全過
-**NEXT**: WARN 27 條分組批（見文末）；G1 批2 六問真值對照 11-27 18:17 daily 車道自走；11-28 D2 窗口本批已提前消化
+**VERDICT**: PASS（A1 批六 URL live 全過 + WARN 批三卡 live 全過）
+**CONSUMED**: 執行卡 `重要文件/2026-11-27-a1-title-face-d2-unfreeze-execution-card.md`（K3 11-27 05:34「三條併入」+ 05:41 提前）+ K3 06:11 WARN 27 分組指令
+**DELIVERED**: commit `42dd2e43`（A1 批）+ `ed2d2d5d`（WARN 批）→ origin main → CF build success → live 探針全過
+**NEXT**: N7 fruit-food 價格真值待 K3 裁決；LONGTAIL 13 待 GSC 代理考古批；G1 批2 今晚 18:17 daily 車道自走
 
 数据来源: sku-title-v5-audit-2026-11-26.json（門童 #27 staged 審計）· products.ts L2471-2575（a1/a2 真值）· 線上 rush 服務頁二輪復測（2026-11-26 12:1x，草案 §1）· live 探針六 URL 實測（2026-11-27 06:0x-06:1x，帶瀏覽器 UA）
 校准日期: 2026-11-27（title 當量以門童 title-equiv.js staged 審計為準）
