@@ -52,3 +52,9 @@
 - 已落盤：草案 v1.2（同檔六處修正 + §8 修正記錄）、G1 卡 owner_lane + result 預檢註記、協同板 12:23 重建。本地 commit，不單獨 push（docs-only，隨今晚車道批攢批上鏈）。
 
 數據來源：products.ts / pricing.ts / ProductPageV9.tsx 實碼行號 + live 探針（rush 頁、food-boxes PDP，2026-11-26 12:1x cache-buster）+ audit-20261125-g1-truth-check.md + coordination-board.json 12:23 重建輸出。
+
+---
+
+## 更正補記（2026-11-27 03:3x）
+
+「附加費 30-50%」並非全網無源——出處 = 自家 blog `/zh-hk/blog/rush-printing-hk-guide/`（2026-08 舊文，多處寫 30-50% 及 A2 急件 HK$22/張等舊價）。本報告 §一「全 src + rush 頁均無此值」僅覆蓋 src 與 rush 服務頁，未掃 blog 語料，表述過強，特此更正（不撤回原句）。草案 v1.2 處置（PDP 直答塊寫「以報價確認」）**維持正確**：30-50% 未經兩輪複核、與 rush 服務頁「（附加費）」未公示百分比口徑不一致，不進交易頁直答塊；rush blog 舊價/舊附加費口徑統一列入該 blog 強化批（指揮中心檔 §3 序 3）一併核。

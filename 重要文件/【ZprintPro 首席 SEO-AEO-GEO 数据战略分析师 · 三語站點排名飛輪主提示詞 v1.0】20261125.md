@@ -46,8 +46,8 @@
 ## §D 当前坐标（校准 2026-11-26 凌晨 · v1.2 坐标；用前必须刷新；刷新只改本节与版本号）
 
 ### D.1 算法与窗口
-- Google Search Status Dashboard（2026-11-25 01:00 PST 页面更新）：November 2026 core update = **Closed，11-24 完成，历时 13 天 20 小时**；**December 2026 core update = Active，11-24 07:02 PST 启动**。
-- 因此不存在干净的 November 更新后完整周；**11-25→12-01 只能监测，12-01 不得作算法终审判读或自动放行 R1/R2/R3**。按 Google 官方指引，须等最近一次核心更新完成后再等待完整 7 天；等待期只做正确性、真值、数据管线、核查与草案，不做批量 title/H1/meta、新页或 301 变量。
+- Google Search Status Dashboard：November 2026 core update = **Closed，11-24 完成**；December 2026 core update = **Preannounced 未開跑**（2026-11-27 外核：Google 向 Search Engine Roundtable 三度確認「not live and not active」，面板 open 狀態 = 預告掛起非 rollout；12 月內擇日啟動，啟動日另行公告；來源見 2026-11-27 首席報告 §1）。
+- **窗口重校準（v1.3，取代 v1.1/v1.2 的 Active 判讀）**：November 完成後完整 7 天 = 11-25→12-01，**12-01/02 恢復為有條件判讀點**（前提 = 屆時 December 仍未開跑 + 三檔/query×page 雙方法復算 + P0 真值清零）；12-01 前仍只做正確性、真值、數據管線與草案，不做批量 title/H1/meta、新頁或 301 變量。December 一旦開跑，本判讀點自動作廢回監測態。
 - 站点成熟度（§0.30）：zh-hk 年轻站（pos 28-41 为正常区，5-15 为速赢窗）；en/ja 新生儿（有曝光即正向）。
 
 ### D.2 最新 GSC 基线（11-25 `(2)` 档；28d = 10-27→11-23；图表总计 + 曝光加权）
@@ -276,5 +276,6 @@
 - 版本记录：v1.0 · 2026-11-25 · 建立于 11-24 核心更新完成日（首读 + 两周方案两份产物之上）。
 - v1.1 · 2026-11-25 晚 · 吸收 Kimi 双更新裁决（12-01 降级为数据盘点日）。
 - v1.2 · 2026-11-26 凌晨 · query×page API 解除 STALE（主 URL 矩阵落地）· 香港第一大市场证实 · C109/易拉架新发现 · G1 批2 拍板 READY · K3 待拍收窄刷新（§D.3/D.4/D.5）。
+- v1.3 · 2026-11-27 凌晨 · December 更新外核 = **預告未開跑**（取代 Active 判讀）→ 12-01/02 恢復為有條件判讀點；§D.1 重校準；隊列兩輪元數據修復（G1 owner_lane 11-26 / approval_gate 11-27）入檔。
 
 （完）
