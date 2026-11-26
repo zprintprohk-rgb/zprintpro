@@ -820,4 +820,14 @@
 | **交付** | commit `c1f99244` 已推送（`ee3fdef4..c1f99244`）；CF Pages build **success**（run 129542582418）；线上复验 PASS：`/zh-hk|en|ja/category/stickers/` = 9 Product 节点 / 9 唯一 / 重复 0（修复前 18），商品页 1 节点 / brand 1 次 / 无 `@id` |
 | **落地面** | `src/app/[locale]/category/[slug]/page.tsx`（删 1 行重复 ItemList 发射）· `.hermes/logs/flywheel-learning-ledger.json`（新）· `.hermes/cron-prompts/lane-results-bus-contract.md`（§8）· `docs/2026-11-10-three-site-seo-aeo-geo-audit-and-schema-verification.md`（新）· `SESSION_LOCK.md` |
 | **遗留（未推送）** | 报告 §6.3 的部署回填（docs-only），按 §0.25.8 commit 留本地，由下一自然轮（11-10 20:13 / 21:17）carry；**不阻塞等待窗口** |
-| **未做（已登记，非遗漏）** | GEO S1 复测（11-10 到期，22 次探针未跑 → 账本标 BLOCKED）· GSC 四档补导（K3 动作）· A49/A50/A51（等 K3 或 11-13 窗） |
+| **未做（已登记，非遗漏）** | GEO S1 复测（11-10 到期，22 次探针未跑 → 账本标 BLOCKED）· GSC 四档补导（K3 动作）· A49/A50/A51（等 K3 或 11-13 窗） ## ✅ 已釋放 — 2026-11-26 09:1x Kimi Work 人手會話（N6 顯示層口徑 C 方案③：en 裸價補 From 前綴）
+
+| 項 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主會話（首席 SEO/AEO/GEO 數據戰略分析師執行） |
+| **K3 拍板** | 2026-11-26 03:17「按最優推薦繼續下一步」（裁決材料推薦 = 方案③） |
+| **寫入範圍** | `CategoryPageV9.tsx`（V9T.fromPrefix ×3 locale + 渲染）、`HotProducts.tsx`、`ProductPageV9.tsx`（右欄 + 相關卡）、`重要文件/2026-11-26-n6-display-layer-caliber-c-ruling-material.md`、`.hermes/logs/`（隊列卡 / 賬本第 14 條 / N6 報告）、`SESSION_LOCK.md` |
+| **雙條件核驗** | ① 開工 `src/` 無 MM、無 staged 刪除、`lane.lock` 不存在、SESSION_LOCK 頂部全部已釋放；② 最近 src 提交 03:22（本會話自身批 1 後無他人寫入） |
+| **釋放結果** | tsc 0 err · 六門禁 + brand-mentions + encoding 全過；push eb0daec5（03:43，guard #21 全過）；CF check-run webhook 掛 in_progress（如實登記），live 5 探針實證部署生效（From $0.05 在頁、zh 起 / ja 〜 回歸無損）；N6 閉合落賬。遺留：方案①②留 12-04 月度復盤、N5 維持登記。 |
+
+|

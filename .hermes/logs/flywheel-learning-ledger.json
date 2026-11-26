@@ -880,7 +880,7 @@
     "2026-11-24": "W4 GEO 探针第 4 轮（固定问题集，11-10/17/24 节奏）；nengajo 3 TBC 补拍；月曆/利是封缺口已审计待 K3（§3.5）",
     "2026-11-25": "alignment pack 交付 + nightly: small-batch 5 条已批残留批(价格值待 K3) + 貼紙第八窗 plateau 判定 HOLD; 11-26=doujin 语义类补扫; 11-27=weekly 14d 窗 + guard 9 文件解释; 12-01=数据盘点日(非算法终审)"
   },
-  "updated_at": "2026-11-26T03:25:00+08:00",
+  "updated_at": "2026-11-26T09:15:00+08:00",
   "update_log": [
     {
       "at": "2026-11-19T23:25:00+08:00",
@@ -963,6 +963,17 @@
         "commits a35224c8/861cf44d/4b9979b8/77fe2a2d",
         "live probes 2026-11-26 03:1x",
         ".hermes/logs/2026-11-26-manual-executor-price-truth-batch1.md"
+      ]
+    },
+    {
+      "at": "2026-11-26T09:15:00+08:00",
+      "by": "manual-session-1126-n6-from-prefix",
+      "summary": "N6 閉合：en 裸價四面（類目卡/首頁 HotProducts/PDP 右欄/PDP 相關卡）補 From 前綴（顯示層口徑 C 方案③，K3 03:17「按最優推薦繼續下一步」授權）。CategoryPageV9 V9T 增 fromPrefix 欄位（en=From / zh-hk=空 / ja=空），HotProducts 與 ProductPageV9 兩處以 locale 判斷加前綴；零價格數字變動、零 title 觸及。tsc 0 錯、六門禁+brand-mentions 全過。commit eb0daec5 push；CF check-run webhook 掛住 in_progress 逾 5h（CF 側回調異常），live 探針實證部署生效：en 類目 From $0.05 ×2、en 首頁 From $ ×4、en PDP From $0.05 ×2；zh 起 185 / ja 〜 61 回歸無損。方案①②留 12-04 月度復盤。",
+      "evidence": [
+        "commit eb0daec5",
+        "live probes 2026-11-26 09:1x",
+        "重要文件/2026-11-26-n6-display-layer-caliber-c-ruling-material.md",
+        ".hermes/logs/2026-11-26-manual-executor-n6-from-prefix.md"
       ]
     }
   ],
