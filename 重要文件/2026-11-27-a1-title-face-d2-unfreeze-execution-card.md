@@ -52,3 +52,19 @@
 **11-28 D2 解凍窗口開**（title 凍結面解禁）→ 按 §一 執行鏈走完全部門禁 → §0.25 攢批 1 push（本批單獨成 commit，不與他批混）→ live 驗收後回寫賬本 + 隊列卡翻 DONE。
 
 **待 K3 一句話（僅當要擴批時）**：「<50 三條併入」/「維持單 SKU」。不答 = 默認單 SKU 執行。
+
+---
+
+## 五、擴批選項：<50 三條補滿（候選已算好，裁決材料另頁）
+
+**材料**：`重要文件/2026-11-27-title-bandfill-3-slots-merge-ruling-material.md`（候選當量 54/56/57 全落 50-57 區，補入元素全部已驗真值）
+
+| SKU/語系 | 現行當量 | 候選 | 候選當量 | 補入真值源 |
+|---|---|---|---|---|
+| a2-posters/zh-hk | 48 | `A2 海報印刷 420×594mm 10張起印 HK$16起 1-2天 \| 智印港` | 54 | product-faqs.ts:855 常規 1-2 工作天 |
+| art-posters/zh-hk | 49 | `藝術海報 \| 美術紙 Giclée \| A1/A2 1個起 HK$26起 \| 智印港` | 56 | products.ts:2822 A1/A2 檔 |
+| small-bags/ja | 46 | `小判紙袋｜100個〜 白カード 多サイズ｜DHL 2-4日｜ZprintPro` | 57 | 同 SKU ja description DHL 2-4 日 |
+
+**掛鉤（併入時隨批處理）**：small-bags ja body `" fast delivery."` 殘缺句修復；MOQ_UNVERIFIABLE（無引擎條目）保留登記不消 WARN。
+
+**K3 拍板即更新本卡 §一範圍與 §二門禁清單，11-28 一併執行。**
