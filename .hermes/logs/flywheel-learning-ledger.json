@@ -880,7 +880,7 @@
     "2026-11-24": "W4 GEO 探针第 4 轮（固定问题集，11-10/17/24 节奏）；nengajo 3 TBC 补拍；月曆/利是封缺口已审计待 K3（§3.5）",
     "2026-11-25": "alignment pack 交付 + nightly: small-batch 5 条已批残留批(价格值待 K3) + 貼紙第八窗 plateau 判定 HOLD; 11-26=doujin 语义类补扫; 11-27=weekly 14d 窗 + guard 9 文件解释; 12-01=数据盘点日(非算法终审)"
   },
-  "updated_at": "2026-11-26T09:15:00+08:00",
+  "updated_at": "2026-11-27T04:05:00+08:00",
   "update_log": [
     {
       "at": "2026-11-19T23:25:00+08:00",
@@ -974,6 +974,17 @@
         "live probes 2026-11-26 09:1x",
         "重要文件/2026-11-26-n6-display-layer-caliber-c-ruling-material.md",
         ".hermes/logs/2026-11-26-manual-executor-n6-from-prefix.md"
+      ]
+    },
+    {
+      "at": "2026-11-27T04:05:00+08:00",
+      "by": "manual-session-1127-d1d2d3-wi-truth-batch",
+      "summary": "D1/D2/D3+WI 正確性批閉合（K3 11-27 03:32 拍板）。D1-B：SB en from 價加 (50+) 檔期標注（pricing.ts convertToFromPrice slug 條件，零價格數字變動，PDP 表 10pcs $0.60 保留）；D2-C：doujinshi-printing 加 quoteOnly 欄位，PdpPurchaseButtons 改「按規格報價」WhatsApp CTA（不再渲染 qty×total），PDP 右欄 QuoteCalculator 對 quoteOnly 隱藏；WI：喜帖+感謝卡三語 body NT$→HK$ ×6（body 為 ts 權威域 per 生成器 L215，csv-to-sku-seo 重跑斷言 A-E PASS、0 漂移）；D3：SMALLBATCH 卡 exit_criteria 收窄剔出共享組件 full refund，新建 FIX-20261127-FULL-REFUND-SITEWIDE（WAITING_K3 三選一）。tsc 0 err、六門禁+brand-mentions strict+encoding 全綠。commit d742df6a push → live 探針 4 項全過（ja doujin quote-only=1 且加購/小計=0；zh 喜帖 HK$25-95=3/NT$=0；en 感謝卡 HK$15–55=2/NT$=0；en SB PDP (50+)=3+表$0.60=2、類目卡 (50+)=2）。",
+      "evidence": [
+        "commit d742df6a (push abd0f6c7..d742df6a)",
+        "live probes 2026-11-27 04:0x",
+        ".hermes/logs/2026-11-27-manual-executor-d1d2d3-wi-truth-batch.md",
+        "策略隊列 FIX-20261127-D1D2D3-WI-TRUTH-BATCH / FIX-20261127-FULL-REFUND-SITEWIDE / FIX-20261125-SMALLBATCH-WORDING-RESIDUAL"
       ]
     }
   ],

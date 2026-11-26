@@ -1573,9 +1573,9 @@
       ],
       "approval_gate": "K3 已拍板（2026-11-27 03:32）：D1 選 B 只改標籤不改價 · D2 選 C 按規格報價止血 · D3 收窄驗收",
       "owner_lane": "manual-session",
-      "status": "IN_PROGRESS",
-      "next_check": "本批 push 後 live 探針 + k3-review 翻轉",
-      "result": null,
+      "status": "DONE",
+      "next_check": "k3-review 12:05 獨立復探翻 online_verify；full-refund 卡待 K3 三選一拍板",
+      "result": "EXECUTED 2026-11-27 04:0x commit d742df6a push 生效。四項全過：① ja doujin PDP data-quote-only=1、カートに追加=0、小計=0（D2-C 上線）；② zh 喜帖 HK$25-95=3 / en 感謝卡 HK$15–55=2，三語 NT$=0（WI 上線）；③ en SB PDP (50+)=3、表 10pcs $0.60=2、類目卡 (50+)=2（D1-B 上線）；④ SMALLBATCH 卡收窄 + FULL-REFUND-SITEWIDE 卡 WAITING_K3 就位（D3）；⑤ tsc 0 err + 六門禁 + brand-mentions strict + encoding 全綠。",
       "exit_criteria": "① doujin PDP 購物車塊無 qty×total 顯示、顯示按規格報價 CTA（live 探針）；② WI 喜帖/感謝卡三語 body 全 HK$、live 0 NT$；③ SB en 顯示層見 50+ 檔期標注、PDP 表 10pcs $0.60 保留；④ SMALLBATCH 卡驗收收窄生效、full-refund 新卡 WAITING_K3；⑤ tsc 0 err + 6 guard + brand-mentions --strict + encoding 全綠"
     },
     {
