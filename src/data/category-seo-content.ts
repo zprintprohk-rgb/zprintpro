@@ -2611,7 +2611,7 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
           points: [
             isZh ? '提供免費設計模板和專業設計師一對一諮詢。' : isEn ? 'Free design templates and one-on-one designer consultation.' : '無料デザインテンプレートとプロのデザイナーによる一对一相談。',
             isZh ? '先進印刷設備確保色彩準確、細節清晰。' : isEn ? 'Advanced equipment ensures accurate colors and crisp details.' : '先進的な設備で正確な色彩と鮮明なディテールを実現。',
-            isZh ? '不滿意可免費重印，售後無憂。' : isEn ? 'Free reprint if not satisfied — worry-free after-sales service.' : '満足いただけない場合は無料で再印刷 — アフターサービスも安心。',
+            isZh ? '品質問題可免費重印，售後無憂。' : isEn ? 'Free reprint for print quality issues — worry-free after-sales service.' : '印刷品質に問題があれば無料で再印刷 — アフターサービスも安心。',
           ],
         },
       ],
@@ -4700,7 +4700,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
         { q: 'Can each invitation have a different name?', a: 'Yes. Names, dates, and monograms all personalized. Provide high-resolution vector files (AI / EPS / PDF). Per-name variation adds HKD 1-3/piece.' },
         { q: 'What is the production lead time? Can I rush?', a: 'Standard 7-10 working days, rush can be compressed to 5 days (+30%). Order 1 month before wedding, peak season (May, Oct-Dec) 2 months ahead.' },
         { q: 'Can invitations + envelopes + favor bags be ordered together? Bundle discount?', a: 'Yes. ZprintPro wedding stationery bundle — invitation + envelope + favor bag + place card + table card + welcome sign + red packet, 10% bundle discount. WhatsApp 19880851334 for bundle quote.' },
-        { q: 'Can I get samples? Proofing cost?', a: 'Free 5 material samples (SF Express COD). Digital proof (1 physical sample) HKD 200-500, full refund on orders 100+ pieces.' },
+        { q: 'Can I get samples? Proofing cost?', a: 'Free 5 material samples (SF Express COD). Digital proof (1 physical sample) HKD 200-500; the proof fee is refunded on orders of 100+ pieces.' },
       ],
     },
 
@@ -4801,7 +4801,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
         { q: '招待状ごとに異なる名前を印刷できますか?', a: '可能です。新郎新婦名・挙式日・モノグラム全て個別対応、高解像度ベクターファイル (AI / EPS / PDF) 提供。個別名追加はHKD 1-3/枚。' },
         { q: '生産期間は? 急ぎできますか?', a: '標準7-10営業日、急ぎ5日 (+30%)。披露宴1ヶ月前発注推奨、繁忙期 (5月/10-12月) 2ヶ月前。' },
         { q: '招待状 + 封筒 + 引出物袋 一括注文できますか? セット割は?', a: '可能です。ZprintProブライダルセット — 招待状+封筒+引出物袋+席札+テーブルカード+ウェルカムボード+紅包、10%セット割引。WhatsApp 19880851334 セット見積。' },
-        { q: 'サンプルはもらえますか? 校正費は?', a: '5素材サンプル無料 (順豊着払い)。デジタル校正 (1枚実物) HKD 200-500、100枚以上発注で全額返金。' },
+        { q: 'サンプルはもらえますか? 校正費は?', a: '5素材サンプル無料 (順豊着払い)。デジタル校正 (1枚実物) HKD 200-500、100枚以上発注で校正費全額返金。' },
       ],
     },
 };

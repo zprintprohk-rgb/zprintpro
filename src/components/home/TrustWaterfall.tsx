@@ -15,19 +15,19 @@ const ITEMS: Record<Locale, string[]> = {
   'zh-hk': [
     '15年本地經驗',
     '30秒智能報價',
-    '不滿意免費重印',
+    '品質問題免費重印',
     '24/7 客戶服務',
   ],
   en: [
     '15 Years Experience',
     '30-Second Quote',
-    'Free Reprint Guarantee',
+    'Free Reprint for Quality Issues',
     '24/7 Customer Service',
   ],
   ja: [
     '15年の実績',
     '30秒見積もり',
-    '満足保証',
+    '品質保証',
     '24時間対応',
   ],
 };

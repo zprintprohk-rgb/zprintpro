@@ -494,8 +494,9 @@ export default function InstitutionalPrintingPage({ params }: { params: { locale
         </div>
       </section>
 
-      {/* 2026-09-17: 此页不渲染 TrustBadges —— 该共享组件含「100% 滿意保證」等通用营销承诺,
-          与机构/招标场景的承诺口径要求 (禁用确定性词汇) 冲突, 故按 K3 口径移出本页 */}
+      {/* 2026-09-17: 此页不渲染 TrustBadges —— 当时该共享组件含「100% 滿意保證」等通用营销承诺,
+          与机构/招标场景的承诺口径要求 (禁用确定性词汇) 冲突, 故按 K3 口径移出本页。
+          2026-11-27 FULL-REFUND 批已將組件層全面條件化（品質缺陷口徑）, 本註釋保留為史實。 */}
 
       <footer className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
         <p className="text-xs text-slate-400 leading-relaxed text-center">

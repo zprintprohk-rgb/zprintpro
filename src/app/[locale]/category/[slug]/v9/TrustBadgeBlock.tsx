@@ -28,7 +28,7 @@ export const TRUST_CARDS: TrustCard[] = [
   { icon: Zap, title: '即日交貨', sub: '特急24小時', desc: '標準與急件時效按稿件確認及產能報價確認' },
   { icon: Truck, title: '順豐直達', sub: '全港覆蓋', desc: '順豐速運上門派送，快捷安全' },
   { icon: Clock, title: '數碼打樣', sub: '時效以報價確認', desc: '免費數碼打樣，確認後開印；出稿時效以報價確認' },
-  { icon: ShieldCheck, title: '品質保證', sub: '100%滿意', desc: '不滿意免費重印，品質問題全額退款' },
+  { icon: ShieldCheck, title: '品質保證', sub: '品質缺陷保障', desc: '品質問題免費重印或全額退款' },
   { icon: Headphones, title: '24小時支持', sub: '全天候服務', desc: '專業客服團隊7x24小時在線' },
 ];
 
@@ -45,7 +45,7 @@ const EN_CARDS: TrustCard[] = [
   { icon: Zap, title: 'Same-Day Delivery', sub: 'Rush 24h Available', desc: 'Timing confirmed at quote, urgent orders subject to cutoff and capacity' },
   { icon: Truck, title: 'DHL Express Direct', sub: 'Nationwide Coverage', desc: 'DHL door-to-door delivery across the US' },
   { icon: Clock, title: 'Digital Proof', sub: 'Confirm Before Production', desc: 'Free digital proof before production; timing confirmed at quote' },
-  { icon: ShieldCheck, title: 'Quality Guarantee', sub: '100% Satisfaction', desc: 'Free reprint if not satisfied, full refund' },
+  { icon: ShieldCheck, title: 'Quality Guarantee', sub: 'Quality Defects Covered', desc: 'Free reprint or full refund for print quality defects' },
   { icon: Headphones, title: '24/7 Support', sub: 'Always Available', desc: 'Professional customer service online 24/7' },
 ];
 
@@ -62,7 +62,7 @@ const JA_CARDS: TrustCard[] = [
   { icon: Zap, title: '即日納品', sub: '特急24時間対応', desc: '日程は見積りで確認、特急は受付・生産状況による' },
   { icon: Truck, title: '国際配送', sub: '日本全国対応', desc: 'DHL・FedExで日本全国へ配送（時期は見積りで確認）' },
   { icon: Clock, title: 'デジタル校正', sub: '本生産前に確認', desc: '無料デジタル校正、確認後に本印刷。校正時期は見積りで確認' },
-  { icon: ShieldCheck, title: '品質保証', sub: '100%満足保証', desc: '不満足な場合は無料再印刷、全額返金' },
+  { icon: ShieldCheck, title: '品質保証', sub: '品質不良対応', desc: '印刷品質不良は無料再印刷または全額返金' },
   { icon: Headphones, title: '24時間サポート', sub: '年中無休対応', desc: 'プロのカスタマーサービスが24時間対応' },
 ];
 

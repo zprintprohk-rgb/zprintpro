@@ -10,7 +10,7 @@
  *   4. DHL Express Partner (real - long-term logistics partner)
  *   5. Free US Shipping $99+ (real - service promise, exact threshold)
  *   6. Free Design Proof in 4 hours (real - internal SLA)
- *   7. 100% Satisfaction Guarantee (real - reprint if not satisfied)
+ *   7. Quality Defects Guarantee (free reprint or full refund for print quality defects)
  *   8. Trusted by Global SMBs (deliberately vague - no fake count)
  *
  * Per PM × UX research: Trustpilot widget needs company email + 0 review state (cold start)
@@ -72,7 +72,7 @@ const BADGES: Record<Locale, Badge[]> = {
     { icon: 'globe', color: 'green', title: 'Ships to 100+ Countries', subtitle: 'DHL Express · FedEx · USPS' },
     { icon: 'truck', color: 'green', title: 'Free US Shipping $99+', subtitle: '5-7 day door-to-door to USA' },
     { icon: 'clock', color: 'orange', title: 'Free Proof in 4 Hours', subtitle: 'Human review, unlimited revisions' },
-    { icon: 'shield', color: 'purple', title: '100% Satisfaction Guarantee', subtitle: 'Free reprint if not satisfied' },
+    { icon: 'shield', color: 'purple', title: 'Quality Defects Guarantee', subtitle: 'Free reprint or full refund' },
     { icon: 'badge', color: 'blue', title: 'DHL Express Authorized', subtitle: 'Real-time tracking, customs cleared' },
     { icon: 'star', color: 'purple', title: 'Trusted by Global SMBs', subtitle: 'Brands from USA, UK, EU, AU, JP' },
   ],
@@ -82,7 +82,7 @@ const BADGES: Record<Locale, Badge[]> = {
     { icon: 'globe', color: 'green', title: '100+ 國家發貨', subtitle: 'DHL · FedEx · 順豐' },
     { icon: 'truck', color: 'green', title: '港九新界免費速遞', subtitle: '$500+ 免費 / 順豐本地' },
     { icon: 'clock', color: 'orange', title: '4 小時免費打稿', subtitle: '人工審稿, 不限修改' },
-    { icon: 'shield', color: 'purple', title: '100% 滿意保證', subtitle: '不滿意免費重印' },
+    { icon: 'shield', color: 'purple', title: '品質缺陷保障', subtitle: '品質問題免費重印或退款' },
     { icon: 'badge', color: 'blue', title: 'DHL Express 認證', subtitle: '即時追蹤, 自動清關' },
     { icon: 'star', color: 'purple', title: '全球 SMB 信賴', subtitle: '美 / 英 / 歐 / 澳 / 日客戶' },
   ],
@@ -92,7 +92,7 @@ const BADGES: Record<Locale, Badge[]> = {
     { icon: 'globe', color: 'green', title: '100+ 国へ発送', subtitle: 'DHL · FedEx · ヤマト運輸' },
     { icon: 'truck', color: 'green', title: '日本全国送料無料', subtitle: '沖縄・北海道も同料金' },
     { icon: 'clock', color: 'orange', title: '4 時間無料校正', subtitle: '人による校正, 無制限' },
-    { icon: 'shield', color: 'purple', title: '100% 満足保証', subtitle: 'ご納得いただけない場合再印刷' },
+    { icon: 'shield', color: 'purple', title: '品質不良対応', subtitle: '品質不良は無料再印刷・全額返金' },
     { icon: 'badge', color: 'blue', title: 'DHL Express 認定', subtitle: 'リアルタイム追跡, 通関自動化' },
     { icon: 'star', color: 'purple', title: 'グローバル SMB 信頼', subtitle: '米 / 英 / 欧 / 豪 / 日のお客様' },
   ],
@@ -105,9 +105,9 @@ const HEADING: Record<Locale, string> = {
 };
 
 const SUBHEADING: Record<Locale, string> = {
-  en: 'over a decade serving global SMBs. Real-time tracking. 100% satisfaction.',
-  'zh-hk': '多年服務全球中小企 · 即時物流追蹤 · 滿意保證',
-  ja: '多年グローバル SMB 支援 · リアルタイム追跡 · 満足保証',
+  en: 'over a decade serving global SMBs. Real-time tracking. Quality-defect guarantee.',
+  'zh-hk': '多年服務全球中小企 · 即時物流追蹤 · 品質保證',
+  ja: '多年グローバル SMB 支援 · リアルタイム追跡 · 品質保証',
 };
 
 export function TrustBadges({ locale, compact = false }: TrustBadgesProps) {

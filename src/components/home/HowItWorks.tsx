@@ -48,7 +48,7 @@ const STEPS: Record<Locale, Step[]> = {
       title: 'Free Human Proof',
       desc: 'Human review, unlimited revisions. Emailed before printing.',
       icon: '✅',
-      tip: '100% satisfaction guarantee',
+      tip: 'Free reprint or refund for quality defects',
     },
     {
       num: 4,
@@ -83,7 +83,7 @@ const STEPS: Record<Locale, Step[]> = {
       title: '免費打稿・人工審稿',
       desc: '人工審稿不限修改，開印前電郵確認。',
       icon: '✅',
-      tip: '100% 滿意保證',
+      tip: '品質問題免費重印或退款',
     },
     {
       num: 4,
@@ -118,7 +118,7 @@ const STEPS: Record<Locale, Step[]> = {
       title: '無料校正・人による審査',
       desc: '校了まで無制限。印刷前にメールで確認。',
       icon: '✅',
-      tip: '100% 満足保証',
+      tip: '品質不良は無料再印刷・返金',
     },
     {
       num: 4,
@@ -140,11 +140,11 @@ const STEPS: Record<Locale, Step[]> = {
 const HEADING: Record<Locale, { title: string; subtitle: string }> = {
   en: {
     title: 'How It Works',
-    subtitle: '5 simple steps from order to door. Free US shipping on $99+. Free design proof in 4 hours. 100% satisfaction guarantee.',
+    subtitle: '5 simple steps from order to door. Free US shipping on $99+. Free design proof in 4 hours. Free reprint or refund for quality defects.',
   },
   'zh-hk': {
     title: '印刷流程',
-    subtitle: '5 步由訂單到送達 · 港九新界 $500+ 免費速遞 · 免費打稿 · 100% 滿意保證',
+    subtitle: '5 步由訂單到送達 · 港九新界 $500+ 免費速遞 · 免費打稿 · 品質問題免費重印或退款',
   },
   ja: {
     title: 'ご注文の流れ',

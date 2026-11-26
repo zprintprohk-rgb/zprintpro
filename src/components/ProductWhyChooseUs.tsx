@@ -51,11 +51,11 @@ const translations = {
       {
         icon: Shield,
         title: '品質保證',
-        subtitle: '100%滿意',
+        subtitle: '品質缺陷保障',
         subtitleColor: 'text-red-500',
         bgColor: 'bg-red-50',
         iconColor: 'text-red-500',
-        description: '不滿意免費重印，品質問題全額退款',
+        description: '品質問題免費重印或全額退款',
       },
       {
         icon: Headphones,
@@ -110,11 +110,11 @@ const translations = {
       {
         icon: Shield,
         title: 'Quality Guarantee',
-        subtitle: '100% Satisfaction',
+        subtitle: 'Quality Defects Covered',
         subtitleColor: 'text-red-500',
         bgColor: 'bg-red-50',
         iconColor: 'text-red-500',
-        description: 'Free reprint if not satisfied, full refund',
+        description: 'Free reprint or full refund for print quality defects',
       },
       {
         icon: Headphones,
@@ -169,11 +169,11 @@ const translations = {
       {
         icon: Shield,
         title: '品質保証',
-        subtitle: '100%満足保証',
+        subtitle: '品質不良対応',
         subtitleColor: 'text-red-500',
         bgColor: 'bg-red-50',
         iconColor: 'text-red-500',
-        description: '不満足な場合は無料再印刷、全額返金',
+        description: '印刷品質不良は無料再印刷または全額返金',
       },
       {
         icon: Headphones,
