@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-25T18:17:05+0800",
-  "run_date": "2026-11-25",
+  "generated_at": "2026-11-26T12:05:04+0800",
+  "run_date": "2026-11-26",
   "board_path": ".hermes/logs/coordination-board.json",
   "policy": {
     "executable_status": "READY",
@@ -479,7 +479,7 @@
       "decision_record": null
     },
     {
-      "task_id": "GSC-FIX-2026-11-25-87656b1b2c",
+      "task_id": "GSC-FIX-2026-11-26-87656b1b2c",
       "source": "latest_gsc_delta",
       "cluster": "食品包裝印刷",
       "query": [
@@ -515,14 +515,14 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-25",
+        "next_check": "2026-11-26",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-25",
+      "retry_at": "2026-11-26",
       "exit_criteria": "Record SERP/snippet evidence and one bounded proposal, or HOLD with an explicit blocker; deployment is a separate task.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "NOT_CONSECUTIVE",
@@ -703,6 +703,64 @@
       "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
       "learning_status": "NOT_EVALUATED",
       "result": "KPI panel v1 (40e1231e) 覆盖监控口径(四指标+23带钱词+首页词数+关键词行数); 归因任务按 §0.37 终局关闭",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-20261125-SMALLBATCH-WORDING-RESIDUAL",
+      "source": "strategy_task_queue",
+      "cluster": "stickers",
+      "query": [
+        "small batch sticker printing"
+      ],
+      "baseline": {
+        "status": "AVAILABLE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {
+          "small batch sticker printing": {
+            "impressions": 13,
+            "clicks": 0,
+            "ctr_pct": 0.0,
+            "position": 8.92,
+            "export_date": "2026-11-19"
+          }
+        }
+      },
+      "owner_lane": "ZP-daily-content",
+      "status": "READY",
+      "priority": 92.0,
+      "upstream_inputs": [
+        ".hermes/logs/2026-11-25-ZP-k3-review.md §3.2 B1-B4：已批残留 5/5 在线 FAIL + widening 3 条无条件交期 + zh-Hant bullet 块 7 条 + 10 件价双值",
+        "grep 定位（2026-11-25）：product-faqs.ts / pillar-content.ts / products-content.ts / category-conversion-blocks.ts / ProductPageV9.tsx / blog-posts.ts / blog-data/en.json",
+        "队列 online_verify（VERIFY-FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL）保持 PENDING",
+        ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json"
+      ],
+      "approval_gate": "仅限已批措辞（11-19/11-21 批 K3 已批 5 条 + k3-review 11-25 widening 3 条无条件交期 + MOQ 口径互斥对齐 + en 页 zh-Hant bullet 移除）；价格双值（US$0.60 vs 0.55）与喜帖 NT$ 币种【排除】——待 K3 §10.1 真值；title 字段冻结不动；交期表述只允许条件化（quote 条件下出现）或删除，不得新写硬承诺",
+      "write_scope": [
+        "src/data/product-faqs.ts",
+        "src/data/pillar-content.ts",
+        "src/data/products-content.ts",
+        "src/data/category-conversion-blocks.ts",
+        "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx",
+        "src/data/blog-posts.ts",
+        "src/data/blog-data/en.json"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "push 后 CF Pages success + k3-review 独立在线复探（exit_criteria ①④）",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "① 上述 8 条字符串 + zh-Hant bullet 语义类在线复探 0 命中（含全角/半角破折号变体）② 不引入新硬承诺（两工具交叉复扫）③ 门童全量 0 red + tsc 基线不升 ④ online_verify 由独立验收（k3-review）翻转，lane 不得自翻 PASS",
+      "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+      "result": null,
       "execution_commit": null,
       "decision_record": null
     },
@@ -908,6 +966,91 @@
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json"
     },
     {
+      "task_id": "FIX-20261125-PRICE-TRUTH-GAPS",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk+en+ja",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "k3-review",
+      "status": "DONE",
+      "priority": 90.0,
+      "upstream_inputs": [
+        "① 婚庆 zh 类目页 SKU 卡 NT$25-95 / NT$15-55（应 HK$）——此前已知，纳入本卡合并管理",
+        "② en stickers 类目页 title+JSON-LD 写 $0.05，同页 FAQ 与 PDP 均 US$0.55（10 倍矛盾）——11-25 真值核查新发现",
+        "③ ja 小批量页 hero ¥69 与报价表 HK$89-196 双币并存，与页面「JPY 円建て」承诺矛盾——11-25 真值核查新发现",
+        "④ (🟠 次级) A1 页 title HK$20 vs 卡片 HK$29-45 内部矛盾",
+        "关联既有待答: US$0.60/0.55 双值（行动包 §10.1 已列）"
+      ],
+      "approval_gate": "BLOCKED — 全部价格/币种真值必须 K3 先拍（每处给正确值 + 是否统一币种口径）；执行层不得代拍、不得按「看起来合理」取值（§0.23 数据诚信红线）；title 字段触及处需 title 冻结面豁免确认",
+      "write_scope": [],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "11-28 D2 解冻批: A1 title 去「HK$20起」(title 面, 已登记); weekly 11-27 复盘批1 上线后 GSC 窗",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "① K3 对 4 处（NT$ / $0.05 vs 0.55 / ¥69 vs HK$89-196 / HK$20 vs 29-45）逐一给真值 ② 修复批 diff 逐行核对只含拍板值 ③ 门童 0 red + tsc 基线不升 ④ online_verify 独立翻转",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "考古完成+确定级已执行 (2026-11-26): 考古报告 .hermes/logs/audit-20261126-price-truth-archaeology.md (4 处 ≥2 方法复算, git -S + 线上 5 URL + guard 实跑 + 竞品 3 组, 只读零写入); 本席独立预扫 (regex 全 src + basePrice×minQty=range 下限规律验证) 与考古交叉一致。【① NT$ = symbol 误写, 确定级, 已执行】products.ts:6886/:6938 NT$→HK$ ×2, commit de837123 (本地未 push); 数字不变=非新定价; 方向背书 = K3 11-25 D1 议程「喜帖 NT$→HK$」+ 同批 3 SKU 先例 (e569c4a5/f9935e4b/living-book L427) + 84 条 price_range 82 条 HK$; basePrice 1.2/0.65 数值待 K3 (提案 A: 25/15, 购物车 50×25=HK$1,250); sku-seo-data 6 处正文 NT$ 待数值拍板后走生成器链同步 (SOP-5, 禁手搓)。【② en 类目锚 $0.05, 待 K3】非 $0.55 typo (确定, 5d45069c 8-17 铁证: $0.23→$0.05 手写类目锚; $0.55 = K3 10-28 拍板 small-batch SKU 真值, 两锚跨 SKU 跨单位); live 2026-11-26 复核: JSON-LD offers 已为口径 B MOQ 实价 ($0.90/0.41/0.37), $0.05 仅残存 title/desc/og 字面量 (G1 前作「JSON-LD $0.05」半句与实测不符, 已如实分叉); 推荐: 类目 en 锚取 US$0.32 (waterproof, 与同页 metaDescription/卡片 INDEPENDENT_PRICES 已一致) 或 US$0.55, K3 一句话拍后改 seo.ts:413/425 三处字面量走攒批。【③ ja ¥69 vs HK$89-196, 待 K3】円建て真值 = basePrice_ja 69 (K3 10-28 拍板组, hero/购买件/feed/schema 四链同源, 10 枚 ¥690); HK$89/134/196 表 = zh-hk HKD 报价引擎口径错植进自称「JPY 円建て」ja 页 (确定, 表脚注 38×2.35 自证内部自洽); 推荐方案 A: ja 页按 ¥69 口径重建档位 (100/500 枚档位值需新拍) 或移除 HKD 表; 方案 B: HKD 引擎为准全链重写 (大改, 否定 10-28 拍板); ⚠ N1 新发现: QuoteCalculator 对 per-locale basePrice 再乘 MOQ 係数 2.35 → ja ¥162/枚 (推断级待线上复核, en 同病 $1.29) = per-locale 锚双计 bug, 独立设计议题升级 K3, 不与四处混拍。【④ A1, 待 K3】三值各自口径真值并存 (确定): HK$20 = basePrice 引擎真值 (但价格件默认档实为 A2 ×1); HK$29-45 = K3 9-19 P0-2 拍板噴繪诚实区间锚 (pricing.ts:1016 带拍板注释, 保留不动); 推荐: title 去「HK$20起」或加柯式产线标注 (per K3 11-13 D1/D6「标题优先无价格常青值」, 11-28 D2 解冻后走 title 规则) + QuoteCalculator 默认档对齐 A1 (×1.8→HK$36) 或页面强制 A1 起选 (UX 拍板)。【共性根因 N2】5 层价格体系 (basePrice/basePrice_en/basePrice_ja/price_range/显示锚) 各期演化 + price-truth-guard 无币种符号/跨层检查 (NT$ 存活 100 天直接原因); 建议: guard 增补 price_range 币种符号白名单 (zh-hk 允许 HK$ + DJ-001 ¥ 例外) WARN 级起步。【K3 裁决清单】= 考古报告 §六.1 四条一句话即可拍; 拍后修复链: products.ts → 生成器链 → 同链正文 → 攒批 1 push → 门童全量 → 5 URL curl。\n[2026-11-26 01:15 主会话线上复核] N1 双计推断级=证伪（QuoteCalculator L190 无 2.35 路径，线上 ¥69×10=¥690 精确；2.35 仅存 products-content 三语正文表格说明文字）；③ 新铁证=折叠表自称「実報価エンジン準拠」但全表 HK$+手写係数+約700円换算漂移(741≠700)+同页双价 69/HK$89 并存，方案 A 证据链加固；新登记 N5=ja 相关卡 ¥8.40 小数円（waterproof 无 basePrice_ja 走 ×19.5 fallback），随 ③ 顺链；详情见考古报告 §七 补记。\n[2026-11-26 03:2x 主会话执行批1·K3 02:48 四项拍板落地] ① products.ts basePrice WI-001 1.2→25 / WI-003 0.65→15; CSV 源头改 2 处 → csv-to-sku-seo.mjs --apply --allow-drift (生成器断言 PASS, sku-seo-data 仅 2 行预期变更: WI-001 desc HK$25 起/套 + WI-003 title HK$15起, title 半角当量 51 在 50-57 区内)。② seo.ts:413/425 en 类目锚 $0.05→US$0.32 ×2 (与 waterproof INDEPENDENT_PRICES 0.32 一致)。③ products-content.ts ja small-batch 假準據 HKD 表整塊移除 (自稱引擎準拠實為 HK$38×2.35 手寫+換算漂移), 替換為 JPY 引擎引導句; 不重建未拍檔值; zh/en 對應表保守不動 (zh 與 HKD 引擎同源不矛盾)。④ products.ts a1-posters sizes[] A1 提前為默認檔 (QuoteCalculator 取 sizes[0], SKU 名與引擎默認一致; A2 HK$20 仍可手選); title 面留 11-28 D2。門禁: tsc 0 err / title-v5 HARD=0 (WARN 30=既有基線) / price-truth+brand+gsc-leak+entity+i18n 全過 / brand-mentions --strict PASS / encoding PASS。push: de837123..861cf44d (批1+战略包) + 4b9979b8 (D1/W1 注入+WD1) + 77fe2a2d (guard#21 台账 re-stamp)。live 驗收 (CF build 後 5 探針): wedding 類目 HK$25-95/HK$15-55×2 NT$=0 ✓; WI-001 PDP HK$25 起/套×2 HK$1.20=0 ✓; en 類目 US$0.32×12 ✓; ja 小ロット単価表=0 + JPY 引擎引導句在頁 ✓; a1-posters RSC sizes[0]=a1 ✓。新登記 N6: en 類目 waterproof 卡片可見 $0.05/pc = UNIT_PRICE_ANCHORS priceDisplay as-low-as 批量檔 (price-data.generated, 11-18 口径 B 已知類 15/20 SKU, 顯示層當時拍板保留原樣) — 與同頁新錨 US$0.32 並存屬顯示層政策問題, 待 K3 是否啟動顯示層口径 C; 本批不動。N5 (ja 相關卡 ¥8.40 小數円) 值未拍, 維持登記。【N6 閉合 2026-11-26 09:1x】顯示層口徑 C 方案③（維持 as-low-as + en 裸價補 From 前綴）已執行上線：CategoryPageV9 V9T 增 fromPrefix（en='From '，zh/ja=''）+ HotProducts + PDP 右欄報價盒 + PDP 相關卡，共 3 文件 8 處；零價格數字變動，zh「起」/ ja「〜」回歸無損。commit eb0daec5；CF check-run webhook 掛 in_progress（部署實生效，live 5 探針確認）。方案① MOQ 實價 / ② 區間錨留 12-04 月度復盤。裁決材料：重要文件/2026-11-26-n6-display-layer-caliber-c-ruling-material.md。",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-20261126-DOUJIN-SEMANTIC-FIX",
+      "source": "strategy_task_queue",
+      "cluster": "all",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "ZP-daily-content",
+      "status": "READY",
+      "priority": 90.0,
+      "upstream_inputs": [
+        ".hermes/logs/audit-20261126-doujin-semantic-sweep.md（SSoT 锚点表）",
+        "k3-review 11-25 §3.2 C1-C4/D1 FAIL 行",
+        "已知残留 7/7 定位到活文件；zh/ja 车价「×10=大额」为运行时渲染（products.ts:6707/6709 basePrice 7500 + minQuantity 10 → PdpPurchaseButtons.tsx:48-58,127 计算渲染），精确串 grep 0 命中的根因"
+      ],
+      "approval_gate": "① 可执行（11-24 已批条件化句式同族）：「5部急行3日/5本加急3天」簇、Rush 2-3 days、ja PDP 中文 bullet、ja WA 预填、zh「注文」表述、¥7,500 订单起价口径落地（K3 10-30 #5 已拍板：ja=¥7,500〜/注文 订单起价，zh/en 页不得出现 ¥7,500 字面）；② 【排除】待 K3：D-2 车价 A/B 案（cart ×10 运行时渲染逻辑）、同 SKU 7 处价格口径矛盾的真值选定（HK$500/部 vs $65/book vs ¥7,500×10 vs 订单起价）、seo.ts:535/538「24h特急」title（title 冻结面，11-28 D2 解冻后才动）；③ 交期/价格表述只允许条件化或删除，不得新写硬承诺；title 冻结不动",
+      "write_scope": [
+        "本批修复面以 audit-20261126-doujin-semantic-sweep.md A/B/C/D 锚点表为准（文件:行逐条）",
+        "src/data/blog-data/{zh-hk,ja,en}.json（doujin 相关 blog 段落）",
+        "src/data/sku-seo-data.ts 涉及行须回 CSV 源头重生成（SOP-5 禁手搓）",
+        "运行时渲染项 PdpPurchaseButtons.tsx 车价逻辑【排除】——属 D-2 车价 A/B 案，待 K3"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "2026-11-26 18:17 ZP-daily-content 自然轮（先消费 SMALLBATCH 部署验收，再执行本卡 ① 类；② 类等 K3）",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": "2026-11-26",
+      "exit_criteria": "① audit A/B/C/D 表可执行类锚点在线复探 0 命中（语义类非精确串）② 不引入新硬承诺（双工具交叉复扫）③ sku-seo-data.ts 改动走 CSV 重生成且计数断言过 ④ 门童全量 0 red + tsc 基线不升 ⑤ online_verify 由 k3-review 独立翻转",
+      "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+      "result": null,
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
       "task_id": "TRUTH-T1-20261029-CALENDARS-50PCS",
       "source": "strategy_task_queue",
       "cluster": "en",
@@ -1102,6 +1245,52 @@
       "result": "DONE+DEPLOYED 2026-11-21: commit 6a9294d7 — poster-printing-guide zh-hk 45 处清理(HK→16/急件24h→11:00即日投產條件化/SGS+100%聲明+無源統計刪/title常青過當量門禁)+blog-posts.ts 三語同步 || SECOND RUN DONE+DEPLOYED 2026-11-21 17:54: commit 2521140 — 剩餘面 (首輪限 poster-printing-guide): poster-printing-price-guide title HK$9起→常青55當量+desc/摘要/數據洞察對齊A2真值(HK$16·10張HK$160·100張HK$561·1-2工作天·即日條件化)+市場詢價表加第三方口徑歸屬; poster-size-guide 三處HK$9→HK$16+5-7天→1-2天; blog-posts.ts 鏡像同步。guards encoding/gsc-leak/title-v5/brand 全綠。retest 2026-11-28",
       "execution_commit": null,
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json"
+    },
+    {
+      "task_id": "FIX-20261125-G1-DIRECT-ANSWER-BLOCKS",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk+en+ja",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "ZP-daily-content（批准后）",
+      "status": "READY",
+      "priority": 88.0,
+      "upstream_inputs": [
+        "C1 簇答案层实证: 我方 FAQ 文本单元 3/3 跑进答案层（11-20 AIO 引用 + 11-25 两跑摘要位）——直答块=同形态复制",
+        "真值核查 §E: ⑤WA 预填【檔案】【交貨地】12/12 页系统性缺失；④生产/送达分开 8/12；③18:00 截单 12/12 不可直答",
+        "直答块文案红线: 不新增硬承诺（18:00 待 K3 SSoT）/不编造数字/价格矛盾页占位"
+      ],
+      "approval_gate": "PENDING_K3_APPROVAL — ① K3 批准直答块方案与排程 ② 批 1 价格位回填必须等 FIX-20261125-PRICE-TRUTH-GAPS 真值 ③ 批 2 八页（无价格矛盾）可与批 1 分离执行 ④ 18:00 截单句在 K3 确认 SSoT 口径前禁止写入 ⑤ title/meta 冻结面不动（title 触及处需豁免确认）",
+      "write_scope": [
+        "src/data/product-faqs.ts（或直答块数据源）",
+        "src/data/pillar-content.ts",
+        "src/data/products-content.ts",
+        "src/data/category-conversion-blocks.ts",
+        "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx（WA 预填模板）",
+        "（最终 write_scope 以提案 §二逐页落点为准，执行前由车道确认）"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "daily 18:17 消费批2 首页（food-boxes）；k3-review 独立 online_verify 翻转；W4 探针复测直答块形态",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "① 12 页直答块在线且首 150 字三问直答 ② WA 预填 7 字段全页在位 ③ 文案层 GSC/探针黑话 0 命中（门童 #16）+ 编造数字 0 命中（门童 #1）④ 无新增硬承诺（两工具交叉复扫）⑤ 门童全量 0 red + tsc 基线不升 ⑥ online_verify 由 k3-review 独立翻转 ⑦ 下轮 W4 探针复测直答块形态",
+      "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+      "result": "K3 2026-11-26 02:29 拍板：批准直答块方案与排程（门禁①满足），批2 定位正确性/承接层「先行」不等五条件门；A1 直答块选 Variant A（产线标注稿）。批2 内容基准=重要文件/2026-11-26-g1-direct-answer-blocks-3pages-draft-v1.md（页1 food-boxes/页2 a2-posters/页4 transparent-stickers 成稿，含竞品对照与逐页实验卡；v1.1 已修正 transparent 5-7 工作天、A2 生产以报价确认，与母提案真值矩阵对齐）+ 母提案 proposal-20261125-g1-direct-answer-blocks.md（页5/6/7/11/12 沿用三行式模板同批）。18:00 截单句：K3 批准含 18:00 之草案且来源已标=线上 rush 服务页现行口径，视为门禁④ SSoT 确认；全部保留条件化后缀，k3-review 上线独立复核。仍保留的门槛：批1（页3/8/9/10）价格位回填继续等 PRICE-TRUTH-GAPS 四项真值（门禁②）；title/meta 冻结面不动（门禁⑤，A1 title 去价属裁决④执行面，11-28 D2 解冻后另批）；批2 每页单变量分批落地（food-boxes→transparent→a2→其余5页），不走一次全上。执行顺序建议：批2 今晚 18:17 daily 起按页分批；批3 口径问（transparent 5-7 vs removable 3-5）入 K3 问清单。",
+      "execution_commit": null,
+      "decision_record": null
     },
     {
       "task_id": "JA-C109-20261028-DEADLINE",
@@ -1325,6 +1514,47 @@
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json"
     },
     {
+      "task_id": "OPS-20261126-GSC-API-DAILY-AUTOPULL",
+      "source": "strategy_task_queue",
+      "cluster": "infra",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "K3-admin + ZP-daily-content",
+      "status": "WAITING_K3",
+      "priority": 85.0,
+      "upstream_inputs": [
+        "API 首拉 11-26 成功（2,357+2,274+2,221 行）",
+        "手工导出节奏依赖 K3，query×page 曾 STALE end1031"
+      ],
+      "approval_gate": "WAITING_K3 — 生成器改动 + 7890 代理开机自启确认（管理员）",
+      "write_scope": [
+        "scripts/register-cron-tasks.ps1（生成器注入）",
+        ".hermes/cron-prompts/（生成器产物）"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "K3 批准后生成器注入 + watchdog 联调",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "daily 连续 2 轮自动拉取成功落 GSC数据/ + watchdog 检出代理失联演练一次",
+      "learning_status": "HOLD_NO_LEARNING_CLAIM",
+      "result": null,
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
       "task_id": "REVIEW-20261030-WEEKLY",
       "source": "strategy_task_queue",
       "cluster": "operations",
@@ -1408,6 +1638,48 @@
       "decision_record": null
     },
     {
+      "task_id": "CONTENT-20261126-DEEP-BLOG-QUEUE-QPAGE",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk+en+ja",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "ZP-blog-deepfix",
+      "status": "WAITING_K3",
+      "priority": 82.0,
+      "upstream_inputs": [
+        "API query×page 28d end1123：wholesaler 18/4.94 全归 supplier-guide blog",
+        "易拉架族 100% 归 roll-up blog，PDP 0 imp（命名不对口）",
+        "即日簇 103imp@9.3-9.6 主承接=rush blog"
+      ],
+      "approval_gate": "WAITING_K3 — K3 对 6 篇排序拍板后逐篇转 READY；CERT-PHRASES 不插队",
+      "write_scope": [
+        "src/data/blog-data/*.json（源头）",
+        "对应 blog 内容管线"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "11-28 blog 车道 CERT-PHRASES 后评估首篇；或 K3 提前排序",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "逐篇：12段骨架+1主词3-5长尾+≥5内链+唯一主PDP+门童全绿+7/14/28d 复测登记",
+      "learning_status": "HOLD_NO_LEARNING_CLAIM",
+      "result": null,
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
       "task_id": "EN-CATALOG-20261028-TRUTH",
       "source": "strategy_task_queue",
       "cluster": "catalog",
@@ -1459,7 +1731,7 @@
       "decision_record": null
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-25-f2bc40ee31",
+      "task_id": "GSC-MEASURE-2026-11-26-f2bc40ee31",
       "source": "latest_gsc_delta",
       "cluster": "posters-zh-hk",
       "query": [
@@ -1495,21 +1767,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-25",
+        "next_check": "2026-11-26",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-25",
+      "retry_at": "2026-11-26",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|海報印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-25-7dfc8ccac4",
+      "task_id": "GSC-MEASURE-2026-11-26-7dfc8ccac4",
       "source": "latest_gsc_delta",
       "cluster": "flyers-zh-hk",
       "query": [
@@ -1545,21 +1817,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-25",
+        "next_check": "2026-11-26",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-25",
+      "retry_at": "2026-11-26",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|宣傳單張|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-25-8ba60bd637",
+      "task_id": "GSC-MEASURE-2026-11-26-8ba60bd637",
       "source": "latest_gsc_delta",
       "cluster": "印刷",
       "query": [
@@ -1595,21 +1867,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-25",
+        "next_check": "2026-11-26",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-25",
+      "retry_at": "2026-11-26",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-25-4c5ebffbea",
+      "task_id": "GSC-MEASURE-2026-11-26-4c5ebffbea",
       "source": "latest_gsc_delta",
       "cluster": "comiket-ja",
       "query": [
@@ -1645,21 +1917,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-25",
+        "next_check": "2026-11-26",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-25",
+      "retry_at": "2026-11-26",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|コミケ 印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-25-ffa9859a1b",
+      "task_id": "GSC-MEASURE-2026-11-26-ffa9859a1b",
       "source": "latest_gsc_delta",
       "cluster": "教材 印刷製本",
       "query": [
@@ -1695,21 +1967,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-25",
+        "next_check": "2026-11-26",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-25",
+      "retry_at": "2026-11-26",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|教材 印刷製本|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-25-2d5ea01d64",
+      "task_id": "GSC-MEASURE-2026-11-26-2d5ea01d64",
       "source": "latest_gsc_delta",
       "cluster": "易拉架印刷",
       "query": [
@@ -1745,21 +2017,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-25",
+        "next_check": "2026-11-26",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-25",
+      "retry_at": "2026-11-26",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|易拉架印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-25-549df6a371",
+      "task_id": "GSC-MEASURE-2026-11-26-549df6a371",
       "source": "latest_gsc_delta",
       "cluster": "喜帖印刷",
       "query": [
@@ -1795,21 +2067,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-25",
+        "next_check": "2026-11-26",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-25",
+      "retry_at": "2026-11-26",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|喜帖印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-25-c3807750ae",
+      "task_id": "GSC-MEASURE-2026-11-26-c3807750ae",
       "source": "latest_gsc_delta",
       "cluster": "小冊子印刷",
       "query": [
@@ -1845,21 +2117,21 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-25",
+        "next_check": "2026-11-26",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-25",
+      "retry_at": "2026-11-26",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
       "idempotency": "2026-11-19|小冊子印刷|MEASURE"
     },
     {
-      "task_id": "GSC-MEASURE-2026-11-25-cdc0931dc4",
+      "task_id": "GSC-MEASURE-2026-11-26-cdc0931dc4",
       "source": "latest_gsc_delta",
       "cluster": "證書印刷",
       "query": [
@@ -1895,14 +2167,14 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-25",
+        "next_check": "2026-11-26",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-25",
+      "retry_at": "2026-11-26",
       "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
       "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
@@ -2099,6 +2371,98 @@
       "result": "DONE",
       "execution_commit": "f638c4b4",
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json"
+    },
+    {
+      "task_id": "FIX-20261126-C109-SEASONAL-DIRECT-ANSWER",
+      "source": "strategy_task_queue",
+      "cluster": "ja-education-c109",
+      "query": [
+        "コミケ 印刷"
+      ],
+      "baseline": {
+        "status": "AVAILABLE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {
+          "コミケ 印刷": {
+            "impressions": 110,
+            "clicks": 0,
+            "ctr_pct": 0.0,
+            "position": 30.49,
+            "export_date": "2026-11-19"
+          }
+        }
+      },
+      "owner_lane": "ZP-weekly-meta → ZP-daily-content",
+      "status": "SCHEDULED",
+      "priority": 78.0,
+      "upstream_inputs": [
+        "c109 284imp/1clk/pos10.29 + c109 日期 147imp/0clk/pos9.63（API 实测）",
+        "冬季 Comiket 窗约 5 周（以站内专题页日期为准）",
+        ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json"
+      ],
+      "approval_gate": "SCHEDULED — weekly 11-27 提案定稿后转 READY（季节窗充裕，保批2单变量干净窗）",
+      "write_scope": [
+        "comiket-c109 页面内容管线"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "2026-11-27 weekly 19:23",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": "2026-11-27",
+      "exit_criteria": "直答块在线+门童全绿+无硬承诺+7/14/28d 复测",
+      "learning_status": "HOLD_NO_LEARNING_CLAIM",
+      "result": null,
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-20261126-ROLLUP-NAMING-ALIGNMENT",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "ZP-weekly-meta → ZP-daily-content",
+      "status": "SCHEDULED",
+      "priority": 75.0,
+      "upstream_inputs": [
+        "易拉架價錢 35/19.69·澳門易拉架size 31/3.61·易拉架 30/32.67 全归 blog",
+        "PDP roll-up-banners 对「易拉架」族 28d 0 imp"
+      ],
+      "approval_gate": "SCHEDULED — 与 C109 同批 weekly 11-27 提案",
+      "write_scope": [
+        "roll-up-banner-printing-guide blog 内容",
+        "roll-up-banners PDP 正文（同义词对照，非 title）"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "2026-11-27 weekly 19:23",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": "2026-11-27",
+      "exit_criteria": "PDP 对「易拉架」词 7/14/28d 出现曝光（GSC query×page 复测）",
+      "learning_status": "HOLD_NO_LEARNING_CLAIM",
+      "result": null,
+      "execution_commit": null,
+      "decision_record": null
     },
     {
       "task_id": "GEO-20261103-AI-PROBE-S1",
@@ -3023,20 +3387,23 @@
   ],
   "lane_assignments": {
     "ZP-gsc-feedback": [
-      "GSC-MEASURE-2026-11-25-f2bc40ee31",
-      "GSC-MEASURE-2026-11-25-7dfc8ccac4",
-      "GSC-MEASURE-2026-11-25-8ba60bd637",
-      "GSC-MEASURE-2026-11-25-4c5ebffbea",
-      "GSC-MEASURE-2026-11-25-ffa9859a1b",
-      "GSC-MEASURE-2026-11-25-2d5ea01d64",
-      "GSC-MEASURE-2026-11-25-549df6a371",
-      "GSC-MEASURE-2026-11-25-c3807750ae",
-      "GSC-MEASURE-2026-11-25-cdc0931dc4"
+      "GSC-MEASURE-2026-11-26-f2bc40ee31",
+      "GSC-MEASURE-2026-11-26-7dfc8ccac4",
+      "GSC-MEASURE-2026-11-26-8ba60bd637",
+      "GSC-MEASURE-2026-11-26-4c5ebffbea",
+      "GSC-MEASURE-2026-11-26-ffa9859a1b",
+      "GSC-MEASURE-2026-11-26-2d5ea01d64",
+      "GSC-MEASURE-2026-11-26-549df6a371",
+      "GSC-MEASURE-2026-11-26-c3807750ae",
+      "GSC-MEASURE-2026-11-26-cdc0931dc4"
     ],
     "ZP-weekly-meta": [
-      "GSC-FIX-2026-11-25-87656b1b2c"
+      "GSC-FIX-2026-11-26-87656b1b2c"
     ],
-    "ZP-daily-content": [],
+    "ZP-daily-content": [
+      "FIX-20261125-SMALLBATCH-WORDING-RESIDUAL",
+      "FIX-20261126-DOUJIN-SEMANTIC-FIX"
+    ],
     "ZP-blog-deepfix": [
       "FIX-20261030-BLOG-CERT-PHRASES"
     ],
@@ -3049,7 +3416,7 @@
   "lane_assignment_details": {
     "ZP-gsc-feedback": [
       {
-        "task_id": "GSC-MEASURE-2026-11-25-f2bc40ee31",
+        "task_id": "GSC-MEASURE-2026-11-26-f2bc40ee31",
         "source": "latest_gsc_delta",
         "cluster": "posters-zh-hk",
         "query": [
@@ -3085,21 +3452,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-25",
+          "next_check": "2026-11-26",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-25",
+        "retry_at": "2026-11-26",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|海報印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-25-7dfc8ccac4",
+        "task_id": "GSC-MEASURE-2026-11-26-7dfc8ccac4",
         "source": "latest_gsc_delta",
         "cluster": "flyers-zh-hk",
         "query": [
@@ -3135,21 +3502,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-25",
+          "next_check": "2026-11-26",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-25",
+        "retry_at": "2026-11-26",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|宣傳單張|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-25-8ba60bd637",
+        "task_id": "GSC-MEASURE-2026-11-26-8ba60bd637",
         "source": "latest_gsc_delta",
         "cluster": "印刷",
         "query": [
@@ -3185,21 +3552,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-25",
+          "next_check": "2026-11-26",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-25",
+        "retry_at": "2026-11-26",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-25-4c5ebffbea",
+        "task_id": "GSC-MEASURE-2026-11-26-4c5ebffbea",
         "source": "latest_gsc_delta",
         "cluster": "comiket-ja",
         "query": [
@@ -3235,21 +3602,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-25",
+          "next_check": "2026-11-26",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-25",
+        "retry_at": "2026-11-26",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|コミケ 印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-25-ffa9859a1b",
+        "task_id": "GSC-MEASURE-2026-11-26-ffa9859a1b",
         "source": "latest_gsc_delta",
         "cluster": "教材 印刷製本",
         "query": [
@@ -3285,21 +3652,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-25",
+          "next_check": "2026-11-26",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-25",
+        "retry_at": "2026-11-26",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|教材 印刷製本|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-25-2d5ea01d64",
+        "task_id": "GSC-MEASURE-2026-11-26-2d5ea01d64",
         "source": "latest_gsc_delta",
         "cluster": "易拉架印刷",
         "query": [
@@ -3335,21 +3702,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-25",
+          "next_check": "2026-11-26",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-25",
+        "retry_at": "2026-11-26",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|易拉架印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-25-549df6a371",
+        "task_id": "GSC-MEASURE-2026-11-26-549df6a371",
         "source": "latest_gsc_delta",
         "cluster": "喜帖印刷",
         "query": [
@@ -3385,21 +3752,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-25",
+          "next_check": "2026-11-26",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-25",
+        "retry_at": "2026-11-26",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|喜帖印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-25-c3807750ae",
+        "task_id": "GSC-MEASURE-2026-11-26-c3807750ae",
         "source": "latest_gsc_delta",
         "cluster": "小冊子印刷",
         "query": [
@@ -3435,21 +3802,21 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-25",
+          "next_check": "2026-11-26",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-25",
+        "retry_at": "2026-11-26",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
         "idempotency": "2026-11-19|小冊子印刷|MEASURE"
       },
       {
-        "task_id": "GSC-MEASURE-2026-11-25-cdc0931dc4",
+        "task_id": "GSC-MEASURE-2026-11-26-cdc0931dc4",
         "source": "latest_gsc_delta",
         "cluster": "證書印刷",
         "query": [
@@ -3485,14 +3852,14 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-25",
+          "next_check": "2026-11-26",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-25",
+        "retry_at": "2026-11-26",
         "exit_criteria": "Record root-cause evidence and a comparable baseline; assign any subsequent FIX without treating a moving window as an experiment result.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
@@ -3501,7 +3868,7 @@
     ],
     "ZP-weekly-meta": [
       {
-        "task_id": "GSC-FIX-2026-11-25-87656b1b2c",
+        "task_id": "GSC-FIX-2026-11-26-87656b1b2c",
         "source": "latest_gsc_delta",
         "cluster": "食品包裝印刷",
         "query": [
@@ -3537,21 +3904,124 @@
         "production_deploy": null,
         "online_verify": null,
         "retest": {
-          "next_check": "2026-11-25",
+          "next_check": "2026-11-26",
           "required_windows": [
             "7d",
             "14d",
             "28d"
           ]
         },
-        "retry_at": "2026-11-25",
+        "retry_at": "2026-11-26",
         "exit_criteria": "Record SERP/snippet evidence and one bounded proposal, or HOLD with an explicit blocker; deployment is a separate task.",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "two_window_direction": "NOT_CONSECUTIVE",
         "idempotency": "2026-11-19|食品包裝印刷|FIX"
       }
     ],
-    "ZP-daily-content": [],
+    "ZP-daily-content": [
+      {
+        "task_id": "FIX-20261125-SMALLBATCH-WORDING-RESIDUAL",
+        "source": "strategy_task_queue",
+        "cluster": "stickers",
+        "query": [
+          "small batch sticker printing"
+        ],
+        "baseline": {
+          "status": "AVAILABLE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {
+            "small batch sticker printing": {
+              "impressions": 13,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 8.92,
+              "export_date": "2026-11-19"
+            }
+          }
+        },
+        "owner_lane": "ZP-daily-content",
+        "status": "READY",
+        "priority": 92.0,
+        "upstream_inputs": [
+          ".hermes/logs/2026-11-25-ZP-k3-review.md §3.2 B1-B4：已批残留 5/5 在线 FAIL + widening 3 条无条件交期 + zh-Hant bullet 块 7 条 + 10 件价双值",
+          "grep 定位（2026-11-25）：product-faqs.ts / pillar-content.ts / products-content.ts / category-conversion-blocks.ts / ProductPageV9.tsx / blog-posts.ts / blog-data/en.json",
+          "队列 online_verify（VERIFY-FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL）保持 PENDING",
+          ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json"
+        ],
+        "approval_gate": "仅限已批措辞（11-19/11-21 批 K3 已批 5 条 + k3-review 11-25 widening 3 条无条件交期 + MOQ 口径互斥对齐 + en 页 zh-Hant bullet 移除）；价格双值（US$0.60 vs 0.55）与喜帖 NT$ 币种【排除】——待 K3 §10.1 真值；title 字段冻结不动；交期表述只允许条件化（quote 条件下出现）或删除，不得新写硬承诺",
+        "write_scope": [
+          "src/data/product-faqs.ts",
+          "src/data/pillar-content.ts",
+          "src/data/products-content.ts",
+          "src/data/category-conversion-blocks.ts",
+          "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx",
+          "src/data/blog-posts.ts",
+          "src/data/blog-data/en.json"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "push 后 CF Pages success + k3-review 独立在线复探（exit_criteria ①④）",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": null,
+        "exit_criteria": "① 上述 8 条字符串 + zh-Hant bullet 语义类在线复探 0 命中（含全角/半角破折号变体）② 不引入新硬承诺（两工具交叉复扫）③ 门童全量 0 red + tsc 基线不升 ④ online_verify 由独立验收（k3-review）翻转，lane 不得自翻 PASS",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "result": null,
+        "execution_commit": null,
+        "decision_record": null
+      },
+      {
+        "task_id": "FIX-20261126-DOUJIN-SEMANTIC-FIX",
+        "source": "strategy_task_queue",
+        "cluster": "all",
+        "query": [],
+        "baseline": {
+          "status": "NO_CURRENT_BASELINE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {}
+        },
+        "owner_lane": "ZP-daily-content",
+        "status": "READY",
+        "priority": 90.0,
+        "upstream_inputs": [
+          ".hermes/logs/audit-20261126-doujin-semantic-sweep.md（SSoT 锚点表）",
+          "k3-review 11-25 §3.2 C1-C4/D1 FAIL 行",
+          "已知残留 7/7 定位到活文件；zh/ja 车价「×10=大额」为运行时渲染（products.ts:6707/6709 basePrice 7500 + minQuantity 10 → PdpPurchaseButtons.tsx:48-58,127 计算渲染），精确串 grep 0 命中的根因"
+        ],
+        "approval_gate": "① 可执行（11-24 已批条件化句式同族）：「5部急行3日/5本加急3天」簇、Rush 2-3 days、ja PDP 中文 bullet、ja WA 预填、zh「注文」表述、¥7,500 订单起价口径落地（K3 10-30 #5 已拍板：ja=¥7,500〜/注文 订单起价，zh/en 页不得出现 ¥7,500 字面）；② 【排除】待 K3：D-2 车价 A/B 案（cart ×10 运行时渲染逻辑）、同 SKU 7 处价格口径矛盾的真值选定（HK$500/部 vs $65/book vs ¥7,500×10 vs 订单起价）、seo.ts:535/538「24h特急」title（title 冻结面，11-28 D2 解冻后才动）；③ 交期/价格表述只允许条件化或删除，不得新写硬承诺；title 冻结不动",
+        "write_scope": [
+          "本批修复面以 audit-20261126-doujin-semantic-sweep.md A/B/C/D 锚点表为准（文件:行逐条）",
+          "src/data/blog-data/{zh-hk,ja,en}.json（doujin 相关 blog 段落）",
+          "src/data/sku-seo-data.ts 涉及行须回 CSV 源头重生成（SOP-5 禁手搓）",
+          "运行时渲染项 PdpPurchaseButtons.tsx 车价逻辑【排除】——属 D-2 车价 A/B 案，待 K3"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "2026-11-26 18:17 ZP-daily-content 自然轮（先消费 SMALLBATCH 部署验收，再执行本卡 ① 类；② 类等 K3）",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": "2026-11-26",
+        "exit_criteria": "① audit A/B/C/D 表可执行类锚点在线复探 0 命中（语义类非精确串）② 不引入新硬承诺（双工具交叉复扫）③ sku-seo-data.ts 改动走 CSV 重生成且计数断言过 ④ 门童全量 0 red + tsc 基线不升 ⑤ online_verify 由 k3-review 独立翻转",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "result": null,
+        "execution_commit": null,
+        "decision_record": null
+      }
+    ],
     "ZP-blog-deepfix": [
       {
         "task_id": "FIX-20261030-BLOG-CERT-PHRASES",
@@ -3660,10 +4130,10 @@
     {
       "lane": "ZP-daily-content",
       "state": "Ready",
-      "last": "2026-11-25 00:01:16",
-      "next": "2026-11-25 18:17:00",
-      "last_task_result": 2147946720,
-      "status": "BLOCKED_INFRA",
+      "last": "2026-11-25 18:17:00",
+      "next": "2026-11-26 18:17:00",
+      "last_task_result": 0,
+      "status": "OBSERVED",
       "natural_recovery": "NOT_PROVEN",
       "evidence": ".hermes/tmp/scheduler-inspection-20261114.json"
     },

@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "cwd": "F:\\zprintpro-nextjs",
+    "node": "v24.20.0",
+    "startedAt": "2026-11-25T10:24:47.722Z",
+    "finishedAt": "2026-11-25T10:24:53.066Z"
+  },
+  "gitSync": {
+    "revParseHEAD": {
+      "cmd": "git rev-parse HEAD",
+      "code": 0,
+      "stdout": "1e3c1e724a030ab875cdb96239078d3c5c3c6755",
+      "stderr": ""
+    },
+    "fetchOriginMain": {
+      "cmd": "git fetch origin main --quiet",
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "revParseOriginMainAfterFetch": {
+      "cmd": "git rev-parse origin/main",
+      "code": 0,
+      "stdout": "3509abecd77e6209ff489d9784c8eba30d045c98",
+      "stderr": ""
+    },
+    "logOriginMain3": {
+      "cmd": "git log --oneline -3 origin/main",
+      "code": 0,
+      "stdout": "3509abec ﻿docs(lane): 2026-11-25 daily-content — NO_OP + 貼紙第八窗 plateau + SMALLBATCH 7d 干净窗\nc0edfd23 cron(ZP-k3-review): lane 报告 2026-11-25 07:15\nf943036b cron(ZP-k3-review): lane 产物自动提交 2026-11-25 07:15",
+      "stderr": ""
+    },
+    "logHEAD3": {
+      "cmd": "git log --oneline -3 HEAD",
+      "code": 0,
+      "stdout": "1e3c1e72 cron(ZP-daily-content): lane 报告 2026-11-25 18:21\n4f8710f4 cron(ZP-daily-content): lane 产物自动提交 2026-11-25 18:21\n3509abec ﻿docs(lane): 2026-11-25 daily-content — NO_OP + 貼紙第八窗 plateau + SMALLBATCH 7d 干净窗",
+      "stderr": ""
+    },
+    "statusSB": {
+      "cmd": "git status -sb",
+      "code": 0,
+      "stdout": "## main...origin_ssh/main [ahead 65]\n M .hermes/_commit_msg_tmp.txt\n M .hermes/_regen-merge-preview.ts\n M .hermes/cron-lanes.json\n M .hermes/logs/cron-execution-report.md\n M .hermes/logs/cron-watchdog-alerts.md\n M .hermes/logs/lane-runs.jsonl\n M .hermes/logs/lane-status.json\n M .hermes/logs/lane-status.md\n M .hermes/logs/moq-scan-latest.json\n M .hermes/logs/run-context-ZP-daily-content.json\n M .hermes/logs/run-context-ZP-k3-review.json\n M .hermes/regression-guard/bypass-audit.jsonl\n?? .hermes/_bak-sku-seo-before-merge-1795407964834.ts\n?? .hermes/_bak-sku-seo-before-merge-1795408111058.ts\n?? .hermes/_bak-sku-seo-before-merge-1795459094104.ts\n?? .hermes/logs/competitor-serp-spot-20261125.md\n?? .hermes/logs/keywords-detox-audit-2026-11-25.json\n?? .hermes/logs/sku-title-audit-2026-11-25.json\n?? .hermes/logs/sku-title-v5-audit-2026-11-25.json\n?? .hermes/logs/tmp-live-probe-20261125.cjs\n?? .hermes/logs/tmp-repo-check-20261125.cjs\n?? GSC数据/.~lock.24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25.xlsx#\n?? GSC数据/.~lock.28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25.xlsx#\n?? 重要文件/2026-11-25-core-update-complete-gsc-recovery-verdict-and-flywheel-escalation.md\n?? 重要文件/2026-11-25-three-market-flywheel-latest-gsc-and-dual-core-update-verdict.md\n?? 重要文件/2026-11-25-three-market-two-week-flywheel-strategy-v1.md\n?? \"重要文件/【ZprintPro 首席 SEO-AEO-GEO 数据战略分析师 · 三語站點排名飛輪主提示詞 v1.0】20261125.md\"",
+      "stderr": ""
+    },
+    "verify5d78f8ae": {
+      "cmd": "git rev-parse --verify 5d78f8ae^{commit}",
+      "code": 0,
+      "stdout": "5d78f8aeaa7273ab52b7de67bf9452ee3890b745",
+      "stderr": ""
+    },
+    "branchContains5d78f8ae": {
+      "cmd": "git branch -r --contains 5d78f8ae",
+      "code": 0,
+      "stdout": "  origin/HEAD -> origin/main\n  origin/main\n  origin_ssh/HEAD -> origin_ssh/main\n  origin_ssh/main",
+      "stderr": ""
+    }
+  },
+  "manifest": {
+    "name": "ZprintPro智印港",
+    "short_name": "ZprintPro智印港",
+    "start_url": "/?source=pwa",
+    "lang": "zh-HK",
+    "keys": [
+      "id",
+      "name",
+      "short_name",
+      "description",
+      "start_url",
+      "display",
+      "background_color",
+      "theme_color",
+      "orientation",
+      "scope",
+      "dir",
+      "lang",
+      "icons",
+      "categories",
+      "screenshots",
+      "shortcuts",
+      "related_applications",
+      "prefer_related_applications"
+    ]
+  },
+  "llms": {
+    "llms.txt": {
+      "bytes": 38504,
+      "lineCount": 657,
+      "line1": "# ZprintPro智印港",
+      "firstNonEmptyLine": "# ZprintPro智印港"
+    },
+    "llms-en.txt": {
+      "bytes": 12559,
+      "lineCount": 245,
+      "line1": "# ZprintPro智印港 (English) — AI Search Optimization Page",
+      "firstNonEmptyLine": "# ZprintPro智印港 (English) — AI Search Optimization Page"
+    },
+    "llms-ja.txt": {
+      "bytes": 14364,
+      "lineCount": 245,
+      "line1": "# ZprintPro智印港 (ジープリント) 日本向け — AI検索最適化ページ",
+      "firstNonEmptyLine": "# ZprintPro智印港 (ジープリント) 日本向け — AI検索最適化ページ"
+    },
+    "llms-zh-hk.txt": {
+      "bytes": 12841,
+      "lineCount": 246,
+      "line1": "# ZprintPro智印港 (香港) — AI 搜尋優化頁面",
+      "firstNonEmptyLine": "# ZprintPro智印港 (香港) — AI 搜尋優化頁面"
+    }
+  },
+  "robotsRepo": {
+    "bytes": 1385,
+    "lineCount": 60,
+    "content": "# robots.txt - single SSoT (2026-10-26 P0-2 static single-source)\n# Background: public/robots.txt + app/robots.ts dual source caused online 404.\n# app/robots.ts (MetadataRoute) does not take effect on Cloudflare Pages\n# (@opennextjs/cloudflare): online robots.txt still 404, manifest.webmanifest 500\n# (same root cause). Switched to static file single source served by CF Pages.\n# 2026-08-04 K3 P0-1: ZprintPro not in AI training data - CF Managed defaults to\n# Disallow AI crawlers; explicit Allow below overrides (12 AI crawler types).\n# Note: still requires K3 to allow AI crawlers in CF Dashboard (Security > Bots).\n\nUser-agent: *\nAllow: /\n\nDisallow: /admin/\nDisallow: /api/\nDisallow: /cdn-cgi/\nDisallow: /manifest.json\nDisallow: /manifest.webmanifest\nDisallow: /sw.js\nDisallow: /workbox-*.js\n\n# 2026-08-04 K3 P0-1: 12 AI crawlers explicit Allow (override CF Managed default)\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: Claude-Web\nAllow: /\n\nUser-agent: anthropic-ai\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Perplexity-User\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: Applebot-Extended\nAllow: /\n\nUser-agent: Bytespider\nAllow: /\n\nUser-agent: CCBot\nAllow: /\n\nSitemap: https://zprintpro.com/sitemap.xml\nSitemap: https://zprintpro.com/sitemap-image.xml\n"
+  },
+  "guards": {
+    "files": [
+      "blog-data-integrity-guard.js",
+      "blog-quality-12-rules-guard.js",
+      "blog-standard-guard.js",
+      "brand-guard.js",
+      "bypass-audit-guard.js",
+      "ce-truncation-guard.js",
+      "common.js",
+      "count-guard.js",
+      "credibility-guard.js",
+      "cron-prompts-exemption-guard.js",
+      "entity-guard.js",
+      "gsc-leak-guard.js",
+      "gsc-source-guard.js",
+      "guard-manifest.json",
+      "hook-sync-guard.js",
+      "i18n-guard.js",
+      "institutional-promise-guard.js",
+      "internal-links-cta-guard.js",
+      "keywords-detox-guard.js",
+      "ldjson-client-guard.js",
+      "meta-description-guard.js",
+      "phone-guard.js",
+      "pillar-guard.js",
+      "price-band-guard.js",
+      "price-truth-guard.js",
+      "register-guard.js",
+      "rule-translation-guard.js",
+      "sop10-guard.js",
+      "title-band-guard.js",
+      "title-equiv.js",
+      "title-hooks.json",
+      "title-v5-guard.js"
+    ],
+    "subdirs": [
+      "data"
+    ],
+    "fileCount": 32
+  },
+  "coordinationBoard": {
+    "topLevelKeys": [
+      "schema_version",
+      "generated_at",
+      "run_date",
+      "board_path",
+      "policy",
+      "inputs",
+      "lane_contract",
+      "tasks",
+      "lane_assignments",
+      "lane_assignment_details",
+      "scheduler_health",
+      "reviews"
+    ],
+    "generated_at": "2026-11-25T18:17:05+0800",
+    "arrayFields": {
+      "tasks": 60,
+      "scheduler_health": 4
+    },
+    "readyDeepCount": 25,
+    "readyItems": [
+      {
+        "path": "$.tasks[7]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[9]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[29]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[30]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[31]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[32]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[33]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[34]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[35]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[36]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[37]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[53]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.tasks[57]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-gsc-feedback[0]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-gsc-feedback[1]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-gsc-feedback[2]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-gsc-feedback[3]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-gsc-feedback[4]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-gsc-feedback[5]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-gsc-feedback[6]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-gsc-feedback[7]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-gsc-feedback[8]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-weekly-meta[0]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-blog-deepfix[0]",
+        "status": "READY",
+        "id": null
+      },
+      {
+        "path": "$.lane_assignment_details.ZP-k3-review[0]",
+        "status": "READY",
+        "id": null
+      }
+    ],
+    "rawReadyCount": 73
+  },
+  "laneStatus": {
+    "topLevelKeys": [
+      "generated_at",
+      "generated_local",
+      "repo",
+      "source_of_truth",
+      "trigger_layer",
+      "bus_file",
+      "bus_records",
+      "bus_records_test_excluded",
+      "window_days",
+      "state_machine",
+      "states_doc",
+      "recovery_actions_doc",
+      "consumers",
+      "need_human",
+      "lanes",
+      "watchdog",
+      "legacy_tasks_pending_removal",
+      "problems",
+      "warnings",
+      "verdict"
+    ],
+    "generatedAt": "2026-11-25T10:15:36.413Z",
+    "problems": [
+      "ZP-daily-content scheduler LastTaskResult=2147946720",
+      "ZP-blog-deepfix scheduler LastTaskResult=2147946720",
+      "ZP-k3-review 2026-11-25 -> PARTIAL"
+    ]
+  }
+}

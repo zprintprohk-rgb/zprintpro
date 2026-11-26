@@ -1,0 +1,65 @@
+{
+  "url": "https://zprintpro.com/zh-hk/",
+  "status": 200,
+  "blockCount": 2,
+  "parseOk": 2,
+  "parseFail": 0,
+  "orgLikeFound": [
+    {
+      "@type": [
+        "Organization"
+      ],
+      "name": "智印港",
+      "alternateName": [
+        "ZprintPro",
+        "ZprintPro HK",
+        "智印港(香港)",
+        "智印港印刷",
+        "智印港",
+        "zprintpro.com",
+        "z-printpro.com"
+      ],
+      "sameAs": {
+        "count": 4,
+        "first3": [
+          "https://twitter.com/zprintpro",
+          "https://linkedin.com/company/zprintpro",
+          "https://github.com/zprintprohk-rgb"
+        ]
+      },
+      "keys": [
+        "@context",
+        "@type",
+        "name",
+        "url",
+        "logo",
+        "alternateName",
+        "address",
+        "sameAs",
+        "areaServed",
+        "contactPoint"
+      ]
+    },
+    {
+      "@type": [
+        "LocalBusiness"
+      ],
+      "name": "智印港",
+      "keys": [
+        "@context",
+        "@type",
+        "name",
+        "image",
+        "@id",
+        "url",
+        "telephone",
+        "priceRange",
+        "address",
+        "geo",
+        "openingHoursSpecification",
+        "areaServed"
+      ]
+    }
+  ],
+  "probeTs": "2026-11-25T10:30:15.277Z"
+}

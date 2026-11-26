@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-k3-review",
+  "generated_at": "2026-11-26T12:05:02+08:00",
+  "run_started_at": "2026-11-26T12:05:02+08:00",
+  "evidence_time_basis": "Lane session starts at 2026-11-26T12:05:02+08:00 (run-context preflight). The sandbox exposes no per-request wall clock; every fetch in this file happened inside this session after 12:05 and before report write. evidence_time is therefore the session window, not a per-request timestamp.",
+  "task_id": "VERIFY-FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
+  "parent_task_id": "FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
+  "online_verify_status_after": "PENDING",
+  "board_status_after": "READY (unchanged; this lane does not rewrite shared queue/board state)",
+  "status_flip": "NONE — read-only verification only; no self-approval (approval_gate = read-only production/deployment verification)",
+  "deployment": {
+    "pushed_head": "96894e6a7ae7303991fff3ebf12a0619163781fc",
+    "head_subject": "docs(n6): closure ledger — queue card, learning log 14, exec report, lock release",
+    "head_source": "GitHub API /repos/zprintprohk-rgb/zprintpro/commits?per_page=6 (fetched in-session 2026-11-26)",
+    "head_commit_time": "2026-11-26T09:10:27+08:00",
+    "cloudflare_check_run": {
+      "name": "Cloudflare Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "completed_at": "2026-11-26T09:16:49+08:00",
+      "completed_at_utc": "2026-11-26T01:16:49Z",
+      "commit": "96894e6",
+      "deployment_url": "https://47428d2e.zprintpro-19p.pages.dev",
+      "details_url": "https://dash.cloudflare.com/?to=/32c174efaa22353f357c0fdff9d61b86/pages/view/zprintpro/47428d2e-0cf2-4f76-a2f4-19277fc2c3b7"
+    },
+    "production_mapping": "CONFIRMED_BY_CONTENT_DIFF",
+    "production_mapping_note": "Content introduced by the 2026-11-26 manual batch is visible in production: en stickers category title 'US$0.32' (a35224c8), wedding card HK$25-95 (de837123 + a35224c8), ja small-batch HK$ unit-price table removed (861cf44d), en naked-price 'From ' prefix (eb0daec5). The 03:43 eb0daec5 check-run was stuck in_progress; that stall is superseded by the successful check-run on 96894e6a, not interpreted as a pass by itself.",
+    "commit_chain_relevant": [
+      "5ea2477c — 2026-11-26T00:08 +08:00 — SMALLBATCH wording batch (local, pushed 00:43 in 3509abec..de837123)",
+      "de837123 — 2026-11-26 — products.ts NT$→HK$ symbol fix (WI-001/WI-003)",
+      "a35224c8 / 861cf44d — 2026-11-26 03:1x — price-truth batch 1 (25/15, US$0.32, ja table removal, A1 default) + generator chain",
+      "4b9979b8 — 2026-11-26 — D1/W1 prompt injection + WD1 watchdog fifth-recon (pipeline only)",
+      "77fe2a2d — 2026-11-26 — guard #21 rule-translation ledger re-stamp",
+      "eb0daec5 — 2026-11-26T03:22:55+08:00 (2026-11-25T19:22:55Z) — en 'From ' prefix (N6 caliber C option 3)",
+      "96894e6a — 2026-11-26T09:10:27+08:00 — closure ledger"
+    ]
+  },
+  "items": [
+    {
+      "id": "DEPLOY-1",
+      "url": "https://github.com/zprintprohk-rgb/zprintpro/commit/96894e6a7ae7303991fff3ebf12a0619163781fc",
+      "assertion": "origin/main advanced past the 11-26 manual batch and the closure ledger is pushed",
+      "expected": "HEAD = 96894e6a, parent eb0daec5",
+      "observed": "HEAD 96894e6a, author/committer 2026-11-26T01:10:27Z, parent eb0daec52ecb00c29357ecb08e780b9cd200825b",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "DEPLOY-2",
+      "url": "https://api.github.com/repos/zprintprohk-rgb/zprintpro/commits/96894e6a7ae7303991fff3ebf12a0619163781fc/check-runs",
+      "assertion": "Cloudflare Pages build/deploy of production head 96894e6a succeeded",
+      "expected": "check-run conclusion=success",
+      "observed": "Cloudflare Pages completed/success at 2026-11-26T01:16:49Z (09:16:49 +08), commit 96894e6, preview URL 47428d2e.zprintpro-19p.pages.dev",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "DEPLOY-3",
+      "url": "https://github.com/zprintprohk-rgb/zprintpro/commit/eb0daec52ecb00c29357ecb08e780b9cd200825b",
+      "assertion": "The 03:43 stuck 'in_progress' Cloudflare check-run on eb0daec5 is not treated as a deployment failure",
+      "expected": "A later commit carries a successful check-run and production contains eb0daec5 content",
+      "observed": "96894e6a check-run success; en pages render the 'From ' prefix added by eb0daec5. The stall is superseded, not hidden.",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-B1-1",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "Approved residual string 'Free digital proof in 1 hour' is gone",
+      "expected": "0 occurrences",
+      "observed": "0 occurrences; current wording is 'free digital proof, timing and dispatch confirmed at quote'",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-B1-2",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "Approved residual string '2-4 business day delivery to US addresses' is gone",
+      "expected": "0 occurrences",
+      "observed": "0 occurrences",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-B1-3",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "Approved residual string 'DHL / FedEx in 2-4 business days' is gone",
+      "expected": "0 occurrences",
+      "observed": "0 occurrences; current line is 'DHL / FedEx worldwide shipping ... delivery timing confirmed at quote'",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-B1-4",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "Approved residual string 'MOQ is 10 sheets per A4 layout' is gone",
+      "expected": "0 occurrences; MOQ stated as 10 stickers per design",
+      "observed": "0 occurrences of the string; visible 'MOQ is 10 stickers per design, subject to material, size and spec confirmation'",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-B1-5",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "Approved residual string 'full refund' is gone",
+      "expected": "0 occurrences",
+      "observed": "1 visible occurrence: 'Quality Guarantee / 100% Satisfaction / Free reprint if not satisfied, full refund'. Source is shared, not SB-local: src/components/ProductWhyChooseUs.tsx:117 (and TrustBadgeBlock.tsx:48).",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-B2-1",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "Widening string 'DHL worldwide 2-4 days' is conditionised or removed",
+      "expected": "0 occurrences",
+      "observed": "0 occurrences",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-B2-2",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "Widening string 'DHL Express / FedEx 3-5 days to the USA, 2-4 days to Japan' is conditionised or removed",
+      "expected": "0 occurrences",
+      "observed": "0 occurrences",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-B2-3",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "Widening string 'Custom stickers printed in 2–3 days' is conditionised or removed",
+      "expected": "0 occurrences",
+      "observed": "0 occurrences",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-B4",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "en small-batch page has no visible Chinese (zh-Hant) residue",
+      "expected": "0 CJK strings in visible body",
+      "observed": "2 visible residues: '适配行业: Indie IP, Doujin creators...' in the hero paragraph, and 'cart → 結算' in the cart line. Source root: src/data/products.ts:957 puts the same '适配行业:' literal into description/descriptionEn/descriptionJa.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-B3",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "The 10-piece unit price is single-valued across hero, cart and table",
+      "expected": "one value at 10 pcs",
+      "observed": "hero/cart $0.55 x 10 = $5.50, table '10 pcs $0.60'. Two values coexist; K3 has not decided this display item.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-UNIT",
+      "url": "https://zprintpro.com/en/category/stickers/",
+      "assertion": "MOQ unit is consistent between PDP and category surfaces",
+      "expected": "10 stickers/design everywhere",
+      "observed": "PDP says 10 stickers per design; category small-batch card says '[MOQ] 10 A4'; category 'Why Choose' block says 'Ultra-Low MOQ, From 50 pcs — 50 pcs minimum'. Three unit statements coexist.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-LEAD",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "No unconditional lead-time promise remains in the small-batch cluster",
+      "expected": "0 hard day counts",
+      "observed": "Visible FAQ: 'from $0.55/pc on the small-batch line, 3-5 business days.' Also category FAQ: '1-2 day digital turnaround', 'Standard turnaround is 2-3 working days ... average sticker shipping in 2.3 days'. These are hard day counts outside the 8-string list.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-JA-1",
+      "url": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "assertion": "ja sibling page is conditionalised for delivery-day claims",
+      "expected": "0 hard '2-4 日' delivery claims",
+      "observed": "Visible 'DHL 世界配送 2-4 日' and '日本全国へ国際配送（航空便3-5日...' plus FAQ '日本全国 2-4 日配送'. The 11-25 batch conditionalised the full-width '2〜4日' variants; the live half-width '2-4 日' variants remain.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-JA-2",
+      "url": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "assertion": "The ja 'HK$89/134/196 per sheet' unit-price table has been removed",
+      "expected": "0 occurrences of that table",
+      "observed": "Table gone; replaced by 'JPY 円建て・実パラメータ連動' quote-engine lead sentence",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-JA-3",
+      "url": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "assertion": "ja small-batch page has no Chinese residue or unreplaced template variables",
+      "expected": "0 CJK-beyond-Japanese, 0 {PRODUCT_NAME}",
+      "observed": "Visible '适配行业:' (simplified), 'カート → 結算' (Traditional Chinese), and unreplaced '{PRODUCT_NAME}' in '本サービスの {PRODUCT_NAME} は...'.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-CAT-ANCHOR",
+      "url": "https://zprintpro.com/en/category/stickers/",
+      "assertion": "en stickers category title uses the approved US$0.32 anchor",
+      "expected": "title contains US$0.32, no $0.05",
+      "observed": "Title 'Small Batch Sticker Printing US$0.32 · 10 MOQ | ZprintPro'",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SB-CAT-CARD",
+      "url": "https://zprintpro.com/en/category/stickers/",
+      "assertion": "Category cards no longer show the $0.05 as-low-as anchor after the US$0.32 title change",
+      "expected": "no $0.05 on cards",
+      "observed": "Waterproof card still 'From $0.05/pc' and roll-label card 'From $0.03/sheet'. N6 caliber C option 3 only added the 'From ' prefix; it did not change numbers (deferred to 12-04 monthly).",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "WED-CAT",
+      "url": "https://zprintpro.com/zh-hk/category/wedding-invitations/",
+      "assertion": "Wedding category cards show HK$ and no NT$",
+      "expected": "HK$25-95 and HK$15-55; 0 NT$",
+      "observed": "HK$25-95 / 套起 and HK$15-55 / 套起; no NT$ visible on the category page",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "WED-PDP-CHROME",
+      "url": "https://zprintpro.com/zh-hk/product/foil-wedding-invitations/",
+      "assertion": "WI-001 PDP hero/cart use HK$25 and 50 x 25 = HK$1,250",
+      "expected": "HK$25-95 / 套; cart HK$25.00 x 50 = HK$1250.00",
+      "observed": "Hero 'HK$25-95 / 套', cart 'HK$25.00 × 50 = HK$1250.00', title has no price",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "WED-BODY",
+      "url": "https://zprintpro.com/zh-hk/product/foil-wedding-invitations/",
+      "assertion": "WI-001 body copy is currency-consistent with the HK$ chrome",
+      "expected": "0 NT$ in body",
+      "observed": "Body paragraph still reads '價格範圍為 NT$25-95 / 套'. Source: src/data/sku-seo-data.ts:2918 (zh body), :2925 (en body 'Prices run NT$25–95 per set'), :2932 (ja body 'NT$25〜95'). The symbol fix covered products.ts chrome only; the derived body still carries NT$ in all three locales.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "A1-DEFAULT",
+      "url": "https://zprintpro.com/zh-hk/product/a1-posters/",
+      "assertion": "A1 PDP default size/price is single-valued",
+      "expected": "hero, quote box and cart agree",
+      "observed": "Title still 'HK$20起' (frozen until 11-28 D2); hero 'HK$29.00-45.00 起'; cart 'HK$20.00 × 1 = HK$20.00'. Three calibers coexist (offset base vs spray range). This is the known D1/D2 item, not a new regression.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "A1-RSC",
+      "url": "https://zprintpro.com/zh-hk/product/a1-posters/",
+      "assertion": "QuoteCalculator default size is A1 (sizes[0] = a1) after the 03:1x change",
+      "expected": "RSC payload sizes[0] = a1",
+      "observed": "Text fetch does not expose the RSC sizes array; cart shows HK$20 which is consistent with an A1 offset base but cannot prove sizes[0]. Owner probe reported sizes[0]=a1; not independently re-verified here.",
+      "status": "PENDING",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "DOUJIN-CAT-ZH",
+      "url": "https://zprintpro.com/zh-hk/category/japan-doujin/",
+      "assertion": "zh doujin category has no hard rush-day promise and no ja unit/JPY on the SKU card",
+      "expected": "0 hard day counts; 0 '注文'; 0 '¥7,500'",
+      "observed": "Still live: '同人誌 5 本加急 3 天出貨'; specs '加急 2-3 天'; SKU card '[起訂] 10 注文〜' and '¥7,500〜/注文〜起'. Title still 'Comiket 24h 特急' (frozen).",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "DOUJIN-CAT-JA",
+      "url": "https://zprintpro.com/ja/category/japan-doujin/",
+      "assertion": "ja doujin category has no hard rush-day promise and uses order-start pricing",
+      "expected": "0 '5部急行3日'; no '1部￥7,500〜' per-copy wording",
+      "observed": "Still live: '同人誌5部急行3日、10部急行2日出荷'; specs '急行2-3日'; 'DHL Express 2-4日'; FAQ '同人誌は1部￥7,500〜（10部から）'; card '¥7,500〜/注文〜〜'",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "DOUJIN-CAT-EN",
+      "url": "https://zprintpro.com/en/category/japan-doujin/",
+      "assertion": "en doujin category has no hard turnaround promises and no JP yen / ja unit on the card",
+      "expected": "0 'Rush 2-3 days', 0 'Books 5 days standard', 0 '¥7,500', 0 '注文'",
+      "observed": "Still live: 'Turnaround Books 5 days standard / Stickers 3-5 days / Posters 3 days / Rush 2-3 days'; 'Cross-Border ... via DHL 2-4 Working Days'; FAQ 'DHL Express 2-4 working days'; SKU card '[MOQ] 10 注文〜' + 'From ¥7,500〜/注文〜'.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "DOUJIN-PDP-BULLETS",
+      "url": "https://zprintpro.com/ja/product/doujinshi-printing/",
+      "assertion": "ja doujin PDP bullet block is Japanese-only",
+      "expected": "0 Chinese bullets",
+      "observed": "5 Chinese bullets still live: 'Comiket 前特急対応可議（按稿件與排期報價確認）', '10 本起印,少量対応', '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天', 'FSC 認證紙材 / ISO 12647 色彩管理', '繁體中文 / 日文雙語支援 + WhatsApp 對應'.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "DOUJIN-PDP-CART",
+      "url": "https://zprintpro.com/ja/product/doujinshi-printing/",
+      "assertion": "Order-start price is not multiplied by quantity in the cart",
+      "expected": "cart shows the order-start price once, or a real per-copy price",
+      "observed": "Body says '注文開始価格 ¥7,500〜（1部あたりの単価ではありません）' but cart renders '¥7,500 × 10 = ¥75,000'. Same SKU card says '10注文〜'. D-2 cart logic still open; queue explicitly excludes it pending K3.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "DOUJIN-PDP-WA",
+      "url": "https://zprintpro.com/ja/product/doujinshi-printing/",
+      "assertion": "ja doujin WhatsApp prefill carries doujin context, not postcard context",
+      "expected": "prefill mentions 同人誌 / 部数 / 製本",
+      "observed": "Prefill still says '商品【ポストカードセット】／サイズ【A6】／数量【20セット】／仕様【両面印刷・OPPスリーブ封入】' on the doujin PDP.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "ADAPTER-TEMPLATE",
+      "url": "https://zprintpro.com/zh-hk/category/wedding-invitations/",
+      "assertion": "zh-hk customer-visible copy uses Traditional Chinese only",
+      "expected": "0 simplified '适配行业'",
+      "observed": "Simplified '适配行业' is a template-level leak: 17 matching lines in src/data/products.ts (e.g. :957 small-batch, :2552 A1, :1919 flyers; some lines carry 2 variants) injected into zh-hk, en and ja description fields; src/lib/seo.ts:861 also appends '适配行业:' to zh-hk category meta descriptions. Visible on en SB, ja SB, zh A1 (the zh wedding PDP renders the Traditional '適配行業' variant, so the leak is per-string).",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "TITLE-D1",
+      "url": "https://zprintpro.com/ja/category/japan-doujin/",
+      "assertion": "Unconditional 24h/free-shipping titles are not live",
+      "expected": "0 'コミケ24時間特急', 0 'Free Shipping' in title/H1",
+      "observed": "ja title '同人誌印刷 コミケ24時間特急...' and en H1 'Small Batch Doujinshi Printing Free Shipping · 10 MOQ' remain. Known 11-23 title freeze; not a new regression.",
+      "status": "FAIL",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "WA-NUMBER",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "WhatsApp entry points use the real +86 198 8085 1334 number",
+      "expected": "wa.me/8619880851334",
+      "observed": "wa.me/8619880851334 with size/quantity/material/turnaround fields on the en PDP; header/footer use the same number",
+      "status": "PASS",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "HEAD-ASSERT",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "assertion": "canonical / hreflang / JSON-LD are parseable and correct",
+      "expected": "read <head>",
+      "observed": "Text-only fetch does not expose <head>; no claim made",
+      "status": "NOT_APPLICABLE",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SCHED-WATCHDOG",
+      "url": ".hermes/logs/lane-status.json",
+      "assertion": "ZP-cron-watchdog's 2026-11-26 natural window is accounted for",
+      "expected": "a 06:43 four-way reconciliation entry (design SSoT)",
+      "observed": "No 2026-11-26 entry; last alert block is 2026-11-25 18:07:16 and the last execution-report row is 2026-11-26 03:01:05 (manual verification). Critically, lane-status shows the scheduler Last 2026-11-25 18:07:00 / Next 2026-11-26 18:07:00, i.e. the registered next fire is 18:07, not the 06:43 design value. The 06:43 design window has no product, but the registered window is still ahead; record the design-vs-registry drift, do not score 06:43 as a proven task failure.",
+      "status": "PENDING",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SCHED-K3",
+      "url": ".hermes/logs/run-context-ZP-k3-review.json",
+      "assertion": "ZP-k3-review's 12:05 window started with a clean preflight and lock",
+      "expected": "preflight ok, lock acquired",
+      "observed": "generated_at 2026-11-26 12:05:02, preflight 10/10 ok, lane.lock pid 18848, key 4791f7f6cac42942. Completion is host-side and not claimed here.",
+      "status": "PENDING",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SCHED-DAILY",
+      "url": ".hermes/logs/lane-status.json",
+      "assertion": "ZP-daily-content 2026-11-26 18:17 window",
+      "expected": "pending until 18:17",
+      "observed": "PENDING; last run 2026-11-25 18:21:56 NO_OP (bus #149), last report 2026-11-25-ZP-daily-content.md",
+      "status": "PENDING",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SCHED-WEEKLY",
+      "url": ".hermes/logs/lane-status.json",
+      "assertion": "ZP-weekly-meta 2026-11-20 failure is closed",
+      "expected": "explained and dispositioned",
+      "observed": "Still FAILED in the bus: wrapper_exit 4, guard rejected 9 production files, pushed=false. Next window 2026-11-27 19:23. A draft explanation exists (draft-20261126-guard-9-files-explanation.md) but no owner closure.",
+      "status": "FAILED",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    },
+    {
+      "id": "SCHED-BLOG",
+      "url": ".hermes/logs/lane-status.json",
+      "assertion": "ZP-blog-deepfix scheduler is healthy",
+      "expected": "LastTaskResult=0",
+      "observed": "LastTaskResult=2147946720 (0x800710E0) on 2026-11-22 16:29:21; next 2026-11-28 20:17; owner action K3-admin",
+      "status": "FAILED",
+      "evidence_time": "session 2026-11-26T12:05+08:00"
+    }
+  ],
+  "summary": {
+    "total_items": 40,
+    "PASS": 15,
+    "FAIL": 18,
+    "PENDING": 4,
+    "NOT_APPLICABLE": 1,
+    "MISSING": 0,
+    "FAILED": 2,
+    "verdict_note": "The READY verification task cannot be flipped to PASS: 1 of the 5 approved strings (full refund) is still visible, en/ja small-batch pages still show Chinese residue, and the SB/ja half-width lead-time variants survive. Several failures are shared-component or pending-K3 items, not owner regressions; they are recorded, not re-opened. The watchdog 06:43 design window has no product, but the registry shows Next 18:07, so this is a drift to record, not a proven task failure."
+  },
+  "unverified_boundaries": [
+    "canonical / hreflang / JSON-LD require <head> and were not asserted",
+    "A1 sizes[0]=a1 is not visible in the text fetch",
+    "RSC payload duplicates (e.g. zh source keys on en page) were not treated as visible defects",
+    "Cloudflare production deployment ID was inferred from check-runs + live content, not read from a deployment API"
+  ]
+}
