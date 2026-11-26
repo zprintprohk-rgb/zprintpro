@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T12:05:04+0800",
+  "generated_at": "2026-11-26T12:23:29+0800",
   "run_date": "2026-11-26",
   "board_path": ".hermes/logs/coordination-board.json",
   "policy": {
@@ -1258,7 +1258,7 @@
         "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
         "rows": {}
       },
-      "owner_lane": "ZP-daily-content（批准后）",
+      "owner_lane": "ZP-daily-content",
       "status": "READY",
       "priority": 88.0,
       "upstream_inputs": [
@@ -1288,7 +1288,7 @@
       "retry_at": null,
       "exit_criteria": "① 12 页直答块在线且首 150 字三问直答 ② WA 预填 7 字段全页在位 ③ 文案层 GSC/探针黑话 0 命中（门童 #16）+ 编造数字 0 命中（门童 #1）④ 无新增硬承诺（两工具交叉复扫）⑤ 门童全量 0 red + tsc 基线不升 ⑥ online_verify 由 k3-review 独立翻转 ⑦ 下轮 W4 探针复测直答块形态",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
-      "result": "K3 2026-11-26 02:29 拍板：批准直答块方案与排程（门禁①满足），批2 定位正确性/承接层「先行」不等五条件门；A1 直答块选 Variant A（产线标注稿）。批2 内容基准=重要文件/2026-11-26-g1-direct-answer-blocks-3pages-draft-v1.md（页1 food-boxes/页2 a2-posters/页4 transparent-stickers 成稿，含竞品对照与逐页实验卡；v1.1 已修正 transparent 5-7 工作天、A2 生产以报价确认，与母提案真值矩阵对齐）+ 母提案 proposal-20261125-g1-direct-answer-blocks.md（页5/6/7/11/12 沿用三行式模板同批）。18:00 截单句：K3 批准含 18:00 之草案且来源已标=线上 rush 服务页现行口径，视为门禁④ SSoT 确认；全部保留条件化后缀，k3-review 上线独立复核。仍保留的门槛：批1（页3/8/9/10）价格位回填继续等 PRICE-TRUTH-GAPS 四项真值（门禁②）；title/meta 冻结面不动（门禁⑤，A1 title 去价属裁决④执行面，11-28 D2 解冻后另批）；批2 每页单变量分批落地（food-boxes→transparent→a2→其余5页），不走一次全上。执行顺序建议：批2 今晚 18:17 daily 起按页分批；批3 口径问（transparent 5-7 vs removable 3-5）入 K3 问清单。",
+      "result": "K3 2026-11-26 02:29 拍板：批准直答块方案与排程（门禁①满足），批2 定位正确性/承接层「先行」不等五条件门；A1 直答块选 Variant A（产线标注稿）。批2 内容基准=重要文件/2026-11-26-g1-direct-answer-blocks-3pages-draft-v1.md（页1 food-boxes/页2 a2-posters/页4 transparent-stickers 成稿，含竞品对照与逐页实验卡；v1.1 已修正 transparent 5-7 工作天、A2 生产以报价确认，与母提案真值矩阵对齐）+ 母提案 proposal-20261125-g1-direct-answer-blocks.md（页5/6/7/11/12 沿用三行式模板同批）。18:00 截单句：K3 批准含 18:00 之草案且来源已标=线上 rush 服务页现行口径，视为门禁④ SSoT 确认；全部保留条件化后缀，k3-review 上线独立复核。仍保留的门槛：批1（页3/8/9/10）价格位回填继续等 PRICE-TRUTH-GAPS 四项真值（门禁②）；title/meta 冻结面不动（门禁⑤，A1 title 去价属裁决④执行面，11-28 D2 解冻后另批）；批2 每页单变量分批落地（food-boxes→transparent→a2→其余5页），不走一次全上。执行顺序建议：批2 今晚 18:17 daily 起按页分批；批3 口径问（transparent 5-7 vs removable 3-5）入 K3 问清单。【預檢 2026-11-26 12:2x】owner_lane 由「ZP-daily-content（批准后）」正規化（批准已於 02:29 記錄，後綴屬殘留標註導致協同板精確匹配落空）；草案升 v1.2（四處真值修正：30-50% 無源刪除、A1 急件 HK$15→16、transparent en 2-3d→5-7d、A2 300 張 2.2→2.24），預檢報告 .hermes/logs/2026-11-26-g1-batch2-precheck.md。",
       "execution_commit": null,
       "decision_record": null
     },
@@ -3402,7 +3402,8 @@
     ],
     "ZP-daily-content": [
       "FIX-20261125-SMALLBATCH-WORDING-RESIDUAL",
-      "FIX-20261126-DOUJIN-SEMANTIC-FIX"
+      "FIX-20261126-DOUJIN-SEMANTIC-FIX",
+      "FIX-20261125-G1-DIRECT-ANSWER-BLOCKS"
     ],
     "ZP-blog-deepfix": [
       "FIX-20261030-BLOG-CERT-PHRASES"
@@ -4018,6 +4019,52 @@
         "exit_criteria": "① audit A/B/C/D 表可执行类锚点在线复探 0 命中（语义类非精确串）② 不引入新硬承诺（双工具交叉复扫）③ sku-seo-data.ts 改动走 CSV 重生成且计数断言过 ④ 门童全量 0 red + tsc 基线不升 ⑤ online_verify 由 k3-review 独立翻转",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
         "result": null,
+        "execution_commit": null,
+        "decision_record": null
+      },
+      {
+        "task_id": "FIX-20261125-G1-DIRECT-ANSWER-BLOCKS",
+        "source": "strategy_task_queue",
+        "cluster": "zh-hk+en+ja",
+        "query": [],
+        "baseline": {
+          "status": "NO_CURRENT_BASELINE",
+          "scope": "all-country GSC query rows; no query/page/country join inferred",
+          "window": "2026-10-14..2026-11-10",
+          "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+          "rows": {}
+        },
+        "owner_lane": "ZP-daily-content",
+        "status": "READY",
+        "priority": 88.0,
+        "upstream_inputs": [
+          "C1 簇答案层实证: 我方 FAQ 文本单元 3/3 跑进答案层（11-20 AIO 引用 + 11-25 两跑摘要位）——直答块=同形态复制",
+          "真值核查 §E: ⑤WA 预填【檔案】【交貨地】12/12 页系统性缺失；④生产/送达分开 8/12；③18:00 截单 12/12 不可直答",
+          "直答块文案红线: 不新增硬承诺（18:00 待 K3 SSoT）/不编造数字/价格矛盾页占位"
+        ],
+        "approval_gate": "PENDING_K3_APPROVAL — ① K3 批准直答块方案与排程 ② 批 1 价格位回填必须等 FIX-20261125-PRICE-TRUTH-GAPS 真值 ③ 批 2 八页（无价格矛盾）可与批 1 分离执行 ④ 18:00 截单句在 K3 确认 SSoT 口径前禁止写入 ⑤ title/meta 冻结面不动（title 触及处需豁免确认）",
+        "write_scope": [
+          "src/data/product-faqs.ts（或直答块数据源）",
+          "src/data/pillar-content.ts",
+          "src/data/products-content.ts",
+          "src/data/category-conversion-blocks.ts",
+          "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx（WA 预填模板）",
+          "（最终 write_scope 以提案 §二逐页落点为准，执行前由车道确认）"
+        ],
+        "production_deploy": null,
+        "online_verify": null,
+        "retest": {
+          "next_check": "daily 18:17 消费批2 首页（food-boxes）；k3-review 独立 online_verify 翻转；W4 探针复测直答块形态",
+          "required_windows": [
+            "7d",
+            "14d",
+            "28d"
+          ]
+        },
+        "retry_at": null,
+        "exit_criteria": "① 12 页直答块在线且首 150 字三问直答 ② WA 预填 7 字段全页在位 ③ 文案层 GSC/探针黑话 0 命中（门童 #16）+ 编造数字 0 命中（门童 #1）④ 无新增硬承诺（两工具交叉复扫）⑤ 门童全量 0 red + tsc 基线不升 ⑥ online_verify 由 k3-review 独立翻转 ⑦ 下轮 W4 探针复测直答块形态",
+        "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
+        "result": "K3 2026-11-26 02:29 拍板：批准直答块方案与排程（门禁①满足），批2 定位正确性/承接层「先行」不等五条件门；A1 直答块选 Variant A（产线标注稿）。批2 内容基准=重要文件/2026-11-26-g1-direct-answer-blocks-3pages-draft-v1.md（页1 food-boxes/页2 a2-posters/页4 transparent-stickers 成稿，含竞品对照与逐页实验卡；v1.1 已修正 transparent 5-7 工作天、A2 生产以报价确认，与母提案真值矩阵对齐）+ 母提案 proposal-20261125-g1-direct-answer-blocks.md（页5/6/7/11/12 沿用三行式模板同批）。18:00 截单句：K3 批准含 18:00 之草案且来源已标=线上 rush 服务页现行口径，视为门禁④ SSoT 确认；全部保留条件化后缀，k3-review 上线独立复核。仍保留的门槛：批1（页3/8/9/10）价格位回填继续等 PRICE-TRUTH-GAPS 四项真值（门禁②）；title/meta 冻结面不动（门禁⑤，A1 title 去价属裁决④执行面，11-28 D2 解冻后另批）；批2 每页单变量分批落地（food-boxes→transparent→a2→其余5页），不走一次全上。执行顺序建议：批2 今晚 18:17 daily 起按页分批；批3 口径问（transparent 5-7 vs removable 3-5）入 K3 问清单。【預檢 2026-11-26 12:2x】owner_lane 由「ZP-daily-content（批准后）」正規化（批准已於 02:29 記錄，後綴屬殘留標註導致協同板精確匹配落空）；草案升 v1.2（四處真值修正：30-50% 無源刪除、A1 急件 HK$15→16、transparent en 2-3d→5-7d、A2 300 張 2.2→2.24），預檢報告 .hermes/logs/2026-11-26-g1-batch2-precheck.md。",
         "execution_commit": null,
         "decision_record": null
       }
