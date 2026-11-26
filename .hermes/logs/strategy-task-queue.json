@@ -1644,9 +1644,30 @@
       ],
       "approval_gate": "APPROVED — 方向 11-13 D1/D6 + 11-26 02:48；擴批 K3 11-27 05:34「三條併入」；等 11-28 D2 解凍窗口",
       "owner_lane": "manual-session 或 daily（窗口開後）",
-      "status": "READY",
+      "status": "DONE",
       "next_check": "11-28 D2 解凍窗口開即執行；門禁 6 項 + live 探針 + 單變量",
-      "execution_card": "重要文件/2026-11-27-a1-title-face-d2-unfreeze-execution-card.md"
+      "execution_card": "重要文件/2026-11-27-a1-title-face-d2-unfreeze-execution-card.md",
+      "done_at": "2026-11-27T06:20:00+08:00",
+      "result": "提前執行完成（K3 11-27 05:41 拍板）：commit 42dd2e43 已 push 並 live 驗收六 URL 全過——a1-posters 三語新 title 生效（zh「A1 大幅海報印刷 厚紙柯式 | 1張起印 4小時打稿」/ en「A1 Large Posters | 594×841mm Offset | 1 MOQ」/ ja「A1 ポスター | 防水 DHL配送 オフセット | 1枚〜」），舊 HK$20起/$4.60(title/meta)/¥600〜 字面量歸零；a2 zh 補「1-2天」、art zh 補「A1/A2」生效；G1 頁3 直答塊（Variant A）已上 a1-posters zh-hk 首屏；posters 品類 WA 模板三語 尺寸【A2】→【A1】對齊 A1 默認檔。small-bags ja title/body 已修但登記：該 SKU 無 PDP（308→/ja/category/paper-bags/），屬死面衛生零 live 影響。執行報告 .hermes/logs/2026-11-27-manual-executor-a1-title-d2-batch.md。"
+    },
+    {
+      "task_id": "FIX-20261127-WARN27-BATCH1",
+      "source_strategy": "K3 11-27 06:11「WARN 其餘 27 條分組 + 有利首頁動作可立即上線」",
+      "market": "zh-hk",
+      "target": "孤兒鍵 small-bags 刪除（3 WARN 死面）+ premium/matte/rounded-corner greeting-cards zh title MOQ 真值化（100張起→10張起+basePrice HK$1/1.1，消 4 MOQ_DRIFT）",
+      "evidence": [
+        "sku-title-v5-audit-2026-11-26.json（27→20）",
+        "products.ts minQuantity=10 / basePrice 1·1.1 / price_range HK$100-180每100張",
+        "探針：small-bags PDP 308→category 死面實證"
+      ],
+      "score": "P2",
+      "score_model": "correctness",
+      "write_scope": "zprintpro-sku-seo-data.csv + src/data/sku-seo-data.ts（生成器鏈）",
+      "approval_gate": "K3 06:11 開放式批准（可立即上線類）",
+      "owner_lane": "manual",
+      "status": "DONE",
+      "done_at": "2026-11-27T06:40:00+08:00",
+      "result": "WARN 27→20（HARD=0）：small-bags 孤兒鍵鍵刪除（實證 308 死面）；三卡 zh title 改 10張起 HK$1起/HK$1.1起 真值口值口徑（當量 56/56/51 全過 50-57）。剩 20 = LONGTAIL 13（待 GSC 代理考古）+ 凍結 2 + fruit-food-label-stickers（被審計誤鍵為 seo）5（三語 500/100/50 矛盾，待 K3 價格真值裁決）。重要發現：audit 的 seo×5 實為 fruit-food-label-stickers 0-indent 畸形鍵被誤讀，其為 live PDP 真矛盾，登 N7。"
     }
   ],
   "last_review": "2026-11-26T03:05:00+08:00",

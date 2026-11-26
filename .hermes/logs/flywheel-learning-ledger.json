@@ -880,7 +880,7 @@
     "2026-11-24": "W4 GEO 探针第 4 轮（固定问题集，11-10/17/24 节奏）；nengajo 3 TBC 补拍；月曆/利是封缺口已审计待 K3（§3.5）",
     "2026-11-25": "alignment pack 交付 + nightly: small-batch 5 条已批残留批(价格值待 K3) + 貼紙第八窗 plateau 判定 HOLD; 11-26=doujin 语义类补扫; 11-27=weekly 14d 窗 + guard 9 文件解释; 12-01=数据盘点日(非算法终审)"
   },
-  "updated_at": "2026-11-27T05:00:00+08:00",
+  "updated_at": "2026-11-27T06:35:00+08:00",
   "update_log": [
     {
       "at": "2026-11-19T23:25:00+08:00",
@@ -1005,6 +1005,26 @@
       "data_source": "src/ 靜態掃描 2026-11-27（grep 退/退款/refund/return × 7/14，逐條人工排除交貨/審批/付款語境）；live 探針（帶瀏覽器 UA）",
       "calibration_date": "2026-11-27",
       "commit": "57cca2cf"
+    },
+    {
+      "at": "2026-11-27T06:20:00+08:00",
+      "by": "manual-session-1127-a1-title-d2-batch",
+      "summary": "A1 title 面 D2 批提前執行閉合（K3 11-27 05:41「調成現在就或下一個 push 窗口就上線」）。42dd2e43：a1-posters 三語 title 去價+柯式產線標注、a2/art zh-hk BAND_FILL 補滿、small-bags ja title/body 修復、posters 品類 WA 模板三語 A2→A1、G1 批1 頁3 直答塊（Variant A）落 a1-posters zh-hk 首屏。live 六 URL 全過。三條學習：① Python 寫 CSV/ts 必須 io.open(newline='')+indent=2，否則生成器 diff 噪點；② small-bags 與 seo 是 sku-seo-data 僅存的 2 個 ts-only 孤兒鍵（CSV 83 行/ts 85 鍵），無 PDP 無 live 面，其 8 梈 WARN 屬死面噪音；③ 品類級 WA 模板（category-conversion-blocks whatsappTemplates[0]）由 ProductPageV9 全品類 PDP 共享，默認尺寸必須與品類旗艦 SKU 默認檔一致（本次 A1）。N5/N6 維持登記待 12-04 復盤。",
+      "sources": [
+        "重要文件/2026-11-27-a1-title-face-d2-unfreeze-execution-card.md",
+        ".hermes/logs/sku-title-v5-audit-2026-11-26.json",
+        "重要文件/2026-11-26-g1-direct-answer-blocks-3pages-draft-v1.md"
+      ]
+    },
+    {
+      "at": "2026-11-27T06:35:00+08:00",
+      "by": "manual-session-1127-warn27-batch1",
+      "summary": "WARN 27→20 批（K3 06:11 指令）。① 刪 small-bags 真孤兒鍵（308 死面實證）；② 三卡 zh title MOQ 真值化（10張起 + basePrice HK$1/1.1，當量 56/56/51）；③ 重大發現：審計「seo」槽 = fruit-food-label-stickers 0-indent 歷史畸形鍵被門童誤讀，其為 live PDP 且三語價格矛盾（zh 500張/en 100枚/ja 100枚 + FAQ 500），登 N7 待 K3 裁決。教訓：sku-seo-data 畸形縮進鍵會造虛假審計槽；正則刪鍵必帶前導空格+鄰鍵鄰鍵斷言；誤刪靠 _bak 備份零損恢復。",
+      "sources": [
+        ".hermes/logs/sku-title-v5-audit-2026-11-26.json",
+        "products.ts",
+        "live 308 探針實測"
+      ]
     }
   ],
   "retest_gate_2026_11_20": {

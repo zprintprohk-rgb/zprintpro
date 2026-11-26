@@ -491,42 +491,6 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "ja": "ハンドルバッグ / 高耐久 | ハンドルバッグ印刷 高耐久素材 100個〜 | ZprintPro"
     }
   },
-  "small-bags": {
-    "name": {
-      "zh-hk": "小號紙袋",
-      "en": "Small Bags",
-      "ja": "小判紙袋"
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "小號紙袋印刷｜多尺寸 白卡牛皮｜100個起 DHL 2-4天｜智印港",
-        "description": "小號紙袋/小號紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": "小號紙袋印刷 | 首飾化妝品 小巧尺寸",
-        "keywords": ["小號紙袋","紙袋","紙袋訂製"],
-        "body": "小號紙袋 100 個起印。選用白卡/牛皮紙/銅版紙，提供4 色 CMYK 全彩印刷、logo 圖案自由設計。下單後5-7 個工作天交貨，港九新界免費速遞。"
-      },
-      "en": {
-        "title": "Custom Small Paper Bags | 100 MOQ | Free Ship | ZprintPro",
-        "description": "Custom small paper bags for jewelry and cosmetics, 100 MOQ. White card / kraft / coated stock, multi-size, 4-color CMYK. Free design mockup; production, shipping and delivery timing are confirmed at quote. 30-second AI quote.",
-        "h1": "Small Bags 100+ | Premium Custom | ZprintPro",
-        "keywords": ["small paper bags","custom small bags","small bags printing online","small bags free shipping","small bags USD","bulk small bags","small bags DHL","bespoke small bags","small bags wholesale","small bags pricing"],
-        "body": "ZprintPro Small Bags for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC-certified. Same-day file confirmation by 11am HKT."
-      },
-      "ja": {
-        "title": "小判紙袋｜100個〜 白カード 多サイズ｜DHL 2-4日｜ZprintPro",
-        "description": "小判紙袋は ZprintPro の紙袋印刷。白カード/クラフト/コート紙、マルチサイズ対応。100個〜、4色 CMYK、1 時間無料デザイン校正。DHL で日本へ 2-4 日配送、30 秒 AI 見積もり。",
-        "h1": "小判紙袋 | アクセサリー 小物包装",
-        "keywords": ["小型紙袋","小型紙袋 印刷","small bags"],
-        "body": "小判紙袋は 100 個から承ります。白カード/クラフト/コート紙、マルチサイズ対応、4色 CMYK 全彩印刷、ロゴ・デザイン自由。入稿後 1 時間以内に無料デザイン校正。DHL で日本へ 2-4 日配送、30 秒 AI 見積もり。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": "紙袋的最小訂購量是多少？",
-      "en": "Custom Small Paper Bags for pet food and brand labels — ZprintPro",
-      "ja": "可以定制紙袋的尺寸和顏色嗎？"
-    }
-  },
   "large-bags": {
     "name": {
       "zh-hk": "大號紙袋",
@@ -2659,14 +2623,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "高級賀卡印刷 燙金・局部UV 100張起 HK$100起 | 智印港",
+        "title": "高級賀卡印刷 燙金局部UV 10張起 HK$1起 DHL 2-4天 | 智印港",
         "description": "高級賀卡印刷：300g 銅版紙或啞粉藝術紙，啞膠／光膠覆膜、局部UV、燙金、圓角模切多種工藝任選，自訂尺寸與刀模均可。127×178mm 標準，10 張起印 HK$100 起。適用聖誕卡、新年卡、婚禮感謝卡及企業賀卡，可印 LOGO 與品牌配色，免費設計打稿，即日報價，量大優惠歡迎 WhatsApp 查詢。",
         "h1": "高級賀卡定制印刷 | 燙金・UV・啞膜工藝",
         "keywords": ["高級賀卡","賀卡印刷","聖誕卡定制","新年卡印刷","婚禮感謝卡","節日賀卡","燙金賀卡","局部UV賀卡","企業賀卡定制","酒店歡迎卡"],
         "body": "高級賀卡採用 300g 銅版紙或 250g 啞粉藝術紙，四色柯式印刷呈現飽滿細膩的色彩，可搭配啞膠、光膠、燙金、局部 UV 等多種工藝，質感高級、色彩豐富，是節日與商務場合最通用的賀卡印刷選擇。無論聖誕卡、新年卡、婚禮感謝卡還是節日禮品卡，都能找到合適的呈現方式。\n\n婚慶、酒店迎賓、品牌活動與企業定制是高級賀卡最常出現的場景：婚禮感謝卡講究莊重溫馨，酒店與品牌活動需要體面的問候卡，企業節日定制則重視統一形象與批量品質。標準尺寸 127×178mm，R3mm 圓角可選，覆膜保護表面之餘亦可疊加工藝點綴，適合對品質與形象有要求的客戶批量訂製，開印前免費確認設計與樣品，多款工藝組合亦可在打樣階段逐一比較，成品更貼合預期。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化；如疊加燙金或局部 UV，請另外提供獨立黑稿（K100）標示加工位置。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。\n\n收費透明：高級賀卡按 HK$100-180/100張 計價，最低訂量 100 張，港幣結算，批量訂購價格更相宜，歡迎查詢批量報價。"
       },
       "en": {
-        "title": "Premium Greeting Cards 100pcs Foil & UV | ZprintPro",
+        "title": "Premium Greeting Cards | 10 MOQ Foil & UV | ZprintPro",
         "description": "Premium greeting cards: foil, spot UV & matte lamination, 300gsm. 127×178mm, from 100 pcs HK$100. Xmas, New Year, wedding & corporate. Free proof, quick quote.",
         "h1": "Premium Greeting Cards | Foil, UV & Lamination Finishes",
         "keywords": ["premium greeting cards","custom greeting cards printing","christmas cards printing","new year cards","wedding thank you cards","holiday gift cards","foil stamped greeting cards","spot uv greeting cards","corporate greeting cards","bulk greeting cards"],
@@ -2803,7 +2767,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "啞膜賀卡印刷 防指紋・柔順 100張起 HK$110起 | 智印港",
+        "title": "啞膜賀卡印刷 防指紋柔順 10張起 HK$1.1起 免費打稿 | 智印港",
         "description": "啞膜賀卡印刷：柔順啞面、防指紋、低調高級質感，長久保存不易顯舊。300g 啞粉紙或環保紙，127×178mm 標準，10 張起印 HK$110 起。適用聖誕卡、新年卡、感謝卡及企業賀卡，可印 LOGO 與品牌配色，亦可選光膠或燙金升級，免費設計打稿，即日報價，量大優惠歡迎 WhatsApp 查詢。",
         "h1": "啞膜賀卡定制 | 柔順手感・低調高級",
         "keywords": ["啞膜賀卡","啞面賀卡","磨砂賀卡","防指紋賀卡","極簡賀卡","聖誕卡啞膜","新年賀卡","感謝卡印刷","啞膠賀卡","高級啞面卡"],
@@ -2839,7 +2803,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "圓角賀卡印刷 R3mm模切 100張起 HK$100起 即日 | 智印港",
+        "title": "圓角賀卡印刷 R3mm模切 10張起印 HK$1起 即日 | 智印港",
         "description": "圓角賀卡印刷：R3mm 圓角模切，柔和觸感不翹角，輕巧可愛。300g 銅版紙或藝術紙，127×178mm 標準，10 張起印 HK$100 起。適用生日卡、聖誕卡、新年卡、感謝卡及品牌宣傳卡，可印 LOGO 與品牌配色，亦可選燙金或 UV 升級，免費設計打稿，即日報價，量大優惠歡迎 WhatsApp 查詢。",
         "h1": "圓角賀卡定制 | R3mm 圓角模切・不翹角",
         "keywords": ["圓角賀卡","圓角卡片","R3圓角","模切賀卡","可愛賀卡","生日卡定制","聖誕卡圓角","感謝卡印刷","圓角模切","造型賀卡"],

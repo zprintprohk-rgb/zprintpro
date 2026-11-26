@@ -1,5 +1,26 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## ✅ 已释放 — 2026-11-27 06:2x Kimi Work 人手会话（A1 title 面 D2 批提前執行，K3 11-27 05:41 拍板「調成現在就或下一個 push 窗口就上線」）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 11-27 05:34「三條併入」+ 11-27 05:41「可以調成現在就或是下一個 push 時間窗口就上線」（D2 解凍提前） |
+| **写入范围** | `zprintpro-sku-seo-data.csv`（a1-posters 三語 title + a2/art zh-hk）→ 生成器 → `src/data/sku-seo-data.ts`（small-bags ja title+body ts 直改）；`src/data/category-conversion-blocks.ts`（posters 品類 WA 模板三語 A2→A1）；`src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx`（a1-posters zh-hk G1 直答塊） |
+| **禁止范围** | 不動 products.ts title_zh（legacy 無渲染消費點，已核）；不動 pricing.ts:1016；不動凍結槽 certificates/foil-stickers |
+| **双条件核验** | ① 开工 `src/` 无 MM、无 staged 删除、`lane.lock` 不存在、SESSION_LOCK 顶部全部已释放；② 最近 src 提交 = 11-27 05:1x（57cca2cf），至开工静默 >25 min |
+| **释放结果** | tsc 0 · title-v5 HARD=0 / title-band 0 硬攔 · brand-mentions strict / 六門禁 / encoding 全綠；commit 42dd2e43（4 files +29/-14）push → CF build success → live 六 URL 全過（a1 三語新 title 生效、舊價字面量=0、直答塊在屏、WA 三語 A1 預填、29-45 錨在）；登記：small-bags=死面衛生（308→category）、seo 鍵=死面副本；賬本 #18 + 隊列 FIX-20261128-A1-TITLE-D2-UNFREEZE 翻 DONE + 執行報告落盤。 |
+
+## 🔒 持有中 — 2026-11-27 06:2x Kimi Work 人手会话（WARN 27 條分組批：孤兒鍵清理 8 + 賀卡 MOQ 正確性 4，K3 06:11 指令「有利首頁動作可立即上線」）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 11-27 06:11「順手把 WARN 其餘 27 條按規則分組…如果的建议或是有利于排名首页的动作都可以立即或是下一个 push 時間窗口就上線」 |
+| **写入范围** | `src/data/sku-seo-data.ts`（刪 seo/small-bags 孤兒鍵 2 個）+ `zprintpro-sku-seo-data.csv`（premium/matte/rounded-corner greeting-cards MOQ 口徑 zh×3 + premium en×1）→ 生成器；`.hermes/logs/`（賬本/隊列/報告）、`重要文件/`（批卡） |
+| **禁止范围** | LONGTAIL_SOURCE 13 條本批不動（需 GSC query×page 代理考古，另批）；certificates 凍結槽 2 條不動；不動任何 live 價格錨 |
+| **双条件核验** | ① 开工 `src/` 无 MM、无 staged 删除、`lane.lock` 不存在、SESSION_LOCK 顶部全部已释放；② 最近 src 提交 = 11-27 06:0x（42dd2e43 本席所推），至开工静默 <30 min——同席連續批，無對端並發 |
+
 ## ✅ 已释放 — 2026-11-27 05:1x Kimi Work 人手会话（退款時窗對齊 7→14 天，方案 A，K3 11-27 05:11 拍板）
 
 | 项 | 值 |
