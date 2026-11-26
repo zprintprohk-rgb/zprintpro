@@ -880,7 +880,7 @@
     "2026-11-24": "W4 GEO 探针第 4 轮（固定问题集，11-10/17/24 节奏）；nengajo 3 TBC 补拍；月曆/利是封缺口已审计待 K3（§3.5）",
     "2026-11-25": "alignment pack 交付 + nightly: small-batch 5 条已批残留批(价格值待 K3) + 貼紙第八窗 plateau 判定 HOLD; 11-26=doujin 语义类补扫; 11-27=weekly 14d 窗 + guard 9 文件解释; 12-01=数据盘点日(非算法终审)"
   },
-  "updated_at": "2026-11-27T04:05:00+08:00",
+  "updated_at": "2026-11-27T05:00:00+08:00",
   "update_log": [
     {
       "at": "2026-11-19T23:25:00+08:00",
@@ -985,6 +985,17 @@
         "live probes 2026-11-27 04:0x",
         ".hermes/logs/2026-11-27-manual-executor-d1d2d3-wi-truth-batch.md",
         "策略隊列 FIX-20261127-D1D2D3-WI-TRUTH-BATCH / FIX-20261127-FULL-REFUND-SITEWIDE / FIX-20261125-SMALLBATCH-WORDING-RESIDUAL"
+      ]
+    },
+    {
+      "at": "2026-11-27T05:00:00+08:00",
+      "by": "manual-session-1127-full-refund-2A-batch",
+      "summary": "FULL-REFUND 全站條件化批閉合（K3 ②-A 拍板：回「②-A（推薦）…按最優推薦方案繼續下一步」）。180 處無條件退款/滿意度承諾改為 legal 對齊口徑（品質缺陷→免費重印或全額退款），13 文件：9 組件（ProductPageV9 trustGuarantee+metaRows 三語 / TrustBadgeBlock / WhyChooseUs / ProductWhyChooseUs / FreeSampleBanner / HowItWorks×2 / TrustBadges / TrustWaterfall）+ 4 數據/SEO（products-content 模板 129 處 / category-seo-content 5 / product-faqs 6 / seo.ts doujin en）。絕對詞（100% satisfaction/risk-free/not satisfied/100%滿意/満足保証）全清；打樣費退款明確化；RushDeliveryFAQ 我方原因條件保留（95% 數字另案 §0.23）。執行中兩輪掃描：首輪 48 處後複掃發現 products-content 模板重複類 132 處 + HowItWorks subtitle 漏網 + seo.ts doujin，二輪補清。commit 369cd3e6 push → live 探針全過（三語首頁絕對詞=0/新口徑=2、en PDP trustGuarantee=2/14天窗口=2、類目卡=2）。",
+      "evidence": [
+        "commit 369cd3e6 (push e4fbe208..369cd3e6)",
+        "live probes 2026-11-27 04:5x-05:0x",
+        "重要文件/2026-11-27-full-refund-three-option-ruling-material.md",
+        ".hermes/logs/2026-11-27-manual-executor-full-refund-2a-batch.md"
       ]
     }
   ],

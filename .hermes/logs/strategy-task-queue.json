@@ -1598,9 +1598,9 @@
       ],
       "approval_gate": "WAITING_K3 — 一句話三選一：① 保留現狀 ② 條件化（quote 條件下出現） ③ 全站刪除",
       "owner_lane": "manual-session（拍板後）",
-      "status": "WAITING_K3",
-      "next_check": "K3 對材料拍板（①/②-A 推薦/②-B/③）後排入下一正確性批",
-      "result": null,
+      "status": "DONE",
+      "next_check": "k3-review 12:05 獨立複探；95%+ on-time 數字校準另案",
+      "result": "EXECUTED 2026-11-27 04:5x commit 369cd3e6（K3 ②-A 拍板執行）。180 處條件化（13 文件），絕對詞全清；live 探針：三語首頁 100% satisfaction/滿意/満足=0、新口徑各=2；en PDP trustGuarantee=2、FAQ 14 天窗口=2；類目卡 Quality Defects Covered=2。RushDeliveryFAQ 我方原因條件保留（95% 數字屬 §0.23 另案已登記）。online_verify 由 k3-review 12:05 獨立翻轉。",
       "exit_criteria": "K3 拍板選項落地 + 全站 refund 語義類在線復探符合拍板口徑 + 门童全綠"
     }
   ],
