@@ -807,9 +807,9 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '印刷品質に問題があれば再印刷できますか？',
     },
     answer: {
-      'zh-hk': '智印港提供「品質問題免費重印」承諾。若成品顏色 / 裁切 / 裝訂與確認樣稿不符，我們承擔重印費用。請於收貨 7 個工作天內提交問題照片與訂單號碼，客服 2 小時內回覆處理方案。',
-      'en': 'ZprintPro offers a "Free Reprint for Quality Issues" guarantee. If color, cutting, or binding does not match the approved proof, we cover reprinting costs. Please submit issue photos and order number within 7 business days of receipt—our team responds within 2 hours.',
-      'ja': 'ZprintPro は「品質不良は無料再印刷」保証を提供。色・裁断・製本が承認サンプルと相違する場合、再印刷費用は当社負担。商品受領後 7 営業日以内に問題写真と注文番号をご提出ください、2 時間以内に対応。',
+      'zh-hk': '智印港提供「品質問題免費重印」承諾。若成品顏色 / 裁切 / 裝訂與確認樣稿不符，我們承擔重印費用。請於收貨後 14 天內提交問題照片與訂單號碼，客服 2 小時內回覆處理方案。',
+      'en': 'ZprintPro offers a "Free Reprint for Quality Issues" guarantee. If color, cutting, or binding does not match the approved proof, we cover reprinting costs. Please submit issue photos and order number within 14 days of receipt—our team responds within 2 hours.',
+      'ja': 'ZprintPro は「品質不良は無料再印刷」保証を提供。色・裁断・製本が承認サンプルと相違する場合、再印刷費用は当社負担。商品受領後 14 日以内に問題写真と注文番号をご提出ください、2 時間以内に対応。',
     },
   },
 ];
