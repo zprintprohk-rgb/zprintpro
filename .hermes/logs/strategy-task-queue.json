@@ -1622,6 +1622,29 @@
       "status": "DONE",
       "next_check": "11-28 D2 title 面解凍後正確性批合流複查",
       "result": "commit 57cca2cf push；tsc 0 err；brand-mentions strict PASS；pre-commit 門童全綠；live 探針三語首頁/PDP 14 天口徑生效"
+    },
+    {
+      "task_id": "FIX-20261128-A1-TITLE-D2-UNFREEZE",
+      "source_strategy": "K3 11-13 D1/D6「標題優先無價格常青值」+ K3 11-26 02:48 四項拍板④ A1 的 title 面遺留 + 考古報告 ④ 推薦",
+      "market": "zh-hk+en+ja",
+      "target": "a1-posters title 三語去價+柯式產線標注（消除 title HK$20起 vs 卡 29-45 矛盾）+ G1 批1 頁3 直答塊價位回填（Variant A 產線標注稿）",
+      "evidence": [
+        "重要文件/2026-11-27-a1-title-face-d2-unfreeze-execution-card.md（本卡執行載體：新 title 三語當量已算 zh 53 / en 56 / ja 57，全落 50-57 區）",
+        "title v5 審計 2026-11-26（252 槽，a1-posters 非凍結槽；凍結=certificates/foil-stickers）",
+        "G1 母提案頁3「價格矛盾→占位待 PRICE-TRUTH」——真值鏈已全通（02:48 拍板+批1 默認檔+本批 title）"
+      ],
+      "score": 80,
+      "score_model": "p0-correctness-title-truth-conflict",
+      "write_scope": [
+        "zprintpro-sku-seo-data.csv（源頭）→ csv-to-sku-seo.mjs → src/data/sku-seo-data.ts",
+        "src/data/products.ts（a1-posters title 欄位核）",
+        "a1-posters PDP 直答塊（G1 批1 頁3）+ WA 預填 A2→A1 錯配"
+      ],
+      "approval_gate": "APPROVED-DIRECTION — 方向已拍（11-13 D1/D6 + 11-26 02:48），等 11-28 D2 解凍窗口；<50 三條合流項待 K3 加拍，不答=單 SKU",
+      "owner_lane": "manual-session 或 daily（窗口開後）",
+      "status": "READY",
+      "next_check": "11-28 D2 解凍窗口開即執行；門禁 6 項 + live 探針 + 單變量",
+      "execution_card": "重要文件/2026-11-27-a1-title-face-d2-unfreeze-execution-card.md"
     }
   ],
   "last_review": "2026-11-26T03:05:00+08:00",
