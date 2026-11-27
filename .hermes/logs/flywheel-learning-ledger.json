@@ -1070,6 +1070,17 @@
     "sku-seo-data.ts eco-flyers L746（全文 0 處「海報」）"
    ],
    "calibrated_at": "2026-11-27T14:50:00+08:00"
+  },
+  {
+   "at": "2026-11-27T15:40:00+08:00",
+   "by": "manual-session-1127-q4-homepage-commercial-words",
+   "summary": "批 Q4（K3 14:49 拍板，今日收官批）：zh-hk 首頁商業詞權重批閉合，live 5/5 PASS。基線：印刷公司 i304 c5 全站 B2B 點擊王（guide blog i257 r31 主錨 + 首頁 i46 r29.7 CTR 8.7% 最高）、香港印刷 i83 c2（首頁 i80 r11.5）。首頁 title 原本已含「香港印刷公司」非缺口；真缺口 4 處已補——① MainCategoryEntry AEO 直答句句首加實體聲明「[品牌]是一間香港印刷公司」（GEO 實體歸一）；② HERO_H1_VARIANTS A/B 雙變體同補印刷公司/香港印刷公司（sr-only h1 亦計權）；③ home description 首句改「[品牌]是香港印刷公司」精確詞前置；④ guide blog（印刷公司主錨）加回鏈首頁 ×2（FAQ [品牌]錨 + 相關服務首條「香港印刷公司[品牌]」錨），權重回流。單變量 zh-hk，en/ja 零改動。commit 75c0484c + f7ba33e2（SESSION_LOCK 964 行歷史誤覆寫恢復）→ push → live 5/5。機制入賬：① 首頁商業詞槓桿序 title>h1>AEO 實體句>desc 首句>高權 blog 回鏈，title 已滿時回鏈是主槓桿；② 反審門童 #3 掃描含 .tsx 註釋，zh-hk 文件註釋也不得含英文品牌名字面量（首 commit 觸發已改寫）；③ blog-data JSON 修改禁 json.dumps 重序列化（縮進假 diff 1762 行），必須原始字符串替換。7d 復測門 12-04：印刷公司首頁 r29.7→≤15、香港印刷 r11.5→P1、guide r31→≤20；達標複製 en printing company 系 / ja 印刷会社 系。",
+   "sources": [
+    "gsc_data_qp_90d.csv（90d query×page；印刷公司 i304 c5 / 香港印刷 i83 c2 逐頁錨位）",
+    "重要文件/2026-11-27-query-page-anchor-audit-and-g2g3-priority.md（P1-A 行動批）",
+    ".hermes/logs/2026-11-27-manual-executor-q4-homepage-commercial-words.md"
+   ],
+   "calibrated_at": "2026-11-27T15:40:00+08:00"
   }
  ],
  "retest_gate_2026_11_20": {

@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-31T23:20:00+08:00 (17 词承接基线首测 + 主 URL 认定偏差登记)",
+ "generated_at": "2026-11-27T15:40:00+08:00",
  "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
  "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
  "tasks": [
@@ -1737,6 +1737,31 @@
    "status": "DONE",
    "result": "live 4/4 PASS；7d 復測門：月曆簇/海報簇排名進 P1 或顯著上移",
    "done_at": "2026-11-27T14:50:00+08:00"
+  },
+  {
+   "task_id": "FIX-20261127-Q4-HOMEPAGE-COMMERCIAL-WORDS",
+   "source_strategy": "K3 2026-11-27 14:49 拍板「拍 Q4，今晚收官前把首頁商業詞權重批推上線」",
+   "market": "zh-hk",
+   "target": "印刷公司（i304 c5 全站B2B點擊王 r30）與香港印刷（i83 c2 r11.5）首頁承接權重：AEO 實體聲明 + h1 雙變體補詞 + desc 精確詞 + guide blog 回鏈 ×2",
+   "evidence": [
+    "gsc_data_qp_90d.csv：印刷公司 guide i257 r31.1 / 首頁 i46 r29.7 CTR 8.7%；香港印刷 首頁 i80 r11.5",
+    "首頁 title 已含香港印刷公司（非缺口，不動）",
+    "盤點報告 重要文件/2026-11-27-query-page-anchor-audit-and-g2g3-priority.md P1-A 行"
+   ],
+   "score": 88,
+   "score_model": "homepage-commercial-word-weight-P1A",
+   "write_scope": [
+    "src/components/home/MainCategoryEntry.tsx（zh-hk AEO 句）",
+    "src/lib/analytics.ts（zh-hk H1 雙變體）",
+    "src/lib/seo.ts（zh-hk home description）",
+    "src/data/blog-data/zh-hk.json（hong-kong-printing-guide 回鏈 ×2，原始字符串替換）"
+   ],
+   "approval_gate": "K3 已拍板（2026-11-27 14:49）",
+   "owner_lane": "manual-session",
+   "status": "DONE",
+   "next_check": "12-04 7d 復測門（與 Q1/Q2 同窗）：印刷公司首頁 r29.7→≤15 / 香港印刷 r11.5→P1 / guide r31→≤20；達標複製英語站 printing company 系、日語站 印刷會社 系",
+   "result": "EXECUTED 2026-11-27 15:2x commit 75c0484c + f7ba33e2 push → live 5/5 PASS：AEO 實體句 ✓ / meta desc 精確詞 ✓ / h1 變體A 印刷公司 ✓ / guide 回鏈 ×2 ✓。反審 0 red；過程事故 2 起已修（註釋品牌字面量觸門童 #3、SESSION_LOCK 歷史誤覆寫 964 行已恢復）。",
+   "exit_criteria": "① live 首頁 AEO 句含實體聲明；② meta description 首句含香港印刷公司；③ h1 雙變體含印刷公司系詞；④ guide blog 2 條 → /zh-hk/ 回鏈生效；⑤ tsc 0 + 反審 0 red——五項全過"
   }
  ],
  "last_review": "2026-11-26T03:05:00+08:00",

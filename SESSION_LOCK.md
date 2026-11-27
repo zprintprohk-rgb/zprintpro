@@ -1,15 +1,14 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-## 🔒 持有中 — 2026-11-27 15:0x Kimi Work 人手会话（批 Q4：首頁商業詞權重批）
+## ✅ 已释放 — 2026-11-27 15:4x Kimi Work 人手会话（批 Q4：首頁商業詞權重批，K3 14:49 拍板）
 
 | 项 | 值 |
 |---|---|
 | **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
 | **K3 拍板** | 11-27 14:49「拍 Q4，今晚收官前把首頁商業詞權重批推上線」 |
-| **寫入範圍** | MainCategoryEntry.tsx（zh-hk AEO 答案句加實體聲明）· analytics.ts（zh-hk H1 雙變體加印刷公司）· seo.ts（zh-hk home description 加香港印刷公司）· blog-data/zh-hk.json（hong-kong-printing-guide → 首頁回鏈 ×2） |
-| **禁止範圍** | 單變量只動 zh-hk；不動 title（已含香港印刷公司）；不動 en/ja；價格/承諾語句零新增 |
-| **双条件核验** | ① git src/ 淨、無 lane.lock（已驗）；② 距 14:19 push ≥30min，15:2x 推送 |
-| **TTL** | 30 min，預計 15:5x 前釋放 |
+| **写入范围** | MainCategoryEntry.tsx（zh-hk AEO 實體聲明）· analytics.ts（zh-hk H1 雙變體）· seo.ts（zh-hk home description）· blog-data/zh-hk.json（guide → 首頁回鏈 ×2）；賬本 #24 + 隊列 Q4 卡 + 執行報告 + 本鎖 |
+| **禁止范围** | 單變量只動 zh-hk；不動 title/en/ja；價格/承諾語句零新增——全守 |
+| **释放结果** | tsc 0 · 反審 0 red；commit 75c0484c + f7ba33e2 push → live 5/5 PASS（AEO 實體句 / desc 精確詞 / h1 變體A / guide 回鏈 ×2 全生效）。過程事故 2 起已修：註釋英文品牌字面量觸門童 #3（改寫）、SESSION_LOCK 964 行歷史誤覆寫（從 64ba9ae5 恢復）。7d 復測門 12-04：印刷公司首頁 r29.7→≤15 / 香港印刷 r11.5→P1 / guide r31→≤20。 |
 
 
 ## ✅ 已释放 — 2026-11-27 14:5x Kimi Work 人手会话（批 Q2：月曆+海報雙簇，K3 14:10 開放式批准）
