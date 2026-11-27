@@ -1,15 +1,16 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-## 🔒 持有中 — 2026-11-27 16:4x Kimi Work 人手会话（批 Q5-A：書刊/膠裝簇權重批）
+## ✅ 已释放 — 2026-11-27 16:4x Kimi Work 人手会话（批 Q5-A：書刊/膠裝簇權重批，K3 16:36 開放式批准）
 
 | 项 | 值 |
 |---|---|
 | **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
 | **K3 拍板** | 11-27 16:36 開放式批准「按最优推荐方案继续下一步」（承接 Q4 建議批 Q5-A） |
-| **寫入範圍** | buying-guides.ts（book-buying-guide zh-hk：3 處價格/MOQ 真值修復 + PDP 錨鏈 ×2）· blog-data/zh-hk.json（saddle-stitch guide + PDP 精確錨鏈 ×1）· category-conversion-blocks.ts（books:zh-hk +2 quickAnswers +2 newFaqs，GSC 精確詞） |
-| **禁止範圍** | 單變量 zh-hk 書刊簇；PDP title 不動（11-28 A1 凍結）；不新建膠裝 SKU（待 K3 拍板）；en/ja 零改動 |
-| **双条件核验** | ① src/ 淨、無 lane.lock（已驗）；② 距 15:5x push ≥30min，預計 17:2x 推送 |
-| **TTL** | 30 min，預計 17:5x 前釋放 |
+| **寫入範圍** | buying-guides.ts（book guide zh-hk 真值 ×9 + PDP 錨鏈 ×2）· blog-data/zh-hk.json（saddle-stitch CTA ×1）· category-conversion-blocks.ts（books:zh-hk quickAnswers +2 newFaqs +2）· blog-posts.ts（saddle-stitch 卡片摘要真值）；賬本 #25 + 隊列 Q5-A 卡 + 執行報告 + 本鎖 |
+| **禁止范围** | 單變量 zh-hk 書刊簇全守（en/ja 零改動）；PDP title 不動（11-28 A1 凍結）；不新建膠裝 SKU；價格只寫 products.ts 真值——全守 |
+| **双条件核验** | ① src/ 淨、無 lane.lock（已驗）；② 距 15:04 push ≥30min（實際 16:57 / 17:29 兩 push 窗口全滿足） |
+| **TTL** | 30 min，實際 17:4x 前釋放 |
+| **释放结果** | tsc 0 ×2 · 反審 0 red ×2；commit a273223d + 37bbbe53 兩 push → live round 2 5/5 PASS（謊言歸零：HK$14-57 / HK$80-150 / HK$40-80 / 1 本起印 全無；真值 HK$6-32/本 ×3 生效；PDP 錨鏈 ×2 + CTA ×1 生效；類目 FAQ ×4 生效；a5 傳單頁誤插還原驗證）。事故 2 起已修已入賬：CTA 誤插 a5 blog（備份還原 + 頁面獨有錨重插 + 雙向驗證）、round-1 殘留謊言 ×5（追加 37bbbe53 修淨）。7d 復測門 12-04：書刊印刷 blog r32.4→≤20 / 類目 r56.4→≤30 / 騎馬釘印刷 PDP r41.6→≤25。 |
 
 
 ## ✅ 已释放 — 2026-11-27 15:4x Kimi Work 人手会话（批 Q4：首頁商業詞權重批，K3 14:49 拍板）

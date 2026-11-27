@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-11-27T15:40:00+08:00",
+ "generated_at": "2026-11-27T17:35:00+08:00",
  "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
  "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
  "tasks": [
@@ -1737,6 +1737,30 @@
    "status": "DONE",
    "result": "live 4/4 PASS；7d 復測門：月曆簇/海報簇排名進 P1 或顯著上移",
    "done_at": "2026-11-27T14:50:00+08:00"
+  },
+  {
+   "task_id": "FIX-20261127-Q5A-BOOKS-CLUSTER",
+   "source_strategy": "K3 2026-11-27 16:36 開放式批准（批 Q5-A 書刊/膠裝簇，承接 Q4 建議）",
+   "market": "zh-hk",
+   "target": "書刊簇 12 詞 imp~3718 全簇 0 點擊的承接修復：真值修復 ×11 + PDP 精確錨鏈 ×3 + books:zh-hk 直答 FAQ ×4（書刊印刷幾多錢一本 i708 全簇最大詞、膠裝書印刷幾錢）",
+   "evidence": [
+    "gsc_data_qp_90d.csv：書刊印刷 i708（guide blog r32.4/類目 r56.4）、騎馬釘 i443、騎馬釘印刷 i438（PDP r41.6）、印書 i423、膠裝書印刷 i359+膠裝書 i325+膠裝書價格 i210=894 imp 無 PDP",
+    "products.ts 真值：saddle-stitch price_range HK$6-32/本 basePrice 6 minQ 10；精裝 HK$40-240/本；膠裝升級 +HK$30/本"
+   ],
+   "score": 86,
+   "score_model": "books-cluster-truth-and-anchor-P1",
+   "write_scope": [
+    "src/data/buying-guides.ts（book guide zh-hk 真值 ×9 + PDP 錨鏈 ×2）",
+    "src/data/category-conversion-blocks.ts（books:zh-hk quickAnswers +2 newFaqs +2）",
+    "src/data/blog-data/zh-hk.json（saddle-stitch CTA ×1，原始字符串替換）",
+    "src/data/blog-posts.ts（saddle-stitch 卡片摘要 zh-hk 真值）"
+   ],
+   "approval_gate": "K3 已拍板（2026-11-27 16:36）",
+   "owner_lane": "manual-session",
+   "status": "DONE",
+   "next_check": "12-04 7d 復測門（與 Q1/Q2/Q4 同窗）：書刊印刷 blog r32.4→≤20 / 類目 r56.4→≤30 / 騎馬釘印刷 PDP r41.6→≤25；達標複製 en/ja 版",
+   "result": "EXECUTED 2026-11-27 17:29+17:35 兩 push（a273223d 主批 + 37bbbe53 追加）→ live round 2 5/5 PASS：謊言歸零（HK$14-57 / HK$80-150 / HK$40-80 / 1 本起印 全無）、真值 HK$6-32/本 ×3 處生效、PDP 錨鏈 ×2 + CTA ×1 生效、類目 FAQ ×4 生效、a5 傳單頁誤插還原驗證。反審 0 red。事故 2 起已修已入賬：CTA 誤插 a5 blog（備份還原+獨有錨重插）、round-1 殘留謊言 ×5（追加批修淨）。",
+   "exit_criteria": "① book guide 無 HK$14-57/HK$80-150/1 本起印；② HK$6-32/本 ×3 + PDP 錨鏈 ×2 生效；③ 類目 books:zh-hk FAQ ×4 生效；④ saddle CTA 生效且 a5 頁無誤插；⑤ tsc 0 + 反審 0 red——live round 2 實測全過"
   },
   {
    "task_id": "FIX-20261127-Q4-HOMEPAGE-COMMERCIAL-WORDS",

@@ -1081,6 +1081,17 @@
     ".hermes/logs/2026-11-27-manual-executor-q4-homepage-commercial-words.md"
    ],
    "calibrated_at": "2026-11-27T15:40:00+08:00"
+  },
+  {
+   "at": "2026-11-27T17:35:00+08:00",
+   "by": "manual-session-1127-q5a-books-cluster",
+   "summary": "批 Q5-A（K3 16:36 開放式批准）：zh-hk 書刊/膠裝簇權重批閉合，live 二輪 5/5 PASS。基線：簇 12 詞 imp~3718 全簇 0 點擊（書刊印刷 i708 blog r32.4/類目 r56.4；騎馬釘 i443；騎馬釘印刷 i438 PDP r41.6；印書 i423；膠裝書系 894 imp 無 PDP）。真值修復 ×11（權威 products.ts：HK$6-32/本、10 本起、膠裝 +HK$30、精裝 HK$40-240）——清 HK$14-57/500本謊言、1 本起謊言 ×5、虛構柯式階梯表（HK$80-150/40-80/25-50/15-30 與真值矛盾）整表刪除；PDP 精確錨鏈 ×3（guide 0→2 + saddle blog CTA 1）；books:zh-hk 直答 FAQ ×4（書刊印刷幾多錢一本 i708 全簇最大詞原先無精確 FAQ、膠裝書印刷幾錢、書刊印刷一本幾錢、膠裝書價格係點計）；saddle blog 卡片摘要改真值。過程事故 2 起全透明入賬：① CTA 誤插 a5 傳單 blog（共享模板錨 count=1 不足證錯頁，備份還原 + slug 段獨有錨重插 + 雙向驗證）；② round-1 live 探針抓 book guide 價格區殘留謊言 ×5（首輪 grep 關鍵字未覆藍框/表格句式）→ 追加 commit 37bbbe53 修淨。機制入賬：① 價格類頁面要分區掃（amber 框/藍框/表格/FAQ 尾段句式不同，只掃關鍵字會漏藍框變體）；② 多頁共享模板錨必須 slug 段雙向驗證（目標頁有 + 非目標頁無）；③ live 探針必帶負向斷言（STILL-PRESENT），只查新增會漏殘留。7d 復測門 12-04（與 Q1/Q2/Q4 同窗）：書刊印刷 blog r32.4→≤20 / 類目 r56.4→≤30 / 騎馬釘印刷 PDP r41.6→≤25；達標複製 en（book printing/saddle stitch 系）/ ja（書籍印刷/中綴じ 系）。defer 4 項：膠裝書 PDP（~894 imp 無承接頁，新 SKU 待 K3 拍板）、ja book guide 謊言 ×2、月曆 blog 卡片 HK$14-57 ×3 語（Q2 月曆簇 follow-up）、PDP title 補大詞留 11-28 A1 解凍批。",
+   "sources": [
+    "gsc_data_qp_90d.csv（書刊簇 12 詞逐頁錨位）",
+    "重要文件/2026-11-27-query-page-anchor-audit-and-g2g3-priority.md（Q5-A 行動批）",
+    ".hermes/logs/2026-11-27-manual-executor-q5a-books-cluster.md"
+   ],
+   "calibrated_at": "2026-11-27T17:35:00+08:00"
   }
  ],
  "retest_gate_2026_11_20": {
