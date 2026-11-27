@@ -19,17 +19,22 @@
 | ロールラベル | 11 | roll-stickers (ja) | ✅ |
 | バナー 印刷 | 10 | roll-up-banners (ja) | ✅ |
 
-## 一、🔴 重大承接錯配（優先修復）
+## 一、🔴→⚪ 重大承接錯配 — 查案後勘誤（2026-11-27 14:2x）
 
-### M1 · 月曆印刷 i759 best r3 落在 /product/magnetic-calendars/（磁石曆）⚠️ 最大浪費
-- 月曆印刷大詞由磁石曆 PDP 承接到 r3（首頁頂部！），但真正的月曆主推頁 custom-calendars 只排 r22、calendars 類目 r35
-- 點擊意圖被導到最窄 SKU；custom-calendars 才是轉化面
-- 修法：magnetic-calendars → custom-calendars / calendars 類目的精準內鏈（錨「月曆印刷/月曆訂製」）+ custom-calendars title/h1 已強化（今日 LONGTAIL 批已改 ja）→ 導權不撤頁
+**勘誤聲明（per §0.23）**：初版把「query 總 imp」誤植為單頁承接 imp。逐頁明細複查後：M1/M2 的「r2/r3 承接頁」各只有 **i1**，屬 Google 語義抽風，**非真錯配**。真正圖像：兩簇都是「主推頁卡 P2-P3、blog 權重未導給 PDP」。已按勘誤後方案執行批 Q2（詳見 `.hermes/logs/2026-11-27-manual-executor-q2-zh-double-cluster.md`）。
 
-### M2 · 海報印刷 i1460 c3 r2 落在 /product/eco-flyers/（環保單張）⚠️ 最大單一錯配
-- 海報印刷全站最大詞（105 queries / imp3921 / clk14 全站第一）的 r2 承接者是 eco-flyers；正主 poster blog r17、a1-posters r35、a2-posters r33
-- eco-flyers 為何能 r2 需現場查（疑 title/h1 沾「海報」或內容混排）→ 先查再定轉移策略，不盲動
-- 修法（待查後）：a1/a2-posters + poster blog 12 段錨鏈強化；eco-flyers 內加「印海報→posters 品類」導流卡
+### M1 · 月曆簇（imp~1750）真實錨位
+- 月曆印刷：custom-calendars **i338 r22.2** ／calendars 類目 i311 r34.8 ／2027 timetable blog i39 **r5.3**
+- 月歷印刷：calendars 類目 i158 r31.8 ／custom-calendars i123 r25.4
+- magnetic-calendars 僅 i1 r3（初版誤植，不動）
+- **堵點根因**：timetable blog（r5.3 已首頁）**0 條 → custom-calendars PDP 鏈**，權重斷層
+- **已執行（批 Q2）**：custom-calendars zh-hk G1 直答塊（1 本起 HK$3-8，products.ts 真值）+ timetable blog 精準錨鏈「定製月曆 1 本起」
+
+### M2 · 海報簇（imp~2066）真實錨位
+- 海報印刷：poster blog **i436 r16.6** ／a2-posters i277 **r34.6** ／posters 類目 i183 r63.5 ／首頁 i135 r19.4
+- eco-flyers 僅 i1 r2（初版誤植，不動）
+- **堵點根因**：poster blog（17 鏈）**0 條 → a1/a2-posters PDP 鏈**，權重全導給類目與無關 blog
+- **已執行（批 Q2）**：a2-posters zh-hk G1 直答塊（10 張起 HK$16，products.ts 真值）+ poster blog 精準錨鏈「A2 海報印刷」「A1 海報印刷」
 
 ### M3 · 利是封印刷 i222 r6 落在 wedding-red-packet-printing-guide（婚禮紅包）
 - blog 已首頁 r6 不動；堵點是 red-packets 類目 r20.8 + foil-red-packets r1.1（燙金利是封 i37 倒是 PDP r1）

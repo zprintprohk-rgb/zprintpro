@@ -1720,6 +1720,23 @@
    "status": "DONE",
    "result": "直答塊 live + 錨鏈生效；7d 復測門：兩簇排名進 P1-3 / GSC 直答塊展現",
    "done_at": "2026-11-27T13:30:00+08:00"
+  },
+  {
+   "task_id": "FIX-20261127-Q2-ZH-DOUBLE-CLUSTER",
+   "source_strategy": "承接層對照批 M1/M2（K3 11-27 14:10 Q2+M2 查案合流批准）",
+   "market": "zh-hk",
+   "target": "月曆簇（custom-calendars r22.2 衝首頁）+ 海報簇（a2-posters r34.6 承接 blog 權重）",
+   "evidence": [
+    "GSC 90d 逐頁：月曆印刷 custom-calendars i338 r22.2 / timetable blog i39 r5.3；海報印刷 poster blog i436 r16.6 / a2-posters i277 r34.6",
+    "勘誤：magnetic-calendars/eco-flyers 各僅 i1，非真錯配（撤回初版 M1/M2 定性）"
+   ],
+   "score": "P0",
+   "score_model": "承接層對照批排序（勘誤後 M1/M2 轉為權重斷層修復）",
+   "write_scope": "ProductPageV9.tsx（zh-hk G1 塊 ×2）+ blog-data/zh-hk.json（錨鏈 ×3）+ 盤點報告勘誤",
+   "approval_gate": "K3 11-27 14:10 開放式批准",
+   "status": "DONE",
+   "result": "live 4/4 PASS；7d 復測門：月曆簇/海報簇排名進 P1 或顯著上移",
+   "done_at": "2026-11-27T14:50:00+08:00"
   }
  ],
  "last_review": "2026-11-26T03:05:00+08:00",
