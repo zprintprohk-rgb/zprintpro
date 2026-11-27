@@ -1,15 +1,16 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-## 🔒 持有中 — 2026-11-27 23:0x Kimi Work 人手会话（批 Q6：膠裝書 PDP 錨鏈批）
+## ✅ 已释放 — 2026-11-27 23:0x Kimi Work 人手会话（批 Q6：膠裝書 PDP 錨鏈批，K3 22:56 開放式批准）
 
 | 项 | 值 |
 |---|---|
 | **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
 | **K3 拍板** | 11-27 22:56 開放式批准「按最优推荐方案继续下一步」（膠裝書考古發現 PDP 存在但隱形 → 錨鏈批） |
-| **寫入範圍** | buying-guides.ts（book guide 膠裝 FAQ + 裝訂節收尾 ×2 錨）· blog-data/zh-hk.json（saddle blog FAQ + textbook blog intro ×2 錨，原始字符串替換）· category-conversion-blocks.ts（books:zh-hk 膠裝系答案 ×3 錨）；賬本 #26 + 隊列 Q6 卡 + 建議書 + 本鎖 |
-| **禁止範圍** | 單變量 zh-hk；en/ja 不動（en/ja blog 已有 7 鏈，zh-hk 是缺口）；不動 PDP 本身；不動 catalog-printing PDP（defer） |
-| **双条件核验** | ① src/ 淨、無 lane.lock（已驗）；② lane 19:31 push 後無寫入，靜默窗口滿足 |
-| **TTL** | 30 min，預計 23:4x 前釋放 |
+| **寫入範圍** | buying-guides.ts ×2 錨 · blog-data/zh-hk.json ×2 錨（saddle FAQ + textbook intro）· category-conversion-blocks.ts ×3 錨；建議書（重要文件）+ 賬本 #26 + 隊列 Q6 卡 + 本鎖 |
+| **禁止范围** | 單變量 zh-hk 全守（en/ja 不動——en/ja 已有 7 鏈）；不動 PDP 本身；不動 catalog PDP（defer 建議 1）——全守 |
+| **双条件核验** | ① src/ 淨、無 lane.lock（已驗）；② lane 19:31 後靜默，窗口滿足 |
+| **TTL** | 30 min，實際 23:4x 釋放 |
+| **释放结果** | tsc 0 · 反審 0 red；commit 069b1f43 push → live 5/5 PASS（book guide ×2 錨 / saddle blog ×1 / textbook ×1 / 類目 ×3 / PDP 本體無恙）。考古修正：「膠裝書無 PDP」原判斷撤銷（PDP 三語 live、title 合格），真相是 PDP 僅獲膠裝詞 2-16% 曝光佔比（膠裝書價格 r27 全簇最好僅 i4）；競品對比確認價格位勢 3-6 倍優勢（4a.com.hk 100 本 ~HK$95/本 vs 我方 HK$16-80），發現性是唯一缺口。過程小坑 1 起已修：textbook intro 句式錨全文件 count=2（另一頁相關鏈表同款），加長上下文錨後 count=1 通過。7d 復測門 12-04：膠裝書價格 PDP r27→≤15 / 膠裝書印刷 r47.9→≤25 / 膠裝書 r33→≤20。後續建議 5 條已寫入建議書（catalog PDP 導流鏈 / 膠裝直答塊 / blog 補錨 / title A1 / en-ja 無需動）。 |
 
 
 ## ✅ 已释放 — 2026-11-27 16:4x Kimi Work 人手会话（批 Q5-A：書刊/膠裝簇權重批，K3 16:36 開放式批准）

@@ -1092,6 +1092,18 @@
     ".hermes/logs/2026-11-27-manual-executor-q5a-books-cluster.md"
    ],
    "calibrated_at": "2026-11-27T17:35:00+08:00"
+  },
+  {
+   "at": "2026-11-27T23:30:00+08:00",
+   "by": "manual-session-1127-q6-perfect-bound-anchors",
+   "summary": "批 Q6（K3 22:56 開放式批准）：膠裝書 PDP 考古 + 錨鏈批閉合，live 5/5 PASS。**考古修正**：Q5-A 時「膠裝書無 PDP（~894 imp 無承接頁）」defer 判斷被證偽——perfect-bound-books SKU 一直完整存在（products.ts:5234，HK$16-80/本 basePrice 16 minQ 10，isHot），三語 PDP live 全 200、title 合格。真相是「存在但隱形」：膠裝系 4 詞 imp~1040 中 PDP 僅獲 2-16% 曝光（膠裝書價格 i210 中 PDP 僅 i4 佔 2%，但 PDP 排名 r27 全簇最好——Google 想用 PDP 卻沒權重依據），其餘被 book guide（i286 膠裝承接但 Q5-A 前 0 鏈）/類目 FAQ（無鏈）/saddle blog（0 鏈）/textbook blog（0 鏈）及錯配的 catalog-printing PDP（i188 r62-84）吸走。競品對比：4a.com.hk 100 本 ~HK$95/本、pro360 A4 彩 68PP ~HK$47-60/本 vs 我方 HK$16-80/本——價格位勢 3-6 倍優勢，發現性是唯一缺口。修復 = 7 精確錨（book guide ×2 / saddle FAQ / textbook intro / 類目直答 ×3），全 zh-hk 單變量。機制入賬：① defer 項「無承接頁」類判斷必須先驗 PDP 存在性（SKU 表 + live 探針 + sitemap 三查）再立項，考古結論要帶證據等級；② GSC「排名好但曝光佔比低」= 內鏈權重缺口訊號（rank r27 + share 2% 是教科書形態）；③ 共享句式錨（「3 大製本方式」）跨頁重複，必須加長上下文（本批 textbook 錨 count=2 加長後通過）；④ bash 雙引號 python -c 會吃 $16 類變量，探針腳本用單引號或寫文件。7d 復測門 12-04：膠裝書價格 PDP r27→≤15（衝首頁）/ 膠裝書印刷 r47.9→≤25 / 膠裝書 r33→≤20。後續建議 5 條入建議書：catalog PDP 裝訂句導流鏈（截錯配 i188）/ 膠裝書直答塊（AEO）/ 5 篇 0 鏈 blog 補錨 / title 補大詞併 11-28 A1 / en-ja 已有 7 鏈不動。",
+   "sources": [
+    "gsc_data_qp_90d.csv（膠裝系 4 詞逐頁 imp/share/rank：膠裝書 i325 / 膠裝書價格 i210 / 膠裝書印刷 i359 / 膠裝書刊 i146）",
+    "products.ts:5234-5266（perfect-bound-books SKU 全參數）",
+    "重要文件/2026-11-27-perfect-bound-pdp-archaeology-and-q6-anchor-batch.md（建議書）",
+    "競品：4a.com.hk 膠裝書價格表 / pro360.com.hk 書刊印刷費用頁（2026-11-27 實查）"
+   ],
+   "calibrated_at": "2026-11-27T23:30:00+08:00"
   }
  ],
  "retest_gate_2026_11_20": {
