@@ -466,6 +466,36 @@ export function ProductPageV9({
             </div>
           )}
 
+          {/* G1 批 Q1（2026-11-27 承接層對照批）：en 雙簇衝首頁直答塊 ×2。
+              真值源 products.ts：catalog-printing L5086-5113（minQuantity 10 / basePrice_en 4.6 /
+              157-200g 銅版或啞粉內頁 / 200-250g 封面 / 騎馬釘·膠裝·線裝·硬皮 / 免費排版+mockup / 30s AI quote）；
+              small-batch-stickers L958-1003（minQuantity 10 / basePrice_en 0.55 / price_range HK$38-120/A4 /
+              HP Indigo / Delta E ≤3 / PVC·PP·銅版·Kraft / 免費刀模 / 局部燙金 / 1-2 天交付 / 10×10mm-300×400mm）。
+              單變量 en（a1-posters 先例：zh-hk 先行 en/ja 待 7d 復測門後再翻）；K3 13:55 開放式批准。 */}
+          {product.slug === 'catalog-printing' && locale === 'en' && (
+            <div className="mt-3 border border-[#BFDBFE] bg-[#EFF6FF] rounded-[10px] px-4 py-3.5 text-[15px] text-[#17284C] leading-[1.8]" data-direct-answer="catalog-printing">
+              <p className="text-[13.5px] font-bold text-[#1D4ED8] mb-1.5">Catalog Printing · Direct Answer</p>
+              <p>
+                <strong>Bulk catalog printing from 10 copies, from US$4.6 per book</strong> — unit price drops at
+                100/500/1000+ tiers, final quote in 30 seconds. A4 or A5, 157-200gsm coated or matte inner pages with
+                200-250gsm covers, four-color offset (digital for short runs); saddle-stitch, perfect bound, wire or
+                case binding. Free layout and design mockup; lead time confirmed at quote, DHL 2-4 day worldwide delivery.
+              </p>
+            </div>
+          )}
+          {product.slug === 'small-batch-stickers' && locale === 'en' && (
+            <div className="mt-3 border border-[#BFDBFE] bg-[#EFF6FF] rounded-[10px] px-4 py-3.5 text-[15px] text-[#17284C] leading-[1.8]" data-direct-answer="small-batch-stickers">
+              <p className="text-[13.5px] font-bold text-[#1D4ED8] mb-1.5">Small Batch Sticker Printing · Direct Answer</p>
+              <p>
+                <strong>From 10 pieces with no bulk pressure — A4-sheet pricing from HK$38-120 per sheet,
+                from US$0.55 per sticker</strong> at base tier, final price confirmed at quote. HP Indigo digital print
+                with ICC color management (Delta E ≤3); waterproof PVC, PP synthetic, coated paper or kraft; free
+                die-cutting for custom shapes, optional gold/silver foil. 1-2 working day turnaround; sizes 10×10mm
+                to 300×400mm.
+              </p>
+            </div>
+          )}
+
           {/* 價格盒 */}
           <div className="mt-6 bg-[#FFF7ED] border border-[#FED7AA] rounded-[14px] p-5">
             <div className="text-[13px] font-semibold text-[#EA580C] uppercase tracking-[0.1em] mb-1">

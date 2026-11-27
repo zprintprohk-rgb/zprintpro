@@ -1,5 +1,16 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## 🔒 持有中 — 2026-11-27 13:0x Kimi Work 人手会话（批 Q1：en 雙簇衝首頁，K3 13:55「按最优推荐方案继续下一步」）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 11-27 13:55 承接層對照批指令＋「有利于排名首页的动作都可以立即或是下一个 push 窗口就上线」→ 執行報告最優推薦 Q1（en catalog + small-batch 雙簇，imp~1200、r6-21、承接頁全對） |
+| **写入范围** | `src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx`（catalog-printing + small-batch-stickers 之 en G1 直答塊，單變量 en）；`src/data/blog-data/en.json`（catalog guide 補 2 條 PDP 精準錨鏈、sticker-guide 補 1 條精準錨鏈）；`重要文件/2026-11-27-query-page-anchor-audit-and-g2g3-priority.md`（盤點報告）；`.hermes/logs/`（賬本 #22/隊列 Q1 卡/報告）、`SESSION_LOCK.md` |
+| **禁止范围** | 不動價格數字（只用 products.ts 真值 10 MOQ/US$4.6/US$0.55/HK$38-120）；不動 zh/ja blog（單變量 en）；不動 M1/M2 錯配（另批）；不動凍結槽 |
+| **双条件核验** | ① 开工 `src/` 无 MM、无 staged 删除、`lane.lock` 不存在、顶部全釋放；② 最近 push = 11-27 12:18（aedae53b），至开工 ≈45min，無對端並發 |
+| **数据来源** | GSC 90d query×page（gsc_data_qp_90d.csv）：catalog 簇 ~800 imp r11.5-21.7 / small-batch 簇 ~400 imp r6-9.5；真值 products.ts L958-1003（small-batch）、L5086-5113（catalog） |
+
 ## ✅ 已释放 — 2026-11-27 12:4x Kimi Work 人手会话（LONGTAIL 13 考古批，K3 11-27 11:46 指令）
 
 | 项 | 值 |
