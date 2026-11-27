@@ -742,12 +742,11 @@ export const buyingGuides: BuyingGuide[] = [
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>光膠 / 啞膠</strong>：基礎保護，最經濟</li><li><strong>UV 局部上光</strong>：突出 Logo 和主視覺</li><li><strong>燙金 / 燙銀</strong>：書名 + Logo 高檔呈現</li><li><strong>擊凸 / 壓凹</strong>：立體觸感，獨特品牌記憶</li><li><strong>燙金 + 擊凸</strong>：極致高檔組合，工藝品級</li><li><strong>布面精裝</strong>：布紋裱殼，古典書籍</li></ol>
 <p>一般品牌手冊用啞膠過膠已夠體面；高檔書籍建議燙金 + 擊凸組合，呈現工藝品級質感。</p>
 <h2>書刊印刷幾錢？印量與價格對應</h2>
-<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書刊印刷數碼 1 本起印（200 本內）；批量印刷 300 本起：騎馬釘 8-64 頁、膠裝 64 頁以上；500 本騎馬釘 HK$14-57/本，大批量 2000+ 本低至 HK$15-30/本】</p></div>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">印量</th><th class="border p-2 text-left">單本成本</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">50-100 本</td><td class="border p-2">HK$80-150/本</td><td class="border p-2">個人出版、紀念冊</td></tr><tr><td class="border p-2">200-500 本</td><td class="border p-2">HK$40-80/本</td><td class="border p-2">品牌手冊、公司刊物</td></tr><tr><td class="border p-2">500-1000 本</td><td class="border p-2">HK$25-50/本</td><td class="border p-2">教材、行業報告</td></tr><tr><td class="border p-2">2000+ 本</td><td class="border p-2">HK$15-30/本</td><td class="border p-2">大規模商業印刷</td></tr></tbody></table>
-<p>以上為大批量柯式口徑；小批量可用數碼印刷，1 本起印、200 本內都得，詳見<a href="/zh-hk/category/books/">書刊印刷類別</a>。</p>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書刊印刷 10 本起印：騎馬釘 8-64 頁、膠裝 64 頁以上；騎馬釘小冊子 HK$6-32/本、無線膠裝書 HK$16-80/本、精裝書 HK$40-240/本，印量愈大單價愈低】</p></div>
+<p>以上為產品頁實價口徑；10 本起印，急單可揀<a href="/zh-hk/blog/rush-printing-hk-guide/">即日印刷服務</a>。想直接落單？<a href="/zh-hk/product/saddle-stitch-booklets/">騎馬釘書刊 10 本起印，HK$6-32/本</a>。</p>
 <h2>最少訂幾多本？</h2>
-<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書刊數碼印刷 1 本起、200 本內皆可；批量印刷 300 本起享柯式折扣，500/1000/5000 本再享批量價】</p></div>
-<p>智印港書刊數碼印刷 1 本起印、200 本內都得，個人出版、活動場刊同市場測試都唔使囤貨；300 本以上轉柯式批量印刷，單本成本大幅下降。</p>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【騎馬釘書刊 10 本起印；想印 1 本請睇<a href="/zh-hk/blog/photo-book-printing-guide/">寫真書印刷</a>或<a href="/zh-hk/blog/self-publishing-printing-guide/">自費出版</a>（1 本起）；批量 500/1000/5000 本享階梯價】</p></div>
+<p>智印港騎馬釘書刊 10 本起印，補習社試刊、活動場刊同市場測試都唔使囤貨；印量上去轉批量柯式，單本成本大幅下降。</p>
 <p>想比較騎馬釘、膠裝、精裝同畫冊嘅詳細規格？直接去<a href="/zh-hk/category/books/">書刊印刷類別</a>睇晒所有書刊產品。</p>
 <h2>交期要幾耐？</h2>
 <p>書刊一般 3-5 個工作天出貨（畫冊口徑），確認稿後即可排期印刷；DHL 全球配送 2-4 天，歐美日客戶約一週內收貨。</p>

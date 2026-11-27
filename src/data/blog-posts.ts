@@ -498,7 +498,7 @@ const lpSaddleStitchBookletPrintingGuide: BlogPostMeta = {
     ja: '中綴じ冊子印刷 10冊から ¥258/冊〜 低MOQ ZprintPro',
   },
   excerpt: {
-    'zh-hk': '騎馬釘小冊子印刷 10 本起 (數碼), 8-64 頁, HK$14-57/本 (500 本). 30 秒 AI 即時報價, DHL 全球 2-4 天. 頁數規則 + 自封面 vs 加厚封面 + 真實 2026 價格階梯 + vs Alibaba 黃頁三錘.',
+    'zh-hk': '騎馬釘小冊子印刷 10 本起, 8-64 頁, HK$6-32/本. 30 秒 AI 即時報價, DHL 全球 2-4 天. 頁數規則 + 自封面 vs 加厚封面 + 真實 2026 價格階梯 + vs Alibaba 黃頁三錘.',
     en: 'Saddle stitch booklets from 50 copies, 8-64 pages, US$1.84-7.36/pc at 500 copies. 30-second instant quote, DHL global 2-4 day delivery. Page-count rules, self-cover vs separate cover, real 2026 pricing, three moats vs Alibaba yellow pages.',
     ja: '中綴じ冊子印刷 10冊から, 8-64ページ, ¥258-1030/個 (500冊). 30秒 AI 即時見積もり, DHL グローバル 2-4日. ページ数ルール・自表紙 vs 別表紙・2026 実価格・Alibaba 黄頁 3つの差別化.',
   },
