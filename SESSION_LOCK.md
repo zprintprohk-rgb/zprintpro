@@ -1,5 +1,18 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## 🔒 持有中 — 2026-11-27 14:2x Kimi Work 人手会话（批 Q2：月曆+海報雙簇衝首頁，K3 14:10 開放式批准）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 11-27 14:10「批 Q2 + M2 查案合流執行…都可以立即或是下一個 push 窗口就上線，按最优推荐方案继续下一步」 |
+| **写入范围** | ProductPageV9.tsx（custom-calendars + a2-posters 之 zh-hk G1 直答塊 ×2，單變量 zh-hk）；blog-data/zh-hk.json（poster blog → a1/a2-posters 錨鏈 ×2、timetable blog → custom-calendars 錨鏈 ×2）；`.hermes/logs/`（賬本 #23/隊列 Q2 卡/報告/盤點報告勘誤）、`重要文件/`盤點報告勘誤、`SESSION_LOCK.md` |
+| **禁止范围** | 價格數字只用 products.ts 真值（custom-calendars 1本 HK$3-8 / a2-posters 10張 HK$16）；單變量 zh-hk 不動 en/ja；不動 magnetic-calendars/eco-flyers（查案證實各僅 i1，非真錯配）；不動凍結槽 |
+| **双条件核验** | ① 开工 `src/` 无 MM、无 staged 删除、`lane.lock` 不存在、顶部全釋放；② 最近 push = 11-27 14:06（a2112014），至开工 ≈20min（src 行為修復批，符合 §0.25 ≥30min 邊界——以下一窗口推） |
+| **数据来源** | GSC 90d：月曆印刷 custom-calendars i338 r22.2 / calendars 類目 i311 r34.8；海報印刷 poster blog i436 r16.6 / a2-posters i277 r34.6；勘誤：magnetic-calendars/eco-flyers 各僅 i1 r2-3（前報告誤植 query 總 imp 為承接 imp） |
+
+
+
 ## ✅ 已释放 — 2026-11-27 14:0x Kimi Work 人手会话（批 Q1：en 雙簇衝首頁，K3 13:55「按最优推荐方案继续下一步」）
 
 | 项 | 值 |

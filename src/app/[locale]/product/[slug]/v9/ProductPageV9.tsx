@@ -496,6 +496,31 @@ export function ProductPageV9({
             </div>
           )}
 
+          {/* G1 批 Q2（2026-11-27 承接層對照批勘誤後）：zh-hk 月曆+海報雙簇直答塊 ×2。
+              真值源 products.ts：custom-calendars（minQuantity 1 / price_range HK$3-8/本 / 桌曆·掛曆·2027年曆）、
+              a2-posters（minQuantity 10 / basePrice 16 / A2 420×594mm 尺寸語義源自 poster blog 12 鐵律文）；
+              單變量 zh-hk（a1-posters 先例）；K3 14:10 開放式批准。 */}
+          {product.slug === 'custom-calendars' && locale === 'zh-hk' && (
+            <div className="mt-3 border border-[#BFDBFE] bg-[#EFF6FF] rounded-[10px] px-4 py-3.5 text-[15px] text-[#17284C] leading-[1.8]" data-direct-answer="custom-calendars">
+              <p className="text-[13.5px] font-bold text-[#1D4ED8] mb-1.5">定製月曆 · 直接答案</p>
+              <p>
+                <strong>定製月曆 1 本起印，HK$3-8／本</strong>（起印價，量大批價以 30 秒 AI 報價確認）。
+                桌曆／掛曆／2027 年曆多款式，適合企業禮品、地產代理客戶贈品、學校及社團訂製；
+                交期與檔期以報價確認。
+              </p>
+            </div>
+          )}
+          {product.slug === 'a2-posters' && locale === 'zh-hk' && (
+            <div className="mt-3 border border-[#BFDBFE] bg-[#EFF6FF] rounded-[10px] px-4 py-3.5 text-[15px] text-[#17284C] leading-[1.8]" data-direct-answer="a2-posters">
+              <p className="text-[13.5px] font-bold text-[#1D4ED8] mb-1.5">A2 海報 · 直接答案</p>
+              <p>
+                <strong>A2 海報（420×594mm）10 張起印，HK$16／張起</strong>（大量階梯以報價確認）。
+                數碼急件線最快即日，截單時效與附加費以報價確認；157-200g 銅版／相紙，
+                PP 護膜、泡沫板裱貼、穿繩可選；A1 加大版同線供應。
+              </p>
+            </div>
+          )}
+
           {/* 價格盒 */}
           <div className="mt-6 bg-[#FFF7ED] border border-[#FED7AA] rounded-[14px] p-5">
             <div className="text-[13px] font-semibold text-[#EA580C] uppercase tracking-[0.1em] mb-1">
