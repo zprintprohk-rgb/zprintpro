@@ -147,12 +147,14 @@ export function getAbVariant(): AbVariant {
  */
 export const HERO_H1_VARIANTS: Record<AbVariant, { 'zh-hk': string; en: string; ja: string }> = {
   A: {
-    'zh-hk': '香港本地印刷 · 即日交貨',
+    // 2026-11-27 Q4 批: zh-hk h1 補「印刷公司」實體詞（GSC 印刷公司 i304 r30）
+    'zh-hk': '香港本地印刷公司 · 即日交貨',
     en: 'Custom Printing Delivered · Same-Day Rush Available',
     ja: '国内印刷 · 最短3日納品 · エコ素材対応',
   },
   B: {
-    'zh-hk': '跨境印刷服務 · 香港 48 小時派送',
+    // 2026-11-27 Q4 批: 跨境變體同補「香港印刷公司」, 保持 A/B 兩臂詞覆蓋一致
+    'zh-hk': '香港印刷公司 · 跨境 48 小時派送',
     en: 'Shenzhen Factory Direct · HK MTR Pickup',
     ja: '深圳自社工場印刷 · 香港 MTR 受取可',
   },
