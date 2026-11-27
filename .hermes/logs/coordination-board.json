@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-27T03:21:49+0800",
+  "generated_at": "2026-11-27T18:17:54+0800",
   "run_date": "2026-11-27",
   "board_path": ".hermes/logs/coordination-board.json",
   "policy": {
@@ -570,6 +570,196 @@
       "decision_record": null
     },
     {
+      "task_id": "FIX-20261127-LONGTAIL13-ARCHAEOLOGY",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk+ja",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "manual",
+      "status": "DONE",
+      "priority": 95.0,
+      "upstream_inputs": [
+        "gsc_data_qp_90d.csv 4415 行 query×page（90d 窗）",
+        "6 詞 90d GSC 實證：餐牌 i224 / 厚紙 i9 / 線圈 i6 / 環保材質 i79 / エコ用紙 i4 / 賀卡印刷 i2"
+      ],
+      "approval_gate": "K3 11-27 11:46 指令（開放式批准+立即上線）",
+      "write_scope": [
+        "zprintpro-sku-seo-data.csv（12 title）→ 生成器 → sku-seo-data.ts；title-hooks.json gscClusters +6 詞"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": null,
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "WARN 15→2（凍結槽地板）；tsc 0 / title-v5 HARD=0 / band 0 / brand 0 / encoding 綠；cf96768b push → live 12/12 PASS",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-20261127-N7-FRUIT-FOOD-TRUTH",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk+en+ja",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "manual",
+      "status": "DONE",
+      "priority": 95.0,
+      "upstream_inputs": [
+        "products.ts minQuantity=500 basePrice=0.22",
+        "N7 登記（A1 批報告 §四）"
+      ],
+      "approval_gate": "K3 09:03 拍板=按最優推薦執行",
+      "write_scope": [
+        "src/data/sku-seo-data.ts（body ts 權威域）+ 塊縮進修復"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": null,
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "WARN 20→15；三語 body 10 處修復 + 塊縮進修復；title/desc/h1 維持真值未動。",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-20261127-Q1-EN-DOUBLE-CLUSTER",
+      "source": "strategy_task_queue",
+      "cluster": "china catalog printing",
+      "query": [
+        "china catalog printing",
+        "small batch sticker printing"
+      ],
+      "baseline": {
+        "status": "AVAILABLE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {
+          "china catalog printing": {
+            "impressions": 101,
+            "clicks": 0,
+            "ctr_pct": 0.0,
+            "position": 14.99,
+            "export_date": "2026-11-19"
+          },
+          "small batch sticker printing": {
+            "impressions": 13,
+            "clicks": 0,
+            "ctr_pct": 0.0,
+            "position": 8.92,
+            "export_date": "2026-11-19"
+          }
+        }
+      },
+      "owner_lane": "manual",
+      "status": "DONE",
+      "priority": 95.0,
+      "upstream_inputs": [
+        "GSC 90d：china catalog printing i341 r17.6 / catalogue printing china i149 r11.5 / small batch stickers i139 r9.5 / small batch sticker printing i136 r6.1",
+        "catalog blog en 原 0 PDP 鏈（本次補 2）；sticker-guide 原 1 語境錨（本次補精準錨 1）",
+        ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json"
+      ],
+      "approval_gate": "K3 11-27 13:55 開放式批准（立即上線口徑）",
+      "write_scope": [
+        "ProductPageV9.tsx（en G1 直答塊 ×2）+ blog-data/en.json（錨鏈 ×3）"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": null,
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "直答塊 live + 錨鏈生效；7d 復測門：兩簇排名進 P1-3 / GSC 直答塊展現",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-20261127-Q2-ZH-DOUBLE-CLUSTER",
+      "source": "strategy_task_queue",
+      "cluster": "海報印刷",
+      "query": [
+        "海報印刷"
+      ],
+      "baseline": {
+        "status": "AVAILABLE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {
+          "海報印刷": {
+            "impressions": 186,
+            "clicks": 1,
+            "ctr_pct": 0.5376,
+            "position": 20.37,
+            "export_date": "2026-11-19"
+          }
+        }
+      },
+      "owner_lane": "manual",
+      "status": "DONE",
+      "priority": 95.0,
+      "upstream_inputs": [
+        "GSC 90d 逐頁：月曆印刷 custom-calendars i338 r22.2 / timetable blog i39 r5.3；海報印刷 poster blog i436 r16.6 / a2-posters i277 r34.6",
+        "勘誤：magnetic-calendars/eco-flyers 各僅 i1，非真錯配（撤回初版 M1/M2 定性）",
+        ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json"
+      ],
+      "approval_gate": "K3 11-27 14:10 開放式批准",
+      "write_scope": [
+        "ProductPageV9.tsx（zh-hk G1 塊 ×2）+ blog-data/zh-hk.json（錨鏈 ×3）+ 盤點報告勘誤"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": null,
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "live 4/4 PASS；7d 復測門：月曆簇/海報簇排名進 P1 或顯著上移",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
       "task_id": "TRUTH-A2-SAMEDAY-20261120-01",
       "source": "strategy_task_queue",
       "cluster": "zh-hk + en + ja",
@@ -758,9 +948,9 @@
         ]
       },
       "retry_at": null,
-      "exit_criteria": "① 上述 8 条字符串 + zh-Hant bullet 语义类在线复探 0 命中（含全角/半角破折号变体）② 不引入新硬承诺（两工具交叉复扫）③ 门童全量 0 red + tsc 基线不升 ④ online_verify 由独立验收（k3-review）翻转，lane 不得自翻 PASS",
+      "exit_criteria": "【2026-11-27 K3 D3 拍板收窄】① SB 本地內容串（8 條字串 + zh-Hant bullet 語義類，僅 write_scope 7 文件範圍）在線復探 0 命中（含全角/半角破折號變體）；full refund 共享組件（FreeSampleBanner / category-seo-content.ts L4703 / RushDeliveryFAQ / TrustBadgeBlock / WhyChooseUs / ProductWhyChooseUs）【剔出本卡驗收】，歸 FIX-20261127-FULL-REFUND-SITEWIDE 卡（K3 三選一：保留/條件化/刪除）② 不引入新硬承諾（兩工具交叉復掃）③ 门童全量 0 red + tsc 基線不升 ④ online_verify 由獨立验收（k3-review）翻转，lane 不得自翻 PASS",
       "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
-      "result": "【2026-11-27 執行指引】k3-review 11-26 §5.3 = 當前唯一可執行面：en/ja SB 語言殘留（适配行业/結算/{PRODUCT_NAME}/ja 半角交期變體）+ products.ts 17 行適配行業模板 + seo.ts:861 zh-hk meta 後綴；不碰價格（D1 待 K3）、title、full refund（D3 共享組件待 K3）。11-26 18:17 輪 DEFER 之「同域在途」理由已消失。exit_criteria 收窄待 K3-D3。",
+      "result": "【2026-11-27 執行指引】k3-review 11-26 §5.3 = 當前唯一可執行面：en/ja SB 語言殘留（适配行业/結算/{PRODUCT_NAME}/ja 半角交期變體）+ products.ts 17 行適配行業模板 + seo.ts:861 zh-hk meta 後綴；不碰價格（D1 待 K3）、title、full refund（D3 共享組件待 K3）。11-26 18:17 輪 DEFER 之「同域在途」理由已消失。exit_criteria 收窄待 K3-D3。 【2026-11-27 D3 執行】exit_criteria 已按 K3 拍板收窄（SB 本地串 only；full refund 共享組件剔出，歸新卡）。",
       "execution_commit": null,
       "decision_record": null
     },
@@ -1051,6 +1241,52 @@
       "decision_record": null
     },
     {
+      "task_id": "FIX-20261127-D1D2D3-WI-TRUTH-BATCH",
+      "source": "strategy_task_queue",
+      "cluster": "all-three-sites",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "manual-session",
+      "status": "DONE",
+      "priority": 90.0,
+      "upstream_inputs": [
+        "src/lib/pricing.ts L351 small-batch-stickers 錨 0.55-1.1",
+        "src/components/product/PdpPurchaseButtons.tsx L70-140 車價渲染",
+        "src/data/sku-seo-data.ts L2918/2925/2932/2990/2997/3004 NT$ 殘留",
+        "DOUJIN-SEMANTIC-FIX 卡 evidence：PdpPurchaseButtons 車價【排除】屬 D-2 案"
+      ],
+      "approval_gate": "K3 已拍板（2026-11-27 03:32）：D1 選 B 只改標籤不改價 · D2 選 C 按規格報價止血 · D3 收窄驗收",
+      "write_scope": [
+        "src/lib/pricing.ts（D1 標注）",
+        "src/components/product/PdpPurchaseButtons.tsx（D2 quoteOnly）",
+        "src/data/products.ts（doujin quoteOnly 欄位）",
+        "src/data/sku-seo-data.ts（WI body 6 處，body 為 ts 權威域 per csv-to-sku-seo.mjs L215）",
+        ".hermes/logs/strategy-task-queue.json（本卡 + D3 卡變更）"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "k3-review 12:05 獨立復探翻 online_verify；full-refund 卡待 K3 三選一拍板",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "① doujin PDP 購物車塊無 qty×total 顯示、顯示按規格報價 CTA（live 探針）；② WI 喜帖/感謝卡三語 body 全 HK$、live 0 NT$；③ SB en 顯示層見 50+ 檔期標注、PDP 表 10pcs $0.60 保留；④ SMALLBATCH 卡驗收收窄生效、full-refund 新卡 WAITING_K3；⑤ tsc 0 err + 6 guard + brand-mentions --strict + encoding 全綠",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "EXECUTED 2026-11-27 04:0x commit d742df6a push 生效。四項全過：① ja doujin PDP data-quote-only=1、カートに追加=0、小計=0（D2-C 上線）；② zh 喜帖 HK$25-95=3 / en 感謝卡 HK$15–55=2，三語 NT$=0（WI 上線）；③ en SB PDP (50+)=3、表 10pcs $0.60=2、類目卡 (50+)=2（D1-B 上線）；④ SMALLBATCH 卡收窄 + FULL-REFUND-SITEWIDE 卡 WAITING_K3 就位（D3）；⑤ tsc 0 err + 六門禁 + brand-mentions strict + encoding 全綠。",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
       "task_id": "TRUTH-T1-20261029-CALENDARS-50PCS",
       "source": "strategy_task_queue",
       "cluster": "en",
@@ -1293,6 +1529,50 @@
       "decision_record": null
     },
     {
+      "task_id": "FIX-20261127-Q4-HOMEPAGE-COMMERCIAL-WORDS",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "manual-session",
+      "status": "DONE",
+      "priority": 88.0,
+      "upstream_inputs": [
+        "gsc_data_qp_90d.csv：印刷公司 guide i257 r31.1 / 首頁 i46 r29.7 CTR 8.7%；香港印刷 首頁 i80 r11.5",
+        "首頁 title 已含香港印刷公司（非缺口，不動）",
+        "盤點報告 重要文件/2026-11-27-query-page-anchor-audit-and-g2g3-priority.md P1-A 行"
+      ],
+      "approval_gate": "K3 已拍板（2026-11-27 14:49）",
+      "write_scope": [
+        "src/components/home/MainCategoryEntry.tsx（zh-hk AEO 句）",
+        "src/lib/analytics.ts（zh-hk H1 雙變體）",
+        "src/lib/seo.ts（zh-hk home description）",
+        "src/data/blog-data/zh-hk.json（hong-kong-printing-guide 回鏈 ×2，原始字符串替換）"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "12-04 7d 復測門（與 Q1/Q2 同窗）：印刷公司首頁 r29.7→≤15 / 香港印刷 r11.5→P1 / guide r31→≤20；達標複製英語站 printing company 系、日語站 印刷會社 系",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "① live 首頁 AEO 句含實體聲明；② meta description 首句含香港印刷公司；③ h1 雙變體含印刷公司系詞；④ guide blog 2 條 → /zh-hk/ 回鏈生效；⑤ tsc 0 + 反審 0 red——五項全過",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "EXECUTED 2026-11-27 15:2x commit 75c0484c + f7ba33e2 push → live 5/5 PASS：AEO 實體句 ✓ / meta desc 精確詞 ✓ / h1 變體A 印刷公司 ✓ / guide 回鏈 ×2 ✓。反審 0 red；過程事故 2 起已修（註釋品牌字面量觸門童 #3、SESSION_LOCK 歷史誤覆寫 964 行已恢復）。",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
       "task_id": "JA-C109-20261028-DEADLINE",
       "source": "strategy_task_queue",
       "cluster": "ja-education-c109",
@@ -1514,6 +1794,100 @@
       "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json"
     },
     {
+      "task_id": "FIX-20261127-Q5A-BOOKS-CLUSTER",
+      "source": "strategy_task_queue",
+      "cluster": "書刊印刷",
+      "query": [
+        "書刊印刷"
+      ],
+      "baseline": {
+        "status": "AVAILABLE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {
+          "書刊印刷": {
+            "impressions": 140,
+            "clicks": 0,
+            "ctr_pct": 0.0,
+            "position": 35.45,
+            "export_date": "2026-11-19"
+          }
+        }
+      },
+      "owner_lane": "manual-session",
+      "status": "DONE",
+      "priority": 86.0,
+      "upstream_inputs": [
+        "gsc_data_qp_90d.csv：書刊印刷 i708（guide blog r32.4/類目 r56.4）、騎馬釘 i443、騎馬釘印刷 i438（PDP r41.6）、印書 i423、膠裝書印刷 i359+膠裝書 i325+膠裝書價格 i210=894 imp 無 PDP",
+        "products.ts 真值：saddle-stitch price_range HK$6-32/本 basePrice 6 minQ 10；精裝 HK$40-240/本；膠裝升級 +HK$30/本",
+        ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json"
+      ],
+      "approval_gate": "K3 已拍板（2026-11-27 16:36）",
+      "write_scope": [
+        "src/data/buying-guides.ts（book guide zh-hk 真值 ×9 + PDP 錨鏈 ×2）",
+        "src/data/category-conversion-blocks.ts（books:zh-hk quickAnswers +2 newFaqs +2）",
+        "src/data/blog-data/zh-hk.json（saddle-stitch CTA ×1，原始字符串替換）",
+        "src/data/blog-posts.ts（saddle-stitch 卡片摘要 zh-hk 真值）"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "12-04 7d 復測門（與 Q1/Q2/Q4 同窗）：書刊印刷 blog r32.4→≤20 / 類目 r56.4→≤30 / 騎馬釘印刷 PDP r41.6→≤25；達標複製 en/ja 版",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "① book guide 無 HK$14-57/HK$80-150/1 本起印；② HK$6-32/本 ×3 + PDP 錨鏈 ×2 生效；③ 類目 books:zh-hk FAQ ×4 生效；④ saddle CTA 生效且 a5 頁無誤插；⑤ tsc 0 + 反審 0 red——live round 2 實測全過",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "EXECUTED 2026-11-27 17:29+17:35 兩 push（a273223d 主批 + 37bbbe53 追加）→ live round 2 5/5 PASS：謊言歸零（HK$14-57 / HK$80-150 / HK$40-80 / 1 本起印 全無）、真值 HK$6-32/本 ×3 處生效、PDP 錨鏈 ×2 + CTA ×1 生效、類目 FAQ ×4 生效、a5 傳單頁誤插還原驗證。反審 0 red。事故 2 起已修已入賬：CTA 誤插 a5 blog（備份還原+獨有錨重插）、round-1 殘留謊言 ×5（追加批修淨）。",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-20261127-REFUND-WINDOW-ALIGN",
+      "source": "strategy_task_queue",
+      "cluster": "all-three-sites",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "manual-session",
+      "status": "DONE",
+      "priority": 85.0,
+      "upstream_inputs": [
+        "重要文件/2026-11-27-refund-window-7-vs-14-ruling-material.md（一頁裁決材料：衝突現狀 5 真值源 vs 唯一 7 天點 + 競品基準 + 三選一分析，推薦 A）",
+        "K3 2026-11-27 05:11「按最優推薦方案繼續下一步」→ 執行層按推薦 A 落地"
+      ],
+      "approval_gate": "PASSED — K3 方案 A",
+      "write_scope": [
+        "src/data/product-faqs.ts"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "11-28 D2 title 面解凍後正確性批合流複查",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "commit 57cca2cf push；tsc 0 err；brand-mentions strict PASS；pre-commit 門童全綠；live 探針三語首頁/PDP 14 天口徑生效",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
       "task_id": "OPS-20261126-GSC-API-DAILY-AUTOPULL",
       "source": "strategy_task_queue",
       "cluster": "infra",
@@ -1728,6 +2102,50 @@
       "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
       "result": "EXECUTED 7b396bd9: FDA 三语 6 处无证声明条件化 + 服务页补 supplier guide 双向链接 + blog-data guide MOQ 100→10 (zh 8 处/en 6 处, bulk 阶梯 100/500/1000/5000 保留). 遗留: zh FAQ 样本 US$15 可退 100本起 样本政策待 K3.",
       "execution_commit": "7b396bd9",
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-20261127-FULL-REFUND-SITEWIDE",
+      "source": "strategy_task_queue",
+      "cluster": "all-three-sites",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "manual-session（拍板後）",
+      "status": "DONE",
+      "priority": 82.0,
+      "upstream_inputs": [
+        "FIX-20261125-SMALLBATCH-WORDING-RESIDUAL progress 残留登记①：FreeSampleBanner.tsx L43-44 / category-seo-content.ts L4703 / RushDeliveryFAQ.tsx L55 / TrustBadgeBlock / WhyChooseUs / ProductWhyChooseUs",
+        "同卡残留登记②：ProductPageV9 trustGuarantee「100% satisfaction guarantee」（全部 PDP 100% 類，同口徑待裁）",
+        "K3 2026-10-30 裁决单#3：无证案例/100%退款 不发布（歷史口徑，共享組件殘留屬執行遺留）",
+        "重要文件/2026-11-27-full-refund-three-option-ruling-material.md（一頁裁決材料：A級13處/B級6處/C級1分級 + 三選一分析 + ②-A/②-B 細案，推薦②-A）"
+      ],
+      "approval_gate": "WAITING_K3 — 一句話三選一：① 保留現狀 ② 條件化（quote 條件下出現） ③ 全站刪除",
+      "write_scope": [
+        "src/components/（FreeSampleBanner / RushDeliveryFAQ / TrustBadgeBlock / WhyChooseUs 系）",
+        "src/data/category-seo-content.ts",
+        "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx（trustGuarantee，若選②③）"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "k3-review 12:05 獨立複探；95%+ on-time 數字校準另案",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "K3 拍板選項落地 + 全站 refund 語義類在線復探符合拍板口徑 + 门童全綠",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "EXECUTED 2026-11-27 04:5x commit 369cd3e6（K3 ②-A 拍板執行）。180 處條件化（13 文件），絕對詞全清；live 探針：三語首頁 100% satisfaction/滿意/満足=0、新口徑各=2；en PDP trustGuarantee=2、FAQ 14 天窗口=2；類目卡 Quality Defects Covered=2。RushDeliveryFAQ 我方原因條件保留（95% 數字屬 §0.23 另案已登記）。online_verify 由 k3-review 12:05 獨立翻轉。",
+      "execution_commit": null,
       "decision_record": null
     },
     {
@@ -2220,6 +2638,92 @@
       "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
       "learning_status": "HOLD_NO_LEARNING_CLAIM",
       "result": "PENDING：待工廠實詢。校準後一併評估是否加頁面斷崖說明文案。",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-20261127-WARN27-BATCH1",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "manual",
+      "status": "DONE",
+      "priority": 80.0,
+      "upstream_inputs": [
+        "sku-title-v5-audit-2026-11-26.json（27→20）",
+        "products.ts minQuantity=10 / basePrice 1·1.1 / price_range HK$100-180每100張",
+        "探針：small-bags PDP 308→category 死面實證"
+      ],
+      "approval_gate": "K3 06:11 開放式批准（可立即上線類）",
+      "write_scope": [
+        "zprintpro-sku-seo-data.csv + src/data/sku-seo-data.ts（生成器鏈）"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": null,
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "WARN 27→20（HARD=0）：small-bags 孤兒鍵鍵刪除（實證 308 死面）；三卡 zh title 改 10張起 HK$1起/HK$1.1起 真值口值口徑（當量 56/56/51 全過 50-57）。剩 20 = LONGTAIL 13（待 GSC 代理考古）+ 凍結 2 + fruit-food-label-stickers（被審計誤鍵為 seo）5（三語 500/100/50 矛盾，待 K3 價格真值裁決）。重要發現：audit 的 seo×5 實為 fruit-food-label-stickers 0-indent 畸形鍵被誤讀，其為 live PDP 真矛盾，登 N7。",
+      "execution_commit": null,
+      "decision_record": null
+    },
+    {
+      "task_id": "FIX-20261128-A1-TITLE-D2-UNFREEZE",
+      "source": "strategy_task_queue",
+      "cluster": "zh-hk+en+ja",
+      "query": [],
+      "baseline": {
+        "status": "NO_CURRENT_BASELINE",
+        "scope": "all-country GSC query rows; no query/page/country join inferred",
+        "window": "2026-10-14..2026-11-10",
+        "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+        "rows": {}
+      },
+      "owner_lane": "manual-session 或 daily（窗口開後）",
+      "status": "DONE",
+      "priority": 80.0,
+      "upstream_inputs": [
+        "重要文件/2026-11-27-a1-title-face-d2-unfreeze-execution-card.md（本卡執行載體：新 title 三語當量已算 zh 53 / en 56 / ja 57，全落 50-57 區）",
+        "title v5 審計 2026-11-26（252 槽，a1-posters 非凍結槽；凍結=certificates/foil-stickers）",
+        "G1 母提案頁3「價格矛盾→占位待 PRICE-TRUTH」——真值鏈已全通（02:48 拍板+批1 默認檔+本批 title）",
+        "重要文件/2026-11-27-title-bandfill-3-slots-merge-ruling-material.md（K3 05:34 拍板三條併入，候選當量 54/56/57）"
+      ],
+      "approval_gate": "APPROVED — 方向 11-13 D1/D6 + 11-26 02:48；擴批 K3 11-27 05:34「三條併入」；等 11-28 D2 解凍窗口",
+      "write_scope": [
+        "zprintpro-sku-seo-data.csv（源頭）→ csv-to-sku-seo.mjs → src/data/sku-seo-data.ts",
+        "src/data/products.ts（a1-posters/art-posters title 欄位核）",
+        "a1-posters PDP 直答塊（G1 批1 頁3）+ WA 預填 A2→A1 錯配",
+        "small-bags ja body 殘缺修復（生成器鏈）"
+      ],
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {
+        "next_check": "11-28 D2 解凍窗口開即執行；門禁 6 項 + live 探針 + 單變量",
+        "required_windows": [
+          "7d",
+          "14d",
+          "28d"
+        ]
+      },
+      "retry_at": null,
+      "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
+      "learning_status": "DONE_HISTORY_NO_NEW_LEARNING_CLAIM",
+      "result": "提前執行完成（K3 11-27 05:41 拍板）：commit 42dd2e43 已 push 並 live 驗收六 URL 全過——a1-posters 三語新 title 生效（zh「A1 大幅海報印刷 厚紙柯式 | 1張起印 4小時打稿」/ en「A1 Large Posters | 594×841mm Offset | 1 MOQ」/ ja「A1 ポスター | 防水 DHL配送 オフセット | 1枚〜」），舊 HK$20起/$4.60(title/meta)/¥600〜 字面量歸零；a2 zh 補「1-2天」、art zh 補「A1/A2」生效；G1 頁3 直答塊（Variant A）已上 a1-posters zh-hk 首屏；posters 品類 WA 模板三語 尺寸【A2】→【A1】對齊 A1 默認檔。small-bags ja title/body 已修但登記：該 SKU 無 PDP（308→/ja/category/paper-bags/），屬死面衛生零 live 影響。執行報告 .hermes/logs/2026-11-27-manual-executor-a1-title-d2-batch.md。",
       "execution_commit": null,
       "decision_record": null
     },
@@ -3972,9 +4476,9 @@
           ]
         },
         "retry_at": null,
-        "exit_criteria": "① 上述 8 条字符串 + zh-Hant bullet 语义类在线复探 0 命中（含全角/半角破折号变体）② 不引入新硬承诺（两工具交叉复扫）③ 门童全量 0 red + tsc 基线不升 ④ online_verify 由独立验收（k3-review）翻转，lane 不得自翻 PASS",
+        "exit_criteria": "【2026-11-27 K3 D3 拍板收窄】① SB 本地內容串（8 條字串 + zh-Hant bullet 語義類，僅 write_scope 7 文件範圍）在線復探 0 命中（含全角/半角破折號變體）；full refund 共享組件（FreeSampleBanner / category-seo-content.ts L4703 / RushDeliveryFAQ / TrustBadgeBlock / WhyChooseUs / ProductWhyChooseUs）【剔出本卡驗收】，歸 FIX-20261127-FULL-REFUND-SITEWIDE 卡（K3 三選一：保留/條件化/刪除）② 不引入新硬承諾（兩工具交叉復掃）③ 门童全量 0 red + tsc 基線不升 ④ online_verify 由獨立验收（k3-review）翻转，lane 不得自翻 PASS",
         "learning_status": "BASELINE_CAPTURED_NO_OUTCOME",
-        "result": "【2026-11-27 執行指引】k3-review 11-26 §5.3 = 當前唯一可執行面：en/ja SB 語言殘留（适配行业/結算/{PRODUCT_NAME}/ja 半角交期變體）+ products.ts 17 行適配行業模板 + seo.ts:861 zh-hk meta 後綴；不碰價格（D1 待 K3）、title、full refund（D3 共享組件待 K3）。11-26 18:17 輪 DEFER 之「同域在途」理由已消失。exit_criteria 收窄待 K3-D3。",
+        "result": "【2026-11-27 執行指引】k3-review 11-26 §5.3 = 當前唯一可執行面：en/ja SB 語言殘留（适配行业/結算/{PRODUCT_NAME}/ja 半角交期變體）+ products.ts 17 行適配行業模板 + seo.ts:861 zh-hk meta 後綴；不碰價格（D1 待 K3）、title、full refund（D3 共享組件待 K3）。11-26 18:17 輪 DEFER 之「同域在途」理由已消失。exit_criteria 收窄待 K3-D3。 【2026-11-27 D3 執行】exit_criteria 已按 K3 拍板收窄（SB 本地串 only；full refund 共享組件剔出，歸新卡）。",
         "execution_commit": null,
         "decision_record": null
       },
@@ -4177,10 +4681,10 @@
     {
       "lane": "ZP-daily-content",
       "state": "Ready",
-      "last": "2026-11-25 18:17:00",
-      "next": "2026-11-26 18:17:00",
-      "last_task_result": 0,
-      "status": "OBSERVED",
+      "last": "2026-11-26 18:17:02",
+      "next": "2026-11-27 18:17:00",
+      "last_task_result": 1,
+      "status": "BLOCKED_INFRA",
       "natural_recovery": "NOT_PROVEN",
       "evidence": ".hermes/tmp/scheduler-inspection-20261114.json"
     },
@@ -4207,10 +4711,10 @@
     {
       "lane": "ZP-k3-review",
       "state": "Ready",
-      "last": "2026-11-26 12:05:02",
-      "next": "2026-11-27 12:05:00",
-      "last_task_result": 0,
-      "status": "OBSERVED",
+      "last": "2026-11-27 12:05:02",
+      "next": "2026-11-28 12:05:00",
+      "last_task_result": 1,
+      "status": "BLOCKED_INFRA",
       "natural_recovery": "NOT_PROVEN",
       "evidence": ".hermes/tmp/scheduler-inspection-20261114.json"
     }
