@@ -1,6 +1,17 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-## 🔒 持有中 — 2026-11-27 12:0x Kimi Work 人手会话（LONGTAIL 13 考古批，K3 11-27 11:46 指令「要現在啟動代理跑這批」）
+## ✅ 已释放 — 2026-11-27 12:4x Kimi Work 人手会话（LONGTAIL 13 考古批，K3 11-27 11:46 指令）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 11-27 11:46「WARN 15 中的 LONGTAIL 13 條考古批…要現在啟動代理跑這批」 |
+| **写入范围** | `zprintpro-sku-seo-data.csv` 12 title → 生成器 → `src/data/sku-seo-data.ts`；`scripts/guards/title-hooks.json` gscClusters +6 GSC 實證詞；`gsc_data_qp_90d.csv`（90d query×page 4415 行證據）；賬本 #21 + 隊列 DONE + 本鎖 |
+| **禁止范围** | 凍結槽 certificates 2 條不動（FROZEN_FILLER 只讀）；kraft ZH title 不動（環保材質已實證，僅補 cluster）；body 不動 |
+| **双条件核验** | ① 开工 src/ 淨、無 lane.lock、頂部全釋放；② 距 09:07 push ≈3h，無對端並發 |
+| **释放结果** | WARN 15→2（理論地板）；tsc 0 · title-v5 HARD=0 · title-band 0 · brand strict 0 · encoding/反審全綠；commit cf96768b push → CF build → live 12/12 PASS。機制發現：guard corpus 文件實測 queries=0，LONGTAIL 唯一活通道=gscClusters。 |
+
+## 🔒→✅ 持有已結束 — 2026-11-27 12:0x Kimi Work 人手会话（LONGTAIL 13 考古批，K3 11-27 11:46 指令「要現在啟動代理跑這批」）
 
 | 项 | 值 |
 |---|---|
