@@ -45,7 +45,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "Roll labels are the standard format for production-line labeling: shipped pre-wound to applicator spec, ready to mount out of the box. Standard core diameter 4cm, unwind direction options (e.g. landscape left unwind), 1,000 labels per roll; art paper with hot-melt adhesive on grid backing - strong tack, smooth dispensing - built for food, beverage, beauty and FMCG bottle-and-jar lines. 10 pcs MOQ, no plate fees; from HK$0.20 per label at 3,000 pcs. Pilot runs and mass production share the same digital line, so the proof color is the production color.\n\nRoll vs sheet - how to choose:\n- Machine-applied production → rolls: labeling speed is set by your machine, staff only reload\n- Hand application / retail packs → sheets: easy peel one by one\n- Pilot run 10-99 pcs → the roll small-batch tier starts at 10 with full production specs\nFor material comparisons see [food label stickers](/en/product/fruit-food-label-stickers/) and [waterproof stickers](/en/product/waterproof-stickers/).\n\nSpec sheet (straight from the quote engine): common 150x100mm class, any size quotable; die-cut to any shape including brand silhouettes; hot-melt adhesive sticks firmly to PET, PP, glass bottles and jars. Standard roll stock is unlaminated art paper - waterproof or laminated rolls available via WhatsApp. Variable data supported: a different serial, QR code or barcode on every label for batch tracking, anti-diversion and membership codes.\n\nFile requirements: 300 DPI, CMYK, 3mm bleed, outlined fonts. Free digital proof within 1 hour of file submission, up to 2 free revisions. Before mass production, we recommend a 10-99 pc pilot run to verify applicator tracking, unwind direction and peel angle.\n\nTransparent pricing: 10 pcs HK$55, 25 pcs HK$57.5, 50 pcs HK$61, 75 pcs HK$65.5, 99 pcs HK$70, 3,000 pcs HK$610 (HK$0.20/pc). No setup or plate fees. Standard production 5-7 business days.\n\n**FAQ**\n\n**Q1: Can I specify core size and unwind direction?**\nYes. 4cm core diameter is standard and unwind direction is optional (e.g. landscape left unwind); send us your applicator model and we will match the winding spec.\n\n**Q2: What is the minimum order?**\n10 pcs with no plate fees. The 10-99 pc small-batch tier shares full production specs; volume tiers go up to 3,000 pcs.\n\n**Q3: Can roll labels carry serials or QR codes?**\nYes. Digital variable-data printing gives every label a unique serial, QR code or barcode for batch tracking and anti-diversion.\n\n**Q4: Can shapes be die-cut?**\nYes - any shape, including brand silhouettes, is die-cuttable and machine-applicable; complex shapes benefit from a proof run first.\n\nReady to order? Free 1-hour proofing - WhatsApp +86 198 8085 1334 or hit the 30-second AI quote button."
       },
       "ja": {
-        "title": "ロールラベル | 巻芯4cm 食品対応 | 10枚〜¥4〜 | ZprintPro",
+        "title": "ロールラベル | 巻芯4cm 食品対応 | 10枚 ¥4〜 | ZprintPro",
         "description": "ロールラベル 10枚〜¥4〜、3,000枚の場合¥12,200（3巻分）。巻芯径4cm・繰り出し方向指定可・1巻1,000枚、ホットメルトアート紙でラベラーにそのまま対応。無料校正、5-7営業日発送。今すぐ見積。",
         "h1": "ロールラベル｜巻芯4cm・ラベラー対応｜ZprintPro",
         "keywords": ["ロールラベル","ロールシール","ラベル印刷","シール印刷","巻きラベル","ラベラー","食品ラベル","ボトルラベル","オリジナルシール","ステッカー印刷"],
@@ -81,7 +81,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "Custom waterproof stickers built for outdoor use: PVC waterproof stock with UV-resistant ink rated for 3 years outdoors and up to 5 years indoors. 10 pcs MOQ with no setup fees, free US shipping on orders over $99. Over a decade of print experience.\n\nWaterproof stickers earn their keep outside: ice buckets and delivery bags for F&B, safety decals on equipment and machinery, car and window graphics, warehouse rack labels, pool and bathroom product tags. Wherever surfaces get rained on, washed or scrubbed, the print stays sharp.\n\nMaterial and finishing options:\n- PVC waterproof (base stock, best value, outdoor-first)\n- PP synthetic paper (+10%, paper feel, short-term events)\n- Lamination: gloss (+0) / matte (+5%) for abrasion and stain resistance\n- Die-cut (+30%): any shape, brand silhouettes included\n- Heavy-duty adhesive (e.g. 3M, subject to artwork and stock)\nSizes run from approx. 10x10mm to 300x400mm with ICC color management for stable brand colors, plus variable data (serials, barcodes, QR codes).\n\nFile requirements: 300 DPI, CMYK, 3mm bleed, outlined fonts. Free digital proof within 1 hour of file submission, up to 2 free revisions. No design files yet? Send brand colors, logo and reference images via WhatsApp and our design team will mock it up free. Free dieline templates for standard sizes.\n\nPricing is transparent: 10 pcs MOQ, no setup or plate fees. Standard production 5-7 business days; rush orders are confirmed per order. Shipping and delivery timing are confirmed at quote. Instant online quote in 30 seconds.\n\n**FAQ**\n\n**Q1: Are the stickers really waterproof?**\nYes. PVC waterproof stickers handle rain, washing and brief soaking; laminated versions withstand dishwasher cycles up to 80C, ideal for containers that get cleaned often.\n\n**Q2: How long do they last outdoors?**\nWith UV-resistant ink, colors stay vivid for 3 years outdoors and up to 5 years indoors. For constant sun exposure we recommend lamination.\n\n**Q3: What is the minimum order?**\n10 pcs with no setup fees. A 50-pc small-batch option is available. Standard lead time is 5-7 business days.\n\n**Q4: Can I print variable data such as serials, barcodes or QR codes?**\nYes. Digital printing supports a different serial, barcode or QR code on every sticker - perfect for asset labels and event tickets.\n\nReady to order? Free 1-hour proofing - WhatsApp +86 198 8085 1334 or hit the 30-second AI quote button."
       },
       "ja": {
-        "title": "防水ステッカー | PVC ダイカット | 10枚〜¥41〜 | ZprintPro",
+        "title": "防水ステッカー | PVC ダイカット | 10枚 ¥41〜 | ZprintPro",
         "description": "防水ステッカー 10枚〜¥41〜。PVC防水／PP合成紙の2大面材、UV耐性インクで屋外3年の褪色対応。マット／グロスラミ、型抜き対応。設備ラベル、車用、ドリンクバケツに。5-7営業日発送、1時間無料デジタル校正、全国送料無料。",
         "h1": "防水ステッカー｜PVC防水・屋外対応｜ZprintPro",
         "keywords": ["防水ステッカー","防水ステッカー 印刷","waterproof stickers","ステッカー印刷","オリジナルステッカー","小ロットステッカー","ダイカットステッカー","透明ステッカー","商品ラベル","カスタムステッカー"],
@@ -369,7 +369,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "Quick answer: 100 pcs MOQ, from US$0.64 per pc (size and paper weight), free digital proof within 1 hour, instant quote in 30 seconds.\n\nCustom white card bags designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees. Production and delivery timing are confirmed at quote.\n\nWhite Card Bags are widely used across retail shopping bags and boutique packaging, gift bags and event giveaways, and restaurant takeaway and food delivery bags — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The paper bags market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our white card bags service is built for.\n\nMaterial options include Brown kraft paper 150g (eco-friendly standard) for everyday high-volume use, White card stock 210g (premium retail) for premium applications, and Art paper 170g with matte lamination (luxury gift) for specialty projects. All three are FSC-certified paper, 100% recyclable and Reinforced twisted-paper or cotton cord handles, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 1 hour. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Production and delivery timing are confirmed at quote. Rush orders are handled per order and confirmed at quote. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What sizes and handle types are available?**\nStandard sizes: Small (8\"x10\"), Medium (12\"x14\"), Large (16\"x18\"), and Custom (any size up to 24\"x24\"). Handle options: Twisted paper cord (eco), Cotton cord (premium feel), Ribbon (luxury), and Flat tape (extra-durable for heavy items).\n\n**Q2: What is the minimum order quantity?**\n100 bags minimum. Production and delivery timing are confirmed at quote. Bulk discounts at 500 / 1,000 / 5,000 quantities.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — free 3D render within 4 hours. For physical samples, we offer a paid sample pack ($29) with material and handle samples shipped via DHL Express.\n\n**Q4: Are paper bags food-safe?**\nOur kraft paper bags use food-grade ink and are safe for indirect food contact (bakery, takeaway, dry snacks). For hot food / grease / liquid, we offer inner PE or PLA bio-lining at an additional 15-20%.\n\nReady to print? Get a free digital proof in 1 hour — WhatsApp us at +86 198 8085 1334 or use the 30-second AI quote button on this page. DHL Express delivers to the lower 48 states in 3-5 days."
       },
       "ja": {
-        "title": "白カード紙袋 | エコ素材 | 100枚〜 ¥360〜 | ZprintPro",
+        "title": "白カード紙袋 | エコ用紙 | 100枚〜 ¥360〜 | ZprintPro",
         "description": "白カード紙袋の白カード紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "白カード紙袋印刷｜エコ素材対応",
         "keywords": ["白カード紙袋","白カード紙袋 印刷","white card bags","紙袋印刷","ショッピングバッグ","クラフト紙袋","エコバッグ","ギフトバッグ","カスタム紙袋","ハンドルバッグ"],
@@ -679,7 +679,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "厚身單張 | A4/A5 雙面四色 | 10張起 HK$0.45起 | 智印港",
+        "title": "厚身單張 | A4/A5 厚紙雙面四色 | 10張起 HK$0.45起 | 智印港",
         "description": "厚身單張/傳單印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "厚身單張印刷 — A4/A5 雙面四色，10 張起印",
         "keywords": ["厚身單張","傳單印刷","傳單印刷印刷","單張印刷","彩頁印刷","折頁印刷","A4單張","A5單張","DM單","三折頁"],
@@ -1485,7 +1485,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "A custom calendar is one of the few printed items people keep in front of them for a full year — which is why it earns its place in retail, e-commerce and corporate gifting programs. ZprintPro builds them wire-bound with four-color CMYK and premium materials, so every page doubles as a branded display rather than a passive date grid.\n\nBecause each page can feature company products or services, a custom calendar becomes a rolling twelve-month campaign. A skincare brand can walk customers through its routine month by month, a real estate team can showcase listings, and a restaurant can highlight seasonal menus — all while the logo stays in view all year. Corporate gifting programs and events use the same pages to thank clients and partners at scale.\n\nWhen you plan your run, calendar sizes matter: A3 and A4 are the most common formats, and fully custom dimensions are available for unusual layouts. Buyers comparing calendar dimensions before ordering can start from the free twelve-month templates with holiday markings, and the layout service includes monthly page design at no extra charge.\n\nPrinted on 250-300g art paper or coated paper — with 300g options for extra rigidity and accurate color — the pages reproduce photography and illustration cleanly in four-color offset or digital. Metal ring or saddle-stitch binding keeps page turning smooth and the calendar durable across the year, while premium accents such as foil stamping and spot UV can be added, and fully custom printing puts your logo, brand story and product images on every page.\n\nPricing is HK$3-8 per book with a 1-unit minimum (bulk 300+ offset) order, and free US shipping applies on orders over $100. Digital production runs 3-5 days and offset 5-7, then DHL or FedEx delivers worldwide in 2-4 business days. With Q4 as the peak season, confirming your files early keeps delivery comfortable; November and December slots are confirmed at quote.\n\n**FAQ**\n\n**Q1: What calendar sizes can I order?**\nA1: Standard calendar sizes include A3 and A4, and fully custom dimensions are available to match your layout.\n\n**Q2: Can I feature my own products on the pages?**\nA2: Yes — every page can feature company products or services, and the free layout service designs each month with holiday markings.\n\n**Q3: How long does production take?**\nA3: Digital runs complete in 3-5 days and offset in 5-7, followed by 2-4 business days of worldwide shipping via DHL or FedEx.\n\nReady to start your 2027 run? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page to secure your production slot early for the Q4 rush."
       },
       "ja": {
-        "title": "オリジナルカレンダー | 業務用 | 1冊〜 ¥50〜 | ZprintPro",
+        "title": "オリジナルカレンダー 印刷 | 1冊〜 ¥50〜 | ZprintPro",
         "description": "オリジナルカレンダーは12ヶ月12レイアウト: 製品写真、キャンペーン日程、ブランドストーリーを月ごとに掲載、1部から。250-300gアート紙またはコート紙に箔押し・局部UV・リング綴じも選択可。可変データで支店・従業員情報をページ別に印刷可能。無料レイアウト、30秒AI見積り。",
         "h1": "オリジナルカレンダー 1部〜：月別ブランドレイアウト・箔押し対応",
         "keywords": ["オリジナルカレンダー","オリジナルカレンダー 印刷","カレンダー オーダーメイド","企業カレンダー","2027年カレンダー","ロゴ入りカレンダー","ノベルティカレンダー","箔押しカレンダー","カレンダー製作","custom calendars"],
@@ -1615,7 +1615,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "PVC 餐牌 · 防水防油覆膜 10張起印 | 餐飲/酒吧菜單 | 智印港",
+        "title": "PVC 餐牌 · 防水防油覆膜 10張起印 | 餐牌印刷 | 智印港",
         "description": "PVC 餐牌印刷 10 張起印。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界 $500 免費順豐速遞。餐廳、咖啡店、酒吧、茶餐廳、火鍋店、居酒屋首選。",
         "h1": "PVC 餐牌印刷 · 防水防油可水洗菜單 | 智印港",
         "keywords": ["PVC 餐牌印刷","餐牌印刷","PVC 餐牌","pvc 餐牌","膠卡餐牌","防水餐牌","PVC餐牌","紙質菜單","精裝菜單","一次性菜單"],
@@ -1651,7 +1651,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "過膠餐牌印刷 · 防水覆膜 10份起 | 餐廳/咖啡店菜單 | 智印港",
+        "title": "過膠餐牌印刷 · 防水覆膜 10份起 | 餐牌印刷 | 智印港",
         "description": "過膠餐牌印刷 10 份起印。採用 200g–250g 銅版紙/啞膠或光膠覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "過膠餐牌",
         "keywords": ["過膠餐牌","餐牌印刷","防水餐牌","PVC餐牌","紙質菜單","精裝菜單","一次性菜單","杯套印刷","打包盒","餐廳宣傳單"],
@@ -1687,7 +1687,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "精裝餐牌印刷 · 硬殼裝訂 10本起 | 高級餐廳/酒店 | 智印港",
+        "title": "精裝餐牌印刷 · 硬殼裝訂 10本起 | 餐牌印刷 | 智印港",
         "description": "精裝餐牌印刷 10 本起印。採用 硬紙板封面裱糊銅版紙/內頁 200g 銅版紙 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "精裝餐牌",
         "keywords": ["精裝餐牌","餐牌印刷","防水餐牌","PVC餐牌","紙質菜單","精裝菜單","一次性菜單","杯套印刷","打包盒","餐廳宣傳單"],
@@ -1809,7 +1809,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "ZprintPro roll-up banners are the portable display that packs into a carry bag and stands in seconds, making them essential for exhibitions, roadshows, and storefronts that change their message often. One reusable frame can serve campaign after campaign, since only the printed roll is swapped. Production is quality-managed with FSC-conscious materials, and files are confirmed the same day.\n\nTrade-show exhibitors rely on roll-up banners that survive flights and hotel lobbies, while retail teams place them at entrances for daily promotions and product launches. Roadshow organizers set them up at every stop without tools, and one person can install or pack one in seconds. Most event kits carry both roll-up banners and adhesive banners: the roll-up for the booth, the adhesive for venue walls and glass.\n\nCompanies planning adhesive banner printing for a pop-up often pair it with roll-ups so the same message travels to the next city without reprinting the wall graphic. Because the roll is replaceable, the stand keeps working long after the first design is retired, which makes the per-event cost attractive for frequent exhibitors.\n\nThe graphic panel is printed on PET or PVC sheet, or waterproof synthetic paper, and finished with a weighted base bar to stop curling. Common sizes run from 850×2000mm up to the 1200×3000mm class, with multiple widths and heights to choose from. Anti-curl and non-glare materials are available, and optional extras include a weighted bar, an Oxford fabric bag, or a hard case for safe shipping.\n\nPricing runs HK$85–300 per set with a minimum order quantity of 100 sets. Same-day file confirmation gets your order moving, with DHL Express or FedEx delivery of 3–5 days to the USA and 2–4 days to Japan; US orders over $100 ship free, and we deliver worldwide to more than 50 countries.\n\n**FAQ**\n\n**Q1: How quickly can a roll-up banner be set up?**\nThe aluminum stand is designed for single-person setup and takedown in seconds, and the graphic roll can be swapped whenever your message changes.\n\n**Q2: Can I reuse the stand for a new design?**\nYes — the roll is replaceable, so the same frame works for campaign after campaign.\n\n**Q3: What sizes are available?**\nCommon sizes run from 850×2000mm up to the 1200×3000mm class, with several widths and heights to choose from.\n\nTraveling to your next show? Get an instant quote with the 30-second AI quote tool, or reach us on WhatsApp at +86 198 8085 1334 for a free digital proof within 1 hour."
       },
       "ja": {
-        "title": "ロールアップバナー | アルミスタンド | 1個〜 | ZprintPro",
+        "title": "ロールアップバナー | バナー 印刷 | 1個〜 | ZprintPro",
         "description": "ロールアップバナーのロールアップバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "ロールアップバナー印刷｜アルミスタンド付き",
         "keywords": ["ロールアップバナー","ロールアップバナー 印刷","roll up banners","バナー印刷","屋外バナー","展示バナー","横断幕","懸垂幕","メッシュバナー","車両広告"],
@@ -2047,7 +2047,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "線圈筆記本 | A4/A5 YO圈/螺旋裝 | 10本起 HK$8起 | 智印港",
+        "title": "線圈筆記本 | A4/A5 線圈/螺旋裝 | 10本起 HK$8起 | 智印港",
         "description": "線圈筆記本/線圈筆記本 10 本起。採用 內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "線圈裝訂，可180度平攤。適合筆記本、工作手冊。智印港提供專業線圈筆記本服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["線圈筆記本","筆記本印刷"],
@@ -2695,7 +2695,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "燙金名片印刷 | 金・銀・玫瑰金 | 10個起 HK$1.8起 | 智印港",
+        "title": "燙金名片印刷 | 金銀玫瑰金 燙金 | 10個起 HK$1.8起 | 智印港",
         "description": "燙金賀卡印刷：300g 銅版紙配金、銀、玫瑰金金屬燙金層，光線下呈現細緻光澤。127×178mm 標準，10 張起印 HK$1.8 起。適合新年賀卡、聖誕卡、婚禮邀請與感謝卡，可配局部 UV、壓紋升級，免費設計打稿、即日報價，量大優惠歡迎 WhatsApp 查詢。",
         "h1": "感謝卡定制",
         "keywords": ["燙金名片"],
@@ -2731,7 +2731,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "局部UV賀卡印刷 | 啞面高光對比 | 10張起 HK$1.4起 | 智印港",
+        "title": "局部UV賀卡印刷 | UV賀卡印刷 | 10張起 HK$1.4起 | 智印港",
         "description": "局部UV賀卡印刷：啞面底紙配高光 UV 圖案，強烈層次與立體對比，觸感細緻。300g 銅版紙或合成紙，127×178mm 標準，10 張起印 HK$140 起。適用生日卡、聖誕卡、新年卡、產品宣傳卡及品牌賀卡，可印 LOGO 與品牌配色，亦可選燙金升級，免費設計打稿，即日報價，量大優惠歡迎 WhatsApp 查詢。",
         "h1": "局部UV賀卡定制 | 啞面與高光層次對比",
         "keywords": ["局部UV賀卡","UV賀卡","啞面UV賀卡","高光賀卡","聖誕卡UV","Logo UV賀卡","感謝卡印刷","質感賀卡","局部上光賀卡","高級賀卡定制"],

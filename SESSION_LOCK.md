@@ -1,5 +1,16 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## 🔒 持有中 — 2026-11-27 12:0x Kimi Work 人手会话（LONGTAIL 13 考古批，K3 11-27 11:46 指令「要現在啟動代理跑這批」）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 11-27 11:46「WARN 15 中的 LONGTAIL 13 條考古批…要現在啟動代理跑這批」＋「有利于排名首页的动作都可以立即或下一個 push 窗口就上線」 |
+| **写入范围** | `zprintpro-sku-seo-data.csv`（12 條 title：roll-stickers/waterproof/white-card/thick-paper/custom-calendars/roll-up-banners 之 JA + thick-paper/pvc-menus/laminated-menus/hardcover-menus/spiral-notebooks/foil/spot-uv 之 ZH）→ 生成器 → `src/data/sku-seo-data.ts`；`scripts/guards/title-hooks.json`（gscClusters 加 GSC 實證詞：エコ用紙/厚紙/餐牌/線圈/環保材質/賀卡印刷）；`.hermes/logs/`（GSC 90d 明細 gsc_data_qp_90d.csv + 賬本 #21/隊列/報告）、`SESSION_LOCK.md` |
+| **禁止范围** | 凍結槽 certificates 2 條 FROZEN_FILLER 不動；kraft-paper-packaging-box ZH title 不動（「環保材質」本就是 GSC 實證詞，僅補 cluster 註冊）；不動 products.ts；不動 body（ts 權威域） |
+| **双条件核验** | ① 开工 `src/` 无 MM、无 staged 删除、`lane.lock` 不存在、顶部全釋放；② 最近 push = 11-27 09:07（8081bcc2），至开工 ≈3h，無對端並發 |
+| **数据来源** | GSC query×page 90 日明細（fetch_gsc_data.py --days 90 --dimensions query,page，2026-11-27 12:0x 經代理 127.0.0.1:7890 拉取，4415 行）；語料庫 .hermes/gsc-2026-09-18/extract.json 實測 queries n=0（guard corpus 恆空，唯一命中通道 = gscClusters） |
+
 ## ✅ 已释放 — 2026-11-27 09:2x Kimi Work 人手会话（N7 fruit-food 價格真值批，K3 09:03 開放式批准 = 委託裁決）
 
 | 项 | 值 |
