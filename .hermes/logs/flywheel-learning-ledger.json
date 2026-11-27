@@ -1104,6 +1104,18 @@
     "競品：4a.com.hk 膠裝書價格表 / pro360.com.hk 書刊印刷費用頁（2026-11-27 實查）"
    ],
    "calibrated_at": "2026-11-27T23:30:00+08:00"
+  },
+  {
+   "at": "2026-11-28T01:05:00+08:00",
+   "by": "manual-session-1128-q7-perfect-bound-aeo-block",
+   "summary": "批 Q7（K3 11-28 00:23 開放式批准，建議書 TOP2 合流）：膠裝書 AEO 直答塊 + catalog PDP 導流鏈上線，live 2/2 PASS。背景：膠裝書價格 query i210 中 PDP 僅 i4（佔2%）但 r27 全簇最好——離首頁一步；catalog-printing PDP 在 i188（膠裝書 r62-84 差排名頁）錯配承接。修復兩件：① perfect-bound 塊 longDescription 頭部插可見直答塊「膠裝書印刷幾多錢一本？無線膠裝書 HK$16-80/本，10 本起印；48-400 頁，書脊可印書名/條碼/ISBN。30 秒 AI 即時報價，5-10 個工作天交貨。」（價格全用 products.ts:5234 真值，競品 4a.com.hk ~HK$95/本 3-6 倍位勢）；② catalog-printing 塊裝訂表「膠裝（無線裝）」格加導流鏈 /zh-hk/product/perfect-bound-books/（截錯配 i188）。機制入賬：① products-content 多產品塊共享模板行（「膠裝（無線裝）」行全文件 4 塊重複）必須切片作用域替換，塊邊界定位 count=1；② features 陣列經 localizeSpecValue 純文本渲染，放不了 HTML 鏈——導流只能走 longDescription/body 類富文本槽；③ 書刊/膠裝全鏈路本週三批閉合（Q5-A 真值 ×11 → Q6 錨 ×7 → Q7 直答+導流），12-04 同窗三批聯合復測。7d 復測門 12-04：膠裝書價格 PDP r27→≤15（衝首頁）/ 膠裝書印刷 r47.9→≤25 / 膠裝書 r33→≤20。defer 仍開放：膠裝 en/ja 版直答塊複製（待 zh 12-04 達標）、ja book guide 謊言 ×2、月曆 blog 卡片 HK$14-57 ×3 語。",
+   "sources": [
+    "gsc_data_qp_90d.csv（膠裝系 4 詞 + catalog 承接 i188 r62-84 錯配）",
+    "products.ts:5234-5266（perfect-bound-books 真值：HK$16-80/本、10 本起、48-400 頁）",
+    "重要文件/2026-11-27-perfect-bound-pdp-archaeology-and-q6-anchor-batch.md（建議書 TOP2）",
+    "commit bdfe8544（Q7 src 批）；live 復探 2/2 PASS（2026-11-28 00:4x）"
+   ],
+   "calibrated_at": "2026-11-28T01:05:00+08:00"
   }
  ],
  "retest_gate_2026_11_20": {

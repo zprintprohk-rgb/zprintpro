@@ -1,6 +1,6 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-## 🔒 持有中 — 2026-11-28 00:2x Kimi Work 人手会话（批 Q7：膠裝書直答塊 + catalog 導流鏈）
+## ✅ 已释放 — 2026-11-28 00:2x Kimi Work 人手会话（批 Q7：膠裝書直答塊 + catalog 導流鏈）
 
 | 项 | 值 |
 |---|---|
@@ -9,7 +9,8 @@
 | **寫入範圍** | products-content.ts（perfect-bound 塊首插 AEO 直答塊 ×1 + catalog-printing 塊裝訂表膠裝格導流鏈 ×1，切片作用域原始替換）；賬本 #27 + 隊列 Q7 卡 + 本鎖 |
 | **禁止範圍** | 單變量 zh-hk；不動 features（純文本渲染放不了鏈）；不動 en/ja section；價格只用 products.ts 真值（HK$16-80/本、10 本起） |
 | **双条件核验** | ① src/ 淨、無 lane.lock（已驗）；② lane 19:31 後靜默 >4h，窗口滿足 |
-| **TTL** | 30 min，預計 00:5x 前釋放 |
+| **TTL** | 30 min，實際 01:0x 釋放 |
+| **释放结果** | tsc 0 · 反審 0 red；commit bdfe8544 push → live 2/2 PASS（perfect-bound PDP 直答塊生效 + catalog PDP 裝訂表膠裝格導流鏈生效）。機制入賬：共享模板行切片作用域（「膠裝（無線裝）」行 4 塊重複）；features 純文本槽放不了 HTML 鏈，導流只走 longDescription。7d 復測門 12-04：膠裝書價格 r27→≤15 / 膠裝書印刷 r47.9→≤25 / 膠裝書 r33→≤20。 |
 
 
 ## ✅ 已释放 — 2026-11-27 23:0x Kimi Work 人手会话（批 Q6：膠裝書 PDP 錨鏈批，K3 22:56 開放式批准）

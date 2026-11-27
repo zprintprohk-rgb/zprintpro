@@ -1780,6 +1780,29 @@
    "done_at": "2026-11-27T14:50:00+08:00"
   },
   {
+   "task_id": "FIX-20261128-Q7-PERFECT-BOUND-AEO",
+   "source_strategy": "K3 2026-11-28 00:23 開放式批准（建議書 TOP2 合流批 Q7，膠裝書直答塊 + catalog 導流鏈）",
+   "market": "zh-hk",
+   "target": "膠裝書價格 r27 距首頁一步的 AEO 直答承接 + catalog-printing PDP 裝訂句導流（截錯配 i188 r62-84 把流量導正到 perfect-bound-books PDP）",
+   "evidence": [
+    "gsc_data_qp_90d.csv：膠裝書價格 i210（PDP i4 r27 佔2% 全簇最好）、i188 catalog PDP 在膠裝書 r62-84 差排名頁錯配承接",
+    "products.ts:5234 真值：HK$16-80/本、10 本起、48-400 頁、書脊可印書名/條碼/ISBN",
+    "競品：4a.com.hk 100本 ~HK$95/本 vs 我方 HK$16-80——價格位勢 3-6 倍，AEO 直答把位勢變可見答案"
+   ],
+   "score": 82,
+   "score_model": "pdp-aeo-block-and-mismatch-intercept",
+   "write_scope": [
+    "src/data/products-content.ts（perfect-bound 塊 longDescription 頭部插 AEO 直答塊 ×1）",
+    "src/data/products-content.ts（catalog-printing 塊裝訂表「膠裝（無線裝）」格加導流鏈 ×1，切片作用域）"
+   ],
+   "approval_gate": "K3 已拍板（2026-11-28 00:23 開放式批准）",
+   "owner_lane": "manual-session",
+   "status": "DONE",
+   "next_check": "12-04 7d 復測門：膠裝書價格 PDP r27→≤15 / 膠裝書印刷 r47.9→≤25 / 膠裝書 r33→≤20；達標則複製 en/ja 版直答塊",
+   "result": "EXECUTED 2026-11-28 00:4x commit bdfe8544 push → live 2/2 PASS（perfect-bound PDP 直答塊生效 + catalog PDP 導流鏈生效）。tsc 0 反審 0 red。機制入賬：共享模板行切片作用域（4 重複）；features 純文本槽放不了 HTML 鏈。",
+   "exit_criteria": "① 直答塊 live 可見（含 HK$16-80/本 真值）；② catalog 裝訂表膠裝格帶鏈 live；③ tsc 0 + 反審 0 red——全過（live 實測 2/2 PASS）"
+  },
+  {
    "task_id": "FIX-20261127-Q6-PERFECT-BOUND-ANCHORS",
    "source_strategy": "K3 2026-11-27 22:56 開放式批准（膠裝書 PDP 考古後按最優推薦執行）",
    "market": "zh-hk",
