@@ -9349,7 +9349,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <thead><tr><th>工藝</th><th>效果說明</th></tr></thead>
   <tbody>
     <tr class="border-b border-gray-200"><td>騎馬釘</td><td>8-64 頁 A4/A5/B5，可平攤翻頁 180 度</td></tr>
-    <tr class="border-b border-gray-200"><td>膠裝（無線裝）</td><td>48 頁以上 A4/A5/B5，書脊平整牢固</td></tr>
+    <tr class="border-b border-gray-200"><td><a href="/zh-hk/product/perfect-bound-books/">膠裝（無線裝）</a></td><td>48 頁以上 A4/A5/B5，書脊平整牢固</td></tr>
     <tr class="border-b border-gray-200"><td>硬皮精裝</td><td>2.5mm 灰紙板封面，硬挺高檔</td></tr>
     <tr><td>活頁筆記本（YO 圈 / 金屬螺旋）</td><td>可拆卸重組，企業禮品首選</td></tr>
   </tbody>
@@ -9620,7 +9620,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 `,
   },
   'perfect-bound-books': {
-    longDescription: `<h3>材質與紙張對比</h3>
+    longDescription: `<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>膠裝書印刷幾多錢一本？</strong>無線膠裝書 HK$16-80/本，10 本起印；48-400 頁，書脊可印書名/條碼/ISBN。30 秒 AI 即時報價，5-10 個工作天交貨。</p></div>
+<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
   <thead><tr><th>紙材</th><th>特性</th><th>適用場景</th></tr></thead>
