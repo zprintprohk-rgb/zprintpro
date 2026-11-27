@@ -880,7 +880,7 @@
     "2026-11-24": "W4 GEO 探针第 4 轮（固定问题集，11-10/17/24 节奏）；nengajo 3 TBC 补拍；月曆/利是封缺口已审计待 K3（§3.5）",
     "2026-11-25": "alignment pack 交付 + nightly: small-batch 5 条已批残留批(价格值待 K3) + 貼紙第八窗 plateau 判定 HOLD; 11-26=doujin 语义类补扫; 11-27=weekly 14d 窗 + guard 9 文件解释; 12-01=数据盘点日(非算法终审)"
   },
-  "updated_at": "2026-11-27T06:35:00+08:00",
+  "updated_at": "2026-11-27T09:30:00+08:00",
   "update_log": [
     {
       "at": "2026-11-19T23:25:00+08:00",
@@ -1024,6 +1024,16 @@
         ".hermes/logs/sku-title-v5-audit-2026-11-26.json",
         "products.ts",
         "live 308 探針實測"
+      ]
+    },
+    {
+      "at": "2026-11-27T09:30:00+08:00",
+      "by": "manual-session-1127-n7-fruit-food-truth",
+      "summary": "N7 裁決閉合（K3 09:03 開放式批准=委託裁決）：真值 = products.ts 引擎 MOQ 500 / basePrice HK$0.22（zh title 本正確）。修復：① fruit-food-label-stickers 塊 0-indent 歷史畸形修復（門童從此即正確讀槽，N7 五條 WARN 全消，WARN 20→15）；② 三語 body 10 處——en『100-piece/50-sticker』→500+10起防水貼紙線链接、en 4天→3-5天、ja『100枚/50枚』→500枚+小ロット線链接、ja 急件 48h+1日30% → 24h校正+2日20%（與 zh 對齊）、zh $500→HK$500 ×2、zh FAQ Q2 刪 10-99 小批量假口徑改『單價 HK$0.22 起批量越大越平』。WARN 現存 15 = LONGTAIL 13 + 凍結 2（理論地板，待 GSC 代理考古批與凍結槽裁決）。",
+      "sources": [
+        "products.ts minQuantity=500 basePrice=0.22 price_range HK$0.22-1.20/張",
+        "sku-title-v5-audit-2026-11-27.json",
+        "K3 11-27 09:03 指令"
       ]
     }
   ],

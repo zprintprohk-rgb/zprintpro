@@ -1,5 +1,16 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## ✅ 已释放 — 2026-11-27 09:2x Kimi Work 人手会话（N7 fruit-food 價格真值批，K3 09:03 開放式批准 = 委託裁決）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 11-27 09:03「有利于排名首页的动作都可以立即或是下一个 push 時間窗口就上線…按最优推荐方案继续下一步」→ N7 裁決 = products.ts 引擎真值 **MOQ 500 / basePrice HK$0.22**（zh title 本就正確；矛盾全在 en/ja body 與 zh 符號） |
+| **写入范围** | `src/data/sku-seo-data.ts`（fruit-food-label-stickers 塊縮進 0→2 修復 + 三語 body 10 處真值修復）；`.hermes/logs/`（賬本 #20/隊列/報告）、`SESSION_LOCK.md` |
+| **禁止范围** | 不動 title/description/h1（CSV 權威域本已真值）；不動 products.ts；不動 LONGTAIL 13 / 凍結 2 |
+| **双条件核验** | ① 开工 `src/` 无 MM、无 staged 删除、`lane.lock` 不存在、顶部全釋放；② 最近 push = 11-27 06:36（ed2d2d5d），至开工 >2.5h，無對端並發 |
+| **释放结果** | tsc 0 · title-v5 HARD=0 WARN=15 · title-band 0 · brand/encoding/content-guard 全綠；WARN 20→15（N7 五條全消）；push 後 live 復探三語 PDP 矛盾句歸零。 |
+
 ## ✅ 已释放 — 2026-11-27 06:2x Kimi Work 人手会话（A1 title 面 D2 批提前執行，K3 11-27 05:41 拍板「調成現在就或下一個 push 窗口就上線」）
 
 | 项 | 值 |

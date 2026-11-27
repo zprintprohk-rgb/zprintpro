@@ -1668,6 +1668,24 @@
       "status": "DONE",
       "done_at": "2026-11-27T06:40:00+08:00",
       "result": "WARN 27→20（HARD=0）：small-bags 孤兒鍵鍵刪除（實證 308 死面）；三卡 zh title 改 10張起 HK$1起/HK$1.1起 真值口值口徑（當量 56/56/51 全過 50-57）。剩 20 = LONGTAIL 13（待 GSC 代理考古）+ 凍結 2 + fruit-food-label-stickers（被審計誤鍵為 seo）5（三語 500/100/50 矛盾，待 K3 價格真值裁決）。重要發現：audit 的 seo×5 實為 fruit-food-label-stickers 0-indent 畸形鍵被誤讀，其為 live PDP 真矛盾，登 N7。"
+    },
+    {
+      "task_id": "FIX-20261127-N7-FRUIT-FOOD-TRUTH",
+      "source_strategy": "K3 11-27 09:03 開放式批准（N7 委託裁決）",
+      "market": "zh-hk+en+ja",
+      "target": "fruit-food-label-stickers 三語價格真值化：MOQ=500 / HK$0.22（products.ts 引擎 SSoT）",
+      "evidence": [
+        "products.ts minQuantity=500 basePrice=0.22",
+        "N7 登記（A1 批報告 §四）"
+      ],
+      "score": "P0",
+      "score_model": "correctness+data-integrity",
+      "write_scope": "src/data/sku-seo-data.ts（body ts 權威域）+ 塊縮進修復",
+      "approval_gate": "K3 09:03 拍板=按最優推薦執行",
+      "owner_lane": "manual",
+      "status": "DONE",
+      "done_at": "2026-11-27T09:30:00+08:00",
+      "result": "WARN 20→15；三語 body 10 處修復 + 塊縮進修復；title/desc/h1 維持真值未動。"
     }
   ],
   "last_review": "2026-11-26T03:05:00+08:00",
