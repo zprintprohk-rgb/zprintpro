@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-27T18:17:54+0800",
+  "generated_at": "2026-11-27T19:23:01+0800",
   "run_date": "2026-11-27",
   "board_path": ".hermes/logs/coordination-board.json",
   "policy": {
@@ -40,8 +40,8 @@
     },
     "weekly_review": {
       "available": true,
-      "path": ".hermes/logs/periodic-review-weekly-2026-11-20.json",
-      "review_date": "2026-11-20"
+      "path": ".hermes/logs/periodic-review-weekly-2026-11-27.json",
+      "review_date": "2026-11-27"
     },
     "monthly_review": {
       "available": true,
@@ -87,17 +87,17 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-21",
+        "next_check": "2026-11-28",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-21",
+      "retry_at": "2026-11-28",
       "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
       "learning_status": "HOLD_NO_LEARNING_CLAIM",
-      "result": "Recurred on 2026-11-20; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "result": "Recurred on 2026-11-27; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
       "execution_commit": null,
       "decision_record": null
     },
@@ -204,7 +204,8 @@
         ".hermes/logs/lane-status.json",
         ".hermes/logs/lane-runs.jsonl",
         ".hermes/locks/lane.lock",
-        "Get-ScheduledTaskInfo -TaskName ZP-k3-review"
+        "Get-ScheduledTaskInfo -TaskName ZP-k3-review",
+        ".hermes/logs/run-context-ZP-k3-review.json"
       ],
       "approval_gate": "Use recovery_plan; stop after repeated same-cause failure",
       "write_scope": [
@@ -214,17 +215,17 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-21",
+        "next_check": "2026-11-28",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-21",
+      "retry_at": "2026-11-28",
       "exit_criteria": "Preserve the current gate; an executor must not promote this task to READY.",
       "learning_status": "NOT_EVALUATED",
-      "result": "Recurred on 2026-11-20; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "result": "Recurred on 2026-11-27; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
       "execution_commit": null,
       "decision_record": null
     },
@@ -255,17 +256,17 @@
       "production_deploy": null,
       "online_verify": null,
       "retest": {
-        "next_check": "2026-11-21",
+        "next_check": "2026-11-28",
         "required_windows": [
           "7d",
           "14d",
           "28d"
         ]
       },
-      "retry_at": "2026-11-21",
+      "retry_at": "2026-11-28",
       "exit_criteria": "Fresh scheduler/bus/report evidence agrees; repeated same-cause failure stops automatic retry",
       "learning_status": "HOLD_NO_LEARNING_CLAIM",
-      "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix",
+      "result": "Recurred on 2026-11-27; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
       "execution_commit": null,
       "decision_record": null
     },
@@ -4722,8 +4723,8 @@
   "reviews": {
     "weekly": {
       "available": true,
-      "path": ".hermes/logs/periodic-review-weekly-2026-11-20.json",
-      "review_date": "2026-11-20"
+      "path": ".hermes/logs/periodic-review-weekly-2026-11-27.json",
+      "review_date": "2026-11-27"
     },
     "monthly": {
       "available": true,

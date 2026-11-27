@@ -3,21 +3,19 @@
   "guard": "#27 title-v5-guard",
   "mode": "commit",
   "rule": "v5 全规则机检 (SSoT docs/zprintpro-sku-title-rule-v5-2026-09-23.md)",
-  "slotCount": 252,
+  "slotCount": 249,
   "frozen": [
     "certificates",
     "foil-stickers"
   ],
   "hardCount": 0,
-  "warnCount": 30,
+  "warnCount": 20,
   "hardByRule": {},
   "warnByRule": {
     "LONGTAIL_SOURCE": 13,
-    "MOQ_UNVERIFIABLE": 6,
-    "BAND_FILL": 3,
     "FROZEN_FILLER_WORD": 2,
     "PRICE_UNVERIFIABLE": 2,
-    "MOQ_DRIFT": 4
+    "MOQ_UNVERIFIABLE": 3
   },
   "findings": [
     {
@@ -387,52 +385,6 @@
       "warn": []
     },
     {
-      "slug": "small-bags",
-      "locale": "zh-hk",
-      "title": "小號紙袋印刷｜多尺寸 白卡牛皮｜100個起 DHL 2-4天｜智印港",
-      "equiv": 56,
-      "frozen": false,
-      "hard": [],
-      "warn": [
-        {
-          "rule": "MOQ_UNVERIFIABLE",
-          "msg": "MOQ 100 无 products.ts minQuantity 可对照"
-        }
-      ]
-    },
-    {
-      "slug": "small-bags",
-      "locale": "en",
-      "title": "Custom Small Paper Bags | 100 MOQ | Free Ship | ZprintPro",
-      "equiv": 57,
-      "frozen": false,
-      "hard": [],
-      "warn": [
-        {
-          "rule": "MOQ_UNVERIFIABLE",
-          "msg": "MOQ 100 无 products.ts minQuantity 可对照"
-        }
-      ]
-    },
-    {
-      "slug": "small-bags",
-      "locale": "ja",
-      "title": "小判紙袋｜100個〜 白カード 多サイズ｜ZprintPro",
-      "equiv": 46,
-      "frozen": false,
-      "hard": [],
-      "warn": [
-        {
-          "rule": "BAND_FILL",
-          "msg": "当量 46 < 50 (不足线)"
-        },
-        {
-          "rule": "MOQ_UNVERIFIABLE",
-          "msg": "MOQ 100 无 products.ts minQuantity 可对照"
-        }
-      ]
-    },
-    {
       "slug": "large-bags",
       "locale": "zh-hk",
       "title": "大號紙袋 | 100%環保 多尺寸 | 100個起 HK$15起 | 智印港",
@@ -656,16 +608,11 @@
     {
       "slug": "a2-posters",
       "locale": "zh-hk",
-      "title": "A2 海報印刷 420×594mm 10張起印 HK$16起 | 智印港",
-      "equiv": 47,
+      "title": "A2 海報印刷 420×594mm 10張起印 HK$16起 1-2天 | 智印港",
+      "equiv": 53,
       "frozen": false,
       "hard": [],
-      "warn": [
-        {
-          "rule": "BAND_FILL",
-          "msg": "当量 47 < 50 (不足线)"
-        }
-      ]
+      "warn": []
     },
     {
       "slug": "a2-posters",
@@ -688,7 +635,7 @@
     {
       "slug": "a1-posters",
       "locale": "zh-hk",
-      "title": "A1 大幅海報 厚紙 | 1張起印 HK$20起 4小時打稿 | 智印港",
+      "title": "A1 大幅海報印刷 厚紙柯式 | 1張起印 4小時打稿 | 智印港",
       "equiv": 53,
       "frozen": false,
       "hard": [],
@@ -697,8 +644,8 @@
     {
       "slug": "a1-posters",
       "locale": "en",
-      "title": "A1 Large Posters | 594×841mm | 1 MOQ $4.60 | ZprintPro",
-      "equiv": 54,
+      "title": "A1 Large Posters | 594×841mm Offset | 1 MOQ | ZprintPro",
+      "equiv": 55,
       "frozen": false,
       "hard": [],
       "warn": []
@@ -706,8 +653,8 @@
     {
       "slug": "a1-posters",
       "locale": "ja",
-      "title": "A1 ポスター | 防水 DHL配送 | 1枚〜 ¥600〜 | ZprintPro",
-      "equiv": 53,
+      "title": "A1 ポスター | 防水 DHL配送 オフセット | 1枚〜 | ZprintPro",
+      "equiv": 57,
       "frozen": false,
       "hard": [],
       "warn": []
@@ -769,16 +716,11 @@
     {
       "slug": "art-posters",
       "locale": "zh-hk",
-      "title": "藝術海報 | 美術紙 Giclée | 1個起 HK$26起 | 智印港",
-      "equiv": 49,
+      "title": "藝術海報 | 美術紙 Giclée | A1/A2 1個起 HK$26起 | 智印港",
+      "equiv": 55,
       "frozen": false,
       "hard": [],
-      "warn": [
-        {
-          "rule": "BAND_FILL",
-          "msg": "当量 49 < 50 (不足线)"
-        }
-      ]
+      "warn": []
     },
     {
       "slug": "art-posters",
@@ -2110,30 +2052,20 @@
     {
       "slug": "premium-greeting-cards",
       "locale": "zh-hk",
-      "title": "高級賀卡印刷 燙金・局部UV 100張起 HK$100起 | 智印港",
-      "equiv": 51,
+      "title": "高級賀卡印刷 燙金局部UV 10張起 HK$1起 DHL 2-4天 | 智印港",
+      "equiv": 56,
       "frozen": false,
       "hard": [],
-      "warn": [
-        {
-          "rule": "MOQ_DRIFT",
-          "msg": "标题 MOQ 100 ≠ minQuantity=10 (需确认 bulk tier / desc 口径)"
-        }
-      ]
+      "warn": []
     },
     {
       "slug": "premium-greeting-cards",
       "locale": "en",
-      "title": "Premium Greeting Cards 100pcs Foil & UV | ZprintPro",
-      "equiv": 51,
+      "title": "Premium Greeting Cards | 10 MOQ Foil & UV | ZprintPro",
+      "equiv": 53,
       "frozen": false,
       "hard": [],
-      "warn": [
-        {
-          "rule": "MOQ_DRIFT",
-          "msg": "标题 MOQ 100 ≠ minQuantity=10 (需确认 bulk tier / desc 口径)"
-        }
-      ]
+      "warn": []
     },
     {
       "slug": "premium-greeting-cards",
@@ -2238,16 +2170,11 @@
     {
       "slug": "matte-greeting-cards",
       "locale": "zh-hk",
-      "title": "啞膜賀卡印刷 防指紋・柔順 100張起 HK$110起 | 智印港",
-      "equiv": 51,
+      "title": "啞膜賀卡印刷 防指紋柔順 10張起 HK$1.1起 免費打稿 | 智印港",
+      "equiv": 57,
       "frozen": false,
       "hard": [],
-      "warn": [
-        {
-          "rule": "MOQ_DRIFT",
-          "msg": "标题 MOQ 100 ≠ minQuantity=10 (需确认 bulk tier / desc 口径)"
-        }
-      ]
+      "warn": []
     },
     {
       "slug": "matte-greeting-cards",
@@ -2270,16 +2197,11 @@
     {
       "slug": "rounded-corner-greeting-cards",
       "locale": "zh-hk",
-      "title": "圓角賀卡印刷 R3mm模切 100張起 HK$100起 即日 | 智印港",
-      "equiv": 52,
+      "title": "圓角賀卡印刷 R3mm模切 10張起印 HK$1起 即日 | 智印港",
+      "equiv": 51,
       "frozen": false,
       "hard": [],
-      "warn": [
-        {
-          "rule": "MOQ_DRIFT",
-          "msg": "标题 MOQ 100 ≠ minQuantity=10 (需确认 bulk tier / desc 口径)"
-        }
-      ]
+      "warn": []
     },
     {
       "slug": "rounded-corner-greeting-cards",

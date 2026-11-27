@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-weekly-meta",
+  "date": "2026-11-27",
+  "run_key": "5d9d752c5405e3f0",
+  "task_id": "GSC-FIX-2026-11-27-87656b1b2c",
+  "owner_lane": "ZP-weekly-meta",
+  "decision": "HOLD_PROPOSAL_ONLY",
+  "status_after": "READY_UNCHANGED (executor does not rewrite shared board/queue state)",
+  "approved_by": "none — title unfreeze not granted; weekly lane is proposal-only by contract",
+  "target_query": "食品包裝印刷",
+  "target_locale": "zh-hk",
+  "target_url_primary": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+  "baseline_11_19_export": {
+    "source": ".hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+    "data_day": "2026-11-16",
+    "window": "28d",
+    "impressions": 125,
+    "clicks": 0,
+    "position": 7.93
+  },
+  "latest_11_25_export": {
+    "source": ".hermes/logs/gsc-2026-11-25-latest-four-window-analysis.json",
+    "data_day": "2026-11-23",
+    "query": {
+      "24h": {"impressions": 10, "clicks": 0, "position": 12.0},
+      "7d": {"window": "2026-11-17..2026-11-23", "impressions": 58, "clicks": 0, "position": 11.59},
+      "28d": {"window": "2026-10-27..2026-11-23", "impressions": 156, "clicks": 0, "position": 9.28}
+    },
+    "page": {
+      "24h": {"impressions": 17, "clicks": 0, "position": 6.47},
+      "7d": {"impressions": 137, "clicks": 1, "position": 8.69},
+      "28d": {"impressions": 403, "clicks": 2, "position": 7.64}
+    },
+    "delta_vs_11_19_export": {
+      "window_note": "rolling 28d/7d windows, not like-for-like",
+      "query_28d_impressions": 31,
+      "query_28d_position": 1.35,
+      "query_7d_impressions": 12,
+      "query_7d_position": 5.42,
+      "query_clicks_both": 0,
+      "page_28d_clicks": 2,
+      "page_7d_clicks": 1
+    }
+  },
+  "query_page_join_90d": {
+    "source": "gsc_data_qp_90d.csv (rows 4318-4320; GSC API pull 2026-11-27 12:0x; window 2026-08-29..2026-11-26)",
+    "rows": [
+      {"page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/", "clicks": 0, "impressions": 406, "position": 8.18, "share_pct": 51.0},
+      {"page": "https://zprintpro.com/zh-hk/product/food-boxes/", "clicks": 0, "impressions": 300, "position": 32.02, "share_pct": 37.7},
+      {"page": "https://zprintpro.com/zh-hk/category/packaging/", "clicks": 0, "impressions": 90, "position": 56.29, "share_pct": 11.3}
+    ],
+    "total_impressions": 796,
+    "total_clicks": 0,
+    "interpretation": "Google splits the query across three URLs; the blog is the only page-1 URL. No 301/canonical/merge is proposed from this observation.",
+    "cluster_context": {
+      "食品印刷": {"blog": [228, 0, 10.27], "category": [19, 0, 55.68], "pdp": [130, 0, 20.85], "kraft_box": [1, 0, 13.0]},
+      "食品包裝訂製": {"blog": [8, 0, 15.62], "category": [63, 0, 14.22], "pdp": [107, 0, 16.16]},
+      "food_cluster_impressions_90d_all_rows": 1380,
+      "food_cluster_clicks_90d_all_rows": 0
+    }
+  },
+  "serp_evidence": {
+    "latest_verified": {
+      "at": "2026-11-19 02:2x +08:00",
+      "engine": "Google web search, hl=zh-HK&gl=HK, non-personalised marker visible",
+      "features": ["AI Overview (cites JoinPrint and 3 other sources; zprintpro absent)", "Map Pack (3 local pack entries)", "organic list"],
+      "our_rank": 4,
+      "our_title": "食品包裝印刷完全指南：材質、安全、法規與設計實務 智印港",
+      "snippet_body_captured": false,
+      "source": ".hermes/logs/serp-evidence-2026-11-19-food-packaging.md"
+    },
+    "fresh_capture_2026_11_27": {
+      "status": "SERP_UNAVAILABLE",
+      "attempt": "web_fetch https://www.google.com/search?q=食品包裝印刷&hl=zh-HK&gl=HK&num=20",
+      "error": "TypeError: fetch failed",
+      "note": "No live displayed title/snippet inferred. The 11-19 capture is 8 days old and is used as the last verified SERP only."
+    },
+    "live_page_fetch_2026_11_27": {
+      "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "http": 200,
+      "title_text_visible": "食品包裝印刷完全指南：材質、安全、法規與設計實務 | 智印港",
+      "title_unchanged_vs_source": true,
+      "truth_anchors_visible": ["100 個起印", "HK$2.5 起/個", "3-5 個工作天", "1 小時內免費數碼打稿"],
+      "head_meta_visible": false,
+      "note": "Body text fetch; meta description cannot be asserted from this fetch."
+    }
+  },
+  "commercial_truth": {
+    "source": "src/data/products.ts PK-003 L2985-3016 (read 2026-11-27)",
+    "slug": "food-boxes",
+    "minQuantity": 100,
+    "basePrice": 2.5,
+    "price_range": "HK$2.5-18/個",
+    "current_blog_title": "食品包裝印刷完全指南：材質、安全、法規與設計實務 | 智印港",
+    "current_blog_title_source": "src/data/blog-posts.ts L460",
+    "current_blog_description_fragment": "100 個起 HK$2.5 起/個 … 3-5 天交貨",
+    "current_blog_description_source": "src/data/blog-posts.ts L465",
+    "description_deploy": {
+      "commit": "d5c0d36f + a9f218f0",
+      "date": "2026-11-18",
+      "scope": "meta description only; title unchanged"
+    }
+  },
+  "window_math": {
+    "change_date": "2026-11-18",
+    "latest_data_day": "2026-11-23",
+    "post_change_days_7d": "5/7 = 71.4%",
+    "post_change_days_28d": "5/28 = 17.9%",
+    "decision_gate": "7d needs 100% post-change days; 28d needs >=82%",
+    "clean_7d_requires_data_day": ">= 2026-11-25 (export ~2026-11-28)",
+    "first_14d_direction_read": "data day >= 2026-11-27 (export ~2026-11-30/12-01)",
+    "registered_28d_decision_row": "export 2026-12-04 (28d 82.1%) applies to the 2026-11-08 batch; the 2026-11-18 description batch has its own later 28d gate"
+  },
+  "sitewide_confounder": {
+    "source": ".hermes/logs/gsc-2026-11-25-core-update-segments.json",
+    "segment_D_1113_1119": {"ctr_pct": 1.563, "position_weighted": 16.31, "impressions_per_day": 1160.9},
+    "segment_E_1120_1122": {"ctr_pct": 0.764, "position_weighted": 33.69, "impressions_per_day": 1701.7},
+    "note": "Abrupt site-wide impression/position/CTR shift starting 2026-11-20. The analysis file labels it a core-update segment; this report treats it as an unattributed confounder, not a proven cause."
+  },
+  "blockers": [
+    "Clean 7d window not closed: 5/7 post-change days at latest data day 2026-11-23",
+    "28d window at 17.9% post-change: no business verdict allowed",
+    "Title is a frozen surface; no K3 unfreeze for this page (only A1/D2 was unfrozen on 11-27)",
+    "Fresh SERP capture unavailable on 2026-11-27; 11-19 SERP has no snippet body",
+    "Site-wide 11-20 shift confounds any CTR read"
+  ],
+  "proposal": {
+    "proposal_id": "P-C-FOODBOX-TITLE-2026-11-27",
+    "single_variable": "blog title only (description/body/canonical/internal links/schema untouched)",
+    "before": "食品包裝印刷完全指南：材質、安全、法規與設計實務 | 智印港",
+    "after": "食品包裝印刷 訂製100個起 HK$2.5/個起 材質·法規 | 智印港",
+    "equiv_before": 57,
+    "equiv_after": 55,
+    "equiv_method": "half-width equivalent by hand: CJK/full-width = 2, ASCII = 1 (two counts agree); must be re-run through scripts/guards/title-v5-guard.js before execution",
+    "why_one_variable": "only the title changes; 訂製 adds purchase intent; 100個起 / HK$2.5/個起 are products.ts PK-003 truth; 材質·法規 retains the informational qualifier; brand appears once at the end",
+    "expected_effect": "LIMITED — the blog ranks about position 8 behind an AI Overview and a Map Pack; a title fix is necessary but may not be sufficient to break zero clicks",
+    "approval_gate": "K3 explicit title unfreeze for this page + clean window + fresh SERP/snippet evidence",
+    "production_deploy": null,
+    "online_verify": null,
+    "gates_before_execution": ["title-v5 guard", "title-band guard", "brand/gsc-leak/entity/i18n", "encoding UTF-8 LF", "tsc baseline", "single commit/single push"],
+    "retest": {"7d": "data day >= deploy + 7", "14d": "data day >= deploy + 14", "28d": "decision-grade only"},
+    "exit_criteria": "28d CTR > 0 with impressions not collapsing > 30%; otherwise STOP and do not stack a second variable",
+    "stop_if": ["K3 does not unfreeze", "7d impressions fall > 30%", "page drops out of page 1", "SERP or truth gains a new gap", "same page gets another variable"]
+  },
+  "retry_at_reconciliation": {
+    "board_value": "2026-11-27",
+    "periodic_review_and_delta_handoff": "2026-12-04 (cooldown 7d)",
+    "chosen": "2026-12-04 for any change decision; 2026-11-27 is a direction reading only",
+    "reason": "the 2026-11-18 description variable's clean 7d window is not closed; changing the title now would stack a second variable in the same window"
+  },
+  "learning": {
+    "experiment_id": "EXP-FOODBOX-OPP01",
+    "learning_evidence_complete": false,
+    "scale_allowed": false,
+    "note": "Direction reading only. The ledger was updated by other sessions on 2026-11-27 (updated_at 14:50; update_log through 17:35), so this lane did not rewrite it (cross-lane collision guard)."
+  },
+  "ledger_append_proposed": {
+    "key": "retest_gate_2026_11_27",
+    "status": "NOT_WRITTEN_CROSS_LANE_COLLISION",
+    "reason": ".hermes/logs/flywheel-learning-ledger.json was written by other sessions on 2026-11-27; this lane must not rewrite it",
+    "payload": {
+      "attempted_at": "2026-11-27T19:23:00+08:00",
+      "owner_lane": "ZP-weekly-meta",
+      "status": "TECHNICAL_AND_DIRECTION_ONLY",
+      "reason_code": "DATA_DAY_2026_11_23_BELOW_7D_100PCT_AND_28D_82PCT_GATE_PLUS_SITEWIDE_SHIFT",
+      "available_window": {"7d": "2026-11-17..2026-11-23", "28d": "2026-10-27..2026-11-23"},
+      "direction_reads": [
+        {
+          "experiment_id": "EXP-FOODBOX-OPP01",
+          "query": "食品包裝印刷",
+          "read_28d": "125 -> 156 imp, 0 -> 0 clk, 7.93 -> 9.28 pos (rolling window; 5/28 post-change)",
+          "read_7d": "46 -> 58 imp, 0 -> 0 clk, 6.17 -> 11.59 pos (rolling window; 5/7 post-change)",
+          "page_read_28d": "403 imp / 2 clk / 7.64 pos",
+          "direction": "IMPRESSIONS_UP_POSITION_WORSE_CLICKS_ZERO",
+          "note": "Confounded by the site-wide 2026-11-20 shift (D pos 16.31 -> E 33.69; CTR 1.563% -> 0.764%). No win/loss claim."
+        }
+      ],
+      "verdict_policy": "7d verifies technical/early direction only; 14d reads direction; 28d is required for SCALE/HOLD/FIX/STOP. No business verdict is issued from a 17.9% post-change 28d window.",
+      "next_check": "first data day >= 2026-11-25 for a clean 7d; first data day >= 2026-11-27 for 14d; 2026-12-04 for the registered 28d row (11-08 batch)"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-weekly-meta",
+  "date": "2026-11-27",
+  "run_key": "5d9d752c5405e3f0",
+  "probe_set": "harness-weekly-monthly-review-20261120.md §3 (fixed 12)",
+  "engine_status": "UNAVAILABLE_IN_LANE",
+  "engine_note": "No fixed-engine probe surface is exposed to this lane (no browser UI, no configured fixed-engine probe tool, no session access). A Google SERP HTML fetch on 2026-11-27 failed (TypeError: fetch failed). Ordinary web search is explicitly not a substitute for a fixed-engine GEO probe.",
+  "policy": [
+    "Record NO_COMPARABLE_BASELINE when the engine or the raw answer is unavailable",
+    "Do not infer a citation rate from absence",
+    "Do not convert an uncited query into a long-article task",
+    "Do not treat the 2026-11-19 Google SERP capture as a GEO baseline for these 12 questions"
+  ],
+  "questions": [
+    {"id": 1, "locale": "zh-hk", "question": "香港少量 A1／A2 海報即日印刷，落單前要確認甚麼？", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 2, "locale": "zh-hk", "question": "可移貼紙、透明貼紙和防水貼紙應該怎樣按用途選？", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 3, "locale": "zh-hk", "question": "2027 利是封訂製需要甚麼規格、文件和交期資料？", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 4, "locale": "zh-hk", "question": "宣傳單張與摺頁印刷，尺寸、紙張和數量怎樣影響報價？", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 5, "locale": "en", "question": "What should I compare when choosing small batch sticker printing from China?", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 6, "locale": "en", "question": "How do I evaluate a catalog printing China supplier, including proofing, MOQ and delivery?", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 7, "locale": "en", "question": "What file and material details matter for removable or clear stickers?", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 8, "locale": "en", "question": "What should a 2027 custom red packet quotation include?", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 9, "locale": "ja", "question": "ステッカー印刷を小ロットで発注する際、素材・枚数・納期を何で比較すべきですか？", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 10, "locale": "ja", "question": "同人誌・中綴じ冊子の小ロット印刷で確認すべき仕様は何ですか？", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 11, "locale": "ja", "question": "クラフト紙パッケージ印刷を中国から発注する際の確認点は何ですか？", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"},
+    {"id": 12, "locale": "ja", "question": "A1／A2 ポスターの短納期印刷で、入稿前に何を確認すべきですか？", "status": "NO_COMPARABLE_BASELINE", "reason": "ENGINE_UNAVAILABLE_IN_LANE"}
+  ],
+  "summary": {
+    "comparable_answers": 0,
+    "no_comparable_baseline": 12,
+    "citation_rate": null,
+    "note": "0/12 is not a citation rate; it is the absence of a comparable fixed-engine baseline."
+  },
+  "adjacent_serp_evidence": {
+    "query": "食品包裝印刷",
+    "at": "2026-11-19 02:2x +08:00",
+    "engine": "Google web search (hl=zh-HK, gl=HK, non-personalised marker visible)",
+    "ai_overview_present": true,
+    "ai_overview_citations": "JoinPrint and 3 other sources (source token 'JoinPrint +3'; 4 sources total)",
+    "zprintpro_cited": false,
+    "our_organic_rank": 4,
+    "snippet_body_captured": false,
+    "classification": "SERP evidence for the GSC-FIX task, NOT one of the fixed 12 GEO questions and NOT a GEO citation baseline",
+    "source": ".hermes/logs/serp-evidence-2026-11-19-food-packaging.md"
+  }
+}
