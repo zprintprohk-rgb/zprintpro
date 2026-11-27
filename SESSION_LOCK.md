@@ -1,5 +1,17 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## 🔒 持有中 — 2026-11-27 16:4x Kimi Work 人手会话（批 Q5-A：書刊/膠裝簇權重批）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 11-27 16:36 開放式批准「按最优推荐方案继续下一步」（承接 Q4 建議批 Q5-A） |
+| **寫入範圍** | buying-guides.ts（book-buying-guide zh-hk：3 處價格/MOQ 真值修復 + PDP 錨鏈 ×2）· blog-data/zh-hk.json（saddle-stitch guide + PDP 精確錨鏈 ×1）· category-conversion-blocks.ts（books:zh-hk +2 quickAnswers +2 newFaqs，GSC 精確詞） |
+| **禁止範圍** | 單變量 zh-hk 書刊簇；PDP title 不動（11-28 A1 凍結）；不新建膠裝 SKU（待 K3 拍板）；en/ja 零改動 |
+| **双条件核验** | ① src/ 淨、無 lane.lock（已驗）；② 距 15:5x push ≥30min，預計 17:2x 推送 |
+| **TTL** | 30 min，預計 17:5x 前釋放 |
+
+
 ## ✅ 已释放 — 2026-11-27 15:4x Kimi Work 人手会话（批 Q4：首頁商業詞權重批，K3 14:49 拍板）
 
 | 项 | 值 |
