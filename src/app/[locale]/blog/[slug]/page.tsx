@@ -653,7 +653,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-07-23 v7 daily-content-evolve: Q-GR-01 gang-run card boxes (ja locale) — packaging × 小売 (沖縄/北海道/ヤマト運輸)
     'gang-run-card-boxes-hk-guide': {
       title: '合版ホワイトカードボックス印刷ガイド：型代不要で40-60%削減 | ZprintPro',
-      description: '日本の小売ブティック、スキンケア、IP 商品、ギフトブランドオーナー様へ。合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、40-60% コスト削減、100-10,000 個小〜大ロット、8-15 日生産、4 種素材 + 3 種箱型 + 8 標準サイズで 95% 日本小売シーンカバー、5 段階実価格、沖縄・北海道含む全国送料無料、ヤマト運輸 1-3 日納品。',
+      description: '日本の小売ブティック、スキンケア、IP 商品、ギフトブランドオーナー様へ。合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、40-60% コスト削減、100-10,000 個小〜大ロット、8-15 日生産、4 種素材 + 3 種箱型 + 8 標準サイズで 95% 日本小売シーンカバー、5 段階実価格、沖縄・北海道含む全国配送（送料・納期は見積時確認）。',
       date: '2026-07-23', category: '合版ホワイトカードボックス',
       content: '',
     },
@@ -674,7 +674,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-08-05 v8 daily-content-evolve: 2027年カレンダー印刷ガイド (GSC 97 imps) — 純文字・無図
     'calendar-printing-guide': {
       title: '2027年カレンダー印刷ガイド：壁掛け・卓上サイズ・用紙・納期完全解説 | ZprintPro',
-      description: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 1000部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
+      description: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 1000部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間（要事前確認）、全国配送（送料は見積時確認）。',
       date: '2026-08-05', category: '印刷技術',
       content: '',
     },
@@ -700,7 +700,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
     'catalog-printing-guide': {
       title: 'カタログ・写真集印刷ガイド：用紙・製本・加工の選び方 | ZprintPro',
-      description: 'カタログ・写真集・作品集印刷の完全ガイド — 4 タイプ規格表、用紙（アート紙/マット紙/特種紙）、製本（上製/無線/中綴じ）、加工（UV/箔）、FAQ 4 件、50 冊〜、3-5 営業日、全国送料無料。',
+      description: 'カタログ・写真集・作品集印刷の完全ガイド — 4 タイプ規格表、用紙（アート紙/マット紙/特種紙）、製本（上製/無線/中綴じ）、加工（UV/箔）、FAQ 4 件、50 冊〜、3-5 営業日、全国配送（送料は見積時確認）。',
       date: '2026-08-10', category: '書籍印刷',
       content: '',
     },

@@ -971,7 +971,7 @@ const lpFinanceSummitGiftBag: BlogPostMeta = {
   excerpt: {
     'zh-hk': '香港金融機構、銀行、財富管理公司、券商、保險公司、家族辦公室必睇。FSC 認證環保牛皮紙袋，100 個起印，燙金 logo，港九中環 IFC / 灣仔 / 金鐘本地速遞，5-7 個工作天交貨。',
     en: 'US banks, wealth management firms, broker-dealers, insurance carriers, family offices: FSC-certified kraft + white card + magnetic closure, 100 MOQ, foil-stamped logo, 5-7 business day delivery to US ZIP codes.',
-    ja: '日本の銀行、ウェルス・マネジメント会社、証券会社、保険会社、ファミリーオフィス向け。FSC 認証クラフト・白カード・磁石クロージャー、100 個から小ロット対応、5-7 営業日生産、全国送料無料。',
+    ja: '日本の銀行、ウェルス・マネジメント会社、証券会社、保険会社、ファミリーオフィス向け。FSC 認証クラフト・白カード・磁石クロージャー、100 個から小ロット対応、5-7 営業日生産、全国配送（送料は見積時確認）。',
   },
 };
 
@@ -989,7 +989,7 @@ const lpMarathonEventPoster: BlogPostMeta = {
   excerpt: {
     'zh-hk': '香港渣打馬拉松、街馬、半馬拉松、學界田徑必睇。1 張起印，A1/A2 防水 PP + 13oz 戶外燈布起跑拱門，順豐本地滿 HK$500 港九新界免運費，3-5 個工作天交貨。',
     en: 'US race directors, running clubs, charity foundations: 1 MOQ, waterproof A1/A2 + 13oz vinyl start arches, runner packet inserts, sponsor recognition walls, 3-5 business day delivery to US ZIP codes.',
-    ja: '日本のレースディレクター、ランニングクラブ、チャリティ財団向け。1 枚から対応、防水 A1/A2 + 13oz ビニール スタートアーチ、ランナーパケット挿入物、3-5 営業日生産、全国送料無料。',
+    ja: '日本のレースディレクター、ランニングクラブ、チャリティ財団向け。1 枚から対応、防水 A1/A2 + 13oz ビニール スタートアーチ、ランナーパケット挿入物、3-5 営業日生産、全国配送（送料は見積時確認）。',
   },
 };
 
@@ -1007,7 +1007,7 @@ const lpCarDealershipAmenitySticker: BlogPostMeta = {
   excerpt: {
     'zh-hk': '香港 4S 店、二手車行、汽車美容、輪胎中心、維修工場必睇。100 張起印，防水 PVC + 透明 BOPP + 耐油 PVC，順豐本地滿 HK$500 港九新界免運費，3-5 個工作天交貨。',
     en: 'US car dealerships, auto body shops, tire centers, quick lubes, EV brand experience studios: 100 MOQ, waterproof PVC + transparent BOPP + oil-resistant vinyl, 3-5 business day delivery to US ZIP codes.',
-    ja: '日本の自動車ディーラー、鈑金塗装工場、タイヤセンター、Quick Lube、EV ブランド体験スタジオ向け。100 枚から対応、防水 PVC + 透明 BOPP + 耐油ビニール、3-5 営業日生産、全国送料無料。',
+    ja: '日本の自動車ディーラー、鈑金塗装工場、タイヤセンター、Quick Lube、EV ブランド体験スタジオ向け。100 枚から対応、防水 PVC + 透明 BOPP + 耐油ビニール、3-5 営業日生産、全国配送（送料は見積時確認）。',
   },
 };
 
@@ -1025,7 +1025,7 @@ const lpHotelKeycardSleeve: BlogPostMeta = {
   excerpt: {
     'zh-hk': '香港五星級酒店、精品酒店、B&B 民宿、Airbnb 短租必睇。100 張起印，軟觸啞面 PVC + 燙金箔 + 局部 UV，順豐本地滿 HK$500 港九新界免運費，3-5 個工作天交貨。',
     en: 'US five-star hotels, boutique hotels, B&Bs, Airbnb hosts, resort spas: 100 MOQ, soft-touch matte PVC + foil + spot UV, room key sleeves, luggage tags, turn-down seals, 3-5 business day delivery to US ZIP codes.',
-    ja: '日本の五つ星ホテル、ブティックホテル、B&B、民泊、リゾートスパ向け。100 枚から対応、ソフトタッチマット PVC + 箔押し + スポット UV、ルームキー スリーブ、荷物タグ、3-5 営業日生産、全国送料無料。',
+    ja: '日本の五つ星ホテル、ブティックホテル、B&B、民泊、リゾートスパ向け。100 枚から対応、ソフトタッチマット PVC + 箔押し + スポット UV、ルームキー スリーブ、荷物タグ、3-5 営業日生産、全国配送（送料は見積時確認）。',
   },
 };
 
@@ -1317,7 +1317,7 @@ const lpGangRunCardBoxesHK: BlogPostMeta = {
   excerpt: {
     'zh-hk': '香港零售精品店、美妝小店、文創 IP 周邊、禮品小店老闆必睇。拼版白卡彩盒固定刀模共用,免刀模費 + 免排版費,成本直降 40-60%,500-10,000 枚小至大批量,8-15 天交期,4 種紙材 + 3 種盒型 + 8 檔標準尺寸,覆蓋 95% 香港零售場景,5 檔實價 (HK$129-2,379)。',
     en: 'US retail boutique, skincare, IP merchandise, and gift brand owners — gang-run white card boxes with shared standard die-cuts, NO die-cut fee, NO setup fee, 40-60% lower unit cost, 100-10,000 piece runs, 8-15 day production, 4 paper stocks + 3 box styles + 8 standard sizes, 5-tier pricing (USD $25-461), Free Shipping over $99 USA, Free Design Mockup, 100 MOQ starter.',
-    ja: '日本の小売ブティック、スキンケア、IP 商品、ギフトブランドオーナー様へ。合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、40-60% コスト削減、100-10,000 個小〜大ロット、8-15 日生産、4 種素材 + 3 種箱型 + 8 標準サイズで 95% 日本小売シーンカバー、5 段階実価格 (¥3,800-69,150)、沖縄・北海道含む全国送料無料、ヤマト運輸 1-3 日納品。',
+    ja: '日本の小売ブティック、スキンケア、IP 商品、ギフトブランドオーナー様へ。合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、40-60% コスト削減、100-10,000 個小〜大ロット、8-15 日生産、4 種素材 + 3 種箱型 + 8 標準サイズで 95% 日本小売シーンカバー、5 段階実価格 (¥3,800-69,150)、沖縄・北海道含む全国配送（送料・納期は見積時確認）。',
   },
 };
 
@@ -1475,7 +1475,7 @@ const lpCalendarPrinting: BlogPostMeta = {
   excerpt: {
     'zh-hk': '2027 年年曆採購季開始！8-10 月落單享批量折扣。掛牆年曆 A3/A2、桌曆 A5、迷你月曆 1 本起印（批量 300 本起），銅版紙 + 過膠 + 線圈裝訂，3-5 天交期，48 小時急單。',
     en: '2027 calendar season is here! Wall calendars A3/A2, desk A5, mini giveaways — 1-piece MOQ, art paper + lamination + wire-O binding, 3-5 day production, 48h rush, Free Shipping $99+ USA.',
-    ja: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 1部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
+    ja: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 1部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国配送（送料は見積時確認）。',
   },
 };
 
@@ -1544,7 +1544,7 @@ const lpCatalogPrintingGuide: BlogPostMeta = {
   excerpt: {
     'zh-hk': '畫冊印刷點揀？攝影集、展覽圖錄、產品型錄 4 大類型規格表，銅版紙/啞粉紙/特種紙紙材對比，硬皮精裝/膠裝/騎馬釘裝訂攻略，附 4 條 FAQ，10 本起印，3-5 個工作天交付。',
     en: 'Custom catalog and art book printing guide — photo books, exhibition catalogs, product catalogs. Paper choices (art/matte/specialty), binding (hardcover/perfect/saddle), finishes (spot UV/foil), 4 FAQs, 50-book MOQ, 3-5 day turnaround, Free Shipping $99+ USA.',
-    ja: 'カタログ・写真集・作品集印刷の完全ガイド — 4 タイプ規格表、用紙（アート紙/マット紙/特種紙）、製本（上製/無線/中綴じ）、加工（UV/箔）、FAQ 4 件、50 冊〜、3-5 営業日、全国送料無料。',
+    ja: 'カタログ・写真集・作品集印刷の完全ガイド — 4 タイプ規格表、用紙（アート紙/マット紙/特種紙）、製本（上製/無線/中綴じ）、加工（UV/箔）、FAQ 4 件、50 冊〜、3-5 営業日、全国配送（送料は見積時確認）。',
   },
 };
 
@@ -1964,7 +1964,7 @@ const lpChildrensPictureBookGuide: BlogPostMeta = {
   excerpt: {
     'zh-hk': '童書繪本印刷 10 本起印。精裝硬皮 2.5mm 灰紙板封面、32 頁標準開本、單價 HK$40-240/本、100 本 85 折 500 本 7 折。A5/A4/B5 開本，80g/100g 書紙或 128g 銅版紙，燙金/壓凹/局部 UV 可選，FSC 認證紙，5-7 個工作天，滿 HK$500 港九新界順豐免運，DHL 全球 2-4 天，30 秒 AI 即時報價。',
     en: 'Picture book printing from 100 copies: hardcover with 2.5mm greyboard cover, 32pp standard trim, HK$40-240 per copy, 85% at 100 and 70% at 500, A5/A4/B5, 80-128gsm stocks, foil and deboss options, FSC-certified paper, 5-7 day turnaround, DHL / FedEx worldwide with delivery timing confirmed at quote.',
-    ja: '絵本印刷は 100 部から。2.5mm 厚紙ボード表紙のハードカバー、32 ページ標準判、1 部 HK$40〜240、100 部 85 折・500 部 7 折、A5/A4/B5、80〜128g 用紙、箔押し・型押し対応、FSC 認証紙、標準納期 5〜7 営業日、日本全国送料無料、海外 DHL 2〜4 日。',
+    ja: '絵本印刷は 100 部から。2.5mm 厚紙ボード表紙のハードカバー、32 ページ標準判、1 部 HK$40〜240、100 部 85 折・500 部 7 折、A5/A4/B5、80〜128g 用紙、箔押し・型押し対応、FSC 認証紙、標準納期 5〜7 営業日、全国配送（送料は見積時確認）、海外 DHL 2〜4 日。',
   },
   targetKeywords: {
     primary: 'children picture book printing',
@@ -2074,7 +2074,7 @@ const lpFoldedLeafletGuide: BlogPostMeta = {
   excerpt: {
     'zh-hk': "摺頁印刷 10 張起印, 每張 HK$0.70-1.95, 157g／200g 銅版紙, 對摺／三摺／風琴摺, 壓線防爆色, 3-5 個工作天交貨, 500 張 8 折 1000 張 65 折 5000 張 5 折, 免費打樣, 滿 HK$500 順豐免運, DHL 全球 2-4 天.",
     en: "Folded leaflet printing from 10 pieces at HK$0.70-1.95 each: 157gsm or 200gsm art paper, bi-fold, tri-fold and Z-fold, creasing, lamination, 3-5 day turnaround.",
-    ja: "折りたたみチラシ印刷は 10 部から。1 部 HK$0.70〜1.95、157g／200g コート紙、二つ折り・三つ折り・ジャバラ折り、スジ入れ対応、納期 3〜5 営業日、500 部 20% OFF、無料校正、日本全国送料無料。",
+    ja: "折りたたみチラシ印刷は 10 部から。1 部 HK$0.70〜1.95、157g／200g コート紙、二つ折り・三つ折り・ジャバラ折り、スジ入れ対応、納期 3〜5 営業日、500 部 20% OFF、無料校正、全国配送（送料は見積時確認）。",
   },
   targetKeywords: {
     primary: '摺頁印刷',
