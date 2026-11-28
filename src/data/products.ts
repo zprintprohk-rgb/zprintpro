@@ -6719,7 +6719,7 @@ export const products: Product[] = [
       isNew: true,
       minQuantity: 10,
       quoteOnly: true,
-      turnaround: '5-7 営業日 (コミケ前の特急は見積確認)',
+      turnaround: '標準 5-7 営業日（特急は原稿・日程によりお見積り）',
       images: [
         '/images/japan/doujinshi-printing.webp',
       '/images/japan/zprintpro-doujinshi-doujinshi-printing-ja-1.jpg',
@@ -6757,7 +6757,7 @@ export const products: Product[] = [
       features: [
         'Comiket 前特急対応可議（按稿件與排期報價確認）',
         '10 本起印,少量対応',
-        '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天',
+        '深圳自營工廠 + DHL Express 直送日本（時效以報價確認）',
         'FSC 認證紙材 / ISO 12647 色彩管理',
         '繁體中文 / 日文雙語支援 + WhatsApp 對應',
         'A5 (148×210mm) / B5 (182×257mm) 標準尺寸'
@@ -6800,7 +6800,7 @@ export const products: Product[] = [
 <h3>出血同安全區（入稿前必讀）</h3>
 <p>跨頁插畫記得預留 3mm 出血，重要線稿、對白同簽名放喺安全區（裁切線內 5mm）以內。騎馬釘裝訂要留意釘位預留：跨頁位預留 5mm 裝訂邊，避免重要畫面被釘書釘遮擋。PDF 入稿前將所有字體轉外框（Outline），色彩模式用 CMYK。</p>
 <h3>交期點計</h3>
-<p>標準交期 5-7 個工作天，深圳自營工廠 + DHL Express 直送日本 2-4 個工作天。Comiket 前提供特急對應（按稿件與排期報價確認），夏天（6-7 月）同冬天（12 月）落單高峰建議提早 10-15 個工作天落單。</p>
+<p>標準交期 5-7 個工作天（按規格與排期報價確認），深圳自營工廠 + DHL Express 直送日本（時效以報價確認）。Comiket 前提供特急對應（按稿件與排期報價確認），夏天（6-7 月）同冬天（12 月）落單高峰建議提早 10-15 個工作天落單。</p>
 `,
     longDescriptionEn: `<h3>Binding Options: Perfect Binding vs Saddle Stitch</h3>
 <table>
@@ -6815,7 +6815,7 @@ export const products: Product[] = [
 <h3>Bleed and Safe Zone (Read Before Uploading)</h3>
 <p>Keep 3mm bleed on all full-bleed artwork; place key linework, dialogue and signatures inside the 5mm safe zone from trim. For saddle stitch, reserve a 5mm binding margin at the spine side of spreads so staples never cover key art. Convert all fonts to outlines and submit in CMYK PDF.</p>
 <h3>Turnaround</h3>
-<p>Standard production is 5-7 business days, then DHL Express from our Shenzhen factory to Japan in 2-4 business days. Rush production <a href="/en/blog/comiket-printing-prep-guide/">before Comiket</a> is available on confirmation of artwork and production schedule; during peak seasons (June-July and December) plan 10-15 business days ahead.</p>
+<p>Standard production is 5-7 business days (confirmed per spec and schedule), then DHL Express from our Shenzhen factory to Japan (transit time confirmed at quote). Rush production <a href="/en/blog/comiket-printing-prep-guide/">before Comiket</a> is available on confirmation of artwork and production schedule; during peak seasons (June-July and December) plan 10-15 business days ahead.</p>
 `,
     longDescriptionJa: `<h3>製本の選び方：無線綴じ vs 中綴じ</h3>
 <table>
@@ -6830,7 +6830,7 @@ export const products: Product[] = [
 <h3>塗り足しとセーフゾーン（入稿前の必読）</h3>
 <p>見開きイラストは 3mm の塗り足し（ドブ）を確保し、重要な線画・セリフ・サインは断裁線から 5mm 内側のセーフゾーンへ。中綴じはノド側に 5mm のマージンを取り、ホチキス針が重要な絵を隠さないように。フォントはアウトライン化、カラーモードは CMYK の PDF でご入稿ください。</p>
 <h3>納期の目安</h3>
-<p>標準納期 5-7 営業日、深圳自社工場から DHL Express で日本へ 2-4 営業日。コミケ前の特急対応は可能です（入稿データと製造スケジュールにより見積確認）。夏（6-7 月）・冬（12 月）の繁忙期は 10-15 営業日の余裕を持ってご発注ください。</p>
+<p>標準納期 5-7 営業日（仕様・日程により見積確認）、深圳自社工場から DHL Express で日本へ（所要日数は見積りで確認）。コミケ前の特急対応は可能です（入稿データと製造スケジュールにより見積確認）。夏（6-7 月）・冬（12 月）の繁忙期は 10-15 営業日の余裕を持ってご発注ください。</p>
 `,
     // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
     seoTitle: {"zh-hk": "", "en": "", "ja": ""},
