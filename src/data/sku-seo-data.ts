@@ -2903,6 +2903,45 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "ja": " 金・銀・ローズゴールド箔押し、300g特 |  | ZprintPro"
     }
   },
+  // 2026-11-28 K3 拍板 place-cards 三選一採補 SKU (commit 0e3c25d2) — 新 SKU 補 SEO 條目:
+  //   數字全部回 products.ts PC-101 真值 (MOQ 50 / basePrice 2 / 0.26 / 39); title 當量 57/56/52 全過 50-57;
+  //   body 有意留空 (單變量 title 批, 長文內容塊走後續批); imageAlt 複用 products.ts seoImages 已批文案。
+  "place-cards": {
+    "name": {
+      "zh-hk": "婚宴枱卡 / 席位卡",
+      "en": "Wedding Place Cards / Table Cards",
+      "ja": "ウエディング席札 / テーブルカード"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "婚宴枱卡印刷 | 50張起 HK$2起 燙金壓紋 站立式折卡 | 智印港",
+        "description": "婚宴枱卡 / 席位卡 50 張起印，HK$2 起/張，300g 棉紙 / 銅版紙 / 剛古紙，燙金 / 壓紋 / 模切 / 站立式折卡工藝可選，適合婚宴餐桌、酒店婚禮、教堂宴會。免費打稿，確認稿件後才生產。",
+        "h1": "婚宴枱卡印刷 | 300g厚卡 燙金壓紋 站立式",
+        "keywords": ["枱卡印刷", "婚宴枱卡", "席位卡", "婚禮印刷", "喜帖配套", "50張起印"],
+        "body": ""
+      },
+      "en": {
+        "title": "Wedding Place Cards | 50 MOQ | Foil & Emboss | ZprintPro",
+        "description": "Custom wedding place cards / table cards from 50 pcs at $0.26 each. 300gsm cotton / art / Conqueror paper with foil, embossing, die-cut and standing fold options. Free digital proof before production. Shipping confirmed at quote. | ZprintPro",
+        "h1": "Wedding Place Cards | Foil & Emboss Options",
+        "keywords": ["wedding place cards", "table cards", "wedding stationery", "foil place cards", "50 MOQ"],
+        "body": ""
+      },
+      "ja": {
+        "title": "ウエディング席札 | 50枚〜 ¥39〜 | 箔押し | ZprintPro",
+        "description": "ウエディング席札 / テーブルカード 50枚から、¥39〜。300g コットン / コート / コンカラー紙、箔押し / エンボス / 抜型 / スタンド式折カード対応。無料デジタル校正をご利用いただけます。",
+        "h1": "ウエディング席札 | 箔押し エンボス対応",
+        "keywords": ["席札 印刷", "テーブルカード", "結婚式 席札", "箔押し 席札", "50枚〜"],
+        "body": ""
+      }
+    },
+    "faqs": [],
+    "imageAlt": {
+      "zh-hk": "婚宴枱卡 / 席位卡 | 香港婚宴枱卡印刷 300g 棉紙 燙金壓紋 站立式折卡",
+      "en": "Wedding Place Cards | Foil & Embossed Table Cards | ZprintPro",
+      "ja": "ウエディング席札 | 箔押し・エンボス テーブルカード | ZprintPro"
+    }
+  },
   "tuck-end-boxes": {
     "name": {
       "zh-hk": "插口盒印刷訂製 (卡盒/直插/飛機插) | 包裝盒 / 輕量",
