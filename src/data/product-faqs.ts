@@ -814,6 +814,35 @@ export const generalProductFAQs: FAQItem[] = [
   },
 ];
 
+// 2026-11-28 Q10: place-cards 類目專用通用 FAQ — 修復未註冊時誤回退 educational 通用集 (§5.1 承接錯位);
+//   規格口徑與 sku-seo-data place-cards body / site-wide 入稿規範 (300DPI/CMYK/3mm) 同源
+const placeCardsFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '婚宴枱卡交稿規格係點？',
+      en: 'What artwork specs do place cards need?',
+      ja: '席札の入稿仕様は？',
+    },
+    answer: {
+      'zh-hk': '請提供 300DPI 以上、CMYK 模式、3mm 出血、字體外框化的檔案；燙金位另設專色圖層並標明位置，模切或異形請附刀模線。不確定規格可先傳檔，免費打稿確認後才生產。',
+      en: 'Supply 300DPI+ files in CMYK with 3mm bleed and outlined fonts. Add a separate spot layer marking foil positions and a cut line for die-cut shapes. Send your file first if unsure — proofing is free and production starts only after approval.',
+      ja: '解像度300DPI以上、CMYKモード、塗り足し3mm、フォントはアウトライン化でご入稿ください。箔押し位置はK100の黒版で別途指定、抜型は型抜き線が必要です。不明点は先にデータをお送りいただければ無料でチェックします。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '婚宴枱卡尺寸點揀？',
+      en: 'Which place card size should I choose?',
+      ja: '席札のサイズはどう選べばいい？',
+    },
+    answer: {
+      'zh-hk': '常見有三款：A6（105×148mm）單卡最靈活；A5 對摺內頁空間多，可印席位圖或菜單；站立式折卡免支架即可直立桌面，適合婚宴入場動線。亦支援自訂尺寸。',
+      en: 'Three common formats: A6 (105×148mm) flat cards are the most flexible; folded A5 gives room for seating charts or menus; the standing fold stays upright without a holder. Custom sizes are also supported.',
+      ja: '主な3形式：A6（105×148mm）の単カードが最も汎用的、対折 A5 は座席表やメニューが入る余白があり、スタンド式折カードは支柱なしで自立します。カスタムサイズにも対応しています。',
+    },
+  },
+];
+
 export const coreProductFAQMap: Record<string, FAQItem[]> = {
   stickers: stickersFAQs,
   flyers: flyersFAQs,
@@ -832,6 +861,8 @@ export const coreProductFAQMap: Record<string, FAQItem[]> = {
   // 2026-09-12 v9.3 任务 K 遗留修复: packaging 类 SKU (如 food-boxes, category_slug='packaging')
   // 原回退到通用 FAQ → PDP 取错类目; 改指专属集 (含任务 K 新增「做唔做膠袋」真实回答)
   packaging: packagingBoxesFAQs,
+  // 2026-11-28 Q10: place-cards 註冊專用 FAQ (原未註冊會誤回退 educational — 婚宴頁掛教育類問答 = §5.1 承接錯位)
+  'place-cards': placeCardsFAQs,
 };
 
 /**
@@ -892,6 +923,46 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         'zh-hk': '面積上是的——A1（594×841mm）正好是 A2（420×594mm）的兩倍，單價以美元計亦約兩倍（A1 US$4.60 起、A2 US$2.30 起）。A1 1 張起印、A2 10 張起印，實際售價視紙材與數量而定，以 30 秒 AI 報價為準。',
         en: 'In area, exactly — A1 (594×841mm) is double A2 (420×594mm), and the entry price follows: A1 from US$4.60/pc vs A2 from US$2.30/pc. A1 prints from 1 sheet and A2 from 10; final price depends on paper and quantity — check the 30-sec AI quote.',
         ja: '面積はその通り——A1（594×841mm）はA2（420×594mm）のちょうど2倍で、単価も約2倍（A1 ¥600〜、A2 ¥300〜）。A1は1枚から、A2は10枚から注文でき、実際の価格は用紙・数量により異なります。',
+      },
+    },
+  ],
+  // 2026-11-28 Q10 (K3 09:48 批准內容批): place-cards 帶錢問答 — AEO 首句直答 (價格+MOQ), 無檔期承諾 (以報價確認為準, §0.23);
+  //   數字回 PC-101 真值 (HK$2-9/張 50起 / US$0.26 / ¥39); 與 sku-seo-data body 同源口徑; 修復原兜底誤掛 educational FAQ (§5.1 承接錯位)
+  'place-cards': [
+    {
+      question: {
+        'zh-hk': '婚宴枱卡幾多錢一張？',
+        en: 'How much do wedding place cards cost?',
+        ja: '席札の値段はどのくらい？',
+      },
+      answer: {
+        'zh-hk': 'HK$2-9 / 張，50 張起印。視紙材（300g 棉紙／銅版紙／剛古紙）、工藝（燙金／壓紋／模切／站立式）與數量而定，每單免費數碼打稿，確認稿件後才生產。',
+        en: 'Wedding place cards run HK$2–9 per card (from US$0.26 each) at a 50-card minimum. Final price depends on paper (300gsm cotton / art / Conqueror) and finish (foil / embossing / die-cut / standing fold). A free digital proof is included before production.',
+        ja: '1枚 HK$2〜9（目安 ¥39〜）、50枚からご注文いただけます。紙材（300g コットン／コート／コンカラー）と加工（箔押し／エンボス／抜型／スタンド式）で変動します。無料デジタル校正付きです。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '婚宴枱卡幾時可以收到？',
+        en: 'How long do wedding place cards take?',
+        ja: '席札の納期はどのくらい？',
+      },
+      answer: {
+        'zh-hk': '每單先出免費數碼校正稿，你確認後才正式生產。成品以順豐本地派送或 DHL 全球寄送，具體交收時效以報價確認為準。',
+        en: 'Production starts after you approve the free digital proof. Finished cards ship by local courier or DHL worldwide — exact timing is confirmed at quote.',
+        ja: '無料デジタル校正をご確認後に生産を開始します。仕上がりは国内便またはDHLで発送、お届け日数は見積り時にご確認いただけます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '枱卡可以和喜帖一齊訂製嗎？',
+        en: 'Can I order place cards together with wedding invitations?',
+        ja: '招待状と一緒に注文できますか？',
+      },
+      answer: {
+        'zh-hk': '可以。建議與燙金喜帖使用同一款紙材與燙金色系，統一檔期一併生產，婚禮紙品風格一致，批量單價亦更抵。',
+        en: 'Yes. Use the same paper family and foil tone as your foil wedding invitations and produce them in one batch — consistent stationery plus better unit pricing.',
+        ja: 'はい。同じ紙材と箔トーンで一括生産すれば、ペーパーアイテム全体の統一感が保て、数量単価もお得になります。',
       },
     },
   ],
