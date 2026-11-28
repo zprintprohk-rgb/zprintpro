@@ -1923,7 +1923,7 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: 'A4傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 10 張起印 HK$0.3/張 雙面彩印 | 智印港',
-    description: 'A4傳單印刷訂製，10 張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，全港速遞免費。100 張或以上 HKT 11:00 前確認稿件可即日急件（A4 上限 200 張／A5 上限 400 張），常規訂單 3–5 個工作天。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., quality management system Best for: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 適用業界: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的傳單印刷規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
+    description: 'A4傳單印刷訂製，10 張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，港九新界滿 $500 順豐免運。100 張或以上 HKT 11:00 前確認稿件可即日急件（A4 上限 200 張／A5 上限 400 張），常規訂單 3–5 個工作天。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., quality management system Best for: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 適用業界: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的傳單印刷規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -2004,7 +2004,7 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: 'A5傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 10 張起印 雙面四色 免費設計 | 智印港',
-    description: 'A5傳單印刷訂製，10 張起印，HK$0.25 起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，全港速遞免費。100 張或以上 HKT 11:00 前確認稿件可即日急件（A4 上限 200 張／A5 上限 400 張），常規訂單 3–5 個工作天。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. Best for: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 適用業界: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
+    description: 'A5傳單印刷訂製，10 張起印，HK$0.25 起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，港九新界滿 $500 順豐免運。100 張或以上 HKT 11:00 前確認稿件可即日急件（A4 上限 200 張／A5 上限 400 張），常規訂單 3–5 個工作天。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. Best for: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 適用業界: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -5087,7 +5087,7 @@ export const products: Product[] = [
     category: 'books',
     category_slug: 'books',
     name: '香港畫冊印刷 / Bulk Catalog Printing / Wholesale Book Supplier — 攝影集 / 展覽圖錄 / 產品型錄', nameEn: 'Custom Bulk Catalog Printing / Wholesale Book Supplier | Photo Books, Lookbooks, Product Catalogs', nameJa: 'カタログ印刷 / 大量印刷 / 卸売サプライヤー | 寫真集・作品集・プロダクトカタログ', title_zh: '香港畫冊印刷 / Bulk Catalog Printing 10本起 · 全球配送 DHL 2-4天',
-    description: '香港畫冊/攝影集/產品型錄印刷服務，色彩管理以 ICC 檔案與打樣確認把關。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。10 本起印，48 小時香港本地速遞。適用行業：藝術畫廊、品牌企業、婚慶攝影、教育院校、餐飲食品、美妝護膚、文創IP、政企機構。', descriptionEn: 'Catalog, photo book & exhibition lookbook printing with color managed via ICC profiles and proof approval. Ideal for art exhibition lookbooks, brand portfolios, photography books, annual reports, keepsake albums. 10 MOQ, free design mockup, 30-second AI quote. Ideal for art galleries, brand portfolios, wedding photography, education, F&B, cosmetics, IP merchandise, and government/corporate publications.', descriptionJa: 'カタログ・寫真集・作品集印刷サービス、色管理はICCプロファイルと校正確認で管理。美術展作品集、ブランドポートフォリオ、寫真集、企業年報、記念アルバムに最適。10冊〜、無料デザインモックアップ、30秒 AI 見積もり。美術ギャラリー、ブランド、結婚式写真、教育機関、飲食、コスメ、同人、官公庁・企業出版物に最適。', description_zh: '香港畫冊/攝影集/產品型錄印刷服務，色彩管理以 ICC 檔案與打樣確認把關。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。10 本起印，48 小時香港本地速遞。適用行業：藝術畫廊、品牌企業、婚慶攝影、教育院校、餐飲食品、美妝護膚、文創IP、政企機構。',
+    description: '香港畫冊/攝影集/產品型錄印刷服務，色彩管理以 ICC 檔案與打樣確認把關。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。10 本起印，香港本地速遞（交期以報價確認）。適用行業：藝術畫廊、品牌企業、婚慶攝影、教育院校、餐飲食品、美妝護膚、文創IP、政企機構。', descriptionEn: 'Catalog, photo book & exhibition lookbook printing with color managed via ICC profiles and proof approval. Ideal for art exhibition lookbooks, brand portfolios, photography books, annual reports, keepsake albums. 10 MOQ, free design mockup, 30-second AI quote. Ideal for art galleries, brand portfolios, wedding photography, education, F&B, cosmetics, IP merchandise, and government/corporate publications.', descriptionJa: 'カタログ・寫真集・作品集印刷サービス、色管理はICCプロファイルと校正確認で管理。美術展作品集、ブランドポートフォリオ、寫真集、企業年報、記念アルバムに最適。10冊〜、無料デザインモックアップ、30秒 AI 見積もり。美術ギャラリー、ブランド、結婚式写真、教育機関、飲食、コスメ、同人、官公庁・企業出版物に最適。', description_zh: '香港畫冊/攝影集/產品型錄印刷服務，色彩管理以 ICC 檔案與打樣確認把關。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。10 本起印，香港本地速遞（交期以報價確認）。適用行業：藝術畫廊、品牌企業、婚慶攝影、教育院校、餐飲食品、美妝護膚、文創IP、政企機構。',
     features: [
       '【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰',
       '【四色柯式印刷】色彩飽和，適合照片與插畫',
@@ -5915,7 +5915,7 @@ export const products: Product[] = [
     category: 'educational',
     category_slug: 'educational',
     name: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊', nameEn: 'School Flyers for Newsletters, Announcements & Alumni Publications', nameJa: '學校フライヤー — 學校新聞・お知らせ・校史特刊・同窓会誌', title_zh: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊',
-    description: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動傳單印刷首選。10 張起印，48 小時香港本地速遞。', descriptionEn: 'School flyer printing for newsletters, announcements, school anniversary publications, alumni magazines, event flyers. 10 MOQ, 2-4 day worldwide delivery.', descriptionJa: '學校フライヤー印刷、學校新聞、お知らせ、校史特刊、同窓会誌、イベント案内に最適。10枚〜、48時間国際速達対応。', description_zh: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動傳單印刷首選。10 張起印，48 小時香港本地速遞。',
+    description: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動傳單印刷首選。10 張起印，香港本地速遞（交期以報價確認）。', descriptionEn: 'School flyer printing for newsletters, announcements, school anniversary publications, alumni magazines, event flyers. 10 MOQ, 2-4 day worldwide delivery.', descriptionJa: '學校フライヤー印刷、學校新聞、お知らせ、校史特刊、同窓会誌、イベント案内に最適。10枚〜、48時間国際速達対応。', description_zh: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動傳單印刷首選。10 張起印，香港本地速遞（交期以報價確認）。',
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',
       '【四色印刷】封面色彩鮮豔，內頁清晰',
@@ -6080,7 +6080,7 @@ export const products: Product[] = [
     category: 'educational',
     category_slug: 'educational',
     name: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊', nameEn: 'Graduation Yearbooks, School Anniversary & Alumni Publications', nameJa: '卒業記念アルバム — 卒業記念・校史特刊・同窓会誌・クラブ特刊', title_zh: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊',
-    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。 適配行業: 中學畢業紀念冊、大學畢業紀念冊、校友會、培訓機構、校園活動、教會團契、補習社.', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 1 MOQ, DHL Express global 2-4 day delivery from Asia factory. Best for: High school yearbook, College yearbook, Alumni, Training, School events, Church, Tutoring.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス寫真・先生メッセージ・學校ロゴ全面対応。無料デザインモックアップ、1冊〜、アジア自社工場からDHL国際速達2-4日。 適用業界: 高校卒業アルバム、大学卒業アルバム、同窓会、研修、学校活動、教会、塾.', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。 適配行業: 中學畢業紀念冊、大學畢業紀念冊、校友會、培訓機構、校園活動、教會團契、補習社.',
+    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地交付以報價確認，DHL 全球 2-4 天。 適配行業: 中學畢業紀念冊、大學畢業紀念冊、校友會、培訓機構、校園活動、教會團契、補習社.', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 1 MOQ, DHL Express global 2-4 day delivery from Asia factory. Best for: High school yearbook, College yearbook, Alumni, Training, School events, Church, Tutoring.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス寫真・先生メッセージ・學校ロゴ全面対応。無料デザインモックアップ、1冊〜、アジア自社工場からDHL国際速達2-4日。 適用業界: 高校卒業アルバム、大学卒業アルバム、同窓会、研修、学校活動、教会、塾.', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地交付以報價確認，DHL 全球 2-4 天。 適配行業: 中學畢業紀念冊、大學畢業紀念冊、校友會、培訓機構、校園活動、教會團契、補習社.',
     price_range: 'HK$45-180/本',
     basePrice: 45,
     basePrice_en: 10.35,
@@ -6098,7 +6098,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-educational-graduation-yearbook-zh-hk.webp', en: 'zprintpro-educational-graduation-yearbook-en.webp', ja: 'zprintpro-educational-graduation-yearbook-ja.webp' },
     alt: {
-      'zh-hk': '香港畢業紀念冊印刷 — 校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝 3 種裝訂，支援班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。',
+      'zh-hk': '香港畢業紀念冊印刷 — 校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝 3 種裝訂，支援班級照片、師長題詞、學校 logo 全頁。香港本地交付以報價確認，DHL 全球 2-4 天。',
       en: 'Graduation Yearbook Printing — school anniversary / alumni / club publication, saddle stitch / perfect bound / hardcover, full class photos, faculty messages, school logos. 48hr HK local, DHL 2-4 day global.',
       ja: '卒業記念アルバム印刷 — 校史特刊/同窓会誌/クラブ特刊，中綴じ/無線綴じ/上製本の3方式，クラス寫真・先生メッセージ・学校ロゴ全面対応。香港48時間，DHL国際2-4日。',
     },

@@ -187,10 +187,10 @@ export default function RushDeliveryGrid({ locale }: { locale: string }) {
                   source: `rush-printing-delivery-card-${sku.slug}`,
                   extra:
                     locale === 'zh-hk'
-                      ? '我想確認明天 12:00 前能送達。\n請填寫：\n• 數量：\n• 收貨地址/港鐵站：'
+                      ? '我想確認明天 12:00 前能送達。\n請填寫：\n• 數量：\n• 收貨地址：'
                       : locale === 'en'
-                      ? 'I want to confirm next-day delivery by 12PM.\nPlease fill in:\n• Quantity:\n• Delivery address / MTR station:'
-                      : '翌日12時までの配送を確認したいです。\nご記入ください：\n• 数量：\n• 配送住所/MTR駅：',
+                      ? 'I want to confirm next-day delivery by 12PM.\nPlease fill in:\n• Quantity:\n• Delivery address:'
+                      : '翌日12時までの配送を確認したいです。\nご記入ください：\n• 数量：\n• 配送住所：',
                 })}
                 className="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-sm py-2.5 rounded-lg transition-colors flex items-center justify-center gap-1.5"
               >

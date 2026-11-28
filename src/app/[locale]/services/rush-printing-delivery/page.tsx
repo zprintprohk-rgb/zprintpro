@@ -105,10 +105,10 @@ export default function RushDeliveryPage({ params }: Props) {
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: locale === 'zh-hk' ? [
-            { '@type': 'Question', name: '即日印刷最快幾耐到？', acceptedAnswer: { '@type': 'Answer', text: '兩檔急件，24 小時內送到：100 張或以上傳單 HKT 11:00 前確認稿件，可當天交付（即日取，A4 上限 200 張／A5 上限 400 張）；其他急件每日 18:00 前落單並確認稿件，通宵印刷，順豐翌日中午 12:00 前送到，亦支持港鐵站交收。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計。' } },
+            { '@type': 'Question', name: '即日印刷最快幾耐到？', acceptedAnswer: { '@type': 'Answer', text: '兩檔急件，24 小時內送到：100 張或以上傳單 HKT 11:00 前確認稿件，可當天交付（即日取，A4 上限 200 張／A5 上限 400 張）；其他急件每日 18:00 前落單並確認稿件，通宵印刷，順豐翌日中午 12:00 前送到。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計。' } },
             { '@type': 'Question', name: '即日同普通件價錢差幾多？', acceptedAnswer: { '@type': 'Answer', text: '即日急件優先排產會有附加費，實際差價視乎品類同數量，WhatsApp 30 秒攞精準報價最準。' } },
             { '@type': 'Question', name: '過咗 18:00 仲得唔得？', acceptedAnswer: { '@type': 'Answer', text: '過咗截單時間可以 WhatsApp 我哋盡力協調，視乎排產情況安排，唔一定保證翌日中午前到。' } },
-            { '@type': 'Question', name: '點樣收貨？', acceptedAnswer: { '@type': 'Answer', text: '順豐送貨上門或順豐速遞上門都得，我哋冇門市自取，落單時揀啱收貨方式即可。' } },
+            { '@type': 'Question', name: '點樣收貨？', acceptedAnswer: { '@type': 'Answer', text: '順豐送貨上門，全港配送，我哋冇門市自取，落單時確認收貨地址即可。' } },
             { '@type': 'Question', name: '要準備咩文件？', acceptedAnswer: { '@type': 'Answer', text: 'PDF 或 AI 檔，300dpi，預留 3mm 出血位。唔熟排版可以 WhatsApp 我哋，免費幫你檢查稿件。' } },
             { '@type': 'Question', name: '落單後可唔可以改稿？', acceptedAnswer: { '@type': 'Answer', text: '上機印刷前都可以免費改稿，開印後就冇得改，所以落單後請盡快確認最終版本。' } },
           ] : locale === 'en' ? [

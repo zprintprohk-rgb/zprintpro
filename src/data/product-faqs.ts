@@ -735,7 +735,7 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '印刷と納品にはどのくらい時間がかかりますか？',
     },
     answer: {
-      'zh-hk': '標準工期為 3–5 個工作天，加急件最快 24–48 小時內完成。即日交貨適用於大部分標準 SKU，建議上午 11 時前確認稿件。深圳總部生產，港九新界 48 小時快遞直送 (順豐/DHL)。樣書可郵寄審核。',
+      'zh-hk': '標準工期為 3–5 個工作天，加急件交期視品類與數量以報價確認。即日交貨適用於指定 SKU（100 張或以上傳單，HKT 11:00 前確認稿件）。深圳總部生產，港九新界順豐速遞直送（滿 $500 免運）。樣書可郵寄審核。',
       'en': 'Standard turnaround is 3–5 business days. Rush orders are completed in 24–48 hours. Same-day production is available for most standard SKUs—confirm artwork before 11 AM (HKT). Sample proofs available by mail/courier, with 2-4 business day delivery to the US via DHL / FedEx.',
       'ja': '標準納期は 3〜5 営業日、急ぎは 24〜48 時間以内。即日生産は多くの標準 SKU で対応可能、正午までのデータ確定推奨です。DHL・FedEx で日本全国へ 2〜4 日でお届けします。',
     },
@@ -795,7 +795,7 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '急ぎ/速納の追加料金は？',
     },
     answer: {
-      'zh-hk': '48 小時快遞免費（港九新界大部分地區）。即日急件（100 張或以上、上午 11 時前確認稿件）可當天交付，附加費以報價確認為準（視產品類型）。加急件可聯絡客服走專屬急件通道，產能優先排程。',
+      'zh-hk': '順豐本地速遞，港九新界滿 $500 免運（以報價確認）。即日急件（100 張或以上、上午 11 時前確認稿件）可當天交付，附加費以報價確認為準（視產品類型）。加急件可聯絡客服走專屬急件通道，產能優先排程。',
       'en': 'Rush 24–48 hour production carries no surcharge for most products — you only pay standard DHL / FedEx shipping (2-4 business days to the US). For urgent orders, contact our team for a dedicated rush channel with priority production scheduling.',
       'ja': '日本への通常配送は 2〜4 日（DHL・FedEx）。即日生産後の速納にも対応可能です。急ぎの場合はカスタマーサポートまでご相談ください。優先生産スケジュールで対応します。',
     },
