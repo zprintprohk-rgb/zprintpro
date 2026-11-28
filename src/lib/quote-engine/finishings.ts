@@ -3,10 +3,14 @@
  * 2026-06-07 升级：印刷行业工艺不是 multiplier，是"起步价 + 单版费"
  *
  * 行业洞察：
- * - 烫金：必须开锌版（固定费 150 HKD/版）+ 烫金机工时
- * - 覆膜：起步价 50 HKD + 每版 30 HKD
- * - UV：起步价 80 HKD + 每版 40 HKD
- * - 模切：起步价 100 HKD + 每版 25 HKD（啤盒/贴纸必须）
+ * - 烫金：必须开锌版（固定费 150 HKD/版）+ 烫金机工时 → 起步合計 300
+ * - 覆膜：起步价 150 HKD + 每版 30 HKD
+ * - UV：起步价 300 HKD + 每版 40 HKD
+ * - 模切：起步价 200 HKD + 每版 25 HKD（啤盒/贴纸必须；贴纸/啤盒基礎公式內含拼版啤位，此檔暫無公式消費，供將來接線）
+ *
+ * 2026-11-28 K3 拍板新價（與頁面標籤「起」價對齊，Q12a/Q14）：
+ *   Spot UV HK$300 起 / 覆膜 HK$150 起 / 圓角 HK$50 起 / 模切 HK$200 起
+ *   燙金 HK$300 起（150 起步 + 鋅版 150）/ 擊凸 HK$400 起（200 起步 + 凸版 200）維持
  */
 
 import type { FinishOption } from './types';
@@ -26,7 +30,7 @@ export interface FinishingCost {
 
 export const FINISHING_COSTS: Record<FinishOption, FinishingCost> = {
   'spot-uv': {
-    baseCost: 80,
+    baseCost: 300,
     perSheetCost: 40,
     description: '局部 UV 上光 - 高光提亮',
   },
@@ -45,20 +49,27 @@ export const FINISHING_COSTS: Record<FinishOption, FinishingCost> = {
     plateCost: 200,
   },
   'rounded-corners': {
-    baseCost: 30,
+    baseCost: 50,
     perSheetCost: 5,
     description: '圆角模切',
     requiresPlate: false,
   },
   'matte-lamination': {
-    baseCost: 50,
+    baseCost: 150,
     perSheetCost: 30,
     description: '哑膜覆膜 - 触摸哑光',
   },
   'gloss-lamination': {
-    baseCost: 50,
+    baseCost: 150,
     perSheetCost: 30,
     description: '光膜覆膜 - 表面光鲜',
+  },
+  // 2026-11-28 K3 拍板 模切 HK$200 起；暫無公式消費（模切產品拼版啤位在 core.ts 佈局層），供將來接線
+  'die-cut': {
+    baseCost: 200,
+    perSheetCost: 25,
+    description: '模切/啤盒 - 自定义刀模',
+    requiresPlate: false,
   },
 };
 

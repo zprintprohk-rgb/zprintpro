@@ -105,21 +105,21 @@ export default function RushDeliveryPage({ params }: Props) {
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: locale === 'zh-hk' ? [
-            { '@type': 'Question', name: '即日印刷最快幾耐到？', acceptedAnswer: { '@type': 'Answer', text: '每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，亦支持順豐速遞上門。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計。' } },
+            { '@type': 'Question', name: '即日印刷最快幾耐到？', acceptedAnswer: { '@type': 'Answer', text: '兩檔急件，24 小時內送到：100 張或以上傳單 HKT 11:00 前確認稿件，可當天交付（即日取，A4 上限 200 張／A5 上限 400 張）；其他急件每日 18:00 前落單並確認稿件，通宵印刷，順豐翌日中午 12:00 前送到，亦支持港鐵站交收。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計。' } },
             { '@type': 'Question', name: '即日同普通件價錢差幾多？', acceptedAnswer: { '@type': 'Answer', text: '即日急件優先排產會有附加費，實際差價視乎品類同數量，WhatsApp 30 秒攞精準報價最準。' } },
             { '@type': 'Question', name: '過咗 18:00 仲得唔得？', acceptedAnswer: { '@type': 'Answer', text: '過咗截單時間可以 WhatsApp 我哋盡力協調，視乎排產情況安排，唔一定保證翌日中午前到。' } },
             { '@type': 'Question', name: '點樣收貨？', acceptedAnswer: { '@type': 'Answer', text: '順豐送貨上門或順豐速遞上門都得，我哋冇門市自取，落單時揀啱收貨方式即可。' } },
             { '@type': 'Question', name: '要準備咩文件？', acceptedAnswer: { '@type': 'Answer', text: 'PDF 或 AI 檔，300dpi，預留 3mm 出血位。唔熟排版可以 WhatsApp 我哋，免費幫你檢查稿件。' } },
             { '@type': 'Question', name: '落單後可唔可以改稿？', acceptedAnswer: { '@type': 'Answer', text: '上機印刷前都可以免費改稿，開印後就冇得改，所以落單後請盡快確認最終版本。' } },
           ] : locale === 'en' ? [
-            { '@type': 'Question', name: 'How fast is same-day delivery?', acceptedAnswer: { '@type': 'Answer', text: 'Order before 6PM and confirm artwork, we arrange overnight print, SF Express delivers before noon next day, SF Express delivery also supported.' } },
+            { '@type': 'Question', name: 'How fast is same-day delivery?', acceptedAnswer: { '@type': 'Answer', text: 'Two rush tiers, delivered within 24 hours. Tier 1: 100+ flyers with artwork confirmed before 11AM HKT — same-day delivery (A4 max 200 / A5 max 400). Tier 2: order before 6PM with artwork confirmed — overnight print, SF Express delivers before noon next day. Rush eligible: flyers 50–1000 pcs, booklets 10–500, folded leaflets 50–500 (surcharge applies).' } },
             { '@type': 'Question', name: 'How much more is rush vs standard?', acceptedAnswer: { '@type': 'Answer', text: 'Rush priority production has a surcharge. Delta depends on product and quantity. 30-second WhatsApp quote is the fastest way.' } },
             { '@type': 'Question', name: 'Can I order after 6PM?', acceptedAnswer: { '@type': 'Answer', text: 'After cut-off please WhatsApp us, we will try to coordinate. Next-day-noon delivery is not guaranteed.' } },
             { '@type': 'Question', name: 'How do I receive?', acceptedAnswer: { '@type': 'Answer', text: 'SF Express door-to-door or SF Express delivery. No storefront self-pickup, choose your delivery method at order time.' } },
             { '@type': 'Question', name: 'What files do I need?', acceptedAnswer: { '@type': 'Answer', text: 'PDF or AI, 300dpi, 3mm bleed. Not sure about layout? WhatsApp us for free file check.' } },
             { '@type': 'Question', name: 'Can I change artwork after ordering?', acceptedAnswer: { '@type': 'Answer', text: 'Free revisions before printing. Once on press, no changes. Please confirm final version promptly.' } },
           ] : [
-            { '@type': 'Question', name: '当日印刷の最速納期は？', acceptedAnswer: { '@type': 'Answer', text: '毎日18時までのご注文で徹夜印刷、SF翌朝12時前配送、提携先受取も対応。特急対象：チラシ 50–1000 枚・冊子 10–500 部・折りたたみリーフレット 50–500 部など（割増料金）。' } },
+            { '@type': 'Question', name: '当日印刷の最速納期は？', acceptedAnswer: { '@type': 'Answer', text: '特急は2段階、どちらも24時間以内にお届け。1段目：チラシ100枚以上・データを11時（HKT）までに確定で当日仕上げ（A4上限200枚・A5上限400枚）。2段目：毎日18時までのご注文で徹夜印刷、SF翌朝12時前配送。特急対象：チラシ 50–1000 枚・冊子 10–500 部・折りたたみリーフレット 50–500 部など（割増料金）。' } },
             { '@type': 'Question', name: '通常印刷との価格差は？', acceptedAnswer: { '@type': 'Answer', text: '特急割増料金あり。差額は商品と数量により異なります。WhatsApp 30秒見積もりで確定。' } },
             { '@type': 'Question', name: '18時過ぎでも対応できますか？', acceptedAnswer: { '@type': 'Answer', text: '締切後は WhatsApp でご相談ください。状況により対応、翌日午前中配送は保証できません。' } },
             { '@type': 'Question', name: '配送方法は？', acceptedAnswer: { '@type': 'Answer', text: 'SF配送または提携先受取。店舗受取はございません、ご注文時にお選びください。' } },
@@ -151,10 +151,10 @@ export default function RushDeliveryPage({ params }: Props) {
           <svg className="w-5 h-5 text-[#2873F5] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
           <p className="text-[15px] md:text-base leading-relaxed text-[#1D3465]">
             {locale === 'zh-hk'
-              ? '即日印刷：每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，傳單／貼紙 10 張起印。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計；包裝盒、紙袋等需後加工品類不適用。'
+              ? '即日印刷：兩檔急件，24 小時內送到——100 張或以上傳單 HKT 11:00 前確認稿件，當天交付（即日取，A4 上限 200 張／A5 上限 400 張）；每日 18:00 前落單並確認稿件，通宵印刷，順豐翌日中午 12:00 前送到。傳單／貼紙 10 張起印。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計；包裝盒、紙袋等需後加工品類不適用。'
               : locale === 'ja'
-                ? '即日印刷：18:00 までにご注文・データ確認で徹夜印刷、SFで翌日12時前にお届け。チラシ・ステッカーは10枚〜。特急対象：チラシ 50–1000 枚・冊子 10–500 部・折りたたみリーフレット 50–500 部など（割増料金）。化粧箱・紙袋など後加工が必要な商品は対象外です。その他はお見積もりにてご確認ください。'
-                : 'Same-day printing: order before 6PM and confirm artwork, we print overnight and SF Express delivers before noon the next day. Flyers & stickers from 10 pcs. Rush eligible: flyers 50–1000 pcs, booklets 10–500, folded leaflets 50–500 (surcharge). Packaging boxes and paper bags requiring post-press finishing are not eligible; confirm other items by quote.'}
+                ? '即日印刷：特急は2段階・24時間以内にお届け。チラシ100枚以上・データ11時（HKT）確定で当日仕上げ（A4上限200枚・A5上限400枚）。毎日18時までのご注文で徹夜印刷、SF翌日12時前にお届け。チラシ・ステッカーは10枚〜。特急対象：チラシ 50–1000 枚・冊子 10–500 部・折りたたみリーフレット 50–500 部など（割増料金）。化粧箱・紙袋など後加工が必要な商品は対象外です。その他はお見積もりにてご確認ください。'
+                : 'Same-day printing: two rush tiers, delivered within 24 hours — 100+ flyers with artwork confirmed before 11AM HKT are delivered same day (A4 max 200 / A5 max 400); order before 6PM with artwork confirmed for overnight printing and SF Express delivery before noon next day. Flyers & stickers from 10 pcs. Rush eligible: flyers 50–1000 pcs, booklets 10–500, folded leaflets 50–500 (surcharge). Packaging boxes and paper bags requiring post-press finishing are not eligible; confirm other items by quote.'}
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@
  * 实现：shadcn/ui + react-hook-form + TypeScript 公式引擎
  */
 
-export type FinishOption = 'spot-uv' | 'foil' | 'emboss' | 'rounded-corners' | 'matte-lamination' | 'gloss-lamination';
+export type FinishOption = 'spot-uv' | 'foil' | 'emboss' | 'rounded-corners' | 'matte-lamination' | 'gloss-lamination' | 'die-cut';
 export type Deadline = 'standard' | 'rush' | 'same-day';
 export type SizeUnit = 'mm' | 'in';
 /** 印刷面数 (C7 修复 2026-06-07) - 业务卡 90% 是双面, 但公式之前只算单面 */
