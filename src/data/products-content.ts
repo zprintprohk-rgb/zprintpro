@@ -116,11 +116,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, fingerprint resistant</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant colors</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping (Gold/Silver/Rose Gold)</td><td class="p-2">Metallic shine, luxury feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Glossy dimensional contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Embossing / Rounded Corners</td><td class="p-2">Tactile depth, soft aesthetic</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, fingerprint resistant</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant colors</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping (Gold/Silver/Rose Gold)</td><td class="p-2">Metallic shine, luxury feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Glossy dimensional contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$80</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Embossing / Rounded Corners</td><td class="p-2">Tactile depth, soft aesthetic</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$400</td></tr>
   </tbody>
 </table>
 
@@ -355,11 +355,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, fingerprint resistant, premium feel</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant color saturation</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping (Gold/Silver/Rose Gold)</td><td class="p-2">Metallic shine, executive luxury feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Dimensional contrast on logos or patterns</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Embossing / Letterpress</td><td class="p-2">Tactile depth on logos or text</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, fingerprint resistant, premium feel</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant color saturation</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping (Gold/Silver/Rose Gold)</td><td class="p-2">Metallic shine, executive luxury feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Dimensional contrast on logos or patterns</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$80</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Embossing / Letterpress</td><td class="p-2">Tactile depth on logos or text</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$400</td></tr>
   </tbody>
 </table>
 
@@ -473,13 +473,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Gold Foil</td><td class="p-2">Classic luxury, warm shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Silver Foil</td><td class="p-2">Modern, tech-forward shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Rose Gold Foil</td><td class="p-2">Soft feminine luxury, beauty brands</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Copper Foil</td><td class="p-2">Warm craft aesthetic, artisan feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Holographic Foil</td><td class="p-2">Multi-color shifting, premium impact</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Black Foil (on light card)</td><td class="p-2">Sophisticated contrast, modern minimalism</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Foil + Spot UV Combo</td><td class="p-2">Metallic + glossy dimensional contrast</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Gold Foil</td><td class="p-2">Classic luxury, warm shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Silver Foil</td><td class="p-2">Modern, tech-forward shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Rose Gold Foil</td><td class="p-2">Soft feminine luxury, beauty brands</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Copper Foil</td><td class="p-2">Warm craft aesthetic, artisan feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Holographic Foil</td><td class="p-2">Multi-color shifting, premium impact</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Black Foil (on light card)</td><td class="p-2">Sophisticated contrast, modern minimalism</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Foil + Spot UV Combo</td><td class="p-2">Metallic + glossy dimensional contrast</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">from HK$380</td></tr>
   </tbody>
 </table>
 
@@ -528,11 +528,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>箔種類</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>金箔</td><td>クラシックな高級感、温かみのある光沢</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>銀箔</td><td>モダン、テクノロジー感</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>ローズゴールド箔</td><td>柔らかなフェミニン高級感、美容ブランド</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>銅箔</td><td>温かみのあるクラフト感、職人技</td><td>+1 日</td><td>$</td></tr>
-    <tr><td>ホログラム箔</td><td>多色シフト、プレミアム感</td><td>+1 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>金箔</td><td>クラシックな高級感、温かみのある光沢</td><td>+1 日</td><td>HK$300〜</td></tr>
+    <tr class="border-b border-gray-200"><td>銀箔</td><td>モダン、テクノロジー感</td><td>+1 日</td><td>HK$300〜</td></tr>
+    <tr class="border-b border-gray-200"><td>ローズゴールド箔</td><td>柔らかなフェミニン高級感、美容ブランド</td><td>+1 日</td><td>HK$300〜</td></tr>
+    <tr class="border-b border-gray-200"><td>銅箔</td><td>温かみのあるクラフト感、職人技</td><td>+1 日</td><td>HK$300〜</td></tr>
+    <tr><td>ホログラム箔</td><td>多色シフト、プレミアム感</td><td>+1 日</td><td>HK$300〜</td></tr>
   </tbody>
 </table>
 
@@ -710,13 +710,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Logo Spot UV</td><td class="p-2">Glossy logo, classic technique</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Name Spot UV</td><td class="p-2">Glossy name, tactile hierarchy</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Pattern / Texture UV</td><td class="p-2">Geometric, abstract, brand pattern</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Full-Bleed UV Image</td><td class="p-2">Photographic glossy accent</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Spot UV + Emboss</td><td class="p-2">Glossy + dimensional depth</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV + Foil</td><td class="p-2">Glossy + metallic shine</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Double-Sided Spot UV</td><td class="p-2">UV on both sides</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Logo Spot UV</td><td class="p-2">Glossy logo, classic technique</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$80</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Name Spot UV</td><td class="p-2">Glossy name, tactile hierarchy</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$80</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Pattern / Texture UV</td><td class="p-2">Geometric, abstract, brand pattern</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$80</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Full-Bleed UV Image</td><td class="p-2">Photographic glossy accent</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$80</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Spot UV + Emboss</td><td class="p-2">Glossy + dimensional depth</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">from HK$480</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV + Foil</td><td class="p-2">Glossy + metallic shine</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">from HK$380</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Double-Sided Spot UV</td><td class="p-2">UV on both sides</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$80</td></tr>
   </tbody>
 </table>
 
@@ -765,11 +765,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>パターン</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>ロゴスポット UV</td><td>グロス加工ロゴ、クラシカル技法</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>氏名スポット UV</td><td>グロス加工氏名、触覚階層</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>パターン・テクスチャ UV</td><td>幾何學・抽象・ブランドパターン</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>全面ブリード UV 画像</td><td>寫真風グロスアクセント</td><td>+1 日</td><td>$</td></tr>
-    <tr><td>スポット UV + エンボス</td><td>グロス + 立体感</td><td>+2 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>ロゴスポット UV</td><td>グロス加工ロゴ、クラシカル技法</td><td>+1 日</td><td>HK$80〜</td></tr>
+    <tr class="border-b border-gray-200"><td>氏名スポット UV</td><td>グロス加工氏名、触覚階層</td><td>+1 日</td><td>HK$80〜</td></tr>
+    <tr class="border-b border-gray-200"><td>パターン・テクスチャ UV</td><td>幾何學・抽象・ブランドパターン</td><td>+1 日</td><td>HK$80〜</td></tr>
+    <tr class="border-b border-gray-200"><td>全面ブリード UV 画像</td><td>寫真風グロスアクセント</td><td>+1 日</td><td>HK$80〜</td></tr>
+    <tr><td>スポット UV + エンボス</td><td>グロス + 立体感</td><td>+2 日</td><td>HK$480〜</td></tr>
   </tbody>
 </table>
 
@@ -944,13 +944,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Matte Lamination (one side)</td><td class="p-2">Soft-touch, fingerprint resistant</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte Lamination (both sides)</td><td class="p-2">Full soft-touch, premium feel</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Soft-Touch Velvet Lam</td><td class="p-2">Velvet texture, ultra-premium</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte + Spot UV Logo</td><td class="p-2">Matte base + glossy logo contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Matte + Foil Logo</td><td class="p-2">Matte base + metallic shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte + Emboss</td><td class="p-2">Matte base + dimensional depth</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Rounded Corners (R3/R5)</td><td class="p-2">Soft aesthetic, modern</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Matte Lamination (one side)</td><td class="p-2">Soft-touch, fingerprint resistant</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte Lamination (both sides)</td><td class="p-2">Full soft-touch, premium feel</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Soft-Touch Velvet Lam</td><td class="p-2">Velvet texture, ultra-premium</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte + Spot UV Logo</td><td class="p-2">Matte base + glossy logo contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$130</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Matte + Foil Logo</td><td class="p-2">Matte base + metallic shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$350</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte + Emboss</td><td class="p-2">Matte base + dimensional depth</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$450</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Rounded Corners (R3/R5)</td><td class="p-2">Soft aesthetic, modern</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$30</td></tr>
   </tbody>
 </table>
 
@@ -999,11 +999,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>仕上げ</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>マットラミネート (片面)</td><td>ソフトタッチ、指紋防止</td><td>+0 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>マットラミネート (両面)</td><td>全面ソフトタッチ、プレミアム感</td><td>+0 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>ソフトタッチベルベットラミ</td><td>ベルベットテクスチャ、超プレミアム</td><td>+0 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>マット + スポット UV ロゴ</td><td>マットベース + グロスロゴコントラスト</td><td>+1 日</td><td>$</td></tr>
-    <tr><td>マット + 箔押しロゴ</td><td>マット + 金属光沢ロゴ</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>マットラミネート (片面)</td><td>ソフトタッチ、指紋防止</td><td>+0 日</td><td>HK$50〜</td></tr>
+    <tr class="border-b border-gray-200"><td>マットラミネート (両面)</td><td>全面ソフトタッチ、プレミアム感</td><td>+0 日</td><td>HK$50〜</td></tr>
+    <tr class="border-b border-gray-200"><td>ソフトタッチベルベットラミ</td><td>ベルベットテクスチャ、超プレミアム</td><td>+0 日</td><td>見積り確認</td></tr>
+    <tr class="border-b border-gray-200"><td>マット + スポット UV ロゴ</td><td>マットベース + グロスロゴコントラスト</td><td>+1 日</td><td>HK$130〜</td></tr>
+    <tr><td>マット + 箔押しロゴ</td><td>マット + 金属光沢ロゴ</td><td>+1 日</td><td>HK$350〜</td></tr>
   </tbody>
 </table>
 
@@ -1177,12 +1177,12 @@ export const productsContent: Record<string, ProductContentEntry> = {
   </thead>
   <tbody>
     <tr class="border-b"><td class="p-2 font-medium">Standard (no radius)</td><td class="p-2">Sharp 90° corners, classic</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">—</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">R3mm</td><td class="p-2">Subtle softness, modern</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">R5mm</td><td class="p-2">Distinct soft curve, premium</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">R10mm</td><td class="p-2">Pronounced curve, modern lifestyle</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Custom radius (5-15mm)</td><td class="p-2">Distinctive brand shape</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Rounded + Spot UV Logo</td><td class="p-2">Modern soft + glossy contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Rounded + Foil Logo</td><td class="p-2">Modern soft + metallic shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">R3mm</td><td class="p-2">Subtle softness, modern</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$30</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">R5mm</td><td class="p-2">Distinct soft curve, premium</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$30</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">R10mm</td><td class="p-2">Pronounced curve, modern lifestyle</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$30</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Custom radius (5-15mm)</td><td class="p-2">Distinctive brand shape</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$30</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Rounded + Spot UV Logo</td><td class="p-2">Modern soft + glossy contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$110</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Rounded + Foil Logo</td><td class="p-2">Modern soft + metallic shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$330</td></tr>
   </tbody>
 </table>
 
@@ -1232,10 +1232,10 @@ export const productsContent: Record<string, ProductContentEntry> = {
   </thead>
   <tbody>
     <tr class="border-b border-gray-200"><td>標準 (角丸なし)</td><td>シャープな 90° 角、クラシカル</td><td>+0 日</td><td>—</td></tr>
-    <tr class="border-b border-gray-200"><td>R3mm</td><td>微妙な柔らかさ、モダン</td><td>+0 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>R5mm</td><td>明確なsoft曲線、プレミアム</td><td>+0 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>R10mm</td><td>強い曲線、モダンライフスタイル</td><td>+0 日</td><td>$</td></tr>
-    <tr><td>カスタム半径 (5-15mm)</td><td>独自ブランド形状</td><td>+0 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>R3mm</td><td>微妙な柔らかさ、モダン</td><td>+0 日</td><td>HK$30〜</td></tr>
+    <tr class="border-b border-gray-200"><td>R5mm</td><td>明確なsoft曲線、プレミアム</td><td>+0 日</td><td>HK$30〜</td></tr>
+    <tr class="border-b border-gray-200"><td>R10mm</td><td>強い曲線、モダンライフスタイル</td><td>+0 日</td><td>HK$30〜</td></tr>
+    <tr><td>カスタム半径 (5-15mm)</td><td>独自ブランド形状</td><td>+0 日</td><td>HK$30〜</td></tr>
   </tbody>
 </table>
 
@@ -1401,11 +1401,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, color saturation</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, anti-glare</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Die-Cut Shapes</td><td class="p-2">Custom outlines, kiss-cut available</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Variable QR / Serial Numbers</td><td class="p-2">Batch tracking, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Removable Adhesive</td><td class="p-2">Clean removal, no residue</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, color saturation</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, anti-glare</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Die-Cut Shapes</td><td class="p-2">Custom outlines, kiss-cut available</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$100</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Variable QR / Serial Numbers</td><td class="p-2">Batch tracking, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Removable Adhesive</td><td class="p-2">Clean removal, no residue</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -1628,11 +1628,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">White Ink Underbase</td><td class="p-2">Opaque white layer beneath CMYK for true color on clear film</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss UV Varnish</td><td class="p-2">High-shine, scratch resistant top coat</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Matte Soft-Touch Lamination</td><td class="p-2">Velvety feel, fingerprint resistant</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Stamping (Gold/Silver)</td><td class="p-2">Metallic accents on logo or text</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom Die-Cut Shape</td><td class="p-2">Any outline: circle, oval, bottle contour, logo</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">White Ink Underbase</td><td class="p-2">Opaque white layer beneath CMYK for true color on clear film</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss UV Varnish</td><td class="p-2">High-shine, scratch resistant top coat</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Matte Soft-Touch Lamination</td><td class="p-2">Velvety feel, fingerprint resistant</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Stamping (Gold/Silver)</td><td class="p-2">Metallic accents on logo or text</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom Die-Cut Shape</td><td class="p-2">Any outline: circle, oval, bottle contour, logo</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$100</td></tr>
   </tbody>
 </table>
 
@@ -1745,11 +1745,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, anti-glare</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant color</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Die-Cut Shapes</td><td class="p-2">Custom outlines, kiss-cut available</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Static Cling (no adhesive)</td><td class="p-2">Reusable, repositionable on glass</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Variable QR / Serial Numbers</td><td class="p-2">Batch tracking, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, anti-glare</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant color</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Die-Cut Shapes</td><td class="p-2">Custom outlines, kiss-cut available</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$100</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Static Cling (no adhesive)</td><td class="p-2">Reusable, repositionable on glass</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Variable QR / Serial Numbers</td><td class="p-2">Batch tracking, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -1797,11 +1797,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>仕上げ</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>マットラミネーション</td><td>ソフトタッチ、反射防止</td><td>+0 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>グロスラミネーション</td><td>高光沢、色彩鮮やか</td><td>+0 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>型抜き形状</td><td>カスタム形状、キスカット対応</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>静電吸着（粘着剤なし）</td><td>再利用可能、ガラス上で位置調整可</td><td>+0 日</td><td>$</td></tr>
-    <tr><td>可変 QR / シリアル番号</td><td>ロット管理、偽造防止</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>マットラミネーション</td><td>ソフトタッチ、反射防止</td><td>+0 日</td><td>HK$50〜</td></tr>
+    <tr class="border-b border-gray-200"><td>グロスラミネーション</td><td>高光沢、色彩鮮やか</td><td>+0 日</td><td>HK$50〜</td></tr>
+    <tr class="border-b border-gray-200"><td>型抜き形状</td><td>カスタム形状、キスカット対応</td><td>+1 日</td><td>HK$100〜</td></tr>
+    <tr class="border-b border-gray-200"><td>静電吸着（粘着剤なし）</td><td>再利用可能、ガラス上で位置調整可</td><td>+0 日</td><td>見積り確認</td></tr>
+    <tr><td>可変 QR / シリアル番号</td><td>ロット管理、偽造防止</td><td>+1 日</td><td>見積り確認</td></tr>
   </tbody>
 </table>
 
@@ -2292,11 +2292,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Kiss-Cut (sheets)</td><td class="p-2">Easy peel, multiple per sheet</td><td class="p-2 text-center">15×15mm</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Die-Cut (individual)</td><td class="p-2">Each sticker cut to shape, stacked</td><td class="p-2 text-center">10×10mm</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Perforated Cut</td><td class="p-2">Cut + perforated tear lines</td><td class="p-2 text-center">20×20mm</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Back-Slit (easy peel backing)</td><td class="p-2">Pre-split liner for fast peel</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Multi-Layer Cut</td><td class="p-2">Cut-out areas for see-through effect</td><td class="p-2 text-center">25×25mm</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Kiss-Cut (sheets)</td><td class="p-2">Easy peel, multiple per sheet</td><td class="p-2 text-center">15×15mm</td><td class="p-2 text-center">from HK$100</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Die-Cut (individual)</td><td class="p-2">Each sticker cut to shape, stacked</td><td class="p-2 text-center">10×10mm</td><td class="p-2 text-center">from HK$100</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Perforated Cut</td><td class="p-2">Cut + perforated tear lines</td><td class="p-2 text-center">20×20mm</td><td class="p-2 text-center">from HK$100</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Back-Slit (easy peel backing)</td><td class="p-2">Pre-split liner for fast peel</td><td class="p-2 text-center">—</td><td class="p-2 text-center">from HK$100</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Multi-Layer Cut</td><td class="p-2">Cut-out areas for see-through effect</td><td class="p-2 text-center">25×25mm</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -2539,11 +2539,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Full Foil (entire design)</td><td class="p-2">Maximum shine, premium unboxing</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Logo Only</td><td class="p-2">Selective accent on white or color print</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Foil Border / Frame</td><td class="p-2">Decorative edge, premium cue</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil + Spot UV Combo</td><td class="p-2">Metallic shine + glossy contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Matte Lamination (over foil)</td><td class="p-2">Subtle metallic, anti-glare</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Full Foil (entire design)</td><td class="p-2">Maximum shine, premium unboxing</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Logo Only</td><td class="p-2">Selective accent on white or color print</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Foil Border / Frame</td><td class="p-2">Decorative edge, premium cue</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil + Spot UV Combo</td><td class="p-2">Metallic shine + glossy contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$380</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Matte Lamination (over foil)</td><td class="p-2">Subtle metallic, anti-glare</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$50</td></tr>
   </tbody>
 </table>
 
@@ -2593,11 +2593,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>加工方法</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>全面箔押し</td><td>最大光沢、プレミアム開封体験</td><td>+1 日</td><td>$$</td></tr>
-    <tr class="border-b border-gray-200"><td>ロゴ部分のみ箔押し</td><td>白地・カラー印刷上に選択的アクセント</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>箔押し枠・フレーム</td><td>裝飾エッジ、プレミアム感演出</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>箔押し + スポット UV 組合せ</td><td>金属光沢 + 光沢コントラスト</td><td>+1 日</td><td>$$</td></tr>
-    <tr><td>マットラミネーション（箔上）</td><td>控えめな金属感、反射防止</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>全面箔押し</td><td>最大光沢、プレミアム開封体験</td><td>+1 日</td><td>HK$300〜</td></tr>
+    <tr class="border-b border-gray-200"><td>ロゴ部分のみ箔押し</td><td>白地・カラー印刷上に選択的アクセント</td><td>+1 日</td><td>HK$300〜</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し枠・フレーム</td><td>裝飾エッジ、プレミアム感演出</td><td>+1 日</td><td>HK$300〜</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し + スポット UV 組合せ</td><td>金属光沢 + 光沢コントラスト</td><td>+1 日</td><td>HK$380〜</td></tr>
+    <tr><td>マットラミネーション（箔上）</td><td>控えめな金属感、反射防止</td><td>+1 日</td><td>HK$50〜</td></tr>
   </tbody>
 </table>
 
@@ -2777,11 +2777,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">VOID Pattern (polyester)</td><td class="p-2 text-center">—</td><td class="p-2 text-center">5+ years</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Destructible Vinyl</td><td class="p-2 text-center">—</td><td class="p-2 text-center">3-5 years</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Holographic Polyester</td><td class="p-2 text-center">—</td><td class="p-2 text-center">5+ years</td><td class="p-2 text-center">$$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Sequential Numbering</td><td class="p-2 text-center">—</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Variable QR + DB Lookup</td><td class="p-2 text-center">—</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">VOID Pattern (polyester)</td><td class="p-2 text-center">—</td><td class="p-2 text-center">5+ years</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Destructible Vinyl</td><td class="p-2 text-center">—</td><td class="p-2 text-center">3-5 years</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Holographic Polyester</td><td class="p-2 text-center">—</td><td class="p-2 text-center">5+ years</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Sequential Numbering</td><td class="p-2 text-center">—</td><td class="p-2 text-center">—</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Variable QR + DB Lookup</td><td class="p-2 text-center">—</td><td class="p-2 text-center">—</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -2830,11 +2830,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>基材</th><th>効果</th><th>屋外耐久</th><th>追加料金</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>VOID パターン（ポリエステル）</td><td>—</td><td>5+ 年</td><td>$$</td></tr>
-    <tr class="border-b border-gray-200"><td>破壊型ビニール</td><td>—</td><td>3-5 年</td><td>$$</td></tr>
-    <tr class="border-b border-gray-200"><td>ホログラムポリエステル</td><td>—</td><td>5+ 年</td><td>$$$</td></tr>
-    <tr class="border-b border-gray-200"><td>連番印刷</td><td>—</td><td>—</td><td>$</td></tr>
-    <tr><td>可変 QR + DB 連動</td><td>—</td><td>—</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>VOID パターン（ポリエステル）</td><td>—</td><td>5+ 年</td><td>見積り確認</td></tr>
+    <tr class="border-b border-gray-200"><td>破壊型ビニール</td><td>—</td><td>3-5 年</td><td>見積り確認</td></tr>
+    <tr class="border-b border-gray-200"><td>ホログラムポリエステル</td><td>—</td><td>5+ 年</td><td>見積り確認</td></tr>
+    <tr class="border-b border-gray-200"><td>連番印刷</td><td>—</td><td>—</td><td>見積り確認</td></tr>
+    <tr><td>可変 QR + DB 連動</td><td>—</td><td>—</td><td>見積り確認</td></tr>
   </tbody>
 </table>
 
@@ -3014,11 +3014,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Cotton Rope Handles</td><td class="p-2">Premium tactile, eco-friendly</td><td class="p-2 text-center">8-12kg</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Paper Rope Handles</td><td class="p-2">100% recyclable, classic look</td><td class="p-2 text-center">6-10kg</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Flat Paper Handles</td><td class="p-2">Sleek, retail-friendly</td><td class="p-2 text-center">4-6kg</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Stamped Logo</td><td class="p-2">Metallic shine, gifting appeal</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Spot UV / Embossing</td><td class="p-2">Dimensional contrast</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Cotton Rope Handles</td><td class="p-2">Premium tactile, eco-friendly</td><td class="p-2 text-center">8-12kg</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Paper Rope Handles</td><td class="p-2">100% recyclable, classic look</td><td class="p-2 text-center">6-10kg</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Flat Paper Handles</td><td class="p-2">Sleek, retail-friendly</td><td class="p-2 text-center">4-6kg</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Stamped Logo</td><td class="p-2">Metallic shine, gifting appeal</td><td class="p-2 text-center">—</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Spot UV / Embossing</td><td class="p-2">Dimensional contrast</td><td class="p-2 text-center">—</td><td class="p-2 text-center">from HK$400</td></tr>
   </tbody>
 </table>
 
@@ -3338,11 +3338,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Cotton Rope Handles</td><td class="p-2">Soft tactile, premium gift feel</td><td class="p-2 text-center">8-12kg</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Satin Ribbon Handles</td><td class="p-2">Elegant, jewelry-grade presentation</td><td class="p-2 text-center">5-8kg</td><td class="p-2 text-center">$$$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Magnetic Closure</td><td class="p-2">Rigid-box feel, keeps gift secure</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Stamped Logo</td><td class="p-2">Metallic shine, luxury cue</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Inside Printing</td><td class="p-2">Surprise-and-delight unboxing</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Cotton Rope Handles</td><td class="p-2">Soft tactile, premium gift feel</td><td class="p-2 text-center">8-12kg</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Satin Ribbon Handles</td><td class="p-2">Elegant, jewelry-grade presentation</td><td class="p-2 text-center">5-8kg</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Magnetic Closure</td><td class="p-2">Rigid-box feel, keeps gift secure</td><td class="p-2 text-center">—</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Stamped Logo</td><td class="p-2">Metallic shine, luxury cue</td><td class="p-2 text-center">—</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Inside Printing</td><td class="p-2">Surprise-and-delight unboxing</td><td class="p-2 text-center">—</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -3603,11 +3603,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Paper Twine Handles</td><td class="p-2">100% recyclable, rustic look</td><td class="p-2 text-center">6-10kg</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Organic Cotton Rope</td><td class="p-2">GOTS-certified cotton, premium tactile</td><td class="p-2 text-center">8-12kg</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Flat Paper Handles</td><td class="p-2">Sleek, retail-friendly, recyclable</td><td class="p-2 text-center">4-6kg</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Soy-Based Ink Print</td><td class="p-2">Low VOC, vibrant, food-safe</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Water-Based Coating</td><td class="p-2">Plastic-free moisture barrier</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Paper Twine Handles</td><td class="p-2">100% recyclable, rustic look</td><td class="p-2 text-center">6-10kg</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Organic Cotton Rope</td><td class="p-2">GOTS-certified cotton, premium tactile</td><td class="p-2 text-center">8-12kg</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Flat Paper Handles</td><td class="p-2">Sleek, retail-friendly, recyclable</td><td class="p-2 text-center">4-6kg</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Soy-Based Ink Print</td><td class="p-2">Low VOC, vibrant, food-safe</td><td class="p-2 text-center">—</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Water-Based Coating</td><td class="p-2">Plastic-free moisture barrier</td><td class="p-2 text-center">—</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -3661,11 +3661,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>オプション</th><th>効果</th><th>耐荷重</th><th>追加料金</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>紙紐ハンドル</td><td>100% リサイクル可能、ラスティック感</td><td>6-10kg</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>オーガニックコットンロープ</td><td>GOTS 認証コットン、プレミアム触感</td><td>8-12kg</td><td>$$</td></tr>
-    <tr class="border-b border-gray-200"><td>平織り紙ハンドル</td><td>スマート、リテールフレンドリー、リサイクル可</td><td>4-6kg</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>大豆インク印刷</td><td>低 VOC、鮮明、食品安全</td><td>—</td><td>$</td></tr>
-    <tr><td>水性コーティング</td><td>プラスチックフリー防湿層</td><td>—</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>紙紐ハンドル</td><td>100% リサイクル可能、ラスティック感</td><td>6-10kg</td><td>見積り確認</td></tr>
+    <tr class="border-b border-gray-200"><td>オーガニックコットンロープ</td><td>GOTS 認証コットン、プレミアム触感</td><td>8-12kg</td><td>見積り確認</td></tr>
+    <tr class="border-b border-gray-200"><td>平織り紙ハンドル</td><td>スマート、リテールフレンドリー、リサイクル可</td><td>4-6kg</td><td>見積り確認</td></tr>
+    <tr class="border-b border-gray-200"><td>大豆インク印刷</td><td>低 VOC、鮮明、食品安全</td><td>—</td><td>見積り確認</td></tr>
+    <tr><td>水性コーティング</td><td>プラスチックフリー防湿層</td><td>—</td><td>見積り確認</td></tr>
   </tbody>
 </table>
 
@@ -6151,11 +6151,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Tuck-End Box</td><td class="p-2">Standard, easy assembly</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Auto-Lock Bottom Box</td><td class="p-2">E-commerce friendly, 70% storage save</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Window Design (PET Film)</td><td class="p-2">Product visibility, shelf appeal</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil-Stamped Logo</td><td class="p-2">Metallic shine, premium feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Variable QR / Batch Code</td><td class="p-2">Traceability, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Tuck-End Box</td><td class="p-2">Standard, easy assembly</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Auto-Lock Bottom Box</td><td class="p-2">E-commerce friendly, 70% storage save</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Window Design (PET Film)</td><td class="p-2">Product visibility, shelf appeal</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil-Stamped Logo</td><td class="p-2">Metallic shine, premium feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Variable QR / Batch Code</td><td class="p-2">Traceability, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -6640,13 +6640,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Art Paper + Matte Lam</td><td class="p-2">Soft-touch, fingerprint resistant</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Art Paper + Gloss Lam</td><td class="p-2">High-shine, vibrant color</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Specialty Paper (linen/canvas)</td><td class="p-2">Textured, premium tactile</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Leatherette / PU</td><td class="p-2">Luxury leather look, durable</td><td class="p-2 text-center">+3 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping</td><td class="p-2">Metallic logo, premium cue</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Embossing / Debossing</td><td class="p-2">Tactile dimensional logo</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Glossy contrast, modern</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Art Paper + Matte Lam</td><td class="p-2">Soft-touch, fingerprint resistant</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Art Paper + Gloss Lam</td><td class="p-2">High-shine, vibrant color</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">from HK$50</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Specialty Paper (linen/canvas)</td><td class="p-2">Textured, premium tactile</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Leatherette / PU</td><td class="p-2">Luxury leather look, durable</td><td class="p-2 text-center">+3 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping</td><td class="p-2">Metallic logo, premium cue</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$300</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Embossing / Debossing</td><td class="p-2">Tactile dimensional logo</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$400</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Glossy contrast, modern</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">from HK$80</td></tr>
   </tbody>
 </table>
 
@@ -6754,8 +6754,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -6988,8 +6988,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7094,8 +7094,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7200,8 +7200,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7306,8 +7306,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7412,8 +7412,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Large</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Large</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7518,8 +7518,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A3</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A2</td><td class="p-2 text-center">25</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A3</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A2</td><td class="p-2 text-center">25</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7630,7 +7630,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
     
   </tbody>
 </table>
@@ -7865,7 +7865,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   
   <tbody>
     
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
     
   </tbody>
 </table>
@@ -8020,7 +8020,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       
       <td class="p-2 text-center">3-5 days</td>
       
-      <td class="p-2 text-center">$$$</td>
+      <td class="p-2 text-center">At quote</td>
     </tr>
     
   
@@ -8180,7 +8180,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       
       <td class="p-2 text-center">3-5 days</td>
       
-      <td class="p-2 text-center">$$$</td>
+      <td class="p-2 text-center">At quote</td>
     </tr>
     
   
@@ -8298,8 +8298,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -8408,8 +8408,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -8518,8 +8518,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -8628,8 +8628,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -8737,8 +8737,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
