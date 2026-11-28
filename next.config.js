@@ -2,12 +2,17 @@
 const path = require('path');
 
 // ============================================================================
-// 404 修复：/guide/ → /blog/ 通配重定向
-// 触发：GSC 报 87 个 /<locale>/guide/<slug>/ 不适用
-// 根因：app/[locale]/guide/[slug]/page.tsx 只覆盖 3 个 pillar slug，
-//       而全站共有 30 个 guide 类 slug 走 /blog/[slug]/ 路由。
-// 修复：所有 /<locale>/guide/<anything>/ → /<locale>/blog/<anything>/
-//       + 裸 /<locale>/guide/ → /<locale>/blog/
+// /guide/ 路由重定向（2026-11-28 K3 拍板選項 a: 拆 7/15 通配 301, 支柱+集群回歸 /guide/ 200）
+//
+// 歷史（勿回退）：
+//   2026-07-15 為修 GSC「重定向錯誤」加 /<locale>/guide/:slug+ → /blog/ 通配 301，
+//   把 3 個支柱頁 + 9 篇集群文章全部送出 /guide/，hub-spoke 的 hub 生產零曝光。
+//   2026-11-28 拆除通配 + 幽靈 301，guide/[slug]/page.tsx 已支持 pillar(3)+cluster(9) 渲染。
+//
+// 現行規則：
+//   1) 裸 /guide 列表頁 → /blog/ 列表頁（保留；無 /guide/ 索引頁）
+//   2) /blog/<cluster-slug> → /guide/<cluster-slug>/ 301（集群永久歸 /guide/，9 slug × 3 locale）
+//   3) GHOST_BLOG_301 / SKU_CUT_301 等維持不動
 //
 // 斜杠规则（重要）：
 //   trailingSlash: true → 所有请求会被规范化到带尾斜杠的 URL
@@ -16,6 +21,26 @@ const path = require('path');
 // ============================================================================
 
 const LOCALES = ['zh-hk', 'en', 'ja'];
+
+// 集群 slug 真值源 = src/data/pillar-content.ts（clusters 數組 9 個），
+// 程序抽取勿手搓清單（與 generate-sitemap.js 同口徑）。
+const GUIDE_CLUSTER_SLUGS = (() => {
+  const fs = require('fs');
+  const content = fs.readFileSync(path.join(__dirname, 'src/data/pillar-content.ts'), 'utf-8');
+  const all = [];
+  const re = /slug:\s*'([^']+)'/g;
+  let m;
+  while ((m = re.exec(content)) !== null) { all.push(m[1]); }
+  const pillarSet = new Set();
+  for (const pname of ['stickerGuidePillar', 'flyerGuidePillar', 'packagingGuidePillar']) {
+    const im = content.indexOf('export const ' + pname);
+    if (im >= 0) {
+      const sm = content.slice(im, im + 400).match(/slug:\s*'([^']+)'/);
+      if (sm) pillarSet.add(sm[1]);
+    }
+  }
+  return [...new Set(all)].filter((s) => !pillarSet.has(s));
+})();
 
 function buildGuideRedirects() {
   const rules = [];
@@ -35,28 +60,13 @@ function buildGuideRedirects() {
       permanent: true,
     });
 
-    // 2026-09-09 404 审计: pillar 幽灵 slug 精准承接(置于通配前, 保证 1 跳) —
-    // flyer-guide/packaging-guide 是 /guide/ 路由 pillar 页, 无博客内容,
-    // 通配会把它们送进 /blog/<slug>/ 404 (9/9 线上实测 308→404)
-    const PILLAR_GHOST_301 = [
-      ['flyer-guide', 'flyer-printing-guide'],
-      ['packaging-guide', 'packaging-box-custom-guide'],
-    ];
-    for (const [ghost, target] of PILLAR_GHOST_301) {
-      rules.push({ source: `/${locale}/guide/${ghost}`, destination: `/${locale}/blog/${target}/`, permanent: true });
-      rules.push({ source: `/${locale}/guide/${ghost}/`, destination: `/${locale}/blog/${target}/`, permanent: true });
+    // 2) 2026-11-28 K3 拍板: 集群文章永久歸 /guide/，
+    //    舊 /blog/<cluster-slug> 索引權重 301 承接（精準 slug，無通配誤傷）。
+    //    config redirects 優先於文件系統路由，攔截早於 blog/[slug] 兜底。
+    for (const cslug of GUIDE_CLUSTER_SLUGS) {
+      rules.push({ source: `/${locale}/blog/${cslug}`, destination: `/${locale}/guide/${cslug}/`, permanent: true });
+      rules.push({ source: `/${locale}/blog/${cslug}/`, destination: `/${locale}/guide/${cslug}/`, permanent: true });
     }
-
-    // 2) /guide/<slug>/ → /blog/<slug>/（通配）
-    //    用 :slug+ 强制至少 1 个字符，避免吞掉裸 /guide/（虽然上面已经处理了，双保险）
-    //    destination 同样以 / 结尾，跟 trailingSlash: true 对齐
-    //    2026-07-15 修 GSC "重定向错误"（87 个 /<locale>/guide/* 报 2 跳链）:
-    //    destination 必须带尾斜杠，避免 trailingSlash 二次 308
-    rules.push({
-      source: `/${locale}/guide/:slug+`,
-      destination: `/${locale}/blog/:slug+/`,
-      permanent: true,
-    });
   }
 
   // 3) 不重定向 /<locale>/payment/success/ —

@@ -61,22 +61,23 @@ const legacyBlogSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/blo
 // 2026-09-17 K3 v10 P0-4: buying-guides.ts 的 slug 也是 /blog/:slug 路由 (blog page getPostData 优先 guide 渲染),
 // 必须纳入 sitemap 收录 (此前 candle-soap-label-printing-guide 等 guide 形态内容 0 收录, 白做了页面)
 const buyingGuideSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/buying-guides.ts'), /slug:\s*['"]([^'"]+)['"],/g);
-// Also include cluster slugs from pillar-content (may overlap, deduped by Set)
+// Also read cluster slugs from pillar-content (may overlap, deduped by Set)
 const clusterSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/pillar-content.ts'), /slug:\s*['"]([^'"]+)['"],/g);
-// 2026-09-09 404 审计修复: pillar 页 slug (sticker-guide/flyer-guide/packaging-guide) 走 /guide/ 路由,
-// 混入博客 sitemap 造成幽灵 URL (/guide/:slug+ 通配 301 → /blog/ 后 404, 9/9 线上实证)。
-// 剔除 3 个 pillar 对象的 slug; sticker-guide 博客 meta 由 legacyBlogSlugs 单独覆盖, 不受影响。
+// 2026-11-28 K3 拍板選項 a: 拆 7/15 通配 301，pillar(3) + cluster(9) 回歸 /guide/ 200。
+// sitemap 收錄 12 個 /guide/<slug>/（此前通配 301 + 9/9 剔除 pillar slug 導致三語 sitemap 零 /guide/ URL，
+// hub-spoke 的 hub 生產零曝光）。集群舊 /blog/<slug> 由 next.config.js 301 承接，不再收錄 blog 形態。
 const pillarTs = fs.readFileSync(path.join(__dirname, '../src/data/pillar-content.ts'), 'utf-8');
-const pillarSlugs = new Set();
+const pillarSlugList = [];
+const pillarSet = new Set();
 for (const pname of ['stickerGuidePillar', 'flyerGuidePillar', 'packagingGuidePillar']) {
   const im = pillarTs.indexOf('export const ' + pname);
   if (im >= 0) {
     const sm = pillarTs.slice(im, im + 400).match(/slug:\s*['"]([^'"]+)['"]/);
-    if (sm) pillarSlugs.add(sm[1]);
+    if (sm) { pillarSlugList.push(sm[1]); pillarSet.add(sm[1]); }
   }
 }
-const clusterBlogSlugs = clusterSlugs.filter(s => !pillarSlugs.has(s));
-const allBlogSlugs = [...new Set([...legacyBlogSlugs, ...clusterBlogSlugs, ...buyingGuideSlugs])];
+const guideSlugs = [...pillarSlugList, ...clusterSlugs.filter(s => !pillarSet.has(s))];
+const allBlogSlugs = [...new Set([...legacyBlogSlugs, ...buyingGuideSlugs])];
 
 const staticPages = ['','about/','blog/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','nengajo-2027/','comiket-c109/','services/rush-printing-delivery/','services/business-cards-printing/','insights/hk-print-inquiry-index/','institutional-printing/','trade-program/','cart/','checkout/','order-confirmation/','payment/success/','payment-methods/','privacy/','terms/'];
 
@@ -108,7 +109,8 @@ locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/', priority:'1.0', chan
 staticPages.forEach(p => { if(p==='')return; locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/'+p, priority:getPriority(p), changefreq:getChangefreq(p) }); }); });
 categorySlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/category/'+s+'/', priority:'0.8', changefreq:'weekly' }); }); });
 productSlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/product/'+s+'/', priority:'0.9', changefreq:'weekly' }); }); });
-// Fix: sitemap now uses /blog/ paths (not /guide/) — matches actual routes
+// 2026-11-28: pillar(3)+cluster(9) 收錄 /guide/（K3 拍板選項 a）；blog 僅 legacy + buying-guide
+guideSlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/guide/'+s+'/', priority:'0.7', changefreq:'weekly' }); }); });
 allBlogSlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/blog/'+s+'/', priority:'0.7', changefreq:'weekly' }); }); });
 
 function buildXml(arr) {

@@ -12,7 +12,7 @@ import {
 } from '@/lib/seo/schema-extensions';
 import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
-import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
+import { getClusterBySlug } from '@/data/pillar-content';
 import { getBlogCover, getBlogPostMetaBySlug } from '@/data/blog-posts';
 import { getBlogImage } from '@/data/blog-m3-images';
 import { products, getProductTitle, getProductDescription, getProductDisplayTitle, getProductBySlug } from '@/data/products';
@@ -766,8 +766,10 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'corporate-holiday-cards-printing-guide', // 2026-10-10 ZP-daily-content: 企業ホリデーカード / corporate holiday cards (紅旗 1 en 側 0 展示 body 内容層承接; 10-09 大脳取詞表 #2 + W10 en 篇)
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
-const clusterSlugs = getAllClusterSlugs();
-const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];
+// 2026-11-28 K3 拍板選項 a: 9 篇集群文章永久歸 /guide/（guide/[slug] 渲染 + sitemap 收錄），
+// blog 層不再生成集群靜態頁（避免雙 URL 重複內容）；舊 /blog/<cluster> 由 next.config.js 301 承接。
+// getPostData 的集群分支保留作兜底死代碼（slug 不在 staticParams 且不開 dynamicParams = 實際不可達）。
+const allSlugs = [...articleSlugs, ...guideSlugs];
 
 function getPostData(locale: Locale, slug: string) {
   // 2026-07-06 fix: 优先检查 buying-guide (9 个 SEO 重要资产)
