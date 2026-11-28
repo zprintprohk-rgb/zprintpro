@@ -795,7 +795,7 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '急ぎ/速納の追加料金は？',
     },
     answer: {
-      'zh-hk': '48 小時快遞免費（港九新界大部分地區）。即日 4 小時取件加收 HK$80–150（視產品類型）。加急件可聯絡客服走專屬急件通道，產能優先排程。',
+      'zh-hk': '48 小時快遞免費（港九新界大部分地區）。即日急件（100 張或以上、上午 11 時前確認稿件）可當天交付，附加費以報價確認為準（視產品類型）。加急件可聯絡客服走專屬急件通道，產能優先排程。',
       'en': 'Rush 24–48 hour production carries no surcharge for most products — you only pay standard DHL / FedEx shipping (2-4 business days to the US). For urgent orders, contact our team for a dedicated rush channel with priority production scheduling.',
       'ja': '日本への通常配送は 2〜4 日（DHL・FedEx）。即日生産後の速納にも対応可能です。急ぎの場合はカスタマーサポートまでご相談ください。優先生産スケジュールで対応します。',
     },

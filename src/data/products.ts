@@ -1923,13 +1923,13 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: 'A4傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 10 張起印 HK$0.3/張 雙面彩印 | 智印港',
-    description: 'A4傳單印刷訂製，10 張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., quality management system Best for: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 適用業界: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的傳單印刷規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
+    description: 'A4傳單印刷訂製，10 張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，全港速遞免費。100 張或以上 HKT 11:00 前確認稿件可即日急件（A4 上限 200 張／A5 上限 400 張），常規訂單 3–5 個工作天。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., quality management system Best for: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 適用業界: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的傳單印刷規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
       '【157g–250g紙張】銅版紙或啞粉紙，挺度適中',
       '【210×297mm】香港最通用規格，派發效果佳',
-      '【即日可取】數碼印刷急單當天交付',
+      '【即日急件】100 張或以上 HKT 11:00 前確認稿件可當天交付（A4 上限 200 張／A5 上限 400 張）',
       '【免費刀模】標準尺寸刀模模板',
       '【覆膜選項】啞膜／光膜提升耐用性'
     ],
@@ -2004,13 +2004,13 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: 'A5傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 10 張起印 雙面四色 免費設計 | 智印港',
-    description: 'A5傳單印刷訂製，10 張起印，HK$0.25 起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. Best for: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 適用業界: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
+    description: 'A5傳單印刷訂製，10 張起印，HK$0.25 起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，全港速遞免費。100 張或以上 HKT 11:00 前確認稿件可即日急件（A4 上限 200 張／A5 上限 400 張），常規訂單 3–5 個工作天。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. Best for: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 適用業界: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 適配行業: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
       '【157g–250g紙張】銅版紙或啞粉紙，挺度適中',
       '【148×210mm】大量派發成本低40%',
-      '【即日可取】數碼印刷急單當天交付',
+      '【即日急件】100 張或以上 HKT 11:00 前確認稿件可當天交付（A4 上限 200 張／A5 上限 400 張）',
       '【免費刀模】標準尺寸刀模模板',
       '【覆膜選項】啞膜／光膜提升耐用性'
     ],
@@ -2092,7 +2092,7 @@ export const products: Product[] = [
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
       '【157g–250g紙張】銅版紙或啞粉紙，挺度適中',
       '【雙面對位±0.5mm】正反圖文精準套印',
-      '【即日可取】數碼印刷急單當天交付',
+      '【即日急件】100 張或以上 HKT 11:00 前確認稿件可當天交付（A4 上限 200 張／A5 上限 400 張）',
       '【免費刀模】標準尺寸刀模模板',
       '【覆膜選項】啞膜／光膜提升耐用性'
     ],
@@ -2174,7 +2174,7 @@ export const products: Product[] = [
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
       '【157g–250g紙張】銅版紙或啞粉紙，挺度適中',
       '【對摺／三摺】壓線處理，摺疊平整不反彈',
-      '【即日可取】數碼印刷急單當天交付',
+      '【即日急件】100 張或以上 HKT 11:00 前確認稿件可當天交付（A4 上限 200 張／A5 上限 400 張）',
       '【免費刀模】標準尺寸刀模模板',
       '【覆膜選項】啞膜／光膜提升耐用性'
     ],
@@ -2255,7 +2255,7 @@ export const products: Product[] = [
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
       '【157g–250g紙張】銅版紙或啞粉紙，挺度適中',
       '【200g–250g厚紙】挺度高，質感厚實不捲曲',
-      '【即日可取】數碼印刷急單當天交付',
+      '【即日急件】100 張或以上 HKT 11:00 前確認稿件可當天交付（A4 上限 200 張／A5 上限 400 張）',
       '【免費刀模】標準尺寸刀模模板',
       '【覆膜選項】啞膜／光膜提升耐用性'
     ],
@@ -2337,7 +2337,7 @@ export const products: Product[] = [
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
       '【157g–250g紙張】銅版紙或啞粉紙，挺度適中',
       '【FSC認證再生紙】100%再生纖維，環保形象加分',
-      '【即日可取】數碼印刷急單當天交付',
+      '【即日急件】100 張或以上 HKT 11:00 前確認稿件可當天交付（A4 上限 200 張／A5 上限 400 張）',
       '【免費刀模】標準尺寸刀模模板',
       '【環保工藝】無覆膜（環保）或水性光油'
     ],
