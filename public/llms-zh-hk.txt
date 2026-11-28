@@ -7,7 +7,7 @@
 - 品牌: 智印港
 - 成立: 2012年
 - Website: https://zprintpro.com
-- 地址: 香港九龍新蒲崗大有街3號萬廣大廈15樓C室
+- 地址: 香港服務點：九龍新蒲崗大有街3號萬廣大廈15樓C室（自設廠房：廣東省深圳市龍崗区平湖街道嘉城路1号）
 - 電話: +86 198 8085 1334
 - WhatsApp: +86 198 8085 1334
 - 電郵: zprintpro@outlook.com
@@ -18,23 +18,23 @@
 ## 產品分類 (16 total)
 
 - 貼紙印刷 (stickers) -- 9 products
-- 傳單印刷 (flyers) -- 7 products
-- 包裝盒定製 (packaging) -- 12 products
+- 宣傳單張印刷 (flyers) -- 7 products
+- 包裝盒訂製 (packaging) -- 12 products
 - 海報印刷 (posters) -- 6 products
 - 紙袋印刷 (paper-bags) -- 6 products
 - 賀卡印刷 (greeting-cards) -- 6 products
 - 噴繪廣告 (banners) -- 4 products
-- 書籍印刷 (books) -- 5 products
+- 小冊子・書刊印刷 (books) -- 5 products
 - 餐牌印刷 (menus) -- 4 products
 - 信封印刷 (envelopes) -- 4 products
 - 月曆印刷 (calendars) -- 6 products
 - 利是封印刷 (red-packets) -- 6 products
-- 校園教育印刷 (educational) -- 5 products
-- 同人周邊印刷 (japan-doujin) -- 3 products
-- 喜帖印刷 (wedding-invitations) -- 4 products
-- 枱卡 (place-cards) -- 4 products
+- 學校印刷・證書 (educational) -- 5 products
+- 同人誌印刷・周邊 (japan-doujin) -- 1 products
+- 喜帖印刷 (wedding-invitations) -- 2 products
+- 枱卡 (place-cards) -- 1 products
 
-## 全產品一覽 (91 SKU)
+## 全產品一覽 (84 SKU)
 
 ### 貼紙印刷 (stickers)
 
@@ -47,10 +47,10 @@
 | 異形模切貼紙 / 防水貼紙 / 異形貼紙 | die-cut-stickers | 10 | HK$ 0.58 |
 | 燙金貼紙 / 防水貼紙 / 異形貼紙 | foil-stickers | 10 | HK$ 0.78 |
 | 防偽貼紙 / 防水貼紙 / 異形貼紙 | security-stickers | 10 | HK$ 1.15 |
-| 螢光貼紙 / 防水貼紙 / 異形貼紙 | fluorescent-stickers | 10 | HK$ 0.52 |
+| 卷裝貼紙 / 卷裝標籤 / 貼標機適用 | roll-stickers | 10 | HK$ 0.2 |
 | 水果貼紙食品標籤印刷 / 防水貼紙 / 異形貼紙 | fruit-food-label-stickers | 500 | HK$ 0.22 |
 
-### 傳單印刷 (flyers)
+### 宣傳單張印刷 (flyers)
 
 | 產品 | Slug | 最低訂量 | 基準價格 |
 |------|------|---------|---------|
@@ -60,9 +60,9 @@
 | 摺疊傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | folded-leaflets | 10 | HK$ 0.7 |
 | 厚紙傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | thick-paper-flyers | 10 | HK$ 0.45 |
 | 環保傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | eco-flyers | 10 | HK$ 0.38 |
-| 即日傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | same-day-flyers | 10 | HK$ 0.55 |
+| 即日傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | same-day-flyers | 10 | HK$ 18.4 |
 
-### 包裝盒定製 (packaging)
+### 包裝盒訂製 (packaging)
 
 | 產品 | Slug | 最低訂量 | 基準價格 |
 |------|------|---------|---------|
@@ -72,7 +72,7 @@
 | 折疊盒 / 包裝盒 / 禮品盒 / 化妝品盒 | folding-boxes | 100 | HK$ 2.5 |
 | 精裝盒 / 精裝盒報價 / 包裝盒 / 禮品盒 / 化妝品盒 | rigid-boxes | 100 | HK$ 8 |
 | 磁吸翻蓋禮盒印刷 / 包裝盒 / 禮品盒 / 化妝品盒 | magnetic-closure-gift-box | 100 | HK$ 15 |
-| 電子產品包裝盒定製 / 包裝盒 / 禮品盒 / 化妝品盒 | electronics-packaging-box | 200 | HK$ 8 |
+| 電子產品包裝盒定製 / 包裝盒 / 禮品盒 / 化妝品盒 | electronics-packaging-box | 100 | HK$ 8 |
 | 牛皮紙盒印刷訂製 / クラフト紙 パッケージ印刷 / 包裝盒 / 禮品盒 / 化妝品盒 | kraft-paper-packaging-box | 300 | HK$ 5 |
 | 拼版白卡彩盒(免刀模費) / 彩盒印刷 / 白卡盒 / 禮品盒 | gang-run-card-boxes | 500 | HK$ 129 |
 | 白卡彩盒印刷定製 / 卡盒 / 包裝盒 / 禮品盒 / 化妝品盒 | white-card-boxes | 500 | HK$ 129 |
@@ -121,7 +121,7 @@
 | 背膠噴繪 / 易拉寶 / 戶外橫幅 / 噴繪 | adhesive-banners | 1 | HK$ 10 |
 | 車身廣告 / 易拉寶 / 戶外橫幅 / 噴繪 | vehicle-wraps | 1 | HK$ 28 |
 
-### 書籍印刷 (books)
+### 小冊子・書刊印刷 (books)
 
 | 產品 | Slug | 最低訂量 | 基準價格 |
 |------|------|---------|---------|
@@ -171,41 +171,34 @@
 | 環保利是封 / 利是封 / 春聯 / 燙金 | eco-red-packets | 100 | HK$ 1.9 |
 | 大號利是封 / 利是封 / 春聯 / 燙金 | large-red-packets | 100 | HK$ 2.2 |
 
-### 校園教育印刷 (educational)
+### 學校印刷・證書 (educational)
 
 | 產品 | Slug | 最低訂量 | 基準價格 |
 |------|------|---------|---------|
 | Exercise Book Printing School Programs / K12 練習簿 / 學年作業本 / Tutoring Centers / Custom School Programs | exercise-books | 10 | HK$ 4 |
-| 香港證書印刷 — 畢業證書 / 獎狀 / 校友會證書 / 培訓證書 | certificates | 100 | HK$ 8 |
+| 香港證書印刷 — 畢業證書 / 獎狀 / 校友會證書 / 培訓證書 | certificates | 10 | HK$ 8 |
 | 香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊 | school-flyers | 10 | HK$ 0.2 |
-| 香港教科書印刷 / 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊 | textbooks | 100 | HK$ 24 |
+| 香港教科書印刷 / 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊 | textbooks | 10 | HK$ 24 |
 | 香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊 | graduation-yearbook | 1 | HK$ 45 |
 
-### 同人周邊印刷 (japan-doujin)
+### 同人誌印刷・周邊 (japan-doujin)
 
 | 產品 | Slug | 最低訂量 | 基準價格 |
 |------|------|---------|---------|
 | 同人誌印刷 | doujinshi-printing | 10 | HK$ 7500 |
-| 明信片套裝 | postcard-set | 4 | HK$ 750 |
-| 環保托特袋 | eco-tote-bag | 10 | HK$ 9000 |
 
 ### 喜帖印刷 (wedding-invitations)
 
 | 產品 | Slug | 最低訂量 | 基準價格 |
 |------|------|---------|---------|
-| 燙金喜帖 | foil-wedding-invitations | 50 | HK$ 1.2 |
-| Save the Date 卡片 | save-the-date-cards | 50 | HK$ 0.85 |
-| 婚禮感謝卡 | wedding-thank-you-cards | 50 | HK$ 0.65 |
-| 婚慶整套配套 | wedding-suite-bundle | 50 | HK$ 25 |
+| 燙金喜帖 | foil-wedding-invitations | 50 | HK$ 25 |
+| 婚禮感謝卡 | wedding-thank-you-cards | 50 | HK$ 15 |
 
 ### 枱卡 (place-cards)
 
 | 產品 | Slug | 最低訂量 | 基準價格 |
 |------|------|---------|---------|
-| 婚宴枱卡 | wedding-place-cards | 50 | HK$ 0.3 |
-| 酒水牌 / 飲品標記 | drink-tokens | 50 | HK$ 0.25 |
-| 餐廳 / 咖啡廳枱卡 | cafe-table-cards | 50 | HK$ 0.4 |
-| 婚宴席位圖 | wedding-seating-charts | 50 | HK$ 4.5 |
+| 婚宴枱卡 / 席位卡 | place-cards | 50 | HK$ 2 |
 
 ## 價格與訂購
 

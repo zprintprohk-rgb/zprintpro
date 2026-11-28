@@ -6950,7 +6950,52 @@ export const products: Product[] = [
     specs: { material: '300g 棉紙 / 銅版紙 / 剛古紙', size: 'A6 (105×148mm) / 對摺 A5', finishing: '燙金 / UV / 模切 / 折卡', printMethod: '柯式印刷 4C + 折卡' },
   },
 
-  // === 枱卡 / 酒水牌 / 座位卡 (6 SKU, K3 8/17 拍板 Step 2) ===
+  // === 枱卡 / 席位卡 (1 SKU, K3 2026-11-28 補位拍板方向: 補回旗艦 SKU 填滿空類目 + 解鎖三語 llms 重生成; 圖資產復用 10-12 前已落盤 seedream 12 張; 價格沿用退役 SKU 自有歷史價 NT$8-35/張 ≈ HK$2-9/張) ===
+  {
+    id: 'PC-101',
+    sku_code: 'PC-101',
+    slug: 'place-cards',
+    category: 'place-cards',
+    category_slug: 'place-cards',
+    name: '婚宴枱卡 / 席位卡', nameEn: 'Wedding Place Cards / Table Cards', nameJa: 'ウエディング席札 / テーブルカード',
+    title_zh: '婚宴枱卡印刷 50張起 · 燙金壓紋 · 香港即日打稿',
+    description: '婚宴枱卡 / 席位卡 50 張起印，300g 棉紙 / 銅版紙 / 剛古紙，燙金 / 壓紋 / 模切 / 站立式折卡工藝可選。適合婚宴餐桌、酒店婚禮、教堂宴會。適配行業: 婚慶策劃 / 酒店宴會 / 教堂 / 海外婚禮.',
+    descriptionEn: 'Wedding place cards / table cards from 50 pcs, on 300gsm cotton / art / Conqueror paper with foil / embossing / die-cut / standing fold options. For wedding tables, hotel weddings, chapels and banquets. Best for: wedding planners / hotel banquets / chapels / destination weddings.',
+    descriptionJa: 'ウエディング席札 / テーブルカード 50枚から、300g コットン / コート / コンカラー紙、箔押し / エンボス / 抜型 / スタンド式折カード対応。披露宴テーブル、ホテル結婚式、チャペル、宴会に。適合業種: ウェディングプランナー / ホテル宴会 / チャペル / 海外結婚式.',
+    description_zh: '婚宴枱卡 / 席位卡 50 張起印，300g 棉紙 / 銅版紙 / 剛古紙，燙金 / 壓紋 / 模切 / 站立式折卡工藝可選。適合婚宴餐桌、酒店婚禮、教堂宴會。',
+    features: [
+      '【50 張起印】婚宴小批量適用，免壓庫存',
+      '【300g 厚卡】棉紙 / 銅版紙 / 剛古紙三種紙材',
+      '【燙金壓紋】玫瑰金 / 香檳金 / 銀色燙金 + 立體壓紋',
+      '【站立式折卡】免支架直立，桌面展示穩固',
+      '【免費打稿】數碼校正稿確認後才生產',
+    ],
+    specs: { material: '300g 棉紙 / 銅版紙 / 剛古紙', size: 'A6 (105×148mm) / A5 對摺 / 自訂站立式', printMethod: '四色柯式或數碼印刷', finishing: '燙金 / 壓紋 / 模切 / 折卡站立' },
+    price_range: 'HK$2-9/張',
+    basePrice: 2,
+    basePrice_en: 0.26,
+    basePrice_ja: 39,
+    weight_score: 60,
+    isHot: false,
+    isNew: true,
+    minQuantity: 50,
+    images: ['/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-zh-hk-hero.webp'],
+    imagesByLocale: {
+      'zh-hk': ['/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-zh-hk-hero.webp', '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-zh-hk-detail.webp', '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-zh-hk-multi-angle.webp', '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-zh-hk-variety.webp'],
+      'en': ['/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-en-hero.webp', '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-en-detail.webp', '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-en-multi-angle.webp', '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-en-variety.webp'],
+      'ja': ['/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-ja-hero.webp', '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-ja-detail.webp', '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-ja-multi-angle.webp', '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-ja-variety.webp'],
+    },
+    optimizedAt: '2026-11-28',
+    optimizationRound: 1,
+    seoImages: {
+      filename: { 'zh-hk': 'zprintpro-place-cards-wedding-place-cards-zh-hk.webp', en: 'zprintpro-place-cards-wedding-place-cards-en.webp', ja: 'zprintpro-place-cards-wedding-place-cards-ja.webp' },
+      alt: {
+        'zh-hk': '婚宴枱卡 / 席位卡 | 香港婚宴枱卡印刷 300g 棉紙 燙金壓紋 站立式折卡',
+        en: 'Wedding Place Cards | Foil & Embossed Table Cards | ZprintPro',
+        ja: 'ウエディング席札 | 箔押し・エンボス テーブルカード | ZprintPro',
+      },
+    },
+  },
 ];
 
 // 获取所有产品

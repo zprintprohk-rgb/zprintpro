@@ -17,22 +17,22 @@
 
 - Stickers (stickers) -- 9 products
 - Flyers (flyers) -- 7 products
-- Packaging (packaging) -- 12 products
+- Packaging Boxes (packaging) -- 12 products
 - Posters (posters) -- 6 products
 - Paper Bags (paper-bags) -- 6 products
 - Greeting Cards (greeting-cards) -- 6 products
 - Banners (banners) -- 4 products
-- Books (books) -- 5 products
+- Booklet Printing (books) -- 5 products
 - Menus (menus) -- 4 products
 - Envelopes (envelopes) -- 4 products
 - Calendars (calendars) -- 6 products
 - Red Packets (red-packets) -- 6 products
-- Educational (educational) -- 5 products
-- Doujinshi & Anime Goods (japan-doujin) -- 3 products
-- Wedding Invitations (wedding-invitations) -- 4 products
-- Place Cards (place-cards) -- 4 products
+- School Printing (educational) -- 5 products
+- Doujinshi & Anime Goods (japan-doujin) -- 1 products
+- Wedding Invitations (wedding-invitations) -- 2 products
+- Place Cards (place-cards) -- 1 products
 
-## Full Product List (91 SKUs)
+## Full Product List (84 SKUs)
 
 ### Stickers (stickers)
 
@@ -45,7 +45,7 @@
 | Die-cut Stickers / Waterproof & Die-Cut Stickers | die-cut-stickers | 10 | US$ 0.46 |
 | Foil Stickers / Waterproof & Die-Cut Stickers | foil-stickers | 10 | US$ 0.51 |
 | Security Stickers / Waterproof & Die-Cut Stickers | security-stickers | 10 | US$ 0.41 |
-| Fluorescent Stickers / Waterproof & Die-Cut Stickers | fluorescent-stickers | 10 | US$ 0.46 |
+| Roll Labels / Custom Roll Stickers for Label Applicators | roll-stickers | 10 | US$ 0.03 |
 | Fruit & Food Label Stickers / Waterproof & Die-Cut Stickers | fruit-food-label-stickers | 500 | US$ 0.23 |
 
 ### Flyers (flyers)
@@ -58,9 +58,9 @@
 | Folded Leaflets / A4/A5 Flyers & Leaflets | folded-leaflets | 10 | US$ 0.8 |
 | Thick Paper Flyers / A4/A5 Flyers & Leaflets | thick-paper-flyers | 10 | US$ 0.7 |
 | Eco Flyers / A4/A5 Flyers & Leaflets | eco-flyers | 10 | US$ 0.6 |
-| Same-day Flyers / A4/A5 Flyers & Leaflets | same-day-flyers | 10 | US$ 0.95 |
+| Same-day Flyers / A4/A5 Flyers & Leaflets | same-day-flyers | 10 | US$ 2.4 |
 
-### Packaging (packaging)
+### Packaging Boxes (packaging)
 
 | Product | Slug | Min Qty | Base Price |
 |---------|------|---------|------------|
@@ -70,7 +70,7 @@
 | Folding Boxes / Gift Boxes & Custom Packaging | folding-boxes | 100 | US$ 0.51 |
 | Rigid Boxes / Custom Quote / Gift Boxes & Premium Packaging | rigid-boxes | 100 | US$ 1.84 |
 | Magnetic Closure Gift Box / Gift Boxes & Custom Packaging | magnetic-closure-gift-box | 100 | US$ 3.45 |
-| Electronics Packaging Box / Gift Boxes & Custom Packaging | electronics-packaging-box | 200 | US$ 1.84 |
+| Electronics Packaging Box / Gift Boxes & Custom Packaging | electronics-packaging-box | 100 | US$ 1.84 |
 | Kraft Paper Packaging Box / Gift Boxes & Custom Packaging | kraft-paper-packaging-box | 300 | US$ 1.15 |
 | Gang-Run White Card Boxes (No Die-Cut Fee) / Gift Boxes & Custom Packaging | gang-run-card-boxes | 500 | HK$ 129 |
 | White Cardboard Boxes / Custom Packaging & Gift Boxes | white-card-boxes | 500 | HK$ 129 |
@@ -92,8 +92,8 @@
 
 | Product | Slug | Min Qty | Base Price |
 |---------|------|---------|------------|
-| Kraft Paper Bags / Paper Bags & Kraft Bags | kraft-paper-bags | 100 | US$ 1.84 |
-| White Card Bags / Paper Bags & Kraft Bags | white-card-bags | 100 | US$ 2.76 |
+| Kraft Paper Bags / Paper Bags & Kraft Bags | kraft-paper-bags | 100 | US$ 1.02 |
+| White Card Bags / Paper Bags & Kraft Bags | white-card-bags | 100 | US$ 1.54 |
 | Gift Bags / Paper Bags & Kraft Bags | gift-bags | 100 | US$ 4.6 |
 | Eco Paper Bags / Paper Bags & Kraft Bags | eco-paper-bags | 100 | US$ 1.84 |
 | Handle Bags / Paper Bags & Kraft Bags | handle-bags | 100 | US$ 1.84 |
@@ -119,7 +119,7 @@
 | Adhesive Banners / Roll-up & Outdoor Banners | adhesive-banners | 1 | US$ 2.3 |
 | Vehicle Wraps / Roll-up & Outdoor Banners | vehicle-wraps | 1 | US$ 6.44 |
 
-### Books (books)
+### Booklet Printing (books)
 
 | Product | Slug | Min Qty | Base Price |
 |---------|------|---------|------------|
@@ -169,14 +169,14 @@
 | Eco Red Packets / CNY Red Packets & Foil | eco-red-packets | 100 | US$ 0.74 |
 | Large Red Packets / CNY Red Packets & Foil | large-red-packets | 100 | US$ 0.92 |
 
-### Educational (educational)
+### School Printing (educational)
 
 | Product | Slug | Min Qty | Base Price |
 |---------|------|---------|------------|
 | School Exercise Book Printing / K12 Workbooks & School Textbook Printing | exercise-books | 10 | US$ 1.84 |
-| Certificate Printing for Diplomas, Awards & Training Programs | certificates | 100 | US$ 2.76 |
+| Certificate Printing for Diplomas, Awards & Training Programs | certificates | 10 | US$ 2.76 |
 | School Flyers for Newsletters, Announcements & Alumni Publications | school-flyers | 10 | US$ 0.14 |
-| Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals | textbooks | 100 | US$ 9.2 |
+| Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals | textbooks | 10 | US$ 9.2 |
 | Graduation Yearbooks, School Anniversary & Alumni Publications | graduation-yearbook | 1 | US$ 10.35 |
 
 ### Doujinshi & Anime Goods (japan-doujin)
@@ -184,26 +184,19 @@
 | Product | Slug | Min Qty | Base Price |
 |---------|------|---------|------------|
 | Doujinshi Printing | doujinshi-printing | 10 | US$ 1245 |
-| Postcard Set | postcard-set | 4 | US$ 124.5 |
-| Eco Tote Bag | eco-tote-bag | 10 | US$ 1494 |
 
 ### Wedding Invitations (wedding-invitations)
 
 | Product | Slug | Min Qty | Base Price |
 |---------|------|---------|------------|
-| Foil Wedding Invitations | foil-wedding-invitations | 50 | HK$ 1.2 |
-| Save the Date Cards | save-the-date-cards | 50 | HK$ 0.85 |
-| Wedding Thank You Cards | wedding-thank-you-cards | 50 | HK$ 0.65 |
-| Wedding Suite Bundle | wedding-suite-bundle | 50 | HK$ 25 |
+| Foil Wedding Invitations | foil-wedding-invitations | 50 | HK$ 25 |
+| Wedding Thank You Cards | wedding-thank-you-cards | 50 | HK$ 15 |
 
 ### Place Cards (place-cards)
 
 | Product | Slug | Min Qty | Base Price |
 |---------|------|---------|------------|
-| Wedding Place Cards | wedding-place-cards | 50 | HK$ 0.3 |
-| Drink Tokens / Beverage Markers | drink-tokens | 50 | HK$ 0.25 |
-| Café / Restaurant Table Cards | cafe-table-cards | 50 | HK$ 0.4 |
-| Wedding Seating Charts | wedding-seating-charts | 50 | HK$ 4.5 |
+| Wedding Place Cards / Table Cards | place-cards | 50 | US$ 0.26 |
 
 ## Pricing & Ordering
 

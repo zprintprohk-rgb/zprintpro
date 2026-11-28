@@ -133,6 +133,16 @@ console.log('\n=== C. ★ 回归用例: 茶飲食品不得再指向樓盤書 ===
 console.log('\n=== D. ★ 反模式: 同品类内不同场景不得指向同一目标 ===');
 // ============================================================
 {
+  /* 2026-11-28 P0 真值批: 白名單 — 以下多對一為**拍板過的承接映射**, 非位置索引錯配:
+     · japan-doujin 5 場景 → sku:doujinshi-printing (2026-09-23 can-badge 下架承接 + 2026-10-12 Tier1 退役收拢, per industry-scenario-links.ts 註釋)
+     · business-cards holiday/thankyou → sku:premium-greeting-cards (2026-09-20 名片→賀卡別名承接, K3 裁定)
+     規則 D 對白名單目標豁免, 其餘多對一仍視為錯配硬攔。 */
+  const ALLOWED_MANY_TO_ONE: Record<string, Set<string>> = {
+    'japan-doujin': new Set(['sku:doujinshi-printing']),
+    'business-cards': new Set(['sku:premium-greeting-cards']),
+    // 2026-09-22 SKU 壓縮: mesh-banners 下架 → outdoor-vinyl-banners 承接 (outdoor_ad + school_event 共用, per industry-scenario-links.ts 註釋)
+    'banners': new Set(['sku:outdoor-vinyl-banners']),
+  };
   let dupFound = 0;
   for (const [cat, keys] of Object.entries(SCENARIO_LINKS)) {
     const seen = new Map<string, string>();
@@ -141,6 +151,7 @@ console.log('\n=== D. ★ 反模式: 同品类内不同场景不得指向同一�
       // 只比较"有明确内容目标"的场景 (品类页兜底可重复)
       const target = link.blog ? `blog:${link.blog}` : link.sku ? `sku:${link.sku}` : null;
       if (!target) continue;
+      if (ALLOWED_MANY_TO_ONE[cat]?.has(target)) continue;
       if (seen.has(target)) {
         dupFound++;
         failures.push(`${cat}: "${seen.get(target)}" 与 "${key}" 都指向 ${target} (疑似位置索引错配)`);

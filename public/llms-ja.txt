@@ -23,17 +23,17 @@
 - 紙袋印刷 (paper-bags) -- 6 products
 - グリーティングカード・年賀状 (greeting-cards) -- 6 products
 - バナー印刷 (banners) -- 4 products
-- 書籍印刷 (books) -- 5 products
+- 冊子印刷・書籍 (books) -- 5 products
 - メニュー印刷 (menus) -- 4 products
 - 封筒印刷 (envelopes) -- 4 products
 - カレンダー印刷 (calendars) -- 6 products
 - ポチ袋印刷 (red-packets) -- 6 products
-- 教育印刷 (educational) -- 5 products
-- 同人誌・アニメグッズ (japan-doujin) -- 3 products
-- 結婚式招待状 (wedding-invitations) -- 4 products
-- 席札 (place-cards) -- 4 products
+- 教科書印刷・証明書 (educational) -- 5 products
+- 同人誌・アニメグッズ (japan-doujin) -- 1 products
+- 結婚式招待状 (wedding-invitations) -- 2 products
+- 席札 (place-cards) -- 1 products
 
-## 全製品一覧 (91 SKU)
+## 全製品一覧 (84 SKU)
 
 ### ステッカー (stickers)
 
@@ -46,7 +46,7 @@
 | 型抜きステッカー / 防水ステッカー / ダイカット | die-cut-stickers | 10 | ¥ 60 |
 | 箔押しステッカー / 防水ステッカー / ダイカット | foil-stickers | 10 | ¥ 64 |
 | セキュリティステッカー / 防水ステッカー / ダイカット | security-stickers | 10 | ¥ 51 |
-| 蛍光ステッカー / 防水ステッカー / ダイカット | fluorescent-stickers | 10 | ¥ 60 |
+| ロールラベル / ラベラー対応 ロールシール | roll-stickers | 10 | ¥ 4 |
 | フルーツ・食品ラベルシール / 防水ステッカー / ダイカット | fruit-food-label-stickers | 500 | HK$ 0.22 |
 
 ### チラシ印刷 (flyers)
@@ -59,19 +59,19 @@
 | 折りたたみパンフレット / A4/A5 チラシ・フライヤー | folded-leaflets | 10 | ¥ 110 |
 | 厚紙チラシ / A4/A5 チラシ・フライヤー | thick-paper-flyers | 10 | ¥ 95 |
 | エコチラシ / A4/A5 チラシ・フライヤー | eco-flyers | 10 | ¥ 75 |
-| 即日チラシ / A4/A5 チラシ・フライヤー | same-day-flyers | 10 | ¥ 125 |
+| 即日チラシ / A4/A5 チラシ・フライヤー | same-day-flyers | 10 | ¥ 368 |
 
 ### パッケージ印刷 (packaging)
 
 | 製品 | Slug | 最低数量 | 基準価格 |
 |------|------|---------|---------|
-| 食品パッケージ / 食品包裝箱 / パッケージボックス・化粧箱 | food-boxes | 100 | ¥ 101 |
+| 食品パッケージ / 食品包装箱 / パッケージボックス・化粧箱 | food-boxes | 100 | ¥ 101 |
 | 化粧品パッケージボックス / パッケージボックス・化粧箱 | cosmetic-boxes | 100 | ¥ 240 |
 | 100個〜 発送箱 · 越境EC FBA · DHL 2-4日配送 / パッケージボックス・化粧箱 | mailer-boxes | 100 | ¥ 105 |
 | 折りたたみ箱 / パッケージボックス・化粧箱 | folding-boxes | 100 | ¥ 69 |
-| 上製本箱 / 上製本箱 見積もり / パッケージボックス・化粧箱 | rigid-boxes | 100 | ¥ 240 |
+| 貼り箱（リジッドボックス） / 見積もり / パッケージボックス・化粧箱 | rigid-boxes | 100 | ¥ 240 |
 | マグネット蓋ギフトボックス / パッケージボックス・化粧箱 | magnetic-closure-gift-box | 100 | ¥ 450 |
-| 電子機器包裝箱 / パッケージボックス・化粧箱 | electronics-packaging-box | 200 | ¥ 240 |
+| 電子機器包裝箱 / パッケージボックス・化粧箱 | electronics-packaging-box | 100 | ¥ 240 |
 | クラフト紙 パッケージ印刷 / クラフト紙 箱印刷 / パッケージボックス・化粧箱 | kraft-paper-packaging-box | 300 | ¥ 150 |
 | 合版ホワイトカードボックス(型代不要) / パッケージボックス・化粧箱 | gang-run-card-boxes | 500 | HK$ 129 |
 | 白カードボックス / パッケージ・ギフトボックス | white-card-boxes | 500 | HK$ 129 |
@@ -120,7 +120,7 @@
 | 粘着バナー / ロールアップバナー / 屋外バナー | adhesive-banners | 1 | ¥ 300 |
 | カーラッピング / ロールアップバナー / 屋外バナー | vehicle-wraps | 1 | ¥ 840 |
 
-### 書籍印刷 (books)
+### 冊子印刷・書籍 (books)
 
 | 製品 | Slug | 最低数量 | 基準価格 |
 |------|------|---------|---------|
@@ -170,41 +170,34 @@
 | エコポチ袋 / 紅包 / 旧正月 / 箔押し | eco-red-packets | 100 | ¥ 103 |
 | 大判ポチ袋 / 紅包 / 旧正月 / 箔押し | large-red-packets | 100 | ¥ 129 |
 
-### 教育印刷 (educational)
+### 教科書印刷・証明書 (educational)
 
 | 製品 | Slug | 最低数量 | 基準価格 |
 |------|------|---------|---------|
 | 練習帳印刷 — 補習校教材・K12 練習帳・學年内ノート・學校オーダー | exercise-books | 10 | ¥ 258 |
-| 証明書印刷 — 卒業証書・賞状・同窓会証書・研修証明書 | certificates | 100 | ¥ 386 |
+| 証明書印刷 — 卒業証書・賞状・同窓会証書・研修証明書 | certificates | 10 | ¥ 386 |
 | 學校フライヤー — 學校新聞・お知らせ・校史特刊・同窓会誌 | school-flyers | 10 | ¥ 20 |
-| 教科書印刷 — K12 教科書・補習校教材・學年内教材・研修マニュアル | textbooks | 100 | ¥ 1288 |
+| 教科書印刷 — K12 教科書・補習校教材・学年別教材・研修マニュアル | textbooks | 10 | ¥ 1288 |
 | 卒業記念アルバム — 卒業記念・校史特刊・同窓会誌・クラブ特刊 | graduation-yearbook | 1 | ¥ 1350 |
 
 ### 同人誌・アニメグッズ (japan-doujin)
 
 | 製品 | Slug | 最低数量 | 基準価格 |
 |------|------|---------|---------|
-| 同人誌印刷 | doujinshi-printing | 10 | HK$ 7500 |
-| ポストカードセット | postcard-set | 4 | HK$ 750 |
-| エコトートバッグ | eco-tote-bag | 10 | HK$ 9000 |
+| 同人誌印刷 | doujinshi-printing | 10 | ¥ 7500 |
 
 ### 結婚式招待状 (wedding-invitations)
 
 | 製品 | Slug | 最低数量 | 基準価格 |
 |------|------|---------|---------|
-| 箔押し結婚式招待状 | foil-wedding-invitations | 50 | HK$ 1.2 |
-| Save the Date カード | save-the-date-cards | 50 | HK$ 0.85 |
-| 結婚式サンキュカード | wedding-thank-you-cards | 50 | HK$ 0.65 |
-| ウエディング フル セット | wedding-suite-bundle | 50 | HK$ 25 |
+| 箔押し結婚式招待状 | foil-wedding-invitations | 50 | HK$ 25 |
+| 結婚式サンキュカード | wedding-thank-you-cards | 50 | HK$ 15 |
 
 ### 席札 (place-cards)
 
 | 製品 | Slug | 最低数量 | 基準価格 |
 |------|------|---------|---------|
-| ウエディング席札 | wedding-place-cards | 50 | HK$ 0.3 |
-| ドリンクトークン | drink-tokens | 50 | HK$ 0.25 |
-| カフェ / レストラン テーブルカード | cafe-table-cards | 50 | HK$ 0.4 |
-| 披露宴座席表 | wedding-seating-charts | 50 | HK$ 4.5 |
+| ウエディング席札 / テーブルカード | place-cards | 50 | ¥ 39 |
 
 ## 価格とご注文
 
