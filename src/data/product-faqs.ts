@@ -38,7 +38,7 @@ export const stickersFAQs: FAQItem[] = [
       'ja': '少ロットのシール印刷は即日対応可能ですか？',
     },
     answer: {
-      'zh-hk': '可以。針對九龍、港島及新界客戶，少批量貼紙印刷（10-500張）最快即日可取。建議上午12時前確認稿件，即可安排當日生產，港鐵站交收或上門送貨均可。',
+      'zh-hk': '可以。針對九龍、港島及新界客戶，少批量貼紙印刷（10-500張）提供順豐送貨上門，急件交期以 WhatsApp 報價確認。',
       'en': 'Yes. Small-batch sticker printing (10-500 pcs) is available with rush production. Confirm your artwork before 12 PM (HKT) for same-day production at our Asia facility, then delivery to US addresses via DHL / FedEx with timing confirmed at quote.',
       'ja': 'はい。少ロットシール印刷（10〜500枚）は即日生産対応可能です。正午までにデータを確定いただければ、当日生産を手配し、DHL・FedExによる配送日程はお見積り時に確定します。',
     },
@@ -210,7 +210,7 @@ export const flyersFAQs: FAQItem[] = [
       'ja': '日本へのチラシ配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。傳單印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量傳單派發訂單可安排貨車直送。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。傳單印刷訂單滿HK$500免運費，未滿額運費以報價確認。大量傳單派發訂單可安排貨車直送。',
       'en': 'Yes. ZprintPro delivers flyer orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx (2-4 business days). For bulk leaflet distribution orders, delivery can be arranged directly to your distribution team.',
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（納期はお見積り時に確定）。大量のチラシ注文にも対応可能です。',
     },
@@ -322,7 +322,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '日本への包装箱配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送倉庫。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒印刷訂單滿HK$500免運費，未滿額運費以報價確認。大量訂單可安排貨車直送倉庫。',
       'en': 'Yes. ZprintPro delivers packaging box orders worldwide from our Asia facility. Orders over $99 qualify for free US shipping via DHL / FedEx. For bulk orders, pallet delivery to your warehouse can be arranged.',
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（納期はお見積り時に確定）。大量注文にも対応可能です。',
     },
@@ -447,7 +447,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': '日本へのポスター配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印港提供全港送貨服務，包括港島、九龍、新界及離島。海報印刷訂單滿HK$500免運費，Backdrop背景板等大件可安排貨車直送會場。未滿額可選擇港鐵站交收。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括港島、九龍、新界及離島。海報印刷訂單滿HK$500免運費，Backdrop背景板等大件可安排貨車直送會場。未滿額運費以報價確認。',
       'en': 'Yes. ZprintPro delivers poster orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx (2-4 business days). Large items like backdrop boards ship rolled in protective tubes directly to your venue.',
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（納期はお見積り時に確定）。バックドロップなどの大きな商品にも対応可能です。',
     },
@@ -559,7 +559,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': '日本への紙袋配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。紙袋印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送店舖或倉庫。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。紙袋印刷訂單滿HK$500免運費，未滿額運費以報價確認。大量訂單可安排貨車直送店舖或倉庫。',
       'en': 'Yes. ZprintPro delivers paper bag orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx. For bulk orders, pallet delivery to your store or warehouse can be arranged.',
       'ja': 'はい。ZprintProは日本全国へDHL・FedExで配送しています（通常2〜4日でお届け）。大量注文にも対応可能です。送料は数量と配送先に応じてお見積もりいたします。',
     },
