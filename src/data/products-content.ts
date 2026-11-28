@@ -6754,8 +6754,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -6988,8 +6988,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7094,8 +7094,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7200,8 +7200,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7306,8 +7306,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7412,8 +7412,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Large</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Large</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">100</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7518,8 +7518,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A3</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A2</td><td class="p-2 text-center">25</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A3</td><td class="p-2 text-center">1</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A2</td><td class="p-2 text-center">1</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -7630,7 +7630,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">1</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
     
   </tbody>
 </table>
@@ -7744,7 +7744,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A3 / A4 / A5</td><td class="p-2 text-center">1</td><td class="p-2 text-center">7-10 business days</td><td class="p-2 text-center">from $0.40</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A3 / A4 / A5</td><td class="p-2 text-center">1</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">from $0.40</td></tr>
     
   </tbody>
 </table>
@@ -7865,7 +7865,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   
   <tbody>
     
-    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">1</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
     
   </tbody>
 </table>
@@ -8016,9 +8016,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     
     <tr class="border-b"><td class="p-2 font-medium">Standard</td>
       
-      <td class="p-2 text-center">25</td>
+      <td class="p-2 text-center">1</td>
       
-      <td class="p-2 text-center">3-5 days</td>
+      <td class="p-2 text-center">Confirmed at quote</td>
       
       <td class="p-2 text-center">At quote</td>
     </tr>
@@ -8176,9 +8176,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     
     <tr class="border-b"><td class="p-2 font-medium">Standard</td>
       
-      <td class="p-2 text-center">25</td>
+      <td class="p-2 text-center">1</td>
       
-      <td class="p-2 text-center">3-5 days</td>
+      <td class="p-2 text-center">Confirmed at quote</td>
       
       <td class="p-2 text-center">At quote</td>
     </tr>
@@ -8298,8 +8298,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">10</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">10</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -8408,8 +8408,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">10</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">10</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -8518,8 +8518,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">10</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">10</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
@@ -8628,8 +8628,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">10</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">10</td><td class="p-2 text-center">Confirmed at quote</td><td class="p-2 text-center">At quote</td></tr>
   </tbody>
 </table>
 
