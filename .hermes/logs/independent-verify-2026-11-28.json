@@ -1,0 +1,472 @@
+{
+  "schema_version": "independent-verify/v1",
+  "lane": "ZP-k3-review",
+  "date": "2026-11-28",
+  "run_window_start": "2026-11-28T12:05:02+08:00",
+  "generated_at": "2026-11-28T12:05:02+08:00",
+  "generated_note": "lane start time; all live fetches and API reads were performed during this lane session after 12:05:02 +08:00",
+  "scope": [
+    "2026-11-27 claimed deliverables (daily OK / weekly PARTIAL / k3 BLOCKED / blog MISSING)",
+    "production HEAD 10c162be and Cloudflare Pages deployment",
+    "READY task VERIFY-FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL (read-only)",
+    "cumulative live-surface audit of 12 URLs touched by 11-27 and 11-28 batches"
+  ],
+  "deployment": {
+    "repo": "zprintprohk-rgb/zprintpro",
+    "head_sha": "10c162bed939bf983675e3f561c0914d3cf46467",
+    "head_committed_at": "2026-11-28T11:39:16+08:00",
+    "cloudflare_pages": {
+      "name": "Cloudflare Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "completed_at": "2026-11-28T11:43:39+08:00",
+      "preview_url": "https://953803bc.zprintpro-19p.pages.dev"
+    },
+    "production_correspondence": "CONFIRMED_BY_CONTENT_DIFF",
+    "content_diff_evidence": [
+      "A1 zh title no longer contains HK$20 after 42dd2e43 D2; live title = 'A1 大幅海報印刷 厚紙柯式 | 1張起印 4小時打稿 | 智印港'",
+      "WI zh body now says HK$25-95 / 套 (NT$ removed), consistent with 11-27 de837123 + D1/D3 batch",
+      "EN small-batch shows 'Best for:' and 'cart -> checkout' instead of the 11-26 zh-Hant leaks, consistent with 11-28 P0 batch"
+    ],
+    "boundary": "Check-run proves a successful Cloudflare Pages build for HEAD 10c162be; production domain content was corroborated by content diff. Individual 11-27 commit ancestry was not re-walked with git; content effects were verified instead."
+  },
+  "urls_checked": [
+    "https://zprintpro.com/en/product/small-batch-stickers/",
+    "https://zprintpro.com/en/category/stickers/",
+    "https://zprintpro.com/ja/product/doujinshi-printing/",
+    "https://zprintpro.com/zh-hk/category/japan-doujin/",
+    "https://zprintpro.com/ja/category/japan-doujin/",
+    "https://zprintpro.com/en/category/japan-doujin/",
+    "https://zprintpro.com/zh-hk/product/a1-posters/",
+    "https://zprintpro.com/zh-hk/product/foil-wedding-invitations/",
+    "https://zprintpro.com/en/product/catalog-printing/",
+    "https://zprintpro.com/zh-hk/",
+    "https://zprintpro.com/zh-hk/product/a2-posters/",
+    "https://zprintpro.com/zh-hk/blog/book-buying-guide/"
+  ],
+  "assertions": [
+    {
+      "id": "DEP-1",
+      "scope": "deployment",
+      "assertion": "origin/main HEAD is the expected 11-28 commit",
+      "observed": "10c162bed939bf983675e3f561c0914d3cf46467, 2026-11-28T11:39:16+08:00",
+      "verdict": "PASS",
+      "evidence": "GitHub API commits?per_page=8"
+    },
+    {
+      "id": "DEP-2",
+      "scope": "deployment",
+      "assertion": "Cloudflare Pages build for HEAD succeeded",
+      "observed": "completed/success, 2026-11-28T11:43:39+08:00, check-run 140853234278",
+      "verdict": "PASS",
+      "evidence": "GitHub API commits/10c162be/check-runs"
+    },
+    {
+      "id": "DEP-3",
+      "scope": "deployment",
+      "assertion": "Live production contains changes introduced at/under HEAD, not a stale build",
+      "observed": "A1 title price removed; WI body HK$25-95; EN SB 'Best for:'/'checkout'",
+      "verdict": "PASS",
+      "evidence": "live text diff vs 11-27/11-28 reports"
+    },
+    {
+      "id": "DEP-4",
+      "scope": "deployment",
+      "assertion": "11-27 claimed content effects are visible in production",
+      "observed": "D1 (50+) label, D2 quote-only price panel, D3 MOQ 10, WI HK$, A1 title price-free are live",
+      "verdict": "PASS",
+      "evidence": "live fetches listed in urls_checked; 11-27 weekly §2.1"
+    },
+    {
+      "id": "SB-1",
+      "scope": "en small-batch PDP",
+      "assertion": "HTTP 200 and expected title/H1",
+      "observed": "200; title 'Small Batch Stickers from $0.55 | 10pcs | ZprintPro'; H1 'Small Batch Stickers 10+ | No Setup | ZprintPro'",
+      "verdict": "PASS",
+      "evidence": "web_fetch 2026-11-28"
+    },
+    {
+      "id": "SB-2",
+      "scope": "en small-batch PDP",
+      "assertion": "5 previously approved residual strings are absent; 'full refund' only appears conditionalized",
+      "observed": "0 hits for 'Free digital proof in 1 hour', '2-4 business day delivery to US addresses', 'DHL / FedEx in 2-4 business days', 'MOQ is 10 sheets per A4 layout'; full refund only 'for quality defects'",
+      "verdict": "PASS",
+      "evidence": "live text"
+    },
+    {
+      "id": "SB-3",
+      "scope": "en small-batch PDP",
+      "assertion": "No zh-Hant template leaks",
+      "observed": "0 hits for '适配行业', '結算', '{PRODUCT_NAME}'; 'Best for:' and 'checkout' in place",
+      "verdict": "PASS",
+      "evidence": "live text"
+    },
+    {
+      "id": "SB-4",
+      "scope": "en small-batch PDP",
+      "assertion": "MOQ is one consistent unit",
+      "observed": "minimum order 10 pc; FAQs '10 stickers per design'; no competing '10 sheets per A4 layout'",
+      "verdict": "PASS",
+      "evidence": "live text"
+    },
+    {
+      "id": "SB-5",
+      "scope": "en small-batch PDP",
+      "assertion": "10-pc tier price is consistent across table, hero and cart",
+      "observed": "table 10 pcs = $0.60; hero 'from US$0.55/pc (50+)'; cart '$0.55 x 10 = $5.50' at MOQ 10 -> cart applies the 50+ rate to the 10-pc tier",
+      "verdict": "FAIL",
+      "evidence": "same-page live text; K3 11-27 D1 plan B = 10pcs $0.60 / 50pcs $0.55"
+    },
+    {
+      "id": "SB-6",
+      "scope": "en small-batch PDP",
+      "assertion": "No unconditional lead-time promise",
+      "observed": "direct answer still says '1-2 working day turnaround' while the page elsewhere says lead time is confirmed at quote",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "SB-7",
+      "scope": "en small-batch PDP",
+      "assertion": "WhatsApp path uses the real number and carries SKU/spec context",
+      "observed": "+86 198 8085 1334; wa.me text includes size, quantity, material, shape, turnaround",
+      "verdict": "PASS",
+      "evidence": "live text"
+    },
+    {
+      "id": "SB-8",
+      "scope": "en small-batch PDP",
+      "assertion": "Free-shipping claim is conditional",
+      "observed": "'Free US shipping $99+' on PDP",
+      "verdict": "PASS",
+      "evidence": "live text"
+    },
+    {
+      "id": "STK-1",
+      "scope": "en stickers category",
+      "assertion": "Category title carries the approved US$0.32 anchor and 10 MOQ",
+      "observed": "title 'Small Batch Sticker Printing US$0.32 · 10 MOQ | ZprintPro'",
+      "verdict": "PASS",
+      "evidence": "live text"
+    },
+    {
+      "id": "STK-2",
+      "scope": "en stickers category",
+      "assertion": "No unconditional free-shipping promise in H1",
+      "observed": "H1 'Small Batch Sticker Printing Free Shipping · 10 MOQ ...' while free shipping is US$99+",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "STK-3",
+      "scope": "en stickers category",
+      "assertion": "No unsourced customer-count claim",
+      "observed": "'Trusted by 15,000+ customers'",
+      "verdict": "FAIL",
+      "evidence": "live text; no source in products.ts / K3 decisions"
+    },
+    {
+      "id": "STK-4",
+      "scope": "en stickers category",
+      "assertion": "No unconditional/unsourced turnaround or shipping statistics",
+      "observed": "'Standard turnaround is 2-3 working days ... average sticker shipping in 2.3 days'; '1-2 day digital turnaround'",
+      "verdict": "FAIL",
+      "evidence": "live text; 11-26 k3 A6 same defect"
+    },
+    {
+      "id": "STK-5",
+      "scope": "en stickers category",
+      "assertion": "MOQ statements agree",
+      "observed": "'Ultra-Low MOQ, From 50 pcs' / '50 pcs minimum' vs 10 pcs cards and 10 MOQ title",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "STK-6",
+      "scope": "en stickers category",
+      "assertion": "No Chinese material string on the EN page",
+      "observed": "Roll Labels card shows '[Material] 銅板紙（熱熔膠）＋格仔底紙'",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "STK-7",
+      "scope": "en stickers category",
+      "assertion": "EN prices are in USD and sourced",
+      "observed": "'1000 pcs ... roughly HK$200-350' (HKD on EN page, no source)",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "DOU-1",
+      "scope": "zh doujin category",
+      "assertion": "No '5 books rush in 3 days' hard promise",
+      "observed": "'同人誌 5 本加急 3 天出貨' still present in Local Service block",
+      "verdict": "FAIL",
+      "evidence": "live text; FIX-20261126-DOUJIN-SEMANTIC-FIX still READY"
+    },
+    {
+      "id": "DOU-2",
+      "scope": "zh doujin category",
+      "assertion": "No unconditional 24h rush in title/H1",
+      "observed": "title/H1 still 'Comiket 24h 特急' / 'Comiket 24h特急'",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "DOU-3",
+      "scope": "ja doujin category",
+      "assertion": "No '5部急行3日/10部急行2日' hard promise",
+      "observed": "'同人誌5部急行3日、10部急行2日出荷' still present",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "DOU-4",
+      "scope": "ja doujin category",
+      "assertion": "No unconditional 24h rush in title/H1",
+      "observed": "title/H1 'コミケ24時間特急' still present",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "DOU-5",
+      "scope": "en doujin category",
+      "assertion": "No 'Books 5 days standard / Rush 2-3 days' hard promise",
+      "observed": "'Books 5 days standard / Stickers 3-5 days / Posters 3 days / Rush 2-3 days' still in Specifications",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "DOU-6",
+      "scope": "en+zh doujin category",
+      "assertion": "No Japanese order-start price/unit on EN/ZH pages",
+      "observed": "EN '[MOQ] 10 注文〜' + 'From ¥7,500〜/注文〜'; ZH '¥7,500〜/注文〜起' + '10注文〜起訂'",
+      "verdict": "FAIL",
+      "evidence": "live text; K3 10-30 #5: en/zh must not copy ¥7,500"
+    },
+    {
+      "id": "DOU-7",
+      "scope": "zh doujin category",
+      "assertion": "Brand appears once in product-card title",
+      "observed": "card title '同人誌印刷 | Comiket 對應 | 智印港 · 小批量印 · 品質保證 · 智印港' (brand twice)",
+      "verdict": "FAIL",
+      "evidence": "live text; title rule brand once at end"
+    },
+    {
+      "id": "DOU-8",
+      "scope": "ja doujin PDP",
+      "assertion": "No Chinese bullet block on ja PDP",
+      "observed": "5 zh bullets still present, e.g. 'Comiket 前特急対応可議（按稿件與排期報價確認）', '10 本起印,少量対応', '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天'",
+      "verdict": "FAIL",
+      "evidence": "live text; 11-26 k3 C4 same defect"
+    },
+    {
+      "id": "DOU-9",
+      "scope": "ja doujin PDP",
+      "assertion": "No unconditional DHL 2-4 day promise",
+      "observed": "'DHL 世界配送 2-4 日' and '日本全国へ国際配送（航空便3-5日...）' remain unconditional",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "DOU-10",
+      "scope": "ja doujin PDP",
+      "assertion": "Order-start price and FAQ per-copy price agree",
+      "observed": "PDP says '¥7,500〜/注文〜' (order-start, not per copy) but FAQ says '同人誌は1部￥7,500〜（10部から）'",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "A1-1",
+      "scope": "zh A1 posters",
+      "assertion": "Frozen price removed from title (11-27 D2)",
+      "observed": "title 'A1 大幅海報印刷 厚紙柯式 | 1張起印 4小時打稿 | 智印港' (no HK$20)",
+      "verdict": "PASS",
+      "evidence": "live text vs 11-27 A1 D2 report"
+    },
+    {
+      "id": "A1-2",
+      "scope": "zh A1 posters",
+      "assertion": "No hard proof-time promise contradicts quote confirmation",
+      "observed": "title still promises '4小時打稿' while body says '打稿與出貨時效以報價確認'",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "A1-3",
+      "scope": "zh A1 posters",
+      "assertion": "One price model on the page",
+      "observed": "cart HK$20 x 1; hero HK$29-45; ladder 45->29; direct answer HK$16/張 for 10+ bulk; body lists 柯式 20 / 噴繪 290 / 基材 45-56",
+      "verdict": "FAIL",
+      "evidence": "live text; needs K3 display-model decision"
+    },
+    {
+      "id": "A1-4",
+      "scope": "zh A1 posters",
+      "assertion": "FAQ matches this product (A1, 1-sheet MOQ)",
+      "observed": "A1 page FAQ says '智印港提供A2海報印刷服務，最低10張起訂'",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "WI-1",
+      "scope": "zh foil wedding invitations",
+      "assertion": "Body currency is HKD, not NT$",
+      "observed": "'價格範圍為 HK$25-95 / 套' (NT$ = 0 in body)",
+      "verdict": "PASS",
+      "evidence": "live text; fixes 11-26 B5"
+    },
+    {
+      "id": "WI-2",
+      "scope": "zh foil wedding invitations",
+      "assertion": "Cart total uses HKD and the 50-set MOQ",
+      "observed": "HK$25.00 x 50 = HK$1,250.00, MOQ 50",
+      "verdict": "PASS",
+      "evidence": "live text"
+    },
+    {
+      "id": "WI-3",
+      "scope": "zh foil wedding invitations",
+      "assertion": "FSC claim is conditional, not absolute",
+      "observed": "FAQ says '智印港所有紙張均通過 FSC 森林管理委員會認證'",
+      "verdict": "FAIL",
+      "evidence": "live text; 11-28 Q15 changed sitewide FSC claims to optional wording, this page still absolute"
+    },
+    {
+      "id": "WI-4",
+      "scope": "zh foil wedding invitations",
+      "assertion": "No unconditional multi-market delivery days",
+      "observed": "FAQ '3-5 個工作天到美國、2-4 天到日本'; banner 'DHL 全球 2-4 天'",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "CAT-1",
+      "scope": "en catalog PDP",
+      "assertion": "Q1 direct-answer block is present",
+      "observed": "'Catalog Printing · Direct Answer' block present above product details",
+      "verdict": "PASS",
+      "evidence": "live text"
+    },
+    {
+      "id": "CAT-2",
+      "scope": "en catalog PDP",
+      "assertion": "No Chinese specification bullets on EN page",
+      "observed": "7 Chinese bullets in Specifications, e.g. '【157g–200g銅版紙或啞粉紙】內頁挺度佳...', '【10本起訂】...'",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "CAT-3",
+      "scope": "en catalog PDP",
+      "assertion": "Proof timing is not promised as a fixed 4 hours",
+      "observed": "'Free digital proof within 4 hours' in How to Order vs 'proof timing confirmed at quote' elsewhere",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "CAT-4",
+      "scope": "en catalog PDP",
+      "assertion": "MOQ and delivery claims agree with this product",
+      "observed": "'Most ZprintPro products start from 50–100 units/copies' vs 10 MOQ; 'DHL 2-4 day worldwide delivery' vs 'confirmed at quote'",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "Q2-1",
+      "scope": "zh Q2 double cluster",
+      "assertion": "A2 PDP direct-answer block is live with the approved HK$16 / 10-sheet truth",
+      "observed": "'A2 海報（420×594mm）10 張起印，HK$16／張起' direct-answer block present; cart HK$16 x 10 = HK$160",
+      "verdict": "PASS",
+      "evidence": "live text; 11-27 Q2 report dcd425d6"
+    },
+    {
+      "id": "Q5A-1",
+      "scope": "zh Q5-A books cluster",
+      "assertion": "Book-buying-guide price truth is fixed and no HK$14-57/500本 remains",
+      "observed": "HK$6-32/本 (saddle stitch), HK$16-80/本 (perfect bound), HK$40-240/本 (hardcover), all 10 本起; 0 hits for HK$14-57/500本",
+      "verdict": "PASS",
+      "evidence": "live text; 11-27 Q5-A a273223d + 37bbbe53"
+    },
+    {
+      "id": "Q5A-2",
+      "scope": "zh Q5-A books cluster",
+      "assertion": "No unconditional production/shipping days on the book guide",
+      "observed": "'書刊一般 3-5 個工作天出貨' and 'DHL 全球配送 2-4 天' remain unconditional",
+      "verdict": "FAIL",
+      "evidence": "live text; 11-28 Q12/Q13 batches did not cover this page"
+    },
+    {
+      "id": "HOME-1",
+      "scope": "zh homepage",
+      "assertion": "HTTP 200 and expected homepage title",
+      "observed": "200; '智印港 | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒'",
+      "verdict": "PASS",
+      "evidence": "web_fetch 2026-11-28"
+    },
+    {
+      "id": "HOME-2",
+      "scope": "zh homepage",
+      "assertion": "All hero CTAs resolve to a valid locale path",
+      "observed": "two buttons link to '/zh-hk/zh-hk/services/rush-printing-delivery/' (duplicated locale segment)",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "HOME-3",
+      "scope": "zh homepage",
+      "assertion": "No unsourced customer-count claim",
+      "observed": "'已有 15,000+ 客戶選擇智印港'",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    },
+    {
+      "id": "HOME-4",
+      "scope": "zh homepage",
+      "assertion": "Delivery claims are consistent across the site",
+      "observed": "homepage process step says 'DHL 全球 5-7 天'; product pages and rush batch say DHL 2-4 days",
+      "verdict": "FAIL",
+      "evidence": "live text; 11-28 Q14 set rush SSoT at 24h/18h, not 5-7 days"
+    },
+    {
+      "id": "HOME-5",
+      "scope": "zh homepage",
+      "assertion": "Product-card titles are typo-free and brand appears once",
+      "observed": "'雙麵彩印', '磁吸翻蓋禮盒印刷印刷', and multiple '智印港 ... 智印港' duplicate-brand titles",
+      "verdict": "FAIL",
+      "evidence": "live text"
+    }
+  ],
+  "summary": {
+    "total": 49,
+    "pass": 18,
+    "fail": 31,
+    "pending": 0,
+    "not_applicable": 0,
+    "by_cluster": {
+      "deployment": "4 PASS / 0 FAIL",
+      "en small-batch PDP": "6 PASS / 2 FAIL",
+      "en stickers category": "1 PASS / 6 FAIL",
+      "doujin (zh/ja/en category + ja PDP)": "0 PASS / 10 FAIL",
+      "zh A1 posters": "1 PASS / 3 FAIL",
+      "zh wedding invitations": "2 PASS / 2 FAIL",
+      "en catalog PDP": "1 PASS / 3 FAIL",
+      "zh Q2/Q5-A": "2 PASS / 1 FAIL",
+      "zh homepage": "1 PASS / 4 FAIL"
+    }
+  },
+  "ready_task_verdict": {
+    "task_id": "VERIFY-FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
+    "owner_lane": "ZP-k3-review",
+    "status_after_run": "PENDING",
+    "reason": "Deployment is confirmed and SB local wording leaks are cleared, but the page still has a 10-pc price contradiction and an unconditional 1-2 day lead time; the category still has unsourced shipping/turnaround stats, a 50-pc MOQ contradiction and Chinese material text. Exit criteria require live 0-defect on the SB surface, so the task cannot be flipped to PASS."
+  },
+  "boundaries": [
+    "No <head> assertions: text fetch does not return canonical/hreflang/JSON-LD; those remain NOT_APPLICABLE in this lane.",
+    "No full 11-27 commit ancestry walk; content effects were verified.",
+    "No A1 RSC payload inspection; only visible text.",
+    "No GSC query-level 7d extraction for 食品包裝印刷; the 11-28 export is 28d snapshot, so the clean-7d query read remains open.",
+    "No src/, queue, ledger, board, lane-status or historical report was modified."
+  ]
+}

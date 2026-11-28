@@ -1,0 +1,4887 @@
+{
+  "generated_at": "2026-11-28T05:12:49.342386+08:00",
+  "method": {
+    "dual_read": "openpyxl and pandas, six sheets per workbook, shape/header/cell values all MATCH",
+    "kpi_authority": "图表 sheet; query and page sheets are visible/top-1000 samples, not full-site totals",
+    "position": "impression-weighted recomputation; zero-impression/zero-position rows excluded",
+    "missing_query": "NO_VISIBLE_QUERY_ROW_NOT_ZERO; never treated as zero",
+    "ctr_caution": "position-band CTR is observational, affected by intent/device/SERP layout; not causal or guaranteed",
+    "market_dimension": "market in keyword tables is the intended target cluster, NOT a GSC country/locale filter; actual landing locale is established only from query×page evidence"
+  },
+  "snapshots": {
+    "2026-09-03": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\zprintpro.com-Performance-on-Search-28天汇总2026-09-03.xlsx",
+      "window": {
+        "start": "2026-08-04",
+        "end": "2026-08-31",
+        "days": 28
+      },
+      "kpi": {
+        "rows": 28,
+        "clicks": 299.0,
+        "impressions": 17902.0,
+        "ctr": 0.01670204,
+        "position_impression_weighted": 24.8359,
+        "position_denominator_impressions": 17902.0
+      },
+      "query_rows": 1000,
+      "dual_read": "MATCH: openpyxl == pandas for 6 sheets"
+    },
+    "2026-09-10": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\zprintpro.com-Performance-on-Search-28天三站点汇总数据2026-09-10.xlsx",
+      "window": {
+        "start": "2026-08-11",
+        "end": "2026-09-07",
+        "days": 28
+      },
+      "kpi": {
+        "rows": 28,
+        "clicks": 349.0,
+        "impressions": 20323.0,
+        "ctr": 0.01717266,
+        "position_impression_weighted": 22.3478,
+        "position_denominator_impressions": 20323.0
+      },
+      "query_rows": 1000,
+      "dual_read": "MATCH: openpyxl == pandas for 6 sheets"
+    },
+    "2026-10-05": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-05.xlsx",
+      "window": {
+        "start": "2026-09-05",
+        "end": "2026-10-02",
+        "days": 28
+      },
+      "kpi": {
+        "rows": 28,
+        "clicks": 383.0,
+        "impressions": 20153.0,
+        "ctr": 0.01900461,
+        "position_impression_weighted": 13.8554,
+        "position_denominator_impressions": 20153.0
+      },
+      "query_rows": 1000,
+      "dual_read": "MATCH: openpyxl == pandas for 6 sheets"
+    },
+    "2026-10-09": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-09.xlsx",
+      "window": {
+        "start": "2026-09-08",
+        "end": "2026-10-05",
+        "days": 28
+      },
+      "kpi": {
+        "rows": 28,
+        "clicks": 390.0,
+        "impressions": 19981.0,
+        "ctr": 0.01951854,
+        "position_impression_weighted": 13.531,
+        "position_denominator_impressions": 19981.0
+      },
+      "query_rows": 1000,
+      "dual_read": "MATCH: openpyxl == pandas for 6 sheets"
+    },
+    "2026-10-30": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
+      "window": {
+        "start": "2026-09-30",
+        "end": "2026-10-27",
+        "days": 28
+      },
+      "kpi": {
+        "rows": 28,
+        "clicks": 496.0,
+        "impressions": 21127.0,
+        "ctr": 0.02347707,
+        "position_impression_weighted": 13.5616,
+        "position_denominator_impressions": 21127.0
+      },
+      "query_rows": 1000,
+      "dual_read": "MATCH: openpyxl == pandas for 6 sheets"
+    },
+    "2026-11-25": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25 (2).xlsx",
+      "window": {
+        "start": "2026-10-27",
+        "end": "2026-11-23",
+        "days": 28
+      },
+      "kpi": {
+        "rows": 28,
+        "clicks": 544.0,
+        "impressions": 32483.0,
+        "ctr": 0.01674722,
+        "position_impression_weighted": 18.1338,
+        "position_denominator_impressions": 32483.0
+      },
+      "query_rows": 1000,
+      "dual_read": "MATCH: openpyxl == pandas for 6 sheets"
+    },
+    "2026-11-28": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-28.xlsx",
+      "window": {
+        "start": "2026-10-29",
+        "end": "2026-11-25",
+        "days": 28
+      },
+      "kpi": {
+        "rows": 28,
+        "clicks": 544.0,
+        "impressions": 33312.0,
+        "ctr": 0.01633045,
+        "position_impression_weighted": 18.319,
+        "position_denominator_impressions": 33312.0
+      },
+      "query_rows": 1000,
+      "dual_read": "MATCH: openpyxl == pandas for 6 sheets"
+    },
+    "current_7d": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-28.xlsx",
+      "window": {
+        "start": "2026-11-19",
+        "end": "2026-11-25",
+        "days": 7
+      },
+      "kpi": {
+        "rows": 7,
+        "clicks": 127.0,
+        "impressions": 10253.0,
+        "ctr": 0.01238662,
+        "position_impression_weighted": 25.3679,
+        "position_denominator_impressions": 10253.0
+      },
+      "query_rows": 1000,
+      "dual_read": "MATCH: openpyxl == pandas for 6 sheets"
+    },
+    "current_24h": {
+      "path": "F:\\zprintpro-nextjs\\GSC数据\\24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-28.xlsx",
+      "window": {
+        "start": "2026-11-27",
+        "end": "2026-11-28",
+        "days": 24
+      },
+      "kpi": {
+        "rows": 24,
+        "clicks": 16.0,
+        "impressions": 1204.0,
+        "ctr": 0.01328904,
+        "position_impression_weighted": 21.1145,
+        "position_denominator_impressions": 1204.0
+      },
+      "query_rows": 274,
+      "dual_read": "MATCH: openpyxl == pandas for 6 sheets"
+    }
+  },
+  "current_segments": {
+    "baseline_2026-11-03_to_2026-11-09": {
+      "rows": 7,
+      "clicks": 158.0,
+      "impressions": 7528.0,
+      "ctr": 0.02098831,
+      "position_impression_weighted": 13.9523,
+      "position_denominator_impressions": 7528.0,
+      "start": "2026-11-03",
+      "end": "2026-11-09",
+      "days": 7,
+      "clicks_per_day": 22.5714,
+      "impressions_per_day": 1075.4286
+    },
+    "recent_7_complete_days": {
+      "rows": 7,
+      "clicks": 127.0,
+      "impressions": 10253.0,
+      "ctr": 0.01238662,
+      "position_impression_weighted": 25.3679,
+      "position_denominator_impressions": 10253.0,
+      "start": "2026-11-19",
+      "end": "2026-11-25",
+      "days": 7,
+      "clicks_per_day": 18.1429,
+      "impressions_per_day": 1464.7143
+    },
+    "recent_3_complete_days": {
+      "rows": 3,
+      "clicks": 75.0,
+      "impressions": 4062.0,
+      "ctr": 0.01846381,
+      "position_impression_weighted": 17.5491,
+      "position_denominator_impressions": 4062.0,
+      "start": "2026-11-23",
+      "end": "2026-11-25",
+      "days": 3,
+      "clicks_per_day": 25.0,
+      "impressions_per_day": 1354.0
+    },
+    "previous_3_days_before_recent": {
+      "rows": 3,
+      "clicks": 39.0,
+      "impressions": 5105.0,
+      "ctr": 0.00763957,
+      "position_impression_weighted": 33.6884,
+      "position_denominator_impressions": 5105.0,
+      "start": "2026-11-20",
+      "end": "2026-11-22",
+      "days": 3,
+      "clicks_per_day": 13.0,
+      "impressions_per_day": 1701.6667
+    }
+  },
+  "backfill": {
+    "status": "COMPARABLE_SAME_DATE_2026-11-25",
+    "file": "F:\\zprintpro-nextjs\\GSC数据\\24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-25 (2).xlsx",
+    "24h_preview": {
+      "rows": 24,
+      "clicks": 25.0,
+      "impressions": 1138.0,
+      "ctr": 0.02196837,
+      "position_impression_weighted": 17.6714,
+      "position_denominator_impressions": 1138.0
+    },
+    "28d_backfilled": {
+      "rows": 1,
+      "clicks": 18.0,
+      "impressions": 1347.0,
+      "ctr": 0.01336303,
+      "position_impression_weighted": 18.0,
+      "position_denominator_impressions": 1347.0
+    },
+    "click_backfill_ratio": 0.72,
+    "impression_backfill_ratio": 1.1837
+  },
+  "current_countries": {
+    "中国香港": {
+      "rows": 1,
+      "clicks": 398.0,
+      "impressions": 17346.0,
+      "ctr": 0.02294477,
+      "position_impression_weighted": 15.1,
+      "position_denominator_impressions": 17346.0
+    },
+    "日本": {
+      "rows": 1,
+      "clicks": 48.0,
+      "impressions": 4485.0,
+      "ctr": 0.01070234,
+      "position_impression_weighted": 23.78,
+      "position_denominator_impressions": 4485.0
+    },
+    "美国": {
+      "rows": 1,
+      "clicks": 24.0,
+      "impressions": 5825.0,
+      "ctr": 0.00412017,
+      "position_impression_weighted": 30.22,
+      "position_denominator_impressions": 5825.0
+    }
+  },
+  "baseline_countries": {
+    "2026-09-03": {
+      "中国香港": {
+        "rows": 1,
+        "clicks": 222.0,
+        "impressions": 8510.0,
+        "ctr": 0.02608696,
+        "position_impression_weighted": 18.28,
+        "position_denominator_impressions": 8510.0
+      },
+      "日本": {
+        "rows": 1,
+        "clicks": 30.0,
+        "impressions": 1674.0,
+        "ctr": 0.01792115,
+        "position_impression_weighted": 23.18,
+        "position_denominator_impressions": 1674.0
+      },
+      "美国": {
+        "rows": 1,
+        "clicks": 14.0,
+        "impressions": 3401.0,
+        "ctr": 0.00411644,
+        "position_impression_weighted": 30.91,
+        "position_denominator_impressions": 3401.0
+      }
+    },
+    "2026-09-10": {
+      "中国香港": {
+        "rows": 1,
+        "clicks": 247.0,
+        "impressions": 10022.0,
+        "ctr": 0.02464578,
+        "position_impression_weighted": 17.19,
+        "position_denominator_impressions": 10022.0
+      },
+      "日本": {
+        "rows": 1,
+        "clicks": 35.0,
+        "impressions": 1791.0,
+        "ctr": 0.01954216,
+        "position_impression_weighted": 20.98,
+        "position_denominator_impressions": 1791.0
+      },
+      "美国": {
+        "rows": 1,
+        "clicks": 19.0,
+        "impressions": 3925.0,
+        "ctr": 0.00484076,
+        "position_impression_weighted": 27.08,
+        "position_denominator_impressions": 3925.0
+      }
+    },
+    "2026-10-05": {
+      "中国香港": {
+        "rows": 1,
+        "clicks": 282.0,
+        "impressions": 10491.0,
+        "ctr": 0.02688018,
+        "position_impression_weighted": 13.85,
+        "position_denominator_impressions": 10491.0
+      },
+      "日本": {
+        "rows": 1,
+        "clicks": 34.0,
+        "impressions": 2036.0,
+        "ctr": 0.01669941,
+        "position_impression_weighted": 16.09,
+        "position_denominator_impressions": 2036.0
+      },
+      "美国": {
+        "rows": 1,
+        "clicks": 33.0,
+        "impressions": 3943.0,
+        "ctr": 0.00836926,
+        "position_impression_weighted": 15.65,
+        "position_denominator_impressions": 3943.0
+      }
+    },
+    "2026-10-09": {
+      "中国香港": {
+        "rows": 1,
+        "clicks": 290.0,
+        "impressions": 10563.0,
+        "ctr": 0.02745432,
+        "position_impression_weighted": 13.62,
+        "position_denominator_impressions": 10563.0
+      },
+      "美国": {
+        "rows": 1,
+        "clicks": 36.0,
+        "impressions": 3802.0,
+        "ctr": 0.0094687,
+        "position_impression_weighted": 15.09,
+        "position_denominator_impressions": 3802.0
+      },
+      "日本": {
+        "rows": 1,
+        "clicks": 32.0,
+        "impressions": 2023.0,
+        "ctr": 0.01581809,
+        "position_impression_weighted": 15.71,
+        "position_denominator_impressions": 2023.0
+      }
+    },
+    "2026-10-30": {
+      "中国香港": {
+        "rows": 1,
+        "clicks": 360.0,
+        "impressions": 12229.0,
+        "ctr": 0.02943822,
+        "position_impression_weighted": 13.39,
+        "position_denominator_impressions": 12229.0
+      },
+      "日本": {
+        "rows": 1,
+        "clicks": 40.0,
+        "impressions": 2296.0,
+        "ctr": 0.0174216,
+        "position_impression_weighted": 16.61,
+        "position_denominator_impressions": 2296.0
+      },
+      "美国": {
+        "rows": 1,
+        "clicks": 30.0,
+        "impressions": 2743.0,
+        "ctr": 0.01093693,
+        "position_impression_weighted": 15.42,
+        "position_denominator_impressions": 2743.0
+      }
+    }
+  },
+  "current_devices": {
+    "桌面": {
+      "rows": 1,
+      "clicks": 293.0,
+      "impressions": 21910.0,
+      "ctr": 0.01337289,
+      "position_impression_weighted": 21.89,
+      "position_denominator_impressions": 21910.0
+    },
+    "移动设备": {
+      "rows": 1,
+      "clicks": 249.0,
+      "impressions": 11005.0,
+      "ctr": 0.02262608,
+      "position_impression_weighted": 11.17,
+      "position_denominator_impressions": 11005.0
+    },
+    "平板电脑": {
+      "rows": 1,
+      "clicks": 2.0,
+      "impressions": 397.0,
+      "ctr": 0.00503778,
+      "position_impression_weighted": 18.89,
+      "position_denominator_impressions": 397.0
+    }
+  },
+  "current_appearances": {
+    "产品摘要": {
+      "rows": 1,
+      "clicks": 200.0,
+      "impressions": 13552.0,
+      "ctr": 0.01475797,
+      "position_impression_weighted": 33.67,
+      "position_denominator_impressions": 13552.0
+    },
+    "商家信息": {
+      "rows": 1,
+      "clicks": 2.0,
+      "impressions": 3.0,
+      "ctr": 0.66666667,
+      "position_impression_weighted": 6.0,
+      "position_denominator_impressions": 3.0
+    }
+  },
+  "focus_bands_tracked_exact_queries_only": {
+    "G1": {
+      "rows": 24,
+      "clicks": 8.0,
+      "impressions": 707.0,
+      "ctr": 0.01131542,
+      "position_impression_weighted": 8.527,
+      "position_denominator_impressions": 707.0,
+      "queries": [
+        "2027利是封",
+        "a1 印刷 即日",
+        "a2 printing",
+        "a2 印刷",
+        "a2 印刷 即日",
+        "a2 海報 印刷 一 張 價格",
+        "a2印刷",
+        "doujin printing",
+        "doujinshi printing",
+        "small batch sticker printing",
+        "ステッカー 小ロット",
+        "ステッカー印刷 小ロット",
+        "书籍印刷",
+        "印刷公司報價",
+        "印喜帖價格",
+        "即日印刷",
+        "即日急件",
+        "戶外可移貼紙",
+        "海報印刷一張",
+        "海報印刷即日",
+        "畢業紀念冊香港",
+        "證書印刷",
+        "透明貼紙印刷",
+        "食品包裝印刷"
+      ],
+      "zero_click_queries": [
+        "2027利是封",
+        "a2 印刷 即日",
+        "a2印刷",
+        "doujin printing",
+        "doujinshi printing",
+        "small batch sticker printing",
+        "ステッカー 小ロット",
+        "ステッカー印刷 小ロット",
+        "书籍印刷",
+        "印刷公司報價",
+        "即日急件",
+        "戶外可移貼紙",
+        "海報印刷一張",
+        "證書印刷",
+        "透明貼紙印刷",
+        "食品包裝印刷"
+      ]
+    },
+    "G2": {
+      "rows": 8,
+      "clicks": 2.0,
+      "impressions": 363.0,
+      "ctr": 0.00550964,
+      "position_impression_weighted": 13.8845,
+      "position_denominator_impressions": 363.0,
+      "queries": [
+        "catalog printing china",
+        "catalogue printing china",
+        "school exercise book printing",
+        "small batch stickers",
+        "カタログ印刷",
+        "可移貼紙",
+        "防水ステッカー",
+        "香港印刷"
+      ],
+      "zero_click_queries": [
+        "catalog printing china",
+        "catalogue printing china",
+        "school exercise book printing",
+        "small batch stickers",
+        "カタログ印刷",
+        "可移貼紙",
+        "防水ステッカー"
+      ]
+    },
+    "G3": {
+      "rows": 13,
+      "clicks": 4.0,
+      "impressions": 927.0,
+      "ctr": 0.00431499,
+      "position_impression_weighted": 21.7429,
+      "position_denominator_impressions": 927.0,
+      "queries": [
+        "catalog printing",
+        "china catalog printing",
+        "custom catalog printing china",
+        "urgent printing",
+        "印刷",
+        "學校印刷",
+        "小冊子印刷",
+        "摺頁印刷",
+        "月曆印刷",
+        "月曆印刷香港",
+        "紙袋印刷",
+        "訂做紙袋",
+        "訂製利是封"
+      ],
+      "zero_click_queries": [
+        "catalog printing",
+        "china catalog printing",
+        "custom catalog printing china",
+        "urgent printing",
+        "學校印刷",
+        "小冊子印刷",
+        "摺頁印刷",
+        "月曆印刷",
+        "紙袋印刷",
+        "訂做紙袋"
+      ]
+    },
+    "G4": {
+      "rows": 32,
+      "clicks": 2.0,
+      "impressions": 2619.0,
+      "ctr": 0.00076365,
+      "position_impression_weighted": 34.5378,
+      "position_denominator_impressions": 2619.0,
+      "queries": [
+        "a2 poster printing",
+        "catalogs printing china",
+        "educational printing",
+        "カタログ 印刷",
+        "コミケ 印刷",
+        "パッケージ印刷",
+        "中綴じ 印刷",
+        "冊子印刷",
+        "利是封印刷",
+        "包裝盒印刷",
+        "包裝盒訂製",
+        "卒業アルバム 印刷",
+        "印刷公司",
+        "印書",
+        "印海報",
+        "印貼紙",
+        "喜帖印刷",
+        "宣傳單張",
+        "宣傳單張印刷",
+        "教材 印刷 製本",
+        "教材 印刷製本",
+        "易拉架印刷",
+        "書刊印刷",
+        "海報印刷",
+        "禮盒訂製",
+        "紙盒印刷",
+        "紙盒訂製",
+        "膠裝書價格",
+        "貼紙",
+        "貼紙印刷",
+        "貼紙訂製",
+        "香港印刷公司"
+      ],
+      "zero_click_queries": [
+        "a2 poster printing",
+        "catalogs printing china",
+        "educational printing",
+        "カタログ 印刷",
+        "コミケ 印刷",
+        "パッケージ印刷",
+        "中綴じ 印刷",
+        "冊子印刷",
+        "利是封印刷",
+        "包裝盒印刷",
+        "包裝盒訂製",
+        "卒業アルバム 印刷",
+        "印書",
+        "印海報",
+        "印貼紙",
+        "喜帖印刷",
+        "宣傳單張",
+        "宣傳單張印刷",
+        "教材 印刷 製本",
+        "教材 印刷製本",
+        "易拉架印刷",
+        "書刊印刷",
+        "海報印刷",
+        "禮盒訂製",
+        "紙盒印刷",
+        "紙盒訂製",
+        "膠裝書價格",
+        "貼紙",
+        "貼紙印刷",
+        "貼紙訂製",
+        "香港印刷公司"
+      ]
+    }
+  },
+  "own_site_nonbrand_query_ctr_by_position_band": {
+    "01_1-3": {
+      "rows": 51,
+      "clicks": 10.0,
+      "impressions": 283.0,
+      "ctr": 0.03533569,
+      "position_impression_weighted": 1.8195,
+      "position_denominator_impressions": 283.0
+    },
+    "02_3-5": {
+      "rows": 40,
+      "clicks": 6.0,
+      "impressions": 368.0,
+      "ctr": 0.01630435,
+      "position_impression_weighted": 4.2857,
+      "position_denominator_impressions": 368.0
+    },
+    "03_5-10": {
+      "rows": 146,
+      "clicks": 15.0,
+      "impressions": 1648.0,
+      "ctr": 0.00910194,
+      "position_impression_weighted": 8.0977,
+      "position_denominator_impressions": 1648.0
+    },
+    "04_10-20": {
+      "rows": 216,
+      "clicks": 10.0,
+      "impressions": 2896.0,
+      "ctr": 0.00345304,
+      "position_impression_weighted": 14.8103,
+      "position_denominator_impressions": 2896.0
+    },
+    "05_20-50": {
+      "rows": 361,
+      "clicks": 7.0,
+      "impressions": 7251.0,
+      "ctr": 0.00096538,
+      "position_impression_weighted": 31.9174,
+      "position_denominator_impressions": 7251.0
+    },
+    "06_50+": {
+      "rows": 183,
+      "clicks": 0.0,
+      "impressions": 2046.0,
+      "ctr": 0.0,
+      "position_impression_weighted": 68.3982,
+      "position_denominator_impressions": 2046.0
+    }
+  },
+  "page_opportunities": {
+    "near_page_one_zero_clicks": [
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+        "clicks": 0.0,
+        "impressions": 685.0,
+        "ctr": 0.0,
+        "position": 6.07,
+        "priority_score": 440.41
+      },
+      {
+        "key": "https://zprintpro.com/ja/product/kraft-paper-packaging-box/",
+        "clicks": 0.0,
+        "impressions": 122.0,
+        "ctr": 0.0,
+        "position": 6.11,
+        "priority_score": 78.15
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/restaurant-opening-flyer-printing-guide/",
+        "clicks": 0.0,
+        "impressions": 118.0,
+        "ctr": 0.0,
+        "position": 7.31,
+        "priority_score": 67.26
+      },
+      {
+        "key": "https://zprintpro.com/en/blog/poster-printing-price-guide/",
+        "clicks": 0.0,
+        "impressions": 97.0,
+        "ctr": 0.0,
+        "position": 6.58,
+        "priority_score": 59.46
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/flyer-buying-guide/",
+        "clicks": 0.0,
+        "impressions": 77.0,
+        "ctr": 0.0,
+        "position": 5.86,
+        "priority_score": 50.46
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/restaurant-menu-printing-guide/",
+        "clicks": 0.0,
+        "impressions": 94.0,
+        "ctr": 0.0,
+        "position": 8.28,
+        "priority_score": 48.22
+      },
+      {
+        "key": "https://zprintpro.com/ja/product/food-boxes/",
+        "clicks": 0.0,
+        "impressions": 79.0,
+        "ctr": 0.0,
+        "position": 8.1,
+        "priority_score": 41.36
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/a5-vs-a6-flyer-size/",
+        "clicks": 0.0,
+        "impressions": 60.0,
+        "ctr": 0.0,
+        "position": 5.93,
+        "priority_score": 39.07
+      },
+      {
+        "key": "https://zprintpro.com/en/blog/a5-vs-a6-flyer-size/",
+        "clicks": 0.0,
+        "impressions": 54.0,
+        "ctr": 0.0,
+        "position": 5.26,
+        "priority_score": 37.29
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/kraft-paper-box-types-comparison-2026/",
+        "clicks": 0.0,
+        "impressions": 52.0,
+        "ctr": 0.0,
+        "position": 5.19,
+        "priority_score": 36.12
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/print-specifications-reference-guide-2026/",
+        "clicks": 0.0,
+        "impressions": 51.0,
+        "ctr": 0.0,
+        "position": 6.41,
+        "priority_score": 31.77
+      },
+      {
+        "key": "https://zprintpro.com/en/blog/wedding-invitation-cost-guide/",
+        "clicks": 0.0,
+        "impressions": 51.0,
+        "ctr": 0.0,
+        "position": 6.73,
+        "priority_score": 30.81
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/product/white-card-bags/",
+        "clicks": 0.0,
+        "impressions": 40.0,
+        "ctr": 0.0,
+        "position": 5.08,
+        "priority_score": 28.05
+      },
+      {
+        "key": "https://zprintpro.com/en/about/",
+        "clicks": 0.0,
+        "impressions": 38.0,
+        "ctr": 0.0,
+        "position": 5.55,
+        "priority_score": 25.59
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/eco-printing/",
+        "clicks": 0.0,
+        "impressions": 72.0,
+        "ctr": 0.0,
+        "position": 11.04,
+        "priority_score": 25.24
+      },
+      {
+        "key": "https://zprintpro.com/ja/product/roll-stickers/",
+        "clicks": 0.0,
+        "impressions": 67.0,
+        "ctr": 0.0,
+        "position": 10.61,
+        "priority_score": 25.18
+      },
+      {
+        "key": "https://zprintpro.com/en/product/corrugated-boxes/",
+        "clicks": 0.0,
+        "impressions": 80.0,
+        "ctr": 0.0,
+        "position": 11.72,
+        "priority_score": 24.85
+      },
+      {
+        "key": "https://zprintpro.com/en/blog/marathon-event-poster-printing-guide/",
+        "clicks": 0.0,
+        "impressions": 40.0,
+        "ctr": 0.0,
+        "position": 6.53,
+        "priority_score": 24.64
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/sticker-material-pvc-vinyl-removable/",
+        "clicks": 0.0,
+        "impressions": 60.0,
+        "ctr": 0.0,
+        "position": 10.15,
+        "priority_score": 24.18
+      },
+      {
+        "key": "https://zprintpro.com/ja/product/kraft-paper-bags/",
+        "clicks": 0.0,
+        "impressions": 34.0,
+        "ctr": 0.0,
+        "position": 5.0,
+        "priority_score": 24.0
+      },
+      {
+        "key": "https://zprintpro.com/ja/product/eco-paper-bags/",
+        "clicks": 0.0,
+        "impressions": 69.0,
+        "ctr": 0.0,
+        "position": 11.52,
+        "priority_score": 22.24
+      },
+      {
+        "key": "https://zprintpro.com/ja/product/large-envelopes/",
+        "clicks": 0.0,
+        "impressions": 34.0,
+        "ctr": 0.0,
+        "position": 5.97,
+        "priority_score": 22.06
+      },
+      {
+        "key": "https://zprintpro.com/ja/product/corrugated-boxes/",
+        "clicks": 0.0,
+        "impressions": 41.0,
+        "ctr": 0.0,
+        "position": 10.56,
+        "priority_score": 15.53
+      },
+      {
+        "key": "https://zprintpro.com/en/blog/paper-bag-buying-guide/",
+        "clicks": 0.0,
+        "impressions": 232.0,
+        "ctr": 0.0,
+        "position": 15.87,
+        "priority_score": 15.42
+      },
+      {
+        "key": "https://zprintpro.com/en/product/kraft-paper-packaging-box/",
+        "clicks": 0.0,
+        "impressions": 45.0,
+        "ctr": 0.0,
+        "position": 11.51,
+        "priority_score": 14.53
+      },
+      {
+        "key": "https://zprintpro.com/en/product/foil-red-packets/",
+        "clicks": 0.0,
+        "impressions": 97.0,
+        "ctr": 0.0,
+        "position": 15.1,
+        "priority_score": 10.84
+      },
+      {
+        "key": "https://zprintpro.com/en/blog/company-intro/",
+        "clicks": 0.0,
+        "impressions": 30.0,
+        "ctr": 0.0,
+        "position": 11.47,
+        "priority_score": 9.76
+      },
+      {
+        "key": "https://zprintpro.com/en/product/a5-flyers/",
+        "clicks": 0.0,
+        "impressions": 33.0,
+        "ctr": 0.0,
+        "position": 12.27,
+        "priority_score": 9.18
+      },
+      {
+        "key": "https://zprintpro.com/ja/blog/eco-paper-bag-gsm/",
+        "clicks": 0.0,
+        "impressions": 43.0,
+        "ctr": 0.0,
+        "position": 13.88,
+        "priority_score": 7.89
+      },
+      {
+        "key": "https://zprintpro.com/en/product/food-boxes/",
+        "clicks": 0.0,
+        "impressions": 53.0,
+        "ctr": 0.0,
+        "position": 14.75,
+        "priority_score": 7.01
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/sticker-materials/",
+        "clicks": 0.0,
+        "impressions": 40.0,
+        "ctr": 0.0,
+        "position": 15.5,
+        "priority_score": 3.53
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/product/eco-red-packets/",
+        "clicks": 0.0,
+        "impressions": 34.0,
+        "ctr": 0.0,
+        "position": 15.82,
+        "priority_score": 2.36
+      }
+    ],
+    "deep_high_impression": [
+      {
+        "key": "https://zprintpro.com/en/product/textbooks/",
+        "clicks": 0.0,
+        "impressions": 526.0,
+        "ctr": 0.0,
+        "position": 68.97,
+        "priority_score": 1451.13
+      },
+      {
+        "key": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+        "clicks": 1.0,
+        "impressions": 602.0,
+        "ctr": 0.0017000000000000001,
+        "position": 56.03,
+        "priority_score": 1349.2
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/category/books/",
+        "clicks": 3.0,
+        "impressions": 624.0,
+        "ctr": 0.0048,
+        "position": 52.38,
+        "priority_score": 1307.4
+      },
+      {
+        "key": "https://zprintpro.com/en/product/catalog-printing/",
+        "clicks": 1.0,
+        "impressions": 726.0,
+        "ctr": 0.0014000000000000002,
+        "position": 37.21,
+        "priority_score": 1080.58
+      },
+      {
+        "key": "https://zprintpro.com/en/category/books/",
+        "clicks": 1.0,
+        "impressions": 319.0,
+        "ctr": 0.0031,
+        "position": 65.58,
+        "priority_score": 836.8
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+        "clicks": 0.0,
+        "impressions": 483.0,
+        "ctr": 0.0,
+        "position": 37.65,
+        "priority_score": 727.4
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+        "clicks": 0.0,
+        "impressions": 382.0,
+        "ctr": 0.0,
+        "position": 39.34,
+        "priority_score": 601.12
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/category/paper-bags/",
+        "clicks": 2.0,
+        "impressions": 415.0,
+        "ctr": 0.0048,
+        "position": 34.96,
+        "priority_score": 580.34
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/category/packaging/",
+        "clicks": 1.0,
+        "impressions": 342.0,
+        "ctr": 0.0029,
+        "position": 42.22,
+        "priority_score": 577.57
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/category/stickers/",
+        "clicks": 0.0,
+        "impressions": 374.0,
+        "ctr": 0.0,
+        "position": 37.83,
+        "priority_score": 565.94
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+        "clicks": 4.0,
+        "impressions": 335.0,
+        "ctr": 0.011899999999999999,
+        "position": 41.03,
+        "priority_score": 549.8
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+        "clicks": 2.0,
+        "impressions": 398.0,
+        "ctr": 0.005,
+        "position": 32.53,
+        "priority_score": 517.88
+      },
+      {
+        "key": "https://zprintpro.com/en/category/educational/",
+        "clicks": 0.0,
+        "impressions": 189.0,
+        "ctr": 0.0,
+        "position": 67.12,
+        "priority_score": 507.43
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/category/posters/",
+        "clicks": 1.0,
+        "impressions": 345.0,
+        "ctr": 0.0029,
+        "position": 35.41,
+        "priority_score": 488.66
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+        "clicks": 1.0,
+        "impressions": 354.0,
+        "ctr": 0.0028000000000000004,
+        "position": 32.83,
+        "priority_score": 464.87
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/retail-shop-poster-printing-guide/",
+        "clicks": 0.0,
+        "impressions": 294.0,
+        "ctr": 0.0,
+        "position": 39.13,
+        "priority_score": 460.17
+      },
+      {
+        "key": "https://zprintpro.com/ja/product/textbooks/",
+        "clicks": 0.0,
+        "impressions": 221.0,
+        "ctr": 0.0,
+        "position": 49.24,
+        "priority_score": 435.28
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/category/flyers/",
+        "clicks": 2.0,
+        "impressions": 375.0,
+        "ctr": 0.0053,
+        "position": 28.45,
+        "priority_score": 426.75
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/category/calendars/",
+        "clicks": 1.0,
+        "impressions": 259.0,
+        "ctr": 0.0039000000000000003,
+        "position": 36.61,
+        "priority_score": 379.28
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+        "clicks": 6.0,
+        "impressions": 334.0,
+        "ctr": 0.018000000000000002,
+        "position": 25.9,
+        "priority_score": 346.02
+      },
+      {
+        "key": "https://zprintpro.com/en/product/perfect-bound-books/",
+        "clicks": 2.0,
+        "impressions": 255.0,
+        "ctr": 0.0078000000000000005,
+        "position": 33.47,
+        "priority_score": 341.39
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/poster-buying-guide/",
+        "clicks": 0.0,
+        "impressions": 203.0,
+        "ctr": 0.0,
+        "position": 42.0,
+        "priority_score": 341.04
+      },
+      {
+        "key": "https://zprintpro.com/en/product/a2-posters/",
+        "clicks": 3.0,
+        "impressions": 273.0,
+        "ctr": 0.011000000000000001,
+        "position": 25.85,
+        "priority_score": 282.28
+      },
+      {
+        "key": "https://zprintpro.com/en/product/spiral-notebooks/",
+        "clicks": 0.0,
+        "impressions": 166.0,
+        "ctr": 0.0,
+        "position": 39.16,
+        "priority_score": 260.02
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/sticker-buying-guide/",
+        "clicks": 0.0,
+        "impressions": 102.0,
+        "ctr": 0.0,
+        "position": 62.11,
+        "priority_score": 253.41
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+        "clicks": 2.0,
+        "impressions": 179.0,
+        "ctr": 0.011200000000000002,
+        "position": 34.42,
+        "priority_score": 246.45
+      },
+      {
+        "key": "https://zprintpro.com/en/blog/calendar-sizes-print-reference/",
+        "clicks": 1.0,
+        "impressions": 207.0,
+        "ctr": 0.0048,
+        "position": 26.69,
+        "priority_score": 220.99
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/product/a5-flyers/",
+        "clicks": 4.0,
+        "impressions": 165.0,
+        "ctr": 0.0242,
+        "position": 33.05,
+        "priority_score": 218.13
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/product/perfect-bound-books/",
+        "clicks": 1.0,
+        "impressions": 139.0,
+        "ctr": 0.0072,
+        "position": 38.36,
+        "priority_score": 213.28
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/textbook-printing-guide/",
+        "clicks": 2.0,
+        "impressions": 141.0,
+        "ctr": 0.014199999999999999,
+        "position": 35.82,
+        "priority_score": 202.02
+      },
+      {
+        "key": "https://zprintpro.com/ja/category/packaging/",
+        "clicks": 0.0,
+        "impressions": 127.0,
+        "ctr": 0.0,
+        "position": 32.69,
+        "priority_score": 166.07
+      },
+      {
+        "key": "https://zprintpro.com/en/product/saddle-stitch-booklets/",
+        "clicks": 1.0,
+        "impressions": 105.0,
+        "ctr": 0.0095,
+        "position": 38.67,
+        "priority_score": 162.41
+      },
+      {
+        "key": "https://zprintpro.com/en/product/eco-flyers/",
+        "clicks": 0.0,
+        "impressions": 114.0,
+        "ctr": 0.0,
+        "position": 29.82,
+        "priority_score": 135.98
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/banner-buying-guide/",
+        "clicks": 0.0,
+        "impressions": 103.0,
+        "ctr": 0.0,
+        "position": 30.85,
+        "priority_score": 127.1
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+        "clicks": 2.0,
+        "impressions": 115.0,
+        "ctr": 0.0174,
+        "position": 25.16,
+        "priority_score": 115.74
+      },
+      {
+        "key": "https://zprintpro.com/zh-hk/blog/corporate-calendar-customization-2027/",
+        "clicks": 0.0,
+        "impressions": 103.0,
+        "ctr": 0.0,
+        "position": 25.72,
+        "priority_score": 105.97
+      }
+    ]
+  },
+  "query_page_source": {
+    "path": "F:\\zprintpro-nextjs\\GSC数据\\gsc-query-page-28d-freshest-api-2026-11-26.csv",
+    "rows": 2274
+  },
+  "query_page_focus": {
+    "印刷": {
+      "market": "zh-hk",
+      "role": "market_head",
+      "total": {
+        "rows": 2,
+        "clicks": 2.0,
+        "impressions": 159.0,
+        "ctr": 0.01257862,
+        "position_impression_weighted": 28.0657,
+        "position_denominator_impressions": 159.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 2.0,
+          "impressions": 115.0,
+          "ctr": 0.0174,
+          "position": 25.03
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 44.0,
+          "ctr": 0.0,
+          "position": 36.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "印刷公司": {
+      "market": "zh-hk",
+      "role": "market_head",
+      "total": {
+        "rows": 2,
+        "clicks": 2.0,
+        "impressions": 148.0,
+        "ctr": 0.01351351,
+        "position_impression_weighted": 30.5601,
+        "position_denominator_impressions": 148.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+          "clicks": 1.0,
+          "impressions": 129.0,
+          "ctr": 0.0078000000000000005,
+          "position": 30.89
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 1.0,
+          "impressions": 19.0,
+          "ctr": 0.0526,
+          "position": 28.32
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "香港印刷": {
+      "market": "zh-hk",
+      "role": "market_head",
+      "total": {
+        "rows": 2,
+        "clicks": 2.0,
+        "impressions": 35.0,
+        "ctr": 0.05714286,
+        "position_impression_weighted": 12.0294,
+        "position_denominator_impressions": 35.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 2.0,
+          "impressions": 33.0,
+          "ctr": 0.060599999999999994,
+          "position": 10.91
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 30.5
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "香港印刷公司": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 26.8571,
+        "position_denominator_impressions": 14.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 10.0,
+          "ctr": 0.0,
+          "position": 31.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 4.0,
+          "ctr": 0.0,
+          "position": 16.5
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "印刷公司報價": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.4314,
+        "position_denominator_impressions": 14.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 12.0,
+          "ctr": 0.0,
+          "position": 6.67
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 12.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "即日印刷": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 4,
+        "clicks": 1.0,
+        "impressions": 57.0,
+        "ctr": 0.01754386,
+        "position_impression_weighted": 11.5412,
+        "position_denominator_impressions": 57.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+          "clicks": 1.0,
+          "impressions": 46.0,
+          "ctr": 0.0217,
+          "position": 9.28
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 9.0,
+          "ctr": 0.0,
+          "position": 14.33
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/same-day-flyers/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 45.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 57.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "即日急件": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 5,
+        "clicks": 0.0,
+        "impressions": 71.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.5507,
+        "position_denominator_impressions": 71.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+          "clicks": 0.0,
+          "impressions": 33.0,
+          "ctr": 0.0,
+          "position": 9.58
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/service-areas/",
+          "clicks": 0.0,
+          "impressions": 13.0,
+          "ctr": 0.0,
+          "position": 5.38
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 10.0,
+          "ctr": 0.0,
+          "position": 13.7
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+          "clicks": 0.0,
+          "impressions": 9.0,
+          "ctr": 0.0,
+          "position": 18.0
+        },
+        {
+          "page": "https://zprintpro.com/en/services/rush-printing-delivery/",
+          "clicks": 0.0,
+          "impressions": 6.0,
+          "ctr": 0.0,
+          "position": 10.67
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "urgent printing": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.2143,
+        "position_denominator_impressions": 14.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+          "clicks": 0.0,
+          "impressions": 10.0,
+          "ctr": 0.0,
+          "position": 14.5
+        },
+        {
+          "page": "https://zprintpro.com/en/services/rush-printing-delivery/",
+          "clicks": 0.0,
+          "impressions": 4.0,
+          "ctr": 0.0,
+          "position": 24.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "海報印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 9,
+        "clicks": 0.0,
+        "impressions": 463.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 41.2279,
+        "position_denominator_impressions": 463.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 100.0,
+          "ctr": 0.0,
+          "position": 30.16
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 85.0,
+          "ctr": 0.0,
+          "position": 30.68
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/retail-shop-poster-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 81.0,
+          "ctr": 0.0,
+          "position": 47.83
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/posters/",
+          "clicks": 0.0,
+          "impressions": 62.0,
+          "ctr": 0.0,
+          "position": 65.94
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/poster-buying-guide/",
+          "clicks": 0.0,
+          "impressions": 50.0,
+          "ctr": 0.0,
+          "position": 55.98
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "印海報": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 8,
+        "clicks": 0.0,
+        "impressions": 420.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 39.9093,
+        "position_denominator_impressions": 420.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/retail-shop-poster-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 73.0,
+          "ctr": 0.0,
+          "position": 48.4
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 72.0,
+          "ctr": 0.0,
+          "position": 30.17
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 71.0,
+          "ctr": 0.0,
+          "position": 21.46
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/posters/",
+          "clicks": 0.0,
+          "impressions": 65.0,
+          "ctr": 0.0,
+          "position": 51.35
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 59.0,
+          "ctr": 0.0,
+          "position": 34.44
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "海報印刷即日": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 4,
+        "clicks": 1.0,
+        "impressions": 40.0,
+        "ctr": 0.025,
+        "position_impression_weighted": 10.225,
+        "position_denominator_impressions": 40.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+          "clicks": 1.0,
+          "impressions": 19.0,
+          "ctr": 0.0526,
+          "position": 9.53
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 13.0,
+          "ctr": 0.0,
+          "position": 9.92
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/same-day-flyers/",
+          "clicks": 0.0,
+          "impressions": 7.0,
+          "ctr": 0.0,
+          "position": 12.71
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 10.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "海報印刷一張": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 20.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.251,
+        "position_denominator_impressions": 20.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 10.0,
+          "ctr": 0.0,
+          "position": 6.9
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a1-posters/",
+          "clicks": 0.0,
+          "impressions": 9.0,
+          "ctr": 0.0,
+          "position": 5.78
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/art-posters/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 4.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "a2印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.4286,
+        "position_denominator_impressions": 7.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 6.0,
+          "ctr": 0.0,
+          "position": 7.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 17.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "a2 印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 2,
+        "clicks": 1.0,
+        "impressions": 14.0,
+        "ctr": 0.07142857,
+        "position_impression_weighted": 7.7857,
+        "position_denominator_impressions": 14.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+          "clicks": 1.0,
+          "impressions": 9.0,
+          "ctr": 0.11109999999999999,
+          "position": 6.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 5.0,
+          "ctr": 0.0,
+          "position": 11.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "a1 印刷 即日": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 4,
+        "clicks": 0.0,
+        "impressions": 37.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.6751,
+        "position_denominator_impressions": 37.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 24.0,
+          "ctr": 0.0,
+          "position": 6.54
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a1-posters/",
+          "clicks": 0.0,
+          "impressions": 7.0,
+          "ctr": 0.0,
+          "position": 12.86
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+          "clicks": 0.0,
+          "impressions": 4.0,
+          "ctr": 0.0,
+          "position": 4.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 10.5
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "a2 印刷 即日": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 4,
+        "clicks": 0.0,
+        "impressions": 37.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.8092,
+        "position_denominator_impressions": 37.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 22.0,
+          "ctr": 0.0,
+          "position": 5.27
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 11.0,
+          "ctr": 0.0,
+          "position": 8.0
+        },
+        {
+          "page": "https://zprintpro.com/ja/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 18.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 6.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "a2 海報 印刷 一 張 價格": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 1.0,
+        "impressions": 2.0,
+        "ctr": 0.5,
+        "position_impression_weighted": 1.0,
+        "position_denominator_impressions": 2.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/art-posters/",
+          "clicks": 1.0,
+          "impressions": 1.0,
+          "ctr": 1.0,
+          "position": 1.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/poster-printing-price-guide/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 1.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "利是封印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 63.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 27.2695,
+        "position_denominator_impressions": 63.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/red-packets/",
+          "clicks": 0.0,
+          "impressions": 37.0,
+          "ctr": 0.0,
+          "position": 30.24
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/cny-2027-red-packet-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 21.0,
+          "ctr": 0.0,
+          "position": 25.1
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/custom-red-packets/",
+          "clicks": 0.0,
+          "impressions": 5.0,
+          "ctr": 0.0,
+          "position": 14.4
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "訂製利是封": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 50.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 26.2198,
+        "position_denominator_impressions": 50.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/red-packets/",
+          "clicks": 0.0,
+          "impressions": 31.0,
+          "ctr": 0.0,
+          "position": 27.55
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/custom-red-packets/",
+          "clicks": 0.0,
+          "impressions": 18.0,
+          "ctr": 0.0,
+          "position": 24.33
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/cny-2027-red-packet-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 19.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "2027利是封": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 15.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.53,
+        "position_denominator_impressions": 15.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/cny-2027-red-packet-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 15.0,
+          "ctr": 0.0,
+          "position": 6.53
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "月曆印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 6,
+        "clicks": 0.0,
+        "impressions": 287.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.885,
+        "position_denominator_impressions": 287.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+          "clicks": 0.0,
+          "impressions": 134.0,
+          "ctr": 0.0,
+          "position": 15.74
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/calendars/",
+          "clicks": 0.0,
+          "impressions": 93.0,
+          "ctr": 0.0,
+          "position": 38.75
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/corporate-calendar-customization-2027/",
+          "clicks": 0.0,
+          "impressions": 32.0,
+          "ctr": 0.0,
+          "position": 47.19
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/wall-calendars/",
+          "clicks": 0.0,
+          "impressions": 20.0,
+          "ctr": 0.0,
+          "position": 66.6
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/calendar-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 6.0,
+          "ctr": 0.0,
+          "position": 42.5
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "月曆印刷香港": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 1.0,
+        "impressions": 3.0,
+        "ctr": 0.33333333,
+        "position_impression_weighted": 19.0,
+        "position_denominator_impressions": 3.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+          "clicks": 1.0,
+          "impressions": 2.0,
+          "ctr": 0.5,
+          "position": 18.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/calendars/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 20.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "貼紙": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 5,
+        "clicks": 0.0,
+        "impressions": 223.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 44.8768,
+        "position_denominator_impressions": 223.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+          "clicks": 0.0,
+          "impressions": 74.0,
+          "ctr": 0.0,
+          "position": 42.18
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/stickers/",
+          "clicks": 0.0,
+          "impressions": 57.0,
+          "ctr": 0.0,
+          "position": 79.6
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+          "clicks": 0.0,
+          "impressions": 55.0,
+          "ctr": 0.0,
+          "position": 18.93
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+          "clicks": 0.0,
+          "impressions": 34.0,
+          "ctr": 0.0,
+          "position": 34.26
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+          "clicks": 0.0,
+          "impressions": 3.0,
+          "ctr": 0.0,
+          "position": 47.67
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "印貼紙": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 6,
+        "clicks": 0.0,
+        "impressions": 34.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.4988,
+        "position_denominator_impressions": 34.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+          "clicks": 0.0,
+          "impressions": 24.0,
+          "ctr": 0.0,
+          "position": 37.29
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+          "clicks": 0.0,
+          "impressions": 5.0,
+          "ctr": 0.0,
+          "position": 39.8
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-buying-guide/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 38.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 50.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 62.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "貼紙印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 6,
+        "clicks": 0.0,
+        "impressions": 384.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 43.5674,
+        "position_denominator_impressions": 384.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/stickers/",
+          "clicks": 0.0,
+          "impressions": 106.0,
+          "ctr": 0.0,
+          "position": 30.02
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+          "clicks": 0.0,
+          "impressions": 100.0,
+          "ctr": 0.0,
+          "position": 33.78
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+          "clicks": 0.0,
+          "impressions": 97.0,
+          "ctr": 0.0,
+          "position": 49.11
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-buying-guide/",
+          "clicks": 0.0,
+          "impressions": 53.0,
+          "ctr": 0.0,
+          "position": 76.02
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+          "clicks": 0.0,
+          "impressions": 16.0,
+          "ctr": 0.0,
+          "position": 60.25
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "貼紙訂製": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 6,
+        "clicks": 0.0,
+        "impressions": 131.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.8393,
+        "position_denominator_impressions": 131.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/stickers/",
+          "clicks": 0.0,
+          "impressions": 40.0,
+          "ctr": 0.0,
+          "position": 35.3
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+          "clicks": 0.0,
+          "impressions": 39.0,
+          "ctr": 0.0,
+          "position": 22.51
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+          "clicks": 0.0,
+          "impressions": 32.0,
+          "ctr": 0.0,
+          "position": 33.44
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-buying-guide/",
+          "clicks": 0.0,
+          "impressions": 10.0,
+          "ctr": 0.0,
+          "position": 45.4
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/die-cut-stickers/",
+          "clicks": 0.0,
+          "impressions": 6.0,
+          "ctr": 0.0,
+          "position": 25.83
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "透明貼紙印刷": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 20.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.303,
+        "position_denominator_impressions": 20.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+          "clicks": 0.0,
+          "impressions": 19.0,
+          "ctr": 0.0,
+          "position": 4.74
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/stickers/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 16.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "可移貼紙": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 96.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.1639,
+        "position_denominator_impressions": 96.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/removable-stickers/",
+          "clicks": 0.0,
+          "impressions": 77.0,
+          "ctr": 0.0,
+          "position": 9.97
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+          "clicks": 0.0,
+          "impressions": 16.0,
+          "ctr": 0.0,
+          "position": 34.19
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-material-pvc-vinyl-removable/",
+          "clicks": 0.0,
+          "impressions": 3.0,
+          "ctr": 0.0,
+          "position": 15.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "戶外可移貼紙": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 20.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.45,
+        "position_denominator_impressions": 20.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/removable-stickers/",
+          "clicks": 0.0,
+          "impressions": 15.0,
+          "ctr": 0.0,
+          "position": 7.8
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+          "clicks": 0.0,
+          "impressions": 5.0,
+          "ctr": 0.0,
+          "position": 14.4
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "宣傳單張": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 184.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 55.862,
+        "position_denominator_impressions": 184.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/flyers/",
+          "clicks": 0.0,
+          "impressions": 114.0,
+          "ctr": 0.0,
+          "position": 42.89
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+          "clicks": 0.0,
+          "impressions": 46.0,
+          "ctr": 0.0,
+          "position": 73.35
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a5-flyers/",
+          "clicks": 0.0,
+          "impressions": 24.0,
+          "ctr": 0.0,
+          "position": 83.96
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "宣傳單張印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 4,
+        "clicks": 0.0,
+        "impressions": 232.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 37.2516,
+        "position_denominator_impressions": 232.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/flyers/",
+          "clicks": 0.0,
+          "impressions": 128.0,
+          "ctr": 0.0,
+          "position": 28.81
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a5-flyers/",
+          "clicks": 0.0,
+          "impressions": 49.0,
+          "ctr": 0.0,
+          "position": 51.1
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+          "clicks": 0.0,
+          "impressions": 46.0,
+          "ctr": 0.0,
+          "position": 42.93
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/same-day-flyers/",
+          "clicks": 0.0,
+          "impressions": 9.0,
+          "ctr": 0.0,
+          "position": 52.89
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "摺頁印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 74.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.3749,
+        "position_denominator_impressions": 74.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 60.0,
+          "ctr": 0.0,
+          "position": 14.93
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/folded-leaflets/",
+          "clicks": 0.0,
+          "impressions": 14.0,
+          "ctr": 0.0,
+          "position": 43.71
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "紙袋印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 6,
+        "clicks": 0.0,
+        "impressions": 233.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 22.5065,
+        "position_denominator_impressions": 233.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/paper-bag-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 60.0,
+          "ctr": 0.0,
+          "position": 22.55
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/kraft-paper-bags/",
+          "clicks": 0.0,
+          "impressions": 58.0,
+          "ctr": 0.0,
+          "position": 14.12
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+          "clicks": 0.0,
+          "impressions": 55.0,
+          "ctr": 0.0,
+          "position": 19.44
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+          "clicks": 0.0,
+          "impressions": 51.0,
+          "ctr": 0.0,
+          "position": 33.84
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/eco-paper-bags/",
+          "clicks": 0.0,
+          "impressions": 7.0,
+          "ctr": 0.0,
+          "position": 24.86
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "訂做紙袋": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 113.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 23.7982,
+        "position_denominator_impressions": 113.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/paper-bags/",
+          "clicks": 0.0,
+          "impressions": 55.0,
+          "ctr": 0.0,
+          "position": 25.33
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/handle-bags/",
+          "clicks": 0.0,
+          "impressions": 47.0,
+          "ctr": 0.0,
+          "position": 19.15
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/gift-bags/",
+          "clicks": 0.0,
+          "impressions": 11.0,
+          "ctr": 0.0,
+          "position": 36.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "印書": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 7,
+        "clicks": 0.0,
+        "impressions": 196.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 48.2721,
+        "position_denominator_impressions": 196.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+          "clicks": 0.0,
+          "impressions": 54.0,
+          "ctr": 0.0,
+          "position": 36.69
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/books/",
+          "clicks": 0.0,
+          "impressions": 48.0,
+          "ctr": 0.0,
+          "position": 56.21
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 46.0,
+          "ctr": 0.0,
+          "position": 37.89
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/hardcover-books/",
+          "clicks": 0.0,
+          "impressions": 17.0,
+          "ctr": 0.0,
+          "position": 49.65
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/textbooks/",
+          "clicks": 0.0,
+          "impressions": 17.0,
+          "ctr": 0.0,
+          "position": 80.53
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "書刊印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 4,
+        "clicks": 0.0,
+        "impressions": 383.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 53.5775,
+        "position_denominator_impressions": 383.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+          "clicks": 0.0,
+          "impressions": 123.0,
+          "ctr": 0.0,
+          "position": 36.28
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/books/",
+          "clicks": 0.0,
+          "impressions": 117.0,
+          "ctr": 0.0,
+          "position": 65.15
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+          "clicks": 0.0,
+          "impressions": 95.0,
+          "ctr": 0.0,
+          "position": 54.55
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 48.0,
+          "ctr": 0.0,
+          "position": 67.77
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "書籍印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 26.0,
+        "position_denominator_impressions": 1.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 26.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "书籍印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 5.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.6,
+        "position_denominator_impressions": 5.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+          "clicks": 0.0,
+          "impressions": 5.0,
+          "ctr": 0.0,
+          "position": 7.6
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "小冊子印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 16.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.0012,
+        "position_denominator_impressions": 16.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/books/",
+          "clicks": 0.0,
+          "impressions": 11.0,
+          "ctr": 0.0,
+          "position": 18.82
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 5.0,
+          "ctr": 0.0,
+          "position": 35.4
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "膠裝書價格": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 114.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 46.0505,
+        "position_denominator_impressions": 114.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/books/",
+          "clicks": 0.0,
+          "impressions": 57.0,
+          "ctr": 0.0,
+          "position": 48.42
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 53.0,
+          "ctr": 0.0,
+          "position": 44.94
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/perfect-bound-books/",
+          "clicks": 0.0,
+          "impressions": 4.0,
+          "ctr": 0.0,
+          "position": 27.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "包裝盒印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 102.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 37.5412,
+        "position_denominator_impressions": 102.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+          "clicks": 0.0,
+          "impressions": 46.0,
+          "ctr": 0.0,
+          "position": 25.2
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/packaging/",
+          "clicks": 0.0,
+          "impressions": 40.0,
+          "ctr": 0.0,
+          "position": 53.85
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/kraft-paper-packaging-box/",
+          "clicks": 0.0,
+          "impressions": 16.0,
+          "ctr": 0.0,
+          "position": 32.25
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "包裝盒訂製": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 105.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 36.9615,
+        "position_denominator_impressions": 105.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/packaging/",
+          "clicks": 0.0,
+          "impressions": 53.0,
+          "ctr": 0.0,
+          "position": 45.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+          "clicks": 0.0,
+          "impressions": 34.0,
+          "ctr": 0.0,
+          "position": 26.56
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/kraft-paper-packaging-box/",
+          "clicks": 0.0,
+          "impressions": 18.0,
+          "ctr": 0.0,
+          "position": 32.94
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "紙盒印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 4,
+        "clicks": 0.0,
+        "impressions": 146.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 43.7677,
+        "position_denominator_impressions": 146.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/packaging/",
+          "clicks": 0.0,
+          "impressions": 50.0,
+          "ctr": 0.0,
+          "position": 53.14
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+          "clicks": 0.0,
+          "impressions": 36.0,
+          "ctr": 0.0,
+          "position": 32.67
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/kraft-paper-packaging-box/",
+          "clicks": 0.0,
+          "impressions": 32.0,
+          "ctr": 0.0,
+          "position": 37.03
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/corrugated-boxes/",
+          "clicks": 0.0,
+          "impressions": 28.0,
+          "ctr": 0.0,
+          "position": 49.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "紙盒訂製": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 4,
+        "clicks": 0.0,
+        "impressions": 99.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 36.6966,
+        "position_denominator_impressions": 99.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/packaging/",
+          "clicks": 0.0,
+          "impressions": 60.0,
+          "ctr": 0.0,
+          "position": 39.45
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/kraft-paper-packaging-box/",
+          "clicks": 0.0,
+          "impressions": 19.0,
+          "ctr": 0.0,
+          "position": 26.68
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+          "clicks": 0.0,
+          "impressions": 14.0,
+          "ctr": 0.0,
+          "position": 33.29
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/corrugated-boxes/",
+          "clicks": 0.0,
+          "impressions": 6.0,
+          "ctr": 0.0,
+          "position": 48.83
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "禮盒訂製": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 56.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 49.5,
+        "position_denominator_impressions": 56.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/packaging/",
+          "clicks": 0.0,
+          "impressions": 28.0,
+          "ctr": 0.0,
+          "position": 57.86
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+          "clicks": 0.0,
+          "impressions": 28.0,
+          "ctr": 0.0,
+          "position": 41.14
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "食品包裝印刷": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 283.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.7129,
+        "position_denominator_impressions": 283.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+          "clicks": 0.0,
+          "impressions": 136.0,
+          "ctr": 0.0,
+          "position": 14.52
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 132.0,
+          "ctr": 0.0,
+          "position": 7.94
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/packaging/",
+          "clicks": 0.0,
+          "impressions": 15.0,
+          "ctr": 0.0,
+          "position": 38.33
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "學校印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 5,
+        "clicks": 0.0,
+        "impressions": 99.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 23.3426,
+        "position_denominator_impressions": 99.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/school-flyers/",
+          "clicks": 0.0,
+          "impressions": 43.0,
+          "ctr": 0.0,
+          "position": 18.53
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/educational/",
+          "clicks": 0.0,
+          "impressions": 41.0,
+          "ctr": 0.0,
+          "position": 26.49
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/exercise-books/",
+          "clicks": 0.0,
+          "impressions": 12.0,
+          "ctr": 0.0,
+          "position": 27.67
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/campus-education-printing-pillar-guide/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 6.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 83.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "證書印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 10.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.699,
+        "position_denominator_impressions": 10.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 7.0,
+          "ctr": 0.0,
+          "position": 8.14
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/certificates/",
+          "clicks": 0.0,
+          "impressions": 3.0,
+          "ctr": 0.0,
+          "position": 16.67
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "易拉架印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 53.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 50.3764,
+        "position_denominator_impressions": 53.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 39.0,
+          "ctr": 0.0,
+          "position": 38.59
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/banner-buying-guide/",
+          "clicks": 0.0,
+          "impressions": 13.0,
+          "ctr": 0.0,
+          "position": 89.38
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/roll-up-banners/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 3.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "喜帖印刷": {
+      "market": "zh-hk",
+      "role": "category_commercial",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 48.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 41.56,
+        "position_denominator_impressions": 48.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/wedding-invitations/",
+          "clicks": 0.0,
+          "impressions": 48.0,
+          "ctr": 0.0,
+          "position": 41.56
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "印喜帖價格": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 1,
+        "clicks": 1.0,
+        "impressions": 13.0,
+        "ctr": 0.07692308,
+        "position_impression_weighted": 4.92,
+        "position_denominator_impressions": 13.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/wedding-invitation-pricing-guide/",
+          "clicks": 1.0,
+          "impressions": 13.0,
+          "ctr": 0.07690000000000001,
+          "position": 4.92
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "畢業紀念冊香港": {
+      "market": "zh-hk",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 1.0,
+        "impressions": 11.0,
+        "ctr": 0.09090909,
+        "position_impression_weighted": 11.4509,
+        "position_denominator_impressions": 11.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/graduation-yearbook/",
+          "clicks": 1.0,
+          "impressions": 9.0,
+          "ctr": 0.11109999999999999,
+          "position": 4.44
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/graduation-yearbook-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 43.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/hardcover-books/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 43.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "catalog printing china": {
+      "market": "en",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 36.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.6644,
+        "position_denominator_impressions": 36.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 21.0,
+          "ctr": 0.0,
+          "position": 15.76
+        },
+        {
+          "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+          "clicks": 0.0,
+          "impressions": 14.0,
+          "ctr": 0.0,
+          "position": 14.64
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/services/catalog-printing-china/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 28.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "catalogs printing china": {
+      "market": "en",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.43,
+        "position_denominator_impressions": 7.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 4.0,
+          "ctr": 0.0,
+          "position": 26.75
+        },
+        {
+          "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+          "clicks": 0.0,
+          "impressions": 3.0,
+          "ctr": 0.0,
+          "position": 37.67
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "china catalog printing": {
+      "market": "en",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 114.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.2116,
+        "position_denominator_impressions": 114.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 58.0,
+          "ctr": 0.0,
+          "position": 18.59
+        },
+        {
+          "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+          "clicks": 0.0,
+          "impressions": 55.0,
+          "ctr": 0.0,
+          "position": 15.38
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/services/catalog-printing-china/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 38.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "catalogue printing china": {
+      "market": "en",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 84.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.6038,
+        "position_denominator_impressions": 84.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+          "clicks": 0.0,
+          "impressions": 42.0,
+          "ctr": 0.0,
+          "position": 14.26
+        },
+        {
+          "page": "https://zprintpro.com/en/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 40.0,
+          "ctr": 0.0,
+          "position": 15.12
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/services/catalog-printing-china/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 11.5
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "custom catalog printing china": {
+      "market": "en",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 6.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.0,
+        "position_denominator_impressions": 6.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+          "clicks": 0.0,
+          "impressions": 3.0,
+          "ctr": 0.0,
+          "position": 48.67
+        },
+        {
+          "page": "https://zprintpro.com/en/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 3.0,
+          "ctr": 0.0,
+          "position": 11.33
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "catalog printing": {
+      "market": "en",
+      "role": "category_commercial",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.5,
+        "position_denominator_impressions": 2.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 24.5
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "small batch sticker printing": {
+      "market": "en",
+      "role": "high_intent",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.07,
+        "position_denominator_impressions": 14.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/small-batch-stickers/",
+          "clicks": 0.0,
+          "impressions": 14.0,
+          "ctr": 0.0,
+          "position": 6.07
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "small batch stickers": {
+      "market": "en",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 66.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.5914,
+        "position_denominator_impressions": 66.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/small-batch-stickers/",
+          "clicks": 0.0,
+          "impressions": 45.0,
+          "ctr": 0.0,
+          "position": 15.69
+        },
+        {
+          "page": "https://zprintpro.com/en/category/stickers/",
+          "clicks": 0.0,
+          "impressions": 21.0,
+          "ctr": 0.0,
+          "position": 15.38
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "booklet printing": {
+      "market": "en",
+      "role": "category_commercial",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 84.0,
+        "position_denominator_impressions": 1.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/perfect-bound-books/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 84.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "school exercise book printing": {
+      "market": "en",
+      "role": "high_intent",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 16.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.4344,
+        "position_denominator_impressions": 16.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/exercise-books/",
+          "clicks": 0.0,
+          "impressions": 15.0,
+          "ctr": 0.0,
+          "position": 12.33
+        },
+        {
+          "page": "https://zprintpro.com/en/category/educational/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 14.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "educational printing": {
+      "market": "en",
+      "role": "category_commercial",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 19.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.84,
+        "position_denominator_impressions": 19.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/category/educational/",
+          "clicks": 0.0,
+          "impressions": 19.0,
+          "ctr": 0.0,
+          "position": 35.84
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "doujinshi printing": {
+      "market": "en",
+      "role": "category_commercial",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 58.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.2629,
+        "position_denominator_impressions": 58.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/doujinshi-printing/",
+          "clicks": 0.0,
+          "impressions": 57.0,
+          "ctr": 0.0,
+          "position": 10.25
+        },
+        {
+          "page": "https://zprintpro.com/en/category/japan-doujin/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 11.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "doujin printing": {
+      "market": "en",
+      "role": "category_commercial",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.0,
+        "position_denominator_impressions": 8.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/doujinshi-printing/",
+          "clicks": 0.0,
+          "impressions": 8.0,
+          "ctr": 0.0,
+          "position": 9.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "a2 poster printing": {
+      "market": "en",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 31.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 34.8671,
+        "position_denominator_impressions": 31.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/en/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 28.0,
+          "ctr": 0.0,
+          "position": 38.21
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 4.0
+        },
+        {
+          "page": "https://zprintpro.com/ja/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 3.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "a2 printing": {
+      "market": "en",
+      "role": "category_commercial",
+      "total": {
+        "rows": 2,
+        "clicks": 1.0,
+        "impressions": 25.0,
+        "ctr": 0.04,
+        "position_impression_weighted": 10.0792,
+        "position_denominator_impressions": 25.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+          "clicks": 1.0,
+          "impressions": 19.0,
+          "ctr": 0.0526,
+          "position": 7.42
+        },
+        {
+          "page": "https://zprintpro.com/en/product/a2-posters/",
+          "clicks": 0.0,
+          "impressions": 6.0,
+          "ctr": 0.0,
+          "position": 18.5
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "ステッカー 小ロット": {
+      "market": "ja",
+      "role": "high_intent",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 43.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.35,
+        "position_denominator_impressions": 43.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+          "clicks": 0.0,
+          "impressions": 43.0,
+          "ctr": 0.0,
+          "position": 8.35
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "ステッカー印刷 小ロット": {
+      "market": "ja",
+      "role": "high_intent",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 35.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.06,
+        "position_denominator_impressions": 35.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+          "clicks": 0.0,
+          "impressions": 35.0,
+          "ctr": 0.0,
+          "position": 10.06
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "小ロット ステッカー": {
+      "market": "ja",
+      "role": "high_intent",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.0,
+        "position_denominator_impressions": 1.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/small-batch-stickers/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 5.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "防水ステッカー": {
+      "market": "ja",
+      "role": "high_intent",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 43.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.0,
+        "position_denominator_impressions": 43.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/waterproof-stickers/",
+          "clicks": 0.0,
+          "impressions": 43.0,
+          "ctr": 0.0,
+          "position": 12.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "冊子印刷": {
+      "market": "ja",
+      "role": "category_commercial",
+      "total": {
+        "rows": 4,
+        "clicks": 0.0,
+        "impressions": 9.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 44.1111,
+        "position_denominator_impressions": 9.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/books/",
+          "clicks": 0.0,
+          "impressions": 4.0,
+          "ctr": 0.0,
+          "position": 57.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 31.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 2.0,
+          "ctr": 0.0,
+          "position": 27.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/perfect-bound-books/",
+          "clicks": 0.0,
+          "impressions": 1.0,
+          "ctr": 0.0,
+          "position": 49.0
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "中綴じ 印刷": {
+      "market": "ja",
+      "role": "high_intent",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 76.88,
+        "position_denominator_impressions": 8.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+          "clicks": 0.0,
+          "impressions": 8.0,
+          "ctr": 0.0,
+          "position": 76.88
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "カタログ 印刷": {
+      "market": "ja",
+      "role": "category_commercial",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 27.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 33.7,
+        "position_denominator_impressions": 27.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 27.0,
+          "ctr": 0.0,
+          "position": 33.7
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "カタログ印刷": {
+      "market": "ja",
+      "role": "category_commercial",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 11.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.18,
+        "position_denominator_impressions": 11.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/catalog-printing/",
+          "clicks": 0.0,
+          "impressions": 11.0,
+          "ctr": 0.0,
+          "position": 8.18
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "パッケージ印刷": {
+      "market": "ja",
+      "role": "category_commercial",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 79.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.96,
+        "position_denominator_impressions": 79.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/category/packaging/",
+          "clicks": 0.0,
+          "impressions": 79.0,
+          "ctr": 0.0,
+          "position": 35.96
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "教材 印刷製本": {
+      "market": "ja",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 80.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 48.2611,
+        "position_denominator_impressions": 80.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/textbooks/",
+          "clicks": 0.0,
+          "impressions": 52.0,
+          "ctr": 0.0,
+          "position": 61.17
+        },
+        {
+          "page": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 21.0,
+          "ctr": 0.0,
+          "position": 13.86
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/textbook-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 7.0,
+          "ctr": 0.0,
+          "position": 55.57
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "教材 印刷 製本": {
+      "market": "ja",
+      "role": "high_intent",
+      "total": {
+        "rows": 3,
+        "clicks": 0.0,
+        "impressions": 50.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 48.1796,
+        "position_denominator_impressions": 50.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/textbooks/",
+          "clicks": 0.0,
+          "impressions": 33.0,
+          "ctr": 0.0,
+          "position": 59.0
+        },
+        {
+          "page": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 11.0,
+          "ctr": 0.0,
+          "position": 14.0
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/textbook-printing-guide/",
+          "clicks": 0.0,
+          "impressions": 6.0,
+          "ctr": 0.0,
+          "position": 51.33
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "卒業アルバム 印刷": {
+      "market": "ja",
+      "role": "high_intent",
+      "total": {
+        "rows": 1,
+        "clicks": 0.0,
+        "impressions": 32.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 60.16,
+        "position_denominator_impressions": 32.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/graduation-yearbook/",
+          "clicks": 0.0,
+          "impressions": 32.0,
+          "ctr": 0.0,
+          "position": 60.16
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    },
+    "コミケ 印刷": {
+      "market": "ja",
+      "role": "category_commercial",
+      "total": {
+        "rows": 2,
+        "clicks": 0.0,
+        "impressions": 102.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.0565,
+        "position_denominator_impressions": 102.0
+      },
+      "observed_pages": [
+        {
+          "page": "https://zprintpro.com/ja/product/doujinshi-printing/",
+          "clicks": 0.0,
+          "impressions": 62.0,
+          "ctr": 0.0,
+          "position": 20.48
+        },
+        {
+          "page": "https://zprintpro.com/ja/blog/comiket-printing-prep-guide/",
+          "clicks": 0.0,
+          "impressions": 40.0,
+          "ctr": 0.0,
+          "position": 47.45
+        }
+      ],
+      "decision_note": "曝光最多 URL 仅为观测主承接；不自动推导 301/canonical/删页"
+    }
+  },
+  "exact_query_movers_vs_2026-10-30": {
+    "top_improvements": [
+      {
+        "query": "易拉架",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 39.0,
+          "ctr": 0.0,
+          "position": 23.08
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 11.0,
+          "ctr": 0.0,
+          "position": 47.55
+        },
+        "delta_position_negative_is_improvement": -24.47
+      },
+      {
+        "query": "カレンダー オフセット",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 15.0,
+          "ctr": 0.0,
+          "position": 24.27
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 18.0,
+          "ctr": 0.0,
+          "position": 44.61
+        },
+        "delta_position_negative_is_improvement": -20.34
+      },
+      {
+        "query": "how big is a standard wall calendar",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 44.0,
+          "ctr": 0.0,
+          "position": 50.41
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 15.0,
+          "ctr": 0.0,
+          "position": 70.67
+        },
+        "delta_position_negative_is_improvement": -20.26
+      },
+      {
+        "query": "卒業アルバム 印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 36.0,
+          "ctr": 0.0,
+          "position": 60.72
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 19.0,
+          "ctr": 0.0,
+          "position": 80.68
+        },
+        "delta_position_negative_is_improvement": -19.96
+      },
+      {
+        "query": "防水貼紙",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 59.0,
+          "ctr": 0.0,
+          "position": 11.07
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 11.0,
+          "ctr": 0.0,
+          "position": 30.64
+        },
+        "delta_position_negative_is_improvement": -19.57
+      },
+      {
+        "query": "a2 ポスター 印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 13.0,
+          "ctr": 0.0,
+          "position": 32.92
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 25.0,
+          "ctr": 0.0,
+          "position": 52.12
+        },
+        "delta_position_negative_is_improvement": -19.2
+      },
+      {
+        "query": "クラフト紙 パッケージ印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 18.0,
+          "ctr": 0.0,
+          "position": 7.39
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 52.0,
+          "ctr": 0.0,
+          "position": 26.48
+        },
+        "delta_position_negative_is_improvement": -19.09
+      },
+      {
+        "query": "貼紙",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 146.0,
+          "ctr": 0.0,
+          "position": 38.57
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 33.0,
+          "ctr": 0.0,
+          "position": 55.67
+        },
+        "delta_position_negative_is_improvement": -17.1
+      },
+      {
+        "query": "クラフト紙 パッケージ 印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 21.0,
+          "ctr": 0.0,
+          "position": 12.48
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 53.0,
+          "ctr": 0.0,
+          "position": 26.94
+        },
+        "delta_position_negative_is_improvement": -14.46
+      },
+      {
+        "query": "摺頁印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 71.0,
+          "ctr": 0.0,
+          "position": 17.86
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 50.0,
+          "ctr": 0.0,
+          "position": 31.38
+        },
+        "delta_position_negative_is_improvement": -13.52
+      },
+      {
+        "query": "紙袋",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 10.0,
+          "ctr": 0.0,
+          "position": 20.4
+        },
+        "previous_2026_10_30": {
+          "clicks": 1.0,
+          "impressions": 39.0,
+          "ctr": 0.0256,
+          "position": 31.46
+        },
+        "delta_position_negative_is_improvement": -11.06
+      },
+      {
+        "query": "貼紙印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 252.0,
+          "ctr": 0.0,
+          "position": 30.15
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 120.0,
+          "ctr": 0.0,
+          "position": 40.88
+        },
+        "delta_position_negative_is_improvement": -10.73
+      },
+      {
+        "query": "calendar sizes",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 47.0,
+          "ctr": 0.0,
+          "position": 33.28
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 14.0,
+          "ctr": 0.0,
+          "position": 43.43
+        },
+        "delta_position_negative_is_improvement": -10.15
+      },
+      {
+        "query": "膠片餐牌",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 17.0,
+          "ctr": 0.0,
+          "position": 18.06
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 15.0,
+          "ctr": 0.0,
+          "position": 27.93
+        },
+        "delta_position_negative_is_improvement": -9.87
+      },
+      {
+        "query": "食品 パッケージ印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 12.0,
+          "ctr": 0.0,
+          "position": 42.75
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 15.0,
+          "ctr": 0.0,
+          "position": 51.2
+        },
+        "delta_position_negative_is_improvement": -8.45
+      },
+      {
+        "query": "書刊",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 49.0,
+          "ctr": 0.0,
+          "position": 41.88
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 28.0,
+          "ctr": 0.0,
+          "position": 49.36
+        },
+        "delta_position_negative_is_improvement": -7.48
+      },
+      {
+        "query": "紙張材質",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 11.0,
+          "ctr": 0.0,
+          "position": 64.73
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 21.0,
+          "ctr": 0.0,
+          "position": 71.67
+        },
+        "delta_position_negative_is_improvement": -6.94
+      },
+      {
+        "query": "戶外可移貼紙",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 21.0,
+          "ctr": 0.0,
+          "position": 9.62
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 11.0,
+          "ctr": 0.0,
+          "position": 15.91
+        },
+        "delta_position_negative_is_improvement": -6.29
+      },
+      {
+        "query": "教科書 印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 81.0,
+          "ctr": 0.0,
+          "position": 41.27
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 45.0,
+          "ctr": 0.0,
+          "position": 47.36
+        },
+        "delta_position_negative_is_improvement": -6.09
+      },
+      {
+        "query": "包裝食品 裡印",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 43.0,
+          "ctr": 0.0,
+          "position": 3.63
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 31.0,
+          "ctr": 0.0,
+          "position": 9.39
+        },
+        "delta_position_negative_is_improvement": -5.76
+      },
+      {
+        "query": "可移貼紙",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 101.0,
+          "ctr": 0.0,
+          "position": 14.47
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 37.0,
+          "ctr": 0.0,
+          "position": 20.14
+        },
+        "delta_position_negative_is_improvement": -5.67
+      },
+      {
+        "query": "包裝盒",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 45.0,
+          "ctr": 0.0,
+          "position": 29.64
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 22.0,
+          "ctr": 0.0,
+          "position": 34.32
+        },
+        "delta_position_negative_is_improvement": -4.68
+      },
+      {
+        "query": "pvc シール",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 27.0,
+          "ctr": 0.0,
+          "position": 14.26
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 20.0,
+          "ctr": 0.0,
+          "position": 18.75
+        },
+        "delta_position_negative_is_improvement": -4.49
+      },
+      {
+        "query": "両面カラー印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 53.0,
+          "ctr": 0.0,
+          "position": 39.0
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 14.0,
+          "ctr": 0.0,
+          "position": 43.43
+        },
+        "delta_position_negative_is_improvement": -4.43
+      },
+      {
+        "query": "易拉架價錢",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 38.0,
+          "ctr": 0.0,
+          "position": 19.03
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 17.0,
+          "ctr": 0.0,
+          "position": 23.29
+        },
+        "delta_position_negative_is_improvement": -4.26
+      },
+      {
+        "query": "a2 印刷",
+        "current": {
+          "clicks": 1.0,
+          "impressions": 10.0,
+          "ctr": 0.1,
+          "position": 5.9
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 14.0,
+          "ctr": 0.0,
+          "position": 10.07
+        },
+        "delta_position_negative_is_improvement": -4.17
+      },
+      {
+        "query": "透明貼紙",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 51.0,
+          "ctr": 0.0,
+          "position": 18.16
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 28.0,
+          "ctr": 0.0,
+          "position": 22.32
+        },
+        "delta_position_negative_is_improvement": -4.16
+      },
+      {
+        "query": "即日急件",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 46.0,
+          "ctr": 0.0,
+          "position": 8.98
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 29.0,
+          "ctr": 0.0,
+          "position": 12.86
+        },
+        "delta_position_negative_is_improvement": -3.88
+      },
+      {
+        "query": "貼紙訂製",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 97.0,
+          "ctr": 0.0,
+          "position": 28.58
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 34.0,
+          "ctr": 0.0,
+          "position": 32.41
+        },
+        "delta_position_negative_is_improvement": -3.83
+      },
+      {
+        "query": "澳門易拉架size",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 41.0,
+          "ctr": 0.0,
+          "position": 5.51
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 13.0,
+          "ctr": 0.0,
+          "position": 9.23
+        },
+        "delta_position_negative_is_improvement": -3.72
+      }
+    ],
+    "top_declines": [
+      {
+        "query": "double sided flyer printing",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 23.0,
+          "ctr": 0.0,
+          "position": 46.57
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 10.0,
+          "ctr": 0.0,
+          "position": 18.5
+        },
+        "delta_position_negative_is_improvement": 28.07
+      },
+      {
+        "query": "教材 印刷 製本",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 45.0,
+          "ctr": 0.0,
+          "position": 45.49
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 19.0,
+          "ctr": 0.0,
+          "position": 17.42
+        },
+        "delta_position_negative_is_improvement": 28.07
+      },
+      {
+        "query": "a2 poster",
+        "current": {
+          "clicks": 1.0,
+          "impressions": 44.0,
+          "ctr": 0.0227,
+          "position": 45.2
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 54.0,
+          "ctr": 0.0,
+          "position": 17.2
+        },
+        "delta_position_negative_is_improvement": 28.0
+      },
+      {
+        "query": "喜帖印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 51.0,
+          "ctr": 0.0,
+          "position": 40.98
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 15.0,
+          "ctr": 0.0,
+          "position": 16.13
+        },
+        "delta_position_negative_is_improvement": 24.85
+      },
+      {
+        "query": "教材 印刷製本",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 78.0,
+          "ctr": 0.0,
+          "position": 45.04
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 39.0,
+          "ctr": 0.0,
+          "position": 20.69
+        },
+        "delta_position_negative_is_improvement": 24.35
+      },
+      {
+        "query": "a2 poster printing",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 41.0,
+          "ctr": 0.0,
+          "position": 37.78
+        },
+        "previous_2026_10_30": {
+          "clicks": 1.0,
+          "impressions": 16.0,
+          "ctr": 0.0625,
+          "position": 17.31
+        },
+        "delta_position_negative_is_improvement": 20.47
+      },
+      {
+        "query": "膠裝書刊",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 34.0,
+          "ctr": 0.0,
+          "position": 54.15
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 35.0,
+          "ctr": 0.0,
+          "position": 35.97
+        },
+        "delta_position_negative_is_improvement": 18.18
+      },
+      {
+        "query": "無線綴じ 小ロット",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 51.0,
+          "ctr": 0.0,
+          "position": 61.86
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 19.0,
+          "ctr": 0.0,
+          "position": 44.74
+        },
+        "delta_position_negative_is_improvement": 17.12
+      },
+      {
+        "query": "宣傳單張",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 142.0,
+          "ctr": 0.0,
+          "position": 45.27
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 117.0,
+          "ctr": 0.0,
+          "position": 29.37
+        },
+        "delta_position_negative_is_improvement": 15.9
+      },
+      {
+        "query": "騎馬釘印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 86.0,
+          "ctr": 0.0,
+          "position": 27.6
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 61.0,
+          "ctr": 0.0,
+          "position": 12.23
+        },
+        "delta_position_negative_is_improvement": 15.37
+      },
+      {
+        "query": "印海報",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 133.0,
+          "ctr": 0.0,
+          "position": 27.94
+        },
+        "previous_2026_10_30": {
+          "clicks": 1.0,
+          "impressions": 125.0,
+          "ctr": 0.008,
+          "position": 12.79
+        },
+        "delta_position_negative_is_improvement": 15.15
+      },
+      {
+        "query": "海報印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 198.0,
+          "ctr": 0.0,
+          "position": 28.46
+        },
+        "previous_2026_10_30": {
+          "clicks": 1.0,
+          "impressions": 286.0,
+          "ctr": 0.0034999999999999996,
+          "position": 14.94
+        },
+        "delta_position_negative_is_improvement": 13.52
+      },
+      {
+        "query": "poster 印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 92.0,
+          "ctr": 0.0,
+          "position": 24.53
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 77.0,
+          "ctr": 0.0,
+          "position": 11.04
+        },
+        "delta_position_negative_is_improvement": 13.49
+      },
+      {
+        "query": "小冊子印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 16.0,
+          "ctr": 0.0,
+          "position": 24.0
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 52.0,
+          "ctr": 0.0,
+          "position": 10.6
+        },
+        "delta_position_negative_is_improvement": 13.4
+      },
+      {
+        "query": "騎馬釘",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 106.0,
+          "ctr": 0.0,
+          "position": 31.18
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 59.0,
+          "ctr": 0.0,
+          "position": 19.29
+        },
+        "delta_position_negative_is_improvement": 11.89
+      },
+      {
+        "query": "コミケ 印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 111.0,
+          "ctr": 0.0,
+          "position": 30.09
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 173.0,
+          "ctr": 0.0,
+          "position": 18.99
+        },
+        "delta_position_negative_is_improvement": 11.1
+      },
+      {
+        "query": "座檯月曆",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 11.0,
+          "ctr": 0.0,
+          "position": 47.73
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 16.0,
+          "ctr": 0.0,
+          "position": 37.19
+        },
+        "delta_position_negative_is_improvement": 10.54
+      },
+      {
+        "query": "small batch stickers",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 63.0,
+          "ctr": 0.0,
+          "position": 14.98
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 25.0,
+          "ctr": 0.0,
+          "position": 5.04
+        },
+        "delta_position_negative_is_improvement": 9.94
+      },
+      {
+        "query": "膠裝書印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 70.0,
+          "ctr": 0.0,
+          "position": 41.24
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 51.0,
+          "ctr": 0.0,
+          "position": 31.63
+        },
+        "delta_position_negative_is_improvement": 9.61
+      },
+      {
+        "query": "海報與印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 70.0,
+          "ctr": 0.0,
+          "position": 19.86
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 57.0,
+          "ctr": 0.0,
+          "position": 11.56
+        },
+        "delta_position_negative_is_improvement": 8.3
+      },
+      {
+        "query": "車身廣告",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 23.0,
+          "ctr": 0.0,
+          "position": 41.39
+        },
+        "previous_2026_10_30": {
+          "clicks": 1.0,
+          "impressions": 24.0,
+          "ctr": 0.0417,
+          "position": 33.88
+        },
+        "delta_position_negative_is_improvement": 7.51
+      },
+      {
+        "query": "紙袋印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 125.0,
+          "ctr": 0.0,
+          "position": 22.46
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 64.0,
+          "ctr": 0.0,
+          "position": 15.11
+        },
+        "delta_position_negative_is_improvement": 7.35
+      },
+      {
+        "query": "印刷紙袋",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 118.0,
+          "ctr": 0.0,
+          "position": 24.94
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 61.0,
+          "ctr": 0.0,
+          "position": 17.79
+        },
+        "delta_position_negative_is_improvement": 7.15
+      },
+      {
+        "query": "利是封訂製",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 45.0,
+          "ctr": 0.0,
+          "position": 24.33
+        },
+        "previous_2026_10_30": {
+          "clicks": 1.0,
+          "impressions": 28.0,
+          "ctr": 0.035699999999999996,
+          "position": 17.61
+        },
+        "delta_position_negative_is_improvement": 6.72
+      },
+      {
+        "query": "印月曆",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 13.0,
+          "ctr": 0.0,
+          "position": 22.23
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 10.0,
+          "ctr": 0.0,
+          "position": 15.6
+        },
+        "delta_position_negative_is_improvement": 6.63
+      },
+      {
+        "query": "educational printing",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 20.0,
+          "ctr": 0.0,
+          "position": 35.1
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 10.0,
+          "ctr": 0.0,
+          "position": 28.6
+        },
+        "delta_position_negative_is_improvement": 6.5
+      },
+      {
+        "query": "書刊印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 168.0,
+          "ctr": 0.0,
+          "position": 38.71
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 101.0,
+          "ctr": 0.0,
+          "position": 32.28
+        },
+        "delta_position_negative_is_improvement": 6.43
+      },
+      {
+        "query": "bulk catalog printing",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 35.0,
+          "ctr": 0.0,
+          "position": 24.83
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 18.0,
+          "ctr": 0.0,
+          "position": 18.67
+        },
+        "delta_position_negative_is_improvement": 6.16
+      },
+      {
+        "query": "餐牌印刷",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 51.0,
+          "ctr": 0.0,
+          "position": 16.27
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 26.0,
+          "ctr": 0.0,
+          "position": 10.15
+        },
+        "delta_position_negative_is_improvement": 6.12
+      },
+      {
+        "query": "膠裝書價格",
+        "current": {
+          "clicks": 0.0,
+          "impressions": 70.0,
+          "ctr": 0.0,
+          "position": 37.0
+        },
+        "previous_2026_10_30": {
+          "clicks": 0.0,
+          "impressions": 42.0,
+          "ctr": 0.0,
+          "position": 31.62
+        },
+        "delta_position_negative_is_improvement": 5.38
+      }
+    ]
+  },
+  "7d_visible_but_28d_not_visible_requires_api_recheck": []
+}

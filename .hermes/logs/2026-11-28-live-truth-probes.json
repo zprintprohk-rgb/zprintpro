@@ -1,0 +1,1876 @@
+{
+  "generated_at": "2026-11-28T05:14:01.146402+08:00",
+  "method": "Independent live HTTP fetch, ordinary browser-like UA plus explicit crawler UAs; observational point-in-time probe, not a Google crawl/render or Search Console validation.",
+  "scope_note": "No content mutation. Commercial snippets are extracted visible-text candidates requiring human/source-of-truth adjudication; absence is not proof of absence. Cloudflare plan and prior 1102/403 clearance cannot be inferred from this probe alone.",
+  "pages": [
+    {
+      "requested_url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "final_url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "status": 200,
+      "elapsed_ms": 1549,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a6142399cc3a0d8d-SEA"
+      },
+      "bytes": 203487,
+      "title": "即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智印港",
+      "canonical": [
+        "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/"
+        },
+        {
+          "lang": "en",
+          "url": "https://zprintpro.com/en/blog/rush-printing-hk-guide/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/blog/rush-printing-hk-guide/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/"
+        }
+      ],
+      "h1": [
+        "即日急件印刷全攻略：邊度最快？幾錢？幾點截單？"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "Organization",
+        "Person",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "派中最快—— 跨境物流標準 Express Worldwide 1-4 個工作天送達美加歐日主要城市。 門派 截單時間 香港送達 跨境送達 MOQ 最低 急件附加費 智印港自營工廠 每日 18:00 翌日 12:00 前 DHL 2-4 天 100 張 +30-50% 印刷中介 每日 16:00 24-48 小時 5-7 天 200 張 +50",
+        "海報 100 張起 HK$15/張，急件 HK$22/張；貼紙 100 張起 HK$0.22/張，急件 HK$0.32/張；紙袋 100 個起 HK$3/個，急件 HK$4.5/個。急件附加費 30-50% 主要覆蓋通宵印刷，順豐急送，刀模優先排程成本，對比門市快圖美 +80-120% 仍低 50% 以上。 印刷業均價報告 ，香港市場印刷均",
+        "品質保證 · 智印港 雙麵傳單印刷 · A4單張 · 最快24小時 · 品質保證 · 智印港 熱門產品 防水貼紙 / 戶外貼紙 訂製 10個起印 · 5-7天交期 · 智印港 · 不干膠 · 香港印刷專家 · 智印港 防水貼紙 / 戶外貼紙 PVC材質，防水防曬耐磨，適合戶外使用、產品標籤、車身貼紙、設備標識、活動紀念。5-7 天交期，DH",
+        "UV、壓紋工藝。 适配行业: 美妝護膚、珠寶鐘錶、婚慶、茶飲食品、電子產品、禮品、節日送禮. HK$15 查詢更多 牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 · 服裝品牌跨境電商適配 | 智印港 · 品質保證 · 智印港 牛皮紙袋印刷訂製 100 個起，HK$8 起/個。牛皮紙 120–200g 級，多尺寸多規格，免費刀模設計，支",
+        "融證券回饋、奢侈品品牌營銷。 HK$1.10 查詢更多 香港練習簿印刷 / School Exercise Book Printing — MOQ 10 30秒AI報價 DHL 2-4天 · 智印港 School exercise book printing 練習簿印刷服務, 補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕",
+        "業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。 ¥7,500〜/注文〜 查詢更多 防水貼紙 / 戶外貼紙 訂製 10個起印 · 5-7天交期 · 智印港 · 不干膠 · 香港印刷專家 · 智印港 防水貼紙 / 戶外貼紙 PVC材質，防水防曬耐磨，適合戶外使用、產品標籤、車身貼紙、設備標識、活動紀念。5-7 天交期，DH",
+        "刷知識 重點摘要： 香港印刷旺季急單需求 +35%，智印港即日急件 每日 18:00 截單、順豐翌日中午 12:00 前送到 ， 100 張起印 CMYK 全彩防水 。本文拆解 3 大門派（自營工廠 / 印刷中介 / 門市快圖美） 4 個品類真實單價，多個行業場景，4 條 FAQ，5 條主題集群內部連結，4 個 JSON-LD schema",
+        "秒 AI 報價之前已經心中有數。真正趕時間嘅單，可直接睇 即日印刷 服務專頁嘅截單時間同附加費。 即日傳單幾錢？ A4 雙面傳單 100 張起印 HK$0.35/張（急件），普通件 HK$0.25/張，急件附加費 30-50%。 幾點截單？ 每日 18:00 截單，順豐翌日中午 12:00 前送到，跨境急件 DHL 2-4 天。 最快幾耐到",
+        "即時印刷 4 個核心品類的真實單價（2026 年 8 月數據，Statista 2024 全球印刷品類均價對照）：A4 雙面傳單 100 張起 HK$0.25/張，急件加 30-50% 後約 HK$0.35/張；A2 海報 100 張起 HK$15/張，急件 HK$22/張；貼紙 100 張起 HK$0.22/張，急件 HK$0.32/張；",
+        "紙袋 100 個起 HK$3/個，急件 HK$4.5/個。急件附加費 30-50% 主要覆蓋通宵印刷，順豐急送，刀模優先排程成本，對比門市快圖美 +80-120% 仍低 50% 以上。 印刷業均價報告 ，香港市場印刷均價較亞洲整體高 15-25%，",
+        "價格壓低至香港均價 80% 水平。 品類 規格 普通件 100 張 急件 100 張 差價 A4 傳單（雙面 CMYK） 157g 銅版紙 HK$0.25/張 HK$0.35/張 +40% A2 海報（單面 CMYK） 200g 銅版紙 HK$15/張 HK$22/張 +47% 貼紙（圓形 / 方形） 亮膜，模切 HK$0.22/張 HK$0.",
+        "32/張 +45% 紙袋（標準尺寸） 250g 白卡，棉繩 HK$3/個 HK$4.5/個 +50% 【即日印刷唔等於天價：A4 傳單 100 張起印 HK$0.35/張，比門市快圖美急件平 50% 以上。】 邊 6 大場景最需要即日印刷？ 即時印刷 6 大旺季場景佔智印港急件訂單",
+        "口印刷設備 印刷機通宵印刷 → ⑤ 翌日 12:00 前順豐送達（港島 / 九龍 / 新界全港） / DHL 跨境 2-4 天。香港本地滿 HK$500 免運費，跨境 DHL 計重計費。 SLA 標準 ，FedEx International Priority 全球 1-3 個工作天； SLA 標準 ，DHL Express Worldwide",
+        "atsApp 30 秒報價 / 急件 18:00 截單） 支撐頁 1: 傳單印刷類目 （A4 / A5 / A6 雙面 CMYK，100 張起印，急件首選） 支撐頁 2: 海報印刷類目 （A1 / A2 / A3 / MTR 12 sheet 燈箱，展會物料） 支撐頁 3: 貼紙印刷類目 （圓形 / 方形 / 模切 / 防水，產品包裝急件）",
+        "press Worldwide 1-4 天跨境。 Q2: 即日同普通件差幾錢？ A2: 急件附加費 30-50%，視乎品類同數量。100 張起加 30-40%，500 張起加 30%，1,000 張以上加 30-50%（視乎工廠排程）。對比門市快圖美 +80-120% 仍低 50% 以上。例如 100 張 A4 雙面傳單，普通件 HK$25",
+        "，急件 HK$35，差 HK$10（+40%）。 Q3: 點樣收貨？ A3: 3 種收貨方式：① 順豐送貨上門（全港，離島另議）；② 順豐自取櫃免費（指定 30 個櫃位，港島 / 九龍 / 新界）；③ 港鐵站交收免費（指定 10 個",
+        "格式，300dpi 解像度，CMYK 色彩模式，預留 3mm 出血位，文字轉外框（outline）。如設計未完成，智印港可提供付費設計服務（HK$200-500/件，視乎複雜度）。如使用 AI 自動生成設計，請確認所有字體已嵌入或轉外框。急件截單前 1 小時上傳檔案，逾期需重新排程。設計檔建議用 PDF/X-1a 格式（字體嵌入、色彩穩定，國際",
+        "a.me/8619880851334) 智 智印港印刷專家 印刷工藝・設計技巧・行業趨勢 更多印刷知識 相關產品推薦 A4傳單印刷 10 張起印 HK$0.3/張 雙麵彩印 | 智印港 · 最快24小時 · 品質保證 · 智印港 即日傳單印刷 · A4單張 · 最快24小時 · 品質保證 · 智印港 A5傳單印刷 10 張起印 雙麵四色 免"
+      ],
+      "entity_snippets": [
+        "最快？幾錢？幾點截單？本文用 2026 年 8 月真實客戶查詢數據，FedEx / DHL 2025 跨境配送標準對照，逐項拆解智印港 自營深圳工廠（智印港）嘅 18:00 截單，急件 18:00 截單 即日急件模式，等你喺 30 秒 AI 報價之前已經心中有數。真正趕時間嘅單，可直接睇 即日印刷 服務專頁嘅截單時間同附加費。 即日傳單幾錢？",
+        "iority 2025 SLA 1-3 個工作天 、 DHL Express Worldwide 2025 SLA 1-4 天 ，智印港自營深圳工廠模式喺速度、價格、跨境 3 方面達到最佳平衡——3 大門派中唯一支援 18:00 截單，順豐翌日中午，WhatsApp 30 秒報價，急件 18:00 截單，進口印刷設備 印刷機 3 個關鍵指標。",
+        "作天，智印港 14 小時交期比行業標準快 60-80%。 即日印刷 3 大門派邊個最快？ 香港即時印刷市場 3 大門派模式各異。 智印港自營深圳工廠 （智印港 母公司智印港，FSC 認證）採 18:00 截單，通宵印刷，06:00 分揀包裝，12:00 順豐送達模式， 急件 18:00 截單 平均交期 14 小時； 印刷中介 （如部分旺角 /",
+        "育 / 婚慶 / 文創 / 茶飲 / 跨境電商 / 美妝護膚 / 食品茶飲 / 金融銀行 / 房地產 / 物流服裝）。母公司智印港位於広東省深圳市深圳，配備 進口印刷設備 全新印刷機 （德國原裝高精度設備，色彩還原度極高） 進口印刷設備 數碼印刷機，煒岡 6 色 UV 輪轉機。 質量管理體系認證 ， FSC 森林認證 （FSC 認證紙）覆蓋全",
+        "定 30 個櫃位，港島 / 九龍 / 新界）；③ 港鐵站交收免費（指定 10 個站，詳情 WhatsApp 客服）。智印港無門市自取（工廠喺深圳龍崗區深圳），所有訂單經順豐 / DHL 配送。 Q4: 要準備咩文件？ A4: PDF 或 AI 格式，300dpi 解像度，CMYK 色彩模式，預留 3mm 出血位，文字轉外框（outline）。",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 [email protected] 週一至週六 09:00 - 18:00 (GMT+8) 中國大陸 24h 響應 · 香港本地客服",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 聯絡方式 WhatsApp 免費報價 產品中心 紙袋印刷 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷 學校印刷 關於我們 關於我們 品牌",
+        "東京，都能享受 智印港 的專業印刷服務與 72 小時全球交付承諾。 關注我們 © 2026 智印港. 保留所有權利。 本站內容由智印港團隊於深圳平湖嘉城路廠房實地原創，翻印抄錄必究（原創檔號 ZP-OC-2610）。 WhatsApp 立即查詢 2 小時內回覆 · 全港順豐本地倉 電郵查詢 2 小時內回覆 · 全港順豐本地倉"
+      ],
+      "language_clue_hits": [],
+      "visible_text_chars": 10794
+    },
+    {
+      "requested_url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+      "final_url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+      "status": 200,
+      "elapsed_ms": 278,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423a01e0c0d8d-SEA"
+      },
+      "bytes": 113599,
+      "title": "即日印刷・即日急件｜18:00 截單・翌日 12:00 送到 | 智印港",
+      "canonical": [
+        "https://zprintpro.com/zh-hk/services/rush-printing-delivery/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/"
+        },
+        {
+          "lang": "en",
+          "url": "https://zprintpro.com/en/services/rush-printing-delivery/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/services/rush-printing-delivery/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/"
+        }
+      ],
+      "h1": [
+        "即日印刷・即日急件 — 今晚 6 點前 落單，聽日中午 12 點前 到"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "BreadcrumbList",
+        "Country",
+        "FAQPage",
+        "ListItem",
+        "Offer",
+        "OfferCatalog",
+        "Organization",
+        "Question",
+        "SearchAction",
+        "Service",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "翌日送達 即日印刷・即日急件 — 今晚 6 點前 落單，聽日中午 12 點前 到 傳單 / 海報 / 貼紙 10 張起印 · 紙袋 100 個起 · CMYK 全彩 · 全港配送（順豐送貨上門 / 港鐵站交收） 30 秒 AI 報價 自營工廠直印 順豐翌日中午前送達 每日 18:00 截單 WhatsApp 即時報價 致電 +86 198 8",
+        "igo 15K 數碼印刷機實拍 價格速查 即日印刷價錢 10 張起印。表列為量產檔參考價；起印量愈低單張愈高，最終以文件複雜度為準。 品類 起訂量 標準交期 通宵交期 參考價 傳單印刷 10 張 2-3 天 翌日 12:00 前 HK$0.25/張 起（大量檔） 海報印刷 10 張 2-3 天 翌日 12:00 前 HK$16/張 起（大量檔",
+        "張 · A4/A5 10 張起印，即日截單翌日達 貼紙印刷 · 防水 Vinyl 10 張起，連工藝完成 24 小時 紙袋印刷 · 100 個起，活動 / 展會批量趕工 月曆印刷 · 2027 掛曆 9 月開學季企業定制起量 WhatsApp 詢價 致電 智印港 是全球智能印刷訂製平台，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、",
+        "/ 即日速遞 通宵達旦・翌日送達 即日印刷・即日急件 — 今晚 6 點前 落單，聽日中午 12 點前 到 傳單 / 海報 / 貼紙 10 張起印 · 紙袋 100 個起 · CMYK 全彩 · 全港配送（順豐送貨上門 / 港鐵站交收） 30 秒 AI 報價 自營工廠直印 順豐翌日中午前送達 每日 18:00 截單 WhatsApp 即時報價",
+        "8 8085 1334 即日印刷：每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，傳單／貼紙 10 張起印。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計；包裝盒、紙袋等需後加工品類不適用。 即日時間軸 今晚落單， 聽朝收貨 STEP 1 18:00",
+        "邊啲情況啱用 臨急任務，交畀我哋 趕工最怕冇人接。以下場景全部支援 18:00 截單、翌日中午前送到。 展會物料 聽日開 show，今日先醒起。傳單、海報、易拉寶一晚搞掂。 今日 18:00 前確認，聽日中午前到場 投標文件 截標前最後一刻補印，小批量彩色文件即日完成。 今日 18:00 前確認，聽日中午前到場 活動海報 A3 / A2 大",
+        "開張，傳單今日先到齊，一樣趕得切派街。 今日 18:00 前確認，聽日中午前到場 易拉寶急單 展架背景臨時要換，鋁合金支架 + 高清噴繪一晚起貨。 今日 18:00 前確認，聽日中午前到場 貼紙急單 防水 / PVC / 透明貼紙，任意形狀模切，包裝標籤趕工首選。 今日 18:00 前確認，聽日中午前到場 自有產能 自營工廠直印，不經中介，",
+        "印港自營工廠・Heidelberg 印刷機實拍 智印港自營工廠・HP Indigo 15K 數碼印刷機實拍 價格速查 即日印刷價錢 10 張起印。表列為量產檔參考價；起印量愈低單張愈高，最終以文件複雜度為準。 品類 起訂量 標準交期 通宵交期 參考價 傳單印刷 10 張 2-3 天 翌日 12:00 前 HK$0.25/張 起（大量檔） 海",
+        "報印刷 10 張 2-3 天 翌日 12:00 前 HK$16/張 起（大量檔） 貼紙印刷 10 張 2-3 天 翌日 12:00 前 HK$0.22/張 起（大量檔） 紙袋印刷 100 個 3-5 天 翌日 12:00 前（視乎後工） HK$3/個 起 畫冊印刷 10 本 3-5 天 翌日 12:00 前（急件 10 本起） HK$2.8/",
+        "本 起 易拉寶 / 噴繪 1 個 2-3 天 翌日 12:00 前 HK$85/套 起 包裝盒、信封屬常規 2-5 天交期，不適用隔夜達服務。紙袋視乎燙金 / 繩手等後工工序，落單前請 WhatsApp 確認。 參考價以文件複雜度為準 — WhatsApp 30 秒攞精準報價，直接報實",
+        "日 · 智印港（彩龍印刷旗下） 相關服務： 海報印刷 · A1/A2 即日速遞，順豐港九新界翌日中午到 宣傳單張 · A4/A5 10 張起印，即日截單翌日達 貼紙印刷 · 防水 Vinyl 10 張起，連工藝完成 24 小時 紙袋印刷 · 100 個起，活動 / 展會批量趕工 月曆印刷 · 2027 掛曆 9 月開學季企業定制起量 Wh",
+        "即日印刷・即日急件｜18:00 截單・翌日 12:00 送到 | 智印港 +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 搜尋 購物車 首頁 即日急件 宣傳單張 貼紙印刷 包裝盒訂製 海",
+        "報印刷 學校印刷 紙袋印刷 印刷知識 聯絡我們 首頁 貼紙印刷 宣傳單張 包裝盒訂製 紙袋印刷 即日急件 首頁 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷 學校印刷 紙袋印刷 印刷知識 免費報價 聯絡我們 繁 EN 日 首頁 / 服務 / 即日速遞 通宵達旦・翌日送達 即日印刷・即日急件 — 今晚 6",
+        "張起印 · 紙袋 100 個起 · CMYK 全彩 · 全港配送（順豐送貨上門 / 港鐵站交收） 30 秒 AI 報價 自營工廠直印 順豐翌日中午前送達 每日 18:00 截單 WhatsApp 即時報價 致電 +86 198 8085 1334 即日印刷：每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到",
+        "印。急件適用：傳單 50–1000 張、小冊子 10–500 本、摺頁 50–500 份等，附加費另計；包裝盒、紙袋等需後加工品類不適用。 即日時間軸 今晚落單， 聽朝收貨 STEP 1 18:00 你落單 確認稿件同付款 STEP 2 22:00 印刷完成 全彩輸出落機 STEP 3 06:00 分揀包裝 逐單核對出庫 STEP 4 翌日",
+        "過咗截單時間 WhatsApp 我哋，盡力幫你協調。 邊啲情況啱用 臨急任務，交畀我哋 趕工最怕冇人接。以下場景全部支援 18:00 截單、翌日中午前送到。 展會物料 聽日開 show，今日先醒起。傳單、海報、易拉寶一晚搞掂。 今日 18:00 前確認，聽日中午前到場 投標文件 截標前最後一刻補印，小批量彩色文件即日完成。 今日 18:00",
+        "前到場 自有產能 自營工廠直印，不經中介，交期自己話事 印刷、後工、分揀、出貨全部喺自己廠房完成。自營通宵班次・每日 18:00 截單・順豐翌日 12:00 前到，唔使等外判，產能與交期自己話事。 多年 本地印刷經驗 200+ 款產品即日可印 18:00 每日截單・通宵排產 智印港自營工廠・Heidelberg 印刷機實拍 智印港自營工廠・H",
+        "P Indigo 15K 數碼印刷機實拍 價格速查 即日印刷價錢 10 張起印。表列為量產檔參考價；起印量愈低單張愈高，最終以文件複雜度為準。 品類 起訂量 標準交期 通宵交期 參考價 傳單印刷 10 張 2-3 天 翌日 12:00 前 HK$0.25/"
+      ],
+      "entity_snippets": [
+        "透過電郵回覆你（發送至你填寫嘅郵箱）。如需加急，可直接 WhatsApp 我哋。 最後更新： 2026 年 11 月 21 日 · 智印港（彩龍印刷旗下） 相關服務： 海報印刷 · A1/A2 即日速遞，順豐港九新界翌日中午到 宣傳單張 · A4/A5 10 張起印，即日截單翌日達 貼紙印刷 · 防水 Vinyl 10 張起，連工藝完成 24",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 [email protected] 週一至週六 09:00 - 18:00 (GMT+8) 中國大陸 24h 響應 · 香港本地客服",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 聯絡方式 WhatsApp 免費報價 產品中心 紙袋印刷 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷 學校印刷 關於我們 關於我們 品牌",
+        "東京，都能享受 智印港 的專業印刷服務與 72 小時全球交付承諾。 關注我們 © 2026 智印港. 保留所有權利。 本站內容由智印港團隊於深圳平湖嘉城路廠房實地原創，翻印抄錄必究（原創檔號 ZP-OC-2610）。 WhatsApp 立即查詢 2 小時內回覆 · 全港順豐本地倉 電郵查詢 2 小時內回覆 · 全港順豐本地倉"
+      ],
+      "language_clue_hits": [],
+      "visible_text_chars": 3422
+    },
+    {
+      "requested_url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "final_url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "status": 200,
+      "elapsed_ms": 352,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423a21c1e0d8d-SEA"
+      },
+      "bytes": 303214,
+      "title": "Small Batch Stickers from $0.55 | 10pcs | ZprintPro",
+      "canonical": [
+        "https://zprintpro.com/en/product/small-batch-stickers/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/product/small-batch-stickers/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/product/small-batch-stickers/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/product/small-batch-stickers/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/product/small-batch-stickers/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/product/small-batch-stickers/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/product/small-batch-stickers/"
+        }
+      ],
+      "h1": [
+        "Small Batch Stickers 10+ | No Setup | ZprintPro"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "MerchantReturnPolicy",
+        "Offer",
+        "Organization",
+        "Place",
+        "PostalAddress",
+        "ProcureAction",
+        "Product",
+        "QuantitativeValue",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "Small Batch Stickers from $0.55 | 10pcs | ZprintPro +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 Search Cart Home Flyers Stickers Pa",
+        "S$0.55/pc (50+) Final quote by specs Free US shipping $99+ SKU ST-004 Minimum order 10pc Standard lead time confirmed at quote Quality guarantee Free reprint or refund for quality def",
+        "ects Free shipping US $99+ free ship Quantity − + $0.55 × 10 = $5.50 MOQ 10 Add to Cart Buy Now → Subtotal : $5.50 · cart → 結算 30-sec AI Quote WhatsApp Us Asia factory Free",
+        "delivery Free reprint or full refund for quality defects ⚡ What's the minimum order? From 10 pcs. Small runs carry setup + calibration costs, so unit price decreases with volume — see",
+        "ents, and limited editions. Material & Quantity Comparison + Material Min Order Durability Print Quality Best For White Vinyl 10 pcs ★★★★★ ★★★★★ Indoor/outdoor product labels Clea",
+        "r Vinyl 10 pcs ★★★★★ ★★★★ Glass-surface labels, no-edge effect Holographic Vinyl 10 pcs ★★★★★ ★★★★★ Beauty, cosmet",
+        "ics, premium product Kraft Paper 10 pcs ★★★ ★★★ Eco-friendly brands, organic products Metallic Foil 10 pcs ★★★★ ★★★★★ Luxury, wedding, spec",
+        "Format Size Per-Sheet Yield Best For Mini (circle) 25mm / 38mm 70-180 pcs Candles, soaps, samples Standard (rectangle) 50×30mm 40 pcs Logo stickers, packaging seals Square 6",
+        "0×60mm 21 pcs Bottle labels, jar tops Large square 100×100mm 8 pcs Promotional, packaging accents Custom die-cut Any shape Varies Logo shapes, custom outlines Why Cho",
+        "tity Vinyl (per pc) Paper/Kraft (per pc) Holographic/Foil (per pc) 10 pcs $0.60 $0.45 $0.90 50 pcs $0.55 $0.40 $0.85 100 pcs $0.42 $0.30 $0.65 500 pcs $0.30 (-15%) $0.22 (-1",
+        "5%) $0.48 (-15%) 1,000 pcs $0.24 (-25%) $0.18 (-25%) $0.40 (-25%) 5,000 pcs $0.18 (-35%) $0.13 (-35%) $0.30 (-35%) All prices",
+        "unts are confirmed at quote. Frequently Asked Questions + What is the minimum order quantity (MOQ) for small batch stickers? MOQ is 10 stickers per design , subject to material, size",
+        "setup on all orders. Exact pricing is confirmed at quote. What is the minimum order quantity? MOQ is 10 stickers per design across vinyl, paper, kraft, foil and holographic materials.",
+        "s. Quantity Small (≤50mm) Medium (51-100mm) Large (>100mm) 10 sheets (MOQ) HK$89/sheet HK$134/sheet HK$196/sheet 100 sheets HK$38/sheet HK$57/sheet HK$84/sheet 500 sheets HK",
+        "sheet by quote by quote How to read it: the 10-sheet tier applies the MOQ factor (HK$38 × 2.35, small size); the 100-sheet tier is the base price × size multiplier (×1 / ×1.",
+        "the 15% bulk discount. Add-ons price separately per the table above. MOQ is 10 stickers per design — the lowest barrier for a test run in Asia manufacturing. Specifications",
+        "de UV-resistant ink to prevent fading under sunlight. Q2: What is the minimum order quantity? 10 stickers per design, no setup fees and no plate fees. Production and delivery timing a",
+        "stomer service online 24/7 FAQ Frequently Asked Questions What is the minimum order for custom stickers? + 10 pieces. A 10-pc run is proofing grade with a higher unit price; from 100"
+      ],
+      "entity_snippets": [
+        "d timing are confirmed at quote. Why are your prices competitive? Our Shenzhen factory production and direct global shipping keep unit costs competitive while maintaining ISO 126",
+        "tional printing service brand of Cailong Printing. Operating from our Shenzhen production facility, we serve cross-border printing clients in the US, UK, Australia, Japan, and be",
+        "Express; transit times confirmed at quote · Tracking number provided Shenzhen ISO Factory 15+ Years Experience Owned production facility in Shenzhen, operated by Cailong Printin",
+        "ed at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-ST, traceable to press and shi",
+        "hours. Factory: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China · HK Service Point: San Po Kong, Kowloon +86 198 8085 1334 [email protecte",
+        "hours. Factory: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China · HK Service Point: San Po Kong, Kowloon +86 198 8085 1334 Contact Us What",
+        "omer Service Contact Us FAQ Track Order ZprintPro is headquartered in Shenzhen, China, providing cross-border printing services to the US and global markets. US delivery via DHL",
+        "e is original, written by the ZprintPro team at our Pinghu factory in Shenzhen. Verbatim copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4"
+      ],
+      "language_clue_hits": [
+        "适配行业",
+        "結算"
+      ],
+      "visible_text_chars": 20247
+    },
+    {
+      "requested_url": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "final_url": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "status": 200,
+      "elapsed_ms": 382,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423a4dc110d8d-SEA"
+      },
+      "bytes": 332020,
+      "title": "小ロットステッカー | 10枚〜 ¥69〜 | 防水PVC | ZprintPro",
+      "canonical": [
+        "https://zprintpro.com/ja/product/small-batch-stickers/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/product/small-batch-stickers/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/product/small-batch-stickers/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/product/small-batch-stickers/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/product/small-batch-stickers/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/product/small-batch-stickers/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/product/small-batch-stickers/"
+        }
+      ],
+      "h1": [
+        "小ロットステッカー印刷｜防水PVC 10枚〜 ¥69〜"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "MerchantReturnPolicy",
+        "Offer",
+        "Organization",
+        "Place",
+        "PostalAddress",
+        "ProcureAction",
+        "Product",
+        "QuantitativeValue",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "IP、同人創作、飲食、小売イベント、スタートアップEC、テストサンプル、プロモーションギフト. 小ロットステッカー / ラベル印刷 は 10枚から、¥69/枚 〜。納期・校正の時期はお見積りで確認します。 ¥69/枚 ¥69/枚 仕様により正式見積 $500相当以上 送料無料 製品番号 ST-004 最小注文数 10枚 標準納期 見積りで確認",
+        "品質保証 品質不良は無料再印刷 送料無料 全国配送 数量 − + ¥69 × 10 = ¥690 MOQ 10 カートに追加 今すぐ購入 → 小計 : ¥690 · カート → 結算 30秒無料見積もり WhatsAppで問い合わせ アジア自社工場 無料デザイン AI見積もり30秒 全国配送 品質不良は",
+        "+ 小ロットステッカーは 4 種類の印刷方式 + 後加工から選択。 加工 効果 適用場面 追加料金 HP Indigo デジタル印刷 1 枚から対応、可変データ 個人利用・サンプル なし 4 色 CMYK オフセット 500 枚以上で高品質 大量発注 なし 光膜ラミネート 表面光亮、防水 UP 屋外・耐久必須 +10% 型抜き（自由形状） ロ",
+        "ゴ・キャラクター輪郭 ブランドステッカー +10% 小ロット対応印刷技術 + HP Indigo デジタル印刷 ：A4 サイズで 1 枚から対応、Delta E≤3 の高精度色再現 4 色 CMYK 印刷 ：500 枚以上はオフセット機で大量印刷、コスト削減 可変データ印刷 ：1 枚ごとに違う QR コード・番号・名前印刷、限定商品・イベ",
+        "階割引と小ロット特急 + 小ロットでも大量発注でも、コストパフォーマンス最良のプランをご用意。 1〜99 枚 ：特急料金（デジタル印刷 1 枚から対応） 100〜499 枚 ：標準料金（オフセット印刷に切り替わり） 500〜999 枚 ：15% オフ 1,000 枚以上 ：25% オフ 5,000 枚以上 ：35% オフ、別途お問い合わせ 業界",
+        "渡し、アフターフォロー 活用シーンと原稿仕様 活用シーンと原稿仕様 カスタム 小ロットステッカー — 日本市場向け高品質印刷サービス。10 枚から対応、沖縄県・北海道も追加料金なし。配送方法・納期は見積りで確認、長年の印刷実績。 小ロットステッカー は 食品ラベル・食品パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッ",
+        "ラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。 料金透明：10 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers は低価格帯でご提供。標準納期は 3-5 営業日（見積りで確認）、お急ぎ便はデータ完成前提で対応可否を確認します。商品ページの 3",
+        "久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。 Q2: 最小注文数量は？ 10 枚から対応、版代・型代ゼロ。標準納期は 3-5 営業日（見積りで確認）、沖縄・北海道含む日本全国送料無料。 Q3: 本注文前にデジタル校正は確認できますか？ はい — 本注文前にデジタル校正を提供します。実",
+        "返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 FAQ よくある質問 ステッカー印刷の最小ロットは？ + 10枚から。10枚はサンプル的な数量で単価高め、100枚以上で単価が明確に下がります（¥69〜）、3-5営業日。 小ロットステッカーの料金は？ + 防水PVCで10-50枚は¥69〜/枚、100/500/100",
+        "0枚の段階割引あり。校正データは生産前にご提供、配送はお見積り時に確定。 シール印刷の最小ロットは何枚からですか？ + ZprintProでは少ロットのシール印刷に対応しており、最小ロットは10枚からです。防水シール、透明シール、PVCシールなど、スタートアップやパッケージングテストに最適です。10枚はサ",
+        "小ロットステッカー | 10枚〜 ¥69〜 | 防水PVC | ZprintPro +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 検索 カート ホーム チラシ印刷 ステッカー印刷",
+        "小ロットステッカー / ラベル印刷 即日速達配送 | 本日注文・特急締切・配送は見積りで確認 小ロットステッカー印刷｜防水PVC 10枚〜 ¥69〜 最小A4サイズから、大量在庫の心配なし。スタートアップ、イベント宣伝、個人創作に最適。 适配行业: インディーIP、同人創作、飲食、小売イベント、スタートアップEC、テストサンプル、プロモーショ",
+        "ンギフト. 小ロットステッカー / ラベル印刷 は 10枚から、¥69/枚 〜。納期・校正の時期はお見積りで確認します。 ¥69/枚 ¥69/枚 仕様により正式見積 $500相当以上 送料無料 製品番号 ST-004 最小注文数 10枚 標準納期 見積りで確認 品質保証 品質不良は無料再印刷 送料無料 全国配送 数量 − + ¥69 ×",
+        "10 = ¥690 MOQ 10 カートに追加 今すぐ購入 → 小計 : ¥690 · カート → 結算 30秒無料見積もり WhatsAppで問い合わせ アジア自社工場 無料デザイン AI見積もり30秒 全国配送 品質不良は無料再印刷・全額返金 ⚡ 最小注文数は？10枚〜。小",
+        "初めてのお客様向けに無料テンプレート + 作成ガイドをご提供。 無料テンプレート ：Illustrator / PNG 形式で丸・四角・楕円など基本形状 作成ガイド ：サイズ・解像度・CMYK 設定の初心者向け解説書 多形式入稿対応 ：Illustrator / Photoshop / Canva / PowerPoint / PDF す",
+        "ビスを提供しています： 日本語ネイティブ対応 ：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行 JPY 日本円建て明朗会計 ：為替変動リスクなし、経費精算しやすい 30 秒 AI 見積もり ：画面上で簡単設定、送料込みの総額表示で安心 DHL/FedEx 直送（納期・送料は見積りで確認） ：沖縄・離島も別途見",
+        "の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。 多通貨決済 + 多通貨決済に対応。日本向けは JPY（日本円）建て明朗会計 、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・",
+        "は？DHL 速達？ DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。 印刷品質に問題があった場合は？ ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ"
+      ],
+      "entity_snippets": [
+        "+ 沖縄・離島 2〜4 営業日 100 個・100 枚以上 送料無料 EMS（国際郵便） 日本全国 + 離島 3〜5 営業日 少量追加料金 深圳自社工場直送（事前予約製） 中国 深圳自社工場 完工後の発送は見積りで確認 国際送料別途 100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポー",
+        "ン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。 アジア自社工場・事前予約製現地確認 + アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け",
+        "すぐ製造開始 今すぐ体験： ZprintPro の 30 秒無料見積もり ｜ 日本語カスタマーサポート ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カ",
+        "各標準サイズに無料型紙テンプレートを用意。 Why ZprintPro なぜ ZprintPro を選ぶ？ 智印港（ZprintPro）は、彩龍印刷が運営する国際印刷サービスブランドです。深圳自社工場から、DHL Express で日本を含む全世界へ高品質印刷を輸出しています。日本市場特有の品質基準への適合、厳密な納期管理、日本語対応スタッフ",
+        "による丁寧なサポートで、深圳から日本への高品質印刷輸出を実現します。 深圳から日本へ国際配送 · DHL/FedEx追跡番号付き · 日本全国対応（時期は見積りで確認） 深圳自社工場 15年以上の実績 彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理 即日納品 特急",
+        "部UVが必要な場合は、加工位置を示す別の黒版（K100）をご提供ください。 工場はどこですか？自社印刷ですか？ + すべてのステッカー注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-ST として保管・記録され、機台・班次まで追跡可能です。 ご注文の準備はで",
+        "・微信支付・支付宝・PayPal決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。 自社工場：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 [email protected] 月〜土 09:00 - 18:00 (GMT+8)",
+        "・微信支付・支付宝・PayPal決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。 自社工場：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 お問い合わせ WhatsApp 見積もり 製品 紙袋印刷 チラシ印刷 ステッカー印刷 パ"
+      ],
+      "language_clue_hits": [
+        "适配行业",
+        "結算"
+      ],
+      "visible_text_chars": 10838
+    },
+    {
+      "requested_url": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+      "final_url": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+      "status": 200,
+      "elapsed_ms": 300,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423a7ec840d8d-SEA"
+      },
+      "bytes": 285550,
+      "title": "小批量貼紙 10 張起 HK$38/A4 | 防水 PVC 異形切割 | 智印港",
+      "canonical": [
+        "https://zprintpro.com/zh-hk/product/small-batch-stickers/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/product/small-batch-stickers/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/product/small-batch-stickers/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/product/small-batch-stickers/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/product/small-batch-stickers/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/product/small-batch-stickers/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/product/small-batch-stickers/"
+        }
+      ],
+      "h1": [
+        "最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。智印港提供專業小批量貼紙服務，香港本地印刷，品質保證，價格透明。"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "MerchantReturnPolicy",
+        "Offer",
+        "OpeningHoursSpecification",
+        "Organization",
+        "Place",
+        "PostalAddress",
+        "ProcureAction",
+        "Product",
+        "QuantitativeValue",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "刷 / 透明貼 / 防水貼 / 小批量貼紙 / label printing 印刷即日速遞送貨 | 今天下單 · 急件截稿與送達以報價確認 最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。智印港提供專業小批量貼紙服務，香港本地印刷，品質保證，價格透明。 最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作",
+        "起，交期與打稿時效以報價確認。 HK$38-120/A4 HK$38-120/A4 實價按規格報價 滿$500包郵 產品編號 ST-004 最低訂購量 10A4 標準交期 以報價確認 品質保證 品質問題免費重印或退款 滿$500包郵 港九新界順豐 數量 − + HK$38.00 × 10 = HK$380.00 MOQ 10 加入購物車 立即",
+        "→ 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門 品質問題免費重印或全額退款 ⚡ 最少可以印幾張？10 張起印。起印量愈低，單張愈貴（開機與校色成本攤在少量上）；量大單張愈平，量產檔位見報價。 交期以報價確認 HP Indigo 15K B2 數碼產線 · 打稿與出貨時效以報價確認 D",
+        "詳情 材質與紙張對比 + 本類產品常用 3 種紙材，分別適用不同預算與使用場景： 紙材 特性 適用場景 銅版紙貼紙 紙質基材，色彩鮮豔、成本最低、撕下不留殘膠可選 室內產品標籤、短期促銷、活動贈品 PVC / 合成紙貼紙 塑膠基材，防水防曬耐磨耐刮，戶外耐候 3-12 個月 戶外標籤、電器防偽、食品包裝 透明 PET 貼紙 透明基材，貼合後呈",
+        "ress 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。 常見問題 (FAQ) + 智印港 的最低起印量是多少？ 智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。 印刷交貨期需要多久？特急最快幾",
+        "切 +HK$30。實際結算以即時報價為準。 數量 小尺寸 (≤50mm) 中尺寸 (51-100mm) 大尺寸 (>100mm) 10 張（起訂） HK$89/張 HK$134/張 HK$196/張 100 張 HK$38/張 HK$57/張 HK$84/張 500 張 HK$29/張 HK$43/張 HK$63/張 1000 張 HK$29",
+        "/張以下 報價為準 報價為準 口徑說明：10 張檔為起訂價（HK$38 × 2.35 起訂係數，小尺寸）；100 張檔為基準價 × 尺寸倍率（小 ×1 / 中 ×1.5 / 大 ×2.2）；500 張檔已計 15% 批量折扣。選用 PP / PET 材質或異形模切按上方加價另計。 規格參數",
+        "10×10mm，最大 300×400mm 印刷方式 四色數碼印刷（HP Indigo） 後加工 模切、圓角、局部燙金、覆膜 【A4 起印】無最低數量壓力，適合試產與限量活動 【多材質】銅版紙／PP／PVC／Kraft，匹配品牌調性 【Delta E ≤3】ICC 色彩管理，品牌色穩定還原 【免費刀模】異形模切與圓角設計，印前免費檢查 【1–2",
+        "；室內則可達 5-7 年。BOPP 透明防水貼紙同樣耐用，特別適合玻璃及瓶身標籤。所有防水材質均使用防 UV 油墨，避免日曬褪色。 Q2: 最低起印量是多少？ 10 張起印，無開版費、無製版費。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達。 Q3: 落單前可以先看打稿嗎？ 可以 — 提交檔案後 1 小時內提供免費數碼打稿",
+        "認 品質保證 品質缺陷保障 品質問題免費重印或全額退款 24小時支持 全天候服務 專業客服團隊7x24小時在線 FAQ 常見問題 小批量貼紙最少印幾多張？ + 10 張起印（打樣性質，單價較高）；100 張以上進入量產檔位，單價明顯下降，HK$0.45 起/張，3-5 個工作天交貨。 小批量貼紙幾錢一張？ + 防水 PVC 小批量 HK$0.",
+        "45 起/張（10-50 張檔位）；100/500/1000 張階梯遞減。1 小時免費打稿，滿 HK$500 免費速遞。 貼紙印刷 香港 最低訂量是多少？ + 智印港提供少批量貼紙印刷服務，最低10張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定製，適合初創品牌與產品包裝測試。10 張屬打樣性質，單張單價較高；量產檔位（100 張以",
+        "小時內回覆 · 免費設計諮詢 30 秒 AI 報價 WhatsApp 即時查詢 相關產品 查看全部 → 防水貼紙 / 戶外貼紙 訂製 10個起印 · 5-7天交期 · 智印港 · 不干膠 · 香港印刷專家 · 智印港 HK$0.42 每個起 透明貼 / 透明貼紙 訂製 · 10 張起印 · 不干膠 · 香港印刷專家 · 智印港 HK$0.3",
+        "小批量貼紙 10 張起 HK$38/A4 | 防水 PVC 異形切割 | 智印港 +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 搜尋 購物車 首頁 即日急件 宣傳單張 貼紙印",
+        "貼 / 防水貼 / 小批量貼紙 / label printing 印刷即日速遞送貨 | 今天下單 · 急件截稿與送達以報價確認 最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。智印港提供專業小批量貼紙服務，香港本地印刷，品質保證，價格透明。 最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。 适配行",
+        "业: 文創IP、同人周邊、餐飲、零售品牌活動、初創電商、測試樣本、活動贈品. 小批量貼紙 / label printing 10A4起印，HK$38-120/A4 起，交期與打稿時效以報價確認。 HK$38-120/A4 HK$38-120/A4 實價按規格報價 滿$500包郵 產品編號 ST-004 最低訂購量 10A4 標準交期 以報價確",
+        "認 品質保證 品質問題免費重印或退款 滿$500包郵 港九新界順豐 數量 − + HK$38.00 × 10 = HK$380.00 MOQ 10 加入購物車 立即購買 → 小計 : HK$380.00 · 購物車 → 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門",
+        "品質問題免費重印或全額退款 ⚡ 最少可以印幾張？10 張起印。起印量愈低，單張愈貴（開機與校色成本攤在少量上）；量大單張愈平，量產檔位見報價。 交期以報價確認 HP Indigo 15K B2 數碼產線 · 打稿與出貨時效以報價確認 DHL 全球 2-4 天 順豐",
+        "單確認） 已服務的本地客戶 + 智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店、政府部門及學校提供貼紙印製服務。10 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。 可選加值服務 + 可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。 智印港 ("
+      ],
+      "entity_snippets": [
+        "OQ 10 加入購物車 立即購買 → 小計 : HK$380.00 · 購物車 → 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門 品質問題免費重印或全額退款 ⚡ 最少可以印幾張？10 張起印。起印量愈低，單張愈貴（開機與校色成本攤在少量上）；量大單張愈平，量產檔位見報價。 交期以報價確",
+        "） 已服務的本地客戶 + 智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店、政府部門及學校提供貼紙印製服務。10 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。 可選加值服務 + 可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。 智印港 (Zpri",
+        "ntPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球配送（運費與時效以報價確認）。DHL Express 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。 常",
+        "壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費數碼打樣確認。 香港本地配送怎麼安排？免運費嗎？ 智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球配送（運費與時效以報價確認），日本客戶 2-4 個工作天到貨。 印刷品質有問題怎麼辦？ 智印港提供",
+        "、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。 Why ZprintPro 為何選擇 智印港 智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務香港及東南亞、美國、日本及全球客戶。廠房配備海德堡柯式印刷機組與 HP Indigo 15K B2 數碼產線，打稿與出貨時效以報價確認；FSC 認證紙材把關",
+        "球物流支援，少量起印，靈活承接小批量與大宗訂單。 順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球配送，時效以報價確認 深圳自有工廠 15年跨境經驗 彩龍印刷旗下品牌，深圳自有工廠生產，品質可控 即日交貨 特急24小時 標準與急件時效按稿件確認及產能報價確認 順豐直達 全港覆蓋 順豐速運上門派送，快捷安全 數碼打樣 時效以",
+        "請使用CMYK色彩模式。如需要燙金或局部UV，請另外提供獨立的黑稿（K100）標示加工位置。 你哋嘅廠喺邊？係咪自己印？ + 全部貼紙訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-ST 歸檔，可追溯到機台同班次。 準備落單？免費打稿，時效以報價確認 WhatsApp 客服 +86 198",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 [email protected] 週一至週六 09:00 - 18:00 (GMT+8) 中國大陸 24h 響應 · 香港本地客服"
+      ],
+      "language_clue_hits": [],
+      "visible_text_chars": 7077
+    },
+    {
+      "requested_url": "https://zprintpro.com/en/product/catalog-printing/",
+      "final_url": "https://zprintpro.com/en/product/catalog-printing/",
+      "status": 200,
+      "elapsed_ms": 293,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423aa1a740d8d-SEA"
+      },
+      "bytes": 257077,
+      "title": "Catalog Printing | 10 MOQ $4.60 | Free Ship | ZprintPro",
+      "canonical": [
+        "https://zprintpro.com/en/product/catalog-printing/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/product/catalog-printing/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/product/catalog-printing/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/product/catalog-printing/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/product/catalog-printing/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/product/catalog-printing/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/product/catalog-printing/"
+        }
+      ],
+      "h1": [
+        "Catalog Printing 10+ | ZprintPro"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "MerchantReturnPolicy",
+        "Offer",
+        "Organization",
+        "Place",
+        "PostalAddress",
+        "ProcureAction",
+        "Product",
+        "QuantitativeValue",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "Catalog Printing | 10 MOQ $4.60 | Free Ship | ZprintPro +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 Search Cart Home",
+        "nd portfolios, photography books, annual reports, keepsake albums. 10 MOQ, free design mockup, 30-second AI quote. Ideal for art galleries, brand portfolios, wedding photogr",
+        "quote. Catalog Printing · Direct Answer Bulk catalog printing from 10 copies, from US$4.6 per book — unit price drops at 100/500/1000+ tiers, final quote in 30 seconds. A4 or A",
+        "0/pc US$4.60/pc Final quote by specs Free US shipping $99+ SKU BK-001 Minimum order From 10 copies (digital) · 100+ cheaper on offsetpc Standard lead time confirmed at quote Quality g",
+        "und for quality defects Free shipping US $99+ free ship ⚡ What is the minimum order quantity? From 10 copies. Short runs print digitally, larger runs on offset — 100+ copies is more e",
+        "conomical on offset. Minimum order and printing method: from 10 copies. Short runs (self-publishing, prototypes, limited editions, proof copies) are printed digitally — n",
+        "hared across the run, so unit price drops as quantity rises, and 100+ copies is more economical on offset with more accurate colour; make-ready means a longer lead time. Unit p",
+        "t method to your quantity and specs. Quantity − + $4.60 × 10 = $46.00 MOQ 10 Add to Cart Buy Now → Subtotal : $46.00 · cart → 結算 30-sec AI Quote WhatsApp Us Asia factory Fre",
+        "r advanced equipment to deliver high-quality catalogs. Size, Format & MOQ Table + Size (in) MOQ Turnaround Unit Price 8.5x11 100 3-5 days $$ A4 100 3-5 days $$ Custom 100 5-",
+        "】色彩飽和，適合照片與插畫 【多種裝訂】騎馬釘、膠裝、線裝或硬皮 【封面覆膜或燙金】品牌質感提升 【免費排版】目錄、頁碼與章節標註 【10本起訂】小批量數碼，大量柯式 【節慶檔期】Q4為高峰期，建議提早確認 Offset Heidelberg offset press line QC ICC color management · press-",
+        "does catalog printing cost? + Catalog printing from $4.60/book at 10 MOQ (A4 saddle stitch), factory-direct from our Shenzhen plant. Perfect bound and hardcover options, 3-",
+        "n. Same 157gsm 4-color specs at roughly half typical local prices, 10 MOQ, DHL worldwide in 2-4 days. What is the minimum order quantity for printing? + Most ZprintPro produ",
+        "cts start from 50–100 units/copies. Specific minimums are shown on each product page. Same-day small-batch rush orders are available f",
+        "rom 10 copies. Bulk orders enjoy tiered discounts—contact us for a custom quote. How long does printing and deliv",
+        "Catalog Printing | 10 MOQ $4.60 | Free Ship | ZprintPro +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 Search Cart Home Fly",
+        "stom Bulk Catalog Printing / Wholesale Book Supplier from 10 pc, from US$4.60/pc; lead time and proof timing are confirmed at quote. Catalog Printing · Direct Answer Bulk ca",
+        "talog printing from 10 copies, from US$4.6 per book — unit price drops at 100/500/1000+ tiers, final quote in 30 seconds. A4 or A5, 157-200g",
+        "mockup; lead time confirmed at quote, DHL 2-4 day worldwide delivery. US$4.60/pc US$4.60/pc Final quote by specs Free US shipping $99+ SKU BK-001 Minimum order From 10 copie"
+      ],
+      "entity_snippets": [
+        "tional printing service brand of Cailong Printing. Operating from our Shenzhen production facility, we serve cross-border printing clients in the US, UK, Australia, Japan, and be",
+        "Express; transit times confirmed at quote · Tracking number provided Shenzhen ISO Factory 15+ Years Experience Owned production facility in Shenzhen, operated by Cailong Printin",
+        "from $4.60/book at 10 MOQ (A4 saddle stitch), factory-direct from our Shenzhen plant. Perfect bound and hardcover options, 3-5 business days plus DHL 2-4 day US delivery. Why pri",
+        "nt catalogs in China? + Factory-direct from our own Shenzhen plant — no middlemen. Same 157gsm 4-color specs at roughly half typical local prices, 10 MOQ, DHL w",
+        "hours. Factory: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China · HK Service Point: San Po Kong, Kowloon +86 198 8085 1334 [email protecte",
+        "hours. Factory: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China · HK Service Point: San Po Kong, Kowloon +86 198 8085 1334 Contact Us What",
+        "omer Service Contact Us FAQ Track Order ZprintPro is headquartered in Shenzhen, China, providing cross-border printing services to the US and global markets. US delivery via DHL",
+        "e is original, written by the ZprintPro team at our Pinghu factory in Shenzhen. Verbatim copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4"
+      ],
+      "language_clue_hits": [
+        "結算",
+        "起訂"
+      ],
+      "visible_text_chars": 16489
+    },
+    {
+      "requested_url": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "final_url": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "status": 200,
+      "elapsed_ms": 251,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423ac89010d8d-SEA"
+      },
+      "bytes": 194581,
+      "title": "Catalog Printing China Supplier Guide: 4 Binding + 4 Paper",
+      "canonical": [
+        "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/blog/catalog-printing-china-supplier-guide/"
+        },
+        {
+          "lang": "en",
+          "url": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/blog/catalog-printing-china-supplier-guide/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/blog/catalog-printing-china-supplier-guide/"
+        }
+      ],
+      "h1": [
+        "Catalog Printing China Supplier Guide: 4 Binding + 4 Paper"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "Organization",
+        "Person",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "supplier means factory-direct pricing at US$1.84-7.36 per book at 500 copies , with bulk wholesale tier 100/500/1000/5000 unlocking 15-30% volume discount. ZprintPro combines A",
+        "4 binding types, 4 paper stocks, and volume pricing from 100 to 5,000 copies. Ready to print? Get a China catalog printing quote in 30 seconds — Shenzhen factory, 10 MOQ, free",
+        "for 500/1000/5000 piece runs, with 15-30% volume discount vs 10-piece MOQ. ZprintPro bulk MOQ starts at 10 pcs (digital printing) and drops to factory-direct offset pricing",
+        "and marketing teams printing product catalogs (50-200 pages, 500-5000 pcs) for trade shows, retail distribution, and e-commerce samples Fashion and lifestyle brands producin",
+        "g lookbooks and seasonal catalogs (24-80 pages, 200-2000 pcs) for wholesale buyers and editorial Art galleries, museums, photographers producing exhibition cata",
+        "logs (40-120 pages, 200-1000 pcs) for show openings, art fairs, and permanent collections For smaller runs (50-200 pcs) and ad-hoc c",
+        ", digital printing with 5-7 day turnaround is the better fit. For 500 pcs of a fixed-format catalog, offset printing with bulk wholesale pricing gives the best unit cost. Th",
+        "times and sample policies: Brand product catalog for trade show (500 copies, 24 pages, A4, saddle-stitch): Standard 5-7 business days production，DHL 2-4 day global = total 7-1",
+        "fundable on 100 copy order). Seasonal lookbook for fashion brand (200 copies, 32 pages, A5, perfect-bound): Standard 7-10 business days production，DHL 2-4 day global = total 9-",
+        "sample pack (5 paper stocks). Exhibition catalog for art gallery (300 copies, 48 pages, B5, perfect-bound): Standard 7-10 business days production，DHL 2-4 day global = total 9-",
+        "rs). Free 3 mock-up digital proofs. Annual report for corporate (1000 copies, 80 pages, A4, case-bound hardcover): Standard 10-15 business days production，DHL 2-4 day global =",
+        "profiles and order details: Brand product catalog for trade show (500 copies): Art gallery and design studio, 24-page A4 saddle-stitch, foil-stamped cover. 5-7 business days pr",
+        "tal proof，1 physical sample. Seasonal lookbook for fashion brand (200 copies): Wholesale boutique, 32-page A5 perfect-bound, matte cover. 7-10 business days production. 10% vol",
+        "esign，1 material sample pack. Exhibition catalog for art gallery (300 copies): Contemporary art spa, 48-page B5 perfect-bound with gold foil. 7-10 business days production. Bul",
+        "5% discount. Free 3 mock-up proofs. Annual report for corporate (1000 copies): Multinational corporation, 80-page A4 case-bound hardcover with ribbon bookmark. 10-15 business d",
+        "ays available for +20-30%. Frequently Asked Questions Q1: What is the minimum order for bulk catalog printing? A: ZprintPro bulk MOQ is 10 pcs (digital) for trial and 500 pcs (offset)",
+        "for production pricing. Bulk wholesale tier starts at 500 pcs with 15% discount, 1000 pcs with 25%, 5000 pcs with 30%. Q2: Which binding type is best for a 64-pa",
+        "printing = Asia factory-direct with no middleman markup. ZprintPro 10 pcs MOQ catalog printing , factory-direct wholesale pricing tier at 500/1000/5000, 30s AI quote, DHL 2-"
+      ],
+      "entity_snippets": [
+        "s. Ready to print? Get a China catalog printing quote in 30 seconds — Shenzhen factory, 10 MOQ, free file check, DHL 2-4 days worldwide. What Is Bulk Catalog Printing and Who Nee",
+        "hours. Factory: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China · HK Service Point: San Po Kong, Kowloon +86 198 8085 1334 [email protecte",
+        "hours. Factory: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China · HK Service Point: San Po Kong, Kowloon +86 198 8085 1334 Contact Us What",
+        "omer Service Contact Us FAQ Track Order ZprintPro is headquartered in Shenzhen, China, providing cross-border printing services to the US and global markets. US delivery via DHL",
+        "e is original, written by the ZprintPro team at our Pinghu factory in Shenzhen. Verbatim copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4"
+      ],
+      "language_clue_hits": [
+        "适配行业"
+      ],
+      "visible_text_chars": 22957
+    },
+    {
+      "requested_url": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "final_url": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "status": 200,
+      "elapsed_ms": 261,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423ae8ec40d8d-SEA"
+      },
+      "bytes": 276422,
+      "title": "食品包裝盒印刷 訂製 100個起 HK$2.5 防油紙卡 | 智印港",
+      "canonical": [
+        "https://zprintpro.com/zh-hk/product/food-boxes/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/product/food-boxes/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/product/food-boxes/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/product/food-boxes/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/product/food-boxes/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/product/food-boxes/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/product/food-boxes/"
+        }
+      ],
+      "h1": [
+        "紙質食品包裝印刷訂製｜食品紙盒・食品紙袋・防油紙卡｜食品級"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "MerchantReturnPolicy",
+        "Offer",
+        "OpeningHoursSpecification",
+        "Organization",
+        "Place",
+        "PostalAddress",
+        "ProcureAction",
+        "Product",
+        "QuantitativeValue",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "食品包裝盒印刷 訂製 100個起 HK$2.5 防油紙卡 | 智印港 +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 搜尋 購物車 首頁 即日急件 宣傳單張 貼紙印刷 包裝盒訂",
+        "速遞送貨 | 今天下單 · 急件截稿與送達以報價確認 紙質食品包裝印刷訂製｜食品紙盒・食品紙袋・防油紙卡｜食品級 食品包裝盒印刷訂製，100個起印，HK$2.5起/個。食品級紙材（以訂單確認），牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。適配行業: 茶葉品牌、手搖飲品店、烘焙坊、咖啡店、月餅端午節禮盒、餐",
+        "廳外賣、跨境食品電商。 食品包裝訂製 / 食品包裝盒 100個起印，HK$2.5-18/個 起，交期與打稿時效以報價確認。 HK$2.5-18/個 HK$2.5-18/個 實價按規格報價 滿$500包郵 產品編號 PK-003 最低訂購量 100個 標準交期 以報",
+        "價確認 品質保證 品質問題免費重印或退款 滿$500包郵 港九新界順豐 數量 − + HK$2.50 × 100 = HK$250.00 MOQ 100 加入購物車 立即購買 → 小計 : HK$250.00 · 購物車 → 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門 品質問題免費重",
+        "全球配送（運費與時效以報價確認）。FSC 認證紙材可選（落單時註明）、ISO 12647 色彩管理。 常見問題 (FAQ) + 智印港 的最低起印量是多少？ 智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。 印刷交貨期需要多久？特急最快幾",
+        "交付 香港順豐1-2日，DHL全球2-4日送達 Use Cases & File Specs 適用場景與檔案規格 食品包裝印刷訂製，100 個起印、HK$2.5 起/個，標準 3-5 個工作天交貨。提交檔案 1 小時內免費數碼打稿，30 秒 AI 報價即時出價，WhatsApp 2 小時內回覆。 食品包裝盒專為香港中小企、本地餐廳、茶飲烘焙品",
+        "牌及跨境食品電商設計。100 個起印，無開版費，港九新界訂單滿 HK$500 免費順豐速遞。FSC 認證紙張可選（落單時註明），大豆油墨，多年印刷經驗。 廣泛應用於糕點烘焙、茶葉禮盒、月餅節日禮盒、保健品、手搖飲品及餐廳外賣場景。選材",
+        "做 PET 透明窗口設計展示內裝產品，亦可印可變 QR Code 做批次追溯與防偽。更多盒型與配套見 包裝盒印刷類目 。 收費透明：100 個起印、HK$2.5 起/個（按尺寸、材質、工藝浮動；自訂尺寸或異形切割 500 個起），無開版費、無製版費。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達；加急訂單（24 小時打稿",
+        "商嘅時間。 旺季檔期提示：聖誕及 2027 春節禮盒建議提前 3-4 週落單，預留打樣與生產檔期。 食品包裝訂製直答：食品包裝訂製 100 個起（標準現貨尺寸起），350g 食品級白卡或 400g 灰底白板，PE/PLA 防油內層可選，四色柯式或數碼輸出，標準 3-5 個工作天生產，滿 HK$500 港九新界順豐免運。 關於內側印刷（裡印）：",
+        "費重印或全額退款 24小時支持 全天候服務 專業客服團隊7x24小時在線 FAQ 常見問題 食品包裝印刷流程係點？ + 食品包裝盒 100 個起印、HK$2.5 起/個。流程：提交檔案 → 1 小時免費數碼打稿 → 確認 → 生產交期以報價為準。食品級紙材選項（以訂單確認），免費刀模線模板。 食品包裝盒用咩紙？防油嗎？ + 採用食品級白卡/牛",
+        "皮紙，可選防油淋膜，合規要求以訂單確認。 包裝盒印刷 香港 最低訂量是多少？ + 智印港提供磁吸禮盒、環保包裝盒等定制服務，最低100個起訂。無論是化妝品盒、食品盒或禮品盒，均可小量定製，適合初創品牌與節日禮品測試。詳情請參閱《品牌包裝完全指南》。 磁吸禮盒 和 摺疊盒 有什麼分別？ + 磁吸禮盒（Rigid Box）由厚紙板裱糊而成，結",
+        "報價」· 2 小時內回覆 · 免費設計諮詢 30 秒 AI 報價 WhatsApp 即時查詢 相關產品 查看全部 → 化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚麵膜精華液品牌適配 | 智印港 · 瓦楞紙盒 · 智印港 HK$8-65/個 100 MOQ 快遞盒/飛機盒 · 跨境電商 FBA 標配 · DHL 2-4 天 · 禮品",
+        "HK$3.5-10/個 折疊盒 · 禮品盒 · AI即時報價 · 香港包裝盒訂製專家 · 智印港 HK$2.5-15/個 精裝盒報價 100個起印 HK$4.5起/個 天地蓋書型磁吸 · 智印港 · 禮品盒 · 香港印刷專家 · 智印港 HK$8.00-42.00 每個起 HK$2.5-18/個 30 秒報價 WhatsApp 智印港 是全球",
+        "食品包裝盒印刷 訂製 100個起 HK$2.5 防油紙卡 | 智印港 +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 搜尋 購物車 首頁 即日急件 宣傳單張 貼紙印刷 包裝盒訂製 海報印",
+        "遞送貨 | 今天下單 · 急件截稿與送達以報價確認 紙質食品包裝印刷訂製｜食品紙盒・食品紙袋・防油紙卡｜食品級 食品包裝盒印刷訂製，100個起印，HK$2.5起/個。食品級紙材（以訂單確認），牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。適配行業: 茶葉品牌、手搖飲品店、烘焙坊、咖啡店、月餅端午節禮盒、餐",
+        "廳外賣、跨境食品電商。 食品包裝訂製 / 食品包裝盒 100個起印，HK$2.5-18/個 起，交期與打稿時效以報價確認。 HK$2.5-18/個 HK$2.5-18/個 實價按規格報價 滿$500包郵 產品編號 PK-003 最低訂購量 100個 標準交期 以報價確認 品質保證 品質問題免費重印或退款 滿$500包郵 港九新界順",
+        "豐 數量 − + HK$2.50 × 100 = HK$250.00 MOQ 100 加入購物車 立即購買 → 小計 : HK$250.00 · 購物車 → 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門 品質問題免費重印或全額退款 交期以報價確認 HP Indigo 15",
+        "險 請在報價時說明磁鐵規格與航空運輸需求，以便選用符合安檢的包裝標示 已服務的本地客戶 + 智印港已為多間香港及跨境品牌印製各類禮盒。小批量起印（按盒型而定），深圳平湖廠房直送，DHL Express / FedEx 國際配送，灰板 FSC 認證紙材可選（落單時註明）。 常用尺寸參考 + 食品包裝盒常用規格：120×120×50mm（茶包／"
+      ],
+      "entity_snippets": [
+        "Q 100 加入購物車 立即購買 → 小計 : HK$250.00 · 購物車 → 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門 品質問題免費重印或全額退款 交期以報價確認 HP Indigo 15K B2 數碼產線 · 打稿與出貨時效以報價確認 DHL 全球 2-4 天 順豐香港本地",
+        "鐵規格與航空運輸需求，以便選用符合安檢的包裝標示 已服務的本地客戶 + 智印港已為多間香港及跨境品牌印製各類禮盒。小批量起印（按盒型而定），深圳平湖廠房直送，DHL Express / FedEx 國際配送，灰板 FSC 認證紙材可選（落單時註明）。 常用尺寸參考 + 食品包裝盒常用規格：120×120×50mm（茶包／朱古力）、180×12",
+        "加值服務 + 可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。 智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球配送（運費與時效以報價確認）。DHL Express 全球配送（運費與時效以報價確認）。FSC 認證紙材可選（落單時",
+        "壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費數碼打樣確認。 香港本地配送怎麼安排？免運費嗎？ 智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球配送（運費與時效以報價確認），日本客戶 2-4 個工作天到貨。 印刷品質有問題怎麼辦？ 智印港提供",
+        "需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。 Why ZprintPro 為何選擇 智印港 智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務香港及東南亞、美國、日本及全球客戶。廠房配備海德堡柯式印刷機組與 HP Indigo 15K B2 數碼產線，打稿與出貨時效以報價確認；FSC 認證紙材把關",
+        "球物流支援，少量起印，靈活承接小批量與大宗訂單。 順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球配送，時效以報價確認 深圳自有工廠 15年跨境經驗 彩龍印刷旗下品牌，深圳自有工廠生產，品質可控 即日交貨 特急24小時 標準與急件時效按稿件確認及產能報價確認 順豐直達 全港覆蓋 順豐速運上門派送，快捷安全 數碼打樣 時效以",
+        "你需要紙質食品包裝方案，起印量按盒型而定、免費 2 小時打稿、WhatsApp 即時報價。 你哋嘅廠喺邊？係咪自己印？ + 全部包裝盒訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-PBX 歸檔，可追溯到機台同班次。 準備落單？免費打稿，時效以報價確認 WhatsApp 客服 +86 19",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 [email protected] 週一至週六 09:00 - 18:00 (GMT+8) 中國大陸 24h 響應 · 香港本地客服"
+      ],
+      "language_clue_hits": [],
+      "visible_text_chars": 6850
+    },
+    {
+      "requested_url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "final_url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "status": 200,
+      "elapsed_ms": 266,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423b09d790d8d-SEA"
+      },
+      "bytes": 219785,
+      "title": "食品包裝印刷完全指南：材質、安全、法規與設計實務 | 智印港",
+      "canonical": [
+        "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/"
+        },
+        {
+          "lang": "en",
+          "url": "https://zprintpro.com/en/blog/food-packaging-printing-guide/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/blog/food-packaging-printing-guide/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/"
+        }
+      ],
+      "h1": [
+        "食品包裝印刷完全指南：材質、安全、法規與設計實務"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "FAQPage",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "Organization",
+        "Person",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "印刷知識 食品包裝印刷 點樣揀先穩陣？結論先行：直接接觸食品的包裝必須用 食品級材質同食品級油墨 ，材料合規要求以訂單確認；智印港 100 個起印、HK$2.5 起/個 ，標準 3-5 個工作天交貨，1 小時內免費數碼打稿。下文拆解材質、認證、價格、工藝同跨境物流實務，幫你避開重做風險。想由牛皮紙盒到食品級淋膜一次過對比盒型，可到 紙盒印刷",
+        "費報價：+86 198 8085 1334 ，或用 30 秒 AI 即時報價 試算價格。 快速答案：食品包裝印刷幾多錢？ 標準尺寸 100 個起印、HK$2.5 起/個 ，無開版費、無刀模費；自訂尺寸或異形切割 500 個起。最終單價按尺寸、材質、工藝浮動（per 智印港食品盒產品頁 2026-09-08 價格口徑）。 快速答案：幾耐交到貨？",
+        "型盒 ：硬盒結構，適合高端禮盒同企業訂製。 窗貼盒 ：開窗＋PET 窗片，讓消費者直接見到產品，適合烘焙同手工食品。 食品包裝訂製 100 個起印，8 檔標準尺寸可直接落單；特殊尺寸可按刀模線開模，開模前會先出白樣確認結構。想睇實際盒型對比，可參考 牛皮紙盒 vs 坑盒 vs 彩盒 8 大盒型對比 ，或直接查看 食品包裝盒 規格頁。 FDA／",
+        "合規提醒 食品接觸材料法規會按年修訂，落單前建議向客服確認目的市場最新版本；智印港會按出貨目的地主動核對適用標準。 食品包裝印刷幾多錢一個？MOQ、價格同交期點計？ 價格由尺寸、材質、表面工藝三個變數決定。以下為智印港食品盒公開口徑（per 食品包裝盒訂製產品頁 2026-09-08 更新）： 項目 口徑 備註 起印量 標準尺寸 100 個起",
+        "自訂尺寸／異形切割 500 個起 單價 HK$2.5 起/個 按尺寸、材質、工藝浮動 開版費 全免 無開版費、無刀模費 打稿 提交檔案 1 小時內免費數碼打稿 未齊檔案可由設計團隊免費排版 標準交期 3-5 個工作天 港九新界滿 H",
+        "GB 4806.8-2022 強制國標；德國建議 LFGB、日本需食品衛生法 MHLW 正面清單。智印港可一站式提供對應檢測報告。 Q3: 最低起印量同價格點計？ A: 標準尺寸 100 個起印、HK$2.5 起/個，無開版費、無刀模費；自訂尺寸或異形切割 500 個起。最終單價按尺寸、材質、表面工藝浮動，頁面「30 秒 AI 報價」可即時試",
+        "天送達。 準備好落單？ WhatsApp +86 198 8085 1334 即日免費報價，或用 30 秒 AI 報價 即時試算——100 個起印、HK$2.5 起/個、3-5 個工作天交貨。 作者團隊： 智印港印刷專家團隊 ，多年食品級包裝印刷經驗，服務全球品牌客戶；技術內容參照 FDA 21 CFR 176.170、EU REACH 化學",
+        "計技巧・行業趨勢 更多印刷知識 相關產品推薦 磁吸翻蓋禮盒印刷 · 禮品盒 · AI即時報價 · 品質保證 · 智印港 化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚麵膜精華液品牌適配 | 智印港 · 瓦楞紙盒 · 智印港 電子產品包裝盒定製 · 禮品盒 · AI即時報價 · 香港印刷專家 · 智印港 牛皮紙盒印刷訂製 · 環保品牌跨",
+        "境電商首選 · 禮品盒 · AI即時報價 · 品質保證 · 智印港 熱門產品 防水貼紙 / 戶外貼紙 訂製 10個起印 · 5-7天交期 · 智印港 · 不干膠 · 香港印刷專家 · 智印港 防水貼紙 / 戶外貼紙 PVC材質，防水防曬耐磨，適合戶外使用、產品標籤、車身貼紙、設備標識、活動紀念。5-7 天交期，DH",
+        "UV、壓紋工藝。 适配行业: 美妝護膚、珠寶鐘錶、婚慶、茶飲食品、電子產品、禮品、節日送禮. HK$15 查詢更多 牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 · 服裝品牌跨境電商適配 | 智印港 · 品質保證 · 智印港 牛皮紙袋印刷訂製 100 個起，HK$8 起/個。牛皮紙 120–200g 級，多尺寸多規格，免費刀模設計，支",
+        "融證券回饋、奢侈品品牌營銷。 HK$1.10 查詢更多 香港練習簿印刷 / School Exercise Book Printing — MOQ 10 30秒AI報價 DHL 2-4天 · 智印港 School exercise book printing 練習簿印刷服務, 補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕",
+        "業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。 ¥7,500〜/注文〜 查詢更多 防水貼紙 / 戶外貼紙 訂製 10個起印 · 5-7天交期 · 智印港 · 不干膠 · 香港印刷專家 · 智印港 防水貼紙 / 戶外貼紙 PVC材質，防水防曬耐磨，適合戶外使用、產品標籤、車身貼紙、設備標識、活動紀念。5-7 天交期，DH",
+        "刷知識 食品包裝印刷 點樣揀先穩陣？結論先行：直接接觸食品的包裝必須用 食品級材質同食品級油墨 ，材料合規要求以訂單確認；智印港 100 個起印、HK$2.5 起/個 ，標準 3-5 個工作天交貨，1 小時內免費數碼打稿。下文拆解材質、認證、價格、工藝同跨境物流實務，幫你避開重做風險。想由牛皮紙盒到食品級淋膜一次過對比盒型，可到 紙盒印刷",
+        "報價：+86 198 8085 1334 ，或用 30 秒 AI 即時報價 試算價格。 快速答案：食品包裝印刷幾多錢？ 標準尺寸 100 個起印、HK$2.5 起/個 ，無開版費、無刀模費；自訂尺寸或異形切割 500 個起。最終單價按尺寸、材質、工藝浮動（per 智印港食品盒產品頁 2026-09-08 價格口徑）。 快速答案：幾耐交到貨？",
+        "標準生產 3-5 個工作天 ，提交檔案 1 小時內 免費數碼打稿；加急訂單 24 小時打稿＋2 天生產（加收 20%）。港九新界滿 HK$500 順豐免運，1-2 個工作天送達；跨境 DHL 全球 2-4 個工作天（per 產品頁交期口徑）。 快速答案：點樣先算食品級合規？ 直接接觸食品必須用食品級材質：總遷移量 ≤ 10 mg/dm²（",
+        "盒 ：硬盒結構，適合高端禮盒同企業訂製。 窗貼盒 ：開窗＋PET 窗片，讓消費者直接見到產品，適合烘焙同手工食品。 食品包裝訂製 100 個起印，8 檔標準尺寸可直接落單；特殊尺寸可按刀模線開模，開模前會先出白樣確認結構。想睇實際盒型對比，可參考 牛皮紙盒 vs 坑盒 vs 彩盒 8 大盒型對比 ，或直接查看 食品包裝盒 規格頁。 FDA／",
+        "寸、材質、表面工藝三個變數決定。以下為智印港食品盒公開口徑（per 食品包裝盒訂製產品頁 2026-09-08 更新）： 項目 口徑 備註 起印量 標準尺寸 100 個起 自訂尺寸／異形切割 500 個起 單價 HK$2.5 起/個 按尺寸、材質、工藝浮動 開版費 全免 無開版費、無刀模費 打稿 提交檔案 1 小時內免費數碼打稿 未齊檔案可",
+        "由設計團隊免費排版 標準交期 3-5 個工作天 港九新界滿 HK$500 順豐免運 加急交期 24 小時打稿＋2 天生產 加收 20% 跨境配送 DHL 全球 2-4 個工作天 提供追蹤編號 想知香港市場整體印刷價格水位，可對照 香港印刷成本基準報告 2026 ；包裝"
+      ],
+      "entity_snippets": [
+        "176.170／GB 4806.8-2022）同遷移量控制（總遷移量 ≤ 10 mg/dm²）。 【智印港食品包裝服務事實卡】主體：智印港（彩龍印刷旗下品牌）；多年印刷經驗；累計全球品牌客戶；進口印刷設備；24 小時客服 SLA；服務多個行業；FSC 認證紙＋國際質量認證＋FDA 級食品接觸材質；歐盟 CPR 同美國 Lacey Act 供應",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 [email protected] 週一至週六 09:00 - 18:00 (GMT+8) 中國大陸 24h 響應 · 香港本地客服",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 聯絡方式 WhatsApp 免費報價 產品中心 紙袋印刷 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷 學校印刷 關於我們 關於我們 品牌",
+        "東京，都能享受 智印港 的專業印刷服務與 72 小時全球交付承諾。 關注我們 © 2026 智印港. 保留所有權利。 本站內容由智印港團隊於深圳平湖嘉城路廠房實地原創，翻印抄錄必究（原創檔號 ZP-OC-2610）。 WhatsApp 立即查詢 2 小時內回覆 · 全港順豐本地倉 電郵查詢 2 小時內回覆 · 全港順豐本地倉"
+      ],
+      "language_clue_hits": [],
+      "visible_text_chars": 12041
+    },
+    {
+      "requested_url": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+      "final_url": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+      "status": 200,
+      "elapsed_ms": 268,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423b2bbf20d8d-SEA"
+      },
+      "bytes": 232902,
+      "title": "定製年曆 | 企業禮品 多款式 | 1本起 HK$3起 | 智印港",
+      "canonical": [
+        "https://zprintpro.com/zh-hk/product/custom-calendars/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/product/custom-calendars/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/product/custom-calendars/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/product/custom-calendars/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/product/custom-calendars/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/product/custom-calendars/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/product/custom-calendars/"
+        }
+      ],
+      "h1": [
+        "訂製年曆印刷 — 十二版面 企業LOGO 燙金可選，1 本起印"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "MerchantReturnPolicy",
+        "Offer",
+        "OpeningHoursSpecification",
+        "Organization",
+        "Place",
+        "PostalAddress",
+        "ProcureAction",
+        "Product",
+        "QuantitativeValue",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "贈品、學校及社團訂製； 交期與檔期以報價確認。 HK$3-8/本 HK$3-8/本 實價按規格報價 滿$500包郵 產品編號 CL-003 最低訂購量 1本 標準交期 以報價確認 品質保證 品質問題免費重印或退款 滿$500包郵 港九新界順豐 數量 − + HK$3.00 × 1 = HK$3.00 MOQ 1 加入購物車 立即購買 → 小計",
+        "ress 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。 常見問題 (FAQ) + 智印港 的最低起印量是多少？ 智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。 印刷交貨期需要多久？特急最快幾",
+        "明、想與眾不同的公司，把年曆變成流動的企業畫冊。 數碼 3-5 個工作天、柯式 5-7 天交貨，港九新界免費速遞。 定價每本 HK$3-8，最低起印量 1 本，具體費用視乎後加工與尺寸而定，歡迎查詢批量報價。 交稿規範 300 DPI 解析度 CMYK 色彩模式 3 mm 出血 外框化 字體 時效以報價確認 免費數碼打稿 Why Zprint",
+        "常見問題 定製年曆幾多錢？ + 定製年曆 1 本起印，HK$3-8/本；標準 7-10 個工作天（十二版面或燙金可變數據另計）。 定製年曆最低幾多本？ + 1 本起印，適合小批量試單與企業樣品；100 本以上批量單價更優。 可以做到十二版面同燙金嗎？ + 可以。十二版面（每月一版）、燙金／局部 UV／可變數據（每本印不同名或編號）均可安排，",
+        "價，視乎 A3/A4 尺寸、250-300g 銅版紙或啞粉紙及數量），免費排版含每月版面與節慶標註，WhatsApp 即時報價。 月曆/桌曆起訂量是多少？ + 起訂量視工藝而定：柯式大批量 500 本起，數碼印刷支持更小批量，以產品頁即時報價為準；梯級數量享批發價。 月曆落單要幾早？交貨時間幾耐？ + Q4 為月曆高峰期，產能按落單先後排產，",
+        "定製年曆 | 企業禮品 多款式 | 1本起 HK$3起 | 智印港 +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 搜尋 購物車 首頁 即日急件 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷 學校印刷",
+        "印刷 / 定製年曆 印刷即日速遞送貨 | 今天下單 · 急件截稿與送達以報價確認 訂製年曆印刷 — 十二版面 企業LOGO 燙金可選，1 本起印 專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。 定製年曆 1本起印，HK$3-8/本 起，交期與打稿時效以報價確認。 定製月曆 · 直接答案 定製月曆 1 本起印，HK$3-8／",
+        "本 （起印價，量大批價以 30 秒 AI 報價確認）。 桌曆／掛曆／2027 年曆多款式，適合企業禮品、地產代理客戶贈品、學校及社團訂製； 交期與檔期以報價確認。 HK$3-8/本 HK$3-8/本 實價按規",
+        "格報價 滿$500包郵 產品編號 CL-003 最低訂購量 1本 標準交期 以報價確認 品質保證 品質問題免費重印或退款 滿$500包郵 港九新界順豐 數量 − + HK$3.00 × 1 = HK$3.00 MOQ 1 加入購物車 立即購買 → 小計 : HK$3.00 · 購物車 → 結算 30 秒 AI 報價 Whats",
+        "已服務的本地客戶 + 智印港已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。1 本起印（批量 300 本起上印刷機），48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。 可選加值服務 + 可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。 智印港 (Zpr",
+        "ss 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。 常見問題 (FAQ) + 智印港 的最低起印量是多少？ 智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。 印刷交貨期需要多久？特急最快幾耐",
+        "牢固耐用 【完全客製】Logo、品牌故事、產品圖片全可印 【免費排版】每月版面設計與節慶標註 【節慶檔期】Q4為高峰期，建議盡早確認（11月起以報價為準） 柯式印刷 海德堡柯式印刷機組 品控 ICC 色彩管理 · 對色實景 數碼印刷 HP Indigo 15K B2 數碼產線 6 步月曆訂製流程 1 WhatsApp 諮詢 話我哋知款式（座",
+        "收貨 數碼 3-5 日搞掂，順豐到港，企業大單可傾貨車分區派 Use Cases & File Specs 適用場景與檔案規格 直答：1 本起印、HK$3-8/本，1 小時內免費數碼打稿，30 秒 AI 報價即時出價。 定製年曆主打專屬設計，每頁都可以印上公司的產品、服務或活動資訊，例如產品圖、優惠日程、節慶日期等，十二個月十二個版面，讓客",
+        "適合品牌形象鮮明、想與眾不同的公司，把年曆變成流動的企業畫冊。 數碼 3-5 個工作天、柯式 5-7 天交貨，港九新界免費速遞。 定價每本 HK$3-8，最低起印量 1 本，具體費用視乎後加工與尺寸而定，歡迎查詢批量報價。 交稿規範 300 DPI 解析度 CMYK 色彩模式 3 mm 出血 外框化 字體 時效以報價確認 免費數碼打稿 Why",
+        "K B2 數碼產線，打稿與出貨時效以報價確認；FSC 認證紙材把關品質。我們熟悉跨境印刷需求，提供 IP 保護、價格透明與全球物流支援，少量起印，靈活承接小批量與大宗訂單。 順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球配送，時效以報價確認 深圳自有工廠 15年跨境經驗 彩龍印刷旗下品牌，深圳自有工廠生產，品質可控 即",
+        "品質問題免費重印或全額退款 24小時支持 全天候服務 專業客服團隊7x24小時在線 FAQ 常見問題 定製年曆幾多錢？ + 定製年曆 1 本起印，HK$3-8/本；標準 7-10 個工作天（十二版面或燙金可變數據另計）。 定製年曆最低幾多本？ + 1 本起印，適合小批量試單與企業樣品；100 本以上批量單價更優。 可以做到十二版面同燙金嗎？",
+        "？ + 標準 7-10 個工作天；Q4 旺季建議提前 3-4 週落單，急件可加急處理。 月曆印刷幾多錢一本？ + 2027 掛牆/座檯年曆 HK$3-8/本（2026-09 報價，視乎 A3/A4 尺寸、250-300g 銅版紙或啞粉紙及數量），免費排版含每月版面與節慶標註，WhatsApp 即時報價。 月曆/桌曆起訂量是多少？ + 起訂量視工",
+        "藝而定：柯式大批量 500 本起，數碼印刷支持更小批量，以產品頁即時報價為準；梯級數量享批發價。 月曆落單要幾早？交貨時間幾耐？ + Q4 為月曆高峰期，產能按落單先後排產，愈早落單愈穩陣；11 月起檔期以報價回覆為準，急件請 Wh"
+      ],
+      "entity_snippets": [
+        "0 MOQ 1 加入購物車 立即購買 → 小計 : HK$3.00 · 購物車 → 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門 品質問題免費重印或全額退款 交期以報價確認 HP Indigo 15K B2 數碼產線 · 打稿與出貨時效以報價確認 DHL 全球 2-4 天 順豐香港本地",
+        "C 環保紙。 可選加值服務 + 可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。 智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球配送（運費與時效以報價確認）。DHL Express 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 1",
+        "壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費數碼打樣確認。 香港本地配送怎麼安排？免運費嗎？ 智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球配送（運費與時效以報價確認），日本客戶 2-4 個工作天到貨。 印刷品質有問題怎麼辦？ 智印港提供",
+        "式 3 mm 出血 外框化 字體 時效以報價確認 免費數碼打稿 Why ZprintPro 為何選擇 智印港 智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務香港及東南亞、美國、日本及全球客戶。廠房配備海德堡柯式印刷機組與 HP Indigo 15K B2 數碼產線，打稿與出貨時效以報價確認；FSC 認證紙材把關",
+        "球物流支援，少量起印，靈活承接小批量與大宗訂單。 順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球配送，時效以報價確認 深圳自有工廠 15年跨境經驗 彩龍印刷旗下品牌，深圳自有工廠生產，品質可控 即日交貨 特急24小時 標準與急件時效按稿件確認及產能報價確認 順豐直達 全港覆蓋 順豐速運上門派送，快捷安全 數碼打樣 時效以",
+        "務清單、優惠券），封面加入 logo 與品牌色；13 頁設計（封面+12 個月）支持全定制。 你哋嘅廠喺邊？係咪自己印？ + 全部月曆訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-CAL 歸檔，可追溯到機台同班次。 準備落單？免費打稿，時效以報價確認 WhatsApp 客服 +86 19",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 [email protected] 週一至週六 09:00 - 18:00 (GMT+8) 中國大陸 24h 響應 · 香港本地客服",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 聯絡方式 WhatsApp 免費報價 產品中心 紙袋印刷 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷 學校印刷 關於我們 關於我們 品牌"
+      ],
+      "language_clue_hits": [],
+      "visible_text_chars": 5335
+    },
+    {
+      "requested_url": "https://zprintpro.com/zh-hk/category/books/",
+      "final_url": "https://zprintpro.com/zh-hk/category/books/",
+      "status": 200,
+      "elapsed_ms": 345,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423b4c9690d8d-SEA"
+      },
+      "bytes": 338884,
+      "title": "小冊子印刷 10本起・騎馬釘/膠裝/精裝 教材繪本急印 | 智印港",
+      "canonical": [
+        "https://zprintpro.com/zh-hk/category/books/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/category/books/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/category/books/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/category/books/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/category/books/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/category/books/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/category/books/"
+        }
+      ],
+      "h1": [
+        "香港小冊子印刷 — 騎馬釘 / 膠裝書 / 精裝書 / 螺旋裝 / 兒童繪本"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "CollectionPage",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ItemList",
+        "ListItem",
+        "LocalBusiness",
+        "MerchantReturnPolicy",
+        "Offer",
+        "OpeningHoursSpecification",
+        "PostalAddress",
+        "Product",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "頁書脊平整牢固，可印書名/條碼/ISBN。小冊子升級膠裝 +HK$30/本，實價視乎頁數同紙張，以 WhatsApp 報價為準。 Q 印書最少要印幾多本？有冇批量優惠？ 五款書刊（騎馬釘書刊小冊子、無線膠裝書、精裝書、線圈筆記本、畫冊型錄）劃一 10 本起印（數碼）； Q 騎馬釘、膠裝定精裝點揀？ 8-64 頁揀騎馬釘最抵，可平攤 180°",
+        "10本起 · 全球配送 DHL 2-4天 · 無線膠裝 · 智印港 [材質] 內頁157g–200g銅版紙；封面200g–250g銅版紙 [起訂] 10 本 HK$2.8/本 起 10本起訂 · 量大更優 立即訂購 熱賣 騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 — 目錄/雜誌/練習冊 10 本起 · 無線膠裝 · 智印港 [材質",
+        "] 128g–157g銅版紙或書紙 [起訂] 10 本 HK$1.20 每本 起 10本起批 · 整批 HK$179 立即訂購 熱賣 香港無線膠裝書籍 — 學術論文集 / 年度報告 / CSR 社會責任報告 / 文學作品集 · 騎馬釘 · 智",
+        "印港 [材質] 內頁157g–200g銅版紙；封面200g–250g銅版紙 [起訂] 10 本 HK$0.87 每本 起 10本起批 · 整批 HK$308 立即訂購 香港精裝書籍 — 婚慶紀念書 / 家族史冊 / 畢業紀念冊 / 校友會刊 · 無線膠裝 · 品質保證 · 智印港",
+        "[材質] 硬紙板封面裱糊銅版紙；內頁157g–200g銅版紙 [起訂] 10 本 HK$40.00-240.00 每本 起 實價按規格報價 · 滿$500包郵 立即訂購 香港線圈筆記本 — 企業禮品 / 補習社教材 / 活頁筆記本 / 校園紀念本 · 無線膠裝 · 品",
+        "質保證 · 智印港 [材質] 內頁80g–100g書紙或道林紙；封面200g銅版紙或PP [起訂] 10 本 HK$8/本 起 10本起訂 · 量大更優 立即訂購 30 秒找到你的規格： 材質：內頁157g–200g銅版紙；封面200g–250g銅版紙 材質：128g–157g銅版紙或書紙 材質：硬紙板封面裱糊銅版紙；內頁157g–20",
+        "印書」、「膠裝書」、「精裝書」等高搜索量關鍵詞 適用於企業年報、產品目錄、畫冊、小說、教材、畢業紀念冊等多元場景 02 小批量友好：10 本起訂，數碼印刷按需生產 10 本起訂（數碼印刷），適合自費出版、企業試產、限量畫冊 100 本以上柯式印刷更經濟，色彩更準確，適合大量發行 支持可變數據印刷，每本書可以印不同內容（個性化教材、定制年報）",
+        "尺寸範圍 A5(148×210mm)、B5(176×250mm)、A4(210×297mm)、正方形(210×210mm)，支持完全訂製 起訂量 10 本起訂（數碼印刷），100 本以上柯式印刷更經濟 交期 數碼印刷 2–3 天；柯式印刷 5–7 天；精裝書 7–10 天；打樣 2–3 天 檔案要求 InDesign / PDF，300dp",
+        "N 出版支援 查看完整方案 → HK$2.8 起 畫冊/型錄印刷低至 HK$2.8/本，印書入門冇難度 10 本起印 五款書刊劃一 10 本起訂，校簿教材小批量都接得 國際認證 + FSC 認證印刷廠直出，品質同環保雙重認證 48 小時 畫冊類香港本地速遞到貨，DHL 全球 2-4 天 Buying Guide 書籍印刷選購指南 選擇裝訂方式",
+        "刊、校簿練習冊、產品目錄同宣傳冊子。實價視乎頁數、紙張（128g–157g 銅版紙或書紙）同數量，WhatsApp 30 秒即時報價。 印書最少要印幾多本？有冇批量優惠？ + 五款書刊（騎馬釘書刊小冊子、無線膠裝書、精裝書、線圈筆記本、畫冊型錄）劃一 10 本起印；以騎馬釘小冊子為例，100 本有 85 折、500 本 7 折。學校教材、補習",
+        "本。 騎馬釘書刊係咩？邊啲書刊適合用騎馬釘？ + 騎馬釘即係喺書脊中央用釘書釘裝訂，8-64 頁小冊子可以完全平攤 180°，翻閱方便、成本最低；活動場刊、校簿練習冊、產品目錄、宣傳冊子都啱用。HK$6-32/本，10 本起印。 校簿／練習冊可以批量印嗎？ + 可以。騎馬釘練習冊用 128g–157g 銅版紙或書紙，10 本起印，100 本有",
+        "$16-80/本</a>，10 本起印；頁數愈多、紙張愈厚，單價愈高。講低頁數同數量俾我哋，WhatsApp 30 秒攞準確報價。 書籍印刷最低多少本起？ + 10 本起訂（數碼印刷）。100 本以上柯式印刷更經濟，色彩更準確。 書籍有哪些裝訂方式？ + 騎馬釘、無線膠裝、鎖線膠裝、精裝書、YO 圈裝、蝴蝶裝。根據頁數和用途選擇最適方式。 書",
+        "saddle stitch booklet 詢盤持續增長 (教育局、跨境電商為主). 趨勢 3 大方向: ① 小批量靈活化 (10 本起 MOQ + 30 秒 AI 報價) ② 環保材質 (FSC 紙 + 大豆油墨) ③ 跨境電商帶動「精美小批量」需求 (200-1,000 本 catalog 為主力). 可以先報價再傳 InDesign／P",
+        "HK$500 免費順豐速遞 Compare 香港印書點揀？五款書刊 × 裝訂工藝 × 適用場景 × 價錢比較 品類 材質/工藝 適用場景 起訂量/價格 騎馬釘小冊子（場刊/校簿/練習冊） 128g–157g 銅版紙或書紙，四色數碼或柯式，8-64 頁平攤 180° 翻閱 企業手冊、活動場刊、學校練習冊（校簿）、雜誌同產品目錄 10 本起、H",
+        "小冊子印刷 10本起・騎馬釘/膠裝/精裝 教材繪本急印 | 智印港 +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 搜尋 購物車 首頁 即日急件 宣傳單張 貼紙印刷",
+        "繫我們 → WhatsApp 查詢 掃碼即時查詢 已有 15,000+ 客戶選擇智印港 Q 騎馬釘小冊子印刷幾多錢一本？ 騎馬釘小冊子印刷 HK$6-32/本，10 本起印；8-64 頁可 180° 平攤，實價視乎頁數同紙張。 Q 書刊印刷幾多錢一本？ 書刊印刷按裝訂計價：騎馬釘書刊 HK$6-32/本、<a href=\"/zh-hk/prod",
+        "uct/perfect-bound-books/\">無線膠裝書 HK$16-80/本</a>、精裝書 HK$40-240/本、畫冊型錄 HK$2.8-1000/本，全部 10 本起印；印量愈大單價愈低，WhatsApp 30 秒即時報價。 Q 膠裝書印刷幾錢？ <a href=\"/zh-hk/product/perfect-bound-boo",
+        "ks/\">無線膠裝書 HK$16-80/本</a>，10 本起印；48-400 頁書脊平整牢固，可印書名/條碼/ISBN。小冊子升級膠裝 +HK$30/本，實價視乎頁數同紙張，以 WhatsApp 報價為準。 Q 印書最少要印幾多本？有冇批量優惠？ 五款書刊（騎馬釘書刊小冊子、無線膠裝書、精裝書、線圈筆記本、畫冊型錄）劃一 10 本起印（數碼）"
+      ],
+      "entity_snippets": [
+        "al · 2 小時內回覆 立即獲取報價 WhatsApp 查詢 Why ZprintPro 為何選擇 智印港 智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務香港及東南亞、美國、日本及全球客戶。廠房配備海德堡柯式印刷機組與 HP Indigo 15K B2 數碼產線，打稿與出貨時效以報價確認；FSC 認證紙材把關",
+        "球物流支援，少量起印，靈活承接小批量與大宗訂單。 順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球配送，時效以報價確認 深圳自有工廠 15年跨境經驗 彩龍印刷旗下品牌，深圳自有工廠生產，品質可控 即日交貨 特急24小時 標準與急件時效按稿件確認及產能報價確認 順豐直達 全港覆蓋 順豐速運上門派送，快捷安全 數碼打樣 時效以",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 [email protected] 週一至週六 09:00 - 18:00 (GMT+8) 中國大陸 24h 響應 · 香港本地客服",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 聯絡方式 WhatsApp 免費報價 產品中心 紙袋印刷 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷 學校印刷 關於我們 關於我們 品牌",
+        "東京，都能享受 智印港 的專業印刷服務與 72 小時全球交付承諾。 關注我們 © 2026 智印港. 保留所有權利。 本站內容由智印港團隊於深圳平湖嘉城路廠房實地原創，翻印抄錄必究（原創檔號 ZP-OC-2610）。 WhatsApp 立即查詢 2 小時內回覆 · 全港順豐本地倉 電郵查詢 2 小時內回覆 · 全港順豐本地倉"
+      ],
+      "language_clue_hits": [],
+      "visible_text_chars": 9898
+    },
+    {
+      "requested_url": "https://zprintpro.com/en/product/textbooks/",
+      "final_url": "https://zprintpro.com/en/product/textbooks/",
+      "status": 200,
+      "elapsed_ms": 297,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423b7793d0d8d-SEA"
+      },
+      "bytes": 323158,
+      "title": "Textbook Printing | Perfect Bound | 10 MOQ | ZprintPro",
+      "canonical": [
+        "https://zprintpro.com/en/product/textbooks/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/product/textbooks/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/product/textbooks/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/product/textbooks/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/product/textbooks/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/product/textbooks/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/product/textbooks/"
+        }
+      ],
+      "h1": [
+        "Textbooks 10+ | Perfect Bound | ZprintPro"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "MerchantReturnPolicy",
+        "Offer",
+        "Organization",
+        "Place",
+        "PostalAddress",
+        "ProcureAction",
+        "Product",
+        "QuantitativeValue",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "Textbook Printing | Perfect Bound | 10 MOQ | ZprintPro +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 Search Cart Home Flyers Stickers Pa",
+        "-6.40 /book Final quote by specs · Free shipping over $500 SKU ED-004 Minimum order 10pc Standard lead time confirmed at quote Quality guarantee Free reprint or refund for quality def",
+        "ects Free shipping US $99+ free ship Quantity − + $9.20 × 10 = $92.00 MOQ 10 Add to Cart Buy Now → Subtotal : $92.00 · cart → 結算 30-sec AI Quote WhatsApp Us Asia factory Fre",
+        "FedEx) Japan / Taiwan / SEA / Global 2–5 business days Free over 100 copies Education Institution Case Studies + ZprintPro textbook printing has served the following instituti",
+        ", 100 gsm wood-free, perfect or PUR binding, 4-color cover, 500–2,000 copies Tutorial flagship material : B5, 80 gsm wood-free, perfect binding, foil-stamped cover, 200–500 cop",
+        "plementary : A4, 80 gsm book paper, saddle stitch, mono print, 1,000+ copies Self-publishing / ISBN : custom size, PUR binding, CIP layout, ISBN barcode + copyright page, 10+ c",
+        "ISO 12647 color management. Frequently Asked Questions + What is the minimum order quantity (MOQ)? ZprintPro supports small batches: 50 stickers, 100 stickers/envelopes, 100 gift box",
+        "彩鮮豔，內頁清晰 【騎馬釘或膠裝】牢固耐用，翻頁順暢 【輕薄紙張】80g–100g，便於學生攜帶 【免費排版】頁碼、章節與習題欄位 【10本起訂】小批量數碼，大量柯式 【學期檔期】開學前2週為高峰期 Offset Heidelberg offset press line QC ICC color management · press-side",
+        "w much does textbook printing cost? + Textbooks from $9.20/book at 10 MOQ (157gsm interior, 250gsm cover), 5-7 business days production plus DHL shipping confirmed at quote.",
+        "ddle stitch (8-64 pages) or perfect bound (64+ pages) in A4/A5/B5, 10 MOQ — short-run courseware and workbooks welcome. What is the minimum order quantity for printing? + Mo",
+        "st ZprintPro products start from 50–100 units/copies. Specific minimums are shown on each product page. Same-day small-batch rush orders are available f",
+        "rom 10 copies. Bulk orders enjoy tiered discounts—contact us for a custom quote. How long does printing and deliv",
+        "ting for K12 Schools, Tutoring Centers & Training Manuals from 10 pc, from $0.64-6.40; lead time and proof timing are confirmed at quote. From $0.64-6.40 $0.64-6.40 /book Final",
+        "quote by specs · Free shipping over $500 SKU ED-004 Minimum order 10pc Standard lead time confirmed at quote Quality guarantee Free reprin",
+        "t or refund for quality defects Free shipping US $99+ free ship Quantity − + $9.20 × 10 = $92.00 MOQ 10 Add to Cart Buy Now → Subtotal : $92.00 · cart",
+        "ch confirmed at quote DHL / FedEx worldwide shipping Free US shipping $99+ · DHL Express / FedEx · delivery timing confirmed at quote Rush Printing order today · rush cutof",
+        "HL / FedEx) USA / Canada / UK / Australia 2-4 business days Free over $99 Digital proof (by email) Worldwide Same day Free Physical sample proofs DHL courier worldwide 2-4",
+        "ency Settlement + ZprintPro supports multi-currency settlement (HKD / USD / JPY / CNY) via bank wire, WeChat Pay, Alipay, and PayPal. Corporate customers can apply for NET 3"
+      ],
+      "entity_snippets": [
+        "on Facility + ZprintPro operates from a modern production facility in Shenzhen (Longgang District, Guangdong Province), equipped with Heidelberg offset presses, FSC-certified pap",
+        "tional printing service brand of Cailong Printing. Operating from our Shenzhen production facility, we serve cross-border printing clients in the US, UK, Australia, Japan, and be",
+        "Express; transit times confirmed at quote · Tracking number provided Shenzhen ISO Factory 15+ Years Experience Owned production facility in Shenzhen, operated by Cailong Printin",
+        "hours. Factory: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China · HK Service Point: San Po Kong, Kowloon +86 198 8085 1334 [email protecte",
+        "hours. Factory: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China · HK Service Point: San Po Kong, Kowloon +86 198 8085 1334 Contact Us What",
+        "omer Service Contact Us FAQ Track Order ZprintPro is headquartered in Shenzhen, China, providing cross-border printing services to the US and global markets. US delivery via DHL",
+        "e is original, written by the ZprintPro team at our Pinghu factory in Shenzhen. Verbatim copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4"
+      ],
+      "language_clue_hits": [
+        "結算",
+        "起訂"
+      ],
+      "visible_text_chars": 21631
+    },
+    {
+      "requested_url": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+      "final_url": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+      "status": 200,
+      "elapsed_ms": 256,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423ba58cd0d8d-SEA"
+      },
+      "bytes": 284901,
+      "title": "中綴じ冊子 ラミネート・中綴じ・10冊〜 ¥258〜 | ZprintPro",
+      "canonical": [
+        "https://zprintpro.com/ja/product/saddle-stitch-booklets/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/product/saddle-stitch-booklets/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/product/saddle-stitch-booklets/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/product/saddle-stitch-booklets/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/product/saddle-stitch-booklets/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/"
+        }
+      ],
+      "h1": [
+        "中綴じ冊子印刷 10冊から対応｜A4/A5 ページ数・用紙選び"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "MerchantReturnPolicy",
+        "Offer",
+        "Organization",
+        "Place",
+        "PostalAddress",
+        "ProcureAction",
+        "Product",
+        "QuantitativeValue",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "達配送 | 本日注文・特急締切・配送は見積りで確認 中綴じ冊子印刷 10冊から対応｜A4/A5 ページ数・用紙選び 中綴じ冊子印刷 10冊 MOQ（Alibaba 黄頁 500+ 相比）、30秒 AI 即時見積もり（メール 2日 相比）、DHL グローバル 2-4日（海上 3-4週 相比）。8-64頁、180°フラット開き、均一紙厚。¥258-",
+        "りで確認します。 単価 ¥23.00 ¥23.00 冊あたり〜 10冊〜 · 一括 ¥3,580 製品番号 BK-002 最小注文数 10 部から（デジタル）· 100 部以上はオフセットが経済的個 標準納期 見積りで確認 品質保証 品質不良は無料再印刷 送料無料 全国配送 ⚡ 最小ロットは何部からですか？ 10 部から。少部数はデジタル印刷、",
+        "まとまった部数はオフセット印刷で、100 部以上はオフセットがより経済的です。 最小ロットと印刷方式：10 部から。少部数（自費出版・試作・限定版・見本）はデジタル印刷——版代不要・オンデマンド生産・校正と納期が速く、1 部あたり単価は高めです。まとまった部数はオフセット印刷——版代を部数で割るため、部数が増える",
+        "方式で異なり、30 秒 AI 見積もりが数量と仕様に応じて最適な方式を自動で選びます。 数量 − + ¥258 × 10 = ¥2,580 MOQ 10 カートに追加 今すぐ購入 → 小計 : ¥2,580 · カート → 結算 30秒無料見積もり WhatsAppで問い合わせ アジア自社工場 無料デザイン AI見積もり30秒 全国配送 品質不",
+        "和，適合照片與插畫 【多種裝訂】騎馬釘、膠裝、線裝或硬皮 【騎馬釘裝訂】8–64頁薄本，經濟實惠 【免費排版】目錄、頁碼與章節標註 【10本起訂】小批量數碼，大量柯式 【節慶檔期】Q4為高峰期，建議提早確認 オフセット ハイデルベルグ オフセット印刷ライン 品質管理 ICC カラーマネジメント · 色合わせ実機確認 デジタル HP Indig",
+        "本へ2〜4営業日でお届けします。 よくある質問 Q1: 最小注文数はいくつですか？ ZprintProのほとんどの商品は50〜100個/部/枚からご注文いただけます。中綴じ冊子は10冊から承ります。大量注文には段階割引があります。 Q2: 印刷と納品にはどのくらい時間がかかりますか？ 標準納期は3〜5営業日、急ぎの場合は24〜48時間以内に対応",
+        "記録され、機台・班次まで追跡可能です。 印刷の最小注文数はいくつですか？ + ZprintPro のほとんどの商品は 50〜100 個/部/枚からの最小注文です。詳細は各商品ページをご覧ください。即日少量急ぎは10枚から対応。大量注文は段階割引あり、お気軽にお問い合わせください。 印刷と納品にはどのくらい時間がかかりますか？ + 標準納期は 3",
+        "中綴じ冊子 ラミネート・中綴じ・10冊〜 ¥258〜 | ZprintPro +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 検索 カート ホーム チラシ印刷 ステッカー印刷 パッケージ印刷",
+        "AI 即時見積もり（メール 2日 相比）、DHL グローバル 2-4日（海上 3-4週 相比）。8-64頁、180°フラット開き、均一紙厚。¥258-1030/個。飲食・小売・教育・結婚式・同人・ペット・ベビー・茶飲・物流・アパレル・越境EC業界に最適。 中綴じ冊子印刷 / 騎馬釘書刊 — カタログ・雑誌・ドリル 10冊から は 10個から、",
+        "¥23.00 〜。納期・校正の時期はお見積りで確認します。 単価 ¥23.00 ¥23.00 冊あたり〜 10冊〜 · 一括 ¥3,580 製品番号 BK-002 最小注文数 10 部から（デジタル）· 100 部以上はオフセットが経済的個 標準納期 見積りで確認 品質保証 品質不良は無料再印刷 送料無料 全国配送 ⚡ 最小ロッ",
+        "必要なため納期は長めです。単価と納期は方式で異なり、30 秒 AI 見積もりが数量と仕様に応じて最適な方式を自動で選びます。 数量 − + ¥258 × 10 = ¥2,580 MOQ 10 カートに追加 今すぐ購入 → 小計 : ¥2,580 · カート → 結算 30秒無料見積もり WhatsAppで問い合わせ アジア自社工場 無料デザイ",
+        "格 注文数が多いほど、 1個あたりがお得 94 % 5,000 個 と 10 個 を比較 · 1個あたりお得 A4 8P 中綴じ 10 個 ¥358 /個 · セット ¥3,580 25 個 ¥277 /個 · セット ¥6,920 50 個 ¥218 /個 · セット ¥10,900 75 個 ¥197 /個 · セット ¥14,760 9",
+        "9 個 ¥186 /個 · セット ¥18,440 100 個 ¥188 /個 · セット ¥18,820 300 個 ¥115 /個 · セット ¥34,500 500 個 ¥51 /個 · セット ¥25,440 1000 個 ¥34 /個 · セット ¥33,680 2000 個 ¥28 /個 · セット ¥55,2",
+        "80 3000 個 ¥25 /個 · セット ¥75,420 最安 5000 個 ¥23 /個 · セット ¥115,540 参考価格 · 最終金額は WhatsApp の正式見積もりによります 即時見積もり ¥23.00 冊あたり〜 5,000 個 · セット合計 ¥115,540 標準納期 見積りで確認 即",
+        "（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。受付時間：平日 9:00-18:00（日本時間）。送料：¥10,000以上のご注文で全国送料無料、特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。 ジープリ",
+        "は？DHL 速達？ DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。 印刷品質に問題があった場合は？ ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ",
+        "和，適合照片與插畫 【多種裝訂】騎馬釘、膠裝、線裝或硬皮 【騎馬釘裝訂】8–64頁薄本，經濟實惠 【免費排版】目錄、頁碼與章節標註 【10本起訂】小批量數碼，大量柯式 【節慶檔期】Q4為高峰期，建議提早確認 オフセット ハイデルベルグ オフセット印刷ライン 品質管理 ICC カラーマネジメント · 色合わせ実機確認 デジタル HP Indi",
+        "紙の覆膜加工はオプションで選択できます。サイズはA4（210×297mm）またはA5（148×210mm）に対応します。 価格は1冊あたり ¥258〜（10冊から）です。お見積りはWhatsAppでページ数・部数・製本方法をご相談ください。30秒AI見積もりで概算価格と納期をご提示します。標準納期は3〜5営業日、DHL Expressで日本へ"
+      ],
+      "entity_snippets": [
+        "ル出力による事前確認を全ご注文で実施しています。イベント2週間前までにご注文いただければ、最短3営業日で出荷、余裕を持って納品。 運営会社：深圳市彩龙印刷包裝有限公司（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。受付時間：平日 9:00-18:00（日本時間）。送料：¥10,000以上のご注文で全国送料無",
+        "用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。 ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カ",
+        "合は、無料レイアウトサービスを提供します。 Why ZprintPro なぜ ZprintPro を選ぶ？ 智印港（ZprintPro）は、彩龍印刷が運営する国際印刷サービスブランドです。深圳自社工場から、DHL Express で日本を含む全世界へ高品質印刷を輸出しています。日本市場特有の品質基準への適合、厳密な納期管理、日本語対応スタッフ",
+        "による丁寧なサポートで、深圳から日本への高品質印刷輸出を実現します。 深圳から日本へ国際配送 · DHL/FedEx追跡番号付き · 日本全国対応（時期は見積りで確認） 深圳自社工場 15年以上の実績 彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理 即日納品 特急",
+        "・157gコート紙）。ページ数で変動、入稿後1時間以内に無料デジタル校正。 工場はどこですか？自社印刷ですか？ + すべての中綴じ冊子注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-SSB として保管・記録され、機台・班次まで追跡可能です。 印刷の最小注文",
+        "・微信支付・支付宝・PayPal決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。 自社工場：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 [email protected] 月〜土 09:00 - 18:00 (GMT+8)",
+        "・微信支付・支付宝・PayPal決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。 自社工場：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 お問い合わせ WhatsApp 見積もり 製品 紙袋印刷 チラシ印刷 ステッカー印刷 パ",
+        "返品ポリシー プライバシーポリシー 利用規約 カスタマーサービス お問い合わせ よくある質問 注文追跡 ZprintPro（智印港）は中国深圳に本社を置く国際印刷サービスブランドで、香港を含む世界市場向けにカスタマイズされた印刷ソリューションを提供しております。越境EC形式でサービスを提供し、香港向けは順豐速運で 48 時間配達、海外は D"
+      ],
+      "language_clue_hits": [
+        "結算"
+      ],
+      "visible_text_chars": 9019
+    },
+    {
+      "requested_url": "https://zprintpro.com/ja/category/packaging/",
+      "final_url": "https://zprintpro.com/ja/category/packaging/",
+      "status": 200,
+      "elapsed_ms": 274,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423bc6e9a0d8d-SEA"
+      },
+      "bytes": 379772,
+      "title": "パッケージ印刷 100個〜 ¥69〜 | 食品紙箱/紙袋 | ZprintPro",
+      "canonical": [
+        "https://zprintpro.com/ja/category/packaging/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/category/packaging/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/category/packaging/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/category/packaging/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/category/packaging/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/category/packaging/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/category/packaging/"
+        }
+      ],
+      "h1": [
+        "パッケージ印刷 カスタム — 食品用紙箱 / 紙袋 / 耐油カード / ギフト箱"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "CollectionPage",
+        "ContactPoint",
+        "FAQPage",
+        "HowTo",
+        "HowToStep",
+        "ItemList",
+        "ListItem",
+        "MerchantReturnPolicy",
+        "Offer",
+        "Organization",
+        "Product",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "文時に確認）。ご注文時に「内側印刷あり」とご指定ください。無料校正で両案を確認できます。 パッケージ印刷の料金はいくらから？ + 《料金表・最低ロット×単価》折りたたみ箱100個¥69〜／発送箱100個¥105〜／食品箱100個¥101〜／化粧品ボックス100個¥240〜（500個+15%OFF・1,000個+30%OFF）／貼り箱100個¥",
+        "パッケージ印刷 100個〜 ¥69〜 | 食品紙箱/紙袋 | ZprintPro +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 検索 カート ホーム チラシ印刷 ステッカー印",
+        "printPro [材質] 350g食品グレード白カード／400gグレー裏白板紙；PEラミネートまたはPLA内層 [最小注文] 100 個 ¥101/個 〜 100個〜 今すぐ注文 人気 化粧品パッケージボックス · AI見積もり30秒 · 印刷の専門家 · ZprintPro [材質] 1200-1500gグレー板紙に白カード／ソフトタッチ",
+        "紙／パール紙を貼り加工; 内台 EVA／パルプ／PETブリスタ [最小注文] 100 個 ¥240/個 〜 100個〜 今すぐ注文 100個〜 発送箱 · 越境EC FBA · DHL 2-4日配送 · AI見積もり30秒 · 印刷の専門家 · ZprintPro [材質] E／Bフルート段ボ",
+        "ールまたは白カード貼り段ボール（耐荷重による） [最小注文] 100 個 ¥74/個 〜 100個〜 今すぐ注文 折りたたみ箱 · AI見積もり30秒 · 印刷の専門家 · ZprintPro [材質] 300g–350g白カード紙／Eフルート段ボール [最小注文] 100 個",
+        "¥69/個 〜 100個〜 今すぐ注文 貼り箱（リジッドボックス） / 見積もり · AI見積もり30秒 · 印刷の専門家 · ZprintPro [材質] グレー板紙＋特殊貼り紙；マグネット金具 オプシ",
+        "ョン [最小注文] 100 個 ¥160-840 個あたり 〜 仕様により正式見積 · 送料無料条件あり 今すぐ注文 人気 マグネット蓋ギフトボックス · AI見積もり30秒 · 印刷の専門家 · ZprintPro [材質] グレー板",
+        "紙貼り表紙＋隠しマグネット；ソフトタッチフィルム可 [最小注文] 100 個 ¥450/個 〜 100個〜 今すぐ注文 人気 電子機器包裝箱 · AI見積もり30秒 · 印刷の専門家 · ZprintPro [材質] 1200gグレー板紙にコート紙貼り；EVA／PETブリスタ／パル",
+        "プ内台 [最小注文] 100 個 ¥240/個 〜 100個〜 今すぐ注文 人気 クラフト紙 パッケージ印刷 / クラフト紙 箱印刷 · AI見積もり30秒 · 印刷の専門家 · ZprintPro [材質] 300g–350g FSCク",
+        "ラフトカード紙；水性インキ [最小注文] 300 個 ¥150/個 〜 300個〜 今すぐ注文 人気 合版ホワイトカードボックス(型代不要) · AI見積もり30秒 · 印刷の専門家 · ZprintPro [材質] 350g/400g片面コートカード(超嵩",
+        "高)／375g銀カード紙／375gレーザー銀カード [最小注文] 500 件 ¥4.40 個あたり 〜 500個〜 · 一括 ¥5,440 今すぐ注文 白カードボックス · AI見積もり30秒 · 印刷の専門家 · ZprintPro [最小注文] 500 個 ¥10-60 個あたり 〜 仕様により正式見積 · 送料無料条件あり",
+        "今すぐ注文 段ボール箱 (E/Fフルート) · AI見積もり30秒 · 印刷の専門家 · ZprintPro [最小注文] 500 件 ¥11.00 個あたり 〜 500個〜 · 一括 ¥30,340 今すぐ注文 差し込み式ボックス (直挿/飛行機挿) · AI見積もり30秒 · 印刷の専門家 · ZprintPro [最小注文] 500",
+        "件 ¥14.00 個あたり 〜 500個〜 · 一括 ¥30,760 今すぐ注文 30秒で仕様を見つける： 材質：350g食品グレード白カード／400gグレー裏白板紙；PEラミネートまたはPLA内層 材質：1200-1500gグレー板紙に白カード／ソフトタッ",
+        "タートアップブランドの試作に最適。 標準納期3-5日（見積りで確認）。アジアの工場から直送（深圳拠点）｜日本全国SFエクスプレス配送。 単価HK$0.8～、大量在庫不要で経済的。 03 高級加工＋無料デザイン支援、ブランド価値向上 箔押し（金／銀）、UVエンボス、局部コーティング、窓開け、リボン穴など高級加工対応。 無料デジタル校正＋プロのデザ",
+        "確認後、3日で出荷。日本全国へ配送、輸出向けテスト書類にも対応します（ご注文時に確認）。 最小ロットと価格帯の目安：食品箱 100個〜（1個¥101〜）、折り箱 100個〜（1個¥69〜）、メーラーボックス 100個〜（1個¥105〜）、化粧品箱 100個〜（1個¥240〜）、上製箱 100個〜（1個¥240〜）、クラフト紙袋 100個〜（1",
+        "個¥240〜）、白カード紙袋 100個〜（1個¥360〜）、ギフト紙袋 100個〜（1個¥600〜）。クラフト紙の箱 vs 白カード箱 vs 貼り箱：クラフト紙の箱は 300 個〜（1 個 ¥150〜）でナチュラル・オーガニックなブランド印象に、白カードの折り箱は 100 個〜で発色と強度の",
+        "標準に、貼り箱（リジッドボックス）は 100 個〜（1 個 ¥240〜）で高級ギフト向け。用途と価格帯で選ぶなら、 クラフト紙のパッケージ印刷 をまずご覧ください。 パッケージ箱オーダーガイド 貼り箱（リジッドボックス） 食品パッケージ箱 化粧品パッケージ印刷 紙",
+        "」とご指定ください。無料校正で両案を確認できます。 パッケージ印刷の料金はいくらから？ + 《料金表・最低ロット×単価》折りたたみ箱100個¥69〜／発送箱100個¥105〜／食品箱100個¥101〜／化粧品ボックス100個¥240〜（500個+15%OFF・1,000個+30%OFF）／貼り箱100個¥240〜／マグネット蓋ギフトボックス1"
+      ],
+      "entity_snippets": [
+        "・タック端・白カード箱などは500個から — スタートアップブランドの試作に最適。 標準納期3-5日（見積りで確認）。アジアの工場から直送（深圳拠点）｜日本全国SFエクスプレス配送。 単価HK$0.8～、大量在庫不要で経済的。 03 高級加工＋無料デザイン支援、ブランド価値向上 箔押し（金／銀）、UVエンボス、局部コーティング、窓開け、リボン",
+        "信 無料お見積もり WhatsAppで相談 Why ZprintPro なぜ ZprintPro を選ぶ？ 智印港（ZprintPro）は、彩龍印刷が運営する国際印刷サービスブランドです。深圳自社工場から、DHL Express で日本を含む全世界へ高品質印刷を輸出しています。日本市場特有の品質基準への適合、厳密な納期管理、日本語対応スタッフ",
+        "による丁寧なサポートで、深圳から日本への高品質印刷輸出を実現します。 深圳から日本へ国際配送 · DHL/FedEx追跡番号付き · 日本全国対応（時期は見積りで確認） 深圳自社工場 15年以上の実績 彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理 即日納品 特急",
+        "・微信支付・支付宝・PayPal決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。 自社工場：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 [email protected] 月〜土 09:00 - 18:00 (GMT+8)",
+        "・微信支付・支付宝・PayPal決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。 自社工場：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 お問い合わせ WhatsApp 見積もり 製品 紙袋印刷 チラシ印刷 ステッカー印刷 パ",
+        "返品ポリシー プライバシーポリシー 利用規約 カスタマーサービス お問い合わせ よくある質問 注文追跡 ZprintPro（智印港）は中国深圳に本社を置く国際印刷サービスブランドで、香港を含む世界市場向けにカスタマイズされた印刷ソリューションを提供しております。越境EC形式でサービスを提供し、香港向けは順豐速運で 48 時間配達、海外は D",
+        "。 フォロー © 2026 ZprintPro. All rights reserved. 本サイトの文章はすべてZprintProチームが深圳・平湖の自社工場で作成したオリジナルです。無断転載は追跡・対応します（コンテンツ参照番号 ZP-OC-2610）。 特定商取引法に基づく表記 無料見積もり 2時間以内に返信 · サンプル送料無料 メー"
+      ],
+      "language_clue_hits": [],
+      "visible_text_chars": 10428
+    },
+    {
+      "requested_url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "final_url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "status": 200,
+      "elapsed_ms": 300,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423bebc6e0d8d-SEA"
+      },
+      "bytes": 292841,
+      "title": "A2 海報印刷 420×594mm 10張起印 HK$16起 1-2天 | 智印港",
+      "canonical": [
+        "https://zprintpro.com/zh-hk/product/a2-posters/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/product/a2-posters/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/product/a2-posters/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/product/a2-posters/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/product/a2-posters/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/product/a2-posters/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/product/a2-posters/"
+        }
+      ],
+      "h1": [
+        "海報印刷 · A2 大幅 · 印海報 即日"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "MerchantReturnPolicy",
+        "Offer",
+        "OpeningHoursSpecification",
+        "Organization",
+        "Place",
+        "PostalAddress",
+        "ProcureAction",
+        "Product",
+        "QuantitativeValue",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "1 加大版同線供應。 每個低至 · HK$16.00 HK$16.00 每張起 10張起批 · 整批 HK$160 產品編號 PO-001 最低訂購量 10件 標準交期 以報價確認 品質保證 品質問題免費重印或退款 滿$500包郵 港九新界順豐 數量 − + HK$16.00 × 10 = HK$160.00 MOQ 10 加入購物車 立即購",
+        "ress 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。 常見問題 (FAQ) + 智印港 的最低起印量是多少？ A2 海報 10 張起印（420×594mm、157g 銅版紙、單面四色）。200 張或以下、HKT 11:00 前確認稿件可即日投產；常規 1–2 個工作天。30 秒 AI 報價，無",
+        "1 大幅海報 ，櫥窗貼面與短期促銷看 自粘海報 ，配 X 展架使用見 展架海報 ，規格總覽見 海報印刷類目 。 常見問題 Q1: A2 海報最少印幾多張？ 10 張起印；500 張或以上詢問階梯價更優。 Q2: 紙材可以升級嗎？ 可以，157g 銅版紙為標準，可升 200g 或相紙，展示級場景建議相紙。 Q3: 可以加 PP 裱貼或泡沫板嗎？",
+        "A2 US$2.30 起）。A1 1 張起印、A2 10 張起印，實際售價視紙材與數量而定，以 30 秒 AI 報價為準。 海報印刷 香港 最低訂量是多少？ + 智印港提供A2海報印刷服務，最低10張起訂。無論是戶外防水海報、展覽海報或燙金海報，均可少批量定製，適合活動宣傳及零售推廣。詳情請參閱《海報印刷完全指南》。 A2海報 和 A1海報",
+        "A2 海報印刷 420×594mm 10張起印 HK$16起 1-2天 | 智印港 +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 搜尋 購物車 首頁 即日急件 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷",
+        "ting 印刷即日速遞送貨 | 今天下單 · 急件截稿與送達以報價確認 海報印刷 · A2 大幅 · 印海報 即日 A2海報印刷訂製，10張起印，HK$16起/張。200g銅版紙/PP合成紙，雙面四色印刷，防水防曬耐用。適合地產活動展覽店舖推廣，1-2天交貨，全港送貨。適配行業:零售精品店、品牌 pop-up、商場快閃、餐廳菜單推廣、咖啡店",
+        "、教育培訓機構、藝廊展覽、婚慶活動。 A2海報印刷 / a2 poster printing 10件起印，HK$16.00 起，交期與打稿時效以報價確認。 A2 海報 · 直接答案 A2 海報（420×594mm）10 張起印，HK$16／張起 （大量階梯以報價確認）。 數碼急件線最快即日，截單時效與附加費以報價確認；157",
+        "-200g 銅版／相紙， PP 護膜、泡沫板裱貼、穿繩可選；A1 加大版同線供應。 每個低至 · HK$16.00 HK$16.00 每張起 10張起批 · 整批 HK$160 產品編號 PO-001 最低訂購量 10件 標準交期 以報價確認 品質保證 品質問題免費重印或退款 滿$500包郵 港九新界順豐 數量 − + HK$16.00",
+        "× 10 = HK$160.00 MOQ 10 加入購物車 立即購買 → 小計 : HK$160.00 · 購物車 → 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門 品質問題免費重印或全額退款 Price Ladder · 參考價 訂",
+        "得越多， 每件越平 86 % 訂 300 件 vs 10 件 · 每件慳幾 A2 · 銅版紙 · 157g · 單面 10 件 HK$16.00 /件 · 整批 160 20 件 HK$11.50 /件 · 整批 230 50 件 HK$9.00 /件 · 整批 450 100 件 HK$5.61 /件 · 整批 561 200 件",
+        "HK$3.04 /件 · 整批 608 最抵 300 件 HK$2.19 /件 · 整批 656 參考價 · 最終以 WhatsApp 正式報價為準 即時報價 HK$16.00 每張起 300 件整批 HK$656 標準交期 以報價確認 即日急件 今天下單 · 急件",
+        "截稿與送達以報價確認 滿 HK$500 港九新界免運 30 秒 AI 報價 WhatsApp 即時查詢 交期以報價確認 HP Indigo 15K B2 數碼產線 · 打稿與出貨時效以報價確認 DHL 全球 2-4 天 順豐香港本地送",
+        "Details 產品詳情 ⚡ 快速答案 (40 秒讀完) A2 海報 = 420 × 594 mm（16.5 × 23.4 吋），10 張起印 HK$16 起/張（10 張 HK$160）。157g 銅版紙為基準、單面四色（雙面按價表），200g 厚紙／相紙可升級，PP 合成紙防水可選；常規 1-2 個工作天；200 張或以下、HKT 1",
+        "1:00 前確認稿件可即日投產（取件／送達以報價確認為準）；港九新界滿 HK$500 免費順豐，DHL 全球 2-4 天。A1（594×841mm）面積是 A2 的兩倍，單價以美元計亦約兩倍（A1 US$4.60 起）。延伸閱讀： A1 A2 海報尺寸對照表 · A1 A2 海報",
+        "虹色超出色域 已服務的本地客戶 + 智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，常規 1–2 個工作天（即日急件按 HKT 11:00 截稿），深圳平湖廠房直送，DHL Express / FedEx 國際配送。 可選加值服務 + 可加燙金、UV 局部、PP 護膜、裱泡沫板、",
+        "ss 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。 常見問題 (FAQ) + 智印港 的最低起印量是多少？ A2 海報 10 張起印（420×594mm、157g 銅版紙、單面四色）。200 張或以下、HKT 11:00 前確認稿件可即日投產；常規 1–2 個工作天。30 秒 AI 報價，無需",
+        "局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費數碼打樣確認。 香港本地配送怎麼安排？免運費嗎？ 港九新界滿 HK$500 免費順豐；未達門檻或即日配送以報價確認。海外訂單透過 DHL Express / FedEx，主要市場約 2–4 個工作天（運費與時效以報價確認）。 印刷品質有問題怎麼辦？ 智印港提供品質保證",
+        "檔案規格 A2 海報印刷是零售與活動推廣的標準規格選擇：420×594mm 的比例在門店櫥窗、商場快閃與教育走廊都剛好夠大又不搶位，10 張起印，157g 銅版紙為標準，按場景可升級 200g 或相紙。提交設計檔案即有免費數碼打稿確認色彩，30 秒 AI 報價即時試算。 規格決策先看張貼環境：室內門店與走廊用 157g 銅版紙性價比最高；需"
+      ],
+      "entity_snippets": [
+        "OQ 10 加入購物車 立即購買 → 小計 : HK$160.00 · 購物車 → 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門 品質問題免費重印或全額退款 Price Ladder · 參考價 訂得越多， 每件越平 86 % 訂 300 件 vs 10 件 · 每件慳幾 A2 · 銅",
+        "間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，常規 1–2 個工作天（即日急件按 HKT 11:00 截稿），深圳平湖廠房直送，DHL Express / FedEx 國際配送。 可選加值服務 + 可加燙金、UV 局部、PP 護膜、裱泡沫板、邊緣封邊。建議急件可拆數碼快印與後工裱貼分段排程。 智印港 (Zprin",
+        "tPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球配送（運費與時效以報價確認）。DHL Express 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。 常",
+        "式 3 mm 出血 外框化 字體 時效以報價確認 免費數碼打稿 Why ZprintPro 為何選擇 智印港 智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務香港及東南亞、美國、日本及全球客戶。廠房配備海德堡柯式印刷機組與 HP Indigo 15K B2 數碼產線，打稿與出貨時效以報價確認；FSC 認證紙材把關",
+        "球物流支援，少量起印，靈活承接小批量與大宗訂單。 順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球配送，時效以報價確認 深圳自有工廠 15年跨境經驗 彩龍印刷旗下品牌，深圳自有工廠生產，品質可控 即日交貨 特急24小時 標準與急件時效按稿件確認及產能報價確認 順豐直達 全港覆蓋 順豐速運上門派送，快捷安全 數碼打樣 時效以",
+        "HK$500免運費，Backdrop背景板等大件可安排貨車直送會場。未滿額可選擇港鐵站交收。 你哋嘅廠喺邊？係咪自己印？ + 全部海報訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-PO 歸檔，可追溯到機台同班次。 準備落單？免費打稿，時效以報價確認 WhatsApp 客服 +86 198",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 [email protected] 週一至週六 09:00 - 18:00 (GMT+8) 中國大陸 24h 響應 · 香港本地客服",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 聯絡方式 WhatsApp 免費報價 產品中心 紙袋印刷 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷 學校印刷 關於我們 關於我們 品牌"
+      ],
+      "language_clue_hits": [],
+      "visible_text_chars": 7277
+    },
+    {
+      "requested_url": "https://zprintpro.com/zh-hk/product/roll-up-banners/",
+      "final_url": "https://zprintpro.com/zh-hk/product/roll-up-banners/",
+      "status": 200,
+      "elapsed_ms": 254,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423c10ae60d8d-SEA"
+      },
+      "bytes": 224445,
+      "title": "展示易拉寶 防水 | 1起印 HK$85起 4小時打稿 | 智印港",
+      "canonical": [
+        "https://zprintpro.com/zh-hk/product/roll-up-banners/"
+      ],
+      "hreflang": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://zprintpro.com/zh-hk/product/roll-up-banners/"
+        },
+        {
+          "lang": "en-US",
+          "url": "https://zprintpro.com/en/product/roll-up-banners/"
+        },
+        {
+          "lang": "en-GB",
+          "url": "https://zprintpro.com/en/product/roll-up-banners/"
+        },
+        {
+          "lang": "en-AU",
+          "url": "https://zprintpro.com/en/product/roll-up-banners/"
+        },
+        {
+          "lang": "ja",
+          "url": "https://zprintpro.com/ja/product/roll-up-banners/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://zprintpro.com/zh-hk/product/roll-up-banners/"
+        }
+      ],
+      "h1": [
+        "易拉寶"
+      ],
+      "meta_robots": [
+        "index, follow"
+      ],
+      "jsonld_types": [
+        "Answer",
+        "Brand",
+        "BreadcrumbList",
+        "ContactPoint",
+        "FAQPage",
+        "GeoCoordinates",
+        "HowTo",
+        "HowToStep",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "MerchantReturnPolicy",
+        "Offer",
+        "OpeningHoursSpecification",
+        "Organization",
+        "Place",
+        "PostalAddress",
+        "ProcureAction",
+        "Product",
+        "QuantitativeValue",
+        "Question",
+        "SearchAction",
+        "SpeakableSpecification",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": 0,
+      "commercial_snippets": [
+        "套 起，交期與打稿時效以報價確認。 HK$85-300/套 HK$85-300/套 實價按規格報價 滿$500包郵 產品編號 BN-002 最低訂購量 1套 標準交期 以報價確認 品質保證 品質問題免費重印或退款 滿$500包郵 港九新界順豐 數量 − + HK$85.00 × 1 = HK$85.00 MOQ 1 加入購物車 立即購買 →",
+        "本地客戶 + 智印港已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。 可選加值服務 + 可異形模切、鏤空設計，貼於金屬欄或木板。曲面或粗糙牆建議打樣小條測試。 智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品",
+        "ress 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。 常見問題 (FAQ) + 智印港 的最低起印量是多少？ 智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。 印刷交貨期需要多久？特急最快幾",
+        "品質問題免費重印或全額退款 24小時支持 全天候服務 專業客服團隊7x24小時在線 FAQ 常見問題 易拉架幾多錢一個？ + 易拉架 1 套起訂，HK$85 起/套（85×200cm、防水畫面連支架；尺寸同生地浮動 HK$85-300/套）。5-7 個工作天，入稿後 1 小時內免費數碼校正。 易拉架畫面可以單換嗎？ + 可以，支架重用，單換畫",
+        "面按尺寸報價，適合季度推廣換畫。支架穩固重用，換畫成本遠低於全套新購。 產品印刷 最低訂量是多少？ + 智印港大部分產品最低 50–100 個 / 本 / 張起訂，具體以產品頁報價為準。即日小批量急件可低至 10 張起。大量訂單享階梯折扣，請聯絡客服獲取專屬報價。 印刷工期 需要多長時間？ + 標準工期為 3–5 個工作天",
+        "展示易拉寶 防水 | 1起印 HK$85起 4小時打稿 | 智印港 +86 198 8085 1334 [email protected] WhatsApp 繁 EN 日 搜尋 購物車 首頁 即日急件 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷",
+        "/ 易拉寶 印刷即日速遞送貨 | 今天下單 · 急件截稿與送達以報價確認 易拉寶 便攜易拉寶展架，安裝簡便。展會、路演必備。 易拉寶 1套起印，HK$85-300/套 起，交期與打稿時效以報價確認。 HK$85-300/套 HK$85-300/套 實價按規格報價 滿$500包郵 產品編號 BN-002 最低訂購量 1套 標準交期 以報價確",
+        "認 品質保證 品質問題免費重印或退款 滿$500包郵 港九新界順豐 數量 − + HK$85.00 × 1 = HK$85.00 MOQ 1 加入購物車 立即購買 → 小計 : HK$85.00 · 購物車 → 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門 品質",
+        "地客戶 + 智印港已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。 可選加值服務 + 可異形模切、鏤空設計，貼於金屬欄或木板。曲面或粗糙牆建議打樣小條測試。 智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品",
+        "ss 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 12647 色彩管理、品質管理。 常見問題 (FAQ) + 智印港 的最低起印量是多少？ 智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。 印刷交貨期需要多久？特急最快幾耐",
+        "拉寶更適合室內及短中期活動，畫面隨時更換，配合不同主題即換即用；下單後 1–3 個工作天交貨，港九新界免費速遞。 收費以套計算，每套易拉寶 HK$85-300，100 套起印；批量訂購價格更優惠，歡迎查詢。 交稿規範 300 DPI 解析度 CMYK 色彩模式 3 mm 出血 外框化 字體 時效以報價確認 免費數碼打稿 Why ZprintPr",
+        "K B2 數碼產線，打稿與出貨時效以報價確認；FSC 認證紙材把關品質。我們熟悉跨境印刷需求，提供 IP 保護、價格透明與全球物流支援，少量起印，靈活承接小批量與大宗訂單。 順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球配送，時效以報價確認 深圳自有工廠 15年跨境經驗 彩龍印刷旗下品牌，深圳自有工廠生產，品質可控 即",
+        "品質問題免費重印或全額退款 24小時支持 全天候服務 專業客服團隊7x24小時在線 FAQ 常見問題 易拉架幾多錢一個？ + 易拉架 1 套起訂，HK$85 起/套（85×200cm、防水畫面連支架；尺寸同生地浮動 HK$85-300/套）。5-7 個工作天，入稿後 1 小時內免費數碼校正。 易拉架畫面可以單換嗎？ + 可以，支架重用，單換",
+        "季度推廣換畫。支架穩固重用，換畫成本遠低於全套新購。 產品印刷 最低訂量是多少？ + 智印港大部分產品最低 50–100 個 / 本 / 張起訂，具體以產品頁報價為準。即日小批量急件可低至 10 張起。大量訂單享階梯折扣，請聯絡客服獲取專屬報價。 印刷工期 需要多長時間？ + 標準工期為 3–5 個工作天，加急件最快 24–48 小時內完成",
+        "小時快遞直送 (順豐/DHL)。樣書可郵寄審核。 香港本地 有送貨服務嗎？ + 智印港提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等 — 香港服務點，非生產地）。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。",
+        "ESG 形象的企業、社會企業及 NGO。 急件 / 加急 如何收費？ + 48 小時快遞免費（港九新界大部分地區）。即日 4 小時取件加收 HK$80–150（視產品類型）。加急件可聯絡客服走專屬急件通道，產能優先排程。 印刷品質有問題可以重印嗎？ + 智印港提供「品質問題免費重印」承諾。若成品顏色 / 裁切 / 裝訂與確認樣稿不符，我們承擔重",
+        "0 秒 AI 報價 WhatsApp 即時查詢 相關產品 查看全部 → 戶外燈布噴繪 · 易拉寶 · 含安裝 · 香港印刷專家 · 智印港 HK$12-55/平方米 背膠噴繪 · 易拉寶 · 含安裝 · 香港印刷專家 · 智印港 HK$10-45/平方米 車身廣告 · 易拉寶 · 含安裝 · 香港印刷專家 · 智印港 HK$28-120/平方米",
+        "HK$85-300/套 30 秒報價 WhatsApp 智印港 是全球智能印刷訂製平台，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全"
+      ],
+      "entity_snippets": [
+        "MOQ 1 加入購物車 立即購買 → 小計 : HK$85.00 · 購物車 → 結算 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 AI即時報價 送貨上門 品質問題免費重印或全額退款 交期以報價確認 HP Indigo 15K B2 數碼產線 · 打稿與出貨時效以報價確認 DHL 全球 2-4 天 順豐香港本地",
+        "S 防水認證。 可選加值服務 + 可異形模切、鏤空設計，貼於金屬欄或木板。曲面或粗糙牆建議打樣小條測試。 智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球配送（運費與時效以報價確認）。DHL Express 全球配送（運費與時效以報價確認）。FSC 認證紙材、ISO 1",
+        "壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費數碼打樣確認。 香港本地配送怎麼安排？免運費嗎？ 智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球配送（運費與時效以報價確認），日本客戶 2-4 個工作天到貨。 印刷品質有問題怎麼辦？ 智印港提供",
+        "式 3 mm 出血 外框化 字體 時效以報價確認 免費數碼打稿 Why ZprintPro 為何選擇 智印港 智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務香港及東南亞、美國、日本及全球客戶。廠房配備海德堡柯式印刷機組與 HP Indigo 15K B2 數碼產線，打稿與出貨時效以報價確認；FSC 認證紙材把關",
+        "球物流支援，少量起印，靈活承接小批量與大宗訂單。 順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球配送，時效以報價確認 深圳自有工廠 15年跨境經驗 彩龍印刷旗下品牌，深圳自有工廠生產，品質可控 即日交貨 特急24小時 標準與急件時效按稿件確認及產能報價確認 順豐直達 全港覆蓋 順豐速運上門派送，快捷安全 數碼打樣 時效以",
+        "間？ + 標準工期為 3–5 個工作天，加急件最快 24–48 小時內完成。即日交貨適用於大部分標準 SKU，建議上午 11 時前確認稿件。深圳總部生產，港九新界 48 小時快遞直送 (順豐/DHL)。樣書可郵寄審核。 香港本地 有送貨服務嗎？ + 智印港提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 [email protected] 週一至週六 09:00 - 18:00 (GMT+8) 中國大陸 24h 響應 · 香港本地客服",
+        "，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 聯絡方式 WhatsApp 免費報價 產品中心 紙袋印刷 宣傳單張 貼紙印刷 包裝盒訂製 海報印刷 學校印刷 關於我們 關於我們 品牌"
+      ],
+      "language_clue_hits": [],
+      "visible_text_chars": 5282
+    },
+    {
+      "requested_url": "https://zprintpro.com/robots.txt",
+      "final_url": "https://zprintpro.com/robots.txt",
+      "status": 200,
+      "elapsed_ms": 186,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=14400, must-revalidate",
+        "server": "cloudflare",
+        "cf-cache-status": "REVALIDATED",
+        "cf-ray": "a61423c2f8130d8d-SEA"
+      },
+      "bytes": 1385,
+      "text_excerpt": "# robots.txt - single SSoT (2026-10-26 P0-2 static single-source)\n# Background: public/robots.txt + app/robots.ts dual source caused online 404.\n# app/robots.ts (MetadataRoute) does not take effect on Cloudflare Pages\n# (@opennextjs/cloudflare): online robots.txt still 404, manifest.webmanifest 500\n# (same root cause). Switched to static file single source served by CF Pages.\n# 2026-08-04 K3 P0-1: ZprintPro not in AI training data - CF Managed defaults to\n# Disallow AI crawlers; explicit Allow below overrides (12 AI crawler types).\n# Note: still requires K3 to allow AI crawlers in CF Dashboard (Security > Bots).\n\nUser-agent: *\nAllow: /\n\nDisallow: /admin/\nDisallow: /api/\nDisallow: /cdn-cgi/\nDisallow: /manifest.json\nDisallow: /manifest.webmanifest\nDisallow: /sw.js\nDisallow: /workbox-*.js\n\n# 2026-08-04 K3 P0-1: 12 AI crawlers explicit Allow (override CF Managed default)\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: Claude-Web\nAllow: /\n\nUser-agent: anthropic-ai\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Perplexity-User\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-age"
+    },
+    {
+      "requested_url": "https://zprintpro.com/sitemap.xml",
+      "final_url": "https://zprintpro.com/sitemap.xml",
+      "status": 200,
+      "elapsed_ms": 245,
+      "headers": {
+        "content-type": "application/xml",
+        "cache-control": "public, max-age=3600, must-revalidate",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423c42b110d8d-SEA"
+      },
+      "bytes": 474228,
+      "text_excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\n  <url>\n    <loc>https://zprintpro.com/zh-hk/</loc>\n    <lastmod>2026-11-28</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n    <xhtml:link rel=\"alternate\" hreflang=\"zh-Hant-HK\" href=\"https://zprintpro.com/zh-hk/\" />\n    <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zprintpro.com/en/\" />\n    <xhtml:link rel=\"alternate\" hreflang=\"ja-JP\" href=\"https://zprintpro.com/ja/\" />\n    <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://zprintpro.com/zh-hk/\" />\n  </url>\n  <url>\n    <loc>https://zprintpro.com/en/</loc>\n    <lastmod>2026-11-28</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n    <xhtml:link rel=\"alternate\" hreflang=\"zh-Hant-HK\" href=\"https://zprintpro.com/zh-hk/\" />\n    <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"https://zprintpro.com/en/\" />\n    <xhtml:link rel=\"alternate\" hreflang=\"ja-JP\" href=\"https://zprintpro.com/ja/\" />\n    <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"https://zprintpro.com/zh-hk/\" />\n  </url>\n  <url>\n    <loc>https://zprintpro.com"
+    },
+    {
+      "requested_url": "https://zprintpro.com/llms.txt",
+      "final_url": "https://zprintpro.com/llms.txt",
+      "status": 200,
+      "elapsed_ms": 350,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=86400, must-revalidate",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423c5bf690d8d-SEA"
+      },
+      "bytes": 38504,
+      "text_excerpt": "# ZprintPro智印港\n\n> 跨境印刷 SaaS — 15+ 年自有工厂经验 (founded 2012), 72h 全球配送, ISO 9001 / FDA / FSC 认证. 16 大品类 / 91 SKU: 貼紙 / 宣傳單張 / 包裝盒 / 海報 / 紙袋 / 賀卡 / 橫額 / 書刊 / 餐牌 / 信封 / 月曆 / 利是封 / 教育用品 / 同人周邊 / 喜帖 / 席位卡. 服务 30+ 国家 (US / UK / AU / CA / JP / HK / MO / TW / SG / EU 等).\n\n## 核心品牌（单品牌分层, per K3 9/1 02:54）\n- **zh-hk 品牌**: 智印港 (本地化: 香港场景, 顺丰本地, DHL 全球 2-4 天)\n- **en 品牌**: ZprintPro (美国市场集中, Free Shipping $99+, Free Design, no setup fees, ISO 9001)\n- **ja 品牌**: ジープリント / ZprintPro (日本市场, 全国送料込み, 短納期 2-4 天, 日本向け)\n\n## 关键数据 (权威, 引用请保留数据源)\n- **15+ 年** 印刷经验 (founded 2012, 自有工厂)\n- **72h 全球配送** (US: DHL Express 2-4 day / UK/AU: FedEx 3-5 day / HK: 顺丰本地 1-2 工作天)\n- **30+ 国家覆盖**\n- **ISO 9001 认证** (品质管理)\n- **FSC 认证纸张** (可持续来源)\n- **FDA 21 CFR** 食品级内衬认证 (适用化妆品/食品包装)\n- **月产能 1,000,000+ 件**\n- **起印量 1 件起为主流** (banners 1 起 / posters 1-10 张 / calendars 數碼 1 本起 / 批量 300 起; 其余品类 1-100 起, 以分類總表 Min Qty 為準 — K3 2026-09-21 MOQ 統一批)\n\n## 印刷品类 (16 大品类, P0 五大為主力)\n- **貼紙 / Stickers** [P0]: 防水 PVC / 透明 / 哑面 / 异形切割\n- **宣傳單張 / Flyers** [P0]: 157g 銅版紙 / 4 色 CMYK / A4/A5/DL / 即日印刷 4-6 小时\n- **包裝盒 / Packaging Boxes** [P0]: 天地盒 / 磁吸盒 / 摺叠盒 / FDA 食品级内衬\n- **海報 / Posters** [P0]: 戶外防水 / 展示 / 可移背膠, 1-10 張起\n- **紙袋 / Paper Bags** [P0]: 牛皮紙 "
+    },
+    {
+      "requested_url": "https://zprintpro.com/llms-zh-hk.txt",
+      "final_url": "https://zprintpro.com/llms-zh-hk.txt",
+      "status": 200,
+      "elapsed_ms": 341,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=86400, must-revalidate",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423c7ed950d8d-SEA"
+      },
+      "bytes": 12841,
+      "text_excerpt": "# ZprintPro智印港 (香港) — AI 搜尋優化頁面\n# Last updated: 2026-09-21 (auto-generated from src/data/products.ts — do not hand-edit)\n# This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services\n\n## 公司資訊\n- 公司: 深圳市彩龍印刷包裝有限公司\n- 品牌: 智印港\n- 成立: 2012年\n- Website: https://zprintpro.com\n- 地址: 香港九龍新蒲崗大有街3號萬廣大廈15樓C室\n- 電話: +86 198 8085 1334\n- WhatsApp: +86 198 8085 1334\n- 電郵: zprintpro@outlook.com\n- 認證: ISO 9001, FSC\n- 服務市場: 香港 (主場), 港九新界全覆蓋\n- 配送: 港九新界免費速遞 · 最快即日交貨 · 72小時全球快遞\n\n## 產品分類 (16 total)\n\n- 貼紙印刷 (stickers) -- 9 products\n- 傳單印刷 (flyers) -- 7 products\n- 包裝盒定製 (packaging) -- 12 products\n- 海報印刷 (posters) -- 6 products\n- 紙袋印刷 (paper-bags) -- 6 products\n- 賀卡印刷 (greeting-cards) -- 6 products\n- 噴繪廣告 (banners) -- 4 products\n- 書籍印刷 (books) -- 5 products\n- 餐牌印刷 (menus) -- 4 products\n- 信封印刷 (envelopes) -- 4 products\n- 月曆印刷 (calendars) -- 6 products\n- 利是封印刷 (red-packets) -- 6 products\n- 校園教育印刷 (educational) -- 5 products\n- 同人周邊印刷 (japan-doujin) -- 3 products\n- 喜帖印刷 (wedding-invitations) -- 4 products\n- 枱卡 (place-cards) -- 4 products\n\n## 全產品一覽 (91 SKU)\n\n### 貼紙印刷 (stickers)\n\n| 產品 | Slug | 最低訂量 | 基準價格 |\n|------|------|---------|---------|\n| 防水貼紙 / 戶外貼紙 訂製 / PVC 防水 / 異形貼紙 | waterproof-stick"
+    }
+  ],
+  "crawler_ua_probes": [
+    {
+      "ua": "Googlebot",
+      "path": "/robots.txt",
+      "status": 403,
+      "final_url": "https://zprintpro.com/robots.txt",
+      "bytes": 5572,
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "cloudflare",
+        "cf-ray": "a61423ca0bc90d8d-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "Googlebot",
+      "path": "/sitemap.xml",
+      "status": 403,
+      "final_url": "https://zprintpro.com/sitemap.xml",
+      "bytes": 5554,
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "cloudflare",
+        "cf-ray": "a61423cd08ee75c7-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "Googlebot",
+      "path": "/en/product/small-batch-stickers/",
+      "status": 403,
+      "final_url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "bytes": 5659,
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "cloudflare",
+        "cf-ray": "a61423d02ec1252d-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "GPTBot",
+      "path": "/robots.txt",
+      "status": 200,
+      "final_url": "https://zprintpro.com/robots.txt",
+      "bytes": 1385,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=14400, must-revalidate",
+        "server": "cloudflare",
+        "cf-cache-status": "HIT",
+        "cf-ray": "a61423d3391b75ee-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "GPTBot",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "final_url": "https://zprintpro.com/sitemap.xml",
+      "bytes": 474228,
+      "headers": {
+        "content-type": "application/xml",
+        "cache-control": "public, max-age=3600, must-revalidate",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423d469cc75ee-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "GPTBot",
+      "path": "/en/product/small-batch-stickers/",
+      "status": 200,
+      "final_url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "bytes": 303214,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a61423d5ba6775ee-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "ClaudeBot",
+      "path": "/robots.txt",
+      "status": 200,
+      "final_url": "https://zprintpro.com/robots.txt",
+      "bytes": 1385,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=14400, must-revalidate",
+        "server": "cloudflare",
+        "cf-cache-status": "HIT",
+        "cf-ray": "a61423dd1d1675ee-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "ClaudeBot",
+      "path": "/sitemap.xml",
+      "status": 403,
+      "final_url": "https://zprintpro.com/sitemap.xml",
+      "bytes": 25,
+      "headers": {
+        "content-type": "text/plain",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "server": "cloudflare",
+        "cf-ray": "a61423de4d7175ee-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "ClaudeBot",
+      "path": "/en/product/small-batch-stickers/",
+      "status": 403,
+      "final_url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "bytes": 25,
+      "headers": {
+        "content-type": "text/plain",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "server": "cloudflare",
+        "cf-ray": "a61423df3db675ee-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "PerplexityBot",
+      "path": "/robots.txt",
+      "status": 200,
+      "final_url": "https://zprintpro.com/robots.txt",
+      "bytes": 1385,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=14400, must-revalidate",
+        "server": "cloudflare",
+        "cf-cache-status": "HIT",
+        "cf-ray": "a61423e03e0f75ee-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "PerplexityBot",
+      "path": "/sitemap.xml",
+      "status": 403,
+      "final_url": "https://zprintpro.com/sitemap.xml",
+      "bytes": 25,
+      "headers": {
+        "content-type": "text/plain",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "server": "cloudflare",
+        "cf-ray": "a61423e15e7e75ee-SEA"
+      },
+      "error": null
+    },
+    {
+      "ua": "PerplexityBot",
+      "path": "/en/product/small-batch-stickers/",
+      "status": 403,
+      "final_url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "bytes": 25,
+      "headers": {
+        "content-type": "text/plain",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "server": "cloudflare",
+        "cf-ray": "a61423e26f0475ee-SEA"
+      },
+      "error": null
+    }
+  ]
+}

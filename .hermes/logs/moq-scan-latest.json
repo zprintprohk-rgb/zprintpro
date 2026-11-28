@@ -1,6 +1,6 @@
 {
-  "scannedAt": "2026-11-27T10:18:08",
-  "truthSize": 82,
+  "scannedAt": "2026-11-28T04:09:37",
+  "truthSize": 83,
   "shapeProblems": [],
   "hits": 0,
   "drift": 0,
@@ -12,7 +12,7 @@
     },
     {
       "kind": "zh_張起",
-      "grep": 27,
+      "grep": 31,
       "scan": 0
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "kind": "ja_枚から",
-      "grep": 18,
+      "grep": 19,
       "scan": 0
     },
     {
@@ -47,7 +47,7 @@
     },
     {
       "kind": "en_pcs",
-      "grep": 9,
+      "grep": 10,
       "scan": 0
     }
   ],

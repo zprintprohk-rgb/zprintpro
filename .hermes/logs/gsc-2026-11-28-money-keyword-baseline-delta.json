@@ -1,0 +1,5022 @@
+{
+  "method": {
+    "dual_read": "openpyxl and pandas, six sheets per workbook, shape/header/cell values all MATCH",
+    "kpi_authority": "图表 sheet; query and page sheets are visible/top-1000 samples, not full-site totals",
+    "position": "impression-weighted recomputation; zero-impression/zero-position rows excluded",
+    "missing_query": "NO_VISIBLE_QUERY_ROW_NOT_ZERO; never treated as zero",
+    "ctr_caution": "position-band CTR is observational, affected by intent/device/SERP layout; not causal or guaranteed",
+    "market_dimension": "market in keyword tables is the intended target cluster, NOT a GSC country/locale filter; actual landing locale is established only from query×page evidence"
+  },
+  "terms": [
+    {
+      "market": "zh-hk",
+      "query": "印刷",
+      "query_normalized": "印刷",
+      "commercial_role": "market_head",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 43.5,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 21.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.67,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 23.25,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 23.25,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 35.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 22.03,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 2.0,
+        "impressions": 145.0,
+        "ctr": 0.0137931,
+        "position_impression_weighted": 24.35,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 2.0,
+        "impressions": 147.0,
+        "ctr": 0.01360544,
+        "position_impression_weighted": 24.97,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "印刷公司",
+      "query_normalized": "印刷公司",
+      "commercial_role": "market_head",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 44.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 9.0,
+        "ctr": 0.11111111,
+        "position_impression_weighted": 36.89,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 3.0,
+        "impressions": 38.0,
+        "ctr": 0.07894737,
+        "position_impression_weighted": 35.47,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 2.0,
+        "impressions": 45.0,
+        "ctr": 0.04444444,
+        "position_impression_weighted": 33.89,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 112.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.58,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-25": {
+        "clicks": 2.0,
+        "impressions": 154.0,
+        "ctr": 0.01298701,
+        "position_impression_weighted": 28.0,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 2.0,
+        "impressions": 147.0,
+        "ctr": 0.01360544,
+        "position_impression_weighted": 29.03,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "香港印刷",
+      "query_normalized": "香港印刷",
+      "commercial_role": "market_head",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 46.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 4.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.75,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 28.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.04,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 28.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.21,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 15.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.53,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 2.0,
+        "impressions": 37.0,
+        "ctr": 0.05405405,
+        "position_impression_weighted": 12.0,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 2.0,
+        "impressions": 36.0,
+        "ctr": 0.05555556,
+        "position_impression_weighted": 11.86,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "香港印刷公司",
+      "query_normalized": "香港印刷公司",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.5,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 12.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 23.0,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 58.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 21.0,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 62.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 21.35,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 13.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 26.77,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 26.86,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 26.86,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "印刷公司報價",
+      "query_normalized": "印刷公司報價",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.5,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 15.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.33,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.43,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "即日印刷",
+      "query_normalized": "即日印刷",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 35.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.57,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 43.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.98,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 2.0,
+        "impressions": 54.0,
+        "ctr": 0.03703704,
+        "position_impression_weighted": 8.04,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 2.0,
+        "impressions": 58.0,
+        "ctr": 0.03448276,
+        "position_impression_weighted": 8.31,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 1.0,
+        "impressions": 56.0,
+        "ctr": 0.01785714,
+        "position_impression_weighted": 7.39,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 1.0,
+        "impressions": 54.0,
+        "ctr": 0.01851852,
+        "position_impression_weighted": 9.33,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 1.0,
+        "impressions": 52.0,
+        "ctr": 0.01923077,
+        "position_impression_weighted": 9.37,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "即日急件",
+      "query_normalized": "即日急件",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 22.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.68,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 31.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 18.23,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 38.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.26,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 36.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.17,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 29.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.86,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 46.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.91,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 46.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.98,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "urgent printing",
+      "query_normalized": "urgent printing",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.21,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.21,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "海報印刷",
+      "query_normalized": "海報印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 133.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 25.59,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 161.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 25.15,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-05": {
+        "clicks": 2.0,
+        "impressions": 173.0,
+        "ctr": 0.01156069,
+        "position_impression_weighted": 16.25,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-09": {
+        "clicks": 2.0,
+        "impressions": 184.0,
+        "ctr": 0.01086957,
+        "position_impression_weighted": 16.13,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-30": {
+        "clicks": 1.0,
+        "impressions": 286.0,
+        "ctr": 0.0034965,
+        "position_impression_weighted": 14.94,
+        "band": "G2",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-25": {
+        "clicks": 1.0,
+        "impressions": 187.0,
+        "ctr": 0.00534759,
+        "position_impression_weighted": 25.75,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 198.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 28.46,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "印海報",
+      "query_normalized": "印海報",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 123.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 26.3,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 137.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 25.09,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 127.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.65,
+        "band": "G2",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 127.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.09,
+        "band": "G2",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-30": {
+        "clicks": 1.0,
+        "impressions": 125.0,
+        "ctr": 0.008,
+        "position_impression_weighted": 12.79,
+        "band": "G2",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 122.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 25.57,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 133.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 27.94,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "海報印刷即日",
+      "query_normalized": "海報印刷即日",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.12,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 10.0,
+        "ctr": 0.1,
+        "position_impression_weighted": 14.2,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.79,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 1.0,
+        "impressions": 35.0,
+        "ctr": 0.02857143,
+        "position_impression_weighted": 9.54,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 1.0,
+        "impressions": 35.0,
+        "ctr": 0.02857143,
+        "position_impression_weighted": 9.71,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "海報印刷一張",
+      "query_normalized": "海報印刷一張",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 2.0,
+        "impressions": 5.0,
+        "ctr": 0.4,
+        "position_impression_weighted": 14.6,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 2.0,
+        "impressions": 7.0,
+        "ctr": 0.28571429,
+        "position_impression_weighted": 16.71,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 6.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.67,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 6.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.67,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 1.0,
+        "impressions": 18.0,
+        "ctr": 0.05555556,
+        "position_impression_weighted": 4.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 15.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.33,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.71,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "a2印刷",
+      "query_normalized": "a2印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.14,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 9.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.44,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 5.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.2,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 3.57,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 11.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.91,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.57,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 6.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "a2 印刷",
+      "query_normalized": "a2 印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 3.5,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 5.0,
+        "ctr": 0.2,
+        "position_impression_weighted": 5.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 10.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.4,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 10.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.6,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.07,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 1.0,
+        "impressions": 10.0,
+        "ctr": 0.1,
+        "position_impression_weighted": 5.9,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 1.0,
+        "impressions": 10.0,
+        "ctr": 0.1,
+        "position_impression_weighted": 5.9,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "a1 印刷 即日",
+      "query_normalized": "a1 印刷 即日",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 11.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.36,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.07,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 17.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 19.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.11,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 1.0,
+        "impressions": 33.0,
+        "ctr": 0.03030303,
+        "position_impression_weighted": 8.33,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 31.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.35,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 1.0,
+        "impressions": 35.0,
+        "ctr": 0.02857143,
+        "position_impression_weighted": 6.17,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "a2 印刷 即日",
+      "query_normalized": "a2 印刷 即日",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 1.0,
+        "impressions": 9.0,
+        "ctr": 0.11111111,
+        "position_impression_weighted": 4.11,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 8.0,
+        "ctr": 0.125,
+        "position_impression_weighted": 5.38,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 3.0,
+        "impressions": 14.0,
+        "ctr": 0.21428571,
+        "position_impression_weighted": 3.07,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 3.0,
+        "impressions": 18.0,
+        "ctr": 0.16666667,
+        "position_impression_weighted": 3.28,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 1.0,
+        "impressions": 22.0,
+        "ctr": 0.04545455,
+        "position_impression_weighted": 4.45,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 31.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.23,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 34.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.82,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "a2 海報 印刷 一 張 價格",
+      "query_normalized": "a2 海報 印刷 一 張 價格",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 1.0,
+        "impressions": 1.0,
+        "ctr": 1.0,
+        "position_impression_weighted": 1.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 1.0,
+        "impressions": 3.0,
+        "ctr": 0.33333333,
+        "position_impression_weighted": 1.33,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "利是封印刷",
+      "query_normalized": "利是封印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 59.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.56,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 72.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.67,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 67.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.13,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 65.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 19.15,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 1.0,
+        "impressions": 55.0,
+        "ctr": 0.01818182,
+        "position_impression_weighted": 21.6,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 60.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 25.57,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 60.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 25.88,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "訂製利是封",
+      "query_normalized": "訂製利是封",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 24.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 28.71,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 33.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 25.52,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 29.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.76,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 30.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 16.87,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 1.0,
+        "impressions": 27.0,
+        "ctr": 0.03703704,
+        "position_impression_weighted": 21.0,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 36.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.22,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 1.0,
+        "impressions": 42.0,
+        "ctr": 0.02380952,
+        "position_impression_weighted": 24.9,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "2027利是封",
+      "query_normalized": "2027利是封",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 15.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.53,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 17.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.18,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "月曆印刷",
+      "query_normalized": "月曆印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 1.0,
+        "impressions": 139.0,
+        "ctr": 0.00719424,
+        "position_impression_weighted": 19.74,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 133.0,
+        "ctr": 0.0075188,
+        "position_impression_weighted": 19.26,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 116.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 16.24,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 118.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 16.35,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 109.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 23.71,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 175.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 21.63,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 194.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 22.4,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "月曆印刷香港",
+      "query_normalized": "月曆印刷香港",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 3.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 3.33,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 1.0,
+        "impressions": 2.0,
+        "ctr": 0.5,
+        "position_impression_weighted": 18.5,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 1.0,
+        "impressions": 2.0,
+        "ctr": 0.5,
+        "position_impression_weighted": 18.5,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "貼紙",
+      "query_normalized": "貼紙",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 80.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 50.16,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 74.0,
+        "ctr": 0.01351351,
+        "position_impression_weighted": 47.78,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 6.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 62.67,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 4.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 71.25,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 33.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 55.67,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 142.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.02,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 146.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.57,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "印貼紙",
+      "query_normalized": "印貼紙",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.75,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 6.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 32.17,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 12.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 39.33,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 12.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 39.5,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 26.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 41.81,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 31.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 39.58,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 36.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 39.11,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "貼紙印刷",
+      "query_normalized": "貼紙印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 133.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.14,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 153.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.18,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 170.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 26.98,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 159.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 26.36,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 120.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 40.88,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 225.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.56,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 252.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.15,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "貼紙訂製",
+      "query_normalized": "貼紙訂製",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 48.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.48,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 53.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.7,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 34.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 27.71,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 28.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.18,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 34.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 32.41,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 89.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.53,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 97.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 28.58,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "透明貼紙印刷",
+      "query_normalized": "透明貼紙印刷",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 25.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.16,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 20.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 4.75,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "可移貼紙",
+      "query_normalized": "可移貼紙",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 40.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 16.27,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 44.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.93,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 44.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 16.09,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 40.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 16.25,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 37.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.14,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 95.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.09,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 101.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.47,
+        "band": "G2",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "戶外可移貼紙",
+      "query_normalized": "戶外可移貼紙",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 45.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 3.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 27.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 4.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.5,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 11.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.91,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 21.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.19,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 21.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.62,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "宣傳單張",
+      "query_normalized": "宣傳單張",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 135.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 36.8,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 130.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 36.35,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-05": {
+        "clicks": 1.0,
+        "impressions": 103.0,
+        "ctr": 0.00970874,
+        "position_impression_weighted": 30.54,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-09": {
+        "clicks": 1.0,
+        "impressions": 103.0,
+        "ctr": 0.00970874,
+        "position_impression_weighted": 30.54,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 117.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.37,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 143.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 44.27,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 142.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 45.27,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "宣傳單張印刷",
+      "query_normalized": "宣傳單張印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 137.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.31,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 130.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.33,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 109.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.7,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 106.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 23.77,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 103.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.02,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 149.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.68,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 150.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.79,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "宣传单张",
+      "query_normalized": "宣传单张",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "摺頁印刷",
+      "query_normalized": "摺頁印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 35.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.8,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 45.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 36.42,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 27.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 33.37,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 27.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.93,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 50.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.38,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 71.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.14,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 71.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.86,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "紙袋印刷",
+      "query_normalized": "紙袋印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 67.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.45,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 69.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 13.75,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 73.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.36,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 77.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.3,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 64.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.11,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 102.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 19.04,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 125.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 22.46,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "訂做紙袋",
+      "query_normalized": "訂做紙袋",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 60.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.38,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 67.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 18.72,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 59.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.98,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 54.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.06,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 53.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 21.79,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 85.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 21.81,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 100.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.04,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "印書",
+      "query_normalized": "印書",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 65.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 32.08,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 63.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.95,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 41.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 32.27,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 41.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.83,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 52.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.96,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 70.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.9,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 75.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.56,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "書刊印刷",
+      "query_normalized": "書刊印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 4.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 34.5,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 16.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 39.69,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 97.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.38,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 94.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 34.51,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 101.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 32.28,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 158.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.16,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 168.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.71,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "書籍印刷",
+      "query_normalized": "書籍印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.0,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 3.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.33,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.5,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.5,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 57.5,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "书籍印刷",
+      "query_normalized": "书籍印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 5.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.6,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 5.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.6,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "小冊子印刷",
+      "query_normalized": "小冊子印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 18.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.5,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 36.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.14,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 53.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.87,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 52.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.96,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 52.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.6,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 16.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.0,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 16.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.0,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "膠裝書價格",
+      "query_normalized": "膠裝書價格",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 33.5,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 28.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 30.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.77,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 33.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.15,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 42.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.62,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 69.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 37.23,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 70.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 37.0,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "包裝盒印刷",
+      "query_normalized": "包裝盒印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 68.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.19,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 71.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.9,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 53.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 33.94,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 53.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 32.3,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 54.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.89,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 77.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.21,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 87.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.87,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "包裝盒訂製",
+      "query_normalized": "包裝盒訂製",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 64.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.39,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 64.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.58,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 44.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.18,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 42.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 28.45,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 47.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.51,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 73.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.32,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 82.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.52,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "紙盒印刷",
+      "query_normalized": "紙盒印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 54.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 39.43,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 63.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 37.46,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 48.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.0,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 49.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.69,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 46.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 33.3,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 71.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 37.37,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 80.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.58,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "紙盒訂製",
+      "query_normalized": "紙盒訂製",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 66.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 44.74,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 62.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 43.4,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 45.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.16,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 46.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.98,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 46.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.37,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 69.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 32.78,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 74.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 33.05,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "禮盒訂製",
+      "query_normalized": "禮盒訂製",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 39.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.56,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 45.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.73,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 4.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 37.5,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 30.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 41.93,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 44.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 48.18,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 40.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 46.7,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "食品包裝印刷",
+      "query_normalized": "食品包裝印刷",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 109.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 16.57,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 145.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.86,
+        "band": "G2",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 123.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.27,
+        "band": "G1",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 119.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.66,
+        "band": "G1",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 113.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.6,
+        "band": "G1",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 156.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.28,
+        "band": "G1",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 167.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.78,
+        "band": "G1",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "學校印刷",
+      "query_normalized": "學校印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.21,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 13.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 37.69,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 16.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 41.12,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 15.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 37.93,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 42.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 19.12,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 87.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 18.75,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 81.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.41,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "證書印刷",
+      "query_normalized": "證書印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 1.0,
+        "impressions": 18.0,
+        "ctr": 0.05555556,
+        "position_impression_weighted": 10.72,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 13.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.08,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 3.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.0,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 3.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.0,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 9.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.11,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 9.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.11,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "易拉架印刷",
+      "query_normalized": "易拉架印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 30.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 62.43,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 25.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 60.92,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 15.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 45.67,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 24.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 42.75,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 42.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.31,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 43.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 39.51,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 44.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.02,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "喜帖印刷",
+      "query_normalized": "喜帖印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 4.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 40.5,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 38.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 21.58,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 38.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 18.84,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 15.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 16.13,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 50.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 41.2,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 51.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 40.98,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "印喜帖價格",
+      "query_normalized": "印喜帖價格",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.0,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.21,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 1.0,
+        "impressions": 14.0,
+        "ctr": 0.07142857,
+        "position_impression_weighted": 5.14,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 1.0,
+        "impressions": 13.0,
+        "ctr": 0.07692308,
+        "position_impression_weighted": 4.92,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "zh-hk",
+      "query": "畢業紀念冊香港",
+      "query_normalized": "畢業紀念冊香港",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 2.0,
+        "impressions": 9.0,
+        "ctr": 0.22222222,
+        "position_impression_weighted": 10.67,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 2.0,
+        "impressions": 11.0,
+        "ctr": 0.18181818,
+        "position_impression_weighted": 9.55,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 20.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.5,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 17.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.35,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 16.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 1.81,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 1.0,
+        "impressions": 12.0,
+        "ctr": 0.08333333,
+        "position_impression_weighted": 3.83,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 1.0,
+        "impressions": 10.0,
+        "ctr": 0.1,
+        "position_impression_weighted": 4.1,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "en",
+      "query": "catalog printing china",
+      "query_normalized": "catalog printing china",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 40.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.65,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 40.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 18.77,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 27.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.04,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 25.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 25.8,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 34.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 19.38,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 36.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.67,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 36.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.67,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "en",
+      "query": "catalogs printing china",
+      "query_normalized": "catalogs printing china",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 11.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.73,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.71,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 18.43,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 13.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 18.69,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 9.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 22.22,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.43,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 31.43,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "en",
+      "query": "china catalog printing",
+      "query_normalized": "china catalog printing",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 1.0,
+        "impressions": 88.0,
+        "ctr": 0.01136364,
+        "position_impression_weighted": 19.77,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 99.0,
+        "ctr": 0.01010101,
+        "position_impression_weighted": 17.79,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 93.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.14,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 88.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.34,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 72.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.79,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 122.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.57,
+        "band": "G2",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 125.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 16.4,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      }
+    },
+    {
+      "market": "en",
+      "query": "catalogue printing china",
+      "query_normalized": "catalogue printing china",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 28.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 21.89,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 26.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 19.46,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 19.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 19.0,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 20.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 19.2,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 32.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.81,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 52.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 13.63,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 52.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 13.63,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "en",
+      "query": "custom catalog printing china",
+      "query_normalized": "custom catalog printing china",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 6.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 25.0,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "en",
+      "query": "catalog printing",
+      "query_normalized": "catalog printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 33.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 39.79,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 25.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 42.44,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.14,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 6.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 3.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 29.33,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.5,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.5,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "en",
+      "query": "small batch sticker printing",
+      "query_normalized": "small batch sticker printing",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 57.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.33,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 61.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.2,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 64.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.58,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 69.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.55,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 46.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.5,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 15.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.07,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 20.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.25,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "en",
+      "query": "small batch stickers",
+      "query_normalized": "small batch stickers",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 33.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 6.06,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 36.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 4.33,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 41.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.56,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 41.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.41,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 25.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 5.04,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 63.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.97,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 63.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 14.98,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "en",
+      "query": "sticker printing",
+      "query_normalized": "sticker printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 55.5,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 3.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 57.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "en",
+      "query": "custom packaging",
+      "query_normalized": "custom packaging",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "en",
+      "query": "custom packaging boxes",
+      "query_normalized": "custom packaging boxes",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "en",
+      "query": "book printing china",
+      "query_normalized": "book printing china",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "en",
+      "query": "booklet printing",
+      "query_normalized": "booklet printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "en",
+      "query": "saddle stitch booklet printing",
+      "query_normalized": "saddle stitch booklet printing",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 32.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 32.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 2.0,
+        "impressions": 102.0,
+        "ctr": 0.01960784,
+        "position_impression_weighted": 4.13,
+        "band": "G1",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-09": {
+        "clicks": 2.0,
+        "impressions": 104.0,
+        "ctr": 0.01923077,
+        "position_impression_weighted": 4.15,
+        "band": "G1",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.71,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "en",
+      "query": "school exercise book printing",
+      "query_normalized": "school exercise book printing",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 71.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 24.03,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 63.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 22.29,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 22.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.09,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 17.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 15.29,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 7.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 16.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.44,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 16.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.44,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "en",
+      "query": "educational printing",
+      "query_normalized": "educational printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 10.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 28.6,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 21.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 33.43,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 20.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.1,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "en",
+      "query": "doujinshi printing",
+      "query_normalized": "doujinshi printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 25.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.12,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 33.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.64,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 1.0,
+        "impressions": 54.0,
+        "ctr": 0.01851852,
+        "position_impression_weighted": 11.93,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-09": {
+        "clicks": 1.0,
+        "impressions": 54.0,
+        "ctr": 0.01851852,
+        "position_impression_weighted": 11.35,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 43.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.0,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 63.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.48,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 64.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.3,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "en",
+      "query": "doujin printing",
+      "query_normalized": "doujin printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 1.0,
+        "impressions": 12.0,
+        "ctr": 0.08333333,
+        "position_impression_weighted": 11.42,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 14.0,
+        "ctr": 0.07142857,
+        "position_impression_weighted": 11.43,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 1.0,
+        "impressions": 8.0,
+        "ctr": 0.125,
+        "position_impression_weighted": 9.88,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 1.0,
+        "impressions": 10.0,
+        "ctr": 0.1,
+        "position_impression_weighted": 9.9,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 2.0,
+        "impressions": 14.0,
+        "ctr": 0.14285714,
+        "position_impression_weighted": 9.07,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 10.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 9.0,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "en",
+      "query": "a2 poster printing",
+      "query_normalized": "a2 poster printing",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 66.75,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 8.0,
+        "ctr": 0.125,
+        "position_impression_weighted": 46.88,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 1.0,
+        "impressions": 13.0,
+        "ctr": 0.07692308,
+        "position_impression_weighted": 10.54,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 12.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.33,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 1.0,
+        "impressions": 16.0,
+        "ctr": 0.0625,
+        "position_impression_weighted": 17.31,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 31.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 34.87,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 41.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 37.78,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "en",
+      "query": "a2 printing",
+      "query_normalized": "a2 printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 60.57,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 10.0,
+        "ctr": 0.1,
+        "position_impression_weighted": 44.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 3.0,
+        "impressions": 13.0,
+        "ctr": 0.23076923,
+        "position_impression_weighted": 9.15,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 2.0,
+        "impressions": 11.0,
+        "ctr": 0.18181818,
+        "position_impression_weighted": 10.55,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 2.0,
+        "impressions": 9.0,
+        "ctr": 0.22222222,
+        "position_impression_weighted": 8.44,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 1.0,
+        "impressions": 24.0,
+        "ctr": 0.04166667,
+        "position_impression_weighted": 9.62,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 1.0,
+        "impressions": 25.0,
+        "ctr": 0.04,
+        "position_impression_weighted": 9.68,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "en",
+      "query": "flyer printing",
+      "query_normalized": "flyer printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 2.0,
+        "impressions": 3.0,
+        "ctr": 0.66666667,
+        "position_impression_weighted": 4.67,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 2.0,
+        "impressions": 3.0,
+        "ctr": 0.66666667,
+        "position_impression_weighted": 4.67,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "en",
+      "query": "poster printing",
+      "query_normalized": "poster printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 1.0,
+        "impressions": 3.0,
+        "ctr": 0.33333333,
+        "position_impression_weighted": 27.33,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 1.0,
+        "impressions": 7.0,
+        "ctr": 0.14285714,
+        "position_impression_weighted": 42.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.5,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.5,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.5,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "en",
+      "query": "calendar printing",
+      "query_normalized": "calendar printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "en",
+      "query": "gift box printing",
+      "query_normalized": "gift box printing",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "ステッカー 小ロット",
+      "query_normalized": "ステッカー 小ロット",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 43.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.35,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 44.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.32,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "ステッカー印刷 小ロット",
+      "query_normalized": "ステッカー印刷 小ロット",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 50.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 3.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 49.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 48.86,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 6.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 48.83,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 36.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.03,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 35.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 10.06,
+        "band": "G1",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "小ロット ステッカー",
+      "query_normalized": "小ロット ステッカー",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "ステッカー印刷",
+      "query_normalized": "ステッカー印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "シール印刷",
+      "query_normalized": "シール印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "防水ステッカー",
+      "query_normalized": "防水ステッカー",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 43.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.0,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 43.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 12.0,
+        "band": "G2",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "冊子印刷",
+      "query_normalized": "冊子印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 3.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 69.67,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 4.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 72.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 74.0,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 76.75,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 71.57,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 45.43,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 45.43,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "中綴じ 印刷",
+      "query_normalized": "中綴じ 印刷",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 76.88,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 8.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 76.88,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "カタログ 印刷",
+      "query_normalized": "カタログ 印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 13.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 49.77,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 11.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 50.64,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.36,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 14.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 38.36,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 27.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 33.7,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 37.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 33.92,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "カタログ印刷",
+      "query_normalized": "カタログ印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 43.43,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 43.43,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.5,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 2.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.5,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 11.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 8.18,
+        "band": "G1",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 16.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 13.75,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "パッケージ印刷",
+      "query_normalized": "パッケージ印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 79.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.96,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 83.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 35.69,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "ポスター印刷",
+      "query_normalized": "ポスター印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 1.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.0,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "チラシ印刷",
+      "query_normalized": "チラシ印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "カレンダー印刷",
+      "query_normalized": "カレンダー印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-09-10": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-05": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-09": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-10-30": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-25": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      },
+      "2026-11-28": {
+        "status": "NO_VISIBLE_QUERY_ROW_NOT_ZERO"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "教材 印刷製本",
+      "query_normalized": "教材 印刷製本",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 38.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 52.03,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 21.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 52.95,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 7.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 16.0,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 12.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.42,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 39.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.69,
+        "band": "G3",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 74.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 47.04,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 78.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 45.04,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "教材 印刷 製本",
+      "query_normalized": "教材 印刷 製本",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 20.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 53.45,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 12.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 54.83,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 4.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.0,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 4.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 11.0,
+        "band": "G2",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 19.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 17.42,
+        "band": "G3",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 44.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 46.84,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 45.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 45.49,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "卒業アルバム 印刷",
+      "query_normalized": "卒業アルバム 印刷",
+      "commercial_role": "high_intent",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 5.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 72.2,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 13.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 71.23,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 15.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 67.73,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 13.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 66.08,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 19.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 80.68,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 33.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 60.67,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 36.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 60.72,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      }
+    },
+    {
+      "market": "ja",
+      "query": "コミケ 印刷",
+      "query_normalized": "コミケ 印刷",
+      "commercial_role": "category_commercial",
+      "2026-09-03": {
+        "clicks": 0.0,
+        "impressions": 5.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 53.8,
+        "band": "G4",
+        "confidence": "DIRECTIONAL_ONLY_n<30"
+      },
+      "2026-09-10": {
+        "clicks": 0.0,
+        "impressions": 52.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 41.0,
+        "band": "G4",
+        "confidence": "LOW_SAMPLE_30-99"
+      },
+      "2026-10-05": {
+        "clicks": 0.0,
+        "impressions": 187.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 23.33,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-09": {
+        "clicks": 0.0,
+        "impressions": 177.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 20.7,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-10-30": {
+        "clicks": 0.0,
+        "impressions": 173.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 18.99,
+        "band": "G3",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-25": {
+        "clicks": 0.0,
+        "impressions": 105.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.73,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      },
+      "2026-11-28": {
+        "clicks": 0.0,
+        "impressions": 111.0,
+        "ctr": 0.0,
+        "position_impression_weighted": 30.09,
+        "band": "G4",
+        "confidence": "WATCH_100-299"
+      }
+    }
+  ]
+}
