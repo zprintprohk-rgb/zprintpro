@@ -402,7 +402,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p><strong>Q：包裝盒訂製幾多錢一個？</strong><br/>A：視乎盒型：精裝盒 HK$8-42/個、摺盒 HK$2.5-15/個、白卡盒 HK$0.50-3.00/個、磁吸盒 HK$15-80/個，數量愈大單價愈平。</p>
 <p><strong>Q：有無設計服務？</strong><br/>A：提供設計服務，含 3D 模擬圖；亦接受客戶自備 AI/PDF 檔案，我哋免費做 PDF 預檢。</p>
 <p><strong>Q：環保盒材質有咩選擇？</strong><br/>A：FSC 認證紙板、大豆油墨、牛皮紙、食品級白卡（FDA 接觸安全）均可選，適合 ESG 品牌。</p>
-<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp 聯絡智印港</strong></a>，攞 30 秒 AI 即時報價，順豐本地免運費、DHL 全球 2-4 天送貨。</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp 聯絡智印港</strong></a>，攞 30 秒 AI 即時報價，順豐本地滿 HK$500 免運費、DHL 全球 2-4 天送貨。</p>
 <div class="mt-12 p-6 bg-[#F5F8FF] rounded-lg border border-[#2873F5]/20">
 <p class="text-base text-[#333333] font-semibold mb-2">關於智印港</p>
 <p class="text-sm text-[#444444] leading-relaxed">智印港 為香港、澳門、台灣及全球華人圈客戶提供 30 秒 AI 即時印刷報價，順豐本地，DHL 全球 2-4 天配送。國際質量管理體系，FSC 認證紙張供應。專業包裝盒訂製 100 個起，化妝品、珠寶、食品、電子產品全場景覆蓋。</p>
@@ -447,7 +447,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p><strong>Q：How much does custom packaging cost per box?</strong><br/>A：It depends on the style: rigid boxes US$1.84-9.66/pc, folding boxes US$0.51-3.45/pc, white-card boxes US$0.10-0.60/pc, magnetic-closure boxes US$3.45-18.39/pc — unit price drops as quantity rises.</p>
 <p><strong>Q：Do you offer design services?</strong><br/>A：Yes — design with 3D mockups is available; we also accept client AI/PDF files with free prepress checks.</p>
 <p><strong>Q：What eco-friendly box materials are available?</strong><br/>A：FSC-certified board, soy ink, kraft paper, and FDA food-contact-safe white card are all available for ESG-focused brands.</p>
-<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>Contact ZprintPro via WhatsApp</strong></a> for a 30-second AI quote — free shipping in Hong Kong, DHL global 2-4 day delivery.</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>Contact ZprintPro via WhatsApp</strong></a> for a 30-second AI quote — free shipping in Hong Kong on orders over HK$500, DHL global 2-4 day delivery.</p>
 <div class="mt-12 p-6 bg-[#F5F8FF] rounded-lg border border-[#2873F5]/20">
 <p class="text-base text-[#333333] font-semibold mb-2">About ZprintPro</p>
 <p class="text-sm text-[#444444] leading-relaxed">ZprintPro serves US, UK, AU, and global clients with 30-second AI instant print quotes, DHL global 2-4 day delivery. International quality management, FSC-certified paper supply. Custom packaging from 100 pcs covering cosmetics, jewelry, food, and electronics.</p>

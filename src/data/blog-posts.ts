@@ -915,7 +915,7 @@ const lpWeddingEnvelope: BlogPostMeta = {
     ja: 'ウエディング招待状封筒印刷ガイド2026：パール・箔 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '準新人、婚禮統籌師、酒店宴會場地必睇。一個精緻嘅婚禮邀請信封決定賓客對婚禮嘅第一印象。智印港為香港婚慶市場提供珍珠白、象牙白、燙金內襯、玫瑰金閃粉等 6 大材質,DL / A7 / C6 / 自訂尺寸全套定制,100-3,000 個小批量,5-10 個工作天交付,順豐本地港九新界免運費。',
+    'zh-hk': '準新人、婚禮統籌師、酒店宴會場地必睇。一個精緻嘅婚禮邀請信封決定賓客對婚禮嘅第一印象。智印港為香港婚慶市場提供珍珠白、象牙白、燙金內襯、玫瑰金閃粉等 6 大材質,DL / A7 / C6 / 自訂尺寸全套定制,100-3,000 個小批量,5-10 個工作天交付,順豐本地滿 HK$500 港九新界免運費。',
     en: 'Engaged couples, wedding planners, stationery designers — premium pearl, foil-lined, custom-sized wedding invitation envelopes set the first impression. Free design, 100 MOQ, 5-10 business day production, DHL Express 2-4 day global shipping.',
     ja: 'ご婚約カップル・ウェディングプランナー・ステーショナリーデザイナー向け。上質パール・箔押し内側・カスタムサイズ封筒が第一印象を決定。無料デザイン・100 MOQ・5-10 営業日生産・DHL Express 国際配送対応。',
   },
@@ -987,7 +987,7 @@ const lpMarathonEventPoster: BlogPostMeta = {
     ja: 'マラソン大会ポスター印刷ガイド：防水 A1/A2 レー | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '香港渣打馬拉松、街馬、半馬拉松、學界田徑必睇。1 張起印，A1/A2 防水 PP + 13oz 戶外燈布起跑拱門，順豐本地港九新界免運費，3-5 個工作天交貨。',
+    'zh-hk': '香港渣打馬拉松、街馬、半馬拉松、學界田徑必睇。1 張起印，A1/A2 防水 PP + 13oz 戶外燈布起跑拱門，順豐本地滿 HK$500 港九新界免運費，3-5 個工作天交貨。',
     en: 'US race directors, running clubs, charity foundations: 1 MOQ, waterproof A1/A2 + 13oz vinyl start arches, runner packet inserts, sponsor recognition walls, 3-5 business day delivery to US ZIP codes.',
     ja: '日本のレースディレクター、ランニングクラブ、チャリティ財団向け。1 枚から対応、防水 A1/A2 + 13oz ビニール スタートアーチ、ランナーパケット挿入物、3-5 営業日生産、全国送料無料。',
   },
@@ -1005,7 +1005,7 @@ const lpCarDealershipAmenitySticker: BlogPostMeta = {
     ja: '自動車ディーラー アメニティステッカー印刷ガイド | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '香港 4S 店、二手車行、汽車美容、輪胎中心、維修工場必睇。100 張起印，防水 PVC + 透明 BOPP + 耐油 PVC，順豐本地港九新界免運費，3-5 個工作天交貨。',
+    'zh-hk': '香港 4S 店、二手車行、汽車美容、輪胎中心、維修工場必睇。100 張起印，防水 PVC + 透明 BOPP + 耐油 PVC，順豐本地滿 HK$500 港九新界免運費，3-5 個工作天交貨。',
     en: 'US car dealerships, auto body shops, tire centers, quick lubes, EV brand experience studios: 100 MOQ, waterproof PVC + transparent BOPP + oil-resistant vinyl, 3-5 business day delivery to US ZIP codes.',
     ja: '日本の自動車ディーラー、鈑金塗装工場、タイヤセンター、Quick Lube、EV ブランド体験スタジオ向け。100 枚から対応、防水 PVC + 透明 BOPP + 耐油ビニール、3-5 営業日生産、全国送料無料。',
   },
@@ -1023,7 +1023,7 @@ const lpHotelKeycardSleeve: BlogPostMeta = {
     ja: 'ホテル ルームキー スリーブ・荷物タグ印刷ガイド | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '香港五星級酒店、精品酒店、B&B 民宿、Airbnb 短租必睇。100 張起印，軟觸啞面 PVC + 燙金箔 + 局部 UV，順豐本地港九新界免運費，3-5 個工作天交貨。',
+    'zh-hk': '香港五星級酒店、精品酒店、B&B 民宿、Airbnb 短租必睇。100 張起印，軟觸啞面 PVC + 燙金箔 + 局部 UV，順豐本地滿 HK$500 港九新界免運費，3-5 個工作天交貨。',
     en: 'US five-star hotels, boutique hotels, B&Bs, Airbnb hosts, resort spas: 100 MOQ, soft-touch matte PVC + foil + spot UV, room key sleeves, luggage tags, turn-down seals, 3-5 business day delivery to US ZIP codes.',
     ja: '日本の五つ星ホテル、ブティックホテル、B&B、民泊、リゾートスパ向け。100 枚から対応、ソフトタッチマット PVC + 箔押し + スポット UV、ルームキー スリーブ、荷物タグ、3-5 営業日生産、全国送料無料。',
   },
