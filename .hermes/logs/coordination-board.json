@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-28T18:17:06+0800",
+  "generated_at": "2026-11-28T20:17:00+0800",
   "run_date": "2026-11-28",
   "board_path": ".hermes/logs/coordination-board.json",
   "policy": {

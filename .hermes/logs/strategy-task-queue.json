@@ -622,6 +622,8 @@
    "next_check": "D1/D2 + 7/14/28d after actual deployment",
    "strategy_update": "WAITING_K3 reconciled to READY by D6. Execute one bounded certification-truth batch; preserve neutral regulatory education and emit before/after evidence.",
    "strategy_updated_at": "2026-11-13T03:10:02+08:00",
+   "progress_correction_20261128": "前次 progress 声称「BATCH 1-5 DONE / 本任务实质完成」不成立：2026-11-28 独立复核仍在三语正文与 meta 命中 A 组聚合认证徽章（zh 6 行 / en 3 行深层命中，另有 title/description 内 FDA 認證）。BATCH 6 已修 44 处（29 操作），剩余见 next_batch_20261128。",
+   "next_batch_20261128": "剩余: 正文深处 4 大認證/三重認證/雙認證 变体 (zh 6 行/en 3 行, 行内深处 grep 可见但 read 截断) + zh title L153/L232 与 description L321 的 FDA 認證 (需 title/meta 批, 走 title-v5 gate) + 8,000+ 訂單/12,800 單 等无源统计 (D6 STATISTICS 另批)。",
    "progress": "BATCH 1-5 DONE 2026-11-22（zh 22 + en 20 + ja 21 + B/C 边界 zh 5/ja 2 + CertNo 空壳 27；独立 commit 并推送 f834368d→6e117783→d1d4b940→Batch5×2，线上抽样 5/6 页 PASS：zh sticker-guide/foil-stamping/finance-summit、en foil-stamping/school-exercise、ja school-exercise/medical-device）。Before/after 全表 + 1554 token 全域盘点见 .hermes/logs/2026-11-22-cert-claims-inventory-and-batch1.md。剩余 token（FSC 784/REACH 273/FDA-CFR 232/GB4806/BPA-free/USP/GRS/Oeko 等）经复核 = D6-C 中性法规解释与 B 组材质属性，按拍板明确保留。ISO9001 仅余「aligned with／整合」phrasing（非认证声明）、标题中的 ISO 13485 标准名称引用保留。本任务实质完成。",
    "next_batch": "无（Batch 1-5 已清 A 组；B/C 按 D6-C 保留）。新增 A 组声明时另开 batch 6"
   },
