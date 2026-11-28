@@ -72,7 +72,7 @@ const translations = {
     momentCta: '即日印刷',
     features: [
       { icon: Clock, title: '迅速な印刷', subtitle: '3-5日で納品', description: '標準 3-5 営業日；即日印刷：18:00 締切、翌日 12 時着（対象品目・数量条件あり・割増料金）' },
-      { icon: Truck, title: '迅速な発送', subtitle: '500ドル以上送料無料', description: '500ドル以上の注文で送料無料' },
+      { icon: Truck, title: '迅速な発送', subtitle: '全国配送対応', description: '送料はお見積り時に確認' },
       { icon: Headphones, title: '24時間サポート', subtitle: '年中無休', description: 'WhatsApp・メールで24時間受付。深夜のご注文も専任スタッフがフォローします' },
       { icon: Shield, title: '定時納品', subtitle: '99.5%定時率', description: '厳格な生産スケジュール管理で、99.5%の定時納品率を維持' },
       { icon: Award, title: '品質保証', subtitle: '品質不良対応', description: '印刷品質不良は無料再印刷または全額返金' },

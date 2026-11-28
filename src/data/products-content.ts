@@ -245,13 +245,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能な環境配慮仕様。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -260,7 +260,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -276,7 +276,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、グリーティングカード・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -390,7 +390,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、グリーティングカード・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -567,7 +567,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -604,13 +604,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。箔押しシリーズでも大豆インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -619,14 +619,14 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人・士業事務所向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・士業事務所向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>金箔と銀箔のどちらを選ぶべきですか？</strong></summary><p>ブランドカラー・業界・印象に応じて選択します。金融・士業はトラディショナルな金箔、モダンブランド・テック系は銀箔、美容・ライフスタイルブランドは rose gold 箔が好評です。無料サンプル請求で実物をご確認いただけます。</p></details>
 <details class="my-2"><summary><strong>MOQ は何枚からですか？特急対応は可能ですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、1-2 営業日で製作・納品できます。緊急役員グリーティングカード・新人入社時のグリーティングカードにも迅速対応いたします。</p></details>
 <details class="my-2"><summary><strong>既存のロゴデータをそのまま箔押しできますか？</strong></summary><p>はい。Illustrator / InDesign / PDF 形式でロゴデータをお送りください。箔押しエリアは別レイヤーで明確に分けていただきます。無料 AI データチェックで箔押し適性を事前検証いたします。</p></details>
 <details class="my-2"><summary><strong>両面印刷で表面と裏面で異なる仕上げが可能ですか？</strong></summary><p>はい。両面とも箔押し可能、片面箔押し + もう片面通常印刷、片面箔押し + もう片面エンボスなど、組み合わせ自由です。データ入稿時にご指定ください。</p></details>
-<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。追跡番号は発送後 24 時間以内にお届け。100 枚以上のご注文は送料無料で全国配送対応。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。追跡番号は発送後 24 時間以内にお届け。100 枚以上のご注文で全国配送対応（送料はお見積り時に確認）。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題（箔剥がれ・色ズレ）は無料で再印刷または全額返金いたします。品質保証でご提供します。</p></details>
 
 <p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、品質管理。</em></p>`,
@@ -804,7 +804,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -838,13 +838,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 枚以上のご注文は送料無料で全国配送、日本語カスタマーサポートが配送状況を確認します。</p>
+<p>100 枚以上のご注文で全国配送（送料はお見積り時に確認）、日本語カスタマーサポートが配送状況を確認します。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。UV 加工でも水性インクと低 VOC コーティングを採用。ESG 配慮のブランド向けに、紙材トレーサビリティレポートをご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -853,14 +853,14 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・紙質サンプル比較・UV 効果実物確認に対応（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>スポット UV と箔押しの違いは何ですか？</strong></summary><p>スポット UV は光沢のある樹脂コーティングで、立体感は出ませんがマットと光沢のコントラストが鮮明。箔押しは金属光沢で、より格式高い印象。金箔・銀箔・rose gold 箔など色選択肢豊富。組み合わせることで究極のハイエンドグリーティングカードも実現可能です。</p></details>
 <details class="my-2"><summary><strong>複雑なデザインでも UV 加工できますか？</strong></summary><p>はい。グラデーション・寫真・細かいパターンも対応可能ですが、UV エリアが細かすぎると効果が弱まります。データ入稿時に UV エリアを別レイヤーで明確に分離してください。無料 AI データチェックで UV 適性を事前検証いたします。</p></details>
 <details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、1-2 営業日で製作・納品できます。</p></details>
 <details class="my-2"><summary><strong>両面とも UV 加工できますか？</strong></summary><p>はい。両面スポット UV、片面 UV + もう片面通常印刷、片面 UV + もう片面箔押しなど、自由な組み合わせが可能です。データ入稿時にご指定ください。</p></details>
-<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。100 枚以上のご注文は送料無料で全国配送対応。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。100 枚以上のご注文で全国配送対応（送料はお見積り時に確認）。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (UV 剥がれ・色ズレ) は無料で再印刷または全額返金（品質保証）。</p></details>
 
 <p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、品質管理。</em></p>`,
@@ -1038,7 +1038,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定。</p>
+<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <ol>
@@ -1071,8 +1071,8 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
@@ -1085,14 +1085,14 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・紙質サンプル比較・ラミネート実物確認に対応（日本語スタッフ同席可・1 週間前予約）。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>マットとグロスラミネートのどちらを選ぶべきですか？</strong></summary><p>上品でモダンな印象はマットラミネート、鮮やかで色鮮やかな印象はグロスラミネート。モダンブランド・金融・士業はマット、寫真・イラスト多用はグロスが定番です。両面ラミネートで全面保護、片面のみならコスト削減可能。</p></details>
 <details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、最短 1 営業日で製作・納品できます。</p></details>
 <details class="my-2"><summary><strong>マットラミネートの上から書き込みできますか？</strong></summary><p>マットラミネート表面は油性ペンで書き込み可能ですが、剥がれやすいため推奨しません。裏面 (ラミネート無し) へのメモは可能。</p></details>
 <details class="my-2"><summary><strong>マット + スポット UV の組み合わせは可能ですか？</strong></summary><p>はい。マットラミネートをベースにして、ロゴ部分のみスポット UV で光沢を加える組み合わせが好評です。追加納期 +1 日、追加料金 $ ですが、究極のハイエンドグリーティングカードとして高い訴求力があります。</p></details>
-<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文で全国配送対応（送料はお見積り時に確認）。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (ラミネート剥がれ・色ズレ) は無料で再印刷または全額返金（品質保証）。</p></details>
 
 <p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、品質管理。</em></p>`,
@@ -1270,7 +1270,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定。</p>
+<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <ol>
@@ -1303,8 +1303,8 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
@@ -1317,14 +1317,14 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・紙質サンプル比較・角丸実物確認に対応（日本語スタッフ同席可・1 週間前予約）。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>角丸グリーティングカードと通常グリーティングカードの違いは何ですか？</strong></summary><p>角丸グリーティングカードは R3mm/R5mm/R10mm の柔らかい角丸加工で、モダンで優しい印象を与えます。通常グリーティングカードは 90° のシャープな角で、トラディショナルで格式高い印象。テック・ライフスタイル・クリエイティブ系は角丸、金融・士業は通常が定番です。</p></details>
 <details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、最短 1 営業日で製作・納品できます。</p></details>
 <details class="my-2"><summary><strong>角丸とラミネートは併用できますか？</strong></summary><p>はい。角丸加工 + マット/グロスラミネート併用で、耐久性 + モダンデザインを両立。両面ラミネートで全面保護、片面のみならコスト削減可能。</p></details>
 <details class="my-2"><summary><strong>角丸グリーティングカードは財布に入れやすいですか？</strong></summary><p>R5mm 以下の角丸であれば、グリーティングカード入れ・カードケースにスムーズに収納可能。R10mm は曲線が大きいため、収納性は若干低下します。R3mm-R5mm が最もバランス良い選択です。</p></details>
-<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文で全国配送対応（送料はお見積り時に確認）。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (角丸精度・色ズレ) は無料で再印刷または全額返金（品質保証）。</p></details>
 
 <p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、品質管理。</em></p>`,
@@ -1532,13 +1532,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能な環境配慮仕様。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -1547,7 +1547,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -1572,7 +1572,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr class="bg-gray-50"><td class="p-2 font-medium">5,000 枚</td><td class="p-2 text-center">30 円 (-35%)</td><td class="p-2 text-center">21 円 (-35%)</td><td class="p-2 text-center">49 円 (-35%)</td><td class="p-2 text-center">5-7 日</td></tr>
   </tbody>
 </table>
-<p><em>全価格 4C CMYK 印刷・無料型抜き設定込み、$100 以上のご注文は DHL Express 国際速達送料無料。数量割引は見積もり自動適用。</em></p>
+<p><em>全価格 4C CMYK 印刷・無料型抜き設定込み、$99 以上のご注文は DHL Express 国際速達（送料はお見積り時に確認）。数量割引は見積もり自動適用。</em></p>
 
 <h3>よくある質問 (FAQ) — 2026-08 更新</h3>
 <details class="my-2"><summary><strong>小ロットステッカーの最小注文数量（MOQ）は？</strong></summary><p>防水 Vinyl／透明 PVC 50 枚〜、アート紙・クラフト紙・ホログラム・箔 100 枚〜。<strong>10 枚サンプル 980 円</strong>（DHL 2-4 日速達）で本発注前に品質確認可能。同一の国際認証ライン・FSC 認証紙使用。</p></details>
@@ -1663,7 +1663,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -1837,7 +1837,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>全国配送対応</strong>（送料はお見積り時に確認）、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -1874,13 +1874,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。再剥離ステッカーシリーズでも大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -1889,7 +1889,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・基材サンプル比較・粘着力テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>剥がした時に糊残りは出ませんか？</strong></summary><p>いいえ、出ません。当社の再剥離粘着剤は、ガラス・塗裝壁・電子機器・平滑パッケージのいずれにおいても、貼付から 90 日以内に糊残りなく剥がせるよう設計されています。すべてのロットでクリーン剥離テストを実施しております。</p></details>
@@ -2176,13 +2176,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能な環境配慮仕様。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -2191,7 +2191,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -2207,7 +2207,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 
 <p>価格は本ページの見積もりエンジン（JPY 円建て・実パラメータ連動）で即時算出されます。数量・サイズ・材質を選択すると 30 秒で総額を表示。10 枚の最小ロットから対応し、テスト印刷やイベント限定グッズに最適です。最終価格は見積もりでご確認ください。</p>
@@ -2424,13 +2424,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能な環境配慮仕様。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -2439,7 +2439,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -2455,7 +2455,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -2633,7 +2633,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>全国配送対応</strong>（送料はお見積り時に確認）、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -2670,13 +2670,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。箔押しシリーズでも大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -2685,7 +2685,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・箔サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>箔押しとメタリックインキの違いは何ですか？</strong></summary><p>ホットスタンプ箔押しは本物の金属フィルムを熱圧着する加工で、反射率 90% 以上の本物の金属光沢を実現します。メタリックインキは金属顔料を配合したインキで印刷する方式で、光沢が控えめで反射性が劣ります。箔押しの方が圧倒的に高級感があります。</p></details>
@@ -2870,7 +2870,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>全国配送対応</strong>（送料はお見積り時に確認）、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -2907,13 +2907,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。セキュリティステッカーシリーズでも大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -2922,7 +2922,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・セキュリティ素材サンプル比較・粘着力テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>ボイド剥離と破壊型の違いは何ですか？</strong></summary><p>ボイド剥離は剥がすと基材側に「VOID」のパターンが残ります。破壊型ステッカーは剥がそうとすると細かく破砕され、再貼付が不可能となります。ボイドは再利用フレンドリー、破壊型は最高セキュリティ。</p></details>
@@ -3149,13 +3149,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能な環境配慮仕様。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -3164,7 +3164,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -3180,7 +3180,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -3256,7 +3256,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -3490,13 +3490,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能な環境配慮仕様。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -3505,7 +3505,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -3521,7 +3521,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -3701,7 +3701,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>全国配送対応</strong>（送料はお見積り時に確認）、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -3738,13 +3738,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコ紙袋シリーズでは再生紙 100%・FSC Mix・大豆インク・水性コーティングを採用し、コンポスト可能・プラスチックフリー。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -3753,7 +3753,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・素材サンプル比較・耐荷重テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>本当に 100% リサイクル可能ですか？</strong></summary><p>はい。当社のクラフト紙 + 紙紐ハンドル + 大豆インクの紙袋は、標準的な紙リサイクル系統で完全にリサイクル可能です。エンド消費者向けリサイクル説明もご注文毎にご提供いたします。</p></details>
@@ -3942,7 +3942,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>全国配送対応</strong>（送料はお見積り時に確認）、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -3979,13 +3979,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。ハンドル紙袋シリーズでは大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -3994,7 +3994,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・素材サンプル比較・ハンドル色見本確認・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低発注数量はどのくらいですか？</strong></summary><p>100 枚からご注文可能です。数量割引は 500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%) で適用されます。</p></details>
@@ -4183,7 +4183,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>全国配送対応</strong>（送料はお見積り時に確認）、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -4220,13 +4220,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。大型紙袋シリーズでは大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -4235,7 +4235,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・素材サンプル比較・荷重試験実演・ハンドルスタイル試着・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低発注数量はどのくらいですか？</strong></summary><p>100 枚からご注文可能です。数量割引は 500 枚 (+15%)、1,000 枚 (+25%)、2,500 枚以上 (+35%) で適用されます。</p></details>
@@ -4468,13 +4468,13 @@ export const productsContent: Record<string, ProductContentEntry> = {
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能な環境配慮仕様。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -4483,7 +4483,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -4499,7 +4499,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、上質紙、クラフト紙など。チラシの加工は4色オフセット・デジタル印刷、二つ折り／三つ折り、スポット UV、標準型抜き裁断等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -4592,7 +4592,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、上質紙、クラフト紙など。チラシの加工は4色オフセット・デジタル印刷、二つ折り／三つ折り、スポット UV、標準型抜き裁断等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -4698,7 +4698,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、上質紙、クラフト紙など。チラシの加工は4色オフセット・デジタル印刷、二つ折り／三つ折り、スポット UV、標準型抜き裁断等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -4804,7 +4804,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、上質紙、クラフト紙など。チラシの加工は4色オフセット・デジタル印刷、二つ折り／三つ折り、スポット UV、標準型抜き裁断等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -4910,7 +4910,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、上質紙、クラフト紙など。チラシの加工は4色オフセット・デジタル印刷、二つ折り／三つ折り、スポット UV、標準型抜き裁断等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -5016,7 +5016,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、上質紙、クラフト紙など。チラシの加工は4色オフセット・デジタル印刷、二つ折り／三つ折り、スポット UV、標準型抜き裁断等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -5350,13 +5350,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能な環境配慮仕様。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -5365,7 +5365,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -6066,7 +6066,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 7-12 営業日で完成。校正 PDF 承認後、内裝カスタマイズや特殊加工を含む場合は14-21営業日。特急印刷は最短 5-7 営業日（DHL / FedEx 国際速達便で日本全国 2-4 日配送）。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>4 種類のボックススタイルの選び方は？</strong></summary><p>プレミアム感を出すなら マグネット蓋、伝統と安定感なら天地蓋、ユニーク体験なら引き出し式、複数アイテムを見せるならブック型。予算とブランドイメージに応じて担当者がご提案します。無料で3D モックアップと構造設計を提供。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>内裝は EVA・紙・PET の3種類、表面素材はアート紙・マット紙・クラフト紙・ピーチスキン・メタリック調など。加工は4色オフセット印刷、箔押し（金/銀/ローズ金/ホログラム）、スポット UV、エンボス/デボス、型抜き、サテン裏地、ラベル貼り等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$200 以上のご注文で米国向け送料無料、£150 / AU$300 以上で英豪向け送料無料。追跡番号付き。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。英国・豪州向けの送料はお見積り時に確認。追跡番号付き。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認、本サンプル校正付き。</p></details>
 `,
   },
@@ -6283,13 +6283,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能な環境配慮仕様。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -6298,7 +6298,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -6314,7 +6314,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -6875,13 +6875,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>送料はお見積り時に確認</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
     <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後の発送は見積りで確認</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
-<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+<p>100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能な環境配慮仕様。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
@@ -6890,7 +6890,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>アジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文で全国配送（送料はお見積り時に確認）。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -6906,7 +6906,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -7012,7 +7012,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -7118,7 +7118,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -7224,7 +7224,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -7330,7 +7330,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -7436,7 +7436,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -7548,7 +7548,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -7660,7 +7660,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -7774,7 +7774,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -7898,7 +7898,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -8056,7 +8056,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -8216,7 +8216,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -8326,7 +8326,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -8436,7 +8436,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -8546,7 +8546,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -8656,7 +8656,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -8765,7 +8765,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -8881,7 +8881,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -9000,7 +9000,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -9109,7 +9109,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -9218,7 +9218,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -9327,7 +9327,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -9468,7 +9468,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -9615,7 +9615,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -9753,7 +9753,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -9890,7 +9890,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -10003,7 +10003,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -10114,7 +10114,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -10218,7 +10218,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -10322,7 +10322,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -10465,7 +10465,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -10608,7 +10608,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -10751,7 +10751,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、上質紙、クラフト紙など。チラシの加工は4色オフセット・デジタル印刷、二つ折り／三つ折り、スポット UV、標準型抜き裁断等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -10822,8 +10822,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b border-gray-200"><td>香港本地速遞</td><td>港九新界 + 離島</td><td>48 小時</td><td>滿 HK$500 免運費</td></tr>
     <tr class="border-b border-gray-200"><td>深圳平湖廠房直送（預約製）</td><td>深圳平湖廠房</td><td>完工後 24-48 小時</td><td>國際運費另計</td></tr>
-    <tr class="border-b border-gray-200"><td>國際速遞（教育機構向け）</td><td>日本全國・沖繩・離島</td><td>DHL 2-4 個工作天 / FedEx 3-5 個工作天</td><td>¥10,000 以上免運</td></tr>
-    <tr><td>國際配送（DHL / FedEx）</td><td>日本 / 台灣 / 東南亞 / 全球</td><td>2–5 個工作天</td><td>100 冊以上免運</td></tr>
+    <tr class="border-b border-gray-200"><td>國際速遞（教育機構向け）</td><td>日本全國・沖繩・離島</td><td>DHL 2-4 個工作天 / FedEx 3-5 個工作天</td><td>送料以報價確認</td></tr>
+    <tr><td>國際配送（DHL / FedEx）</td><td>日本 / 台灣 / 東南亞 / 全球</td><td>2–5 個工作天</td><td>送料以報價確認</td></tr>
   </tbody>
 </table>
 
@@ -11102,8 +11102,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b border-gray-200"><td>国際速達</td><td>日本全国（沖縄・離島含む）</td><td>48 時間</td><td>HK$500 以上で送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>アジア自社工場見學・受取</td><td>アジア自社工場（事前予約製）</td><td>事前予約 1 週間前</td><td>国際送料別途</td></tr>
-    <tr class="border-b border-gray-200"><td>国際速達便（教育機関向け）</td><td>日本全国・沖縄・離島</td><td>DHL 2-4 営業日 / FedEx 3-5 営業日</td><td>¥10,000 以上送料無料</td></tr>
-    <tr><td>国際配送（DHL / FedEx）</td><td>日本・台湾・東南アジア・全世界</td><td>2〜5 営業日</td><td>100 冊以上で送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>国際速達便（教育機関向け）</td><td>日本全国・沖縄・離島</td><td>DHL 2-4 営業日 / FedEx 3-5 営業日</td><td>送料はお見積り時に確認</td></tr>
+    <tr><td>国際配送（DHL / FedEx）</td><td>日本・台湾・東南アジア・全世界</td><td>2〜5 営業日</td><td>送料はお見積り時に確認</td></tr>
   </tbody>
 </table>
 
@@ -11173,7 +11173,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -11493,7 +11493,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },
@@ -11604,7 +11604,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 10枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準納期は商品・数量・加工により異なり、見積もり時に確定。校正 PDF 承認後は優先スケジュールで生産し、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$99 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは品質保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
   },

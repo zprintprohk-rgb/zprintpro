@@ -41,7 +41,7 @@ const TEXTS = {
   },
   'ja': {
     btnLabel: '無料見積もり',
-    microCopy: '2時間以内に返信 · サンプル送料無料',
+    microCopy: '2時間以内に返信 · お見積り無料',
     formTitle: '無料見積もり依頼',
     nameLabel: 'お名前',
     emailLabel: 'メールアドレス',

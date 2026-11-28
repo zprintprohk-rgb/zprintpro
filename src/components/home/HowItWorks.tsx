@@ -94,7 +94,7 @@ const STEPS: Record<Locale, Step[]> = {
     },
     {
       num: 5,
-      title: '港九新界免費速遞',
+      title: '港九新界 $500+ 免費速遞',
       desc: '順豐本地 / DHL 全球 5-7 天，滿 $500 免運。',
       icon: '📦',
       tip: '即日急件可選 · DDP 關稅預付',
@@ -129,8 +129,8 @@ const STEPS: Record<Locale, Step[]> = {
     },
     {
       num: 5,
-      title: '日本全国送料無料',
-      desc: 'DHL 5-7 日でお届け。全国送料 0 円。',
+      title: '日本全国配送対応',
+      desc: 'DHL 5-7 日でお届け。送料はお見積り時に確認。',
       icon: '📦',
       tip: '沖縄・北海道も同料金 · DDP 関税先払い',
     },

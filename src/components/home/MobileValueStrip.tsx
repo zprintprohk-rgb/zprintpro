@@ -23,7 +23,7 @@ const TEXTS: Record<Locale, { main: string; sub: string }> = {
   },
   ja: {
     main: 'オーダー印刷 · ワンストップサービス',
-    sub: '小ロット対応｜無料デザイン｜日本全国送料無料｜DHL 2〜4日',
+    sub: '小ロット対応｜無料デザイン｜日本全国配送対応｜DHL 2〜4日',
   },
 };
 

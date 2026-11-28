@@ -78,7 +78,7 @@ const translations = {
       turnaround: '納期',
     },
     shipping: {
-      freeShipping: '国際送料無料',
+      freeShipping: '国際配送対応',
       standard: '標準配送: 3-5営業日',
       express: '急ぎ配送: 1-2営業日',
       selfPickup: '店頭受取: 観塘（香港サービスポイント、製造拠点ではありません）',

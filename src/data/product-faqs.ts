@@ -74,7 +74,7 @@ export const stickersFAQs: FAQItem[] = [
       'ja': '日本へのシール配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿HK$500免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等站點 — 香港服務點，非生產地）。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿 HK$500 順豐免運費，未滿額運費以報價確認。',
       'en': 'Yes. ZprintPro delivers sticker orders worldwide from our Asia facility. US orders ship via DHL / FedEx with delivery timing confirmed at quote, plus free shipping on orders over $99.',
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（納期はお見積り時に確定）。小口注文から大量注文まで対応可能です。',
     },
@@ -747,7 +747,7 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '日本への配送サービスはありますか？',
     },
     answer: {
-      'zh-hk': '智印港提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等 — 香港服務點，非生產地）。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。',
+      'zh-hk': '智印港提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 順豐免運費，未滿額運費以報價確認。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。',
       'en': 'ZprintPro delivers worldwide from our Asia production facility. US orders ship via DHL / FedEx with delivery timing confirmed at quote, plus free shipping on orders over $99. Japan delivery timing is confirmed at quote.',
       'ja': 'はい。ZprintPro は DHL / FedEx で日本全国に配送しています（通常 2〜4 日）。米国など海外市場への配送日程もお見積り時に確定します。送料は数量と配送先に応じてお見積もりいたします。',
     },
