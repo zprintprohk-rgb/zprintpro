@@ -1,5 +1,25 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## ✅ 已释放 — 2026-11-28 09:4x Kimi Work 人手会话（P0 商业真值与实体修复批）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（P0 商业真值与实体修复批，锁自 08:55 持有） |
+| **K3 拍板** | 2026-11-28 08:55「按最优推荐方案继续下一步」 |
+| **释放结果** | locale 混语修复 44+1 处（products.ts `适配行业` 按字段归属 + PDP `結算` 字典化）；P0 五 SKU（small-batch/catalog/calendars/roll-up/saddle）价格/交期/MOQ/折扣档全口径对齐 products.ts 与 pricing.ts 真值，撤下无来源客户计数、SGS/FDA 强声明、`$$` 占位；共享模板修复 65+49+51+7+33 处；Footer zh-hk 加「香港服務點」標籤（不換地址 per K3 10-10）；llms.txt 強聲明條件化並重生成（diff 5 行）。驗證全綠（encoding/tsc/brand-mentions/content-guard/殘留 grep）。**只本地 commit 不 push**（今日已兩次推送，下一窗口上線）。詳見 `.hermes/logs/2026-11-28-p0-commercial-truth-execution.md`。 |
+| **阻断留批** | ① gen-llms.ts 形狀斷言（place-cards 空類目）致三語 llms 無法重生成（存量，自 10-12 滯後）；② scenario-links 存量 FAIL 6 處；③ 14 處「已為 N 間」無來源計數待下批。 |
+
+## 🔒 持有中 — 2026-11-28 08:59 Kimi Work 人手会话（P0 商业真值与实体修复批，锁自 08:55 刷新）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 2026-11-28 08:55「按最优推荐方案继续下一步……有利于 zprintpro.com 三语言站点 SEO/AEO/GEO 首页第一页目标，可以立即或下一 push 窗口上线」 |
+| **写入范围** | P0 报告锁定之商业真值与实体源文件：`Footer.tsx`、`rush` 服务数据源、small-batch／catalog／calendars／roll-up／ja saddle 相关数据与 FAQ、locale 模板混语、`llms*.txt`；执行日志与账卡；本锁 |
+| **禁止范围** | 不动 middleware 301、不改 Cloudflare 防火墙、不改定时 wrapper、不批量改 title、不删除贺卡资产、不按 UA 输出不同内容、不自动 canonical/301；无 K3 新证据不新增价格承诺 |
+| **双条件核验** | ① 开工 `src/` 无未提交改动、无 staged 删除、`lane.lock` 不存在、顶部全部释放；② 最近对端车道写入为 11-27 19:31，距今 >13h |
+| **TTL** | 30 min，预计分批刷新；今日已有 00:26／00:35 两次 push，本批默认先不抢第三次 CF build |
+
 ## ✅ 已释放 — 2026-11-28 00:2x Kimi Work 人手会话（批 Q7：膠裝書直答塊 + catalog 導流鏈）
 
 | 项 | 值 |

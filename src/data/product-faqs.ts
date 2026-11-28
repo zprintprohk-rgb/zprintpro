@@ -1072,9 +1072,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: 'ステッカー印刷の最小ロットは？',
       },
       answer: {
-        'zh-hk': '10 張起印（打樣性質，單價較高）；100 張以上進入量產檔位，單價明顯下降，HK$0.45 起/張，3-5 個工作天交貨。',
-        en: '10 pieces. A 10-pc run is proofing grade with a higher unit price; from 100 pcs the unit price drops clearly — from $0.55/pc on the small-batch line, 3-5 business days.',
-        ja: '10枚から。10枚はサンプル的な数量で単価高め、100枚以上で単価が明確に下がります（¥69〜）、3-5営業日。',
+        'zh-hk': '10 張起印（A4 版面計價，10 張屬打樣檔、單價較高）；100 張以上進入量產檔位，單價明顯下降。數碼快印常規 1-2 天交付，以即時報價確認為準。',
+        en: '10 pcs (A4-sheet pricing; a 10-pc run is proofing grade at a higher unit price — from $0.60/pc on vinyl, $0.55/pc from 50 pcs). From 100 pcs production tiers drop the unit price clearly. Digital printing typically ships in 1-2 business days, confirmed at quote.',
+        ja: '10枚から（A4版面基準・サンプル的な数量で単価高め）、100枚以上で量産檔に入り単価が明確に下がります。デジタル印刷は通常1-2営業日で出荷（見積もりで確定）。',
       },
     },
     {
@@ -1084,9 +1084,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '小ロットステッカーの料金は？',
       },
       answer: {
-        'zh-hk': '防水 PVC 小批量 HK$0.45 起/張（10-50 張檔位）；100/500/1000 張階梯遞減。1 小時免費打稿，滿 HK$500 免費速遞。',
-        en: 'From $0.55/pc at 10-50 pcs on waterproof PVC; volume tiers at 100/500/1000 pcs lower the unit price. Digital proof provided before production; free US shipping on orders over $99.',
-        ja: '防水PVCで10-50枚は¥69〜/枚、100/500/1000枚の段階割引あり。校正データは生産前にご提供、配送はお見積り時に確定。',
+        'zh-hk': '以 A4 版面計價：10 張檔 HK$89 起/A4（小尺寸，PVC 防水基準），100 張檔 HK$38 起/A4，500/1000 張再享批量折扣。PP 合成紙、PET 透明、異形模切、燙金等按頁面梯度表另計。免費數碼打稿，滿 HK$500 免費速遞。',
+        en: 'From $0.60/pc at 10 pcs on waterproof vinyl ($0.55/pc from 50 pcs, paper from $0.45/pc); tiers at 100/500/1,000 pcs lower the unit price — see the rate table on this page. Die-cut, foil and specialty materials quoted separately. Free digital proof; free US shipping over $99.',
+        ja: '防水PVCで10枚は¥69〜/枚、100/500/1000枚の段階割引あり（このページの料金表参照）。ダイカット・箔押し・特殊材質は別途見積もり。校正データは生産前にご提供。',
       },
     },
   ],

@@ -22,6 +22,7 @@ const T: Record<Locale, Record<string, string>> = {
     added: '已加入購物車 ✓',
     total: '小計',
     cart: '購物車',
+    checkout: '結算',
     quoteOnlyTitle: '此產品按規格報價',
     quoteOnlyDesc: '頁面價格僅供參考，實際價格以正式報價單為準',
     quoteOnlyCta: 'WhatsApp 即時報價',
@@ -33,6 +34,7 @@ const T: Record<Locale, Record<string, string>> = {
     added: 'Added to cart ✓',
     total: 'Subtotal',
     cart: 'cart',
+    checkout: 'checkout',
     quoteOnlyTitle: 'Priced per your specs',
     quoteOnlyDesc: 'Page price is indicative only — final price confirmed at quote',
     quoteOnlyCta: 'Get WhatsApp Quote',
@@ -44,6 +46,7 @@ const T: Record<Locale, Record<string, string>> = {
     added: 'カートに追加しました ✓',
     total: '小計',
     cart: 'カート',
+    checkout: 'お会計',
     quoteOnlyTitle: '仕様見積り対応',
     quoteOnlyDesc: '表示価格は参考値です。料金は正式見積もりで確定',
     quoteOnlyCta: 'WhatsApp で見積もり',
@@ -179,7 +182,7 @@ export default function PdpPurchaseButtons({ product, locale }: { product: Produ
           {t.buyNow} →
         </button>
       </div>
-      <p className="mt-2 text-xs text-gray-400">{t.total}: {formatMoney(unitPrice * qty, currency)} · {t.cart} → 結算</p>
+      <p className="mt-2 text-xs text-gray-400">{t.total}: {formatMoney(unitPrice * qty, currency)} · {t.cart} → {t.checkout}</p>
     </div>
   );
 }

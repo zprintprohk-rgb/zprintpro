@@ -30,7 +30,8 @@ const translations = {
     email: 'zprintpro@outlook.com',
     // 2026-10-09 K3 拍板 (FIX-3): 雙段式 NAP（僅 en/ja 可見層）
     // 2026-10-10 K3 修正: zh-hk 站沿用「原來的香港地址」（單段香港顯示地址），不採雙段式
-    address: '香港九龍新蒲崗大有街3號萬廣大廈15樓C室',
+    // 2026-11-28 P0 實體修復: 加「香港服務點」標籤與 en/ja 層一致（不換地址，per K3 10-10 拍板）
+    address: '香港服務點：九龍新蒲崗大有街3號萬廣大廈15樓C室（自設廠房：深圳龍崗平湖）',
     legalLabel: '經營者資訊披露',
     privacyLabel: '隱私政策',
     termsLabel: '使用條款',
